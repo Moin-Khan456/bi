@@ -15,7 +15,7 @@ const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee")
 );
 const CustomAppBenefits = dynamic(() =>
-  import("../../components/MobileDevelopment/CustomAppBenefits.jsx")
+  import("../../components/Mobile-Development/CustomAppBenefits.jsx")
 );
 const CustomWeb = dynamic(() => import("../../components/customWeb"));
 const Hire = dynamic(() => import("../../components/common/Hire"));

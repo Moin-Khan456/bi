@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      
+	<url>
+		<loc>https://braininventory.in/components/Admin/Header</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/HeroSection</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/Home</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/HomeChart</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/LoginForm</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/Sidebar</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Admin/Tables</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/blog/bloglisting</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/blog/Featured</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/blog/popularblog</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/blog/PostCard</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/buttons/HomeButton</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/banner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/culture</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/interviewProcess</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/Newsletter</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/opening</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/career/stepper</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Advantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/BigHeadingScroll</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/BlogArticle</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/blogLoader</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/BlogsArticles</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Carousel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ChatbotAdvantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ChooseBraininventory</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ChooseBraininventoryApp</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ChooseBraininventoryCustom</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Clients</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/CustomAppBenefits</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/CustomBenefits</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/customer</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Engaged</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Experienced</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ExperiencedFullStack</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ExperiencedPhp</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/ExperiencedPython</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Faqhire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/FindUs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Footer</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/FullStackAdvantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/FullStackHire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/FullStackKeySkills</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Hello</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Hire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/HireBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/HireDedicatedDeveloper</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/HireMarquee</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/HirePythonBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/HireSteps</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/keepInTouch</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/KeySkills</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/LetsKick</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/loader</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/locateUs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PHPAdvantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PHPChooseBraininventory</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PHPHire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/projectContactCard</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/projectLocate</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PythonAdvantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PythonHire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/PythonKeySkills</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/common/Story</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/choose</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/ethos</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/experience</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/meetCrew</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/mission</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/process</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/summary</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/company/video</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/contacts/contact</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/contacts/contactBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/contacts/whyWork</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/header/Header</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-1</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-10</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-11</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-12</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-13</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-2</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-3</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-4</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-5</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-6</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-7</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-8</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/home/HomeSection-9</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Advantage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/benefits</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/BigHeadingScroll</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/BlogArticle</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/BlogsArticles</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Carousel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/ChooseBraininventory</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/ChooseBraininventoryApp</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/ChooseBraininventoryCustom</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Clients</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/CustomAppBenefits</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/CustomBenefits</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/customer</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Engaged</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Experienced</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Faqhire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/FindUs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Footer</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Hello</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Hire</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/HireBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/HireDedicatedDeveloper</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/HireMarquee</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/HireSteps</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/keepInTouch</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/KeySkills</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/LetsKick</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/loader</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/locateUs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/projectContactCard</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/projectLocate</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/Story</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mean-stack-development/WhyMean</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/aboutusSection</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/banner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/chooseApp</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/engagementModal</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/faqs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/industries</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/mobileservices</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/pratice</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/standard</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/mobilePages/technologyStack</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/portfolio/portfolioSection</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/portfolio/timeline</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/CustomSocialNetwork</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Geolocation</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Header</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/HireBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Idea</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Network</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Projects</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/SocialNetwork</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Tailmatrix</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/Trust</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/ppc/WhyBI</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/projectCard/Card</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/projectDetailThree/ProjectBranding</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/projectHeader/Hamburger</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/projectMFM/projectDetailThree/ProjectBranding</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/Projects/sectionFour/Carousel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/solution/partner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/solution/project</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/solution/solutionBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/solution/solutionLanguage</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/solution/solutionServices</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/hireRemote</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/hiringbenifit</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/logo</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/onboardingProcess</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/ourProcess</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/staffBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/stafffaq</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/staffPratice</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/staffAugmentation/staform</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/abouttechnology</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/banner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/choose</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/ourWork</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/reasonSection</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/technologySection/uses</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/uiuxPages/banner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/uiuxPages/designTool</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/uiuxPages/magic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/uiuxPages/uiabout</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/webPages/chooseWeb</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/webPages/technologyStackWeb</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/webPages/WebAboutUs</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/webPages/webBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/webPages/webServices</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/work/cycle</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/work/languageTool</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/work/work</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/components/work/workBanner</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/lib/mongodb</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/next.config</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/about/aboutmain</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/admin/admin-custom-social-network-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/admin/user-data</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/admin/auth</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/admin/fetch_user</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/admin/panel/[slug]</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/admin/panel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/admin/register</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/blog</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/career</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/contact</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/hello</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/posts</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/api/ppcmail</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/blog</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/career</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/company</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/contact</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/custom-social-network-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-android-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-angular-js-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-chatbot-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-dedicated-remote-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-full-stack-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-ios-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-mean-stack-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-mern-stack-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-next-js-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-node-js-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-php-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-python-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-qa-analysts</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-react-js-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-react-native-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-ui-ux-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/hire-vue-js-developers</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/how-we-work</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-app-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/android-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/custom-app-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/flutter-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/ios-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/react-native-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/mobile-development/swift-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/portfolio</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/posts/[...slug]</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/bloomia</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/fatoura</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/my-fit-mantra</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/numetric</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/ocureel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/revolution-travel-crm</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/skedy</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/project/virifi</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/solution</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/thank-you</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/thankyou</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/ui-ux-services</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-app-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/angular-js-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/custom-web-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/lamp-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/mean-stack-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/mern-stack-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/node-js-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/react-js-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/pages/web-development/vue-js-development</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/postcss.config</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/AppleGaramond-Light</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/AppleGaramond</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Better-Grade</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond/AppleGaramond-Bold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond/AppleGaramond-BoldItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond/AppleGaramond-Italic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond/AppleGaramond-LightItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond/AppleGaramond</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/garamond</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/gilroy-bold-webfont</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Gilroy-Bold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Gilroy-Light</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Gilroy-Medium</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Gilroy-SemiBold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Black</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-BlackItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Bold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-BoldItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-ExtraBold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-ExtraBoldItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-ExtraLight</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-ExtraLightItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Italic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Light</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-LightItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Medium</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-MediumItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Regular</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-SemiBold</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-SemiBoldItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-Thin</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost/Jost-ThinItalic</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Jost-Medium</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Jost-Regular</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Jost-Thin</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/jost</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/License Information</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/fonts/Satoshi</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/google0f5d76b9c6c1d8b3</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/googlec59025ad92b5fc4c</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/pinterest-551ed</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/robots</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/public/vercel</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/README</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/scripts/generate-sitemap</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/scripts/googleTag</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/server/models/data</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/server/models/user</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/tailwind.config</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/boilerplate</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/mailer</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/ppc_mail</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/smartlook</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/templates</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/utils</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/utils/wordpress</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+
+	<url>
+		<loc>https://braininventory.in/</loc>
+		<lastmod>2023-08-21</lastmod>
+	</url>
+</urlset>

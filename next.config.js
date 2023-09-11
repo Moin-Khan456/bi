@@ -1,7 +1,24 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const TerserPlugin = require("terser-webpack-plugin");
+const redirectionsPage = require("./utils/redirection");
+module.exports = {
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      config.optimization.minimize = true;
+      config.optimization.minimizer = [new TerserPlugin()];
+    }
+    return config;
+  },
   swcMinify: true,
-}
-
-module.exports = nextConfig
+  reactStrictMode: true,
+  images: {
+    domains: [
+      "braininventory.s3.us-east-2.amabluezonaws.com",
+      "d1u4arv5y5eda6.cloudfront.net",
+      "braininventoryblogs.com",
+    ],
+  },
+  async redirects() {
+    const redirection = redirectionsPage();
+    return redirection;
+  },
+};

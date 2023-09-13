@@ -115,16 +115,8 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const para1 =
-    "Python is a highly versatile programming language. It can be used for web development, data analysis, scientific computing, artificial intelligence, machine learning, automation, and more. This versatility makes it suitable for a wide range of applications and industries.";
-  const para2 =
-    "Python's clean and readable syntax makes it easy to learn and understand. This not only accelerates development but also simplifies maintenance and collaboration among development teams.";
-  const para3 =
-    "Python comes with an extensive standard library that contains modules and packages for various tasks. This library reduces the need to write code from scratch and accelerates development.";
-  const para4 =
-    "Python is an open-source language with a large and active community. This means access to a wealth of resources, libraries, and third-party packages, which can significantly speed up development and reduce costs.";
-  const para5 =
-    "Python is available on various operating systems, making it cross-platform compatible.";
+  const advantages =
+    ["Python is a highly versatile programming language. It can be used for web development, data analysis, scientific computing, artificial intelligence, machine learning, automation, and more. This versatility makes it suitable for a wide range of applications and industries.", "Python's clean and readable syntax makes it easy to learn and understand. This not only accelerates development but also simplifies maintenance and collaboration among development teams.", "Python comes with an extensive standard library that contains modules and packages for various tasks. This library reduces the need to write code from scratch and accelerates development.", "Python is an open-source language with a large and active community. This means access to a wealth of resources, libraries, and third-party packages, which can significantly speed up development and reduce costs.", "Python is available on various operating systems, making it cross-platform compatible."];
 
   const chooseBI = [
     "Brain Inventory is a top-rated Python development company across India, USA, Canada, and Jordan. We have established a reputation as a reliable provider of quality software solutions to thousands of clients worldwide. Our team of Python developers possesses profound expertise and a wealth of experience in constructing applications that deliver exceptional performance and minimal latency.",
@@ -135,9 +127,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 400) {
         setPostion(true);
-      }
     });
   });
 
@@ -221,11 +211,7 @@ https://braininventory.in/web-development/php-development"
               />
               <HireMarquee title="Python Development" />
               <Advantage
-                para1={para1}
-                para2={para2}
-                para3={para3}
-                para4={para4}
-                para5={para5}
+                reasons={advantages}
               />{" "}
               <Hire
                 title="Why Brain Inventory for your Python-based project development?"

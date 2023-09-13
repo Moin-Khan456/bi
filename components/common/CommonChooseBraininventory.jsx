@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { BiCheckCircle } from "react-icons/bi"
 
 export default function ChooseBraininventory({ reasons, subhead }) {
     return (
@@ -17,9 +18,15 @@ export default function ChooseBraininventory({ reasons, subhead }) {
                         {reasons &&
                             reasons.map((ele, index) => (
                                 <div className="flex items-start" key={index}>
-                                    <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6 ">
-                                        {ele}<br /><br />
+                                    <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+                                        <div className="w-full flex">
+                                            <span>
+                                                <BiCheckCircle className={`mt-1 mr-2 text-[1rem]`} />
+                                            </span>
+                                            <p className="col-span-8">{ele}</p>
+                                        </div>
                                     </p>
+                                    <br /><br />
                                 </div>
                             ))}
                         <a href="#talk">

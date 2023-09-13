@@ -303,6 +303,11 @@ const ServicesChildren = () => {
       name: "Python Development",
       link: "/web-development/python-development",
     },
+    {
+      _id: 11,
+      name: "Wordpress Website Development",
+      link: "/web-development/wordpress-development",
+    },
   ];
   const mobileLinks = [
     {

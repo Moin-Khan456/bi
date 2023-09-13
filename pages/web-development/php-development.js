@@ -144,9 +144,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 400) {
         setPostion(true);
-      }
     });
   });
 

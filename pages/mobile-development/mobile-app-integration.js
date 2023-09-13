@@ -201,7 +201,7 @@ Development. Contact us today. "
       </Head>
       <Loader />
       <main>
-        <Header></Header>
+        <Header />
         <SectionOne
           heading="A Smarter Way to Build Customized Applications."
           title="Mobile Application"

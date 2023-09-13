@@ -17,7 +17,9 @@ const HireMarquee = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Mobile-Development/benefits")
 );
-const Experienced = dynamic(() => import("../../components/Mobile-Development/Experienced"));
+const Experienced = dynamic(() =>
+  import("../../components/Mobile-Development/Experienced")
+);
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const SectionOne = dynamic(() => import("../../components/common/HireBanner"));
 const ChooseBraininventory = dynamic(() =>
@@ -199,7 +201,7 @@ Development. Contact us today. "
       <Loader />
       <div className="">
         <div>
-          <Header></Header>
+          <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
             title="Hybrid App"

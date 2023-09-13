@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import "aos/dist/aos.css";
+import { BiCheckCircle } from "react-icons/bi"
 export default function HireBanner({
     heading,
     title,
@@ -18,14 +19,13 @@ export default function HireBanner({
         if (typeof window !== "undefined") {
             const AOS = require("aos");
             require("aos/dist/aos.css");
-
             AOS.init({
             });
         }
     });
     return (
         <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
-            <section className="grid lg:grid-cols-2 grid-cols-1 gap-x-52">
+            <section className={`grid lg:grid-cols-2 grid-cols-1 ${type?.match("hire") ? 'gap-x-24' : 'gap-x-52'}`}>
                 <section>
                     <section
                         className="ml-4 lg:ml-0"
@@ -103,8 +103,8 @@ export default function HireBanner({
                                 <ul className="list-subcription">
                                     {card &&
                                         card.map((ele, index) => (
-                                            <li key={index}>
-                                                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/right-tick.svg" layout="fill" alt="Check tick" />
+                                            <li key={index} className="flex items-center">
+                                                <BiCheckCircle className="text-2xl mb-2" />
                                                 {ele}
                                             </li>
                                         ))}
@@ -112,14 +112,14 @@ export default function HireBanner({
                             </section>
                         </section>
                     ) : (
-                        <section className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${type === "php" && "drop-shadow-image"}`} data-aos="zoom-in"
+                        <section className={` mx-14 lg:mb-0 mb-6 bg-none ${type.match('hire') ? 'max-w-[900px]' : 'max-w-[500px]'} ${type.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
                             data-aos-delay="1500">
                             <Image
                                 src={image} alt="Custom Web Development"
-                                className="rounded-2xl"
+                                className={`rounded-2xl ${type.match('hire') ? 'w-[700px]' : 'w-[100%]'}`}
                                 fetchpriority="high"
-                                width={500}
-                                height={500}
+                                width={900}
+                                height={900}
                             />
                         </section>
                     )}

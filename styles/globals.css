@@ -2342,7 +2342,7 @@ ol li {
   line-height: 3rem;
   font-size: 1.1rem;
   display: inline-flex;
-  align-items: end;
+  align-items: flex-end;
   line-height: 36px;
   margin-bottom: 1.5rem
 }
@@ -2658,6 +2658,6 @@ a.btn-filled.btn {
 }
 
 .drop-shadow-image {
-  box-shadow: -35px -10px 500px rgb(0, 58, 175);
+  box-shadow: -35px -10px 100px rgb(0, 58, 175);
   border-radius: 1.5rem;
 }

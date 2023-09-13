@@ -199,7 +199,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why iOS App Development from Brain Inventory"
+            title="Why iOS App Development from %Brain Inventory"
             subhead="Most successful smartphone and tablet apps are developed by iOS app development companies. Developing a mobile application with the help of an iPhone app developer is one of the things that can bring your business more profits, success, and revenue growth."
             card={hireCards}
           />{" "}

@@ -189,7 +189,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why AngularJS Development from Brain Inventory"
+            title="Why AngularJS Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

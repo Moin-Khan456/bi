@@ -197,7 +197,7 @@ function ReactNativeDeveloper(props) {
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why Swift App Development from Brain Inventory"
+            title="Why Swift App Development from %Brain Inventory"
             subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
             card={hireCards}
           />{" "}

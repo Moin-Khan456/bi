@@ -196,7 +196,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why React JS Development from Brain Inventory"
+            title="Why React JS Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

@@ -204,7 +204,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why LAMP Application Development from Brain Inventory"
+            title="Why LAMP Application Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

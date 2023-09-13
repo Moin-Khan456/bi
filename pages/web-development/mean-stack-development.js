@@ -187,7 +187,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why MEAN Stack Development from Brain inventory"
+            title="Why MEAN Stack Development from %Brain inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

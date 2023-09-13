@@ -195,7 +195,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why MERN Stack Development from Brain inventory"
+            title="Why MERN Stack Development from %Brain inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

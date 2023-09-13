@@ -190,7 +190,7 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why Vue.Js Development from Brain inventory"
+            title="Why Vue.Js Development from %Brain inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

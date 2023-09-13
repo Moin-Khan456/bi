@@ -188,7 +188,7 @@ Development. Contact us today. "
           </div>
           <Benefits type="Node.Js" subhead="" benefitsList={benefitsList} />
           <Hire
-            title="Why Node.Js Development from Brain inventory"
+            title="Why Node.Js Development from %Brain inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

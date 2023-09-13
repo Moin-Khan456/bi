@@ -25,7 +25,7 @@ export default function HireBanner({
     });
     return (
         <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
-            <section className={`grid lg:grid-cols-2 grid-cols-1 ${type?.match("hire") ? 'gap-x-24' : 'gap-x-52'}`}>
+            <section className={`grid lg:grid-cols-2 grid-cols-1 ${type==="hire" ? 'gap-x-24' : 'gap-x-52'}`}>
                 <section>
                     <section
                         className="ml-4 lg:ml-0"
@@ -112,11 +112,11 @@ export default function HireBanner({
                             </section>
                         </section>
                     ) : (
-                        <section className={` mx-14 lg:mb-0 mb-6 bg-none ${type?.match('hire') ? 'max-w-[900px]' : 'max-w-[500px]'} ${type.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
+                        <section className={` mx-14 lg:mb-0 mb-6 bg-none ${type==='hire' ? 'max-w-[900px]' : 'max-w-[500px]'} ${type.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
                             data-aos-delay="1500">
                             <Image
                                 src={image} alt="Custom Web Development"
-                                className={`rounded-2xl ${type?.match('hire') ? 'w-[700px]' : 'w-[100%]'}`}
+                                className={`rounded-2xl ${type==='hire' ? 'w-[700px]' : 'w-[100%]'}`}
                                 fetchpriority="high"
                                 width={900}
                                 height={900}

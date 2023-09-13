@@ -210,6 +210,7 @@ Development. Contact us today. "
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+2.png"
             alt="A Smarter Way to Build Customized Applications."
+            type="app"
           />
           <Customer />
           {position && (

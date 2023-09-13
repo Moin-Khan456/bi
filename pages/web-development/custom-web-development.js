@@ -181,6 +181,7 @@ Development. Contact us today. "
           content={content}
           btn="Contact Us!"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
+          type="web"
         />
         <section className="container">
           <Customer />

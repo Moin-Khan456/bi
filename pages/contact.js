@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
@@ -14,6 +15,16 @@ const Loader = dynamic(() => import("../components/common/loader.js"));
 function Contact() {
   return (
     <>
+      <Script
+        id="1"
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MWMG4P2');`,
+        }}
+      />
       <Head>
         <title>
           Contact Brain Inventory to Kickstart Your Digital Journey Today
@@ -72,15 +83,6 @@ Contact us now."
         <meta property="twitter:creator" content=" BrainInventory " />
         <meta property="twitter:site" content="BrainInventory" />
         <meta property="twitter:card" content="summary_large_image" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MWMG4P2');`,
-          }}
-        ></script>
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
       <Loader />

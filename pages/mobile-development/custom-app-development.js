@@ -177,6 +177,7 @@ Development | Custom Mobile App Development Company"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
             alt="Custom App Development Services, Custom App Development"
+            type="app"
           />
           <Customer />
           <CustomWeb
@@ -188,7 +189,7 @@ Development | Custom Mobile App Development Company"
           <HireMarquee title="Custom Mobile App" />
           <CustomAppBenefits type="Mobile App" subhead={benefitSubHead} />
           <Hire
-            title="Why Custom Web Development from Brain inventory"
+            title="Why Custom Web Development from %Brain inventory"
             card={hireCards}
             subhead={hireSub}
           />

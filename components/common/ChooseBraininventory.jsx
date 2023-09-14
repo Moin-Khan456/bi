@@ -1,43 +1,90 @@
+import Image from "next/image";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
-
-export default function ChooseBraininventory({ reasons }) {
+export default function ChooseBraininventory({ reasons, subhead }) {
   return (
-    <main className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 container">
-      <section className="container padding-left-all-section-1">
-        <section className="container">
-          <section>
+    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+      <div className="container padding-left-all-section-1">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+          <div>
             <h1 className="Gilroy-Bold text-4xl leading-[3rem]">
-              Why Choose Brain inventory for Your{" "}
-              <span className="text-[#7600EB]">Next Assignment</span>
+              Why Choose Brain inventory for Your Next{" "}
+              <span className="text-[#7600EB]">Assignment</span>
             </h1>
-            <section className="grid grid-cols-1 lg:grid-cols-3 w-full">
-              {reasons &&
-                reasons.map((ele, index) => (
-                  <section className="m-2 hover:scale-[1.05] duration-150 ease-in-out " key={index}>
-                    <p className="Gilroy-Light bg-customer text-sm leading-6 opacity-60 p-8 h-full">
-                      {ele}
-                    </p>
-                  </section>
-                ))}
-            </section>
+            <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+              {subhead}
+            </p>
+            {reasons &&
+              reasons.map((ele, index) => (
+                <div className="flex items-start" key={index}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 35 35"
+                    className="relative top-[-8px] h-20 mr-2 max-w-[2rem] min-w-[1.5rem]"
+                  >
+                    <g
+                      id="Group_6114"
+                      data-name="Group 6114"
+                      transform="translate(-1 -1)"
+                    >
+                      <path
+                        id="Path_16511"
+                        data-name="Path 16511"
+                        d="M7,15.1l4.95,4.95L23.5,8.5"
+                        transform="translate(3.25 4.225)"
+                        fill="none"
+                        stroke="#fff"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                      <path
+                        id="Path_16512"
+                        data-name="Path 16512"
+                        d="M18.5,35A16.5,16.5,0,1,0,2,18.5,16.5,16.5,0,0,0,18.5,35Z"
+                        fill="none"
+                        stroke="#fff"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                      />
+                    </g>
+                  </svg>
+                  <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6 ">
+                    {ele}
+                  </p>
+                </div>
+              ))}
             <a href="#talk">
-              <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 pr-12 ml-12 lg:ml-0">
-                <button
-                  className="flex flex-col justify-center Gilroy">
-                  <span className="text-xs font-thin text-slate-400 pb-1">
-                    Got a project in mind?
-                  </span>
-                  <span className="flex items-center justify-between w-full">
-                    Get a Quote! <BsArrowRight />
-                  </span>
-                </button>
-              </section>
+              <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-4">
+                Get a Quote
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18.018"
+                  height="17.535"
+                  viewBox="0 0 18.018 17.535"
+                  className="ml-2 h-3"
+                >
+                  <path
+                    id="Path_16513"
+                    data-name="Path 16513"
+                    d="M13.25,21V6m0,0,7,7.2m-7-7.2-7,7.2"
+                    transform="translate(22.25 -4.482) rotate(90)"
+                    fill="none"
+                    stroke="#fff"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.5"
+                  />
+                </svg>
+              </button>
             </a>
-          </section>
-        </section>
-      </section>
-    </main>
+          </div>
+          <div>
+            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/choose-b1.png" alt="" width={700} height={700} />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

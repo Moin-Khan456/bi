@@ -112,11 +112,11 @@ export default function HireBanner({
                             </section>
                         </section>
                     ) : (
-                        <section className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${type.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
+                        <section className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${type?.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
                             data-aos-delay="1500">
                             <Image
                                 src={image} alt="Custom Web Development"
-                                className={`rounded-2xl ${type==='hire' ? 'w-[700px]' : 'w-[100%]'}`}
+                                className={`rounded-2xl ${type === 'hire' ? 'w-[700px]' : 'w-[100%]'}`}
                                 fetchpriority="high"
                                 width={900}
                                 height={900}

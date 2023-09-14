@@ -182,7 +182,7 @@ Development. Contact us today. "
           href="https://braininventory.in/mobile-development/react-native-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="project-bg">
         <Header />
         <section className="pt-32">

@@ -172,7 +172,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/custom-web-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative second-component">
         <Header />
         <SectionOne

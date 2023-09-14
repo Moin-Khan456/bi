@@ -172,7 +172,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/react-js-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="project-bg">
         <Header />
         <div className="pt-32">

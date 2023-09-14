@@ -156,7 +156,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -210,7 +210,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-android-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <>
           <Header></Header>

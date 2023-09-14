@@ -24,7 +24,6 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
 
-
 function HireAangularJsDeveloper(props) {
   const content =
     "Our MERN stack developers are highly experienced and skilled in application development with MERN. They have experience in handling complex projects, utilizing modern tools designed to speed up workflow and simplify the development process.";
@@ -120,8 +119,8 @@ function HireAangularJsDeveloper(props) {
   const advantages = [
     "Hiring a MERN stack developer can provide cost savings compared to hiring developers with expertise in proprietary technologies. MERN stack developers can provide expertise across the entire technology stack, allowing for more efficient development and better integration between front-end and back-end technologies. It can provide customized solutions that meet your specific needs and objectives.",
     "A MERN stack developer can leverage these modules to develop applications more efficiently, allowing you to launch your product to market faster. It can help design and develop applications that are scalable and flexible, even as your business needs evolve over time. It can create applications that can be accessed on both web and mobile devices, allowing you to reach a wider audience and improve your business's overall reach.",
-    "The MERN Stack is a set of technologies designed to enable teams to deliver high-quality, maintainable, and scalable applications in the cloud. It is based on modern JavaScript practices and comprises."
-  ]
+    "The MERN Stack is a set of technologies designed to enable teams to deliver high-quality, maintainable, and scalable applications in the cloud. It is based on modern JavaScript practices and comprises.",
+  ];
 
   const keySkillsBreif =
     "Hire MERN stack programmers from us, you get a complete platform to solve your business problems. We will take care of your web application, tailored for your business, that will help you overcome the gaps in your workflow or increase your revenue by 10x. We aim to provide practical and innovative projects, which manage to create maximum value for our clients. We don't just deliver a simple web solution — we also empower our clients to turn their businesses into API-powered digital platforms.";
@@ -145,7 +144,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -203,7 +202,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-mern-stack-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <div>
           <Header></Header>

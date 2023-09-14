@@ -123,13 +123,12 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const advantages =
-    [
-        "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!",
-        "A good and experienced NodeJS developer has a strong foundation of knowledge of various tools and libraries.",
-        "Here at Brain Inventory, we're dedicated to delivering excellent Node JS development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.",
-        "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Node JS app developers utilize industry-leading technology that offers fast and reliable results."
-    ]
+  const advantages = [
+    "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!",
+    "A good and experienced NodeJS developer has a strong foundation of knowledge of various tools and libraries.",
+    "Here at Brain Inventory, we're dedicated to delivering excellent Node JS development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.",
+    "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Node JS app developers utilize industry-leading technology that offers fast and reliable results.",
+  ];
 
   const keySkillsBreif =
     "Brain Inventory is an experienced NodeJS development company that works on a wide range of projects and has experience working with the most widely used frameworks. Below are some of the tools and libraries that NodeJS developers at BrainInventory practice based on real-life projects & projects they have built. Spark Core: This tool is essentially a combination of nodes, SQL databases, and JavaScript. Let’s have a look at some reasons to hire our Node JS developers for your project:";
@@ -153,7 +152,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -209,7 +208,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-node-js-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="relative">
         <section>
           <Header></Header>
@@ -231,10 +230,7 @@ Development. Contact us today. "
                 subhead2={subhead2}
                 card={experienceCards}
               />
-              <Advantage
-                title="Node JS Developers"
-                advantages={advantages}
-              />
+              <Advantage title="Node JS Developers" advantages={advantages} />
               <HireMarquee title="Node.JS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire

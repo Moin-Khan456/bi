@@ -171,7 +171,7 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/swift-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="project-bg">
         <Header />
         <div className="pt-32">

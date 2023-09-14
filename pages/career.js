@@ -82,7 +82,7 @@ projects!"
         <meta property="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://braininventory.in/career" />
       </Head>
-      {/* <Loader /> */}
+      {/* {/*<Loader />*/} */}
       <div className="relative second-component">
         <Header />
         <section className="container">

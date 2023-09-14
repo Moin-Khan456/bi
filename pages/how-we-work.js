@@ -93,7 +93,7 @@ https://braininventory.in/"
         ></script>
         <link rel="canonical" href="https://braininventory.in/how-we-work" />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main>
         <Header />
         <section className="relative second-component container">

@@ -169,7 +169,7 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/flutter-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="project-bg">
         <Header />
         <section className="pt-32">

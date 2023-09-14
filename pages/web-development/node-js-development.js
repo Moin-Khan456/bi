@@ -168,7 +168,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/node-js-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="project-bg ">
         <Header />
         <div className="pt-32">

@@ -171,7 +171,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/mern-stack-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative project-bg overflow-x-hidden">
         <Header />
         <div className="mt-32">

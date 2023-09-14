@@ -165,7 +165,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/angular-js-developmemt"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative project-bg">
         <Header />
         <div className="pt-32">

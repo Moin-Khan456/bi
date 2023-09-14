@@ -125,8 +125,8 @@ function HireAangularJsDeveloper(props) {
     "Next.js is a robust framework that provides server-side rendering, which can significantly improve the performance of web applications. A Next.js developer can help optimize your application's performance by using server-side rendering and other techniques.",
     "It can also provide built-in SEO optimization features, such as automatic generation of meta-tags and optimized server-side rendering. A Next.js developer can help ensure that your application is optimized for search engines and is easily discoverable by users.",
     "Provides a fast and efficient development experience, thanks to its built-in features, and simplified setup. A Next.js developer can leverage these features to develop applications faster and more efficiently, reducing development time and cost.",
-    "Next.js is highly scalable and can easily handle large volumes of traffic and data. A Next.js developer can help ensure that your application is designed to scale effectively and can handle growth as your business grows. Contact us to hire our professional developer!"
-]
+    "Next.js is highly scalable and can easily handle large volumes of traffic and data. A Next.js developer can help ensure that your application is designed to scale effectively and can handle growth as your business grows. Contact us to hire our professional developer!",
+  ];
 
   const keySkillsBreif =
     "Brain Inventory has extensive experience in Next. js-based projects and know how to use them in an effective manner. As our best Next.js developer, they provide custom Next.js apps with the flexibility of WordPress while delivering a high level of performance and usability. We are a team of Web-developers and designers that have specialized in the development of modern, fast & user-friendly Next. js-based applications. We offer services like quality code, feature-rich, and secure client websites, clean, and modular coding, seamless integration with Mobile Apps, eCommerce integrations on the go & much more.";
@@ -147,7 +147,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -202,7 +202,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-next-js-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <div>
           <Header></Header>

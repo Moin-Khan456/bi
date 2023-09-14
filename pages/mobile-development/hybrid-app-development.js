@@ -198,7 +198,7 @@ Development. Contact us today. "
           href=" https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="">
         <div>
           <Header />

@@ -224,7 +224,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-angular-js-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="relative">
         <section>
           <Header />

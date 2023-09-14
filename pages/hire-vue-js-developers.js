@@ -124,8 +124,8 @@ function HireAangularJsDeveloper(props) {
   const advantages = [
     "Hiring a Vue.js developer can provide expertise in building interactive, responsive, and intuitive user interfaces, resulting in a better overall user experience.",
     "Vue.js developer can help speed up the development process and reduce development costs compared to other, more complex frameworks. It can provide customized solutions that meet your specific needs and objectives.Vue.js developer can help design and develop applications that are scalable and flexible, even as your business needs evolve over time. It can provide access to this community and help ensure that your application remains up-to-date with the latest best practices and security updates.",
-    "Vue.js is a versatile technology that can be used for a wide range of web applications, including single-page applications, progressive web applications, and even desktop applications. It can provide customized solutions that meet your specific needs and objectives. Vue.js developer can provide access to this community and help ensure that your application remains up-to-date."
-  ]
+    "Vue.js is a versatile technology that can be used for a wide range of web applications, including single-page applications, progressive web applications, and even desktop applications. It can provide customized solutions that meet your specific needs and objectives. Vue.js developer can provide access to this community and help ensure that your application remains up-to-date.",
+  ];
   const keySkillsBreif =
     "As a certified and an official Vue js development company, we have built a powerful team of developers that are actively engaged in generating new opportunities for all our current clients. Our talented developers, who have years of experience in implementing complex software solutions, will work on your project with all the zeal and commitment that you can demand from them. We help you with your Vue.js app development needs. Our dedicated team of Vue.js developers will design and develop a custom solution that suits your unique requirements and business goals.";
   const keySkillsPoints = [
@@ -146,7 +146,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -202,7 +202,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-vue-js-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <div>
           <Header></Header>

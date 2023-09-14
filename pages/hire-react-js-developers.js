@@ -160,7 +160,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -217,7 +217,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-react-js-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <div>
           <Header></Header>

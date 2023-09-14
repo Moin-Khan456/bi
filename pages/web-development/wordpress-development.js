@@ -190,7 +190,7 @@ Developer | Python App Development Company"
           href=" https://braininventory.in/web-development/wordpress-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="">
         <section>
           <Header />

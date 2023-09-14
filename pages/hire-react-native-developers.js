@@ -131,8 +131,8 @@ function HireAangularJsDeveloper(props) {
   const advantages = [
     "React Native allows developers to create applications that can run on both iOS and Android platforms, using a single codebase. This can save time and effort, as there is no need to develop separate applications for each platform. It is built on top of React, a popular JavaScript library. This means that developers can use existing knowledge and skills to create mobile applications quickly and efficiently. React Native also has a hot-reload feature, which allows developers to see changes to the code in real time, making the development process faster and more efficient.",
     "It allows developers to create applications that have a native look and feel, providing a better user experience. This is achieved through the use of native components and APIs, which allow the application to interact directly with the underlying platform.",
-    "It can save your business money by reducing the time and effort required to develop a mobile application."
-  ]
+    "It can save your business money by reducing the time and effort required to develop a mobile application.",
+  ];
 
   const keySkillsBreif =
     "We are one of the best React Native development company in the industry. Our team of React native developers provide you with a seamless user experience and high-end features to give your app a elegant look & feel. We will design, develop, and deploy your cross-platform mobile application at the fastest pace. From brainstorming to mock-up and showcasing, our developer will make sure that you receive a flawless definition of your idea through our proprietary process that ensures simplicity, consistency, and user experience flawlessness.";
@@ -160,7 +160,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -218,7 +218,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-react-native-developers"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative">
         <>
           <Header></Header>
@@ -240,10 +240,7 @@ function HireAangularJsDeveloper(props) {
                 subhead2={subhead2}
                 card={experienceCards}
               />
-              <Advantage
-                title="React JS Developers"
-                advantages={advantages}
-              />
+              <Advantage title="React JS Developers" advantages={advantages} />
               <HireMarquee title="React Native" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire

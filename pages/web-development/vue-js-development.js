@@ -166,7 +166,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/vue-js-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="project-bg">
         <Header />
         <div className="pt-32">

@@ -199,7 +199,7 @@ Development. Contact us today. "
           href="https://braininventory.in/mobile-development/mobile-app-integration"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main>
         <Header />
         <SectionOne

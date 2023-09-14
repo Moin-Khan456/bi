@@ -83,7 +83,7 @@ worldwide."
         />
         <link rel="canonical" href="https://braininventory.in/company" />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative second-component">
         <div>
           <Header />

@@ -144,7 +144,7 @@ function HireAangularJsDeveloper(props) {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -206,7 +206,7 @@ Development. Contact us today. "
           href=" https://braininventory.in/web-development/php-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main>
         <Header />
         <SectionOne

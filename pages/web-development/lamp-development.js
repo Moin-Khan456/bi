@@ -180,7 +180,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/lamp-development"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="project-bg">
         <Header />
         <div className="pt-32">

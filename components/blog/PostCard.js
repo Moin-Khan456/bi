@@ -19,7 +19,7 @@ export default function PostCard({ post }) {
   return (
     <>
       <main className="">
-        {/* {/*<Loader />*/} */}
+        {/*<Loader />*/}
         <Link href={`/posts/${post.slug}/${post.id}`}>
           <a>
             <section

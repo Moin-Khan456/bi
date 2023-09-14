@@ -18,7 +18,6 @@ export default function PostCard({ post }) {
       <main className="">
         {/*<Loader />*/}
         <Link href={`/posts/${post.slug}/${post.id}`}>
-          <a>
             <section
               className={`lg:flex custom-class ${
                 progress ? "cursor-wait" : "cursor-pointer"
@@ -60,7 +59,6 @@ export default function PostCard({ post }) {
                 </section>
               </section>
             </section>
-          </a>
         </Link>
       </main>
     </>

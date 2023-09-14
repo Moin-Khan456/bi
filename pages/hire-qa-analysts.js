@@ -24,9 +24,6 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const OurDevelopers = dynamic(() =>
-  import("../components/Hire/OurDevelopers.jsx")
-);
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io"
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BlogArticle() {
     const [store, setStore] = useState(null);
@@ -28,7 +29,7 @@ export default function BlogArticle() {
                         <section className="flex flex-col lg:flex-row justify-center items-center ">
                             {
                                 store?.map((ele, index) => (
-                                    <a href={"https://www.braininventory.in/posts/" + ele.slug} target="_self" key={index}>
+                                    <Link href={"https://www.braininventory.in/posts/" + ele.slug} target="_self" key={index}>
                                         <section className="my-4 lg:mr-4 relative h-64" key={index}>
                                             <Image width={500} height={300}
                                                 className="h-full rounded-3xl"
@@ -38,7 +39,7 @@ export default function BlogArticle() {
                                             <section className="absolute inset-0 flex items-start justify-between flex-col p-4 ">
                                             </section>
                                         </section>
-                                    </a>
+                                    </Link>
                                 ))
                             }
                         </section>

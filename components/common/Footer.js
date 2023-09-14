@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FooterSections = [
   {
@@ -284,36 +285,6 @@ const FooterSections = [
       },
     ],
   },
-  // {
-  //   title: "Projects",
-  //   link: "/projects",
-  //   links: [
-  //     {
-  //       name: "Numetric.work",
-  //       path: "/project/numetric",
-  //     },
-  //     {
-  //       name: "bloomia.app",
-  //       path: "/project/bloomia",
-  //     },
-  //     {
-  //       name: "My Fit Mantra",
-  //       path: "/project/my-fit-mantra",
-  //     },
-  //     {
-  //       name: "Virifi.io",
-  //       path: "/project/virifi",
-  //     },
-  //     {
-  //       name: "Fatoura.work",
-  //       path: "/project/fatoura",
-  //     },
-  //     {
-  //       name: "Revolution Travel CRM",
-  //       path: "/project/revolution-travel-crm",
-  //     },
-  //   ],
-  // },
 ];
 const organizations = [
   {

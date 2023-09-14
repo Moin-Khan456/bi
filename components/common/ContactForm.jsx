@@ -27,70 +27,70 @@ const ContactForm = () => {
     };
 
     return (
-        <main className='container pl-12'>
-            <section className='grid xs:grid-rows-2 lg:grid-cols-2' id='talk'>
-                <section className="px-4 lg:px-12 lg:w-full h-fit">
-                    <h1 className='text-5xl font-bold py-8'>Have an idea? Get in touch, we’d be happy to hear from you</h1>
-                    <p>We are always looking out for new collaborations, whether you are a client who is passionate about a project or a talent who is interested in joining our team, our doors are always open.</p>
+        <main className='container lg:pl-12'>
+                <section className='grid xs:grid-rows-2 lg:grid-cols-2' id='talk'>
+                    <section className="px-4 lg:px-12 lg:w-full h-fit">
+                        <h1 className='text-5xl font-bold py-8'>Have an idea? Get in touch, we’d be happy to hear from you</h1>
+                        <p>We are always looking out for new collaborations, whether you are a client who is passionate about a project or a talent who is interested in joining our team, our doors are always open.</p>
+                    </section>
+                    <Formik
+                        initialValues={initialValues}
+                        validationSchema={validationSchema}
+                        onSubmit={handleSubmit}
+                    >
+                        <Form className='px-8 lg:my-4'>
+                            <section className='flex flex-col'>
+                                <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="fullName" name="fullName" placeholder="Full Name" />
+                                <p className='text-red-500'>
+                                    <ErrorMessage name="fullName" />
+                                </p>
+                            </section>
+
+                            <section className='flex flex-col'>
+                                <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="email" id="email" name="email" placeholder="Email Address" />
+                                <p className='text-red-500'>
+                                    <ErrorMessage name="email" />
+                                </p>
+                            </section>
+
+                            <section className='flex flex-col'>
+                                <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number" />
+                                <p className='text-red-500'>
+                                    <ErrorMessage name="contactNumber" />
+                                </p>
+                            </section>
+
+                            <section className='flex flex-col'>
+                                <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="companyName" name="companyName" placeholder="Company Name" />
+                                <p className='text-red-500'>
+                                    <ErrorMessage name="companyName" />
+                                </p>
+                            </section>
+
+                            <section className='flex flex-col'>
+                                <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px] resize-none"
+                                    as="textarea"
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Tell us, Everything!`"
+                                ></Field >
+                                <p className='text-red-500'>
+                                    <ErrorMessage name="message" />
+                                </p>
+                            </section>
+
+
+                            <section className="col-end-7 col-span-2 bg-gradient-to-r from-[#000076] to-[#7600EB] w-[80vw] lg:w-fit h-fit px-5 py-4 rounded-2xl mt-4 pr-20 lg:ml-0">
+                                <button type="submit" className="flex w-[80vw] lg:w-[420px] justify-center Gilroy">
+                                    <span className="flex items-center justify-center w-full">
+                                        Submit &nbsp; <BsArrowRight />
+                                    </span>
+                                </button>
+                            </section>
+                        </Form>
+                    </Formik>
                 </section>
-                <Formik
-                    initialValues={initialValues}
-                    validationSchema={validationSchema}
-                    onSubmit={handleSubmit}
-                >
-                    <Form className='px-8 lg:my-4'>
-                        <section className='flex flex-col'>
-                            <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="fullName" name="fullName" placeholder="Full Name" />
-                            <p className='text-red-500'>
-                                <ErrorMessage name="fullName" />
-                            </p>
-                        </section>
-
-                        <section className='flex flex-col'>
-                            <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="email" id="email" name="email" placeholder="Email Address" />
-                            <p className='text-red-500'>
-                                <ErrorMessage name="email" />
-                            </p>
-                        </section>
-
-                        <section className='flex flex-col'>
-                            <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number" />
-                            <p className='text-red-500'>
-                                <ErrorMessage name="contactNumber" />
-                            </p>
-                        </section>
-
-                        <section className='flex flex-col'>
-                            <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px]" type="text" id="companyName" name="companyName" placeholder="Company Name" />
-                            <p className='text-red-500'>
-                                <ErrorMessage name="companyName" />
-                            </p>
-                        </section>
-
-                        <section className='flex flex-col'>
-                            <Field className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 w-[80vw] lg:w-[520px] resize-none"
-                                as="textarea"
-                                id="message"
-                                name="message"
-                                rows="5"
-                                placeholder="Tell us, Everything!`"
-                            ></Field >
-                            <p className='text-red-500'>
-                                <ErrorMessage name="message" />
-                            </p>
-                        </section>
-
-
-                        <section className="col-end-7 col-span-2 bg-gradient-to-r from-[#000076] to-[#7600EB] w-[80vw] lg:w-fit h-fit px-5 py-4 rounded-2xl mt-4 pr-20 lg:ml-0">
-                            <button type="submit" className="flex w-[80vw] lg:w-[420px] justify-center Gilroy">
-                                <span className="flex items-center justify-center w-full">
-                                    Submit &nbsp; <BsArrowRight />
-                                </span>
-                            </button>
-                        </section>
-                    </Form>
-                </Formik>
-            </section>
         </main>
     );
 };

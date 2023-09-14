@@ -104,7 +104,7 @@ export default function HireBanner({
                             <Image
                                 src={image}
                                 className="w-[100%] rounded-2xl bg-transparent"
-                                fetchpriority="high"
+                                fetchPriority="high"
                                 alt=""
                                 width={500}
                                 height={500}

@@ -123,18 +123,14 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const para1 =
-    "PHP is an open-source scripting language, meaning it's freely available for use and modification. This significantly reduces development costs and makes it accessible to a wide range of developers.";
-  const para2 =
-    "PHP is platform-independent, which means it can run on various operating systems, including Windows, Linux, macOS, and more. This flexibility makes it a versatile choice for web development.";
-  const para3 =
-    "It is known for its speed and efficiency when processing server-side code. This results in faster loading times for web applications and a better user experience.";
-  const para4 =
-    "PHP has numerous built-in security features, and its community continuously works to enhance security. However, it's essential to follow best practices and maintain security vigilance in your PHP applications.";
-  const para5 =
-    "Since PHP is open-source, it reduces development costs. Additionally, hosting PHP applications tends to be more affordable than some other technologies.";
-  const para6 =
-    "PHP allows for extensive customization. Developers can tailor solutions to meet specific business needs, resulting in highly personalized web applications.";
+  const reasons = [
+    "PHP is an open-source scripting language, meaning it's freely available for use and modification. This significantly reduces development costs and makes it accessible to a wide range of developers.",
+    "PHP is platform-independent, which means it can run on various operating systems, including Windows, Linux, macOS, and more. This flexibility makes it a versatile choice for web development.",
+    "It is known for its speed and efficiency when processing server-side code. This results in faster loading times for web applications and a better user experience.",
+    "PHP has numerous built-in security features, and its community continuously works to enhance security. However, it's essential to follow best practices and maintain security vigilance in your PHP applications.",
+    "Since PHP is open-source, it reduces development costs. Additionally, hosting PHP applications tends to be more affordable than some other technologies.",
+    "PHP allows for extensive customization. Developers can tailor solutions to meet specific business needs, resulting in highly personalized web applications.",
+  ];
   const chooseBI = [
     "Brain Inventory is one of the leading offshore software development companies in India. We offer a complete software development package from designing the strategy for a client's new website to implementation, upgrade, and maintenance.",
     " Our highly qualified developers can also help clients customize and integrate existing applications or enhance their web presence. We build robust and intuitive custom PHP web applications that cater to the changing business landscape. Our team of PHP developers and designers have the expertise and vision to develop the most innovative, attractive, and robust web solutions. So that, our clients can match their future business objectives without the extra cost of future upgrading or addition of features.",
@@ -231,16 +227,9 @@ Development. Contact us today. "
               card={experienceCards}
             />
             <HireMarquee title="PHP development" />
-            <Advantage
-              para1={para1}
-              para2={para2}
-              para3={para3}
-              para4={para4}
-              para5={para5}
-              para6={para6}
-            />{" "}
+            <Advantage title="PHP Development" reasons={reasons} />{" "}
             <Hire
-              title="Why PHP Development Integration from Brain Inventory"
+              title="Why PHP Development Integration from %Brain Inventory"
               card={hireCards}
             />
             <div className="container">

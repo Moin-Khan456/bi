@@ -15,20 +15,19 @@ export default function ChooseBraininventory({ reasons, subhead }) {
                         <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
                             {subhead}
                         </p>
-                        {reasons &&
-                            reasons.map((ele, index) => (
-                                <div className="flex items-start" key={index}>
-                                    <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
-                                        <div className="w-full flex">
-                                            <span>
-                                                <BiCheckCircle className={`mt-1 mr-2 text-[1rem]`} />
-                                            </span>
-                                            <p className="col-span-8">{ele}</p>
-                                        </div>
-                                    </p>
-                                    <br /><br />
-                                </div>
-                            ))}
+                        {reasons && reasons.map((ele, index) => (
+                            <div className="flex items-start" key={index}>
+                                <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+                                    <div className="w-full flex">
+                                        <span>
+                                            <BiCheckCircle className={`mt-1 mr-2 text-[1rem]`} />
+                                        </span>
+                                        <p className="col-span-8">{ele}</p>
+                                    </div>
+                                </p>
+                                <br /><br />
+                            </div>
+                        ))}
                         <a href="#talk">
                             <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-4">
                                 Get a Quote

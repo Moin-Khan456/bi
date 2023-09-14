@@ -308,6 +308,11 @@ const ServicesChildren = () => {
       name: "Wordpress Website Development",
       link: "/web-development/wordpress-development",
     },
+    {
+      _id: 12,
+      name: "CodeIgniter Development",
+      link: "/web-development/codeigniter-development",
+    },
   ];
   const mobileLinks = [
     {

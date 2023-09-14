@@ -13,9 +13,6 @@ export default function PostCard({ post }) {
   const URLGOTO = () => {
     setProgress(true);
   };
-  const truncate = (str, n) => {
-    return str.length > 50 ? str.substring(0, 70) + "..." : str;
-  };
   return (
     <>
       <main className="">

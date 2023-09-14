@@ -117,7 +117,7 @@ export default function HireBanner({
                             <Image
                                 src={image} alt="Custom Web Development"
                                 className={`rounded-2xl ${type === 'hire' ? 'w-[700px]' : 'w-[100%]'}`}
-                                fetchpriority="high"
+                                fetchPriority="high"
                                 width={900}
                                 height={900}
                             />

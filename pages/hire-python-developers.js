@@ -9,10 +9,12 @@ const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
-const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
+const Advantage = dynamic(() => import("../components/Hire/AdvantageCards.jsx"));
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
-const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
-const Experienced = dynamic(() => import("../components/common/Hire"));
+const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
+const Experienced = dynamic(() =>
+  import("../components/Web-Development/Experienced")
+);
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 const HireBanner = dynamic(() => import("../components/common/HireBanner"));
@@ -20,6 +22,9 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
+const OurDevelopers = dynamic(() =>
+  import("../components/Hire/OurDevelopers.jsx")
+);
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -119,10 +124,9 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const advantages = [
-    "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!",
-    "A good and experienced Python developer has a strong foundation of knowledge of various tools and libraries.",
-    "Here at Brain Inventory, we're dedicated to delivering excellent Python development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.",
-    "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Python app developers utilize industry-leading technology that offers fast and reliable results.",
+    "Python is renowned for its versatility and ease of use. It can be employed across a wide range of applications, including web development, data analysis, artificial intelligence, machine learning, automation, and more. A Python developer can adapt to various project requirements, making it an ideal language for diverse tasks.",
+    "Python's concise syntax and extensive libraries allow developers to build applications quickly and efficiently. This enhances productivity and accelerates time-to-market for your projects, enabling you to stay ahead of the competition and seize business opportunities promptly.",
+    "Python has a vast and active community of developers worldwide. This means there is a wealth of open-source libraries, frameworks, and resources available, allowing Python developers to leverage existing solutions and focus on building innovative features rather than reinventing the wheel.",
   ];
   const keySkillsBreif =
     "We here at Brain Inventory pride ourselves on customer satisfaction. We believe in creating amazing apps that our users will love. Our team is ready to work with you and your team does everything in its power to give you the best product possible — be it a mobile, web, or game app! We can discuss a timeline for development & marketing packages when we begin working together. Once we're done working out the basic ideas, we start the real deal: researching, wireframing, testing, designing, developing";
@@ -135,14 +139,39 @@ function HireAangularJsDeveloper(props) {
     "Maintenance and Support",
   ];
 
-  const chooseBiSubhead =
-    "Hiring dedicated Python developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Python developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
     "At Brain Inventory, our team of Python developers is armed with the skillset and expertise to create software that meets your exact needs. We are a team of dedicated Python development professionals who have years of experience in delivering quality software solutions on time.",
     "We offer the best Python migration services in business today. As a Python specialist company, we know exactly what has changed in this programming language and how it will affect your business moving forward. With our help, your team can be more productive than ever before and focus on your high-value work: adding real value to the organization by leveraging innovative applications that accelerate development and collaboration.",
     "Quality development is our utmost priority at Brain Inventory. Our developers are constantly pushing the envelope when it comes to quality. All of our code is reviewed by another developer before being deployed to production. Automated testing is done for all major aspects of the application, unit tests for more granular components, and acceptance tests after each sprint to verify that the end-to-end use cases have been implemented.",
   ];
 
+  const ourDevelopersPromo = [
+    {
+      title: "Python Web Application Development",
+      brief:
+        "Working with our seasoned Python developers has helped numerous small business owners and individuals to create their own unique web applications. Our team of coders knows the best ways to structure and design websites. This helps during development, resulting in a more user-friendly website.",
+    },
+    {
+      title: "Custom Python App Development",
+      brief:
+        "Hiring a dedicated team of Python developers with the right skills and expertise to build and deploy custom Python applications for your business isn't easy. It takes more than just a small knowledge of coding in Python, it needs solid problem-solving skills and a knack for writing clear, concise code.",
+    },
+    {
+      title: "Back-end development",
+      brief:
+        "We offer Python back-end development services to create beautiful, robust, and scalable server-side applications. We take the high-level concept and translate it into a practical solution. Then we manage it with numerous proactive tasks with clean code and quality assurance testing to ensure the best representation of your company objectives at every step.",
+    },
+    {
+      title: "API development",
+      brief:
+        "We are IT Professionals who have a wealth of experience in Python API development. We have designed and developed small, medium, and large-size custom apps using Python. Our developers can build a reliable, scalable solution that fits your needs and budget, whether it's just for one application or an enterprise-level system.",
+    },
+    {
+      title: "Python Migration & Integration",
+      brief:
+        "Migrating your existing applications to Python has never been easier. We have a team of senior Python developers who can help you migrate your existing applications to Python or integrate Python modules into your existing codebase easily and quickly. Our Senior Python Developers have extensive experience in the development, refactoring, and testing of applications.",
+    },
+  ];
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -218,12 +247,15 @@ function HireAangularJsDeveloper(props) {
           <Customer />
           {position && (
             <>
-              {/* <Experienced
+              <Experienced
+              title="Python Development"
                 para1={subhead1}
                 para2={subhead2}
                 card={experienceCards}
-              /> */}
-              <Advantage advantages={advantages} />
+                image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
+              />
+              <OurDevelopers banners={ourDevelopersPromo} />
+              <Advantage title="Python Developer" subhead="Hiring a Python developer can provide numerous advantages for your organization, making it a valuable investment for your development projects and technical initiatives." benefitsList={advantages} />
               <HireMarquee title="Python" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire

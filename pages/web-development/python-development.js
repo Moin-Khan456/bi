@@ -215,9 +215,9 @@ https://braininventory.in/web-development/php-development"
                 card={experienceCards}
               />
               <HireMarquee title="Python Development" />
-              <Advantage reasons={advantages} />{" "}
+              <Advantage title="Python Development" reasons={advantages} />{" "}
               <Hire
-                title="Why Brain Inventory for your Python-based project development?"
+                title="Why %Brain Inventory% for your Python-based project development?"
                 card={hireCards}
               />
               <div className="container">

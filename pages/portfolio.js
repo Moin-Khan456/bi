@@ -9,7 +9,9 @@ const ProjectSectionOne = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../components/portfolio/projectSectionTwo.jsx")
 );
-const ProjectCards = dynamic(() => import("../components/portfolio/projectCard.jsx"));
+const ProjectCards = dynamic(() =>
+  import("../components/portfolio/projectCard.jsx")
+);
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const ContactForm = dynamic(() => import("../components/common/ContactForm"));
 const LocateUs = dynamic(() => import("../components/portfolio/LocateUs"));
@@ -44,13 +46,13 @@ https://braininventory.in/"
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_custom+web+development+-+preview+image.jpg"
+          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+development+-+preview+image.jpg"
         />
 
         <meta property="twitter:domain" content="https://braininventory.in/ " />
         <meta
           property="twitter:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Logobg.png"
+          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
         />
         <meta
           property="twitter:title"

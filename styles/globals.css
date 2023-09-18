@@ -2509,7 +2509,9 @@ a.btn-filled.btn {
 .transparent-text {
   font-weight: lighter;
   color: transparent;
-  -webkit-text-stroke: 2.5px #2d2d2d;
+  font-stretch: extra-expanded;
+  transform: scaleX(110%);
+  -webkit-text-stroke: 2px #2d2d2d;
 }
 
 

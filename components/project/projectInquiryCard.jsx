@@ -3,7 +3,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const FindUs = () => {
   return (
-    <main className="max-w-full flex justify-center px-8 lg:px-0">
+    <div className="max-w-full flex justify-center px-8 lg:px-0">
       <a href="#talk" className="max-w-full flex justify-center lg:px-0">
         <div className="flex flex-col lg:flex-row justify-between lg:mx-24 ">
           <div className="bg-[#1A1A1A] p-4 xs:rounded-t-3xl lg:w-80 lg:rounded-l-3xl mobileContact">
@@ -45,7 +45,8 @@ const FindUs = () => {
           </div>
         </div>
       </a>
-    </main>
+    </div>
   );
 };
+
 export default FindUs;

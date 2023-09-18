@@ -38,7 +38,7 @@ export default function HireBanner({
                         <h2 className="text-5xl lg:text-[3.5rem] Gilroy-Bold my-4 leading-[4rem] text-shadow">{title}</h2>
                         <div className="lg:ml-[-1.5rem] ml-[-1.6rem] w-auto lg:w-96 -mt-4 pr-6">
                             {developmentImage ? <Image src={developmentImage} alt={alt} width={500} height={200} className="ml-4" /> : <Image
-                                src="https://braininventory.s3.us-east-2.amazonaws.com/images/development-12.png"
+                                src="https://d1u4arv5y5eda6.cloudfront.net/images/development-12.png"
                                 fill
                                 alt={alt}
                             />}

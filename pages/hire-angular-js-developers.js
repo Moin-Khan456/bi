@@ -196,13 +196,13 @@ https://braininventory.in/"
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Angular+JS+Developers.jpg"
+          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Angular+JS+Developers.jpg"
         />
 
         <meta property="twitter:domain" content="https://braininventory.in/ " />
         <meta
           property="twitter:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Logobg.png"
+          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
         />
         <meta
           property="twitter:title"

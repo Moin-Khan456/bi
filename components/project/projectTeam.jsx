@@ -17,8 +17,8 @@ const TeamSlider = ({ teamMembers }) => {
                             <Image
                                 src={member.image}
                                 alt={member.name}
-                                width={800}
-                                height={800}
+                                width={1800}
+                                height={1800}
                                 className="w-8/12 h-auto"
                             />
                             <h3 className="text-white font-bold text-lg mt-2">

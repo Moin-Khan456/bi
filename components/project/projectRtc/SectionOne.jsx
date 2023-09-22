@@ -12,7 +12,7 @@ const Index = ({ section }) => {
           width={500}
           height={500}
           src={section.logo}
-          className="lg:w-[15%] py-4"
+          className="lg:w-[15%] py-28 lg:py-4"
           alt="Fatoura"
         />
         <h1 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">

@@ -6,7 +6,7 @@ const Index = ({ text, image }) => {
   return (
     <div>
       <PrajectBranding text={text} />
-      <div  className="container">
+      <div className="container">
         <div className="relative flex flex-col items-center py-8">
           <Image
             src={image}

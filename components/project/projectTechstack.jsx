@@ -8,7 +8,7 @@ function Card({ tech }) {
           <h2 className="text-4xl font-bold text-white text-center mb-8">
             Tech Stacks Used
           </h2>
-          <div className="grid grid-cols-4 gap-4 lg:px-48 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:px-48 py-12">
             {tech?.map((ele, index) => (
               <div className="flex flex-col flex-wrap items-center my-8" key={index}>
                 <Image src={ele.image} alt={ele.name} width={500} height={500} className="tech_img" />

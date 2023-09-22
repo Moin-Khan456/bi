@@ -21,10 +21,16 @@ const ProjectInquiry = dynamic(() =>
 const ProjectDetailCard = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-const TechStack = dynamic(() => import("../../components/project/projectTechstack.jsx"));
+const TechStack = dynamic(() =>
+  import("../../components/project/projectTechstack.jsx")
+);
 const Team = dynamic(() => import("../../components/project/projectTeam.jsx"));
-const Milestone = dynamic(() => import("../../components/project/projectMilestone.jsx"));
-const VisitProject = dynamic(() => import("../../components/project/projectVisit.jsx"));
+const Milestone = dynamic(() =>
+  import("../../components/project/projectMilestone.jsx")
+);
+const VisitProject = dynamic(() =>
+  import("../../components/project/projectVisit.jsx")
+);
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo.jsx")
 );
@@ -234,13 +240,17 @@ technology trends, news & updates and other topics about software
         <SectionThree />
         <PojectCarousel images={carouselImages} />
         <ProjectInquiry />
-        <Image
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
-          alt=""
-          width={600}
-          height={600}
-          className="rounded-3xl w-[100vw] px-[10vw] py-[5vh]"
-        />
+        <div className="flex justify-center w-full py-12">
+          <div className="container lg:px-28">
+            <Image
+              src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+              alt=""
+              className="rounded-3xl w-[100%]"
+              width={1500}
+              height={1500}
+            />
+          </div>
+        </div>
         <ProjectDetailCard challenge={challenge} solution={solution} />
       </div>
       <div className="py-10 flex justify-center">
@@ -265,7 +275,7 @@ technology trends, news & updates and other topics about software
           projectName="Numetric.work"
           projectLink="https://numetric.work/"
           mockup=""
-        /> 
+        />
         <div className="mx-4 lg:mx-24">
           <ProjectSectionTwo />
         </div>

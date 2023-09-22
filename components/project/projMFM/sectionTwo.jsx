@@ -13,14 +13,14 @@ const Index = ({ }) => {
         },
     ];
     return (
-        <div className="">
+        <div className="container">
 
             <div className="w-full relative flex justify-center">
                 <Image
                     src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Mask%20Group%20176.png"
                     alt=""
-                    width={500}
-                    height={500}
+                    width={1500}
+                    height={1500}
                     className="lg:w-[70%] mx-auto"
                 />
                 <div className="absolute top-96 inset-0 bg-gradient-to-b from-transparent to-black opacity-70 h-96 w-full" />
@@ -38,8 +38,8 @@ const Index = ({ }) => {
                 <Image
                     src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Perspective-App-Screens-Mock-Up-16.png"
                     alt=""
-                    width={500}
-                    height={500}
+                    width={1500}
+                    height={1500}
                     className="lg:w-[80%] mx-auto"
                 />
             </div>
@@ -49,8 +49,8 @@ const Index = ({ }) => {
                 <Image
                     src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Group 6448.png"
                     alt=""
-                    width={500}
-                    height={500}
+                    width={1500}
+                    height={1500}
                     className="w-full lg:w-[75%] pt-4 lg:pt-24"
                 />
             </div>

@@ -2663,3 +2663,20 @@ a.btn-filled.btn {
   box-shadow: -35px -10px 100px rgb(0, 58, 175);
   border-radius: 1.5rem;
 }
+[aria-label="Pagination"]{
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+[aria-label="Next page"]{
+  background-color: #17008d;
+  padding: 10px 15px;
+  font-weight: 900;
+  border-radius: 2rem
+}
+[aria-label="Previous page"]{
+  background-color: #17008d;
+  padding: 10px 15px;
+  font-weight: 900;
+  border-radius: 2rem
+}

@@ -10,7 +10,7 @@ const Index = () => {
           <Image
             src="https://d1u4arv5y5eda6.cloudfront.net/images/project/Image 3.png"
             alt="Image"
-            width={800} height={800}
+            width={1800} height={1800}
             className="w-[80%] h-full object-cover"
           />
           <div className="absolute top-96 inset-0 bg-gradient-to-b from-transparent to-black opacity-70 h-96 w-full"/>

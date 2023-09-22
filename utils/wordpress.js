@@ -1,5 +1,4 @@
 const axios = require("axios");
-// const BASE_URL_TEMP = "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed";
 const BASE_URL = `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100`;
 const BASE_URL2 = `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100&page=2`;
 const POST_URL = `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts/`;

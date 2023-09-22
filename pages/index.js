@@ -14,8 +14,6 @@ const HomeSectionFour = dynamic(() =>
 const HireDedicatedDeveloper = dynamic(() =>
   import("../components/common/HireDedicatedDeveloper.js")
 );
-// const HomeSectionFive = dynamic(() =>import("../components/home/HomeSection-5")); don't use
-
 const HomeSectionSix = dynamic(() =>
   import("../components/home/HomeSection-6.js")
 );
@@ -46,9 +44,7 @@ export default function Home() {
   const [position, setPostion] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 3000) {
         setPostion(true);
-      }
     });
   });
 

@@ -182,7 +182,7 @@ Development. Contact us today. "
           href="https://braininventory.in/mobile-development/react-native-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="project-bg">
         <Header />
         <section className="pt-32">
@@ -199,7 +199,7 @@ Development. Contact us today. "
             meanReasons={meanReasons}
           />
           <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-satoshi">
+            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
               React Native App Development Service
             </h1>
           </section>
@@ -211,7 +211,7 @@ Development. Contact us today. "
           {position && (
             <>
               <Hire
-                title="Why React Native App Development from Brain Inventory"
+                title="Why React Native App Development from %Brain Inventory"
                 subhead="The mobile app development services we offer can help businesses realize their business goals by increasing brand exposure, building engagement and loyalty, accelerating digital transformation journeys, leveraging data, and optimizing tactics."
                 card={hireCards}
               />{" "}

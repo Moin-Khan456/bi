@@ -9,15 +9,15 @@ const Index = ({ section }) => {
     <div className="container">
       <div className="max-w-full flex flex-col px-4 lg:px-12 ">
         <Image
-          width={500}
-          height={500}
+          width={1500}
+          height={1500}
           src={section.logo}
           className="lg:w-[15%] py-28 lg:py-4"
           alt="Fatoura"
         />
         <h1 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">
           Online{" "}
-          <Image width={100} height={100} alt=""
+          <Image width={1500} height={1500} alt=""
             src="https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group+6405.png"
             className="w-1/6"
           />

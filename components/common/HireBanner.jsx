@@ -34,7 +34,7 @@ export default function HireBanner({
                     >
                         <h1 className="text-2xl Gilroy-Bold">{heading}</h1>
                         <h2 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">{title}</h2>
-                        <section className="container lg:m-0 lg:ml-[-1rem] w-72 lg:w-96">
+                        <section className="ml-[-1rem] w-72 lg:w-96">
                             {developmentImage ? <Image
                                 src={developmentImage}
                                 width={700}

@@ -165,7 +165,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/angular-js-developmemt"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative project-bg">
         <Header />
         <div className="pt-32">
@@ -179,7 +179,7 @@ Development. Contact us today. "
           />
           <WhyMean type="AngularJs" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow leading-[5rem] lg:leading-[15rem] text-2xl lg:text-[5.5rem] font-extrabold font-satoshi">
+            <h1 className="text-head mean_stack_development_text_shadow leading-[5rem] lg:leading-[15rem] text-2xl lg:text-[5rem] font-extrabold font-Satoshi">
               Angular.JS Development Service
             </h1>
           </div>

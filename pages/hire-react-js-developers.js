@@ -217,7 +217,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-react-js-developers"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative">
         <div>
           <Header></Header>

@@ -172,7 +172,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/custom-web-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative second-component">
         <Header />
         <SectionOne
@@ -180,6 +180,7 @@ Development. Contact us today. "
           title="Custom Web"
           content={content}
           btn="Contact Us!"
+          developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
           type="web"
         />
@@ -194,7 +195,7 @@ Development. Contact us today. "
           benefitsList={benefitsList}
         />
         <Hire
-          title="Why Custom Web Development from Brain inventory"
+          title="Why Custom Web Development from %Brain inventory"
           card={hireCards}
         />
         <FindUs />

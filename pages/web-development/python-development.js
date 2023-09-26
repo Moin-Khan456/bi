@@ -189,7 +189,7 @@ https://braininventory.in/web-development/php-development"
           href=" https://braininventory.in/web-development/python-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="">
         <div>
           <Header />

@@ -198,7 +198,7 @@ Development. Contact us today. "
           href=" https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="">
         <div>
           <Header />
@@ -230,7 +230,7 @@ Development. Contact us today. "
                 benefitsList={benefitsList}
               />
               <Hire
-                title="Why Hybrid App Development from "
+                title="Why Hybrid App Development from %Brain Inventory"
                 card={hireCards}
                 subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
               />

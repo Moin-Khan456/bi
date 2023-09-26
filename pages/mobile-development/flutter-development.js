@@ -169,7 +169,7 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/flutter-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="project-bg">
         <Header />
         <section className="pt-32">
@@ -183,7 +183,7 @@ function ReactNativeDeveloper(props) {
           />
           <WhyMean type="Flutter App Development" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-satoshi">
+            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
               Flutter App Development Service
             </h1>
           </section>

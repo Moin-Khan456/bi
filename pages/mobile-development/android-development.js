@@ -181,7 +181,7 @@ Development. Contact us today. "
           href="https://braininventory.in/mobile-development/android-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="project-bg">
         <Header />
         <section className="pt-32">
@@ -195,7 +195,7 @@ Development. Contact us today. "
           />
           <WhyMean type="Android App" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-satoshi">
+            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
               Android App Development
             </h1>
           </section>
@@ -207,7 +207,7 @@ Development. Contact us today. "
           {position && (
             <>
               <Hire
-                title="Why Android App Development from Brain inventory"
+                title="Why Android App Development from %Brain inventory"
                 card={hireCards}
               />{" "}
               <ProjectInquiry />

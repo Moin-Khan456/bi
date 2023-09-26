@@ -231,7 +231,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-python-developers"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative">
         <>
           <Header></Header>

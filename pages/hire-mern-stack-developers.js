@@ -202,7 +202,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-mern-stack-developers"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative">
         <div>
           <Header></Header>

@@ -235,7 +235,7 @@ const Fatoura = () => {
         />
       </div>
       <ChallengeSection challenge={challenge} solution={solution}/>
-      <div className="py-2 flex justify-center">
+      <div className="max-h- [300px] overflow-hidden flex justify-center">
         <video
           muted
           loop

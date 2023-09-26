@@ -101,8 +101,12 @@ technology trends, news & updates and other topics about software
                 <PopularBlogs data={data} />
               </div>
               <hr />
-              <Blogs blogs={blogs} pageNumber={currentPage}/>
-              <Pagination itemsPerPage={5} totalPages={totalPages} setCurrentPage={setCurrentPage}/>
+              <Blogs blogs={blogs} pageNumber={currentPage} />
+              <Pagination
+                itemsPerPage={5}
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
+              />
             </div>
           </div>
         </div>
@@ -122,7 +126,9 @@ export async function getServerSideProps(context) {
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${2}`
   );
-  const postsRes = await fetch("https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100");
+  const postsRes = await fetch(
+    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100"
+  );
   const totalPages = postsRes.headers.get("X-WP-Total");
 
   return {
@@ -132,5 +138,6 @@ export async function getServerSideProps(context) {
       totalPages,
       currentPage: Number(2)
     },
+    revalidate: 10,
   };
 }

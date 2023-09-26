@@ -29,6 +29,18 @@
 }
 
 @font-face {
+  font-family: MonumentRegular;
+  src: url('../public/fonts/MonumentExtended-Regular.otf')
+}
+@font-face {
+  font-family: MonumentBold;
+  src: url('../public/fonts/MonumentExtended-Ultrabold.otf')
+}
+@font-face {
+  font-family: Brinattan;
+  src: url('../public/fonts/Brinattan.ttf')
+}
+@font-face {
   font-family: Jost;
   src: url('../public/fonts/Jost-Regular.ttf')
 }
@@ -138,10 +150,19 @@ body {
   background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 
+.MonumentBold {
+  font-family: MonumentBold;
+}
+.MonumentRegular {
+  font-family: MonumentRegular;
+}
+
+.Brinattan {
+  font-family: Brinattan;
+}
 .Gilroy-Bold {
   font-family: Gilroy-Bold;
 }
-
 .Gilroy-SemiBold {
   font-family: Gilroy-SemiBold;
 }
@@ -264,7 +285,10 @@ body {
 .font-Satoshi {
   font-family: Satoshi !important;
 }
-
+.up-right-arrow::before{
+  backdrop-filter: blur(12px);
+  background-color: red;
+}
 .project-bg {
   background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/project/Group 6379.png');
   background-size: 60%;
@@ -2679,4 +2703,17 @@ a.btn-filled.btn {
   padding: 10px 15px;
   font-weight: 900;
   border-radius: 2rem
+}
+
+.card-3d-left{
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+  background-color: red;
+  border-radius: 30px;
+  background: #11012A 0% 0% no-repeat padding-box;
+}
+.card-3d-right{
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+  background-color: red;
+  border-radius: 30px;
+  background: #11012A 0% 0% no-repeat padding-box;
 }

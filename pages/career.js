@@ -14,7 +14,7 @@ const InterviewProcess = dynamic(() =>
   import("../components/career/interviewProcess.js")
 );
 const Opening = dynamic(() => import("../components/career/opening.js"));
-// const Loader = dynamic(() => import("../components/common/loader"));
+const Loader = dynamic(() => import("../components/common/loader"));
 
 function Carrer(props) {
   const [loadMore, setLoadMore] = useState(false);
@@ -82,7 +82,7 @@ projects!"
         <meta property="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://braininventory.in/career" />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative second-component">
         <Header />
         <section className="container">

@@ -172,7 +172,7 @@ const Virifi = () => {
               <span className="font-bold">About</span>&nbsp; Ocureel
             </div>
             <div className="w-full py-4">
-              <p className="text-black opacity-50 font-satoshi px-2 lg:px-72 text-center text-2xl font-semibold leading-10 lg:leading-[4rem] flex justify-center">
+              <p className="text-black opacity-50 font-Satoshi px-2 lg:px-72 text-center text-2xl font-semibold leading-10 lg:leading-[4rem] flex justify-center">
                 A game-changing social video content application which went
                 viral in no time. Ocureel is a video content platform which
                 takes users on the ultimate adventure of creating real-life

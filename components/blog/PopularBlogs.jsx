@@ -24,9 +24,7 @@ const PopularBlogs = ({ data }) => {
 export default PopularBlogs;
 
 export async function getServerSideProps() {
-  const response = await axios.get(
-    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3&page=1"
-  );
+  const response = await axios.get("https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3&page=1");
   return {
     props: {
       data: response.data,

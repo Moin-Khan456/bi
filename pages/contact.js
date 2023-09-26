@@ -85,7 +85,7 @@ Contact us now."
         <meta property="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="relative second-component ">
         <Header />
         <ContactBanner />

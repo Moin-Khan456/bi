@@ -208,7 +208,7 @@ Development. Contact us today. "
           href="https://braininventory.in/hire-node-js-developers"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="relative">
         <section>
           <Header></Header>

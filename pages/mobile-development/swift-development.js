@@ -171,7 +171,7 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/swift-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="project-bg">
         <Header />
         <div className="pt-32">
@@ -186,7 +186,7 @@ function ReactNativeDeveloper(props) {
           <WhyMean type="Swift App Development" meanReasons={meanReasons} />
           <section className="container">
             <div className="flex justify-center ">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-satoshi">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
                 Swift App Development Service
               </h1>
             </div>

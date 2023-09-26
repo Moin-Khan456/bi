@@ -202,7 +202,7 @@ Development. Contact us today. "
           href=" https://braininventory.in/web-development/php-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main>
         <Header />
         <SectionOne

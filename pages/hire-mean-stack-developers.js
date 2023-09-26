@@ -207,7 +207,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-mean-stack-developers"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative">
         <div>
           <Header></Header>

@@ -165,7 +165,7 @@ Development | Custom Mobile App Development Company"
           href="https://braininventory.in/mobile-development/custom-app-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="second-component">
         <section>
           <Header />

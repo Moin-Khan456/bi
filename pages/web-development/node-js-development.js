@@ -168,7 +168,7 @@ Development. Contact us today. "
           href="https://braininventory.in/web-development/node-js-development"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="project-bg ">
         <Header />
         <div className="pt-32">
@@ -182,7 +182,7 @@ Development. Contact us today. "
           />
           <WhyMean type="Node.Js" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-satoshi">
+            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
               Node.Js Development
             </h1>
           </div>

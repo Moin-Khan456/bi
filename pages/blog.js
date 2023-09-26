@@ -138,6 +138,5 @@ export async function getServerSideProps(context) {
       totalPages,
       currentPage: Number(2)
     },
-    revalidate: 10,
   };
 }

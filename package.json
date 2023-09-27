@@ -21,6 +21,7 @@
     "bcrypt": "^5.1.0",
     "daisyui": "^2.14.2",
     "dotenv": "^16.3.1",
+    "express-fileupload": "^1.4.1",
     "formik": "^2.2.9",
     "isomorphic-unfetch": "^4.0.2",
     "jquery": "^3.6.0",

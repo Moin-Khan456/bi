@@ -162,7 +162,7 @@ Development. Contact us today. "
         <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/angular-js-developmemt"
+          href="https://braininventory.in/web-development/angular-js-development"
         />
       </Head>
       <Loader />

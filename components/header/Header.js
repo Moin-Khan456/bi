@@ -486,48 +486,13 @@ const Solution = () => {
   const solutionLinks = [
     {
       _id: 1,
-      name: "Custom Software Development",
-      link: "#",
+      name: "Social Media Marketing",
+      link: "/solution/social-media-marketing",
     },
     {
       _id: 2,
-      name: "NFT Marketplace",
-      link: "#",
-    },
-    {
-      _id: 3,
-      name: "Blockchain Solution",
-      link: "#",
-    },
-    {
-      _id: 4,
-      name: "Metaverse Application",
-      link: "#",
-    },
-    {
-      _id: 5,
-      name: "Accounting Application",
-      link: "#",
-    },
-    {
-      _id: 6,
-      name: "Sports Betting Platform",
-      link: "#",
-    },
-    {
-      _id: 7,
-      name: "Custom Fantasy Sports Solution",
-      link: "#",
-    },
-    {
-      _id: 8,
-      name: "Social Media Applications",
-      link: "#",
-    },
-    {
-      _id: 9,
-      name: "Online Learning Solutions",
-      link: "#",
+      name: "Fitness Solution Development",
+      link: "/solution/fitness",
     },
   ];
 

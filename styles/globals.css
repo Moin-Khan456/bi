@@ -29,18 +29,6 @@
 }
 
 @font-face {
-  font-family: MonumentRegular;
-  src: url('../public/fonts/MonumentExtended-Regular.otf')
-}
-@font-face {
-  font-family: MonumentBold;
-  src: url('../public/fonts/MonumentExtended-Ultrabold.otf')
-}
-@font-face {
-  font-family: Brinattan;
-  src: url('../public/fonts/Brinattan.ttf')
-}
-@font-face {
   font-family: Jost;
   src: url('../public/fonts/Jost-Regular.ttf')
 }
@@ -56,8 +44,18 @@
 }
 
 @font-face {
+  font-family: "Monument";
+  src: url("../public//fonts/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
   font-family: Gilroy-Light;
   src: url('../public/fonts/Gilroy-Light.ttf')
+}
+
+@font-face {
+  font-family: "Brinattan";
+  src: url('../public/fonts/Brinattan.ttf');
 }
 
 @font-face {
@@ -78,6 +76,10 @@
 @font-face {
   font-family: AppleGaramond;
   src: url('../public/fonts/AppleGaramond-Light.ttf');
+}
+
+.font-Brinattan {
+  font-family: "Brinattan";
 }
 
 :root {
@@ -150,25 +152,24 @@ body {
   background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 
-.MonumentBold {
-  font-family: MonumentBold;
-}
-.MonumentRegular {
-  font-family: MonumentRegular;
-}
-
-.Brinattan {
-  font-family: Brinattan;
-}
 .Gilroy-Bold {
   font-family: Gilroy-Bold;
 }
+
 .Gilroy-SemiBold {
   font-family: Gilroy-SemiBold;
 }
 
 .Gilroy-Light {
   font-family: Gilroy-Light;
+}
+
+.Brinattan{
+  font-family: Brinattan;
+}
+
+.monument, .MonumentBold {
+  font-family: Monument;
 }
 
 .better-grade {
@@ -285,10 +286,7 @@ body {
 .font-Satoshi {
   font-family: Satoshi !important;
 }
-.up-right-arrow::before{
-  backdrop-filter: blur(12px);
-  background-color: red;
-}
+
 .project-bg {
   background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/project/Group 6379.png');
   background-size: 60%;
@@ -2492,7 +2490,7 @@ a.btn-filled.btn {
   animation-duration: 1.85s;
   animation-delay: 0s;
   /* overflo  w: hidden; */
-} 
+}
 
 @keyframes showFirst {
   from {
@@ -2675,11 +2673,12 @@ a.btn-filled.btn {
 .PhoneInputCountrySelect {
   background-color: white;
 }
-  
-.drop-shadow-image{
+
+.drop-shadow-image {
   box-shadow: -35px 10px 300px rgb(0, 58, 175)
-} 
-.mean_stack_development_text_shadow{
+}
+
+.mean_stack_development_text_shadow {
   text-shadow: 0 0 20px white;
 }
 
@@ -2687,33 +2686,125 @@ a.btn-filled.btn {
   box-shadow: -35px -10px 100px rgb(0, 58, 175);
   border-radius: 1.5rem;
 }
-[aria-label="Pagination"]{
+
+[aria-label="Pagination"] {
   display: flex;
   justify-content: space-between;
   width: 800px;
 }
-[aria-label="Next page"]{
-  background-color: #17008d;
-  padding: 10px 15px;
-  font-weight: 900;
-  border-radius: 2rem
-}
-[aria-label="Previous page"]{
+
+[aria-label="Next page"] {
   background-color: #17008d;
   padding: 10px 15px;
   font-weight: 900;
   border-radius: 2rem
 }
 
-.card-3d-left{
-  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
-  background-color: red;
-  border-radius: 30px;
-  background: #11012A 0% 0% no-repeat padding-box;
+[aria-label="Previous page"] {
+  background-color: #17008d;
+  padding: 10px 15px;
+  font-weight: 900;
+  border-radius: 2rem
 }
-.card-3d-right{
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
-  background-color: red;
-  border-radius: 30px;
-  background: #11012A 0% 0% no-repeat padding-box;
+
+.solution-section-nine {
+  background: #0D0226 0% 0% no-repeat padding-box;
+  border: 2px solid #7600EB;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.border-custom {
+  border-top: 1px solid rgb(0, 58, 175);
+}
+
+.hover-effect {
+  transition: all 500ms ease-in 0s;
+}
+
+.hover-block {
+  padding-top: 3rem;
+  height: 50px;
+  visibility: hidden;
+  transition: all 200ms ease-in 0s;
+  background-color: #4601a1;
+}
+
+.hover-effect:hover .hover-block {
+  visibility: visible;
+}
+
+.hover-btn {
+  text-decoration: none;
+  font-size: 2em;
+  position: relative;
+  transition: all .4s ease;
+  border: 1px solid #4601a1;
+  text-align: left;
+
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hover-btn:before,
+.hover-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  background-color: #4601a1;
+  opacity: 0;
+  transition: all .4s ease-in;
+}
+
+.hover-btn:after {
+  bottom: 0;
+  top: inherit;
+}
+
+.hover-btn:hover:before,
+.hover-btn:hover:after {
+  height: 50%;
+  opacity: 1;
+}
+
+.hover-btn:hover {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .14)
+}
+
+.border-sectionfive {
+  border: 1px solid #ccc;
+}
+
+.bottom-border-five {
+  border-bottom: 1px solid #ccc;
+}
+
+.stroke-text-seven {
+  -webkit-transition: color .5s ease-out;
+  transition: color .5s ease;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  letter-spacing: 2px;
+  font-family: Monument;
+
+}
+
+.video-section {
+  /* height: ; */
+  position: relative;
+  margin: -40px auto;
+  /* background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+163.png');
+  background-size: cover;
+  background-position: bottom center; */
+
+}
+
+.bg-section-two {
+  background: linear-gradient(90deg, rgba(117, 0, 234, 1) 0%, rgba(4, 0, 122, 1) 100%);
+
 }

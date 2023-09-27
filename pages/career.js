@@ -96,7 +96,7 @@ projects!"
                 <MeetCrew />
                 <section className="container">
                   <Culture />
-                  <Newsletter />
+                  {/* <Newsletter /> */}
                 </section>
                 <InterviewProcess />
                 <section className="container">

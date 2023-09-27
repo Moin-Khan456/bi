@@ -33,40 +33,12 @@ const FooterSections = [
     link: "/solution",
     links: [
       {
-        name: "Custom Software Development",
-        path: "",
+        name: "Social Media Marketing",
+        path: "/solution/social-media-marketing",
       },
       {
-        name: "NFT Marketplace",
-        path: "",
-      },
-      {
-        name: "Blockchain Solution",
-        path: "",
-      },
-      {
-        name: "Metaverse Application",
-        path: "",
-      },
-      {
-        name: "Accounting Application",
-        path: "",
-      },
-      {
-        name: "Sports Betting Platform",
-        path: "",
-      },
-      {
-        name: "Custom Fantasy Sports Solution",
-        path: "",
-      },
-      {
-        name: "Social Media Applications",
-        path: "",
-      },
-      {
-        name: "Online Learning Solutions",
-        path: "",
+        name: "Fitness Solution Development",
+        path: "/solution/fitness",
       },
     ],
   },
@@ -105,6 +77,22 @@ const FooterSections = [
       {
         name: "LAMP Development",
         path: "/web-development/lamp-development",
+      },
+      {
+        name: "PHP Development",
+        path: "/web-development/php-development",
+      },
+      {
+        name: "Python Development",
+        path: "/web-development/python-development",
+      },
+      {
+        name: "Wordpress Website Development",
+        path: "/web-development/wordpress-development",
+      },
+      {
+        name: "CodeIgniter Development",
+        path: "/web-development/codeigniter-development",
       },
     ],
   },

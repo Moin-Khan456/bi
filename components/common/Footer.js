@@ -40,6 +40,10 @@ const FooterSections = [
         name: "Fitness Solution Development",
         path: "/solution/fitness",
       },
+      {
+        name: "Healthcare Solution Development",
+        path: "/solution/healthcare",
+      },
     ],
   },
   {

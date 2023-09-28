@@ -494,6 +494,11 @@ const Solution = () => {
       name: "Fitness Solution Development",
       link: "/solution/fitness",
     },
+    {
+      _id: 3,
+      name: "Healthcare Solution Development",
+      link: "/solution/healthcare",
+    },
   ];
 
   return (

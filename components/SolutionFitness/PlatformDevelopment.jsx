@@ -8,7 +8,7 @@ const PlatformDevelopment = ({cardPoints,
     <div className='container py-12 px-6'>
         <div className='text-center flex flex-col items-center'>
             <h5 className='text-md font-bold MonumentBold tracking-wide'>{subhead}</h5>
-            <h1 className='lg:text-5xl MonumentBold w-1/2 py-4'>{head}</h1>
+            <h1 className='lg:text-5xl MonumentBold w-[65%] py-4'>{head}</h1>
             <p className='font-Satoshi text-slate-500 text-sm'>{description}</p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-3  gap-4 py-12 relative'>

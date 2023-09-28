@@ -4,7 +4,7 @@ import { PiStarFourFill } from "react-icons/pi";
 
 const TiltMarquee = () => {
   return (
-    <div className="relative overflow-hidden ">
+    <div className="relative overflow-hidden top-[3rem] h-[25vh]">
       <div className="relative z-20 top-[40px] -rotate-[2deg] overflow-hidden">
         <Marquee duration={25000} reverse={false}>
           <div className="bg-[#F7D927] text-black font-bold MonumentBold">

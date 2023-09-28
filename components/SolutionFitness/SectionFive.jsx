@@ -33,7 +33,7 @@ const Index = ({
         </div>
         <div className="lg:flex block justify-between mt-8 lg:p-0 p-6">
           <div className="border-sectionfive w-full">
-            <h2 className="font-bold text-xl bottom-border-five p-4 font-Satoshi">
+            <h2 className="font-bold text-xl bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap">
               {sectionFiveTableHead[0]}
             </h2>
             <ul className="">

@@ -2808,3 +2808,12 @@ a.btn-filled.btn {
   background: linear-gradient(90deg, rgba(117, 0, 234, 1) 0%, rgba(4, 0, 122, 1) 100%);
 
 }
+
+
+@media screen and (min-width: 1680px) {
+    .seo-banner
+    {
+      height: 780px;
+      width: 800px;
+    }
+}

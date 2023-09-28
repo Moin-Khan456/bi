@@ -158,6 +158,52 @@ function ReactNativeDeveloper(props) {
     }
   ]
 
+  const setionThreeCards = [
+    {
+      head: "The Current Fitness Landscape",
+      content: "Fitness has always been significant, but recent years have seen an unprecedented surge in its digitization. With the rise of various web and mobile solutions, the fitness sector is undergoing a remarkable transformation. Here are some statistics to support this trend:",
+      points: [
+        "Global Market Value: %The fitness industry had a global market value of $100 billion in 2019.",
+        "Average Gym Membership Cost: %The average cost of a gym membership is $58 per month.", "Online Fitness Users: %There were over 90 million online fitness users in 2020."
+      ]
+    },
+    {
+      head: "The Impact of Online Platforms on Fitness Goals",
+      content: "As our world becomes increasingly digital, more people are turning to online platforms to help them achieve their fitness goals. These platforms offer a wide range of resources, from workout routines to dietary plans, providing users with the tools they need to reach their desired health and fitness level. But the question remains - just how impactful are these platforms? Let’s take a look at some statistics:",
+      tableHead: ["Static", "Source"],
+      tableContent: [["Over 75% of people use health and fitness solutions more than once a week.", "Flurry Analytics"], ["Health and fitness solutions usage grew by over 330% in just three years.", "Flurry Analytics"], ["59% of users say that they are more active due to their use of fitness solutions.", "Flurry Analytics"]]
+    }
+  ]
+
+  const title = "How do we Approach Fitness Solution Development?"
+  const approachDesc = "At Brain Inventory, we have a unique, innovative, and efficient approach towards fitness solution development that sets us apart in the digital landscape. We believe in creating fitness solutions that are tailored to the needs of our clients and their users. Our approach involves the following steps:"
+  const approachPoints = [
+    {
+      head: "Understanding the Client’s Vision",
+      content: "Our first step in fitness solution development is gaining a deep understanding of our client’s business objectives and vision for their solutions. We believe every solution should be a direct reflection of the client’s brand and goals."
+    },
+    {
+      head: "Research and Analysis",
+      content: "We conduct comprehensive market research and competitor analysis. This enables us to create a website or an app that is not just innovative, but also competitive and designed to succeed."
+    },
+    {
+      head: "Designing the User Experience",
+      content: "One of the most critical aspects of our approach is designing an intuitive and engaging user experience. We ensure the developed product is user-friendly, aesthetically pleasing, and easy-to-navigate."
+    },
+    {
+      head: "Development",
+      content: "Our development team meticulously codes the solution, ensuring it’s robust, functional, and free from glitches. We use the latest technologies and follow best practices for website or app development."
+    },
+    {
+      head: "Testing",
+      content: "We conduct rigorous testing to ensure the website or application performs optimally under all conditions. Bugs are identified and fixed to ensure a smooth user experience."
+    },
+    {
+      head: "Launch and Post-Launch Support",
+      content: "After the successful testing phase, we launch the solution on the required platforms. Post-launch, we provide continuous support and updates to keep the technology relevant and functioning flawlessly."
+    },
+  ]
+
   return (
     <>
       <Head>
@@ -180,8 +226,10 @@ function ReactNativeDeveloper(props) {
             head1="Reimagining Fitness with Innovation"
             description={sectionTwoDesc}
           />
-          <SectionThree />
-          <TiltMarquee />
+          <SectionThree title="Fitness Industry Insights" sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
+        technological advancements. Here are some captivating insights about the
+        fitness industry:" setionThreeCards={setionThreeCards} />
+          <TiltMarquee title="FITNESS SOLUTION DEVELOPMENT"/>
           <SectionFour
             title="Solutions for Fitness Solution Development"
             description={sectionFourDesc}
@@ -199,7 +247,7 @@ function ReactNativeDeveloper(props) {
           <PlatformDevelopment cardPoints={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="FITNESS PLATFORM DEVELOPMENT" description={platformDesc}/>
           <SectionNine brand="FITNESS SOLUTION DEVELOPMENT       " pageCategory="FITNESS SOLUTION DEVELOPMENT    " pageCategoryAbbr="FITNESS SOLUTION DEVELOPMENT      " slow={70000} fast={45000} src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/fitness/woman-training-with-barbell-shoulders.png"/>
           <PlatformDevelopment cardPoints={keyFeatures} subhead="KEY FEATURES OF" head="FITNESS SOLUTION DEVELOPMENT" description={keyDesc}/>
-          <Approach/>
+          <Approach title={title} desc={approachDesc} points={approachPoints}/>
           <SectionTen/>
           <FaqHire faq={faqdetails} />
               <hr />

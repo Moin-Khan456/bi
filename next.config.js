@@ -12,7 +12,7 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: [
-      "braininventory.s3.us-east-2.amabluezonaws.com",
+      "braininventory.s3.us-east-2.amazonaws.com",
       "d1u4arv5y5eda6.cloudfront.net",
       "braininventoryblogs.com",
     ],

@@ -2,21 +2,11 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 export default function HomeSectionOne({}) {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const AOS = require("aos");
-      require("aos/dist/aos.css");
-
-      AOS.init();
-    }
-  });
   return (
     <div className="h-screen min-h-[100vh] flex items-center relative pt-24 lg:pt-0">
       <div className="md:flex block items-center relative">
         <div
           className="lg:w-[55%] w-full  md:h-full"
-          data-aos="zoom-in"
-          data-aos-delay="1500"
         >
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
             <h1 className="2xl:text-2xl lg:text-xl text-lg Gilroy-Bold color-gray mt-[2rem] lg:mt-0">

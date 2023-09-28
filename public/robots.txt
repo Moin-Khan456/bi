@@ -1,3 +1,12 @@
 User-agent: *
 Disallow: /api/
+Disallow: /components/
+Disallow: /utils/
+Disallow: /about/
+Disallow: /admin/
+Disallow: /server/
+Disallow: /lib/
+Disallow: /public/
+Disallow: /scripts/
+Disallow: /lottie_animation/
 Sitemap: https://braininventory.in/sitemap.xml

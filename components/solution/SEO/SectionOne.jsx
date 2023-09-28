@@ -13,12 +13,11 @@ const Index = () => {
               loop
               autoPlay={true}
               controls={false}
-              className='h-[105vh]'
+              className='h-[105vh] m-auto'
             
               preload="metadata"
             >
              <source src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/rFdCZriM6x6btVRZViNaME7HxM~w8PxP8RCbFNOFxnsLMlURKFYtWlMRADjbWqpyPZzXao.mp4" type="video/mp4" />
-
             </video>
             <div className="container padding-left-all-section">
                     <div className='absolute top-0 m-auto pt-20'>
@@ -41,7 +40,7 @@ const Index = () => {
                                      alt=''
                                        width={800}
                                        height={800}
-                                       className=' w-[700px] h-[600px]'
+                                       className=' w-[700px] seo-banner h-[600px]'
                                      ></Image>
                                 </div>
                             

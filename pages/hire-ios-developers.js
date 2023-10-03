@@ -65,71 +65,63 @@ function HireAangularJsDeveloper(props) {
 
   const hireCards = [
     {
-      head: "Agile Procedure",
+      head: "Diligent iOS App Developers",
       content:
-        "Brain Inventory work on the Agile methodology and conduct frequent scrum events for optimizing the practices and methods and delivering the finest results. Brain Inventory follows an agile approach which allows us to be flexible, customer-centric, and agile enough to deliver a high-quality solution within your budget.",
+        "Our iOS application developers have worked on complex-tech projects and delivered desired results. They possess the diligence to upscale your iOS app development to a higher level, leading them to take the task of creating high-end apps, which have a faultless design, and user-friendly interface, and above all else – they work flawlessly!",
     },
     {
-      head: "Customer Satisfaction",
+      head: "Development Experience",
       content:
-        "With the advancement in technology and the latest frameworks, we can build end-to-end solutions for you. We understand that you need a robust system that is scalable, secure, and cost-effective. We work on the latest technologies and frameworks to deliver you user-friendly, scalable, secure, and new business solutions as per your need.",
-    },
-    {
-      head: "Dedicated Teams",
-      content:
-        "Owing to our intrinsic passion for developing cutting-edge iPhone apps, we have a dedicated team of iPhone app developers who are well-versed in delivering high-end business solutions on various frameworks and technologies. The strategies and solutions we have implemented have brought us accolades as well as industry recognition.",
-    },
-    {
-      head: "Competitive Pricing",
-      content:
-        "As our business has grown, we've been able to improve our rates and pricing to make sure we are able to stay competitive in a very challenging industry. Brain Inventory is able to offer a combination of cost-effective rates with amazing quality work no matter what your budget may be.",
+        "We have a team of iOS app developers having the technical experience and acumen to develop stunning and robust iOS app solutions. Our iOS app developers ensure that they tailor the solution to meet your business requirements with utmost care. We also keep your end users in mind while designing the user interface.",
     },
     {
       head: "Flexible Engagement Models",
       content:
-        "Our commitment to helping our clients achieve their business goals requires us to offer flexibility and customization. While we have a number of specific templates in place to handle certain engagement models, we are always willing to help you select the model that is most suitable for your company's needs.",
+        "We're known for our flexible approach when it comes to hiring. We allow our clients to choose from various engagement and hiring models rather than pushing them to work within very rigid and strict parameters. We're also known for our flexible approach in everything we do such as promotions, compensation, and project management.",
+    },
+    {
+      head: "Cost-effective Solution",
+      content:
+        "At Brain Inventory, we have the ability to serve your needs. Our team is comprised of highly skilled professionals who are optimized to deliver quality services at a reasonable price. We offer services in many industries and will always strive to accommodate our client's needs in every way possible.",
+    },
+    {
+      head: "No Additional Costs",
+      content:
+        "We have a stringent and well-planned project schedule that ensures considering all expenditures to be incurred right from the start, and hence, there are no additional expenses. It suits the requirements of both small-scale and large organizations, which can avail of high-quality materials and products at a reasonable cost.",
     },
   ];
 
   const faqdetails = [
     {
       id: "1",
-      title: "Do I own the ownership and the code of my application?",
+      title: "Do you sign an NDA? Is my app idea secure with you?",
       description:
-        "We are a leading iOS app development company and we hand over the source code and ownership of the application to you once it is successfully deployed on the App Store. When signing any contract, we openly discuss with our clients about the source code ownership and project handover. You can rest assured that we will deliver a high-quality, highly integrated, and maintainable application that exceeds your expectations.",
+        "Yes, we provide complete documentation and details on the resources used for the solution we create for your company. This is because we have to protect our client's intellectual property. After all, we are not just creating a working app that looks good; we're creating an entire platform that users can use over months, years, and hopefully decades. It's important that you have no doubt about the reliability of what you're getting from our iOS developers.",
     },
     {
       id: "2",
-      title: "Which tools and technologies do you use?",
+      title: "How much experience do your iOS app developers carry?",
       description:
-        "XCode is one of the most powerful tools for iOS development. It has a lot of features like a database, debugger, and an amazing interface that make it easy to work with Swift, Objective-C, and Java.",
+        "We have a diverse pool of developers with different levels of experience and skill sets. With the help of our rigorous screening method, we handpick developers who fulfill our requirements for excellence only when they have successfully passed all the screening levels. Based on your project specifications and developers’ talents and experience, we deploy them to your team. We work on a paid basis, but we also offer full-time employment as part of our services",
     },
     {
       id: "3",
-      title:
-        "What are the factors to consider while deciding iOS app development company?",
+      title:"How much does it cost to hire an iOS developer?",
       description:
-        "Choosing the right company to work with for your iOS app is an important decision. There are many factors to consider when choosing a development team including their past projects, whether they have a reputation for quality code, proactive customer support, etc.",
+        "The cost to hire an iOS Developer depends on the development platform and the complexity of the design. There is no one size fits all solution, but you can get a rough estimate of what it would cost if you work with a freelancer or a company that works as a team.",
     },
     {
       id: "4",
-      title: "How much does it cost to develop an iOS app?",
+      title: "Will I get post-mobile app development support?",
       description:
-        "There is no fixed cost for developing an iPhone app. The cost of developing a startup or a small business app depends on several factors, including performance, functionality, use of visual effects, development time, team strength, and so on. It depends on your requirements and the type of your business.",
-    },
-    {
-      id: "5",
-      title:
-        "Does the iOS application you are creating support the latest version of iPhone?",
-      description:
-        "Yes, iOS is the most current version of the iPhone. Our offshore iPhone app development team has released a number of apps for iOS which have been downloaded thousands of times by users all over the world.",
-    },
+        "Yes, we do. We offer a fully managed (SaaS) mobile application development platform that allows you to concentrate on your core business functions and realize the full potential of your mobile application. We have a flexible bucket model that allows you to hire our mobile app developers to provide dedicated app support and maintenance services when required.",
+    }
   ];
 
   const advantages = [
-    "Apple is famous for its high-quality and innovative products.  Then it means you want to know more about mobile app development. The iPhone is the most popular smartphone series in the world. Many developers now use this platform for their own fancy apps. Besides being considered a great way to make money, iPhone applications are known for being high-quality and revenue-generating. IOS has won the hearts of millions of users worldwide. iPhone apps have a higher return on investment (ROI) than Android apps.",
-    "Intrusion into a business’s sensitive enterprise data lodged in apps is a big risk with Android apps. On the other hand, when you compare the iPhone vs Android on the basis of security, it seems no better than a toss-up — if that.",
-    "iPhone apps delight users with an excellent user experience supported fully by the inherent capabilities of Apple’s iOS.",
+    "An experienced iOS developer has in-depth knowledge of the iOS platform and is skilled in using various tools and technologies to build high-quality iOS apps. They have the necessary expertise to develop custom solutions that meet your unique business requirements.",
+    "Hiring an iOS developer can save you time and money in the long run. They can help you avoid costly mistakes and ensure that your app is developed efficiently and effectively. With a professional developer, you can expect to have your project completed on time and within budget.",
+    "iOS developers can create customized solutions that are tailored to your specific needs. They can work with you to understand your business requirements and design an app that meets your goals and objectives. This can help you achieve a competitive advantage and stand out in your industry. iOS developers provide ongoing support for your app after it has been launched. ",
   ];
 
   const keySkillsBreif =
@@ -145,12 +137,9 @@ function HireAangularJsDeveloper(props) {
     "Performance Management",
   ];
 
-  const chooseBiSubhead =
-    "Brain Inventory's best India iOS app developers have successfully built top-ranking iOS apps for different apple app store categories such as Business, Healthcare, Entertainment, Lifestyle, Technology, Travel & more. This is due to our unique approach in the development of their apps which provides a comprehensive set of services for the clients ranging from design through to deployment.";
   const chooseBI = [
-    "Our team of dedicated professionals is experienced in building engaging and hassle-free user interfaces. We have expertise in customizing our frontend development services into hybrid frameworks i.e Android and iPhone applications using our own proprietary frameworks called android_native_app ecosystem.",
-    "At Brain Inventory, we're passionate about delivering top-quality iOS apps for your business. And with our long experience in the app-development industry, we're able to deliver a package that's tailored to meet your specific needs. Our designers are up-to-date with the latest technologies, so they know how to make the most of the tools available.",
-    "That's why we use the best technology possible in your iOS apps, such as universal graphic styles and real-time 3D rendering, so you can create stunning user interfaces.",
+    "Our best iPhone app developers have huge experience building the best iPhone apps. We have a proven record of success in delivering top-ranking iOS/iPad applications. Our remote iPhone app developers build robust, secure, business-centric, high-performance, and interactive apps to take your app idea to the next level. We have the right iOS developers. We offer top-class developers who are highly skilled and extremely motivated. We believe in delivering results and will go above and beyond to ensure that we not only meet but exceed your expectations. However, you need to hire the correct group of developers working together for optimal results on your features or app development project.",
+    "At Brain Inventory, we pride ourselves in providing advanced solutions for your business to make sure it not only survives but thrives. Our iOS application developers work with the client to create highly reliable, versatile, and secure application software. We have worked on complex-tech projects and delivered the desired results. We possess the diligence to upscale your iOS app from a simple creation to a top-rated application that your users need. \"Delivering awesome products with ease\".",
   ];
 
   const whyios1 =
@@ -233,13 +222,13 @@ function HireAangularJsDeveloper(props) {
           <Customer />
           {position && (
             <>
-              <WhyIOS
-                title="iOS App development"
+              {/* <WhyIOS
+                title=" Hire an Experienced iOS Developer to Upscale Your Development"
                 image="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
                 para1={subhead1}
                 para2={subhead2}
                 type={"iOS App"}
-              />
+              /> */}
               <Experienced
                 title="Hire Experienced iOS Developers to Upscale Your Development"
                 subhead1={subhead1}
@@ -250,12 +239,11 @@ function HireAangularJsDeveloper(props) {
               <HireMarquee title="iOS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why IOS App Development from %Brain inventory"
+                title="Why Hire iOS Developer from %Brain Inventory"
                 card={hireCards}
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
               />
               <Hello />
               <Engaged />

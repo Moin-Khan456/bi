@@ -96,7 +96,6 @@ technology trends, news & updates and other topics about software
 
             <div>
               <h3 className="text-xl Gilroy-Bold mt-8 mb-3">Popular Blogs</h3>
-
               <div className="pb-2 grid lg:grid-cols-3 grid-cols-1 gap-4">
                 <PopularBlogs data={data} />
               </div>

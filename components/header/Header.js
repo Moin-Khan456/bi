@@ -159,7 +159,6 @@ const Header = () => {
         >
           <div className="grid lg:grid-cols-4 grid-cols-1 px-8 py-16 lg:px-28 w-full">
             <div className="">
-              <Link href="/how-we-work">
                 <h3
                   onClick={() => {
                     setBlockName("companyChildren");
@@ -168,7 +167,6 @@ const Header = () => {
                 >
                   About us
                 </h3>
-              </Link>
               <h3
                 onClick={() => {
                   setBlockName("ServicesChildren");

@@ -147,28 +147,28 @@ function HireAangularJsDeveloper(props) {
 
   const ourDevelopersPromo = [
     {
-      title: "Python Web Application Development",
-      brief:
+      head: "Python Web Application Development",
+      content:
         "Working with our seasoned Python developers has helped numerous small business owners and individuals to create their own unique web applications. Our team of coders knows the best ways to structure and design websites. This helps during development, resulting in a more user-friendly website.",
     },
     {
-      title: "Custom Python App Development",
-      brief:
+      head: "Custom Python App Development",
+      content:
         "Hiring a dedicated team of Python developers with the right skills and expertise to build and deploy custom Python applications for your business isn't easy. It takes more than just a small knowledge of coding in Python, it needs solid problem-solving skills and a knack for writing clear, concise code.",
     },
     {
-      title: "Back-end development",
-      brief:
+      head: "Back-end development",
+      content:
         "We offer Python back-end development services to create beautiful, robust, and scalable server-side applications. We take the high-level concept and translate it into a practical solution. Then we manage it with numerous proactive tasks with clean code and quality assurance testing to ensure the best representation of your company objectives at every step.",
     },
     {
-      title: "API development",
-      brief:
+      head: "API development",
+      content:
         "We are IT Professionals who have a wealth of experience in Python API development. We have designed and developed small, medium, and large-size custom apps using Python. Our developers can build a reliable, scalable solution that fits your needs and budget, whether it's just for one application or an enterprise-level system.",
     },
     {
-      title: "Python Migration & Integration",
-      brief:
+      head: "Python Migration & Integration",
+      content:
         "Migrating your existing applications to Python has never been easier. We have a team of senior Python developers who can help you migrate your existing applications to Python or integrate Python modules into your existing codebase easily and quickly. Our Senior Python Developers have extensive experience in the development, refactoring, and testing of applications.",
     },
   ];
@@ -248,18 +248,18 @@ function HireAangularJsDeveloper(props) {
           {position && (
             <>
               <Experienced
-              title="Python Development"
+              title="Python Developer"
                 para1={subhead1}
                 para2={subhead2}
-                card={experienceCards}
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
+                card={ourDevelopersPromo}
+                image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
               />
-              <OurDevelopers banners={ourDevelopersPromo} />
+              {/* <OurDevelopers banners={ourDevelopersPromo} /> */}
               <Advantage title="Python Developer" subhead="Hiring a Python developer can provide numerous advantages for your organization, making it a valuable investment for your development projects and technical initiatives." benefitsList={advantages} />
               <HireMarquee title="Python" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why %Brain inventory% for your Python-based project development?"
+                title="Why hire Python developers from %Brain inventory"
                 card={hireCards}
               />
               <Hello />

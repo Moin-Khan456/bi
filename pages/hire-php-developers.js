@@ -114,10 +114,11 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const benefitsList = [
-    "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!",
-    " A good and experienced Python developer has a strong foundation of knowledge of various tools and libraries.",
-    "Here at Brain Inventory, we're dedicated to delivering excellent Python development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.",
-    "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Python app developers utilize industry-leading technology that offers fast and reliable results.",
+    "PHP developers specialize in the language, frameworks, and tools associated with PHP development. Their in-depth knowledge allows them to create efficient, secure, and high-performance applications.",
+    "PHP is an open-source language, and there are plenty of skilled PHP developers available, making it a cost-effective choice compared to some other languages. This affordability can be particularly beneficial for startups and small businesses.",
+    "PHP is a widely used language, so you have a vast talent pool to choose from when hiring developers. You can find professionals with a range of experience levels and specializations to suit your project's requirements.",
+    "PHP developers are experienced in creating web applications quickly. The extensive range of PHP frameworks like Laravel, Symfony, and CodeIgniter accelerates development by providing pre-built components and best practices.",
+    "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs."
   ];
   const keySkillsBreif =
     "Brain Inventory is a leading provider of web application development solutions and software development services. We are an offshore PHP web and mobile development company that serves businesses in more than 20 countries across the globe. We hire only the most experienced and certified developers with expertise in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Whether you need to launch a mobile platform or completely revamp your current website, we're here with you all the way through.";
@@ -244,7 +245,7 @@ Development. Contact us today. "
                 para2={subhead2}
                 card={experienceCards}
               />
-              <OurDevelopers banners={ourDevelopersPromo}/>
+              {/* <OurDevelopers banners={ourDevelopersPromo}/> */}
               <HireMarquee title="PHP Developers" />
               <Advantage
                 title="PHP Developer"

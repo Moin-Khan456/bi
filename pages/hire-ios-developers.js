@@ -212,7 +212,7 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Transform your ideas into stunning iOS apps with our expert iOS app development services!"
-            title="Hire IOS "
+            title="Hire iOS"
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+iOS+Developers.png"
@@ -222,20 +222,13 @@ function HireAangularJsDeveloper(props) {
           <Customer />
           {position && (
             <>
-              {/* <WhyIOS
-                title=" Hire an Experienced iOS Developer to Upscale Your Development"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
-                para1={subhead1}
-                para2={subhead2}
-                type={"iOS App"}
-              /> */}
               <Experienced
                 title="Hire Experienced iOS Developers to Upscale Your Development"
                 subhead1={subhead1}
                 subhead2={subhead2}
                 card={experienceCards}
               />
-              <Advantage title="IOS Developers" advantages={advantages} />
+              <Advantage title="iOS Developers" advantages={advantages} />
               <HireMarquee title="iOS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
@@ -247,8 +240,8 @@ function HireAangularJsDeveloper(props) {
               />
               <Hello />
               <Engaged />
-              <HireSteps type="IOS" />
-              <Clients tech="IOS" />
+              <HireSteps type="iOS" />
+              <Clients tech="iOS" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

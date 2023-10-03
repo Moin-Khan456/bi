@@ -35,29 +35,29 @@ function HireAangularJsDeveloper(props) {
 
   const experienceCards = [
     {
-      head: "Node.js Consulting",
+      head: "Front End Full Stack Development",
       content:
-        "At Brain Inventory, we specialize in providing enterprise-grade Node.js consulting and development solutions that are designed to help businesses build secure and scalable applications. Our team of expert Node.js developers is skilled in leveraging the open-source, cross-platform JavaScript runtime environment to build fast and scalable web apps that meet our client's specific needs.",
+        "Full-stack developers possess a complete understanding of all aspects of web development and are proficient in backend frameworks like PHP, Python Django. Once the user interacts with your website, you need to ensure that there is a smooth transition between the front end to the back end so that end users' experience is seamless and optimized.",
     },
     {
-      head: "Node.js Development",
+      head: "Back End Full Stack Development",
       content:
-        "When it comes to Node.js development, having a team of experts can make all the difference in solving your biggest challenges. At our company, we offer a range of tailored services to help businesses achieve their goals. Our Node.js experts provide services ranging from plugins to portals, interactive apps, and custom dashboards.",
+        "Full-Stack Engineers are well-versed in back-end frameworks, languages, and Servers, however, they can do a lot more than just work on the backend. They know the importance of the front end so they understand the whole application needs to be developed so that it looks presentable, attractive as well as functional.",
     },
     {
-      head: "API Development & Integration",
+      head: "Full Stack Web Development",
       content:
-        "Node. js-based API development and integration have become increasingly vital components for organizations looking to create high-performing services and applications. This technology enables the development of RESTful APIs, which allow for seamless integration with third-party components and enhanced functionalities. Ultimately, our goal is to help our clients optimize their applications and services.",
+        "We are well known for our expertise and capability to develop innovative, cutting-edge web applications in a wide range of technology stacks including Ruby/Rails and PHP. We are equally adept at taking existing software of the enterprise and converting it to SaaS (cloud-based software). Our team is passionate about what they do.",
     },
     {
-      head: "UI/UX Development",
+      head: "MEAN Stack Developer",
       content:
-        "Our team of Node.js specialists and programmers are experts in creative UX/UI design and the development of efficient system monitoring dashboards. Our focus on UI/UX ensures that we create delightful user experiences that leave a lasting impression on the mind of users. We specialize in designing and developing web applications.",
+        "Full-Stack Development is the process of encompassing a software development process that entails the creation of both server-side and client-side applications. The MEAN stack is a group of intertwined technologies aimed at facilitating this task, our Full-Stack Web App Development Services are backed by this world-class, open-source technology.",
     },
     {
-      head: "Node.js Support and Maintenance",
+      head: "Full-stack Support and Maintenance",
       content:
-        "Growing your business and developing new products is a challenging task. That's why we offer reliable Node.js development services that help you develop, maintain and improve your applications without any hassle. Our experienced developers will work on your project for more than three years to ensure its success.",
+        "We have various packages that cater to your needs and help you get the best full-stack support and maintenance services, for a better and more productive development experience. Our full-stack developers are skillful in delivering regular upgrades and patches for the continuous enhancement of your application.",
     },
   ];
 
@@ -118,10 +118,9 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const benefitsList = [
-    "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!",
-    "A good and experienced Full Stack developer has a strong foundation of knowledge of various tools and libraries.",
-    "Here at Brain Inventory, we're dedicated to delivering excellent Full Stack development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.",
-    "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Full Stack app developers utilize industry-leading technology that offers fast and reliable results.",
+    "Full Stack Developers possess expertise in both front-end and back-end technologies, making them versatile team members. They can handle multiple aspects of the development process, reducing the need for hiring separate specialists for front-end and back-end tasks. This efficiency leads to faster development cycles and cost-effectiveness.",
+    "Full Stack Developers can take ownership of the entire development lifecycle, from conceptualization to deployment. They understand how different components of a web application interact, enabling seamless integration and smoother collaboration with other team members.",
+    "With a broad skill set, Full Stack Developers are adept at identifying and solving issues that may arise across the entire stack. Their ability to troubleshoot problems in both front-end and back-end ensures faster resolution of technical challenges.",
   ];
 
   const keySkillsBreif =
@@ -231,11 +230,13 @@ Development. Contact us today. "
               <HireMarquee title="Full Stack" />
               <Advantage
                 title="Full Stack Developer"
+                subhead="Hiring a Full Stack Developer offers numerous advantages that can greatly benefit your development projects and overall business objectives. Here are some key advantages of bringing a Full Stack Developer into your team:"
                 benefitsList={benefitsList}
               />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire Developers from %Brain inventory"
+                title="Why Hire Full Stack Developers from %Brain inventory"
+                subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
                 card={hireCards}
               />
               <Hello />

@@ -37,7 +37,6 @@ const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
-import "aos/dist/aos.css"; // You can also use <link> for styles// ..
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

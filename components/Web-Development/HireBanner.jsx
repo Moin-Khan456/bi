@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { useForm } from "react-hook-form";
-import "aos/dist/aos.css";
 import Image from "next/image";
 export default function HireBanner({
     heading,
@@ -16,24 +15,12 @@ export default function HireBanner({
     type
 }) {
     const [toggle, setToggle] = useState(false);
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            const AOS = require("aos");
-            require("aos/dist/aos.css");
-
-            AOS.init({
-                /* AOS initialization options */
-            });
-        }
-    });
     return (
         <div className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 ">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 <div className="">
                     <div
                         className="ml-4 lg:ml-0"
-                        data-aos="zoom-in"
-                        data-aos-delay="1500"
                     >
                         <h2 className="text-5xl lg:text-[3.5rem] Gilroy-Bold my-4 leading-[4rem] text-shadow">{title}</h2>
                         <div className="lg:ml-[-1.5rem] ml-[-1.6rem] w-auto lg:w-96 -mt-4 pr-6">
@@ -51,8 +38,6 @@ export default function HireBanner({
 
                     <div
                         className="bg-banner-sot rounded-xl p-6 lg:-mt-8 lg:m-0 m-6 w-[80%]"
-                        data-aos="zoom-in"
-                        data-aos-delay="1500"
                     >
                         <p className="Gilroy-Light text-md tracking-[0.05em] opacity-70">{content}</p>
                     </div>
@@ -78,8 +63,6 @@ export default function HireBanner({
                     {card ? (
                         <div
                             className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6"
-                            data-aos="zoom-in"
-                            data-aos-delay="1500"
                         >
                             <div className="started-subcription">
                                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
@@ -99,8 +82,7 @@ export default function HireBanner({
                             </div>
                         </div>
                     ) : (
-                        <div className={`lg:ml-36 mx-14 lg:mb-0 mb-6 drop-shadow-hire-banner-image bg-transparent ${type === "php" && "drop-shadow-image"}`} data-aos="zoom-in"
-                            data-aos-delay="1500">
+                        <div className={`lg:ml-36 mx-14 lg:mb-0 mb-6 drop-shadow-hire-banner-image bg-transparent ${type === "php" && "drop-shadow-image"}`}>
                             <Image
                                 src={image}
                                 className="w-[100%] rounded-2xl bg-transparent"

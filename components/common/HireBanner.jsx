@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
-import "aos/dist/aos.css";
 import { BiCheckCircle } from "react-icons/bi"
 export default function HireBanner({
     heading,
@@ -15,22 +14,12 @@ export default function HireBanner({
     developmentImage,
     type
 }) {
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            const AOS = require("aos");
-            require("aos/dist/aos.css");
-            AOS.init({
-            });
-        }
-    });
     return (
         <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
             <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
                 <section>
                     <section
                         className="ml-4 lg:ml-0"
-                        data-aos="zoom-in"
-                        data-aos-delay="1500"
                     >
                         <h1 className="text-2xl Gilroy-Bold">{heading}</h1>
                         <h2 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">{title}</h2>
@@ -54,8 +43,6 @@ export default function HireBanner({
 
                     <section
                         className="bg-banner-sot rounded-xl p-6 mt-16 mb-10 lg:m-0 m-6"
-                        data-aos="zoom-in"
-                        data-aos-delay="1500"
                     >
                         <p className="Gilroy-Light text-lg">{content}</p>
                     </section>
@@ -80,8 +67,6 @@ export default function HireBanner({
                     {card ? (
                         <section
                             className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6"
-                            data-aos="zoom-in"
-                            data-aos-delay="1500"
                         >
                             <section className="started-subcription">
                                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
@@ -112,8 +97,7 @@ export default function HireBanner({
                             </section>
                         </section>
                     ) : (
-                        <section className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${type?.match("php") && "drop-shadow-image"}`} data-aos="zoom-in"
-                            data-aos-delay="1500">
+                        <section className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${type?.match("php") && "drop-shadow-image"}`}>
                             <Image
                                 src={image} alt="Custom Web Development"
                                 className={`rounded-2xl ${type === 'hire' ? 'w-[700px]' : 'w-[100%]'}`}

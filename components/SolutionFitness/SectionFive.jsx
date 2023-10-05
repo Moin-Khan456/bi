@@ -6,6 +6,7 @@ const Index = ({
   description,
   sectionFiveTableHead,
   sectionFiveTable,
+  tableFooter
 }) => {
   return (
     <div className="rounded-md my-8 py-10 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] bg-no-repeat bg-center">
@@ -72,6 +73,7 @@ const Index = ({
             </ul>
           </div>
         </div>
+          <div className="pt-4">{tableFooter}</div>
       </div>
     </div>
   );

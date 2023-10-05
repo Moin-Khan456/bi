@@ -44,6 +44,10 @@
 }
 
 @font-face {
+  font-family: "MonumentRegular";
+  src: url("../public//fonts/MonumentExtended-Regular.otf");
+}
+@font-face {
   font-family: "Monument";
   src: url("../public//fonts/MonumentExtended-Ultrabold.otf");
 }
@@ -168,6 +172,9 @@ body {
   font-family: Brinattan;
 }
 
+.MonumentRegular {
+  font-family: MonumentRegular;
+}
 .monument, .MonumentBold {
   font-family: Monument;
 }
@@ -836,6 +843,19 @@ html {
   .padding-left-all-section-1 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  .card-3d-left{
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(25deg) translateZ(0px);
+    max-height: 800px;
+    /* -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004); */
+  }
+  .card-3d-right{
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(-25deg) translateZ(0px);
+    max-height: 800px;
   }
 }
 
@@ -1663,6 +1683,11 @@ ul.list-modal {
   }
 }
 
+@media screen and (max-width:1350px) {
+  .seo-banner{
+    margin-top: 2rem;
+  }
+}
 @media screen and (max-width:1440px) {
   .post-container {
     display: flex;
@@ -2817,3 +2842,15 @@ a.btn-filled.btn {
       width: 800px;
     }
 }
+
+.slick-slide {
+  margin: 0 1rem;
+}
+.slick-center .slide {
+  transform: scale(2);
+}
+.slick-prev:before, .slick-next:before {
+  position: absolute;
+  bottom: 150px;
+  transform: scale(2);
+} 

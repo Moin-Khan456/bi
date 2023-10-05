@@ -7,14 +7,14 @@ const Index = ({ brand, pageCategory, pageCategoryAbbr, src, slow, fast }) => {
     <div className="rounded-md my-8 py-10 lg:space-x-6 relative ">
       <div className=" py-32 lg:pb-[22rem]">
         <Marquee duration={fast} reverse={true} className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl text-5xl flex">
+          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {[1, 2].map((_, index) => (
               <h2 key={index}>{pageCategory}&nbsp;</h2>
             ))}
           </div>
         </Marquee>
         <Marquee duration={slow} className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl text-5xl flex">
+          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {" "}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
               <h1 key={index}>{pageCategoryAbbr}&nbsp;</h1>
@@ -22,14 +22,14 @@ const Index = ({ brand, pageCategory, pageCategoryAbbr, src, slow, fast }) => {
           </div>
         </Marquee>
         <Marquee duration={fast} reverse className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl text-5xl flex">
+          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {[1, 2, 3, 4, 5].map((_, index) => (
               <h3 key={index}>{brand}&nbsp;&nbsp;</h3>
             ))}
           </div>
         </Marquee>
         <Marquee duration={slow} className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl text-5xl flex">
+          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {" "}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
               <h1 key={index}>{pageCategoryAbbr}&nbsp;</h1>
@@ -37,7 +37,7 @@ const Index = ({ brand, pageCategory, pageCategoryAbbr, src, slow, fast }) => {
           </div>
         </Marquee>
         <Marquee duration={fast} reverse className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl text-5xl flex">
+          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {[1, 2].map((_, index) => (
               <h2 key={index}>{pageCategory}&nbsp;</h2>
             ))}

@@ -179,7 +179,7 @@ function SocialMedia(props) {
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
             title="TOP SOCIAL NETWORKING"
-            head1="Brain Inventory: Fostering connections, catalyzing change."
+            head1="Fostering connections, catalyzing change."
             description="At Brain Inventory, we’re more than just a social networking app development company. We’re a forward-thinking technology partner with a mission to empower industries with innovative social solutions. Our expertise lies in delivering tailor-made apps that foster communication and engagement, transforming the way industries connect and collaborate. With Brain Inventory, you gain a strategic partner who understands the nuances of the social industry and can help you harness the power of digital technologies to drive growth and change."
           />
           <SectionThree />

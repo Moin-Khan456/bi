@@ -7,9 +7,10 @@ import Marquee from './Marquee';
 
 const Index = () => {
     return (
-        <div className="rounded-md my-8 ">
+        <div className="rounded-md my-8 overflow-hidden">
             <div className='video-section'>
-             <video
+            <div className='h-screen' />
+             {/* <video
               loop
               autoPlay={true}
               controls={false}
@@ -18,7 +19,7 @@ const Index = () => {
               preload="metadata"
             >
              <source src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/rFdCZriM6x6btVRZViNaME7HxM~w8PxP8RCbFNOFxnsLMlURKFYtWlMRADjbWqpyPZzXao.mp4" type="video/mp4" />
-            </video>
+            </video> */}
             <div className="container padding-left-all-section">
                     <div className='absolute top-0 m-auto pt-20'>
                          <div className='p-6 lg-p-0'>

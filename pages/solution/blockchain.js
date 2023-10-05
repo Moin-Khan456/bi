@@ -12,7 +12,7 @@ const Approach = dynamic(() =>
   import("../../components/SolutionFitness/Approach.jsx")
 );
 const SectionOne = dynamic(() =>
-  import("../../components/SolutionHealthcare/SectionOne.jsx")
+  import("../../components/SolutionBlockchain/SectionOne.jsx")
 );
 const SectionTwo = dynamic(() =>
   import("../../components/SolutionFitness/SectionTwo.jsx")
@@ -62,8 +62,7 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "3",
-      title:
-        "How do you ensure the quality of the solutions developed?",
+      title: "How do you ensure the quality of the solutions developed?",
       description:
         "We follow a structured development process and carry out extensive testing to ensure the highest quality of our solutions.",
     },
@@ -83,35 +82,40 @@ function ReactNativeDeveloper(props) {
   const solutionList = [
     {
       id: "1",
-      text: "Medical Data Analytics Solution Development",
-      desc: "Our groundbreaking Medical Data Analytics Solution is a game-changer in the realm of healthcare solutions. Meticulously designed by our proficient technical team, this application adeptly extracts insights from diverse medical data sources. By unraveling meaningful patterns and trends, it equips healthcare providers with the tools to stay at the forefront of medical advancements.",
+      text: "Decentralized Finance (DeFi) Solution Development",
+      desc: "Our innovative Decentralized Finance (DeFi) Solution upends the world of blockchain solutions. Our adept technical team has skillfully crafted this application to make the most out of blockchain's decentralized feature and redefine financial services. It empowers users with the ability to carry out peer-to-peer transactions, use smart contracts, and engage in yield farming, thereby giving users the reins to their finances.",
     },
     {
       id: "2",
-      text: "Custom Telemedicine Solution Development",
-      desc: "Crafting tailor-made telemedicine solutions has never been more seamless. Our team of experts harnesses cutting-edge technologies to deliver technologies that seamlessly connect patients and healthcare professionals. Prioritizing intuitive user experience, secure communication, and robust data protection, we ensure your telemedicine solution sets new industry standards.",
+      text: "Blockchain-Based Supply Chain Solution",
+      desc: "Amid the growing demand for transparent supply chains, our Blockchain-Based Supply Chain Solution expertise shines. We specialize in creating blockchain-powered platforms that enable end-to-end tracking of products, ensuring authenticity, and reducing fraud. Our team ensures every solution is customized to fit industry-specific supply chain complexities, facilitating a streamlined and secure logistics experience.",
     },
     {
       id: "3",
-      text: "Health and Fitness Tracking Solution Development",
-      desc: "Amid the growing interest in health and fitness, our Health and Fitness Tracking Solution development expertise shines. We specialize in creating user-centric, engaging, and secure web and mobile apps that enable users to monitor their health, fitness routines, and wellness journeys effectively. Our team ensures every technology is personalized to suit user preferences, facilitating a seamless health management experience.",
+      text: "Custom NFT Marketplace Development",
+      desc: "Crafting tailor-made Non-Fungible Token (NFT) Marketplaces has never been more seamless. Our team of experts harnesses cutting-edge blockchain technologies to deliver platforms that facilitate the buying, selling, and trading of digital assets. Prioritizing intuitive user experience, secure transactions, and unique artwork showcases, we ensure your NFT marketplace sets new industry standards.",
     },
     {
       id: "4",
-      text: "Patient Engagement Solution Development",
-      desc: "In the age of patient-centered care, Patient Engagement Solutions are pivotal. Our developers create feature-rich, user-friendly technologies that facilitate effective patient-provider communication. These solutions are customized to meet the unique requirements of patients, enabling them to actively participate in their healthcare journey and make informed decisions.",
+      text: "Blockchain-Based Identity Management Solution",
+      desc: "Address the challenges of identity verification with our Blockchain-Based Identity Management Solution. This platform offers features such as self-sovereign identity, secure data storage, and instant verification, ensuring individuals have control over their personal data while establishing trust within digital ecosystems. Our solution enhances security and privacy for users and businesses alike.",
     },
     {
       id: "5",
-      text: "Elderly Care and Medication Management Solution Development",
-      desc: "Address the unique needs of the elderly population with our Elderly Care and Medication Management Solution. This technology offers features such as medication reminders, health tracking, emergency assistance, and communication tools, ensuring that seniors receive the support they need while enabling caregivers to monitor their well-being remotely. Our solution enhances the quality of life for seniors and streamlines caregiving processes.",
+      text: "Smart Contract Development and Audit",
+      desc: "In the age of automation and trustless execution, Smart Contracts play a pivotal role. Our adept developers create secure and efficient Smart Contracts tailored to meet your specific requirements. These contracts are thoroughly audited to ensure accuracy, security, and compliance, enabling you to execute transactions and agreements seamlessly on the blockchain.",
+    },
+    {
+      id: "6",
+      text: "Develop Your Own Blockchain Solution",
+      desc: "Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough. Ready to embark on this exciting journey? Click the button below to get started.",
     },
   ];
   const sectionFourDesc =
     "Join us on an exciting journey of blockchain solution development. We're pioneers, creating innovative solutions that set new benchmarks in the blockchain industry. With us, you do more than just build a platform – you create an enthralling user experience that triggers unmatched engagement right from the start.";
 
   const sectionTwoDesc =
-    "Brain Inventory stands as a pillar of excellence in the healthcare solution development industry. Our proficiency is evident in our cutting-edge solutions, marked by innovative features and robust design, tailored to revolutionize the healthcare sector.";
+    "At Brain Inventory, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge solution development services by creating secure, efficient, and customized blockchain platforms.";
 
   const sectionFiveDesc =
     "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let’s take a closer look at some of these contenders:";
@@ -178,31 +182,32 @@ function ReactNativeDeveloper(props) {
 
   const setionThreeCards = [
     {
-      head: "The Current Landscape of Healthcare",
-      content:
-        "Healthcare has always been a pivotal sector, but recent years have seen an unprecedented surge in its digitization. With the advent of web and mobile applications, the healthcare sector is witnessing a transformative phase. Here are some stats to back up this trend:",
       points: [
-        "According to Statista, the global health market is projected to reach nearly USD 100 billion by the year 2021",
-        "The use of health and fitness apps has grown by 330% in the last three years",
+        "According to market research, the global blockchain market size is projected to exceed USD 469.49 billion by the year 2030.",
+        "Blockchain in the global supply chain market is expected to reach $9.85 billion by 2025.",
+        "A survey indicates that 87 of enterprises across various sectors have already adopted blockchain or are in the process of doing so.",
       ],
     },
     {
-      head: "Impact of Online Platforms in Healthcare",
+      head: "Impact of Online Platforms in Blockchain",
       content:
-        "The digital age has given rise to a new era in healthcare—an era where patients have access to health information at their fingertips, and healthcare providers have the technology to provide faster and more efficient care. The role of online platforms in healthcare is becoming increasingly crucial, as these statistics demonstrate:",
-      tableHead: ["Static", "Source"],
+        "Online platforms integrally magnify the practice and influence of blockchain technology. Here are three impactful statistics to shed light on this transformation:",
+      tableHead: ["Online Platform", "Impact in Blockchain", "Source"],
       tableContent: [
         [
-          "77% of patients use search engines before booking appointments",
-          "Think With Google",
+          "Ethereum",
+          "Ethereum has enabled the creation and execution of smart contracts, transforming blockchain from a simple transaction ledger to a full-fledged computing platform.",
+          "ethereum.org",
         ],
         [
-          "Almost 60% of all healthcare visits were done virtually in 2020",
-          "Forrester",
+          "OpenSea",
+          "OpenSea, as an NFT marketplace built on blockchain technology, has catalyzed the digital art and collectibles sector, creating new blockchain utility and value.",
+          "opensea.io",
         ],
         [
-          "80% of internet users have searched for a health-related topic online",
-          "Pew Internet & American Life Project",
+          "Coinbase",
+          "Coinbase has significantly enhanced blockchain accessibility and public understanding by providing a secure and user-friendly platform for cryptocurrency transactions.",
+          "coinbase.com",
         ],
       ],
     },
@@ -259,18 +264,20 @@ function ReactNativeDeveloper(props) {
       <main className="">
         <Header />
         <section className="">
-          <SectionOne />
-          <SectionTwo
-            className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP HEALTHCARE SOLUTION"
-            head1="Empowering Healthcare Digitally."
-            description={sectionTwoDesc}
-          />
+          <div className="bg-no-repeat bg-left brightness-[1.35] bg-[url('/background-image2.png')]">
+            <SectionOne />
+            <SectionTwo
+              className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
+              title="TOP BLOCKCHAIN SOLUTION"
+              head1="Shaping the Future of Blockchain"
+              description={sectionTwoDesc}
+            />
+          </div>
           {position && (
             <>
               <SectionThree
-                title="Healthcare Industry Insights"
-                sectionDesc="Healthcare is a rapidly evolving industry that is increasingly becoming technologically driven. Here are some captivating insights about the healthcare industry:"
+                title="Blockchain Industry Insights"
+                sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
                 setionThreeCards={setionThreeCards}
               />
               <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />

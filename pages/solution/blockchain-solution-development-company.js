@@ -270,7 +270,7 @@ function ReactNativeDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/blockchain"
+          href="https://braininventory.in/solution/blockchain-solution-development-company"
         />
       </Head>
       <Loader />

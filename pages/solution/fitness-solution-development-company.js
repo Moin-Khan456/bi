@@ -224,7 +224,7 @@ function ReactNativeDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/fitness"
+          href="https://braininventory.in/solution/fitness-solution-development-company"
         />
       </Head>
       <Loader />

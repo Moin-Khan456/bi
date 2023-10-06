@@ -315,7 +315,7 @@ function ReactNativeDeveloper(props) {
         </title>
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/accounting"
+          href="https://braininventory.in/solution/accounting-solution-development-company"
         />
       </Head>
       <Loader />

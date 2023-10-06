@@ -270,7 +270,7 @@ function ReactNativeDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/healthcare"
+          href="https://braininventory.in/solution/healthcare-solution-development-company"
         />
       </Head>
       <Loader />

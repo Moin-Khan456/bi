@@ -180,7 +180,7 @@ function SocialMedia(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/social-media-marketing"
+          href="https://braininventory.in/solution/social-networking-development-company"
         />
       </Head>
       {/*<Loader />*/}

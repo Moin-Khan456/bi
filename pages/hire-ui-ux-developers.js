@@ -171,11 +171,8 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+UIUX+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" UI/UX Developer | UI/UX Development Company"
@@ -186,9 +183,9 @@ function HireAangularJsDeveloper(props) {
   the leading UI/UX Designing Company with a top-notch 
   UI/UX Designers team having profound expertise in UI/UX Designing. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-ui-ux-developers"

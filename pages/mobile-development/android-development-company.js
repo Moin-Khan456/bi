@@ -144,41 +144,20 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Android Developers | Dedicated Android App Developers"
+          content="Android App Development Services | Android App Developers"
         />
         <meta
           property="og:description"
           content="Get professional Android App Development Services from Brain Inventory. Our Developers build high-quality and scalable android applications. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/android-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_android+development.jpg"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Android App 
-Development | Android App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/android-development"
+          href="https://braininventory.in/mobile-development/android-development-company"
         />
       </Head>
       <Loader />
@@ -207,7 +186,7 @@ Development. Contact us today. "
           {position && (
             <>
               <Hire
-                title="Why Android App Development from %Brain inventory"
+                title="Why Android App Development from %Brain Inventory"
                 card={hireCards}
               />{" "}
               <ProjectInquiry />

@@ -138,41 +138,20 @@ function ReactNativeDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire iOS Developers | Dedicated iOS Developers"
+          content="iOS App Development Services | Custom iOS App Development"
         />
         <meta
           property="og:description"
           content="Develop iOS apps with Top iOS application development company. Brain Inventory iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/ios-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6648.png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom iOS 
-Development | iOS Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/ios-development"
+          href="https://braininventory.in/mobile-development/ios-development-company"
         />
       </Head>
       <Loader />
@@ -187,14 +166,14 @@ Development. Contact us today. "
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6648.png"
             alt="iOS App Development Services, iOS.Js App Development"
           />
-          <WhyMean type="iOS App Development" meanReasons={meanReasons} />
+          <WhyMean type="iOS App" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
             <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
               iOS Development Service
             </h1>
           </section>
           <Benefits
-            type="iOS App Development"
+            type="iOS App"
             subhead="Apple is famous for its high-quality and innovative products. Then it means you want to know more about mobile app development. The iPhone is the most popular smartphone series in the world. Many developers now use this platform for their own fancy apps. Besides being considered a great way to make money, iPhone applications are known for being high-quality and revenue-generating."
             benefitsList={benefitsList}
           />
@@ -206,7 +185,6 @@ Development. Contact us today. "
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

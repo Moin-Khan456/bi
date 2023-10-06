@@ -192,27 +192,15 @@ const Numetric = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog –
-Staff Augmentation | Software | Web | App Development 
-"
+          content="Build Cloud-Based Accounting Software For Numetric.work"
         />
         <meta
           property="og:description"
           content="Brain Inventory Developed the cloud-based accounting software for Numetric.work that helps users to track business transactions and performance."
         />
         <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/blog-4.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_numetric.jpg"
         />
         <meta
           property="twitter:title"
@@ -225,9 +213,9 @@ Staff Augmentation | Software | Web | App Development "
 technology trends, news & updates and other topics about software
 & app development from Brain Inventory’s informative blogs!"
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/project/numetric"

@@ -166,6 +166,18 @@ function SocialMedia(props) {
     <>
       <Head>
         <title>Social Media Marketing Company</title>
+        {/* <meta
+          property="og:description"
+          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
+        /> */}
+        <meta
+          name="og:title"
+          content="Social Media Marketing Company"
+        />
+        <meta
+          property="og:image"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_social+media+marketing.jpg"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/solution/social-media-marketing"

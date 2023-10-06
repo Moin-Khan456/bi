@@ -1,31 +1,32 @@
-import React, { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
-import {GrFormPrevious, GrFormNext} from "react-icons/gr"
-
-// Example items, to simulate fetching from another resources.
-
-function PaginatedItems({ itemsPerPage, totalPages, setCurrentPage }) {
-  const items = Array.from({ length: totalPages }, (_, index) => index + 1);
-
-  const pageCount = Math.ceil(items.length / itemsPerPage);
-
-  const handlePageClick = (event) => {
-    window.scrollTo(0, 500);
-    setCurrentPage(event.selected+1)
+import React from 'react';
+import { Pagination } from 'antd';
+import {BsFillFastForwardFill} from "react-icons/bs"
+import {FaBackward} from "react-icons/fa"
+const App = ({totalPages, itemsPerPage, setCurrentPage}) => {
+  
+  const handlePaginationChange = (page, pageSize) => {
+    // You can access the selected page and page size here
+    setCurrentPage(page);
+    window.scrollTo(0, 550)
+    console.log(`Page changed to ${page}, Page Size: ${pageSize}`);
+    
+    // You can perform any action or update state based on the user's interaction
+    // For example, you can make an API request to fetch data for the selected page.
   };
 
   return (
-    <div className="flex justify-center px-4 py-16">
-      <ReactPaginate
-        breakLabel="...."
-        nextLabel=">"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
-        pageCount={pageCount}
-        previousLabel="<"
-        renderOnZeroPageCount={null}
+    <div className='flex justify-center py-12'>
+      <Pagination
+        defaultCurrent={1}
+        total={totalPages}
+        pageSize={itemsPerPage}
+        className="text-white"
+        showSizeChanger={false}
+        nextIcon={<BsFillFastForwardFill className='text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full'/>}
+        prevIcon={<FaBackward className='text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full'/>}
+        onChange={handlePaginationChange} // Attach the event handler
       />
     </div>
   );
-}
-export default PaginatedItems;
+};
+export default App;

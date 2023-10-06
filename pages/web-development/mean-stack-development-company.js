@@ -80,8 +80,7 @@ function HireAangularJsDeveloper(props) {
         "The cost of hiring Meant Stack developers is budget-friendly in our company. However, the cost of development depends upon the complexity of the project, requirements, features, and project specifications. The rate of development depends upon the skillset of individual developers for each level.",
     },
   ];
-  const chooseBiSubhead =
-    "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
+ 
   const chooseBI = [
     "Staying up to date with the latest technology and frameworks is crucial in software development.",
     "Having the right partner can make a significant difference in achieving development goals.",
@@ -125,40 +124,20 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="MEAN App Development | MEAN App Development Company"
+          content="MEAN Stack Development Services | MEAN Stack Development Company"
         />
         <meta
           property="og:description"
           content="Brain Inventory is a Top MEAN Stack Development Company that builds web and mobile apps based on MongoDB, Express.js, AngularJS, and Node.js. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/web-development/mean-stack-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content="MEAN App Development | MEAN App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/mean-stack-development"
+          href="https://braininventory.in/web-development/mean-stack-development-company"
         />
       </Head>
       <Loader />
@@ -187,13 +166,12 @@ Development. Contact us today. "
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why MEAN Stack Development from %Brain inventory"
+            title="Why MEAN Stack Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} /> {/*Done */}

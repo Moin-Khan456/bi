@@ -188,6 +188,18 @@ const Fatoura = () => {
           name="description"
           content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
         />
+        <meta
+          property="og:description"
+          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
+        />
+        <meta
+          name="og:title"
+          content="Brain Inventory Develop a Travel Planning Platform With CRM"
+        />
+        <meta
+          property="og:image"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Revolution+travel.jpg"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/project/revolution-travel-crm"

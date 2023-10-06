@@ -189,21 +189,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire a Dedicated AngularJS Developers team from Brain Inventory. We offer high-quality AngularJS development services to scale up your business. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Angular+JS+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" AngularJS 
@@ -216,9 +209,9 @@ the leading AngularJS Development Company with a top-notch
 AngularJS Developers team having profound expertise in AngularJS 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-angular-js-developers"
@@ -252,7 +245,7 @@ Development. Contact us today. "
               <HireMarquee title="Angular.JS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire Angular JS Developers from %Brain inventory"
+                title="Why Hire Angular JS Developers from %Brain Inventory"
                 card={hireCards}
               />
               <ChooseBraininventory

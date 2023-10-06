@@ -40,7 +40,7 @@ const Industries = () => {
                         </section>
                     </section>
                     <section className=''>
-                        <ul className="industries_list lg:absolute top-0 left-[30rem]">
+                        <ul className="industries_list lg:absolute top-0 lg:left-[30rem]">
                             <li data-tab="tab-1" className="hover-link current">
                                 Custom Fantasy Sports
                             </li>

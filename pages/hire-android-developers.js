@@ -185,11 +185,8 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Android+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Custom Android App 
@@ -202,9 +199,9 @@ function HireAangularJsDeveloper(props) {
   Android App Developers team having profound expertise in Android App 
   Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-android-developers"

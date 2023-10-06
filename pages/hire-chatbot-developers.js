@@ -143,8 +143,6 @@ function HireAangularJsDeveloper(props) {
     "Better Productivity",
   ];
 
-  const chooseBiSubhead =
-    "Hiring dedicated Python developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Python developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
     "Brain Inventory can be leveraged to provide a personal and engaging experience as well as create the perfect digital representation of your brand. Every chatbot is unique and built first to meet your business needs, giving you an ability to curate customer conversations rather than replying in standard chunks or using cutouts to minimize human intervention. We help you with all stages of the bot development lifecycle — from concepting to deployment, ensuring that your chatbot will become part of your online marketing strategy and generate leads and sales for your business.",
     "Using the conversational chatbot development services of Brain Inventory, you can build a human-like interaction between your business and its customers. We have the best team of experienced and talented chatbot developers who will help develop your bots to deliver better user experience without making them sound like robots.",
@@ -222,11 +220,8 @@ https://braininventory.in/hire-chatbot-developers"
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire Python 
@@ -239,9 +234,9 @@ the leading Python Development Company with a top-notch
 Python Developers team having profound expertise in Python 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-chatbot-developers"
@@ -275,7 +270,7 @@ Development. Contact us today. "
               <Advantage title="Chatbot Developer" benefitsList={reasons} />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire PHP Developers from %Brain Inventory"
+                title="Why Hire Chatbot Developers from %Brain Inventory"
                 card={hireCards}
                 subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
               />

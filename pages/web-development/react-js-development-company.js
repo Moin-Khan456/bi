@@ -130,28 +130,25 @@ function HireReactDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable & efficient web apps. Contact us today."
+          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire React Js Developers | Dedicated React Js Developers"
+          content="React JS Development Services | React JS Development Company"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable & efficient web apps. Contact us today."
+          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/react-js-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Custom React Js 
@@ -164,18 +161,18 @@ the leading Android App Development Company with a top-notch
 Android App Developers team having profound expertise in Android App 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/react-js-development"
+          href="https://braininventory.in/web-development/react-js-development-company"
         />
       </Head>
       <Loader />
       <div className="project-bg">
         <Header />
-        <div className="pt-32">
+        <div className="pt-32 container">
           <SectionOne
             heading="React JS"
             title="Top React Js"

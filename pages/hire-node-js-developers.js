@@ -142,7 +142,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Hiring dedicated NodeJS developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated NodeJS developers. Let’s look at some reasons to hire our developers:";
+    "Hire dedicated NodeJS developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated NodeJS developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
     "Do you want to handle everything on your own? Or do you want to place complete trust and faith in a dedicated team of experts, who can deliver world-class quality? [Hiring Node developers, Node.js developers, and NodeJS freelancers] can take all the headaches away from you.",
     "We have a team of elite Node.js developers to hire for your project. Our team is proficient at building data, event-driven, and non-blocking I/O-based server-side solutions that are efficient and flawless at connection management; and, thus, performance. Hire us if you want an end product/app, website, or infrastructure with ease of scalability to suit your purposes through our unique blend of skills since we specialize in building modern apps infused with the latest technologies from the ground up till the end product or from any stage of the software development lifecycle.",
@@ -173,21 +173,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Node JS programmers from Brain Inventory. We have a dedicated developers team that delivers Node.JS development services on time and on budget. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Node+JS+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire NodeJS 
@@ -200,9 +193,9 @@ the leading NodeJS Development Company with a top-notch
 NodeJS Developers team having profound expertise in NodeJS 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-node-js-developers"
@@ -234,7 +227,7 @@ Development. Contact us today. "
               <HireMarquee title="Node.JS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire Node JS Developers from %Brain inventory"
+                title="Why Hire Node JS Developers from %Brain Inventory"
                 card={hireCards}
               />
               <ChooseBraininventory

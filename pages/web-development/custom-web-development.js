@@ -122,7 +122,7 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom Website Design & Development Services – Brain Inventory
+          Custom Website Design And Development Services – Brain Inventory
         </title>
         <meta
           name="description"
@@ -131,7 +131,7 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Website Design & Development Services – Brain Inventory"
+          content="Custom Website Design And Development Services – Brain Inventory"
         />
         <meta
           property="og:description"
@@ -139,34 +139,15 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:url"
-          content=" 
-https://braininventory.in/"
+          content="https://braininventory.in/web-development/custom-web-development"
         />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+develpment+preview+image.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Web 
-Development | Custom Web Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Custom Web Development Company with a top-notch 
-Web Developers team having profound expertise in Web 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/custom-web-development"
@@ -183,6 +164,7 @@ Development. Contact us today. "
           developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
           type="web"
+          alt="custom web development solution"
         />
         <section className="container">
           <Customer />
@@ -195,7 +177,7 @@ Development. Contact us today. "
           benefitsList={benefitsList}
         />
         <Hire
-          title="Why Custom Web Development from %Brain inventory"
+          title="Why Custom Web Development from %Brain Inventory"
           card={hireCards}
         />
         <FindUs />

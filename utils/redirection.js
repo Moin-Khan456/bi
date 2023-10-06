@@ -11,8 +11,18 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-development/swift-development",
+      destination: "/mobile-development/swift-development-company",
+      permanent: true,
+    },
+    {
       source: "/react-native-development",
       destination: "/mobile-development/react-native-development",
+      permanent: true,
+    },
+    {
+      source: "/mobile-development/react-native-development",
+      destination: "/mobile-development/react-native-development-company",
       permanent: true,
     },
     {
@@ -21,13 +31,18 @@ const redirection = () => {
       permanent: true,
     },
     {
-      source: "/flutter-app-development",
-      destination: "/mobile-development/flutter-development",
+      source: "/mobile-development/ios-development",
+      destination: "/mobile-development/ios-development-company",
       permanent: true,
     },
     {
       source: "/flutter-app-development",
       destination: "/mobile-development/flutter-development",
+      permanent: true,
+    },
+    {
+      source: "/mobile-development/flutter-development",
+      destination: "/mobile-development/flutter-development-company",
       permanent: true,
     },
     {
@@ -36,7 +51,17 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-development/android-development",
+      destination: "/mobile-development/android-development-company",
+      permanent: true,
+    },
+    {
       source: "/angularjs-development",
+      destination: "/web-development/angular-js-development",
+      permanent: true,
+    },
+    {
+      source: "/web-development/angular-js-development",
       destination: "/web-development/angular-js-development",
       permanent: true,
     },
@@ -46,8 +71,18 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/lamp-development",
+      destination: "/web-development/lamp-development-company",
+      permanent: true,
+    },
+    {
       source: "/mean-development",
       destination: "/web-development/mean-stack-development",
+      permanent: true,
+    },
+    {
+      source: "/web-development/mean-stack-development",
+      destination: "/web-development/mean-stack-development-company",
       permanent: true,
     },
     {
@@ -56,8 +91,18 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/mern-stack-development",
+      destination: "/web-development/mern-stack-development-company",
+      permanent: true,
+    },
+    {
       source: "/nodejs-development",
       destination: "/web-development/node-js-development",
+      permanent: true,
+    },
+    {
+      source: "/web-development/node-js-development",
+      destination: "/web-development/node-js-development-company",
       permanent: true,
     },
     {
@@ -66,8 +111,28 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/react-js-development",
+      destination: "/web-development/react-js-development-company",
+      permanent: true,
+    },
+    {
       source: "/vue-js-development",
       destination: "/web-development/vue-js-development",
+      permanent: true,
+    },
+    {
+      source: "/web-development/vue-js-development",
+      destination: "/web-development/vue-js-development-company",
+      permanent: true,
+    },
+    {
+      source: "/web-development/codeigniter-development-service",
+      destination: "/web-development/codeigniter-development-services",
+      permanent: true,
+    },
+    {
+      source: "/web-development/codeigniter-development",
+      destination: "/web-development/codeigniter-development-services",
       permanent: true,
     },
     {

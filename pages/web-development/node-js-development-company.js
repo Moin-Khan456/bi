@@ -131,41 +131,20 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Node Developers | Dedicated Node App Developers"
+          content="Node JS Development Services | Node JS Development Company"
         />
         <meta
           property="og:description"
           content="Brain Inventory provides quality Node JS development services to build secure, scalable, user-friendly web applications. We are a top Custom Software Development firm."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/web-development/node-js-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6498.png"
-        />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Node App 
-Development | Node App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        />        
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/node-js-development"
+          href="https://braininventory.in/web-development/node-js-development-company"
         />
       </Head>
       <Loader />
@@ -182,13 +161,13 @@ Development. Contact us today. "
           />
           <WhyMean type="Node.Js" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-              Node.Js Development
+            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+              Node.Js Development Services
             </h1>
           </div>
           <Benefits type="Node.Js" subhead="" benefitsList={benefitsList} />
           <Hire
-            title="Why Node.Js Development from %Brain inventory"
+            title="Why Node.Js Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />

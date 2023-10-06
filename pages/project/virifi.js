@@ -132,40 +132,33 @@ const Virifi = () => {
   return (
     <>
       <Head>
-        <title>Brain Inventory Developed Integrated Personal Trainer App</title>
+        <title>Build Private and Secure Blockchain Network for Virifi</title>
         <meta
           name="description"
-          content="Brain Inventory developed training software for My Fit Mantra that diverse the needs of trainers to achieve their fitness goals. Check out how we develop training apps."
+          content="Brain Inventory Creates a Private and Secure Blockchain Network for Virifi. This flexible platform can scale to the needs of any organization. Read more about it."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog –
-  Staff Augmentation | Software | Web | App Development 
-  "
+          content="Build Private and Secure Blockchain Network for Virifi"
         />
         <meta
           property="og:description"
-          content="Brain Inventory developed training software for My Fit Mantra that diverse the needs of trainers to achieve their fitness goals. Check out how we develop training apps."
+          content="Brain Inventory Creates a Private and Secure Blockchain Network for Virifi. This flexible platform can scale to the needs of any organization. Read more about it."
         />
         <meta
           property="og:url"
-          content=" 
-  https://braininventory.in/"
+          content="https://braininventory.in/project/virifi"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/blog-4.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_virifi.jpg"
         />
         <meta
           property="twitter:title"
-          content=" Brain Inventory Blog – 
-  Staff Augmentation | Software | Web | App Development "
+          content="Build Private and Secure Blockchain Network for Virifi"
         />
         <meta
           property="twitter:description"
@@ -173,12 +166,9 @@ const Virifi = () => {
   technology trends, news & updates and other topics about software
   & app development from Brain Inventory’s informative blogs!"
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/project/my-fit-mantra"
+          href="https://braininventory.in/project/virifi"
         />
       </Head>
       <Header />

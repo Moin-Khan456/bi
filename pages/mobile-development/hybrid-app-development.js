@@ -166,36 +166,15 @@ function HireAangularJsDeveloper(props) {
         {/* Set your image URL here */}
         <meta
           property="og:url"
-          content=" 
-https://braininventory.in/hire-chatbot-developers"
+          content="https://braininventory.in/mobile-development/hybrid-development-company"
         />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Hire Python 
-Developer | Python App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Python Development Company with a top-notch 
-Python Developers team having profound expertise in Python 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href=" https://braininventory.in/mobile-development/hybrid-app-development"
+          href="https://braininventory.in/mobile-development/hybrid-development-company"
         />
       </Head>
       <Loader />

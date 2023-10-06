@@ -134,41 +134,20 @@ function ReactNativeDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Swift App Developers | Dedicated Swift App Developers"
+          content="Swift App Development Company | Swift App Development Solutions"
         />
         <meta
           property="og:description"
           content="Brain inventory Swift App Developers build high-quality feature-rich Swift iOS development with unique mobile apps that drive business values. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/swift-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6743.png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Swift App 
-  Development | Swift App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading Android App Development Company with a top-notch 
-  Android App Developers team having profound expertise in Android App 
-  Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/swift-development"
+          href="https://braininventory.in/mobile-development/swift-development-company"
         />
       </Head>
       <Loader />
@@ -204,7 +183,6 @@ function ReactNativeDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

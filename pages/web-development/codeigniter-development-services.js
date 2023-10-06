@@ -159,23 +159,20 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/codeigniter-development"
+          content="https://braininventory.in/web-development/codeigniter-development-services"
         />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
+       
         <meta
           property="twitter:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/codeigniter-development"
+          href="https://braininventory.in/web-development/codeigniter-development-services"
         />
       </Head>
       <Loader />

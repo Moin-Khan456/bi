@@ -252,12 +252,25 @@ function ReactNativeDeveloper(props) {
     <>
       <Head>
         <title>
-          Healthcare App Development Solution | Healthcare App Development
+          Blockchain App Development Solution | Blockchain App Development
           Services
         </title>
+        {/* <meta
+          property="og:description"
+          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
+        /> */}
+        <meta
+          name="og:title"
+          content="Blockchain App Development Solution | Blockchain App Development
+          Services"
+        />
+        <meta
+          property="og:image"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_blockchain.jpg"
+        />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/healthcare"
+          href="https://braininventory.in/solution/blockchain"
         />
       </Head>
       <Loader />

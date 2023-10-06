@@ -168,25 +168,9 @@ https://braininventory.in/web-development/php-development"
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Python+preview+image.png"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content="Brain Inventory | Python Development Company for Innovative Solutions"
-        />
-        <meta
-          property="twitter:description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href=" https://braininventory.in/web-development/python-development"
+          href="https://braininventory.in/web-development/python-development-company"
         />
       </Head>
       <Loader />

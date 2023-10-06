@@ -32,30 +32,22 @@ export default function Home({ data, blogs, totalPages }) {
         <meta
           name="description"
           content="Read the latest technology 
-          trends, news & updates and 
-          other topics about software & 
+          trends, news And updates and 
+          other topics about software And 
           app development from Brain 
           Inventory’s informative blogs!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog –
-Staff Augmentation | Software | Web | App Development 
+          content=" Brain Inventory Blog – Staff Augmentation | Software | Web | App Development 
 "
         />
         <meta
           property="og:description"
-          content=" Read the 
-latest technology trends, news & updates and other topics 
-about software & app development from Brain Inventory’s 
-informative blogs!"
+          content=" Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta property="twitter:domain" content="https://braininventory.in/" />
         <meta
           property="twitter:image"
@@ -73,12 +65,13 @@ Staff Augmentation | Software | Web | App Development "
         <meta
           property="twitter:description"
           content=" Read the latest 
-technology trends, news & updates and other topics about software
-& app development from Brain Inventory’s informative blogs!"
+technology trends, news And updates and other topics about software
+And app development from Brain Inventory’s informative blogs!"
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        <link rel="prev" href={`https://braininventory.in/blog/${currentPage > 1 ? currentPage-1 : ""}`} />        
+        <link rel="next" href={`https://braininventory.in/blog/${currentPage < totalPages ? currentPage+1 : ""}`} />        
         <link rel="canonical" href="https://braininventory.in/blog" />
       </Head>
       <main className="relative">
@@ -123,7 +116,7 @@ technology trends, news & updates and other topics about software
 }
 export async function getServerSideProps(context) {
   const response = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${2}`
+    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${1}`
   );
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100"

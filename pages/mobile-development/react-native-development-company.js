@@ -145,38 +145,17 @@ function ReactNativeDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire React Native Developers | Dedicated React Native Developers"
+          content="React Native App Development Company - Brain Inventory"
         />
         <meta
           property="og:description"
           content="Brain Inventory offers React Native app development Solutions to build cross-platform mobile apps. We provide world-class React Native App Development Services."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/react-native-development" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom React Native 
-Development | React Native Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/react-native-development"
@@ -195,7 +174,7 @@ Development. Contact us today. "
             alt="React Native App Development Services, React Native.Js App Development"
           />
           <WhyMean
-            type="React Native App Development"
+            type="React Native App"
             meanReasons={meanReasons}
           />
           <section className="flex justify-center px-10">
@@ -204,7 +183,7 @@ Development. Contact us today. "
             </h1>
           </section>
           <Benefits
-            type="React Native Development"
+            type="React Native"
             subhead="React Native is a new programming framework developed by Facebook that makes it easy to create native mobile apps for iOS and Android through JavaScript. There are several benefits of React Native:"
             benefitsList={benefitsList}
           />
@@ -218,7 +197,6 @@ Development. Contact us today. "
               <ProjectInquiry />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
               />{" "}
               <Industries />
               <FaqHire faq={faqdetails} /> {/*Done */}

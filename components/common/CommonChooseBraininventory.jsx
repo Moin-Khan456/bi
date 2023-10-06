@@ -17,14 +17,14 @@ export default function ChooseBraininventory({ reasons, subhead }) {
                         </p>
                         {reasons && reasons.map((ele, index) => (
                             <div className="flex items-start" key={index}>
-                                <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+                                <div className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
                                     <div className="w-full flex">
                                         <span>
                                             <BiCheckCircle className={`mt-1 mr-2 text-[1rem]`} />
                                         </span>
                                         <p className="col-span-8">{ele}</p>
                                     </div>
-                                </p>
+                                </div>
                                 <br /><br />
                             </div>
                         ))}

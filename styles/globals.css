@@ -1019,7 +1019,7 @@ html {
   }
 
   ul.industries_list li {
-    font-size: 2.1rem !important;
+    font-size: 1.9rem !important;
   }
 }
 
@@ -1097,7 +1097,7 @@ ul.industries_list {
 }
 
 ul.industries_list li {
-  font-size: 2.4rem;
+  font-size: 1.9rem;
   font-family: Gilroy-Bold;
   list-style: none;
   white-space: nowrap;
@@ -2854,3 +2854,25 @@ a.btn-filled.btn {
   bottom: 150px;
   transform: scale(2);
 } 
+.development-text{
+  font-family: BetterGrad;
+  /* font-size: 10rem; */
+  color: #7b06e1;
+  text-shadow: 2px 1px 0px #ee9e14;
+}
+.ant-pagination-item a, .ant-pagination-item-ellipsis, .anticon-left svg, .anticon-right svg{
+  color: white !important;
+}
+.anticon-left svg, .anticon-right svg{
+  background: linear-gradient(to right, rgb(105, 105, 193), rgb(58, 0, 167)) !important;
+
+  width: 2.5rem !important;
+  height: 2rem !important;
+  padding: 0.6rem;
+  border-radius: 10rem !important;
+}
+.ant-pagination-item-active{
+  background-color: black !important;
+  color: white !important;
+  border-radius: 10rem !important;
+}

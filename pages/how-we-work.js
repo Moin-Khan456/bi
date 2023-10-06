@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -25,32 +25,36 @@ const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const Loader = dynamic(() => import("../components/common/loader"));
 
 export default function HowWeWork() {
+  const [position, setPosition] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setPosition(true);
+    });
+  }, [position]);
   return (
     <>
       <Head>
-        <title>Custom Web App & Software Development – How We Work</title>
+        <title>Custom Web App And Software Development – How We Work</title>
         <meta
           name="description"
-          content="Brain Inventory is a Culture rich custom Software Development Company that helps business turn their idea into reality. We create custom tailored solutions to your needs."
+          content="Brain Inventory is a Culture rich custom Software Development Company that helps business turn their idea into reality. We create custom-tailored solutions to your needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Custom Web App & Software Development – How We Work"
+          content=" Custom Web App And Software Development – How We Work"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a Culture rich custom Software Development Company that helps business turn their idea into reality. We create custom tailored solutions to your needs. "
+          content="Brain Inventory is a Culture rich custom Software Development Company that helps business turn their idea into reality. We create custom-tailored solutions to your needs. "
         />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_how+we+work.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+
+        
         <meta
           property="twitter:title"
           content=" Custom Web App & 
@@ -64,17 +68,7 @@ Company that helps business turn their idea into reality. We create
 custom tailored solutions to your needs. 
 "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta
-          property="twitter:card"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <link rel="icon" href="/favicon.png" />
         <script
           async
@@ -101,16 +95,18 @@ https://braininventory.in/"
           <Work />
         </section>
         <HomeSectionSix />
-        <section className="container">
-          <ChooseApp />
-          <LanguageTool />
-          <Newsletter />
-          <Engagementmodal />
-          <Faqs />
-          <KeepInTouch />
-        </section>
-        <LocateUs />
-        <LetsKick />
+        {position && (
+          <section className="container">
+            <ChooseApp />
+            <LanguageTool />
+            <Newsletter />
+            <Engagementmodal />
+            <Faqs />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+          </section>
+        )}
         <Footer />
       </main>
     </>

@@ -126,8 +126,7 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Custom Mobile App
-Development | Custom Mobile App Development Company"
+          content=" Custom Mobile App Development | Custom Mobile App Development Company"
         />
         <meta
           property="og:description"
@@ -135,31 +134,12 @@ Development | Custom Mobile App Development Company"
         />
         <meta
           property="og:url"
-          content=" 
-https://braininventory.in/"
+          content="https://braininventory.in/mobile-development/custom-app-development"
         />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_custom+app+development.jpg"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Mobile App 
-Development | Custom Mobile App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content="At Brain Inventory, We are experts in developing native iOS and Android applications and cross-platform mobile apps for any industry. Get in touch with us today."
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/custom-app-development"
@@ -189,10 +169,11 @@ Development | Custom Mobile App Development Company"
           <HireMarquee title="Custom Mobile App" />
           <CustomAppBenefits type="Mobile App" subhead={benefitSubHead} />
           <Hire
-            title="Why Custom Web Development from %Brain inventory"
+            title="Why Custom App Development from %Brain Inventory"
             card={hireCards}
             subhead={hireSub}
           />
+
           <FindUs />
           <ChooseBraininventoryApp
             head="Why Custom Web Development from"

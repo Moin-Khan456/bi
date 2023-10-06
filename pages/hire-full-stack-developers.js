@@ -170,21 +170,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Brain Inventory's dedicated full-stack developers have strong skills in developing both the front end and the back end. Contact us to Hire full-stack developers."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Full+Stack+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire Full Stack 
@@ -197,9 +190,9 @@ the leading Full Stack Development Company with a top-notch
 Full Stack Developers team having profound expertise in Full Stack 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-full-stack-developers"
@@ -235,7 +228,7 @@ Development. Contact us today. "
               />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire Full Stack Developers from %Brain inventory"
+                title="Why Hire Full Stack Developers from %Brain Inventory"
                 subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
                 card={hireCards}
               />

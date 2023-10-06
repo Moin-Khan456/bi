@@ -188,17 +188,13 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire PHP developers with a strong understanding of object-oriented programming, MySQL, and web development. Contact us to work with our experienced PHP developers."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+PHP+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
+       
         <meta
           property="twitter:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/it-specialist-checking-code-computer-dark-office-night.jpg"
@@ -215,9 +211,9 @@ the leading Python Development Company with a top-notch
 Python Developers team having profound expertise in Python 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-php-developers"

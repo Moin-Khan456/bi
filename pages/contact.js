@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Script from "next/script";
@@ -13,6 +13,13 @@ const ContactBanner = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
+  const [position, setPosition] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setPosition(true);
+    });
+  }, [position]);
   return (
     <>
       <Script
@@ -33,10 +40,10 @@ function Contact() {
         <meta
           name="description"
           content="Contact Brain Inventory for 
-          any service, requirement & 
+          any service, requirement And 
           query. Get a free no obligation 
           consulting for your website, 
-          software & App development 
+          software And App development 
           projects. Contact us today!"
         />
         <meta property="og:type" content="website" />
@@ -48,25 +55,18 @@ Inventory to Kick start Your Digital Journey Today "
         <meta
           property="og:description"
           content=" Contact Brain 
-Inventory for any service, requirement & query. Get a free 
-no obligation consulting for your website, software & App 
+Inventory for any service, requirement And query. Get a free 
+no obligation consulting for your website, software And App 
 development projects.
 Contact us now."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_contact.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+
+        
         <meta
           property="twitter:title"
           content=" Contact Brain Inventory 
@@ -75,25 +75,26 @@ to Kick start Your Digital Journey Today "
         <meta
           property="twitter:description"
           content=" Contact Brain 
-Inventory for any service, requirement & query. Get a free no 
-obligation consulting for your website, software & App development
+Inventory for any service, requirement And query. Get a free no 
+obligation consulting for your website, software And App development
 projects.
 Contact us now."
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+
+        
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
       <Loader />
       <main className="relative second-component ">
         <Header />
         <ContactBanner />
-        <section className="container">
-          <Contact1 />
-        </section>
-        <LocateUs />
-        <LetsKick />
+        {position && (
+          <section className="container">
+            <Contact1 />
+            <LocateUs />
+            <LetsKick />
+          </section>
+        )}
         <Footer />
       </main>
     </>

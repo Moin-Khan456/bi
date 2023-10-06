@@ -82,7 +82,7 @@ function HireAangularJsDeveloper(props) {
         "Our team is always eager to assist you with your ideas. We'll assist you in developing your product, but creating it is where we really shine. We value the privacy of our customers and will only use this information for the production process, not sharing it with unnecessarily third parties.",
     },
     {
-      head: "n-time Project Delivery",
+      head: "On-time Project Delivery",
       content:
         "MERN stack is the gold standard for web and mobile application development. It provides an extensive list of tools for building modern web and mobile applications. MERN stack developers in India strictly adhere to deadlines and are ready to work in any time zone. They ensure that your project is completed and delivered on time.",
     },
@@ -167,21 +167,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Top MERN Stack Developers from Brain Inventory. Our MERN Stack Developers build top-notch apps that meet your business requirements. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+MERN+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire MERN stack
@@ -194,9 +187,9 @@ the leading MERN Development Company with a top-notch
 MERN Developers team having profound expertise in MERN 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-mern-stack-developers"

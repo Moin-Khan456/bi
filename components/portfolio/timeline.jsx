@@ -21,7 +21,7 @@ function Timeline(props) {
                     <div className="timeline-content">
                       <div className="timeline-content-txt">
                         <b className="Gilroy-Bold text-xl">
-                          Quick call &amp; email from us
+                          Quick call and email from us
                         </b>
                         <p className="desc mt-3">
                           We will call you or send you an email within 12 hours.
@@ -43,7 +43,7 @@ function Timeline(props) {
                       <div className="timeline-content-txt">
                         <b className="Gilroy-Bold text-xl">Sign an NDA</b>
                         <p className="desc mt-3">
-                          We know the value of privacy &amp; confidentiality of
+                          We know the value of privacy and confidentiality of
                           the information your project that you are going to
                           share with us. To maintain utter transparency, we will
                           sign a Non Disclosure Agreement (NDA) with you. Your

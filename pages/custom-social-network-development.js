@@ -79,7 +79,7 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.netimages/I-1.png"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
+       
         <meta
           property="twitter:image"
           content="https://d1u4arv5y5eda6.cloudfront.netimages/Logobg.png"
@@ -95,9 +95,9 @@ Development | Android App Development Company"
 the leading Web and Mobile App Development Company with a top-notch 
 Web and Mobile App Developers team having profound expertise in trending Technologies. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <Loader />

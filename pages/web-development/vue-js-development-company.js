@@ -129,41 +129,20 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Vue Developers | Dedicated Vue App Developers"
+          content="Vue JS App Development Services | Vue JS App Development Company"
         />
         <meta
           property="og:description"
           content="Build single-page web applications from Brain Inventory. We have an experienced team of web application developers, project managers, and full-stack engineers."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/web-development/vue-js-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6461.png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Vue App 
-Development | Vue App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/vue-js-development"
+          href="https://braininventory.in/web-development/vue-js-development-company"
         />
       </Head>
       <Loader />
@@ -186,17 +165,15 @@ Development. Contact us today. "
           </div>
           <Benefits
             type="Vue.Js"
-            subhead="Android app development is a trusted brand in the world of mobile app development. The reason for its prominence lies in the fact that it is one of the most sought-after platforms, providing both an evolutionary and revolutionary approach to enhancing user experience. The Android platform has seen a steady rise in popularity over the past few years, and this presents developers with a unique opportunity to reap the benefits."
             benefitsList={benefitsList}
           />
           <Hire
-            title="Why Vue.Js Development from %Brain inventory"
+            title="Why Vue.Js Development from %Brain Inventory"
             card={hireCards}
           />{" "}
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

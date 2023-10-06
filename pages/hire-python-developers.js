@@ -206,11 +206,8 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Python+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire Python 
@@ -223,9 +220,9 @@ function HireAangularJsDeveloper(props) {
   Python Developers team having profound expertise in Python 
   Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-python-developers"
@@ -259,7 +256,7 @@ function HireAangularJsDeveloper(props) {
               <HireMarquee title="Python" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why hire Python developers from %Brain inventory"
+                title="Why hire Python developers from %Brain Inventory"
                 card={hireCards}
               />
               <Hello />

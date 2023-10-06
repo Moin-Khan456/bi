@@ -56,47 +56,47 @@ const FooterSections = [
       },
       {
         name: "Angular JS Development",
-        path: "/web-development/angular-js-development",
+        path: "/web-development/angular-js-development-company",
       },
       {
         name: "React JS Development",
-        path: "/web-development/react-js-development",
+        path: "/web-development/react-js-development-company",
       },
       {
         name: "Node JS Development",
-        path: "/web-development/node-js-development",
+        path: "/web-development/node-js-development-company",
       },
       {
         name: "Vue JS Development",
-        path: "/web-development/vue-js-development",
+        path: "/web-development/vue-js-development-company",
       },
       {
         name: "MEAN Development",
-        path: "/web-development/mean-stack-development",
+        path: "/web-development/mean-stack-development-company",
       },
       {
         name: "MERN Development",
-        path: "/web-development/mern-stack-development",
+        path: "/web-development/mern-stack-development-company",
       },
       {
         name: "LAMP Development",
-        path: "/web-development/lamp-development",
+        path: "/web-development/lamp-development-company",
       },
       {
         name: "PHP Development",
-        path: "/web-development/php-development",
+        path: "/web-development/php-development-company",
       },
       {
         name: "Python Development",
-        path: "/web-development/python-development",
+        path: "/web-development/python-development-company",
       },
       {
         name: "Wordpress Website Development",
-        path: "/web-development/wordpress-development",
+        path: "/web-development/wordpress-development-company",
       },
       {
         name: "CodeIgniter Development",
-        path: "/web-development/codeigniter-development",
+        path: "/web-development/codeigniter-development-services",
       },
     ],
   },
@@ -111,23 +111,23 @@ const FooterSections = [
       },
       {
         name: "iOS App Development",
-        path: "/mobile-development/ios-development",
+        path: "/mobile-development/ios-development-company",
       },
       {
         name: "Android App Development",
-        path: "/mobile-development/android-development",
+        path: "/mobile-development/android-development-company",
       },
       {
         name: "React Native App Development",
-        path: "/mobile-development/react-native-development",
+        path: "/mobile-development/react-native-development-company",
       },
       {
         name: "Flutter App Development",
-        path: "/mobile-development/flutter-development",
+        path: "/mobile-development/flutter-development-company",
       },
       {
         name: "Swift App Development",
-        path: "/mobile-development/swift-development",
+        path: "/mobile-development/swift-development-company",
       },
       {
         name: "Hybrid App Development",

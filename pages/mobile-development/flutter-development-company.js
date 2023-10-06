@@ -132,41 +132,20 @@ function ReactNativeDeveloper(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Flutter Developers | Dedicated Flutter Developers"
+          content="Flutter App Development Company | Flutter App Development"
         />
         <meta
           property="og:description"
           content="Brain Inventory specializes in creating cost-effective and efficient applications with leading-edge flutter app development solutions. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/flutter-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
         />
-
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Custom Flutter 
-  Development | Flutter Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading Android App Development Company with a top-notch 
-  Android App Developers team having profound expertise in Android App 
-  Development. Contact us today. "
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/flutter-development"
+          href="https://braininventory.in/mobile-development/flutter-development-company"
         />
       </Head>
       <Loader />
@@ -181,14 +160,14 @@ function ReactNativeDeveloper(props) {
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
             alt="Flutter App Development Services, Flutter.Js App Development"
           />
-          <WhyMean type="Flutter App Development" meanReasons={meanReasons} />
+          <WhyMean type="Flutter App" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
             <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
               Flutter App Development Service
             </h1>
           </section>
           <Benefits
-            type="Flutter App Development"
+            type="Flutter App"
             subhead="Flutter is a new mobile and web-development framework for creating apps that run on iOS, Android, and the Web. There are several benefits of Flutter App Development:"
             benefitsList={benefitsList}
           />
@@ -200,7 +179,6 @@ function ReactNativeDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

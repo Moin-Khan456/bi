@@ -162,32 +162,15 @@ function HireAangularJsDeveloper(props) {
         />{" "}
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/wordpress-development"
+          content="https://braininventory.in/web-development/wordpress-development-company"
         />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/wordpress-development.png"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/wordpress-development.png"
-        />
-        <meta
-          property="twitter:title"
-          content=" Hire Python 
-Developer | Python App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content="Unlock the potential of your online presence with our top-rated WordPress website development. Our expert WordPress developers create stunning, user-friendly websites tailored to your business needs."
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href=" https://braininventory.in/web-development/wordpress-development"
+          href=" https://braininventory.in/web-development/wordpress-development-company"
         />
       </Head>
       <Loader />

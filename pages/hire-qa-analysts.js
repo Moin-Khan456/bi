@@ -149,7 +149,7 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire QA Analyst | QA & Testing Specialists | Hire QA Engineer
+          Hire QA Analyst | QA And Testing Specialists | Hire QA Engineer
         </title>
         <meta
           name="description"
@@ -164,21 +164,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Dedicated QA Analyst from Brain Inventory that improve product quality and reduce the risk of negative impact on customer satisfaction. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+QA+Analyst.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire Quality Analyst and Tester | Quality Analyst and Testing Company"
@@ -190,9 +183,9 @@ the leading AngularJS Development Company with a top-notch
 AngularJS Developers team having profound expertise in AngularJS 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-qa-analysts"

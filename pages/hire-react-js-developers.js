@@ -183,21 +183,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Experienced React JS Developers from Brain Inventory. Our React JS development team creates high-end web applications for any business. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-https://braininventory.in/"
-        />
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+React+JS+Developers.jpg"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content=" Hire ReactJS Developer | ReactJS App Development Company"
@@ -209,9 +202,9 @@ the leading ReactJS Development Company with a top-notch
 ReactJS Developers team having profound expertise in ReactJS 
 Development. Contact us today. "
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-react-js-developers"
@@ -243,7 +236,7 @@ Development. Contact us today. "
               <HireMarquee title="React.JS" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire React JS Developers from %Brain inventory"
+                title="Why Hire React JS Developers from %Brain Inventory"
                 card={hireCards}
               />
               <ChooseBraininventory

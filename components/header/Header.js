@@ -259,57 +259,57 @@ const ServicesChildren = () => {
     {
       _id: 2,
       name: "Angular JS Development",
-      link: "/web-development/angular-js-development",
+      link: "/web-development/angular-js-development-company",
     },
     {
       _id: 3,
       name: "React JS Development",
-      link: "/web-development/react-js-development",
+      link: "/web-development/react-js-development-company",
     },
     {
       _id: 4,
       name: "Node JS Development",
-      link: "/web-development/node-js-development",
+      link: "/web-development/node-js-development-company",
     },
     {
       _id: 5,
       name: "Vue JS Development",
-      link: "/web-development/vue-js-development",
+      link: "/web-development/vue-js-development-company",
     },
     {
       _id: 6,
       name: "MEAN Development",
-      link: "/web-development/mean-stack-development",
+      link: "/web-development/mean-stack-development-company",
     },
     {
       _id: 7,
       name: "MERN Development",
-      link: "/web-development/mern-stack-development",
+      link: "/web-development/mern-stack-development-company",
     },
     {
       _id: 8,
       name: "LAMP Development",
-      link: "/web-development/lamp-development",
+      link: "/web-development/lamp-development-company",
     },
     {
       _id: 9,
       name: "PHP Development",
-      link: "/web-development/php-development",
+      link: "/web-development/php-development-company",
     },
     {
       _id: 10,
       name: "Python Development",
-      link: "/web-development/python-development",
+      link: "/web-development/python-development-company",
     },
     {
       _id: 11,
       name: "Wordpress Website Development",
-      link: "/web-development/wordpress-development",
+      link: "/web-development/wordpress-development-company",
     },
     {
       _id: 12,
       name: "CodeIgniter Development",
-      link: "/web-development/codeigniter-development",
+      link: "/web-development/codeigniter-development-services",
     },
   ];
   const mobileLinks = [
@@ -321,27 +321,27 @@ const ServicesChildren = () => {
     {
       _id: 2,
       name: "iOS App Development",
-      link: "/mobile-development/ios-development",
+      link: "/mobile-development/ios-development-company",
     },
     {
       _id: 3,
       name: "Android App Development",
-      link: "/mobile-development/android-development",
+      link: "/mobile-development/android-development-company",
     },
     {
       _id: 4,
       name: "React Native App Development",
-      link: "/mobile-development/react-native-development",
+      link: "/mobile-development/react-native-development-company",
     },
     {
       _id: 5,
       name: "Flutter App Development",
-      link: "/mobile-development/flutter-development",
+      link: "/mobile-development/flutter-development-company",
     },
     {
       _id: 6,
       name: "Swift App Development",
-      link: "/mobile-development/swift-development",
+      link: "/mobile-development/swift-development-company",
     },
     {
       _id: 7,

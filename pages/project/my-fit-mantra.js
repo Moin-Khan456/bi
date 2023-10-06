@@ -169,14 +169,11 @@ const Numetric = () => {
           content=" 
   https://braininventory.in/"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/blog-4.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_MFM.jpg"
         />
         <meta
           property="twitter:title"
@@ -189,9 +186,9 @@ const Numetric = () => {
   technology trends, news & updates and other topics about software
   & app development from Brain Inventory’s informative blogs!"
         />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
+        
+        
+        
         <link
           rel="canonical"
           href="https://braininventory.in/project/my-fit-mantra"

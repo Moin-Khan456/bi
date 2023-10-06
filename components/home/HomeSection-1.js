@@ -25,7 +25,7 @@ export default function HomeSectionOne({}) {
                 layout="fill"
                 priority={true}
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/scrollAnimation.svg"
-                alt=""
+                alt="custom software development solutions"
               />
             </div>
           </div>
@@ -39,6 +39,7 @@ export default function HomeSectionOne({}) {
               controls={false}
               className="relative md:top-[3rem] top-0"
               preload="metadata"
+              alt="custom software development solutions"
             >
               <source
                 src="https://d1u4arv5y5eda6.cloudfront.net/videos/FinalVideo.mp4"

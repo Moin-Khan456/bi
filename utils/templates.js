@@ -718,7 +718,7 @@ export function PpcThankTemplate(data) {
                 <tbody style="display: flex; justify-content: space-between; padding-top:2rem;">
                   <tr style="width: 70%">
                     <td align="center" style="color:white;padding-left: 12%;">
-                      <a href="https://braininventory.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://braininventory.com/&amp;source=gmail&amp;ust=1674032573977000&amp;usg=AOvVaw3NF-G-DrvQt5tEwH_t7hqc">
+                      <a href="https://braininventory.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://braininventory.com/andsource=gmailandust=1674032573977000andusg=AOvVaw3NF-G-DrvQt5tEwH_t7hqc">
                         <img src="https://braininventory.ca/EmailTemplate20.7/Group%203669.png" width="150px" alt="BI logo" class="CToWUd" >
                       </a>
                     </td>

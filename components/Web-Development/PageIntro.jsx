@@ -13,9 +13,10 @@ export default function HireBanner({
             <section className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 <section className="">
                     <section className="ml-4 lg:ml-0 flex flex-col items-center lg:items-start">
-                        <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">{heading}</h1>
-                        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group 6439.png" alt="Development" width={300} height={100} className="w-8/12 lg:-my-10 lg:-ml-8" />
-                        <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] text-center lg:text-start mean_stack_development_text_shadow lg:my-2">Company</h1>
+                        <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">{heading} <br/><span className="development-text rotate-3 lg:text-[10rem] leading-[8rem] text-8xl">Development</span><br/> Company</h1>
+                        
+                        {/* <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group 6439.png" alt="Development" width={300} height={100} className="w-8/12 lg:-my-10 lg:-ml-8" /> */}
+                        {/* <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] text-center lg:text-start mean_stack_development_text_shadow lg:my-2">Company</h1> */}
 
                         <h2 className="lg:text-5xl text-4xl Gilroy-Bold mb-4 text-center lg:text-start">
                             {subtitle}

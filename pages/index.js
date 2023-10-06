@@ -72,11 +72,8 @@ export default function Home() {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/home_preview.png"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/ " />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+       
+        
         <meta
           property="twitter:title"
           content="Custom Software Development Company | Staff Augmentation - Brain Inventory"
@@ -93,10 +90,7 @@ export default function Home() {
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />
-        <meta
-          property="twitter:card"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+        
         <link rel="icon" href="/favicon.png" />
         <link rel="canonical" href="https://braininventory.in" />
       </Head>

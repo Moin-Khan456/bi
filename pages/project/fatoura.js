@@ -149,8 +149,7 @@ const Fatoura = () => {
     <>
       <Head>
         <title>
-          Brain Inventory Develop Invoicing & Payment Tool to Enhance Business
-          Operations
+        Brain Inventory Develop Invoicing And Payment Tool to Enhance Business Operations
         </title>
         <meta
           name="description"
@@ -159,9 +158,7 @@ const Fatoura = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog –
-Staff Augmentation | Software | Web | App Development 
-"
+          content="Brain Inventory Develop Invoicing And Payment Tool to Enhance Business Operations"
         />
         <meta
           property="og:description"
@@ -169,36 +166,18 @@ Staff Augmentation | Software | Web | App Development
         />
         <meta
           property="og:url"
-          content=" 
-https://braininventory.in/project/fatoura"
+          content="https://braininventory.in/project/fatoura"
         />
         <meta
           property="twitter:domain"
           content="https://braininventory.in/project/fatoura"
         />
-        <meta
-          property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Logobg.png"
-        />
+        
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/blog-4.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_fatoura.jpg"
         />
-        <meta
-          property="twitter:title"
-          content=" Brain Inventory Blog – 
-Staff Augmentation | Software | Web | App Development "
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-technology trends, news & updates and other topics about software
-& app development from Brain Inventory’s informative blogs!"
-        />
-        <meta property="twitter:creator" content=" BrainInventory " />
-        <meta property="twitter:site" content="BrainInventory" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <link
+      <link
           rel="canonical"
           href="https://braininventory.in/project/fatoura"
         />

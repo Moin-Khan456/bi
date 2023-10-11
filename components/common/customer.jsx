@@ -15,7 +15,7 @@ export default function Customer() {
             <section>
                 <Image width={1450}
                     height={700}
-                    src="https://d1u4arv5y5eda6.cloudfront.net/images/developers.png" alt="Customer Images"
+                    src="https://d1u4arv5y5eda6.cloudfront.net/images/developers.png" alt="Hire dedicated remote developers | Custom software development company"
                     className="w-full"
                 />
             </section>

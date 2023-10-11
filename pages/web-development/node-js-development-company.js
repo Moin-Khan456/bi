@@ -173,7 +173,6 @@ function HireAangularJsDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
             alt="Node JS Web Development Services"
           />{" "}
           <Industries />

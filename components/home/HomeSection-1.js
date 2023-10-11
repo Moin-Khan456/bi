@@ -14,11 +14,11 @@ export default function HomeSectionOne({}) {
             </h1>
 
             <div className="flex flex-col w-full px-4 lg:px-12 py-4">
-              <h1 className="text-3xl">
+              <h2 className="text-3xl">
                 A digital production company focusing heavily on design &
                 development based in indore. We create products that make people
                 say oh damn!
-              </h1>
+              </h2>
             </div>
             <div className="rotating scroll-logo md:block hidden ">
               <Image

@@ -19,11 +19,9 @@ export default function HireBanner({
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
         <section>
           <section className="ml-4 lg:ml-0">
-            <h1 className="text-2xl Gilroy-Bold">{heading}</h1>
-            <h2 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
+            <span className="text-2xl Gilroy-Bold">{heading}</span>
+            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
               {title}
-            </h2>
-            <section className="ml-[-1rem] w-72 lg:w-96">
               {developmentImage ? (
                 <Image
                   src={developmentImage}
@@ -32,14 +30,17 @@ export default function HireBanner({
                   alt={alt}
                 />
               ) : (
-                <Image
+                <>
+                  <span className="text-developer text-5xl lg:text-[3.5rem] Gilroy-Bold font-extrabold">Developers</span>
+                {/* <Image
                   src="https://d1u4arv5y5eda6.cloudfront.net/images/development-12.png"
                   width={700}
                   height={300}
                   alt={alt}
-                />
+                /> */}
+                </>
               )}
-            </section>
+            </h1>
             <h2 className="lg:text-5xl text-4xl Gilroy-Bold mb-4">
               {subtitle}
             </h2>

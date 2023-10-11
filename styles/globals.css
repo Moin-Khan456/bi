@@ -2883,3 +2883,38 @@ a.btn-filled.btn {
 .slick-prev:before, .slick-next:before{
   content: "" !important;
 }
+.text-shadow-sharp{
+  position: relative;
+  font-weight: light;
+  line-height: 5rem;
+  letter-spacing: .6rem;
+  -webkit-transition: color .5s ease-out;
+  transition: color .5s ease;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: .5px;
+  color: transparent;
+}
+
+.text-shadow-sharp::before {
+  content: attr(data-text); /* Use the content attribute to display the text */
+  position: absolute;
+  line-height: 5rem;
+  letter-spacing: .6rem;
+  top: 3px;
+  left: 7px;
+  color: white;
+}
+
+
+.text-developer{
+  background-image: url("https://images.pexels.com/photos/3144218/pexels-photo-3144218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+  background-repeat: repeat; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-top: 200px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-family: Gilroy-Bold;
+  font-weight: 800; 
+  -webkit-font-smoothing: antialiased; 
+}

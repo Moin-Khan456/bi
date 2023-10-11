@@ -188,7 +188,7 @@ Development. Contact us today. "
             </h1>
           </div>
           <Benefits
-            type="React JS Development"
+            type="React JS"
             subhead=""
             benefitsList={benefitsList}
           />
@@ -199,7 +199,6 @@ Development. Contact us today. "
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
             alt="ReactJS Web Development Company"
           />{" "}
           <Industries />

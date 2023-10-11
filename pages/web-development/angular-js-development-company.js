@@ -86,8 +86,6 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const chooseBiSubhead =
-    "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
     "Brain Inventory specializes in delivering top-quality Angular web development services.",
     "The team uses various frameworks and libraries such as Java, PHP, and HTML5.",
@@ -176,7 +174,6 @@ function HireAangularJsDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
-            subhead={chooseBiSubhead}
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

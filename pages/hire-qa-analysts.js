@@ -197,11 +197,12 @@ Development. Contact us today. "
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire QA Analyst "
+            title="Hire QA"
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
             alt="QA and Testing Specialists"
+            unique="analyst"
           />
           <Customer />
           {position && (

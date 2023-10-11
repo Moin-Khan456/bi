@@ -13,6 +13,7 @@ export default function HireBanner({
   alt,
   developmentImage,
   type,
+  unique
 }) {
   return (
     <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
@@ -22,17 +23,28 @@ export default function HireBanner({
             <span className="text-2xl Gilroy-Bold">{heading}</span>
             <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
               {title}
-              {developmentImage ? (
-                <Image
+              {unique === "design" ? <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                    <br/>Designers
+                  </span>: unique === "analyst" ?<span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                    <br/>Analyst
+                  </span>: developmentImage ? (
+                <>
+                  <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                    <br/>Development
+                  </span>
+                  {/* <Image
                   src={developmentImage}
                   width={700}
                   height={300}
                   alt={alt}
-                />
+                /> */}
+                </>
               ) : (
                 <>
-                  <span className="text-developer text-5xl lg:text-[3.5rem] Gilroy-Bold font-extrabold">Developers</span>
-                {/* <Image
+                  <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                    <br/>Developers
+                  </span>
+                  {/* <Image
                   src="https://d1u4arv5y5eda6.cloudfront.net/images/development-12.png"
                   width={700}
                   height={300}

@@ -392,11 +392,6 @@ const ServicesChildren = () => {
       link: "/hire-mern-stack-developers",
     },
     {
-      _id: 8,
-      name: "Hire UI/UX Developers",
-      link: "/hire-ui-ux-developers",
-    },
-    {
       _id: 9,
       name: "Hire Android Developers",
       link: "/hire-android-developers",
@@ -432,8 +427,13 @@ const ServicesChildren = () => {
       link: "/hire-chatbot-developers",
     },
     {
+      _id: 8,
+      name: "Hire UI/UX Designers",
+      link: "/hire-ui-ux-developers",
+    },
+    {
       _id: 16,
-      name: "Hire QA Analyst",
+      name: "Hire QA Analysts",
       link: "/hire-qa-analysts",
     },
   ];

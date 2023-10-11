@@ -203,6 +203,7 @@ function HireAangularJsDeveloper(props) {
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+UIUX+Developers.png"
             alt="Hire UI/UX Designers"
             type="hire"
+            unique="design"
           />
           <Customer />
           {position && (

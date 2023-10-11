@@ -62,7 +62,7 @@ const redirection = () => {
     },
     {
       source: "/web-development/angular-js-development",
-      destination: "/web-development/angular-js-development",
+      destination: "/web-development/angular-js-development-company",
       permanent: true,
     },
     {

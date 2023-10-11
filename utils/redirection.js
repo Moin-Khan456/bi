@@ -121,8 +121,18 @@ const redirection = () => {
       permanent: true,
     },
     {
-      source: "/web-development/vue-js-development",
-      destination: "/web-development/vue-js-development-company",
+      source: "/web-development/php-development",
+      destination: "/web-development/php-development-company",
+      permanent: true,
+    },
+    {
+      source: "/web-development/python-development",
+      destination: "/web-development/python-development-company",
+      permanent: true,
+    },
+    {
+      source: "/web-development/wordpress-development",
+      destination: "/web-development/wordpress-development-company",
       permanent: true,
     },
     {

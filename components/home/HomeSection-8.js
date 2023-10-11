@@ -79,7 +79,7 @@ const Section = ({ info }) => {
           <Image
             src={"https://d1u4arv5y5eda6.cloudfront.net/images/" + info.image}
             loading="lazy"
-            alt="custom software development solutions"
+            alt={info.alt}
             layout="fill"
             objectFit="cover"
           />

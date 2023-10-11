@@ -2,14 +2,16 @@ import Image from 'next/image'
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
 
-const Index = ({title, btn, head, src}) => {
+const Index = ({title, btn, head, src, className, headAbove, subheadAbove}) => {
 
     return (
         <div className="rounded-md my-8 py-10 space-x-6">
             <div className="container padding-left-all-section ">
+            <h2 className="MonumentRegular text-[1.5625rem]">{headAbove}</h2>
+            <p className="text-slate-400 py-4">{subheadAbove}</p>
                 <div className='lg:grid lg:grid-cols-2 gap-0 h-[450px] bg-[#4601a1] rounded-2xl'>
                       <div className='p-12'>
-                          <h1 className='font-bold lg:text-6xl Gilroy-Bold'>{title}</h1>
+                          <h1 className={`font-bold lg:text-6xl Gilroy-Bold ${className}`}>{title}</h1>
                             <button className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8
                              py-4 my-12">
                               {btn}

@@ -2921,3 +2921,6 @@ a.btn-filled.btn {
 .text-shadow-none{
   text-shadow: none;
 }
+.leading-high-force{
+  line-height: 3rem !important;
+}

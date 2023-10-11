@@ -181,7 +181,7 @@ Development. Contact us today. "
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
             alt="ReactJS Web Development Company,"
           />
-          <WhyMean type="React Js Development" meanReasons={meanReasons} />
+          <WhyMean type="React Js" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
             <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
               React JS Development Service

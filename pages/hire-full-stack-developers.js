@@ -175,24 +175,10 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Full+Stack+Developers.jpg"
         />
-
-       
-        
         <meta
-          property="twitter:title"
-          content=" Hire Full Stack 
-Developer | Full Stack App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-full-stack-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Full Stack Development Company with a top-notch 
-Full Stack Developers team having profound expertise in Full Stack 
-Development. Contact us today. "
-        />
-        
-        
-        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-full-stack-developers"
@@ -214,7 +200,7 @@ Development. Contact us today. "
           {position && (
             <>
               <Experienced
-                title="Full Stack Development"
+                title="Full Stack Developers"
                 para1={subhead1}
                 para2={subhead2}
                 card={experienceCards}
@@ -233,7 +219,10 @@ Development. Contact us today. "
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} alt="Hire Full stack developers and programmers" />
+              <ChooseBraininventory
+                reasons={chooseBI}
+                alt="Hire Full stack developers and programmers"
+              />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

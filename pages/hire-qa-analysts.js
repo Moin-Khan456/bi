@@ -173,19 +173,10 @@ function HireAangularJsDeveloper(props) {
        
         
         <meta
-          property="twitter:title"
-          content=" Hire Quality Analyst and Tester | Quality Analyst and Testing Company"
+          property="og:url"
+          content="https://braininventory.in/hire-qa-analysts"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading AngularJS Development Company with a top-notch 
-AngularJS Developers team having profound expertise in AngularJS 
-Development. Contact us today. "
-        />
-        
-        
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-qa-analysts"

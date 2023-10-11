@@ -182,6 +182,10 @@ function SocialMedia(props) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_social+media+marketing.jpg"
         />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/solution/social-networking-development-company"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/solution/social-networking-development-company"

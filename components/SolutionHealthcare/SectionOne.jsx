@@ -7,9 +7,9 @@ const Index = () => {
   return (
     <>
       <div className="project-bg pt-72 lg:pt-36 relative container">
-        <h1 className="MonumentBold text-2xl lg:text-[4rem] lg:leading-[5rem] px-2 lg:px-24 text-center absolute z-10 top-32 lg:top-16">
+        <h2 className="MonumentBold text-2xl lg:text-[4rem] lg:leading-[5rem] px-2 lg:px-24 text-center absolute z-10 top-32 lg:top-16">
           Revitalize Healthcare Through Innovation
-        </h1>
+        </h2>
         <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png" alt="" width={500} height={500} className="w-[80px] absolute top-48 left-48 hidden lg:block"/>
         <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png" alt="" width={500} height={500} className="w-[80px] absolute top-40 right-48 hidden lg:block"/>
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center max-w-[1450px] relative z-20 px-2">

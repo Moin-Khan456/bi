@@ -190,6 +190,7 @@ function HireAangularJsDeveloper(props) {
           image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+1.png"
           alt="Mobile Application Integration Services"
           type="app"
+          unique="integration"
         />
         <Customer />
         {position && (

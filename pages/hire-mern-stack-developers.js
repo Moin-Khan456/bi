@@ -171,23 +171,11 @@ function HireAangularJsDeveloper(props) {
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+MERN+Developers.jpg"
-        />
-
-       
-        
+        />       
         <meta
-          property="twitter:title"
-          content=" Hire MERN stack
-Developer | MERN App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading MERN Development Company with a top-notch 
-MERN Developers team having profound expertise in MERN 
-Development. Contact us today. "
-        />
-        
+          property="og:url"
+          content="https://braininventory.in/hire-mern-stack-developers"
+        />       
         
         
         <link

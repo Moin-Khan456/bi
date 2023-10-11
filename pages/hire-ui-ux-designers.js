@@ -162,33 +162,17 @@ function HireAangularJsDeveloper(props) {
           content="Hire dedicated UI and UX Designer from Brain Inventory. We offer high-quality UI and UX Design and Development Services to build top-class designs. Contact us today. "
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+UIUX+Developers.jpg"
         />
-
-       
         
         <meta
-          property="twitter:title"
-          content=" UI/UX Developer | UI/UX Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading UI/UX Designing Company with a top-notch 
-  UI/UX Designers team having profound expertise in UI/UX Designing. Contact us today. "
-        />
-        
-        
-        
+          property="og:url"
+          content="https://braininventory.in/hire-ui-ux-designers"
+        />        
         <link
           rel="canonical"
-          href="https://braininventory.in/hire-ui-ux-developers"
+          href="https://braininventory.in/hire-ui-ux-designers"
         />
       </Head>
       <Loader />
@@ -209,16 +193,16 @@ function HireAangularJsDeveloper(props) {
           {position && (
             <>
               <Experienced
-                title="Hire an Experienced UI/UX Developers to Upscale Your Development"
+                title="Hire an Experienced UI/UX Designers to Upscale Your Development"
                 subhead1={subhead1}
                 subhead2={subhead2}
                 card={experienceCards}
               />
-              <Advantage title="UI/UX Developers" advantages={advantages} />
+              <Advantage title="UI/UX Designers" advantages={advantages} />
               <HireMarquee title="UI/UX" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
-                title="Why Hire UI/UX Developers from %Brain Inventory"
+                title="Why Hire UI/UX Designers from %Brain Inventory"
                 card={hireCards}
               />
               <ChooseBraininventory subhead={chooseBiSubhead} alt="Hire UI/UX Designers" />

@@ -184,11 +184,6 @@ function HireAangularJsDeveloper(props) {
           content="Hire Top React Native Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+React+Native+Developers.jpg"
         />
@@ -196,20 +191,10 @@ function HireAangularJsDeveloper(props) {
        
         
         <meta
-          property="twitter:title"
-          content=" Hire React Native 
-  Developer | React Native App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-react-native-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading React Native Development Company with a top-notch 
-  React Native Developers team having profound expertise in React Native 
-  Development. Contact us today. "
-        />
-        
-        
-        
+     
         <link
           rel="canonical"
           href="https://braininventory.in/hire-react-native-developers"
@@ -237,7 +222,7 @@ function HireAangularJsDeveloper(props) {
                 subhead2={subhead2}
                 card={experienceCards}
               />
-              <Advantage title="React JS Developers" advantages={advantages} />
+              <Advantage title="React Native Developers" advantages={advantages} />
               <HireMarquee title="React Native" />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire

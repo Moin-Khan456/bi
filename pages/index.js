@@ -72,16 +72,6 @@ export default function Home() {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/home_preview.png"
         />
-       
-        
-        <meta
-          property="twitter:title"
-          content="Custom Software Development Company | Staff Augmentation - Brain Inventory"
-        />
-        <meta
-          property="twitter:description"
-          content="Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe."
-        />
         <meta name="p:domain_verify" content="/pinterest-551ed.html" />
         <meta name="p:domain_verify" content="/googlec59025ad92b5fc4c.html" />
         <meta

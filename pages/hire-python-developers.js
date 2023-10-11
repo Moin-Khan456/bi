@@ -197,11 +197,6 @@ function HireAangularJsDeveloper(props) {
           content="Looking to hire a skilled Python developer for your project? Our team of expert Python programmers offers top-notch development services. Get professional Python development services today."
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Python+Developers.jpg"
         />
@@ -209,20 +204,10 @@ function HireAangularJsDeveloper(props) {
        
         
         <meta
-          property="twitter:title"
-          content=" Hire Python 
-  Developer | Python App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-python-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading Python Development Company with a top-notch 
-  Python Developers team having profound expertise in Python 
-  Development. Contact us today. "
-        />
-        
-        
-        
+      
         <link
           rel="canonical"
           href="https://braininventory.in/hire-python-developers"

@@ -162,7 +162,7 @@ function ReactNativeDeveloper(props) {
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6743.png"
             alt="Swift Application Development Services"
           />
-          <WhyMean type="Swift App Development" meanReasons={meanReasons} />
+          <WhyMean type="Swift App" meanReasons={meanReasons} />
           <section className="container">
             <div className="flex justify-center ">
               <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
@@ -171,13 +171,12 @@ function ReactNativeDeveloper(props) {
             </div>
           </section>
           <Benefits
-            type="Swift App Development"
+            type="Swift App"
             subhead="Swift has evolved over the years to be a much more advanced and flexible tool. With this evolution comes the benefits of using Swift as your development language."
             benefitsList={benefitsList}
           />
           <Hire
             title="Why Swift App Development from %Brain Inventory"
-            subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
             card={hireCards}
           />{" "}
           <ProjectInquiry />

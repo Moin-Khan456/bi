@@ -179,29 +179,14 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire top-rated Android Developers from Brain Inventory. Our experienced developers build highly customized Android applications for different sizes of businesses."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Android+Developers.jpg"
         />
-
-       
-        
         <meta
-          property="twitter:title"
-          content=" Custom Android App 
-  Development | Android App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading Android App Development Company with a top-notch 
-  Android App Developers team having profound expertise in Android App 
-  Development. Contact us today. "
-        />
-        
-        
-        
+          property="og:url"
+          content="https://braininventory.in/hire-android-developers"
+        /> 
         <link
           rel="canonical"
           href="https://braininventory.in/hire-android-developers"

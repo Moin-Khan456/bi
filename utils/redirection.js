@@ -156,6 +156,16 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/hire-ui-ux-developer",
+      destination: "/hire-ui-ux-designers",
+      permanent: true,
+    },
+    {
+      source: "/hire-ui-ux-developers",
+      destination: "/hire-ui-ux-designers",
+      permanent: true,
+    },
+    {
       source: "/business-application-development.php",
       destination: "/",
       permanent: true,

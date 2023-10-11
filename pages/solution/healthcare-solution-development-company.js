@@ -278,6 +278,10 @@ function ReactNativeDeveloper(props) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_healthcare.jpg"
         />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/solution/healthcare-solution-development-company"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/solution/healthcare-solution-development-company"

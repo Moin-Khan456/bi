@@ -166,7 +166,7 @@ function HireAangularJsDeveloper(props) {
         {/* Set your image URL here */}
         <meta
           property="og:url"
-          content="https://braininventory.in/mobile-development/hybrid-development-company"
+          content="https://braininventory.in/mobile-development/hybrid-app-development"
         />
         <meta
           property="og:image"
@@ -174,7 +174,7 @@ function HireAangularJsDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/hybrid-development-company"
+          href="https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
       <Loader />

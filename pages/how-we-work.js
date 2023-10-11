@@ -56,19 +56,9 @@ export default function HowWeWork() {
 
         
         <meta
-          property="twitter:title"
-          content=" Custom Web App & 
-Software Development – How We Work"
+          property="og:url"
+          content="https://braininventory.in/how-we-work"
         />
-        <meta
-          property="twitter:description"
-          content=" 
-Brain Inventory is a Culture rich custom Software Development 
-Company that helps business turn their idea into reality. We create 
-custom tailored solutions to your needs. 
-"
-        />
-
         <link rel="icon" href="/favicon.png" />
         <script
           async

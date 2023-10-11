@@ -65,20 +65,9 @@ Contact us now."
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_contact.jpg"
         />
-
-        
         <meta
-          property="twitter:title"
-          content=" Contact Brain Inventory 
-to Kick start Your Digital Journey Today "
-        />
-        <meta
-          property="twitter:description"
-          content=" Contact Brain 
-Inventory for any service, requirement And query. Get a free no 
-obligation consulting for your website, software And App development
-projects.
-Contact us now."
+          property="og:url"
+          content="https://braininventory.in/contact"
         />
 
         

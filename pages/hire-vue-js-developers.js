@@ -168,11 +168,6 @@ function HireAangularJsDeveloper(props) {
           content="Hire experienced Vue JS Developers from Brain Inventory. Our top developers offers high-quality Vue JS Development Services to build scalable and secure apps. "
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Vue+Js+Developers.jpg"
         />
@@ -180,20 +175,10 @@ function HireAangularJsDeveloper(props) {
        
         
         <meta
-          property="twitter:title"
-          content=" Vue JS 
-  Development | VueJS App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-vue-js-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading Vue JS Development Company with a top-notch 
-  Vue JS Developers team having profound expertise in Vue JS 
-  Development. Contact us today. "
-        />
-        
-        
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-vue-js-developers"
@@ -223,7 +208,7 @@ function HireAangularJsDeveloper(props) {
                 card={experienceCards}
               />
               <Advantage
-                title="Hiring Vue js Developers"
+                title="Vue js Developers"
                 advantages={advantages}
               />
               <HireMarquee title="Vue JS" />

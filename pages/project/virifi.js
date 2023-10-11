@@ -150,21 +150,9 @@ const Virifi = () => {
           property="og:url"
           content="https://braininventory.in/project/virifi"
         />
-       
-        
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_virifi.jpg"
-        />
-        <meta
-          property="twitter:title"
-          content="Build Private and Secure Blockchain Network for Virifi"
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-  technology trends, news & updates and other topics about software
-  & app development from Brain Inventory’s informative blogs!"
         />
         <link
           rel="canonical"
@@ -176,6 +164,7 @@ const Virifi = () => {
         <div className="w-full px-4 flex flex-col items-center pt-12 justify-center lg:block lg:px-12 bg-[url('https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Image+8.png')]">
           <div className="container">
             <SectionOne section={VirifiSectionOne} />
+            <h1 className="invisible">Virifi</h1>
           </div>
         </div>
         <div>

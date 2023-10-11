@@ -172,31 +172,13 @@ function HireAangularJsDeveloper(props) {
           content="Hire professional iOS Developers from Brain Inventory. Our experience team of iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+iOS+Developers.jpg"
         />
-
-       
-        
         <meta
-          property="twitter:title"
-          content=" Custom iOS 
-  Development | Angular App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-ios-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading iOS Development Company with a top-notch 
-  iOS Developers team having profound expertise in iOS 
-  Development. Contact us today. "
-        />
-        
-        
         
         <link
           rel="canonical"

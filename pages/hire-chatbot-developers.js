@@ -219,23 +219,11 @@ https://braininventory.in/hire-chatbot-developers"
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
-        />
-       
-        
+        />        
         <meta
-          property="twitter:title"
-          content=" Hire Python 
-Developer | Python App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Python Development Company with a top-notch 
-Python Developers team having profound expertise in Python 
-Development. Contact us today. "
-        />
-        
-        
+          property="og:url"
+          content="https://braininventory.in/hire-chatbot-developers"
+        />        
         
         <link
           rel="canonical"
@@ -265,14 +253,13 @@ Development. Contact us today. "
                 para3={subhead3}
                 card={experienceCards}
               />
-              <OurDevelopers banners={banners} />
+              {/* <OurDevelopers banners={banners} /> */}
               <HireMarquee title="Chatbot Developers" />
               <Advantage title="Chatbot Developer" benefitsList={reasons} />
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
                 title="Why Hire Chatbot Developers from %Brain Inventory"
                 card={hireCards}
-                subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
               />
               <Hello />
               <ChooseBraininventory reasons={chooseBI} alt="Hire Dedicated Chatbot Developers" />

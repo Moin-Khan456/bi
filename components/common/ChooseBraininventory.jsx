@@ -8,7 +8,7 @@ export default function ChooseBraininventory({ reasons, subhead, alt }) {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div>
             <h1 className="Gilroy-Bold text-4xl leading-[3rem]">
-              Why Choose Brain inventory for Your Next{" "}
+              Why Choose Brain Inventory for Your Next{" "}
               <span className="text-[#7600EB]">Assignment</span>
             </h1>
             <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">

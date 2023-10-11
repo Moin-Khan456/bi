@@ -27,7 +27,9 @@ export default function HireBanner({
                     <br/>Designers
                   </span>: unique === "analyst" ?<span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
                     <br/>Analyst
-                  </span>: developmentImage ? (
+                  </span>: unique === "integration" ?<span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                    <br/>Integration
+                  </span>:developmentImage ? (
                 <>
                   <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
                     <br/>Development

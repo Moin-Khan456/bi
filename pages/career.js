@@ -56,23 +56,10 @@ on interesting projects!"
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/hr-1.jpg"
         />
-        <meta property="twitter:domain" content="https://braininventory.in/" />
-        
         <meta
-          property="twitter:title"
-          content=" Career at Brain Inventory 
-| Best Software Development Company "
+          property="og:url"
+          content="https://braininventory.in/career"
         />
-        <meta
-          property="twitter:description"
-          content=" Looking for a 
-career at Brain Inventory? Seize the opportunity to join the team of 
-top-notch software professionals and start working on interesting 
-projects!"
-        />
-        
-        
-        
         <link rel="canonical" href="https://braininventory.in/career" />
       </Head>
       <Loader />

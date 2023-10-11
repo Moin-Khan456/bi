@@ -168,10 +168,6 @@ const Fatoura = () => {
           property="og:url"
           content="https://braininventory.in/project/fatoura"
         />
-        <meta
-          property="twitter:domain"
-          content="https://braininventory.in/project/fatoura"
-        />
         
         <meta
           property="og:image"

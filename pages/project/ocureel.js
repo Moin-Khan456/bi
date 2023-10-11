@@ -132,20 +132,6 @@ const Virifi = () => {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_OCUREEL.jpg"
         />
-        <meta
-          property="twitter:title"
-          content=" Brain Inventory Blog – 
-  Staff Augmentation | Software | Web | App Development "
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-  technology trends, news & updates and other topics about software
-  & app development from Brain Inventory’s informative blogs!"
-        />
-        
-        
-        
         <link
           rel="canonical"
           href="https://braininventory.in/project/ocureel"
@@ -155,6 +141,7 @@ const Virifi = () => {
         <Header />
         <div className="container">
           <SectionOne />
+          <h1 className="invisible">Ocureel</h1>
         </div>
       </div>
       <div className="">

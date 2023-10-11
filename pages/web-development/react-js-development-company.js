@@ -141,29 +141,11 @@ function HireReactDeveloper(props) {
           property="og:description"
           content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/react-js-development-company" />
+        <meta property="og:url" content="https://braininventory.in/web-development/react-js-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
         />
-
-       
-        
-        <meta
-          property="twitter:title"
-          content=" Custom React Js 
-Development | React Js Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading Android App Development Company with a top-notch 
-Android App Developers team having profound expertise in Android App 
-Development. Contact us today. "
-        />
-        
-        
-        
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/react-js-development-company"

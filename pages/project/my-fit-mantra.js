@@ -156,9 +156,7 @@ const Numetric = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog –
-  Staff Augmentation | Software | Web | App Development 
-  "
+          content="Brain Inventory Developed Integrated Personal Trainer App"
         />
         <meta
           property="og:description"
@@ -167,7 +165,7 @@ const Numetric = () => {
         <meta
           property="og:url"
           content=" 
-  https://braininventory.in/"
+  https://braininventory.in/project/my-fit-mantra"
         />
        
         
@@ -175,19 +173,6 @@ const Numetric = () => {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_MFM.jpg"
         />
-        <meta
-          property="twitter:title"
-          content=" Brain Inventory Blog – 
-  Staff Augmentation | Software | Web | App Development "
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-  technology trends, news & updates and other topics about software
-  & app development from Brain Inventory’s informative blogs!"
-        />
-        
-        
         
         <link
           rel="canonical"
@@ -197,6 +182,7 @@ const Numetric = () => {
       <Header />
       <div className="project-bg pt-12">
         <SectionOne section={NumetricSectionOne} />
+        <h1 className="invisible">Fully Integrated Personal Trainer App</h1>
         <SectionTwo />
 
         <SectionThree

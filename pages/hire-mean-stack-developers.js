@@ -173,30 +173,14 @@ function HireAangularJsDeveloper(props) {
           content="Hire Top MEAN Stack Developer from Brain Inventory. Our MEAN Stack developers, experts in Node.js, MongoDB, Express.js, AngularJS and Bootstrap. Contact us today."
         />
         <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
-        <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+MEAN+Developers.jpg"
         />
-
-       
         
         <meta
-          property="twitter:title"
-          content=" Hire Mean Stack 
-  Developer | MEAN App Developer Company"
+          property="og:url"
+          content="https://braininventory.in/hire-mean-stack-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading MEAN Development Company with a top-notch 
-  MEAN Developers team having profound expertise in MEAN 
-  Development. Contact us today. "
-        />
-        
         
         
         <link

@@ -205,20 +205,11 @@ const Bloomia = () => {
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_bloomia.jpg"
-        />
+        />       
         <meta
-          property="twitter:title"
-          content=" Brain Inventory Blog – 
-Staff Augmentation | Software | Web | App Development "
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-technology trends, news & updates and other topics about software
-& app development from Brain Inventory’s informative blogs!"
-        />
-        
-        
+          property="og:url"
+          content="https://braininventory.in/project/bloomia"
+        />       
         
         <link
           rel="canonical"
@@ -228,6 +219,7 @@ technology trends, news & updates and other topics about software
       <Header />
       <div className="container project-bg pt-12">
         <SectionOne section={BloomiaSectionOne} />
+        <h1 className="invisible">Bloomia</h1>
       </div>
       <SectionTwo carouselImages={section2CarouselImages} />
       {position && (

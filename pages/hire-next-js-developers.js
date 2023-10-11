@@ -138,7 +138,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Hire our experienced UI/UX design team for your complex projects. At BrainInventory, we have an experienced team of business professionals who help our clients to achieve their marketing objectives. Our methodology begins with thoroughly understanding each client's business and needs. We then create a custom identity solution that is designed specifically to meet their needs. Our experience in delivering highly complex business process solutions has allowed us to understand the importance of a well-defined and fully functioning architecture.";
+    "At BrainInventory, we have an experienced team of business professionals who help our clients to achieve their marketing objectives. Our methodology begins with thoroughly understanding each client's business and needs. We then create a custom identity solution that is designed specifically to meet their needs. Our experience in delivering highly complex business process solutions has allowed us to understand the importance of a well-defined and fully functioning architecture.";
   const chooseBI = [
     "We understand that Next.js delivers highest quality frontend development and after years of experience in the industry, we have a team of dedicated Next JS developers with vast experience and technical knowledge. Our developers are highly skilled and well equipped with the technological skills to deliver quality web applications specializing in Next.js development services. Hire our Next.js experts and get exactly what you want in your software application.",
     "Hire dedicated Next.js experts from us to build lightweight, server-side, and simple test-driven apps. We have Next.js developers for hire whose expertise can be leveraged to develop smooth, high-performing, and scalable web apps. We understand the importance of good design, functional programming, and responsive Web Applications at BrainInventory.",
@@ -168,32 +168,16 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Top NextJS Developers from Brain Inventory. Our experienced developers help you build high-performing custom web apps. Contact us today."
         />
-        <meta
-          property="og:url"
-          content=" 
-  https://braininventory.in/"
-        />
+   
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+NextJS+Developers.jpg"
         />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/hire-next-js-developers"
+        />
 
-       
-        
-        <meta
-          property="twitter:title"
-          content=" Hire NextJS Developer | NextJS App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-  the leading NextJS Development Company with a top-notch 
-  NextJS Developers team having profound expertise in NextJS 
-  Development. Contact us today. "
-        />
-        
-        
-        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-next-js-developers"

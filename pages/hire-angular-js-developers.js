@@ -181,6 +181,7 @@ function HireAangularJsDeveloper(props) {
           content="Hire a Dedicated AngularJS Developers team from Brain Inventory. We offer high-quality AngularJS development services to scale up your business. Contact us today."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://braininventory.in/hire-angular-js-developers" />
         <meta
           property="og:title"
           content="Hire AngularJS Developers | Hire Dedicated Angular Developers"
@@ -194,24 +195,6 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Angular+JS+Developers.jpg"
         />
-
-       
-        
-        <meta
-          property="twitter:title"
-          content=" AngularJS 
-Development | Angular App Development Company"
-        />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading AngularJS Development Company with a top-notch 
-AngularJS Developers team having profound expertise in AngularJS 
-Development. Contact us today. "
-        />
-        
-        
-        
         <link
           rel="canonical"
           href="https://braininventory.in/hire-angular-js-developers"

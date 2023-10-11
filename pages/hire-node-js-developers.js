@@ -182,21 +182,10 @@ function HireAangularJsDeveloper(props) {
        
         
         <meta
-          property="twitter:title"
-          content=" Hire NodeJS 
-Developer | NodeJS App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-node-js-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading NodeJS Development Company with a top-notch 
-NodeJS Developers team having profound expertise in NodeJS 
-Development. Contact us today. "
-        />
-        
-        
-        
-        <link
+      <link
           rel="canonical"
           href="https://braininventory.in/hire-node-js-developers"
         />

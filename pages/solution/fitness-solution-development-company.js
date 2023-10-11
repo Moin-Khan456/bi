@@ -230,6 +230,10 @@ function ReactNativeDeveloper(props) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_fitness.jpg"
         />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/solution/fitness-solution-development-company"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/solution/fitness-solution-development-company"
@@ -238,7 +242,6 @@ function ReactNativeDeveloper(props) {
       <Loader />
       <main className="">
         <Header />
-        <section className="">
           <SectionOne />
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
@@ -279,7 +282,6 @@ function ReactNativeDeveloper(props) {
               <Footer />
           <hr />
           <Footer />
-        </section>
       </main>
     </>
   );

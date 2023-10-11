@@ -48,7 +48,6 @@ export default function Home({ data, blogs, totalPages }) {
           content=" Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
         />
 
-        <meta property="twitter:domain" content="https://braininventory.in/" />
         <meta
           property="twitter:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Logobg.png"
@@ -58,15 +57,8 @@ export default function Home({ data, blogs, totalPages }) {
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
         />
         <meta
-          property="twitter:title"
-          content=" Brain Inventory Blog – 
-Staff Augmentation | Software | Web | App Development "
-        />
-        <meta
-          property="twitter:description"
-          content=" Read the latest 
-technology trends, news And updates and other topics about software
-And app development from Brain Inventory’s informative blogs!"
+          property="og:url"
+          content="https://braininventory.in/blog"
         />
         
         

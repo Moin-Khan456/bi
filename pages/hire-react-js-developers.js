@@ -189,22 +189,18 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+React+JS+Developers.jpg"
         />
 
+        <meta
+          property="og:url"
+          content="https://braininventory.in/hire-react-js-developers"
+        />
+
        
         
         <meta
-          property="twitter:title"
-          content=" Hire ReactJS Developer | ReactJS App Development Company"
+          property="og:url"
+          content="https://braininventory.in/hire-react-js-developers"
         />
-        <meta
-          property="twitter:description"
-          content=" Brain Inventory is 
-the leading ReactJS Development Company with a top-notch 
-ReactJS Developers team having profound expertise in ReactJS 
-Development. Contact us today. "
-        />
-        
-        
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-react-js-developers"

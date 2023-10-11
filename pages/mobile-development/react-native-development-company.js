@@ -151,14 +151,14 @@ function ReactNativeDeveloper(props) {
           property="og:description"
           content="Brain Inventory offers React Native app development Solutions to build cross-platform mobile apps. We provide world-class React Native App Development Services."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/react-native-development" />
+        <meta property="og:url" content="https://braininventory.in/mobile-development/react-native-development-company" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/mobile-development/react-native-development"
+          href="https://braininventory.in/mobile-development/react-native-development-company"
         />
       </Head>
       <Loader />

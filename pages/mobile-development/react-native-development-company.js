@@ -171,7 +171,7 @@ function ReactNativeDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
-            alt="React Native App Development Services, React Native.Js App Development"
+            alt="React Native App Development "
           />
           <WhyMean
             type="React Native App"
@@ -197,6 +197,7 @@ function ReactNativeDeveloper(props) {
               <ProjectInquiry />
               <ChooseBraininventory
                 reasons={chooseBI}
+                alt="React Native App Development "
               />{" "}
               <Industries />
               <FaqHire faq={faqdetails} /> {/*Done */}

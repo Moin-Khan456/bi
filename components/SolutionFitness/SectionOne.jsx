@@ -5,7 +5,7 @@ const SectionOne = () => {
   return (
     <div className="relative bg-cover overflow-hidden bg-center h-[100%] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/daniel-apodaca-WdoQio6HPVA-unsplash.png')] ">
     <div className="absolute top-10 -right-24 w-full">
-        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/braininventory.in+spinner+white.png" alt="BrainInventory.in" width={1200} height={1200} className="w-[16%] lg:w-[8%] absolute top-12 animate-spin-slow right-10 lg:right-48" />
+        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/braininventory.in+spinner+white.png" alt="Fitness App Development Company" width={1200} height={1200} className="w-[16%] lg:w-[8%] absolute top-12 animate-spin-slow right-10 lg:right-48" />
     </div>
       <div className="bg-gradient-to-r from-black to-transparent">
         <div className="container py-60 px-12">

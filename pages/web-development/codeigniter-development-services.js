@@ -186,7 +186,7 @@ function HireAangularJsDeveloper(props) {
             btn="Contact Us!"
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_Services.png"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+1.png"
-            alt="A Smarter Way to Build Customized Applications."
+            alt="CodeIgniter development company"
             type="php"
           />
           <Customer />
@@ -211,7 +211,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="CodeIgniter development company" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

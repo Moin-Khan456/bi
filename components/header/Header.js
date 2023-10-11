@@ -485,17 +485,27 @@ const Solution = () => {
     {
       _id: 1,
       name: "Social Media Marketing",
-      link: "/solution/social-media-marketing",
+      link: "/solution/social-networking-development-company",
     },
     {
       _id: 2,
       name: "Fitness Solution Development",
-      link: "/solution/fitness",
+      link: "/solution/fitness-solution-development-company",
     },
     {
       _id: 3,
       name: "Healthcare Solution Development",
-      link: "/solution/healthcare",
+      link: "/solution/healthcare-solution-development-company",
+    },
+    {
+      _id: 4,
+      name: "Blockchain Solution Development",
+      link: "/solution/blockchain-solution-development-company",
+    },
+    {
+      _id: 5,
+      name: "Accounting Solution Development",
+      link: "/solution/accounting-solution-development-company",
     },
   ];
 

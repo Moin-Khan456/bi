@@ -184,7 +184,7 @@ function HireAangularJsDeveloper(props) {
             btn="Contact Us!"
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+1.png"
-            alt="A Smarter Way to Build Customized Applications."
+            alt="WordPress website development services"
             type="php"
           />
           <Customer />
@@ -209,7 +209,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="WordPress website development services" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

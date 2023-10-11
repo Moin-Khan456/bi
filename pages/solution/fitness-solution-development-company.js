@@ -37,7 +37,7 @@ const ProjectInquiry = dynamic(() =>
   import("../../components/common/projectInquiryCard.jsx")
 );
 const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionFitness/PlatformDevelopment.jsx")
+  import("../../components/SolutionAccounting/SectionSlider")
 );
 const LetsKick = dynamic(() =>
   import("../../components/common/LetsKick.js")
@@ -140,7 +140,11 @@ function ReactNativeDeveloper(props) {
     {
       head: "User-Centric Philosophy",
       content: "At the heart of our fitness technology solutions is User Satisfaction. We hold true to crafting products that not only meet but surpass user expectations, fostering trust and dependability. In the constantly evolving fitness landscape, we stand by your side as a dependable partner, committed to delivering exceptional service and inventive solutions that genuinely make a difference."
-    }
+    },
+    {
+      head: "Adaptive Approach",
+      content: "In the dynamic realm of fitness, agility is paramount. We grasp this importance and mold our solutions using agile development principles. Our approach is flexible, effective, and tailored to fit your unique needs, keeping pace with evolving trends and emerging technologies. Through our adaptable methodology, you receive solutions that remain relevant today and prepared for the ever-changing future."
+    },
   ]
   const keyDesc = "Embark on a journey into the realm of fitness solutions that seamlessly meld technology with well-being, ushering in a new era of user experiences. Our mission is to revolutionize the fitness horizon by seamlessly weaving in state-of-the-art technology. Through the Fitness Solution, your brand has the opportunity to flourish in this digital epoch, elevating well-being services and ultimately nurturing healthier lifestyles for everyone."
   const keyFeatures = [
@@ -155,7 +159,11 @@ function ReactNativeDeveloper(props) {
     {
       head: "Effective Progress Tracking",
       content: "Monitoring progress is essential for achieving fitness goals. Our technology simplifies progress tracking by providing visual representations of user achievements, milestones, and health improvements. This feature encourages adherence and boosts motivation to continue their fitness journey."
-    }
+    },
+    {
+      head: "Real-time Virtual Coaching",
+      content: "Embracing virtual coaching, the platform offers real-time virtual training sessions between users and fitness experts. Whether for guidance, motivation, or personalized coaching, our secure and user-friendly video platform ensures that users can access expert fitness advice from the comfort of their spaces."
+    },
   ]
 
   const setionThreeCards = [
@@ -253,12 +261,13 @@ function ReactNativeDeveloper(props) {
             description={sectionFiveDesc}
             sectionFiveTableHead={sectionFiveTableHead}
             sectionFiveTable={sectionFiveTable}
+            alt="Fitness App Development Company"
           />
           <ProjectInquiry />
 
-          <PlatformDevelopment cardPoints={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="FITNESS PLATFORM DEVELOPMENT" description={platformDesc}/>
-          <SectionNine brand="FITNESS SOLUTION DEVELOPMENT       " pageCategory="FITNESS SOLUTION DEVELOPMENT    " pageCategoryAbbr="FITNESS SOLUTION DEVELOPMENT      " slow={70000} fast={45000} src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/fitness/woman-training-with-barbell-shoulders.png"/>
-          <PlatformDevelopment cardPoints={keyFeatures} subhead="KEY FEATURES OF" head="FITNESS SOLUTION DEVELOPMENT" description={keyDesc}/>
+          <PlatformDevelopment data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="FITNESS PLATFORM DEVELOPMENT" description={platformDesc}/>
+          <SectionNine brand="FITNESS SOLUTION DEVELOPMENT       " pageCategory="FITNESS SOLUTION DEVELOPMENT    " pageCategoryAbbr="FITNESS SOLUTION DEVELOPMENT      " slow={70000} fast={45000} src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/fitness/woman-training-with-barbell-shoulders.png" alt="Fitness App Development Company"/>
+          <PlatformDevelopment data={keyFeatures} subhead="KEY FEATURES OF" head="FITNESS SOLUTION DEVELOPMENT" description={keyDesc}/>
           <Approach title={title} desc={approachDesc} points={approachPoints}/>
           <SectionTen/>
           <FaqHire faq={faqdetails} />

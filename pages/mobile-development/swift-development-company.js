@@ -160,7 +160,7 @@ function ReactNativeDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6743.png"
-            alt="Swift App App Development Services, Swift App.Js App Development"
+            alt="Swift Application Development Services"
           />
           <WhyMean type="Swift App Development" meanReasons={meanReasons} />
           <section className="container">
@@ -183,6 +183,7 @@ function ReactNativeDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
+            alt="Swift Application Development Services"
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

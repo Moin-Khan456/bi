@@ -26,7 +26,7 @@ const SectionFive = dynamic(() =>
   import("../../components/SolutionFitness/SectionFive.jsx")
 );
 const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionFitness/PlatformDevelopment.jsx")
+  import("../../components/SolutionAccounting/SectionSlider")
 );
 const SectionSix = dynamic(() =>
   import("../../components/solution/SEO/SectionSix.jsx")
@@ -144,7 +144,11 @@ function SocialMedia(props) {
         {
           head: "Competitive Pricing",
           content: "At the heart of our strategy is Competitive Pricing. We recognize the importance of providing value without compromising on quality. We’ve honed our efficiencies, cut unnecessary costs, and leveraged our expertise to provide solutions that are not only top-notch but also affordable. This ensures that you can maximize your social industry efforts without breaking the…"
-        }
+        },
+        {
+          head: "Customer Satisfaction",
+          content: "At the heart of our technical solutions for the social industry lies one crucial factor - Customer Satisfaction. We believe in creating products that not only meet but exceed customer expectations, fostering a bond of trust and reliability. In an ever-evolving digital landscape, we’re your steadfast partner, committed to delivering unparalleled service and innovative solutions."
+        },
       ]
 
       const keyDesc = "Welcome to the forefront of social industry solutions where we harness the power of technology to foster stronger human connections. Our mission is to transform the social sector by implementing state-of-the-art tech solutions. With us, your organization can thrive in the digital age, improving efficiency and engagement, while also making a positive impact on society."
@@ -208,9 +212,9 @@ function SocialMedia(props) {
             sectionFiveTable={sectionFiveTable}
           />
           <SectionSix />
-          <PlatformDevelopment cardPoints={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="SOCIAL MEDIA APP DEVELOPMENT" description={platformDesc}/>
-          <SectionNine brand="BRANDING" pageCategory="SOCIAL MEDIA MARKETING" pageCategoryAbbr="SEO" slow={22000} fast={15000} src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+7033.png" />
-          <PlatformDevelopment cardPoints={keyFeatures} subhead="KEY FEATURES OF" head="SOCIAL MEDIA APP DEVELOPMENT" description={keyDesc}/>
+          <PlatformDevelopment data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="SOCIAL MEDIA APP DEVELOPMENT" description={platformDesc}/>
+          <SectionNine brand="BRANDING" pageCategory="SOCIAL MEDIA MARKETING" pageCategoryAbbr="SEO" slow={22000} fast={15000} src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+7033.png" alt="social networking app development company" />
+          <PlatformDevelopment data={keyFeatures} subhead="KEY FEATURES OF" head="SOCIAL MEDIA APP DEVELOPMENT" description={keyDesc}/>
           <SectionTen />
           <FaqHire faq={faqdetails} />
           <BlogArticle />

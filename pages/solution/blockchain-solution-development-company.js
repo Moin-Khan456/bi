@@ -39,7 +39,7 @@ const ProjectInquiry = dynamic(() =>
   import("../../components/common/projectInquiryCard.jsx")
 );
 const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionFitness/PlatformDevelopment.jsx")
+  import("../../components/SolutionAccounting/SectionSlider")
 );
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const BlogArticle = dynamic(() =>
@@ -159,6 +159,11 @@ function ReactNativeDeveloper(props) {
       content:
         "Experience the paramount satisfaction of Robust Security Measures in Blockchain Development. With us, every piece of code is protected by top-tier encryption. Moreover, we offer comprehensive Smart Contract Auditing and rigorous Testing procedures for ensuring absolute reliability and flawlessness. Trust our expertise to provide an unshakeable foundation for your dreams.",
     },
+    {
+      head: "On-Bench available resources",
+      content:
+        "Meet the powerhouse behind our innovative solutions - our expert blockchain development team. Comprising a mix of creativity, technical prowess, and a passion for digital transformation, they form an impressive lineup on our bench. This formidable team includes developers skilled in the most advanced blockchain technologies, innovators who excel in transforming abstract concepts into robust applications, and testers who dedicate themselves to ensuring the seamless and secure deployment of every solution. By working with us, you gain access to a world of blockchain innovation at your fingertips.",
+    },
   ];
   const keyDesc =
     "Unlock the potential of blockchain solutions and embrace the future, where technology converges with innovation to redefine user experiences. Our mission is to reshape the blockchain landscape by seamlessly integrating cutting-edge technology. With our Blockchain App, your institution can thrive in the digital era, amplifying services and ultimately fostering better outcomes for all.";
@@ -177,6 +182,11 @@ function ReactNativeDeveloper(props) {
       head: "Streamlined Transaction Experience",
       content:
         "Our Blockchain Solution streamlines the transaction process, making it hassle-free and efficient. Users can effortlessly explore blockchain applications, initiate transactions, and manage their digital assets with a few simple taps. This feature not only enhances user convenience but also optimizes blockchain operations, ensuring the efficient use of resources.",
+    },
+    {
+      head: "Multilingual Interface",
+      content:
+        "To cater to a global user base, our app boasts a multilingual interface. Users can choose from a variety of languages, ensuring that language barriers do not hinder their understanding and engagement with blockchain technology.",
     },
   ];
 
@@ -309,7 +319,7 @@ function ReactNativeDeveloper(props) {
               <ProjectInquiry />
 
               <PlatformDevelopment
-                cardPoints={platformDevelopment}
+                data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
                 head="BLOCKCHAIN SOLUTION DEVELOPMENT"
                 description={platformDesc}
@@ -323,7 +333,7 @@ function ReactNativeDeveloper(props) {
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
               />
               <PlatformDevelopment
-                cardPoints={keyFeatures}
+                data={keyFeatures}
                 subhead="KEY FEATURES OF"
                 head="BLOCKCHAIN SOLUTION DEVELOPMENT"
                 description={keyDesc}

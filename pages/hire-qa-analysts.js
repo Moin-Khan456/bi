@@ -201,7 +201,7 @@ Development. Contact us today. "
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
-            alt="Hire QA Analyst Developer Services, Hire QA Analyst Developer"
+            alt="QA and Testing Specialists"
           />
           <Customer />
           {position && (
@@ -224,7 +224,7 @@ Development. Contact us today. "
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="QA and Testing Specialists"
               />
               <Hello />
               <Engaged />

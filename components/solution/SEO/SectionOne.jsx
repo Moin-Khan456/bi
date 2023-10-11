@@ -38,7 +38,7 @@ const Index = () => {
                                 <div className='hidden lg:block absolute top-[-20rem] left-[23rem]'>
                                      <Image 
                                      src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+163.png'
-                                     alt=''
+                                     alt='social networking app development company'
                                        width={800}
                                        height={800}
                                        className=' w-[700px] seo-banner h-[600px]'

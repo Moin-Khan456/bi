@@ -184,7 +184,7 @@ https://braininventory.in/web-development/php-development"
             btn="Contact Us!"
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+1.png"
-            alt="A Smarter Way to Build Customized Applications."
+            alt="Python Development Company"
             type="php"
           />
           <Customer />
@@ -207,7 +207,7 @@ https://braininventory.in/web-development/php-development"
               <div className="container">
                 <Hello />
               </div>
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="Python Development Company" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

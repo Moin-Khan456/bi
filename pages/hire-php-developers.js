@@ -229,7 +229,7 @@ Development. Contact us today. "
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+1.png"
-            alt="PHP services, Hire PHP Developer"
+            alt="Hire Dedicated PHP Developer"
           />
           <Customer />
           {position && (
@@ -255,7 +255,7 @@ Development. Contact us today. "
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="Hire Dedicated PHP Developer" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

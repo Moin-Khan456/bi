@@ -180,6 +180,7 @@ function HireAangularJsDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
+            alt="MERN Stack Development services"
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} /> {/*Done */}

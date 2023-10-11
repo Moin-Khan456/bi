@@ -214,7 +214,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+MEAN+Developers.png"
-            alt="NodeJS services, Hire NodeJS Developer"
+            alt="Hire Dedicated MEAN Stack Developers"
             type="hire"
           />
           <Customer />
@@ -238,7 +238,7 @@ function HireAangularJsDeveloper(props) {
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="Hire Dedicated MEAN Stack Developers"
               />
               <Hello />
               <Engaged />

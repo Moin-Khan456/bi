@@ -228,6 +228,7 @@ Development. Contact us today. "
             content={content}
             card={card}
             type="hire"
+            alt="Hire AngularJS Developers"
           />
           <Customer />
           {position && (
@@ -251,6 +252,7 @@ Development. Contact us today. "
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}
+                alt="Hire AngularJS Developers"
               />
               <Hello />
               <Engaged />

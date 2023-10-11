@@ -201,7 +201,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+UIUX+Developers.png"
-            alt="UI/UX services, Hire UI/UX Developer"
+            alt="Hire UI/UX Designers"
             type="hire"
           />
           <Customer />
@@ -220,7 +220,7 @@ function HireAangularJsDeveloper(props) {
                 title="Why Hire UI/UX Developers from %Brain Inventory"
                 card={hireCards}
               />
-              <ChooseBraininventory subhead={chooseBiSubhead} />
+              <ChooseBraininventory subhead={chooseBiSubhead} alt="Hire UI/UX Designers" />
               <Hello />
               <Engaged />
               <HireSteps type="UI/UX" />

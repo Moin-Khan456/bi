@@ -208,7 +208,7 @@ Development. Contact us today. "
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
-            alt="Full Stack services, Hire Full Stack Developer"
+            alt="Hire Full stack developers and programmers"
           />
           <Customer />
           {position && (
@@ -233,7 +233,7 @@ Development. Contact us today. "
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="Hire Full stack developers and programmers" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

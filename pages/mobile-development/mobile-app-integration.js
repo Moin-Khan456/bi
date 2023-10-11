@@ -188,7 +188,7 @@ function HireAangularJsDeveloper(props) {
           btn="Contact Us!"
           developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+3.png"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+1.png"
-          alt="A Smarter Way to Build Customized Applications."
+          alt="Mobile Application Integration Services"
           type="app"
         />
         <Customer />
@@ -214,7 +214,7 @@ function HireAangularJsDeveloper(props) {
               subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
             />
             <FindUs />
-            <ChooseBraininventory reasons={chooseBI} />
+            <ChooseBraininventory reasons={chooseBI} alt="Mobile Application Integration Services" />
             <FaqHire faq={faqdetails} />
             <hr />
             <BlogArticle />

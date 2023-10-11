@@ -213,7 +213,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+iOS+Developers.png"
-            alt="iOS App Development Services, iOS App Development"
+            alt="iOS app development services"
             type="hire"
           />
           <Customer />
@@ -233,7 +233,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <ChooseBraininventory
-                reasons={chooseBI}
+                reasons={chooseBI} alt="iOS app development services"
               />
               <Hello />
               <Engaged />

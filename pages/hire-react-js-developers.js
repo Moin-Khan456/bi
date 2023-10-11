@@ -220,7 +220,7 @@ Development. Contact us today. "
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+react+js+developers.png"
-            alt="Hire ReactJS Developer Services, Hire ReactJS Developer"
+            alt="Hire ReactJS Developers"
             type="hire"
           />
           <Customer />
@@ -242,6 +242,7 @@ Development. Contact us today. "
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}
+                alt="Hire ReactJS Developers"
               />
               <Hello />
               <Engaged />

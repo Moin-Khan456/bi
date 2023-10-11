@@ -2876,3 +2876,10 @@ a.btn-filled.btn {
   color: white !important;
   border-radius: 10rem !important;
 }
+.slick-list{
+  padding: 0;
+  width: 100%;
+}
+.slick-prev:before, .slick-next:before{
+  content: "" !important;
+}

@@ -28,7 +28,7 @@ const Index = () => {
 
                       <div>
                           <Image src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+7033.png' 
-                          width={500} height={400} alt='' className='m-auto block'></Image>
+                          width={500} height={400} alt='social networking app development company' className='m-auto block'></Image>
                       </div>
 
                       <div>

@@ -205,7 +205,7 @@ Development. Contact us today. "
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+MERN+Developers.png"
-            alt="NodeJS services, Hire NodeJS Developer"
+            alt="MERN stack development company"
             type="hire"
           />
           <Customer />
@@ -229,12 +229,12 @@ Development. Contact us today. "
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="MERN stack development company"
               />
               <Hello />
               <Engaged />
-              <HireSteps type="NodeJS" />
-              <Clients tech="NodeJS" />
+              <HireSteps type="MERN Stack" />
+              <Clients tech="MERN Stack" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

@@ -217,7 +217,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Android+Developers.png"
-            alt="Android App Development Services, Android App Development"
+            alt="Hire Android App Developers & Programmers"
             type="hire"
           />{" "}
           <Customer />
@@ -239,6 +239,7 @@ function HireAangularJsDeveloper(props) {
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}
+                alt="Hire Android App Developers & Programmers"
               />
               <Hello />
               <Engaged />

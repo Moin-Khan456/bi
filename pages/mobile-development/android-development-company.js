@@ -170,7 +170,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6961.png"
-            alt="Android Appp Development Services, Android App Development"
+            alt="Android application development"
           />
           <WhyMean type="Android App" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
@@ -193,6 +193,7 @@ function HireAangularJsDeveloper(props) {
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}
+                alt="Android application development"
               />{" "}
               <Industries />
               <FaqHire faq={faqdetails} />

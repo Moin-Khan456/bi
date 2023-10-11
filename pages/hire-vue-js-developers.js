@@ -209,7 +209,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
-            alt="NodeJS services, Hire NodeJS Developer"
+            alt="Vue.js Development Company"
             type="hire"
           />
           <Customer />
@@ -234,7 +234,7 @@ function HireAangularJsDeveloper(props) {
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="Vue.js Development Company"
               />
               <Hello />
               <Engaged />

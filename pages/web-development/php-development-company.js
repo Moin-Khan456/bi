@@ -192,7 +192,7 @@ function HireAangularJsDeveloper(props) {
           btn="Contact Us!"
           developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+1.png"
-          alt="A Smarter Way to Build Customized Applications."
+          alt="Custom PHP development"
           type="php"
         />
         <Customer />
@@ -215,7 +215,7 @@ function HireAangularJsDeveloper(props) {
             <div className="container">
               <Hello />
             </div>
-            <ChooseBraininventory reasons={chooseBI} />
+            <ChooseBraininventory reasons={chooseBI} alt="Custom PHP development"/>
             <FaqHire faq={faqdetails} />
             <hr />
             <BlogArticle />

@@ -39,7 +39,7 @@ const ProjectInquiry = dynamic(() =>
   import("../../components/common/projectInquiryCard.jsx")
 );
 const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionFitness/PlatformDevelopment.jsx")
+  import("../../components/SolutionAccounting/SectionSlider")
 );
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const BlogArticle = dynamic(() =>
@@ -155,6 +155,11 @@ function ReactNativeDeveloper(props) {
       content:
         "At the core of our strategy lies Competitive Costing. We understand the significance of delivering value while maintaining quality. By refining our processes, eliminating unnecessary expenses, and leveraging our expertise, we offer solutions that are both high-caliber and cost-effective. This approach empowers you to amplify your healthcare initiatives without straining...",
     },
+    {
+      head: "Agile Procedure",
+      content:
+        "In the dynamic landscape of the healthcare industry, agility is paramount. We recognize this imperative and tailor our solutions using agile development principles. Our approach is adaptable, efficient, and customized to meet your distinct requirements, staying attuned to shifting trends and emerging technologies. Through our agile methodology, you receive solutions that are not only relevant today but also...",
+    },
   ];
   const keyDesc =
     "Step into the future of healthcare solutions, where technology meets compassion to redefine patient experiences. Our mission is to reshape the healthcare landscape by integrating cutting-edge technology. With Healthcare technology, your institution can thrive in this digital era, enhancing medical services and ultimately fostering better health outcomes for all.";
@@ -173,6 +178,11 @@ function ReactNativeDeveloper(props) {
       head: "Effective Progress Tracking",
       content:
         "Monitoring progress is essential for achieving fitness goals. Our technology simplifies progress tracking by providing visual representations of user achievements, milestones, and health improvements. This feature encourages adherence and boosts motivation to continue their fitness journey.",
+    },
+    {
+      head: "Real-time Virtual Coaching",
+      content:
+        "Embracing virtual coaching, the platform offers real-time virtual training sessions between users and fitness experts. Whether for guidance, motivation, or personalized coaching, our secure and user-friendly video platform ensures that users can access expert fitness advice from the comfort of their spaces.",
     },
   ];
 
@@ -303,11 +313,12 @@ function ReactNativeDeveloper(props) {
                 description={sectionFiveDesc}
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
+                alt="Healthcare Software Development Services"
               />
               <ProjectInquiry />
 
               <PlatformDevelopment
-                cardPoints={platformDevelopment}
+                data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
                 head="HEALTHCARE SOLUTION DEVELOPMENT"
                 description={platformDesc}
@@ -318,10 +329,11 @@ function ReactNativeDeveloper(props) {
                 pageCategoryAbbr="HEALTHCARE SOLUTION DEVELOPMENT      "
                 slow={70000}
                 fast={55000}
+                alt="Healthcare Software Development Services"
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
               />
               <PlatformDevelopment
-                cardPoints={keyFeatures}
+                data={keyFeatures}
                 subhead="KEY FEATURES OF"
                 head="HEALTHCARE SOLUTION DEVELOPMENT"
                 description={keyDesc}

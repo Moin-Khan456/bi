@@ -17,7 +17,7 @@ const Index = () => {
 
                       <div>
                           <Image src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/abstract-yellow-rocket-ship-concept-cartoon-style.png' 
-                          width={800} height={500} alt='' className='w-[800px]'></Image>
+                          width={800} height={500} alt='social networking app development company' className='w-[800px]'></Image>
                       </div>
                 </div>
 

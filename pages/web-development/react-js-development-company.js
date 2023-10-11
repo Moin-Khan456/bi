@@ -179,7 +179,7 @@ Development. Contact us today. "
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
-            alt="React Js App Development Services, React Js.Js App Development"
+            alt="ReactJS Web Development Company,"
           />
           <WhyMean type="React Js Development" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
@@ -200,6 +200,7 @@ Development. Contact us today. "
           <ChooseBraininventory
             reasons={chooseBI}
             subhead={chooseBiSubhead}
+            alt="ReactJS Web Development Company"
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

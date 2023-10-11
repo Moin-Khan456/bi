@@ -211,7 +211,7 @@ Development. Contact us today. "
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Node+JS+Developers.png"
-            alt="NodeJS services, Hire NodeJS Developer"
+            alt="Remote Node.js Developers"
             type="hire"
           />
           <Customer />
@@ -233,6 +233,7 @@ Development. Contact us today. "
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}
+                alt="Remote Node.js Developers"
               />
               <Hello />
               <Engaged />

@@ -158,7 +158,7 @@ function ReactNativeDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
-            alt="Flutter App Development Services, Flutter.Js App Development"
+            alt=" Flutter Development Company"
           />
           <WhyMean type="Flutter App" meanReasons={meanReasons} />
           <section className="flex justify-center px-10">
@@ -179,6 +179,7 @@ function ReactNativeDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
+            alt="Flutter Development Company"
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} />

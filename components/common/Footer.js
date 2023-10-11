@@ -31,18 +31,32 @@ const FooterSections = [
   {
     title: "Solutions",
     link: "/solution",
+    className: "md:whitespace-nowrap",
     links: [
       {
+        _id: 1,
         name: "Social Media Marketing",
-        path: "/solution/social-media-marketing",
+        path: "/solution/social-networking-development-company",
       },
       {
+        _id: 2,
         name: "Fitness Solution Development",
-        path: "/solution/fitness",
+        path: "/solution/fitness-solution-development-company",
       },
       {
+        _id: 3,
         name: "Healthcare Solution Development",
-        path: "/solution/healthcare",
+        path: "/solution/healthcare-solution-development-company",
+      },
+      {
+        _id: 4,
+        name: "Blockchain Solution Development",
+        path: "/solution/blockchain-solution-development-company",
+      },
+      {
+        _id: 5,
+        name: "Accounting Solution Development",
+        path: "/solution/accounting-solution-development-company",
       },
     ],
   },
@@ -104,6 +118,7 @@ const FooterSections = [
   {
     title: "Mobile App Development",
     link: "/mobile-app-development",
+    className: "md:whitespace-nowrap",
     links: [
       {
         name: "Custom App Development",
@@ -139,35 +154,35 @@ const FooterSections = [
       },
     ],
   },
-  {
-    title: "Industries",
-    links: [
-      {
-        name: "Food",
-        path: "",
-      },
-      {
-        name: "Health Care",
-        path: "",
-      },
-      {
-        name: "Ecommerce",
-        path: "",
-      },
-      {
-        name: "Real Estate",
-        path: "",
-      },
-      {
-        name: "Education",
-        path: "",
-      },
-      {
-        name: "Finance",
-        path: "",
-      },
-    ],
-  },
+  // {
+  //   title: "Industries",
+  //   links: [
+  //     {
+  //       name: "Food",
+  //       path: "",
+  //     },
+  //     {
+  //       name: "Health Care",
+  //       path: "",
+  //     },
+  //     {
+  //       name: "Ecommerce",
+  //       path: "",
+  //     },
+  //     {
+  //       name: "Real Estate",
+  //       path: "",
+  //     },
+  //     {
+  //       name: "Education",
+  //       path: "",
+  //     },
+  //     {
+  //       name: "Finance",
+  //       path: "",
+  //     },
+  //   ],
+  // },
   {
     title: "Portfolio",
     link: "/portfolio",
@@ -198,10 +213,6 @@ const FooterSections = [
         path: "/project/my-fit-mantra",
       },
       {
-        name: "UpScaler - Online Learning Platform similar to Udemy",
-        path: "",
-      },
-      {
         name: "Ocureel - Relation Building and video sharing Application",
         path: "/project/ocureel",
       },
@@ -210,6 +221,7 @@ const FooterSections = [
   {
     title: "Hire Dedicated Remote Developers",
     link: "/hire-dedicated-remote-developers",
+    className: "md:whitespace-nowrap",
     links: [
       {
         name: "Hire Angular Js Developers",
@@ -317,7 +329,7 @@ export default function Footer() {
   return (
     <div className="py-10 mx-10 border-t">
       <div className="container">
-        <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
           {FooterSections.map((section, index) => {
             return (
               <div

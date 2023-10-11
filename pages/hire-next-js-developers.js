@@ -209,7 +209,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+NextJS+Developers.png"
-            alt="NodeJS services, Hire NodeJS Developer"
+            alt="Remote Next.js Developers"
             type="hire"
           />
           <Customer />
@@ -233,7 +233,7 @@ function HireAangularJsDeveloper(props) {
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="Remote Next.js Developers"
               />
               <Hello />
               <Engaged />

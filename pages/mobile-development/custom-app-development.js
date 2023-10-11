@@ -156,7 +156,7 @@ function HireAangularJsDeveloper(props) {
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
             developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
-            alt="Custom App Development Services, Custom App Development"
+            alt="custom app development"
             type="app"
           />
           <Customer />
@@ -178,6 +178,7 @@ function HireAangularJsDeveloper(props) {
           <ChooseBraininventoryApp
             head="Why Custom Web Development from"
             blue="Brain inventory"
+            alt="custom app development"
             reasons={reasonsForChoosing}
           />
           <hr />

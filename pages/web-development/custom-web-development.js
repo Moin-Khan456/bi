@@ -164,7 +164,7 @@ function HireAangularJsDeveloper(props) {
           developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
           image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
           type="web"
-          alt="custom web development solution"
+          alt="custom web development company"
         />
         <section className="container">
           <Customer />
@@ -184,6 +184,7 @@ function HireAangularJsDeveloper(props) {
         <ChooseBraininventory
           head="Why Choose Brain inventory for Your Next"
           blue="Assignment"
+          alt="custom web development company"
         />
         <BlogArticle />
         <FaqHire faq={faqdetails} />

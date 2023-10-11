@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Marquee from "react-easy-marquee";
-const Index = ({ brand, pageCategory, pageCategoryAbbr, src, slow, fast }) => {
+const Index = ({ brand, pageCategory, pageCategoryAbbr, src, alt, slow, fast }) => {
   return (
     <div className="rounded-md my-8 py-10 lg:space-x-6 relative ">
       <div className=" py-32 lg:pb-[22rem]">
@@ -50,7 +50,7 @@ const Index = ({ brand, pageCategory, pageCategoryAbbr, src, slow, fast }) => {
             src={src}
             width={500}
             height={400}
-            alt=""
+            alt={alt}
             className="m-auto block"
           ></Image>
         </div>

@@ -238,7 +238,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
-            alt="Python services, Hire Python Developer"
+            alt="Dedicated Python Programmers"
             type="hire"
           />
           <Customer />
@@ -260,7 +260,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <Hello />
-              <ChooseBraininventory reasons={chooseBI} />
+              <ChooseBraininventory reasons={chooseBI} alt="Dedicated Python Programmers" />
               <FaqHire faq={faqdetails} />
               <hr />
               <BlogArticle />

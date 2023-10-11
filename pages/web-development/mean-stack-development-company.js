@@ -150,7 +150,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Get a Quote"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
-            alt="MEAN Appp Development Services, MEAN App Development"
+            alt="MEAN Stack Development Services"
           />
           <WhyMean type="MEAN Stack" meanReasons={meanReasons} />
           <div className="flex justify-center px-10">
@@ -172,6 +172,7 @@ function HireAangularJsDeveloper(props) {
           <ProjectInquiry />
           <ChooseBraininventory
             reasons={chooseBI}
+            alt="MEAN Stack Development Services"
           />{" "}
           <Industries />
           <FaqHire faq={faqdetails} /> {/*Done */}

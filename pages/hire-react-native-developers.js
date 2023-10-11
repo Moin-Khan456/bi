@@ -225,7 +225,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             btn="Contact Us!"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+React+Native+Developers.png"
-            alt="Hire ReactJS Developer Services, Hire ReactJS Developer"
+            alt="React Native development company"
             type="hire"
           />
           <Customer />
@@ -246,7 +246,7 @@ function HireAangularJsDeveloper(props) {
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead}
+                subhead={chooseBiSubhead} alt="React Native development company"
               />
               <Hello />
               <Engaged />

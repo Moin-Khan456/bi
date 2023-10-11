@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function ChooseBraininventory({ reasons, subhead }) {
+export default function ChooseBraininventory({ reasons, subhead, alt }) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section-1">
@@ -81,7 +81,7 @@ export default function ChooseBraininventory({ reasons, subhead }) {
             </a>
           </div>
           <div>
-            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt="" width={700} height={700} />
+            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt={alt} width={700} height={700} />
           </div>
         </div>
       </div>

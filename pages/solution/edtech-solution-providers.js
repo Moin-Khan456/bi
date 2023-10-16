@@ -12,7 +12,7 @@ const Approach = dynamic(() =>
   import("../../components/SolutionFitness/Approach.jsx")
 );
 const SectionOne = dynamic(() =>
-  import("../../components/SolutionBlockchain/SectionOne.jsx")
+  import("../../components/SolutionEd-tech/SectionOne.jsx")
 );
 const SectionTwo = dynamic(() =>
   import("../../components/SolutionFitness/SectionTwo.jsx")
@@ -25,6 +25,9 @@ const SectionFour = dynamic(() =>
 );
 const SectionFive = dynamic(() =>
   import("../../components/SolutionFitness/SectionFive.jsx")
+);
+const SectionSix = dynamic(() =>
+  import("../../components/SolutionAccounting/SectionSix.jsx")
 );
 const SectionNine = dynamic(() =>
   import("../../components/SolutionFitness/SectionNine.jsx")
@@ -136,22 +139,22 @@ function ReactNativeDeveloper(props) {
     "We are undoubtedly in an era of digital educational transformation. It is a time where online solutions are growing in popularity among knowledge seekers. Big names like Udemy have paved the way, but now we see a rise of innovative platforms looking to find their own place in this ever-changing landscape. Let's explore these emerging contenders:";
 
   const sectionFiveTable = [
-    ["MyChart", "Headspace", "Fitbit", "MyFitnessPal"],
+    ["StudyBuddy", "LearnTogether", "MindfulLearn", "SkillBuilder"],
     [
-      "Provides patients with medical records access, appointment bookings, and doctor communication.",
-      "Offers guided meditations and mindfulness techniques for mental health.",
-      "Tracks daily activity, workouts, and sleep patterns for fitness enthusiasts.",
-      "Complete database of nutrition and calorie information for diet tracking.",
+      "Offers personalized study plans and group study sessions",
+      "Creates an educational-focused social network to connect and motivate learners",
+      "Focuses on mindfulness and holistic learning, offering meditation and stress management techniques",
+      "Provides interactive skill development courses and career guidance",
     ],
     [
-      "Over 5 million",
-      "More than 2 million",
-      "Over 28 million active users",
-      "More than 200 million",
+      "Over 1 million",
+      "More than 1.5 million",
+      "More than 500,000",
+      "Over 2 million",
     ],
   ];
   const sectionFiveTableHead = [
-    "Healthcare Application Platform",
+    "Educational App Platform",
     "Unique Features",
     "User Base",
   ];
@@ -208,31 +211,22 @@ function ReactNativeDeveloper(props) {
   const setionThreeCards = [
     {
       points: [
-        "According to market research, the global blockchain market size is projected to exceed USD 469.49 billion by the year 2030.",
-        "Blockchain in the global supply chain market is expected to reach $9.85 billion by 2025.",
-        "A survey indicates that 87 of enterprises across various sectors have already adopted blockchain or are in the process of doing so.",
+        "Did you realize that the edtech industry is anticipated to exceed $300 billion by 2025? According to Statista, this market is set to experience robust growth post-2023. This fact clearly highlights the relevance and demand for exceptional educational solution development.",
+        "There is a strong surge in mobile learning or m-learning. A report by MarketsandMarkets predicts that the mobile learning market would reach around $78.5 billion by 2025, up from $12.2 billion in 2020. Post-2023, this implies there will be an increasingly sizable market for mobile-based educational solutions.",
       ],
     },
     {
-      head: "Impact of Online Platforms in Blockchain",
-      content:
-        "Online platforms integrally magnify the practice and influence of blockchain technology. Here are three impactful statistics to shed light on this transformation:",
-      tableHead: ["Online Platform", "Impact in Blockchain", "Source"],
+      head: "The Impact of Online Platforms on Learning Goals",
+      
+      tableHead: ["Statistic", "Source"],
       tableContent: [
         [
-          "Ethereum",
-          "Ethereum has enabled the creation and execution of smart contracts, transforming blockchain from a simple transaction ledger to a full-fledged computing platform.",
-          "ethereum.org",
+          "Pew Research confirms that 73% of adults consider themselves lifelong learners, and a vast majority of them use digital tools for self-directed learning.",
+          "Statista",
         ],
         [
-          "OpenSea",
-          "OpenSea, as an NFT marketplace built on blockchain technology, has catalyzed the digital art and collectibles sector, creating new blockchain utility and value.",
-          "opensea.io",
-        ],
-        [
-          "Coinbase",
-          "Coinbase has significantly enhanced blockchain accessibility and public understanding by providing a secure and user-friendly platform for cryptocurrency transactions.",
-          "coinbase.com",
+          "e-Learning requires 40-60% less employee time than traditional education. Online learning platforms, hence, not only enhance the knowledge base but also increase productivity by consuming less time.", 
+          "MarketsandMarkets",
         ],
       ],
     },
@@ -307,11 +301,11 @@ function ReactNativeDeveloper(props) {
             />
           {position && (
             <>
-              {/* <SectionThree
+              <SectionThree
                 title="Insights into the Education Industry"
-                sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
+                sectionDesc="Education technology is a constantly evolving field that is rapidly embracing technological advancements. Here are some fascinating insights about the education industry."
                 setionThreeCards={setionThreeCards}
-              /> */}
+              />
               <TiltMarquee title="Education Solution Development" />
               <SectionFour
                 title="Solutions for Education Solution Development"
@@ -325,7 +319,12 @@ function ReactNativeDeveloper(props) {
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
               />
-              <ProjectInquiry />
+                <SectionSix
+                title="Ready to start your journey with a transformative education platform?"
+                customClasses="max-w-[200px] lg:max-w-[400px] bottom-0"
+                btn="BUILD YOUR ED-TECH SOLUTION"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Ed-Tech/Mask+group+(1).png"
+              />
 
               <PlatformDevelopment
                 data={platformDevelopment}

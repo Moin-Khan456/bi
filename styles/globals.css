@@ -830,6 +830,9 @@ html {
 
 
 @media(min-width: 1200px) {
+  .section-six-card{
+    height: auto;
+  }
   .post-container {
     display: flex;
     flex-direction: row;
@@ -2927,3 +2930,4 @@ a.btn-filled.btn {
 .ed-tech-dropshadow{
   filter: drop-shadow(0px 0px 100px rgba(38, 96, 244, 0.5));
 }
+

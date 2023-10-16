@@ -24,7 +24,7 @@ export default function HireBanner({
               {title}
               <span className="text-developer text-shadow-none text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
                 <br />
-                Services
+                Company
               </span>
             </h1>
             <h1 className="text-2xl Gilroy-Bold text-shadow mb-12">

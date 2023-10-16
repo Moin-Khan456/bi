@@ -1,14 +1,22 @@
 import Image from "next/image";
 import React from "react";
-const Index = ({ para1, para2, para3, title, image, card }) => {
+const Index = ({ para1, para2, para3, title, image, card, type }) => {
   return (
     <main>
       <section className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-20">
         <section className="px-8 lg:px-20">
-          <h1 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
-            Hire an Experienced <span className="text-[#7600EB]"> {title}</span>{" "}
-            to Upscale Your Development{" "}
-          </h1>
+          {type === "why" ? (
+            <h1 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
+              Why you may need a{" "}
+              <span className="text-[#7600EB]"> {title}</span> solution?
+            </h1>
+          ) : (
+            <h1 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
+              Hire an Experienced{" "}
+              <span className="text-[#7600EB]"> {title}</span> to Upscale Your
+              Development{" "}
+            </h1>
+          )}
         </section>
         <section className="container">
           <section className="grid xs:grid-rows-1 lg:grid-cols-2 gap-x-2 pt-8 w-full">

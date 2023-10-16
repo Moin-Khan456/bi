@@ -186,12 +186,14 @@ https://braininventory.in/web-development/php-development"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+1.png"
             alt="Python Development Company"
             type="php"
+            unique="Company"
           />
           <Customer />
           {position && (
             <>
               <Experienced
                 title="Python Development"
+                type="why"
                 image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+2.png"
                 para1={subhead1}
                 para2={subhead2}

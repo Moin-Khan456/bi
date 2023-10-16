@@ -22,7 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const SectionOne = dynamic(() =>
-  import("../../components/Web-Development/HireBanner.jsx")
+  import("../../components/common/HireBanner.jsx")
 );
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
@@ -188,12 +188,14 @@ function HireAangularJsDeveloper(props) {
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+1.png"
             alt="CodeIgniter development company"
             type="php"
+            unique="Service"
           />
           <Customer />
           {position && (
             <>
               <Experienced
                 title="CodeIgniter Development"
+                type="why"
                 image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+2.png"
                 para1={subhead1}
                 para2={subhead2}

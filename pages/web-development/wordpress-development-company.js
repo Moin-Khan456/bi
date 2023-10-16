@@ -22,7 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const SectionOne = dynamic(() =>
-  import("../../components/Web-Development/HireBanner.jsx")
+  import("../../components/common/HireBanner.jsx")
 );
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
@@ -186,12 +186,14 @@ function HireAangularJsDeveloper(props) {
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+1.png"
             alt="WordPress website development services"
             type="php"
+            unique="Company"
           />
           <Customer />
           {position && (
             <>
               <Experienced
                 title="WordPress Website Development"
+                type="why"
                 image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+2.png"
                 para1={subhead1}
                 para2={subhead2}

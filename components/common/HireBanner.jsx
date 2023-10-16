@@ -13,26 +13,46 @@ export default function HireBanner({
   alt,
   developmentImage,
   type,
-  unique
+  unique,
 }) {
   return (
     <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
-        <section>
+        <section className="w-full">
           <section className="ml-4 lg:ml-0">
-            <span className="text-2xl Gilroy-Bold">{heading}</span>
-            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
+            <span className="text-2xl Gilroy-Bold ">{heading}</span>
+            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4 w-max max-w-[800px]">
               {title}
-              {unique === "design" ? <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
-                    <br/>Designers
-                  </span>: unique === "analyst" ?<span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
-                    <br/>Analyst
-                  </span>: unique === "integration" ?<span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
-                    <br/>Integration
-                  </span>:developmentImage ? (
+              {unique === "design" ? (
+                <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Designers
+                </span>
+              ) : unique === "Company" ? (
+                <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Company
+                </span>
+              ) : unique === "Service" ? (
+                <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Service
+                </span>
+              ) : unique === "analyst" ? (
+                <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Analyst
+                </span>
+              ) : unique === "integration" ? (
+                <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Integration
+                </span>
+              ) : developmentImage ? (
                 <>
                   <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
-                    <br/>Development
+                    <br />
+                    Development
                   </span>
                   {/* <Image
                   src={developmentImage}
@@ -44,7 +64,8 @@ export default function HireBanner({
               ) : (
                 <>
                   <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
-                    <br/>Developers
+                    <br />
+                    Developers
                   </span>
                   {/* <Image
                   src="https://d1u4arv5y5eda6.cloudfront.net/images/development-12.png"

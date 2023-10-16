@@ -15,10 +15,10 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h1 className="font-bold lg:text-7xl lg:leading-[70px] lg:w-[400px] text-[#F7D927] monument">
+            <h1 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
               {head}
             </h1>
-            <h3 className="font-bold text-lg mb-6 monument">{subhead}</h3>
+            <h3 className="font-bold text-lg mb-6 monument uppercase">{subhead}</h3>
             <p className="text-sm text-gray-400 font-medium leading-5 font-Satoshi">
               {description}
             </p>

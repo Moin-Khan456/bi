@@ -82,43 +82,58 @@ function ReactNativeDeveloper(props) {
   const solutionList = [
     {
       id: "1",
-      text: "Decentralized Finance (DeFi) Solution Development",
-      desc: "Our innovative Decentralized Finance (DeFi) Solution upends the world of blockchain solutions. Our adept technical team has skillfully crafted this application to make the most out of blockchain's decentralized feature and redefine financial services. It empowers users with the ability to carry out peer-to-peer transactions, use smart contracts, and engage in yield farming, thereby giving users the reins to their finances.",
+      text: "Learning Management Systems (LMS)",
+      desc: "In the digital age, Brain Inventory helps create robust Learning Management Systems for enhanced edtech industry solutions. As a leading web and mobile app development company, we understand the distinct needs of the education industry.",
     },
     {
       id: "2",
-      text: "Blockchain-Based Supply Chain Solution",
-      desc: "Amid the growing demand for transparent supply chains, our Blockchain-Based Supply Chain Solution expertise shines. We specialize in creating blockchain-powered platforms that enable end-to-end tracking of products, ensuring authenticity, and reducing fraud. Our team ensures every solution is customized to fit industry-specific supply chain complexities, facilitating a streamlined and secure logistics experience.",
+      text: "E-Learning Platforms",
+      desc: "Experience unparalleled e-learning platform development services geared to empower education systems, brought to you by Brain Inventory.  Our personalized approach ensures every solution is tailored to drive engagement and improve learning outcomes.",
     },
     {
       id: "3",
-      text: "Custom NFT Marketplace Development",
-      desc: "Crafting tailor-made Non-Fungible Token (NFT) Marketplaces has never been more seamless. Our team of experts harnesses cutting-edge blockchain technologies to deliver platforms that facilitate the buying, selling, and trading of digital assets. Prioritizing intuitive user experience, secure transactions, and unique artwork showcases, we ensure your NFT marketplace sets new industry standards.",
+      text: "Mobile Learning Apps",
+      desc: "Your online learning journey is about to take a leap forward with the mobile learning apps we create at Brain Inventory. These affable tools function as your personal learning assistant, offering a seamless learning experience right at your fingertips.",
     },
     {
       id: "4",
-      text: "Blockchain-Based Identity Management Solution",
-      desc: "Address the challenges of identity verification with our Blockchain-Based Identity Management Solution. This platform offers features such as self-sovereign identity, secure data storage, and instant verification, ensuring individuals have control over their personal data while establishing trust within digital ecosystems. Our solution enhances security and privacy for users and businesses alike.",
+      text: "Virtual Classrooms",
+      desc: "Welcome to Brain Inventory - a  superior education software development company, the Virtual Classrooms development service. Our state-of-the-art platform presents a dynamic suite of features that assure an enriching and comprehensive educational experience for all learners.",
     },
     {
       id: "5",
-      text: "Smart Contract Development and Audit",
-      desc: "In the age of automation and trustless execution, Smart Contracts play a pivotal role. Our adept developers create secure and efficient Smart Contracts tailored to meet your specific requirements. These contracts are thoroughly audited to ensure accuracy, security, and compliance, enabling you to execute transactions and agreements seamlessly on the blockchain.",
+      text: "Teacher and Student Portals",
+      desc: "We specialize in crafting effective, user-friendly Teacher and Student Portals. Our expert team is proficient at developing portals that boost educational interactivity and accountability.",
     },
     {
       id: "6",
-      text: "Develop Your Own Blockchain Solution",
-      desc: "Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough. Ready to embark on this exciting journey? Click the button below to get started.",
+      text: "AI-Powered Personalized Learning",
+      desc: "At Brain Inventory, we redefine education, by crafting smart, intuitive and interactive learning environments, fuelled by state-of-the-art Artificial Intelligence algorithms. With an experienced education software development company, you benefit from engaging and personalized learning experiences, custom-built to meet diverse educational needs, while promoting effortless understanding and retention.",
+    },
+    {
+      id: "7",
+      text: "Gamification Platforms",
+      desc: "At Brain Inventory, we develop engaging gamification platforms that transform the way you learn. Our team of expert developers craft interactive and fun learning experiences that not only captivate learners, but also drive user engagement and improve knowledge retention.",
+    },
+    {
+      id: "8",
+      text: "Online Course Marketplaces",
+      desc: "At Brain Inventory, we specialize in the insightful development of online course marketplaces, focusing on user-friendly interfaces and robust functionality for a seamless learning experience.",
+    },
+    {
+      id: "9",
+      text: "AI-Powered Tutoring",
+      desc: "At Brain Inventory, we specialize in the development of AI-Powered Tutoring solutions that revolutionize the educational landscape. We incorporate cutting-edge technology to create customizable, interactive, and data-driven applications that promote a robust learning environment.",
     },
   ];
   const sectionFourDesc =
-    "Join us on an exciting journey of blockchain solution development. We're pioneers, creating innovative solutions that set new benchmarks in the blockchain industry. With us, you do more than just build a platform – you create an enthralling user experience that triggers unmatched engagement right from the start.";
+    "By partnering with an education software development company, you can take your educational solution to new heights. We are pioneers in the field, creating innovative solutions that reshape the edtech industry. However, collaborating with us means more than just creating a website or an app. Together, we're crafting an engaging and immersive learning experience that empowers users and fosters high levels of engagement from the start.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge solution development services by creating secure, efficient, and customized blockchain platforms.";
+    "At Brain Inventory, we're the pioneers of crafting super-smart educational solutions that make a big impact. We're experts at creating top-notch tools with cool features and strong designs, all to make education even better.";
 
   const sectionFiveDesc =
-    "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let’s take a closer look at some of these contenders:";
+    "We are undoubtedly in an era of digital educational transformation. It is a time where online solutions are growing in popularity among knowledge seekers. Big names like Udemy have paved the way, but now we see a rise of innovative platforms looking to find their own place in this ever-changing landscape. Let's explore these emerging contenders:";
 
   const sectionFiveTable = [
     ["MyChart", "Headspace", "Fitbit", "MyFitnessPal"],
@@ -282,36 +297,34 @@ function ReactNativeDeveloper(props) {
         />
       </Head>
       <Loader />
-      <main className="">
         <Header />
-        <section className="">
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP BLOCKCHAIN SOLUTION"
-              head1="Shaping the Future of Blockchain"
+              title="TOP EdTech SOLUTION"
+              head1="Revolutionizing Ed-Tech Solutions"
               description={sectionTwoDesc}
             />
           {position && (
             <>
-              <SectionThree
-                title="Blockchain Industry Insights"
+              {/* <SectionThree
+                title="Insights into the Education Industry"
                 sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
                 setionThreeCards={setionThreeCards}
-              />
-              <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
+              /> */}
+              <TiltMarquee title="Education Solution Development" />
               <SectionFour
-                title="Solutions for Blockchain Platform Development"
+                title="Solutions for Education Solution Development"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
-              {/* <SectionFive
-                head="HEALTHCARE APPLICATIONS"
-                subhead="COMPARED TO WEBMD"
+              <SectionFive
+                head="Educational APPLICATIONS"
+                subhead="COMPARED TO Udemy"
                 description={sectionFiveDesc}
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
-              /> */}
+              />
               <ProjectInquiry />
 
               <PlatformDevelopment
@@ -349,8 +362,6 @@ function ReactNativeDeveloper(props) {
               <Footer />
             </>
           )}
-        </section>
-      </main>
     </>
   );
 }

@@ -194,12 +194,14 @@ function HireAangularJsDeveloper(props) {
           image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+1.png"
           alt="Custom PHP development"
           type="php"
+          unique="Company"
         />
         <Customer />
         {position && (
           <>
             <Experienced
               title="PHP Development"
+              type="why"
               image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+2.png"
               para1={subhead1}
               para2={subhead2}

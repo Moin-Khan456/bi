@@ -58,6 +58,26 @@ const FooterSections = [
         name: "Accounting Solution Development",
         path: "/solution/accounting-solution-development-company",
       },
+      {
+        _id: 6,
+        name: "Marketplace Solution Development",
+        path: "/solution/marketplace-solution-development-company",
+      },
+      {
+        _id: 7,
+        name: "Ed Tech Solution Provider",
+        path: "/solution/edtech-solution-provider",
+      },
+      {
+        _id: 8,
+        name: "Travel Solution Development",
+        path: "/solution/travel-solution-development",
+      },
+      {
+        _id: 9,
+        name: "CRM Solution Development",
+        path: "/solution/crm-solution-development",
+      },
     ],
   },
   {

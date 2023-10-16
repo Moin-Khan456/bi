@@ -507,6 +507,26 @@ const Solution = () => {
       name: "Accounting Solution Development",
       link: "/solution/accounting-solution-development-company",
     },
+    {
+      _id: 6,
+      name: "Marketplace Solution Development",
+      link: "/solution/marketplace-solution-development-company",
+    },
+    {
+      _id: 7,
+      name: "Ed Tech Solution Provider",
+      link: "/solution/edtech-solution-provider",
+    },
+    {
+      _id: 8,
+      name: "Travel Solution Development",
+      link: "/solution/travel-solution-development",
+    },
+    {
+      _id: 9,
+      name: "CRM Solution Development",
+      link: "/solution/crm-solution-development",
+    },
   ];
 
   return (

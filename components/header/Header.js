@@ -192,7 +192,7 @@ const Header = () => {
                 }}
                 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6"
               >
-                Solution
+                Industry
               </h3>
               <Link href="/contact">
                 <h3 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6">
@@ -532,7 +532,7 @@ const Solution = () => {
   return (
     <div className="col-span-4 lg:grid lg:grid-cols-1 hidden">
       <div className="space-y-4">
-        <h2 className="text-2xl Gilroy-Bold">Solution</h2>
+        <h2 className="text-2xl Gilroy-Bold">Industry</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
             <li className="color-gray" key={ele._id}>

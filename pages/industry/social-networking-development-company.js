@@ -6,7 +6,7 @@ const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
 const Approach = dynamic(() =>
-  import("../../components/Solution/SEO/Approach.jsx")
+  import("../../components/solution/SEO/Approach.jsx")
 );
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")

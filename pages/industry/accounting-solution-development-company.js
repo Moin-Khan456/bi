@@ -315,7 +315,7 @@ function ReactNativeDeveloper(props) {
         </title>
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/accounting-solution-development-company"
+          href="https://braininventory.in/industry/accounting-solution-development-company"
         />
       </Head>
       <Loader />
@@ -356,15 +356,6 @@ function ReactNativeDeveloper(props) {
                 btn="BUILD YOUR ACCOUNTING APP"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Mask+group.png"
               />
-              {/* <ProjectInquiry /> */}
-
-
-              {/* <PlatformDevelopment
-                cardPoints={platformDevelopment}
-                subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="ACCOUNTING SOLUTION DEVELOPMENT"
-                description={platformDesc}
-              /> */}
               <SectionSlider data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="ACCOUNTING SOLUTION DEVELOPMENT" description={platformDesc}/>
               <SectionNine
                 brand="Accounting Solution Development        "

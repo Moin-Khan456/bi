@@ -930,6 +930,16 @@ html {
   color: transparent;
   font-size: 2rem;
 }
+.text-stroke-industry-relay {
+  -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.684);
+    text-stroke: 1px rgba(255, 255, 255, 0.775);
+    display: inline-block;
+    font-family: Monument;
+    -webkit-transform: scaleX(1.15);
+    transform: scaleX(1.15);
+    word-spacing: 0.1rem;
+}
 
 .text-stroke-forte:hover {
   color: #FF9100;

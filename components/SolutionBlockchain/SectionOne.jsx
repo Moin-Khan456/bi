@@ -12,12 +12,7 @@ export default function HireBanner() {
               Unleashing Blockchain&apos;s Boundless Potential
             </h2>
             <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">
-              Embrace next-gen technology with our Blockchain Development
-              Services for superior security, transparency and efficiency.
-              Explore limitless possibilities with Blockchain, including
-              unparalleled data security, complete transparency for fostering
-              trust, and efficient process streamlining through smart contracts
-              and task automation.
+            Embrace next-gen technology with our Blockchain Development Services for superior security, transparency and efficiency. Explore limitless possibilities with Blockchain, including unparalleled data security, complete transparency for fostering trust, and efficient process streamlining through smart contracts and task automation.
             </h2>
           </section>
           <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">

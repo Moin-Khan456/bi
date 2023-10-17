@@ -2,35 +2,30 @@ import Image from 'next/image'
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
 
-const Index = () => {
+const Index = ({title, btn, head, src, className, headAbove, subheadAbove, customClasses, classText}) => {
 
     return (
-        <div className="rounded-md my-8 py-10 space-x-6">
+        <div className="container rounded-md my-8 py-10 space-x-6">
             <div className="container padding-left-all-section ">
-
-               
-                <div className='lg:grid lg:grid-cols-2 gap-6 bg-[#4601a1] '>
-                      <div className='p-6'>
-                          <h1 className='font-bold lg:text-6xl Gilroy-Bold'>Develop Your Own Social Media App</h1>
+            <h2 className={`MonumentRegular text-[1.5625rem] ${classText}`}>{headAbove}</h2>
+            <p className="text-slate-400 py-4">{subheadAbove}</p>
+                <div className='lg:grid lg:grid-cols-2 gap-0 h-[450px] bg-[#4601a1] rounded-2xl relative section-six-card'>
+                      <div className='p-12'>
+                          <h1 className={`font-bold MonumentRegular ${classText}`}>{title}</h1>
                             <button className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8
                              py-4 my-12">
-                              BUILD YOUR SOCIAL MEDIA APP
+                              {btn}
                             <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
                             </button>
-                            <p className='lg:w-[300px] relative top-11'>Explore everthing that the Brain Inventory team can do for you</p>
+                            <p className='lg:w-[235px] relative top-11'>{head}</p>
                       </div>
-                      <div>
-                          <Image src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png' 
-                          width={500} height={500} alt='social networking app development company' className='m-auto block'></Image>
+                      <div className='relative hidden lg:block'>
+                          <Image src={src} 
+                          width={2800} height={2800} alt='' className={`m-auto block absolute bottom-0 right-10 w-[800px] ${customClasses}`}/>
                       </div>
                 </div>
             </div>  
         </div>
-
-
-        
-        
     )
 }
-
 export default Index 

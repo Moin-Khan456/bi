@@ -8,15 +8,13 @@ const Index = () => {
     <>
       <div className="project-bg pt-72 lg:pt-36 relative container">
         <h2 className="MonumentBold text-2xl lg:text-[4rem] lg:leading-[5rem] px-2 lg:px-24 text-center absolute z-10 top-32 lg:top-16">
-          Revitalize Healthcare Through Innovation
+        Revitalize Healthcare Through Innovation
         </h2>
         <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png" alt="" width={500} height={500} className="w-[80px] absolute top-48 left-48 hidden lg:block"/>
         <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png" alt="" width={500} height={500} className="w-[80px] absolute top-40 right-48 hidden lg:block"/>
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center max-w-[1450px] relative z-20 px-2">
           <p className="lg:w-[350px] pb-32 lg:pb-0 text-sm text-slate-400">
-            Unleash the potential of your social industry business with Brain
-            Inventory, a leader in technical solutions. We’re here to transform
-            your challenges into opportunities that will amplify your impact.
+          At Brain Inventory, we&apos;re leaders in the design and development of healthcare solutions. Our team of expert developers and designers are brimming with innovative ideas to transform your vision into reality.
           </p>
           <Image
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/Group+7115.png"
@@ -33,10 +31,7 @@ const Index = () => {
             </button>
           </div>
         </div>
-        {/* <div className="absolute top-24"> */}
-        {/* </div> */}
       </div>
-      <Marquee />
     </>
   );
 };

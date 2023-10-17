@@ -53,13 +53,15 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How does Brain Inventory approach Travel Industry Solution Development?",
+      title:
+        "How does Brain Inventory approach Travel Industry Solution Development?",
       description:
         "We focus on understanding client visions, staying updated on global travel trends, prioritizing user experience, and offering continuous support and improvement.",
     },
     {
       id: "2",
-      title: "What makes Brain Inventory's solutions stand out in the travel industry?",
+      title:
+        "What makes Brain Inventory's solutions stand out in the travel industry?",
       description:
         "Our solutions are driven by cutting-edge technology and tailored to meet client and traveler needs.",
     },
@@ -71,7 +73,8 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "4",
-      title: "Can Brain Inventory accommodate multi-language support for global travelers?",
+      title:
+        "Can Brain Inventory accommodate multi-language support for global travelers?",
       description:
         "Absolutely, we offer multi-language support to make travel accessible to travelers from diverse backgrounds.",
     },
@@ -145,11 +148,7 @@ function ReactNativeDeveloper(props) {
       "Connects travelers with local guides for authentic experiences",
       "Provides self-guided tours and historical insights for cities",
     ],
-    [
-      "Over 1 million",
-      "More than 500,000",
-      "Over 2 million",
-    ],
+    ["Over 1 million", "More than 500,000", "Over 2 million"],
   ];
   const sectionFiveTableHead = [
     "Travel Tech Platform",
@@ -160,91 +159,89 @@ function ReactNativeDeveloper(props) {
   const platformDesc =
     "If you're looking for a reliable partner for your travel software development, consider Brain Inventory. Why, you ask? There are several reasons that make us a preferred choice in the field of web and app development for the travel industry.";
   const platformDevelopment = [
-    // {
-    //     head: "Expertise in CRM Solution Development ",
-    //     content: "Our seasoned team in Brain Inventory boasts of a wealth of knowledge in CRM solution development. Whether you're a small business coming to the spotlight or a big corporation looking to customise your CRM, our experts will give you top-tier assistance. "
-    // },
-    // {
-    //     head: "Mobile-Friendly CRM",
-    //     content: "Unleash the power of mobility by accessing your CRM on-the-go with our mobile-friendly solutions, dovetailing convenience with control. Our expertise in mobile-centric CRM development ensures that your customer relationship management adjusts seamlessly to handheld devices."
-    // },
-    // {
-    //     head: "Agile Development Methodology",
-    //     content: "Indeed, the agile methodology ensures flexibility and adaptability, guaranteeing high performance and satisfying customer-centric software solutions. We are proponents of this methodology for our CRM solution development, providing a platform that is responsive, adaptable, and engages the evolving needs of our clients and their customers."
-    // },
-    // {
-    //     head: "Scalability of Services",
-    //     content: "Our CRM solution development is not just about meeting your present requirements. We go a step further to anticipate your future growth and evolving needs. That's why our solutions are designed with scalability in mind to seamlessly match your pace and business expansion strategies, ensuring robust efficiency, no matter the scale of operations."
-    // },
-    
-
     {
-        head: "Mobile-First Approach",
-        content: "At Brain Inventory, we use a mobile-first approach to develop splendid travel solution websites. This strategy allows us to prioritize the design and development of mobile platforms, ensuring a phenomenal user experience irrespective of the device. "
+      head: "Mobile-First Approach",
+      content:
+        "At Brain Inventory, we use a mobile-first approach to develop splendid travel solution websites. This strategy allows us to prioritize the design and development of mobile platforms, ensuring a phenomenal user experience irrespective of the device. ",
     },
     {
-        head: "Machine Learning for Personalization",
-        content: "Brain Inventory leverages Machine Learning to deliver highly personalized, user-centric web and mobile solutions. This helps you reach a wider audience and provide more attractive offerings."
+      head: "Machine Learning for Personalization",
+      content:
+        "Brain Inventory leverages Machine Learning to deliver highly personalized, user-centric web and mobile solutions. This helps you reach a wider audience and provide more attractive offerings.",
     },
     {
-        head: "Chatbots and AI Assistants",
-        content: "At Brain Inventory, we envisage your travel solution with AI-driven chatbots, enhancing user experiences and ensuring 24/7 virtual support."
+      head: "Chatbots and AI Assistants",
+      content:
+        "At Brain Inventory, we envisage your travel solution with AI-driven chatbots, enhancing user experiences and ensuring 24/7 virtual support.",
     },
     {
-        head: "Customer Reviews and Ratings Integration",
-        content: "In the travel industry, customer reviews and ratings significantly influence travelers' choices, bolstering trust and accelerating bookings. Therefore we at Brain Inventory integrate reviews and ratings and make sure they are available during search."
-    }
+      head: "Customer Reviews and Ratings Integration",
+      content:
+        "In the travel industry, customer reviews and ratings significantly influence travelers' choices, bolstering trust and accelerating bookings. Therefore we at Brain Inventory integrate reviews and ratings and make sure they are available during search.",
+    },
   ];
   const keyDesc =
     "Today, it's nearly impossible to imagine traveling without the convenience brought by mobile travel apps. They serve as your personal travel guide, helping you navigate unknown territories, plan your itinerary, and even book your accommodations. Here at Brain Inventory, we specialize in developing intuitive, user-friendly travel apps tailored to the specific needs of our clients:";
   const keyFeatures = [
     {
-        head: "Reservation Management",
-        content: "Discover the endless possibilities of your traveling needs with our robust Reservation Management feature. It streamlines managing individual and group bookings, ensuring flawless travel planning from start to finish."
+      head: "Reservation Management",
+      content:
+        "Discover the endless possibilities of your traveling needs with our robust Reservation Management feature. It streamlines managing individual and group bookings, ensuring flawless travel planning from start to finish.",
     },
     {
-        head: "Itinerary Management",
-        content: "Managing your travel itinerary can often feel daunting. Our Itinerary Management feature development streamlines your travel plans, organizes your schedules, and ensures a hassle-free journey, leaving you more time to explore and enjoy your trip."
+      head: "Itinerary Management",
+      content:
+        "Managing your travel itinerary can often feel daunting. Our Itinerary Management feature development streamlines your travel plans, organizes your schedules, and ensures a hassle-free journey, leaving you more time to explore and enjoy your trip.",
     },
     {
-        head: "Search and Discovery",
-        content: "At Brain Inventory, we understand the excitement that comes with exploring a new place. That's why our Search and Discovery feature is designed to make your travel planning easy and fun."
+      head: "Search and Discovery",
+      content:
+        "At Brain Inventory, we understand the excitement that comes with exploring a new place. That's why our Search and Discovery feature is designed to make your travel planning easy and fun.",
     },
     {
-        head: "Booking and Reservation Systems",
-        content: "Explore the seamless experience with Brain Inventory's Booking and Reservation Systems. We build impeccable solutions, facilitating swift bookings and hassle-free reservations, enhancing your travels."
+      head: "Booking and Reservation Systems",
+      content:
+        "Explore the seamless experience with Brain Inventory's Booking and Reservation Systems. We build impeccable solutions, facilitating swift bookings and hassle-free reservations, enhancing your travels.",
     },
     {
-        head: "Travel Itinerary and Planning",
-        content: "We provide comprehensive Travel Itinerary and Planning development services that offer seamless navigation, detailed itineraries, and organized travel plans—all within the palm of your hands."
+      head: "Travel Itinerary and Planning",
+      content:
+        "We provide comprehensive Travel Itinerary and Planning development services that offer seamless navigation, detailed itineraries, and organized travel plans—all within the palm of your hands.",
     },
     {
-        head: "Travel Content Management",
-        content: "Discover the brilliance in managing your travel content with our comprehensive service offering dynamic content updates. You'll have real-time access to data on flights, hotels, and activities owing to our seamless integration with travel APIs and aggregators."
+      head: "Travel Content Management",
+      content:
+        "Discover the brilliance in managing your travel content with our comprehensive service offering dynamic content updates. You'll have real-time access to data on flights, hotels, and activities owing to our seamless integration with travel APIs and aggregators.",
     },
     {
-        head: "Geolocation and Mapping",
-        content: "At Brain Inventory, we seamlessly integrate geolocation and mapping into websites and apps, crafting immersive and precise user experiences. Through adept use of GPS technology, we make location-centric features an absolute breeze."
+      head: "Geolocation and Mapping",
+      content:
+        "At Brain Inventory, we seamlessly integrate geolocation and mapping into websites and apps, crafting immersive and precise user experiences. Through adept use of GPS technology, we make location-centric features an absolute breeze.",
     },
     {
-        head: "Travel Document Management",
-        content: "At Brain Inventory, we simplify your travels with our efficient Travel Document Management. Our state-of-the-art feature allows you to manage and keep track of all essential travel papers in one safe, accessible location."
+      head: "Travel Document Management",
+      content:
+        "At Brain Inventory, we simplify your travels with our efficient Travel Document Management. Our state-of-the-art feature allows you to manage and keep track of all essential travel papers in one safe, accessible location.",
     },
     {
-        head: "Multilingual Travel Website",
-        content: "At Brain Inventory, we develop multilingual travel websites that transcend language barriers, opening up global reach for your travel business. By offering your services in multiple languages, you not only cater to a larger audience."
+      head: "Multilingual Travel Website",
+      content:
+        "At Brain Inventory, we develop multilingual travel websites that transcend language barriers, opening up global reach for your travel business. By offering your services in multiple languages, you not only cater to a larger audience.",
     },
     {
-        head: "Personalized Travel Recommendations",
-        content: "When it comes to planning a journey, every traveler has unique needs and expectations. That's where our Personalized Travel Recommendations come into play. With this feature, we ensure that travelers have the best and most tailored journey possible. "
+      head: "Personalized Travel Recommendations",
+      content:
+        "When it comes to planning a journey, every traveler has unique needs and expectations. That's where our Personalized Travel Recommendations come into play. With this feature, we ensure that travelers have the best and most tailored journey possible. ",
     },
     {
-        head: "Integration with Airlines, Hotels, and Rental Car Services",
-        content: "In today's digital age, integrating your travel solution with airlines, hotels, and rental car services is not just an option, but a necessity. At Brain Inventory, we understand this need and offer effective and reliable travel solution integrations. "
+      head: "Integration with Airlines, Hotels, and Rental Car Services",
+      content:
+        "In today's digital age, integrating your travel solution with airlines, hotels, and rental car services is not just an option, but a necessity. At Brain Inventory, we understand this need and offer effective and reliable travel solution integrations. ",
     },
     {
-        head: "Virtual Reality (VR) and Augmented Reality (AR) Experiences",
-        content: "At Brain Inventory, we specialize in providing comprehensive travel solutions, meticulously designed to meet every aspect of your business needs. Our expertise ranges from crafting interactive and user-friendly travel solutions for E-ticketing operations, hotel and cab bookings, to innovative tools for unique itinerary generation."
+      head: "Virtual Reality (VR) and Augmented Reality (AR) Experiences",
+      content:
+        "At Brain Inventory, we specialize in providing comprehensive travel solutions, meticulously designed to meet every aspect of your business needs. Our expertise ranges from crafting interactive and user-friendly travel solutions for E-ticketing operations, hotel and cab bookings, to innovative tools for unique itinerary generation.",
     },
   ];
 
@@ -262,7 +259,7 @@ function ReactNativeDeveloper(props) {
       tableHead: ["Statistic"],
       tableContent: [
         [
-          "Imagine powering up your device and having the world of travel at your fingertips! Digital channels have emerged as powerful platforms, making a significant share of all travel bookings. As per Statista data, 69% of all travel sales globally in 2023 happened through these digital platforms."
+          "Imagine powering up your device and having the world of travel at your fingertips! Digital channels have emerged as powerful platforms, making a significant share of all travel bookings. As per Statista data, 69% of all travel sales globally in 2023 happened through these digital platforms.",
         ],
         [
           "Based on a recent eMarketer survey, mobile apps related to travel rank as the seventh most frequently downloaded category. Surprisingly, nearly 60% of smartphone users actively engage with travel portals when organizing their trips, highlighting the widespread use and popularity of these handy tools for travel planning.",
@@ -293,7 +290,7 @@ function ReactNativeDeveloper(props) {
       head: "Crafting Perfection",
       content:
         "Our seasoned team meticulously crafts each solution. This involves comprehensive development, rigorous testing, and an unwavering dedication to delivering a resilient, dependable product.",
-    }
+    },
   ];
   const [position, setPosition] = useState(false);
   useEffect(() => {
@@ -304,9 +301,7 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Travel Solution Development Company
-        </title>
+        <title>Travel Solution Development Company</title>
         {/* <meta
           property="og:description"
           content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
@@ -322,24 +317,24 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/solution/blockchain-solution-development-company"
+          content="https://braininventory.in/industry/blockchain-solution-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/blockchain-solution-development-company"
+          href="https://braininventory.in/industry/blockchain-solution-development-company"
         />
       </Head>
       <Loader />
       <main className="">
         <Header />
         <section className="container">
-            <SectionOne />
-            <SectionTwo
-              className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP Travel SOLUTION"
-              head1="Providing Superior Travel Solutions Online"
-              description={sectionTwoDesc}
-            />
+          <SectionOne />
+          <SectionTwo
+            className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
+            title="TOP Travel SOLUTION"
+            head1="Providing Superior Travel Solutions Online"
+            description={sectionTwoDesc}
+          />
           {position && (
             <>
               <SectionThree

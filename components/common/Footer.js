@@ -30,53 +30,53 @@ const FooterSections = [
   },
   {
     title: "Solutions",
-    link: "/solution",
+    link: "/industry",
     className: "md:whitespace-nowrap",
     links: [
       {
         _id: 1,
         name: "Social Media Marketing",
-        path: "/solution/social-networking-development-company",
+        path: "/industry/social-networking-development-company",
       },
       {
         _id: 2,
         name: "Fitness Solution Development",
-        path: "/solution/fitness-solution-development-company",
+        path: "/industry/fitness-solution-development-company",
       },
       {
         _id: 3,
         name: "Healthcare Solution Development",
-        path: "/solution/healthcare-solution-development-company",
+        path: "/industry/healthcare-solution-development-company",
       },
       {
         _id: 4,
         name: "Blockchain Solution Development",
-        path: "/solution/blockchain-solution-development-company",
+        path: "/industry/blockchain-solution-development-company",
       },
       {
         _id: 5,
         name: "Accounting Solution Development",
-        path: "/solution/accounting-solution-development-company",
+        path: "/industry/accounting-solution-development-company",
       },
       {
         _id: 6,
         name: "Marketplace Solution Development",
-        path: "/solution/marketplace-solution-development-company",
+        path: "/industry/marketplace-solution-development-company",
       },
       {
         _id: 7,
         name: "Ed Tech Solution Provider",
-        path: "/solution/edtech-solution-provider",
+        path: "/industry/edtech-solution-provider",
       },
       {
         _id: 8,
         name: "Travel Solution Development",
-        path: "/solution/travel-solution-development",
+        path: "/industry/travel-solution-development",
       },
       {
         _id: 9,
         name: "CRM Solution Development",
-        path: "/solution/crm-solution-development",
+        path: "/industry/crm-solution-development",
       },
     ],
   },

@@ -40,7 +40,7 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[0]?.map((ele, index) => (
-                <li className="bottom-border-five p-4 font-Satoshi" key={index}>
+                <li className="bottom-border-five p-4 font-Satoshi opacity-50" key={index}>
                   {ele}
                 </li>
               ))}
@@ -53,7 +53,7 @@ const Index = ({
             <ul className="">
               {sectionFiveTable[1]?.map((ele, index) => (
                 <li
-                  className="bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap"
+                  className="bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap opacity-50"
                   key={index}
                 >
                   {ele}
@@ -67,7 +67,7 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[2]?.map((ele, index) => (
-                <li className="bottom-border-five p-4 font-Satoshi" key={index}>
+                <li className="bottom-border-five p-4 font-Satoshi opacity-50" key={index}>
                   {ele}
                 </li>
               ))}

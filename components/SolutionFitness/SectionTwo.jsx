@@ -10,7 +10,7 @@ const SectionTwo = ({ title, head1, description, className, classText, hideSubTe
         <p className="text-3xl px-4">
           <span className="text-[#F7D927]">Brain Inventory:</span> {head1}
         </p>
-        <p className="text-[1rem] text-slate-400 p-4">{description}</p>
+        <p className="text-[1rem] opacity-50 p-4 ">{description}</p>
       </div>
     </div>
   );

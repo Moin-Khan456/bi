@@ -287,7 +287,7 @@ function ReactNativeDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/edtech-solution-providers"
+          href="https://braininventory.in/industry/edtech-solution-providers"
         />
       </Head>
       <Loader />

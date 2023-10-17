@@ -288,11 +288,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/solution/blockchain-solution-development-company"
+          content="https://braininventory.in/industry/blockchain-solution-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/solution/blockchain-solution-development-company"
+          href="https://braininventory.in/industry/blockchain-solution-development-company"
         />
       </Head>
       <Loader />

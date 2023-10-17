@@ -485,47 +485,47 @@ const Solution = () => {
     {
       _id: 1,
       name: "Social Media Marketing",
-      link: "/solution/social-networking-development-company",
+      link: "/industry/social-networking-development-company",
     },
     {
       _id: 2,
       name: "Fitness Solution Development",
-      link: "/solution/fitness-solution-development-company",
+      link: "/industry/fitness-solution-development-company",
     },
     {
       _id: 3,
       name: "Healthcare Solution Development",
-      link: "/solution/healthcare-solution-development-company",
+      link: "/industry/healthcare-solution-development-company",
     },
     {
       _id: 4,
       name: "Blockchain Solution Development",
-      link: "/solution/blockchain-solution-development-company",
+      link: "/industry/blockchain-solution-development-company",
     },
     {
       _id: 5,
       name: "Accounting Solution Development",
-      link: "/solution/accounting-solution-development-company",
+      link: "/industry/accounting-solution-development-company",
     },
     {
       _id: 6,
       name: "Marketplace Solution Development",
-      link: "/solution/marketplace-solution-development-company",
+      link: "/industry/marketplace-solution-development-company",
     },
     {
       _id: 7,
       name: "Ed Tech Solution Provider",
-      link: "/solution/edtech-solution-provider",
+      link: "/industry/edtech-solution-provider",
     },
     {
       _id: 8,
       name: "Travel Solution Development",
-      link: "/solution/travel-solution-development",
+      link: "/industry/travel-solution-development",
     },
     {
       _id: 9,
       name: "CRM Solution Development",
-      link: "/solution/crm-solution-development",
+      link: "/industry/crm-solution-development",
     },
   ];
 

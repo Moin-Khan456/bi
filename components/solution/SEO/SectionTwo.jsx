@@ -6,20 +6,23 @@ import Image from "next/image";
 
 
 
-const SectionTwo = ({ title, head1, description, className }) => {
+const SectionTwo = ({ title, subTitle, head1, description, className }) => {
   return (
     <div className={`${className}`}>
       <div className="container">
         <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative">
-          <h1 className="px-4 text-3xl md:text-5xl lg:text-8xl monument w-full lg:w-[45%] lg:max-w-auto ">{title} <span className="px-4 pb-3 text-[1.7rem] lg:ml-52 whitespace-nowrap absolute bottom-10 right-40 Gilroy-SemiBold ">Development Company</span></h1>
+          <h1 className="px-4 text-3xl md:text-5xl lg:text-8xl MonumentRegular font-bold w-full lg:w-[45%] lg:max-w-auto ">{title} <span className="px-4 pb-3 text-[1.7rem] lg:ml-52 whitespace-nowrap absolute bottom-10 right-40 Gilroy-SemiBold ">{subTitle}</span></h1>
         </div>
         <p className="text-3xl px-4">
-          <span className="text-[#F7D927]">Brain Inventory:</span> {head1}
+          <span className="text-[#7600EB]">Brain Inventory:</span> {head1}
         </p>
         <p className="text-[1rem] text-slate-500 p-4">{description}</p>
       <div className=" mt-8"> 
-          <div className="lg:grid lg:grid-cols-3 gap-4 bg-section-two m-6 p-8">
-                <div>
+          <div className="lg:grid lg:grid-cols-3 gap-4 bg-section-two m-6 p-8 relative overflow-hidden">
+                <h2 className="absolute top-4 left-8 text-stroke-industry-relay opacity-25 z-10 text-4xl overflow-hidden whitespace-nowrap">SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING</h2>
+                <h2 className="absolute top-16 left-8 text-stroke-industry-relay opacity-25 z-10 text-4xl overflow-hidden whitespace-nowrap">SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING</h2>
+                <h2 className="absolute bottom-4 left-8 text-stroke-industry-relay opacity-25 z-10 text-4xl overflow-hidden whitespace-nowrap">SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING</h2>
+                <div className="relative z-30">
                    <div className="flex">
                       <Image 
                       src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6990.png"
@@ -33,7 +36,7 @@ const SectionTwo = ({ title, head1, description, className }) => {
                    </div>
                    <h3 className="text-xl mt-4 lg:pr-20">Creating customer relationships That last forever —</h3>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 relative z-30">
                 <div className="lg:grid lg:grid-cols-3 gap-4 relative top-6"> 
               <div className="mb-6 lg:mb-0">
                   <BiCurrentLocation className="text-xl"/>

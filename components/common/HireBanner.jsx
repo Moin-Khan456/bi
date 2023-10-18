@@ -4,6 +4,7 @@ import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
 export default function HireBanner({
   heading,
+  subhead,
   title,
   subtitle,
   content,
@@ -21,7 +22,7 @@ export default function HireBanner({
         <section className="w-full">
           <section className="ml-4 lg:ml-0">
             <span className="text-2xl Gilroy-Bold ">{heading}</span>
-            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4 w-max max-w-[800px]">
+            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
               {title}
               {unique === "design" ? (
                 <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
@@ -76,6 +77,7 @@ export default function HireBanner({
                 </>
               )}
             </h1>
+            <h2 className="text-xl Gilroy-Bold my-4">{subhead}</h2>
             <h2 className="lg:text-5xl text-4xl Gilroy-Bold mb-4">
               {subtitle}
             </h2>
@@ -132,7 +134,7 @@ export default function HireBanner({
             </section>
           ) : (
             <section
-              className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] ${
+              className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
                 type?.match("php") && "drop-shadow-image"
               }`}
             >

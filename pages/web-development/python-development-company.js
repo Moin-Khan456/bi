@@ -156,13 +156,9 @@ function HireAangularJsDeveloper(props) {
           content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
         />
         <meta
-          property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_php-development.jpg"
-        />{" "}
-        <meta
           property="og:url"
           content=" 
-https://braininventory.in/web-development/php-development"
+https://braininventory.in/web-development/python-development-company"
         />
         <meta
           property="og:image"

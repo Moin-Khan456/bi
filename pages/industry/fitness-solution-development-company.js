@@ -329,7 +329,7 @@ function ReactNativeDeveloper(props) {
           headAbove="Develop Your Own Social Solution"
           subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
           src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
-          customClasses="w-[450px]"
+          customClasses="w-[390px] !bottom-6"
           btn="BUILD YOUR FITNESS APP"
           classText="lg:text-3xl"
           title="Ready to start your journey with a transformative fitness platform? Your adventure is just a click away on the button below."

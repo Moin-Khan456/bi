@@ -8,7 +8,7 @@ export default function HireBanner() {
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section>
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h1 className="text-4xl lg:text-[4rem]  whitespace-nowrap MonumentBold uppercase leading-[1.3] mt-4">
+            <h1 className="text-3xl lg:text-[4rem]  whitespace-nowrap MonumentBold uppercase leading-[1.3] mt-4">
               Igniting <br /> Education <br /> with Innovation
             </h1>
             <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">

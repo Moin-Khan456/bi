@@ -308,7 +308,7 @@ function ReactNativeDeveloper(props) {
         /> */}
         <meta
           name="og:title"
-          content="Blockchain App Development Solution | Blockchain App Development
+          content="Travel App Development Solution | Travel App Development
           Services"
         />
         <meta
@@ -317,18 +317,18 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/blockchain-solution-development-company"
+          content="https://braininventory.in/industry/travel-solution-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/blockchain-solution-development-company"
+          href="https://braininventory.in/industry/travel-solution-development-company"
         />
       </Head>
       <Loader />
       <main className="">
         <Header />
-        <section className="container">
           <SectionOne />
+        <section className="container">
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
             title="TOP Travel SOLUTION"

@@ -3,14 +3,14 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function HireBanner() {
   return (
-    <main className="container padding-left-all-section-1 pt-28 lg:pt-0 lg:pb-24 scale-y-110 bg-no-repeat bg-right min-h-screen brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Group+7168.png')]">
+    <main className="container padding-left-all-section-1 pt-28 lg:pt-0 lg:pb-24 scale-y-110 bg-no-repeat bg-right min-h-screen lg:brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Group+7168.png')]">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-12 lg:pt-36`}>
         <section>
           <section className="ml-4 lg:ml-0">
             <h2 className="text-4xl lg:text-[3.5rem] MonumentRegular leading-[1.3] mt-4">
             Accounting, Redefined by Innovation
             </h2>
-            <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">
+            <h2 className="text-sm font-Satoshi lg:opacity-50 font-extrabold lg:font-normal mt-48 lg:mt-0 leading-7 mb-4">
             Welcome to Brain Inventory - your one-stop solution for state-of-the-art accounting solutions! Excel beyond boundaries, streamline your financial tasks like never before with our cutting-edge accounting tools.
             </h2>
           </section>

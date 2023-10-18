@@ -74,7 +74,7 @@ const Index = ({
             </ul>
           </div>
         </div>
-          <div className="pt-4">{tableFooter}</div>
+          <div className="pt-4 px-4">{tableFooter}</div>
       </div>
     </div>
   );

@@ -329,9 +329,9 @@ function ReactNativeDeveloper(props) {
         head1="Connecting Markets, Fueling Evolution"
         description={sectionTwoDesc}
       />
-      <SectionThree title="Fitness Industry Insights" sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
+      {/* <SectionThree title="Fitness Industry Insights" sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
         technological advancements. Here are some captivating insights about the
-        fitness industry:" setionThreeCards={setionThreeCards} />
+        fitness industry:" setionThreeCards={setionThreeCards} /> */}
       <TiltMarquee title="MARKETPLACE SOLUTION DEVELOPMENT" />
       <SectionFour
         title="Solutions for Marketplace Solution Development"
@@ -350,11 +350,11 @@ function ReactNativeDeveloper(props) {
         headAbove="Develop Your Own Marketplace App"
         subheadAbove="If you have a fresh idea and the drive to see it through, you could be behind the next big breakthrough."
         className="lg:text-[2rem] MonumentRegular font-light tracking-wide leading-high-force"
+        customClasses="w-[400px] !bottom-0"
         title="Ready to start your exciting voyage? Click the button below."
         btn="BUILD YOUR MARKETPLACE APP"
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Mask+group.png"
       />
-      <ProjectInquiry />
 
       <PlatformDevelopment
         data={platformDevelopment}

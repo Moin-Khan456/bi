@@ -830,9 +830,6 @@ html {
 
 
 @media(min-width: 1200px) {
-  .section-six-card{
-    height: auto;
-  }
   .post-container {
     display: flex;
     flex-direction: row;
@@ -929,16 +926,6 @@ html {
   -webkit-text-stroke-width: 0.5px;
   color: transparent;
   font-size: 2rem;
-}
-.text-stroke-industry-relay {
-  -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.684);
-    text-stroke: 1px rgba(255, 255, 255, 0.775);
-    display: inline-block;
-    font-family: Monument;
-    -webkit-transform: scaleX(1.15);
-    transform: scaleX(1.15);
-    word-spacing: 0.1rem;
 }
 
 .text-stroke-forte:hover {
@@ -2489,7 +2476,11 @@ a.btn-filled.btn {
   display: none;
 }
 
+
 @media (max-width: 500px) {
+  .text-shadow-sharp{
+    font-size: 1.5rem !important
+  }
   .post-container {
     display: flex;
     flex-direction: column;
@@ -2940,4 +2931,3 @@ a.btn-filled.btn {
 .ed-tech-dropshadow{
   filter: drop-shadow(0px 0px 100px rgba(38, 96, 244, 0.5));
 }
-

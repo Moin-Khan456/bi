@@ -5,45 +5,31 @@ import Marquee from "./Marquee";
 
 const Index = () => {
   return (
-    <div className="rounded-md my-8 h-auto relative">
+    <div className="rounded-md my-8 relative h-screen">
       <div className="video-section absolute top-0 left-0">
-        <video
+        {/* <video
           loop
           autoPlay={true}
           controls={false}
-          className="h-screen m-auto scale-[1.25]"
+          className="h-screen m-auto object-contain hidden lg:block"
           preload="metadata"
         >
           <source
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/rFdCZriM6x6btVRZViNaME7HxM~w8PxP8RCbFNOFxnsLMlURKFYtWlMRADjbWqpyPZzXao+(1).mp4"
             type="video/mp4"
           />
-        </video>
+        </video> */}
         <div className="container padding-left-all-section">
           <div className="absolute top-0 m-auto pt-20">
             <div className="p-6 lg-p-0">
-              <h5 className="monument text-4xl pt-7">
+              <h5 className="monument lg:text-4xl pt-7">
                 CREATING IMPACTFUL SOCIAL
               </h5>
-              <h2 className="monument lg:text-[10rem] text-4xl leading-[1] mb-8 relative">
+              <h2 className="monument lg:text-[10.1rem] text-5xl lg:leading-[8.75rem] mt-7 relative">
                 SOLUTIONS
-                <Image
-                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/Group+6969.png"
-                  width={1800}
-                  height={1800}
-                  className="w-[60px] absolute -bottom-10 right-[29rem] rotate-45"
-                  alt=""
-                />
               </h2>
-              <h2 className="monument lg:text-[11.3rem] text-4xl leading-[1] relative">
+              <h2 className="monument lg:text-[10rem] text-5xl relative">
                 TOGETHER
-                <Image
-                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/Group+6969.png"
-                  width={1800}
-                  height={1800}
-                  className="w-[60px] absolute -bottom-4 left-40"
-                  alt=""
-                />
               </h2>
             </div>
 
@@ -57,13 +43,13 @@ const Index = () => {
                 </p>
               </div>
 
-              <div className="absolute bottom-[-9rem] right-[23rem]">
+              <div className="lg:absolute lg:bottom-[-9rem] left-0 right-0 ">
                 <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/Mask+Group+163.png"
                   alt="social networking app development company"
                   width={1800}
                   height={1800}
-                  className=" w-[700px] seo-banner h-[600px]"
+                  className="w-[850px] lg:w-[700px] lg:seo-banner h-[350px] lg:h-[600px]  lg:block text-center m-auto"
                 />
               </div>
 

@@ -7,7 +7,7 @@ const SectionThree = ({
   tableFooter,
 }) => {
   return (
-    <>
+    <div className="px-4">
     <div className="container">
       <h1 className="text-3xl font-Satoshi font-bold">{title}</h1>
       <p className="text-sm py-6 opacity-50">{sectionDesc}</p>
@@ -76,7 +76,7 @@ const SectionThree = ({
           <p className="py-4">{tableFooter ?? ""}</p>
         </table>
       </leble>
-    </>
+    </div>
   );
 };
 

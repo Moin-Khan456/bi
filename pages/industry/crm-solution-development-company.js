@@ -77,7 +77,8 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "5",
-      title: "What security measures are in place to protect customer data within your CRM solutions?",
+      title:
+        "What security measures are in place to protect customer data within your CRM solutions?",
       description:
         "We employ industry-standard security measures to safeguard your customer data, ensuring its confidentiality and integrity, and providing peace of mind for your business operations.",
     },
@@ -136,12 +137,7 @@ function ReactNativeDeveloper(props) {
       "Designed for sales teams with a focus on visual pipeline management and sales process automation",
       "Integrates seamlessly with Microsoft products and offers extensive enterprise-level CRM capabilities",
     ],
-    [
-      "Over 1 million",
-      "Over 750,000",
-      "Over 950,000",
-      "Over 200,000",
-    ],
+    ["Over 1 million", "Over 750,000", "Over 950,000", "Over 200,000"],
   ];
   const sectionFiveTableHead = [
     "CRM Solutions Platform",
@@ -153,64 +149,78 @@ function ReactNativeDeveloper(props) {
     "Choosing a reliable partner to develop your Customer Relationship Management (CRM) solution is vital for the success of your business. Brain Inventory stands out as the go-to company for your CRM needs for multiple reasons:";
   const platformDevelopment = [
     {
-        head: "Expertise in CRM Solution Development ",
-        content: "Our seasoned team in Brain Inventory boasts of a wealth of knowledge in CRM solution development. Whether you're a small business coming to the spotlight or a big corporation looking to customise your CRM, our experts will give you top-tier assistance. "
+      head: "Expertise in CRM Solution Development ",
+      content:
+        "Our seasoned team in Brain Inventory boasts of a wealth of knowledge in CRM solution development. Whether you're a small business coming to the spotlight or a big corporation looking to customise your CRM, our experts will give you top-tier assistance. ",
     },
     {
-        head: "Mobile-Friendly CRM",
-        content: "Unleash the power of mobility by accessing your CRM on-the-go with our mobile-friendly solutions, dovetailing convenience with control. Our expertise in mobile-centric CRM development ensures that your customer relationship management adjusts seamlessly to handheld devices."
+      head: "Mobile-Friendly CRM",
+      content:
+        "Unleash the power of mobility by accessing your CRM on-the-go with our mobile-friendly solutions, dovetailing convenience with control. Our expertise in mobile-centric CRM development ensures that your customer relationship management adjusts seamlessly to handheld devices.",
     },
     {
-        head: "Agile Development Methodology",
-        content: "Indeed, the agile methodology ensures flexibility and adaptability, guaranteeing high performance and satisfying customer-centric software solutions. We are proponents of this methodology for our CRM solution development, providing a platform that is responsive, adaptable, and engages the evolving needs of our clients and their customers."
+      head: "Agile Development Methodology",
+      content:
+        "Indeed, the agile methodology ensures flexibility and adaptability, guaranteeing high performance and satisfying customer-centric software solutions. We are proponents of this methodology for our CRM solution development, providing a platform that is responsive, adaptable, and engages the evolving needs of our clients and their customers.",
     },
     {
-        head: "Scalability of Services",
-        content: "Our CRM solution development is not just about meeting your present requirements. We go a step further to anticipate your future growth and evolving needs. That's why our solutions are designed with scalability in mind to seamlessly match your pace and business expansion strategies, ensuring robust efficiency, no matter the scale of operations."
+      head: "Scalability of Services",
+      content:
+        "Our CRM solution development is not just about meeting your present requirements. We go a step further to anticipate your future growth and evolving needs. That's why our solutions are designed with scalability in mind to seamlessly match your pace and business expansion strategies, ensuring robust efficiency, no matter the scale of operations.",
     },
   ];
   const keyDesc =
     "Brain Inventory is your top choice for CRM solution development because we understand your need for a solution that is unique and fits your business perfectly. Our CRM website solutions are customised to meet your specific needs and requirements.";
   const keyFeatures = [
     {
-        head: "Sales Pipeline and Opportunity Management",
-        content: "We recognize the importance of having a clear and concise view of your sales pipeline. We've designed our CRM Solution with a feature that allows you to refine, track, and manage your opportunities effortlessly."
+      head: "Sales Pipeline and Opportunity Management",
+      content:
+        "We recognize the importance of having a clear and concise view of your sales pipeline. We've designed our CRM Solution with a feature that allows you to refine, track, and manage your opportunities effortlessly.",
     },
     {
-        head: "Task and Calendar Integration",
-        content: "We understand that business is as much about time as it is about data. This integration goes hand in hand with your everyday sales activities, making sure you are always in sync with your schedules and client interactions."
+      head: "Task and Calendar Integration",
+      content:
+        "We understand that business is as much about time as it is about data. This integration goes hand in hand with your everyday sales activities, making sure you are always in sync with your schedules and client interactions.",
     },
     {
-        head: "Document Management and Sharing",
-        content: "Our CRM solution at Brain Inventory extends beyond simple contact and lead management. We understand the critical role that documentation plays in your business. In line with that, we've integrated robust document management and sharing capabilities into our CRM platform."
+      head: "Document Management and Sharing",
+      content:
+        "Our CRM solution at Brain Inventory extends beyond simple contact and lead management. We understand the critical role that documentation plays in your business. In line with that, we've integrated robust document management and sharing capabilities into our CRM platform.",
     },
     {
-        head: "Mobile CRM Applications",
-        content: "In this modern age, mobility is key in every aspect of business. Recognizing this necessity, Brain Inventory offers you robust mobile CRM applications. Our mobile CRM allows you to manage your customer relationships on the go, enabling you to respond quickly and efficiently to customers' queries and needs no matter where you are."
+      head: "Mobile CRM Applications",
+      content:
+        "In this modern age, mobility is key in every aspect of business. Recognizing this necessity, Brain Inventory offers you robust mobile CRM applications. Our mobile CRM allows you to manage your customer relationships on the go, enabling you to respond quickly and efficiently to customers' queries and needs no matter where you are.",
     },
     {
-        head: "Lead Scoring",
-        content: "Assign scores to leads based on their potential value to boost your company's growth. Brain Inventory's CRM solutions will provide you with a powerful lead scoring tool that evaluates the worthiness of leads using a defined scoring strategy."
+      head: "Lead Scoring",
+      content:
+        "Assign scores to leads based on their potential value to boost your company's growth. Brain Inventory's CRM solutions will provide you with a powerful lead scoring tool that evaluates the worthiness of leads using a defined scoring strategy.",
     },
     {
-        head: "Role-Based Access Control",
-        content: "At Brain Inventory, a leading CRM software development company, you can define user roles and permissions to control data access effectively. Our CRM solution comes with a feature-rich role-based access control system. This allows businesses to segment and assign user roles such as admin, sales representative, or manager, each having varying access levels."
+      head: "Role-Based Access Control",
+      content:
+        "At Brain Inventory, a leading CRM software development company, you can define user roles and permissions to control data access effectively. Our CRM solution comes with a feature-rich role-based access control system. This allows businesses to segment and assign user roles such as admin, sales representative, or manager, each having varying access levels.",
     },
     {
-        head: "Geolocation Tracking",
-        content: "With our CRM solution's Geolocation tracking feature by Brain Inventory, gain insights into your customer's locales. Understand regional trends, preferences, and decision-making patterns. Use this data to design marketing strategies that resonate with specific groups, boosting your campaign's success."
+      head: "Geolocation Tracking",
+      content:
+        "With our CRM solution's Geolocation tracking feature by Brain Inventory, gain insights into your customer's locales. Understand regional trends, preferences, and decision-making patterns. Use this data to design marketing strategies that resonate with specific groups, boosting your campaign's success.",
     },
     {
-        head: "Customer Segmentation",
-        content: "Brain Inventory's CRM Solution allows you to implement effective customer segmentation. This insightful feature lets you classify your customers based upon various factors such as their demographic details, behavior, buying patterns, and individual needs."
+      head: "Customer Segmentation",
+      content:
+        "Brain Inventory's CRM Solution allows you to implement effective customer segmentation. This insightful feature lets you classify your customers based upon various factors such as their demographic details, behavior, buying patterns, and individual needs.",
     },
     {
-        head: "Offline Access",
-        content: "Access CRM data and features, even without an internet connection, with Brain Inventory’s CRM solution. Our innovative Offline Access feature ensures you never miss out on key information or critical tasks. Productivity doesn't have to stop when you lose connectivity; you can still view customer profiles, update records, or schedule tasks."
+      head: "Offline Access",
+      content:
+        "Access CRM data and features, even without an internet connection, with Brain Inventory’s CRM solution. Our innovative Offline Access feature ensures you never miss out on key information or critical tasks. Productivity doesn't have to stop when you lose connectivity; you can still view customer profiles, update records, or schedule tasks.",
     },
     {
-        head: "Customization Options",
-        content: "Experience the ability to tailor the CRM to your specific business needs and branding with Brain Inventory. Our customization options allow you to modify layouts, create custom fields, customize interfaces, and even tailor the automation rules within your CRM system."
+      head: "Customization Options",
+      content:
+        "Experience the ability to tailor the CRM to your specific business needs and branding with Brain Inventory. Our customization options allow you to modify layouts, create custom fields, customize interfaces, and even tailor the automation rules within your CRM system.",
     },
   ];
 
@@ -228,7 +238,7 @@ function ReactNativeDeveloper(props) {
       tableHead: ["Statistic"],
       tableContent: [
         [
-          "According to IBM, businesses that leverage CRM software witness sales increase by as much as 29%."
+          "According to IBM, businesses that leverage CRM software witness sales increase by as much as 29%.",
         ],
         [
           "A study by Vision Point Systems reveals that implementing a CRM system can lead to an increase in lead conversion rates up to 300%.",
@@ -259,7 +269,7 @@ function ReactNativeDeveloper(props) {
       head: "Constructing and Evaluating Your CRM Solution",
       content:
         "You can confidently rely on our impressively skilled team, meticulously piecing together every component of your solution with utmost precision. Each component undergoes stringent checks, guaranteeing a seamless operation that not only satisfies your expectations but defies them.",
-    }
+    },
   ];
   const [position, setPosition] = useState(false);
   useEffect(() => {
@@ -270,16 +280,14 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Travel Solution Development Company
-        </title>
+        <title>CRM Solution Development Company</title>
         {/* <meta
           property="og:description"
           content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
         /> */}
         <meta
           name="og:title"
-          content="Blockchain App Development Solution | Blockchain App Development
+          content="CRM App Development Solution | CRM App Development
           Services"
         />
         <meta
@@ -288,26 +296,26 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/blockchain-solution-development-company"
+          content="https://braininventory.in/industry/crm-solution-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/blockchain-solution-development-company"
+          href="https://braininventory.in/industry/crm-solution-development-company"
         />
       </Head>
       <Loader />
       <main className="">
         <Header />
+        <SectionOne />
         <section className="container">
-            <SectionOne />
-            <SectionTwo
+          <SectionTwo
             classText="lg:w-[75%]"
-              hideSubText="hidden"
-              className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="Unlock the Power of CRM Solutions"
-              head1="Enabling Success through CRM"
-              description={sectionTwoDesc}
-            />
+            hideSubText="hidden"
+            className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
+            title="Unlock the Power of CRM Solutions"
+            head1="Enabling Success through CRM"
+            description={sectionTwoDesc}
+          />
           {position && (
             <>
               <SectionThree
@@ -330,8 +338,8 @@ function ReactNativeDeveloper(props) {
                 sectionFiveTable={sectionFiveTable}
               />
               <SectionSix
-              headAbove="Develop Your Own CRM App"
-              subheadAbove="Are you ready to step onto the path of innovation with a transformative CRM platform?"
+                headAbove="Develop Your Own CRM App"
+                subheadAbove="Are you ready to step onto the path of innovation with a transformative CRM platform?"
                 title="Your exciting journey awaits just a click away. Embrace the future of customer relationship management today!"
                 customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
                 classText="lg:text-[2rem] "
@@ -346,9 +354,9 @@ function ReactNativeDeveloper(props) {
                 description={platformDesc}
               />
               <SectionNine
-            brand="crm solution development"
-            pageCategory="crm solution development"
-            pageCategoryAbbr="crm solution development"
+                brand="crm solution development"
+                pageCategory="crm solution development"
+                pageCategoryAbbr="crm solution development"
                 slow={70000}
                 fast={55000}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"

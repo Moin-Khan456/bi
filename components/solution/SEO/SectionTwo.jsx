@@ -8,10 +8,10 @@ import Image from "next/image";
 
 const SectionTwo = ({ title, subTitle, head1, description, className }) => {
   return (
-    <div className={`${className}`}>
+    <div className={`lg:${className}`}>
       <div className="container">
-        <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative">
-          <h1 className="px-4 text-3xl md:text-5xl lg:text-8xl MonumentRegular font-bold w-full lg:w-[45%] lg:max-w-auto ">{title} <span className="px-4 pb-3 text-[1.7rem] lg:ml-52 whitespace-nowrap absolute bottom-10 right-40 Gilroy-SemiBold ">{subTitle}</span></h1>
+        <div className="flex lg:items-end flex-col md:flex-col lg:flex-row lg:py-8 relative">
+          <h1 className="px-4 text-4xl lg:text-8xl MonumentRegular font-bold w-full lg:w-[45%] lg:max-w-auto ">{title} <span className="lg:px-4 pb-3 lg:text-[1.7rem] lg:ml-52 lg:whitespace-nowrap lg:absolute bottom-10 right-40 Gilroy-SemiBold ">{subTitle}</span></h1>
         </div>
         <p className="text-3xl px-4">
           <span className="text-[#7600EB]">Brain Inventory:</span> {head1}

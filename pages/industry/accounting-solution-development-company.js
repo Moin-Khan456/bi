@@ -353,6 +353,7 @@ function ReactNativeDeveloper(props) {
               <SectionSix
                 head="Explore everything that the Brain Inventory team can do for you."
                 title="Develop Your Own Accounting App"
+                customClasses="w-[400px] !bottom-0"
                 btn="BUILD YOUR ACCOUNTING APP"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Mask+group.png"
               />

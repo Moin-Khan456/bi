@@ -237,11 +237,11 @@ function SocialMedia(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/social-networking-development-company"
+          content="https://braininventory.in/solution/social-networking-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/social-networking-development-company"
+          href="https://braininventory.in/solution/social-networking-development-company"
         />
       </Head>
       {/*<Loader />*/}
@@ -279,7 +279,7 @@ function SocialMedia(props) {
             headAbove="Develop Your Own Social Solution"
             subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
-            customClasses="w-[400px]"
+            customClasses="w-[390px] !bottom-6"
             btn="BUILD YOUR SOCIAL MEDIA APP"
             classText="lg:text-3xl"
             title="With the right idea and execution, your platform could be the next big thing. Click the button below to  start your journey."

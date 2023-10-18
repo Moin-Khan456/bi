@@ -29,15 +29,10 @@ const FooterSections = [
     ],
   },
   {
-    title: "Solutions",
+    title: "Industry",
     link: "/industry",
     className: "md:whitespace-nowrap",
     links: [
-      {
-        _id: 1,
-        name: "Social Media Marketing",
-        path: "/industry/social-networking-development-company",
-      },
       {
         _id: 2,
         name: "Fitness Solution Development",
@@ -66,17 +61,17 @@ const FooterSections = [
       {
         _id: 7,
         name: "Ed Tech Solution Provider",
-        path: "/industry/edtech-solution-provider",
+        path: "/industry/edtech-solution-providers",
       },
       {
         _id: 8,
         name: "Travel Solution Development",
-        path: "/industry/travel-solution-development",
+        path: "/industry/travel-solution-development-company",
       },
       {
         _id: 9,
         name: "CRM Solution Development",
-        path: "/industry/crm-solution-development",
+        path: "/industry/crm-solution-development-company",
       },
     ],
   },
@@ -134,7 +129,18 @@ const FooterSections = [
       },
     ],
   },
-
+  {
+    title: "Solutions",
+    link: "/solutions",
+    className: "md:whitespace-nowrap",
+    links: [
+      {
+        _id: 1,
+        name: "Social Media Marketing",
+        path: "/solution/social-networking-development-company",
+      },
+    ],
+  },
   {
     title: "Mobile App Development",
     link: "/mobile-app-development",

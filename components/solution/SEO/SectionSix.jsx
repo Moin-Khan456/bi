@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Index = ({title, btn, head, src, className, headAbove, subheadAbove, customClasses, classText}) => {
 
     return (
-        <div className="container rounded-md my-8 py-10 space-x-6">
+        <div className="container rounded-md my-8 px-4">
             <div className="container padding-left-all-section ">
             <h2 className={`MonumentRegular text-[1.5625rem] ${classText}`}>{headAbove}</h2>
             <p className="text-slate-400 py-4">{subheadAbove}</p>

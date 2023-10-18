@@ -159,14 +159,14 @@ const Header = () => {
         >
           <div className="grid lg:grid-cols-4 grid-cols-1 px-8 py-16 lg:px-28 w-full">
             <div className="">
-                <h3
-                  onClick={() => {
-                    setBlockName("companyChildren");
-                  }}
-                  className="stroke-text text-3xl text-left Gilroy-Bold cursor-pointer lg:pb-6"
-                >
-                  About us
-                </h3>
+              <h3
+                onClick={() => {
+                  setBlockName("companyChildren");
+                }}
+                className="stroke-text text-3xl text-left Gilroy-Bold cursor-pointer lg:pb-6"
+              >
+                About us
+              </h3>
               <h3
                 onClick={() => {
                   setBlockName("ServicesChildren");
@@ -188,11 +188,19 @@ const Header = () => {
               </Link>
               <h3
                 onClick={() => {
-                  setBlockName("Solution");
+                  setBlockName("Industry");
                 }}
                 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6"
               >
                 Industry
+              </h3>
+              <h3
+                onClick={() => {
+                  setBlockName("Solution");
+                }}
+                className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6"
+              >
+                Solution
               </h3>
               <Link href="/contact">
                 <h3 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6">
@@ -203,6 +211,7 @@ const Header = () => {
             <div className="col-span-3">
               {blockName === "companyChildren" && <CompanyChildren />}
               {blockName === "ServicesChildren" && <ServicesChildren />}
+              {blockName === "Industry" && <Industry />}
               {blockName === "Solution" && <Solution />}
             </div>
           </div>
@@ -480,13 +489,8 @@ const ServicesChildren = () => {
   );
 };
 
-const Solution = () => {
+const Industry = () => {
   const solutionLinks = [
-    {
-      _id: 1,
-      name: "Social Media Marketing",
-      link: "/industry/social-networking-development-company",
-    },
     {
       _id: 2,
       name: "Fitness Solution Development",
@@ -515,17 +519,17 @@ const Solution = () => {
     {
       _id: 7,
       name: "Ed Tech Solution Provider",
-      link: "/industry/edtech-solution-provider",
+      link: "/industry/edtech-solution-providers",
     },
     {
       _id: 8,
       name: "Travel Solution Development",
-      link: "/industry/travel-solution-development",
+      link: "/industry/travel-solution-development-company",
     },
     {
       _id: 9,
       name: "CRM Solution Development",
-      link: "/industry/crm-solution-development",
+      link: "/industry/crm-solution-development-company",
     },
   ];
 
@@ -533,6 +537,32 @@ const Solution = () => {
     <div className="col-span-4 lg:grid lg:grid-cols-1 hidden">
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Industry</h2>
+        <ul className="space-y-2">
+          {solutionLinks?.map((ele) => (
+            <li className="color-gray" key={ele._id}>
+              <Link href={ele.link} className="cursor-pointer">
+                {ele.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+const Solution = () => {
+  const solutionLinks = [
+    {
+      _id: 1,
+      name: "Social Networking Solution Development",
+      link: "/solution/social-networking-development-company",
+    },
+  ];
+
+  return (
+    <div className="col-span-4 lg:grid lg:grid-cols-1 hidden">
+      <div className="space-y-4">
+        <h2 className="text-2xl Gilroy-Bold">Solutions</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
             <li className="color-gray" key={ele._id}>

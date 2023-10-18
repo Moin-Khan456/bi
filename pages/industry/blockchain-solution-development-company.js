@@ -334,7 +334,7 @@ function ReactNativeDeveloper(props) {
             headAbove="Develop Your Own Blockchain Solution"
             subheadAbove="Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough."
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
-            customClasses="w-[500px]"
+            customClasses="w-[390px] !bottom-0"
             btn="BUILD YOUR BLOCKCHAIN APP"
             classText="lg:text-3xl"
             title="Ready to embark on this exciting journey? Click the button below to get started with blockchain app development."

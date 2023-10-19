@@ -30,6 +30,20 @@ export default function PostPage({ post, featuredMedia }) {
           <title>{title}</title>
           <meta name="description" content={discription} />
           <link
+            rel="og:title"
+            content={title}
+          />
+          
+          <link
+            rel="og:image"
+            content={featuredMedia}
+          />
+
+          <link
+            rel="og:url"
+            content={`https://braininventory.in/posts/${post.slug}/${post.id}`}
+          />
+          <link
             rel="canonical"
             href={`https://braininventory.in/posts/${post.slug}/${post.id}`}
           />

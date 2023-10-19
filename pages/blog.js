@@ -49,19 +49,13 @@ export default function Home({ data, blogs, totalPages }) {
         />
 
         <meta
-          property="twitter:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Logobg.png"
-        />
-        <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
         />
         <meta
           property="og:url"
           content="https://braininventory.in/blog"
-        />
-        
-        
+        />       
         <link rel="prev" href={`https://braininventory.in/blog/${currentPage > 1 ? currentPage-1 : ""}`} />        
         <link rel="next" href={`https://braininventory.in/blog/${currentPage < totalPages ? currentPage+1 : ""}`} />        
         <link rel="canonical" href="https://braininventory.in/blog" />
@@ -107,9 +101,13 @@ export default function Home({ data, blogs, totalPages }) {
   );
 }
 export async function getServerSideProps(context) {
-  const response = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${1}`
-  );
+  const posts = {};
+  if(!posts.data){
+    const response = await axios.get(
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${1}`
+    );
+    posts.data = response.data
+  }
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100"
   );
@@ -117,8 +115,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      data: response.data.slice(0, 3),
-      blogs: response.data,
+      data: posts.data.slice(0, 3),
+      blogs: posts.data,
       totalPages,
       currentPage: Number(2)
     },

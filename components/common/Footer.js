@@ -71,7 +71,7 @@ const FooterSections = [
       {
         _id: 9,
         name: "CRM Solution Development",
-        path: "/industry/crm-solution-development-company",
+        path: "/industry/crm-development-company",
       },
     ],
   },
@@ -127,6 +127,14 @@ const FooterSections = [
         name: "CodeIgniter Development",
         path: "/web-development/codeigniter-development-services",
       },
+      {
+        name: "TypeScript Development",
+        path: "/web-development/typescript-development-company",
+      },
+      {
+        name: "Shopify Development",
+        path: "/web-development/shopify-development-company",
+      },
     ],
   },
   {
@@ -180,35 +188,6 @@ const FooterSections = [
       },
     ],
   },
-  // {
-  //   title: "Industries",
-  //   links: [
-  //     {
-  //       name: "Food",
-  //       path: "",
-  //     },
-  //     {
-  //       name: "Health Care",
-  //       path: "",
-  //     },
-  //     {
-  //       name: "Ecommerce",
-  //       path: "",
-  //     },
-  //     {
-  //       name: "Real Estate",
-  //       path: "",
-  //     },
-  //     {
-  //       name: "Education",
-  //       path: "",
-  //     },
-  //     {
-  //       name: "Finance",
-  //       path: "",
-  //     },
-  //   ],
-  // },
   {
     title: "Portfolio",
     link: "/portfolio",

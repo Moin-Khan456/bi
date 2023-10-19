@@ -171,7 +171,7 @@ function HireAangularJsDeveloper(props) {
             title="Why AngularJS Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
           />{" "}

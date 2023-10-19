@@ -194,7 +194,7 @@ function ReactNativeDeveloper(props) {
                 subhead="The mobile app development services we offer can help businesses realize their business goals by increasing brand exposure, building engagement and loyalty, accelerating digital transformation journeys, leveraging data, and optimizing tactics."
                 card={hireCards}
               />{" "}
-              <ProjectInquiry />
+              
               <ChooseBraininventory
                 reasons={chooseBI}
                 alt="React Native App Development "

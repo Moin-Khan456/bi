@@ -32,7 +32,7 @@ export default function App({ title, subhead, subhead1, subhead2, card }) {
                 </p>
               </section>
             ))}
-            <section className='min-h-[400px] hidden lg:block' />
+            <section className='min-h-[50px] hidden lg:block' />
           </section>
         </section>
       </section>

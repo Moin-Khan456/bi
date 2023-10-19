@@ -233,7 +233,7 @@ const Bloomia = () => {
           </div>
           <SectionFive />
           <SectionSix />
-          <ProjectInquiry />
+          
           <div className="container">
             <div className="max-w-full flex justify-center">
               <Image

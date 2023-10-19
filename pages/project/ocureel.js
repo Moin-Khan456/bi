@@ -181,7 +181,7 @@ const Virifi = () => {
 
         <SectionThree />
 
-        <ProjectInquiry />
+        
         <div className="container">
           <Image
             src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"

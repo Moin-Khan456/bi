@@ -296,11 +296,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/crm-solution-development-company"
+          content="https://braininventory.in/industry/crm-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/crm-solution-development-company"
+          href="https://braininventory.in/industry/crm-development-company"
         />
       </Head>
       <Loader />

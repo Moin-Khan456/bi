@@ -179,7 +179,7 @@ function ReactNativeDeveloper(props) {
             title="Why Swift App Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Swift Application Development Services"

@@ -34,7 +34,7 @@ export default function Customer() {
                                     customerImages.map((ele, index) => (
                                         <section key={index}>
                                             <Image width={120} height={120}
-                                                src={ele} alt="Customer Images"
+                                                src={ele} alt="Custom Software Development Company | Hire Software Developers"
                                                 className="w-customer"
                                             />
                                         </section>

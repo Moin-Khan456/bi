@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { BiCheckCircle } from "react-icons/bi"
 
-export default function ChooseBraininventory({ reasons, subhead }) {
+export default function ChooseBraininventory({ reasons, subhead, alt }) {
     return (
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
             <div className="container padding-left-all-section-1">
@@ -54,7 +54,7 @@ export default function ChooseBraininventory({ reasons, subhead }) {
                         </a>
                     </div>
                     <div className="max-h-[55%]">
-                        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt="" width={800} height={800} className="object-contain" />
+                        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt={alt} width={800} height={800} className="object-contain" />
                     </div>
                 </div>
             </div>

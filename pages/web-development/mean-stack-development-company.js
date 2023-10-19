@@ -169,7 +169,7 @@ function HireAangularJsDeveloper(props) {
             title="Why MEAN Stack Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="MEAN Stack Development Services"

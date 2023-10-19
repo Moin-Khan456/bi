@@ -239,7 +239,7 @@ const Fatoura = () => {
         </div>
       </div>
 
-      <ProjectInquiry />
+      
       <div className="max-w-full flex justify-center">
         <Image width={500} height={500}
           src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"

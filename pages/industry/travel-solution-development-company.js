@@ -358,7 +358,7 @@ function ReactNativeDeveloper(props) {
               <SectionSix
                 title="Ready to embark on your journey with a game-changing travel portal development company? "
                 customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
-                classText="text-[2rem]"
+                classText="!text-[2rem]"
                 btn="BUILD YOUR TRAVEL-TECH SOLUTION"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+group+(2).png"
               />

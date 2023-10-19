@@ -189,7 +189,7 @@ function HireAangularJsDeveloper(props) {
                 title="Why Android App Development from %Brain Inventory"
                 card={hireCards}
               />{" "}
-              <ProjectInquiry />
+              
               <ChooseBraininventory
                 reasons={chooseBI}
                 subhead={chooseBiSubhead}

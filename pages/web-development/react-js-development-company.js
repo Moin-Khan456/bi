@@ -178,7 +178,7 @@ function HireReactDeveloper(props) {
             title="Why React JS Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="ReactJS Web Development Company"

@@ -320,6 +320,16 @@ const ServicesChildren = () => {
       name: "CodeIgniter Development",
       link: "/web-development/codeigniter-development-services",
     },
+    {
+      _id: 13,
+      name: "TypeScript Development",
+      link: "/web-development/typescript-development-company",
+    },
+    {
+      _id: 14,
+      name: "Shopify Development",
+      link: "/web-development/shopify-development-company",
+    },
   ];
   const mobileLinks = [
     {
@@ -529,7 +539,7 @@ const Industry = () => {
     {
       _id: 9,
       name: "CRM Solution Development",
-      link: "/industry/crm-solution-development-company",
+      link: "/industry/crm-development-company",
     },
   ];
 

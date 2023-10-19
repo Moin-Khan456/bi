@@ -186,7 +186,7 @@ function HireAangularJsDeveloper(props) {
             title="Why LAMP Application Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Lamp Development Services"

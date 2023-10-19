@@ -27,7 +27,7 @@ function FaqHire({ faq }) {
                                             <button onClick={() => collapsed(el.id)} className="">
                                                 <Image width={el.title.length > 120 ? 85 : 40} height={el.title.length > 90 ? 85 : 40}
                                                     src="https://d1u4arv5y5eda6.cloudfront.net/images/faq-arrow.svg"
-                                                    className="cursor-pointer" alt="Faq Arrow"
+                                                    className="cursor-pointer" alt="Custom Software Development Company | Hire Software Developers"
                                                 />
                                             </button>
                                         </section>

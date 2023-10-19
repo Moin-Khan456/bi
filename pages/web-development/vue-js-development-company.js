@@ -171,7 +171,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Vue.Js Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Vue.js Application Development Company"

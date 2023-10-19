@@ -176,7 +176,7 @@ function ReactNativeDeveloper(props) {
             subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Flutter Development Company"

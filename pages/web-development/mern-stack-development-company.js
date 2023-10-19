@@ -177,7 +177,7 @@ function HireAangularJsDeveloper(props) {
             title="Why MERN Stack Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ProjectInquiry />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="MERN Stack Development services"

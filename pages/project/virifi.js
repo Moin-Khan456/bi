@@ -223,7 +223,7 @@ const Virifi = () => {
           </>
         </div>
 
-        <ProjectInquiry />
+        
         <div className="flex justify-center w-full py-12">
          <div className="container lg:px-28">
           <Image

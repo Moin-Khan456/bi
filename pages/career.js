@@ -16,7 +16,7 @@ const InterviewProcess = dynamic(() =>
 const Opening = dynamic(() => import("../components/career/opening.js"));
 const Loader = dynamic(() => import("../components/common/loader"));
 
-function Carrer(props) {
+function Career(props) {
   const [loadMore, setLoadMore] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -94,4 +94,4 @@ on interesting projects!"
   );
 }
 
-export default Carrer;
+export default Career;

@@ -29,23 +29,17 @@ export default function PostPage({ post, featuredMedia }) {
         <Head>
           <title>{title}</title>
           <meta name="description" content={discription} />
-          <link
-            rel="og:title"
-            content={title}
-          />
-          
-          <link
-            rel="og:image"
-            content={featuredMedia}
-          />
+          <link rel="og:title" content={title} />
 
-          <link
-            rel="og:url"
-            content={`https://braininventory.in/posts/${post.slug}/${post.id}`}
-          />
           <link
             rel="canonical"
             href={`https://braininventory.in/posts/${post.slug}/${post.id}`}
+          />
+
+          <meta property="og:image" content={featuredMedia} />
+          <meta
+            property="og:url"
+            content={`https://braininventory.in/posts/${post.slug}/${post.id}`}
           />
         </Head>
         <Header></Header>
@@ -57,7 +51,13 @@ export default function PostPage({ post, featuredMedia }) {
                 <h1 className="text-left Gilroy-Bold text-2xl mb-4  ">
                   {post.title.rendered}
                 </h1>
-                <Image src={featuredMedia} className="w-full" width={900} height={900} alt="" />
+                <Image
+                  src={featuredMedia}
+                  className="w-full"
+                  width={900}
+                  height={900}
+                  alt=""
+                />
                 <span className="flex mt-2 mb-2">
                   <label className="pl-2">
                     <small className="text-sm color-gray">
@@ -71,7 +71,10 @@ export default function PostPage({ post, featuredMedia }) {
                 ></div>
               </div>
 
-              <div>
+              <div className="relative">
+                <span className="absolute block text-center">
+                  Hire Developer
+                </span>
                 <div className="p-6 bg-gray-dc mt-8">
                   <h3 className="text-xl Gilroy-Bold mb-4">
                     Hire Dedicated Remote Developers from Brain Inventory
@@ -113,12 +116,12 @@ export async function getServerSideProps(context) {
       slug[slug.length - 1]
     }`
   );
-  
 
-  const featuredMedia = post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
-    console.log("Feature media:- ", featuredMedia.data)
-    return {
-        props: {
+  const featuredMedia =
+    post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
+
+  return {
+    props: {
       post: post.data,
       featuredMedia: featuredMedia.data?.source_url,
     },

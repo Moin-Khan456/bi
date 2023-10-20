@@ -35,7 +35,7 @@ const Banner = () => {
           <div className="w-[600px] h-[450px]  relative">
             <Image
               src={"https://d1u4arv5y5eda6.cloudfront.net/images/carrer.png"}
-              alt="carrer"
+              alt="Career at Brain Inventory"
               layout="fill"
             />
           </div>

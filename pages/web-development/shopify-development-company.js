@@ -196,7 +196,7 @@ function HireAangularJsDeveloper(props) {
                 reasons={advantages}
               />{" "}
               <Hire
-                title="Why to Choose %Brain Inventory% for Your TypeScript Development Needs?"
+                title="Why Choose %Brain Inventory% for Shopify Development?"
                 card={hireCards}
               />
               <div className="container">

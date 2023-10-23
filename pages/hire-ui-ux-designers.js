@@ -134,8 +134,11 @@ function HireAangularJsDeveloper(props) {
     "Performance Management",
   ];
 
-  const chooseBiSubhead =
-    "Hire our experienced UI/UX design team for your complex projects. We are a team of experienced UI/UX designers and developers. We have many years in designing and building websites, apps, and software. If you’re looking for an experienced partner to take on your next project, let us know. Our offer is boundless creative freedom with all the upfront mockups and feedback you’re looking for. The user experience is what makes your website, app, or web portal such a great experience for the app, and our users. The design, layout, and functionality of the UI/UX will determine whether a customer successfully navigates your website and ends up buying something. Successful applications need to not only be visually appealing, but they must also be intuitive to use at all stages of their customer lifecycle by various types of users. Brain Inventory has extensive experience in UI & UX development. Our creative team creates a solution that satisfies the primary objectives while ensuring usability through an effective user interface, which changes the way people interact with products and services everywhere they are used.";
+  const chooseReasons = [
+    "Hire our experienced UI/UX design team for your complex projects. We are a team of experienced UI/UX designers and developers. We have many years in designing and building websites, apps, and software. If you’re looking for an experienced partner to take on your next project, let us know.",
+    "Our offer is boundless creative freedom with all the upfront mockups and feedback you’re looking for. The user experience is what makes your website, app, or web portal such a great experience for the app, and our users. The design, layout, and functionality of the UI/UX will determine whether a customer successfully navigates your website and ends up buying something.",
+    "Successful applications need to not only be visually appealing, but they must also be intuitive to use at all stages of their customer lifecycle by various types of users. Brain Inventory has extensive experience in UI & UX development.",
+    "Our creative team creates a solution that satisfies the primary objectives while ensuring usability through an effective user interface, which changes the way people interact with products and services everywhere they are used."]
 
   const [position, setPostion] = useState(false);
   useEffect(() => {
@@ -205,7 +208,7 @@ function HireAangularJsDeveloper(props) {
                 title="Why Hire UI/UX Designers from %Brain Inventory"
                 card={hireCards}
               />
-              <ChooseBraininventory subhead={chooseBiSubhead} alt="Hire UI/UX Designers" />
+              <ChooseBraininventory reasons={chooseReasons}  alt="Hire UI/UX Designers" />
               <Hello />
               <Engaged />
               <HireSteps type="UI/UX" />

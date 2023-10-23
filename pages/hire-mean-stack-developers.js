@@ -211,7 +211,7 @@ function HireAangularJsDeveloper(props) {
                 card={experienceCards}
               />
               <Advantage
-                title="MERN Stack Developers"
+                title="MEAN Stack Developers"
                 advantages={advantages}
               />
               <HireMarquee title="MEAN stack" />

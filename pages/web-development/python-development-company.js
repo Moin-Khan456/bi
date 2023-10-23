@@ -40,34 +40,6 @@ function HireAangularJsDeveloper(props) {
   const subhead3 =
     "Python's strong community support ensures access to a wealth of resources, including documentation, tutorials, and a global network of developers ready to assist when facing challenges. Its cross-platform compatibility means that Python applications can run on various operating systems, enhancing their accessibility and scalability.";
 
-  const experienceCards = [
-    {
-      head: "Custom Chatbot Development",
-      content:
-        "The chatbots, in general, are being adopted by some of the leading enterprises to automate their customer service and improve their efficiency. The chatbot development is so far the most trending technology that has enabled businesses to deliver 'the best customer experience' to their customers across multiple channels and touchpoints.",
-    },
-    {
-      head: "Multilingual Chatbot Development",
-      content:
-        "Translating the content of your website and online applications isn’t enough. It means nothing if your visitors or customers feel it is not pitched to them in their own language, in a culturally-appropriate tone of voice. That’s why you need native language chatbots if you want to win your audience in any country.",
-    },
-    {
-      head: "Integration With ERP Systems",
-      content:
-        "As an online chatbot service provider, we are an agile team that serves businesses with a comprehensive solution for automating their communication, simple and easy. We offer chatbot integration with ERP systems. These systems are well-equipped with analytical capabilities and provide actionable business insights that facilitate better decision making.",
-    },
-    {
-      head: "Chatbot Testing",
-      content:
-        "We recognize that automated testing is a line of automation testing and hence requires manual intervention for the most reliable outcomes. Our own Chatbot test experts ensure that your Chatbot will function as good as new even after months of usage. We employ the best-in-class software for affirming trustworthiness of your Chatbot and eliminating possible errors.",
-    },
-    {
-      head: "Voice-Enabled Chatbots",
-      content:
-        "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
-    },
-  ];
-
   const hireCards = [
     {
       head: "Agile methodology",
@@ -194,7 +166,6 @@ https://braininventory.in/web-development/python-development-company"
                 para1={subhead1}
                 para2={subhead2}
                 para3={subhead3}
-                card={experienceCards}
               />
               <HireMarquee title="Python Development" />
               <Advantage title="Python Development" reasons={advantages} />{" "}

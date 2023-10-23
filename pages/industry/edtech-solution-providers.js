@@ -321,7 +321,7 @@ function ReactNativeDeveloper(props) {
               />
                 <SectionSix
                 title="Ready to start your journey with a transformative education platform?"
-                customClasses="max-w-[200px] lg:max-w-[400px] bottom-0"
+                customClasses="max-w-[200px] lg:max-w-[400px] !w-[350px] bottom-0"
                 btn="BUILD YOUR ED-TECH SOLUTION"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Ed-Tech/Mask+group+(1).png"
               />

@@ -307,7 +307,7 @@ function ReactNativeDeveloper(props) {
       <main className="">
         <Header />
         <SectionOne />
-        <section className="container">
+        <section>
           <SectionTwo
             classText="lg:w-[75%]"
             hideSubText="hidden"

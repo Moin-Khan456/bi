@@ -212,7 +212,6 @@ function HireAangularJsDeveloper(props) {
             <Hire
               title="Why Mobile Application Integration from %Brain Inventory"
               card={hireCards}
-              subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
             />
             <FindUs />
             <ChooseBraininventory reasons={chooseBI} alt="Mobile Application Integration Services" />

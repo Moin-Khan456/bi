@@ -328,7 +328,7 @@ function ReactNativeDeveloper(props) {
       <main className="">
         <Header />
           <SectionOne />
-        <section className="container">
+        <section>
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
             title="TOP Travel SOLUTION"

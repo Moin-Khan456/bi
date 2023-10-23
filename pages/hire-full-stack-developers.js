@@ -215,7 +215,6 @@ function HireAangularJsDeveloper(props) {
               <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
               <Hire
                 title="Why Hire Full Stack Developers from %Brain Inventory"
-                subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
                 card={hireCards}
               />
               <Hello />

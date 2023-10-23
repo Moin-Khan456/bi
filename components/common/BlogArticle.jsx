@@ -34,7 +34,7 @@ export default function BlogArticle() {
                                             <Image width={500} height={300}
                                                 className="h-full rounded-3xl"
                                                 src={ele._embedded["wp:featuredmedia"][0].source_url}
-                                                alt="Card background"
+                                                alt={ele.title.rendered + " | Brain Inventory"}
                                             />
                                             <section className="absolute inset-0 flex items-start justify-between flex-col p-4 ">
                                             </section>

@@ -317,16 +317,21 @@ const ServicesChildren = () => {
     },
     {
       _id: 12,
+      name: "Laravel Development",
+      link: "/web-development/laravel-development-company",
+    },
+    {
+      _id: 13,
       name: "CodeIgniter Development",
       link: "/web-development/codeigniter-development-services",
     },
     {
-      _id: 13,
+      _id: 14,
       name: "TypeScript Development",
       link: "/web-development/typescript-development-company",
     },
     {
-      _id: 14,
+      _id: 15,
       name: "Shopify Development",
       link: "/web-development/shopify-development-company",
     },
@@ -371,6 +376,11 @@ const ServicesChildren = () => {
       _id: 8,
       name: "Modile App Integration",
       link: "/mobile-development/mobile-app-integration",
+    },
+    {
+      _id: 9,
+      name: "Ionic App Development",
+      link: "/mobile-development/ionic-app-development-company",
     },
   ];
 

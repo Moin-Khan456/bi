@@ -313,7 +313,7 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_fitness.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_marketplace.jpg"
         />
         <link
           rel="canonical"

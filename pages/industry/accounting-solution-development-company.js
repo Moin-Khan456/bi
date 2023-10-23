@@ -313,6 +313,10 @@ function ReactNativeDeveloper(props) {
           Accounting App Development Solution | Accounting App Development
           Services
         </title>
+        <meta
+          property="og:image"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_accounting+solution.jpg"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/industry/accounting-solution-development-company"

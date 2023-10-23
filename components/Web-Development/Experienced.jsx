@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-const Index = ({ para1, para2, para3, title, image, card, type }) => {
+const Index = ({ para1, para2, para3, title, image, card, type, alt }) => {
   return (
     <main>
       <section className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-20">
@@ -23,7 +23,7 @@ const Index = ({ para1, para2, para3, title, image, card, type }) => {
             <aside className="w-[75%] container">
               <Image
                 src={image}
-                alt=""
+                alt={alt}
                 width={700}
                 height={700}
                 className="rounded-2xl"

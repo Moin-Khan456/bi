@@ -124,6 +124,10 @@ const FooterSections = [
         path: "/web-development/wordpress-development-company",
       },
       {
+        name: "Laravel Development",
+        path: "/web-development/laravel-development-company",
+      },
+      {
         name: "CodeIgniter Development",
         path: "/web-development/codeigniter-development-services",
       },
@@ -185,6 +189,10 @@ const FooterSections = [
       {
         name: "Mobile App Integration",
         path: "/mobile-development/mobile-app-integration",
+      },
+      {
+        name: "Ionic App Development",
+        path: "/mobile-development/ionic-app-development-company",
       },
     ],
   },

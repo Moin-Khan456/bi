@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /
 Disallow: /api/
 Disallow: /components/
 Disallow: /utils/

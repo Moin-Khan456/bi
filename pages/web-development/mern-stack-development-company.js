@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -18,9 +18,6 @@ const WhyMean = dynamic(() =>
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
 );
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
@@ -62,8 +59,7 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "2",
-      title:
-        "Is MERN stack best for web development?",
+      title: "Is MERN stack best for web development?",
       description:
         "Yes, MERN stack development is a combination of technologies that are used to build highly scalable, robust, and maintainable applications. MERN stack is being used by some of the most popular companies like Google, Facebook, Dropbox, and many others due to its capability to run on multiple platforms.",
     },
@@ -140,7 +136,10 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Bring success to your web solutions from Brain Inventory. We use the latest MERN Stack Technologies for scalable web and mobile app development. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/mern-stack-development-company/" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/mern-stack-development-company/"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
@@ -150,48 +149,47 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/mern-stack-development-company"
         />
       </Head>
-      <Loader />
-      <div className="project-bg">
-        <Header />
-        <div className="pt-32">
-          <SectionOne
-            heading="Top MERN Stack"
-            title="Top MERN Stack"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
-            alt="MERN Stack App Development Services, MERN Stack.Js App Development"
-          />
-          <WhyMean type="MERN Stack" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-              MERN Stack Development
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <div className="project-bg">
+          <Header />
+          <div className="pt-32">
+            <SectionOne
+              heading="Top MERN Stack"
+              title="Top MERN Stack"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
+              alt="MERN Stack App Development Services, MERN Stack.Js App Development"
+            />
+            <WhyMean type="MERN Stack" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+                MERN Stack Development
+              </h1>
+            </div>
+            <Benefits
+              type="MERN Stack"
+              subhead="MERN is a stack of JavaScript-based technologies used for developing web applications. MERN was developed by Facebook to build fast and scalable applications."
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why MERN Stack Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="MERN Stack Development services"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </div>
-          <Benefits
-            type="MERN Stack"
-            subhead="MERN is a stack of JavaScript-based technologies used for developing web applications. MERN was developed by Facebook to build fast and scalable applications."
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why MERN Stack Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="MERN Stack Development services"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} /> {/*Done */}
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          {/* <ContactCard /> */}
-          <hr />
-          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

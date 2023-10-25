@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -126,13 +126,6 @@ function HireAangularJsDeveloper(props) {
     "Their solutions are tailored to fulfill business objectives and meet customer expectations.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -150,7 +143,10 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Get professional Android App Development Services from Brain Inventory. Our Developers build high-quality and scalable android applications. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/android-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/mobile-development/android-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_android+development.jpg"
@@ -160,53 +156,49 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/android-development-company"
         />
       </Head>
-      <Loader />
-      <main className="project-bg">
-        <Header />
-        <section className="pt-32">
-          <SectionOne
-            heading="Android App"
-            title="Hire Android"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6961.png"
-            alt="Android application development"
-          />
-          <WhyMean type="Android App" meanReasons={meanReasons} />
-          <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-              Android App Development
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <main className="project-bg">
+          <Header />
+          <section className="pt-32">
+            <SectionOne
+              heading="Android App"
+              title="Hire Android"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6961.png"
+              alt="Android application development"
+            />
+            <WhyMean type="Android App" meanReasons={meanReasons} />
+            <section className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+                Android App Development
+              </h1>
+            </section>
+            <Benefits
+              type="Android App"
+              subhead="Android app development is a trusted brand in the world of mobile app development. The reason for its prominence lies in the fact that it is one of the most sought-after platforms, providing both an evolutionary and revolutionary approach to enhancing user experience. The Android platform has seen a steady rise in popularity over the past few years, and this presents developers with a unique opportunity to reap the benefits."
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why Android App Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="Android application development"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <section className="pb-4" />
+            <hr />
+            <Footer />
           </section>
-          <Benefits
-            type="Android App"
-            subhead="Android app development is a trusted brand in the world of mobile app development. The reason for its prominence lies in the fact that it is one of the most sought-after platforms, providing both an evolutionary and revolutionary approach to enhancing user experience. The Android platform has seen a steady rise in popularity over the past few years, and this presents developers with a unique opportunity to reap the benefits."
-            benefitsList={benefitsList}
-          />
-          {position && (
-            <>
-              <Hire
-                title="Why Android App Development from %Brain Inventory"
-                card={hireCards}
-              />{" "}
-              
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Android application development"
-              />{" "}
-              <Industries />
-              <FaqHire faq={faqdetails} />
-              <BlogArticle />
-              <ContactForm />
-              <LocateUs />
-              <section className="pb-4" />
-              <hr />
-              <Footer />
-            </>
-          )}
-        </section>
-      </main>
+        </main>
+      </Suspense>
     </>
   );
 }

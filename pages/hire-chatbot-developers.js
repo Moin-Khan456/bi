@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import OurDevelopers from "../components/Hire/OurDevelopers";
@@ -124,15 +124,6 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const para1 =
-    "Node.js is an open-source JavaScript runtime platform that is designed to develop scalable network applications. It’s a very popular tool as it’s very lightweight and can be suitable for a wide variety of projects. Node.js is used for everything from building websites to improving throughput in microservices, APIs, and databases!";
-  const para2 =
-    " A good and experienced Python developer has a strong foundation of knowledge of various tools and libraries.";
-  const para3 =
-    "Here at Brain Inventory, we're dedicated to delivering excellent Python development services in an effort to help you run your business with more efficiency. We understand that time is of the essence when it comes to building new applications.";
-  const para4 =
-    "That's why we make every effort to ensure that we don't waste your time or money by adhering to overcomplicated instructions or delays in receiving feedback on our work. Our talented Python app developers utilize industry-leading technology that offers fast and reliable results.";
-
   const keySkillsBreif =
     "Chatbots are intelligent interactive virtual assistants that simulate conversations with customers. They can be used in a diverse range of industries (apart from marketing) including banking, education, and healthcare among others. Our chatbot development services make it possible to develop life- like customer services which helps clients in diverse industries increase customer engagement while simultaneously reducing operational costs. When developing a custom Chatbot application, We deploy the latest technology development methodologies based on your specific objectives. Our systematic approach is centered around rapid discovery of your business needs, just-in-time requirement gathering, and elaboration of the solution.";
   const keySkillsPoints = [
@@ -153,12 +144,6 @@ function HireAangularJsDeveloper(props) {
     "Hiring a skilled chatbot developer offers a range of advantages that can significantly impact the success of your project First and foremost, their expertise in natural language processing (NLP) and artificial intelligence (AI) empowers them to create chatbots that understand and respond to user inputs accurately, creating a more intuitive and effective user experience. Additionally, a professional chatbot developer can tailor the bot's functionalities to match your specific business needs, whether it's customer support, lead generation, or information dissemination.",
     "Furthermore, a seasoned chatbot developer brings proficiency in selecting the appropriate development platforms and tools, ensuring optimal performance and scalability. They can integrate the chatbot seamlessly with your existing systems, databases, and APIs, streamlining processes and enhancing overall efficiency. Their ability to design dynamic conversational flows and continuously improve the bot's responses through data analysis and iteration ensures a bot that evolves and meets user expectations over time.",
   ];
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   const banners = [
     {
@@ -219,61 +204,60 @@ https://braininventory.in/hire-chatbot-developers"
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
-        />        
+        />
         <meta
           property="og:url"
           content="https://braininventory.in/hire-chatbot-developers"
-        />        
-        
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/hire-chatbot-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
-          <Header></Header>
-          <HireBanner
-            heading="A Smarter Way to Build Customized Applications."
-            title="Hire Chatbot"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+1.png"
-            alt="Hire Dedicated Chatbot Developers"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Chatbot Developer"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+2.png"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-                card={experienceCards}
-              />
-              {/* <OurDevelopers banners={banners} /> */}
-              <HireMarquee title="Chatbot Developers" />
-              <Advantage title="Chatbot Developer" benefitsList={reasons} />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Chatbot Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <Hello />
-              <ChooseBraininventory reasons={chooseBI} alt="Hire Dedicated Chatbot Developers" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <div>
+            <Header></Header>
+            <HireBanner
+              heading="A Smarter Way to Build Customized Applications."
+              title="Hire Chatbot"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+1.png"
+              alt="Hire Dedicated Chatbot Developers"
+            />
+            <Customer />
+            <Experienced
+              title="Chatbot Developer"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+2.png"
+              para1={subhead1}
+              para2={subhead2}
+              para3={subhead3}
+              card={experienceCards}
+            />
+            {/* <OurDevelopers banners={banners} /> */}
+            <HireMarquee title="Chatbot Developers" />
+            <Advantage title="Chatbot Developer" benefitsList={reasons} />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Chatbot Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <Hello />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Hire Dedicated Chatbot Developers"
+            />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

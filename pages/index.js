@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
@@ -37,13 +37,12 @@ const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
-
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
 
@@ -80,36 +79,34 @@ export default function Home() {
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />
-        
+
         <link rel="icon" href="/favicon.png" />
         <link rel="canonical" href="https://braininventory.in" />
       </Head>
-      <main className="relative">
-        <Header />
-        <section className="container">
-          <HomeSectionOne />
-          <HomeSectionThree />
-          <HomeSectionFour />
-          <HireDedicatedDeveloper />
-        </section>
-        {position && (
-          <>
-            <HomeSectionSix />
-            <section className="container flex justify-center">
-              <HomeSectionEight />
-            </section>
-            <HomeSectionNine />
-            <section className="container">
-              <HomeSectionTen />
-              <HomeSectionEleven />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </section>
-          </>
-        )}
-      </main>
+      <Suspense fallback={null}>
+        <main className="relative">
+          <Header />
+          <section className="container">
+            <HomeSectionOne />
+            <HomeSectionThree />
+            <HomeSectionFour />
+            <HireDedicatedDeveloper />
+          </section>
+          <HomeSectionSix />
+          <section className="container flex justify-center">
+            <HomeSectionEight />
+          </section>
+          <HomeSectionNine />
+          <section className="container">
+            <HomeSectionTen />
+            <HomeSectionEleven />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </section>
+        </main>
+      </Suspense>
     </>
   );
 }

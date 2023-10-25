@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -118,7 +118,7 @@ function HireAangularJsDeveloper(props) {
     "PHP is an open-source language, and there are plenty of skilled PHP developers available, making it a cost-effective choice compared to some other languages. This affordability can be particularly beneficial for startups and small businesses.",
     "PHP is a widely used language, so you have a vast talent pool to choose from when hiring developers. You can find professionals with a range of experience levels and specializations to suit your project's requirements.",
     "PHP developers are experienced in creating web applications quickly. The extensive range of PHP frameworks like Laravel, Symfony, and CodeIgniter accelerates development by providing pre-built components and best practices.",
-    "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs."
+    "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs.",
   ];
   const keySkillsBreif =
     "Brain Inventory is a leading provider of web application development solutions and software development services. We are an offshore PHP web and mobile development company that serves businesses in more than 20 countries across the globe. We hire only the most experienced and certified developers with expertise in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Whether you need to launch a mobile platform or completely revamp your current website, we're here with you all the way through.";
@@ -131,29 +131,6 @@ function HireAangularJsDeveloper(props) {
     "Quick onboarding",
   ];
 
-  const ourDevelopersPromo = [
-    {
-      title: "Enterprise App Development",
-      brief: "Hire PHP experts for your customized enterprise app development requirement at a minimum investment cost. Our PHP developers are professional and have prior experience with clients like Apple, Microsoft, Google, and other corporations. For you, technical expertise is maintained and you will be having regular meetings with the end client to know their goals and objectives.",
-    },
-    {
-      title: "PHP Upgradation & Migration Services",
-      brief: "Are you worried about the prospect of ​migrating your current .NET, NodeJS, or Python application to PHP? Are you overwhelmed by the complexity and cost involved in updating or upgrading your current application? At BrainInventory, we fully comprehend how costly and time-consuming it can be to migrate from one technology stack to another.",
-    },
-    {
-      title: "PHP Desktop Applications",
-      brief: "Our PHP development team has the required skill set to offer tailor-made apps that can be integrated with a range of technologies. Our software engineers can also help in optimizing your product so that it can reach to the maximum number of users, thereby maximizing your revenue potential.",
-    },
-    {
-      title: "PHP CMS Development",
-      brief: "Want to build a CMS development and not sure where to start? If yes, our expert developers can help you. Our team has years of experience in building robust custom web applications using the most reliable and scalable frameworks. Hire us for your next project and enhance your website revenue with a performant full-stack solution.",
-    },
-    {
-      title: "Custom Web Apps",
-      brief: "Are you looking for a web app built from scratch? Our team of professional PHP developers is ready to provide you with the best solutions. We've built a lot of websites and developed numerous applications already, so we are familiar with how to make your project happen.",
-    },
-  ];
-
   const chooseBiSubhead =
     "Hiring dedicated Python developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Python developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
@@ -161,13 +138,6 @@ function HireAangularJsDeveloper(props) {
     "With smartphones growing in popularity, the craze for apps, and the plethora of choices among customers, mobile application development has become a challenging yet lucrative business venture. DesignerInteractions is a Mobile Applications Development Company, offering the best PHP development services at the most affordable rates. Our right-priced PHP developers make you win every time, and that's exactly why we're India's Most Preferred PHP Development Company. ",
     "Brain Inventory is an independent IT company that offers the services of PHP developers. We were founded in 2019 and have been offering our services to different businesses ever since. We assist clients in building their products and websites with a well-organized approach that can help them reduce development costs and increase the returns on investment.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -196,16 +166,16 @@ function HireAangularJsDeveloper(props) {
         <meta
           property="og:url"
           content="https://braininventory.in/hire-php-developers"
-        />       
-        
+        />
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-php-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
+
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
           <Header></Header>
           <HireBanner
             heading="A Smarter Way to Build Customized Applications."
@@ -216,40 +186,39 @@ function HireAangularJsDeveloper(props) {
             alt="Hire Dedicated PHP Developer"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="PHP Developer"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+2.png"
-                para1={subhead1}
-                para2={subhead2}
-                card={experienceCards}
-              />
-              <HireMarquee title="PHP Developers" />
-              <Advantage
-                title="PHP Developer"
-                subhead="Hiring a PHP developer can provide numerous advantages for your web development projects:"
-                reasons={benefitsList}
-              />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire PHP Developers from %Brain Inventory"
-                subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
-                card={hireCards}
-              />
-              <Hello />
-              <ChooseBraininventory reasons={chooseBI} alt="Hire Dedicated PHP Developer" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="PHP Developer"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+2.png"
+            para1={subhead1}
+            para2={subhead2}
+            card={experienceCards}
+          />
+          <HireMarquee title="PHP Developers" />
+          <Advantage
+            title="PHP Developer"
+            subhead="Hiring a PHP developer can provide numerous advantages for your web development projects:"
+            reasons={benefitsList}
+          />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire PHP Developers from %Brain Inventory"
+            subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
+            card={hireCards}
+          />
+          <Hello />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="Hire Dedicated PHP Developer"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

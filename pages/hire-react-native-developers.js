@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -157,13 +157,6 @@ function HireAangularJsDeveloper(props) {
     "To hire a developer or want to know more about our services contact us!",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -188,66 +181,65 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+React+Native+Developers.jpg"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-react-native-developers"
         />
-     
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-react-native-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <>
-          <Header></Header>
-          <HireBanner
-            heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire React Native "
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+React+Native+Developers.png"
-            alt="React Native development company"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced React Native Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="React Native Developers" advantages={advantages} />
-              <HireMarquee title="React Native" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire React Native Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="React Native development company"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="React Native" />
-              <Clients tech="React Native" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </>
-      </div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <>
+            <Header></Header>
+            <HireBanner
+              heading="Upgrade Your Development Process With Our Expertise"
+              title="Hire React Native "
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+React+Native+Developers.png"
+              alt="React Native development company"
+              type="hire"
+            />
+            <Customer />
+            <Experienced
+              title="Hire an Experienced React Native Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage
+              title="React Native Developers"
+              advantages={advantages}
+            />
+            <HireMarquee title="React Native" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire React Native Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="React Native development company"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="React Native" />
+            <Clients tech="React Native" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </>
+        </div>
+      </Suspense>
     </>
   );
 }

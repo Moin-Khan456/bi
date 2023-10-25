@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -23,9 +23,6 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
-const WhyIOS = dynamic(() =>
-  import("../components/Web-Development/Experienced")
-);
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -106,7 +103,7 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "3",
-      title:"How much does it cost to hire an iOS developer?",
+      title: "How much does it cost to hire an iOS developer?",
       description:
         "The cost to hire an iOS Developer depends on the development platform and the complexity of the design. There is no one size fits all solution, but you can get a rough estimate of what it would cost if you work with a freelancer or a company that works as a team.",
     },
@@ -115,7 +112,7 @@ function HireAangularJsDeveloper(props) {
       title: "Will I get post-mobile app development support?",
       description:
         "Yes, we do. We offer a fully managed (SaaS) mobile application development platform that allows you to concentrate on your core business functions and realize the full potential of your mobile application. We have a flexible bucket model that allows you to hire our mobile app developers to provide dedicated app support and maintenance services when required.",
-    }
+    },
   ];
 
   const advantages = [
@@ -139,20 +136,8 @@ function HireAangularJsDeveloper(props) {
 
   const chooseBI = [
     "Our best iPhone app developers have huge experience building the best iPhone apps. We have a proven record of success in delivering top-ranking iOS/iPad applications. Our remote iPhone app developers build robust, secure, business-centric, high-performance, and interactive apps to take your app idea to the next level. We have the right iOS developers. We offer top-class developers who are highly skilled and extremely motivated. We believe in delivering results and will go above and beyond to ensure that we not only meet but exceed your expectations. However, you need to hire the correct group of developers working together for optimal results on your features or app development project.",
-    "At Brain Inventory, we pride ourselves in providing advanced solutions for your business to make sure it not only survives but thrives. Our iOS application developers work with the client to create highly reliable, versatile, and secure application software. We have worked on complex-tech projects and delivered the desired results. We possess the diligence to upscale your iOS app from a simple creation to a top-rated application that your users need. \"Delivering awesome products with ease\".",
+    'At Brain Inventory, we pride ourselves in providing advanced solutions for your business to make sure it not only survives but thrives. Our iOS application developers work with the client to create highly reliable, versatile, and secure application software. We have worked on complex-tech projects and delivered the desired results. We possess the diligence to upscale your iOS app from a simple creation to a top-rated application that your users need. "Delivering awesome products with ease".',
   ];
-
-  const whyios1 =
-    "Businesses are increasingly becoming market leaders today. Consequently, they are compelled to utilize mobile apps in order to gain customer interaction and increase customer acquisition and retention rates. This calls for business enterprises to take steps to market their products or services through mobile apps. ";
-  const whyios2 =
-    "The mobile ecosystem is always evolving, but mobile apps have always been a crucial part of it. Businesses need to diversify their revenue streams nowadays, and one of the most effective ways is to leverage their mobile app for easy and instant monetization. Since iOS continues to be one of the most popular platforms on the market right now, businesses can reap huge benefits when they choose this platform as their primary medium. Mainly due to its flexibility, security, and constant growth in many areas including new devices and platforms available, it continues to be one of the top choices among enthusiasts around the world.";
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -179,59 +164,55 @@ function HireAangularJsDeveloper(props) {
           property="og:url"
           content="https://braininventory.in/hire-ios-developers"
         />
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-ios-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
-          <Header></Header>
-          <HireBanner
-            heading="Transform your ideas into stunning iOS apps with our expert iOS app development services!"
-            title="Hire iOS"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+iOS+Developers.png"
-            alt="iOS app development services"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire Experienced iOS Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="iOS Developers" advantages={advantages} />
-              <HireMarquee title="iOS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire iOS Developer from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI} alt="iOS app development services"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="iOS" />
-              <Clients tech="iOS" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </div>
-      </div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+            <Header></Header>
+            <HireBanner
+              heading="Transform your ideas into stunning iOS apps with our expert iOS app development services!"
+              title="Hire iOS"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+iOS+Developers.png"
+              alt="iOS app development services"
+              type="hire"
+            />
+            <Customer />
+            <Experienced
+              title="Hire Experienced iOS Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="iOS Developers" advantages={advantages} />
+            <HireMarquee title="iOS" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire iOS Developer from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="iOS app development services"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="iOS" />
+            <Clients tech="iOS" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </div>
+      </Suspense>
     </>
   );
 }

@@ -112,12 +112,10 @@ const HomeSectionFour = () => {
 };
 
 const Section = ({ info, url, video }) => {
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 1150) {
         setPostion(true);
-      }
     });
   });
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -65,22 +65,19 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title:
-        "How much does it cost to develop a Laravel app?",
+      title: "How much does it cost to develop a Laravel app?",
       description:
         "The total cost of Laravel development depends on various factors like the functionalities you are implementing, the kind of resource you are hiring, and the engagement model you choose to develop your digital product. To be more precise, the more complex features and functions you plan to implement, the more time Laravel developers will be required to develop them. The cost of outsourcing a Laravel project can vary based on the geographic location of the developers you hire and the specific custom requirements of your business. Ultimately, the price for developing a Laravel app is influenced by both the region from which you source your resources and the unique needs of your project.",
     },
     {
       id: "2",
-      title:
-        "Can Laravel be used for scalable application development?",
+      title: "Can Laravel be used for scalable application development?",
       description:
         "The Laravel framework was created by Taylor Otwell and it is compatible with PHP 5.4.4+. It's a free and open-source framework that offers the creation of modern and highly scalable distributed cloud-native applications with caching, cloud storage, session drivers, and read-write separation of the database, among many others. Our experience with custom Laravel development projects includes the creation of highly scalable web applications to handle millions of users.",
     },
     {
       id: "3",
-      title:
-        "Do you use any project management tools?",
+      title: "Do you use any project management tools?",
       description:
         "The most common project management tools used in the software development industry are JIRA, Pivotal Tracker, and Trello. We use these and other tools to manage client projects. These tools help us keep track of what needs to be done, who is responsible for it, what's already been done, whether we're on schedule or not — pretty much everything you'd want to know in order to confidently make business decisions.",
     },
@@ -101,16 +98,9 @@ function HireAangularJsDeveloper(props) {
 
   const chooseBI = [
     "Brain Inventory is a leading Laravel application development company, based in India and working with clients worldwide to fulfill their requirements. We offer top-notch web development services, which include custom web design, website development, and mobile app development along with offshore outsourcing & customized software development services at competitive rates. We are driven by the innovative thinking of our developers who have outclass skills and strong technical backgrounds.",
-    "While you have the opportunity to rest assured that we will handle even the most complicated design or programming requirements, we know that every project is different and unique, so we always listen closely to your needs and requirements. Our team of Laravel developers here at Brain Inventory is eager to help you work towards solving your technological problems.", 
+    "While you have the opportunity to rest assured that we will handle even the most complicated design or programming requirements, we know that every project is different and unique, so we always listen closely to your needs and requirements. Our team of Laravel developers here at Brain Inventory is eager to help you work towards solving your technological problems.",
     "Our developers have an extensive understanding of the framework and this allows us to take advantage of unique features that a standard PHP developer may not know about. Therefore, we can help your business build sophisticated software solutions that leverage what the framework has to offer.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -136,9 +126,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/laravel-development-company"
         />
       </Head>
-      <Loader />
-      <div className="">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="">
           <Header />
           <SectionOne
             title="Laravel Development"
@@ -152,38 +141,41 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Laravel Development"
-                type="why"
-                image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+171.png"
-                alt="Laravel Development From Brain Inventory"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="Laravel" />
-              <Advantage title="Laravel Development" desc="Laravel is a popular PHP web application framework that offers numerous benefits for developers and businesses alike. Here are some key advantages of Laravel development:" reasons={advantages} />{" "}
-              <Hire
-                title="Why Laravel Development from %Brain Inventory"
-                card={hireCards}
-              />
-              <div className="container">
-                <Hello />
-              </div>
-              <ChooseBraininventory reasons={chooseBI} alt="Laravel Development Company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Laravel Development"
+            type="why"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+171.png"
+            alt="Laravel Development From Brain Inventory"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="Laravel" />
+          <Advantage
+            title="Laravel Development"
+            desc="Laravel is a popular PHP web application framework that offers numerous benefits for developers and businesses alike. Here are some key advantages of Laravel development:"
+            reasons={advantages}
+          />{" "}
+          <Hire
+            title="Why Laravel Development from %Brain Inventory"
+            card={hireCards}
+          />
+          <div className="container">
+            <Hello />
+          </div>
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="Laravel Development Company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

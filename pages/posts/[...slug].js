@@ -20,7 +20,7 @@ export default function PostPage({ post, featuredMedia }) {
     setTitle(
       data.find((ele) => ele.id === post.id)?.Title || "Brain Inventory | Blog"
     );
-  }, []);
+  }, [post.id]);
 
   return (
     <>

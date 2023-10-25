@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -138,14 +138,9 @@ function HireAangularJsDeveloper(props) {
     "Hire our experienced UI/UX design team for your complex projects. We are a team of experienced UI/UX designers and developers. We have many years in designing and building websites, apps, and software. If you’re looking for an experienced partner to take on your next project, let us know.",
     "Our offer is boundless creative freedom with all the upfront mockups and feedback you’re looking for. The user experience is what makes your website, app, or web portal such a great experience for the app, and our users. The design, layout, and functionality of the UI/UX will determine whether a customer successfully navigates your website and ends up buying something.",
     "Successful applications need to not only be visually appealing, but they must also be intuitive to use at all stages of their customer lifecycle by various types of users. Brain Inventory has extensive experience in UI & UX development.",
-    "Our creative team creates a solution that satisfies the primary objectives while ensuring usability through an effective user interface, which changes the way people interact with products and services everywhere they are used."]
+    "Our creative team creates a solution that satisfies the primary objectives while ensuring usability through an effective user interface, which changes the way people interact with products and services everywhere they are used.",
+  ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -168,62 +163,62 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+UIUX+Developers.jpg"
         />
-        
+
         <meta
           property="og:url"
           content="https://braininventory.in/hire-ui-ux-designers"
-        />        
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/hire-ui-ux-designers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <>
-          <Header></Header>
-          <HireBanner
-            heading="Provide Exceptional User Experience"
-            title="Hire UI/UX "
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+UIUX+Developers.png"
-            alt="Hire UI/UX Designers"
-            type="hire"
-            unique="design"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced UI/UX Designers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="UI/UX Designers" advantages={advantages} />
-              <HireMarquee title="UI/UX" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire UI/UX Designers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory reasons={chooseReasons}  alt="Hire UI/UX Designers" />
-              <Hello />
-              <Engaged />
-              <HireSteps type="UI/UX" />
-              <Clients tech="UI/UX" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </>
-      </div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <>
+            <Header></Header>
+            <HireBanner
+              heading="Provide Exceptional User Experience"
+              title="Hire UI/UX "
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+UIUX+Developers.png"
+              alt="Hire UI/UX Designers"
+              type="hire"
+              unique="design"
+            />
+            <Customer />
+            <Experienced
+              title="Hire an Experienced UI/UX Designers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="UI/UX Designers" advantages={advantages} />
+            <HireMarquee title="UI/UX" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire UI/UX Designers from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseReasons}
+              alt="Hire UI/UX Designers"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="UI/UX" />
+            <Clients tech="UI/UX" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </>
+        </div>
+      </Suspense>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -39,7 +39,6 @@ function HireAangularJsDeveloper(props) {
     "Custom PHP development allows for the tailoring of software and web applications to meet specific business needs, offering a level of flexibility that off-the-shelf solutions often cannot provide. Furthermore, PHP development is cost-effective, as it is open-source and has a vast community of developers contributing to its ecosystem, reducing development time and expenses. Security is also a significant advantage, as PHP is continuously updated to address vulnerabilities.";
   const subhead3 =
     "Ultimately, a PHP development solution empowers businesses with the ability to create tailored, efficient, and secure web applications that can drive growth, enhance user experiences, and stay competitive in the digital landscape.";
-
 
   const hireCards = [
     {
@@ -110,13 +109,6 @@ function HireAangularJsDeveloper(props) {
     " We also provide easy maintenance solutions, unparalleled support services, and online training facilities for our clients to understand the vast scope of our work in developing reliable applications using the latest techniques and approaches in PHP technologies. We rigorously test and quality-check our PHP web solutions to ensure seamless performance across desktops, laptops, and mobile devices, guaranteeing our clients top-notch reliability and excellence in their applications.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -149,57 +141,56 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
-
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/php-development-company"
         />
       </Head>
-      <Loader />
-      <main>
-        <Header />
-        <SectionOne
-          heading="A Smarter Way to Build Customized Applications."
-          title="PHP Development"
-          content={content}
-          btn="Contact Us!"
-          developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
-          image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+1.png"
-          alt="Custom PHP development"
-          type="php"
-          unique="Company"
-        />
-        <Customer />
-        {position && (
-          <>
-            <Experienced
-              title="PHP Development"
-              type="why"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+2.png"
-              para1={subhead1}
-              para2={subhead2}
-              para3={subhead3}
-            />
-            <HireMarquee title="PHP development" />
-            <Advantage title="PHP Development" reasons={reasons} />{" "}
-            <Hire
-              title="Why PHP Development Integration from %Brain Inventory"
-              card={hireCards}
-            />
-            <div className="container">
-              <Hello />
-            </div>
-            <ChooseBraininventory reasons={chooseBI} alt="Custom PHP development"/>
-            <FaqHire faq={faqdetails} />
-            <hr />
-            <BlogArticle />
-            <KeepInTouch />
-            <LocateUs />
-            <LetsKick />
-            <Footer />
-          </>
-        )}
-      </main>
+      <Suspense fallback={<Loader />}>
+        <main>
+          <Header />
+          <SectionOne
+            heading="A Smarter Way to Build Customized Applications."
+            title="PHP Development"
+            content={content}
+            btn="Contact Us!"
+            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+1.png"
+            alt="Custom PHP development"
+            type="php"
+            unique="Company"
+          />
+          <Customer />
+          <Experienced
+            title="PHP Development"
+            type="why"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+2.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="PHP development" />
+          <Advantage title="PHP Development" reasons={reasons} />{" "}
+          <Hire
+            title="Why PHP Development Integration from %Brain Inventory"
+            card={hireCards}
+          />
+          <div className="container">
+            <Hello />
+          </div>
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="Custom PHP development"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
+        </main>
+      </Suspense>
     </>
   );
 }

@@ -17,13 +17,6 @@ const ContactForm = dynamic(() => import("../components/common/ContactForm"));
 const LocateUs = dynamic(() => import("../components/portfolio/LocateUs"));
 
 function HireAangularJsDeveloper(props) {
-  const [position, setPosition] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  }, [position]);
   return (
     <>
       <Head>
@@ -54,15 +47,11 @@ function HireAangularJsDeveloper(props) {
       <div className="container project-bg pt-12">
         <ProjectSectionOne />
         <ProjectCards />
-        {position && (
-          <div>
             <ProjectSectionTwo />
             <BlogArticle />
             <ContactForm className="pl-24" />
             <LocateUs />
             <Footer />
-          </div>
-        )}
       </div>
     </>
   );

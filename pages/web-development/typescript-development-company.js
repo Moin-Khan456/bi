@@ -140,7 +140,7 @@ function HireAangularJsDeveloper(props) {
     "As a team of passionate and professional developers, we understand the business value of your app. Our TypeScript developers specialize in developing and implementing scalable, secure TypeScript apps that allow you to boost productivity and cut costs.",
   ];
 
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPostion(true);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -36,9 +36,9 @@ function HireAangularJsDeveloper(props) {
   const subhead1 =
     "An Ionic app development solution can be highly beneficial for businesses and developers for several reasons. First and foremost, Ionic offers a cross-platform development approach, allowing you to build mobile applications that work seamlessly on both iOS and Android platforms, which can significantly reduce development time and costs.";
   const subhead2 =
-  "Additionally, Ionic leverages web technologies like HTML, CSS, and JavaScript, making it accessible to a broader pool of developers and enabling the reuse of web-based skills. Its extensive library of pre-designed UI components simplifies the development process, ensuring a consistent and polished user experience. Furthermore, Ionic's active community and frequent updates keep the framework up-to-date with the latest industry trends and technologies.";
+    "Additionally, Ionic leverages web technologies like HTML, CSS, and JavaScript, making it accessible to a broader pool of developers and enabling the reuse of web-based skills. Its extensive library of pre-designed UI components simplifies the development process, ensuring a consistent and polished user experience. Furthermore, Ionic's active community and frequent updates keep the framework up-to-date with the latest industry trends and technologies.";
   const subhead3 =
-  "This makes it a versatile and future-proof choice for building mobile apps, whether you're a developer looking to expand your skill set or a business aiming to reach a wider audience with a cost-effective solution.";
+    "This makes it a versatile and future-proof choice for building mobile apps, whether you're a developer looking to expand your skill set or a business aiming to reach a wider audience with a cost-effective solution.";
 
   const experienceCards = [
     {
@@ -104,14 +104,14 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "2",
-      title:
-        "Which one is better: Ionic or React Native?",
+      title: "Which one is better: Ionic or React Native?",
       description:
         "Ionic and React Native are both cross-platform development tools that allow you to create Native-like apps for multiple mobile platforms, such as iOS and Android. Both have their own advantages, but I suggest you go with Ionic when building Native-like apps.",
     },
     {
       id: "3",
-      title: "How much does it cost to develop a Cross-Platform App Using Ionic?",
+      title:
+        "How much does it cost to develop a Cross-Platform App Using Ionic?",
       description:
         "App development cost is a very common concern among app owners. It all depends on the type of your app, the number of platforms you plan to launch your app on (iOS, Android, Windows Phone), the level of complexity of functionality you need in your app, and how quickly you want your app developed. The more advanced is your app and the faster you want it to be ready, the higher the overall cost.",
     },
@@ -129,13 +129,6 @@ function HireAangularJsDeveloper(props) {
     "The company's Ionic platform operates in a cloud-based environment which gives users the freedom to develop native cross-platform applications that are compatible with iOS as well as Android operating systems. We at Brain Inventory Solutions, specialize in designing cost-effective and high-performing Ionic app solutions for small to mid-sized companies from various industries around the world.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   const benefitsList = [
     "Ionic allows you to develop one codebase for both iOS and Android, reducing development time and costs.",
     "Developers can leverage their HTML, CSS, and JavaScript skills, making it accessible to a broader talent pool.",
@@ -148,9 +141,7 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Ionic App Development | Ionic App Development Company
-        </title>
+        <title>Ionic App Development | Ionic App Development Company</title>
         {/* <meta
           name="description"
           content="Discover the future of app development with our hybrid and cross-platform solutions. Our expert team crafts innovative apps that work flawlessly on multiple devices, reducing development time and costs."
@@ -182,9 +173,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/ionic-app-development-company"
         />
       </Head>
-      <Loader />
-      <div className="">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="">
           <Header />
           <SectionOne
             subhead="A Smarter Way to Build Customized Applications."
@@ -198,40 +188,39 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Ionic App Development"
-                image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+172.png"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-                card={experienceCards}
-              />
-              <HireMarquee title="Ionic App Development" />
-              <Benefits
-                title="Ionic App Development"
-                desc="Ionic app development offers several advantages:"
-                reasons={benefitsList}
-                benefitFooter="These benefits make Ionic a compelling choice for those looking to develop mobile apps efficiently and cost-effectively."
-              />
-              <Hire
-                title="Why Ionic App Development from %Brain Inventory"
-                card={hireCards}
-              />
-              <FindUs />
-              <ChooseBraininventory reasons={chooseBI} alt="hybrid development company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Ionic App Development"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+172.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+            card={experienceCards}
+          />
+          <HireMarquee title="Ionic App Development" />
+          <Benefits
+            title="Ionic App Development"
+            desc="Ionic app development offers several advantages:"
+            reasons={benefitsList}
+            benefitFooter="These benefits make Ionic a compelling choice for those looking to develop mobile apps efficiently and cost-effectively."
+          />
+          <Hire
+            title="Why Ionic App Development from %Brain Inventory"
+            card={hireCards}
+          />
+          <FindUs />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="hybrid development company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

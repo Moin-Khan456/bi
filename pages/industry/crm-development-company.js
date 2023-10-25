@@ -271,7 +271,7 @@ function ReactNativeDeveloper(props) {
         "You can confidently rely on our impressively skilled team, meticulously piecing together every component of your solution with utmost precision. Each component undergoes stringent checks, guaranteeing a seamless operation that not only satisfies your expectations but defies them.",
     },
   ];
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPosition(true);

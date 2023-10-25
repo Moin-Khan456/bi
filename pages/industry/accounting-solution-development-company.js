@@ -300,7 +300,7 @@ function ReactNativeDeveloper(props) {
         "We assist with the software's launch and provide ongoing support to ensure it continues to meet the needs of your accounting practice and clients.",
     },
   ];
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPosition(true);

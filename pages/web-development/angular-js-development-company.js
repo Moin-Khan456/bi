@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -18,9 +18,6 @@ const WhyMean = dynamic(() =>
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
 );
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
@@ -132,58 +129,57 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Get Top Angular web development Services from Brain Inventory. We specialize in developing client-centric web and mobile applications using AngularJS."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/angular-js-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/angular-js-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6523.png"
         />
 
-        
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/angular-js-development-company"
         />
       </Head>
-      <Loader />
-      <div className="relative project-bg">
-        <Header />
-        <div className="pt-32">
-          <SectionOne
-            heading="Angular.Js"
-            title="Top AngularJs"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6523.png"
-            alt="Angular JS Development Services"
-          />
-          <WhyMean type="AngularJs" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow leading-[5rem] lg:leading-[15rem] text-2xl lg:text-[5rem] font-extrabold font-Satoshi">
-              Angular.JS Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <div className="relative project-bg">
+          <Header />
+          <div className="pt-32">
+            <SectionOne
+              heading="Angular.Js"
+              title="Top AngularJs"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6523.png"
+              alt="Angular JS Development Services"
+            />
+            <WhyMean type="AngularJs" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow leading-[5rem] lg:leading-[15rem] text-2xl lg:text-[5rem] font-extrabold font-Satoshi">
+                Angular.JS Development Service
+              </h1>
+            </div>
+            <Benefits
+              type="Angular.JS Application"
+              subhead="AngularJS is the most popular JavaScript framework. And for a good reason. It helps you build single-page web applications faster than using other platforms. There are several benefits of AngularJS development that make it a popular choice for building web applications."
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why AngularJS Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory reasons={chooseBI} /> <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </div>
-          <Benefits
-            type="Angular.JS Application"
-            subhead="AngularJS is the most popular JavaScript framework. And for a good reason. It helps you build single-page web applications faster than using other platforms. There are several benefits of AngularJS development that make it a popular choice for building web applications."
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why AngularJS Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

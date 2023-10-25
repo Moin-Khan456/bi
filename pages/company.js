@@ -21,7 +21,7 @@ const MeetCrew = dynamic(() => import("../components/company/meetCrew"));
 const Loader = dynamic(() => import("../components/common/loader"));
 
 function Company() {
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

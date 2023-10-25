@@ -15,7 +15,7 @@ const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
 export default function Home({ data, blogs, totalPages }) {
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   useEffect(() => {
     window.addEventListener("scroll", () => {

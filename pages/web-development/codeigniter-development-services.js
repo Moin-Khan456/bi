@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -95,13 +95,6 @@ function HireAangularJsDeveloper(props) {
     "We solve this problem for our customers by providing them with top-notch CodeIgniter developers, who are not only experts with the skill but also have experience working on solutions for various financial firms, and budding startups. Our CodeIgniter team has vast experience working with multiple leading PHP frameworks like Codeigniter, Yii, and Laravel. They can help you develop your innovative ideas into real applications. It is due to all these reasons that Brain Inventory is acknowledged as one of the best agencies for delivering high-quality business results through custom code development services across all possible domains.",
     "As a team of experienced professionals, we are dedicated to offering the best solutions and catering to the specific needs of our clients.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
   const advantages = [
     "CodeIgniter is a lightweight PHP framework, which means it has a small footprint and doesn't require extensive system resources. This results in faster application performance, making it ideal for creating high-speed websites and applications.",
     "CodeIgniter provides built-in security features, including data validation, input filtering, and protection against common web vulnerabilities like SQL injection and cross-site scripting (XSS). This helps developers create more secure applications.",
@@ -137,7 +130,7 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
         />
-       
+
         <meta
           property="twitter:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
@@ -147,9 +140,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/codeigniter-development-services"
         />
       </Head>
-      <Loader />
-      <div className="">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="">
           <Header></Header>
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
@@ -163,39 +155,38 @@ function HireAangularJsDeveloper(props) {
             unique="Service"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="CodeIgniter Development"
-                type="why"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+2.png"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="CodeIgniter Development Service" />
-              <Advantage
-                title="CodeIgniter Development"
-                subhead="CodeIgniter development offers a range of benefits that make it a popular choice for building web applications and websites:"
-                reasons={advantages}
-              />
-              <Hire
-                title="Why Choose %Brain Inventory% for CodeIgniter Development? "
-                card={hireCards}
-              />
-              <Hello />
-              <ChooseBraininventory reasons={chooseBI} alt="CodeIgniter development company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="CodeIgniter Development"
+            type="why"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+2.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="CodeIgniter Development Service" />
+          <Advantage
+            title="CodeIgniter Development"
+            subhead="CodeIgniter development offers a range of benefits that make it a popular choice for building web applications and websites:"
+            reasons={advantages}
+          />
+          <Hire
+            title="Why Choose %Brain Inventory% for CodeIgniter Development? "
+            card={hireCards}
+          />
+          <Hello />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="CodeIgniter development company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

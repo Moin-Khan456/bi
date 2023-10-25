@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -144,7 +144,10 @@ function ReactNativeDeveloper(props) {
           property="og:description"
           content="Develop iOS apps with Top iOS application development company. Brain Inventory iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/ios-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/mobile-development/ios-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6648.png"
@@ -154,48 +157,48 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/ios-development-company"
         />
       </Head>
-      <Loader />
-      <main className="project-bg ">
-        <Header />
-        <section className="pt-32">
-          <SectionOne
-            heading="iOS App"
-            title="Top iOS"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6648.png"
-            alt="iOS Development Service"
-          />
-          <WhyMean type="iOS App" meanReasons={meanReasons} />
-          <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-              iOS Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <main className="project-bg ">
+          <Header />
+          <section className="pt-32">
+            <SectionOne
+              heading="iOS App"
+              title="Top iOS"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6648.png"
+              alt="iOS Development Service"
+            />
+            <WhyMean type="iOS App" meanReasons={meanReasons} />
+            <section className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+                iOS Development Service
+              </h1>
+            </section>
+            <Benefits
+              type="iOS App"
+              subhead="Apple is famous for its high-quality and innovative products. Then it means you want to know more about mobile app development. The iPhone is the most popular smartphone series in the world. Many developers now use this platform for their own fancy apps. Besides being considered a great way to make money, iPhone applications are known for being high-quality and revenue-generating."
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why iOS App Development from %Brain Inventory"
+              subhead="Most successful smartphone and tablet apps are developed by iOS app development companies. Developing a mobile application with the help of an iPhone app developer is one of the things that can bring your business more profits, success, and revenue growth."
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="iOS Development Service"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </section>
-          <Benefits
-            type="iOS App"
-            subhead="Apple is famous for its high-quality and innovative products. Then it means you want to know more about mobile app development. The iPhone is the most popular smartphone series in the world. Many developers now use this platform for their own fancy apps. Besides being considered a great way to make money, iPhone applications are known for being high-quality and revenue-generating."
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why iOS App Development from %Brain Inventory"
-            subhead="Most successful smartphone and tablet apps are developed by iOS app development companies. Developing a mobile application with the help of an iPhone app developer is one of the things that can bring your business more profits, success, and revenue growth."
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="iOS Development Service"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
-        </section>
-      </main>
+        </main>
+      </Suspense>
     </>
   );
 }

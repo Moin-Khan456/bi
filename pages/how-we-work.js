@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -25,13 +25,6 @@ const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const Loader = dynamic(() => import("../components/common/loader"));
 
 export default function HowWeWork() {
-  const [position, setPosition] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  }, [position]);
   return (
     <>
       <Head>
@@ -54,7 +47,6 @@ export default function HowWeWork() {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_how+we+work.jpg"
         />
 
-        
         <meta
           property="og:url"
           content="https://braininventory.in/how-we-work"
@@ -77,15 +69,14 @@ export default function HowWeWork() {
         ></script>
         <link rel="canonical" href="https://braininventory.in/how-we-work" />
       </Head>
-      <Loader />
-      <main>
-        <Header />
-        <section className="relative second-component container">
-          <WorkBanner />
-          <Work />
-        </section>
-        <HomeSectionSix />
-        {position && (
+      <Suspense fallback={<Loader />}>
+        <main>
+          <Header />
+          <section className="relative second-component container">
+            <WorkBanner />
+            <Work />
+          </section>
+          <HomeSectionSix />
           <section className="container">
             <ChooseApp />
             <LanguageTool />
@@ -96,9 +87,9 @@ export default function HowWeWork() {
             <LocateUs />
             <LetsKick />
           </section>
-        )}
-        <Footer />
-      </main>
+          <Footer />
+        </main>
+      </Suspense>
     </>
   );
 }

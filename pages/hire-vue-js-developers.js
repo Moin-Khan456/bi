@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -143,13 +143,6 @@ function HireAangularJsDeveloper(props) {
     "We have extensive experience working with the Vue.js framework, which is why we offer a full suite of services for your app development project. We apply proven principles of the Agile methodology to create efficient and reusable code. Our flexible hiring models can meet your unique app development needs.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -172,8 +165,6 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Vue+Js+Developers.jpg"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-vue-js-developers"
@@ -184,58 +175,52 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-vue-js-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
-          <Header></Header>
-          <HireBanner
-            heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire Vue js"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
-            alt="Vue.js Development Company"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <>
-              {" "}
-              <Experienced
-                title="Hire an Experienced Vue js Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="Vue js Developers"
-                advantages={advantages}
-              />
-              <HireMarquee title="Vue JS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Vue js Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="Vue.js Development Company"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="Vue JS" />
-              <Clients tech="Vue JS" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <div>
+            <Header></Header>
+            <HireBanner
+              heading="Upgrade Your Development Process With Our Expertise"
+              title="Hire Vue js"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
+              alt="Vue.js Development Company"
+              type="hire"
+            />
+            <Customer />{" "}
+            <Experienced
+              title="Hire an Experienced Vue js Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="Vue js Developers" advantages={advantages} />
+            <HireMarquee title="Vue JS" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Vue js Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="Vue.js Development Company"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="Vue JS" />
+            <Clients tech="Vue JS" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

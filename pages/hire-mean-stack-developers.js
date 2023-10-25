@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -146,13 +146,6 @@ function HireAangularJsDeveloper(props) {
     "We understand the importance of finding an expert who can satisfy your requirements for your new MEAN project. You need reliable MEAN stack development company you can put your trust in; and as we speak, here are several reasons why you should choose BI as your MEAN stack partner NOW.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -176,34 +169,30 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+MEAN+Developers.jpg"
         />
-        
+
         <meta
           property="og:url"
           content="https://braininventory.in/hire-mean-stack-developers"
         />
-        
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-mean-stack-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
-          <Header></Header>
-          <HireBanner
-            heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire MEAN stack"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+MEAN+Developers.png"
-            alt="Hire Dedicated MEAN Stack Developers"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+            <Header></Header>
+            <HireBanner
+              heading="Upgrade Your Development Process With Our Expertise"
+              title="Hire MEAN stack"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+MEAN+Developers.png"
+              alt="Hire Dedicated MEAN Stack Developers"
+              type="hire"
+            />
+            <Customer />
               <Experienced
                 title="Hire an Experienced MEAN stack Developers to Upscale Your Development"
                 subhead1={subhead1}
@@ -222,7 +211,8 @@ function HireAangularJsDeveloper(props) {
               />
               <ChooseBraininventory
                 reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="Hire Dedicated MEAN Stack Developers"
+                subhead={chooseBiSubhead}
+                alt="Hire Dedicated MEAN Stack Developers"
               />
               <Hello />
               <Engaged />
@@ -235,10 +225,8 @@ function HireAangularJsDeveloper(props) {
               <LocateUs />
               <LetsKick />
               <Footer />
-            </div>
-          )}
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

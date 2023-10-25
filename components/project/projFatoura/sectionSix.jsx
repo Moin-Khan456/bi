@@ -35,7 +35,7 @@ const Index = () => {
             </div>
 
             <div>
-                 <Image width={1450} height={1450} src='https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group 6515.png' className='lg:p-32' />
+                 <Image width={1450} height={1450} src='https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group 6515.png' alt="Accounting Based Software Development Company" className='lg:p-32' />
             </div>
         </div>
     )

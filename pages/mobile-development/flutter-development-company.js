@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -138,7 +138,10 @@ function ReactNativeDeveloper(props) {
           property="og:description"
           content="Brain Inventory specializes in creating cost-effective and efficient applications with leading-edge flutter app development solutions. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/flutter-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/mobile-development/flutter-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
@@ -148,48 +151,48 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/flutter-development-company"
         />
       </Head>
-      <Loader />
-      <main className="project-bg">
-        <Header />
-        <section className="pt-32">
-          <SectionOne
-            heading="Flutter App"
-            title="Top Flutter"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
-            alt=" Flutter Development Company"
-          />
-          <WhyMean type="Flutter App" meanReasons={meanReasons} />
-          <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
-              Flutter App Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <main className="project-bg">
+          <Header />
+          <section className="pt-32">
+            <SectionOne
+              heading="Flutter App"
+              title="Top Flutter"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6728.png"
+              alt=" Flutter Development Company"
+            />
+            <WhyMean type="Flutter App" meanReasons={meanReasons} />
+            <section className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
+                Flutter App Development Service
+              </h1>
+            </section>
+            <Benefits
+              type="Flutter App"
+              subhead="Flutter is a new mobile and web-development framework for creating apps that run on iOS, Android, and the Web. There are several benefits of Flutter App Development:"
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why Flutter App Development from %Brain Inventory"
+              subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Flutter Development Company"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </section>
-          <Benefits
-            type="Flutter App"
-            subhead="Flutter is a new mobile and web-development framework for creating apps that run on iOS, Android, and the Web. There are several benefits of Flutter App Development:"
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why Flutter App Development from %Brain Inventory"
-            subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="Flutter Development Company"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
-        </section>
-      </main>
+        </main>
+      </Suspense>
     </>
   );
 }

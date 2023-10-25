@@ -13,7 +13,7 @@ const ContactBanner = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -74,18 +74,18 @@ Contact us now."
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
       <Loader />
-      <main className="relative second-component ">
+      <div className="relative second-component ">
         <Header />
         <ContactBanner />
         {position && (
-          <section className="container">
+          <span className="container">
             <Contact1 />
             <LocateUs />
             <LetsKick />
-          </section>
+          </span>
         )}
         <Footer />
-      </main>
+      </div>
     </>
   );
 }

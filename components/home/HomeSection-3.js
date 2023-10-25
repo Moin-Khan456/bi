@@ -3,7 +3,7 @@ import HomeButton from "../buttons/HomeButton.js";
 import Link from "next/link";
 
 const HomeSectionThree = () => {
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset >= 274) {

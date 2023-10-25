@@ -27,7 +27,7 @@ const GeolocationComponent = ({ country, setCountry }) => {
     } else {
       setError("Geolocation is not available in this browser.");
     }
-  }, []);
+  });
 
   const fetchCountryName = async (lat, long) => {
     const apiKey = "c0199226615d4336a11d37f7e7f0ee3a";

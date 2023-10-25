@@ -18,13 +18,13 @@ const HomeSectionNine = () => {
                   turn it into an amazing digital product.
                 </p>
                 <Link href="/contact" className="mt-8 block">
-                  <button className="inline-flex items-center bg-transparent transition-all hover-bg-yellow-h">
+                  <div className="inline-flex items-center bg-transparent transition-all hover-bg-yellow-h">
                     <HomeButton>
                     <span className="2xl:text-2xl text-xl transition-all">
                       talk to our experts
                     </span>
                     </HomeButton>
-                  </button>
+                  </div>
                 </Link>
               </div>
             </div>

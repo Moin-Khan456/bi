@@ -132,7 +132,7 @@ function HireAangularJsDeveloper(props) {
     "At HiTechy, you can rely on our completely affordable and SEO-friendly design services for your online store. Tried and tested by our expert team, who understand your requirements better than anyone else, every aspect of your store is thoughtfully considered: from the content and navigation to the layout and graphics to the products and shopping experience.",
   ];
 
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPostion(true);

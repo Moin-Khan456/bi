@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -80,7 +80,7 @@ function HireAangularJsDeveloper(props) {
         "The cost of hiring Meant Stack developers is budget-friendly in our company. However, the cost of development depends upon the complexity of the project, requirements, features, and project specifications. The rate of development depends upon the skillset of individual developers for each level.",
     },
   ];
- 
+
   const chooseBI = [
     "Staying up to date with the latest technology and frameworks is crucial in software development.",
     "Having the right partner can make a significant difference in achieving development goals.",
@@ -91,12 +91,6 @@ function HireAangularJsDeveloper(props) {
     "We prioritize understanding your needs and providing tailored solutions.",
     "We offer affordable and high-quality software and services to our clients.",
   ];
-
-  const whyAndroid1 =
-    "Businesses are increasingly becoming market leaders today. Consequently, they are compelled to utilize mobile apps in order to gain customer interaction and increase customer acquisition and retention rates. This calls for business enterprises to take steps to market their products or services through mobile apps. ";
-  const whyAndroid2 =
-    "The mobile ecosystem is always evolving, but mobile apps have always been a crucial part of it. Businesses need to diversify their revenue streams nowadays, and one of the most effective ways is to leverage their mobile app for easy and instant monetization. Since Android continues to be one of the most popular platforms on the market right now, businesses can reap huge benefits when they choose this platform as their primary medium. Mainly due to its flexibility, security, and constant growth in many areas including new devices and platforms available, it continues to be one of the top choices among enthusiasts around the world.";
-
   const benefitsList = [
     "The MEAN Stack is a collection of technologies that allow developers to deploy web applications immediately on a server. It avoids the deployment to a standalone server first, speeding up development cycles and reducing the number of requests.",
     "Stack is made up of open-source codes and tools. This allows developers to take part in the development process and gives them the freedom to have their ideas regarding code, design, or functionality.",
@@ -130,7 +124,10 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Brain Inventory is a Top MEAN Stack Development Company that builds web and mobile apps based on MongoDB, Express.js, AngularJS, and Node.js. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/mean-stack-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/mean-stack-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
@@ -140,51 +137,51 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/mean-stack-development-company"
         />
       </Head>
-      <Loader />
-      <div className="project-bg">
-        <Header />
-        <div className="pt-32">
-          <SectionOne
-            heading="Top MEAN Stack"
-            title="Hire Android"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
-            alt="MEAN Stack Development Services"
-          />
-          <WhyMean type="MEAN Stack" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-              MEAN Stack Development
-            </h1>
-          </div>
-          <Benefits
-            type="MEAN Stack"
-            subhead="Mean Stack is a new technology that can be of great help to modern
+      <Suspense fallback={<Loader />}>
+        <div className="project-bg">
+          <Header />
+          <div className="pt-32">
+            <SectionOne
+              heading="Top MEAN Stack"
+              title="Hire Android"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
+              alt="MEAN Stack Development Services"
+            />
+            <WhyMean type="MEAN Stack" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+                MEAN Stack Development
+              </h1>
+            </div>
+            <Benefits
+              type="MEAN Stack"
+              subhead="Mean Stack is a new technology that can be of great help to modern
             developers. MEAN Stack has become very popular following the release
             of MEAN tools."
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why MEAN Stack Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="MEAN Stack Development Services"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} /> {/*Done */}
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          {/* <ContactCard /> */}
-          <div className="pb-4" />
-          <hr />
-          <Footer />
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why MEAN Stack Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="MEAN Stack Development Services"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} /> {/*Done */}
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            {/* <ContactCard /> */}
+            <div className="pb-4" />
+            <hr />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

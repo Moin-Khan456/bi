@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -149,57 +149,60 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Brain Inventory is a professional LAMP Application Development Company that provides Lamp Application Development Services as per your business requirements."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/lamp-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/lamp-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6518.png"
         />
-      <link
+        <link
           rel="canonical"
           href="https://braininventory.in/web-development/lamp-development-company"
         />
       </Head>
-      <Loader />
-      <div className="project-bg">
-        <Header />
-        <div className="pt-32">
-          <SectionOne
-            heading="LAMP Application"
-            title="Top LAMP"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6518.png"
-            alt="Lamp Development Services"
-          />
-          <WhyMean type="LAMP Application" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
-              LAMP Application Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <div className="project-bg">
+          <Header />
+          <div className="pt-32">
+            <SectionOne
+              heading="LAMP Application"
+              title="Top LAMP"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6518.png"
+              alt="Lamp Development Services"
+            />
+            <WhyMean type="LAMP Application" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+                LAMP Application Development Service
+              </h1>
+            </div>
+            <Benefits
+              type="LAMP Application"
+              subhead="The lamp is one of the most popular choices for building multi-platform, scalable, and flexible applications with no configuration. As it is an open-source solution, there are a lot of options for LAMP distribution and configuration. There are several benefits of LAMP Application Development:"
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why LAMP Application Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Lamp Development Services"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </div>
-          <Benefits
-            type="LAMP Application"
-            subhead="The lamp is one of the most popular choices for building multi-platform, scalable, and flexible applications with no configuration. As it is an open-source solution, there are a lot of options for LAMP distribution and configuration. There are several benefits of LAMP Application Development:"
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why LAMP Application Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="Lamp Development Services"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

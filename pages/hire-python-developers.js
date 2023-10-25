@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -9,7 +9,9 @@ const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
-const Advantage = dynamic(() => import("../components/Hire/AdvantageCards.jsx"));
+const Advantage = dynamic(() =>
+  import("../components/Hire/AdvantageCards.jsx")
+);
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
@@ -172,12 +174,6 @@ function HireAangularJsDeveloper(props) {
         "Migrating your existing applications to Python has never been easier. We have a team of senior Python developers who can help you migrate your existing applications to Python or integrate Python modules into your existing codebase easily and quickly. Our Senior Python Developers have extensive experience in the development, refactoring, and testing of applications.",
     },
   ];
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -201,62 +197,64 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Python+Developers.jpg"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-python-developers"
         />
-      
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-python-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <>
-          <Header></Header>
-          <HireBanner
-            heading="A Smarter Way to Build Customized Applications."
-            title="Hire Python"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
-            alt="Dedicated Python Programmers"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
+
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <>
+            <Header></Header>
+            <HireBanner
+              heading="A Smarter Way to Build Customized Applications."
+              title="Hire Python"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
+              alt="Dedicated Python Programmers"
+              type="hire"
+            />
+            <Customer />
+            <Experienced
               title="Python Developer"
-                para1={subhead1}
-                para2={subhead2}
-                card={ourDevelopersPromo}
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
-              />
-              {/* <OurDevelopers banners={ourDevelopersPromo} /> */}
-              <Advantage title="Python Developer" subhead="Hiring a Python developer can provide numerous advantages for your organization, making it a valuable investment for your development projects and technical initiatives." benefitsList={advantages} />
-              <HireMarquee title="Python" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why hire Python developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <Hello />
-              <ChooseBraininventory reasons={chooseBI} alt="Dedicated Python Programmers" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </>
-      </div>
+              para1={subhead1}
+              para2={subhead2}
+              card={ourDevelopersPromo}
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+            />
+            <Advantage
+              title="Python Developer"
+              subhead="Hiring a Python developer can provide numerous advantages for your organization, making it a valuable investment for your development projects and technical initiatives."
+              benefitsList={advantages}
+            />
+            <HireMarquee title="Python" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why hire Python developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <Hello />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Dedicated Python Programmers"
+            />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </>
+        </div>
+      </Suspense>
     </>
   );
 }

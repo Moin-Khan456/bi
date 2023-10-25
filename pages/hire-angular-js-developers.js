@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -163,13 +163,6 @@ function HireAangularJsDeveloper(props) {
     "We offer flexible payment terms so that you can pay only when it makes sense for you. There is no need for upfront payments if you do not need us right away but do want us later on when you have more time or budget for us!",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -181,7 +174,10 @@ function HireAangularJsDeveloper(props) {
           content="Hire a Dedicated AngularJS Developers team from Brain Inventory. We offer high-quality AngularJS development services to scale up your business. Contact us today."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://braininventory.in/hire-angular-js-developers" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/hire-angular-js-developers"
+        />
         <meta
           property="og:title"
           content="Hire AngularJS Developers | Hire Dedicated Angular Developers"
@@ -200,58 +196,53 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-angular-js-developers"
         />
       </Head>
-      <Loader />
-      <main className="relative">
-        <section>
-          <Header />
-          <HireBanner
-            heading="Get the Best"
-            title="Angular.js"
-            subtitle="Talent On-Demand"
-            content={content}
-            card={card}
-            type="hire"
-            alt="Hire AngularJS Developers"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire Experienced Angular JS Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="Angular JS Developers"
-                advantages={advantages}
-              />
-              <HireMarquee title="Angular.JS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Angular JS Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Hire AngularJS Developers"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="AngularJS" />
-              <Clients tech="AngularJS" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />{" "}
-            </>
-          )}
-        </section>
-      </main>
+
+      <Suspense fallback={<Loader />}>
+        <main className="relative">
+          <section>
+            <Header />
+            <HireBanner
+              heading="Get the Best"
+              title="Angular.js"
+              subtitle="Talent On-Demand"
+              content={content}
+              card={card}
+              type="hire"
+              alt="Hire AngularJS Developers"
+            />
+            <Customer />
+            <Experienced
+              title="Hire Experienced Angular JS Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="Angular JS Developers" advantages={advantages} />
+            <HireMarquee title="Angular.JS" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Angular JS Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="Hire AngularJS Developers"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="AngularJS" />
+            <Clients tech="AngularJS" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />{" "}
+          </section>
+        </main>
+      </Suspense>
     </>
   );
 }

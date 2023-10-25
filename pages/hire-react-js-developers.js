@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -157,13 +157,6 @@ function HireAangularJsDeveloper(props) {
     "The ability to communicate effectively.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -194,8 +187,6 @@ function HireAangularJsDeveloper(props) {
           content="https://braininventory.in/hire-react-js-developers"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-react-js-developers"
@@ -206,9 +197,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-react-js-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
@@ -220,41 +210,37 @@ function HireAangularJsDeveloper(props) {
             type="hire"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire Experienced ReactJS Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="React JS Developers" advantages={advantages} />
-              <HireMarquee title="React.JS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire React JS Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Hire ReactJS Developers"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="ReactJS" />
-              <Clients tech="ReactJS" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Hire Experienced ReactJS Developers to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage title="React JS Developers" advantages={advantages} />
+          <HireMarquee title="React.JS" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire React JS Developers from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="Hire ReactJS Developers"
+          />
+          <Hello />
+          <Engaged />
+          <HireSteps type="ReactJS" />
+          <Clients tech="ReactJS" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -149,13 +149,6 @@ function HireAangularJsDeveloper(props) {
     "Our dedicated developers will be working for you directly and not for some other client who may or may not understand what exactly the whole app is about. So whether it's a small project or a large one – we will help you conquer them!",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -179,66 +172,61 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Node+JS+Developers.jpg"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-node-js-developers"
         />
-      <link
+        <link
           rel="canonical"
           href="https://braininventory.in/hire-node-js-developers"
         />
       </Head>
-      <Loader />
-      <main className="relative">
-        <section>
-          <Header></Header>
-          <HireBanner
-            heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire NodeJS"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Node+JS+Developers.png"
-            alt="Remote Node.js Developers"
-            type="hire"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced Node JS Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="Node JS Developers" advantages={advantages} />
-              <HireMarquee title="Node.JS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Node JS Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Remote Node.js Developers"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="NodeJS" />
-              <Clients tech="NodeJS" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </section>
-      </main>
+      <Suspense fallback={<Loader />}>
+        <main className="relative">
+          <section>
+            <Header></Header>
+            <HireBanner
+              heading="Upgrade Your Development Process With Our Expertise"
+              title="Hire NodeJS"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Node+JS+Developers.png"
+              alt="Remote Node.js Developers"
+              type="hire"
+            />
+            <Customer />
+            <Experienced
+              title="Hire an Experienced Node JS Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="Node JS Developers" advantages={advantages} />
+            <HireMarquee title="Node.JS" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Node JS Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="Remote Node.js Developers"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="NodeJS" />
+            <Clients tech="NodeJS" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </section>
+        </main>
+      </Suspense>
     </>
   );
 }

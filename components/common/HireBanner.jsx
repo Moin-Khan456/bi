@@ -55,12 +55,6 @@ export default function HireBanner({
                     <br />
                     Development
                   </span>
-                  {/* <Image
-                  src={developmentImage}
-                  width={700}
-                  height={300}
-                  alt={alt}
-                /> */}
                 </>
               ) : (
                 <>
@@ -68,12 +62,6 @@ export default function HireBanner({
                     <br />
                     Developers
                   </span>
-                  {/* <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/development-12.png"
-                  width={700}
-                  height={300}
-                  alt={alt}
-                /> */}
                 </>
               )}
             </h1>

@@ -262,7 +262,7 @@ function ReactNativeDeveloper(props) {
         "After the solution is fully tested and approved, we deploy it to the desired platform. But our job doesn't end there. We continue to provide support and updates as needed to keep your platform running smoothly.",
     },
   ];
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPosition(true);

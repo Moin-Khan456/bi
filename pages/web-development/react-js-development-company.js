@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -141,7 +141,10 @@ function HireReactDeveloper(props) {
           property="og:description"
           content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/react-js-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/react-js-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
@@ -151,47 +154,43 @@ function HireReactDeveloper(props) {
           href="https://braininventory.in/web-development/react-js-development-company"
         />
       </Head>
-      <Loader />
-      <div className="project-bg">
-        <Header />
-        <div className="pt-32 container">
-          <SectionOne
-            heading="React JS"
-            title="Top React Js"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
-            alt="ReactJS Web Development Company,"
-          />
-          <WhyMean type="React Js" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
-              React JS Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <div className="project-bg">
+          <Header />
+          <div className="pt-32 container">
+            <SectionOne
+              heading="React JS"
+              title="Top React Js"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6526.png"
+              alt="ReactJS Web Development Company,"
+            />
+            <WhyMean type="React Js" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
+                React JS Development Service
+              </h1>
+            </div>
+            <Benefits type="React JS" subhead="" benefitsList={benefitsList} />
+            <Hire
+              title="Why React JS Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="ReactJS Web Development Company"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </div>
-          <Benefits
-            type="React JS"
-            subhead=""
-            benefitsList={benefitsList}
-          />
-          <Hire
-            title="Why React JS Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="ReactJS Web Development Company"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

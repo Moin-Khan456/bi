@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -141,13 +141,6 @@ function HireAangularJsDeveloper(props) {
     "You can depend on us for building enterprise-grade applications that are scalable and robust. We have acres of experience in developing enterprise-level products for startups as well as large enterprises.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -171,21 +164,19 @@ function HireAangularJsDeveloper(props) {
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+MERN+Developers.jpg"
-        />       
+        />
         <meta
           property="og:url"
           content="https://braininventory.in/hire-mern-stack-developers"
-        />       
-        
-        
+        />
+
         <link
           rel="canonical"
           href="https://braininventory.in/hire-mern-stack-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
@@ -197,43 +188,37 @@ function HireAangularJsDeveloper(props) {
             type="hire"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced MERN Stack Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="MERN Stack Developers"
-                advantages={advantages}
-              />
-              <HireMarquee title="Node.JS" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire MERN Stack Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="MERN stack development company"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="MERN Stack" />
-              <Clients tech="MERN Stack" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Hire an Experienced MERN Stack Developers to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage title="MERN Stack Developers" advantages={advantages} />
+          <HireMarquee title="Node.JS" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire MERN Stack Developers from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="MERN stack development company"
+          />
+          <Hello />
+          <Engaged />
+          <HireSteps type="MERN Stack" />
+          <Clients tech="MERN Stack" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

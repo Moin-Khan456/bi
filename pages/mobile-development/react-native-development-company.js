@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -127,13 +127,6 @@ function ReactNativeDeveloper(props) {
     "Technologies such as React Native App Development service, React Native App Template, and Mobile App Development Company services are used.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -151,7 +144,10 @@ function ReactNativeDeveloper(props) {
           property="og:description"
           content="Brain Inventory offers React Native app development Solutions to build cross-platform mobile apps. We provide world-class React Native App Development Services."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/react-native-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/mobile-development/react-native-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
@@ -161,55 +157,48 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/react-native-development-company"
         />
       </Head>
-      <Loader />
-      <main className="project-bg">
-        <Header />
-        <section className="pt-32">
-          <SectionOne
-            heading="React Native App"
-            title="Top React Native"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
-            alt="React Native App Development "
-          />
-          <WhyMean
-            type="React Native App"
-            meanReasons={meanReasons}
-          />
-          <section className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
-              React Native App Development Service
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <main className="project-bg">
+          <Header />
+          <section className="pt-32">
+            <SectionOne
+              heading="React Native App"
+              title="Top React Native"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
+              alt="React Native App Development "
+            />
+            <WhyMean type="React Native App" meanReasons={meanReasons} />
+            <section className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+                React Native App Development Service
+              </h1>
+            </section>
+            <Benefits
+              type="React Native"
+              subhead="React Native is a new programming framework developed by Facebook that makes it easy to create native mobile apps for iOS and Android through JavaScript. There are several benefits of React Native:"
+              benefitsList={benefitsList}
+            />
+            <Hire
+              title="Why React Native App Development from %Brain Inventory"
+              subhead="The mobile app development services we offer can help businesses realize their business goals by increasing brand exposure, building engagement and loyalty, accelerating digital transformation journeys, leveraging data, and optimizing tactics."
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="React Native App Development "
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} /> {/*Done */}
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </section>
-          <Benefits
-            type="React Native"
-            subhead="React Native is a new programming framework developed by Facebook that makes it easy to create native mobile apps for iOS and Android through JavaScript. There are several benefits of React Native:"
-            benefitsList={benefitsList}
-          />
-          {position && (
-            <>
-              <Hire
-                title="Why React Native App Development from %Brain Inventory"
-                subhead="The mobile app development services we offer can help businesses realize their business goals by increasing brand exposure, building engagement and loyalty, accelerating digital transformation journeys, leveraging data, and optimizing tactics."
-                card={hireCards}
-              />{" "}
-              
-              <ChooseBraininventory
-                reasons={chooseBI}
-                alt="React Native App Development "
-              />{" "}
-              <Industries />
-              <FaqHire faq={faqdetails} /> {/*Done */}
-              <BlogArticle />
-              <ContactForm />
-              <LocateUs />
-              <hr />
-              <Footer />
-            </>
-          )}
-        </section>
-      </main>
+        </main>
+      </Suspense>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -145,7 +145,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/custom-app-development"
         />
       </Head>
-      <Loader />
+      <Suspense fallback={<Loader />}>
       <main className="second-component">
         <section>
           <Header />
@@ -190,6 +190,7 @@ function HireAangularJsDeveloper(props) {
           <Footer />
         </section>
       </main>
+      </Suspense>
     </>
   );
 }

@@ -176,7 +176,7 @@ const Bloomia = () => {
   const solution =
     "To address the animation challenge, we decided to develop our own SVG element instead of relying on third-party libraries. This approach provided us with greater control over key points and allowed us to make changes on each time frame. We were able to stop and resume the animation effectively, tailoring it to meet the specific requirements of the project. This bespoke solution offered us the flexibility to write custom application logic that seamlessly integrated with the rest of the platform. For optimizing the daily streak feature, we implemented a client-side logic that was responsible for maintaining or breaking the streak data. We recognized that if a user never logged into the platform, there was no need to track or break the streak, as the user wouldn't be present to notice the change. By implementing this logic on the front end, we avoided unnecessary storage space and reduced the need for continuous monitoring and database checks. This optimization allowed us to save resources and streamline the streak-tracking process. Through these solutions, we were able to overcome the animation and streak optimization challenges, ensuring a smooth user experience while efficiently managing resources and data.";
 
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPostion(true);

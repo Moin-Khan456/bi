@@ -292,7 +292,7 @@ function ReactNativeDeveloper(props) {
         "Our seasoned team meticulously crafts each solution. This involves comprehensive development, rigorous testing, and an unwavering dedication to delivering a resilient, dependable product.",
     },
   ];
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPosition(true);

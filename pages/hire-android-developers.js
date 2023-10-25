@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -147,19 +147,6 @@ function HireAangularJsDeveloper(props) {
     "We pride ourselves on delivering high-quality and reliable apps to our clients at affordable rates while maintaining a client-centric approach to the development process.",
     "With our team of skilled developers, we can help you develop a customized, scalable, and customer-centric solution. Hiring the best developers will give you a competitive edge, allowing your business to scale quickly and efficiently",
   ];
-
-  const whyAndroid1 =
-    "Businesses are increasingly becoming market leaders today. Consequently, they are compelled to utilize mobile apps in order to gain customer interaction and increase customer acquisition and retention rates. This calls for business enterprises to take steps to market their products or services through mobile apps. ";
-  const whyAndroid2 =
-    "The mobile ecosystem is always evolving, but mobile apps have always been a crucial part of it. Businesses need to diversify their revenue streams nowadays, and one of the most effective ways is to leverage their mobile app for easy and instant monetization. Since Android continues to be one of the most popular platforms on the market right now, businesses can reap huge benefits when they choose this platform as their primary medium. Mainly due to its flexibility, security, and constant growth in many areas including new devices and platforms available, it continues to be one of the top choices among enthusiasts around the world.";
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -186,61 +173,58 @@ function HireAangularJsDeveloper(props) {
         <meta
           property="og:url"
           content="https://braininventory.in/hire-android-developers"
-        /> 
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/hire-android-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <>
-          <Header></Header>
-          <HireBanner
-            heading="Transform your ideas into stunning Android apps with our expert Android app development services!"
-            title="Hire Android "
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Android+Developers.png"
-            alt="Hire Android App Developers & Programmers"
-            type="hire"
-          />{" "}
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire Experienced Android Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage title="Android Developers" advantages={advantages} />
-              <HireMarquee title="Android" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Android Developers from %Brain Inventory"
-                card={hireCards}
-              />{" "}
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Hire Android App Developers & Programmers"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="Android" />
-              <Clients tech="Android" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
-        </>
-      </div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <>
+            <Header></Header>
+            <HireBanner
+              heading="Transform your ideas into stunning Android apps with our expert Android app development services!"
+              title="Hire Android "
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Android+Developers.png"
+              alt="Hire Android App Developers & Programmers"
+              type="hire"
+            />{" "}
+            <Customer />
+            <Experienced
+              title="Hire Experienced Android Developers to Upscale Your Development"
+              subhead1={subhead1}
+              subhead2={subhead2}
+              card={experienceCards}
+            />
+            <Advantage title="Android Developers" advantages={advantages} />
+            <HireMarquee title="Android" />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Android Developers from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              subhead={chooseBiSubhead}
+              alt="Hire Android App Developers & Programmers"
+            />
+            <Hello />
+            <Engaged />
+            <HireSteps type="Android" />
+            <Clients tech="Android" />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </>
+        </div>
+      </Suspense>
     </>
   );
 }

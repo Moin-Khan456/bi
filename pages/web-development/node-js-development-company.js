@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -18,9 +18,6 @@ const WhyMean = dynamic(() =>
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
 );
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
@@ -137,53 +134,56 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Brain Inventory provides quality Node JS development services to build secure, scalable, user-friendly web applications. We are a top Custom Software Development firm."
         />
-        <meta property="og:url" content="https://braininventory.in/web-development/node-js-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/web-development/node-js-development-company"
+        />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6498.png"
-        />        
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/node-js-development-company"
         />
       </Head>
-      <Loader />
-      <div className="project-bg ">
-        <Header />
-        <div className="pt-32">
-          <SectionOne
-            heading="Node.Js"
-            title="Node.Js"
-            content={content}
-            btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6498.png"
-            alt="Node JS Web Development Services"
-          />
-          <WhyMean type="Node.Js" meanReasons={meanReasons} />
-          <div className="flex justify-center px-10">
-            <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
-              Node.Js Development Services
-            </h1>
+      <Suspense fallback={<Loader />}>
+        <div className="project-bg ">
+          <Header />
+          <div className="pt-32">
+            <SectionOne
+              heading="Node.Js"
+              title="Node.Js"
+              content={content}
+              btn="Get a Quote"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6498.png"
+              alt="Node JS Web Development Services"
+            />
+            <WhyMean type="Node.Js" meanReasons={meanReasons} />
+            <div className="flex justify-center px-10">
+              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+                Node.Js Development Services
+              </h1>
+            </div>
+            <Benefits type="Node.Js" subhead="" benefitsList={benefitsList} />
+            <Hire
+              title="Why Node.Js Development from %Brain Inventory"
+              card={hireCards}
+            />{" "}
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Node JS Web Development Services"
+            />{" "}
+            <Industries />
+            <FaqHire faq={faqdetails} />
+            <BlogArticle />
+            <ContactForm />
+            <LocateUs />
+            <hr />
+            <Footer />
           </div>
-          <Benefits type="Node.Js" subhead="" benefitsList={benefitsList} />
-          <Hire
-            title="Why Node.Js Development from %Brain Inventory"
-            card={hireCards}
-          />{" "}
-          
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="Node JS Web Development Services"
-          />{" "}
-          <Industries />
-          <FaqHire faq={faqdetails} />
-          <BlogArticle />
-          <ContactForm />
-          <LocateUs />
-          <hr />
-          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

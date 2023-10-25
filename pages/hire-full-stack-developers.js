@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -136,20 +136,11 @@ function HireAangularJsDeveloper(props) {
     "Efficient and Seamless Onboarding",
   ];
 
-  const chooseBiSubhead =
-    "Hiring dedicated Full Stack developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Full Stack developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
     "Brain Inventory is a full-service web development, mobile application, and enterprise software company that is passionate about creating innovative solutions that are tailored to suit your business needs. We believe in the importance of technology in enabling businesses to grow and therefore, our Full Stack developers develop scalable web architectures that help deliver efficient solutions — every time.",
     "At Brain Inventory, we employ a team of expert full-stack developers. These full-stack software engineers are skilled in all the key programming languages and frameworks with widely adopted combinations such as Ruby on Rails, SQLite, PHP, LEMP - Linux, Nginx, MySQL, PHP, and LAMP - Linux, Apache, MySQL, and PHP. As a trusted offshore software development company in India, we help enterprises design and develop secure mobile apps that are high in performance and compatible across multiple platforms.",
     "Our development company has been delivering successful full-stack web solutions with the highest level of customer satisfaction. Our talented on-demand development team will work on top of the latest technologies and frameworks to help you deliver high-performance products at an optimal cost through a ratio of great ROI.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -184,55 +175,52 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-full-stack-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
-          <Header></Header>
-          <HireBanner
-            heading="A Smarter Way to Build Customized Applications."
-            title="Hire Full Stack"
-            content={content}
-            btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
-            alt="Hire Full stack developers and programmers"
-          />
-          <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Full Stack Developers"
-                para1={subhead1}
-                para2={subhead2}
-                card={experienceCards}
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/leio-mclaren-OzeOpF6kTyg-unsplash.png"
-              />
-              <HireMarquee title="Full Stack" />
-              <Advantage
-                title="Full Stack Developer"
-                subhead="Hiring a Full Stack Developer offers numerous advantages that can greatly benefit your development projects and overall business objectives. Here are some key advantages of bringing a Full Stack Developer into your team:"
-                benefitsList={benefitsList}
-              />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Full Stack Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <Hello />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                alt="Hire Full stack developers and programmers"
-              />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
+          <div>
+            <Header></Header>
+            <HireBanner
+              heading="A Smarter Way to Build Customized Applications."
+              title="Hire Full Stack"
+              content={content}
+              btn="Contact Us!"
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
+              alt="Hire Full stack developers and programmers"
+            />
+            <Customer />
+            <Experienced
+              title="Full Stack Developers"
+              para1={subhead1}
+              para2={subhead2}
+              card={experienceCards}
+              image="https://d1u4arv5y5eda6.cloudfront.net/images/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+            />
+            <HireMarquee title="Full Stack" />
+            <Advantage
+              title="Full Stack Developer"
+              subhead="Hiring a Full Stack Developer offers numerous advantages that can greatly benefit your development projects and overall business objectives. Here are some key advantages of bringing a Full Stack Developer into your team:"
+              benefitsList={benefitsList}
+            />
+            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+            <Hire
+              title="Why Hire Full Stack Developers from %Brain Inventory"
+              card={hireCards}
+            />
+            <Hello />
+            <ChooseBraininventory
+              reasons={chooseBI}
+              alt="Hire Full stack developers and programmers"
+            />
+            <FaqHire faq={faqdetails} />
+            <hr />
+            <BlogArticle />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </div>
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

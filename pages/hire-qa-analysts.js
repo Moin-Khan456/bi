@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -9,14 +9,10 @@ const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
-const Advantage = dynamic(() =>
-  import("../components/Hire/Advantage.jsx")
-);
+const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
-const Experienced = dynamic(() =>
-  import("../components/common/Hire")
-);
+const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 const HireBanner = dynamic(() => import("../components/common/HireBanner"));
@@ -118,8 +114,8 @@ function HireAangularJsDeveloper(props) {
   const advantages = [
     "QA analysts can help identify defects and issues in the software development process before they reach end-users. This can help improve product quality and reduce the risk of negative impact on customer satisfaction and brand reputation.",
     "Early detection and resolution of issues can help reduce the cost of fixing defects later in the development process. This can help save time and money, as well as improve the overall efficiency of the development process. QA Analysts can help improve the efficiency of the development process by identifying opportunities for automation and streamlining testing processes. This can help reduce the time and effort required for testing and allow developers to focus on other aspects of the development process.",
-    "It can help identify and manage risks associated with software development, such as security vulnerabilities or compatibility issues. This can help reduce the risk of negative impact on customer satisfaction, brand reputation, or legal compliance."
-  ]
+    "It can help identify and manage risks associated with software development, such as security vulnerabilities or compatibility issues. This can help reduce the risk of negative impact on customer satisfaction, brand reputation, or legal compliance.",
+  ];
   const keySkillsBreif =
     "Brain Inventory is a team of QA Analysts who perform highly effective and unbiased testing for our clients. We have a great support staff, which helps us to provide services in a prompt manner, efficiently, and at highly affordable prices. Our primary goal is to improve the overall product superiority. We have a wide range of clients ranging from start-ups to much bigger organizations. We are one of the most renowned companies for the QA process and are known for delivering high-quality products on time and within the given budget.";
   const keySkillsPoints = [
@@ -137,13 +133,6 @@ function HireAangularJsDeveloper(props) {
     "Our QA analysts are well-trained, experienced, and dedicated in their work to ensure a quality product.",
     "Their knowledge and skill set will help you in achieving success with any project.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
 
   return (
     <>
@@ -170,8 +159,6 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+QA+Analyst.jpg"
         />
 
-       
-        
         <meta
           property="og:url"
           content="https://braininventory.in/hire-qa-analysts"
@@ -182,9 +169,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-qa-analysts"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
@@ -196,43 +182,37 @@ function HireAangularJsDeveloper(props) {
             unique="analyst"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced QA Analyst to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="QA Analyst"
-                advantages={advantages}
-              />
-              <HireMarquee title="QA Analyst" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire QA Analyst from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="QA and Testing Specialists"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="QA Analyst" />
-              <Clients tech="QA Analyst" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Hire an Experienced QA Analyst to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage title="QA Analyst" advantages={advantages} />
+          <HireMarquee title="QA Analyst" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire QA Analyst from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="QA and Testing Specialists"
+          />
+          <Hello />
+          <Engaged />
+          <HireSteps type="QA Analyst" />
+          <Clients tech="QA Analyst" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

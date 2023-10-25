@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -128,14 +128,6 @@ function HireAangularJsDeveloper(props) {
     "We will be able to quickly deliver your app to the stores with our point-and-click tool that enables the creation of hybrid apps easily without requiring you to write code or learn advanced programming languages. Having a smooth, effective user experience is crucial for the success of any application, and our hybrid mobile applications can provide a seamless user experience by integrating into other native apps in the smartphone.",
     " Your customers will love it! Learn more about hybrid mobile app development services by contacting us today!",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   const benefitsList = [
     "We created an app that blends the look and feel of a website with the efficiency of a native application. Our designers will ensure that your app is both consistent with your brand and easy to navigate.",
     "The hybrid applications that we create are easy to use and provide a seamless interface.",
@@ -177,9 +169,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
-      <Loader />
-      <div className="">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="">
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
@@ -192,40 +183,39 @@ function HireAangularJsDeveloper(props) {
             type="app"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hybrid App Development"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+1.png"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-                card={experienceCards}
-              />
-              <HireMarquee title="hybrid app development" />
-              <Benefits
-                type="Hybrid App"
-                subhead="Hybrid mobile app development services help improve the user experience of your business. This is because hybrid apps are designed to function in a seamless manner with other native apps and browsers. Hybrids, which take advantage of the best features of both native and web technologies, are usually faster than cross-platforms. The code is also an advantage as it eliminates compatibility issues between devices. They work well on any device (Android or iOS), whether it's a smartphone, tablet, or desktop. Hybrids have the best qualities of enviable applications-apps from one platform that will work on others-and even more."
-                benefitsList={benefitsList}
-              />
-              <Hire
-                title="Why Hybrid App Development from %Brain Inventory"
-                card={hireCards}
-                subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
-              />
-              <FindUs />
-              <ChooseBraininventory reasons={chooseBI} alt="hybrid development company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Hybrid App Development"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+1.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+            card={experienceCards}
+          />
+          <HireMarquee title="hybrid app development" />
+          <Benefits
+            type="Hybrid App"
+            subhead="Hybrid mobile app development services help improve the user experience of your business. This is because hybrid apps are designed to function in a seamless manner with other native apps and browsers. Hybrids, which take advantage of the best features of both native and web technologies, are usually faster than cross-platforms. The code is also an advantage as it eliminates compatibility issues between devices. They work well on any device (Android or iOS), whether it's a smartphone, tablet, or desktop. Hybrids have the best qualities of enviable applications-apps from one platform that will work on others-and even more."
+            benefitsList={benefitsList}
+          />
+          <Hire
+            title="Why Hybrid App Development from %Brain Inventory"
+            card={hireCards}
+            subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
+          />
+          <FindUs />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="hybrid development company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

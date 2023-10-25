@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -100,14 +100,6 @@ function HireAangularJsDeveloper(props) {
     "With the help of our team of dedicated and qualified experts and consultants, we can apply comprehensive knowledge of the field to address any aspect of application development. Over the years, we have been able to work with companies of all sizes and have always put our client’s success first. With Brain Inventory as your development company, you can be assured that you will get the best service.",
     "Our developers are skilled and trained in Python Django web development. We also use the latest technologies and frameworks, such as Python 3.7.0 and Django, Web2py, and Flask. Our team of Python developers is ready to transform your ideas into reality. Our expertise with Python web app development gives us the unique ability to create anything and everything using the latest technologies.",
   ];
-
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -141,9 +133,8 @@ https://braininventory.in/web-development/python-development-company"
           href="https://braininventory.in/web-development/python-development-company"
         />
       </Head>
-      <Loader />
-      <div className="">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="">
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
@@ -157,37 +148,36 @@ https://braininventory.in/web-development/python-development-company"
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Python Development"
-                type="why"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+2.png"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="Python Development" />
-              <Advantage title="Python Development" reasons={advantages} />{" "}
-              <Hire
-                title="Why %Brain Inventory% for your Python-based project development?"
-                card={hireCards}
-              />
-              <div className="container">
-                <Hello />
-              </div>
-              <ChooseBraininventory reasons={chooseBI} alt="Python Development Company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Python Development"
+            type="why"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+2.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="Python Development" />
+          <Advantage title="Python Development" reasons={advantages} />{" "}
+          <Hire
+            title="Why %Brain Inventory% for your Python-based project development?"
+            card={hireCards}
+          />
+          <div className="container">
+            <Hello />
+          </div>
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="Python Development Company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

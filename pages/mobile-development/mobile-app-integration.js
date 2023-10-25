@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -129,13 +129,6 @@ function HireAangularJsDeveloper(props) {
     "Our mobility services enable mobile application brands to explore fresh opportunities while delivering a seamless and functional experience with precise, rich, and future-ready solutions",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   const benefitsList = [
     "The integration allows for a seamless user experience by ensuring that data and functionality are consistent across different apps. Users can switch between apps and devices without disruption, which leads to higher user satisfaction.",
     "The integration enables mobile apps to share data in real time with other systems and applications, such as databases, CRMs, and cloud services. This ensures that all users have access to the most up-to-date information.",
@@ -178,53 +171,53 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/mobile-app-integration"
         />
       </Head>
-      <Loader />
-      <main>
-        <Header />
-        <SectionOne
-          heading="A Smarter Way to Build Customized Applications."
-          title="Mobile Application"
-          content={content}
-          btn="Contact Us!"
-          developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+3.png"
-          image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+1.png"
-          alt="Mobile Application Integration Services"
-          type="app"
-          unique="integration"
-        />
-        <Customer />
-        {position && (
-          <>
-            <Experienced
-              title="Mobile Application Integration "
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+2.png"
-              para1={subhead1}
-              para2={subhead2}
-              para3={subhead3}
-              card={experienceCards}
-            />
-            <HireMarquee title="Mobile app integration" />
-            <Benefits
-              type="Mobile Application Integration"
-              subhead="Mobile Application Integration offers several key benefits that can greatly enhance the functionality and efficiency of mobile apps, as well as improve the overall user experience. Here are some of the main advantages:"
-              benefitsList={benefitsList}
-            />
-            <Hire
-              title="Why Mobile Application Integration from %Brain Inventory"
-              card={hireCards}
-            />
-            <FindUs />
-            <ChooseBraininventory reasons={chooseBI} alt="Mobile Application Integration Services" />
-            <FaqHire faq={faqdetails} />
-            <hr />
-            <BlogArticle />
-            <KeepInTouch />
-            <LocateUs />
-            <LetsKick />
-            <Footer />
-          </>
-        )}
-      </main>
+      <Suspense fallback={<Loader />}>
+        <main>
+          <Header />
+          <SectionOne
+            heading="A Smarter Way to Build Customized Applications."
+            title="Mobile Application"
+            content={content}
+            btn="Contact Us!"
+            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+3.png"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+1.png"
+            alt="Mobile Application Integration Services"
+            type="app"
+            unique="integration"
+          />
+          <Customer />
+          <Experienced
+            title="Mobile Application Integration "
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+2.png"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+            card={experienceCards}
+          />
+          <HireMarquee title="Mobile app integration" />
+          <Benefits
+            type="Mobile Application Integration"
+            subhead="Mobile Application Integration offers several key benefits that can greatly enhance the functionality and efficiency of mobile apps, as well as improve the overall user experience. Here are some of the main advantages:"
+            benefitsList={benefitsList}
+          />
+          <Hire
+            title="Why Mobile Application Integration from %Brain Inventory"
+            card={hireCards}
+          />
+          <FindUs />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="Mobile Application Integration Services"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
+        </main>
+      </Suspense>
     </>
   );
 }

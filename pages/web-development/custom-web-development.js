@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
@@ -147,52 +147,53 @@ function HireAangularJsDeveloper(props) {
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+develpment+preview+image.jpg"
         />
 
-        
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/custom-web-development"
         />
       </Head>
-      <Loader />
-      <div className="relative second-component">
-        <Header />
-        <SectionOne
-          heading="Transform Your Brand with"
-          title="Custom Web"
-          content={content}
-          btn="Contact Us!"
-          developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
-          image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
-          type="web"
-          alt="custom web development company"
-        />
-        <section className="container">
-          <Customer />
-        </section>
-        <CustomWeb para1={para1} para2={para2} type="Custom web" />
-        <HireMarquee title="Custom Web" />
-        <CustomBenefits
-          type="Web"
-          subhead={benefitSubHead}
-          benefitsList={benefitsList}
-        />
-        <Hire
-          title="Why Custom Web Development from %Brain Inventory"
-          card={hireCards}
-        />
-        <FindUs />
-        <ChooseBraininventory
-          head="Why Choose Brain inventory for Your Next"
-          blue="Assignment"
-          alt="custom web development company"
-        />
-        <BlogArticle />
-        <FaqHire faq={faqdetails} />
-        <KeepInTouch />
-        <LocateUs />
-        <LetsKick />
-        <Footer />
-      </div>
+
+      <Suspense fallback={<Loader />}>
+        <div className="relative second-component">
+          <Header />
+          <SectionOne
+            heading="Transform Your Brand with"
+            title="Custom Web"
+            content={content}
+            btn="Contact Us!"
+            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
+            image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
+            type="web"
+            alt="custom web development company"
+          />
+          <section className="container">
+            <Customer />
+          </section>
+          <CustomWeb para1={para1} para2={para2} type="Custom web" />
+          <HireMarquee title="Custom Web" />
+          <CustomBenefits
+            type="Web"
+            subhead={benefitSubHead}
+            benefitsList={benefitsList}
+          />
+          <Hire
+            title="Why Custom Web Development from %Brain Inventory"
+            card={hireCards}
+          />
+          <FindUs />
+          <ChooseBraininventory
+            head="Why Choose Brain inventory for Your Next"
+            blue="Assignment"
+            alt="custom web development company"
+          />
+          <BlogArticle />
+          <FaqHire faq={faqdetails} />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
+        </div>
+      </Suspense>
     </>
   );
 }

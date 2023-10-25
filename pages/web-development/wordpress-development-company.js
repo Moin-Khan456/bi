@@ -98,7 +98,7 @@ function HireAangularJsDeveloper(props) {
     "We believe your business should be able to work at its best in all areas. We take pride in our WordPress customizations and development which has helped hundreds of companies create more sales and online presence. That is why we are available to help you 24/7, with friendly support available around the clock.",
   ];
 
-  const [position, setPostion] = useState(false);
+  const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPostion(true);

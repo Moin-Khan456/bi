@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
@@ -144,13 +144,6 @@ function HireAangularJsDeveloper(props) {
     "Hire dedicated Next.js experts from us to build lightweight, server-side, and simple test-driven apps. We have Next.js developers for hire whose expertise can be leveraged to develop smooth, high-performing, and scalable web apps. We understand the importance of good design, functional programming, and responsive Web Applications at BrainInventory.",
   ];
 
-  const [position, setPostion] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
@@ -168,7 +161,7 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire Top NextJS Developers from Brain Inventory. Our experienced developers help you build high-performing custom web apps. Contact us today."
         />
-   
+
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+NextJS+Developers.jpg"
@@ -183,9 +176,8 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-next-js-developers"
         />
       </Head>
-      <Loader />
-      <div className="relative">
-        <div>
+      <Suspense fallback={<Loader />}>
+        <div className="relative">
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
@@ -197,43 +189,40 @@ function HireAangularJsDeveloper(props) {
             type="hire"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="Hire an Experienced Next.js Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="Hiring Next.js Developers"
-                advantages={advantages}
-              />
-              <HireMarquee title="Next Js" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire Next.js Developers from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead} alt="Remote Next.js Developers"
-              />
-              <Hello />
-              <Engaged />
-              <HireSteps type="Next Js" />
-              <Clients tech="Next Js" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="Hire an Experienced Next.js Developers to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage
+            title="Hiring Next.js Developers"
+            advantages={advantages}
+          />
+          <HireMarquee title="Next Js" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire Next.js Developers from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="Remote Next.js Developers"
+          />
+          <Hello />
+          <Engaged />
+          <HireSteps type="Next Js" />
+          <Clients tech="Next Js" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
-      </div>
+      </Suspense>
     </>
   );
 }

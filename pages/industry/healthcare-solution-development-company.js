@@ -261,7 +261,7 @@ function ReactNativeDeveloper(props) {
         "Stay updated on emerging healthcare technologies and trends. We release regular updates meeting changing healthcare demands and incorporate user feedback for ongoing performance improvement.",
     },
   ];
-  const [position, setPosition] = useState(false);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setPosition(true);

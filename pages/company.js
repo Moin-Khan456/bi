@@ -57,7 +57,7 @@ function Company() {
         <link rel="canonical" href="https://braininventory.in/company" />
       </Head>
       <Loader />
-      <div className="relative second-component">
+      <div className="relative ">
         <Header />
         <Video></Video>
         <Summary></Summary>

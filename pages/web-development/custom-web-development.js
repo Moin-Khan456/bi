@@ -154,7 +154,7 @@ function HireAangularJsDeveloper(props) {
       </Head>
 
       <Suspense fallback={<Loader />}>
-        <div className="relative second-component">
+        <div className="relative  ">
           <Header />
           <SectionOne
             heading="Transform Your Brand with"

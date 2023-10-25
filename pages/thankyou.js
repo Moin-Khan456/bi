@@ -12,7 +12,7 @@ function ThankYou(props) {
         <title>Thank You For Visiting Us | Brain Inventory</title>
       </Head>
       <Loader />
-      <div className="relative second-component">
+      <div className="relative  ">
         <div className="hidden">
           <Header />
         </div>

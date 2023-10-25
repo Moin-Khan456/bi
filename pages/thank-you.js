@@ -15,7 +15,7 @@ function ThankYou(props) {
         <title>Thank You For Visiting Us | Brain Inventory</title>
       </Head>
       <Loader />
-      <div className="relative second-component">
+      <div className="relative  ">
         <div>
           <Header></Header>
           <div className="2xl:py-32 xl:py-28 py-24 2xl:px-10 lg:px-8 mobile-padding">

@@ -25,7 +25,7 @@ export default function PostPage({ post, featuredMedia }) {
   return (
     <>
       <Loader />
-      <div className="relative second-component">
+      <div className="relative  ">
         <Head>
           <title>{title}</title>
           <meta name="description" content={discription} />

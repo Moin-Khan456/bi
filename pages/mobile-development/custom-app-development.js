@@ -146,7 +146,7 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-      <main className="second-component">
+      <main className=" ">
         <section>
           <Header />
           <HireBanner

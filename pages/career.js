@@ -63,7 +63,7 @@ on interesting projects!"
         <link rel="canonical" href="https://braininventory.in/career" />
       </Head>
       <Loader />
-      <div className="relative second-component">
+      <div className="relative  ">
         <Header />
         <section className="container">
           <Banner />

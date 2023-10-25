@@ -74,7 +74,7 @@ Contact us now."
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
       <Loader />
-      <div className="relative second-component ">
+      <div className="relative   ">
         <Header />
         <ContactBanner />
         {position && (

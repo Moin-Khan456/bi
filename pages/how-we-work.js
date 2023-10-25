@@ -72,7 +72,7 @@ export default function HowWeWork() {
       <Suspense fallback={<Loader />}>
         <main>
           <Header />
-          <section className="relative second-component container">
+          <section className="relative   container">
             <WorkBanner />
             <Work />
           </section>

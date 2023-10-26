@@ -2,20 +2,19 @@ import { sendMail } from '../../utils/mailer';
 import { queryToSales, thankYouForContactingWithSales } from '../../utils/templates';
 
 
-async function handleContactUsRequest(data) {
+async function handleContactUsRequest(data, subject) {
     return new Promise(async (resolve, reject) => {
         try {
             console.log(data);
             const payload = {
                 to: data.email,
-                subject: 'Thank you for the Inquiry',
+                subject: subject?? "Thank You For Contacting Us | Brain Inventory",
                 html: thankYouForContactingWithSales(data)
             };
             await sendMail(payload);
     
             const payload2 = {
-                // to: 'h.ali@braininventory.com', //Sales team email - Static
-                to: 'askus@braininventory.com', //Sales team email - Static
+                to: 'd.boyat@braininventory.com',
                 subject: 'New Inquiry',
                 html: queryToSales(data),
             }

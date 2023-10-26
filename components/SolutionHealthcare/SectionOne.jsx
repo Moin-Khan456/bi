@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Index = () => {
   return (
     <>
-      <div className="project-bg pt-72 lg:pt-36 relative container">
+      <div className=" pt-72 lg:pt-36 relative container">
         <h2 className="MonumentBold text-2xl lg:text-[4rem] lg:leading-[5rem] px-2 lg:px-24 text-center absolute z-10 top-32 lg:top-16">
         Revitalize Healthcare Through Innovation
         </h2>
@@ -18,7 +18,7 @@ const Index = () => {
           </p>
           <Image
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/Group+7115.png"
-            alt=""
+            alt="Healthcare Software Development Company"
             width={1800}
             height={1800}
             className=" lg:w-[700px] lg:h-[600px] "

@@ -4,22 +4,20 @@ import { BsArrowRight } from "react-icons/bs";
 const WhyMean = ({type, meanReasons}) => {
   
   return (
-    <main className="container flex max-w-full lg:px-32">
+    <main className="container lg:px-24">
       <section>
         <h1 className="text-3xl text-center lg:text-start lg:text-5xl ">
           Why you may need a &nbsp;
           <span className="text-[#7600EB]">{type} Development</span>{" "}
           solution?
         </h1>
-        <aside className="flex flex-col lg:flex-row justify-between px-4 lg:px-8">
-          <ol className="text-2xl lg:text-2xl w-full lg:w-[40%] px-6 font-Satoshi">
+        <aside className="flex flex-row w-full">
+          <ol className="text-xl w-full py-4 font-Satoshi">
             {meanReasons?.map((ele, index) => (
-              <li className="my-8" key={index}>
-                <p>{ele}</p>
-              </li>
+                <p className="bg-technology lg:px-4 lg:py-6 lg:my-4 w-full h-[150px]" key={index}>{ele}</p>
             ))}
           </ol>
-          <section>
+          {/* <section>
             <a href="#talk" className="flex justify-center lg:justify-start">
               <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-max  px-5 py-3 rounded-2xl mt-12">
                 <button
@@ -34,7 +32,7 @@ const WhyMean = ({type, meanReasons}) => {
                 </button>
               </section>
             </a>
-          </section>
+          </section> */}
         </aside>
       </section>
     </main>

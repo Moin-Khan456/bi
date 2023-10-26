@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkBanner = () => {
   return (
-    <div className="h-screen min-h-[100vh] items-center relative">
+    <div className="h-auto min-h-[90vh] items-center relative">
       <h2 className="2xl:px-14 xl:px-12 px-10 pt-32 text-4xl stroke-text-mobile Gilroy-Bold"></h2>
       <div className="md:flex block relative">
         <div className="lg:w-[40%] w-full  md:h-full">

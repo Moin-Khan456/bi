@@ -44,13 +44,13 @@ const HomeSectionEleven = () => {
         </div>
 
         <div className="mt-6">
-          <HomeButton>
-            <Link href="/portfolio">
+          <Link href="/portfolio">
+            <HomeButton>
               <span className="2xl:text-2xl text-xl transition-all">
                 we have more!
               </span>
-            </Link>
-          </HomeButton>
+            </HomeButton>
+          </Link>
         </div>
       </div>
     </div>

@@ -152,7 +152,7 @@ function ReactNativeDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <main className="project-bg">
+        <main className="">
           <Header />
           <section className="pt-32">
             <SectionOne
@@ -164,11 +164,6 @@ function ReactNativeDeveloper(props) {
               alt=" Flutter Development Company"
             />
             <WhyMean type="Flutter App" meanReasons={meanReasons} />
-            <section className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
-                Flutter App Development Service
-              </h1>
-            </section>
             <Benefits
               type="Flutter App"
               subhead="Flutter is a new mobile and web-development framework for creating apps that run on iOS, Android, and the Web. There are several benefits of Flutter App Development:"

@@ -80,7 +80,6 @@ export default function HowWeWork() {
           <section className="container">
             <ChooseApp />
             <LanguageTool />
-            <Newsletter />
             <Engagementmodal />
             <Faqs />
             <KeepInTouch />

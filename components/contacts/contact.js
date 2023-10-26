@@ -38,7 +38,7 @@ function Contact(props) {
     router.push("/thank-you");
   };
   return (
-    <div className="2xl:p-0 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24">
+    <div className="2xl:p-0 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24" id="contact">
       <div className="container">
         <div className="flex flex-col lg:flex-row pt-8 lg:pt-24 max-w-full">
           <div className="flex flex-col w-full lg:w-[55%]">

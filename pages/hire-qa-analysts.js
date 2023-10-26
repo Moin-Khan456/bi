@@ -200,7 +200,7 @@ function HireAangularJsDeveloper(props) {
             subhead={chooseBiSubhead}
             alt="QA and Testing Specialists"
           />
-          <Hello />
+          
           <Engaged />
           <HireSteps type="QA Analyst" />
           <Clients tech="QA Analyst" />

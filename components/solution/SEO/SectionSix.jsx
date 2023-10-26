@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
 
-const Index = ({title, btn, head, src, className, headAbove, subheadAbove, customClasses, classText}) => {
+const Index = ({title, btn, head, src, className, headAbove, subheadAbove, customClasses, classText, alt}) => {
 
     return (
         <div className="container rounded-md my-8 px-4">
@@ -21,7 +21,7 @@ const Index = ({title, btn, head, src, className, headAbove, subheadAbove, custo
                       </div>
                       <div className='relative hidden lg:block'>
                           <Image src={src} 
-                          width={2800} height={2800} alt='' className={`m-auto block absolute bottom-0 right-10 max-w-[450px] ${customClasses}`}/>
+                          width={2800} height={2800} alt={alt} className={`m-auto block absolute bottom-0 right-10 max-w-[450px] ${customClasses}`}/>
                       </div>
                 </div>
             </div>  

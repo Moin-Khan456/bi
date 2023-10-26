@@ -240,7 +240,7 @@ function HireAangularJsDeveloper(props) {
               title="Why hire Python developers from %Brain Inventory"
               card={hireCards}
             />
-            <Hello />
+            
             <ChooseBraininventory
               reasons={chooseBI}
               alt="Dedicated Python Programmers"

@@ -13,8 +13,8 @@ const Industries = () => {
         });
     }, [])
     return (
-        <main className='2xl:p-10 p-8 2xl:space-y-8 space-y-6 container'>
-            <section className='padding-left-all-section relative'>
+        <main className='2xl:space-y-8 space-y-6 container lg:px-24'>
+            <section className='relative'>
                 <section>
                     <h2 className='Gilroy-Bold text-4xl'>Industries we serve</h2>
                 </section>

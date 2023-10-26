@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function LetsKick() {
   return (
-    <div className="container padding-left-all-section 2xl:p-10 p-8 2xl:py-20 py-14">
+    <div className="container px-4 lg:px-24 2xl:py-20 py-14">
       <div className="lg:flex justify-between">
         <div className="2xl:space-y-6 space-y-4">
           <h2 className="text-heading-1 Gilroy-Bold">
             let&apos;s kick some ass together
           </h2>
           <Link
-            href="/career"
+            href="/contact"
             className="text-white block cursor-pointer hover:bg-case-blue-request"
           >
             <span className="inline-flex items-center bg-transparent transition-all hover-bg-yellow-h">
@@ -34,7 +34,7 @@ export default function LetsKick() {
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
             <span className="text-sm lg:text-lg ">
-              career@braininventory.com
+              askus@braininventory.com
             </span>
           </div>
 
@@ -51,7 +51,7 @@ export default function LetsKick() {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="text-lg">+917722885755</span>
+            <span className="text-lg">+91 8109561401</span>
           </div>
         </div>
       </div>

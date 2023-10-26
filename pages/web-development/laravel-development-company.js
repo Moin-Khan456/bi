@@ -161,7 +161,7 @@ function HireAangularJsDeveloper(props) {
             card={hireCards}
           />
           <div className="container">
-            <Hello />
+            
           </div>
           <ChooseBraininventory
             reasons={chooseBI}

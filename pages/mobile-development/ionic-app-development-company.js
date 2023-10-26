@@ -207,7 +207,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Ionic App Development from %Brain Inventory"
             card={hireCards}
           />
-          <FindUs />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="hybrid development company"

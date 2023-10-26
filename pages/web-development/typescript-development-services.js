@@ -140,35 +140,32 @@ function HireAangularJsDeveloper(props) {
     "As a team of passionate and professional developers, we understand the business value of your app. Our TypeScript developers specialize in developing and implementing scalable, secure TypeScript apps that allow you to boost productivity and cut costs.",
   ];
 
-  const [position, setPostion] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
         <title>
-          Brain Inventory | TypeScript Development Company for Innovative Solutions
+          TypeScript Mobile App Development Services - Brain Inventory
         </title>
-        {/* <meta
+        <meta
           name="description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
-        /> */}
+          content="Explore brain inventory typescript development services for robust, scalable, and efficient software development. Our experts deliver excellence. Contact us!"
+        />
+        <meta
+          name="og:description"
+          content="Explore brain inventory typescript development services for robust, scalable, and efficient software development. Our experts deliver excellence. Contact us!"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Brain Inventory | TypeScript Development Company for Innovative Solutions"
+          content="TypeScript Mobile App Development Services - Brain Inventory"
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/typescript-development-company"
+          content="https://braininventory.in/web-development/typescript-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/typescript-development-company"
+          href="https://braininventory.in/web-development/typescript-development-services"
         />
       </Head>
       <Loader />
@@ -204,7 +201,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <div className="container">
-                <Hello />
+                
               </div>
               <ChooseBraininventory reasons={chooseBI} alt="TypeScript Development Company" />
               <FaqHire faq={faqdetails} />

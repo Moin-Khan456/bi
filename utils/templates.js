@@ -118,7 +118,7 @@ export function thankYouForContactingWithSales(data) {
 													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:40px;padding-bottom:5px;">
-																<div align="center" style="line-height:10px"><a href="#"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/logo.png" style="display: block; height: auto; border: 0; width: 244px; max-width: 100%;" width="244" alt="BILogo" title="BILogo"></div>
+																<div align="center" style="line-height:10px"><a href="#"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/logo.png" style="display: block; height: auto; border: 0; width: 244px; max-width: 100%;" width="244" alt="" title=""></div>
 															</td>
 														</tr>
 													</table>
@@ -129,7 +129,7 @@ export function thankYouForContactingWithSales(data) {
 															<td style="padding-top:50px;padding-right:10px;padding-bottom:15px;padding-left:10px;">
 																<div style="font-family: sans-serif">
 																	<div class="txtTinyMce-wrapper" style="font-size: 12px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; mso-line-height-alt: 18px; color: #fefeff; line-height: 1.5;">
-																		<p style="margin: 0; font-size: 14px; text-align: center;">+91 772-288-5755</p>
+																		<p style="margin: 0; font-size: 14px; text-align: center;">+91 8109561401</p>
 																		<p style="margin: 0; font-size: 14px; text-align: center;">askus@braininventory.com</p>
 																	</div>
 																</div>
@@ -281,10 +281,10 @@ export function thankYouForContactingWithSales(data) {
 															<td style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:20px;text-align:center;">
 																<table class="social-table" width="144px" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																	<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/BrainInventoryIndia" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://twitter.com/BrainInventory" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/twitter@2x.png" width="32" height="32" alt="Twitter" title="twitter" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://in.linkedin.com/company/braininventory/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/braininventory_com/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/BrainInventoryIndia" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://in.linkedin.com/company/braininventory/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/braininventory_com/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw" target="_blank"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.png" width="32" height="32" alt="Youtube" title="Youtube" style="display: block; height: auto; border: 0;"></a></td>
 																	</tr>
 																</table>
 															</td>

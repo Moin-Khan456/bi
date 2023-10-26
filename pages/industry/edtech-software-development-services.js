@@ -133,7 +133,7 @@ function ReactNativeDeveloper(props) {
     "By partnering with an education software development company, you can take your educational solution to new heights. We are pioneers in the field, creating innovative solutions that reshape the edtech industry. However, collaborating with us means more than just creating a website or an app. Together, we're crafting an engaging and immersive learning experience that empowers users and fosters high levels of engagement from the start.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, we're the pioneers of crafting super-smart educational solutions that make a big impact. We're experts at creating top-notch tools with cool features and strong designs, all to make education even better.";
+    "At Brain Inventory, we're the pioneers of crafting super-smart educational services that make a big impact. We're experts at creating top-notch tools with cool features and strong designs, all to make education even better.";
 
   const sectionFiveDesc =
     "We are undoubtedly in an era of digital educational transformation. It is a time where online solutions are growing in popularity among knowledge seekers. Big names like Udemy have paved the way, but now we see a rise of innovative platforms looking to find their own place in this ever-changing landscape. Let's explore these emerging contenders:";
@@ -271,23 +271,31 @@ function ReactNativeDeveloper(props) {
     <>
       <Head>
         <title>
-          EdTech Solution Providers | EdTech Solution Providers Company
+          Edtech Software Development Services - Brain Inventory
         </title>
-        {/* <meta
+        <meta
+          property="description"
+          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+        />
         <meta
           name="og:title"
-          content="EdTech Solution Providers | EdTech Solution Providers Company"
+          content="Edtech Software Development Services - Brain Inventory"
         />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Edtech.jpg"
         />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/industry/edtech-software-development-services"
+        />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/edtech-solution-providers"
+          href="https://braininventory.in/industry/edtech-software-development-services"
         />
       </Head>
       <Loader />
@@ -295,20 +303,18 @@ function ReactNativeDeveloper(props) {
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP EdTech SOLUTION"
-              head1="Revolutionizing Ed-Tech Solutions"
+              title="TOP EdTech SOFTWARE"
+              head1="Revolutionizing Ed-Tech Services"
               description={sectionTwoDesc}
             />
-          {position && (
-            <>
               <SectionThree
                 title="Insights into the Education Industry"
                 sectionDesc="Education technology is a constantly evolving field that is rapidly embracing technological advancements. Here are some fascinating insights about the education industry."
                 setionThreeCards={setionThreeCards}
               />
-              <TiltMarquee title="Education Solution Development" />
+              <TiltMarquee title="EdTech Software Development" />
               <SectionFour
-                title="Solutions for Education Solution Development"
+                title="Solutions for Education Software Development"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
@@ -329,13 +335,13 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="BLOCKCHAIN SOLUTION DEVELOPMENT"
+                head="Educational SOftware DEVELOPMENT"
                 description={platformDesc}
               />
               <SectionNine
-                brand="BLOCKCHAIN SOLUTION DEVELOPMENT        "
-                pageCategory="BLOCKCHAIN SOLUTION DEVELOPMENT     "
-                pageCategoryAbbr="BLOCKCHAIN SOLUTION DEVELOPMENT       "
+                brand="Educational SOftware DEVELOPMENT        "
+                pageCategory="Educational SOftware DEVELOPMENT     "
+                pageCategoryAbbr="Educational SOftware DEVELOPMENT       "
                 slow={70000}
                 fast={55000}
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
@@ -343,11 +349,11 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={keyFeatures}
                 subhead="KEY FEATURES OF"
-                head="BLOCKCHAIN SOLUTION DEVELOPMENT"
+                head="Educational SOftware DEVELOPMENT"
                 description={keyDesc}
               />
               <Approach
-                title="Our Approach to Blockchain Solution Development"
+                title="Our Approach to Educational Software Development"
                 desc={approachDesc}
                 points={approachPoints}
               />
@@ -360,8 +366,6 @@ function ReactNativeDeveloper(props) {
               <hr />
               <Footer />
             </>
-          )}
-    </>
   );
 }
 export default ReactNativeDeveloper;

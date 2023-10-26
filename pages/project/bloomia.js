@@ -217,7 +217,7 @@ const Bloomia = () => {
         />
       </Head>
       <Header />
-      <div className="container project-bg pt-12">
+      <div className="container  pt-12">
         <SectionOne section={BloomiaSectionOne} />
         <h1 className="invisible">Bloomia</h1>
       </div>

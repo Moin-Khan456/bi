@@ -214,7 +214,7 @@ function HireAangularJsDeveloper(props) {
                 subhead={chooseBiSubhead}
                 alt="Hire Dedicated MEAN Stack Developers"
               />
-              <Hello />
+              
               <Engaged />
               <HireSteps type="MEAN stack" />
               <Clients tech="MEAN stack" />

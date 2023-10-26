@@ -16,7 +16,7 @@ export default function Engaged() {
               to work with us until your requirements are satisfied under your
               budget.
             </p>
-            <Link href="/career">
+            <Link href="/contact">
               <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-4">
                 Schedule an Interview
                 <svg

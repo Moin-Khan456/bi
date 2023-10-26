@@ -206,7 +206,7 @@ function HireAangularJsDeveloper(props) {
               title="Why Hire Full Stack Developers from %Brain Inventory"
               card={hireCards}
             />
-            <Hello />
+            
             <ChooseBraininventory
               reasons={chooseBI}
               alt="Hire Full stack developers and programmers"

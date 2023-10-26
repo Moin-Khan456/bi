@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Index = ({ section }) => {
   return (
-    <div className="container">
+    <div className="container lg:min-h-screen">
       <div className="max-w-full flex flex-col px-4 lg:px-12 ">
         <Image
           width={1500}
@@ -25,7 +25,7 @@ const Index = ({ section }) => {
         <h1 className="text-4xl Gilroy-Bold lg:text-6xl pb-12 text-[#FFD166]">
           Creation Platform{" "}
         </h1>
-        <div className="lg:flex items-end">
+        {/* <div className="lg:flex items-end">
           <div className="lg:w-[10%] px-4 lg:px-0 flex justify-center bg-gradient-to-r from-[#000076] to-[#7600EB] py-3 rounded-2xl mt-4">
             <button className="flex flex-col items-center Gilroy" id="rtc-xd">
               <a
@@ -44,7 +44,7 @@ const Index = ({ section }) => {
             variant="info"
             content="Click to visit Adobe XD Design"
           />
-        </div>
+        </div> */}
         <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between py-4">
           <div>
             <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">

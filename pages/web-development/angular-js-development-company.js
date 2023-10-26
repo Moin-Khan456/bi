@@ -95,20 +95,15 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const benefitsList = [
-    "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML syntax to express your application’s components clearly and succinctly. AngularJS goes far beyond the basics of the JavaScript programming language. It makes building complex, data-driven web applications easier by taking care of a lot of the grunt work that comes with it.",
+    "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML syntax to express your application’s components clearly and succinctly.",
+    "AngularJS goes far beyond the basics of the JavaScript programming language. It makes building complex, data-driven web applications easier by taking care of a lot of the grunt work that comes with it.",
     "One of the most awesome features of AngularJS is dependency injection. Dependency Injection (DI) is a software design pattern that allows you to write and maintain your application code in a modular fashion, thus making it easy to test and use.",
   ];
   const meanReasons = [
-    "AngularJS is a popular JavaScript framework for building dynamic and responsive SPAs.",
-    "It enables businesses to create interactive web applications with a desktop-like user experience.",
-    "SPAs built with AngularJS improve user engagement, retention, and customer satisfaction.",
-    "AngularJS follows a modular architecture, promoting code reusability and easier project management.",
-    "It allows developers to break down complex applications into smaller, manageable components.",
-    "Collaboration is facilitated, and development time is reduced.",
-    "AngularJS provides built-in testing capabilities and encourages test-driven development practices.",
-    "This ensures application quality and stability through automated testing.",
-    "The framework’s modular structure and separation of concerns simplify code maintenance and updates.",
-    "AngularJS can be used to build hybrid mobile applications with frameworks like Ionic.",
+    "AngularJS is a popular JavaScript framework specifically designed for building dynamic and responsive SPAs. It allows businesses to create interactive web applications that provide a seamless user experience, similar to that of a desktop application. SPAs built with AngularJS can enhance user engagement and retention, leading to improved customer satisfaction.",
+    "AngularJS follows a modular architecture that promotes code reusability, making it easier to manage and maintain large-scale projects. The framework enables developers to break down complex applications into smaller, manageable components, facilitating collaboration and reducing development time.",
+    "AngularJS provides built-in testing capabilities and encourages the use of test-driven development practices. This makes it easier for businesses to ensure the quality and stability of their applications through automated testing.",
+    "Additionally, AngularJS's modular structure and clear separation of concerns contribute to easier code maintenance and updates.AngularJS can also be used to build hybrid mobile applications using frameworks like Ionic.",
   ];
   return (
     <>
@@ -144,7 +139,7 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <div className="relative project-bg">
+        <div className="relative ">
           <Header />
           <div className="pt-32">
             <SectionOne
@@ -156,11 +151,6 @@ function HireAangularJsDeveloper(props) {
               alt="Angular JS Development Services"
             />
             <WhyMean type="AngularJs" meanReasons={meanReasons} />
-            <div className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow leading-[5rem] lg:leading-[15rem] text-2xl lg:text-[5rem] font-extrabold font-Satoshi">
-                Angular.JS Development Service
-              </h1>
-            </div>
             <Benefits
               type="Angular.JS Application"
               subhead="AngularJS is the most popular JavaScript framework. And for a good reason. It helps you build single-page web applications faster than using other platforms. There are several benefits of AngularJS development that make it a popular choice for building web applications."
@@ -170,7 +160,8 @@ function HireAangularJsDeveloper(props) {
               title="Why AngularJS Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory reasons={chooseBI} /> <Industries />
+            <ChooseBraininventory reasons={chooseBI} /> 
+            <Industries />
             <FaqHire faq={faqdetails} />
             <BlogArticle />
             <ContactForm />

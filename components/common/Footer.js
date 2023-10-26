@@ -15,7 +15,7 @@ const FooterSections = [
         path: "/how-we-work",
       },
       {
-        name: "Careers",
+        name: "Career",
         path: "/career",
       },
       {
@@ -29,49 +29,72 @@ const FooterSections = [
     ],
   },
   {
-    title: "Industry",
-    link: "/industry",
-    className: "md:whitespace-nowrap",
+    title: "Hire Dedicated Remote Developers",
+    link: "/hire-dedicated-remote-developers",
     links: [
       {
-        _id: 2,
-        name: "Fitness Solution Development",
-        path: "/industry/fitness-solution-development-company",
+        name: "Hire Angular Js Developers",
+        path: "/hire-angular-js-developers",
       },
       {
-        _id: 3,
-        name: "Healthcare Solution Development",
-        path: "/industry/healthcare-solution-development-company",
+        name: "Hire React Js Developers",
+        path: "/hire-react-js-developers",
       },
       {
-        _id: 4,
-        name: "Blockchain Solution Development",
-        path: "/industry/blockchain-solution-development-company",
+        name: "Hire Node Js Developers",
+        path: "/hire-node-js-developers",
       },
       {
-        _id: 5,
-        name: "Accounting Solution Development",
-        path: "/industry/accounting-solution-development-company",
+        name: "Hire Vue Js Developers",
+        path: "/hire-vue-js-developers",
       },
       {
-        _id: 6,
-        name: "Marketplace Solution Development",
-        path: "/industry/marketplace-solution-development-company",
+        name: "Hire Next Js Developers",
+        path: "/hire-next-js-developers",
       },
       {
-        _id: 7,
-        name: "Ed Tech Solution Provider",
-        path: "/industry/edtech-solution-providers",
+        name: "Hire MEAN Developers",
+        path: "/hire-mean-stack-developers",
       },
       {
-        _id: 8,
-        name: "Travel Solution Development",
-        path: "/industry/travel-solution-development-company",
+        name: "Hire MERN Developers",
+        path: "/hire-mern-stack-developers",
       },
       {
-        _id: 9,
-        name: "CRM Solution Development",
-        path: "/industry/crm-development-company",
+        name: "Hire UI/UX Developers",
+        path: "/hire-ui-ux-developers",
+      },
+      {
+        name: "Hire Android Developers",
+        path: "/hire-android-developers",
+      },
+      {
+        name: "Hire iOS Developers",
+        path: "/hire-ios-developers",
+      },
+      {
+        name: "Hire React Native Developers",
+        path: "/hire-react-native-developers",
+      },
+      {
+        name: "Hire Python Developers",
+        path: "/hire-python-developers",
+      },
+      {
+        name: "Hire Full Stack Developers",
+        path: "/hire-full-stack-developers",
+      },
+      {
+        name: "Hire PHP Developers",
+        path: "/hire-php-developers",
+      },
+      {
+        name: "Hire Chatbot Developers",
+        path: "/hire-chatbot-developers",
+      },
+      {
+        name: "Hire QA Analyst",
+        path: "/hire-qa-analysts",
       },
     ],
   },
@@ -142,18 +165,6 @@ const FooterSections = [
     ],
   },
   {
-    title: "Solutions",
-    link: "/solutions",
-    className: "md:whitespace-nowrap",
-    links: [
-      {
-        _id: 1,
-        name: "Social Media Marketing",
-        path: "/solution/social-networking-development-company",
-      },
-    ],
-  },
-  {
     title: "Mobile App Development",
     link: "/mobile-app-development",
     className: "md:whitespace-nowrap",
@@ -197,6 +208,53 @@ const FooterSections = [
     ],
   },
   {
+    title: "Industry",
+    link: "/industry",
+    className: "md:whitespace-nowrap",
+    links: [
+      {
+        _id: 2,
+        name: "Fitness App Development",
+        path: "/industry/fitness-software-development-company",
+      },
+      {
+        _id: 3,
+        name: "Healthcare App Development",
+        path: "/industry/healthcare-software-development-services",
+      },
+      {
+        _id: 4,
+        name: "Blockchain App Development",
+        path: "/industry/blockchain-development-services",
+      },
+      {
+        _id: 5,
+        name: "Accounting App Development",
+        path: "/industry/aaccounting-software-development-services",
+      },
+      {
+        _id: 6,
+        name: "Marketplace App Development",
+        path: "/industry/marketplace-software-development-services",
+      },
+      {
+        _id: 7,
+        name: "Ed Tech App Provider",
+        path: "/industry/edtech-software-development-services ",
+      },
+      {
+        _id: 8,
+        name: "Travel App Development",
+        path: "/industry/travel-software-development-services",
+      },
+      {
+        _id: 9,
+        name: "CRM App Development",
+        path: "/industry//crm-software-development-services",
+      },
+    ],
+  },
+  {
     title: "Portfolio",
     link: "/portfolio",
     className: "md:col-span-2",
@@ -232,76 +290,19 @@ const FooterSections = [
     ],
   },
   {
-    title: "Hire Dedicated Remote Developers",
-    link: "/hire-dedicated-remote-developers",
+    title: "Solutions",
+    link: "/solutions",
     className: "md:whitespace-nowrap",
     links: [
       {
-        name: "Hire Angular Js Developers",
-        path: "/hire-angular-js-developers",
-      },
-      {
-        name: "Hire React Js Developers",
-        path: "/hire-react-js-developers",
-      },
-      {
-        name: "Hire Node Js Developers",
-        path: "/hire-node-js-developers",
-      },
-      {
-        name: "Hire Vue Js Developers",
-        path: "/hire-vue-js-developers",
-      },
-      {
-        name: "Hire Next Js Developers",
-        path: "/hire-next-js-developers",
-      },
-      {
-        name: "Hire MEAN Developers",
-        path: "/hire-mean-stack-developers",
-      },
-      {
-        name: "Hire MERN Developers",
-        path: "/hire-mern-stack-developers",
-      },
-      {
-        name: "Hire UI/UX Developers",
-        path: "/hire-ui-ux-developers",
-      },
-      {
-        name: "Hire Android Developers",
-        path: "/hire-android-developers",
-      },
-      {
-        name: "Hire iOS Developers",
-        path: "/hire-ios-developers",
-      },
-      {
-        name: "Hire React Native Developers",
-        path: "/hire-react-native-developers",
-      },
-      {
-        name: "Hire Python Developers",
-        path: "/hire-python-developers",
-      },
-      {
-        name: "Hire Full Stack Developers",
-        path: "/hire-full-stack-developers",
-      },
-      {
-        name: "Hire PHP Developers",
-        path: "/hire-php-developers",
-      },
-      {
-        name: "Hire Chatbot Developers",
-        path: "/hire-chatbot-developers",
-      },
-      {
-        name: "Hire QA Analyst",
-        path: "/hire-qa-analysts",
+        _id: 1,
+        name: "Social Media Marketing",
+        path: "/solution/social-networking-development-company",
       },
     ],
   },
+  
+  
 ];
 const organizations = [
   {
@@ -341,8 +342,8 @@ const organizations = [
 export default function Footer() {
   return (
     <div className="py-10 mx-10 border-t">
-      <div className="container">
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
+      <div className="container lg:px-24">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-2">
           {FooterSections.map((section, index) => {
             return (
               <div
@@ -359,7 +360,7 @@ export default function Footer() {
                 <ul className="space-y-2">
                   {section.links.map((link, index) => {
                     return (
-                      <li className="color-gray" key={index}>
+                      <li className="color-gray w-auto" key={index}>
                         <a href={link.path} className="cursor-pointer">
                           {link.name}
                         </a>

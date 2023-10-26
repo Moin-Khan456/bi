@@ -151,7 +151,7 @@ function ReactNativeDeveloper(props) {
         />
       </Head>
       <Loader />
-      <div className="project-bg">
+      <div className="">
         <Header />
         <div className="pt-32">
           <SectionOne
@@ -163,13 +163,6 @@ function ReactNativeDeveloper(props) {
             alt="Swift Application Development Services"
           />
           <WhyMean type="Swift App" meanReasons={meanReasons} />
-          <section className="container">
-            <div className="flex justify-center ">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-7xl font-extrabold font-Satoshi">
-                Swift App Development Service
-              </h1>
-            </div>
-          </section>
           <Benefits
             type="Swift App"
             subhead="Swift has evolved over the years to be a much more advanced and flexible tool. With this evolution comes the benefits of using Swift as your development language."

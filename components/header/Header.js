@@ -183,7 +183,7 @@ const Header = () => {
 
               <Link href="/career">
                 <h3 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6">
-                  Careers
+                  Career
                 </h3>
               </Link>
               <h3
@@ -513,43 +513,43 @@ const Industry = () => {
   const solutionLinks = [
     {
       _id: 2,
-      name: "Fitness Solution Development",
-      link: "/industry/fitness-solution-development-company",
+      name: "Fitness App Development",
+      link: "/industry/fitness-software-development-company",
     },
     {
       _id: 3,
-      name: "Healthcare Solution Development",
-      link: "/industry/healthcare-solution-development-company",
+      name: "Healthcare App Development",
+      link: "/industry/healthcare-software-development-services",
     },
     {
       _id: 4,
-      name: "Blockchain Solution Development",
-      link: "/industry/blockchain-solution-development-company",
+      name: "Blockchain App Development",
+      link: "/industry/blockchain-development-services",
     },
     {
       _id: 5,
-      name: "Accounting Solution Development",
-      link: "/industry/accounting-solution-development-company",
+      name: "Accounting App Development",
+      link: "/industry/accounting-software-development-services",
     },
     {
       _id: 6,
-      name: "Marketplace Solution Development",
-      link: "/industry/marketplace-solution-development-company",
+      name: "Marketplace App Development",
+      link: "/industry/marketplace-software-development-services",
     },
     {
       _id: 7,
-      name: "Ed Tech Solution Provider",
-      link: "/industry/edtech-solution-providers",
+      name: "Ed Tech App Provider",
+      link: "/industry/edtech-software-development-services",
     },
     {
       _id: 8,
-      name: "Travel Solution Development",
-      link: "/industry/travel-solution-development-company",
+      name: "Travel App Development",
+      link: "/industry/travel-software-development-services",
     },
     {
       _id: 9,
-      name: "CRM Solution Development",
-      link: "/industry/crm-development-company",
+      name: "CRM App Development",
+      link: "/industry/crm-software-development-services",
     },
   ];
 

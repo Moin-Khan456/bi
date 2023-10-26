@@ -174,7 +174,7 @@ function HireAangularJsDeveloper(props) {
             subhead={hireSub}
           />
 
-          <FindUs />
+          
           <ChooseBraininventoryApp
             head="Why Custom Web Development from"
             blue="Brain inventory"

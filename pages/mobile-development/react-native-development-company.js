@@ -158,7 +158,7 @@ function ReactNativeDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <main className="project-bg">
+        <main className="">
           <Header />
           <section className="pt-32">
             <SectionOne
@@ -170,11 +170,6 @@ function ReactNativeDeveloper(props) {
               alt="React Native App Development "
             />
             <WhyMean type="React Native App" meanReasons={meanReasons} />
-            <section className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
-                React Native App Development Service
-              </h1>
-            </section>
             <Benefits
               type="React Native"
               subhead="React Native is a new programming framework developed by Facebook that makes it easy to create native mobile apps for iOS and Android through JavaScript. There are several benefits of React Native:"

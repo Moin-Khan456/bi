@@ -3,8 +3,8 @@ import React from "react";
 
 function Engagementmodal() {
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-      <div className="container padding-left-all-section">
+    <div className="lg:p-14 p-8 2xl:space-y-8 space-y-6">
+      <div className="">
         <div>
           <h2 className="Gilroy-Bold lg:text-4xl text-3xl text-white pt-4 pb-4 ">
             engagement models
@@ -13,7 +13,7 @@ function Engagementmodal() {
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-12">
             <div className="box-modal-engagement">
               <h3 className="text-center text-xl Gilroy-Bold my-6">
-                dedicated hiring
+                Dedicated hiring
               </h3>
               <div className="bg-box-m-e">
                 <p className="text-sm text-center color-light Gilroy-Light">

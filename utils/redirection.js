@@ -1,6 +1,16 @@
 const redirection = () => {
   return [
     {
+      source: "/industry/healthcare-solution-development-company",
+      destination: "/industry/healthcare-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/fitness-solution-development-company",
+      destination: "/industry/fitness-software-development-company",
+      permanent: true,
+    },
+    {
       source: "/custom-app-development",
       destination: "/mobile-development/custom-app-development",
       permanent: true,

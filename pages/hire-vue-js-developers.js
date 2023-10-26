@@ -207,7 +207,7 @@ function HireAangularJsDeveloper(props) {
               subhead={chooseBiSubhead}
               alt="Vue.js Development Company"
             />
-            <Hello />
+            
             <Engaged />
             <HireSteps type="Vue JS" />
             <Clients tech="Vue JS" />

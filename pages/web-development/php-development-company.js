@@ -175,9 +175,6 @@ function HireAangularJsDeveloper(props) {
             title="Why PHP Development Integration from %Brain Inventory"
             card={hireCards}
           />
-          <div className="container">
-            <Hello />
-          </div>
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Custom PHP development"

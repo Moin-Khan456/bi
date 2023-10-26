@@ -53,13 +53,13 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What services do you provide in healthcare solution development?",
+      title: "What services do you provide in healthcare software development?",
       description:
         "We at Brain Inventory, a learning healthcare app development company offer end-to-end healthcare development services, including strategic consulting, UI/UX design, development, testing, and maintenance.",
     },
     {
       id: "2",
-      title: "How secure is the data in the healthcare solutions you develop?",
+      title: "How secure is the data in the healthcare software you develop?",
       description:
         "We prioritise data security and adhere to HIPAA compliance, ensuring all sensitive health information remains secure and confidential.",
     },
@@ -72,22 +72,22 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "4",
-      title: "What technologies do you use in healthcare solution development?",
+      title: "What technologies do you use in healthcare software development?",
       description:
-        "We utilise the latest technologies such as AI, Machine Learning, and IoT for innovative and efficient healthcare solution development.",
+        "We utilise the latest technologies such as AI, Machine Learning, and IoT for innovative and efficient healthcare software development.",
     },
     {
       id: "5",
-      title: "How long will it take to develop a healthcare solution?",
+      title: "How long will it take to develop a healthcare software?",
       description:
-        "GThe timeline for solution development varies based on complexity and custom requirements, but we typically deliver in 12-16 weeks.",
+        "The timeline for solution development varies based on complexity and custom requirements, but we typically deliver in 12-16 weeks.",
     },
   ];
   const solutionList = [
     {
       id: "1",
       text: "Medical Data Analytics Solution Development",
-      desc: "Our groundbreaking Medical Data Analytics Solution is a game-changer in the realm of healthcare solutions. Meticulously designed by our proficient technical team, this medical software adeptly extracts insights from diverse medical data sources.",
+      desc: "Our groundbreaking Medical Data Analytics Solution is a game-changer in the realm of healthcare services. Meticulously designed by our proficient technical team, this medical software adeptly extracts insights from diverse medical data sources.",
     },
     {
       id: "2",
@@ -97,7 +97,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "3",
       text: "Health and Fitness Tracking Solution Development",
-      desc: "Amid the growing interest in health and fitness, our Health and Fitness Tracking Solution development expertise shines. We specialise in creating user-centric, engaging, and secure web and mobile apps that enable users to monitor their health, fitness routines, and wellness journeys effectively.",
+      desc: "Amid the growing interest in health and fitness, our Health and Fitness Tracking App development expertise shines. We specialise in creating user-centric, engaging, and secure web and mobile apps that enable users to monitor their health, fitness routines, and wellness journeys effectively.",
     },
     {
       id: "4",
@@ -126,10 +126,10 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const sectionFourDesc =
-    "Elevate your healthcare solution development with us. We stand as pioneers in crafting ingenious solutions that revolutionise the healthcare industry. With us, you're not just building medical software – you're shaping an experience that empowers and enhances user engagement right from the start.";
+    "Elevate your healthcare software development services with us. We stand as pioneers in crafting ingenious solutions that revolutionise the healthcare industry. With us, you're not just building medical software – you're shaping an experience that empowers and enhances user engagement right from the start.";
 
   const sectionTwoDesc =
-    "When it comes to healthcare software company, Brain Inventory stands as a pillar of excellence in the healthcare solution development industry. Our proficiency is evident in our cutting-edge solutions, marked by innovative features and robust design, tailored to revolutionise the healthcare sector.";
+    "When it comes to healthcare software company, Brain Inventory stands as a pillar of excellence in the custom healthcare software development industry. Our proficiency is evident in our cutting-edge solutions, marked by innovative features and robust design, tailored to revolutionise the healthcare sector.";
 
   const sectionFiveDesc =
     "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let's take a closer look at some of these contenders:";
@@ -228,7 +228,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const approachDesc =
-    "At Brain Inventory, we take a distinctive approach to crafting healthcare solutions that redefine the industry norms. Through a harmonious blend of innovation, precision, and technological prowess, we aim to create digital solutions that revolutionise healthcare interactions. Our strategy centres around translating your healthcare vision into tangible digital experiences that elevate patient care and streamline operations.";
+    "At Brain Inventory, we take a distinctive approach to crafting healthcare services that redefine the industry norms. Through a harmonious blend of innovation, precision, and technological prowess, we aim to create digital solutions that revolutionise healthcare interactions. Our strategy centres around translating your healthcare vision into tangible digital experiences that elevate patient care and streamline operations.";
   const approachPoints = [
     {
       head: "In-depth Discovery and Understanding",
@@ -261,27 +261,23 @@ function ReactNativeDeveloper(props) {
         "Stay updated on emerging healthcare technologies and trends. We release regular updates meeting changing healthcare demands and incorporate user feedback for ongoing performance improvement.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
   return (
     <>
       <Head>
         <title>
-          Healthcare App Development Solution | Healthcare App Development
-          Services
+        Custom Healthcare Software Development Services- Brain Inventory
         </title>
-        {/* <meta
+        <meta
+          property="description"
+          content="Brain Inventory is a leading healthcare app development company, specializing in creating innovative software for the healthcare industry's needs. Contact us!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Brain Inventory is a leading healthcare app development company, specializing in creating innovative software for the healthcare industry's needs. Contact us!"
+        />
         <meta
           name="og:title"
-          content="Healthcare App Development Solution | Healthcare App Development
-          Services"
+          content="Custom Healthcare Software Development Services- Brain Inventory"
         />
         <meta
           property="og:image"
@@ -289,11 +285,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/healthcare-solution-development-company"
+          content="https://braininventory.in/industry/healthcare-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/healthcare-solution-development-company"
+          href="https://braininventory.in/industry/healthcare-software-development-services"
         />
       </Head>
       <Loader />
@@ -303,12 +299,10 @@ function ReactNativeDeveloper(props) {
           <SectionOne />
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP HEALTHCARE SOLUTION"
+            title="TOP HEALTHCARE SOFTWARE"
             head1="Empowering Healthcare Digitally."
             description={sectionTwoDesc}
           />
-          {position && (
-            <>
               <SectionThree
                 title="Healthcare Industry Insights"
                 sectionDesc="Healthcare is a rapidly evolving industry that is increasingly becoming technologically driven. Here are some captivating insights about the healthcare industry:"
@@ -316,7 +310,7 @@ function ReactNativeDeveloper(props) {
               />
               <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
               <SectionFour
-                title="Solutions for Healthcare Solution Development"
+                title="Solutions for Healthcare App Development"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
@@ -332,6 +326,7 @@ function ReactNativeDeveloper(props) {
                 headAbove="Develop Your Own Healthcare Solution"
                 subheadAbove="Are you inspired by the success stories of new healthcare platforms? There's no better time than now to bring your unique idea to life in the healthcare sector. Don't be discouraged by big names like WebMD. With the right vision and execution, your concept could be the next big thing!"
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
+                alt="Custom Healthcare App Development"
                 customClasses="w-[400px] max-w-[400px]"
                 btn="BUILD YOUR HEALTHCARE APP"
                 classText="lg:text-3xl"
@@ -341,13 +336,13 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="HEALTHCARE SOLUTION DEVELOPMENT"
+                head="HEALTHCARE SOFTWARE DEVELOPMENT"
                 description={platformDesc}
               />
               <SectionNine
-                brand="HEALTHCARE SOLUTION DEVELOPMENT       "
-                pageCategory="HEALTHCARE SOLUTION DEVELOPMENT    "
-                pageCategoryAbbr="HEALTHCARE SOLUTION DEVELOPMENT      "
+                brand="HEALTHCARE SOFTWARE DEVELOPMENT       "
+                pageCategory="HEALTHCARE SOFTWARE DEVELOPMENT    "
+                pageCategoryAbbr="HEALTHCARE SOFTWARE DEVELOPMENT      "
                 slow={70000}
                 fast={55000}
                 alt="Healthcare Software Development Services"
@@ -356,12 +351,13 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={keyFeatures}
                 subhead="KEY FEATURES OF"
-                head="HEALTHCARE SOLUTION DEVELOPMENT"
+                head="CUSTOM HEALTHCARE SOFTWARE DEVELOPMENT"
                 description={keyDesc}
               />
               <Approach
-                title="How do we Approach Healthcare Solution Development?"
+                title="How do we Approach Healthcare Software Development?"
                 desc={approachDesc}
+
                 points={approachPoints}
               />
               <SectionTen />
@@ -372,8 +368,6 @@ function ReactNativeDeveloper(props) {
               <LetsKick />
               <hr />
               <Footer />
-            </>
-          )}
         </section>
       </main>
     </>

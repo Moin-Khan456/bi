@@ -152,7 +152,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const platformDesc =
-    "When it comes to Blockchain Solution Development, Brain Inventory stands head and shoulders above the rest, and with good reason. But why should you entrust us with your project?";
+    "When it comes to Blockchain Development, Brain Inventory stands head and shoulders above the rest, and with good reason. But why should you entrust us with your project?";
   const platformDevelopment = [
     {
       head: "Cross-Chain Compatibility",
@@ -176,7 +176,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const keyDesc =
-    "As the business world rapidly evolves, the technologies supporting it should develop at the same pace, if not faster. One of the most revolutionary technologies driving business innovation and transformation today is blockchain technology. Here at Brain Inventory, we are at the forefront of utilizing and developing blockchain solutions to offer improved, secure, and transparent services, ensuring that your business excels regardless of the industry. Let's delve into what makes the blockchain solution development offered by us exceptional:";
+    "As the business world rapidly evolves, the technologies supporting it should develop at the same pace, if not faster. One of the most revolutionary technologies driving business innovation and transformation today is blockchain technology. Here at Brain Inventory, we are at the forefront of utilizing and developing blockchain services to offer improved, secure, and transparent services, ensuring that your business excels regardless of the industry. Let's delve into what makes the blockchain app development offered by us exceptional:";
   const keyFeatures = [
     {
       head: "Token Standards",
@@ -234,7 +234,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const approachDesc =
-    "At Brain Inventory, our approach to blockchain solution development is systematic and tailored to each client's unique needs. We believe in the transformative power of technology and aim to leverage it to create applications that drive business growth and efficiency. Here's an overview of our approach:";
+    "At Brain Inventory, our approach to blockchain development is systematic and tailored to each client's unique needs. We believe in the transformative power of technology and aim to leverage it to create applications that drive business growth and efficiency. Here's an overview of our approach:";
   const approachPoints = [
     {
       head: "Conceptualization",
@@ -262,27 +262,23 @@ function ReactNativeDeveloper(props) {
         "After the solution is fully tested and approved, we deploy it to the desired platform. But our job doesn't end there. We continue to provide support and updates as needed to keep your platform running smoothly.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
   return (
     <>
       <Head>
         <title>
-          Blockchain App Development Solution | Blockchain App Development
-          Services
+          Expert Blockchain Development Services- Brain Inventory
         </title>
-        {/* <meta
+        <meta
+          property="description"
+          content="Brain Inventory's blockchain app development services deliver secure, decentralized solutions for your business needs. Reach out to us to acquire a seamless app."
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Brain Inventory's blockchain app development services deliver secure, decentralized solutions for your business needs. Reach out to us to acquire a seamless app."
+        />
         <meta
           name="og:title"
-          content="Blockchain App Development Solution | Blockchain App Development
-          Services"
+          content="Expert Blockchain Development Services- Brain Inventory"
         />
         <meta
           property="og:image"
@@ -290,11 +286,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/blockchain-solution-development-company"
+          content="https://braininventory.in/industry/blockchain-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/blockchain-solution-development-company"
+          href="https://braininventory.in/industry/blockchain-development-services"
         />
       </Head>
       <Loader />
@@ -305,21 +301,19 @@ function ReactNativeDeveloper(props) {
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP BLOCKCHAIN SOLUTION"
+              title="TOP BLOCKCHAIN APP"
               head1="Shaping the Future of Blockchain"
               description={sectionTwoDesc}
             />
           </div>
-          {position && (
-            <>
               <SectionThree
                 title="Blockchain Industry Insights"
                 sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
                 setionThreeCards={setionThreeCards}
               />
-              <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
+              <TiltMarquee title="BLOCKCHAIN APP DEVELOPMENT ✦ BLOCKCHAIN APP DEVELOPMENT" />
               <SectionFour
-                title="Solutions for Blockchain Platform Development"
+                title="Solutions for Blockchain App Development"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
@@ -331,7 +325,7 @@ function ReactNativeDeveloper(props) {
                 sectionFiveTable={sectionFiveTable}
               /> */}
               <SectionSix
-            headAbove="Develop Your Own Blockchain Solution"
+            headAbove="Develop Your Own Blockchain App"
             subheadAbove="Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough."
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
             customClasses="w-[390px] !bottom-0"
@@ -343,13 +337,13 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="BLOCKCHAIN SOLUTION DEVELOPMENT"
+                head="BLOCKCHAIN DEVELOPMENT SERVICES"
                 description={platformDesc}
               />
               <SectionNine
-                brand="BLOCKCHAIN SOLUTION DEVELOPMENT        "
-                pageCategory="BLOCKCHAIN SOLUTION DEVELOPMENT     "
-                pageCategoryAbbr="BLOCKCHAIN SOLUTION DEVELOPMENT       "
+                brand="BLOCKCHAIN APP DEVELOPMENT        "
+                pageCategory="BLOCKCHAIN APP DEVELOPMENT     "
+                pageCategoryAbbr="BLOCKCHAIN APP DEVELOPMENT       "
                 slow={70000}
                 fast={55000}
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
@@ -357,11 +351,11 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={keyFeatures}
                 subhead="KEY FEATURES OF"
-                head="BLOCKCHAIN SOLUTION DEVELOPMENT"
+                head="BLOCKCHAIN APP DEVELOPMENT"
                 description={keyDesc}
               />
               <Approach
-                title="Our Approach to Blockchain Solution Development"
+                title="Our Approach to Custom Blockchain App Development"
                 desc={approachDesc}
                 points={approachPoints}
               />
@@ -373,8 +367,6 @@ function ReactNativeDeveloper(props) {
               <LetsKick />
               <hr />
               <Footer />
-            </>
-          )}
         </section>
       </main>
     </>

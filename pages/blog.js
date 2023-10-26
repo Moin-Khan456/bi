@@ -65,23 +65,16 @@ export default function Home({ data, blogs, totalPages }) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section">
             <h1 className="text-6xl pt-12 Gilroy-Bold">Blogs</h1>
-            <p className="text-sm pt-4">
-              We write about things that matter. Brain Inventory Blog is a
-              compilation of expert articles that highlight the most important
-              aspects of today‘s tech industry. Trends, reviews, analysis,
-              issues - fresh and unbiased content that unites tech enthusiasts,
-              IT decision-makers, and tech-savvy readers.
-            </p>
 
             <div>
               <h3 className="text-xl Gilroy-Bold mt-8 mb-3">Popular Blogs</h3>
-              <div className="pb-2 grid lg:grid-cols-3 grid-cols-1 gap-4">
+              <div className="pb-2">
                 <PopularBlogs data={data} />
               </div>
               <hr />
               <Blogs blogs={blogs} pageNumber={currentPage} />
               <Pagination
-                itemsPerPage={5}
+                itemsPerPage={10}
                 totalPages={totalPages}
                 setCurrentPage={setCurrentPage}
               />
@@ -104,7 +97,7 @@ export async function getServerSideProps(context) {
   const posts = {};
   if(!posts.data){
     const response = await axios.get(
-      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${1}`
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10&page=${1}`
     );
     posts.data = response.data
   }

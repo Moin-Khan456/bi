@@ -294,7 +294,7 @@ body {
   font-family: Satoshi !important;
 }
 
-.project-bg {
+. {
   background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/project/Group 6379.png');
   background-size: 60%;
 }
@@ -1195,6 +1195,7 @@ ul.industries_list li:hover {
 ul.list-modal {
   padding: 2rem 2rem;
   min-height: 450px;
+  max-height: 450px;
 }
 
 .border-color-purple {

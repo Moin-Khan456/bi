@@ -96,17 +96,7 @@ export default function HireBanner({
                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
                 <h2 className="Gilroy-Bold text-5xl">
                   2 Business <span className="text-lg">Days</span>
-                </h2>
-                <form className="mt-3">
-                  <label className="Gilroy-Bold text-lg block">
-                    Hire Us Now
-                  </label>
-                  <input
-                    type="text"
-                    className="h-14 w-full px-4 bg-black opacity-60 mt-2"
-                    placeholder="Enter your Email Address"
-                  />
-                </form>
+                </h2> 
               </section>
               <section className="p-8 bg-line">
                 <ul className="list-subcription">

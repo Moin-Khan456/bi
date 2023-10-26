@@ -179,7 +179,7 @@ const Fatoura = () => {
         />
       </Head>
       <Header />
-      <div className="container project-bg pt-12">
+      <div className="container  pt-12">
         <SectionOne section={FatouraSectionOne} />
       </div>
       <>

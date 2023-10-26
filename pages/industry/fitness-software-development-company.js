@@ -116,14 +116,14 @@ function ReactNativeDeveloper(props) {
     {
       id: "7",
       text: "Augmented Reality (AR) or Virtual Reality (VR) Workouts",
-      desc: "Enhancing workouts with immersive technology, we deliver exceptional AR and VR fitness experiences tailored to drive your commitment to fitness forward. Brain Inventory, your trusted web and mobile health and fitness app development partner, aims to take your fitness solutions to a whole new level.",
+      desc: "Enhancing workouts with immersive technology, we deliver exceptional AR and VR fitness experiences tailored to drive your commitment to fitness forward. Brain Inventory, your trusted web and mobile health and fitness app development partner, aims to take your fitness services to a whole new level.",
     },
   ];
   const sectionFourDesc =
-    "By working with us, you can take your fitness solution to new heights. We are pioneers in the field, creating innovative solutions that reshape the fitness sector. However, partnering with us means more than just fitness development of a website or an app. Together, we're crafting an engaging and immersive experience that empowers users and fosters high levels of engagement from the start.";
+    "By working with us, you can take your fitness services to new heights. We are pioneers in the field, creating innovative solutions that reshape the fitness sector. However, partnering with us means more than just fitness development of a website or an app. Together, we're crafting an engaging and immersive experience that empowers users and fosters high levels of engagement from the start.";
 
   const sectionTwoDesc =
-    "Brain Inventory, a leading fitness app development company, stands at the forefront of the fitness solution development arena, embodying a legacy of excellence. Our proficiency is manifest in our state-of-the-art solutions, adorned with ingenious attributes and resilient design, meticulously crafted to reshape the fitness sector.";
+    "Brain Inventory, a leading fitness app development company, stands at the forefront of the fitness app development arena, embodying a legacy of excellence. Our proficiency is manifest in our state-of-the-art solutions, adorned with ingenious attributes and resilient design, meticulously crafted to reshape the fitness sector.";
 
   const sectionFiveDesc =
     "The era of digital fitness transformation is well underway, with a myriad of mobile apps catering to the wellness-minded. While industry giants such as Nike Training Club have established a precedent, a fresh surge of inventive apps is emerging to define their space in this dynamic arena. Let's delve deeper into the landscape of these emerging players:";
@@ -231,7 +231,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
 
-  const title = "How do we Approach Fitness Solution Development?";
+  const title = "How do we Approach Fitness Development?";
   const approachDesc =
     "At Brain Inventory, we have a unique, innovative, and efficient approach towards fitness solution development that sets us apart in the digital landscape. We believe in creating fitness solutions that are tailored to the needs of our clients and their users. Our approach involves the following steps:";
   const approachPoints = [
@@ -271,15 +271,19 @@ function ReactNativeDeveloper(props) {
     <>
       <Head>
         <title>
-          Fitness App Development Solution | Fitness App Development Services
+        Fitness Software Development Services - Brain Inventory
         </title>
-        {/* <meta
-          property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+        <meta
+          property="description"
+          content="Looking for a fitness app development company? We specialize in creating user-friendly custom fitness apps to boost your brand's success. Contact us today!"
+        />
         <meta
           name="og:title"
-          content="Fitness App Development Solution | Fitness App Development Services"
+          content="Fitness Software Development Services - Brain Inventory"
+        />
+        <meta
+          name="og:description"
+          content="Looking for a fitness app development company? We specialize in creating user-friendly custom fitness apps to boost your brand's success. Contact us today!"
         />
         <meta
           property="og:image"
@@ -287,11 +291,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/fitness-solution-development-company"
+          content="https://braininventory.in/industry/fitness-software-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/fitness-solution-development-company"
+          href="https://braininventory.in/industry/fitness-software-development-company"
         />
       </Head>
       <Loader />
@@ -300,7 +304,7 @@ function ReactNativeDeveloper(props) {
         <SectionOne />
         <SectionTwo
           className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-          title="TOP FITNESS SOLUTION"
+          title="TOP FITNESS APP"
           head1="Reimagining Fitness with Innovation"
           description={sectionTwoDesc}
         />
@@ -311,9 +315,9 @@ function ReactNativeDeveloper(props) {
         fitness industry:"
           setionThreeCards={setionThreeCards}
         />
-        <TiltMarquee title="FITNESS SOLUTION DEVELOPMENT" />
+        <TiltMarquee title="FITNESS APP DEVELOPMENT" />
         <SectionFour
-          title="Solutions for Fitness Solution Development"
+          title="Solutions for Fitness Mobile App Development"
           description={sectionFourDesc}
           solutionList={solutionList}
         />
@@ -329,6 +333,7 @@ function ReactNativeDeveloper(props) {
           headAbove="Develop Your Own Social Solution"
           subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
           src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
+          alt="Custom Fitness App Development  Services"
           customClasses="w-[390px] !bottom-6"
           btn="BUILD YOUR FITNESS APP"
           classText="lg:text-3xl"
@@ -338,7 +343,7 @@ function ReactNativeDeveloper(props) {
         <PlatformDevelopment
           data={platformDevelopment}
           subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-          head="FITNESS PLATFORM DEVELOPMENT"
+          head="FITNESS SOFTWARE DEVELOPMENT"
           description={platformDesc}
         />
         <SectionNine
@@ -353,18 +358,17 @@ function ReactNativeDeveloper(props) {
         <PlatformDevelopment
           data={keyFeatures}
           subhead="KEY FEATURES OF"
-          head="FITNESS SOLUTION DEVELOPMENT"
+          head="FITNESS APP DEVELOPMENT"
           description={keyDesc}
         />
         <Approach title={title} desc={approachDesc} points={approachPoints} />
-        <SectionTen />
+        <SectionTen alt="Our Work"/>
         <FaqHire faq={faqdetails} />
         <hr />
         <BlogArticle />
         <ContactForm />
         {/* <LocateUs /> */}
         <LetsKick />
-        <Footer />
         <hr />
         <Footer />
       </main>

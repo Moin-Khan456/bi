@@ -183,7 +183,7 @@ function HireAangularJsDeveloper(props) {
                 title="Why to Choose %Brain Inventory% for WordPress Project Development?"
                 card={hireCards}
               />
-              <Hello />
+              
               <ChooseBraininventory reasons={chooseBI} alt="WordPress website development services" />
               <FaqHire faq={faqdetails} />
               <hr />

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 const Work = () => {
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-      <div className="container pt-12 pb-12 padding-left-all-section">
+    <div className="p-8">
+      <div className="container padding-left-all-section">
         <div>
           <h1 className="Gilroy-Bold text-xl pb-4">how we work</h1>
           <h3 className="Gilroy-Bold text-4xl pb-3">

@@ -54,7 +54,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "1",
       title:
-        "How does Brain Inventory approach Travel Industry Solution Development?",
+        "How does Brain Inventory approach Travel App Development?",
       description:
         "We focus on understanding client visions, staying updated on global travel trends, prioritizing user experience, and offering continuous support and improvement.",
     },
@@ -248,7 +248,7 @@ function ReactNativeDeveloper(props) {
   const setionThreeCards = [
     {
       points: [
-        "In 2022, the Worldwide Travel Technology market was worth a staggering USD 8,998.92 million, and it's not slowing down. Experts predict it will keep growing at an impressive rate of 7.57% every year until 2028. By then, it's estimated to reach an astonishing USD 13,941.2 million. ",
+        "In 2022, the Worldwide Travel Technology market was worth a staggering USD 8,998.92 million, and it's not slowing down. Experts predict it will keep growing at an impressive rate of 7.57 every year until 2028. By then, it's estimated to reach an astonishing USD 13,941.2 million. ",
         "Companies that integrated online travel portals into their websites experienced a remarkable boost in their earnings, with some seeing their revenue surge by an impressive 120%.",
       ],
     },
@@ -269,7 +269,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const approachDesc =
-    "At Brain Inventory, our approach to building travel solutions is unique and effective. We aim to create solutions that fit our clients' needs and the aspirations of travelers who will use them. Here's how we do it:";
+    "At Brain Inventory, our approach to building travel services is unique and effective. We aim to create solutions that fit our clients' needs and the aspirations of travelers who will use them. Here's how we do it:";
   const approachPoints = [
     {
       head: "Client-Centric Collaboration",
@@ -292,24 +292,22 @@ function ReactNativeDeveloper(props) {
         "Our seasoned team meticulously crafts each solution. This involves comprehensive development, rigorous testing, and an unwavering dedication to delivering a resilient, dependable product.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
+
   return (
     <>
       <Head>
-        <title>Travel Solution Development Company</title>
-        {/* <meta
+        <title>Travel Software Development Services- Brain Inventory</title>
+        <meta
+          property="description"
+          content="Brain Inventory offers a travel software development service for the travel industry that streamlines operations and enhances customer experiences. Contact us!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Brain Inventory offers a travel software development service for the travel industry that streamlines operations and enhances customer experiences. Contact us!"
+        />
         <meta
           name="og:title"
-          content="Travel App Development Solution | Travel App Development
-          Services"
+          content="Travel Software Development Services- Brain Inventory"
         />
         <meta
           property="og:image"
@@ -317,11 +315,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/travel-solution-development-company"
+          content="https://braininventory.in/industry/travel-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/travel-solution-development-company"
+          href="https://braininventory.in/industry/travel-software-development-services"
         />
       </Head>
       <Loader />
@@ -331,12 +329,10 @@ function ReactNativeDeveloper(props) {
         <section>
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP Travel SOLUTION"
-            head1="Providing Superior Travel Solutions Online"
+            title="TOP Travel SOFTWARE"
+            head1="Providing Superior Travel Services Online"
             description={sectionTwoDesc}
           />
-          {position && (
-            <>
               <SectionThree
                 title="Insights into the Travel Industry"
                 sectionDesc="Travel is an ever-evolving industry that embraces technological advancements at a rapid pace. Here are some fascinating insights about the travel industry:"
@@ -344,7 +340,7 @@ function ReactNativeDeveloper(props) {
               />
               <TiltMarquee title="Travel Solution Development ✦ Travel Solution Development" />
               <SectionFour
-                title="Solutions for Travel Industry Solution Development"
+                title="Solutions for Travel Software Development For Travel Industry"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
@@ -366,13 +362,13 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={platformDevelopment}
                 subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="Travel SOLUTION DEVELOPMENT"
+                head="Travel APP DEVELOPMENT"
                 description={platformDesc}
               />
               <SectionNine
-                brand="Travel Solution Development"
-                pageCategory="Travel Solution Development"
-                pageCategoryAbbr="Travel Solution Development"
+                brand="Travel Development Software"
+                pageCategory="Travel Development Software"
+                pageCategoryAbbr="Travel Development Software"
                 slow={70000}
                 fast={55000}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
@@ -380,11 +376,11 @@ function ReactNativeDeveloper(props) {
               <PlatformDevelopment
                 data={keyFeatures}
                 subhead="KEY FEATURES OF"
-                head="Travel Industry SOLUTION DEVELOPMENT"
+                head="Travel Industry Software DEVELOPMENT"
                 description={keyDesc}
               />
               <Approach
-                title="How we Approach Travel Industry Solution Development?"
+                title="How we Approach Travel App Development?"
                 desc={approachDesc}
                 points={approachPoints}
               />
@@ -396,8 +392,6 @@ function ReactNativeDeveloper(props) {
               <LetsKick />
               <hr />
               <Footer />
-            </>
-          )}
         </section>
       </main>
     </>

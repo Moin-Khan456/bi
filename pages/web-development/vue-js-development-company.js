@@ -146,7 +146,7 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
       <Loader />
-      <div className="project-bg">
+      <div className="">
         <Header />
         <div className="pt-32">
           <SectionOne

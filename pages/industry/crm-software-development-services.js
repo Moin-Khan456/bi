@@ -87,22 +87,22 @@ function ReactNativeDeveloper(props) {
     {
       id: "1",
       text: "Customer Engagement and Relationship Management",
-      desc: "Our CRM solutions are designed to provide a comprehensive view of your customers, streamline communication, and enhance engagement.",
+      desc: "Our CRM development are designed to provide a comprehensive view of your customers, streamline communication, and enhance engagement.",
     },
     {
       id: "2",
       text: "Sales and Marketing Automation",
-      desc: "Boost your sales and marketing efforts with Brain Inventory CRM solutions. We empower you with automation tools that simplify lead management, campaign tracking, and customer segmentation, ensuring your business reaches its full potential.",
+      desc: "Boost your sales and marketing efforts with Brain Inventory CRM software development. We empower you with automation tools that simplify lead management, campaign tracking, and customer segmentation, ensuring your business reaches its full potential.",
     },
     {
       id: "3",
       text: "Data Analytics and Reporting",
-      desc: "Make informed decisions with powerful data analytics and reporting features. Our CRM solutions offer real-time insights into customer behavior, sales trends, and performance metrics, enabling you to drive growth and profitability.",
+      desc: "Make informed decisions with powerful data analytics and reporting features. Our CRM software development services offer real-time insights into customer behavior, sales trends, and performance metrics, enabling you to drive growth and profitability.",
     },
     {
       id: "4",
       text: "Integration and Scalability",
-      desc: "Our CRM solutions are designed for seamless integration with your existing systems and scalable to accommodate your business's evolving needs. We ensure a smooth transition and minimal disruption to your operations.",
+      desc: "Our CRM development are designed for seamless integration with your existing systems and scalable to accommodate your business's evolving needs. We ensure a smooth transition and minimal disruption to your operations.",
     },
     {
       id: "5",
@@ -112,12 +112,12 @@ function ReactNativeDeveloper(props) {
     {
       id: "6",
       text: "Contact Management",
-      desc: "Organising and managing customer information effectively is at the heart of Brain Inventory's state-of-the-art CRM solutions. Our Contact Management tool organizes your contacts, tracks interactions and manages customer information, all in one place.",
+      desc: "Organising and managing customer information effectively is at the heart of Brain Inventory's state-of-the-art CRM software development. Our Contact Management tool organizes your contacts, tracks interactions and manages customer information, all in one place.",
     },
     {
       id: "7",
       text: "Lead Management",
-      desc: "Experience effective tracking and nurturing of potential customers with Brain Inventory's CRM solution. Our CRM solution provides a holistic view of the lead management process, enabling you to guide your prospects through the sales funnel with ease.",
+      desc: "Experience effective tracking and nurturing of potential customers with Brain Inventory's CRM solution. Our CRM development provides a holistic view of the lead management process, enabling you to guide your prospects through the sales funnel with ease.",
     },
   ];
   const sectionFourDesc =
@@ -170,7 +170,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const keyDesc =
-    "Brain Inventory is your top choice for CRM solution development because we understand your need for a solution that is unique and fits your business perfectly. Our CRM website solutions are customised to meet your specific needs and requirements.";
+    "Brain Inventory is your top choice for CRM software development because we understand your need for a solution that is unique and fits your business perfectly. Our CRM website services are customised to meet your specific needs and requirements.";
   const keyFeatures = [
     {
       head: "Sales Pipeline and Opportunity Management",
@@ -234,7 +234,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "The Impact of CRM on Business Success",
       content:
-        "CRM development solutions are vital for businesses seeking a competitive edge and efficient customer management. Below are some hard-hitting stats to convey the significant impact of CRM on Business Success:",
+        "CRM software development services are vital for businesses seeking a competitive edge and efficient customer management. Below are some hard-hitting stats to convey the significant impact of CRM on Business Success:",
       tableHead: ["Statistic"],
       tableContent: [
         [
@@ -280,15 +280,18 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>CRM Solution Development Company</title>
-        {/* <meta
+        <title>Custom CRM Software Development Services- Brain Inventory</title>
+        <meta
+          property="description"
+          content="Brain Inventory CRM software development involves creating custom software to manage customer data, streamline sales, and enhance client relationships. Contact us!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Brain Inventory CRM software development involves creating custom software to manage customer data, streamline sales, and enhance client relationships. Contact us!"
+        />
         <meta
           name="og:title"
-          content="CRM App Development Solution | CRM App Development
-          Services"
+          content="Custom CRM Software Development Services- Brain Inventory"
         />
         <meta
           property="og:image"
@@ -296,11 +299,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/crm-development-company"
+          content="https://braininventory.in/industry/crm-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/crm-development-company"
+          href="https://braininventory.in/industry/crm-software-development-services"
         />
       </Head>
       <Loader />
@@ -312,76 +315,72 @@ function ReactNativeDeveloper(props) {
             classText="lg:w-[75%]"
             hideSubText="hidden"
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="Unlock the Power of CRM Solutions"
+            title="Unlock the Power of CRM Development"
             head1="Enabling Success through CRM"
             description={sectionTwoDesc}
           />
-          {position && (
-            <>
-              <SectionThree
-                title="Insights into the CRM Solutions"
-                sectionDesc="CRM technology is experiencing a significant surge in popularity as businesses increasingly adopt digital solutions. These solutions are not only enhancing customer interactions but also revolutionising the way companies manage and leverage their data."
-                setionThreeCards={setionThreeCards}
-                tableFooter="Embrace the transformative potential of CRM with Brain Inventory. Discover new perspectives and cultivate customer relations that drive success."
-              />
-              <TiltMarquee title="CRM SOLUTIONS CRM SOLUTIONS CRM SOLUTIONS CRM SOLUTIONS" />
-              <SectionFour
-                title="Solutions for CRM Solution Development"
-                description={sectionFourDesc}
-                solutionList={solutionList}
-              />
-              <SectionFive
-                head="CRM Solutions"
-                subhead="COMPARED TO Salesforce"
-                description={sectionFiveDesc}
-                sectionFiveTableHead={sectionFiveTableHead}
-                sectionFiveTable={sectionFiveTable}
-              />
-              <SectionSix
-                headAbove="Develop Your Own CRM App"
-                subheadAbove="Are you ready to step onto the path of innovation with a transformative CRM platform?"
-                title="Your exciting journey awaits just a click away. Embrace the future of customer relationship management today!"
-                customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
-                classText="lg:text-[2rem] "
-                btn="BUILD YOUR CRM SOLUTION"
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/crm/MFM+1.png"
-              />
+          {/* <SectionThree
+            title="Insights into the CRM Development"
+            sectionDesc="CRM technology is experiencing a significant surge in popularity as businesses increasingly adopt digital solutions. These solutions are not only enhancing customer interactions but also revolutionising the way companies manage and leverage their data."
+            setionThreeCards={setionThreeCards}
+            tableFooter="Embrace the transformative potential of CRM with Brain Inventory. Discover new perspectives and cultivate customer relations that drive success."
+          /> */}
+          <TiltMarquee title="CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT" />
+          <SectionFour
+            title="Solutions for CRM Software Development"
+            description={sectionFourDesc}
+            solutionList={solutionList}
+          />
+          <SectionFive
+            head="CRM App Development"
+            subhead="COMPARED TO Salesforce"
+            description={sectionFiveDesc}
+            sectionFiveTableHead={sectionFiveTableHead}
+            sectionFiveTable={sectionFiveTable}
+          />
+          <SectionSix
+            headAbove="Develop Your Own CRM App"
+            subheadAbove="Are you ready to step onto the path of innovation with a transformative CRM platform?"
+            title="Your exciting journey awaits just a click away. Embrace the future of customer relationship management today!"
+            customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
+            classText="lg:text-[2rem] "
+            btn="BUILD YOUR CRM SOLUTION"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/crm/MFM+1.png"
+          />
 
-              <PlatformDevelopment
-                data={platformDevelopment}
-                subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="CRM SOLUTION DEVELOPMENT"
-                description={platformDesc}
-              />
-              <SectionNine
-                brand="crm solution development"
-                pageCategory="crm solution development"
-                pageCategoryAbbr="crm solution development"
-                slow={70000}
-                fast={55000}
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
-              />
-              <PlatformDevelopment
-                data={keyFeatures}
-                subhead="KEY FEATURES OF"
-                head="CRM SOLUTION DEVELOPMENT"
-                description={keyDesc}
-              />
-              <Approach
-                title="How do we Approach CRM Solution Development?"
-                desc={approachDesc}
-                points={approachPoints}
-              />
-              <SectionTen />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <ContactForm />
-              <LetsKick />
-              <hr />
-              <Footer />
-            </>
-          )}
+          <PlatformDevelopment
+            data={platformDevelopment}
+            subhead="WHY CHOOSE BRAIN INVENTORY FOR"
+            head="CRM SOFTWARE DEVELOPMENT"
+            description={platformDesc}
+          />
+          <SectionNine
+            brand="crm SOFTWARE development"
+            pageCategory="crm SOFTWARE development"
+            pageCategoryAbbr="crm SOFTWARE development"
+            slow={70000}
+            fast={55000}
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
+          />
+          <PlatformDevelopment
+            data={keyFeatures}
+            subhead="KEY FEATURES OF"
+            head="CUSTOM CRM SOFTWARE DEVELOPMENT"
+            description={keyDesc}
+          />
+          <Approach
+            title="How do we Approach CRM App Development?"
+            desc={approachDesc}
+            points={approachPoints}
+          />
+          <SectionTen />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <ContactForm />
+          <LetsKick />
+          <hr />
+          <Footer />
         </section>
       </main>
     </>

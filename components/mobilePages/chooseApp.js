@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const ChooseApp = () => {
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+    <div className="px-4 lg:px-14">
       <div className="container">
         <div>
           <h2 className="Gilroy-Bold lg:text-4xl pb-8 text-3xl text-white pt-8">

@@ -5,9 +5,9 @@ import axios from "axios";
 import Link from "next/link";
 import Skeleton from "./Skeleton";
 
-const Blogs = ({ pageNumber }) => {
+const Blogs = ({ pageNumber, blogs }) => {
   // const [currentPage, setCurrentPage] = useState(pageNumber);
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(blogs);
   useEffect(() => {
     setData(null);
     axios

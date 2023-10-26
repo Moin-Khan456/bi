@@ -13,7 +13,7 @@ const Culture = () => {
   ];
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-      <div className="container">
+      <div>
         <div>
           <h2 className="Gilroy-Bold lg:text-4xl pb-8 text-3xl text-white pt-8">
             work culture at its best

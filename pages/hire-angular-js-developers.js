@@ -229,7 +229,7 @@ function HireAangularJsDeveloper(props) {
               subhead={chooseBiSubhead}
               alt="Hire AngularJS Developers"
             />
-            <Hello />
+            
             <Engaged />
             <HireSteps type="AngularJS" />
             <Clients tech="AngularJS" />

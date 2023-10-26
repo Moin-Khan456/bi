@@ -163,7 +163,7 @@ https://braininventory.in/web-development/python-development-company"
             card={hireCards}
           />
           <div className="container">
-            <Hello />
+            
           </div>
           <ChooseBraininventory
             reasons={chooseBI}

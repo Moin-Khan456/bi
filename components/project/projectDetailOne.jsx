@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Index = ({ section }) => {
   return (
-    <main className="container">
+    <main className="container lg:min-h-screen">
       <div className="py-8 px-0 lg:px-12 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <p className="hidden lg:block">{section.space}</p>
@@ -17,7 +17,8 @@ const Index = ({ section }) => {
             {section.brief}
           </p>
         </div>
-        <div className="flex justify-center  bg-gradient-to-r from-[#000076] to-[#7600EB] px-5 py-3 rounded-2xl mt-4 px-8">
+        <div className="flex justify-center px-5 py-3 rounded-2xl mt-8 lg:px-8">
+        {/* 
           <button className="flex flex-col items-center Gilroy">
             <span className="text-xs font-thin text-slate-400 pb-1">
               Case study 2022
@@ -26,7 +27,8 @@ const Index = ({ section }) => {
               Explore <BsArrowRight />
             </span>
           </button>
-        </div>
+        */}
+        </div> 
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;
           <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/project/XD.png" alt="" width={25} height={25} />

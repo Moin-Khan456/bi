@@ -30,9 +30,9 @@ function contactBanner() {
               </a>
               <a
                 className="btn-contact md:ml-8 ml-0"
-                href="mailto:askus@braininventory.com?subject=Me&body=Hello!"
+                href="#contact"
               >
-                drop a email
+                Drop an email
               </a>
             </div>
           </div>

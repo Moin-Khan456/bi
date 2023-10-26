@@ -200,7 +200,7 @@ function HireAangularJsDeveloper(props) {
               reasons={chooseBI}
               alt="iOS app development services"
             />
-            <Hello />
+            
             <Engaged />
             <HireSteps type="iOS" />
             <Clients tech="iOS" />

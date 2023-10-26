@@ -204,7 +204,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Mobile Application Integration from %Brain Inventory"
             card={hireCards}
           />
-          <FindUs />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Mobile Application Integration Services"

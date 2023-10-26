@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 const LanguageTool = () => {
   return (
-    <main className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+    <main className="p-4 lg:p-14 2xl:space-y-8 space-y-6">
       <section className="container">
         <div>
           <h2 className="Gilroy-Bold lg:text-4xl text-3xl text-white pt-8">

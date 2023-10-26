@@ -27,9 +27,9 @@ const ContactForm = () => {
     };
 
     return (
-        <main className='container'>
+        <main className='container lg:px-16'>
                 <section className='grid xs:grid-rows-2 lg:grid-cols-2' id='talk'>
-                    <section className="px-4 lg:px-12 lg:w-full h-fit">
+                    <section className="px-4 lg:px-8 lg:w-full h-fit">
                         <h1 className='text-5xl font-bold py-8'>Have an idea? Get in touch, we’d be happy to hear from you</h1>
                         <p>We are always looking out for new collaborations, whether you are a client who is passionate about a project or a talent who is interested in joining our team, our doors are always open.</p>
                     </section>

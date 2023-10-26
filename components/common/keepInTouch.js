@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 
 export default function KeepInTouch() {
   const router = useRouter();
-  //   const { register, handleSubmit, reset } = useForm();
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
@@ -22,13 +21,13 @@ export default function KeepInTouch() {
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(data),
-    });
-    reset();
-    router.push("/thank-you");
+    }).then(()=>{
+      window.location.href = "/thank-you";
+    })
   };
-
+// subj: 'Thank You For Applying At Brain Inventory'
   return (
-    <div id="talk" className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+    <div id="talk" className="container px-4 lg:px-16 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
@@ -40,7 +39,7 @@ export default function KeepInTouch() {
                 loading="lazy"
                 layout="fill"
                 objectFit="contain"
-                alt=""
+                alt="Keep In Touch With Brain Inventory Sales Executive"
               />
             </div>
 

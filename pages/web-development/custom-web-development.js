@@ -180,7 +180,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Custom Web Development from %Brain Inventory"
             card={hireCards}
           />
-          <FindUs />
+          
           <ChooseBraininventory
             head="Why Choose Brain inventory for Your Next"
             blue="Assignment"

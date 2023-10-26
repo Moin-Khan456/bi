@@ -155,7 +155,7 @@ function HireReactDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <div className="project-bg">
+        <div className="">
           <Header />
           <div className="pt-32 container">
             <SectionOne

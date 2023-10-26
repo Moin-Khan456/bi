@@ -44,7 +44,7 @@ function HireAangularJsDeveloper(props) {
         <link rel="canonical" href="https://braininventory.in/portfolio" />
       </Head>
       <Header />
-      <div className="container project-bg pt-12">
+      <div className="container  pt-12">
         <ProjectSectionOne />
         <ProjectCards />
             <ProjectSectionTwo />

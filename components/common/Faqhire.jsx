@@ -9,12 +9,12 @@ function FaqHire({ faq }) {
 
     return (
         <main className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 mobile-view">
-            <section className="container padding-left-all-section">
+            <section className="container lg:px-24">
                 <h2 className="text-4xl pb-8 Gilroy-Bold">Faq&rsquo;s</h2>
                 <section>
                     {faq?.map((el) => {
                         return (
-                            <section key={el.id} className="collapse bg-opening mb-6 rounded-xl">
+                            <section key={el.id} className="collapse bg-opening mb-6 rounded-2xl">
                                 <input type="checkbox" />
                                 <section className="collapse-title text-xl font-medium">
                                     <section className="md:flex block justify-between items-center">

@@ -243,7 +243,7 @@ https://braininventory.in/hire-chatbot-developers"
               title="Why Hire Chatbot Developers from %Brain Inventory"
               card={hireCards}
             />
-            <Hello />
+            
             <ChooseBraininventory
               reasons={chooseBI}
               alt="Hire Dedicated Chatbot Developers"

@@ -173,7 +173,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Choose %Brain Inventory% for CodeIgniter Development? "
             card={hireCards}
           />
-          <Hello />
+          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="CodeIgniter development company"

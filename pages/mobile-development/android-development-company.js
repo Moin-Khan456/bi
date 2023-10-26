@@ -157,7 +157,7 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <main className="project-bg">
+        <main className="">
           <Header />
           <section className="pt-32">
             <SectionOne
@@ -169,11 +169,6 @@ function HireAangularJsDeveloper(props) {
               alt="Android application development"
             />
             <WhyMean type="Android App" meanReasons={meanReasons} />
-            <section className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-                Android App Development
-              </h1>
-            </section>
             <Benefits
               type="Android App"
               subhead="Android app development is a trusted brand in the world of mobile app development. The reason for its prominence lies in the fact that it is one of the most sought-after platforms, providing both an evolutionary and revolutionary approach to enhancing user experience. The Android platform has seen a steady rise in popularity over the past few years, and this presents developers with a unique opportunity to reap the benefits."

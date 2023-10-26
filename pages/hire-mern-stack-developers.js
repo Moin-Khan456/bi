@@ -206,7 +206,7 @@ function HireAangularJsDeveloper(props) {
             subhead={chooseBiSubhead}
             alt="MERN stack development company"
           />
-          <Hello />
+          
           <Engaged />
           <HireSteps type="MERN Stack" />
           <Clients tech="MERN Stack" />

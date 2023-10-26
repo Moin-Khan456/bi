@@ -184,7 +184,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const keyDesc =
-    "At Brain Inventory, we offer a full suite of custom ecommerce development solutions to meet the unique requirements of your business. Leveraging our expertise in web and mobile app development, we design and deliver multi-vendor marketplaces that not only optimize your business operations but also enhance the customer experience. ";
+    "At Brain Inventory, we offer a full suite of custom ecommerce development services to meet the unique requirements of your business. Leveraging our expertise in web and mobile app development, we design and deliver multi-vendor marketplaces that not only optimize your business operations but also enhance the customer experience. ";
   const keyFeatures = [
     {
       head: "Multi-Vendor Support",
@@ -266,7 +266,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
 
-  const title = "How We Navigate Marketplace Solution Development?";
+  const title = "How We Navigate Marketplace App Development?";
   const approachDesc =
     "At Brain Inventory, we understand the unique challenges and opportunities that come with ecommerce development. We have a refined approach that ensures your platform will meet the demands of your business and customers. Here's how we navigate marketplace platform development:";
   const approachPoints = [
@@ -301,19 +301,27 @@ function ReactNativeDeveloper(props) {
     <>
       <Head>
         <title>
-          Marketplace Solution Development Company | Marketplace Solution Development Services
+          Custom Marketplace Software Development Company
         </title>
-        {/* <meta
+        <meta
+          property="description"
+          content="Looking for marketplace app development services? We create customized and user-friendly apps to boost your online marketplace success. Get in touch with us today!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Looking for marketplace app development services? We create customized and user-friendly apps to boost your online marketplace success. Get in touch with us today!"
+        />
         <meta
           name="og:title"
-          content="Marketplace Solution Development Company | Marketplace Solution Development Services"
+          content="Custom Marketplace Software Development Company"
         />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_marketplace.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/industry/marketplace-software-development-services"
         />
         <link
           rel="canonical"
@@ -325,21 +333,21 @@ function ReactNativeDeveloper(props) {
       <SectionOne />
       <SectionTwo
         className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-        title="TOP Marketplace SOLUTION"
+        title="TOP Marketplace SOFTWARE"
         head1="Connecting Markets, Fueling Evolution"
         description={sectionTwoDesc}
       />
       {/* <SectionThree title="Fitness Industry Insights" sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
         technological advancements. Here are some captivating insights about the
         fitness industry:" setionThreeCards={setionThreeCards} /> */}
-      <TiltMarquee title="MARKETPLACE SOLUTION DEVELOPMENT" />
+      <TiltMarquee title="MARKETPLACE APP DEVELOPMENT" />
       <SectionFour
-        title="Solutions for Marketplace Solution Development"
+        title="Solutions for Marketplace Software Development"
         description={sectionFourDesc}
         solutionList={solutionList}
       />
       <SectionFive
-        head="Marketplace Solutions"
+        head="Marketplace Development"
         subhead="COMPARED TO Amazon"
         description={sectionFiveDesc}
         sectionFiveTableHead={sectionFiveTableHead}
@@ -359,13 +367,13 @@ function ReactNativeDeveloper(props) {
       <PlatformDevelopment
         data={platformDevelopment}
         subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-        head="Marketplace SOLUTION DEVELOPMENT"
+        head="Marketplace SOFTWARE DEVELOPMENT SERVICES"
         description={platformDesc}
       />
       <SectionNine
-        brand="MARKETPLACE SOLUTION DEVELOPMENT        "
-        pageCategory="MARKETPLACE SOLUTION DEVELOPMENT     "
-        pageCategoryAbbr="MARKETPLACE SOLUTION DEVELOPMENT       "
+        brand="MARKETPLACE SOFTWARE DEVELOPMENT        "
+        pageCategory="MARKETPLACE SOFTWARE DEVELOPMENT     "
+        pageCategoryAbbr="MARKETPLACE SOFTWARE DEVELOPMENT       "
         slow={70000}
         fast={45000}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Mask+group+(1).png"
@@ -374,7 +382,7 @@ function ReactNativeDeveloper(props) {
       <PlatformDevelopment
         data={keyFeatures}
         subhead="KEY FEATURES OF"
-        head="Marketplace SOLUTION DEVELOPMENT"
+        head="Marketplace APP DEVELOPMENT"
         description={keyDesc}
       />
       <Approach title={title} desc={approachDesc} points={approachPoints} />

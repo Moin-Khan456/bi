@@ -158,7 +158,7 @@ function ReactNativeDeveloper(props) {
         />
       </Head>
       <Suspense fallback={<Loader />}>
-        <main className="project-bg ">
+        <main className=" ">
           <Header />
           <section className="pt-32">
             <SectionOne
@@ -170,11 +170,6 @@ function ReactNativeDeveloper(props) {
               alt="iOS Development Service"
             />
             <WhyMean type="iOS App" meanReasons={meanReasons} />
-            <section className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
-                iOS Development Service
-              </h1>
-            </section>
             <Benefits
               type="iOS App"
               subhead="Apple is famous for its high-quality and innovative products. Then it means you want to know more about mobile app development. The iPhone is the most popular smartphone series in the world. Many developers now use this platform for their own fancy apps. Besides being considered a great way to make money, iPhone applications are known for being high-quality and revenue-generating."

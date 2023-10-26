@@ -57,7 +57,7 @@ const HomeSectionEight = () => {
           ))}
         </div>
         <HomeButton>
-          <Link href="/how-we-work">
+          <Link href="/portfolio">
             <span className="2xl:text-2xl text-xl transition-all">
               Explore more
             </span>

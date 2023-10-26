@@ -205,7 +205,7 @@ function HireAangularJsDeveloper(props) {
               reasons={chooseReasons}
               alt="Hire UI/UX Designers"
             />
-            <Hello />
+            
             <Engaged />
             <HireSteps type="UI/UX" />
             <Clients tech="UI/UX" />

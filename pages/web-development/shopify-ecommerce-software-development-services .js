@@ -40,34 +40,6 @@ function HireAangularJsDeveloper(props) {
   const subhead3 =
     "Whether you require essential e-commerce features or more advanced functionalities, a Shopify development solution can cater to your specific requirements. Staying competitive in the fast-paced world of e-commerce is crucial, and Shopify allows you to adapt quickly to changing market trends and customer demands. With a skilled Shopify developer, you can implement new features, and optimize your website for mobile users, all of which are essential for staying ahead in the digital marketplace.";
 
-  const experienceCards = [
-    {
-      head: "Custom Chatbot Development",
-      content:
-        "The chatbots, in general, are being adopted by some of the leading enterprises to automate their customer service and improve their efficiency. The chatbot development is so far the most trending technology that has enabled businesses to deliver 'the best customer experience' to their customers across multiple channels and touchpoints.",
-    },
-    {
-      head: "Multilingual Chatbot Development",
-      content:
-        "Translating the content of your website and online applications isn’t enough. It means nothing if your visitors or customers feel it is not pitched to them in their own language, in a culturally-appropriate tone of voice. That’s why you need native language chatbots if you want to win your audience in any country.",
-    },
-    {
-      head: "Integration With ERP Systems",
-      content:
-        "As an online chatbot service provider, we are an agile team that serves businesses with a comprehensive solution for automating their communication, simple and easy. We offer chatbot integration with ERP systems. These systems are well-equipped with analytical capabilities and provide actionable business insights that facilitate better decision making.",
-    },
-    {
-      head: "Chatbot Testing",
-      content:
-        "We recognize that automated testing is a line of automation testing and hence requires manual intervention for the most reliable outcomes. Our own Chatbot test experts ensure that your Chatbot will function as good as new even after months of usage. We employ the best-in-class software for affirming trustworthiness of your Chatbot and eliminating possible errors.",
-    },
-    {
-      head: "Voice-Enabled Chatbots",
-      content:
-        "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
-    },
-  ];
-
   const hireCards = [
     {
       head: "Dedicated Point-of-contact",
@@ -132,35 +104,32 @@ function HireAangularJsDeveloper(props) {
     "At HiTechy, you can rely on our completely affordable and SEO-friendly design services for your online store. Tried and tested by our expert team, who understand your requirements better than anyone else, every aspect of your store is thoughtfully considered: from the content and navigation to the layout and graphics to the products and shopping experience.",
   ];
 
-  const [position, setPostion] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
   return (
     <>
       <Head>
         <title>
-          Brain Inventory | Shopify Development Company for Innovative Solutions
+          Custom Shopify Web Development Services- Brain Inventory
         </title>
-        {/* <meta
+        <meta
           name="description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
-        /> */}
+          content="Explore Brain Inventory's top-notch Shopify web and app development services. We design, build & optimize e-commerce apps for your business's success. Contact us!"
+        />
+        <meta
+          name="og:description"
+          content="Explore Brain Inventory's top-notch Shopify web and app development services. We design, build & optimize e-commerce apps for your business's success. Contact us!"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Brain Inventory | Shopify Development Company for Innovative Solutions"
+          content="Custom Shopify Web Development Services- Brain Inventory"
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/shopify-development-company"
+          content="https://braininventory.in/web-development/shopify-ecommerce-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/shopify-development-company"
+          href="https://braininventory.in/web-development/shopify-ecommerce-software-development-services"
         />
       </Head>
       <Loader />
@@ -179,8 +148,6 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
               <Experienced
                 title="Shopify Development"
                 type="why"
@@ -200,7 +167,7 @@ function HireAangularJsDeveloper(props) {
                 card={hireCards}
               />
               <div className="container">
-                <Hello />
+                
               </div>
               <ChooseBraininventory
                 reasons={chooseBI}
@@ -213,8 +180,6 @@ function HireAangularJsDeveloper(props) {
               <LocateUs />
               <LetsKick />
               <Footer />
-            </>
-          )}
         </div>
       </div>
     </>

@@ -110,7 +110,7 @@ function HireAangularJsDeveloper(props) {
           </div>
         </Marquee>
       </div>
-      <div className="relative project-bg overflow-hidden">
+      <div className="relative  overflow-hidden">
         <Header setPop={setPop} pop={pop}></Header>
         <div className="mt-32">
           <HireBanner

@@ -89,7 +89,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "1",
       text: "Customization and Scalability",
-      desc: "At Brain Inventory, we understand that businesses need accounting app solutions that can be tailored to their specific accounting requirements and can grow with their needs. Hence, we offer an extensive range of custom-built and scalable accounting solutions that can effortlessly adapt and evolve with your business.",
+      desc: "At Brain Inventory, we understand that businesses need accounting app development that can be tailored to their specific accounting requirements and can grow with their needs. Hence, we offer an extensive range of custom-built and scalable accounting solutions that can effortlessly adapt and evolve with your business.",
     },
     {
       id: "2",
@@ -109,22 +109,22 @@ function ReactNativeDeveloper(props) {
     {
       id: "5",
       text: "Audit and Tax Preparation Tools",
-      desc: "Built-in tools for auditing and tax preparation, including tax calculation and filing support. With Brain Inventory's accounting app solution, you'll always stay ahead of the curve. Our solution includes features for tax estimation, multiple tax parameters management, and various other tools that ease the tax preparation process.",
+      desc: "Built-in tools for auditing and tax preparation, including tax calculation and filing support. With Brain Inventory's accounting app services, you'll always stay ahead of the curve. Our solution includes features for tax estimation, multiple tax parameters management, and various other tools that ease the tax preparation process.",
     },
     {
       id: "6",
       text: "Data Import/Export",
-      desc: "Experience easy import and export of financial data from/to various formats with Brain Inventory's accounting solutions. Our tools handle common file types such as CSV, XLS, and more, simplifying the process to help you focus on leading your business forward.",
+      desc: "Experience easy import and export of financial data from/to various formats with Brain Inventory's accounting services. Our tools handle common file types such as CSV, XLS, and more, simplifying the process to help you focus on leading your business forward.",
     },
     {
       id: "7",
       text: "Training and Onboarding",
-      desc: "At Brain Inventory, we focus on building comprehensive training and onboarding programs in our accounting app solution for seamless user experience. Our team understands the complexities of the accounting system and works relentlessly to ensure your onboarding is smooth and hassle-free.",
+      desc: "At Brain Inventory, we focus on building comprehensive training and onboarding programs in our accounting app development for seamless user experience. Our team understands the complexities of the accounting system and works relentlessly to ensure your onboarding is smooth and hassle-free.",
     },
     {
       id: "8",
       text: "Automation Features",
-      desc: "Experience streamlined processes through the automation of repetitive accounting tasks with Brain Inventory. Our accounting solution development offers superior automation features that can drastically reduce manual data entry, and eliminate possible errors.",
+      desc: "Experience streamlined processes through the automation of repetitive accounting tasks with Brain Inventory. Our accounting software development offers superior automation features that can drastically reduce manual data entry, and eliminate possible errors.",
     },
   ];
   const sectionFourDesc =
@@ -158,7 +158,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const platformDesc =
-    "Welcome to Brain Inventory, your reliable partner for accounting solution development. We understand your need for an efficient, robust, and user-friendly accounting system tailored to meet your specific business requirements. Our expert developers are adept at creating accounting solutions with crucial features essential for smooth financial management. Here's a quick rundown of what you can expect from our custom-built accounting software solutions:";
+    "Welcome to Brain Inventory, your reliable partner for accounting app development. We understand your need for an efficient, robust, and user-friendly accounting system tailored to meet your specific business requirements. Our expert developers are adept at creating accounting solutions with crucial features essential for smooth financial management. Here's a quick rundown of what you can expect from our custom-built accounting software development:";
   const keyFeatures = [
     {
       head: "Double-Entry Accounting",
@@ -212,7 +212,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const keyDesc =
-    "At Brain Inventory, the focus is always on delivering innovative, efficient, and high-quality accounting solution development. This emphasis is evident in the impressive array of features that their services offer. The unique and defining elements include:";
+    "At Brain Inventory, the focus is always on delivering innovative, efficient, and high-quality accounting software development. This emphasis is evident in the impressive array of features that their services offer. The unique and defining elements include:";
   const platformDevelopment = [
     {
       head: "Expertise in Accounting Software",
@@ -300,26 +300,36 @@ function ReactNativeDeveloper(props) {
         "We assist with the software's launch and provide ongoing support to ensure it continues to meet the needs of your accounting practice and clients.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
+
   return (
     <>
       <Head>
         <title>
-          Accounting App Development Solution | Accounting App Development
-          Services
+        Custom Accounting Software Development Services
         </title>
+        <meta
+          property="description"
+          content="Brain Inventory specializes in accounting web and app development and creates efficient and user-friendly financial software tailored to your business needs."
+        />
+        <meta
+          property="og:title"
+          content="Custom Accounting Software Development Services"
+        />
+        <meta
+          property="og:description"
+          content="Brain Inventory specializes in accounting web and app development and creates efficient and user-friendly financial software tailored to your business needs."
+        />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_accounting+solution.jpg"
         />
+        <meta
+          rel="og:url"
+          content="https://braininventory.in/industry/accounting-software-development-services"
+        />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/accounting-solution-development-company"
+          href="https://braininventory.in/industry/accounting-software-development-services"
         />
       </Head>
       <Loader />
@@ -329,25 +339,23 @@ function ReactNativeDeveloper(props) {
             <SectionOne />
             <SectionTwo
               className="container pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP ACCOUNTING SOLUTION"
+              title="TOP ACCOUNTING SOFTWARE"
               head1="Pioneering Accounting Digital Frontier"
               description={sectionTwoDesc}
             />
-          {position && (
-            <>
               <SectionThree
                 title="Accounting Industry Insights"
                 setionThreeCards={setionThreeCards}
                 tableFooter = "These figures highlight the growing importance of digital platforms in modern accounting practices."
               />
-              <TiltMarquee title="AccountingSOLUTION DEVELOPMENT ✦ Accounting SOLUTION DEVELOPMENT" />
+              <TiltMarquee title="Accounting DEVELOPMENT SERVICES ✦ Accounting DEVELOPMENT SERVICES" />
               <SectionFour
-                title="Solutions for Accounting Solution Development"
+                title="Solutions for Accounting Software Development"
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
               <SectionFive
-                head="ACCOUNTING SOLUTIONS"
+                head="ACCOUNTING SOFTWARE DEVELOPMENT"
                 subhead="COMPARED TO QUICKBOOKS"
                 description={sectionFiveDesc}
                 sectionFiveTableHead={sectionFiveTableHead}
@@ -361,16 +369,16 @@ function ReactNativeDeveloper(props) {
                 btn="BUILD YOUR ACCOUNTING APP"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Mask+group.png"
               />
-              <SectionSlider data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="ACCOUNTING SOLUTION DEVELOPMENT" description={platformDesc}/>
+              <SectionSlider data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="ACCOUNTING software DEVELOPMENT services" description={platformDesc}/>
               <SectionNine
-                brand="Accounting Solution Development        "
-                pageCategory="Accounting Solution Development     "
-                pageCategoryAbbr="Accounting Solution Development       "
+                brand="Accounting App Development        "
+                pageCategory="Accounting App Development     "
+                pageCategoryAbbr="Accounting App Development       "
                 slow={70000}
                 fast={55000}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/office-workers-using-finance-graphs+1.png"
               />
-              <SectionSlider data={keyFeatures} subhead="KEY FEATURES OF" head="ACCOUNTING SOLUTION DEVELOPMENT" description={keyDesc}/>
+              <SectionSlider data={keyFeatures} subhead="KEY FEATURES OF" head="ACCOUNTING SOFTWARE DEVELOPMENT" description={keyDesc}/>
               {/* <PlatformDevelopment
                 cardPoints={keyFeatures}
                 subhead="KEY FEATURES OF"
@@ -378,7 +386,7 @@ function ReactNativeDeveloper(props) {
                 description={keyDesc}
               /> */}
               <Approach
-                title="How We Navigate Accounting Solution Development?"
+                title="How We Navigate Accounting App Development?"
                 desc={approachDesc}
                 points={approachPoints}
               />
@@ -390,8 +398,6 @@ function ReactNativeDeveloper(props) {
               <LetsKick />
               <hr />
               <Footer />
-            </>
-          )}
         </section>
       </main>
     </>

@@ -228,7 +228,7 @@ function HireAangularJsDeveloper(props) {
             subhead={chooseBiSubhead}
             alt="Hire ReactJS Developers"
           />
-          <Hello />
+          
           <Engaged />
           <HireSteps type="ReactJS" />
           <Clients tech="ReactJS" />

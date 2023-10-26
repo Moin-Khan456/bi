@@ -1,6 +1,36 @@
 const redirection = () => {
   return [
     {
+      source: "/industry/accounting-solution-development-company",
+      destination: "/industry/accounting-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/blockchain-solution-development-company",
+      destination: "/industry/blockchain-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/crm-solution-development-company",
+      destination: "/industry/crm-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/edtech-solution-development-company",
+      destination: "/industry/edtech-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/travel-solution-development-company",
+      destination: "/industry/travel-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/marketplace-solution-development-company",
+      destination: "/industry/marketplace-software-development-services",
+      permanent: true,
+    },
+    {
       source: "/industry/healthcare-solution-development-company",
       destination: "/industry/healthcare-software-development-services",
       permanent: true,

@@ -156,11 +156,11 @@ const FooterSections = [
       },
       {
         name: "TypeScript Development",
-        path: "/web-development/typescript-development-company",
+        path: "/web-development/typescript-development-services",
       },
       {
         name: "Shopify Development",
-        path: "/web-development/shopify-development-company",
+        path: "/web-development/shopify-ecommerce-software-development-services ",
       },
     ],
   },

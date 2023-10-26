@@ -328,12 +328,12 @@ const ServicesChildren = () => {
     {
       _id: 14,
       name: "TypeScript Development",
-      link: "/web-development/typescript-development-company",
+      link: "/web-development/typescript-development-services",
     },
     {
       _id: 15,
       name: "Shopify Development",
-      link: "/web-development/shopify-development-company",
+      link: "/web-development/shopify-ecommerce-software-development-services",
     },
   ];
   const mobileLinks = [

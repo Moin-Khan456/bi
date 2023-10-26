@@ -319,12 +319,12 @@ function ReactNativeDeveloper(props) {
             head1="Enabling Success through CRM"
             description={sectionTwoDesc}
           />
-          {/* <SectionThree
+          <SectionThree
             title="Insights into the CRM Development"
             sectionDesc="CRM technology is experiencing a significant surge in popularity as businesses increasingly adopt digital solutions. These solutions are not only enhancing customer interactions but also revolutionising the way companies manage and leverage their data."
             setionThreeCards={setionThreeCards}
             tableFooter="Embrace the transformative potential of CRM with Brain Inventory. Discover new perspectives and cultivate customer relations that drive success."
-          /> */}
+          />
           <TiltMarquee title="CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT" />
           <SectionFour
             title="Solutions for CRM Software Development"

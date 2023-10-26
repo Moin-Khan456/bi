@@ -184,8 +184,6 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
               <Experienced
                 title="TypeScript Development"
                 type="why"
@@ -211,8 +209,6 @@ function HireAangularJsDeveloper(props) {
               <LocateUs />
               <LetsKick />
               <Footer />
-            </>
-          )}
         </div>
       </div>
     </>

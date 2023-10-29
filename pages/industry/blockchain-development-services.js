@@ -304,6 +304,7 @@ function ReactNativeDeveloper(props) {
               title="TOP BLOCKCHAIN APP"
               head1="Shaping the Future of Blockchain"
               description={sectionTwoDesc}
+              lastSmall={true}
             />
           </div>
               <SectionThree
@@ -317,18 +318,11 @@ function ReactNativeDeveloper(props) {
                 description={sectionFourDesc}
                 solutionList={solutionList}
               />
-              {/* <SectionFive
-                head="HEALTHCARE APPLICATIONS"
-                subhead="COMPARED TO WEBMD"
-                description={sectionFiveDesc}
-                sectionFiveTableHead={sectionFiveTableHead}
-                sectionFiveTable={sectionFiveTable}
-              /> */}
               <SectionSix
             headAbove="Develop Your Own Blockchain App"
             subheadAbove="Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough."
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
-            customClasses="w-[390px] !bottom-0"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/blockchain/Mask+Group+275.png"
+            customClasses="w-[650px] min-w-[400px] max-w-[650px] !bottom-0"
             btn="BUILD YOUR BLOCKCHAIN APP"
             classText="lg:text-3xl"
             title="Ready to embark on this exciting journey? Click the button below to get started with blockchain app development."

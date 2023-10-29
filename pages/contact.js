@@ -13,13 +13,6 @@ const ContactBanner = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
-  const [position, setPosition] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  }, [position]);
   return (
     <>
       <Script
@@ -77,13 +70,11 @@ Contact us now."
       <div className="relative   ">
         <Header />
         <ContactBanner />
-        {position && (
           <span className="container">
             <Contact1 />
             <LocateUs />
             <LetsKick />
           </span>
-        )}
         <Footer />
       </div>
     </>

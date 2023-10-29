@@ -160,10 +160,10 @@ function ReactNativeDeveloper(props) {
   ];
 
   const platformDesc =
-    "As a leading name in blockchain solution development, we at Brain Inventory aim to craft solutions that drastically cut the risk of cyber attacks. Our adept blockchain developers bring to the table a profound mastery in fortifying key network and hardware requirements. We're also skilled at nullifying data tampering concerns by shaping strong and reliable blockchain solutions. Rest assured, when you choose us, you choose resilience and innovation.";
+    "At Brain Inventory, we understand the transformative power of technology in education. We provide ed-tech solution development that simplifies the learning process, enhances interaction, and promotes effective education. Here's why you should consider Brain Inventory for your ed-tech solutions.";
   const platformDevelopment = [
     {
-      head: "Expertise in Blockchain Technology",
+      head: "Content Authoring Tools",
       content:
         "At the heart of our team is a profound expertise in blockchain technology. We grasp the potential of this cutting-edge technology and skillfully apply it to create robust, secure, and innovative solutions. Our broad experience spans across developing advanced smart contracts, creating reliable dApps, and implementing custom blockchain protocols. In every project, we seek to magnify the advantages of blockchain, ensuring dependable and efficient systems.",
     },

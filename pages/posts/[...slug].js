@@ -53,10 +53,10 @@ export default function PostPage({ post, featuredMedia }) {
                 </h1>
                 <Image
                   src={featuredMedia}
-                  className="w-full"
+                  className="w-full lg:min-w-[1080px] lg:max-w-[1080px]"
                   width={900}
                   height={900}
-                  alt=""
+                  alt={post.title.rendered}
                 />
                 <span className="flex mt-2 mb-2">
                   <label className="pl-2">
@@ -71,7 +71,7 @@ export default function PostPage({ post, featuredMedia }) {
                 ></div>
               </div>
 
-              <div className="relative">
+              <div className="relative lg:w-[300px] lg:min-w-[300px] lg:max-w-[300px] lg:mt-12">
                 <span className="absolute block text-center">
                   Hire Developer
                 </span>

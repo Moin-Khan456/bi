@@ -235,32 +235,28 @@ function ReactNativeDeveloper(props) {
 
   const setionThreeCards = [
     {
-      head: "The Current Fitness Landscape",
-      content:
-        "Fitness has always been significant, but recent years have seen an unprecedented surge in its digitization. With the rise of various web and mobile solutions, the fitness sector is undergoing a remarkable transformation. Here are some statistics to support this trend:",
       points: [
-        "Global Market Value: %The fitness industry had a global market value of $100 billion in 2019.",
-        "Average Gym Membership Cost: %The average cost of a gym membership is $58 per month.",
-        "Online Fitness Users: %There were over 90 million online fitness users in 2020.",
+        "Unprecedented Growth: The global marketplace industry was USD 13,497 billion in 2022 and it is projected to experience a CAGR 13% in the timeline 2023-2030.",
+        "Emerging Technologies: Peering into the future, it's 2023 and envision an exciting marketplace landscape teeming with social commerce, honed personalization, immersive AR/VR experiences, an influx of subscription services, and a definitive shift towards sustainable and ethical shopping practices. Yet amongst this progress, two significant challenges persist.",
       ],
     },
     {
-      head: "The Impact of Online Platforms on Fitness Goals",
+      head: "Impact of Online Platforms in Marketplace",
       content:
-        "As our world becomes increasingly digital, more people are turning to online platforms to help them achieve their fitness goals. These platforms offer a wide range of resources, from workout routines to dietary plans, providing users with the tools they need to reach their desired health and fitness level. But the question remains - just how impactful are these platforms? Let’s take a look at some statistics:",
+        "With the rapid domination of online platforms in the marketplace industry, we have seen interesting changes and significant impacts on business operations and consumer behavior. Here are some key stats to understand the influence:",
       tableHead: ["Static", "Source"],
       tableContent: [
         [
-          "Over 75% of people use health and fitness solutions more than once a week.",
-          "Flurry Analytics",
+          "73% of consumers now prefer shopping online post-pandemic",
+          "Sinch",
         ],
         [
-          "Health and fitness solutions usage grew by over 330% in just three years.",
-          "Flurry Analytics",
+          "Global e-commerce market size grew to 6,310 billion USD in 2023",
+          "Statista",
         ],
         [
-          "59% of users say that they are more active due to their use of fitness solutions.",
-          "Flurry Analytics",
+          "79% of smartphone users have made a purchase online using their mobile device in the last six months",
+          "OuterBox",
         ],
       ],
     },
@@ -337,9 +333,7 @@ function ReactNativeDeveloper(props) {
         head1="Connecting Markets, Fueling Evolution"
         description={sectionTwoDesc}
       />
-      {/* <SectionThree title="Fitness Industry Insights" sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
-        technological advancements. Here are some captivating insights about the
-        fitness industry:" setionThreeCards={setionThreeCards} /> */}
+      <SectionThree title="Marketplace Industry Insights" sectionDesc="In the rapidly evolving realm of online marketplaces, maintaining a competitive edge is paramount. Here, we offer a glimpse into the most current industry insights gathered from trusted data sources." setionThreeCards={setionThreeCards} />
       <TiltMarquee title="MARKETPLACE APP DEVELOPMENT" />
       <SectionFour
         title="Solutions for Marketplace Software Development"
@@ -377,7 +371,7 @@ function ReactNativeDeveloper(props) {
         slow={70000}
         fast={45000}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Mask+group+(1).png"
-        alt="Fitness App Development Company"
+        alt="Marketplace Software Development Services"
       />
       <PlatformDevelopment
         data={keyFeatures}

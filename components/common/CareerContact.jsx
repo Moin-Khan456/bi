@@ -20,7 +20,7 @@ export default function KeepInTouch() {
     console.log(data);
     fetch("/api/contact", {
       method: "POST",
-      body: {data: JSON.stringify(data), subject: "Thank You For Contacting Us | Brain Inventory"},
+      body: {data: JSON.stringify(data), subject: "Thank You For Applying At Brain Inventory"},
     }).then(()=>{
       window.location.href = "/thank-you";
     })

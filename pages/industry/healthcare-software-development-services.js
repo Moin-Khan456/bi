@@ -325,7 +325,7 @@ function ReactNativeDeveloper(props) {
               <SectionSix
                 headAbove="Develop Your Own Healthcare Solution"
                 subheadAbove="Are you inspired by the success stories of new healthcare platforms? There's no better time than now to bring your unique idea to life in the healthcare sector. Don't be discouraged by big names like WebMD. With the right vision and execution, your concept could be the next big thing!"
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/Group+7140+(1).png"
                 alt="Custom Healthcare App Development"
                 customClasses="w-[400px] max-w-[400px]"
                 btn="BUILD YOUR HEALTHCARE APP"

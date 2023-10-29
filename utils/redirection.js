@@ -7,7 +7,7 @@ const redirection = () => {
     },
     {
       source: "/industry/blockchain-solution-development-company",
-      destination: "/industry/blockchain-software-development-services",
+      destination: "/industry/blockchain-development-services",
       permanent: true,
     },
     {

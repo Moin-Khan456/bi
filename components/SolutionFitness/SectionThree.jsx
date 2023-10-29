@@ -39,7 +39,7 @@ const SectionThree = ({
         </p>
       </div>
 
-      <leble className="container block mx-auto bg-[#121212] p-12">
+      {/* <leble className="container block mx-auto bg-[#121212] p-12">
         <table className="w-full px-12">
           <thead className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-2 lg:px-12 ">
             <tr>
@@ -75,7 +75,7 @@ const SectionThree = ({
           </tbody>
           <p className="py-4">{tableFooter ?? ""}</p>
         </table>
-      </leble>
+      </leble> */}
     </div>
   );
 };

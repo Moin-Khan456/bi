@@ -14,7 +14,7 @@ async function handleContactUsRequest(data, subject) {
             await sendMail(payload);
     
             const payload2 = {
-                to: 'd.boyat@braininventory.com',
+                to: 'askus@braininventory.com',
                 subject: 'New Inquiry',
                 html: queryToSales(data),
             }
@@ -29,11 +29,9 @@ async function handleContactUsRequest(data, subject) {
         }
     })
 }
-
-
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        handleContactUsRequest(JSON.parse(req.body)).then((resp) => {
+        handleContactUsRequest(JSON.parse(req.body.data), JSON.parse(req.body.subject)).then((resp) => {
             if (resp) {
                 res.status(200).json({ success: true })
             }

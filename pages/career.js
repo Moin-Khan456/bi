@@ -5,7 +5,7 @@ const Header = dynamic(() => import("../components/header/Header"));
 const Banner = dynamic(() => import("../components/career/banner.js"));
 const WhyWork = dynamic(() => import("../components/contacts/whyWork.js"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
+const KeepInTouch = dynamic(() => import("../components/common/CareerContact.jsx"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const MeetCrew = dynamic(() => import("../components/company/meetCrew.js"));
 const Culture = dynamic(() => import("../components/career/culture.js"));
@@ -69,9 +69,6 @@ on interesting projects!"
           <Banner />
           <WhyWork />
         </section>
-        <>
-          {loadMore && (
-            <>
               <main>
                 <MeetCrew />
                 <section className="container">
@@ -86,9 +83,6 @@ on interesting projects!"
                   <Footer />
                 </section>
               </main>
-            </>
-          )}
-        </>
       </div>
     </>
   );

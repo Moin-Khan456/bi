@@ -15,8 +15,8 @@ function Contact(props) {
       .email(<RiErrorWarningFill />)
       .required(<RiErrorWarningFill />),
     number: Yup.string()
-      .min(10)
-      .max(10)
+      .min(10, <RiErrorWarningFill/>)
+      .max(10, <RiErrorWarningFill/>)
       .required(<RiErrorWarningFill />),
     companyName: Yup.string().required(<RiErrorWarningFill />),
     feedback: Yup.string().required(<RiErrorWarningFill />),
@@ -31,7 +31,7 @@ function Contact(props) {
   const handleSubmit = (data) => {
     fetch("/api/contact", {
       method: "POST",
-      body: JSON.stringify(data),
+      body:{data: JSON.stringify(data), subject: "Thank You For Contacting Us | Brain Inventory"},
     }).then((res) => {
       console.log(res);
     });

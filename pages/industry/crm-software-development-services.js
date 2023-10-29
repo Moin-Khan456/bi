@@ -271,12 +271,7 @@ function ReactNativeDeveloper(props) {
         "You can confidently rely on our impressively skilled team, meticulously piecing together every component of your solution with utmost precision. Each component undergoes stringent checks, guaranteeing a seamless operation that not only satisfies your expectations but defies them.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
+
   return (
     <>
       <Head>
@@ -318,6 +313,7 @@ function ReactNativeDeveloper(props) {
             title="Unlock the Power of CRM Development"
             head1="Enabling Success through CRM"
             description={sectionTwoDesc}
+            notBreakable={true}
           />
           <SectionThree
             title="Insights into the CRM Development"

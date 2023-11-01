@@ -19,7 +19,7 @@ const FooterSections = [
       },
       {
         name: "Blog",
-        path: "/blog",
+        path: "/blog/1",
       },
       {
         name: "Contact Us",

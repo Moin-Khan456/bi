@@ -1,6 +1,11 @@
 const redirection = () => {
   return [
     {
+      source: "/blog",
+      destination: "/blog/1",
+      permanent: true,
+    },
+    {
       source: "/industry/accounting-solution-development-company",
       destination: "/industry/accounting-software-development-services",
       permanent: true,

@@ -7,24 +7,24 @@ import Skeleton from "./Skeleton";
 
 const Blogs = ({ pageNumber, blogs }) => {
   // const [currentPage, setCurrentPage] = useState(pageNumber);
-  const [data, setData] = useState(blogs);
-  useEffect(() => {
-    setData(null);
-    axios
-      .get(
-        `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${pageNumber}`
-      )
-      .then((res) => {
-        setData([...res.data]);
-      });
-  }, [pageNumber]);
+  // const [data, setData] = useState(blogs);
+  // useEffect(() => {
+  //   setData(null);
+  //   axios
+  //     .get(
+  //       `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${pageNumber}`
+  //     )
+  //     .then((res) => {
+  //       setData([...res.data]);
+  //     });
+  // }, [pageNumber]);
   return (
     <div className="container">
-      {data === null ? (
+      {blogs === null ? (
         <Skeleton />
       ) : (
         <>
-          {data?.map((post, index) => (
+          {blogs?.map((post, index) => (
             <Link href={`/posts/${post.slug}/${post.id}`} key={index}>
               <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
                 <div className="relative ">

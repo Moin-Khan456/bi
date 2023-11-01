@@ -1,23 +1,38 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Pagination } from 'antd';
 import {BsFillFastForwardFill} from "react-icons/bs"
 import {FaBackward} from "react-icons/fa"
-const App = ({totalPages, itemsPerPage, setCurrentPage}) => {
+import { useRouter } from 'next/router';
+import Loader from "../../components/common/loader"
+const App = ({totalPages, itemsPerPage, setCurrentPage, currentPage}) => {
   
+  const [load, setLoad] = useState(false);
+  const router = useRouter();
   const handlePaginationChange = (page, pageSize) => {
-    // You can access the selected page and page size here
+    window.scrollTo(0, 0)
     setCurrentPage(page);
-    window.scrollTo(0, 550)
-    console.log(`Page changed to ${page}, Page Size: ${pageSize}`);
-    
-    // You can perform any action or update state based on the user's interaction
-    // For example, you can make an API request to fetch data for the selected page.
+    setLoad(true);
+    router.push("/blog/"+page); 
   };
 
   return (
     <div className='flex justify-center py-12'>
+    { load ? <div className={`position-loader first-component`}>
+        <video
+          className="absolute top-0 left-0 w-full h-full object-contain scale-50 z-0 xs:rounded-b-3xl lg:rounded-r-3xl mobileContactVideo"
+          muted
+          loop
+          autoPlay={true}
+          controls={false}
+        >
+          <source
+            src="https://d1u4arv5y5eda6.cloudfront.net/videos/biloader.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div> : null }
       <Pagination
-        defaultCurrent={1}
+        defaultCurrent={currentPage}
         total={totalPages}
         pageSize={itemsPerPage}
         className="text-white"

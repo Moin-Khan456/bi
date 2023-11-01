@@ -196,7 +196,7 @@ const CompanyChildren = () => {
             </Link>
           </li>
           <li className="color-gray">
-            <Link href="/blog" className="cursor-pointer">
+            <Link href="/blog/1" className="cursor-pointer">
               Blog
             </Link>
           </li>

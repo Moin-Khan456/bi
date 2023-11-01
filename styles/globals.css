@@ -294,10 +294,7 @@ body {
   font-family: Satoshi !important;
 }
 
-. {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/project/Group 6379.png');
-  background-size: 60%;
-}
+
 
 .slug-img-container {
   max-width: 1600px;
@@ -2508,18 +2505,18 @@ a.btn-filled.btn {
 
 .first-component {
   animation-name: showFirst;
-  animation-duration: 1.8s;
+  animation-duration: 2.5s;
   animation-delay: 0s;
   height: 0px;
   overflow: hidden;
   z-index: 9999999999;
 }
 
-.  {
+.second-component  {
   animation-name: showSecond;
   animation-duration: 1.85s;
   animation-delay: 0s;
-  /* overflo  w: hidden; */
+  overflow: hidden;
 }
 
 @keyframes showFirst {

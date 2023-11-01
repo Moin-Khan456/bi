@@ -56,20 +56,7 @@ export default function Home({ data, blogs, totalPages, page }) {
         <link rel="next" href={`https://braininventory.in/blog/${currentPage !== totalPages ? Number(currentPage)+1 : ""}`} />        
         <link rel="canonical" href="https://braininventory.in/blog" />
       </Head>
-      <Suspense fallback={<div className={`position-loader first-component`}>
-        <video
-          className="absolute top-0 left-0 w-full h-full object-contain scale-50 z-0 xs:rounded-b-3xl lg:rounded-r-3xl mobileContactVideo"
-          muted
-          loop
-          autoPlay={true}
-          controls={false}
-        >
-          <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/biloader.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>}>
+      <Suspense fallback={"Loading......"}>
       <Loader/>
       <main className="relative second-component">
         <Header />
@@ -102,13 +89,9 @@ export default function Home({ data, blogs, totalPages, page }) {
   );
 }
 export async function getServerSideProps(context) {
-  const posts = {};
-  if(!posts.data){
     const response = await axios.get(
-      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10&page=${context.query.slug}`, { next: { revalidate: 3600 } }, { cache: 'force-cache' }
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`, { next: { revalidate: 3600 } }, { cache: 'force-cache' }
     );
-    posts.data = response.data
-  }
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10"
   );
@@ -116,8 +99,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      data: posts.data.slice(0, 3),
-      blogs: posts.data,
+      data: response.data.slice(0, 3),
+      blogs: response.data,
       totalPages,
       page: context.query.slug
     },

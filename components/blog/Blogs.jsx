@@ -18,6 +18,7 @@ const Blogs = ({ pageNumber, blogs }) => {
   //       setData([...res.data]);
   //     });
   // }, [pageNumber]);
+  console.log(blogs[0]["_embedded"]["wp:featuredmedia"][0].alt_text)
   return (
     <div className="container">
       {blogs === null ? (
@@ -34,11 +35,11 @@ const Blogs = ({ pageNumber, blogs }) => {
                       fetchPriority="high"
                       width={500}
                       height={500}
-                      alt=""
+                      alt={post["_embedded"]["wp:featuredmedia"][0].alt_text??"Brain Inventory exclusive content"}
                       className="w-full max-w-[450px] mx-0 my-0 lg:my-2 rounded-md "
                     />
                   </div>
-                  <div className="absolute bottom-10 left-8">
+                  <div className="absolute bottom-3 left-4">
                     <HomeButton>
                       <span className="text-sm">Read More</span>
                     </HomeButton>

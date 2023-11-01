@@ -159,6 +159,7 @@ function HireAangularJsDeveloper(props) {
             title="CodeIgniter Development"
             type="why"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+2.png"
+            alt="CodeIgniter Development Service"
             para1={subhead1}
             para2={subhead2}
             para3={subhead3}

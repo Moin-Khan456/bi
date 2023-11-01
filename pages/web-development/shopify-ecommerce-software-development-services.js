@@ -152,6 +152,7 @@ function HireAangularJsDeveloper(props) {
                 title="Shopify Development"
                 type="why"
                 image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+170.png"
+                alt="Shopify Development Company"
                 para1={subhead1}
                 para2={subhead2}
                 para3={subhead3}

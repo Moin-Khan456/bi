@@ -230,6 +230,7 @@ https://braininventory.in/hire-chatbot-developers"
             <Experienced
               title="Chatbot Developer"
               image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+2.png"
+              alt="Hire Chatbot Developers"
               para1={subhead1}
               para2={subhead2}
               para3={subhead3}

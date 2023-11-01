@@ -194,6 +194,7 @@ function HireAangularJsDeveloper(props) {
               para2={subhead2}
               card={experienceCards}
               image="https://d1u4arv5y5eda6.cloudfront.net/images/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+              alt="Hire Full Stack Developers"
             />
             <HireMarquee title="Full Stack" />
             <Advantage

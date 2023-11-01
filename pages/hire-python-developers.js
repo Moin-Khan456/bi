@@ -228,6 +228,7 @@ function HireAangularJsDeveloper(props) {
               para2={subhead2}
               card={ourDevelopersPromo}
               image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+              alt="Hire Python Developers"
             />
             <Advantage
               title="Python Developer"

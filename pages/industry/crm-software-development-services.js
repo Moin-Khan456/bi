@@ -333,6 +333,7 @@ function ReactNativeDeveloper(props) {
             description={sectionFiveDesc}
             sectionFiveTableHead={sectionFiveTableHead}
             sectionFiveTable={sectionFiveTable}
+            alt="CRM Software Development Services"
           />
           <SectionSix
             headAbove="Develop Your Own CRM App"
@@ -357,6 +358,7 @@ function ReactNativeDeveloper(props) {
             slow={70000}
             fast={55000}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
+            alt="CRM Software Development Company"
           />
           <PlatformDevelopment
             data={keyFeatures}

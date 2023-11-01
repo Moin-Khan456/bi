@@ -188,6 +188,7 @@ function HireAangularJsDeveloper(props) {
                 title="TypeScript Development"
                 type="why"
                 image="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+169.png"
+                alt="TypeScript Development Company"
                 para1={subhead1}
                 para2={subhead2}
                 para3={subhead3}

@@ -4,7 +4,6 @@ import Link from "next/link";
 const FooterSections = [
   {
     title: "About",
-    link: "/how-we-work",
     links: [
       {
         name: "Our Company",
@@ -30,7 +29,6 @@ const FooterSections = [
   },
   {
     title: "Hire Dedicated Remote Developers",
-    link: "/hire-dedicated-remote-developers",
     links: [
       {
         name: "Hire Angular Js Developers",
@@ -100,7 +98,6 @@ const FooterSections = [
   },
   {
     title: "Web App Development",
-    link: "/web-app-development",
     links: [
       {
         name: "Custom Web Development",
@@ -166,7 +163,6 @@ const FooterSections = [
   },
   {
     title: "Mobile App Development",
-    link: "/mobile-app-development",
     className: "md:whitespace-nowrap",
     links: [
       {
@@ -209,7 +205,6 @@ const FooterSections = [
   },
   {
     title: "Industry",
-    link: "/industry",
     className: "md:whitespace-nowrap",
     links: [
       {
@@ -230,7 +225,7 @@ const FooterSections = [
       {
         _id: 5,
         name: "Accounting App Development",
-        path: "/industry/aaccounting-software-development-services",
+        path: "/industry/accounting-software-development-services",
       },
       {
         _id: 6,
@@ -291,7 +286,6 @@ const FooterSections = [
   },
   {
     title: "Solutions",
-    link: "/solutions",
     className: "md:whitespace-nowrap",
     links: [
       {

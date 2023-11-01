@@ -152,6 +152,7 @@ https://braininventory.in/web-development/python-development-company"
             title="Python Development"
             type="why"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+2.png"
+            alt="Python Development Company"
             para1={subhead1}
             para2={subhead2}
             para3={subhead3}

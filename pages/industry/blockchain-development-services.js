@@ -341,6 +341,7 @@ function ReactNativeDeveloper(props) {
                 slow={70000}
                 fast={55000}
                 src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
+                alt="Blockchain Development Company"
               />
               <PlatformDevelopment
                 data={keyFeatures}

@@ -169,6 +169,7 @@ function HireAangularJsDeveloper(props) {
                 title="WordPress Website Development"
                 type="why"
                 image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+2.png"
+                alt="WordPress Website Development Company"
                 para1={subhead1}
                 para2={subhead2}
                 para3={subhead3}

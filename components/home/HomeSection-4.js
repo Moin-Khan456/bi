@@ -55,7 +55,7 @@ const info = [
       orange: "UI/UX",
       white: "Design",
     },
-    url: "/ui-ux-services",
+    url: "/",
     video: "https://d1u4arv5y5eda6.cloudfront.net/images/UIUX.mp4",
     techList: [
       {

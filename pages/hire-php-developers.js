@@ -189,6 +189,7 @@ function HireAangularJsDeveloper(props) {
           <Experienced
             title="PHP Developer"
             image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+2.png"
+            alt="Hire PHP Developers"
             para1={subhead1}
             para2={subhead2}
             card={experienceCards}

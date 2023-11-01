@@ -324,6 +324,7 @@ function ReactNativeDeveloper(props) {
                 description={sectionFiveDesc}
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
+                alt="Educational Applications Development Services"
               />
                 <SectionSix
                 title="Ready to start your journey with a transformative education platform?"

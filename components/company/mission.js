@@ -6,13 +6,13 @@ const missionType = [
     image: "1.svg",
     title: "Our Vision",
     description:
-      "We paint the bright future for the businesses working on digital landscape and firmly believe in providing productive long-term business relationships.",
+      "Pioneering software for a future that anticipates tomorrow’s needs, expands possibilities and ensures universal tech accessibility for all.",
   },
   {
     image: "2.svg",
     title: "Our Mission",
     description:
-      "We paint the bright future for the businesses working on digital landscape and firmly believe in providing productive long-term business relationships.",
+      "Deliver top-notch software empowering success in the digital era. We commit to excellence, ethics, collaboration, and attracting talent to meet evolving client needs, with a global positive impact.",
   },
 ];
 function mission() {

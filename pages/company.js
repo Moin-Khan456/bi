@@ -21,13 +21,6 @@ const MeetCrew = dynamic(() => import("../components/company/meetCrew"));
 const Loader = dynamic(() => import("../components/common/loader"));
 
 function Company() {
-  const [position, setPosition] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  }, [position]);
   return (
     <>
       <Head>
@@ -61,23 +54,19 @@ function Company() {
         <Header />
         <Video></Video>
         <Summary></Summary>
-        {position && (
-          <>
-            <div>
-              <Mission></Mission>
-              <Ethos></Ethos>
-              <Experience></Experience>
-              <MeetCrew></MeetCrew>
-            </div>
-            <Choose></Choose>
-            <BigHeadingScroll
-              text={"Perfectly balanced as all things should be."}
-            />
-            <KeepInTouch />
-            <LocateUs />
-            <LetsKick />
-          </>
-        )}
+        <div>
+          <Mission></Mission>
+          <Ethos></Ethos>
+          <Experience></Experience>
+          <MeetCrew></MeetCrew>
+        </div>
+        <Choose></Choose>
+        <BigHeadingScroll
+          text={"Perfectly balanced as all things should be."}
+        />
+        <KeepInTouch />
+        <LocateUs />
+        <LetsKick />
         <Footer />
       </div>
     </>

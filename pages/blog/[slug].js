@@ -50,7 +50,7 @@ export default function Home({ data, blogs, totalPages, page }) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/blog"
+          content="https://braininventory.in/blog/1"
         />       
         <link rel="prev" href={`https://braininventory.in/blog/${currentPage > 1 ? currentPage-1 : ""}`} />        
         <link rel="next" href={`https://braininventory.in/blog/${currentPage !== totalPages ? Number(currentPage)+1 : ""}`} />        

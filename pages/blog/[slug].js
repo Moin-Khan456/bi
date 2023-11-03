@@ -54,7 +54,7 @@ export default function Home({ data, blogs, totalPages, page }) {
         />       
         <link rel="prev" href={`https://braininventory.in/blog/${currentPage > 1 ? currentPage-1 : ""}`} />        
         <link rel="next" href={`https://braininventory.in/blog/${currentPage !== totalPages ? Number(currentPage)+1 : ""}`} />        
-        <link rel="canonical" href="https://braininventory.in/blog" />
+        <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <Suspense fallback={"Loading......"}>
       <Loader/>

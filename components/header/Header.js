@@ -538,7 +538,7 @@ const Industry = () => {
     },
     {
       _id: 7,
-      name: "Ed Tech App Provider",
+      name: "Ed Tech App Development",
       link: "/industry/edtech-software-development-services",
     },
     {

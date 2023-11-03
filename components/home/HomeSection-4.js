@@ -9,7 +9,7 @@ const info = [
       orange: "Web",
       white: "Development",
     },
-    url: "/web-app-development",
+    url: "/",
     video: "https://d1u4arv5y5eda6.cloudfront.net/images/WebDevelopment.mp4",
     techList: [
       {
@@ -32,7 +32,7 @@ const info = [
       orange: "Mobile",
       white: "Development",
     },
-    url: "/mobile-app-development",
+    url: "/",
     video: "https://d1u4arv5y5eda6.cloudfront.net/images/AppDevelopment.mp4",
     techList: [
       {

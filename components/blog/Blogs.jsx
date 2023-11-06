@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import HomeButton from "../../components/common/HomeBtn";
 import axios from "axios";
 import Link from "next/link";
@@ -63,4 +63,4 @@ const Blogs = ({ pageNumber, blogs }) => {
   );
 };
 
-export default Blogs;
+export default memo(Blogs);

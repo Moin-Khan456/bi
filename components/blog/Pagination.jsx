@@ -9,11 +9,11 @@ const App = ({totalPages, itemsPerPage, setCurrentPage, currentPage}) => {
   const [load, setLoad] = useState(false);
   const router = useRouter();
   const handlePaginationChange = (page, pageSize) => {
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
     setCurrentPage(page);
     // setLoad(true);
-    // router.push("/blog/"+page); 
-    window.location.href = "/blog/"+page
+    router.push("/blog/"+page); 
+    // window.location.href = "/blog/"+page
   };
 
   return (

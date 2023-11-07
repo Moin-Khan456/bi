@@ -11,16 +11,23 @@ import data from "./blog_dataset.json";
 import { useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
+import HireDedicatedCard from "../../components/blog/HireDedicatedCard";
+import { FiMail } from "react-icons/fi";
 
 export default function PostPage({ post, featuredMedia }) {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
+  const [localForm, setLocal] = useState(true);
 
   useEffect(() => {
     setTitle(
       data.find((ele) => ele.id === post.id)?.Title || "Brain Inventory | Blog"
     );
   }, [post.id]);
+
+  // setTimeout(()=>{
+  //   setLocal(false)
+  // }, 2000)
 
   return (
     <>
@@ -53,9 +60,9 @@ export default function PostPage({ post, featuredMedia }) {
                 </h1>
                 <Image
                   src={featuredMedia}
-                  className="w-full lg:min-w-[1080px] lg:max-w-[1080px]"
-                  width={900}
-                  height={900}
+                  className="w-full lg:min-w-[1350px] lg:max-w-[1350px]"
+                  width={1900}
+                  height={1900}
                   alt={post.title.rendered}
                 />
                 <span className="flex mt-2 mb-2">
@@ -70,7 +77,21 @@ export default function PostPage({ post, featuredMedia }) {
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 ></div>
               </div>
-
+              <div className="fixed z-50 bottom-2 right-1 justify-end w-fit">
+                {localForm ? (
+                  <HireDedicatedCard setLocal={setLocal} />
+                ) : (
+                  <div
+                    className="text-white bg-gradient-to-r from-[#000076] to-[#7600EB] p-4 rounded-full max-w-fit text-2xl m-2 ml-2 lg:m-8"
+                    onClick={() => {
+                      setLocal(true);
+                    }}
+                  >
+                    <FiMail />
+                  </div>
+                )}
+              </div>
+              {/* 
               <div className="relative lg:w-[300px] lg:min-w-[300px] lg:max-w-[300px] lg:mt-12">
                 <span className="absolute block text-center">
                   Hire Developer
@@ -95,7 +116,8 @@ export default function PostPage({ post, featuredMedia }) {
                     with 0 penalty.
                   </p>
                 </div>
-              </div>
+              </div> */}
+              {/* <HireDedicatedCard/> */}
             </div>
           </div>
         </div>

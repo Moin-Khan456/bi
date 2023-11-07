@@ -46,16 +46,6 @@ function HireAangularJsDeveloper(props) {
     }
   });
 
-  useEffect(() => {
-    if (screen.width < 700) {
-      window.addEventListener("scroll", () => {
-        setLoadComp(true);
-      });
-    } else {
-      setLoadComp(true);
-    }
-  }, []);
-
   return (
     <>
       <Head>
@@ -148,8 +138,6 @@ function HireAangularJsDeveloper(props) {
             </div>
           </div>
           {/* <SocialNetwork/> */}
-          {loadComp && (
-            <>
               <TailMatrix />
               <Network />
               <CustomSocialNetwork />
@@ -166,8 +154,6 @@ function HireAangularJsDeveloper(props) {
                   className=" w-[35%]"
                 />
               </div>
-            </>
-          )}
         </div>
       </div>
     </>

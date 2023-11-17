@@ -307,6 +307,7 @@ function ReactNativeDeveloper(props) {
           title="TOP FITNESS APP"
           head1="Reimagining Fitness with Innovation"
           description={sectionTwoDesc}
+          lastSmall={true}
         />
         <SectionThree
           title="Fitness Industry Insights"

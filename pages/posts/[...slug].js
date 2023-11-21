@@ -16,8 +16,10 @@ import { FiMail } from "react-icons/fi";
 
 export default function PostPage({ post, featuredMedia }) {
   const [title, setTitle] = useState(data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog");
-  const [discription, setDiscription] = useState(data.find((ele) => ele.id === post.id)?.description ?? "Brain Inventory | Blog");
   const [localForm, setLocal] = useState(true);
+  const [summary, setSummary] = useState(post.excerpt.rendered.split(": ")[1])
+  const [discription, setDiscription] = useState(data.find((ele) => ele.id === post.id)?.description ?? [summary.split(". ")[0], summary.split(". ")[1], ""].join(". "));
+
 
   useEffect(() => {
     setTitle(
@@ -26,6 +28,8 @@ export default function PostPage({ post, featuredMedia }) {
     setDiscription(
       data.find((ele) => ele.id === post.id)?.description || "Brain Inventory | Blog"
     );
+    setSummary(post.excerpt.rendered.split(": ")[1])
+    
   }, [post.id]);
 
   return (

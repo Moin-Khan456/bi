@@ -1,5 +1,53 @@
 [
   {
+    "S.NO": 193,
+    "Title": "Exploring the Best Python App Development Tools in 2023",
+    "description" : "Dive into the dynamic world of Python app development with our comprehensive guide to the best tools in 2023. Discover the latest technologies and frameworks shaping the Python development landscape, ensuring you stay ahead in creating powerful and efficient applications.",
+    "id": 1230
+  },
+  {
+    "S.NO": 192,
+    "Title": "The Strengths of React Native in Healthcare App Development",
+    "description" : "Explore the strengths of React Native in healthcare app development, where its native rendering capabilities enhance user experiences crucial for patient engagement. Discover how React Native efficiently supports telehealth, AI integration, IoT connectivity, and more, shaping the future of healthcare applications.",
+    "id": 1227
+  },
+  {
+    "S.NO": 191,
+    "Title": "Diving into Cutting-Edge Technologies in Mobile App Development",
+    "description" : "Explore the latest advancements in mobile app development with our comprehensive guide. From AI and machine learning to augmented reality and blockchain, discover how cutting-edge technologies are reshaping the future of mobile applications.",
+    "id": 1224
+  },
+  {
+    "S.NO": 190,
+    "Title": "Exploring the Pinnacle Shopify Development Trends in 2023",
+    "description" : "Discover the forefront of Shopify development trends in 2023. Stay ahead in the dynamic world of online retail with insights into the latest features, design approaches, and technology advancements, ensuring your Shopify store stays at the forefront of success.",
+    "id": 1221
+  },
+  {
+    "S.NO": 189,
+    "Title": "Explore The Advantages of Hiring MERN Stack Developers",
+    "description" : "Unlock the potential of your projects by hiring MERN Stack developers. Explore the advantages of tapping into the expertise of MERN Stack professionals, from streamlined development processes to robust and scalable applications.",
+    "id": 1214
+  },
+  {
+    "S.NO": 188,
+    "Title": "Anticipated Vue.js Development Tools in 2024",
+    "description" : "Explore the cutting-edge Vue.js development tools expected to make waves in 2024. With these anticipated tools, stay ahead of the curve for a seamless and efficient Vue.js development experience.",
+    "id": 1218
+  },
+  {
+    "S.NO": 187,
+    "Title": "Unlocking Success: Opting for Vue.js Developers in Your Next Project",
+    "description" : "Learn how Vue.js developer's expertise in Vue.js can elevate your project, streamline development, and deliver outstanding results. Find the perfect blend of efficiency and innovation with Vue.js specialists.",
+    "id": 1211
+  },
+  {
+    "S.NO": 186,
+    "Title": "EdTech Revolution: Transforming Education with Software Development",
+    "description" : "Discover how software development drives the EdTech revolution, reshaping the educational landscape. Explore innovative solutions and insights into leveraging technology for transformative learning experiences.",
+    "id": 1208
+  },
+  {
     "S.NO": 185,
     "Title": "AR App Development With Flutter: Complete Guide",
     "id": 1199

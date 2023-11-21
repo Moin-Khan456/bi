@@ -16,18 +16,17 @@ import { FiMail } from "react-icons/fi";
 
 export default function PostPage({ post, featuredMedia }) {
   const [title, setTitle] = useState("");
-  const [discription, setDiscription] = useState("");
+  const [discription, setDiscription] = useState(data.find((ele) => ele.id === post.id)?.description ?? "Brain Inventory | Blog");
   const [localForm, setLocal] = useState(true);
 
   useEffect(() => {
     setTitle(
       data.find((ele) => ele.id === post.id)?.Title || "Brain Inventory | Blog"
     );
+    setDiscription(
+      data.find((ele) => ele.id === post.id)?.description || "Brain Inventory | Blog"
+    );
   }, [post.id]);
-
-  // setTimeout(()=>{
-  //   setLocal(false)
-  // }, 2000)
 
   return (
     <>

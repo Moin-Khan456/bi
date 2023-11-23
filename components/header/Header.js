@@ -374,7 +374,7 @@ const ServicesChildren = () => {
     },
     {
       _id: 8,
-      name: "Modile App Integration",
+      name: "Mobile App Integration",
       link: "/mobile-development/mobile-app-integration",
     },
     {

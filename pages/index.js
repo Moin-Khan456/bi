@@ -80,7 +80,7 @@ export default function Home() {
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png" />
         <link rel="canonical" href="https://braininventory.in" />
       </Head>
       <Suspense fallback={null}>

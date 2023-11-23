@@ -51,7 +51,7 @@ export default function HowWeWork() {
           property="og:url"
           content="https://braininventory.in/how-we-work"
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png" />
         <script
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"

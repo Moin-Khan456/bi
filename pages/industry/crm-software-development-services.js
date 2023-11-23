@@ -53,32 +53,32 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How does you ensure user-friendly CRM solutions?",
+      title: "How does you ensure user-friendly CRM software?",
       description:
-        "We at Brain Inventory, a leading CRM development company prioritise user experience in our design philosophy, ensuring that our CRM solutions are intuitive and easy to use.",
+        "We at Brain Inventory, a leading CRM development company prioritise user experience in our design philosophy, ensuring that our CRM software are intuitive and easy to use.",
     },
     {
       id: "2",
       title: "How does Brain Inventory stay ahead of industry trends?",
       description:
-        "We stay informed about industry developments and continuously evolve our solutions, pushing the boundaries of CRM innovation to keep your business ahead of the curve.",
+        "We stay informed about industry developments and continuously evolve our software, pushing the boundaries of CRM innovation to keep your business ahead of the curve.",
     },
     {
       id: "3",
-      title: "Can your CRM solutions integrate with existing systems?",
+      title: "Can your CRM software integrate with existing systems?",
       description:
-        "Yes, our CRM solutions are designed for seamless integration with your current systems, minimising disruption and ensuring smooth operations.",
+        "Yes, our CRM software are designed for seamless integration with your current systems, minimising disruption and ensuring smooth operations.",
     },
     {
       id: "4",
-      title: "What support do you offer after implementing CRM solutions?",
+      title: "What support do you offer after implementing CRM software?",
       description:
-        "We at Brain Inventory, a leading CRM development company provide exceptional support and training to ensure your team maximises the benefits of our CRM solutions and can adapt quickly to the changes.",
+        "We at Brain Inventory, a leading CRM development company provide exceptional support and training to ensure your team maximises the benefits of our CRM software and can adapt quickly to the changes.",
     },
     {
       id: "5",
       title:
-        "What security measures are in place to protect customer data within your CRM solutions?",
+        "What security measures are in place to protect customer data within your CRM software?",
       description:
         "We employ industry-standard security measures to safeguard your customer data, ensuring its confidentiality and integrity, and providing peace of mind for your business operations.",
     },
@@ -121,13 +121,13 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const sectionFourDesc =
-    "Team up with us and you can take your CRM strategy to the next level. We're experts at making creative solutions that change how you handle customer relationships. Working with us isn't just about using software; it's about building a CRM experience that's exciting and makes your team stronger while building long-lasting connections with your customers.";
+    "Team up with us and you can take your CRM strategy to the next level. We're experts at making creative software that change how you handle customer relationships. Working with us isn't just about using software; it's about building a CRM experience that's exciting and makes your team stronger while building long-lasting connections with your customers.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, we excel in sculpting innovative CRM development to transform your business. Our prowess extends to creating superior tools that are not just exceptionally user-friendly but dramatically enhance your customer relationship management. With years of experience under our belt, we've mastered the art of crafting robust and significant digital solutions that you can bank upon. Partner with us and elevate your CRM experience to new heights.";
+    "At Brain Inventory, we excel in sculpting innovative CRM development to transform your business. Our prowess extends to creating superior tools that are not just exceptionally user-friendly but dramatically enhance your customer relationship management. With years of experience under our belt, we've mastered the art of crafting robust and significant digital software that you can bank upon. Partner with us and elevate your CRM experience to new heights.";
 
   const sectionFiveDesc =
-    "We find ourselves in an era of digital transformation, where online solutions are gaining ground among businesses seeking efficient ways to manage their customer relationships. While established giants like Salesforce have set the stage, we are witnessing the emergence of innovative platforms that are shaping the future of CRM. Let's delve into these rising stars:";
+    "We find ourselves in an era of digital transformation, where online software are gaining ground among businesses seeking efficient ways to manage their customer relationships. While established giants like Salesforce have set the stage, we are witnessing the emergence of innovative platforms that are shaping the future of CRM. Let's delve into these rising stars:";
 
   const sectionFiveTable = [
     ["HubSpot CRM", "Zoho CRM", "Pipedrive", "Microsoft Dynamics 365"],
@@ -140,7 +140,7 @@ function ReactNativeDeveloper(props) {
     ["Over 1 million", "Over 750,000", "Over 950,000", "Over 200,000"],
   ];
   const sectionFiveTableHead = [
-    "CRM Solutions Platform",
+    "CRM software Platform",
     "Unique Features",
     "User Base",
   ];
@@ -156,17 +156,17 @@ function ReactNativeDeveloper(props) {
     {
       head: "Mobile-Friendly CRM",
       content:
-        "Unleash the power of mobility by accessing your CRM on-the-go with our mobile-friendly solutions, dovetailing convenience with control. Our expertise in mobile-centric CRM development ensures that your customer relationship management adjusts seamlessly to handheld devices.",
+        "Unleash the power of mobility by accessing your CRM on-the-go with our mobile-friendly software, dovetailing convenience with control. Our expertise in mobile-centric CRM development ensures that your customer relationship management adjusts seamlessly to handheld devices.",
     },
     {
       head: "Agile Development Methodology",
       content:
-        "Indeed, the agile methodology ensures flexibility and adaptability, guaranteeing high performance and satisfying customer-centric software solutions. We are proponents of this methodology for our CRM solution development, providing a platform that is responsive, adaptable, and engages the evolving needs of our clients and their customers.",
+        "Indeed, the agile methodology ensures flexibility and adaptability, guaranteeing high performance and satisfying customer-centric software software. We are proponents of this methodology for our CRM solution development, providing a platform that is responsive, adaptable, and engages the evolving needs of our clients and their customers.",
     },
     {
       head: "Scalability of Services",
       content:
-        "Our CRM solution development is not just about meeting your present requirements. We go a step further to anticipate your future growth and evolving needs. That's why our solutions are designed with scalability in mind to seamlessly match your pace and business expansion strategies, ensuring robust efficiency, no matter the scale of operations.",
+        "Our CRM solution development is not just about meeting your present requirements. We go a step further to anticipate your future growth and evolving needs. That's why our software are designed with scalability in mind to seamlessly match your pace and business expansion strategies, ensuring robust efficiency, no matter the scale of operations.",
     },
   ];
   const keyDesc =
@@ -195,7 +195,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Lead Scoring",
       content:
-        "Assign scores to leads based on their potential value to boost your company's growth. Brain Inventory's CRM solutions will provide you with a powerful lead scoring tool that evaluates the worthiness of leads using a defined scoring strategy.",
+        "Assign scores to leads based on their potential value to boost your company's growth. Brain Inventory's CRM software will provide you with a powerful lead scoring tool that evaluates the worthiness of leads using a defined scoring strategy.",
     },
     {
       head: "Role-Based Access Control",
@@ -227,7 +227,7 @@ function ReactNativeDeveloper(props) {
   const setionThreeCards = [
     {
       points: [
-        "The global CRM development market size is expected to reach USD 114.4 billion by 2027, growing at a CAGR of 14.2% over the forecast period. This data further emphasises the growth and significance of custom CRM solutions for businesses in the coming years.",
+        "The global CRM development market size is expected to reach USD 114.4 billion by 2027, growing at a CAGR of 14.2% over the forecast period. This data further emphasises the growth and significance of custom CRM software for businesses in the coming years.",
         "Approximately 91% of businesses with over 11 employees now use CRM software. This suggests that the majority of businesses recognize the value of CRM systems in managing customer relationships and improving business efficiency.",
       ],
     },
@@ -248,7 +248,7 @@ function ReactNativeDeveloper(props) {
   ];
 
   const approachDesc =
-    "At Brain Inventory, our approach to building CRM solutions is rooted in understanding your goals and delivering user-centric experiences. Here's how we do it:";
+    "At Brain Inventory, our approach to building CRM software is rooted in understanding your goals and delivering user-centric experiences. Here's how we do it:";
   const approachPoints = [
     {
       head: "Unlocking the Secrets of Your Business Goals",
@@ -258,12 +258,12 @@ function ReactNativeDeveloper(props) {
     {
       head: "Staying Ahead with a Grip on Evolving Industry Trends",
       content:
-        "At Brain Inventory, we ensure to stay on the pulse of global trends and trailblazing industry innovations. It's our mission not only to keep you ahead of the curve but also to deliver solutions that blend unique novelty with practical functionality.",
+        "At Brain Inventory, we ensure to stay on the pulse of global trends and trailblazing industry innovations. It's our mission not only to keep you ahead of the curve but also to deliver software that blend unique novelty with practical functionality.",
     },
     {
       head: "Placing User Experience at the Forefront",
       content:
-        "Your user experience is at the heart of our design philosophy. We curate solutions that boast not only of effortless intuitiveness but also compelling visuals, ensuring that interactions are a breeze and a delight for your team and customers.",
+        "Your user experience is at the heart of our design philosophy. We curate software that boast not only of effortless intuitiveness but also compelling visuals, ensuring that interactions are a breeze and a delight for your team and customers.",
     },
     {
       head: "Constructing and Evaluating Your CRM Solution",
@@ -317,13 +317,13 @@ function ReactNativeDeveloper(props) {
           />
           <SectionThree
             title="Insights into the CRM Development"
-            sectionDesc="CRM technology is experiencing a significant surge in popularity as businesses increasingly adopt digital solutions. These solutions are not only enhancing customer interactions but also revolutionising the way companies manage and leverage their data."
+            sectionDesc="CRM technology is experiencing a significant surge in popularity as businesses increasingly adopt digital software. These software are not only enhancing customer interactions but also revolutionising the way companies manage and leverage their data."
             setionThreeCards={setionThreeCards}
             tableFooter="Embrace the transformative potential of CRM with Brain Inventory. Discover new perspectives and cultivate customer relations that drive success."
           />
           <TiltMarquee title="CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT  CRM SOFTWARE DEVELOPMENT" />
           <SectionFour
-            title="Solutions for CRM Software Development"
+            title="software for CRM Software Development"
             description={sectionFourDesc}
             solutionList={solutionList}
           />

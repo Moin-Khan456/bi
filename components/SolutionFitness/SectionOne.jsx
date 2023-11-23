@@ -16,7 +16,7 @@ const SectionOne = () => {
             Fitness Meets Design
           </h2>
           <p className="lg:max-w-[38%] opacity-70">
-          At Brain Inventory, we specialise in crafting bespoke solutions that revolutionise businesses and industries. With a keen focus on the fitness industry, we&apos;re here to take your business to another level.
+          At Brain Inventory, we specialise in crafting bespoke services that revolutionise businesses and industries. With a keen focus on the fitness industry, we&apos;re here to take your business to another level.
           </p>
           <button className="flex items-center font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
             LEVERAGE THE POWER OF US &nbsp;{" "}

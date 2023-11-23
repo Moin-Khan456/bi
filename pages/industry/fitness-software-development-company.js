@@ -53,25 +53,25 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What exactly is a social industry solution?",
+      title: "What exactly is a social industry services?",
       description:
         "A social industry solution is a technology or service designed to address challenges faced by organizations in the social sector. This can include nonprofits, NGOs, and public sector institutions, among others.",
     },
     {
       id: "2",
-      title: "Why should my organization consider your solutions?",
+      title: "Why should my organization consider your services?",
       description:
         "Our solutions are designed with the unique needs of the social sector in mind. We offer tools to enhance productivity, streamline operations, and foster community engagement, all to help your organization achieve its mission.",
     },
     {
       id: "3",
-      title: "Are your solutions customizable?",
+      title: "Are your services customizable?",
       description:
         "Yes, we understand that every organization is unique. Our solutions are flexible and customizable to ensure they meet your specific needs.",
     },
     {
       id: "4",
-      title: "Will I need technical skills to use your solutions?",
+      title: "Will I need technical skills to use your services?",
       description:
         "No, our solutions are user-friendly and require minimal technical skills. We also provide comprehensive training and ongoing support to ensure you feel confident using our tools.",
     },
@@ -85,7 +85,7 @@ function ReactNativeDeveloper(props) {
   const solutionList = [
     {
       id: "1",
-      text: "Personalized Workout Solution Development",
+      text: "Personalized Workout Development",
       desc: "Our innovative Personalised Workout Website and App is revolutionising the fitness world. This solution, developed with precision by our adept tech team, customises workouts based on your individual goals and preferences.",
     },
     {
@@ -95,12 +95,12 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "3",
-      text: "Nutrition and Diet Tracking Solution Development",
+      text: "Nutrition and Diet Tracking Development",
       desc: "The increasing focus on nutrition and health has put our expertise in developing Nutrition and Diet Tracking Solutions in the spotlight. We're known for crafting user-friendly, engaging, and secure solutions that empower users to keep an eye on what they eat, track their nutrition, and reach their health goals.",
     },
     {
       id: "4",
-      text: "Fitness Community and Social Solution Development",
+      text: "Fitness Community and Social Development",
       desc: "Our proficiency extends to crafting fitness development platforms for fitness communities, fostering connections and motivation within the fitness community. These applications are thoughtfully designed to ensure ease of use, seamless interaction, and an enriching user experience.",
     },
     {
@@ -120,7 +120,7 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const sectionFourDesc =
-    "By working with us, you can take your fitness services to new heights. We are pioneers in the field, creating innovative solutions that reshape the fitness sector. However, partnering with us means more than just fitness development of a website or an app. Together, we're crafting an engaging and immersive experience that empowers users and fosters high levels of engagement from the start.";
+    "By working with us, you can take your fitness services to new heights. We are pioneers in the field, creating innovative services that reshape the fitness sector. However, partnering with us means more than just fitness development of a website or an app. Together, we're crafting an engaging and immersive experience that empowers users and fosters high levels of engagement from the start.";
 
   const sectionTwoDesc =
     "Brain Inventory, a leading fitness app development company, stands at the forefront of the fitness app development arena, embodying a legacy of excellence. Our proficiency is manifest in our state-of-the-art solutions, adorned with ingenious attributes and resilient design, meticulously crafted to reshape the fitness sector.";
@@ -150,31 +150,31 @@ function ReactNativeDeveloper(props) {
   ];
 
   const platformDesc =
-    "In the universe of crafting fitness solutions, Brain Inventory shines as a catalyst for change. Our imaginative strategies, extensive expertise, and unwavering dedication to excellence converge to form robust solutions that deeply resonate with users, magnifying their fitness experiences. Here's why our partnership is transformative:";
+    "In the universe of crafting fitness development, Brain Inventory shines as a catalyst for change. Our imaginative strategies, extensive expertise, and unwavering dedication to excellence converge to form robust solutions that deeply resonate with users, magnifying their fitness experiences. Here's why our partnership is transformative:";
   const platformDevelopment = [
     {
       head: "Expert Collaborators",
       content:
-        "Need an accomplished team to steer your fitness solutions? Look no further. Our team comprises proficient individuals, each equipped with unparalleled technical prowess, poised to turn your visions into reality. We’re not just a team; we’re your adept allies on the path to excellence within the fitness industry.",
+        "Need an accomplished team to steer your fitness development? Look no further. Our team comprises proficient individuals, each equipped with unparalleled technical prowess, poised to turn your visions into reality. We’re not just a team; we’re your adept allies on the path to excellence within the fitness industry.",
     },
     {
       head: "User-Centric Approach to App Design",
       content:
-        "In the dynamic realm of fitness, agility is paramount. We grasp this importance and mold our solutions using agile development principles. Our approach is flexible, effective, and tailored to fit your unique needs, keeping pace with evolving trends and emerging technologies. Through our adaptable methodology, you receive solutions that remain relevant today and prepared for the ever-changing future.",
+        "In the dynamic realm of fitness, agility is paramount. We grasp this importance and mold our services using agile development principles. Our approach is flexible, effective, and tailored to fit your unique needs, keeping pace with evolving trends and emerging technologies. Through our adaptable methodology, you receive services that remain relevant today and prepared for the ever-changing future.",
     },
     {
       head: "User-Centric Philosophy",
       content:
-        "At the heart of our fitness technology solutions is User Satisfaction. We hold true to crafting products that not only meet but surpass user expectations, fostering trust and dependability. In the constantly evolving fitness landscape, we stand by your side as a dependable partner, committed to delivering exceptional service and inventive solutions that genuinely make a difference.",
+        "At the heart of our fitness technology development is User Satisfaction. We hold true to crafting products that not only meet but surpass user expectations, fostering trust and dependability. In the constantly evolving fitness landscape, we stand by your side as a dependable partner, committed to delivering exceptional service and inventive solutions that genuinely make a difference.",
     },
     {
       head: "User-Centric Approach to App Design",
       content:
-        "In the dynamic realm of fitness, agility is paramount. We grasp this importance and mold our solutions using agile development principles. Our approach is flexible, effective, and tailored to fit your unique needs, keeping pace with evolving trends and emerging technologies. Through our adaptable methodology, you receive solutions that remain relevant today and prepared for the ever-changing future.",
+        "In the dynamic realm of fitness, agility is paramount. We grasp this importance and mold our services using agile development principles. Our approach is flexible, effective, and tailored to fit your unique needs, keeping pace with evolving trends and emerging technologies. Through our adaptable methodology, you receive services that remain relevant today and prepared for the ever-changing future.",
     },
   ];
   const keyDesc =
-    "Embark on a journey into the realm of fitness solutions that seamlessly meld technology with well-being, ushering in a new era of user experiences. Our mission is to revolutionise the fitness horizon by seamlessly weaving in state-of-the-art technology. Through the Fitness Solution, your brand has the opportunity to flourish in this digital epoch, elevating well-being services and ultimately nurturing healthier lifestyles for everyone.";
+    "Embark on a journey into the realm of fitness development that seamlessly meld technology with well-being, ushering in a new era of user experiences. Our mission is to revolutionise the fitness horizon by seamlessly weaving in state-of-the-art technology. Through the Fitness Software, your brand has the opportunity to flourish in this digital epoch, elevating well-being services and ultimately nurturing healthier lifestyles for everyone.";
   const keyFeatures = [
     {
       head: "Effortless Workout Planning",
@@ -216,15 +216,15 @@ function ReactNativeDeveloper(props) {
       tableHead: ["Static", "Source"],
       tableContent: [
         [
-          "Over 75% of people use health and fitness solutions more than once a week.",
+          "Over 75% of people use health and fitness services more than once a week.",
           "Flurry Analytics",
         ],
         [
-          "Health and fitness solutions usage grew by over 330% in just three years.",
+          "Health and fitness development usage grew by over 330% in just three years.",
           "Flurry Analytics",
         ],
         [
-          "59% of users say that they are more active due to their use of fitness solutions.",
+          "59% of users say that they are more active due to their use of fitness service.",
           "Flurry Analytics",
         ],
       ],
@@ -233,12 +233,12 @@ function ReactNativeDeveloper(props) {
 
   const title = "How do we Approach Fitness Development?";
   const approachDesc =
-    "At Brain Inventory, we have a unique, innovative, and efficient approach towards fitness solution development that sets us apart in the digital landscape. We believe in creating fitness solutions that are tailored to the needs of our clients and their users. Our approach involves the following steps:";
+    "At Brain Inventory, we have a unique, innovative, and efficient approach towards fitness software development that sets us apart in the digital landscape. We believe in creating fitness app that are tailored to the needs of our clients and their users. Our approach involves the following steps:";
   const approachPoints = [
     {
       head: "Understanding the Client’s Vision",
       content:
-        "Our first step in fitness solution development is gaining a deep understanding of our client’s business objectives and vision for their solutions. We believe every solution should be a direct reflection of the client’s brand and goals.",
+        "Our first step in fitness software development is gaining a deep understanding of our client’s business objectives and vision for their solutions. We believe every services should be a direct reflection of the client’s brand and goals.",
     },
     {
       head: "Research and Analysis",
@@ -263,7 +263,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Launch and Post-Launch Support",
       content:
-        "After the successful testing phase, we launch the solution on the required platforms. Post-launch, we provide continuous support and updates to keep the technology relevant and functioning flawlessly.",
+        "After the successful testing phase, we launch the app on the required platforms. Post-launch, we provide continuous support and updates to keep the technology relevant and functioning flawlessly.",
     },
   ];
 
@@ -331,7 +331,7 @@ function ReactNativeDeveloper(props) {
           alt="Fitness App Development Company"
         />
         <SectionSix
-          headAbove="Develop Your Own Social Solution"
+          headAbove="Develop Your Own Fitness Software"
           subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/Group+7140.png"
           alt="Custom Fitness App Development Services"
@@ -348,9 +348,9 @@ function ReactNativeDeveloper(props) {
           description={platformDesc}
         />
         <SectionNine
-          brand="FITNESS SOLUTION DEVELOPMENT       "
-          pageCategory="FITNESS SOLUTION DEVELOPMENT    "
-          pageCategoryAbbr="FITNESS SOLUTION DEVELOPMENT      "
+          brand="FITNESS SOFTWARE DEVELOPMENT       "
+          pageCategory="FITNESS SOFTWARE DEVELOPMENT    "
+          pageCategoryAbbr="FITNESS SOFTWARE DEVELOPMENT      "
           slow={70000}
           fast={45000}
           src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/fitness/woman-training-with-barbell-shoulders.png"

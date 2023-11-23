@@ -11,7 +11,7 @@ export default function HireBanner() {
             Accounting, Redefined by Innovation
             </h2>
             <h2 className="text-sm font-Satoshi lg:opacity-50 font-extrabold lg:font-normal mt-48 lg:mt-0 leading-7 mb-4">
-            Welcome to Brain Inventory - your one-stop solution for state-of-the-art accounting solutions! Excel beyond boundaries, streamline your financial tasks like never before with our cutting-edge accounting tools.
+            Welcome to Brain Inventory - your one-stop solution for state-of-the-art accounting software! Excel beyond boundaries, streamline your financial tasks like never before with our cutting-edge accounting tools.
             </h2>
           </section>
           <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">

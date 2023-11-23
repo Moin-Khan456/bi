@@ -50,7 +50,7 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What type of solutions does Brain Inventory specialize in?",
+      title: "What type of software does Brain Inventory specialize in?",
       description:
         "We specialize in creating highly functional, user-friendly apps for both Android and iOS platforms, and websites.",
     },
@@ -62,7 +62,7 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "3",
-      title: "How do you ensure the quality of the solutions developed?",
+      title: "How do you ensure the quality of the software developed?",
       description:
         "We follow a structured development process and carry out extensive testing to ensure the highest quality of our solutions.",
     },
@@ -108,7 +108,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "6",
       text: "IoT and AI Integration",
-      desc: "Explore blockchain's true potential by incorporating the Internet of Things (IoT) and Artificial Intelligence (AI) technologies with Brain Inventory's blockchain app development solutions. Our skillful team of developers can make IoT devices function as blockchain nodes, transferring data securely through cryptographic means.",
+      desc: "Explore blockchain's true potential by incorporating the Internet of Things (IoT) and Artificial Intelligence (AI) technologies with Brain Inventory's blockchain app development services. Our skillful team of developers can make IoT devices function as blockchain nodes, transferring data securely through cryptographic means.",
     },
     {
       id: "7",
@@ -118,14 +118,14 @@ function ReactNativeDeveloper(props) {
     {
       id: "8",
       text: "Private Blockchain Development",
-      desc: "At Brain Inventory, we specialize in developing secure, permissioned blockchain networks for businesses. With our expertise in leading blockchain technologies, we deliver customized solutions tailored to your business needs.",
+      desc: "At Brain Inventory, we specialize in developing secure, permissioned blockchain networks for businesses. With our expertise in leading blockchain technologies, we deliver customized apps tailored to your business needs.",
     },
   ];
   const sectionFourDesc =
-    "Welcome to Brain Inventory, where we weave technology and innovation together to bring you industry-leading blockchain solutions. We are a technologically advanced mobile application and website development company, committed to pushing the boundaries of blockchain technology. With a team of experts armed with years of experience in blockchain development, we guarantee to deliver high-grade and reliable solutions for your business, irrespective of size and industry sector.";
+    "Welcome to Brain Inventory, where we weave technology and innovation together to bring you industry-leading blockchain services. We are a technologically advanced mobile application and website development company, committed to pushing the boundaries of blockchain technology. With a team of experts armed with years of experience in blockchain development, we guarantee to deliver high-grade and reliable software for your business, irrespective of size and industry sector.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, a leading blockchain development company, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge solution development services by creating secure, efficient, and customized blockchain platforms.";
+    "At Brain Inventory, a leading blockchain development company, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge software development services by creating secure, efficient, and customized blockchain platforms.";
 
   const sectionFiveDesc =
     "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let’s take a closer look at some of these contenders:";
@@ -157,7 +157,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Cross-Chain Compatibility",
       content:
-        "At Brain Inventory, we're dedicated to building solutions that bridge different blockchain ecosystems. We offer custom blockchain development services that cater to your specific business needs, enhancing your operational efficiency and boosting your business value.",
+        "At Brain Inventory, we're dedicated to building services that bridge different blockchain ecosystems. We offer custom blockchain development services that cater to your specific business needs, enhancing your operational efficiency and boosting your business value.",
     },
     {
       head: "Proven Blockchain Expertise",
@@ -186,7 +186,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Transparent Ledger",
       content:
-        "The powerful solution Brain Inventory provides is a tamper-proof and transparent ledger to secure all your transactions. Our user-friendly blockchain interface will ensure that you can easily track your transactions.",
+        "The powerful services Brain Inventory provides is a tamper-proof and transparent ledger to secure all your transactions. Our user-friendly blockchain interface will ensure that you can easily track your transactions.",
     },
     {
       head: "Immutable Records",
@@ -196,7 +196,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Transparent Ledger",
       content:
-        "The powerful solution Brain Inventory provides is a tamper-proof and transparent ledger to secure all your transactions. Our user-friendly blockchain interface will ensure that you can easily track your transactions.",
+        "The powerful services Brain Inventory provides is a tamper-proof and transparent ledger to secure all your transactions. Our user-friendly blockchain interface will ensure that you can easily track your transactions.",
     },
   ];
 
@@ -259,7 +259,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Deployment & Support",
       content:
-        "After the solution is fully tested and approved, we deploy it to the desired platform. But our job doesn't end there. We continue to provide support and updates as needed to keep your platform running smoothly.",
+        "After the app is fully tested and approved, we deploy it to the desired platform. But our job doesn't end there. We continue to provide support and updates as needed to keep your platform running smoothly.",
     },
   ];
   return (

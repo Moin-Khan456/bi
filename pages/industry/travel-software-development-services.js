@@ -61,13 +61,13 @@ function ReactNativeDeveloper(props) {
     {
       id: "2",
       title:
-        "What makes Brain Inventory's solutions stand out in the travel industry?",
+        "What makes Brain Inventory's services stand out in the travel industry?",
       description:
         "Our solutions are driven by cutting-edge technology and tailored to meet client and traveler needs.",
     },
     {
       id: "3",
-      title: "Do you offer support after the solution is launched?",
+      title: "Do you offer support after the application is launched?",
       description:
         "Yes, we provide ongoing support and enhancements to ensure your solution remains optimized and adaptable.",
     },
@@ -80,7 +80,7 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "5",
-      title: "Can your solution integrate with existing travel partners?",
+      title: "Can your service integrate with existing travel partners?",
       description:
         "Yes, we seamlessly integrate with airlines, hotels, and other travel partners to expand travel options and exclusive deals.",
     },
@@ -88,7 +88,7 @@ function ReactNativeDeveloper(props) {
   const solutionList = [
     {
       id: "1",
-      text: "E-ticketing Operations Solution",
+      text: "E-ticketing Operations Development",
       desc: "We create simple and user-friendly systems for managing your airline, train, or bus e-ticketing operations.",
     },
     {
@@ -99,17 +99,17 @@ function ReactNativeDeveloper(props) {
     {
       id: "3",
       text: "Booking & Reservation System",
-      desc: "Navigate effortlessly through our intricate booking & reservation system. Providing seamless, efficient travel solutions.",
+      desc: "Navigate effortlessly through our intricate booking & reservation system. Providing seamless, efficient travel software.",
     },
     {
       id: "4",
-      text: "Travel Management Solution",
-      desc: "Our Travel Portal Solution streamlines planning, booking, and expense tracking for unparalleled travel convenience.",
+      text: "Travel Management Software",
+      desc: "Our Travel Portal Services streamlines planning, booking, and expense tracking for unparalleled travel convenience.",
     },
     {
       id: "5",
-      text: "Airline Operations Management Solution",
-      desc: "At Brain Inventory, we pride ourselves in developing custom travel software solutions that streamline airline operations.",
+      text: "Airline Operations Management Development",
+      desc: "At Brain Inventory, we pride ourselves in developing custom travel software development that streamline airline operations.",
     },
     {
       id: "6",
@@ -118,22 +118,22 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "7",
-      text: "Dynamic Pricing Algorithm Solution",
-      desc: "One of our innovative travel portal solutions includes developing algorithms attuned to pricing. These algorithms are designed to meticulously adjust prices smartly in real-time, relying on factors like demand, time, and user behavior.",
+      text: "Dynamic Pricing Algorithm Services",
+      desc: "One of our innovative travel portal services includes developing algorithms attuned to pricing. These algorithms are designed to meticulously adjust prices smartly in real-time, relying on factors like demand, time, and user behavior.",
     },
     {
       id: "8",
-      text: "Cab Booking Management Solution",
-      desc: "At Brain Inventory, our Cab Booking Management Solution delivers an intuitive, user-friendly experience. This top-notch travel portal development company will revolutionize how you manage your taxi business.",
+      text: "Cab Booking Management Services",
+      desc: "At Brain Inventory, our Cab Booking Management Service delivers an intuitive, user-friendly experience. This top-notch travel portal development company will revolutionize how you manage your taxi business.",
     },
     {
       id: "9",
-      text: "Trip Itinerary Creation Solution",
+      text: "Trip Itinerary Creation Services",
       desc: "Creating an effective trip itinerary seems daunting, doesn't it? As a traveler, you are dealing with different time zones, languages, cultures, and more - the last thing you need is a complex booking process.",
     },
   ];
   const sectionFourDesc =
-    "Joining forces with us will elevate your travel portal solution to soaring success. As pioneers in the field, we specialize in crafting groundbreaking solutions that redefine the travel industry. But our collaboration isn't just about building a website or app; it's about co-creating an immersive travel adventure that empowers travelers and ignites excitement from the very beginning.";
+    "Joining forces with us will elevate your travel portal software to soaring success. As pioneers in the field, we specialize in crafting groundbreaking apps that redefine the travel industry. But our collaboration isn't just about building a website or app; it's about co-creating an immersive travel adventure that empowers travelers and ignites excitement from the very beginning.";
 
   const sectionTwoDesc =
     "Deciding to hire Brain Inventory for your travel software development needs is a game-changing move. We're not just another software development company; we are a team of seasoned experts who will transform your vision into reality.";
@@ -162,17 +162,17 @@ function ReactNativeDeveloper(props) {
     {
       head: "Mobile-First Approach",
       content:
-        "At Brain Inventory, we use a mobile-first approach to develop splendid travel solution websites. This strategy allows us to prioritize the design and development of mobile platforms, ensuring a phenomenal user experience irrespective of the device. ",
+        "At Brain Inventory, we use a mobile-first approach to develop splendid travel software websites. This strategy allows us to prioritize the design and development of mobile platforms, ensuring a phenomenal user experience irrespective of the device. ",
     },
     {
       head: "Machine Learning for Personalization",
       content:
-        "Brain Inventory leverages Machine Learning to deliver highly personalized, user-centric web and mobile solutions. This helps you reach a wider audience and provide more attractive offerings.",
+        "Brain Inventory leverages Machine Learning to deliver highly personalized, user-centric web and mobile services. This helps you reach a wider audience and provide more attractive offerings.",
     },
     {
       head: "Chatbots and AI Assistants",
       content:
-        "At Brain Inventory, we envisage your travel solution with AI-driven chatbots, enhancing user experiences and ensuring 24/7 virtual support.",
+        "At Brain Inventory, we envisage your travel software with AI-driven chatbots, enhancing user experiences and ensuring 24/7 virtual support.",
     },
     {
       head: "Customer Reviews and Ratings Integration",
@@ -236,12 +236,12 @@ function ReactNativeDeveloper(props) {
     {
       head: "Integration with Airlines, Hotels, and Rental Car Services",
       content:
-        "In today's digital age, integrating your travel solution with airlines, hotels, and rental car services is not just an option, but a necessity. At Brain Inventory, we understand this need and offer effective and reliable travel solution integrations. ",
+        "In today's digital age, integrating your travel software with airlines, hotels, and rental car services is not just an option, but a necessity. At Brain Inventory, we understand this need and offer effective and reliable travel software integrations. ",
     },
     {
       head: "Virtual Reality (VR) and Augmented Reality (AR) Experiences",
       content:
-        "At Brain Inventory, we specialize in providing comprehensive travel solutions, meticulously designed to meet every aspect of your business needs. Our expertise ranges from crafting interactive and user-friendly travel solutions for E-ticketing operations, hotel and cab bookings, to innovative tools for unique itinerary generation.",
+        "At Brain Inventory, we specialize in providing comprehensive travel services, meticulously designed to meet every aspect of your business needs. Our expertise ranges from crafting interactive and user-friendly travel software for E-ticketing operations, hotel and cab bookings, to innovative tools for unique itinerary generation.",
     },
   ];
 
@@ -255,7 +255,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Impact of Online Platforms in Travel Industry",
       content:
-        "In today's digital era, travelers are increasingly relying on technology to enhance their travel experiences. These tech-driven solutions offer a wide range of resources, from personalized itineraries to real-time updates, empowering travelers to explore the world with ease.",
+        "In today's digital era, travelers are increasingly relying on technology to enhance their travel experiences. These tech-driven services offer a wide range of resources, from personalized itineraries to real-time updates, empowering travelers to explore the world with ease.",
       tableHead: ["Statistic"],
       tableContent: [
         [
@@ -269,22 +269,22 @@ function ReactNativeDeveloper(props) {
   ];
 
   const approachDesc =
-    "At Brain Inventory, our approach to building travel services is unique and effective. We aim to create solutions that fit our clients' needs and the aspirations of travelers who will use them. Here's how we do it:";
+    "At Brain Inventory, our approach to building travel services is unique and effective. We aim to create software that fit our clients' needs and the aspirations of travelers who will use them. Here's how we do it:";
   const approachPoints = [
     {
       head: "Client-Centric Collaboration",
       content:
-        "We initiate our journey by engaging in a collaborative dialogue with our clients. Understanding their vision, objectives, and unique identity is our foremost priority. This forms the bedrock upon which we craft customized solutions that align seamlessly with their aspirations.",
+        "We initiate our journey by engaging in a collaborative dialogue with our clients. Understanding their vision, objectives, and unique identity is our foremost priority. This forms the bedrock upon which we craft customized services that align seamlessly with their aspirations.",
     },
     {
       head: "Innovation Informed by Global Insights",
       content:
-        "We remain globally attuned to the dynamic landscape of travel. Our approach is enriched by insights from worldwide travel trends and industry developments. By incorporating the latest innovations, we not only stay relevant but also inspire novel and effective solutions.",
+        "We remain globally attuned to the dynamic landscape of travel. Our approach is enriched by insights from worldwide travel trends and industry developments. By incorporating the latest innovations, we not only stay relevant but also inspire novel and effective services.",
     },
     {
       head: "Elevating User Experience",
       content:
-        "User experience is the cornerstone of our design ethos. Our commitment lies in creating intuitive, user-friendly, and visually captivating solutions. We aim to transform interaction with our solutions into an effortless and enjoyable experience for clients and travelers alike.",
+        "User experience is the cornerstone of our design ethos. Our commitment lies in creating intuitive, user-friendly, and visually captivating software. We aim to transform interaction with our solutions into an effortless and enjoyable experience for clients and travelers alike.",
     },
     {
       head: "Crafting Perfection",
@@ -338,7 +338,7 @@ function ReactNativeDeveloper(props) {
                 sectionDesc="Travel is an ever-evolving industry that embraces technological advancements at a rapid pace. Here are some fascinating insights about the travel industry:"
                 setionThreeCards={setionThreeCards}
               />
-              <TiltMarquee title="Travel Solution Development ✦ Travel Solution Development" />
+              <TiltMarquee title="Travel Software Development ✦ Travel Software Development" />
               <SectionFour
                 title="Solutions for Travel Software Development For Travel Industry"
                 description={sectionFourDesc}
@@ -355,7 +355,7 @@ function ReactNativeDeveloper(props) {
                 title="Ready to embark on your journey with a game-changing travel portal development company? "
                 customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
                 classText="!text-[2rem]"
-                btn="BUILD YOUR TRAVEL-TECH SOLUTION"
+                btn="BUILD YOUR TRAVEL-TECH SOFTWARE"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+group+(2).png"
               />
 

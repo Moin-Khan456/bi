@@ -53,7 +53,7 @@ function ReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Do you offer customized solution development?",
+      title: "Do you offer customized software development?",
       description:
         "Yes, indeed! One of our specialties at Brain Inventory is ecommerce development tailored to fit your business needs and requirements. We don't believe in a one-size-fits-all approach. Your business is unique and so should your app be.",
     },
@@ -90,8 +90,8 @@ function ReactNativeDeveloper(props) {
     },
     {
       id: "2",
-      text: "Multi-Vendor Marketplace Solutions",
-      desc: "We're committed to building platforms that empower multiple vendors to list and sell their products or services. Our solutions include advanced multi vendor marketplace management tools, commission tracking, and effective dispute resolution systems, to ensure your marketplace operates seamlessly and efficiently.",
+      text: "Multi-Vendor Marketplace Development",
+      desc: "We're committed to building platforms that empower multiple vendors to list and sell their products or services. Our services include advanced multi vendor marketplace management tools, commission tracking, and effective dispute resolution systems, to ensure your marketplace operates seamlessly and efficiently.",
     },
     {
       id: "3",
@@ -106,7 +106,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "5",
       text: "Customer Support and Messaging",
-      desc: "Integrating chat systems, messaging platforms, and customer support solutions enhances communication between buyers, sellers, and the platform itself, stimulating seamless interactions for improved marketplace productivity.",
+      desc: "Integrating chat systems, messaging platforms, and customer support services enhances communication between buyers, sellers, and the platform itself, stimulating seamless interactions for improved marketplace productivity.",
     },
     {
       id: "6",
@@ -116,7 +116,7 @@ function ReactNativeDeveloper(props) {
     {
       id: "7",
       text: "Localization and Internationalization",
-      desc: "At Brain Inventory, we offer support for multiple languages, currencies, and regional customization, targeting a diverse and global audience with our marketplace solutions.",
+      desc: "At Brain Inventory, we offer support for multiple languages, currencies, and regional customization, targeting a diverse and global audience with our marketplace softwares.",
     },
     {
       id: "8",
@@ -125,10 +125,10 @@ function ReactNativeDeveloper(props) {
     },
   ];
   const sectionFourDesc =
-    "Unleash the potential of online marketplace software development in partnership with us. We are pioneers in crafting revolutionary solutions that redefine the online marketplace landscape. With our collaboration, you're not simply creating a website or an app; you're crafting a seamless shopping experience that enthralls and immerses users right from the beginning.";
+    "Unleash the potential of online marketplace software development in partnership with us. We are pioneers in crafting revolutionary services that redefine the online marketplace landscape. With our collaboration, you're not simply creating a website or an app; you're crafting a seamless shopping experience that enthralls and immerses users right from the beginning.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, we transcend the role of a mere online marketplace software development company. We are visionary technology partners on a mission to empower industries with cutting-edge online marketplace solutions. Our core competence revolves around crafting bespoke applications that not only facilitate seamless commerce and engagement but also revolutionize the very fabric of business connections.";
+    "At Brain Inventory, we transcend the role of a mere online marketplace software development company. We are visionary technology partners on a mission to empower industries with cutting-edge online marketplace software. Our core competence revolves around crafting bespoke applications that not only facilitate seamless commerce and engagement but also revolutionize the very fabric of business connections.";
 
   const sectionFiveDesc =
     "Despite Amazon's dominance in the online marketplace landscape, a growing number of new platforms are carving out their niches, each offering unique features and user experiences. Let's take a look at how these newcomers are faring against the industry giant.";
@@ -155,17 +155,17 @@ function ReactNativeDeveloper(props) {
   ];
 
   const platformDesc =
-    "At Brain Inventory, we specialize in building world-class marketplace solutions designed to help your business thrive in the digital economy. With our extensive expertise, we craft custom marketplace development that foster effective buying and selling of goods or services. We understand the unique demands of a diverse clientele and are committed to transforming your business vision into a dynamic, scalable, and profitable marketplace development.";
+    "At Brain Inventory, we specialize in building world-class marketplace software designed to help your business thrive in the digital economy. With our extensive expertise, we craft custom marketplace development that foster effective buying and selling of goods or services. We understand the unique demands of a diverse clientele and are committed to transforming your business vision into a dynamic, scalable, and profitable marketplace development.";
   const platformDevelopment = [
     {
       head: "Expertise in Marketplace Development",
       content:
-        "Brain Inventory has a proven track record of expertise in developing successful marketplace solutions. Through our custom marketplace development process, we cater to a wide array of industries, delivering secure and scalable multi-vendor marketplace platforms.",
+        "Brain Inventory has a proven track record of expertise in developing successful marketplace software. Through our custom marketplace development process, we cater to a wide array of industries, delivering secure and scalable multi-vendor marketplace platforms.",
     },
     {
       head: "Multi-Vendor Expertise",
       content:
-        "We specialize in building multi vendor marketplaces that can scale and support numerous sellers. With our sophisticated solutions, we ensure a seamless shopping experience for your customers while providing vendors with an intuitive platform for managing their online stores.",
+        "We specialize in building multi vendor marketplaces that can scale and support numerous sellers. With our sophisticated services, we ensure a seamless shopping experience for your customers while providing vendors with an intuitive platform for managing their online stores.",
     },
     {
       head: "Advanced Security Measures",
@@ -180,7 +180,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Cross-platform Compatibility",
       content:
-        "We are committed to building solutions that work seamlessly on various operating systems. At Brain Inventory, we excel in engineering marketplace solutions that operate flawlessly across multiple platforms.",
+        "We are committed to building software that work seamlessly on various operating systems. At Brain Inventory, we excel in engineering marketplace softwares that operate flawlessly across multiple platforms.",
     },
   ];
   const keyDesc =
@@ -274,7 +274,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Strategy and Planning",
       content:
-        "We then create a comprehensive strategy and plan for your solution. This includes deciding on the features and functionalities that would be most beneficial for your users.",
+        "We then create a comprehensive strategy and plan for your software development. This includes deciding on the features and functionalities that would be most beneficial for your users.",
     },
     {
       head: "Design and Development",
@@ -284,12 +284,12 @@ function ReactNativeDeveloper(props) {
     {
       head: "Testing and Quality Assurance",
       content:
-        "We don't just deliver a solution; we deliver a high-quality product. Therefore, we rigorously test your solution for any bugs or issues and fix them before launch.",
+        "We don't just deliver a services; we deliver a high-quality product. Therefore, we rigorously test your app for any bugs or issues and fix them before launch.",
     },
     {
       head: "Launch and Support",
       content:
-        "Once your solution is ready, we assist with its launch and provide ongoing support to ensure it continues to perform well and meet the needs of your users.",
+        "Once your software is ready, we assist with its launch and provide ongoing support to ensure it continues to perform well and meet the needs of your users.",
     }
   ];
 

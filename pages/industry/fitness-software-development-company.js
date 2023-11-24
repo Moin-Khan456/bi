@@ -86,17 +86,17 @@ function ReactNativeDeveloper(props) {
     {
       id: "1",
       text: "Personalized Workout Development",
-      desc: "Our innovative Personalised Workout Website and App is revolutionising the fitness world. This solution, developed with precision by our adept tech team, customises workouts based on your individual goals and preferences.",
+      desc: "Our innovative Personalised Workout Website and App is revolutionising the fitness world. This software, developed with precision by our adept tech team, customises workouts based on your individual goals and preferences.",
     },
     {
       id: "2",
-      text: "Virtual Fitness Coaching Solution Development",
+      text: "Virtual Fitness Coaching Development",
       desc: "Creating custom virtual fitness training programs is now easier than ever. Our team uses the latest technology to develop websites and apps that link users with professional fitness coaches.",
     },
     {
       id: "3",
       text: "Nutrition and Diet Tracking Development",
-      desc: "The increasing focus on nutrition and health has put our expertise in developing Nutrition and Diet Tracking Solutions in the spotlight. We're known for crafting user-friendly, engaging, and secure solutions that empower users to keep an eye on what they eat, track their nutrition, and reach their health goals.",
+      desc: "The increasing focus on nutrition and health has put our expertise in developing Nutrition and Diet Tracking Software in the spotlight. We're known for crafting user-friendly, engaging, and secure services that empower users to keep an eye on what they eat, track their nutrition, and reach their health goals.",
     },
     {
       id: "4",
@@ -165,7 +165,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "User-Centric Philosophy",
       content:
-        "At the heart of our fitness technology development is User Satisfaction. We hold true to crafting products that not only meet but surpass user expectations, fostering trust and dependability. In the constantly evolving fitness landscape, we stand by your side as a dependable partner, committed to delivering exceptional service and inventive solutions that genuinely make a difference.",
+        "At the heart of our fitness technology development is User Satisfaction. We hold true to crafting products that not only meet but surpass user expectations, fostering trust and dependability. In the constantly evolving fitness landscape, we stand by your side as a dependable partner, committed to delivering exceptional service and inventive software that genuinely make a difference.",
     },
     {
       head: "User-Centric Approach to App Design",
@@ -179,7 +179,7 @@ function ReactNativeDeveloper(props) {
     {
       head: "Effortless Workout Planning",
       content:
-        "The Fitness Solution streamlines workout planning. Users can easily explore customized workout routines, select preferred exercises, and schedule sessions with just a few taps. This feature enhances user convenience and optimizes their fitness journey, ensuring efficient time utilization.",
+        "The Fitness Software streamlines workout planning. Users can easily explore customized workout routines, select preferred exercises, and schedule sessions with just a few taps. This feature enhances user convenience and optimizes their fitness journey, ensuring efficient time utilization.",
     },
     {
       head: "Real-time Virtual Coaching",

@@ -66,7 +66,7 @@ export default function Home() {
           property="og:description"
           content="Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe."
         />
-        <meta property="og:url" content="https://braininventory.in/" />
+        <meta property="og:url" content="https://braininventory.in" />
         <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/home_preview.png"
@@ -83,6 +83,25 @@ export default function Home() {
           "@context": "https://schema.org",
           "@type": "ImageObject",
           "url": "https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_homepage+preview+image.png",
+          "width": 800,
+          "height": 600,
+          "alt": "Custom Software Development Company",
+          "caption": "Custom Software Development Company"
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Brain Inventory",
+          "alternateName": "Brain Inventory Pvt Ltd",
+          "url": "https://braininventory.in",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://braininventory.in/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
           "width": 800,
           "height": 600,
           "alt": "Custom Software Development Company",

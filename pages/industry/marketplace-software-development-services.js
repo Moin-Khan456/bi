@@ -321,7 +321,7 @@ function ReactNativeDeveloper(props) {
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/marketplace-solution-development-company"
+          href="https://braininventory.in/industry/marketplace-software-development-services"
         />
       </Head>
       <Loader />

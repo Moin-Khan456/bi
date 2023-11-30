@@ -62,12 +62,32 @@ export default function Hirededicatedremotedevelopers(props) {
             name="description"
             content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
           />
+          <meta
+            name="og:title"
+            content="Hire Dedicated Remote Developer | Brain Inventory"
+          />
+          <meta
+            name="og:description"
+            content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
+          />
+          {/* <meta
+            property="og:image"
+            content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_marketplace.jpg"
+          /> */}
+          <meta
+            property="og:url"
+            content="https://braininventory.in/hire-dedicated-remote-developers"
+          />
+          <link
+            rel="canonical"
+            href="https://braininventory.in/hire-dedicated-remote-developers"
+          />
         </Head>
         <Header />
         <StaffBanner />
         <Staform />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-          <div className="container">
+          <div className="container lg:px-24">
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
               alt=""
@@ -82,7 +102,7 @@ export default function Hirededicatedremotedevelopers(props) {
         <OnboardingProcess />
         <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/Comp1.gif"
-          alt=""
+          alt="Less than 3 month we serve the quality work"
           width={500}
           height={500}
           className="w-full"
@@ -98,10 +118,10 @@ export default function Hirededicatedremotedevelopers(props) {
               height={500}
               className="w-full"
             />
+            <StaffPratice />
+            <Logo />
           </div>
         </div>
-        <StaffPratice />
-        <Logo />
         <Faq faq={faqdetails} />
         <KeepInTouch />
         <LocateUs />

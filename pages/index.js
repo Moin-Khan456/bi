@@ -79,6 +79,15 @@ export default function Home() {
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ImageObject",
+          "url": "https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_homepage+preview+image.png",
+          "width": 800,
+          "height": 600,
+          "alt": "Custom Software Development Company",
+          "caption": "Custom Software Development Company"
+        }) }} />
 
         <link rel="icon" href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png" />
         <link rel="canonical" href="https://braininventory.in" />

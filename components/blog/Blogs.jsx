@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { memo, useEffect, useState } from "react";
 import HomeButton from "../../components/common/HomeBtn";
-import axios from "axios";
+import { getDate } from "../../utils/utils";
 import Link from "next/link";
 import Skeleton from "./Skeleton";
 
@@ -18,7 +18,7 @@ const Blogs = ({ pageNumber, blogs }) => {
   //       setData([...res.data]);
   //     });
   // }, [pageNumber]);
-  console.log(blogs[0]["_embedded"]["wp:featuredmedia"][0].alt_text)
+  // console.log(blogs[0])
   return (
     <div className="container">
       {blogs === null ? (
@@ -53,6 +53,13 @@ const Blogs = ({ pageNumber, blogs }) => {
                     className="text-sm mt-2 blog-card-content text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
                   />
+                {/* <span className="flex mt-2 mb-2">
+                  <label>
+                    <small className="text-sm color-gray">
+                      {getDate(post.modified)}
+                    </small>
+                  </label>
+                </span> */}
                 </div>
               </div>
             </Link>

@@ -312,18 +312,18 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Edtech Software Development Services - Brain Inventory</title>
-        <meta
+        <title>eCommerce Software Development Services - Brain Inventory</title>
+        {/* <meta
           property="description"
           content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
         />
         <meta
           property="og:description"
           content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
-        />
+        /> */}
         <meta
           name="og:title"
-          content="Edtech Software Development Services - Brain Inventory"
+          content="eCommerce Software Development Services - Brain Inventory"
         />
         <meta
           property="og:image"
@@ -331,11 +331,11 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/edtech-software-development-services"
+          content="https://braininventory.in/industry/ecommerce-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/edtech-software-development-services"
+          href="https://braininventory.in/industry/ecommerce-software-development-services"
         />
       </Head>
       <Loader />

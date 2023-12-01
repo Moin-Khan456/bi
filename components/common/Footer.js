@@ -247,6 +247,11 @@ const FooterSections = [
         name: "CRM App Development",
         path: "/industry//crm-software-development-services",
       },
+      {
+        _id: 10,
+        name: "eCommerce App Development",
+        path: "/industry/ecommerce-software-development-services",
+      },
     ],
   },
   {

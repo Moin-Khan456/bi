@@ -551,6 +551,11 @@ const Industry = () => {
       name: "CRM App Development",
       link: "/industry/crm-software-development-services",
     },
+    {
+      _id: 10,
+      name: "eCommerce App Development",
+      link: "/industry/ecommerce-software-development-services",
+    },
   ];
 
   return (

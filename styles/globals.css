@@ -47,6 +47,7 @@
   font-family: "MonumentRegular";
   src: url("../public//fonts/MonumentExtended-Regular.otf");
 }
+
 @font-face {
   font-family: "Monument";
   src: url("../public//fonts/MonumentExtended-Ultrabold.otf");
@@ -168,14 +169,16 @@ body {
   font-family: Gilroy-Light;
 }
 
-.Brinattan{
+.Brinattan {
   font-family: Brinattan;
 }
 
 .MonumentRegular {
   font-family: MonumentRegular;
 }
-.monument, .MonumentBold {
+
+.monument,
+.MonumentBold {
   font-family: Monument;
 }
 
@@ -841,14 +844,16 @@ html {
     padding-left: 6rem;
     padding-right: 6rem;
   }
-  .card-3d-left{
+
+  .card-3d-left {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(25deg) translateZ(0px);
     max-height: 800px;
     /* -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004); */
   }
-  .card-3d-right{
+
+  .card-3d-right {
     transform-origin: center;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(-25deg) translateZ(0px);
@@ -1682,10 +1687,11 @@ ul.list-modal {
 }
 
 @media screen and (max-width:1350px) {
-  .seo-banner{
+  .seo-banner {
     margin-top: 2rem;
   }
 }
+
 @media screen and (max-width:1440px) {
   .post-container {
     display: flex;
@@ -2476,9 +2482,10 @@ a.btn-filled.btn {
 
 
 @media (max-width: 500px) {
-  .text-shadow-sharp{
+  .text-shadow-sharp {
     font-size: 1.5rem !important
   }
+
   .post-container {
     display: flex;
     flex-direction: column;
@@ -2512,7 +2519,7 @@ a.btn-filled.btn {
   z-index: 9999999999;
 }
 
-.second-component  {
+.second-component {
   animation-name: showSecond;
   animation-duration: 1.85s;
   animation-delay: 0s;
@@ -2821,6 +2828,16 @@ a.btn-filled.btn {
 
 }
 
+.stroke-text-ecommerce {
+  -webkit-transition: color .5s ease-out;
+  transition: color .5s ease;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  font-family: Monument;
+  filter: drop-shadow(0px 0px 30px #00C0FF);
+  color: transparent;
+}
+
 .video-section {
   /* height: ; */
   position: relative;
@@ -2838,34 +2855,43 @@ a.btn-filled.btn {
 
 
 @media screen and (min-width: 1680px) {
-    .seo-banner
-    {
-      height: 780px;
-      width: 800px;
-    }
+  .seo-banner {
+    height: 780px;
+    width: 800px;
+  }
 }
 
 .slick-slide {
   margin: 0 1rem;
 }
+
 .slick-center .slide {
   transform: scale(2);
 }
-.slick-prev:before, .slick-next:before {
+
+.slick-prev:before,
+.slick-next:before {
   position: absolute;
   bottom: 150px;
   transform: scale(2);
-} 
-.development-text{
+}
+
+.development-text {
   font-family: BetterGrad;
   /* font-size: 10rem; */
   color: #7b06e1;
   text-shadow: 2px 1px 0px #ee9e14;
 }
-.ant-pagination-item a, .ant-pagination-item-ellipsis, .anticon-left svg, .anticon-right svg{
+
+.ant-pagination-item a,
+.ant-pagination-item-ellipsis,
+.anticon-left svg,
+.anticon-right svg {
   color: white !important;
 }
-.anticon-left svg, .anticon-right svg{
+
+.anticon-left svg,
+.anticon-right svg {
   background: linear-gradient(to right, rgb(105, 105, 193), rgb(58, 0, 167)) !important;
 
   width: 2.5rem !important;
@@ -2873,19 +2899,24 @@ a.btn-filled.btn {
   padding: 0.6rem;
   border-radius: 10rem !important;
 }
-.ant-pagination-item-active{
+
+.ant-pagination-item-active {
   background-color: black !important;
   color: white !important;
   border-radius: 10rem !important;
 }
-.slick-list{
+
+.slick-list {
   padding: 0;
   width: 100%;
 }
-.slick-prev:before, .slick-next:before{
+
+.slick-prev:before,
+.slick-next:before {
   content: "" !important;
 }
-.text-shadow-sharp{
+
+.text-shadow-sharp {
   position: relative;
   font-weight: light;
   line-height: 5rem;
@@ -2898,7 +2929,8 @@ a.btn-filled.btn {
 }
 
 .text-shadow-sharp::before {
-  content: attr(data-text); /* Use the content attribute to display the text */
+  content: attr(data-text);
+  /* Use the content attribute to display the text */
   position: absolute;
   line-height: 5rem;
   letter-spacing: .6rem;
@@ -2908,24 +2940,34 @@ a.btn-filled.btn {
 }
 
 
-.text-developer{
-  background-image: url("https://i0.wp.com/nats.aero/blog/wp-content/uploads/2016/02/504w_BusySky.png?w=504&ssl=1"); 
-  background-repeat: repeat; 
+.text-developer {
+  background-image: url("https://i0.wp.com/nats.aero/blog/wp-content/uploads/2016/02/504w_BusySky.png?w=504&ssl=1");
+  background-repeat: repeat;
   background-size: 90%;
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  margin-top: 200px; 
-  text-align: center; 
-  font-weight: bold; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 200px;
+  text-align: center;
+  font-weight: bold;
   font-family: Gilroy-Bold;
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
 }
-.text-shadow-none{
+
+.text-shadow-none {
   text-shadow: none;
 }
-.leading-high-force{
+
+.leading-high-force {
   line-height: 3rem !important;
 }
-.ed-tech-dropshadow{
+
+.ed-tech-dropshadow {
   filter: drop-shadow(0px 0px 100px rgba(38, 96, 244, 0.5));
+}
+.swiper-slide{
+  max-width: 40%;
+  width: 40%;
+  height: 1000px;
+  position: relative;
+  inset: 4rem;
 }

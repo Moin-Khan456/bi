@@ -52,6 +52,7 @@
     "smooth-scrollbar": "^8.7.4",
     "smooth-scrollbar-react": "^2.3.0",
     "sweetalert2": "^11.4.23",
+    "swiper": "^11.0.5",
     "yup": "^1.1.1"
   },
   "devDependencies": {

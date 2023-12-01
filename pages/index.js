@@ -91,8 +91,8 @@ export default function Home() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Brain Inventory",
-          "alternateName": "Brain Inventory Pvt Ltd",
+          "name": "Brain Inventory Pvt Ltd",
+          "alternateName": "Brain Inventory",
           "url": "https://braininventory.in",
           "potentialAction": {
             "@type": "SearchAction",
@@ -101,11 +101,7 @@ export default function Home() {
               "urlTemplate": "https://braininventory.in/?s={search_term_string}"
             },
             "query-input": "required name=search_term_string"
-          },
-          "width": 800,
-          "height": 600,
-          "alt": "Custom Software Development Company",
-          "caption": "Custom Software Development Company"
+          }
         }) }} />
 
         <link rel="icon" href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png" />

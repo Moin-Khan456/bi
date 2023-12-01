@@ -21,7 +21,7 @@ const Index = ({title, btn, head, src, className, headAbove, subheadAbove, custo
                       </div>
                       <div className='relative hidden lg:block'>
                           <Image src={src} 
-                          width={1800} height={1800} alt='' className={`m-auto block absolute bottom-0 right-10 m-w-[550px] w-[500px] ${customClasses}`}/>
+                          width={1800} height={1800} alt='' className={`m-auto block absolute bottom-0 right-10 max-w-[550px] w-[500px] ${customClasses}`}/>
                       </div>
                 </div>
             </div>  

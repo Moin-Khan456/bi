@@ -318,12 +318,6 @@ function ReactNativeDeveloper(props) {
         "Before presenting the solution to the public, it undergoes comprehensive testing. This phase identifies and addresses any potential shortcomings or problems to achieve a state of perfection.",
     },
   ];
-  const [position, setPosition] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPosition(true);
-    });
-  });
   return (
     <>
       <Head>

@@ -37,10 +37,10 @@ const Index = ({ para1, para2, para3, title, image, card, type, alt }) => {
         <section>
           {card?.map((ele, index) => (
             <div
-              className="container padding-left-all-section-1 flex flex-col items-end"
+              className="container flex flex-col items-end"
               key={index}
             >
-              <div className="bg-customer p-8 lg:py-8 advantage-para m-6 flex flex-col lg:flex-row items-center justify-evenly w-[93%] lg:w-full">
+              <div className="bg-customer p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full">
                 <h5 className="text-2xl font-bold text-shadow lg:w-[15%]">
                   {ele?.head}
                 </h5>

@@ -142,19 +142,19 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>Ionic App Development | Ionic App Development Company</title>
-        {/* <meta
+        <meta
           name="description"
-          content="Discover the future of app development with our hybrid and cross-platform solutions. Our expert team crafts innovative apps that work flawlessly on multiple devices, reducing development time and costs."
-        /> */}
+          content="Craft seamless, high-performance applications tailored to your business needs. Let's transform your ideas into compelling, feature-rich experiences with Ionic App Development Service."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Ionic App Development | Ionic App Development Company"
         />
-        {/* <meta
+        <meta
           property="og:description"
-          content="Discover the future of app development with our hybrid and cross-platform solutions. Our expert team crafts innovative apps that work flawlessly on multiple devices, reducing development time and costs."
-        /> */}
+          content="Craft seamless, high-performance applications tailored to your business needs. Let's transform your ideas into compelling, feature-rich experiences with Ionic App Development Service."
+        />
         {/* <meta
           property="og:image"
           content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_hybrid-app-development.jpg"
@@ -164,10 +164,6 @@ function HireAangularJsDeveloper(props) {
           property="og:url"
           content="https://braininventory.in/mobile-development/ionic-app-development-company"
         />
-        {/* <meta
-          property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
-        /> */}
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/ionic-app-development-company"

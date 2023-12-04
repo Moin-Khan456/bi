@@ -226,10 +226,14 @@ function SocialMedia(props) {
     <>
       <Head>
         <title>Social Media Marketing Company</title>
-        {/* <meta
+        <meta
+          name="description"
+          content="Transforming ideas into vibrant social networks. As a leading social networking development company, we craft engaging platforms for meaningful connections. Discover more!"
+        />
+        <meta
           property="og:description"
-          content="Brain Inventory developed a travel planner platform with inbuild CRM that helps travel agents as well as users. Read more."
-        /> */}
+          content="Transforming ideas into vibrant social networks. As a leading social networking development company, we craft engaging platforms for meaningful connections. Discover more."
+        />
         <meta name="og:title" content="Social Media Marketing Company" />
         <meta
           property="og:image"

@@ -108,10 +108,14 @@ function HireAangularJsDeveloper(props) {
         <title>
           Brain Inventory | Laravel Development Company for Innovative Solutions
         </title>
-        {/* <meta
+        <meta
           name="description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
-        /> */}
+          content="Elevate your online presence with Laravel web development. Our experts create scalable solutions for seamless performance and innovative features. Transform your digital landscape."
+        />
+        <meta
+          property="og:description"
+          content="Elevate your online presence with Laravel web development. Our experts create scalable solutions for seamless performance and innovative features. Transform your digital landscape."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"

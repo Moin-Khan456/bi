@@ -100,13 +100,13 @@ export default function Hirededicatedremotedevelopers(props) {
         <OurProcess />
         <HireRemote />
         <OnboardingProcess />
-        <Image
+        {/* <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/Comp1.gif"
           alt="Less than 3 month we serve the quality work"
           width={500}
           height={500}
           className="w-full"
-        />
+        /> */}
         <Hiringbenifit />
         <HireRemote />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">

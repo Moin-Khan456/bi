@@ -335,6 +335,11 @@ const ServicesChildren = () => {
       name: "Shopify Development",
       link: "/web-development/shopify-ecommerce-software-development-services",
     },
+    {
+      _id: 16,
+      name: ".Net Development",
+      link: "/web-development/dotnet-development-company",
+    },
   ];
   const mobileLinks = [
     {
@@ -459,6 +464,11 @@ const ServicesChildren = () => {
       _id: 8,
       name: "Hire UI/UX Designers",
       link: "/hire-ui-ux-developers",
+    },
+    {
+      _id: 17,
+      name: "Hire Laravel Developers",
+      link: "/hire-laravel-developers",
     },
     {
       _id: 16,

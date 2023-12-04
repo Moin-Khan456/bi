@@ -59,8 +59,8 @@ const FooterSections = [
         path: "/hire-mern-stack-developers",
       },
       {
-        name: "Hire UI/UX Developers",
-        path: "/hire-ui-ux-developers",
+        name: "Hire UI/UX Designers",
+        path: "/hire-ui-ux-designers",
       },
       {
         name: "Hire Android Developers",
@@ -89,6 +89,10 @@ const FooterSections = [
       {
         name: "Hire Chatbot Developers",
         path: "/hire-chatbot-developers",
+      },
+      {
+        name: "Hire Laravel Developers",
+        path: "/hire-laravel-developers",
       },
       {
         name: "Hire QA Analyst",
@@ -158,6 +162,10 @@ const FooterSections = [
       {
         name: "Shopify Development",
         path: "/web-development/shopify-ecommerce-software-development-services ",
+      },
+      {
+        name: ".Net Development",
+        path: "/web-development/dotnet-development-company",
       },
     ],
   },
@@ -300,8 +308,6 @@ const FooterSections = [
       },
     ],
   },
-  
-  
 ];
 const organizations = [
   {

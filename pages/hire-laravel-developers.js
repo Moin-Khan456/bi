@@ -174,21 +174,21 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Dedicated Chatbot Developers | Unlock Automation Potential
+          Hire Dedicated Laravel Developers | Unlock Automation Potential
         </title>
-        <meta
+        {/* <meta
           name="description"
           content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        />
+        /> */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Dedicated Chatbot Developers | Unlock Automation Potential"
+          content="Hire Dedicated Laravel Developers | Unlock Automation Potential"
         />
-        <meta
+        {/* <meta
           property="og:description"
           content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        />
+        /> */}
         <meta
           property="og:image"
           content="https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
@@ -196,8 +196,7 @@ function HireAangularJsDeveloper(props) {
         {/* Set your image URL here */}
         <meta
           property="og:url"
-          content=" 
-https://braininventory.in/hire-chatbot-developers"
+          content="https://braininventory.in/hire-laravel-developers"
         />
         <meta
           property="og:image"
@@ -205,11 +204,11 @@ https://braininventory.in/hire-chatbot-developers"
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/hire-chatbot-developers"
+          content="https://braininventory.in/hire-laravel-developers"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/hire-chatbot-developers"
+          href="https://braininventory.in/hire-laravel-developers"
         />
       </Head>
       <Suspense fallback={<Loader />}>

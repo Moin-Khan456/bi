@@ -2971,3 +2971,29 @@ a.btn-filled.btn {
   position: relative;
   inset: 4rem;
 }
+
+/* Add these styles to your stylesheet */
+
+.shrink-container {
+  /* transition: all 1s ease; */
+  animation: shrink 1s  ease-in-out linear;
+}
+
+@keyframes shrink {
+  from{
+    transform: scale(0);
+    transition: 1s ease-in-out linear;
+  }
+  from{
+    transform: scale(1);
+    transition: 1s ease-in-out linear;
+  }
+}
+
+.hidden-container {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}

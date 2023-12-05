@@ -90,7 +90,7 @@ export default function Home({ data, blogs, totalPages, page }) {
 }
 export async function getServerSideProps(context) {
     const response = await axios.get(
-      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`, { next: { revalidate: 3600 } }, { cache: 'force-cache' }
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`, { next: { revalidate: 3600 } }, { cache: 'force-cache' }
     );
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10"

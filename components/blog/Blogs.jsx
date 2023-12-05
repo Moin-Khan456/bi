@@ -1,24 +1,11 @@
 import Image from "next/image";
 import React, { memo, useEffect, useState } from "react";
 import HomeButton from "../../components/common/HomeBtn";
-import { getDate } from "../../utils/utils";
+import { blogDate } from "../../utils/utils";
 import Link from "next/link";
 import Skeleton from "./Skeleton";
 
-const Blogs = ({ pageNumber, blogs }) => {
-  // const [currentPage, setCurrentPage] = useState(pageNumber);
-  // const [data, setData] = useState(blogs);
-  // useEffect(() => {
-  //   setData(null);
-  //   axios
-  //     .get(
-  //       `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=5&page=${pageNumber}`
-  //     )
-  //     .then((res) => {
-  //       setData([...res.data]);
-  //     });
-  // }, [pageNumber]);
-  // console.log(blogs[0])
+const Blogs = ({ blogs }) => {
   return (
     <div className="container">
       {blogs === null ? (
@@ -35,7 +22,10 @@ const Blogs = ({ pageNumber, blogs }) => {
                       fetchPriority="high"
                       width={500}
                       height={500}
-                      alt={post["_embedded"]["wp:featuredmedia"][0].alt_text??"Brain Inventory exclusive content"}
+                      alt={
+                        post["_embedded"]["wp:featuredmedia"][0].alt_text ??
+                        "Brain Inventory exclusive content"
+                      }
                       className="w-full max-w-[450px] mx-0 my-0 lg:my-2 rounded-md "
                     />
                   </div>
@@ -53,13 +43,13 @@ const Blogs = ({ pageNumber, blogs }) => {
                     className="text-sm mt-2 blog-card-content text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
                   />
-                {/* <span className="flex mt-2 mb-2">
-                  <label>
-                    <small className="text-sm color-gray">
-                      {getDate(post.modified)}
-                    </small>
-                  </label>
-                </span> */}
+                  <span className="flex mt-2 mb-2">
+                    <label>
+                      <small className="text-sm color-gray">
+                        {blogDate(post.date)}
+                      </small>
+                    </label>
+                  </span>
                 </div>
               </div>
             </Link>

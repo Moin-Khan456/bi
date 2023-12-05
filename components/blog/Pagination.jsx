@@ -11,9 +11,7 @@ const App = ({totalPages, itemsPerPage, setCurrentPage, currentPage}) => {
   const handlePaginationChange = (page, pageSize) => {
     window.scrollTo(0, 0)
     setCurrentPage(page);
-    // setLoad(true);
     router.push("/blog/"+page); 
-    // window.location.href = "/blog/"+page
   };
 
   return (

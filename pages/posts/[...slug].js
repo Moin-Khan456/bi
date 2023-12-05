@@ -15,18 +15,23 @@ import HireDedicatedCard from "../../components/blog/HireDedicatedCard";
 import { FiMail } from "react-icons/fi";
 
 export default function PostPage({ post, featuredMedia }) {
-  const [title, setTitle] = useState(data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog");
+  const [title, setTitle] = useState(
+    data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog"
+  );
   const [localForm, setLocal] = useState(true);
-  const [summary, setSummary] = useState(post.excerpt.rendered.split(":")[1])
-  const [discription, setDiscription] = useState(data.find((ele) => ele.id === post.id)?.description ?? summary.split(". ")[0]);
-
+  const [summary, setSummary] = useState(post.excerpt.rendered.split(":")[1]);
+  const [discription, setDiscription] = useState(
+    data.find((ele) => ele.id === post.id)?.description ??
+      summary.split(". ")[0]
+  );
 
   useEffect(() => {
     setTitle(
       data.find((ele) => ele.id === post.id)?.Title || "Brain Inventory | Blog"
     );
     setDiscription(
-      data.find((ele) => ele.id === post.id)?.description || "Brain Inventory | Blog"
+      data.find((ele) => ele.id === post.id)?.description ||
+        "Brain Inventory | Blog"
     );
   }, [post.id]);
 
@@ -38,12 +43,12 @@ export default function PostPage({ post, featuredMedia }) {
           <title>{title}</title>
           <meta name="description" content={discription} />
           <link rel="og:title" content={title} />
-
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={discription} />
           <link
             rel="canonical"
             href={`https://braininventory.in/posts/${post.slug}/${post.id}`}
           />
-
           <meta property="og:image" content={featuredMedia} />
           <meta
             property="og:url"
@@ -51,7 +56,6 @@ export default function PostPage({ post, featuredMedia }) {
           />
         </Head>
         <Header></Header>
-
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container pt-12 padding-left-all-section">
             <div className="grid grid-cols-3 gap-4 post-container">
@@ -69,7 +73,7 @@ export default function PostPage({ post, featuredMedia }) {
                 <span className="flex mt-2 mb-2">
                   <label className="pl-2">
                     <small className="text-sm color-gray">
-                      {getDate(post.modified)}
+                      {getDate(post.date)}
                     </small>
                   </label>
                 </span>
@@ -92,37 +96,9 @@ export default function PostPage({ post, featuredMedia }) {
                   </div>
                 )}
               </div>
-              {/* 
-              <div className="relative lg:w-[300px] lg:min-w-[300px] lg:max-w-[300px] lg:mt-12">
-                <span className="absolute block text-center">
-                  Hire Developer
-                </span>
-                <div className="p-6 bg-gray-dc mt-8">
-                  <h3 className="text-xl Gilroy-Bold mb-4">
-                    Hire Dedicated Remote Developers from Brain Inventory
-                  </h3>
-                  <p className="text-sm">
-                    Onboard{" "}
-                    <a
-                      className=""
-                      href="https://braininventory.in/hire-dedicated-remote-developers"
-                    >
-                      <span className="color-hightlight">
-                        dedicated remote developers
-                      </span>
-                    </a>{" "}
-                    to your project as quickly as in 2 days. If at any point in
-                    time, you feel the developer is not performing as per
-                    expectation, you can ask for replacement or end the contract
-                    with 0 penalty.
-                  </p>
-                </div>
-              </div> */}
-              {/* <HireDedicatedCard/> */}
             </div>
           </div>
         </div>
-
         <KeepInTouch />
         <LocateUs />
         <LetsKick />
@@ -133,16 +109,16 @@ export default function PostPage({ post, featuredMedia }) {
 }
 export async function getServerSideProps(context) {
   const { slug } = context.query;
+  const fields = "id,title,_links,date,content,excerpt";
 
   const post = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts/${
       slug[slug.length - 1]
-    }`
+    }?_embed&_fields=${fields}`
   );
 
   const featuredMedia =
     post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
-
   return {
     props: {
       post: post.data,

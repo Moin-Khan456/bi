@@ -52,12 +52,19 @@ export default function Home({ data, blogs, totalPages }) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
         />
-        <meta
-          property="og:url"
-          content="https://braininventory.in/blog"
-        />       
-        <link rel="prev" href={`https://braininventory.in/blog/${currentPage > 1 ? currentPage-1 : ""}`} />        
-        <link rel="next" href={`https://braininventory.in/blog/${currentPage < totalPages ? currentPage+1 : ""}`} />        
+        <meta property="og:url" content="https://braininventory.in/blog" />
+        <link
+          rel="prev"
+          href={`https://braininventory.in/blog/${
+            currentPage > 1 ? currentPage - 1 : ""
+          }`}
+        />
+        <link
+          rel="next"
+          href={`https://braininventory.in/blog/${
+            currentPage < totalPages ? currentPage + 1 : ""
+          }`}
+        />
         <link rel="canonical" href="https://braininventory.in/blog" />
       </Head>
       <main className="relative">
@@ -95,23 +102,27 @@ export default function Home({ data, blogs, totalPages }) {
 }
 export async function getServerSideProps(context) {
   const posts = {};
-  if(!posts.data){
-    const response = await axios.get(
-      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10&page=${1}`
-    );
-    posts.data = response.data
+  const fields = "id,title,date,slug,_links,_embedded,excerpt,date";
+  if (!posts.data) {
+    const response = await axios
+      .get(
+        `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&_fields=${fields}&per_page=10&page=${1}`
+      )
+      .then((res) => {
+        console.log(res.data);
+      });
+    posts.data = response.data;
   }
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100"
   );
   const totalPages = postsRes.headers.get("X-WP-Total");
-
+  console.log(response.data[0]);
   return {
     props: {
       data: posts.data.slice(0, 3),
       blogs: posts.data,
       totalPages,
-      currentPage: Number(2)
     },
   };
 }

@@ -1,15 +1,51 @@
 [
   {
-    "S.NO": 200,
+    "S.NO": 206,
+    "Title": "Know The Power of Outsourcing Laravel Development",
+    "description" : "Explore why outsourcing Laravel development is a strategic move for efficiency, expertise, and innovation. Leveraging Laravel's capabilities through the experienced external team.",
+    "id": 1288
+  },
+  {
+    "S.NO": 205,
+    "Title": "Efficiency Unleashed: Benefits of Ionic App Development",
+    "description" : "Advantages of partnering with an Ionic app development company. Unlock efficiency, cross-platform capabilities, and cutting-edge mobile app solutions tailored to your business needs.",
+    "id": 1285
+  },
+  {
+    "S.NO": 204,
+    "Title": "Travel Industry Chatbots: Advantages, Applications, and Guidelines",
+    "description" : "The advantages, diverse applications, and guidelines for seamless implementation. Enhance customer experiences and streamline travel processes with intelligent chatbot solutions.",
+    "id": 1277
+  },
+  {
+    "S.NO": 203,
+    "Title": "Unlock Success: Benefits of Hiring a PHP Developer for Your Project",
+    "description" : "Bringing a skilled PHP developer on board for your next project. From robust web solutions to efficient database management, harness the power of PHP expertise for project success.",
+    "id": 1274
+  },
+  {
+    "S.NO": 202,
+    "Title": "Choosing an iPhone App Development Company: Your Essential Guide",
+    "description" : "Navigate the selection process with confidence! Explore our comprehensive guide to choosing the right iPhone app development company. Make informed decisions for your project's success.",
+    "id": 1271
+  },
+  {
+    "S.NO": 201,
     "Title": "Choosing an eLearning Development Company: Expert Tips for Success",
     "description" : "Tips for selecting the best eLearning development company. From assessing expertise to evaluating portfolios, our guide makes informed decisions for successful eLearning initiatives.",
     "id": 1266
   },
   {
-    "S.NO": 199,
+    "S.NO": 200,
     "Title": "Mastering Medical Software Development: A Comprehensive Guide",
     "description" : "Explore the world of medical software development with our comprehensive guide. Key insights for creating efficient and secure solutions in the dynamic landscape of healthcare technology.",
     "id": 1263
+  },
+  {
+    "S.NO": 199,
+    "Title": "Decoding the Significance: The Role of a Software Development Company",
+    "description" : "Overview of the pivotal role of a software development company in transforming ideas into robust, innovative solutions. Learn how these experts drive digital evolution.",
+    "id": 1256
   },
   {
     "S.NO": 198,

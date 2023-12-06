@@ -1,40 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const faqdetails = [
-  {
-    id: "1",
-    title:
-      "I want to keep my iOS app idea confidential. Will you sign an NDA with me?",
-    description:
-      "A web application runs on a web browser and requires mobile data or wi-fi to work. On the other hand, native app is installed directly on the mobile phone and depends upon the nature of native app; it can work without using an internet connection.",
-  },
-  {
-    id: "2",
-    title: "Do I own the ownership and the code of my application?",
-    description:
-      "A web application runs on a web browser and requires mobile data or wi-fi to work. On the other hand, native app is installed directly on the mobile phone and depends upon the nature of native app; it can work without using an internet connection.",
-  },
-  {
-    id: "3",
-    title: "Do you have flexible hiring models?",
-    description:
-      "A web application runs on a web browser and requires mobile data or wi-fi to work. On the other hand, native app is installed directly on the mobile phone and depends upon the nature of native app; it can work without using an internet connection.",
-  },
-  {
-    id: "4",
-    title: "How do you allocate the resources for my app development in iOS?",
-    description:
-      "A web application runs on a web browser and requires mobile data or wi-fi to work. On the other hand, native app is installed directly on the mobile phone and depends upon the nature of native app; it can work without using an internet connection.",
-  },
-  {
-    id: "5",
-    title: "What are some of the top iOS apps developed by you?",
-    description:
-      "A web application runs on a web browser and requires mobile data or wi-fi to work. On the other hand, native app is installed directly on the mobile phone and depends upon the nature of native app; it can work without using an internet connection.",
-  },
-];
-function Faqs() {
+function Faqs({faq}) {
   const collapsed = (id) => {
     const element = document.getElementById(id);
     element.classList.toggle("collapse-open");
@@ -45,7 +12,7 @@ function Faqs() {
       <div className="container padding-left-all-section">
         <h2 className="text-4xl pb-8 Gilroy-Bold">faq&rsquo;s</h2>
         <div>
-          {faqdetails.map((el) => {
+          {faq?.map((el) => {
             return (
               <div key={el.id} className="collapse bg-opening mb-6">
                 <input type="checkbox" />

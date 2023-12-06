@@ -2832,10 +2832,37 @@ a.btn-filled.btn {
   -webkit-transition: color .5s ease-out;
   transition: color .5s ease;
   -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .5px;
   font-family: Monument;
-  filter: drop-shadow(0px 0px 30px #00C0FF);
+  /* filter: drop-shadow(0px 0px 10px #00C0FF); */
   color: transparent;
+  color: #010A1F;
+  text-shadow: 0px 0px 8px #00bfff99;
+  letter-spacing: .2rem;
+}
+
+.stroke-text-yellow {
+  -webkit-transition: color .5s ease-out;
+  transition: color .5s ease;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: .5px;
+  font-family: Monument;
+  text-shadow: 5px 5px 30px rgb(255, 191, 0);
+  letter-spacing: .2rem;
+  color: #000;
+  font-size: 5.49194rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.bg-shadow {
+  position: absolute;
+  top: -20rem;
+  left: -20rem;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, #0048ff32 10%, transparent 70%);
 }
 
 .video-section {
@@ -2964,7 +2991,8 @@ a.btn-filled.btn {
 .ed-tech-dropshadow {
   filter: drop-shadow(0px 0px 100px rgba(38, 96, 244, 0.5));
 }
-.swiper-slide{
+
+.swiper-slide {
   max-width: 40%;
   width: 40%;
   height: 1000px;
@@ -2976,15 +3004,16 @@ a.btn-filled.btn {
 
 .shrink-container {
   /* transition: all 1s ease; */
-  animation: shrink 1s  ease-in-out linear;
+  animation: shrink 1s ease-in-out linear;
 }
 
 @keyframes shrink {
-  from{
+  from {
     transform: scale(0);
     transition: 1s ease-in-out linear;
   }
-  from{
+
+  from {
     transform: scale(1);
     transition: 1s ease-in-out linear;
   }

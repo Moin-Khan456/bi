@@ -8,7 +8,7 @@ const SectionThree = ({
   tableFooter,
 }) => {
   return (
-    <div className="px-4">
+    <div className="container padding-left-all-section-1">
       <div className="container lg:block">
         <h1 className="text-3xl font-Satoshi font-bold">{title}</h1>
         <p className="text-sm py-6 text-slate-400">{sectionDesc}</p>

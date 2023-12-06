@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Marquee from "./Marquee";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -54,10 +55,12 @@ const Index = () => {
               </div>
 
               <div className="w-full">
-                <button className="flex items-center font-Satoshi relative lg:left-80 font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
-                  LEVERAGE THE POWER OF US &nbsp;{" "}
-                  <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347E7]" />
-                </button>
+                <Link href="#talk">
+                  <button className="flex items-center font-Satoshi relative lg:left-80 font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+                    LEVERAGE THE POWER OF US &nbsp;{" "}
+                    <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347E7]" />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -12,10 +12,10 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
-export default function Slider({data, subhead, head, description}) {
+export default function Slider({ data, subhead, head, description }) {
   return (
     <>
-      <div className="contain my-12">
+      <div className="container my-12">
         <div className="text-center flex flex-col items-center py-12">
           <h5 className="text-md font-bold MonumentBold tracking-wide">
             {subhead}
@@ -23,31 +23,19 @@ export default function Slider({data, subhead, head, description}) {
           <h1 className="text-2xl lg:text-5xl MonumentBold w-[65%] py-4 uppercase">
             {head}
           </h1>
-          <p className="font-Satoshi text-slate-500 text-sm">
-            {description}
-          </p>
+          <p className="font-Satoshi text-slate-500 text-sm">{description}</p>
         </div>
         <div className="h-[700px] px-4 md:m-auto hidden lg:block">
           <Swiper
-            effect={"coverflow"}
             grabCursor={true}
             loop={true}
-            centeredSlides={true}
-            initialSlide={2}
             slidesPerView={3}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 120,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            modules={[EffectCoverflow, Pagination]}
+            spaceBetween={-5}
             className="mySwiper h-[700px]"
           >
             {data.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-technology p-6 lg:h-[600px] max-w-[400px]">
+                <div className="bg-technology p-6 lg:h-[500px] max-w-[400px] m-2">
                   <h1 className="text-3xl font-semibold py-6">{item.head}</h1>
                   <p className="text-xl opacity-50">{item.content}</p>
                 </div>

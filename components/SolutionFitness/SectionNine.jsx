@@ -2,7 +2,16 @@ import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Marquee from "react-easy-marquee";
-const Index = ({ brand, pageCategory, pageCategoryAbbr, src, alt, slow, fast }) => {
+import Link from "next/link";
+const Index = ({
+  brand,
+  pageCategory,
+  pageCategoryAbbr,
+  src,
+  alt,
+  slow,
+  fast,
+}) => {
   return (
     <div className="rounded-md my-8 py-10 lg:space-x-6 relative ">
       <div className=" py-32 lg:pb-[22rem]">
@@ -62,13 +71,15 @@ const Index = ({ brand, pageCategory, pageCategoryAbbr, src, alt, slow, fast }) 
             We love create experiences that enable people to connect, express
             themselves and establish meaningful relationships
           </p>
-          <button
-            className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-gradient-to-r from-[#000076] to-[#7600EB] rounded-full   px-8
+          <Link href="#talk">
+            <button
+              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-gradient-to-r from-[#000076] to-[#7600EB] rounded-full   px-8
                              py-4 my-12"
-          >
-            START PROJECT
-            <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
-          </button>
+            >
+              START PROJECT
+              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Approach = ({title, desc, points}) => {
    
   return (
-    <div className="container px-6">
+    <div className="padding-left-all-section-1 container px-6">
       <h1 className="font-Satoshi font-bold text-4xl">
         {title}
       </h1>

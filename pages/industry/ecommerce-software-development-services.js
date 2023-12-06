@@ -342,7 +342,7 @@ function ReactNativeDeveloper(props) {
       <Header />
       <SectionOne />
       <SectionTwo
-        className="pt-52 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
+        className="pt-20 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
         title="TOP ECOMMERCE SOFTWARE"
         head1="Masterfully Crafting E-commerce Success Stories"
         description={sectionTwoDesc}

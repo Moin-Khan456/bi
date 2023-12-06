@@ -10,7 +10,7 @@ const Index = ({
   alt
 }) => {
   return (
-    <div className="rounded-md my-8 py-10 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] bg-no-repeat bg-center">
+    <div className="padding-left-all-section-1 rounded-md my-8 py-10 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] bg-no-repeat bg-center">
       <div className="container padding-left-all-section">
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">

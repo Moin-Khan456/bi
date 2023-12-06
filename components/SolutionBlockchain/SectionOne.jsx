@@ -2,6 +2,7 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
+import Link from "next/link";
 export default function HireBanner() {
   return (
     <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
@@ -12,25 +13,32 @@ export default function HireBanner() {
               Unleashing Blockchain&apos;s Boundless Potential
             </h2>
             <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">
-            Embrace next-gen technology with our Blockchain Development Services for superior security, transparency and efficiency. Explore limitless possibilities with Blockchain, including unparalleled data security, complete transparency for fostering trust, and efficient process streamlining through smart contracts and task automation.
+              Embrace next-gen technology with our Blockchain Development
+              Services for superior security, transparency and efficiency.
+              Explore limitless possibilities with Blockchain, including
+              unparalleled data security, complete transparency for fostering
+              trust, and efficient process streamlining through smart contracts
+              and task automation.
             </h2>
           </section>
-          <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
-            LEVERAGE THE POWER OF US &nbsp;{" "}
-            <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
-          </button>
+          <Link href="#talk">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+              LEVERAGE THE POWER OF US &nbsp;{" "}
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+            </button>
+          </Link>
         </section>
         <section>
-            <section>
-              <Image
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7130.png"
-                alt="Custom Web Development"
-                className={`rounded-2xl w-[100%] lg:scale-125`}
-                fetchPriority="high"
-                width={1900}
-                height={1900}
-              />
-            </section>
+          <section>
+            <Image
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7130.png"
+              alt="Custom Web Development"
+              className={`rounded-2xl w-[100%] lg:scale-125`}
+              fetchPriority="high"
+              width={1900}
+              height={1900}
+            />
+          </section>
         </section>
       </section>
     </main>

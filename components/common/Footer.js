@@ -257,7 +257,7 @@ const FooterSections = [
       },
       {
         _id: 10,
-        name: "eCommerce App Development",
+        name: "Ecommerce App Development",
         path: "/industry/ecommerce-software-development-services",
       },
     ],

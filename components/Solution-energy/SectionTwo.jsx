@@ -21,7 +21,7 @@ const SectionTwo = ({
               </>
             ))}
             <span
-              className={`lg:absolute lg:left-96 lg:px-4 text-[1.7rem] lg:ml-60 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
+              className={`lg:absolute lg:left-96 lg:pb-2 lg:px-4 text-[1.7rem] lg:ml-40 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
             >
               Development Company
             </span>

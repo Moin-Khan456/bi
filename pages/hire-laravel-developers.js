@@ -112,7 +112,8 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "4",
-      title: "Do your Laravel developers work with the latest Laravel versions?",
+      title:
+        "Do your Laravel developers work with the latest Laravel versions?",
       description:
         "Laravel is a very fast, modern, and powerful PHP web framework to build web applications with clean code. At Brain Inventory, we provide the latest Laravel development with updated versions on a regular basis. Our developers are always working hard on their courses to upgrade their skills and fulfill the customer's needs with required Laravel templates or custom development services.",
     },
@@ -173,22 +174,20 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire Dedicated Laravel Developers | Unlock Automation Potential
-        </title>
-        {/* <meta
+        <title>Hire Dedicated Laravel Developers From Brain Inventory</title>
+        <meta
           name="description"
-          content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        /> */}
+          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Dedicated Laravel Developers | Unlock Automation Potential"
+          content="Hire Dedicated Laravel Developers From Brain Inventory"
         />
-        {/* <meta
+        <meta
           property="og:description"
-          content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        /> */}
+          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
+        />
         <meta
           property="og:image"
           content="https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"

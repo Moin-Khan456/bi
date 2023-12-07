@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { Component } from "react";
 import { useState } from "react/cjs/react.production.min";
 
@@ -32,8 +33,11 @@ function StafFaq() {
                           onClick={() => collapsed(el.title)} 
                           className=""
                         >
-                          <img
+                          <Image
                             src="/images/faq-arrow.svg"
+                            alt="dropdown arrow"
+                            width={200}
+                            height={200}
                             className="cursor-pointer"
                           />
                         </button>

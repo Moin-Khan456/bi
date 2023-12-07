@@ -312,18 +312,18 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>eCommerce Software Development Services - Brain Inventory</title>
-        {/* <meta
+        <title>E-commerce Application Development Company | Brain Inventory</title>
+        <meta
           property="description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+          content="We propel your eCommerce enterprise to new heights by providing cutting-edge eCommerce app development services, delivering value with both scale and agility."
         />
         <meta
           property="og:description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
-        /> */}
+          content="We propel your eCommerce enterprise to new heights by providing cutting-edge eCommerce app development services, delivering value with both scale and agility."
+        />
         <meta
           name="og:title"
-          content="eCommerce Software Development Services - Brain Inventory"
+          content="E-commerce Application Development Company | Brain Inventory"
         />
         <meta
           property="og:image"

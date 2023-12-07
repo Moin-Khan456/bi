@@ -299,18 +299,18 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>eCommerce Software Development Services - Brain Inventory</title>
-        {/* <meta
+        <title>Custom Development Solutions For The Energy And Utilities Industry</title>
+        <meta
           property="description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
         />
         <meta
           property="og:description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
-        /> */}
+          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
+        />
         <meta
           name="og:title"
-          content="eCommerce Software Development Services - Brain Inventory"
+          content="Custom Development Solutions For The Energy And Utilities Industry"
         />
         <meta
           property="og:image"

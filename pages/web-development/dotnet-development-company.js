@@ -44,34 +44,6 @@ function HireAangularJsDeveloper(props) {
   const subhead3 =
     "Moreover, .NET applications are known for their high performance and stability, which are critical for businesses aiming to provide seamless user experiences. Whether you need a web application, a cloud-based solution, or a custom software system, a .NET development solution can address your specific needs while adhering to industry standards and best practices.";
 
-  const experienceCards = [
-    {
-      head: "Laravel Web Development",
-      content:
-        "Hire professional Laravel web development services to build scalable, secure, and robust applications for your business. When your website traffic and sales are on the rise, hire our Laravel app developers with excellent skills at competitive rates. If you have a challenging or complex application requirement, contact our web application development company now.",
-    },
-    {
-      head: "Laravel Extension Development",
-      content:
-        "Developing innovative and effective software to enhance the functionality of the site, to make it easier for business owners to operate their businesses is our top priority. We are experts at Laravel extension development. We ensure that different requirements of all clients are given high priority and we deliver a mobile-friendly and engaging user experience.",
-    },
-    {
-      head: "Laravel Customization & Integration",
-      content:
-        "These days, almost all businesses use APIs to transfer data from one place to another. These third-party applications provide solutions for your business requirements and help increase productivity. At Brain Inventory, our Laravel developers handle third-party API integration and customization as per your business requirements.",
-    },
-    {
-      head: "Laravel Migrations & Upgrades",
-      content:
-        "The Laravel migration service allows us to keep our code up to date in all applications. This helps us avoid any issues caused by outdated code and keeps our Laravel developers on the latest release of Laravel. We are proud to announce that we have achieved 100% uptime, even at busy times when operating multiple migrations at once.",
-    },
-    {
-      head: "Laravel Support & Maintenance",
-      content:
-        "We are pleased to introduce our latest Laravel development service called - Laravel Maintenance. Our developers maintain your website at your end so that you can focus on the important parts of running a business successfully. We will handle the stuff on which you feel your website is less efficient. This maintenance package provides you with 24",
-    },
-  ];
-
   const hireCards = [
     {
       head: "Integrity and Transparency",
@@ -122,18 +94,6 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const keySkillsBreif =
-    "Hiring dedicated developers to supplement your in-house team is a cost-effective and ideal way to develop software. Laravel's speed, low technical challenges, and stacks with CakePHP make it a great platform to work on. Find the best Laravel developers for hire in our experienced pool of Laravel resources. Hire Laravel developers from Brain Inventory – we'll find you an expert Laravel web developer based in your location. Our experts adhere to world-class processes and procedures to deliver custom applications that are aligned with your business goals.";
-  const keySkillsPoints = [
-    "Speed of Development",
-    "Flexibility",
-    "Specialist Skills",
-    "Cost Saving",
-    "Personalized Support",
-    "Better Transparency",
-    "Enhanced Scalability",
-  ];
-
   const chooseBI = [
     "At Brain Inventory, we are committed to providing quality .NET development services with optimal time management and trust-worthy quality. Our Certified .NET developers adopt cutting-edge technology viz. C We are a team of dedicated, experienced, and passionate professionals, working for your satisfaction with a 100% focus on our work. ",
     "We have an experience of over 4+ years in the .NET domain and are developers at heart having started developing applications for the .NET platform back in 2002. When you deal with us, you'll be getting skills that are sharpened by continuous learning and interaction with the best software professionals around the globe. ",
@@ -151,52 +111,23 @@ function HireAangularJsDeveloper(props) {
     ".NET can be seamlessly integrated with other Microsoft technologies and products, making it suitable for enterprises using the Microsoft ecosystem.",
   ];
 
-  const banners = [
-    {
-      title: "Custom Chatbot Development",
-      brief:
-        "The chatbots, in general, are being adopted by some of the leading enterprises to automate their customer service and improve their efficiency. The chatbot development is so far the most trending technology that has enabled businesses to deliver 'the best customer experience' to their customers across multiple channels and touchpoints.",
-    },
-    {
-      title: "Multilingual Chatbot Development",
-      brief:
-        "Translating the content of your website and online applications isn’t enough. It means nothing if your visitors or customers feel it is not pitched to them in their own language, in a culturally-appropriate tone of voice. That’s why you need native language chatbots if you want to win your audience in any country.",
-    },
-    {
-      title: "Integration With ERP Systems",
-      brief:
-        "As an online chatbot service provider, we are an agile team that serves businesses with a comprehensive solution for automating their communication, simple and easy. We offer chatbot integration with ERP systems. These systems are well-equipped with analytical capabilities and provide actionable business insights that facilitate better decision making.",
-    },
-    {
-      title: "Chatbot Testing",
-      brief:
-        "We recognize that automated testing is a line of automation testing and hence requires manual intervention for the most reliable outcomes. Our own Chatbot test experts ensure that your Chatbot will function as good as new even after months of usage. We employ the best-in-class software for affirming trustworthiness of your Chatbot and eliminating possible errors.",
-    },
-    {
-      title: "Voice-Enabled Chatbots",
-      brief:
-        "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
-    },
-  ];
   return (
     <>
       <Head>
-        <title>
-          DotNet Development from Brain Inventory | Unlock Automation Potential
-        </title>
-        {/* <meta
+        <title>Best .Net Development Company | .Net Development Services</title>
+        <meta
           name="description"
-          content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        /> */}
+          content="As a prominent .NET development company, we specialize in delivering top-notch ASP.NET development services and boast expertise in mobile app development."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="DotNet Development from Brain Inventory | Unlock Automation Potential"
+          content="Best .Net Development Company | .Net Development Services"
         />
-        {/* <meta
+        <meta
           property="og:description"
-          content="Looking to leverage ChatGPT integrations quickly? Hire a skilled developer with expertise in OpenAI models, including GPT-3 and GPT-4, and start building ChatGPT applications within 48 hours."
-        /> */}
+          content="As a prominent .NET development company, we specialize in delivering top-notch ASP.NET development services and boast expertise in mobile app development."
+        />
         <meta
           property="og:image"
           content="https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"

@@ -53,7 +53,7 @@ const Index = ({
             <ul className="">
               {sectionFiveTable[1]?.map((ele, index) => (
                 <li
-                  className="bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap opacity-50"
+                  className="text-xs bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap opacity-50"
                   key={index}
                 >
                   {ele}

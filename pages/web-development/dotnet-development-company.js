@@ -130,7 +130,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_.NET+preview+image.jpg"
         />{" "}
         <meta
           property="og:url"

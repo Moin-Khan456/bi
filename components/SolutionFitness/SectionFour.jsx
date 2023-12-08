@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
-const Index = ({title, description, solutionList}) => {
+const Index = ({titleSize, title, description, solutionList}) => {
 
     return (
         <div className="rounded-md my-8 py-10">
             <div className="container padding-left-all-section-1">
                 <div>
-                   <h2 className='text-center text-bold lg:text-6xl text-xl Gilroy-Bold'>{title}</h2>
-                   <p className='text-center lg:px-40 pt-6 text-gray-300 text-sm lg:text-base lg:pb-12 pb-6'>{description}</p>
+                   <h2 className={`text-center text-bold ${titleSize ?? 'lg:text-6xl'} text-xl Gilroy-Bold`}>{title}</h2>
+                   <p className={`text-center ${titleSize ? 'lg:px-4' : 'lg:px-40'} pt-6 text-gray-300 text-sm lg:text-base lg:pb-12 pb-6`}>{description}</p>
                 </div>
             </div>
             <div className='relative'>

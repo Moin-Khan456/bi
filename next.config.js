@@ -1,7 +1,5 @@
 const TerserPlugin = require("terser-webpack-plugin");
 const redirectionsPage = require("./utils/redirection");
-const withPurgeCss = require("next-purgecss");
-
 module.exports = {
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
@@ -24,10 +22,3 @@ module.exports = {
     return redirection;
   },
 };
-
-module.exports = withPurgeCss({
-  purgeCssPaths: [
-    "./pages/**/*.{js,jsx,ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
-  ],
-});

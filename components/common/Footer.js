@@ -265,6 +265,11 @@ const FooterSections = [
         name: "Energy & Utility App Development",
         path: "/industry/energy-and-utility-software-development-services",
       },
+      {
+        _id: 12,
+        name: "Meeting & Event Planning App Development",
+        path: "/industry/meeting-and-event-planning-software-development-services",
+      },
     ],
   },
   {

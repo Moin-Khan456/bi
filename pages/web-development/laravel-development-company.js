@@ -125,6 +125,10 @@ function HireAangularJsDeveloper(props) {
           property="og:url"
           content="https://braininventory.in/web-development/laravel-development-company"
         />
+        <meta
+          property="og:image"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Laravel+preview+image.png"
+        />
         <link
           rel="canonical"
           href="https://braininventory.in/web-development/laravel-development-company"

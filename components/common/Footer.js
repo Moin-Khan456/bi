@@ -95,6 +95,10 @@ const FooterSections = [
         path: "/hire-laravel-developers",
       },
       {
+        name: "Hire Shopify Developers",
+        path: "/hire-shopify-developers",
+      },
+      {
         name: "Hire QA Analyst",
         path: "/hire-qa-analysts",
       },

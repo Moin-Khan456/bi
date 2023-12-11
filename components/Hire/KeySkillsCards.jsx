@@ -3,8 +3,8 @@ import React from "react";
 export default function KeySkill({ breif, points, grid, width }) {
     return (
         <div>
-            <div className="container lg:px-6 lg:pb-28">
-                <div className="lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
+            <div className="container px-4 lg:px-6 lg:pb-28">
+                <div className="lg:p-12 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
                     <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
                         Our Key Skill Set
                     </h2>

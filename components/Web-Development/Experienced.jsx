@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 const Index = ({ para1, para2, para3, title, image, card, type, alt }) => {
   return (
-    <main className="container lg:px-24 pt-28 lg:pt-32 lg:pb-20">
+    <main className="container px-4 lg:px-24 pt-28 lg:pt-32 lg:pb-20">
       <section>
         <section>
           {type === "why" ? (

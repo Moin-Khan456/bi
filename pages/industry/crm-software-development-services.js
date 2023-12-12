@@ -49,7 +49,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function CrmDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
@@ -384,4 +384,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default CrmDevelopment;

@@ -13,9 +13,12 @@ const PopularBlogs = ({ data }) => {
           <Link href={`/posts/${post.slug}/${post.id}`} key={index} className="w-full">
             <Image
               src={post["_embedded"]["wp:featuredmedia"][0].source_url}
+              blurDataURL="data:/image-loading.png"
+              placeholder="blur"
+              quality={50}
               fetchPriority="high"
-              width={1800}
-              height={1800}
+              width={300}
+              height={300}
               alt={post["_embedded"]["wp:featuredmedia"][0].alt_text??"Brain Inventory exclusive content"}
               className="w-full m-2 rounded-md"
             />

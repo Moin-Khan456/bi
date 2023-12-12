@@ -57,7 +57,7 @@ export default function PostPage({ post, featuredMedia }) {
         </Head>
         <Header></Header>
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-          <div className="container pt-12 padding-left-all-section">
+          <div className="container pt-12 padding-left-all-section-1">
             <div className="grid grid-cols-3 gap-4 post-container">
               <div className="col-span-2 slug-img-container mt-8">
                 <h1 className="text-left Gilroy-Bold text-2xl mb-4  ">
@@ -65,9 +65,11 @@ export default function PostPage({ post, featuredMedia }) {
                 </h1>
                 <Image
                   src={featuredMedia}
-                  className="w-full lg:min-w-[1350px] lg:max-w-[1350px]"
-                  width={1900}
-                  height={1900}
+                  className="w-full lg:min-w-[1000px] lg:max-w-[1350px]"
+                  width={900}
+                  height={900}
+                  fetchPriority="high"
+                  priority
                   alt={post.title.rendered}
                 />
                 <span className="flex mt-2 mb-2">

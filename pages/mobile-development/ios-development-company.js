@@ -32,7 +32,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function IosDevelopment(props) {
   const content =
     "We are a top-rated iOS app development company. Our team knows what you need for your mobile or web application and has the expertise to execute innovation in every stage of your project.";
 
@@ -197,4 +197,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default IosDevelopment;

@@ -20,8 +20,10 @@ const Blogs = ({ blogs }) => {
                     <Image
                       src={post["_embedded"]["wp:featuredmedia"][0].source_url}
                       fetchPriority="high"
-                      width={500}
-                      height={500}
+                      width={300}
+                      height={300}
+                      blurDataURL="data:image-/loading.png"
+                      placeholder="blur"
                       alt={
                         post["_embedded"]["wp:featuredmedia"][0].alt_text ??
                         "Brain Inventory exclusive content"
@@ -36,11 +38,11 @@ const Blogs = ({ blogs }) => {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pl-2">
-                  <h1 className="text-2xl Gilroy-Bold">
+                  <h1 className="text-2xl font-bold">
                     {post.title.rendered}
                   </h1>
                   <div
-                    className="text-sm mt-2 blog-card-content text-justify"
+                    className="text-sm mt-2 text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
                   />
                   <span className="flex mt-2 mb-2">

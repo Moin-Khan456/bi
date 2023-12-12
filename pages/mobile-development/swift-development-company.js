@@ -31,7 +31,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function ReactNativeDeveloper(props) {
+function SwiftDevelopment(props) {
   const content =
     "Swift is a modern programming language for Apple devices. You can use the language to create native apps for various platforms. Our swift development services prioritize functionality, speed, and security above everything else.";
 
@@ -189,4 +189,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default SwiftDevelopment;

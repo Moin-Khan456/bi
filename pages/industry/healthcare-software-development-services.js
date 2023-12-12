@@ -49,7 +49,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function Healthcare(props) {
   const faqdetails = [
     {
       id: "1",
@@ -303,11 +303,11 @@ function ReactNativeDeveloper(props) {
             head1="Empowering Healthcare Digitally."
             description={sectionTwoDesc}
           />
-              <SectionThree
+              {/* <SectionThree
                 title="Healthcare Industry Insights"
                 sectionDesc="Healthcare is a rapidly evolving industry that is increasingly becoming technologically driven. Here are some captivating insights about the healthcare industry:"
                 setionThreeCards={setionThreeCards}
-              />
+              /> */}
               <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
               <SectionFour
                 title="Solutions for Healthcare App Development"
@@ -373,4 +373,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default Healthcare;

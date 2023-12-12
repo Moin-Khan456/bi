@@ -49,7 +49,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function MarketPlace(props) {
   const faqdetails = [
     {
       id: "1",
@@ -323,6 +323,12 @@ function ReactNativeDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/industry/marketplace-software-development-services"
         />
+         <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Group+7187.png"
+          as="image"
+        />
       </Head>
       <Loader />
       <Header />
@@ -392,4 +398,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default MarketPlace;

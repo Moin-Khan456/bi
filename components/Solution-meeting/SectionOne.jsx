@@ -25,14 +25,15 @@ export default function HireBanner() {
             </button>
           </Link>
         </section>
-        <section className="pt-0 pl-12 ed-tech-dropshadow relative z-50 left-[38rem] hidden lg:block max-w-[500px] bg-red-500">
+        <section className="pt-0 pl-12 ed-tech-dropshadow relative z-50 left-[38rem] hidden lg:block w-[400px] bg-red-500">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/meeting-and-planning/Asset+2.png"
             alt="Custom Web Development"
-            className={`rounded-2xl ed-tech-dropshadow absolute left-72 -bottom-4`}
+            className={`rounded-2xl ed-tech-dropshadow absolute left-72 bottom-10`}
             fetchPriority="high"
-            width={1900}
-            height={1900}
+            priority
+            width={800}
+            height={800}
           />
         </section>
       </section>

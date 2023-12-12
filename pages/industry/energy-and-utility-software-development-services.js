@@ -49,7 +49,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function Energy(props) {
   const faqdetails = [
     {
       id: "1",
@@ -324,6 +324,12 @@ function ReactNativeDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/industry/ecommerce-software-development-services"
         />
+         <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Mask+group.png"
+          as="image"
+        />
       </Head>
       <Loader />
       <Header />
@@ -401,4 +407,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default Energy;

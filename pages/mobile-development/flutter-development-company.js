@@ -32,7 +32,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function ReactNativeDeveloper(props) {
+function Flutter(props) {
   const content =
     "Brain Inventory specializes in creating cost-effective and efficient applications with our perfectly crafted, creative, and leading-edge flutter app development solutions for customers all around the globe. We help you develop high-end functional mobile applications.";
 
@@ -191,4 +191,4 @@ function ReactNativeDeveloper(props) {
     </>
   );
 }
-export default ReactNativeDeveloper;
+export default Flutter;

@@ -13,16 +13,18 @@ const Index = () => {
         </h2>
         <Image
           src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png"
-          alt=""
+          alt="Healthcare Through Innovation"
           width={500}
           height={500}
+          loading="lazy"
           className="w-[80px] absolute top-48 left-48 hidden lg:block"
         />
         <Image
           src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6969.png"
-          alt=""
+          alt="Healthcare Through Innovation"
           width={500}
           height={500}
+          loading="lazy"
           className="w-[80px] absolute top-40 right-48 hidden lg:block"
         />
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center max-w-[1450px] relative z-20 px-2">
@@ -35,8 +37,10 @@ const Index = () => {
           <Image
             src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/Group+7115.png"
             alt="Healthcare Software Development Company"
-            width={1800}
-            height={1800}
+            width={800}
+            height={800}
+            fetchPriority="high"
+            priority
             className=" lg:w-[700px] lg:h-[600px] "
           />
 

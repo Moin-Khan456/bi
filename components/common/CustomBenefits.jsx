@@ -19,7 +19,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
                             <ul className="team-list">
                                 {benefitsList?.map((ele, index) => (
                                     <li key={index}>
-                                        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/right-arrow.svg" width={20} height={20} alt="Arrow Forward" />&nbsp;
+                                        <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/right-arrow.svg" width={20} height={20} alt="Arrow Forward" />&nbsp;
                                         {ele}
                                     </li>
                                 ))}

@@ -155,7 +155,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_mobile+app+integration.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_mobile+app+integration.jpg"
         />{" "}
         {/* Set your image URL here */}
         <meta
@@ -164,7 +164,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
         <link
           rel="canonical"
@@ -179,8 +179,8 @@ function HireAangularJsDeveloper(props) {
             title="Mobile Application"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+3.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+1.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_mobile+app+integration+3.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_mobile+app+integration+1.png"
             alt="Mobile Application Integration Services"
             type="app"
             unique="integration"
@@ -188,7 +188,7 @@ function HireAangularJsDeveloper(props) {
           <Customer />
           <Experienced
             title="Mobile Application Integration "
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_mobile+app+integration+2.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_mobile+app+integration+2.png"
             para1={subhead1}
             para2={subhead2}
             para3={subhead3}

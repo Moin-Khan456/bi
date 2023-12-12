@@ -25,7 +25,7 @@ const SectionTwo = ({ title, subTitle, head1, description, className }) => {
                 <div className="relative z-30">
                    <div className="flex">
                       <Image 
-                      src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+6990.png"
+                      src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+6990.png"
                       alt=''
                       width={30}
                       height={40}

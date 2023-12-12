@@ -69,7 +69,7 @@ export default function Home() {
         <meta property="og:url" content="https://braininventory.in" />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/home_preview.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/home_preview.png"
         />
         <meta name="p:domain_verify" content="/pinterest-551ed.html" />
         <meta name="p:domain_verify" content="/googlec59025ad92b5fc4c.html" />

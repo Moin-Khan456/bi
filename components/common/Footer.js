@@ -326,7 +326,7 @@ const FooterSections = [
 const organizations = [
   {
     _id: 1,
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/footer-firm1.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm1.png",
     alt: "brain inventory best rating and reviews on Good Firm",
     href: "https://www.goodfirms.co/company/brain-inventory",
     width: 90,
@@ -334,7 +334,7 @@ const organizations = [
   },
   {
     _id: 2,
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/footer-firm3.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm3.png",
     alt: "brain inventory best rating and reviews on Clutch",
     href: "https://clutch.co/profile/brain-inventory",
     width: 70,
@@ -342,7 +342,7 @@ const organizations = [
   },
   {
     _id: 3,
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/footer-firm4.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm4.png",
     alt: "brain inventory best rating and reviews on Trust Pilot",
     href: "https://www.trustpilot.com/review/braininventory.com",
     width: 120,
@@ -350,7 +350,7 @@ const organizations = [
   },
   {
     _id: 4,
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/footer-firm5.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm5.png",
     alt: "brain inventory best rating and reviews on Upwork",
     href: "https://www.upwork.com/ag/braininventory/",
     width: 120,
@@ -426,7 +426,7 @@ export default function Footer() {
                 >
                   <Image
                     src={
-                      "https://d1u4arv5y5eda6.cloudfront.net/images/meta.svg"
+                      "https://braininventory.s3.us-east-2.amazonaws.com/images/meta.svg"
                     }
                     width={28}
                     height={28}
@@ -442,7 +442,7 @@ export default function Footer() {
                 >
                   <Image
                     src={
-                      "https://d1u4arv5y5eda6.cloudfront.net/images/linkedIn.svg"
+                      "https://braininventory.s3.us-east-2.amazonaws.com/images/linkedIn.svg"
                     }
                     width={28}
                     height={28}
@@ -458,7 +458,7 @@ export default function Footer() {
                 >
                   <Image
                     src={
-                      "https://d1u4arv5y5eda6.cloudfront.net/images/dribble.svg"
+                      "https://braininventory.s3.us-east-2.amazonaws.com/images/dribble.svg"
                     }
                     width={24}
                     height={24}
@@ -474,7 +474,7 @@ export default function Footer() {
                 >
                   <Image
                     src={
-                      "https://d1u4arv5y5eda6.cloudfront.net/images/instagram.svg"
+                      "https://braininventory.s3.us-east-2.amazonaws.com/images/instagram.svg"
                     }
                     width={24}
                     height={24}
@@ -490,7 +490,7 @@ export default function Footer() {
                 >
                   <Image
                     src={
-                      "https://d1u4arv5y5eda6.cloudfront.net/images/youtube.svg"
+                      "https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.svg"
                     }
                     width={30}
                     height={30}

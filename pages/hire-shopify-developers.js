@@ -192,7 +192,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
         <meta
           property="og:url"

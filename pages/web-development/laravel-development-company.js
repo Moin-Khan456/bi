@@ -142,7 +142,7 @@ function HireAangularJsDeveloper(props) {
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+170+(1).png"
             alt="Laravel Development Company"
             type="php"

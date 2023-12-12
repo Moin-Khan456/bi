@@ -138,7 +138,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_custom+app+development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_custom+app+development.jpg"
         />
         <link
           rel="canonical"
@@ -154,8 +154,8 @@ function HireAangularJsDeveloper(props) {
             title="Custom Mobile App"
             content={content}
             btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             alt="custom app development"
             type="app"
           />

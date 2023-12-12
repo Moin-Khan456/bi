@@ -21,22 +21,22 @@ const Industries = () => {
                 <section className=''>
                     <section className=''>
                         <section id="tab-1" className="tab-content_i current">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-1.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-1.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-2" className="tab-content_i">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-2.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-2.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-3" className="tab-content_i">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-3.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-3.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-4" className="tab-content_i">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-4.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-4.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-5" className="tab-content_i">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-5.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-5.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-6" className="tab-content_i">
-                            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/I-5.png" className="img_industry_1" alt="industries" width={500} height={500} />
+                            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-5.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                     </section>
                     <section className=''>

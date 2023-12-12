@@ -12,19 +12,19 @@ export default function ChooseBraininventory({head, blue, alt}) {
                         </h1>
                         <div className="flex flex-col lg:flex-row w-full">
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Group 6156.svg" alt={alt} width={40} height={40}/>
+                                <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6156.svg" alt={alt} width={40} height={40}/>
                                 <p className="Gilroy-Light text-lg opacity-60 pt-4">
                                     We can offer integration with third-party tools, enabling extended website functionality from payment gateways to marketing automation. Our team has the expertise to ensure a seamless experience for your customers.
                                 </p>
                             </div>
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Group 6157.svg"  alt={alt} width={40} height={40}/>
+                                <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6157.svg"  alt={alt} width={40} height={40}/>
                                 <p className="Gilroy-Light text-lg opacity-60 pt-4">
                                 At Brain Inventory, our mission is to develop custom web solutions by providing cutting-edge solutions and a highly stable user-friendly website that is tailored to your needs.
                                 </p>
                             </div>
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Group 6158.svg"  alt={alt} width={40} height={40}/>
+                                <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6158.svg"  alt={alt} width={40} height={40}/>
                                 <p className="Gilroy-Light text-lg opacity-60 pt-4">
                                 Our delivery processes are transparent, our communication is excellent, and we offer a flexible approach; this allows us to deliver custom software projects to all types of businesses, ranging from startups to large enterprises.
                                 </p>

@@ -81,7 +81,7 @@ export default function ChooseBraininventory({ reasons, subhead, alt }) {
             </a>
           </div>
           <div>
-            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt="Hire dedicated remote developers | Custom software development company" width={700} height={700} />
+            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/choose-b1.png" alt="Hire dedicated remote developers | Custom software development company" width={700} height={700} />
           </div>
         </div>
       </div>

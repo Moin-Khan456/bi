@@ -59,17 +59,17 @@ const Fatoura = () => {
     space: "",
     brief: "CREATE & MANAGE YOUR ",
     styleBrief: "INVOICES",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group 5166.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group 5166.png",
     alt: "Fatoura",
   };
 
   const sectionOneImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6420.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Mask Group 172.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6420.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Mask Group 172.png",
   };
   const sectionTwoImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6419.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6418.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6419.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6418.png",
   };
 
   const milestoneContent = [
@@ -81,67 +81,67 @@ const Fatoura = () => {
   const solution = "Solution done for the challenges- Advanced-level report generation was planned in a way that we mapped the key parameters before starting the development, which helped us to efficiently use the DB. Regarding real-time IM and email management, we execute a job every 30 seconds to check new emails and messages. It was designed and planned in a way to not put any load on the server as it was running every 30 seconds. Alongside keeping the code structure optimized, used SKDs and ran the cron every for 1 minute. We made different stages and connected the node of every stage like the start and the endpoints. Added a real-time auto-save to avoid any rework for the travel agents.";
   const tech = [
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/hvh.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/hvh.png",
       name: "PHP"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/2.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/2.png",
       name: "MySQL"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/3.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/3.png",
       name: "Javascript"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/jhj.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/jhj.png",
       name: "Curl"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/fddf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/fddf.png",
       name: "AWS SDK"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/kk.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/kk.png",
       name: "Google Places API"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/MNBNM.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/MNBNM.png",
       name: "IMAP"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/bnv.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/bnv.png",
       name: "Widgety API"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/nbb.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/nbb.png",
       name: "Flight Stats API"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/BVVVD.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/BVVVD.png",
       name: "Stripe"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/IJMTGBIK.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/IJMTGBIK.png",
       name: "AWS"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/KJHNGBFVCX.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/KJHNGBFVCX.png",
       name: "Microservices"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/rgdgfg.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
       name: "Docker"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/MNBVC.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/MNBVC.png",
       name: "Kubernetes"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/okska.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/okska.png",
       name: "Project Expedition API"
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/ikhjh.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/ikhjh.png",
       name: "Facebook SDK"
     }
   ]
@@ -149,31 +149,31 @@ const Fatoura = () => {
     {
       id: 1,
       name: "Sidra Shahid",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group -1.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group -1.png",
       role: "Software Architecture",
     },
     {
       id: 2,
       name: "Deepak Dangi",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group 6438.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group 6438.png",
       role: "Sr. Software Engineer",
     },
     {
       id: 3,
       name: "Shivam Yadav",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group 6300.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group 6300.png",
       role: "Software Engineer",
     },
     {
       id: 4,
       name: "Hussain Ali",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group 6429.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group 6429.png",
       role: "Sr. Software Engineer",
     },
     {
       id: 5,
       name: "Krishna Agrawal",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group 6420.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
   ];
@@ -205,7 +205,7 @@ const Fatoura = () => {
           href="https://braininventory.in/project/revolution-travel-crm"
         />
       </Head>
-      <div className="bg-cover h-screen bg-[url('https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Mask+Group+248.png')]">
+      <div className="bg-cover h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Mask+Group+248.png')]">
         <Header />
         <div className="container lg:pt-48">
           <SectionOne section={FatouraSectionOne} />
@@ -225,14 +225,14 @@ const Fatoura = () => {
       <div className="py-8">
         <div className="flex justify-center items-center ">
           <Image width={500} height={500}
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group+6533.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6533.png"
             alt=""
             className="w-[34rem]"
           />
         </div>
         <div className="relative w-full h-screen lg:h-[78vh] overflow-y-scroll no-scrollbar">
           <Image width={1500} height={1500}
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group+6535.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6535.png"
             alt=""
             className="w-full"
           />
@@ -242,7 +242,7 @@ const Fatoura = () => {
       
       <div className="max-w-full flex justify-center">
         <Image width={500} height={500}
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt=""
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%]"
         />
@@ -254,10 +254,10 @@ const Fatoura = () => {
           loop
           autoPlay={true}
           controls={false}
-          poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
         >
           <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/Cojmp+2.mp4"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Cojmp+2.mp4"
             type="video/mp4"
           />
         </video>

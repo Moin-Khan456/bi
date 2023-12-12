@@ -164,7 +164,7 @@ function HireAangularJsDeveloper(props) {
 
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Full+Stack+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Full+Stack+Developers.jpg"
         />
         <meta
           property="og:url"
@@ -184,7 +184,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Full Stack"
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Hire Full stack developers and programmers"
             />
             <Customer />
@@ -193,7 +193,7 @@ function HireAangularJsDeveloper(props) {
               para1={subhead1}
               para2={subhead2}
               card={experienceCards}
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/leio-mclaren-OzeOpF6kTyg-unsplash.png"
               alt="Hire Full Stack Developers"
             />
             <HireMarquee title="Full Stack" />

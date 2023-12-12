@@ -153,7 +153,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_hybrid-app-development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_hybrid-app-development.jpg"
         />{" "}
         {/* Set your image URL here */}
         <meta
@@ -162,7 +162,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
         <link
           rel="canonical"
@@ -177,15 +177,15 @@ function HireAangularJsDeveloper(props) {
             title="Hybrid App"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+2.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+2.png"
             alt="hybrid development company"
             type="app"
           />
           <Customer />
           <Experienced
             title="Hybrid App Development"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+1.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+1.png"
             para1={subhead1}
             para2={subhead2}
             para3={subhead3}

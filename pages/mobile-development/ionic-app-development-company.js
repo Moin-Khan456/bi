@@ -157,7 +157,7 @@ function HireAangularJsDeveloper(props) {
         />
         {/* <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_hybrid-app-development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_hybrid-app-development.jpg"
         />{" "} */}
         {/* Set your image URL here */}
         <meta
@@ -177,7 +177,7 @@ function HireAangularJsDeveloper(props) {
             title="Ionic App Development"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Braininventory_hybrid+app+3.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+173.png"
             alt="Ionic App Development Company"
             type="app"

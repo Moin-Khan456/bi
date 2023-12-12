@@ -9,7 +9,7 @@ const CustomSocialNetwork = () => {
             <p>Your companions through the entire journey of social network design & development</p>
         </div>
         <div className="w-full flex justify-center my-8">
-            <Image  width={1200} height={500} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/Group+6849.png" alt=""/>
+            <Image  width={1200} height={500} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6849.png" alt=""/>
         </div>
     </div>
   )

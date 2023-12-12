@@ -176,7 +176,7 @@ function Timeline(props) {
             </div>
             <div className="flex justify-center">
               <Image
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6813.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
                 alt=""
                 width={1500}
                 height={1500}

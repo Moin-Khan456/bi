@@ -22,7 +22,7 @@ const HomeSectionTen = () => {
               info={{
                 name: "Numetric.Work",
                 images:
-                  "https://d1u4arv5y5eda6.cloudfront.net/images/numetrics.png",
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/numetrics.png",
                 alt: "Numetric: Account software app development",
                 summary:
                   "Numetric-Online Accounting Software similar to QuickBooks",
@@ -37,10 +37,10 @@ const HomeSectionTen = () => {
                     autoPlay={true}
                     controls={false}
                     className="relative top-20 scale-[2]"
-                    poster="https://d1u4arv5y5eda6.cloudfront.net/images/work-v-thumbnail.png"
+                    poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
                   >
                     <source
-                      src="https://d1u4arv5y5eda6.cloudfront.net/videos/work.mp4"
+                      src="https://braininventory.s3.us-east-2.amazonaws.com/videos/work.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -98,7 +98,7 @@ const HomeSectionTen = () => {
               info={{
                 name: "One Premium Down",
                 images:
-                  "https://d1u4arv5y5eda6.cloudfront.net/images/nft-port.png",
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/nft-port.png",
                 alt: "NFT Marketplace software development by Brain Inventory",
                 summary: "Mint, Sell & Buy NFTs inspired by open Sea",
               }}
@@ -108,7 +108,7 @@ const HomeSectionTen = () => {
               info={{
                 name: "Skedy",
                 images:
-                  "https://d1u4arv5y5eda6.cloudfront.net/images/Skedy.png",
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/Skedy.png",
                 alt: "Skedy, school management app  developed by Brain Inventory",
                 summary: "School/Institution Management Solution",
               }}

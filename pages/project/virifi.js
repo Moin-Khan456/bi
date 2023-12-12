@@ -56,41 +56,41 @@ const Virifi = () => {
   const VirifiSectionOne = {
     brief:
       "Certifies and verifies your files with protected confidentiality, E2E encryption,and helps you digitize your business with the next generation of verification.",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Group+6385.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group+6385.png",
     alt: "Virifi",
   };
 
   const tech = [
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/6.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/6.png",
       name: "Angular",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/7.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/7.png",
       name: "NodeJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/9.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/9.png",
       name: "ExpressJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/8.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/8.png",
       name: "MongoDB",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/hyperledger.PNG",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/hyperledger.PNG",
       name: "Hyperledger Fabric",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/rgdgfg.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
       name: "Docker",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/dfdf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/dfdf.png",
       name: "AWS EC2",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/fddf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/fddf.png",
       name: "AWS S3",
     },
   ];
@@ -98,20 +98,20 @@ const Virifi = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6420.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6429.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
       role: "Software Architecture",
     },
     {
       id: 2,
       name: "Gautam Patil",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Group%20-1.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group%20-1.png",
       role: "Software Engineer",
     },
 
@@ -119,7 +119,7 @@ const Virifi = () => {
       id: 4,
       name: "Sohail Khan",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Group%206438.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group%206438.png",
       role: "Software Architecture",
     },
   ];
@@ -161,7 +161,7 @@ const Virifi = () => {
       </Head>
       <Header />
       <div className="">
-        <div className="w-full px-4 flex flex-col items-center pt-12 justify-center lg:block lg:px-12 bg-[url('https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Image+8.png')]">
+        <div className="w-full px-4 flex flex-col items-center pt-12 justify-center lg:block lg:px-12 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8.png')]">
           <div className="container">
             <SectionOne section={VirifiSectionOne} />
             <h1 className="invisible">Virifi</h1>
@@ -169,7 +169,7 @@ const Virifi = () => {
         </div>
         <div>
           <Image
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Mask Group 287.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 287.png"
             className="lg:-mt-8 w-full"
             width={2000}
             height={100}
@@ -188,7 +188,7 @@ const Virifi = () => {
 
         <div className="flex w-full">
           <Image
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Repeat Grid 1.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
             alt=""
             width={2000}
             height={100}
@@ -206,13 +206,13 @@ const Virifi = () => {
 
         <div>
           <>
-            <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Image+8-Gradient.png')]">
+            <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8-Gradient.png')]">
               <h1 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
                 Marketing <span className="text-[#7600EB]">Website</span>
               </h1>
               <div className="px-4 lg:px-48 lg:py-12 ">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Group 6425.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6425.png"
                   alt=""
                   width={1000}
                   height={800}
@@ -227,7 +227,7 @@ const Virifi = () => {
         <div className="flex justify-center w-full py-12">
          <div className="container lg:px-28">
           <Image
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
             alt=""
             className="rounded-3xl w-[100%]"
             width={1500}
@@ -245,10 +245,10 @@ const Virifi = () => {
             loop
             autoPlay={true}
             controls={false}
-            poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+            poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
           >
             <source
-              src="https://d1u4arv5y5eda6.cloudfront.net/videos/Comp 2.mp4"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Comp 2.mp4"
               type="video/mp4"
             />
           </video>

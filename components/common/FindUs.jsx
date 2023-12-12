@@ -7,7 +7,7 @@ const FindUs = () => {
         <div className="p-4 container">
             <div className='flex flex-col lg:flex-row justify-between lg:mx-56'>
                 <div className="border-slate-400 border-2 rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl">
-                    <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/drew-beamer-3SIXZisims4-unsplash.png" width={500} height={500} alt="Custom Software Development Company | Hire Software Developers" />
+                    <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/drew-beamer-3SIXZisims4-unsplash.png" width={500} height={500} alt="Custom Software Development Company | Hire Software Developers" />
                 </div>
                 <div className="bg-white text-black lg:rounded-r-3xl lg:rounded-b-none lg:rounded-br-3xl p-4 rounded-b-2xl flex justify-center relative flex-col lg:p-6 lg:w-3/4">
                     <a href='#talk'>

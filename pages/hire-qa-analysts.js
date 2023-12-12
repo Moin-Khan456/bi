@@ -156,7 +156,7 @@ function HireAangularJsDeveloper(props) {
 
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+QA+Analyst.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+QA+Analyst.jpg"
         />
 
         <meta
@@ -177,7 +177,7 @@ function HireAangularJsDeveloper(props) {
             title="Hire QA"
             content={content}
             btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/campaign-creators-iEiUITs149M-unsplash.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
             alt="QA and Testing Specialists"
             unique="analyst"
           />

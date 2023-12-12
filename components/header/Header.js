@@ -47,7 +47,7 @@ const Header = () => {
                 <div className="relative w-36 h-12 cursor-pointer">
                   <Image
                     priority={true}
-                    src="https://d1u4arv5y5eda6.cloudfront.net/images/main/Logobg.png"
+                    src="https://braininventory.s3.us-east-2.amazonaws.com/images/main/Logobg.png"
                     className="cursor-pointer"
                     alt="it service company offers web and app design and development"
                     preload="metadata"

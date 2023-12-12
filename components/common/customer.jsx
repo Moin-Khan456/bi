@@ -3,19 +3,19 @@ import React from "react";
 
 export default function Customer() {
 
-    const customerImages = ["https://d1u4arv5y5eda6.cloudfront.net/images/c-1.png",
-        "https://d1u4arv5y5eda6.cloudfront.net/images/c-2.png",
-        "https://d1u4arv5y5eda6.cloudfront.net/images/c-3.png",
-        "https://d1u4arv5y5eda6.cloudfront.net/images/c-4.png",
-        "https://d1u4arv5y5eda6.cloudfront.net/images/c-5.png",
-        "https://d1u4arv5y5eda6.cloudfront.net/images/c-6.png"]
+    const customerImages = ["https://braininventory.s3.us-east-2.amazonaws.com/images/c-1.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/c-2.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/c-3.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/c-4.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/c-5.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/c-6.png"]
 
     return (
         <main className="my-4 ">
             <section>
                 <Image width={1450}
                     height={700}
-                    src="https://d1u4arv5y5eda6.cloudfront.net/images/developers.png" alt="Hire dedicated remote developers | Custom software development company"
+                    src="https://braininventory.s3.us-east-2.amazonaws.com/images/developers.png" alt="Hire dedicated remote developers | Custom software development company"
                     className="w-full"
                 />
             </section>

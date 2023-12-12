@@ -77,7 +77,7 @@ const Section = ({ info }) => {
         </span>
         <div className="xl:col-span-2 md:col-span-1 col-span-1 relative h-[350px]">
           <Image
-            src={"https://d1u4arv5y5eda6.cloudfront.net/images/" + info.image}
+            src={"https://braininventory.s3.us-east-2.amazonaws.com/images/" + info.image}
             loading="lazy"
             alt={info.alt}
             layout="fill"

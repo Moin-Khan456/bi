@@ -10,7 +10,7 @@ const info = [
       white: "Development",
     },
     url: "/",
-    video: "https://d1u4arv5y5eda6.cloudfront.net/images/WebDevelopment.mp4",
+    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/WebDevelopment.mp4",
     techList: [
       {
         name: "Reactjs Development",
@@ -33,7 +33,7 @@ const info = [
       white: "Development",
     },
     url: "/",
-    video: "https://d1u4arv5y5eda6.cloudfront.net/images/AppDevelopment.mp4",
+    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4",
     techList: [
       {
         name: "android native",
@@ -56,7 +56,7 @@ const info = [
       white: "Design",
     },
     url: "/",
-    video: "https://d1u4arv5y5eda6.cloudfront.net/images/UIUX.mp4",
+    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/UIUX.mp4",
     techList: [
       {
         name: "product design",
@@ -150,7 +150,7 @@ const Section = ({ info, url, video }) => {
                 autoPlay={true}
                 controls={false}
                 loading="lazy"
-                poster="https://d1u4arv5y5eda6.cloudfront.net/images/work-v-thumbnail.png"
+                poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
               >
                 <source src={video} type="video/mp4" />
               </video>

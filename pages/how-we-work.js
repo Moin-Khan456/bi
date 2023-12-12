@@ -96,7 +96,7 @@ export default function HowWeWork() {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_how+we+work.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_how+we+work.jpg"
         />
 
         <meta

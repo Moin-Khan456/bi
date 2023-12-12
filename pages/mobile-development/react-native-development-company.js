@@ -150,7 +150,7 @@ function ReactNativeDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6625.png"
         />
         <link
           rel="canonical"
@@ -166,7 +166,7 @@ function ReactNativeDeveloper(props) {
               title="Top React Native"
               content={content}
               btn="Get a Quote"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6625.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6625.png"
               alt="React Native App Development "
             />
             <WhyMean type="React Native App" meanReasons={meanReasons} />

@@ -47,26 +47,26 @@ const Virifi = () => {
   const VirifiSectionOne = {
     brief:
       "Certifies and verifies your files with protected confidentiality, E2E encryption,and helps you digitize your business with the next generation of verification.",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/project/virifi/Group+6385.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group+6385.png",
     alt: "Virifi",
   };
 
   const tech = [
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/CCVXV.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/CCVXV.png",
       name: "React Native",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/BFVDC.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/BFVDC.png",
       name: "Firebase",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/GNBVDS.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/GNBVDS.png",
       name: "NoSQL",
     },
 
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/images/rtc/rgdgfg.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
       name: "Docker",
     },
   ];
@@ -75,21 +75,21 @@ const Virifi = () => {
       id: 1,
       name: "Shivam Singh",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/Group%20-1.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%20-1.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Shubham patidar",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/Group%206300.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%206300.png",
       role: "Mobile Developer",
     },
     {
       id: 2,
       name: "Pritesh Patil",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/Group%206301.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%206301.png",
       role: "Quality Analyst",
     },
 
@@ -97,7 +97,7 @@ const Virifi = () => {
       id: 4,
       name: "Darshan Boyat",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/Group%20-2.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%20-2.png",
       role: "Jr. Software Enginner",
     },
   ];
@@ -184,7 +184,7 @@ const Virifi = () => {
         
         <div className="container">
           <Image
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
             alt=""
             className="rounded-3xl w-[100vw] px-[10vw] py-[5vh]"
             width={500}
@@ -202,10 +202,10 @@ const Virifi = () => {
             loop
             autoPlay={true}
             controls={false}
-            poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+            poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
           >
             <source
-              src="https://d1u4arv5y5eda6.cloudfront.net/videos/Comp 2.mp4"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Comp 2.mp4"
               type="video/mp4"
             />
           </video>

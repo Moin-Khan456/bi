@@ -29,7 +29,7 @@ const HomeSectionNine = () => {
               </div>
             </div>
             <div className="overflow-x-hidden relative bottom-24">
-              <Image width={1833} height={1425} loading="lazy" src="https://d1u4arv5y5eda6.cloudfront.net/images/groupImage.png" alt="custom software development solutions" />
+              <Image width={1833} height={1425} loading="lazy" src="https://braininventory.s3.us-east-2.amazonaws.com/images/groupImage.png" alt="custom software development solutions" />
               <div className="absolute bottom-0 2xl:h-40 h-28 w-full bg-gradient-6"></div>
             </div>
           </div>

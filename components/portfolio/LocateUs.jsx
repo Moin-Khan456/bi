@@ -65,7 +65,7 @@ const Card = ({ info }) => {
       <div className="grid grid-cols-2 gap-2 mb-6 items-start">
         <div className="relative place-self-center">
           <Image
-            src={"https://d1u4arv5y5eda6.cloudfront.net/images/" + info.image}
+            src={"https://braininventory.s3.us-east-2.amazonaws.com/images/" + info.image}
             loading="lazy"
             alt={info.alt}
             width={138}

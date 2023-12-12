@@ -15,9 +15,7 @@ module.exports = {
       "braininventory.s3.us-east-2.amazonaws.com",
       "d1u4arv5y5eda6.cloudfront.net",
       "braininventoryblogs.com",
-    ],
-    loader: "imgix",
-    path: "https://braininventory.s3.us-east-2.amazonaws.com"
+    ]
   },
   async redirects() {
     const redirection = redirectionsPage();

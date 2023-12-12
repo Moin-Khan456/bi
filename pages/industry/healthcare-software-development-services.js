@@ -346,7 +346,7 @@ function Healthcare(props) {
                 slow={70000}
                 fast={55000}
                 alt="Healthcare Software Development Services"
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
               />
               <PlatformDevelopment
                 data={keyFeatures}

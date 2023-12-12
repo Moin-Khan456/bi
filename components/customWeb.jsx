@@ -13,7 +13,7 @@ const Index = ({ para1, para2, para3, type }) => {
           <Image
             width={700}
             height={500}
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
             alt=""
             className="w-96 lg:w-[40%] h-full rounded-2xl"
           />
@@ -21,7 +21,7 @@ const Index = ({ para1, para2, para3, type }) => {
           <Image
             width={500}
             height={500}
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_custom+mobile+app+developers_+WHY+YOU+NEED+A+CUSTOM+APP+DEV.+SULUTION.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_custom+mobile+app+developers_+WHY+YOU+NEED+A+CUSTOM+APP+DEV.+SULUTION.png"
             alt="Custom Software Development Company | Hire Dedicated Software Developers"
             className="w-96 lg:w-[40%] rounded-2xl"
           />

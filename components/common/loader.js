@@ -10,7 +10,7 @@ export default function loader({ none }) {
           controls={false}
         >
           <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/biloader.mp4"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/videos/biloader.mp4"
             type="video/mp4"
           />
         </video>

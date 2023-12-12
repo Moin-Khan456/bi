@@ -203,7 +203,7 @@ https://braininventory.in/hire-chatbot-developers"
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
         <meta
           property="og:url"
@@ -223,13 +223,13 @@ https://braininventory.in/hire-chatbot-developers"
               title="Hire Chatbot"
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+1.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_hire+chatbot+developers+1.png"
               alt="Hire Dedicated Chatbot Developers"
             />
             <Customer />
             <Experienced
               title="Chatbot Developer"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_hire+chatbot+developers+2.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_hire+chatbot+developers+2.png"
               alt="Hire Chatbot Developers"
               para1={subhead1}
               para2={subhead2}

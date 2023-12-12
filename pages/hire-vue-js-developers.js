@@ -162,7 +162,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Vue+Js+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Vue+Js+Developers.jpg"
         />
 
         <meta
@@ -184,7 +184,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Vue js"
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
               alt="Vue.js Development Company"
               type="hire"
             />

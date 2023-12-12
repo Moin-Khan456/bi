@@ -26,7 +26,7 @@ function FaqHire({ faq }) {
                                         <section className="flex md:block my-4 md:my-0">
                                             <button onClick={() => collapsed(el.id)} className="">
                                                 <Image width={el.title.length > 120 ? 85 : 40} height={el.title.length > 90 ? 85 : 40}
-                                                    src="https://d1u4arv5y5eda6.cloudfront.net/images/faq-arrow.svg"
+                                                    src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
                                                     className="cursor-pointer" alt="Custom Software Development Company | Hire Software Developers"
                                                 />
                                             </button>

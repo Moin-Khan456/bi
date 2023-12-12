@@ -7,7 +7,7 @@ import Image from 'next/image';
 const SectionOne = () => {
     return (
         <div className='flex flex-col lg:flex-row justify-between items-center lg:px-24 relative bottom-0 lg:-bottom-32 h-[75vh] lg:h-[148.5vh]'>
-            <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/ocureel/Group+6401.png" width={500} height={800} alt="" className="lg:hidden pt-[5rem] bg-gradient-to-r from-violet-500 to-fuchsia-500"/>
+            <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group+6401.png" width={500} height={800} alt="" className="lg:hidden pt-[5rem] bg-gradient-to-r from-violet-500 to-fuchsia-500"/>
             {/* <div className="lg:w-[15%] px-4 lg:px-0 flex justify-center bg-white py-3 rounded-2xl mt-4 shadow-2xl ">
                 <button className="flex flex-col items-center Gilroy" id="rtc-xd">
                     <span className="text-xs font-thin text-white pb-1">
@@ -29,7 +29,7 @@ const SectionOne = () => {
             />
             */}
             <div className="text-black font-bold flex items-center py-4 lg:py-0">
-                    Made with &nbsp; <Image width={80} height={50} src="https://d1u4arv5y5eda6.cloudfront.net/images/project/XD.png" alt="" className='w-8' />
+                    Made with &nbsp; <Image width={80} height={50} src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="" className='w-8' />
             </div>
         </div>
     )

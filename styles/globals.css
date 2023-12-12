@@ -263,14 +263,14 @@ body {
 }
 
 .hero-bg-1 {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/heroSide1.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/heroSide1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero-bg-2 {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/arrow-png.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/arrow-png.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -735,7 +735,7 @@ input[type=number] {
 
 .bg-image-name::after {
   content: '';
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/BulletIcon.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/BulletIcon.png');
   background-repeat: no-repeat;
   background-position: left center;
   display: block;
@@ -1989,18 +1989,18 @@ ul.list-modal {
 }
 
 .bg-solution {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/forte-banner.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/forte-banner.png');
   height: 100vh;
   background-size: cover;
 }
 
 .bg-hire-image {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/staffbanner.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png');
   background-size: cover;
 }
 
 .bg-vision-forte {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/forte-banner.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/forte-banner.png');
   height: 100vh;
   background-size: contain;
 }
@@ -2010,19 +2010,19 @@ ul.list-modal {
 }
 
 .bg-hr-1 {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_career+interview+3.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_career+interview+3.png');
   background-size: cover;
   height: 60vh;
 }
 
 .bg-hr-2 {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_career+interview.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_career+interview.png');
   background-size: cover;
   height: 60vh;
 }
 
 .bg-hr-3 {
-  background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_career+interview+2.png');
+  background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_career+interview+2.png');
   background-size: cover;
   height: 60vh;
 }
@@ -2677,7 +2677,7 @@ a.btn-filled.btn {
 
 
 .strip {
-  background-image: url("https://d1u4arv5y5eda6.cloudfront.net/videos/BrainInventory_(Website+Animaiton).mp4");
+  background-image: url("https://braininventory.s3.us-east-2.amazonaws.com/videos/BrainInventory_(Website+Animaiton).mp4");
   /* background-repeat: repeat-y; */
   padding: 2rem;
 }
@@ -2873,7 +2873,7 @@ a.btn-filled.btn {
   /* height: ; */
   position: relative;
   margin: -40px auto;
-  /* background-image: url('https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+163.png');
+  /* background-image: url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Mask+Group+163.png');
   background-size: cover;
   background-position: bottom center; */
 

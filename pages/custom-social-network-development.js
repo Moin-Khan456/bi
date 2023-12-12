@@ -66,7 +66,7 @@ function HireAangularJsDeveloper(props) {
         <meta property="og:url" content="https://braininventory.in/custom-social-network-development" />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.netimages/I-1.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.comimages/I-1.png"
         />
         
         <meta name="robots" content="noindex, nofollow" />
@@ -106,7 +106,7 @@ function HireAangularJsDeveloper(props) {
           <HireBanner
             content="Get unmatched customer engagement by our powerful social networks"
             btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/Group+6768.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6768.png"
             alt="Android Appp Development Services, Android App Development"
             setPop={setPop}
             pop={pop}
@@ -125,7 +125,7 @@ function HireAangularJsDeveloper(props) {
                 {!localForm && (
                   <div className="w-full h-[70%] hidden lg:block">
                     <Image
-                      src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/Group+6771.png"
+                      src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6771.png"
                       priority={true}
                       alt=""
                       width={150}
@@ -147,7 +147,7 @@ function HireAangularJsDeveloper(props) {
               <WhyBI />
               <div className="flex justify-center">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6813.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
                   alt=""
                   width={1500}
                   height={1500}

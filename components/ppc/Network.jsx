@@ -12,17 +12,17 @@ const TileMatrix = () => {
             <div className="flex flex-col justify-center items-center lg:flex-row">
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image width={1000} height={1000} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/box.png" alt=""/>
+                        <Image width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/box.png" alt=""/>
                     </span>
                 </div>
                 <div className="flex flex-col lg:mt-16">
                     <span className='w-[180px] py-20 text-center flex justify-center items-center text-white Satoshi bg-[#141414] hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image width={1000} height={1000} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/brag.png" alt=""/>
+                        <Image width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/brag.png" alt=""/>
                     </span>
                 </div>
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image width={1000} height={1000} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/M-logo.png" alt=""/>
+                        <Image width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/M-logo.png" alt=""/>
                     </span>
                 </div>
             </div>

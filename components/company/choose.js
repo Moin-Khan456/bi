@@ -16,7 +16,7 @@ function choose(props) {
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 mt-8">
           <div className="bg-vision">
             <Image
-              src="https://d1u4arv5y5eda6.cloudfront.net/images/Icon1.svg"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon1.svg"
               className="text-center m-auto block w-16"
               alt=""
               width={40}
@@ -26,7 +26,7 @@ function choose(props) {
           </div>
           <div className="bg-vision">
             <Image
-              src="https://d1u4arv5y5eda6.cloudfront.net/images/Icon2.svg"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon2.svg"
               className="text-center m-auto block  w-16"
               alt=""
               width={40}
@@ -38,7 +38,7 @@ function choose(props) {
           </div>
           <div className="bg-vision">
             <Image
-              src="https://d1u4arv5y5eda6.cloudfront.net/images/Icon3.svg"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon3.svg"
               className="text-center m-auto block w-16"
               alt=""
               width={40}
@@ -50,7 +50,7 @@ function choose(props) {
           </div>
           <div className="bg-vision">
             <Image
-              src="https://d1u4arv5y5eda6.cloudfront.net/images/Icon4.svg"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon4.svg"
               className="text-center m-auto block w-16"
               alt=""
               width={40}

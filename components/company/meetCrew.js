@@ -172,7 +172,7 @@ function meetCrew() {
                   <div className="w-[260px] h-[280px] mr-2 relative border-2 border-cutom object-fit-custom">
                     <Image
                       src={
-                        "https://d1u4arv5y5eda6.cloudfront.net/images/" +
+                        "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                         el.image
                       }
                       layout="fill"

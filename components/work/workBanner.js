@@ -28,10 +28,10 @@ const WorkBanner = () => {
                 loop
                 autoPlay={true}
                 controls={false}
-                poster="https://d1u4arv5y5eda6.cloudfront.net/images/work-v-thumbnail.png"
+                poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
               >
                 <source
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/AppDevelopment.mp4"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4"
                   type="video/mp4"
                 />
               </video>

@@ -132,7 +132,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_hybrid-app-development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_hybrid-app-development.jpg"
         />{" "}
         <meta
           property="og:url"
@@ -140,7 +140,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/wordpress-development.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/wordpress-development.png"
         />
         <link
           rel="canonical"
@@ -156,8 +156,8 @@ function HireAangularJsDeveloper(props) {
             title="WordPress Website Development"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+1.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+1.png"
             alt="WordPress website development services"
             type="php"
             unique="Company"
@@ -168,7 +168,7 @@ function HireAangularJsDeveloper(props) {
               <Experienced
                 title="WordPress Website Development"
                 type="why"
-                image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_wordpress+2.png"
+                image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+2.png"
                 alt="WordPress Website Development Company"
                 para1={subhead1}
                 para2={subhead2}

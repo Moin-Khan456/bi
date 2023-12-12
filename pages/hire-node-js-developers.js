@@ -169,7 +169,7 @@ function HireAangularJsDeveloper(props) {
 
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Node+JS+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Node+JS+Developers.jpg"
         />
 
         <meta
@@ -190,7 +190,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire NodeJS"
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+Node+JS+Developers.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Node+JS+Developers.png"
               alt="Remote Node.js Developers"
               type="hire"
             />

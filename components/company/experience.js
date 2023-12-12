@@ -76,7 +76,7 @@ function experience() {
               <div className="relative w-60 h-60  center block m-auto">
                 <Image
                   src={
-                    "https://d1u4arv5y5eda6.cloudfront.net/images/" + el.image
+                    "https://braininventory.s3.us-east-2.amazonaws.com/images/" + el.image
                   }
                   layout="fill"
                   alt=""

@@ -128,12 +128,12 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
         />
 
         <meta
           property="twitter:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_preview+image+codeigniter+2.jpg"
         />
         <link
           rel="canonical"
@@ -148,8 +148,8 @@ function HireAangularJsDeveloper(props) {
             title="CodeIgniter Development"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_Services.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+1.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_Services.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
             alt="CodeIgniter development company"
             type="php"
             unique="Service"
@@ -158,7 +158,7 @@ function HireAangularJsDeveloper(props) {
           <Experienced
             title="CodeIgniter Development"
             type="why"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_codeigniter+2.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+2.png"
             alt="CodeIgniter Development Service"
             para1={subhead1}
             para2={subhead2}

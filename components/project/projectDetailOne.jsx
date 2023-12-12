@@ -31,7 +31,7 @@ const Index = ({ section }) => {
         </div> 
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;
-          <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/project/XD.png" alt="" width={25} height={25} />
+          <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="" width={25} height={25} />
         </div>
       </div>
     </main>

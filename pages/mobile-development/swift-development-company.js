@@ -143,7 +143,7 @@ function SwiftDevelopment(props) {
         <meta property="og:url" content="https://braininventory.in/mobile-development/swift-development-company" />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6743.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6743.png"
         />
         <link
           rel="canonical"
@@ -159,7 +159,7 @@ function SwiftDevelopment(props) {
             title="Top Swift App"
             content={content}
             btn="Get a Quote"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6743.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6743.png"
             alt="Swift Application Development Services"
           />
           <WhyMean type="Swift App" meanReasons={meanReasons} />

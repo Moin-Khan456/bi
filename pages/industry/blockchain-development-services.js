@@ -340,7 +340,7 @@ function Blockchain(props) {
                 pageCategoryAbbr="BLOCKCHAIN APP DEVELOPMENT       "
                 slow={70000}
                 fast={55000}
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
                 alt="Blockchain Development Company"
               />
               <PlatformDevelopment

@@ -5,11 +5,11 @@ const Index = ({ }) => {
     const carouselImages = [
         {
             id: 1,
-            url: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Group 6445.png",
+            url: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6445.png",
         },
         {
             id: 2,
-            url: "https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Group 6446.png",
+            url: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6446.png",
         },
     ];
     return (
@@ -17,7 +17,7 @@ const Index = ({ }) => {
 
             <div className="w-full relative flex justify-center">
                 <Image
-                    src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Mask%20Group%20176.png"
+                    src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Mask%20Group%20176.png"
                     alt=""
                     width={1500}
                     height={1500}
@@ -36,7 +36,7 @@ const Index = ({ }) => {
 
             <div className="flex justify-center">
                 <Image
-                    src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Perspective-App-Screens-Mock-Up-16.png"
+                    src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Perspective-App-Screens-Mock-Up-16.png"
                     alt=""
                     width={1500}
                     height={1500}
@@ -47,7 +47,7 @@ const Index = ({ }) => {
             <div className="flex justify-center">
 
                 <Image
-                    src="https://d1u4arv5y5eda6.cloudfront.net/projects/MFM/Group 6448.png"
+                    src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6448.png"
                     alt=""
                     width={1500}
                     height={1500}

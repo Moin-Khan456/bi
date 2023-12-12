@@ -21,7 +21,7 @@ const TileMatrix = () => {
             <span className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_icon+1.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+1.png"
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
@@ -31,7 +31,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_icon+4.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+4.png"
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
@@ -43,7 +43,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_icon+3.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+3.png"
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
@@ -53,7 +53,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image
-                  src="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_icon+2.png"
+                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+2.png"
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"

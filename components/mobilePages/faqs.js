@@ -26,7 +26,7 @@ function Faqs({faq}) {
                     <div className="flex md:block my-4 md:my-0">
                       <button onClick={() => collapsed(el.id)} className="">
                         <Image
-                          src="https://d1u4arv5y5eda6.cloudfront.net/images/faq-arrow.svg"
+                          src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
                           className="cursor-pointer"
                           alt=""
                           width={40} height={40}

@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/leadership.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/leadership.png",
     alt: "Custom Software Development Company | Hire Software Developers",
     width: 400,
     height: 300,
   },
   {
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/leadership.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/leadership.png",
     alt: "Custom Software Development Company | Hire Software Developers",
     width: 400,
     height: 300,
   },
   {
-    src: "https://d1u4arv5y5eda6.cloudfront.net/images/leadership.png",
+    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/leadership.png",
     alt: "Custom Software Development Company | Hire Software Developers",
     width: 400,
     height: 300,

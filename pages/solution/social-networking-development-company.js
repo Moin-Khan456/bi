@@ -283,7 +283,7 @@ function SocialMedia(props) {
           <SectionSix
             headAbove="Develop Your Own Social Solution"
             subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Mask+Group+166.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Mask+Group+166.png"
             alt=""
             customClasses="w-[450px] !bottom-0 max-w-[500px]"
             btn="BUILD YOUR SOCIAL MEDIA APP"
@@ -302,7 +302,7 @@ function SocialMedia(props) {
             pageCategoryAbbr="SEO"
             slow={22000}
             fast={15000}
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+7033.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7033.png"
             alt="social networking app development company"
           />
           <PlatformDevelopment

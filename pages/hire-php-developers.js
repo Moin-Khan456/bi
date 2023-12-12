@@ -161,7 +161,7 @@ function HireAangularJsDeveloper(props) {
 
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+PHP+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+PHP+Developers.jpg"
         />
         <meta
           property="og:url"
@@ -182,13 +182,13 @@ function HireAangularJsDeveloper(props) {
             title="Hire PHP"
             content={content}
             btn="Contact Us!"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+1.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Brainventory_PHP+developers+1.png"
             alt="Hire Dedicated PHP Developer"
           />
           <Customer />
           <Experienced
             title="PHP Developer"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Brainventory_PHP+developers+2.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Brainventory_PHP+developers+2.png"
             alt="Hire PHP Developers"
             para1={subhead1}
             para2={subhead2}

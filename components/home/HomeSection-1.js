@@ -24,7 +24,7 @@ export default function HomeSectionOne({}) {
               <Image
                 layout="fill"
                 priority={true}
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/scrollAnimation.svg"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/scrollAnimation.svg"
                 alt="custom software development solutions"
               />
             </div>
@@ -42,7 +42,7 @@ export default function HomeSectionOne({}) {
               alt="custom software development solutions"
             >
               <source
-                src="https://d1u4arv5y5eda6.cloudfront.net/videos/FinalVideo.mp4"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/videos/FinalVideo.mp4"
                 type="video/mp4"
               />
             </video>

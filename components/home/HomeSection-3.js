@@ -41,10 +41,10 @@ const HomeSectionThree = () => {
                     controls={false}
                     className="md:w-full w-[94%]"
                     loading="lazy"
-                    poster="https://d1u4arv5y5eda6.cloudfront.net/images/work-v-thumbnail.png"
+                    poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
                   >
                     <source
-                      src="https://d1u4arv5y5eda6.cloudfront.net/videos/squen.mp4"
+                      src="https://braininventory.s3.us-east-2.amazonaws.com/videos/squen.mp4"
                       type="video/mp4"
                     />
                   </video>

@@ -48,7 +48,7 @@ export default function HireBanner({
                         <div className="w-full lg:ml-0 flex flex-col items-center lg:items-start">
                             {/* <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">{heading}</h1> */}
                             <div className="lg:-ml-8">
-                                <Image width={1200} height={600} priority={true} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/Group+6755.png" alt='' />
+                                <Image width={1200} height={600} priority={true} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6755.png" alt='' />
                             </div>
 
                             {/* <h1 className="better-grade text-7xl lg:text-9xl -rotate-12 my-10 ">We’re Brain Inventory</h1> */}
@@ -447,7 +447,7 @@ const Popup = ({ setPop, country }) => {
                         </div>
                     </div>
                     <div className="max-w-28 lg:block hidden">
-                        <Image width={500} height={400} src="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/ILLUSTRATION.png" alt="" />
+                        <Image width={500} height={400} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/ILLUSTRATION.png" alt="" />
                     </div>
                 </div>
                 <div className="hidden lg:flex flex-col items-center w-full">

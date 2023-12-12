@@ -8,7 +8,7 @@ const Index = () => {
       <PrajectBranding />
       <div className="relative flex flex-col items-center">
         <Image
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/project/1MacBook-Air.png"
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/1MacBook-Air.png"
           alt="Image"
           width={1500}
           height={1500}

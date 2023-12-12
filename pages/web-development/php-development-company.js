@@ -130,7 +130,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_php-development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_php-development.jpg"
         />{" "}
         {/* Set your image URL here */}
         <meta
@@ -139,7 +139,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
         />
         <link
           rel="canonical"
@@ -154,8 +154,8 @@ function HireAangularJsDeveloper(props) {
             title="PHP Development"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+1.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+1.png"
             alt="Custom PHP development"
             type="php"
             unique="Company"
@@ -164,7 +164,7 @@ function HireAangularJsDeveloper(props) {
           <Experienced
             title="PHP Development"
             type="why"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development+2.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+2.png"
             para1={subhead1}
             para2={subhead2}
             para3={subhead3}

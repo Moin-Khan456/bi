@@ -135,7 +135,7 @@ function Contact(props) {
             <div className="relative w-60 h-60">
               <Image
                 src={
-                  "https://d1u4arv5y5eda6.cloudfront.net/images/sufiyan.png"
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/sufiyan.png"
                 }
                 className="w-60 h-60"
                 layout="fill"

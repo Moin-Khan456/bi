@@ -149,7 +149,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_android+development.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_android+development.jpg"
         />
         <link
           rel="canonical"
@@ -165,7 +165,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Android"
               content={content}
               btn="Get a Quote"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Group+6961.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6961.png"
               alt="Android application development"
             />
             <WhyMean type="Android App" meanReasons={meanReasons} />

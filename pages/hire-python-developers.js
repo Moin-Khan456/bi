@@ -194,7 +194,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+Python+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Python+Developers.jpg"
         />
 
         <meta
@@ -217,7 +217,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Python"
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Dedicated Python Programmers"
               type="hire"
             />
@@ -227,7 +227,7 @@ function HireAangularJsDeveloper(props) {
               para1={subhead1}
               para2={subhead2}
               card={ourDevelopersPromo}
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/leio-mclaren-OzeOpF6kTyg-unsplash.png"
               alt="Hire Python Developers"
             />
             <Advantage

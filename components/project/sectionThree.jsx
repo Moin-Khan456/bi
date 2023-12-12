@@ -7,7 +7,7 @@ const Index = ({ sectionOneImg, sectionTwoImg }) => {
             <div className="flex items-center">
                 <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12" />
                 <h1 className='text-3xl lg:text-5xl font-bold project__section__two__heading'>Admin&apos;s </h1>
-                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/Group 6423.png" alt="" width={500} height={900} className='w-28 lg:w-56' />
+                <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6423.png" alt="" width={500} height={900} className='w-28 lg:w-56' />
             </div>
             <div className='flex justify-center items-center flex-col lg:flex-row w-full'>
                 <div className="max-w-full lg:w-[50%] h-auto mx-4 bg-[#2F45C5] rounded-3xl my-4 pt-4 px-8 project__three__one">

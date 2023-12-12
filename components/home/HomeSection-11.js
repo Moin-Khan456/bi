@@ -30,7 +30,7 @@ const HomeSectionEleven = () => {
               <div className="relative h-full">
                 <Image
                   src={
-                    "https://d1u4arv5y5eda6.cloudfront.net/images/" +
+                    "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                     el +
                     ".svg"
                   }

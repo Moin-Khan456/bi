@@ -54,7 +54,7 @@ export default function ChooseBraininventory({ reasons, subhead, alt }) {
                         </a>
                     </div>
                     <div className="max-h-[55%]">
-                        <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/choose-b1.png" alt={alt} width={800} height={800} className="object-contain" />
+                        <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/choose-b1.png" alt={alt} width={800} height={800} className="object-contain" />
                     </div>
                 </div>
             </div>

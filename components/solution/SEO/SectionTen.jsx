@@ -8,7 +8,7 @@ const Index = () => {
             <div className="container padding-left-all-section relative">
                <div className='lg:mb-80 mb-[36rem]'>
                   <Image 
-                  src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/Group+7062.png'
+                  src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7062.png'
                   alt=''
                   width='900'
                   height='400'
@@ -19,7 +19,7 @@ const Index = () => {
 
                       <div className='m-6 lg:m-0'>
                                 <Image 
-                            src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/1.png'
+                            src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/1.png'
                             alt=''
                             width='600'
                             height='600'
@@ -31,7 +31,7 @@ const Index = () => {
 
                       <div className='lg:mt-24 m-6 lg:m-0'>
                         <Image 
-                            src='https://d1u4arv5y5eda6.cloudfront.net/images/solution/e8635b913472ae92c6c9d727d1ccce71.png'
+                            src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/e8635b913472ae92c6c9d727d1ccce71.png'
                             alt=''
                             width='600'
                             height='600'

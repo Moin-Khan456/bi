@@ -7,7 +7,7 @@ const Index = () => {
         <h1 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-white">
           What is{" "}
           <Image
-            src="https://d1u4arv5y5eda6.cloudfront.net/images/rtc/Group+6516.png"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6516.png"
             alt=""
             width={500}
             height={500}

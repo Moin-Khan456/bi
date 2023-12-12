@@ -54,7 +54,7 @@ on interesting projects!"
 
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/hr-1.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/hr-1.jpg"
         />
         <meta
           property="og:url"

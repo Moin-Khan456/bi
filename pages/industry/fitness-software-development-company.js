@@ -353,7 +353,7 @@ function Fitness(props) {
           pageCategoryAbbr="FITNESS SOFTWARE DEVELOPMENT      "
           slow={70000}
           fast={45000}
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/fitness/woman-training-with-barbell-shoulders.png"
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/woman-training-with-barbell-shoulders.png"
           alt="Fitness App Development Company"
         />
         <PlatformDevelopment

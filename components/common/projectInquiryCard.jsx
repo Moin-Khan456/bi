@@ -29,7 +29,7 @@ const FindUs = () => {
               controls={false}
             >
               <source
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/project/inquery.mp4"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/inquery.mp4"
                 type="video/mp4"
               />
             </video>

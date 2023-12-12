@@ -16,11 +16,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/1.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/1.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/ocureel.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/ocureel.mp4"
                             type="video/mp4"
                         />
                     </video>
@@ -38,11 +38,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/iPhone+XR+Isometric.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/iPhone+XR+Isometric.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/MFM.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/MFM.mp4"
                             type="video/mp4"
                         />
                     </video>
@@ -58,11 +58,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/iPhone+XR+Isometric.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/iPhone+XR+Isometric.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/MFM.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/MFM.mp4"
                             type="video/mp4"
                         />
                     </video>
@@ -75,11 +75,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/2.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/2.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/Hub+1.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/Hub+1.mp4"
                             type="video/mp4"
                         />
                     </video>
@@ -98,11 +98,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/2.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/2.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/Mentorship.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/Mentorship.mp4"
                             type="video/mp4"
                         />
                     </video>
@@ -117,11 +117,11 @@ const Projects = () => {
                         loop
                         autoPlay={true}
                         controls={false}
-                        poster="https://d1u4arv5y5eda6.cloudfront.net/images/ppc/2.png"
+                        poster="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/2.png"
                         preload="metadata"
                     >
                         <source
-                            src="https://d1u4arv5y5eda6.cloudfront.netvideos/Mentorship.mp4"
+                            src="https://braininventory.s3.us-east-2.amazonaws.comvideos/Mentorship.mp4"
                             type="video/mp4"
                         />
                     </video>

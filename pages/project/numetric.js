@@ -50,26 +50,26 @@ const Numetric = () => {
   const NumetricSectionOne = {
     brief:
       "Create professional invoices and manage expenses. All you need for your growing business.",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Logo.png",
-    image: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Header.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Logo.png",
+    image: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Header.png",
     alt: "Numetric",
   };
   const carouselImages = [
     {
       id: 1,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Web+1280+–+3.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Web+1280+–+3.png",
     },
     {
       id: 2,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Web+1280+–+4.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Web+1280+–+4.png",
     },
     {
       id: 3,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Web+1280+–+3.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Web+1280+–+3.png",
     },
     {
       id: 4,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/project/Web+1280+–+4.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Web+1280+–+4.png",
     },
   ];
   const challenge =
@@ -80,47 +80,47 @@ const Numetric = () => {
 
   const tech = [
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/6.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/6.png",
       name: "Angular",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/7.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/7.png",
       name: "NodeJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/8.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/8.png",
       name: "MongoDB",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/9.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/9.png",
       name: "ExpressJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/ererf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/ererf.png",
       name: "Redis",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/dfdgf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdgf.png",
       name: "Nginx",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/dfdf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdf.png",
       name: "AWS EC2",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/fddf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/fddf.png",
       name: "AWS S3",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/fdsf.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/fdsf.png",
       name: "AWS Lambda",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/nbhn.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/nbhn.png",
       name: "AWS API Gateway",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/hgh.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/hgh.png",
       name: "AWS SES",
     },
   ];
@@ -129,49 +129,49 @@ const Numetric = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6420.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 2,
       name: "Gunjan Jain",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6423.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6423.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6429.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6429.png",
       role: "Software Architecture",
     },
     {
       id: 4,
       name: "Puneet Rajwani",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6432.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6432.png",
       role: "Software Architecture",
     },
     {
       id: 5,
       name: "Gautam Patil",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6426.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6426.png",
       role: "Software Engineer",
     },
     {
       id: 6,
       name: "Hussain Ali",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6435.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6435.png",
       role: "Software Engineer",
     },
     {
       id: 7,
       name: "Subhash Ajmera",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6438.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6438.png",
       role: "Software Engineer",
     },
     {
       id: 8,
       name: "Rahul Badwaya",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group+6441.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6441.png",
       role: "Software Engineer",
     },
   ];
@@ -223,7 +223,7 @@ const Numetric = () => {
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
             <Image
-              src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
               alt=""
               className="rounded-3xl w-[100%]"
               width={1500}
@@ -239,10 +239,10 @@ const Numetric = () => {
           loop
           autoPlay={true}
           controls={false}
-          poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
         >
           <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/Comp 2.mp4"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Comp 2.mp4"
             type="video/mp4"
           />
         </video>

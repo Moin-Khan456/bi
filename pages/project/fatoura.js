@@ -59,7 +59,7 @@ const Fatoura = () => {
       "                                                                                                                                                                                                                                                                        ",
     brief: "CREATE & MANAGE YOUR ",
     styleBrief: "INVOICES",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/fatoura-logo.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/fatoura-logo.png",
     alt: "Fatoura",
   };
   const teamMembers = [
@@ -67,45 +67,45 @@ const Fatoura = () => {
       id: 1,
       name: "Shivam Yadav",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group -2.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group -2.png",
       role: "Software Engineer",
     },
     {
       id: 2,
       name: "Ali Asgar Dhariwala",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group -1.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group -1.png",
       role: "Software Engineer",
     },
     {
       id: 3,
       name: "Asim Sheikh",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group -3.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group -3.png",
       role: "Software Engineer",
     },
     {
       id: 4,
       name: "Pritesh Patil",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group -4.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group -4.png",
       role: "Quality Analyst",
     },
     {
       id: 5,
       name: "Rimjhim Kasera",
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group -5.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group -5.png",
       role: "UI/UX Design",
     },
   ];
   const sectionOneImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6420.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Mask Group 172.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6420.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Mask Group 172.png",
   };
   const sectionTwoImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6419.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6418.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6419.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6418.png",
   };
 
   const milestoneContent = [
@@ -121,27 +121,27 @@ const Fatoura = () => {
   const tech = [
     {
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/6.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/6.png",
       name: "Angular",
     },
     {
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/7.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/7.png",
       name: "NodeJs",
     },
     {
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/8.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/8.png",
       name: "MongoDB",
     },
     {
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/9.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/9.png",
       name: "ExpressJs",
     },
     {
       image:
-        "https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/10.png",
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/10.png",
       name: "AWS EC2",
     },
   ];
@@ -201,7 +201,7 @@ const Fatoura = () => {
             </h1>
             <div className="px-4 lg:px-48 lg:py-12">
               <Image width={900} height={900}
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group 6461.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6461.png"
                 alt=""
               />
             </div>
@@ -211,7 +211,7 @@ const Fatoura = () => {
       
       <div className="max-w-full flex justify-center">
         <Image width={900} height={900}
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt=""
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%] container"
         />
@@ -223,10 +223,10 @@ const Fatoura = () => {
           loop
           autoPlay={true}
           controls={false}
-          poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
         >
           <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/Comp 2.mp4"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Comp 2.mp4"
             type="video/mp4"
           />
         </video>

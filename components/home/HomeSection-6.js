@@ -76,10 +76,10 @@ const HomeSectionSix = () => {
           autoPlay={true}
           controls={false}
           loading="lazy"
-          poster="https://d1u4arv5y5eda6.cloudfront.net/images/rotated+branding.png"
+          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/rotated+branding.png"
         >
           <source
-            src="https://d1u4arv5y5eda6.cloudfront.net/videos/Final.mp4"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Final.mp4"
             type="video/mp4"
           />
         </video>

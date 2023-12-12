@@ -19,14 +19,14 @@ const Index = ({ section }) => {
                         </span>
                     </button>
                 </div> */}
-                <span className="flex justify-between items-center">Made With&nbsp;&nbsp;&nbsp;<Image src="https://d1u4arv5y5eda6.cloudfront.net/images/project/XD.png" width={500} height={500} className="w-[10%] lg:w-[20%]" alt="Accounting Based Software Development Company"/></span>
+                <span className="flex justify-between items-center">Made With&nbsp;&nbsp;&nbsp;<Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" width={500} height={500} className="w-[10%] lg:w-[20%]" alt="Accounting Based Software Development Company"/></span>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between py-4">
                 <div className="w-full py-4 lg:w-2/6">
                     <h4 className="text-2xl w-full lg:w-3/6">Make you life easier by online invoices.</h4>
-                    <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/Group+6409.png" alt="trusted users" width={400} height={400} className="w-1/4 py-4" />
+                    <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group+6409.png" alt="trusted users" width={400} height={400} className="w-1/4 py-4" />
                 </div>
-                <Image src="https://d1u4arv5y5eda6.cloudfront.net/images/project/fatoura/template.png" alt="" width={1000} height={1000} className="w-full lg:w-1/3 relative lg:-top-40 "/>
+                <Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/template.png" alt="" width={1000} height={1000} className="w-full lg:w-1/3 relative lg:-top-40 "/>
             </div>
         </div>
     );

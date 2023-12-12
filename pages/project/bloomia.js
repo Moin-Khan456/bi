@@ -57,58 +57,58 @@ const Bloomia = () => {
     space:
       "                                                                                                                                                                                                                           ",
     brief: "",
-    logo: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 4230.png",
-    image: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6382.png",
+    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 4230.png",
+    image: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6382.png",
     alt: "Bloomia",
   };
 
   const sectionOneImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6420.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Mask Group 172.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6420.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Mask Group 172.png",
   };
   const sectionTwoImg = {
-    one: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6419.png",
-    two: "https://d1u4arv5y5eda6.cloudfront.net/images/Group 6418.png",
+    one: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6419.png",
+    two: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6418.png",
   };
   const carouselImages = [
     {
       id: 1,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/carousel-1.png",
-      hover: "https://d1u4arv5y5eda6.cloudfront.net/images/Component+10.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-1.png",
+      hover: "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+10.png",
     },
     {
       id: 2,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/carousel-2.png",
-      hover: "https://d1u4arv5y5eda6.cloudfront.net/images/Component+11.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-2.png",
+      hover: "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+11.png",
     },
   ];
 
   const section2CarouselImages = [
     {
       id: 1,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/carousel-1.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-1.png",
     },
     {
       id: 2,
-      url: "https://d1u4arv5y5eda6.cloudfront.net/images/carousel-2.png",
+      url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-2.png",
     },
   ];
 
   const tech = [
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/6.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/6.png",
       name: "Angular",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/7.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/7.png",
       name: "NodeJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/9.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/9.png",
       name: "ExpressJs",
     },
     {
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/8.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/8.png",
       name: "MongoDB",
     },
   ];
@@ -117,49 +117,49 @@ const Bloomia = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6420.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 2,
       name: "Gunjan Jain",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6423.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6423.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6429.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
       role: "Software Architecture",
     },
     {
       id: 4,
       name: "Puneet Rajwani",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6432.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6432.png",
       role: "Software Architecture",
     },
     {
       id: 5,
       name: "Gautam Patil",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6426.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6426.png",
       role: "Software Engineer",
     },
     {
       id: 6,
       name: "Hussain Ali",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6435.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6435.png",
       role: "Software Engineer",
     },
     {
       id: 7,
       name: "Subhash Ajmera",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6438.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6438.png",
       role: "Software Engineer",
     },
     {
       id: 8,
       name: "Rahul Badwaya",
-      image: "https://d1u4arv5y5eda6.cloudfront.net/projects/Group 6441.png",
+      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6441.png",
       role: "Software Engineer",
     },
   ];
@@ -237,7 +237,7 @@ const Bloomia = () => {
           <div className="container">
             <div className="max-w-full flex justify-center">
               <Image
-                src="https://d1u4arv5y5eda6.cloudfront.net/images/project/IMG_0984.png"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
                 alt=""
                 width={600}
                 height={600}
@@ -252,10 +252,10 @@ const Bloomia = () => {
               loop
               autoPlay={true}
               controls={false}
-              poster="https://d1u4arv5y5eda6.cloudfront.net/images/project/durationPoster.png"
+              poster="https://braininventory.s3.us-east-2.amazonaws.com/images/project/durationPoster.png"
             >
               <source
-                src="https://d1u4arv5y5eda6.cloudfront.net/videos/Comp+2.mp4"
+                src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Comp+2.mp4"
                 type="video/mp4"
               />
             </video>

@@ -34,7 +34,7 @@ export default function KeepInTouch() {
             <div className="relative h-[100px] w-full lg:w-1/2">
               <Image
                 src={
-                  "https://d1u4arv5y5eda6.cloudfront.net/images/keepInTouch.svg"
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
                 }
                 loading="lazy"
                 layout="fill"

@@ -126,7 +126,7 @@ https://braininventory.in/web-development/python-development-company"
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Python+preview+image.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Python+preview+image.png"
         />
         <link
           rel="canonical"
@@ -141,8 +141,8 @@ https://braininventory.in/web-development/python-development-company"
             title="Python Development"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_PHP+development.png"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+1.png"
+            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+1.png"
             alt="Python Development Company"
             type="php"
             unique="Company"
@@ -151,7 +151,7 @@ https://braininventory.in/web-development/python-development-company"
           <Experienced
             title="Python Development"
             type="why"
-            image="https://d1u4arv5y5eda6.cloudfront.net/images/Braininventory_python+development+2.png"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+2.png"
             alt="Python Development Company"
             para1={subhead1}
             para2={subhead2}

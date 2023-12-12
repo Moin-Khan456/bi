@@ -178,7 +178,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/preview/Braininventory_Hire+React+Native+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+React+Native+Developers.jpg"
         />
 
         <meta
@@ -200,7 +200,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire React Native "
               content={content}
               btn="Contact Us!"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/hire/Braininventory_Hire+React+Native+Developers.png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+React+Native+Developers.png"
               alt="React Native development company"
               type="hire"
             />

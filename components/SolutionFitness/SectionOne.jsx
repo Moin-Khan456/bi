@@ -7,7 +7,7 @@ const SectionOne = () => {
     <div className="relative bg-cover overflow-hidden bg-center h-[100%] max-h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/daniel-apodaca-WdoQio6HPVA-unsplash.png')] ">
       <div className="absolute top-10 -right-24 w-full">
         <Image
-          src="https://d1u4arv5y5eda6.cloudfront.net/images/solution/braininventory.in+spinner+white.png"
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/braininventory.in+spinner+white.png"
           alt="Fitness App Development Company"
           width={1200}
           height={1200}

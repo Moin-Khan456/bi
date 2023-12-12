@@ -142,7 +142,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6420+(1).png"
         />
         <link
           rel="canonical"
@@ -158,7 +158,7 @@ function HireAangularJsDeveloper(props) {
               title="Top MERN Stack"
               content={content}
               btn="Get a Quote"
-              image="https://d1u4arv5y5eda6.cloudfront.net/images/Technology/Group+6420+(1).png"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6420+(1).png"
               alt="MERN Stack App Development Services, MERN Stack.Js App Development"
             />
             <WhyMean type="MERN Stack" meanReasons={meanReasons} />

@@ -74,7 +74,7 @@ export default function PostPage({ post, featuredMedia }) {
                 />
                 <span className="flex mt-2 mb-2">
                   <label className="pl-2">
-                    <small className="text-sm color-gray">
+                    <small className="text-sm text-white text-opacity-50">
                       {getDate(post.date)}
                     </small>
                   </label>

@@ -379,7 +379,7 @@ export default function Footer() {
                 <ul className="space-y-2">
                   {section.links.map((link, index) => {
                     return (
-                      <li className="color-gray w-auto" key={index}>
+                      <li className="text-white text-opacity-50 w-auto" key={index}>
                         <a href={link.path} className="cursor-pointer">
                           {link.name}
                         </a>

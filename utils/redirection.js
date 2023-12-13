@@ -1,6 +1,11 @@
 const redirection = () => {
   return [
     {
+      source: "/mobile-app-development",
+      destination: "/mobile-development/custom-app-development",
+      permanent: true,
+    },
+    {
       source: "/blog",
       destination: "/blog/1",
       permanent: true,

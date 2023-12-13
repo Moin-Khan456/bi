@@ -303,11 +303,11 @@ function Healthcare(props) {
             head1="Empowering Healthcare Digitally."
             description={sectionTwoDesc}
           />
-              {/* <SectionThree
+              <SectionThree
                 title="Healthcare Industry Insights"
                 sectionDesc="Healthcare is a rapidly evolving industry that is increasingly becoming technologically driven. Here are some captivating insights about the healthcare industry:"
                 setionThreeCards={setionThreeCards}
-              /> */}
+              />
               <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
               <SectionFour
                 title="Solutions for Healthcare App Development"

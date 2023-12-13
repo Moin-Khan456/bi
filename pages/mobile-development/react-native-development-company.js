@@ -185,7 +185,7 @@ function ReactNativeDeveloper(props) {
               alt="React Native App Development "
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} /> {/*Done */}
+            <FaqHire faq={faqdetails} />
             <BlogArticle />
             <ContactForm />
             <LocateUs />

@@ -18,16 +18,6 @@ const Index = ({ section }) => {
           </p>
         </div>
         <div className="flex justify-center px-5 py-3 rounded-2xl mt-8 lg:px-8">
-        {/* 
-          <button className="flex flex-col items-center Gilroy">
-            <span className="text-xs font-thin text-slate-400 pb-1">
-              Case study 2022
-            </span>
-            <span className="flex items-center justify-between w-full">
-              Explore <BsArrowRight />
-            </span>
-          </button>
-        */}
         </div> 
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;

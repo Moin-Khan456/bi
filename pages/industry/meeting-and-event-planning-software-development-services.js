@@ -381,6 +381,7 @@ function Meeting(props) {
         pageCategoryAbbr="Meeting and Event Management Solution Development Company       "
         slow={70000}
         fast={65000}
+        alt={"Meeting & Event Management Software Development"}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/meeting-and-planning/entrepreneur-discussing-financial-statistics-with-remote-team-during-online-videocall-meeting-conference-diverse-corporate-employees-working-overhours-company-growth-report-startup-office+1.png"
       />
       <PlatformDevelopment

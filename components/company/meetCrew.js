@@ -169,7 +169,7 @@ function meetCrew() {
             <div className="lg:grid lg:grid-cols-3 gap-4 ">
               {meeting.map((el) => (
                 <div key={el}>
-                  <div className="w-[260px] h-[280px] mr-2 relative border-2 border-cutom object-fit-custom">
+                  <div className="w-[260px] h-[280px] mr-2 relative border-2 border-cutom object-cover">
                     <Image
                       src={
                         "https://braininventory.s3.us-east-2.amazonaws.com/images/" +

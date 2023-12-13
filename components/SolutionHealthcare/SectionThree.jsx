@@ -13,23 +13,6 @@ const SectionThree = ({
       <p className="text-sm py-6 opacity-50">{sectionDesc}</p>
 
     </div>
-      {/* <div className="container bg-[#121212] p-8 !mb-8">
-        <h2 className="text-3xl font-Satoshi py-4">
-          {setionThreeCards[0]?.head}
-        </h2>
-        <p className="font-Satoshi font-semibold text-sm text-slate-400">
-          {setionThreeCards[0].content}
-        </p>
-        <ul className="list-disc list-inside text-sm pl-8 mb-4 mt-0 py-6 ">
-          {setionThreeCards[0].points?.map((item, index) => (
-            <li className="font-semibold py-2 font-Satoshi" key={index}>
-              {item.split("%")[0]}{" "}
-              <span className="text-slate-400">{item.split("%")[1]}</span>
-            </li>
-          ))}
-        </ul>
-      </div> */}
-
       <div className="container bg-[#121212] p-8 mt-4">
         <h2 className="text-3xl font-Satoshi py-4">
           {setionThreeCards[0]?.head}

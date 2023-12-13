@@ -11,7 +11,7 @@ const WorkBanner = () => {
               We turn ideas into
             </h1>
             <div className="flex flex-col">
-              <div className="color-gray text-sm Gilroy-Bold">
+              <div className="text-white text-opacity-50 text-sm Gilroy-Bold">
                 reality by getting involved with customers to create the best
                 product. All steps from Ideation to Deployment/Maintenance are
                 our forte in software development.

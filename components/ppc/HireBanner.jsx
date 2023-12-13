@@ -29,7 +29,6 @@ export default function HireBanner({
             require("aos/dist/aos.css");
 
             AOS.init({
-                /* AOS initialization options */
             });
         }
     });
@@ -46,16 +45,11 @@ export default function HireBanner({
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                     <div className="px-2">
                         <div className="w-full lg:ml-0 flex flex-col items-center lg:items-start">
-                            {/* <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">{heading}</h1> */}
                             <div className="lg:-ml-8">
                                 <Image width={1200} height={600} priority={true} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6755.png" alt='' />
                             </div>
-
-                            {/* <h1 className="better-grade text-7xl lg:text-9xl -rotate-12 my-10 ">We’re Brain Inventory</h1> */}
-
                             <h1 className="text-4xl leading-[3rem] Gilroy-Bold font-bold text-center lg:text-start lg:my-2">We Develop Highly Engaging Custom Social Networks</h1>
                         </div>
-
                         <div className="rounded-xl lg:m-0 m-6 lg:my-[2.3em]">
                             <p className="text-slate-500 text-sm w-full Gilroy-Semibold font-bold leading-6 text-center lg:text-start">{content}</p>
                         </div>
@@ -63,7 +57,6 @@ export default function HireBanner({
                             <div className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 mt-4 pr-12 cursor-pointer " onClick={() => setPop(true)}>
                                 <button
                                     className="flex flex-col justify-center Gilroy cursor-pointer"
-
                                 >
                                     <span className="flex items-center justify-between w-full cursor-pointer">
                                         {btn} <BsArrowRight />
@@ -79,7 +72,6 @@ export default function HireBanner({
                                 height={750}
                                 src={image}
                                 alt=''
-                            // style={{ borderRadius: "2rem", maxHeight: "500px", minWidth: "400px" }}
                             />
                         </div>
                     </div>
@@ -120,7 +112,6 @@ const PopForm = ({ setLocal, country }) => {
             require("aos/dist/aos.css");
 
             AOS.init({
-                /* AOS initialization options */
             });
         }
     });

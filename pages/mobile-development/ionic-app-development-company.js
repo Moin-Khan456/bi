@@ -155,11 +155,6 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Craft seamless, high-performance applications tailored to your business needs. Let's transform your ideas into compelling, feature-rich experiences with Ionic App Development Service."
         />
-        {/* <meta
-          property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_hybrid-app-development.jpg"
-        />{" "} */}
-        {/* Set your image URL here */}
         <meta
           property="og:url"
           content="https://braininventory.in/mobile-development/ionic-app-development-company"

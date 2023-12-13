@@ -24,7 +24,7 @@ const Index = () => {
                     </div>
                     <p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
                 </div>
-                <div className="fatoura_gilroy_bold">
+                <div className="Gilroy-Bold">
                     <div className="w-[15%] py-4 flex justify-between">
                         <p>Gilroy</p>
                         <p  className='text-start mr-10'>Bold</p>

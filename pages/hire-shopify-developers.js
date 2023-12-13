@@ -168,24 +168,15 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>Hire Dedicated Shopify Developers From Brain Inventory</title>
-        {/* <meta
-          name="description"
-          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
-        /> */}
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Hire Dedicated Shopify Developers From Brain Inventory"
         />
-        {/* <meta
-          property="og:description"
-          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
-        /> */}
         <meta
           property="og:image"
           content="https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
         />{" "}
-        {/* Set your image URL here */}
         <meta
           property="og:url"
           content="https://braininventory.in/hire-shopify-developers"

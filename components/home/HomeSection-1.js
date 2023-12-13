@@ -9,7 +9,7 @@ export default function HomeSectionOne({}) {
           className="lg:w-[55%] w-full  md:h-full"
         >
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
-            <h1 className="2xl:text-2xl lg:text-xl text-lg Gilroy-Bold color-gray mt-[2rem] lg:mt-0">
+            <h1 className="2xl:text-2xl lg:text-xl text-lg Gilroy-Bold text-white text-opacity-50 mt-[2rem] lg:mt-0">
               A Culture Rich Custom Software Development Company
             </h1>
 

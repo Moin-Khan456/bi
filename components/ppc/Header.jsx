@@ -180,27 +180,27 @@ const CompanyChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">About</h2>
         <ul className="space-y-2">
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/company" className="cursor-pointer">
               Our Company
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/how-we-work" className="cursor-pointer">
               How we work
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/career" className="cursor-pointer">
               Careers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/blog/1" className="cursor-pointer">
               Blog
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/contact" className="cursor-pointer">
               Contact Us
             </Link>
@@ -217,42 +217,42 @@ const ServicesChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Web Development</h2>
         <ul className="space-y-2">
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/custom-web-development" className="cursor-pointer">
               <a>Custom Web Development</a>
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/angular-js-development" className="cursor-pointer">
               Angular JS Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/react-js-development" className="cursor-pointer">
               React JS Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/node-js-development" className="cursor-pointer">
               Node JS Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/vue-js-development" className="cursor-pointer">
               Vue JS Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/mean-stack-development" className="cursor-pointer">
               MEAN Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/mern-development" className="cursor-pointer">
               MERN Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/web-development/lamp-development" className="cursor-pointer">
               LAMP Development
             </Link>
@@ -262,32 +262,32 @@ const ServicesChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Mobile Development </h2>
         <ul className="space-y-2">
-        <li className="color-gray">
+        <li className="text-white text-opacity-50">
             <Link href="/mobile-development/custom-app-development" className="cursor-pointer">
               Custom App Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/mobile-development/ios-development" className="cursor-pointer">
               iOS App Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/mobile-development/android-development" className="cursor-pointer">
               Android App Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/mobile-development/react-native-development" className="cursor-pointer">
               React Native App Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/mobile-development/flutter-development" className="cursor-pointer">
               Flutter App Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/mobile-development/swift-development" className="cursor-pointer">
               Swift App Development
             </Link>
@@ -297,62 +297,62 @@ const ServicesChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Hire Dedicated Developers</h2>
         <ul className="space-y-2">
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-angular-js-developers" className="cursor-pointer">
               Hire Angular JS Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-react-js-developers" className="cursor-pointer">
               React JS Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-node-js-developers" className="cursor-pointer">
               Node JS Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-vue-js-developers" className="cursor-pointer">
               Vue Js Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-next-js-developers" className="cursor-pointer">
               NextJS Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-mean-stack-developers" className="cursor-pointer">
               MEAN Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-mern-stack-developers" className="cursor-pointer">
               MERN Developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-ui-ux-developers" className="cursor-pointer">
               UI/UX developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-android-developers" className="cursor-pointer">
               Android developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-ios-developers" className="cursor-pointer">
               iOS developers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-react-native-developers" className="cursor-pointer">
               React Native developer
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/hire-qa-analysts" className="cursor-pointer">
               QA Analyst
             </Link>
@@ -369,47 +369,47 @@ const Solution = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Solution</h2>
         <ul className="space-y-2">
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Custom Software Development
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               NFT Marketplace
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Blockchain Solution
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Metaverse Application
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Accounting Application
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Sports Betting Platform
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Custom Fantasy Sports Solution
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Social Media Applications
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="" className="cursor-pointer">
               Online Learning Solutions
             </Link>

@@ -157,7 +157,6 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_mobile+app+integration.jpg"
         />{" "}
-        {/* Set your image URL here */}
         <meta
           property="og:url"
           content="https://braininventory.in/mobile-development/mobile-app-integration"

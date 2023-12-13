@@ -132,7 +132,6 @@ function HireAangularJsDeveloper(props) {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_php-development.jpg"
         />{" "}
-        {/* Set your image URL here */}
         <meta
           property="og:url"
           content="https://braininventory.in/web-development/php-development-company"
@@ -164,6 +163,7 @@ function HireAangularJsDeveloper(props) {
           <Experienced
             title="PHP Development"
             type="why"
+            alt={"PHP Development Services"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+2.png"
             para1={subhead1}
             para2={subhead2}

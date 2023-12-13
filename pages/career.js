@@ -73,7 +73,6 @@ on interesting projects!"
                 <MeetCrew />
                 <section className="container">
                   <Culture />
-                  {/* <Newsletter /> */}
                 </section>
                 <InterviewProcess />
                 <section className="container">

@@ -227,27 +227,27 @@ const CompanyChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">About</h2>
         <ul className="space-y-2">
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/company" className="cursor-pointer">
               Our Company
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/how-we-work" className="cursor-pointer">
               How we work
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/career" className="cursor-pointer">
               Careers
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/blog/1" className="cursor-pointer">
               Blog
             </Link>
           </li>
-          <li className="color-gray">
+          <li className="text-white text-opacity-50">
             <Link href="/contact" className="cursor-pointer">
               Contact Us
             </Link>
@@ -488,7 +488,7 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Web Development</h2>
         <ul className="space-y-2">
           {webLinks?.map((ele) => (
-            <li className="color-gray" key={ele._id}>
+            <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -500,7 +500,7 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Mobile Development </h2>
         <ul className="space-y-2">
           {mobileLinks?.map((ele) => (
-            <li className="color-gray" key={ele._id}>
+            <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -512,7 +512,7 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Hire Dedicated Developers</h2>
         <ul className="space-y-2">
           {hireLinks?.map((ele) => (
-            <li className="color-gray" key={ele._id}>
+            <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -589,7 +589,7 @@ const Industry = () => {
         <h2 className="text-2xl Gilroy-Bold">Industry</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
-            <li className="color-gray" key={ele._id}>
+            <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -615,7 +615,7 @@ const Solution = () => {
         <h2 className="text-2xl Gilroy-Bold">Solutions</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
-            <li className="color-gray" key={ele._id}>
+            <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>

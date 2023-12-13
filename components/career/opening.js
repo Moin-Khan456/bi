@@ -303,7 +303,6 @@ function Opening() {
                         >
                           apply now
                         </label>
-                        {/* <button className="btn-apply">apply now</button> */}
                       </div>
                     </div>
                     <div className="flex">

@@ -8,18 +8,6 @@ const Index = () => {
   return (
     <div className="rounded-md my-8 relative h-screen">
       <div className="video-section absolute top-0 left-0">
-        {/* <video
-          loop
-          autoPlay={true}
-          controls={false}
-          className="h-screen m-auto object-contain hidden lg:block"
-          preload="metadata"
-        >
-          <source
-            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/rFdCZriM6x6btVRZViNaME7HxM~w8PxP8RCbFNOFxnsLMlURKFYtWlMRADjbWqpyPZzXao+(1).mp4"
-            type="video/mp4"
-          />
-        </video> */}
         <div className="container padding-left-all-section">
           <div className="absolute top-0 m-auto pt-20">
             <div className="p-6 lg-p-0">

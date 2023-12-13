@@ -47,7 +47,7 @@ const Blogs = ({ blogs }) => {
                   />
                   <span className="flex mt-2 mb-2">
                     <label>
-                      <small className="text-sm color-gray">
+                      <small className="text-sm text-white text-opacity-50">
                         {blogDate(post.date)}
                       </small>
                     </label>

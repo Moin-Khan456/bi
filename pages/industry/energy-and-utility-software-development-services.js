@@ -380,6 +380,7 @@ function Energy(props) {
         pageCategoryAbbr="Energy & Utility Solution Development Company       "
         slow={70000}
         fast={65000}
+        alt={"Energy & Utility Software Development Company"}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/business-person-planning-alternative-energies+1.png"
       />
       <PlatformDevelopment

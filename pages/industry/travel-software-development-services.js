@@ -354,6 +354,7 @@ function Travel(props) {
                 head="Travel Tech Innovations"
                 subhead="COMPARED TO Booking.com & Expedia"
                 description={sectionFiveDesc}
+                alt={"Travel Software Development Company"}
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
               />
@@ -377,6 +378,7 @@ function Travel(props) {
                 pageCategoryAbbr="Travel Development Software"
                 slow={70000}
                 fast={55000}
+                alt={"Travel Software Development Services"}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
               />
               <PlatformDevelopment

@@ -394,7 +394,8 @@ function EdTech(props) {
         pageCategoryAbbr="Educational SOftware DEVELOPMENT       "
         slow={70000}
         fast={55000}
-        src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
+        alt={"Educational Software Development Services"}
+        src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Ed-Tech/office-workers-using-finance-graphs+1.png"
       />
       <PlatformDevelopment
         data={keyFeatures}

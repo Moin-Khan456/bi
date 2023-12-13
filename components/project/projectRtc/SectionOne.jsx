@@ -25,26 +25,6 @@ const Index = ({ section }) => {
         <h1 className="text-4xl Gilroy-Bold lg:text-6xl pb-12 text-[#FFD166]">
           Creation Platform{" "}
         </h1>
-        {/* <div className="lg:flex items-end">
-          <div className="lg:w-[10%] px-4 lg:px-0 flex justify-center bg-gradient-to-r from-[#000076] to-[#7600EB] py-3 rounded-2xl mt-4">
-            <button className="flex flex-col items-center Gilroy" id="rtc-xd">
-              <a
-                href="https://xd.adobe.com/view/2199324e-80e8-41c0-b113-5460b4ab28b3-74ca/"
-                target="_blank"
-              >
-                <span className="flex items-center justify-between text-white font-semibold w-full py-2 px-4">
-                  Explore <BsArrowRight />
-                </span>
-              </a>
-            </button>
-          </div>
-          <ReactTooltip
-            anchorId="rtc-xd"
-            place="right"
-            variant="info"
-            content="Click to visit Adobe XD Design"
-          />
-        </div> */}
         <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between py-4">
           <div>
             <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">

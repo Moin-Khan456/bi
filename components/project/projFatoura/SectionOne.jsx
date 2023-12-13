@@ -9,16 +9,6 @@ const Index = ({ section }) => {
             <h1 className="text-4xl lg:text-6xl">{section.brief} <span className="text-[#F39573]">{section.styleBrief}</span></h1>
             <p className="opacity-50 lg:w-[45%] lg:leading-10 py-4">Creates and manages customized invoices with data security which helps in promoting your brand and expanding your business.</p>
             <div className="lg:flex items-end">
-                {/* <div className="lg:w-[10%] px-4 lg:px-0 flex justify-center bg-[#F39573] py-3 rounded-2xl mt-4">
-                    <button className="flex flex-col items-center Gilroy">
-                        <span className="text-xs font-thin text-black pb-1">
-                            Case study 2022
-                        </span>
-                        <span className="flex items-center justify-between text-black font-semibold w-full">
-                            Explore <BsArrowRight />
-                        </span>
-                    </button>
-                </div> */}
                 <span className="flex justify-between items-center">Made With&nbsp;&nbsp;&nbsp;<Image src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" width={500} height={500} className="w-[10%] lg:w-[20%]" alt="Accounting Based Software Development Company"/></span>
             </div>
             <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between py-4">

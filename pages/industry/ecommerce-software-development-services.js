@@ -386,6 +386,7 @@ function Ecommerce(props) {
         slow={70000}
         fast={55000}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/eCommerce/2.png"
+        alt={"Ecommerce Industry Development Services"}
       />
       <PlatformDevelopment
         data={keyFeatures}

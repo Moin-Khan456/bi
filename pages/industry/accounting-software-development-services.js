@@ -360,6 +360,7 @@ function Accounting(props) {
                 description={sectionFiveDesc}
                 sectionFiveTableHead={sectionFiveTableHead}
                 sectionFiveTable={sectionFiveTable}
+                alt={"Accounting Software Development Services"}
                 tableFooter = "Are you prepared to begin this exciting transformation? Your digital future is just a click away. Start this fascinating journey now!."
               />
               <SectionSix
@@ -376,15 +377,10 @@ function Accounting(props) {
                 pageCategoryAbbr="Accounting App Development       "
                 slow={70000}
                 fast={55000}
+                alt={"Accounting Software Development  Company"}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/office-workers-using-finance-graphs+1.png"
               />
               <SectionSlider data={keyFeatures} subhead="KEY FEATURES OF" head="ACCOUNTING SOFTWARE DEVELOPMENT" description={keyDesc}/>
-              {/* <PlatformDevelopment
-                cardPoints={keyFeatures}
-                subhead="KEY FEATURES OF"
-                head="ACCOUNTING SOLUTION DEVELOPMENT"
-                description={keyDesc}
-              /> */}
               <Approach
                 title="How We Navigate Accounting App Development?"
                 desc={approachDesc}

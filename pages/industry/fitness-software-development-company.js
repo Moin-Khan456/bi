@@ -368,7 +368,6 @@ function Fitness(props) {
         <hr />
         <BlogArticle />
         <ContactForm />
-        {/* <LocateUs /> */}
         <LetsKick />
         <hr />
         <Footer />

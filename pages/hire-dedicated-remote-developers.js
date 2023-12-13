@@ -70,10 +70,6 @@ export default function Hirededicatedremotedevelopers(props) {
             name="og:description"
             content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
           />
-          {/* <meta
-            property="og:image"
-            content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_marketplace.jpg"
-          /> */}
           <meta
             property="og:url"
             content="https://braininventory.in/hire-dedicated-remote-developers"
@@ -100,13 +96,6 @@ export default function Hirededicatedremotedevelopers(props) {
         <OurProcess />
         <HireRemote />
         <OnboardingProcess />
-        {/* <Image
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/Comp1.gif"
-          alt="Less than 3 month we serve the quality work"
-          width={500}
-          height={500}
-          className="w-full"
-        /> */}
         <Hiringbenifit />
         <HireRemote />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">

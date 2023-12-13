@@ -137,7 +137,6 @@ function HireAangularJsDeveloper(props) {
               </div>
             </div>
           </div>
-          {/* <SocialNetwork/> */}
               <TailMatrix />
               <Network />
               <CustomSocialNetwork />

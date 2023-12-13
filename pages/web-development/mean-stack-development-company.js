@@ -171,11 +171,10 @@ function HireAangularJsDeveloper(props) {
               alt="MEAN Stack Development Services"
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} /> {/*Done */}
+            <FaqHire faq={faqdetails} />
             <BlogArticle />
             <ContactForm />
             <LocateUs />
-            {/* <ContactCard /> */}
             <div className="pb-4" />
             <hr />
             <Footer />

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Index = () => {
+const Index = ({alt}) => {
 
     return (
         <div className="rounded-md my-8 py-10">
@@ -17,7 +17,7 @@ const Index = () => {
 
                       <div>
                           <Image src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/abstract-yellow-rocket-ship-concept-cartoon-style.png' 
-                          width={800} height={500} alt='social networking app development company' className='w-[800px]'></Image>
+                          width={800} height={500} alt={alt ?? 'social networking app development company'} className='w-[800px]'></Image>
                       </div>
                 </div>
 

@@ -248,7 +248,6 @@ function SocialMedia(props) {
           href="https://braininventory.in/solution/social-networking-development-company"
         />
       </Head>
-      {/*<Loader />*/}
       <div className="relative ">
         <Header />
         <div className="pt-1">

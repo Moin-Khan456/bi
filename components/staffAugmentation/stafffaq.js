@@ -15,7 +15,6 @@ function StafFaq() {
           <div>
             {faqdetails.map((el) => {
               return (
-                // collapse-arrow
                 <div key={el.id} className="collapse  bg-opening mb-6">
                                   <input type="checkbox" /> 
 
@@ -28,7 +27,6 @@ function StafFaq() {
                       </div>
                       <div className="flex md:block my-4 md:my-0">
                         <button
-                        //   onClick={() => collapsed(el.id)}
                           onClick={() => collapsed(el.title)} 
                           className=""
                         >
@@ -49,11 +47,6 @@ function StafFaq() {
                     <div></div>
                   </div>
                 </div>
-
-                // <div className='mb-6  border-color-purple border-b-2 pb-6 flex justify-between items-center'>
-                //     <h2 className='text-xl text-white Gilroy-Bold '>{el.title}</h2>
-                //     <img src='/images/faq-arrow.svg' className='cursor-pointer' />
-                // </div>
               );
             })}
             

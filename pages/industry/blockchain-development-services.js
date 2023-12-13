@@ -265,9 +265,7 @@ function Blockchain(props) {
   return (
     <>
       <Head>
-        <title>
-          Expert Blockchain Development Services- Brain Inventory
-        </title>
+        <title>Expert Blockchain Development Services- Brain Inventory</title>
         <meta
           property="description"
           content="Brain Inventory's blockchain app development services deliver secure, decentralized solutions for your business needs. Reach out to us to acquire a seamless app."
@@ -307,61 +305,62 @@ function Blockchain(props) {
               lastSmall={true}
             />
           </div>
-              <SectionThree
-                title="Blockchain Industry Insights"
-                sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
-                setionThreeCards={setionThreeCards}
-              />
-              <TiltMarquee title="BLOCKCHAIN APP DEVELOPMENT ✦ BLOCKCHAIN APP DEVELOPMENT" />
-              <SectionFour
-                title="Solutions for Blockchain App Development"
-                description={sectionFourDesc}
-                solutionList={solutionList}
-              />
-              <SectionSix
+          <SectionThree
+            title="Blockchain Industry Insights"
+            sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"
+            setionThreeCards={setionThreeCards}
+          />
+          <TiltMarquee title="BLOCKCHAIN APP DEVELOPMENT ✦ BLOCKCHAIN APP DEVELOPMENT" />
+          <SectionFour
+            title="Solutions for Blockchain App Development"
+            description={sectionFourDesc}
+            solutionList={solutionList}
+          />
+          <SectionSix
             headAbove="Develop Your Own Blockchain App"
             subheadAbove="Inspired by the possibilities of these emerging platforms? Now is the perfect moment to step into the blockchain arena with your innovative concept. Never let the presence of existing players deter you. With the ideal blend of creativity and execution, your solution could pave the way for the next significant breakthrough."
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/blockchain/Mask+Group+275.png"
+            alt="Blockchain Development Services"
             customClasses="w-[650px] min-w-[400px] max-w-[650px] !bottom-0"
             btn="BUILD YOUR BLOCKCHAIN APP"
             classText="lg:text-3xl"
             title="Ready to embark on this exciting journey? Click the button below to get started with blockchain app development."
           />
 
-              <PlatformDevelopment
-                data={platformDevelopment}
-                subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="BLOCKCHAIN DEVELOPMENT SERVICES"
-                description={platformDesc}
-              />
-              <SectionNine
-                brand="BLOCKCHAIN APP DEVELOPMENT        "
-                pageCategory="BLOCKCHAIN APP DEVELOPMENT     "
-                pageCategoryAbbr="BLOCKCHAIN APP DEVELOPMENT       "
-                slow={70000}
-                fast={55000}
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
-                alt="Blockchain Development Company"
-              />
-              <PlatformDevelopment
-                data={keyFeatures}
-                subhead="KEY FEATURES OF"
-                head="BLOCKCHAIN APP DEVELOPMENT"
-                description={keyDesc}
-              />
-              <Approach
-                title="Our Approach to Custom Blockchain App Development"
-                desc={approachDesc}
-                points={approachPoints}
-              />
-              <SectionTen />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <ContactForm />
-              <LetsKick />
-              <hr />
-              <Footer />
+          <PlatformDevelopment
+            data={platformDevelopment}
+            subhead="WHY CHOOSE BRAIN INVENTORY FOR"
+            head="BLOCKCHAIN DEVELOPMENT SERVICES"
+            description={platformDesc}
+          />
+          <SectionNine
+            brand="BLOCKCHAIN APP DEVELOPMENT        "
+            pageCategory="BLOCKCHAIN APP DEVELOPMENT     "
+            pageCategoryAbbr="BLOCKCHAIN APP DEVELOPMENT       "
+            slow={70000}
+            fast={55000}
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/blockchain/blockchain.png"
+            alt="Blockchain Development Company"
+          />
+          <PlatformDevelopment
+            data={keyFeatures}
+            subhead="KEY FEATURES OF"
+            head="BLOCKCHAIN APP DEVELOPMENT"
+            description={keyDesc}
+          />
+          <Approach
+            title="Our Approach to Custom Blockchain App Development"
+            desc={approachDesc}
+            points={approachPoints}
+          />
+          <SectionTen />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <ContactForm />
+          <LetsKick />
+          <hr />
+          <Footer />
         </section>
       </main>
     </>

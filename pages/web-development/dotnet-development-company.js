@@ -177,12 +177,6 @@ function HireAangularJsDeveloper(props) {
             subhead=".NET development offers numerous benefits for businesses and developers:"
             reasons={reasons}
           />
-          {/* <KeySkill
-            breif={keySkillsBreif}
-            points={keySkillsPoints}
-            grid="lg:grid-cols-7"
-            width="w-[150px]"
-          /> */}
           <Hire
             title="Why .NET Application Development from %Brain Inventory?"
             card={hireCards}

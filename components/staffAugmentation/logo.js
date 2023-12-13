@@ -10,34 +10,24 @@ function Logo(props) {
 
             <div className='grid lg:grid-cols-5 grid-cols-2 lg:gap-4 gap-4 mt-4'>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset3.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset4.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset5.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset6.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset7.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset8.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset9.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset10.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset3.png' /> */}
                </div>
                <div className='logo-border bg-stack h-32'>
-                  {/* <img src='images/Asset11.png' /> */}
                </div>
 
             </div>      

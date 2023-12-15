@@ -149,7 +149,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/dotnet-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <div className="relative">
           <Header></Header>
           <HireBanner

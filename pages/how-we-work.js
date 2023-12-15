@@ -121,7 +121,7 @@ export default function HowWeWork() {
         ></script>
         <link rel="canonical" href="https://braininventory.in/how-we-work" />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <main>
           <Header />
           <section className="relative   container">

@@ -133,7 +133,7 @@ https://braininventory.in/web-development/python-development-company"
           href="https://braininventory.in/web-development/python-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <div className="">
           <Header />
           <SectionOne

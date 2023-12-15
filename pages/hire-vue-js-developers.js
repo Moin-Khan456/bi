@@ -175,7 +175,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-vue-js-developers"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <div className="relative">
           <div>
             <Header></Header>

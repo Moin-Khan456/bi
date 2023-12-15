@@ -330,7 +330,7 @@ function Meeting(props) {
           as="image"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <Header />
       <SectionOne />
       <SectionTwo

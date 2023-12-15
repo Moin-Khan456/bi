@@ -37,7 +37,7 @@ export default function PostPage({ post, featuredMedia }) {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <div className="relative  ">
         <Head>
           <title>{title}</title>

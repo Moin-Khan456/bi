@@ -301,7 +301,7 @@ function CrmDevelopment(props) {
           href="https://braininventory.in/industry/crm-software-development-services"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <main className="">
         <Header />
         <SectionOne />

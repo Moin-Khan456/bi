@@ -292,7 +292,7 @@ function Healthcare(props) {
           href="https://braininventory.in/industry/healthcare-software-development-services"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <main className="">
         <Header />
         <section className="">

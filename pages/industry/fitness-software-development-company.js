@@ -298,7 +298,7 @@ function Fitness(props) {
           href="https://braininventory.in/industry/fitness-software-development-company"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <main className="">
         <Header />
         <SectionOne />

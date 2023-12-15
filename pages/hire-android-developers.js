@@ -179,7 +179,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-android-developers"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <div className="relative">
           <>
             <Header></Header>

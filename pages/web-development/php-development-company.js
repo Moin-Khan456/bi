@@ -145,7 +145,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/php-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <main>
           <Header />
           <SectionOne

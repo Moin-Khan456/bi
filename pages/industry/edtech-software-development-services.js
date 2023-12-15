@@ -347,7 +347,7 @@ function EdTech(props) {
           href="https://braininventory.in/industry/edtech-software-development-services"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <Header />
       <SectionOne />
       <SectionTwo

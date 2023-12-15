@@ -71,7 +71,7 @@ function HireAangularJsDeveloper(props) {
         
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <div className="h-fit -rotate-90 fixed -left-[99vw] top-0 w-[200vw] z-50 hidden lg:block">
         <Marquee duration={70000}>
           <div className="bg-[#c0f7f1] text-black py-2 font-bold">

@@ -54,7 +54,7 @@ export default function Hirededicatedremotedevelopers(props) {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <div>
         <Head>
           <title>Hire Dedicated Remote Developer | Brain Inventory</title>

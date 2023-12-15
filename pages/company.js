@@ -49,7 +49,7 @@ function Company() {
 
         <link rel="canonical" href="https://braininventory.in/company" />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <div className="relative ">
         <Header />
         <Video></Video>

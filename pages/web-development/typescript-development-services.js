@@ -168,7 +168,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/typescript-development-services"
         />
       </Head>
-      <Loader />
+      {/* <Loader /> */}
       <div className="">
         <div>
           <Header />

@@ -173,7 +173,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-ui-ux-designers"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/* <Loader /> */}}>
         <div className="relative">
           <>
             <Header></Header>

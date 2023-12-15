@@ -68,7 +68,6 @@ const Header = ({pop, setPop}) => {
                     src="/newLogo.png"
                     className="cursor-pointer"
                     alt="it service company offers web and app design and development"
-                    layout="fill"
                     preload="metadata"
                   />
                 </div>

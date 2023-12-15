@@ -332,7 +332,7 @@ function Accounting(props) {
           href="https://braininventory.in/industry/accounting-software-development-services"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="">
         <Header />
         <section className="">

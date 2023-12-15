@@ -168,7 +168,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <div className="">
           <Header />
           <SectionOne

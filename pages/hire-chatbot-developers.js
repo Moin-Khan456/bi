@@ -213,7 +213,7 @@ https://braininventory.in/hire-chatbot-developers"
           href="https://braininventory.in/hire-chatbot-developers"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <div className="relative">
           <div>
             <Header></Header>

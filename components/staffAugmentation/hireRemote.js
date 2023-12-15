@@ -5,10 +5,16 @@ import Image from 'next/image';
 function HireRemote(props) {
     return (
         <div className='bg-white mt-20 mb-20'>
-            <div className='container padding-left-all-section'>
+            <div className='container padding-left-all-section-1'>
                 <div className='lg:flex items-center'>
                     <div>
-                        <Image src='https://braininventory.s3.us-east-2.amazonaws.com/images/hire.png' alt="" width={500} height={500} className='lg:h-[400px] p-10 lg:p-0 transform-property' />
+                        <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px" src='https://braininventory.s3.us-east-2.amazonaws.com/images/hire.png' alt="" width={500} height={500} className='lg:h-[400px] p-10 lg:p-0 transform-property' />
                     </div>
                     <div className='pl-6'>
                         <h3 className='text-3xl text-black Gilroy-Bold mb-4'>Hire Remote Developers to Enhance your <br/> team capability now.</h3>

@@ -291,7 +291,7 @@ function Blockchain(props) {
           href="https://braininventory.in/industry/blockchain-development-services"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <main className="">
         <Header />
         <section className="">

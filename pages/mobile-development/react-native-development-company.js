@@ -157,7 +157,7 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/react-native-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <main className="">
           <Header />
           <section className="pt-32">

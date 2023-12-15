@@ -3,7 +3,7 @@ import React from 'react';
 function ourProcess(props) {
     return (
         <div className='2xl:p-10 p-8 2xl:space-y-8 space-y-6'>
-            <div className='container'>
+            <div className='container padding-left-all-section-1'>
                 <h3 className='text-lg Gilroy-Bold'>Our Process</h3>
                 <h2 className='text-4xl Gilroy-Bold'>Quick and Transparent Process to the Hire <br/> Remote Developers</h2>
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-4'>

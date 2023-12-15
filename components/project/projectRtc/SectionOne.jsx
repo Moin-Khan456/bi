@@ -8,7 +8,13 @@ const Index = ({ section }) => {
   return (
     <div className="container lg:min-h-screen">
       <div className="max-w-full flex flex-col px-4 lg:px-12 ">
-        <Image
+        <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
           width={1500}
           height={1500}
           src={section.logo}
@@ -17,7 +23,13 @@ const Index = ({ section }) => {
         />
         <h1 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">
           Online{" "}
-          <Image width={1500} height={1500} alt=""
+          <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px" width={1500} height={1500} alt=""
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6405.png"
             className="w-1/6"
           />
@@ -29,7 +41,13 @@ const Index = ({ section }) => {
           <div>
             <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">
               Made With&nbsp;&nbsp;&nbsp;
-              <Image width={500} height={500} alt=""
+              <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px" width={500} height={500} alt=""
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png"
                 className="w-[10%] lg:w-[20%]"
               />

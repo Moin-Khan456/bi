@@ -132,7 +132,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/shopify-ecommerce-software-development-services"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="">
         <div>
           <Header />

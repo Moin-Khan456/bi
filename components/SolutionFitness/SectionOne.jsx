@@ -6,7 +6,13 @@ const SectionOne = () => {
   return (
     <div className="relative bg-cover overflow-hidden bg-center h-[100%] max-h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/daniel-apodaca-WdoQio6HPVA-unsplash.png')] ">
       <div className="absolute top-10 -right-24 w-full">
-        <Image
+        <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/braininventory.in+spinner+white.png"
           alt="Fitness App Development Company"
           width={1200}

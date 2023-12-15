@@ -10,7 +10,13 @@ const Index = ({ para1, para2, para3, type }) => {
       </h1>
       <section className="lg:mb-0 mb-6 flex flex-col lg:flex-row pt-8">
         {!(type === "Custom App") ? (
-          <Image
+          <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
             width={700}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
@@ -18,7 +24,13 @@ const Index = ({ para1, para2, para3, type }) => {
             className="w-96 lg:w-[40%] h-full rounded-2xl"
           />
         ) : (
-          <Image
+          <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
             width={500}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_custom+mobile+app+developers_+WHY+YOU+NEED+A+CUSTOM+APP+DEV.+SULUTION.png"

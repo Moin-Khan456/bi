@@ -197,7 +197,7 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
 
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <main className="relative">
           <section>
             <Header />

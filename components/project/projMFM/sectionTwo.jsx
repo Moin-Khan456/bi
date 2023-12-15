@@ -16,7 +16,13 @@ const Index = ({ }) => {
         <div className="container">
 
             <div className="w-full relative flex justify-center">
-                <Image
+                <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Mask%20Group%20176.png"
                     alt=""
                     width={1500}
@@ -35,7 +41,13 @@ const Index = ({ }) => {
             </div>
 
             <div className="flex justify-center">
-                <Image
+                <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Perspective-App-Screens-Mock-Up-16.png"
                     alt=""
                     width={1500}
@@ -46,7 +58,13 @@ const Index = ({ }) => {
 
             <div className="flex justify-center">
 
-                <Image
+                <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6448.png"
                     alt=""
                     width={1500}

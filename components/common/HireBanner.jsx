@@ -116,7 +116,13 @@ export default function HireBanner({
                 type?.match("php") && "drop-shadow-image"
               }`}
             >
-              <Image
+              <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                 src={image}
                 className={`rounded-2xl ${
                   type === "hire" ? "w-[700px]" : "w-[100%]"

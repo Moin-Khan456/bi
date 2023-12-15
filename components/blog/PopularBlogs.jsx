@@ -11,7 +11,13 @@ const PopularBlogs = ({ data }) => {
         data === null || data === undefined || data == [] ? <Skeleton/> : <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {data?.map((post, index) => (
           <Link href={`/posts/${post.slug}/${post.id}`} key={index} className="w-full">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src={post["_embedded"]["wp:featuredmedia"][0].source_url}
               blurDataURL="data:/image-loading.png"
               placeholder="blur"

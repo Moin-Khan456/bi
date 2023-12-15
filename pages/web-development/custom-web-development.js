@@ -153,7 +153,13 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
 
-      <Suspense fallback={<Loader />}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative  ">
           <Header />
           <SectionOne
@@ -166,9 +172,7 @@ function HireAangularJsDeveloper(props) {
             type="web"
             alt="custom web development company"
           />
-          <section className="container">
-            <Customer />
-          </section>
+          <Customer />
           <CustomWeb para1={para1} para2={para2} type="Custom web" />
           <HireMarquee title="Custom Web" />
           <CustomBenefits
@@ -180,7 +184,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Custom Web Development from %Brain Inventory"
             card={hireCards}
           />
-          
+
           <ChooseBraininventory
             head="Why Choose Brain inventory for Your Next"
             blue="Assignment"

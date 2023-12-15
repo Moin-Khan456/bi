@@ -17,7 +17,13 @@ const Blogs = ({ blogs }) => {
               <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
                 <div className="relative ">
                   <div className="overlay">
-                    <Image
+                    <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                       src={post["_embedded"]["wp:featuredmedia"][0].source_url}
                       fetchPriority="high"
                       width={300}

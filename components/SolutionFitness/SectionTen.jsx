@@ -5,7 +5,13 @@ const Index = ({ mockup1, mockup2, alt }) => {
     <div className="padding-left-all-section-1 rounded-md my-8 py-10 pb-32">
       <div className="container padding-left-all-section-1 relative">
         <div className="lg:mb-80 mb-[36rem]">
-          <Image
+          <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7062.png"
             alt="Our Work"
             width={900}
@@ -15,7 +21,13 @@ const Index = ({ mockup1, mockup2, alt }) => {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 absolute lg:top-80 top-32">
           <div className="m-6 lg:m-0">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src={
                 mockup1 ??
                 "https://braininventory.s3.us-east-2.amazonaws.com/images/solution/1.png"
@@ -33,7 +45,13 @@ const Index = ({ mockup1, mockup2, alt }) => {
             </p>
           </div>
           <div className="lg:mt-24 m-6 lg:m-0">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src={
                 mockup2 ??
                 "https://braininventory.s3.us-east-2.amazonaws.com/images/solution/e8635b913472ae92c6c9d727d1ccce71.png"

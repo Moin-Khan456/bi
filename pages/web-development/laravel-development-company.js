@@ -134,7 +134,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/laravel-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <div className="">
           <Header />
           <SectionOne

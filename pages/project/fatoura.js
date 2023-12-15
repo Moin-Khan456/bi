@@ -200,7 +200,13 @@ const Fatoura = () => {
               L A N D I N G P A G E
             </h1>
             <div className="px-4 lg:px-48 lg:py-12">
-              <Image width={900} height={900}
+              <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px" width={900} height={900}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6461.png"
                 alt=""
               />
@@ -210,7 +216,13 @@ const Fatoura = () => {
       </>
       
       <div className="max-w-full flex justify-center">
-        <Image width={900} height={900}
+        <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px" width={900} height={900}
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt=""
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%] container"

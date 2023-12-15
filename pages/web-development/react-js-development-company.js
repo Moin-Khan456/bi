@@ -154,7 +154,7 @@ function HireReactDeveloper(props) {
           href="https://braininventory.in/web-development/react-js-development-company"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <div className="">
           <Header />
           <div className="pt-32 container">

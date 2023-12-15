@@ -45,7 +45,13 @@ const Header = () => {
             <span className="text-4xl Gilroy-Bold z-30">
               {!navOpen && (
                 <div className="relative w-36 h-12 cursor-pointer">
-                  <Image
+                  <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                     priority={true}
                     src="https://braininventory.s3.us-east-2.amazonaws.com/images/main/Logobg.png"
                     className="cursor-pointer"

@@ -32,7 +32,13 @@ export default function KeepInTouch() {
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
             <div className="relative h-[100px] w-full lg:w-1/2">
-              <Image
+              <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
                 src={
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
                 }

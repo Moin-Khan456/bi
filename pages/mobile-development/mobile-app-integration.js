@@ -170,7 +170,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/mobile-app-integration"
         />
       </Head>
-      <Suspense fallback={<Loader />}>
+      <Suspense fallback={{/*<Loader />*/}}>
         <main>
           <Header />
           <SectionOne

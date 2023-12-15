@@ -66,7 +66,7 @@ Contact us now."
         
         <link rel="canonical" href="https://braininventory.in/contact" />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="relative   ">
         <Header />
         <ContactBanner />

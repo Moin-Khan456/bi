@@ -183,7 +183,13 @@ const Virifi = () => {
 
         
         <div className="container">
-          <Image
+          <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
             alt=""
             className="rounded-3xl w-[100vw] px-[10vw] py-[5vh]"

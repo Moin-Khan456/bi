@@ -19,7 +19,13 @@ const Index = ({ para1, para2, para3, title, image, card, type, alt }) => {
           )}
         </section>
         <section className="grid xs:grid-rows-1 lg:grid-cols-2 pt-8 w-full ">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src={image}
               alt={alt}
               width={700}

@@ -145,7 +145,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/vue-js-development-company"
         />
       </Head>
-      <Loader />
+      {/*<Loader />*/}
       <div className="">
         <Header />
         <div className="pt-32">

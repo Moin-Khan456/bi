@@ -54,37 +54,50 @@ export default function Hirededicatedremotedevelopers(props) {
 
   return (
     <>
-      <Loader />
-      <div>
-        <Head>
-          <title>Hire Dedicated Remote Developer | Brain Inventory</title>
-          <meta
-            name="description"
-            content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
-          />
-          <meta
-            name="og:title"
-            content="Hire Dedicated Remote Developer | Brain Inventory"
-          />
-          <meta
-            name="og:description"
-            content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
-          />
-          <meta
-            property="og:url"
-            content="https://braininventory.in/hire-dedicated-remote-developers"
-          />
-          <link
-            rel="canonical"
-            href="https://braininventory.in/hire-dedicated-remote-developers"
-          />
-        </Head>
+      <Head>
+        <title>Hire Dedicated Remote Developer | Brain Inventory</title>
+        <meta
+          name="description"
+          content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
+        />
+        <meta
+          name="og:title"
+          content="Hire Dedicated Remote Developer | Brain Inventory"
+        />
+        <meta
+          name="og:description"
+          content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
+        />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/hire-dedicated-remote-developers"
+        />
+        <link
+          rel="canonical"
+          href="https://braininventory.in/hire-dedicated-remote-developers"
+        />
+        <link
+          rel="preload"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png"
+          as="image"
+          type="image/*"
+          crossorigin="anonymous"
+        />
+      </Head>
+
+      <div className="second-component">
         <Header />
         <StaffBanner />
         <Staform />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container lg:px-24">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
               alt=""
               width={500}
@@ -98,9 +111,15 @@ export default function Hirededicatedremotedevelopers(props) {
         <OnboardingProcess />
         <Hiringbenifit />
         <HireRemote />
-        <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+        <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 padding-left-all-section-1 container">
           <div className="container">
-            <Image
+            <Image layout="responsive"
+        srcSet="/image-320w.jpg 320w,
+              /image-480w.jpg 480w,
+              /image-800w.jpg 800w"
+        sizes="(max-width: 320px) 280px,
+             (max-width: 480px) 440px,
+             800px"
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/staff-image.png"
               alt=""
               width={500}

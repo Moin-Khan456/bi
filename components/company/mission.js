@@ -33,8 +33,7 @@ function mission() {
                   src={
                     "https://braininventory.s3.us-east-2.amazonaws.com/images/" + el.image
                   }
-                  layout="fill"
-                  alt=""
+                  alt="Brain Inventory"
                 />
               </div>
               <div className="w-96">

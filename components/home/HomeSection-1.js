@@ -28,7 +28,6 @@ export default function HomeSectionOne({}) {
         sizes="(max-width: 320px) 280px,
              (max-width: 480px) 440px,
              800px"
-                layout="fill"
                 priority={true}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/scrollAnimation.svg"
                 alt="custom software development solutions"

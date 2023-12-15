@@ -43,7 +43,8 @@ export default function KeepInTouch() {
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
                 }
                 loading="lazy"
-                layout="fill"
+                width={500}
+                height={500}
                 objectFit="contain"
                 alt="Keep In Touch With Brain Inventory Sales Executive"
               />

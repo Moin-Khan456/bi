@@ -41,8 +41,7 @@ const HomeSectionEleven = () => {
                     ".svg"
                   }
                   loading="lazy"
-                  layout="fill"
-                  alt=""
+                  alt="Brain Inventory"
                 />
               </div>
             </div>

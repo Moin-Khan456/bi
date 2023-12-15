@@ -144,7 +144,6 @@ function Contact(props) {
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/sufiyan.png"
                 }
                 className="w-60 h-60"
-                layout="fill"
                 alt="Brain Inventory Co founder"
               />
             </div>

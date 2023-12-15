@@ -42,7 +42,6 @@ const Banner = () => {
              800px"
               src={"https://braininventory.s3.us-east-2.amazonaws.com/images/carrer.png"}
               alt="Career at Brain Inventory"
-              layout="fill"
             />
           </div>
         </div>

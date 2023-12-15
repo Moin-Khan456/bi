@@ -86,7 +86,6 @@ const Section = ({ info }) => {
             src={"https://braininventory.s3.us-east-2.amazonaws.com/images/" + info.image}
             loading="lazy"
             alt={info.alt}
-            layout="fill"
             objectFit="cover"
           />
         </div>

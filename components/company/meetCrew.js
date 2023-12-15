@@ -171,18 +171,12 @@ function meetCrew() {
                 <div key={el}>
                   <div className="w-[260px] h-[280px] mr-2 relative border-2 border-cutom object-cover">
                     <Image
-                      layout="responsive"
-                      srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-                      sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
                       src={
                         "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                         el.image
                       }
-                      alt={`${el.title} | ${el.designation}`}
+                      layout="fill"
+                      alt=""
                     />
                   </div>
                   <h2 className="text-black Gilroy-Bold pt-2">{el.title}</h2>

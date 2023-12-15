@@ -150,7 +150,7 @@ function SwiftDevelopment(props) {
           href="https://braininventory.in/mobile-development/swift-development-company"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="">
         <Header />
         <div className="pt-32">

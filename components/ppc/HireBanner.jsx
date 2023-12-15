@@ -46,13 +46,7 @@ export default function HireBanner({
                     <div className="px-2">
                         <div className="w-full lg:ml-0 flex flex-col items-center lg:items-start">
                             <div className="lg:-ml-8">
-                                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1200} height={600} priority={true} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6755.png" alt='' />
+                                <Image width={1200} height={600} priority={true} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6755.png" alt='' />
                             </div>
                             <h1 className="text-4xl leading-[3rem] Gilroy-Bold font-bold text-center lg:text-start lg:my-2">We Develop Highly Engaging Custom Social Networks</h1>
                         </div>
@@ -73,13 +67,7 @@ export default function HireBanner({
                     </div>
                     <div className="max-w-full">
                         <div className="lg:-mt-14 mr-14 lg:mr-0 -ml-8 lg:ml-0 bg-none w-full flex justify-center lg:block">
-                            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                            <Image
                                 width={750}
                                 height={750}
                                 src={image}
@@ -450,13 +438,7 @@ const Popup = ({ setPop, country }) => {
                         </div>
                     </div>
                     <div className="max-w-28 lg:block hidden">
-                        <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={500} height={400} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/ILLUSTRATION.png" alt="" />
+                        <Image width={500} height={400} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/ILLUSTRATION.png" alt="" />
                     </div>
                 </div>
                 <div className="hidden lg:flex flex-col items-center w-full">

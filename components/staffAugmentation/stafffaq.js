@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { Component } from "react";
 import { useState } from "react/cjs/react.production.min";
 
@@ -29,10 +28,11 @@ function StafFaq() {
                       <div className="flex md:block my-4 md:my-0">
                         <button
                           onClick={() => collapsed(el.title)} 
+                          className=""
                         >
-                          <Image 
-                            src="/images/faq-arrow.svg" alt="FAQ | Custom Software Development"
-                            className="cursor-pointer" width={100} height={100}
+                          <img
+                            src="/images/faq-arrow.svg"
+                            className="cursor-pointer"
                           />
                         </button>
                       </div>

@@ -338,7 +338,7 @@ function Ecommerce(props) {
           href="https://braininventory.in/industry/ecommerce-software-development-services"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <Header />
       <SectionOne />
       <SectionTwo

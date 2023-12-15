@@ -400,13 +400,7 @@ export default function Footer() {
                   className="inline-flex items-center align-middle cursor-pointer w-1/3 justify-center lg:w-auto"
                 >
                   <a href={ele.href} target="_blank" rel="noopener noreferrer">
-                    <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                    <Image
                       width={ele.width}
                       height={ele.height}
                       src={ele.src}
@@ -430,13 +424,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/meta.svg"
                     }
@@ -452,13 +440,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/linkedIn.svg"
                     }
@@ -474,13 +456,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/dribble.svg"
                     }
@@ -496,13 +472,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/instagram.svg"
                     }
@@ -518,13 +488,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.svg"
                     }

@@ -140,7 +140,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/codeigniter-development-services"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense fallback={<Loader />}>
         <div className="">
           <Header></Header>
           <SectionOne

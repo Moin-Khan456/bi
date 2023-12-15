@@ -145,7 +145,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/custom-app-development"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense fallback={<Loader />}>
       <main className=" ">
         <section>
           <Header />

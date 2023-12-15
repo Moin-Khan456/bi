@@ -151,7 +151,7 @@ function Flutter(props) {
           href="https://braininventory.in/mobile-development/flutter-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense fallback={<Loader />}>
         <main className="">
           <Header />
           <section className="pt-32">

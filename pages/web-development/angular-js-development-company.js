@@ -138,7 +138,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/angular-js-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense fallback={<Loader />}>
         <div className="relative ">
           <Header />
           <div className="pt-32">

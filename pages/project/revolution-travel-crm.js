@@ -224,26 +224,14 @@ const Fatoura = () => {
       <SectionFive /> 
       <div className="py-8">
         <div className="flex justify-center items-center ">
-          <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={500} height={500}
+          <Image width={500} height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6533.png"
             alt=""
             className="w-[34rem]"
           />
         </div>
         <div className="relative w-full h-screen lg:h-[78vh] overflow-y-scroll no-scrollbar">
-          <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1500} height={1500}
+          <Image width={1500} height={1500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6535.png"
             alt=""
             className="w-full"
@@ -253,13 +241,7 @@ const Fatoura = () => {
 
       
       <div className="max-w-full flex justify-center">
-        <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={500} height={500}
+        <Image width={500} height={500}
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt=""
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%]"

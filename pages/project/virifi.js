@@ -168,13 +168,7 @@ const Virifi = () => {
           </div>
         </div>
         <div>
-          <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 287.png"
             className="lg:-mt-8 w-full"
             width={2000}
@@ -193,13 +187,7 @@ const Virifi = () => {
         </div>
 
         <div className="flex w-full">
-          <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
             alt=""
             width={2000}
@@ -223,13 +211,7 @@ const Virifi = () => {
                 Marketing <span className="text-[#7600EB]">Website</span>
               </h1>
               <div className="px-4 lg:px-48 lg:py-12 ">
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6425.png"
                   alt=""
                   width={1000}
@@ -244,13 +226,7 @@ const Virifi = () => {
         
         <div className="flex justify-center w-full py-12">
          <div className="container lg:px-28">
-          <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
             alt=""
             className="rounded-3xl w-[100%]"

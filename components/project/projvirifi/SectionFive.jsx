@@ -12,13 +12,7 @@ const Index = () => {
           <div className="px-4 lg:px-24 lg:py-12 ">
             <div className="">
               <div>
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   className="w-full"
                   width={2000}
                   height={500}
@@ -28,13 +22,7 @@ const Index = () => {
               </div>
 
               <div>
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   className="w-full"
                   width={2000}
                   height={500}
@@ -48,13 +36,7 @@ const Index = () => {
       </div>
 
       <div>
-        <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+        <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 289.png"
           alt=""
           width={2000}

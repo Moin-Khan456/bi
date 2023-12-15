@@ -147,7 +147,7 @@ function HireAangularJsDeveloper(props) {
           href=" https://braininventory.in/web-development/wordpress-development-company"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="">
         <section>
           <Header />

@@ -236,13 +236,7 @@ const Bloomia = () => {
           
           <div className="container">
             <div className="max-w-full flex justify-center">
-              <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+              <Image
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
                 alt=""
                 width={600}

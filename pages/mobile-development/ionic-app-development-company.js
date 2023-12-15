@@ -164,7 +164,7 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/ionic-app-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense fallback={<Loader />}>
         <div className="">
           <Header />
           <SectionOne

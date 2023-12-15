@@ -31,13 +31,7 @@ export default function BlogArticle() {
                                 store?.map((ele, index) => (
                                     <Link href={"https://www.braininventory.in/posts/" + ele.slug + "/" + ele.id} target="_self" key={index}>
                                         <section className="my-4 lg:mr-4 relative h-64" key={index}>
-                                            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={500} height={300}
+                                            <Image width={500} height={300}
                                                 className="h-full rounded-3xl"
                                                 src={ele._embedded["wp:featuredmedia"][0].source_url}
                                                 alt={ele.title.rendered + " | Brain Inventory"}

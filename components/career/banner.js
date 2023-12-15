@@ -33,15 +33,10 @@ const Banner = () => {
         </div>
         <div className="w-1/2 h-full lg:flex justify-center items-center hidden">
           <div className="w-[600px] h-[450px]  relative">
-            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+            <Image
               src={"https://braininventory.s3.us-east-2.amazonaws.com/images/carrer.png"}
               alt="Career at Brain Inventory"
+              layout="fill"
             />
           </div>
         </div>

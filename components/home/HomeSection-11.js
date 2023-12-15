@@ -28,20 +28,15 @@ const HomeSectionEleven = () => {
               className="border border-blue h-40 2xl:p-12 lg:p-10 p-4"
             >
               <div className="relative h-full">
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   src={
                     "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                     el +
                     ".svg"
                   }
                   loading="lazy"
-                  alt="Brain Inventory"
+                  layout="fill"
+                  alt=""
                 />
               </div>
             </div>

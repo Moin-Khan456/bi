@@ -33,13 +33,7 @@ const Index = () => {
               </div>
 
               <div className="lg:absolute lg:bottom-[-9rem] left-0 right-0 ">
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/Mask+Group+163.png"
                   alt="social networking app development company"
                   width={1800}

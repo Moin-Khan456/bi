@@ -328,7 +328,7 @@ function Travel(props) {
           as="image"
         />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <main className="">
         <Header />
           <SectionOne />

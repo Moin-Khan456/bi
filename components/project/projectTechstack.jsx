@@ -11,13 +11,7 @@ function Card({ tech }) {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:px-48 py-12">
             {tech?.map((ele, index) => (
               <div className="flex flex-col flex-wrap items-center my-8" key={index}>
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src={ele.image} alt={ele.name} width={500} height={500} className="tech_img" />
+                <Image src={ele.image} alt={ele.name} width={500} height={500} className="tech_img" />
                 <p>{ele.name}</p>
               </div>
             ))}

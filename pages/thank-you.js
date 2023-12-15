@@ -14,7 +14,7 @@ function ThankYou(props) {
       <Head>
         <title>Thank You For Visiting Us | Brain Inventory</title>
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="relative  ">
         <div>
           <Header></Header>

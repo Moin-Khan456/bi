@@ -5,7 +5,7 @@ import React from 'react';
 function Hiringbenifit(props) {
     return (
         <div className='2xl:p-10 p-8 2xl:space-y-8 space-y-6'>
-        <div className='container padding-left-all-section-1'>
+        <div className='container padding-left-all-section'>
             <h3 className='text-lg Gilroy-Bold'>Benefits of hiring remote developers from India</h3>
             <h2 className='text-4xl Gilroy-Bold'>Hire Remote Developers At Affordable Cost</h2>
         
@@ -19,13 +19,7 @@ function Hiringbenifit(props) {
                </div>
 
                <div className='lg:w-[40%] lg:mt-0 mt-4'>
-                  <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src='https://braininventory.s3.us-east-2.amazonaws.com/images/globe.png' alt="" width={500} height={500} className='px-12' />
+                  <Image src='https://braininventory.s3.us-east-2.amazonaws.com/images/globe.png' alt="" width={500} height={500} className='px-12' />
                </div>
 
                <div className='lg:w-[30%]'>

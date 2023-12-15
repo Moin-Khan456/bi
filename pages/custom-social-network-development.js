@@ -71,7 +71,7 @@ function HireAangularJsDeveloper(props) {
         
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-      {/*<Loader />*/}
+      <Loader />
       <div className="h-fit -rotate-90 fixed -left-[99vw] top-0 w-[200vw] z-50 hidden lg:block">
         <Marquee duration={70000}>
           <div className="bg-[#c0f7f1] text-black py-2 font-bold">
@@ -124,13 +124,7 @@ function HireAangularJsDeveloper(props) {
               <div className="flex flex-col">
                 {!localForm && (
                   <div className="w-full h-[70%] hidden lg:block">
-                    <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                    <Image
                       src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6771.png"
                       priority={true}
                       alt=""
@@ -151,13 +145,7 @@ function HireAangularJsDeveloper(props) {
               <Trust />
               <WhyBI />
               <div className="flex justify-center">
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+                <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
                   alt=""
                   width={1500}

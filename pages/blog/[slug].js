@@ -17,7 +17,12 @@ const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 
-export default function Home({ data = false, blogs = false, totalPages, page }) {
+export default function Home({
+  data = false,
+  blogs = false,
+  totalPages,
+  page,
+}) {
   const [currentPage, setCurrentPage] = useState(page);
 
   return (
@@ -114,8 +119,13 @@ export default function Home({ data = false, blogs = false, totalPages, page }) 
 export async function getServerSideProps(context) {
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
-    { next: { revalidate: 3600 } },
-    { cache: "force-cache" }
+    { next: { revalidate: 600 } },
+    {
+      cache: "force-cache",
+      headers: {
+        "Cache-Control": "public, max-age=600",
+      },
+    }
   );
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10"

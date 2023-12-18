@@ -27,7 +27,7 @@ const HireDedicatedCard = ({ setLocal }) => {
         </span>
         <h3 className="text-xs font-semibold flex items-start my-2">
           {" "}
-          <Image layout="responsive"
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire-dedicated-developer-contact-card/correct.svg"
             alt="Custom Software Services"
             width={25}
@@ -39,7 +39,7 @@ const HireDedicatedCard = ({ setLocal }) => {
         </h3>
         <h3 className="text-xs font-semibold flex items-start my-2">
           {" "}
-          <Image layout="responsive"
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire-dedicated-developer-contact-card/correct.svg"
             alt="Custom Software Services"
             width={25}

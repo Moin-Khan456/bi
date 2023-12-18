@@ -348,7 +348,7 @@ function Energy(props) {
       />{" "}
       <TiltMarquee title="Energy & Utility Solution Development  Energy & Utility Solution Development" />
       <SectionFour
-        title="Solutions for Energy & Utility Industry Development"
+        title="Services for Energy & Utility Software Development"
         description={sectionFourDesc}
         solutionList={solutionList}
       />
@@ -371,13 +371,13 @@ function Energy(props) {
       <PlatformDevelopment
         data={platformDevelopment}
         subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-        head="ENERGY & UTILITY INDUSTRY DEVELOPMENT"
+        head="ENERGY & UTILITY SOFTWARE DEVELOPMENT"
         description={platformDesc}
       />
       <SectionNine
-        brand="Energy & Utility Solution Development Company        "
-        pageCategory="Energy & Utility Solution Development Company     "
-        pageCategoryAbbr="Energy & Utility Solution Development Company       "
+        brand="Energy & Utility SOFTWARE Development Company        "
+        pageCategory="Energy & Utility SOFTWARE Development Company     "
+        pageCategoryAbbr="Energy & Utility SOFTWARE Development Company       "
         slow={70000}
         fast={65000}
         alt={"Energy & Utility Software Development Company"}
@@ -386,11 +386,11 @@ function Energy(props) {
       <PlatformDevelopment
         data={keyFeatures}
         subhead="KEY FEATURES OF"
-        head=" Energy & Utility Industry Development"
+        head=" Energy & Utility SOFTWARE Development"
         description={keyDesc}
       />
       <Approach
-        title="How do we Approach Energy & Utility Industry Development?"
+        title="How do we Approach Energy & Utility Software Development?"
         desc={approachDesc}
         points={approachPoints}
       />

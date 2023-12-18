@@ -126,7 +126,7 @@ function Ecommerce(props) {
     "As a trailblazer in the world of ecommerce, Brain Inventory is positioned to arm your business with high-caliber ecommerce services. In today's fast-paced digital world, you need a robust ecommerce platform that can easily adapt to rapid changes and emerging trends. We have harnessed the prowess of the latest technology to craft stellar ecommerce development strategies that give businesses a distinct edge over their competition. Let's look at some of the services we provide.";
 
   const sectionTwoDesc =
-    "We empower your business with custom ecommerce systems, providing streamlined services that foster growth and boost success. Our e-commerce development strategies are specially tailored to transform your vision into reality, making us a top choice for ecommerce development services";
+    "We empower your business with custom ecommerce software development, providing streamlined services that foster growth and boost success. Our e-commerce development strategies are specially tailored to transform your vision into reality, making us a top choice for ecommerce development services";
 
   const sectionFiveDesc =
     "Undeniably, we are in the era of an e-commerce boom. Giants like Amazon and Alibaba have set the trail, but now we're seeing up-and-coming platforms carving out their own space in this ever-evolving market. Let's take a closer look at these budding platforms:";
@@ -355,7 +355,7 @@ function Ecommerce(props) {
       />{" "}
       <TiltMarquee title="E-COMERCE Software Development  E-COMMERCE Software Development" />
       <SectionFour
-        title="Solutions for E-commerce Industry Development"
+        title="Services for E-commerce Software Development"
         description={sectionFourDesc}
         solutionList={solutionList}
       />
@@ -391,11 +391,11 @@ function Ecommerce(props) {
       <PlatformDevelopment
         data={keyFeatures}
         subhead="KEY FEATURES OF"
-        head="ECOMMERCE INDUSTRY  DEVELOPMENT"
+        head="ECOMMERCE SOFTWARE  DEVELOPMENT"
         description={keyDesc}
       />
       <Approach
-        title="How do we Approach eCommerce Industry  Development?"
+        title="How do we Approach eCommerce Software  Development?"
         desc={approachDesc}
         points={approachPoints}
       />

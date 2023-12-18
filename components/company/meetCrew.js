@@ -178,6 +178,8 @@ function meetCrew() {
                       sizes="(max-width: 320px) 280px,
              (max-width: 480px) 440px,
              800px"
+                      width={400}
+                      height={400}
                       src={
                         "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                         el.image

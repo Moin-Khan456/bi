@@ -27,12 +27,13 @@ const HomeSectionEleven = () => {
               key={el}
               className="border border-blue h-40 2xl:p-12 lg:p-10 p-4"
             >
-              <div className="relative h-full">
-                <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
+              <div className="relative h-full flex">
+                <Image
+                  layout="responsive"
+                  srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
+                  sizes="(max-width: 320px) 280px,
              (max-width: 480px) 440px,
              800px"
                   src={
@@ -40,6 +41,8 @@ const HomeSectionEleven = () => {
                     el +
                     ".svg"
                   }
+                  width={200}
+                  height={200}
                   loading="lazy"
                   alt="Brain Inventory"
                 />

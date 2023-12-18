@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function choose(props) {
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-6 space-y-8 pt-24 pb-24">
+    <div className="2xl:p-10 p-8 2xl:space-y-6 space-y-8 pt-24 pb-24 container">
       <div className="container padding-left-all-section">
         <h1 className="text-4xl Gilroy-Bold mb-2">
           Why choose braininventory?
@@ -15,13 +15,7 @@ function choose(props) {
         </p>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 mt-8">
           <div className="bg-vision">
-            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon1.svg"
               className="text-center m-auto block w-16"
               alt=""
@@ -31,13 +25,7 @@ function choose(props) {
             <h3 className="text-center Gilroy-Bold text-xl">360 Approach</h3>
           </div>
           <div className="bg-vision">
-            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon2.svg"
               className="text-center m-auto block  w-16"
               alt=""
@@ -49,13 +37,7 @@ function choose(props) {
             </h3>
           </div>
           <div className="bg-vision">
-            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon3.svg"
               className="text-center m-auto block w-16"
               alt=""
@@ -67,13 +49,7 @@ function choose(props) {
             </h3>
           </div>
           <div className="bg-vision">
-            <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon4.svg"
               className="text-center m-auto block w-16"
               alt=""

@@ -348,7 +348,7 @@ function Meeting(props) {
       <TiltMarquee title="MEETING & EVENT MANAGEMENT Solution DEVELOPMENT " />
       <SectionFour
         titleSize="lg:text-4xl"
-        title="Solutions for Meeting and Event Planning Industry Development"
+        title="Services for Meeting and Event Planning Software Development"
         description={sectionFourDesc}
         solutionList={solutionList}
       />
@@ -372,7 +372,7 @@ function Meeting(props) {
       <PlatformDevelopment
         data={platformDevelopment}
         subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-        head=" Meeting and Event Planning  INDUSTRY DEVELOPMENT"
+        head=" Meeting and Event Planning  SOFTWARE DEVELOPMENT"
         description={platformDesc}
       />
       <SectionNine
@@ -387,11 +387,11 @@ function Meeting(props) {
       <PlatformDevelopment
         data={keyFeatures}
         subhead="KEY FEATURES OF"
-        head="Meeting and Event Planning Industry Development"
+        head="Meeting and Event Planning SOFTWARE Development"
         description={keyDesc}
       />
       <Approach
-        title="How do we Approach Meeting and Event Planning Industry Development?"
+        title="How do we Approach Meeting and Event Planning Software Development?"
         desc={approachDesc}
         points={approachPoints}
       />

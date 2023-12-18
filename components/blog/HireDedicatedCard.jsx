@@ -28,14 +28,8 @@ const HireDedicatedCard = ({ setLocal }) => {
         <h3 className="text-xs font-semibold flex items-start my-2">
           {" "}
           <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire-dedicated-developer-contact-card/correct.svg"
-            alt=""
+            alt="Custom Software Services"
             width={25}
             height={25}
             className="pr-2"
@@ -46,14 +40,8 @@ const HireDedicatedCard = ({ setLocal }) => {
         <h3 className="text-xs font-semibold flex items-start my-2">
           {" "}
           <Image layout="responsive"
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire-dedicated-developer-contact-card/correct.svg"
-            alt=""
+            alt="Custom Software Services"
             width={25}
             height={25}
             className="pr-2"

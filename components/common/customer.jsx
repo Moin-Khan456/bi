@@ -13,7 +13,7 @@ export default function Customer() {
     return (
         <main className="my-4 ">
             <section>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -39,7 +39,7 @@ export default function Customer() {
                                 {
                                     customerImages.map((ele, index) => (
                                         <section key={index}>
-                                            <Image layout="responsive"
+                                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

@@ -16,7 +16,7 @@ const Index = ({ }) => {
         <div className="container">
 
             <div className="w-full relative flex justify-center">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -41,7 +41,7 @@ const Index = ({ }) => {
             </div>
 
             <div className="flex justify-center">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -58,7 +58,7 @@ const Index = ({ }) => {
 
             <div className="flex justify-center">
 
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

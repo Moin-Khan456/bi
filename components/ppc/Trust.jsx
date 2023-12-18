@@ -20,7 +20,7 @@ const TileMatrix = () => {
           <div className="flex flex-col">
             <span className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -36,7 +36,7 @@ const TileMatrix = () => {
                 <p className="w-1/2 Gilroy-Smibold">Use case development</p>
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -54,7 +54,7 @@ const TileMatrix = () => {
                 </p>
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -70,7 +70,7 @@ const TileMatrix = () => {
                 <p className="w-1/2 Gilroy-Smibold">Go-to-market strategies</p>
               </div>
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

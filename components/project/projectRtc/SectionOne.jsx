@@ -8,7 +8,7 @@ const Index = ({ section }) => {
   return (
     <div className="container lg:min-h-screen">
       <div className="max-w-full flex flex-col px-4 lg:px-12 ">
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -23,7 +23,7 @@ const Index = ({ section }) => {
         />
         <h1 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">
           Online{" "}
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -41,7 +41,7 @@ const Index = ({ section }) => {
           <div>
             <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">
               Made With&nbsp;&nbsp;&nbsp;
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

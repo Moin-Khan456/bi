@@ -10,7 +10,7 @@ const Index = ({ para1, para2, para3, type }) => {
       </h1>
       <section className="lg:mb-0 mb-6 flex flex-col lg:flex-row pt-8">
         {!(type === "Custom App") ? (
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -24,7 +24,7 @@ const Index = ({ para1, para2, para3, type }) => {
             className="w-96 lg:w-[40%] h-full rounded-2xl"
           />
         ) : (
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

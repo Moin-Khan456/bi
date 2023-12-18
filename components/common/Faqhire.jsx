@@ -25,7 +25,7 @@ function FaqHire({ faq }) {
                                         </section>
                                         <section className="flex md:block my-4 md:my-0">
                                             <button onClick={() => collapsed(el.id)} className="">
-                                                <Image layout="responsive"
+                                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

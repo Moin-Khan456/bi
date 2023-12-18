@@ -75,7 +75,7 @@ function experience() {
             <div key={el} className="mb-8">
               <div className="relative w-60 h-60  center block m-auto">
                 <Image
-                  layout="responsive"
+                   
                   srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

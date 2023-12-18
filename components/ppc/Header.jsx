@@ -57,7 +57,7 @@ const Header = ({pop, setPop}) => {
             <span className="text-4xl Gilroy-Bold z-30">
               {!navOpen && (
                 <div className="relative w-32 h-8 cursor-pointer">
-                  <Image layout="responsive"
+                  <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

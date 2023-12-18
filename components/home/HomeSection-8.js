@@ -77,7 +77,7 @@ const Section = ({ info }) => {
         </span>
         <div className="xl:col-span-2 md:col-span-1 col-span-1 relative h-[350px]">
           <Image
-            layout="responsive"
+             
             srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

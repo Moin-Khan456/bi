@@ -20,7 +20,7 @@ const Index = ({title, btn, head, src, headAbove, subheadAbove, customClasses, c
                             <p className='lg:w-[235px] relative top-11'>{head}</p>
                       </div>
                       <div className='relative hidden lg:block'>
-                          <Image layout="responsive"
+                          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

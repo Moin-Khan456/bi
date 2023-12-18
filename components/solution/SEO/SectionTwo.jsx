@@ -24,7 +24,7 @@ const SectionTwo = ({ title, subTitle, head1, description, className }) => {
                 <h2 className="absolute bottom-4 left-8 text-stroke-industry-relay opacity-25 z-10 text-4xl overflow-hidden whitespace-nowrap">SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING SOCIAL NETWORKING</h2>
                 <div className="relative z-30">
                    <div className="flex">
-                      <Image layout="responsive"
+                      <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

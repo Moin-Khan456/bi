@@ -20,7 +20,7 @@ export default function HomeSectionOne({}) {
             </div>
             <div className="rotating scroll-logo md:block hidden ">
               <Image
-                layout="responsive"
+                 
                 srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

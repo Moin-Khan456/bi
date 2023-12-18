@@ -168,7 +168,7 @@ const Virifi = () => {
           </div>
         </div>
         <div>
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -193,7 +193,7 @@ const Virifi = () => {
         </div>
 
         <div className="flex w-full">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -223,7 +223,7 @@ const Virifi = () => {
                 Marketing <span className="text-[#7600EB]">Website</span>
               </h1>
               <div className="px-4 lg:px-48 lg:py-12 ">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -244,7 +244,7 @@ const Virifi = () => {
         
         <div className="flex justify-center w-full py-12">
          <div className="container lg:px-28">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

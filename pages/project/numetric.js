@@ -222,7 +222,7 @@ const Numetric = () => {
         
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

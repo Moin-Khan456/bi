@@ -7,7 +7,7 @@ const Index = () => {
             <h1 className='flex text-end justify-center text-3xl lg:text-5xl lg:mx-44 fatoura__text'>TYPEFACE & COLORS</h1>
             <div className='lg:flex'>
             <div className="px-4 lg:px-48 lg:py-12">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -41,7 +41,7 @@ const Index = () => {
             </div>
 
             <div>
-                 <Image layout="responsive"
+                 <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

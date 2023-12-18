@@ -17,7 +17,7 @@ const Blogs = ({ blogs }) => {
               <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
                 <div className="relative ">
                   <div className="overlay">
-                    <Image layout="responsive"
+                    <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

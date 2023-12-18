@@ -8,7 +8,7 @@ const Index = ({ section }) => {
       <div className="py-8 px-0 lg:px-12 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <p className="hidden lg:block">{section.space}</p>
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -17,7 +17,7 @@ const Index = ({ section }) => {
              800px" src={section.logo} alt={section.alt} width={800} height={800} className={`w-1/2 lg:w-1/4 ${section.alt === "MyFitMantra" && "lg:scale-[0.7]"}`} />
           <p className="hidden lg:block">{section.space}</p>
           <div className="w-[95%] flex justify-center py-4 lg:py-8">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -33,7 +33,7 @@ const Index = ({ section }) => {
         </div> 
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

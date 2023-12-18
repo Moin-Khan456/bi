@@ -8,7 +8,7 @@ const Index = () => {
 
             <h1 className='text-3xl lg:text-6xl text-center py-8 Gilroy-Bold'>Design <span className="text-[#7600EB]"> Process</span></h1>
             <div className="px-4 lg:px-48 lg:py-12">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

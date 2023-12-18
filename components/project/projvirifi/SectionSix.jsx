@@ -9,7 +9,7 @@ const Index = () => {
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-4">
           <div>
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -26,7 +26,7 @@ const Index = () => {
           <div>
             <div className="mt-20 h-[500px] overflow-auto no-scrollbar px-2 lg:px-0">
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -41,7 +41,7 @@ const Index = () => {
                 />
               </div>
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -56,7 +56,7 @@ const Index = () => {
                 />
               </div>
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -71,7 +71,7 @@ const Index = () => {
                 />
               </div>
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

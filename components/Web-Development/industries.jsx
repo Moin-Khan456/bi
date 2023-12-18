@@ -21,7 +21,7 @@ const Industries = () => {
                 <section className=''>
                     <section className=''>
                         <section id="tab-1" className="tab-content_i current">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -30,7 +30,7 @@ const Industries = () => {
              800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-1.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-2" className="tab-content_i">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -39,7 +39,7 @@ const Industries = () => {
              800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-2.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-3" className="tab-content_i">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -48,7 +48,7 @@ const Industries = () => {
              800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-3.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-4" className="tab-content_i">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -57,7 +57,7 @@ const Industries = () => {
              800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-4.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-5" className="tab-content_i">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -66,7 +66,7 @@ const Industries = () => {
              800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/I-5.png" className="img_industry_1" alt="industries" width={500} height={500} />
                         </section>
                         <section id="tab-6" className="tab-content_i">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

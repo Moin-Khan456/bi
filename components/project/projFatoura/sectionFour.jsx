@@ -7,7 +7,7 @@ const Index = ({ carouselImages }) => {
         <h1 className="flex text-end justify-center text-3xl lg:text-4xl border-2 border-[#059CA4] border-b-white lg:mx-44 fatoura__text font-thin">
           S I G N U P{" "}
           <span>
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -22,7 +22,7 @@ const Index = ({ carouselImages }) => {
           P R O F I L E
         </h1>
         <div className="px-4 lg:px-48 lg:py-12">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

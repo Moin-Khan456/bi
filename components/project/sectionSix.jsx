@@ -6,7 +6,7 @@ const Index = () => {
         <div className="pt-12 container">
             <div className="flex items-center">
                 <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12"/>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -16,7 +16,7 @@ const Index = () => {
                 <h1 className='text-3xl lg:text-5xl font-bold Gilroy-SemiBold'> Website</h1>
             </div>
             <div className="px-12 lg:px-96 min-w-full">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

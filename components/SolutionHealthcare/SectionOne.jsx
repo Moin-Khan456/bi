@@ -11,7 +11,7 @@ const Index = () => {
         <h2 className="MonumentBold text-2xl lg:text-[4rem] lg:leading-[5rem] px-2 lg:px-24 text-center absolute z-10 top-32 lg:top-16">
           Revitalize Healthcare Through Innovation
         </h2>
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -25,7 +25,7 @@ const Index = () => {
           loading="lazy"
           className="w-[80px] absolute top-48 left-48 hidden lg:block"
         />
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -46,7 +46,7 @@ const Index = () => {
             are brimming with innovative ideas to transform your vision into
             reality.
           </p>
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

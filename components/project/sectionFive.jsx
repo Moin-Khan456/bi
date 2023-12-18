@@ -8,7 +8,7 @@ const Index = () => {
                 <div className="my-8 py-12 ">
                     <div className="flex items-center">
                         <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12" />
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -19,7 +19,7 @@ const Index = () => {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <Image layout="responsive"
+                    <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

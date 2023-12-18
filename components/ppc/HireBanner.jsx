@@ -46,7 +46,7 @@ export default function HireBanner({
                     <div className="px-2">
                         <div className="w-full lg:ml-0 flex flex-col items-center lg:items-start">
                             <div className="lg:-ml-8">
-                                <Image layout="responsive"
+                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -73,7 +73,7 @@ export default function HireBanner({
                     </div>
                     <div className="max-w-full">
                         <div className="lg:-mt-14 mr-14 lg:mr-0 -ml-8 lg:ml-0 bg-none w-full flex justify-center lg:block">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -450,7 +450,7 @@ const Popup = ({ setPop, country }) => {
                         </div>
                     </div>
                     <div className="max-w-28 lg:block hidden">
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

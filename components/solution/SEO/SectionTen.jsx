@@ -7,7 +7,7 @@ const Index = () => {
         <div className="rounded-md my-8 py-10">
             <div className="container padding-left-all-section relative">
                <div className='lg:mb-80 mb-[36rem]'>
-                  <Image layout="responsive"
+                  <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -24,7 +24,7 @@ const Index = () => {
                   <div className='lg:grid lg:grid-cols-2 gap-8 absolute lg:top-80 top-32'>
 
                       <div className='m-6 lg:m-0'>
-                                <Image layout="responsive"
+                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -42,7 +42,7 @@ const Index = () => {
                       </div>
 
                       <div className='lg:mt-24 m-6 lg:m-0'>
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

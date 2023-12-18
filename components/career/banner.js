@@ -33,7 +33,7 @@ const Banner = () => {
         </div>
         <div className="w-1/2 h-full lg:flex justify-center items-center hidden">
           <div className="w-[600px] h-[450px]  relative">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

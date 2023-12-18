@@ -124,7 +124,7 @@ function HireAangularJsDeveloper(props) {
               <div className="flex flex-col">
                 {!localForm && (
                   <div className="w-full h-[70%] hidden lg:block">
-                    <Image layout="responsive"
+                    <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -151,7 +151,7 @@ function HireAangularJsDeveloper(props) {
               <Trust />
               <WhyBI />
               <div className="flex justify-center">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

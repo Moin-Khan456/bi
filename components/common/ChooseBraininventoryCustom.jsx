@@ -12,7 +12,7 @@ export default function ChooseBraininventory({head, blue, alt}) {
                         </h1>
                         <div className="flex flex-col lg:flex-row w-full">
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image layout="responsive"
+                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -24,7 +24,7 @@ export default function ChooseBraininventory({head, blue, alt}) {
                                 </p>
                             </div>
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image layout="responsive"
+                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -36,7 +36,7 @@ export default function ChooseBraininventory({head, blue, alt}) {
                                 </p>
                             </div>
                             <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">
-                                <Image layout="responsive"
+                                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

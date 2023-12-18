@@ -12,7 +12,7 @@ const Index = () => {
           <div className="px-4 lg:px-24 lg:py-12 ">
             <div className="">
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -28,7 +28,7 @@ const Index = () => {
               </div>
 
               <div>
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -48,7 +48,7 @@ const Index = () => {
       </div>
 
       <div>
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

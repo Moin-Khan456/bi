@@ -19,7 +19,7 @@ function Hiringbenifit(props) {
                </div>
 
                <div className='lg:w-[40%] lg:mt-0 mt-4'>
-                  <Image layout="responsive"
+                  <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

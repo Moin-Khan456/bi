@@ -32,7 +32,7 @@ export default function KeepInTouch() {
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
             <div className="relative h-[100px] w-full lg:w-1/2">
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

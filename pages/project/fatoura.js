@@ -200,7 +200,7 @@ const Fatoura = () => {
               L A N D I N G P A G E
             </h1>
             <div className="px-4 lg:px-48 lg:py-12">
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -216,7 +216,7 @@ const Fatoura = () => {
       </>
       
       <div className="max-w-full flex justify-center">
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

@@ -11,7 +11,7 @@ const PopularBlogs = ({ data }) => {
         data === null || data === undefined || data == [] ? <Skeleton/> : <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {data?.map((post, index) => (
           <Link href={`/posts/${post.slug}/${post.id}`} key={index} className="w-full">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

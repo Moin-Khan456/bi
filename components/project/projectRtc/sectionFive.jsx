@@ -4,7 +4,7 @@ const Index = () => {
     return (
         <div className="py-8 relative flex flex-col justify-center">
             <div className="w-full h-[40vh] lg:h-[72vh] overflow-scroll no-scrollbar">
-                <Image layout="responsive"
+                <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

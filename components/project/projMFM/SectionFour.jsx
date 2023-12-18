@@ -8,7 +8,7 @@ const Index = ({ text, image }) => {
       <PrajectBranding text={text} />
       <div className="container">
         <div className="relative flex flex-col items-center py-8">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

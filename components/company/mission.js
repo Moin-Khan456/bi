@@ -24,7 +24,7 @@ function mission() {
             <div key={el.id} className="flex justify-between mb-8">
               <div className="w-32 mr-2 relative">
                 <Image
-                  layout="responsive"
+                   
                   src={
                     "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                     el.image

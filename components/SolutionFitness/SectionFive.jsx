@@ -24,7 +24,7 @@ const Index = ({
             </p>
           </div>
           <div>
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

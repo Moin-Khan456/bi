@@ -29,7 +29,7 @@ const HomeSectionNine = () => {
               </div>
             </div>
             <div className="overflow-x-hidden relative bottom-24">
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

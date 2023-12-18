@@ -224,7 +224,7 @@ const Fatoura = () => {
       <SectionFive /> 
       <div className="py-8">
         <div className="flex justify-center items-center ">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -237,7 +237,7 @@ const Fatoura = () => {
           />
         </div>
         <div className="relative w-full h-screen lg:h-[78vh] overflow-y-scroll no-scrollbar">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -253,7 +253,7 @@ const Fatoura = () => {
 
       
       <div className="max-w-full flex justify-center">
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

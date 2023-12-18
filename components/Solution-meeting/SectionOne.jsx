@@ -26,7 +26,7 @@ export default function HireBanner() {
           </Link>
         </section>
         <section className="pt-0 pl-12 ed-tech-dropshadow relative z-50 left-[38rem] hidden lg:block w-[400px] bg-red-500">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

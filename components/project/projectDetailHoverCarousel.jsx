@@ -53,7 +53,7 @@ const ImageSlider = ({ images }) => {
               className="inline-block m-2 lg:m-8 w-full lg:w-1/2 relative"
               key={image.id}
             >
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -66,7 +66,7 @@ const ImageSlider = ({ images }) => {
                 height={700}
                 className="rounded-3xl relative z-50 lg:hover:opacity-0 lg:top-[10%] ease-in-out duration-300"
               />
-              <Image layout="responsive"
+              <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

@@ -9,7 +9,7 @@ const CustomSocialNetwork = () => {
             <p>Your companions through the entire journey of social network design & development</p>
         </div>
         <div className="w-full flex justify-center my-8">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

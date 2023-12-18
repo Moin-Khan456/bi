@@ -5,7 +5,7 @@ const Index = ({ mockup1, mockup2, alt }) => {
     <div className="padding-left-all-section-1 rounded-md my-8 py-10 pb-32">
       <div className="container padding-left-all-section-1 relative">
         <div className="lg:mb-80 mb-[36rem]">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -21,7 +21,7 @@ const Index = ({ mockup1, mockup2, alt }) => {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 absolute lg:top-80 top-32">
           <div className="m-6 lg:m-0">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -45,7 +45,7 @@ const Index = ({ mockup1, mockup2, alt }) => {
             </p>
           </div>
           <div className="lg:mt-24 m-6 lg:m-0">
-            <Image layout="responsive"
+            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

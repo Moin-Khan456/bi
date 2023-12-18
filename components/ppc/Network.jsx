@@ -12,7 +12,7 @@ const TileMatrix = () => {
             <div className="flex flex-col justify-center items-center lg:flex-row">
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -23,7 +23,7 @@ const TileMatrix = () => {
                 </div>
                 <div className="flex flex-col lg:mt-16">
                     <span className='w-[180px] py-20 text-center flex justify-center items-center text-white Satoshi bg-[#141414] hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -34,7 +34,7 @@ const TileMatrix = () => {
                 </div>
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
-                        <Image layout="responsive"
+                        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

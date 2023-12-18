@@ -45,7 +45,7 @@ const Header = () => {
             <span className="text-4xl Gilroy-Bold z-30">
               {!navOpen && (
                 <div className="relative w-36 h-12 cursor-pointer">
-                  <Image layout="responsive"
+                  <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

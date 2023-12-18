@@ -6,7 +6,7 @@ const SectionOne = () => {
   return (
     <div className="relative bg-cover overflow-hidden bg-center h-[100%] max-h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/daniel-apodaca-WdoQio6HPVA-unsplash.png')] ">
       <div className="absolute top-10 -right-24 w-full">
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

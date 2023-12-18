@@ -7,7 +7,7 @@ const FindUs = () => {
         <div className="p-4 container">
             <div className='flex flex-col lg:flex-row justify-between lg:mx-56'>
                 <div className="border-slate-400 border-2 rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl">
-                    <Image layout="responsive"
+                    <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

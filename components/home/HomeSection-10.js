@@ -137,7 +137,7 @@ const ProjectBox = ({ info }) => {
   return (
     <div className="xl:space-y-6 lg:space-y-6 space-y-8 hover-image overflow-hidden">
       <div className="min-h-[350px] h-[425px] lg:w-full w-[30vw] min-w-[350px] overflow-hidden">
-        <Image layout="responsive"
+        <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

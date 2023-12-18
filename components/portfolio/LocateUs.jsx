@@ -64,7 +64,7 @@ const Card = ({ info }) => {
     <>
       <div className="grid grid-cols-2 gap-2 mb-6 items-start">
         <div className="relative place-self-center">
-          <Image layout="responsive"
+          <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

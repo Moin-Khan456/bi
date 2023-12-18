@@ -14,7 +14,7 @@ const TeamSlider = ({ teamMembers }) => {
                         className="w-full sm:w-auto sm:flex-none mb-4 -px-8"
                     >
                         <div className="team-card">
-                            <Image layout="responsive"
+                            <Image  
         srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

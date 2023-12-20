@@ -58,12 +58,7 @@ const Header = ({pop, setPop}) => {
               {!navOpen && (
                 <div className="relative w-32 h-8 cursor-pointer">
                   <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                   priority={true} 
                     src="/newLogo.png"
                     className="cursor-pointer"

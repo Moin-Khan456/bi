@@ -52,12 +52,7 @@ const ImageSlider = ({ images }) => {
             key={image.id}
           >
             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
               src={image.url}
               alt={`Image ${index + 1}`}
               className="rounded-3xl"

@@ -8,12 +8,7 @@ const FindUs = () => {
             <div className='flex flex-col lg:flex-row justify-between lg:mx-56'>
                 <div className="border-slate-400 border-2 rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl">
                     <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/drew-beamer-3SIXZisims4-unsplash.png" width={500} height={500} alt="Custom Software Development Company | Hire Software Developers" />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/drew-beamer-3SIXZisims4-unsplash.png" width={500} height={500} alt="Custom Software Development Company | Hire Software Developers" />
                 </div>
                 <div className="bg-white text-black lg:rounded-r-3xl lg:rounded-b-none lg:rounded-br-3xl p-4 rounded-b-2xl flex justify-center relative flex-col lg:p-6 lg:w-3/4">
                     <a href='#talk'>

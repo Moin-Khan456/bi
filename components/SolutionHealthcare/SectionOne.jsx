@@ -12,12 +12,7 @@ const Index = () => {
           Revitalize Healthcare Through Innovation
         </h2>
         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+6969.png"
           alt="Healthcare Through Innovation"
           width={500}
@@ -26,12 +21,7 @@ const Index = () => {
           className="w-[80px] absolute top-48 left-48 hidden lg:block"
         />
         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+6969.png"
           alt="Healthcare Through Innovation"
           width={500}
@@ -47,12 +37,7 @@ const Index = () => {
             reality.
           </p>
           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/Group+7115.png"
             alt="Healthcare Software Development Company"
             width={800}

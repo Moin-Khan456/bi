@@ -54,12 +54,7 @@ const ImageSlider = ({ images }) => {
               key={image.id}
             >
               <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                 src={image.url}
                 alt={`Image ${index + 1}`}
                 width={700}
@@ -67,12 +62,7 @@ const ImageSlider = ({ images }) => {
                 className="rounded-3xl relative z-50 lg:hover:opacity-0 lg:top-[10%] ease-in-out duration-300"
               />
               <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                 src={image.hover}
                 alt={`Image ${index + 1}`}
                 width={700}

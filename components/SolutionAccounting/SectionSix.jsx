@@ -21,12 +21,7 @@ const Index = ({title, btn, head, src, headAbove, subheadAbove, customClasses, c
                       </div>
                       <div className='relative hidden lg:block'>
                           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src={src} 
+          src={src} 
                           width={1800} height={1800} alt='' className={`m-auto block absolute bottom-0 right-10 max-w-[550px] w-[500px] ${customClasses}`}/>
                       </div>
                 </div>

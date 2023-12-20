@@ -9,12 +9,7 @@ const Index = () => {
             <h1 className='text-center text-3xl lg:text-5xl border-2 border-[#F39573] border-b-white lg:mx-44'>H O M E S C R E E N</h1>
             <div className="px-4 lg:px-48 lg:py-12">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1000} height={1000} className='w-full' src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6506.png" alt="" />
+          width={1000} height={1000} className='w-full' src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6506.png" alt="" />
             </div>
         </div> 
         </div> 

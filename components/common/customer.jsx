@@ -14,12 +14,7 @@ export default function Customer() {
         <main className="my-4 ">
             <section>
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1450}
+          width={1450}
                     height={700}
                     src="https://braininventory.s3.us-east-2.amazonaws.com/images/developers.png" alt="Hire dedicated remote developers | Custom software development company"
                     className="w-full"
@@ -40,12 +35,7 @@ export default function Customer() {
                                     customerImages.map((ele, index) => (
                                         <section key={index}>
                                             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={120} height={120}
+          width={120} height={120}
                                                 src={ele} alt="Custom Software Development Company | Hire Software Developers"
                                                 className="w-customer"
                                             />

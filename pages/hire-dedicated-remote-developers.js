@@ -92,12 +92,7 @@ export default function Hirededicatedremotedevelopers(props) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container lg:px-24">
             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
               alt=""
               width={500}
@@ -114,12 +109,7 @@ export default function Hirededicatedremotedevelopers(props) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 padding-left-all-section-1 container">
           <div className="container">
             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/staff-image.png"
               alt=""
               width={500}

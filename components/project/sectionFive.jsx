@@ -9,23 +9,13 @@ const Index = () => {
                     <div className="flex items-center">
                         <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12" />
                         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6425.png" alt="" width={700} height={700} className='w-28 lg:w-44' />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6425.png" alt="" width={700} height={700} className='w-28 lg:w-44' />
                         <h1 className='text-3xl lg:text-5xl font-bold Gilroy-SemiBold'> Perspective</h1>
                     </div>
                 </div>
                 <div className="flex justify-center">
                     <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6421.png" alt="" className='w-full py-4' width={900} height={900} />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6421.png" alt="" className='w-full py-4' width={900} height={900} />
                 </div>
             </div>
         </div>

@@ -13,34 +13,19 @@ const TileMatrix = () => {
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
                         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/box.png" alt=""/>
+          width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/box.png" alt=""/>
                     </span>
                 </div>
                 <div className="flex flex-col lg:mt-16">
                     <span className='w-[180px] py-20 text-center flex justify-center items-center text-white Satoshi bg-[#141414] hover:scale-[1.05] duration-150 ease-in-out'>
                         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/brag.png" alt=""/>
+          width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/brag.png" alt=""/>
                     </span>
                 </div>
                 <div className="flex flex-col">
                     <span className='w-[180px] py-12 text-center flex justify-center items-center text-white Satoshi bg-[#141414] m-2 hover:scale-[1.05] duration-150 ease-in-out'>
                         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/M-logo.png" alt=""/>
+          width={1000} height={1000} src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/M-logo.png" alt=""/>
                     </span>
                 </div>
             </div>

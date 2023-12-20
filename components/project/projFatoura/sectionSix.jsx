@@ -8,12 +8,7 @@ const Index = () => {
             <div className='lg:flex'>
             <div className="px-4 lg:px-48 lg:py-12">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={600} height={600} src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6473.png" className='' alt="" />
+          width={600} height={600} src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6473.png" className='' alt="" />
             </div>
             <div className="lg:flex flex-col text-2xl">
                 <div className="fatoura_gilroy_regular mt-8">
@@ -42,12 +37,7 @@ const Index = () => {
 
             <div>
                  <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" width={1450} height={1450} src='https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6515.png' alt="Accounting Based Software Development Company" className='lg:p-32' />
+          width={1450} height={1450} src='https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6515.png' alt="Accounting Based Software Development Company" className='lg:p-32' />
             </div>
         </div>
     )

@@ -8,12 +8,7 @@ const Index = () => {
  
         <div className="w-full relative flex justify-center">
           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/Image 3.png"
             alt="Image"
             width={1800} height={1800}
@@ -31,12 +26,7 @@ const Index = () => {
         </div>
         <div className="flex justify-center w-full">
           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/Image+2.png" alt="" width={1000} height={1000} />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/Image+2.png" alt="" width={1000} height={1000} />
         </div>
       </div>
     </>

@@ -37,12 +37,7 @@ const CarouselComponent = () => {
         {images.map((image, index) => (
           <div key={index}>
             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
               src={image.src}
               alt={image.alt}
               width={image.width}

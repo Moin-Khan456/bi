@@ -28,12 +28,7 @@ const Index = () => {
 
                       <div>
                           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7033.png' 
+          src='https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7033.png' 
                           width={500} height={400} alt='social networking app development company' className='m-auto block'></Image>
                       </div>
 

@@ -9,21 +9,11 @@ const Index = ({ section }) => {
         <div className="flex flex-col items-center">
           <p className="hidden lg:block">{section.space}</p>
           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src={section.logo} alt={section.alt} width={800} height={800} className={`w-1/2 lg:w-1/4 ${section.alt === "MyFitMantra" && "lg:scale-[0.7]"}`} />
+          src={section.logo} alt={section.alt} width={800} height={800} className={`w-1/2 lg:w-1/4 ${section.alt === "MyFitMantra" && "lg:scale-[0.7]"}`} />
           <p className="hidden lg:block">{section.space}</p>
           <div className="w-[95%] flex justify-center py-4 lg:py-8">
             <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src={section.image} alt={section.alt} width={800} height={800} preload="metadata" />
+          src={section.image} alt={section.alt} width={800} height={800} preload="metadata" />
           </div>
           <p className="w-[70vw] lg:w-[400px] text-center lg:ml-12 py-4 lg:py-8">
             {section.brief}
@@ -34,12 +24,7 @@ const Index = ({ section }) => {
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;
           <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="" width={25} height={25} />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="" width={25} height={25} />
         </div>
       </div>
     </main>

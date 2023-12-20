@@ -20,12 +20,7 @@ function Hiringbenifit(props) {
 
                <div className='lg:w-[40%] lg:mt-0 mt-4'>
                   <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px" src='https://braininventory.s3.us-east-2.amazonaws.com/images/globe.png' alt="" width={500} height={500} className='px-12' />
+          src='https://braininventory.s3.us-east-2.amazonaws.com/images/globe.png' alt="" width={500} height={500} className='px-12' />
                </div>
 
                <div className='lg:w-[30%]'>

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Header from "../../components/header/Header.js";
 import axios from "axios";
 import Loader from "../../components/common/loader";
+import { rediss } from "../../lib/redis.js";
 const PopularBlogs = dynamic(() =>
   import("../../components/blog/PopularBlogs")
 );
@@ -12,7 +13,6 @@ const Pagination = dynamic(() => import("../../components/blog/Pagination"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch.js")
 );
-import { useRouter } from "next/router";
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -71,7 +71,6 @@ export default function Home({
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <Suspense fallback={"Loading......"}>
-        {/* <Loader/> */}
         <main className="relative second-component">
           <Header />
           <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
@@ -117,6 +116,24 @@ export default function Home({
   );
 }
 export async function getServerSideProps(context) {
+  const postsRes = await fetch(
+    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+  );
+  const totalPages = postsRes.headers.get("X-WP-Total");
+  //check
+  const cachedBlogs = await rediss.get(`blog${context.query.slug}`);
+
+  if (JSON.parse(cachedBlogs)) {
+    return {
+      props: {
+        data: JSON.parse(cachedBlogs).slice(0, 3),
+        blogs: JSON.parse(cachedBlogs),
+        totalPages: totalPages,
+        page: context.query.slug,
+      },
+    };
+  }
+
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
     { next: { revalidate: 600 } },
@@ -127,16 +144,13 @@ export async function getServerSideProps(context) {
       },
     }
   );
-  const postsRes = await fetch(
-    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=10"
-  );
-  const totalPages = postsRes.headers.get("X-WP-Total");
+  await rediss.set(`blog${context.query.slug}`, JSON.stringify(response?.data));
 
   return {
     props: {
       data: response?.data?.slice(0, 3) ?? [],
       blogs: response?.data ?? [],
-      totalPages,
+      totalPages: totalPages,
       page: context.query.slug,
     },
   };

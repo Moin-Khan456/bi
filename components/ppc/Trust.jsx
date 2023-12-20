@@ -21,12 +21,7 @@ const TileMatrix = () => {
             <span className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+1.png"
                   width={1500}
                   height={1500}
@@ -37,12 +32,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+4.png"
                   width={1500}
                   height={1500}
@@ -55,12 +45,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#242424] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+3.png"
                   width={1500}
                   height={1500}
@@ -71,12 +56,7 @@ const TileMatrix = () => {
               </div>
               <div className="bg-[#141414] text-center flex flex-col items-center justify-center w-60 h-60 hover:scale-[1.05] duration-150 ease-in-out">
                 <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_icon+2.png"
                   width={1500}
                   height={1500}

@@ -138,12 +138,7 @@ const ProjectBox = ({ info }) => {
     <div className="xl:space-y-6 lg:space-y-6 space-y-8 hover-image overflow-hidden">
       <div className="min-h-[350px] h-[425px] lg:w-full w-[30vw] min-w-[350px] overflow-hidden">
         <Image  
-        srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-        sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+         
           src={info.images}
           alt={info.alt}
           loading="lazy"

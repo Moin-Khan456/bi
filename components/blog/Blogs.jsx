@@ -6,25 +6,28 @@ import Link from "next/link";
 import Skeleton from "./Skeleton";
 
 const Blogs = ({ blogs }) => {
+  const [blogData, setBlogData] = useState();
+  useEffect(() => {
+    setBlogData(null);
+    setBlogData(blogs);
+  }, [blogData, blogs]);
   return (
     <div className="container">
-      {blogs === null ? (
+      {blogData === null ? (
         <Skeleton />
       ) : (
         <>
-          {blogs?.map((post, index) => (
+          {blogData?.map((post, index) => (
             <Link href={`/posts/${post.slug}/${post.id}`} key={index}>
               <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
                 <div className="relative ">
                   <div className="overlay">
-                    <Image  
-         
+                    <Image
                       src={post["_embedded"]["wp:featuredmedia"][0].source_url}
                       fetchPriority="high"
+                      loading="eager"
                       width={300}
                       height={300}
-                      blurDataURL="data:image-/loading.png"
-                      placeholder="blur"
                       alt={
                         post["_embedded"]["wp:featuredmedia"][0].alt_text ??
                         "Brain Inventory exclusive content"
@@ -39,9 +42,7 @@ const Blogs = ({ blogs }) => {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pl-2">
-                  <h1 className="text-2xl font-bold">
-                    {post.title.rendered}
-                  </h1>
+                  <h1 className="text-2xl font-bold">{post.title.rendered}</h1>
                   <div
                     className="text-sm mt-2 text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}

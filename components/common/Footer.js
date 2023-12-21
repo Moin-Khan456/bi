@@ -99,6 +99,10 @@ const FooterSections = [
         path: "/hire-shopify-developers",
       },
       {
+        name: "Hire Ionic Developers",
+        path: "/hire-ionic-developers",
+      },
+      {
         name: "Hire QA Analyst",
         path: "/hire-qa-analysts",
       },

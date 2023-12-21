@@ -477,6 +477,11 @@ const ServicesChildren = () => {
       link: "/hire-shopify-developers",
     },
     {
+      _id: 19,
+      name: "Hire Ionic Developers",
+      link: "/hire-ionic-developers",
+    },
+    {
       _id: 16,
       name: "Hire QA Analysts",
       link: "/hire-qa-analysts",

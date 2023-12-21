@@ -71,6 +71,7 @@ export default function Home({
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <Suspense fallback={"Loading......"}>
+        <Loader />
         <main className="relative second-component">
           <Header />
           <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
@@ -79,30 +80,16 @@ export default function Home({
               <div>
                 <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
                 <div className="pb-2">
-                  {data ? (
                     <PopularBlogs data={data} />
-                  ) : (
-                    <div className="h-[20vh] w-screen flex justify-center items-center">
-                      Loading.....
-                    </div>
-                  )}
                 </div>
                 <hr />
-                {blogs ? (
-                  <>
-                    <Blogs blogs={blogs} pageNumber={currentPage} />
-                    <Pagination
-                      itemsPerPage={10}
-                      totalPages={totalPages}
-                      setCurrentPage={setCurrentPage}
-                      currentPage={currentPage}
-                    />
-                  </>
-                ) : (
-                  <div className="h-[60vh] w-screen flex justify-center items-center">
-                    Loading.....
-                  </div>
-                )}
+                <Blogs blogs={blogs} pageNumber={currentPage} />
+                <Pagination
+                  itemsPerPage={10}
+                  totalPages={totalPages}
+                  setCurrentPage={setCurrentPage}
+                  currentPage={currentPage}
+                />
               </div>
             </div>
           </div>
@@ -119,7 +106,7 @@ export async function getServerSideProps(context) {
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
-  const totalPages = postsRes.headers.get("X-WP-Total");
+  const totalPages = await postsRes.headers.get("X-WP-Total");
   //check
   const cachedBlogs = await rediss.get(`blog${context.query.slug}`);
 

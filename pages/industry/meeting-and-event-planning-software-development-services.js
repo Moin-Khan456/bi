@@ -297,19 +297,19 @@ function Meeting(props) {
     <>
       <Head>
         <title>
-          Custom Development Solutions For The Energy And Utilities Industry
+          Meeting and Event Planning Software Development Services
         </title>
         <meta
           property="description"
-          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
+          content="Brain Inventory provides meeting and event planning software development services, for seamless event management and planning. Contact us for custom software!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
+          content="Brain Inventory provides meeting and event planning software development services, for seamless event management and planning. Contact us for custom software!"
         />
         <meta
           name="og:title"
-          content="Custom Development Solutions For The Energy And Utilities Industry"
+          content="Meeting and Event Planning Software Development Services"
         />
         <meta
           property="og:image"
@@ -317,11 +317,11 @@ function Meeting(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/ecommerce-software-development-services"
+          content="https://braininventory.in/industry/meeting-and-event-planning-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/ecommerce-software-development-services"
+          href="https://braininventory.in/industry/meeting-and-event-planning-software-development-services"
         />
         <link
           rel="preload"

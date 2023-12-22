@@ -108,20 +108,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom Shopify Web Development Services- Brain Inventory
+          Custom Shopify Development Services | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Explore Brain Inventory's top-notch Shopify web and app development services. We design, build & optimize e-commerce apps for your business's success. Contact us!"
+          content="Brain Inventory offers top-notch Shopify eCommerce software development services. Elevate your online store with custom software and web development. Call us!"
         />
         <meta
           name="og:description"
-          content="Explore Brain Inventory's top-notch Shopify web and app development services. We design, build & optimize e-commerce apps for your business's success. Contact us!"
+          content="Brain Inventory offers top-notch Shopify eCommerce software development services. Elevate your online store with custom software and web development. Call us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Shopify Web Development Services- Brain Inventory"
+          content="Custom Shopify Development Services | Brain Inventory"
         />
         <meta
           property="og:url"

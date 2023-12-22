@@ -299,18 +299,18 @@ function Energy(props) {
   return (
     <>
       <Head>
-        <title>Custom Development Solutions For The Energy And Utilities Industry</title>
+        <title>Energy and Utility Software Development Services</title>
         <meta
           property="description"
-          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
+          content="Explore cutting-edge energy and utility software development services at Brain Inventory. Elevate efficiency and innovation in the energy sector. Contact us!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers custom energy management software development services that help the energy & utility industry to match their growing technical demands."
+          content="Explore cutting-edge energy and utility software development services at Brain Inventory. Elevate efficiency and innovation in the energy sector. Contact us!"
         />
         <meta
           name="og:title"
-          content="Custom Development Solutions For The Energy And Utilities Industry"
+          content="Energy and Utility Software Development Services"
         />
         <meta
           property="og:image"
@@ -318,11 +318,11 @@ function Energy(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/ecommerce-software-development-services"
+          content="https://braininventory.in/industry/energy-and-utility-software-development-services"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/ecommerce-software-development-services"
+          href="https://braininventory.in/industry/energy-and-utility-software-development-services"
         />
          <link
           rel="preload"

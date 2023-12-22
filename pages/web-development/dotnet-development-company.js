@@ -117,7 +117,7 @@ function HireAangularJsDeveloper(props) {
         <title>Best .Net Development Company | .Net Development Services</title>
         <meta
           name="description"
-          content="As a prominent .NET development company, we specialize in delivering top-notch ASP.NET development services and boast expertise in mobile app development."
+          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -126,7 +126,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="As a prominent .NET development company, we specialize in delivering top-notch ASP.NET development services and boast expertise in mobile app development."
+          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
         />
         <meta
           property="og:image"

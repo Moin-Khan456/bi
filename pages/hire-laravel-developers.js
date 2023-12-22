@@ -174,19 +174,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Dedicated Laravel Developers From Brain Inventory</title>
+        <title>Hire Laravel Developers | Hire Dedicated Laravel Developers</title>
         <meta
           name="description"
-          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
+          content="Hire Dedicated Laravel Developers from Brain Inventory. Explore our Laravel web development services to get exceptional results for your projects. Contact us now!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Dedicated Laravel Developers From Brain Inventory"
+          content="Hire Laravel Developers | Hire Dedicated Laravel Developers"
         />
         <meta
           property="og:description"
-          content="Stay ahead in the era of innovation by hiring Laravel developers. Our team of Laravel developers is renowned for combining PHP domain expertise with in-demand technical skills."
+          content="Hire Dedicated Laravel Developers from Brain Inventory. Explore our Laravel web development services to get exceptional results for your projects. Contact us now!"
         />
         <meta
           property="og:image"

@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import Header from "../../components/header/Header.js";
 import axios from "axios";
 import Loader from "../../components/common/loader";
-import { rediss } from "../../lib/redis.js";
 const PopularBlogs = dynamic(() =>
   import("../../components/blog/PopularBlogs")
 );
@@ -107,19 +106,6 @@ export async function getServerSideProps(context) {
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
   const totalPages = await postsRes.headers.get("X-WP-Total");
-  //check
-  const cachedBlogs = await rediss.get(`blog${context.query.slug}`);
-
-  if (JSON.parse(cachedBlogs)) {
-    return {
-      props: {
-        data: JSON.parse(cachedBlogs).slice(0, 3),
-        blogs: JSON.parse(cachedBlogs),
-        totalPages: totalPages,
-        page: context.query.slug,
-      },
-    };
-  }
 
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
@@ -131,7 +117,6 @@ export async function getServerSideProps(context) {
       },
     }
   );
-  await rediss.set(`blog${context.query.slug}`, JSON.stringify(response?.data));
 
   return {
     props: {

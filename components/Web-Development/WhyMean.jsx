@@ -11,10 +11,10 @@ const WhyMean = ({type, meanReasons}) => {
           <span className="text-[#7600EB]">{type} Development</span>{" "}
           solution?
         </h1>
-        <aside className="flex flex-row w-full">
+        <aside className="flex flex-row gap-4 w-full">
           <ol className="text-xl w-full py-4 font-Satoshi">
             {meanReasons?.map((ele, index) => (
-                <p className="bg-technology lg:px-4 lg:py-6 lg:my-4 w-full h-[150px]" key={index}>{ele}</p>
+                <p className="bg-technology lg:px-4 mx-6 my-4 p-4 lg:py-6 lg:my-4 w-auto text-center lg:h-[150px] h-[200px]" key={index}>{ele}</p>
             ))}
           </ol>
         </aside>

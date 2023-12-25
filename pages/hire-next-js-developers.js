@@ -2,28 +2,25 @@ import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import axios from "axios";
-const Header = dynamic(() => import("../components/header/Header"));
-const LocateUs = dynamic(() => import("../components/common/locateUs"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick"));
-const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
-const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
-const FaqHire = dynamic(() => import("../components/common/Faqhire"));
-const Customer = dynamic(() => import("../components/common/customer"));
-const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
-const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
-const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
-const Experienced = dynamic(() => import("../components/common/Hire"));
-const Hello = dynamic(() => import("../components/common/FindUs"));
-const Hire = dynamic(() => import("../components/common/Hire"));
-const HireBanner = dynamic(() => import("../components/common/HireBanner"));
-const Engaged = dynamic(() => import("../components/Hire/Engaged"));
-const ChooseBraininventory = dynamic(() =>
-  import("../components/common/CommonChooseBraininventory")
-);
-const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
-const Clients = dynamic(() => import("../components/Hire/Clients"));
+import Header from "../components/header/Header";
+import LocateUs from "../components/common/locateUs";
+import LetsKick from "../components/common/LetsKick";
+import Footer from "../components/common/Footer";
+import Loader from "../components/common/loader";
+import KeepInTouch from "../components/common/keepInTouch";
+import FaqHire from "../components/common/Faqhire";
+import Customer from "../components/common/customer";
+import Advantage from "../components/Hire/Advantage.jsx";
+import HireMarquee from "../components/common/HireMarquee";
+import KeySkill from "../components/Hire/KeySkills.jsx";
+import Experienced from "../components/common/Hire";
+import Hire from "../components/common/Hire";
+import HireBanner from "../components/common/HireBanner";
+import Engaged from "../components/Hire/Engaged";
+import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
+import BlogArticle from "../components/common/BlogArticle";
+import HireSteps from "../components/Hire/HireSteps";
+import Clients from "../components/Hire/Clients";
 
 function HireAangularJsDeveloper() {
   const content =

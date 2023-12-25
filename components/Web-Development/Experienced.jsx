@@ -25,7 +25,7 @@ const Index = ({ para1, para2, para3, title, image, card, type, alt }) => {
               alt={alt}
               width={700}
               height={700}
-              className="rounded-2xl w-[75%]"
+              className="rounded-2xl lg:w-[75%] py-4"
             />
             <p className="Gilroy-Light leading-8 font-[10] text-lg opacity-60 w-full">
               {para1}

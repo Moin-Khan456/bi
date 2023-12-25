@@ -2361,7 +2361,8 @@ ol li {
   line-height: 40px;
   font-family: 'Gilroy-Bold';
   font-size: 1.1rem;
-  /* align-items: center; */
+  align-items: center;
+  justify-content: center;
   display: inline-flex;
 }
 

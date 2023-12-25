@@ -4,7 +4,7 @@ export default function App({ title, subhead, subhead1, subhead2, card }) {
 
   const titleArray = title.split("%")
   return (
-    <main className='container lg:my-28'>
+    <main className='container'>
       <section className="relative flex flex-col lg:flex-row h-auto w-full">
         <section className="lg:sticky lg:top-0 min-w-[50%] h-[200px] lg:min-h-screen ">
           <section className="lg:h-[200px] px-8 lg:px-0 lg:w-[700px] absolute lg:top-[15%] lg:left-[50%] max-w-[600px] lg:-translate-x-[45%] lg:-translate-y-[50%]">

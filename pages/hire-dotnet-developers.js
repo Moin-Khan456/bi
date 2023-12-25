@@ -149,7 +149,7 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire .NET Developers | Hire Dedicated dotnet Team</title>
+        <title>Hire .NET Developers | Hire Dedicated .net Team</title>
         <meta
           name="description"
           content="Hire Top dotnet Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
@@ -200,7 +200,7 @@ function HireAangularJsDeveloper(props) {
               para3={subhead3}
               card={experienceCards}
             />
-            <HireMarquee title=".NET Developers" />
+            <HireMarquee title=".NET" />
             <Advantage title=".NET Developer" advantages={advantages} />
             <KeySkill
               breif={keySkillsBreif}

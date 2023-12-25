@@ -245,7 +245,8 @@ const Header = () => {
 
 const CompanyChildren = ({ setLoad }) => {
   const [page, setPage] = useState(
-    window.location.href.split("/")[3] === "blog"
+    typeof window !== "undefined" &&
+      window.location.href.split("/")[3] === "blog"
   );
   return (
     <div className="col-span-4 lg:grid grid-cols-1">

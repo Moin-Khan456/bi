@@ -70,7 +70,6 @@ export default function Home({
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <Suspense fallback={"Loading......"}>
-        <Loader />
         <main className="relative second-component">
           <Header />
           <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">

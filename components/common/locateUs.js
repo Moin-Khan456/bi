@@ -64,10 +64,13 @@ const Card = ({ info }) => {
     <>
       <div className="grid grid-cols-2 gap-2 mb-6 items-start">
         <div className="relative place-self-center">
-          <Image  
-         
-            src={"https://braininventory.s3.us-east-2.amazonaws.com/images/" + info.image}
+          <Image
+            src={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
+              info.image
+            }
             loading="lazy"
+            fetchPriority="low"
             alt={info.alt}
             width={138}
             height={167}

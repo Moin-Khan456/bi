@@ -20,24 +20,27 @@ export default function KeepInTouch() {
     console.log(data);
     fetch("/api/contact", {
       method: "POST",
-      body: {data: JSON.stringify(data), subject: "Thank You For Contacting Us | Brain Inventory"},
-    }).then(()=>{
+      body: {
+        data: JSON.stringify(data),
+        subject: "Thank You For Contacting Us | Brain Inventory",
+      },
+    }).then(() => {
       window.location.href = "/thank-you";
-    })
+    });
   };
-// subj: 'Thank You For Applying At Brain Inventory'
+  // subj: 'Thank You For Applying At Brain Inventory'
   return (
     <div id="talk" className="container px-4 lg:px-16 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
             <div className="relative h-[100px] w-full lg:w-1/2">
-              <Image  
-         
+              <Image
                 src={
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
                 }
                 loading="lazy"
+                fetchPriority="low"
                 width={500}
                 height={500}
                 objectFit="contain"

@@ -5,14 +5,15 @@ function staffBanner() {
   return (
     <div className="lg:h-screen relative">
       <Image
-         
-         
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png"
         alt="Hire dedicated developers from Brain Inventory"
-        width={1500}
-        height={1500}
+        width={700}
+        height={700}
+        priority="high"
+        fetchPriority="high"
         className="w-full object-cover"
       />
+
       <div className="relative top-[-300px] container padding-left-all-section-1">
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div>

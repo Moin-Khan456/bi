@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import axios from "axios";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
@@ -24,7 +25,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
 
-function HireAangularJsDeveloper(props) {
+function HireAangularJsDeveloper() {
   const content =
     "BrainInventory is a prominent front-end development company located in India.Our Next.js developers are well-versed with handling technologies such as Node.js and React.js which enable us to offer flawless front-end applications to our customers.";
   const subhead1 =
@@ -175,55 +176,69 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/hire-next-js-developers"
         />
+        <link
+          rel="preload"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+NextJS+Developers.png"
+          as="image"
+          type="image/*"
+          crossorigin="anonymous"
+        />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
-        <div className="relative">
-          <Header></Header>
-          <HireBanner
-            heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire Next.js"
-            content={content}
-            btn="Contact Us!"
-            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+NextJS+Developers.png"
-            alt="Remote Next.js Developers"
-            type="hire"
-          />
-          <Customer />
-          <Experienced
-            title="Hire an Experienced Next.js Developers to Upscale Your Development"
-            subhead1={subhead1}
-            subhead2={subhead2}
-            card={experienceCards}
-          />
-          <Advantage
-            title="Hiring Next.js Developers"
-            advantages={advantages}
-          />
-          <HireMarquee title="Next Js" />
-          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-          <Hire
-            title="Why Hire Next.js Developers from %Brain Inventory"
-            card={hireCards}
-          />
-          <ChooseBraininventory
-            reasons={chooseBI}
-            subhead={chooseBiSubhead}
-            alt="Remote Next.js Developers"
-          />
-          
-          <Engaged />
-          <HireSteps type="Next Js" />
-          <Clients tech="Next Js" />
-          <FaqHire faq={faqdetails} />
-          <hr />
-          <BlogArticle />
-          <KeepInTouch />
-          <LocateUs />
-          <LetsKick />
-          <Footer />
-        </div>
-      </Suspense>
+      <Loader />
+
+      <div className="relative">
+        <Header></Header>
+        <HireBanner
+          heading="Upgrade Your Development Process With Our Expertise"
+          title="Hire Next.js"
+          content={content}
+          btn="Contact Us!"
+          image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+NextJS+Developers.png"
+          alt="Remote Next.js Developers"
+          type="hire"
+        />
+        <Customer />
+        <Experienced
+          title="Hire an Experienced Next.js Developers to Upscale Your Development"
+          subhead1={subhead1}
+          subhead2={subhead2}
+          card={experienceCards}
+        />
+        <Advantage title="Hiring Next.js Developers" advantages={advantages} />
+        <HireMarquee title="Next Js" />
+        <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+        <Hire
+          title="Why Hire Next.js Developers from %Brain Inventory"
+          card={hireCards}
+        />
+        <ChooseBraininventory
+          reasons={chooseBI}
+          subhead={chooseBiSubhead}
+          alt="Remote Next.js Developers"
+        />
+
+        <Engaged />
+        <HireSteps type="Next Js" />
+        <Clients tech="Next Js" />
+        <FaqHire faq={faqdetails} />
+        <hr />
+        {/* <BlogArticle data={data} /> */}
+        <KeepInTouch />
+        <LocateUs />
+        <LetsKick />
+        <Footer />
+      </div>
     </>
   );
 }
 export default HireAangularJsDeveloper;
+// export const getServerSideProps = async () => {
+//   const response = await axios.get(
+//     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3"
+//   );
+//   return {
+//     props: {
+//       data: response.data,
+//     },
+//   };
+// };

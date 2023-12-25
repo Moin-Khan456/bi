@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
+import "aos/dist/aos.css";
 export default function HireBanner({
   heading,
   subhead,
@@ -16,13 +17,24 @@ export default function HireBanner({
   type,
   unique,
 }) {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const AOS = require("aos");
+
+      AOS.init({});
+    }
+  });
   return (
-    <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24">
-      <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
+    <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 min-h-screen">
+      <section
+        className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}
+      >
         <section className="w-full">
           <section className="ml-4 lg:ml-0">
-            <span className="text-2xl Gilroy-Bold ">{heading}</span>
-            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold mt-4">
+            <span className="text-2xl Gilroy-Bold lg:whitespace-nowrap">
+              {heading}
+            </span>
+            <h1 className="text-5xl lg:text-[5rem] Gilroy-Bold mt-4">
               {title}
               {unique === "design" ? (
                 <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
@@ -71,12 +83,12 @@ export default function HireBanner({
             </h2>
           </section>
 
-          <section className="bg-banner-sot rounded-xl p-6 mt-16 mb-10 lg:m-0 m-6">
+          <section className="bg-banner-sot rounded-xl p-6 mt-20 mb-10 lg:m-0 m-6">
             <p className="Gilroy-Light text-lg">{content}</p>
           </section>
           {!card && (
             <a href="#talk">
-              <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 pr-20 ml-12 lg:ml-0">
+              <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-8 pr-20 ml-12 lg:ml-0">
                 <button className="flex flex-col justify-center Gilroy">
                   <span className="text-xs font-thin text-slate-400 pb-1">
                     Got a project in mind?
@@ -96,7 +108,7 @@ export default function HireBanner({
                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
                 <h2 className="Gilroy-Bold text-5xl">
                   2 Business <span className="text-lg">Days</span>
-                </h2> 
+                </h2>
               </section>
               <section className="p-8 bg-line">
                 <ul className="list-subcription">
@@ -116,12 +128,12 @@ export default function HireBanner({
                 type?.match("php") && "drop-shadow-image"
               }`}
             >
-              <Image  
-         
+              <Image
                 src={image}
                 className={`rounded-2xl ${
                   type === "hire" ? "w-[700px]" : "w-[100%]"
                 }`}
+                loading="lazy"
                 fetchPriority="high"
                 width={900}
                 height={900}

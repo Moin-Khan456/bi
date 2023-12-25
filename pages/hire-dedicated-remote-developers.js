@@ -92,9 +92,10 @@ export default function Hirededicatedremotedevelopers(props) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container lg:px-24">
             <Image  
-         
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
               alt=""
+              priority="low"
+              fetchPriority="low"
               width={500}
               height={500}
               className="w-full"
@@ -109,9 +110,10 @@ export default function Hirededicatedremotedevelopers(props) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 padding-left-all-section-1 container">
           <div className="container">
             <Image  
-         
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/staff-image.png"
               alt=""
+              fetchPriority="low"
+              priority="low"
               width={500}
               height={500}
               className="w-full"

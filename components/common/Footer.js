@@ -387,7 +387,10 @@ export default function Footer() {
                 <ul className="space-y-2">
                   {section.links.map((link, index) => {
                     return (
-                      <li className="text-white text-opacity-50 w-auto" key={index}>
+                      <li
+                        className="text-white text-opacity-50 w-auto"
+                        key={index}
+                      >
                         <a href={link.path} className="cursor-pointer">
                           {link.name}
                         </a>
@@ -408,8 +411,7 @@ export default function Footer() {
                   className="inline-flex items-center align-middle cursor-pointer w-1/3 justify-center lg:w-auto"
                 >
                   <a href={ele.href} target="_blank" rel="noopener noreferrer">
-                    <Image  
-         
+                    <Image
                       width={ele.width}
                       height={ele.height}
                       src={ele.src}
@@ -433,13 +435,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image  
-         
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/meta.svg"
                     }
                     width={28}
                     height={28}
+                    fetchPriority="low"
+                    priority="low"
                     alt=""
                   />
                 </a>
@@ -450,13 +453,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image  
-         
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/linkedIn.svg"
                     }
                     width={28}
                     height={28}
+                    fetchPriority="low"
+                    priority="low"
                     alt=""
                   />
                 </a>
@@ -467,13 +471,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image  
-         
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/dribble.svg"
                     }
                     width={24}
                     height={24}
+                    fetchPriority="low"
+                    priority="low"
                     alt=""
                   />
                 </a>
@@ -484,13 +489,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image  
-         
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/instagram.svg"
                     }
                     width={24}
                     height={24}
+                    fetchPriority="low"
+                    priority="low"
                     alt=""
                   />
                 </a>
@@ -501,13 +507,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image  
-         
+                  <Image
                     src={
                       "https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.svg"
                     }
                     width={30}
                     height={30}
+                    fetchPriority="low"
+                    priority="low"
                     alt=""
                   />
                 </a>

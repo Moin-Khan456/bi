@@ -36,8 +36,9 @@ const CarouselComponent = () => {
       >
         {images.map((image, index) => (
           <div key={index}>
-            <Image  
-         
+            <Image
+              fetchPriority="low"
+              priority="low"
               src={image.src}
               alt={image.alt}
               width={image.width}

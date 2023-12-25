@@ -5,6 +5,7 @@ import TagManager from "react-gtm-module";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [load, setLoad] = useState(false);
   const [blockName, setBlockName] = useState("companyChildren");
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-MWMG4P2" });
@@ -33,9 +34,28 @@ const Header = () => {
       }
     };
   }, []);
+  useEffect(() => {
+    console.log(load);
+  }, [load]);
 
   return (
     <>
+      {load && (
+        <div className="fixed z-50  w-screen h-screen bg-black">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-contain scale-50 z-0 xs:rounded-b-3xl lg:rounded-r-3xl mobileContactVideo"
+            muted
+            loop
+            autoPlay={true}
+            controls={false}
+          >
+            <source
+              src="https://braininventory.s3.us-east-2.amazonaws.com/videos/biloader.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      )}
       <nav>
         <div
           id="navbar"
@@ -45,8 +65,7 @@ const Header = () => {
             <span className="text-4xl Gilroy-Bold z-30">
               {!navOpen && (
                 <div className="relative w-36 h-12 cursor-pointer">
-                  <Image  
-         
+                  <Image
                     priority={true}
                     src="https://braininventory.s3.us-east-2.amazonaws.com/images/main/Logobg.png"
                     className="cursor-pointer"
@@ -210,7 +229,9 @@ const Header = () => {
               </Link>
             </div>
             <div className="col-span-3">
-              {blockName === "companyChildren" && <CompanyChildren />}
+              {blockName === "companyChildren" && (
+                <CompanyChildren setLoad={setLoad} />
+              )}
               {blockName === "ServicesChildren" && <ServicesChildren />}
               {blockName === "Industry" && <Industry />}
               {blockName === "Solution" && <Solution />}
@@ -222,7 +243,10 @@ const Header = () => {
   );
 };
 
-const CompanyChildren = () => {
+const CompanyChildren = ({ setLoad }) => {
+  const [page, setPage] = useState(
+    window.location.href.split("/")[3] === "blog"
+  );
   return (
     <div className="col-span-4 lg:grid grid-cols-1">
       <div className="space-y-4">
@@ -244,7 +268,11 @@ const CompanyChildren = () => {
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/blog/1" className="cursor-pointer">
+            <Link
+              href="/blog/1"
+              className="cursor-pointer"
+              onClick={() => !page && setLoad(true)}
+            >
               Blog
             </Link>
           </li>

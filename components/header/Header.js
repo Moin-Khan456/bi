@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TagManager from "react-gtm-module";
+import { MdOutlineUnfoldMore, MdUnfoldLess } from "react-icons/md";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -81,7 +82,7 @@ const Header = () => {
 
           {navOpen ? (
             <div className="dropdown lg:block  dropdown-hover">
-              <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
+              <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase lg:block hidden">
                     <Link href="/contact">request A Quote</Link>
@@ -272,7 +273,7 @@ const CompanyChildren = ({ setLoad }) => {
             <Link
               href="/blog/1"
               className="cursor-pointer"
-              onClick={() => !page && setLoad(true)}
+              // onClick={() => !page && setLoad(true)}
             >
               Blog
             </Link>
@@ -522,6 +523,7 @@ const ServicesChildren = () => {
     },
   ];
 
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="col-span-4 lg:grid lg:grid-cols-3 hidden">
       <div className="space-y-4">
@@ -550,8 +552,12 @@ const ServicesChildren = () => {
       </div>
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Hire Dedicated Developers</h2>
-        <ul className="space-y-2">
-          {hireLinks?.map((ele) => (
+        <ul
+          className={`space-y-2 ${
+            showMore ? "overflow-y-scroll" : "overflow-y-hidden"
+          } scrollbar-tiny h-[70%]`}
+        >
+          {hireLinks?.map((ele, index) => (
             <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
@@ -559,6 +565,18 @@ const ServicesChildren = () => {
             </li>
           ))}
         </ul>
+        {hireLinks.length > 16 && !showMore ? (
+          <button
+            className="flex items-center"
+            onClick={() => setShowMore(true)}
+          >
+            Show More &nbsp; <MdOutlineUnfoldMore />
+          </button>
+        ) : (
+          <button className="flex items-center" onClick={() => setShowMore(false)}>
+            Show Less &nbsp; <MdUnfoldLess />
+          </button>
+        )}
       </div>
     </div>
   );

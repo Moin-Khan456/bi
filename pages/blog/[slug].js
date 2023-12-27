@@ -1,20 +1,15 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../../components/header/Header.js";
 import axios from "axios";
-import Loader from "../../components/common/loader";
-const PopularBlogs = dynamic(() =>
-  import("../../components/blog/PopularBlogs")
-);
-const Blogs = dynamic(() => import("../../components/blog/Blogs"));
-const Pagination = dynamic(() => import("../../components/blog/Pagination"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
-);
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
+import PopularBlogs from "../../components/blog/PopularBlogs";
+import Blogs from "../../components/blog/Blogs";
+import Pagination from "../../components/blog/Pagination";
+import KeepInTouch from "../../components/common/keepInTouch.js";
+import LocateUs from "../../components/common/locateUs.js";
+import LetsKick from "../../components/common/LetsKick.js";
+import Footer from "../../components/common/Footer.js";
+import { rediss } from "../../utils/redis.js";
 
 export default function Home({
   data = false,
@@ -69,42 +64,57 @@ export default function Home({
         />
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
-      <Suspense fallback={"Loading......"}>
-        <main className="relative second-component">
-          <Header />
-          <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-            <div className="container padding-left-all-section-1">
-              <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
-              <div>
-                <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
-                <div className="pb-2">
-                    <PopularBlogs data={data} />
-                </div>
-                <hr />
-                <Blogs blogs={blogs} pageNumber={currentPage} />
-                <Pagination
-                  itemsPerPage={10}
-                  totalPages={totalPages}
-                  setCurrentPage={setCurrentPage}
-                  currentPage={currentPage}
-                />
+      <main className="relative second-component">
+        <Header />
+        <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+          <div className="container padding-left-all-section-1">
+            <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
+            <div>
+              <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
+              <div className="pb-2">
+                <PopularBlogs data={data} />
               </div>
+              <hr />
+              <Blogs blogs={blogs} pageNumber={currentPage} />
+              <Pagination
+                itemsPerPage={10}
+                totalPages={totalPages}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+              />
             </div>
           </div>
-          <KeepInTouch />
-          <LocateUs />
-          <LetsKick />
-          <Footer />
-        </main>
-      </Suspense>
+        </div>
+        <KeepInTouch />
+        <LocateUs />
+        <LetsKick />
+        <Footer />
+      </main>
     </>
   );
 }
 export async function getServerSideProps(context) {
+  context.res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=600, stale-while-revalidate=3600"
+  );
+
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
   const totalPages = await postsRes.headers.get("X-WP-Total");
+
+  const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+  if (cachedBlog) {
+    return {
+      props: {
+        data: cachedBlog.slice(0, 3),
+        blogs: cachedBlog,
+        totalPages: totalPages,
+        page: context.query.slug,
+      },
+    };
+  }
 
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
@@ -115,6 +125,12 @@ export async function getServerSideProps(context) {
         "Cache-Control": "public, max-age=600",
       },
     }
+  );
+  await rediss.set(
+    `blog-${context.query.slug}`,
+    JSON.stringify(response.data),
+    "EX",
+    300
   );
 
   return {

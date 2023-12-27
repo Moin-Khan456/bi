@@ -25,7 +25,7 @@ const Blogs = ({ blogs }) => {
                     <Image
                       src={post["_embedded"]["wp:featuredmedia"][0].source_url}
                       fetchPriority="high"
-                      loading="eager"
+                      loading="lazy"
                       width={300}
                       height={300}
                       alt={

@@ -662,7 +662,7 @@ const Solution = () => {
   const solutionLinks = [
     {
       _id: 1,
-      name: "Social Networking Solution Development",
+      name: "Social Networking Development",
       link: "/solution/social-networking-development-company",
     },
   ];

@@ -325,7 +325,7 @@ const FooterSections = [
     links: [
       {
         _id: 1,
-        name: "Social Media Marketing",
+        name: "Social Network Development",
         path: "/solution/social-networking-development-company",
       },
     ],

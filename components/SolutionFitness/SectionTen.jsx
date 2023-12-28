@@ -1,12 +1,24 @@
 import Image from "next/image";
-import React from "react";
-const Index = ({ mockup1, mockup2, alt }) => {
+import Link from "next/link";
+import React, { useState } from "react";
+import "animate.css";
+const Index = ({
+  oneName,
+  oneVideo,
+  oneLink,
+  twoName,
+  twoVideo,
+  twoImage,
+  twoLink,
+  alt,
+}) => {
+  const [one, setOne] = useState(false);
+  const [two, setTwo] = useState(false);
   return (
-    <div className="padding-left-all-section-1 rounded-md my-8 py-10 pb-32">
+    <div className="padding-left-all-section-1 rounded-md pb-24">
       <div className="container padding-left-all-section-1 relative">
         <div className="lg:mb-80 mb-[36rem]">
-          <Image  
-         
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Group+7062.png"
             alt="Our Work"
             width={900}
@@ -15,47 +27,110 @@ const Index = ({ mockup1, mockup2, alt }) => {
           ></Image>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 absolute lg:top-80 top-32">
-          <div className="m-6 lg:m-0">
-            <Image  
-         
-              src={
-                mockup1 ??
-                "https://braininventory.s3.us-east-2.amazonaws.com/images/solution/1.png"
-              }
-              alt=""
-              width={600}
-              height={600}
-              className=""
-            />
-            <h3 className="monument text-white text-3xl mt-4">PROJECT NAME</h3>
-            <p className="">
+          {!oneLink ? (
+            <div className="m-6 lg:m-0 cursor-pointer" onClick={()=> setOne(true)}>
+              <video
+                className="rounded-3xl"
+                muted
+                loop
+                autoPlay={true}
+                controls={false}
+                preload="metadata"
+              >
+                <source src={oneVideo} type="video/mp4" />
+              </video>
+              <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
+              {/* <p className="">
               When examining solutions for the social industry, it&apos;s
               essential to first conduct a thorough scope analysis. Here&apos;s
               a brief rundown of the process:
-            </p>
-          </div>
-          <div className="lg:mt-24 m-6 lg:m-0">
-            <Image  
-         
-              src={
-                mockup2 ??
-                "https://braininventory.s3.us-east-2.amazonaws.com/images/solution/e8635b913472ae92c6c9d727d1ccce71.png"
-              }
-              alt=""
-              width={600}
-              height={600}
-              className=""
-            />
-            <h3 className="monument text-white text-3xl mt-4">PROJECT NAME</h3>
-            <p className="">
+            </p> */}
+            </div>
+          ) : (
+            <Link href={oneLink}>
+              <div className="m-6 lg:m-0">
+                <video
+                  className="rounded-3xl"
+                  muted
+                  loop
+                  autoPlay={true}
+                  controls={false}
+                  preload="metadata"
+                >
+                  <source src={oneVideo} type="video/mp4" />
+                </video>
+                <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
+                {/* <p className="">
               When examining solutions for the social industry, it&apos;s
               essential to first conduct a thorough scope analysis. Here&apos;s
               a brief rundown of the process:
-            </p>
-          </div>
+            </p> */}
+              </div>
+            </Link>
+          )}
+          {!twoLink ? (
+            <div className="lg:mt-24 m-6 lg:m-0 cursor-pointer" onClick={() => setTwo(!two)}>
+              <video
+                className="rounded-3xl"
+                muted
+                loop
+                autoPlay={true}
+                controls={false}
+                preload="metadata"
+              >
+                <source src={twoVideo} type="video/mp4" />
+              </video>
+              <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
+              {/* <p className="">
+              When examining solutions for the social industry, it&apos;s
+              essential to first conduct a thorough scope analysis. Here&apos;s
+              a brief rundown of the process:
+            </p> */}
+            </div>
+          ) : (
+            <Link href={twoLink}>
+              <div className="lg:mt-24 m-6 lg:m-0">
+                <video
+                  className="rounded-3xl"
+                  muted
+                  loop
+                  autoPlay={true}
+                  controls={false}
+                  preload="metadata"
+                >
+                  <source src={twoVideo} type="video/mp4" />
+                </video>
+                <h3 className="monument text-white text-3xl mt-4">GET FIT</h3>
+                {/* <p className="">
+              When examining solutions for the social industry, it&apos;s
+              essential to first conduct a thorough scope analysis. Here&apos;s
+              a brief rundown of the process:
+            </p> */}
+              </div>
+            </Link>
+          )}
         </div>
       </div>
+      {one && <DialogBox image={oneImage} setClose={setOne} />}
+      {two && <DialogBox image={twoImage} setClose={setTwo} />}
     </div>
   );
 };
 export default Index;
+
+const DialogBox = ({ setClose, image }) => {
+  return (
+    <div
+      className=" bg-[#000000d2] flex justify-center items-center h-screen w-screen fixed top-0 left-0 z-[999999]"
+     cursor-pointer  onClick={() => setClose(false)}
+    >
+      <Image
+        src={image}
+        alt=""
+        width={800}
+        height={600}
+        className="animate__animated animate__zoomIn rounded-2xl"
+      />
+    </div>
+  );
+};

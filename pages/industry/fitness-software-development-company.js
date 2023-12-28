@@ -270,9 +270,7 @@ function Fitness(props) {
   return (
     <>
       <Head>
-        <title>
-        Fitness Software Development Services - Brain Inventory
-        </title>
+        <title>Fitness Software Development Services - Brain Inventory</title>
         <meta
           property="description"
           content="Looking for a fitness app development company? We specialize in creating user-friendly custom fitness apps to boost your brand's success. Contact us today!"
@@ -298,7 +296,6 @@ function Fitness(props) {
           href="https://braininventory.in/industry/fitness-software-development-company"
         />
       </Head>
-      {/*<Loader />*/}
       <main className="">
         <Header />
         <SectionOne />
@@ -309,13 +306,13 @@ function Fitness(props) {
           description={sectionTwoDesc}
           lastSmall={true}
         />
-        <SectionThree
+        {/* <SectionThree
           title="Fitness Industry Insights"
           sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
         technological advancements. Here are some captivating insights about the
         fitness industry:"
           setionThreeCards={setionThreeCards}
-        />
+        /> */}
         <TiltMarquee title="FITNESS APP DEVELOPMENT" />
         <SectionFour
           title="Solutions for Fitness Mobile App Development"
@@ -363,7 +360,16 @@ function Fitness(props) {
           description={keyDesc}
         />
         <Approach title={title} desc={approachDesc} points={approachPoints} />
-        <SectionTen alt="Our Work"/>
+        <SectionTen
+          oneName={"MY FIT MANTRA"}
+          oneVideo={"/industry/Fitness/MFM/MFM.mp4"}
+          oneLink={"/project/my-fit-mantra"}
+          twoName={"GET FIT"}
+          twoVideo={"/industry/Fitness/Dummy 1/2.mp4"}
+          twoImage={"/industry/Fitness/Dummy 1/Fitness.png"}
+          twoLink={null}
+          alt="Our Work"
+        />
         <FaqHire faq={faqdetails} />
         <hr />
         <BlogArticle />

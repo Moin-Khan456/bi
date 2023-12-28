@@ -6,6 +6,7 @@ const Index = ({
   oneName,
   oneVideo,
   oneLink,
+  oneImage,
   twoName,
   twoVideo,
   twoImage,
@@ -100,7 +101,7 @@ const Index = ({
                 >
                   <source src={twoVideo} type="video/mp4" />
                 </video>
-                <h3 className="monument text-white text-3xl mt-4">GET FIT</h3>
+                <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
                 {/* <p className="">
               When examining solutions for the social industry, it&apos;s
               essential to first conduct a thorough scope analysis. Here&apos;s

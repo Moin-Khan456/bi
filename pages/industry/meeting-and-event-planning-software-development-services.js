@@ -401,7 +401,7 @@ function Meeting(props) {
         oneImage={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+1/event+and+meeting+mockup.png"
         }
-        twoName={"GET FIT"}
+        twoName={"LET'S MEET"}
         twoVideo={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+2/Event+and+meeting.mp4"
         }

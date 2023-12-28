@@ -354,7 +354,7 @@ function Blockchain(props) {
             points={approachPoints}
           />
           <SectionTen
-            oneName={"MY FIT MANTRA"}
+            oneName={"VIRIFI"}
             oneVideo={
               "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Blockchain/Virifi/Virifi.mp4"
             }

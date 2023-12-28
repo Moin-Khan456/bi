@@ -409,7 +409,7 @@ function EdTech(props) {
         points={approachPoints}
       />
       <SectionTen
-        oneName={"MY FIT MANTRA"}
+        oneName={"EDUCATION.NUMETRIC"}
         oneVideo={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Edtech/Education+Numetric/1.mp4"
         }

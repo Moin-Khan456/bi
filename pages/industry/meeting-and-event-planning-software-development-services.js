@@ -296,9 +296,7 @@ function Meeting(props) {
   return (
     <>
       <Head>
-        <title>
-          Meeting and Event Planning Software Development Services
-        </title>
+        <title>Meeting and Event Planning Software Development Services</title>
         <meta
           property="description"
           content="Brain Inventory provides meeting and event planning software development services, for seamless event management and planning. Contact us for custom software!"
@@ -396,8 +394,23 @@ function Meeting(props) {
         points={approachPoints}
       />
       <SectionTen
-        mockup1="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/meeting-and-planning/Braininventory_Event+and+meeting+mockup+-+1+1.png"
-        mockup2="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/meeting-and-planning/Event+and+meeting+mockup+-+2+1.png"
+        oneName={"MEET X"}
+        oneVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+1/event+and+meeting.mp4"
+        }
+        oneImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+1/event+and+meeting+mockup.png"
+        }
+        twoName={"GET FIT"}
+        twoVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+2/Event+and+meeting.mp4"
+        }
+        twoImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Event+%26+meeting/Dummy+2/Event+and+meeting.png"
+        }
+        oneLink={null}
+        twoLink={null}
+        alt="Our Work"
       />
       <FaqHire faq={faqdetails} />
       <hr />

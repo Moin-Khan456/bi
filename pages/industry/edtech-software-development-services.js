@@ -408,7 +408,25 @@ function EdTech(props) {
         desc={approachDesc}
         points={approachPoints}
       />
-      <SectionTen />
+      <SectionTen
+        oneName={"MY FIT MANTRA"}
+        oneVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Edtech/Education+Numetric/1.mp4"
+        }
+        oneImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Edtech/Education+Numetric/Ed+tech.png"
+        }
+        twoName={"EDUCATOR UNITED"}
+        twoVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Edtech/Dummy+1/3.mp4"
+        }
+        twoImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Edtech/Dummy+1/Ed+tech.png"
+        }
+        oneLink={null}
+        twoLink={null}
+        alt="Our Work"
+      />
       <FaqHire faq={faqdetails} />
       <hr />
       <BlogArticle />

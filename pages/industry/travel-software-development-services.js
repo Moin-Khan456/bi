@@ -53,8 +53,7 @@ function Travel(props) {
   const faqdetails = [
     {
       id: "1",
-      title:
-        "How does Brain Inventory approach Travel App Development?",
+      title: "How does Brain Inventory approach Travel App Development?",
       description:
         "We focus on understanding client visions, staying updated on global travel trends, prioritizing user experience, and offering continuous support and improvement.",
     },
@@ -331,7 +330,7 @@ function Travel(props) {
       {/*<Loader />*/}
       <main className="">
         <Header />
-          <SectionOne />
+        <SectionOne />
         <section>
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
@@ -339,67 +338,82 @@ function Travel(props) {
             head1="Providing Superior Travel Services Online"
             description={sectionTwoDesc}
           />
-              <SectionThree
-                title="Insights into the Travel Industry"
-                sectionDesc="Travel is an ever-evolving industry that embraces technological advancements at a rapid pace. Here are some fascinating insights about the travel industry:"
-                setionThreeCards={setionThreeCards}
-              />
-              <TiltMarquee title="Travel Software Development ✦ Travel Software Development" />
-              <SectionFour
-                title="Solutions for Travel Software Development For Travel Industry"
-                description={sectionFourDesc}
-                solutionList={solutionList}
-              />
-              <SectionFive
-                head="Travel Tech Innovations"
-                subhead="COMPARED TO Booking.com & Expedia"
-                description={sectionFiveDesc}
-                alt={"Travel Software Development Company"}
-                sectionFiveTableHead={sectionFiveTableHead}
-                sectionFiveTable={sectionFiveTable}
-              />
-              <SectionSix
-                title="Ready to embark on your journey with a game-changing travel portal development company? "
-                customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
-                classText="!text-[2rem]"
-                btn="BUILD YOUR TRAVEL-TECH SOFTWARE"
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+group+(2).png"
-              />
+          <SectionThree
+            title="Insights into the Travel Industry"
+            sectionDesc="Travel is an ever-evolving industry that embraces technological advancements at a rapid pace. Here are some fascinating insights about the travel industry:"
+            setionThreeCards={setionThreeCards}
+          />
+          <TiltMarquee title="Travel Software Development ✦ Travel Software Development" />
+          <SectionFour
+            title="Solutions for Travel Software Development For Travel Industry"
+            description={sectionFourDesc}
+            solutionList={solutionList}
+          />
+          <SectionFive
+            head="Travel Tech Innovations"
+            subhead="COMPARED TO Booking.com & Expedia"
+            description={sectionFiveDesc}
+            alt={"Travel Software Development Company"}
+            sectionFiveTableHead={sectionFiveTableHead}
+            sectionFiveTable={sectionFiveTable}
+          />
+          <SectionSix
+            title="Ready to embark on your journey with a game-changing travel portal development company? "
+            customClasses="max-w-[200px] lg:max-w-[600px] bottom-0"
+            classText="!text-[2rem]"
+            btn="BUILD YOUR TRAVEL-TECH SOFTWARE"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+group+(2).png"
+          />
 
-              <PlatformDevelopment
-                data={platformDevelopment}
-                subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-                head="Travel APP DEVELOPMENT"
-                description={platformDesc}
-              />
-              <SectionNine
-                brand="Travel Development Software"
-                pageCategory="Travel Development Software"
-                pageCategoryAbbr="Travel Development Software"
-                slow={70000}
-                fast={55000}
-                alt={"Travel Software Development Services"}
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
-              />
-              <PlatformDevelopment
-                data={keyFeatures}
-                subhead="KEY FEATURES OF"
-                head="Travel Industry Software DEVELOPMENT"
-                description={keyDesc}
-              />
-              <Approach
-                title="How we Approach Travel App Development?"
-                desc={approachDesc}
-                points={approachPoints}
-              />
-              <SectionTen />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <ContactForm />
-              <LetsKick />
-              <hr />
-              <Footer />
+          <PlatformDevelopment
+            data={platformDevelopment}
+            subhead="WHY CHOOSE BRAIN INVENTORY FOR"
+            head="Travel APP DEVELOPMENT"
+            description={platformDesc}
+          />
+          <SectionNine
+            brand="Travel Development Software"
+            pageCategory="Travel Development Software"
+            pageCategoryAbbr="Travel Development Software"
+            slow={70000}
+            fast={55000}
+            alt={"Travel Software Development Services"}
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Mask+1.png"
+          />
+          <PlatformDevelopment
+            data={keyFeatures}
+            subhead="KEY FEATURES OF"
+            head="Travel Industry Software DEVELOPMENT"
+            description={keyDesc}
+          />
+          <Approach
+            title="How we Approach Travel App Development?"
+            desc={approachDesc}
+            points={approachPoints}
+          />
+          <SectionTen
+            oneName={"revolution travel crm"}
+            oneVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/RTC/RTC.mp4"
+            }
+            oneLink={"/project/revolution-travel-crm"}
+            twoName={"OUTING"}
+            twoVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/Dummy-1/travel.mp4"
+            }
+            twoImage={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/Dummy-1/Travel.png"
+            }
+            twoLink={null}
+            alt="Our Work"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <ContactForm />
+          <LetsKick />
+          <hr />
+          <Footer />
         </section>
       </main>
     </>

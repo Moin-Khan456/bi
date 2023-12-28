@@ -371,7 +371,19 @@ function CrmDevelopment(props) {
             desc={approachDesc}
             points={approachPoints}
           />
-          <SectionTen />
+          <SectionTen
+            oneName={"MY FIT MANTRA"}
+            oneVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/CRM/MFM/MFM.mp4"
+            }
+            oneLink={"/project/my-fit-mantra"}
+            twoName={"revolution travel crm"}
+            twoVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/CRM/RTC/RTC.mp4"
+            }
+            twoLink={"/project/revolution-travel-crm"}
+            alt="Our Work"
+          />
           <FaqHire faq={faqdetails} />
           <hr />
           <BlogArticle />

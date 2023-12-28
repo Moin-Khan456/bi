@@ -324,7 +324,7 @@ function Energy(props) {
           rel="canonical"
           href="https://braininventory.in/industry/energy-and-utility-software-development-services"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Mask+group.png"
@@ -395,8 +395,23 @@ function Energy(props) {
         points={approachPoints}
       />
       <SectionTen
-        mockup1="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Energy+%26+utility+mockup+-+1.png"
-        mockup2="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Energy+%26+utility+mockup+-+2.png"
+        oneName={"SAVE WORLD"}
+        oneVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Energy+%26+Utility/Dummy+1/Energy+utility+2.mp4"
+        }
+        oneImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Energy+%26+Utility/Dummy+1/Energy+%26+utility+mockup+-+1.png"
+        }
+        twoName={"SOLARIX"}
+        twoVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Energy+%26+Utility/Dummy+2/Energy+Utility.mp4"
+        }
+        twoImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Energy+%26+Utility/Dummy+2/Energy+%26+utility+mockup+-+2.png"
+        }
+        oneLink={null}
+        twoLink={null}
+        alt="Our Work"
       />
       <FaqHire faq={faqdetails} />
       <hr />

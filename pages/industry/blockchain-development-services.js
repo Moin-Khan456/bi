@@ -353,7 +353,22 @@ function Blockchain(props) {
             desc={approachDesc}
             points={approachPoints}
           />
-          <SectionTen />
+          <SectionTen
+            oneName={"MY FIT MANTRA"}
+            oneVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Blockchain/Virifi/Virifi.mp4"
+            }
+            oneLink={"/project/virifi"}
+            twoName={"MONEY FLOW"}
+            twoVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Blockchain/Dummy+1/1.mp4"
+            }
+            twoImage={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Blockchain/Dummy+1/Braininventory_blockchain+3.png"
+            }
+            twoLink={null}
+            alt="Our Work"
+          />
           <FaqHire faq={faqdetails} />
           <hr />
           <BlogArticle />

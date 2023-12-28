@@ -306,13 +306,13 @@ function Fitness(props) {
           description={sectionTwoDesc}
           lastSmall={true}
         />
-        {/* <SectionThree
+        <SectionThree
           title="Fitness Industry Insights"
           sectionDesc=" Fitness is an ever-evolving realm that is rapidly embracing
         technological advancements. Here are some captivating insights about the
         fitness industry:"
           setionThreeCards={setionThreeCards}
-        /> */}
+        />
         <TiltMarquee title="FITNESS APP DEVELOPMENT" />
         <SectionFour
           title="Solutions for Fitness Mobile App Development"
@@ -362,11 +362,17 @@ function Fitness(props) {
         <Approach title={title} desc={approachDesc} points={approachPoints} />
         <SectionTen
           oneName={"MY FIT MANTRA"}
-          oneVideo={"/industry/Fitness/MFM/MFM.mp4"}
+          oneVideo={
+            "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Fitness/MFM/MFM.mp4"
+          }
           oneLink={"/project/my-fit-mantra"}
           twoName={"GET FIT"}
-          twoVideo={"/industry/Fitness/Dummy 1/2.mp4"}
-          twoImage={"/industry/Fitness/Dummy 1/Fitness.png"}
+          twoVideo={
+            "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Fitness/Dummy+1/2.mp4"
+          }
+          twoImage={
+            "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Fitness/Dummy+1/Fitness.png"
+          }
           twoLink={null}
           alt="Our Work"
         />

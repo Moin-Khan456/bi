@@ -56,7 +56,8 @@ function Accounting(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Can you customize software to match our specific accounting needs?",
+      title:
+        "Can you customize software to match our specific accounting needs?",
       description:
         "Yes, our specialty is developing customized software tailored to your accounting firm's unique requirements.",
     },
@@ -304,9 +305,7 @@ function Accounting(props) {
   return (
     <>
       <Head>
-        <title>
-        Custom Accounting Software Development Services
-        </title>
+        <title>Custom Accounting Software Development Services</title>
         <meta
           property="description"
           content="Brain Inventory specializes in accounting web and app development and creates efficient and user-friendly financial software tailored to your business needs."
@@ -336,64 +335,86 @@ function Accounting(props) {
       <main className="">
         <Header />
         <section className="">
-            <SectionOne />
-            <SectionTwo
-              className="container pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP ACCOUNTING SOFTWARE"
-              head1="Pioneering Accounting Digital Frontier"
-              description={sectionTwoDesc}
-            />
-              <SectionThree
-                title="Accounting Industry Insights"
-                setionThreeCards={setionThreeCards}
-                tableFooter = "These figures highlight the growing importance of digital platforms in modern accounting practices."
-              />
-              <TiltMarquee title="Accounting DEVELOPMENT SERVICES ✦ Accounting DEVELOPMENT SERVICES" />
-              <SectionFour
-                title="Solutions for Accounting Software Development"
-                description={sectionFourDesc}
-                solutionList={solutionList}
-              />
-              <SectionFive
-                head="ACCOUNTING SOFTWARE DEVELOPMENT"
-                subhead="COMPARED TO QUICKBOOKS"
-                description={sectionFiveDesc}
-                sectionFiveTableHead={sectionFiveTableHead}
-                sectionFiveTable={sectionFiveTable}
-                alt={"Accounting Software Development Services"}
-                tableFooter = "Are you prepared to begin this exciting transformation? Your digital future is just a click away. Start this fascinating journey now!."
-              />
-              <SectionSix
-                head="Explore everything that the Brain Inventory team can do for you."
-                title="Develop Your Own Accounting App"
-                customClasses="w-[400px] !bottom-0"
-                btn="BUILD YOUR ACCOUNTING APP"
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Mask+group.png"
-              />
-              <SectionSlider data={platformDevelopment} subhead="WHY CHOOSE BRAIN INVENTORY FOR" head="ACCOUNTING software DEVELOPMENT services" description={platformDesc}/>
-              <SectionNine
-                brand="Accounting App Development        "
-                pageCategory="Accounting App Development     "
-                pageCategoryAbbr="Accounting App Development       "
-                slow={70000}
-                fast={55000}
-                alt={"Accounting Software Development  Company"}
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/office-workers-using-finance-graphs+1.png"
-              />
-              <SectionSlider data={keyFeatures} subhead="KEY FEATURES OF" head="ACCOUNTING SOFTWARE DEVELOPMENT" description={keyDesc}/>
-              <Approach
-                title="How We Navigate Accounting App Development?"
-                desc={approachDesc}
-                points={approachPoints}
-              />
-              <SectionTen />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <ContactForm />
-              <LetsKick />
-              <hr />
-              <Footer />
+          <SectionOne />
+          <SectionTwo
+            className="container pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
+            title="TOP ACCOUNTING SOFTWARE"
+            head1="Pioneering Accounting Digital Frontier"
+            description={sectionTwoDesc}
+          />
+          <SectionThree
+            title="Accounting Industry Insights"
+            setionThreeCards={setionThreeCards}
+            tableFooter="These figures highlight the growing importance of digital platforms in modern accounting practices."
+          />
+          <TiltMarquee title="Accounting DEVELOPMENT SERVICES ✦ Accounting DEVELOPMENT SERVICES" />
+          <SectionFour
+            title="Solutions for Accounting Software Development"
+            description={sectionFourDesc}
+            solutionList={solutionList}
+          />
+          <SectionFive
+            head="ACCOUNTING SOFTWARE DEVELOPMENT"
+            subhead="COMPARED TO QUICKBOOKS"
+            description={sectionFiveDesc}
+            sectionFiveTableHead={sectionFiveTableHead}
+            sectionFiveTable={sectionFiveTable}
+            alt={"Accounting Software Development Services"}
+            tableFooter="Are you prepared to begin this exciting transformation? Your digital future is just a click away. Start this fascinating journey now!."
+          />
+          <SectionSix
+            head="Explore everything that the Brain Inventory team can do for you."
+            title="Develop Your Own Accounting App"
+            customClasses="w-[400px] !bottom-0"
+            btn="BUILD YOUR ACCOUNTING APP"
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Mask+group.png"
+          />
+          <SectionSlider
+            data={platformDevelopment}
+            subhead="WHY CHOOSE BRAIN INVENTORY FOR"
+            head="ACCOUNTING software DEVELOPMENT services"
+            description={platformDesc}
+          />
+          <SectionNine
+            brand="Accounting App Development        "
+            pageCategory="Accounting App Development     "
+            pageCategoryAbbr="Accounting App Development       "
+            slow={70000}
+            fast={55000}
+            alt={"Accounting Software Development  Company"}
+            src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/office-workers-using-finance-graphs+1.png"
+          />
+          <SectionSlider
+            data={keyFeatures}
+            subhead="KEY FEATURES OF"
+            head="ACCOUNTING SOFTWARE DEVELOPMENT"
+            description={keyDesc}
+          />
+          <Approach
+            title="How We Navigate Accounting App Development?"
+            desc={approachDesc}
+            points={approachPoints}
+          />
+          <SectionTen
+            oneName={"Fatoura"}
+            oneVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Accounting/Fatoura/Fatoura.mp4"
+            }
+            oneLink={"/project/fatoura"}
+            twoName={"NUMETRIC.WORK"}
+            twoVideo={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Accounting/Numetric/Numetric.mp4"
+            }
+            twoLink={"/project/numetric"}
+            alt="Our Work"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <ContactForm />
+          <LetsKick />
+          <hr />
+          <Footer />
         </section>
       </main>
     </>

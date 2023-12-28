@@ -312,7 +312,9 @@ function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>E-Commerce Software Development Services - Brain Inventory</title>
+        <title>
+          E-Commerce Software Development Services - Brain Inventory
+        </title>
         <meta
           property="description"
           content="Brain Inventory is a leading e-commerce software development company. Our experts build scalable and innovative software for your online business. Contact us!"
@@ -399,7 +401,25 @@ function Ecommerce(props) {
         desc={approachDesc}
         points={approachPoints}
       />
-      <SectionTen />
+      <SectionTen
+        oneName={"SKYLINE DECOR"}
+        oneVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Ecommerce/Dummy+1/E+Comm.mp4"
+        }
+        oneImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Ecommerce/Dummy+1/Ecommerce+mockup+1.png"
+        }
+        twoName={"EDUCATOE UNITED"}
+        twoVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Ecommerce/Dummy+2/E+Comm2.mp4"
+        }
+        twoImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Ecommerce/Dummy+2/Ecommerce+mockup+2.png"
+        }
+        oneLink={null}
+        twoLink={null}
+        alt="Our Work"
+      />
       <FaqHire faq={faqdetails} />
       <hr />
       <BlogArticle />

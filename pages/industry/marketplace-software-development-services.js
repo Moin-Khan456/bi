@@ -59,7 +59,8 @@ function MarketPlace(props) {
     },
     {
       id: "2",
-      title: "Can we expect our platform to be compatible with different operating systems (iOS, Android)?",
+      title:
+        "Can we expect our platform to be compatible with different operating systems (iOS, Android)?",
       description:
         "Absolutely! We utilize a cross-platform development framework which enables us to build solutions that are compatible with both iOS and Android platforms. We ensure your solution reaches the widest possible audience.",
     },
@@ -246,10 +247,7 @@ function MarketPlace(props) {
         "With the rapid domination of online platforms in the marketplace industry, we have seen interesting changes and significant impacts on business operations and consumer behavior. Here are some key stats to understand the influence:",
       tableHead: ["Static", "Source"],
       tableContent: [
-        [
-          "73% of consumers now prefer shopping online post-pandemic",
-          "Sinch",
-        ],
+        ["73% of consumers now prefer shopping online post-pandemic", "Sinch"],
         [
           "Global e-commerce market size grew to 6,310 billion USD in 2023",
           "Statista",
@@ -290,15 +288,13 @@ function MarketPlace(props) {
       head: "Launch and Support",
       content:
         "Once your software is ready, we assist with its launch and provide ongoing support to ensure it continues to perform well and meet the needs of your users.",
-    }
+    },
   ];
 
   return (
     <>
       <Head>
-        <title>
-          Custom Marketplace Software Development Company
-        </title>
+        <title>Custom Marketplace Software Development Company</title>
         <meta
           property="description"
           content="Looking for marketplace app development services? We create customized and user-friendly apps to boost your online marketplace success. Get in touch with us today!"
@@ -323,7 +319,7 @@ function MarketPlace(props) {
           rel="canonical"
           href="https://braininventory.in/industry/marketplace-software-development-services"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Group+7187.png"
@@ -339,7 +335,11 @@ function MarketPlace(props) {
         head1="Connecting Markets, Fueling Evolution"
         description={sectionTwoDesc}
       />
-      <SectionThree title="Marketplace Industry Insights" sectionDesc="In the rapidly evolving realm of online marketplaces, maintaining a competitive edge is paramount. Here, we offer a glimpse into the most current industry insights gathered from trusted data sources." setionThreeCards={setionThreeCards} />
+      <SectionThree
+        title="Marketplace Industry Insights"
+        sectionDesc="In the rapidly evolving realm of online marketplaces, maintaining a competitive edge is paramount. Here, we offer a glimpse into the most current industry insights gathered from trusted data sources."
+        setionThreeCards={setionThreeCards}
+      />
       <TiltMarquee title="MARKETPLACE APP DEVELOPMENT" />
       <SectionFour
         title="Solutions for Marketplace Software Development"
@@ -386,7 +386,22 @@ function MarketPlace(props) {
         description={keyDesc}
       />
       <Approach title={title} desc={approachDesc} points={approachPoints} />
-      <SectionTen />
+      <SectionTen
+        oneName={"jeyab"}
+        oneVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+1.mp4"
+        }
+        oneLink={null}
+        twoName={"SHOPMART"}
+        twoVideo={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+1.mp4"
+        }
+        twoImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+mockup.png"
+        }
+        twoLink={null}
+        alt="Our Work"
+      />
       <FaqHire faq={faqdetails} />
       <hr />
       <BlogArticle />

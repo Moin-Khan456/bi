@@ -24,7 +24,7 @@ const SectionFour = dynamic(() =>
   import("../../components/SolutionFitness/SectionFour.jsx")
 );
 const SectionFive = dynamic(() =>
-  import("../../components/SolutionFitness/SectionFive.jsx")
+  import("../../components/Solution-supplychain/SectionFive.jsx")
 );
 const SectionSix = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSix.jsx")

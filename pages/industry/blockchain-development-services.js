@@ -356,7 +356,7 @@ function Blockchain(props) {
           <SectionTen
             oneName={"VIRIFI"}
             oneVideo={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Blockchain/Virifi/Virifi.mp4"
+              "https://braininventory.s3.us-east-2.amazonaws.com/videos/virifi.mp4"
             }
             oneLink={"/project/virifi"}
             twoName={"MONEY FLOW"}

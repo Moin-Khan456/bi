@@ -282,6 +282,11 @@ const FooterSections = [
         name: "Meeting & Event Planning App Development",
         path: "/industry/meeting-and-event-planning-software-development-services",
       },
+      {
+        _id: 13,
+        name: "Supplychain App Development",
+        path: "/industry/supplychain-software-development-services",
+      },
     ],
   },
   {

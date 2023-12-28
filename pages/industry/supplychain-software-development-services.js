@@ -413,7 +413,7 @@ function SupplyChain(props) {
         oneImage={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Supplychain/Dummy+1/Supply+chain+mockup+-+1.png"
         }
-        twoName={"EDUCATOE UNITED"}
+        twoName={"ELITEFLOW NETWORK"}
         twoVideo={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Supplychain/Dummy+2/Supply+%26+Chain.mp4"
         }

@@ -652,7 +652,7 @@ const Industry = () => {
     {
       _id: 15,
       name: "real Estate App Development",
-      path: "/industry/real-estate-software-development-services",
+      link: "/industry/real-estate-software-development-services",
     },
   ];
 

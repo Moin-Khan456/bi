@@ -287,6 +287,11 @@ const FooterSections = [
         name: "Supplychain App Development",
         path: "/industry/supplychain-software-development-services",
       },
+      {
+        _id: 14,
+        name: "Transport and Logistic App Development",
+        path: "/industry/transport-and-logistic-software-development-services",
+      },
     ],
   },
   {

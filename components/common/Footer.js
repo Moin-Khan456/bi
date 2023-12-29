@@ -292,6 +292,11 @@ const FooterSections = [
         name: "Transport and Logistic App Development",
         path: "/industry/transport-and-logistic-software-development-services",
       },
+      {
+        _id: 15,
+        name: "Real Estate App Development",
+        path: "/industry/real-estate-software-development-services",
+      },
     ],
   },
   {

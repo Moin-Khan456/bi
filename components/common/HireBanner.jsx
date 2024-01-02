@@ -9,7 +9,6 @@ export default function HireBanner({
   title,
   subtitle,
   content,
-  card,
   btn,
   image,
   alt,
@@ -17,6 +16,12 @@ export default function HireBanner({
   type,
   unique,
 }) {
+  const card = [
+    "100% resource replacement",
+    "Flexible hiring models",
+    "100% NDA-protected contract",
+    "100% refund policy",
+  ];
   useEffect(() => {
     if (typeof window !== "undefined") {
       const AOS = require("aos");
@@ -26,9 +31,7 @@ export default function HireBanner({
   });
   return (
     <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 min-h-screen">
-      <section
-        className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}
-      >
+      <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
         <section className="w-full">
           <section className="ml-4 lg:ml-0">
             <span className="text-2xl Gilroy-Bold lg:whitespace-nowrap">
@@ -102,27 +105,27 @@ export default function HireBanner({
           )}
         </section>
         <section>
-          {card ? (
-            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
-              <section className="started-subcription">
-                <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                <h2 className="Gilroy-Bold text-5xl">
-                  2 Business <span className="text-lg">Days</span>
-                </h2>
-              </section>
-              <section className="p-8 bg-line">
-                <ul className="list-subcription">
-                  {card &&
-                    card.map((ele, index) => (
-                      <li key={index} className="flex items-center">
-                        <BiCheckCircle className="text-2xl mb-2" />
-                        {ele}
-                      </li>
-                    ))}
-                </ul>
-              </section>
+          {/* {card ? ( */}
+          <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+            <section className="started-subcription">
+              <p className="Gilroy-Bold text-lg">Get Started Within</p>
+              <h2 className="Gilroy-Bold text-5xl">
+                2 Business <span className="text-lg">Days</span>
+              </h2>
             </section>
-          ) : (
+            <section className="p-8 bg-line">
+              <ul className="list-subcription">
+                {card &&
+                  card.map((ele, index) => (
+                    <li key={index} className="flex items-center">
+                      <BiCheckCircle className="text-2xl mb-2" />
+                      {ele}
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          </section>
+          {/* ) : (
             <section
               className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
                 type?.match("php") && "drop-shadow-image"
@@ -140,7 +143,7 @@ export default function HireBanner({
                 alt={alt}
               />
             </section>
-          )}
+          )} */}
         </section>
       </section>
     </main>

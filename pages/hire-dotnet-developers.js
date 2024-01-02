@@ -17,7 +17,7 @@ const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
 const Hire = dynamic(() => import("../components/common/Hire"));
-const HireBanner = dynamic(() => import("../components/common/HireBanner"));
+import HireBanner from "../components/common/HireBanner";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );

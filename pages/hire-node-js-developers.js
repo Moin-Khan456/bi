@@ -14,7 +14,7 @@ const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills"));
 const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hire = dynamic(() => import("../components/common/Hire"));
-const HireBanner = dynamic(() => import("../components/common/HireBanner"));
+import HireBanner from "../components/common/HireBanner";
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));

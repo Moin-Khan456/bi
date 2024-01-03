@@ -651,7 +651,7 @@ const Industry = () => {
     },
     {
       _id: 15,
-      name: "real Estate App Development",
+      name: "Real Estate App Development",
       link: "/industry/real-estate-software-development-services",
     },
   ];

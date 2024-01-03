@@ -3,9 +3,8 @@ import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const SectionOne = dynamic(() =>
-  import("../../components/project/projocureel/SectionOne.jsx")
-);
+import SectionOne from "../../components/project/projocureel/SectionOne.jsx";
+
 const SectionTwo = dynamic(() =>
   import("../../components/project/projocureel/Sectiontwo.jsx")
 );
@@ -53,20 +52,24 @@ const Virifi = () => {
 
   const tech = [
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/CCVXV.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/CCVXV.png",
       name: "React Native",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/BFVDC.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/BFVDC.png",
       name: "Firebase",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/GNBVDS.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/GNBVDS.png",
       name: "NoSQL",
     },
 
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
       name: "Docker",
     },
   ];
@@ -110,7 +113,9 @@ const Virifi = () => {
   return (
     <>
       <Head>
-        <title>Brain Inventory Developed Social Video Content Application OCUREEL</title>
+        <title>
+          Brain Inventory Developed Social Video Content Application OCUREEL
+        </title>
         <meta
           name="description"
           content="Brain Inventory developed a social video content application, a video content platform that takes users on the ultimate adventure of creating real-life connections."
@@ -135,6 +140,13 @@ const Virifi = () => {
         <link
           rel="canonical"
           href="https://braininventory.in/project/ocureel"
+        />
+        <link
+          rel="preload"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Mask+Group+192.png"
+          as="image"
+          type="image/*"
+          crossorigin="anonymous"
         />
       </Head>
       <div className="bg-cover relative z-20 w-full h-[105vh] lg:h-[140vh] bg-center lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Mask+Group+192.png')] bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
@@ -181,10 +193,8 @@ const Virifi = () => {
 
         <SectionThree />
 
-        
         <div className="container">
-          <Image  
-         
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
             alt=""
             className="rounded-3xl w-[100vw] px-[10vw] py-[5vh]"
@@ -194,9 +204,9 @@ const Virifi = () => {
         </div>
 
         <ChallengeSection
-            challenge="One significant challenge involved creating a schema that could effectively link multiple elements with each other. This required careful consideration of the relationships between different data components within the system to ensure efficient data management and retrieval. Implementing a secure and seamless payment process was another technical hurdle. The team needed to develop a solution that would allow trainers to accept payments directly into their wallets through the platform."
-            solution="In order to address the aforementioned challenges, several technical solutions were implemented during the development of the project. Extensive discussions were held between the business owner, product analyst team and developers to identify the specific use cases. These discussions facilitated the thoughtful design of the schema, ensuring that every element of the project catered to the intended audience. MongoDB was chosen as the database solution due to its flexibility and built-in tools, which simplified the storage of dynamic data. For direct payment options, Stripe was selected as the payment aggregator. To provide users with the ability to connect their Stripe accounts, the Stripe Connect strategy was implemented. By utilizing the user's Stripe account, the platform was able to generate products on demand and securely process payments."
-          />
+          challenge="One significant challenge involved creating a schema that could effectively link multiple elements with each other. This required careful consideration of the relationships between different data components within the system to ensure efficient data management and retrieval. Implementing a secure and seamless payment process was another technical hurdle. The team needed to develop a solution that would allow trainers to accept payments directly into their wallets through the platform."
+          solution="In order to address the aforementioned challenges, several technical solutions were implemented during the development of the project. Extensive discussions were held between the business owner, product analyst team and developers to identify the specific use cases. These discussions facilitated the thoughtful design of the schema, ensuring that every element of the project catered to the intended audience. MongoDB was chosen as the database solution due to its flexibility and built-in tools, which simplified the storage of dynamic data. For direct payment options, Stripe was selected as the payment aggregator. To provide users with the ability to connect their Stripe accounts, the Stripe Connect strategy was implemented. By utilizing the user's Stripe account, the platform was able to generate products on demand and securely process payments."
+        />
         <div className="py-10">
           <video
             muted

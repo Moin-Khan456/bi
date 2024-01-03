@@ -170,8 +170,9 @@ function HireAangularJsDeveloper(props) {
       <Suspense fallback={{/*<Loader />*/}}>
         <div className="relative">
             <Header></Header>
+            {/* hirebanner heading half:-   with our expert iOS app development services! */}
             <HireBanner
-              heading="Transform your ideas into stunning iOS apps with our expert iOS app development services!"
+              heading="Transform your ideas into stunning iOS apps"
               title="Hire iOS"
               content={content}
               btn="Contact Us!"

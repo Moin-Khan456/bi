@@ -12,6 +12,8 @@
   "dependencies": {
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.0.3",
     "animate.css": "^4.1.1",
     "antd": "^5.9.4",
     "aos": "^3.0.0-beta.6",

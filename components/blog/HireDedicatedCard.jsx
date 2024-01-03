@@ -1,18 +1,31 @@
 import Contact from "./Contact";
-import axios from "axios";
-import * as Yup from "yup";
 import Image from "next/image";
 import { FaRegWindowMinimize } from "react-icons/fa";
 import "animate.css";
-import { useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const HireDedicatedCard = ({ setLocal }) => {
+  const [isOpen, setIsOpen] = useState(true);
   const animationRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) {
+      // Add a delay before removing the component to allow time for the closing animation
+      const timeoutId = setTimeout(() => {
+        setLocal(false);
+      }, 500); // Adjust the delay as needed
+
+      // Clear the timeout on component unmount to avoid memory leaks
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isOpen, setLocal]);
   return (
     <>
-      <div
+       <div
         ref={animationRef}
-        className="relative animate__animated animate__bounceInRight max-w-[70vw] lg:w-[400px] lg:min-w-[400px] lg:max-w-[300px] lg:mt-12 p-4 bg-gradient-to-b from-[#6302dd] to-[#4601a1] max-h-[750px] rounded-md"
+        className={`relative animate__animated ${
+          isOpen ? "animate__bounceInRight" : "animate__bounceOutRight"
+        } max-w-[70vw] lg:w-[400px] lg:min-w-[400px] lg:max-w-[300px] lg:mt-12 p-4 bg-gradient-to-b from-[#6302dd] to-[#4601a1] max-h-[750px] rounded-md`}
       >
         <h2 className="text-lg font-bold">
           Hire Dedicated Remote Developers From Brain Inventory
@@ -20,7 +33,7 @@ const HireDedicatedCard = ({ setLocal }) => {
         <span className="flex justify-end absolute top-1 right-4 text-white">
           <FaRegWindowMinimize
             onClick={() => {
-              setLocal(false);
+              setIsOpen(false);
             }}
             className="text-white cursor-pointer"
           />

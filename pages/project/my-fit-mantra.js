@@ -3,9 +3,8 @@ import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const SectionOne = dynamic(() =>
-  import("../../components/project/projectDetailOne.jsx")
-);
+import SectionOne from "../../components/project/projectDetailOne.jsx";
+
 const SectionTwo = dynamic(() =>
   import("../../components/project/projMFM/sectionTwo.jsx")
 );
@@ -54,7 +53,8 @@ const Numetric = () => {
     brief:
       "Provides you with personal trainers, coaches, and gym owners to manage your clients with ease.",
     logo: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6372.png",
-    image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6450.png",
+    image:
+      "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6450.png",
     alt: "MyFitMantra",
   };
   const carouselImages = [
@@ -70,27 +70,33 @@ const Numetric = () => {
 
   const tech = [
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/6.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/6.png",
       name: "Angular",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/7.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/7.png",
       name: "NodeJs",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/9.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/9.png",
       name: "ExpressJs",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/8.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/8.png",
       name: "MongoDB",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/dfdf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/dfdf.png",
       name: "AWS EC2",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/fddf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/fddf.png",
       name: "AWS S3",
     },
   ];
@@ -98,37 +104,43 @@ const Numetric = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 2,
       name: "Gunjan Jain",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6423.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6423.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
       role: "Software Architecture",
     },
     {
       id: 4,
       name: "Sidra Shahid",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group -1.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group -1.png",
       role: "Software Architecture",
     },
     {
       id: 7,
       name: "Subhash Ajmera",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6438.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6438.png",
       role: "Software Engineer",
     },
     {
       id: 8,
       name: "Rahul Badwaya",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6441.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6441.png",
       role: "Software Engineer",
     },
     {
@@ -167,13 +179,12 @@ const Numetric = () => {
           content=" 
   https://braininventory.in/project/my-fit-mantra"
         />
-       
-        
+
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_MFM.jpg"
         />
-        
+
         <link
           rel="canonical"
           href="https://braininventory.in/project/my-fit-mantra"
@@ -194,21 +205,18 @@ const Numetric = () => {
           image="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/mfm_collage.png"
         />
 
-
-        
-       <div className="flex justify-center w-full py-12">
-         <div className="container lg:px-28">
-          <Image  
-         
-            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-            alt=""
-            className="rounded-3xl w-[100%]"
-            width={1500}
-            height={1500}
-          />
+        <div className="flex justify-center w-full py-12">
+          <div className="container lg:px-28">
+            <Image
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
+              alt=""
+              className="rounded-3xl w-[100%]"
+              width={1500}
+              height={1500}
+            />
+          </div>
         </div>
-       </div>
-       <ChallengeSection
+        <ChallengeSection
           challenge="One significant challenge involved creating a schema that could effectively link multiple elements with each other. This required careful consideration of the relationships between different data components within the system to ensure efficient data management and retrieval. Implementing a secure and seamless payment process was another technical hurdle. The team needed to develop a solution that would allow trainers to accept payments directly into their wallets through the platform."
           solution="In order to address the aforementioned challenges, several technical solutions were implemented during the development of the project. Extensive discussions were held between the business owner, product analyst team and developers to identify the specific use cases. These discussions facilitated the thoughtful design of the schema, ensuring that every element of the project catered to the intended audience. MongoDB was chosen as the database solution due to its flexibility and built-in tools, which simplified the storage of dynamic data. For direct payment options, Stripe was selected as the payment aggregator. To provide users with the ability to connect their Stripe accounts, the Stripe Connect strategy was implemented. By utilizing the user's Stripe account, the platform was able to generate products on demand and securely process payments."
         />

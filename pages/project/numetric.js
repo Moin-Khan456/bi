@@ -2,10 +2,9 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import SectionOne from "../../components/project/projectDetailOne.jsx";
+
 const Header = dynamic(() => import("../../components/header/Header"));
-const SectionOne = dynamic(() =>
-  import("../../components/project/projectDetailOne.jsx")
-);
 const SectionTwo = dynamic(() =>
   import("../../components/project/projectDetailTwo.jsx")
 );

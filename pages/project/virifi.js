@@ -3,9 +3,8 @@ import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const SectionOne = dynamic(() =>
-  import("../../components/project/projvirifi/SectionOne.jsx")
-);
+import SectionOne from "../../components/project/projvirifi/SectionOne.jsx";
+
 const SectionTwo = dynamic(() =>
   import("../../components/project/projvirifi/SectionTwo.jsx")
 );
@@ -62,35 +61,43 @@ const Virifi = () => {
 
   const tech = [
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/6.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/6.png",
       name: "Angular",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/7.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/7.png",
       name: "NodeJs",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/9.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/9.png",
       name: "ExpressJs",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/8.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/8.png",
       name: "MongoDB",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/hyperledger.PNG",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/hyperledger.PNG",
       name: "Hyperledger Fabric",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
       name: "Docker",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/dfdf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/dfdf.png",
       name: "AWS EC2",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/fddf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/fddf.png",
       name: "AWS S3",
     },
   ];
@@ -98,13 +105,15 @@ const Virifi = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
       role: "Software Architecture",
     },
     {
@@ -154,9 +163,13 @@ const Virifi = () => {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_virifi.jpg"
         />
+        <link rel="canonical" href="https://braininventory.in/project/virifi" />
         <link
-          rel="canonical"
-          href="https://braininventory.in/project/virifi"
+          rel="preload"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8.png"
+          as="image"
+          type="image/*"
+          crossorigin="anonymous"
         />
       </Head>
       <Header />
@@ -168,8 +181,7 @@ const Virifi = () => {
           </div>
         </div>
         <div>
-          <Image  
-         
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 287.png"
             className="lg:-mt-8 w-full"
             width={2000}
@@ -188,8 +200,7 @@ const Virifi = () => {
         </div>
 
         <div className="flex w-full">
-          <Image  
-         
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
             alt=""
             width={2000}
@@ -213,8 +224,7 @@ const Virifi = () => {
                 Marketing <span className="text-[#7600EB]">Website</span>
               </h1>
               <div className="px-4 lg:px-48 lg:py-12 ">
-                <Image  
-         
+                <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6425.png"
                   alt=""
                   width={1000}
@@ -226,19 +236,17 @@ const Virifi = () => {
           </>
         </div>
 
-        
         <div className="flex justify-center w-full py-12">
-         <div className="container lg:px-28">
-          <Image  
-         
-            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-            alt=""
-            className="rounded-3xl w-[100%]"
-            width={1500}
-            height={1500}
-          />
+          <div className="container lg:px-28">
+            <Image
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
+              alt=""
+              className="rounded-3xl w-[100%]"
+              width={1500}
+              height={1500}
+            />
+          </div>
         </div>
-       </div>
         <ChallengeSection
           challenge="One significant challenge involved creating a schema that could effectively link multiple elements with each other. This required careful consideration of the relationships between different data components within the system to ensure efficient data management and retrieval. Implementing a secure and seamless payment process was another technical hurdle. The team needed to develop a solution that would allow trainers to accept payments directly into their wallets through the platform."
           solution="In order to address the aforementioned challenges, several technical solutions were implemented during the development of the project. Extensive discussions were held between the business owner, product analyst team and developers to identify the specific use cases. These discussions facilitated the thoughtful design of the schema, ensuring that every element of the project catered to the intended audience. MongoDB was chosen as the database solution due to its flexibility and built-in tools, which simplified the storage of dynamic data. For direct payment options, Stripe was selected as the payment aggregator. To provide users with the ability to connect their Stripe accounts, the Stripe Connect strategy was implemented. By utilizing the user's Stripe account, the platform was able to generate products on demand and securely process payments."

@@ -3,9 +3,8 @@ import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const SectionOne = dynamic(() =>
-  import("../../components/project/projectDetailOne.jsx")
-);
+import SectionOne from "../../components/project/projectDetailOne.jsx";
+
 const SectionTwo = dynamic(() =>
   import("../../components/project/sectionTwo.jsx")
 );

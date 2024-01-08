@@ -11,7 +11,7 @@ const Index = ({ text, image }) => {
           <Image  
          
             src={image}
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             width={1500}
             height={1500}
             className="lg:w-[70%] mx-auto"

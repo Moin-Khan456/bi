@@ -11,7 +11,7 @@ const Index = ({ carouselImages }) => {
           width={600} height={600}
               src="https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6450.png"
               className="w-[50%] flex items-center justify-center pl-4"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
             />
           </span>{" "}
           P R O F I L E
@@ -20,7 +20,7 @@ const Index = ({ carouselImages }) => {
           <Image  
           width={1000} height={1000}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group+6506.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             className="w-full"
           />
         </div>

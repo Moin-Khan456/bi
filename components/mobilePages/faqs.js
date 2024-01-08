@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function Faqs({faq}) {
+function Faqs({ faq }) {
   const collapsed = (id) => {
     const element = document.getElementById(id);
     element.classList.toggle("collapse-open");
@@ -15,7 +15,8 @@ function Faqs({faq}) {
           {faq?.map((el) => {
             return (
               <div key={el.id} className="collapse bg-opening mb-6">
-                <input type="checkbox" />
+                <label htmlFor="faq-checkbox" />
+                <input type="checkbox" id="faq-checkbox" />
                 <div className="collapse-title text-xl font-medium">
                   <div className="md:flex block justify-between items-center">
                     <div>
@@ -25,12 +26,12 @@ function Faqs({faq}) {
                     </div>
                     <div className="flex md:block my-4 md:my-0">
                       <button onClick={() => collapsed(el.id)} className="">
-                        <Image  
-         
+                        <Image
                           src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
                           className="cursor-pointer"
-                          alt=""
-                          width={40} height={40}
+                          alt="Custom Software Development Company | Application Development Company"
+                          width={40}
+                          height={40}
                         />
                       </button>
                     </div>

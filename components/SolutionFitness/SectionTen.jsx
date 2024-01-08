@@ -127,7 +127,7 @@ const DialogBox = ({ setClose, image }) => {
     >
       <Image
         src={image}
-        alt=""
+        alt="Custom Software Development Company | Application Development Company"
         width={800}
         height={600}
         className="animate__animated animate__zoomIn rounded-2xl"

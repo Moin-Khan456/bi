@@ -18,7 +18,7 @@ function choose(props) {
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon1.svg"
               className="text-center m-auto block w-16"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               width={40}
               height={40}
             />
@@ -28,7 +28,7 @@ function choose(props) {
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon2.svg"
               className="text-center m-auto block  w-16"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               width={40}
               height={40}
             />
@@ -40,7 +40,7 @@ function choose(props) {
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon3.svg"
               className="text-center m-auto block w-16"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               width={40}
               height={40}
             />
@@ -52,7 +52,7 @@ function choose(props) {
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon4.svg"
               className="text-center m-auto block w-16"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               width={40}
               height={40}
             />

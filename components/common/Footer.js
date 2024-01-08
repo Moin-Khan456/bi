@@ -445,7 +445,7 @@ export default function Footer() {
             <p>Follow us:</p>
             <div className="flex space-x-3 items-center ">
               <span className="cursor-pointer">
-                <a
+                <Link
                   href="https://www.facebook.com/BrainInventoryIndia/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -458,12 +458,12 @@ export default function Footer() {
                     height={28}
                     fetchPriority="low"
                     priority="low"
-                    alt=""
+                    alt="Custom Software Development Company"
                   />
-                </a>
+                </Link>
               </span>
               <span className="cursor-pointer">
-                <a
+                <Link
                   href="https://in.linkedin.com/company/braininventory"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -476,12 +476,12 @@ export default function Footer() {
                     height={28}
                     fetchPriority="low"
                     priority="low"
-                    alt=""
+                    alt="Custom Software Development Company"
                   />
-                </a>
+                </Link>
               </span>
               <span className="cursor-pointer">
-                <a
+                <Link
                   href="https://dribbble.com/brain_inventory"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -494,12 +494,12 @@ export default function Footer() {
                     height={24}
                     fetchPriority="low"
                     priority="low"
-                    alt=""
+                    alt="Custom Software Development Company"
                   />
-                </a>
+                </Link>
               </span>
               <span className="cursor-pointer">
-                <a
+                <Link
                   href="https://www.instagram.com/braininventory_com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -512,12 +512,12 @@ export default function Footer() {
                     height={24}
                     fetchPriority="low"
                     priority="low"
-                    alt=""
+                    alt="Custom Software Development Company"
                   />
-                </a>
+                </Link>
               </span>
               <span className="cursor-pointer">
-                <a
+                <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -530,9 +530,9 @@ export default function Footer() {
                     height={30}
                     fetchPriority="low"
                     priority="low"
-                    alt=""
+                    alt="Custom Software Development Company"
                   />
-                </a>
+                </Link>
               </span>
             </div>
           </div>

@@ -344,6 +344,7 @@ function Opening() {
             );
           })}
         </div>
+        <label htmlFor="my-modal" />
         <input type="checkbox" id="my-modal" className="modal-toggle" />
         <div className="modal">
           <form onSubmit={handleSubmit(sumbitContact)}>

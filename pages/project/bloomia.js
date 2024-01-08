@@ -238,7 +238,7 @@ const Bloomia = () => {
               <Image  
          
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-                alt=""
+                alt="Custom Software Development Company | Application Development Company"
                 width={600}
                 height={600}
                 className="rounded-3xl w-[50%] py-[5%] max-w-full flex justify-center"

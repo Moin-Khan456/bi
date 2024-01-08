@@ -283,7 +283,7 @@ function SocialMedia(props) {
             headAbove="Develop Your Own Social Solution"
             subheadAbove="Are you inspired by the success of these emerging platforms? There's no better time than now to step into the realm of social media with your own unique concept. Don't be daunted by the presence of Facebook and others."
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Mask+Group+166.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             customClasses="w-[450px] !bottom-0 max-w-[500px]"
             btn="BUILD YOUR SOCIAL MEDIA APP"
             classText="lg:text-3xl"

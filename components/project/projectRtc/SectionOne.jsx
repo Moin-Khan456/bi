@@ -19,7 +19,7 @@ const Index = ({ section }) => {
         <h1 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">
           Online{" "}
           <Image  
-          width={1500} height={1500} alt=""
+          width={1500} height={1500} alt="Custom Software Development Company | Application Development Company"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6405.png"
             className="w-1/6"
           />
@@ -32,7 +32,7 @@ const Index = ({ section }) => {
             <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">
               Made With&nbsp;&nbsp;&nbsp;
               <Image  
-          width={500} height={500} alt=""
+          width={500} height={500} alt="Custom Software Development Company | Application Development Company"
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png"
                 className="w-[10%] lg:w-[20%]"
               />

@@ -19,7 +19,7 @@ const Index = ({ }) => {
                 <Image  
          
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Mask%20Group%20176.png"
-                    alt=""
+                    alt="Custom Software Development Company | Application Development Company"
                     width={1500}
                     height={1500}
                     className="lg:w-[70%] mx-auto"
@@ -39,7 +39,7 @@ const Index = ({ }) => {
                 <Image  
          
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Perspective-App-Screens-Mock-Up-16.png"
-                    alt=""
+                    alt="Custom Software Development Company | Application Development Company"
                     width={1500}
                     height={1500}
                     className="lg:w-[80%] mx-auto"
@@ -51,7 +51,7 @@ const Index = ({ }) => {
                 <Image  
          
                     src="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group 6448.png"
-                    alt=""
+                    alt="Custom Software Development Company | Application Development Company"
                     width={1500}
                     height={1500}
                     className="w-full lg:w-[75%] pt-4 lg:pt-24"

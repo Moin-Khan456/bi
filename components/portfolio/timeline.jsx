@@ -178,7 +178,7 @@ function Timeline(props) {
               <Image  
          
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
-                alt=""
+                alt="Custom Software Development Company | Application Development Company"
                 width={1500}
                 height={1500}
                 className=" w-1/2"

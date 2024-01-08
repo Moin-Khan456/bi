@@ -24,7 +24,7 @@ const Index = ({ section }) => {
         <div className="flex justify-center py-8 items-center">
           <p>Made With</p> &nbsp;
           <Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="" width={25} height={25} />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="Custom Software Development Company | Application Development Company" width={25} height={25} />
         </div>
       </div>
     </main>

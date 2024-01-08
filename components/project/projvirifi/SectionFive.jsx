@@ -17,7 +17,7 @@ const Index = () => {
                   className="w-full"
                   width={2000}
                   height={500}
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6475.png"
                 />
               </div>
@@ -28,7 +28,7 @@ const Index = () => {
                   className="w-full"
                   width={2000}
                   height={500}
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6473.png"
                 />
               </div>
@@ -41,7 +41,7 @@ const Index = () => {
         <Image  
          
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 289.png"
-          alt=""
+          alt="Custom Software Development Company | Application Development Company"
           width={2000}
           height={100}
           className="w-full"

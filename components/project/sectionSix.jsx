@@ -7,7 +7,7 @@ const Index = () => {
             <div className="flex items-center">
                 <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12"/>
                 <Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6426.png" alt="" width={500} height={500} className='w-36 lg:w-60'/>
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6426.png" alt="Custom Software Development Company | Application Development Company" width={500} height={500} className='w-36 lg:w-60'/>
                 <h1 className='text-3xl lg:text-5xl font-bold Gilroy-SemiBold'> Website</h1>
             </div>
             <div className="px-12 lg:px-96 min-w-full">

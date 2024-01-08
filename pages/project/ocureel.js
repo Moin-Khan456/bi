@@ -196,7 +196,7 @@ const Virifi = () => {
         <div className="container">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             className="rounded-3xl w-[100vw] px-[10vw] py-[5vh]"
             width={500}
             height={500}

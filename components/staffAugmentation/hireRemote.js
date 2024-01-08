@@ -10,7 +10,7 @@ function HireRemote(props) {
           <div>
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               fetchPriority="low"
               priority="low"
               width={500}

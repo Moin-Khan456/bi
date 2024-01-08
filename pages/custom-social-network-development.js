@@ -125,10 +125,9 @@ function HireAangularJsDeveloper(props) {
                 {!localForm && (
                   <div className="w-full h-[70%] hidden lg:block">
                     <Image  
-         
                       src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6771.png"
                       priority={true}
-                      alt=""
+                      alt="Custom Software Development Company | Application Development Company"
                       width={150}
                       height={150}
                       className="animate-spin-slow"
@@ -149,7 +148,7 @@ function HireAangularJsDeveloper(props) {
                 <Image  
          
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                   width={1500}
                   height={1500}
                   className=" w-[35%]"

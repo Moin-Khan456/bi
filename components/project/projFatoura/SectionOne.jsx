@@ -20,7 +20,7 @@ const Index = ({ section }) => {
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group+6409.png" alt="trusted users" width={400} height={400} className="w-1/4 py-4" />
                 </div>
                 <Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/template.png" alt="" width={1000} height={1000} className="w-full lg:w-1/3 relative lg:-top-40 "/>
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/template.png" alt="Custom Software Development Company | Application Development Company" width={1000} height={1000} className="w-full lg:w-1/3 relative lg:-top-40 "/>
             </div>
         </div>
     );

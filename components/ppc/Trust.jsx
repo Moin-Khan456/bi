@@ -26,7 +26,7 @@ const TileMatrix = () => {
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
                 <p className="w-1/2 Gilroy-Smibold">Use case development</p>
               </div>
@@ -37,7 +37,7 @@ const TileMatrix = () => {
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
                 <p className="w-1/2 Gilroy-Smibold">
                   Network scaling and user engagement
@@ -50,7 +50,7 @@ const TileMatrix = () => {
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
                 <p className="w-1/2 Gilroy-Smibold">Go-to-market strategies</p>
               </div>
@@ -61,7 +61,7 @@ const TileMatrix = () => {
                   width={1500}
                   height={1500}
                   className="mx-8 my-2 w-[25%]"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
                 <p className="w-1/2 Gilroy-Smibold">
                   Bespoke user research programmes

@@ -12,7 +12,7 @@ const Index = ({ section }) => {
                 <h1 className="text-lg lg:text-2xl lg:w-[70%]">{section.brief} <span className="text-[#F39573]">{section.styleBrief}</span></h1>
                 <div className="lg:flex flex-col py-12">
                     <span className="flex justify-center items-center lg:justify-start px-4 text-xs py-8">Made With&nbsp;&nbsp;&nbsp;<Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt=""width={40} height={50} className="w-[10%] lg:w-[30px]" /></span>
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png" alt="Custom Software Development Company | Application Development Company"width={40} height={50} className="w-[10%] lg:w-[30px]" /></span>
                 </div>
             </div>
             <div className="flex lg:items-center justify-center lg:justify-end lg:w-[40%] mb-8">

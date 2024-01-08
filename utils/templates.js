@@ -118,7 +118,7 @@ export function thankYouForContactingWithSales(data) {
 													<table class="image_block" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td style="width:100%;padding-right:0px;padding-left:0px;padding-top:40px;padding-bottom:5px;">
-																<div align="center" style="line-height:10px"><a href="#"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/logo.png" style="display: block; height: auto; border: 0; width: 244px; max-width: 100%;" width="244" alt="" title=""></div>
+																<div align="center" style="line-height:10px"><a href="#"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/logo.png" style="display: block; height: auto; border: 0; width: 244px; max-width: 100%;" width="244" alt="Custom Software Development Company | Application Development Company" title=""></div>
 															</td>
 														</tr>
 													</table>

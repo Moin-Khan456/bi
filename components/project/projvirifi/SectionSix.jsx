@@ -15,7 +15,7 @@ const Index = () => {
               width={800}
               height={700}
               className="lg:scale-[1.3]  mt-24"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
             />
           </div>
           <div>
@@ -27,7 +27,7 @@ const Index = () => {
                   width={800}
                   height={500}
                   className="lg:px-24 mt-24"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
               <div>
@@ -37,7 +37,7 @@ const Index = () => {
                   width={800}
                   height={500}
                   className="lg:px-24 mt-24"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
               <div>
@@ -47,7 +47,7 @@ const Index = () => {
                   width={800}
                   height={500}
                   className="lg:px-24 mt-24"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
               <div>
@@ -57,7 +57,7 @@ const Index = () => {
                   width={800}
                   height={500}
                   className="lg:px-24 mt-24"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
             </div>

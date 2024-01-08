@@ -40,7 +40,7 @@ const Index = ({
                 src={src}
                 width={1800}
                 height={1800}
-                alt=""
+                alt="Custom Software Development Company | Application Development Company"
                 className={`m-auto block absolute bottom-0 right-10 max-w-[550px] w-[500px] ${customClasses}`}
               />
             )}

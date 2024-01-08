@@ -8,7 +8,7 @@ const Index = () => {
             <div className='lg:flex'>
             <div className="px-4 lg:px-48 lg:py-12">
                 <Image  
-          width={600} height={600} src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6473.png" className='' alt="" />
+          width={600} height={600} src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6473.png" className='' alt="Custom Software Development Company | Application Development Company" />
             </div>
             <div className="lg:flex flex-col text-2xl">
                 <div className="fatoura_gilroy_regular mt-8">

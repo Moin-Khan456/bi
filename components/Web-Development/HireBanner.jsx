@@ -89,7 +89,7 @@ export default function HireBanner({
                 src={image}
                 className="w-[100%] rounded-2xl bg-transparent"
                 fetchPriority="high"
-                alt=""
+                alt="Custom Software Development Company | Application Development Company"
                 width={500}
                 height={500}
               />

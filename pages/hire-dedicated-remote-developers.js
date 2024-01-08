@@ -93,7 +93,7 @@ export default function Hirededicatedremotedevelopers(props) {
           <div className="container lg:px-24">
             <Image  
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               priority="low"
               fetchPriority="low"
               width={500}
@@ -111,7 +111,7 @@ export default function Hirededicatedremotedevelopers(props) {
           <div className="container">
             <Image  
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/staff-image.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               fetchPriority="low"
               priority="low"
               width={500}

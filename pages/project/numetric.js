@@ -224,7 +224,7 @@ const Numetric = () => {
             <Image  
          
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               className="rounded-3xl w-[100%]"
               width={1500}
               height={1500}

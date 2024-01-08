@@ -12,7 +12,7 @@ const Index = () => {
           
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6436.png" 
                 width={800} 
-                height={200} className='w-full' alt="" />
+                height={200} className='w-full' alt="Custom Software Development Company | Application Development Company" />
             </div>
             </div>
         </div> 

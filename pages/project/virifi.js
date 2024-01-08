@@ -186,7 +186,7 @@ const Virifi = () => {
             className="lg:-mt-8 w-full"
             width={2000}
             height={100}
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
           />
         </div>
         <SectionTwo />
@@ -202,7 +202,7 @@ const Virifi = () => {
         <div className="flex w-full">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             width={2000}
             height={100}
             className="w-full"
@@ -226,7 +226,7 @@ const Virifi = () => {
               <div className="px-4 lg:px-48 lg:py-12 ">
                 <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6425.png"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                   width={1000}
                   height={800}
                   className="m-auto block"
@@ -240,7 +240,7 @@ const Virifi = () => {
           <div className="container lg:px-28">
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               className="rounded-3xl w-[100%]"
               width={1500}
               height={1500}

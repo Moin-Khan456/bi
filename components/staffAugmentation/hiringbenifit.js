@@ -34,7 +34,7 @@ function Hiringbenifit(props) {
           <div className="lg:w-[40%] lg:mt-0 mt-4">
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/globe.png"
-              alt=""
+              alt="Custom Software Development Company | Application Development Company"
               fetchPriority="low"
               priority="low"
               width={500}

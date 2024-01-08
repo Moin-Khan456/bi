@@ -26,7 +26,7 @@ const Index = () => {
         </div>
         <div className="flex justify-center w-full">
           <Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/Image+2.png" alt="" width={1000} height={1000} />
+          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/Image+2.png" alt="Custom Software Development Company | Application Development Company" width={1000} height={1000} />
         </div>
       </div>
     </>

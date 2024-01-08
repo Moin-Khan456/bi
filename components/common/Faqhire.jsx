@@ -15,7 +15,8 @@ function FaqHire({ faq }) {
                     {faq?.map((el) => {
                         return (
                             <section key={el.id} className="collapse bg-opening mb-6 rounded-2xl">
-                                <input type="checkbox" />
+                            <label htmlFor="opening-checkbox" />
+                                <input type="checkbox" id="opening-checkbox" />
                                 <section className="collapse-title text-xl font-medium">
                                     <section className="md:flex block justify-between items-center">
                                         <section>

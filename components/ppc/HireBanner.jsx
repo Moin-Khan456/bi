@@ -48,7 +48,7 @@ export default function HireBanner({
                   height={600}
                   priority={true}
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6755.png"
-                  alt=""
+                  alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
               <h1 className="text-4xl leading-[3rem] Gilroy-Bold font-bold text-center lg:text-start lg:my-2">
@@ -75,7 +75,7 @@ export default function HireBanner({
           </div>
           <div className="max-w-full">
             <div className="lg:-mt-14 mr-14 lg:mr-0 -ml-8 lg:ml-0 bg-none w-full flex justify-center lg:block">
-              <Image width={750} height={750} src={image} alt="" />
+              <Image width={750} height={750} src={image} alt="Custom Software Development Company | Application Development Company" />
             </div>
           </div>
         </div>
@@ -580,7 +580,7 @@ const Popup = ({ setPop, country }) => {
                 width={500}
                 height={400}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/ILLUSTRATION.png"
-                alt=""
+                alt="Custom Software Development Company | Application Development Company"
               />
             </div>
           </div>

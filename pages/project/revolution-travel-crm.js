@@ -256,7 +256,7 @@ const Fatoura = () => {
             width={500}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6533.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             className="w-[34rem]"
           />
         </div>
@@ -265,7 +265,7 @@ const Fatoura = () => {
             width={1500}
             height={1500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6535.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             className="w-full"
           />
         </div>
@@ -276,7 +276,7 @@ const Fatoura = () => {
           width={500}
           height={500}
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
-          alt=""
+          alt="Custom Software Development Company | Application Development Company"
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%]"
         />
       </div>

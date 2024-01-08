@@ -15,7 +15,7 @@ const Index = ({ para1, para2, para3, type }) => {
             width={700}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             className="w-96 lg:w-[40%] h-full rounded-2xl"
           />
         ) : (

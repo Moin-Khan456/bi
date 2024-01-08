@@ -9,7 +9,7 @@ const Index = () => {
           <Image  
          
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6516.png"
-            alt=""
+            alt="Custom Software Development Company | Application Development Company"
             width={500}
             height={500}
             className="h-12 lg:h-32 mx-4"

@@ -25,11 +25,12 @@ export default function BlogArticle() {
               <section className="">
                 <button
                   type="button"
+                  role="presentation"
                   className="border-2 border-white p-4 m-2 rounded-full"
                 >
                   <IoMdArrowBack />
                 </button>
-                <button type="button" className="border-2 border-white p-4 m-2 rounded-full">
+                <button role="presentation" type="button" className="border-2 border-white p-4 m-2 rounded-full">
                   <IoMdArrowForward />
                 </button>
               </section>

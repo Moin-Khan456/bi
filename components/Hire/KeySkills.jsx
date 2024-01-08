@@ -1,5 +1,5 @@
 import React from "react";
-import {IoMdArrowForward} from "react-icons/io"
+import { IoMdArrowForward } from "react-icons/io";
 
 export default function KeySkill({ breif, points }) {
   const point1 = points.slice(0, points.length / 2);
@@ -15,31 +15,21 @@ export default function KeySkill({ breif, points }) {
           <section className="hidden lg:flex justify-between lg:pr-72">
             <section>
               <ul className="team-list">
-                {point1.map((ele) => (
-                  <>
+                {point1.map((ele, index) => (
+                  <li key={index + 1}>
                     <br />
-                    <li>
-                    <IoMdArrowForward/>{" "}
-                      {ele}
-                    </li>
-                  </>
+                    <IoMdArrowForward /> {ele}
+                  </li>
                 ))}
               </ul>
             </section>
             <section>
               <ul className="team-list">
-                {point2.map(
-                  (ele) =>
-                    (
-                      <>
-                        <br />
-                        <li>
-                          {" "}<IoMdArrowForward/>{" "}
-                          {ele}
-                        </li>
-                      </>
-                    )
-                )}
+                {point2.map((ele, index) => (
+                  <li key={index + 1}>
+                    <br /> <IoMdArrowForward /> {ele}
+                  </li>
+                ))}
               </ul>
             </section>
           </section>
@@ -47,15 +37,10 @@ export default function KeySkill({ breif, points }) {
           <section className="grid grid-cols-1 lg:hidden">
             <section>
               <ul className="team-list">
-                {points.map((ele) => (
-                  <>
-                    <br />
-                    <li>
-                      {" "}
-                      <IoMdArrowForward/>{" "}
-                      {ele}
-                    </li>
-                  </>
+                {points.map((ele, index) => (
+                  <li key={index + 1}>
+                    <br /> <IoMdArrowForward /> {ele}
+                  </li>
                 ))}
               </ul>
             </section>

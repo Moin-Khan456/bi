@@ -373,7 +373,7 @@ function EdTech(props) {
         description={sectionFiveDesc}
         sectionFiveTableHead={sectionFiveTableHead}
         sectionFiveTable={sectionFiveTable}
-        alt="Educational Applications Development Services"
+        alt="Rise of Transportation and Logistics Management"
       />
       <SectionSix
         title="Ready to start your journey with a transformative education platform?"

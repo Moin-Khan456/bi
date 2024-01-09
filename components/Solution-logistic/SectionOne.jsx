@@ -28,7 +28,7 @@ export default function HireBanner() {
         <section className="pt-0 ed-tech-dropshadow relative z-10 right-0 hidden lg:block">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Transport+%26+logistics/Transport+%26+logistics/Frame+7197.png"
-            alt="Custom Web Development"
+            alt="Transportation and Logistics Software Development Services"
             className={`rounded-2xl w-full ed-tech-dropshadow absolute top-20 left-0 right-0`}
             fetchPriority="high"
             width={1900}

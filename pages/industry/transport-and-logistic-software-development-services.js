@@ -290,19 +290,19 @@ function Logistic(props) {
     <>
       <Head>
         <title>
-          Transport and Logistic Software Development Services - Brain Inventory
+          Transport and Logistic Software Development Services
         </title>
         <meta
           property="description"
-          content="Brain Inventory is a leading Transport and Logistic software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Experience innovation with brain inventory, get effortless operations with transportation and logistics software development services. Reach out to us today!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading Transport and Logistic software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Experience innovation with brain inventory, get effortless operations with transportation and logistics software development services. Reach out to us today!"
         />
         <meta
           name="og:title"
-          content="Transport and Logistic Software Development Services - Brain Inventory"
+          content="Transport and Logistic Software Development Services"
         />
         <meta
           property="og:image"
@@ -366,7 +366,7 @@ function Logistic(props) {
         slow={70000}
         fast={55000}
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Transport+%26+logistics/Transport+%26+logistics/Group+7190.png"
-        alt={"Supply Chain Industry Development Services"}
+        alt={"Transportation and Logistics Software Development "}
       />
       <PlatformDevelopment
         data={keyFeatures}

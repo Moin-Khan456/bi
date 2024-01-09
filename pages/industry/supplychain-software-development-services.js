@@ -323,11 +323,11 @@ function SupplyChain(props) {
         </title>
         <meta
           property="description"
-          content="Brain Inventory is a leading Supplychain software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Brain Inventory is a leading supply chain software development company. Streamline operations, enhance visibility, and optimize logistics seamlessly. Contact us!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading Supplychain software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Brain Inventory is a leading supply chain software development company. Streamline operations, enhance visibility, and optimize logistics seamlessly. Contact us!"
         />
         <meta
           name="og:title"

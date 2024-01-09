@@ -294,11 +294,11 @@ function Travel(props) {
         </title>
         <meta
           property="description"
-          content="Brain Inventory offers a Real Estate software development service for the Real Estate industry that streamlines operations and enhances customer experiences. Contact us!"
+          content="Brain Inventory is the best real estate software and mobile app development company. Contact us to elevate business operations and client relations. Call now!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers a Real Estate software development service for the Real Estate industry that streamlines operations and enhances customer experiences. Contact us!"
+          content="Brain Inventory is the best real estate software and mobile app development company. Contact us to elevate business operations and client relations. Call now!"
         />
         <meta
           name="og:title"

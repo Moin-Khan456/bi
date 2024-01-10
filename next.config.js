@@ -1,6 +1,7 @@
 const TerserPlugin = require("terser-webpack-plugin");
 const redirectionsPage = require("./utils/redirection");
 module.exports = {
+  compress: true,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       config.optimization.minimize = true;

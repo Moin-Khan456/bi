@@ -2,9 +2,7 @@ import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
-const HomeSectionOne = dynamic(() =>
-  import("../components/home/HomeSection-1.js")
-);
+import HomeSectionOne from "../components/home/HomeSection-1.js";
 const HomeSectionThree = dynamic(() =>
   import("../components/home/HomeSection-3.js")
 );
@@ -37,15 +35,7 @@ const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
-export default function Home() {
-  const [loading, setLoading] = useState(true);
-  const [position, setPostion] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
-
+function Home() {
   return (
     <>
       <Head>
@@ -79,32 +69,46 @@ export default function Home() {
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ImageObject",
-          "url": "https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_homepage+preview+image.png",
-          "width": 800,
-          "height": 600,
-          "alt": "Custom Software Development Company",
-          "caption": "Custom Software Development Company"
-        }) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Brain Inventory Pvt Ltd",
-          "alternateName": "Brain Inventory",
-          "url": "https://braininventory.in",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://braininventory.in/?s={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        }) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ImageObject",
+              url: "https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_homepage+preview+image.png",
+              width: 800,
+              height: 600,
+              alt: "Custom Software Development Company",
+              caption: "Custom Software Development Company",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Brain Inventory Pvt Ltd",
+              alternateName: "Brain Inventory",
+              url: "https://braininventory.in",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate:
+                    "https://braininventory.in/?s={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
 
-        <link rel="icon" href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png" />
+        <link
+          rel="icon"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png"
+        />
         <link rel="canonical" href="https://braininventory.in" />
       </Head>
       <Suspense fallback={null}>
@@ -134,3 +138,4 @@ export default function Home() {
     </>
   );
 }
+export default Home;

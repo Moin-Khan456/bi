@@ -144,6 +144,12 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/php-development-company"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+1.png"
+          as="image"
+        />
       </Head>
       <Suspense fallback={{/*<Loader />*/}}>
         <main>

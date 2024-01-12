@@ -136,6 +136,13 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/codeigniter-development-services"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
+          as="image"
+        />
+
       </Head>
       <Suspense fallback={{/*<Loader />*/}}>
         <div className="">

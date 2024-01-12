@@ -132,6 +132,12 @@ https://braininventory.in/web-development/python-development-company"
           rel="canonical"
           href="https://braininventory.in/web-development/python-development-company"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+1.png"
+          as="image"
+        />
       </Head>
       <Suspense fallback={{/*<Loader />*/}}>
         <div className="">

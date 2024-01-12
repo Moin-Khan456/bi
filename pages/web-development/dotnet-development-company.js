@@ -142,6 +142,13 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/dotnet-development-company"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
+          as="image"
+        />
+
       </Head>
       <Suspense fallback={{/*<Loader />*/}}>
         <div className="relative">

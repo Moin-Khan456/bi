@@ -39,7 +39,7 @@ export default function HireBanner({
                 <section>
                     <aside className="lg:mb-0 mb-6 bg-none max-w-full">
                         <Image  
-         
+                            preload="metadata"
                             src={image}
                             className="w-full rounded-2xl"
                             width={700}

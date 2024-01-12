@@ -139,6 +139,12 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/vue-js-development-company"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6461.png"
+          as="image"
+        />
       </Head>
       {/*<Loader />*/}
       <div className="">

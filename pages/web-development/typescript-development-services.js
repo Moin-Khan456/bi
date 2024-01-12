@@ -167,6 +167,12 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/typescript-development-services"
         />
+        <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+168.png"
+          as="image"
+        />
       </Head>
       {/*<Loader />*/}
       <div className="">

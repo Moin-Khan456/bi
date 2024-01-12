@@ -133,6 +133,12 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/laravel-development-company"
         />
+         <link
+          rel="preload"
+          fetchpriority="high"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+170+(1).png"
+          as="image"
+        />
       </Head>
       <Suspense fallback={{/*<Loader />*/}}>
         <div className="">

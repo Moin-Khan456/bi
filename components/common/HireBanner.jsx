@@ -4,9 +4,6 @@ import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
 import "aos/dist/aos.css";
 
-const imageLoader = () => {
-  return "/loader.jpg";
-};
 export default function HireBanner({
   heading,
   subhead,
@@ -142,7 +139,6 @@ export default function HireBanner({
                 className={`rounded-2xl ${
                   type === "hire" ? "w-[700px]" : "w-[100%]"
                 }`}
-                loader={imageLoader}
                 blurDataURL="/loader.jpg"
                 placeholder="blur"
                 fetchPriority="high"

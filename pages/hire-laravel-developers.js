@@ -216,6 +216,7 @@ function HireAangularJsDeveloper(props) {
             subhead="A Smarter Way to Build Customized Applications."
             title="Hire Laravel"
             content={content}
+            unique={"developer"}
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/laravel/Group+6232.png"
             alt="Hire Dedicated Laravel Developers"

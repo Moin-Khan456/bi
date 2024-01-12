@@ -190,6 +190,7 @@ function HireAangularJsDeveloper() {
           title="Hire Next.js"
           content={content}
           btn="Contact Us!"
+          unique={"developer"}
           image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+NextJS+Developers.png"
           alt="Remote Next.js Developers"
           type="hire"

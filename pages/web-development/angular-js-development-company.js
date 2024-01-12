@@ -10,9 +10,7 @@ const ContactForm = dynamic(() =>
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() =>
-  import("../../components/Web-Development/PageIntro.jsx")
-);
+import SectionOne from "../../components/Web-Development/PageIntro.jsx";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -138,7 +136,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/web-development/angular-js-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative ">
           <Header />
           <div className="pt-32">
@@ -160,7 +164,7 @@ function HireAangularJsDeveloper(props) {
               title="Why AngularJS Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory reasons={chooseBI} /> 
+            <ChooseBraininventory reasons={chooseBI} />
             <Industries />
             <FaqHire faq={faqdetails} />
             <BlogArticle />

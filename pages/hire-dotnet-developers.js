@@ -186,6 +186,7 @@ function HireAangularJsDeveloper(props) {
               subhead="Upgrade Your Development Process With Our Expertise"
               title="Hire .NET"
               content={content}
+              unique={"developer"}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/dotnet/1.png"
               alt="Ionic development company"

@@ -200,6 +200,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire React Native "
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+React+Native+Developers.png"
               alt="React Native development company"
               type="hire"

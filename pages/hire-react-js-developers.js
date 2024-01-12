@@ -202,6 +202,7 @@ function HireAangularJsDeveloper(props) {
             title="Hire ReactJS "
             content={content}
             btn="Contact Us!"
+            unique={"developer"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+react+js+developers.png"
             alt="Hire ReactJS Developers"
             type="hire"

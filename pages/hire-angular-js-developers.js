@@ -207,6 +207,7 @@ function HireAangularJsDeveloper(props) {
               subtitle="Talent On-Demand"
               content={content}
               card={card}
+              unique={"developer"}
               type="hire"
               alt="Hire AngularJS Developers"
             />

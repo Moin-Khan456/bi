@@ -11,7 +11,7 @@ const HireMarquee = dynamic(() =>
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() => import("../../components/common/HireBanner"));
+import SectionOne from "../../components/common/HireBanner";
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")

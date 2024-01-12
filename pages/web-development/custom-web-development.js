@@ -10,7 +10,7 @@ const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
-const SectionOne = dynamic(() => import("../../components/common/HireBanner"));
+import SectionOne from "../../components/common/HireBanner";
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
@@ -23,7 +23,6 @@ const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventoryCustom.jsx")
 );
-const FindUs = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );

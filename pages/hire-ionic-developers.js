@@ -176,6 +176,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Ionic"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+162.png"
               alt="Ionic development company"
               type="hire"

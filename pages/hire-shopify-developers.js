@@ -201,6 +201,7 @@ function HireAangularJsDeveloper(props) {
             subhead="A Smarter Way to Build Customized Applications."
             title="Hire Shopify"
             content={content}
+            unique={"developer"}
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/shopify/Mask+Group+159.png"
             alt="Hire Dedicated Laravel Developers"

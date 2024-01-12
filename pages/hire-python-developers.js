@@ -216,6 +216,7 @@ function HireAangularJsDeveloper(props) {
               heading="A Smarter Way to Build Customized Applications."
               title="Hire Python"
               content={content}
+              unique={"developer"}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Dedicated Python Programmers"

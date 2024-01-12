@@ -182,6 +182,7 @@ function HireAangularJsDeveloper(props) {
             title="Hire PHP"
             content={content}
             btn="Contact Us!"
+            unique={"developer"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Brainventory_PHP+developers+1.png"
             alt="Hire Dedicated PHP Developer"
           />

@@ -10,17 +10,12 @@ const ContactForm = dynamic(() =>
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() =>
-  import("../../components/Web-Development/PageIntro.jsx")
-);
+import SectionOne from "../../components/Web-Development/PageIntro.jsx";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
 );
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")

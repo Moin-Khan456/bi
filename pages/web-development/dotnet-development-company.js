@@ -1,12 +1,10 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import OurDevelopers from "../../components/Hire/OurDevelopers";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")
 );
@@ -18,15 +16,11 @@ const AdvantageVerticalCards = dynamic(() =>
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee")
 );
-const KeySkill = dynamic(() =>
-  import("../../components/Hire/KeySkillsCards.jsx")
-);
 const Experienced = dynamic(() =>
   import("../../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../../components/common/FindUs"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const HireBanner = dynamic(() => import("../../components/common/HireBanner"));
+import  HireBanner from "../../components/common/HireBanner";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );

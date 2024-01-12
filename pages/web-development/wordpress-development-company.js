@@ -21,9 +21,7 @@ const Experienced = dynamic(() =>
   import("../../components/Web-Development/Experienced")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() =>
-  import("../../components/common/HireBanner.jsx")
-);
+import SectionOne from "../../components/common/HireBanner.jsx";
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
@@ -41,8 +39,6 @@ function HireAangularJsDeveloper(props) {
     "Its extensive library of themes and plugins offers versatility and functionality, making it suitable for a wide range of purposes. Moreover, WordPress is known for its search engine optimization (SEO) capabilities, which can help improve your website's visibility on search engines, attracting more organic traffic and potential customers. Its responsive design ensures your website looks and functions well on various devices, catering to the growing mobile user base.";
   const subhead3 =
     "WordPress offers a robust content management system (CMS) that simplifies content creation and management, allowing you to effortlessly update your website with fresh content, images, and multimedia.";
-
- 
 
   const hireCards = [
     {
@@ -99,11 +95,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const [position, setPostion] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
+
   const advantages = [
     "WordPress offers a wide range of themes and plugins that allow you to customize your website's appearance and functionality to meet your specific needs.",
     "WordPress is inherently SEO-friendly. It generates clean and structured code, offers SEO plugins, and allows you to optimize content easily, helping improve your website's visibility on search engines.",
@@ -147,7 +139,6 @@ function HireAangularJsDeveloper(props) {
           href=" https://braininventory.in/web-development/wordpress-development-company"
         />
       </Head>
-      {/*<Loader />*/}
       <main className="">
         <section>
           <Header />
@@ -163,38 +154,37 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-          {position && (
-            <>
-              <Experienced
-                title="WordPress Website Development"
-                type="why"
-                image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+2.png"
-                alt="WordPress Website Development Company"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="wordpress website development" />
-              <Advantage
-                title="WordPress Website Development"
-                subhead="WordPress website development offers numerous benefits, making it a popular choice for businesses and individuals alike. Here are some of the key advantages:"
-                reasons={advantages}
-              />
-              <Hire
-                title="Why to Choose %Brain Inventory% for WordPress Project Development?"
-                card={hireCards}
-              />
-              
-              <ChooseBraininventory reasons={chooseBI} alt="WordPress website development services" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
-            </>
-          )}
+          <Experienced
+            title="WordPress Website Development"
+            type="why"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+2.png"
+            alt="WordPress Website Development Company"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="wordpress website development" />
+          <Advantage
+            title="WordPress Website Development"
+            subhead="WordPress website development offers numerous benefits, making it a popular choice for businesses and individuals alike. Here are some of the key advantages:"
+            reasons={advantages}
+          />
+          <Hire
+            title="Why to Choose %Brain Inventory% for WordPress Project Development?"
+            card={hireCards}
+          />
+
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="WordPress website development services"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </section>
       </main>
     </>

@@ -180,6 +180,7 @@ function HireAangularJsDeveloper(props) {
             title="Hire MERN Stack"
             content={content}
             btn="Contact Us!"
+            unique={"developer"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+MERN+Developers.png"
             alt="MERN stack development company"
             type="hire"

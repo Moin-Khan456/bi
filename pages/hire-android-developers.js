@@ -193,6 +193,7 @@ function HireAangularJsDeveloper(props) {
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Android+Developers.png"
               alt="Hire Android App Developers & Programmers"
               type="hire"
+              unique={"developer"}
             />{" "}
             <Customer />
             <Experienced

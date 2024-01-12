@@ -181,6 +181,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Vue js"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
               alt="Vue.js Development Company"
               type="hire"

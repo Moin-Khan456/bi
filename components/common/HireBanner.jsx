@@ -105,7 +105,7 @@ export default function HireBanner({
           )}
         </section>
         <section>
-          {/* {card ? ( */}
+          {unique === "developer" || unique === "analyst" || unique === "design" ? (
           <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
             <section className="started-subcription">
               <p className="Gilroy-Bold text-lg">Get Started Within</p>
@@ -125,7 +125,7 @@ export default function HireBanner({
               </ul>
             </section>
           </section>
-          {/* ) : (
+          ) : (
             <section
               className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
                 type?.match("php") && "drop-shadow-image"
@@ -143,7 +143,7 @@ export default function HireBanner({
                 alt={alt}
               />
             </section>
-          )} */}
+          )}
         </section>
       </section>
     </main>

@@ -184,6 +184,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire Full Stack"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Hire Full stack developers and programmers"
             />

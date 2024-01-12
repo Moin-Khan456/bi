@@ -190,6 +190,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire NodeJS"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Node+JS+Developers.png"
               alt="Remote Node.js Developers"
               type="hire"

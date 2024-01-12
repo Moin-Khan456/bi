@@ -176,6 +176,7 @@ function HireAangularJsDeveloper(props) {
               title="Hire iOS"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+iOS+Developers.png"
               alt="iOS app development services"
               type="hire"

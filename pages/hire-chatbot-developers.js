@@ -222,6 +222,7 @@ https://braininventory.in/hire-chatbot-developers"
               title="Hire Chatbot"
               content={content}
               btn="Contact Us!"
+              unique={"developer"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_hire+chatbot+developers+1.png"
               alt="Hire Dedicated Chatbot Developers"
             />

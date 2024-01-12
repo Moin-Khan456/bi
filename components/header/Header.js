@@ -586,72 +586,72 @@ const Industry = () => {
   const solutionLinks = [
     {
       _id: 2,
-      name: "Fitness App Development",
+      name: "Fitness Software Development",
       link: "/industry/fitness-software-development-company",
     },
     {
       _id: 3,
-      name: "Healthcare App Development",
+      name: "Healthcare Software Development",
       link: "/industry/healthcare-software-development-services",
     },
     {
       _id: 4,
-      name: "Blockchain App Development",
+      name: "Blockchain Software Development",
       link: "/industry/blockchain-development-services",
     },
     {
       _id: 5,
-      name: "Accounting App Development",
+      name: "Accounting Software Development",
       link: "/industry/accounting-software-development-services",
     },
     {
       _id: 6,
-      name: "Marketplace App Development",
+      name: "Marketplace Software Development",
       link: "/industry/marketplace-software-development-services",
     },
     {
       _id: 7,
-      name: "Ed Tech App Development",
+      name: "Ed Tech Software Development",
       link: "/industry/edtech-software-development-services",
     },
     {
       _id: 8,
-      name: "Travel App Development",
+      name: "Travel Software Development",
       link: "/industry/travel-software-development-services",
     },
     {
       _id: 9,
-      name: "CRM App Development",
+      name: "CRM Software Development",
       link: "/industry/crm-software-development-services",
     },
     {
       _id: 10,
-      name: "Ecommerce App Development",
+      name: "Ecommerce Software Development",
       link: "/industry/ecommerce-software-development-services",
     },
     {
       _id: 11,
-      name: "Energy & Utility App Development",
+      name: "Energy & Utility Software Development",
       link: "/industry/energy-and-utility-software-development-services",
     },
     {
       _id: 12,
-      name: "Meeting & Event Planning App Development",
+      name: "Meeting & Event Planning Software Development",
       link: "/industry/meeting-and-event-planning-software-development-services",
     },
     {
       _id: 13,
-      name: "Supplychain App Development",
+      name: "Supplychain Software Development",
       link: "/industry/supplychain-software-development-services",
     },
     {
       _id: 14,
-      name: "Transport and Logistic App Development",
+      name: "Transport and Logistic Software Development",
       link: "/industry/transport-and-logistic-software-development-services",
     },
     {
       _id: 15,
-      name: "Real Estate App Development",
+      name: "Real Estate Software Development",
       link: "/industry/real-estate-software-development-services",
     },
   ];

@@ -21,10 +21,7 @@ const Experienced = dynamic(() =>
   import("../../components/Web-Development/Experienced")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() =>
-  import("../../components/common/HireBanner.jsx")
-);
-const Hello = dynamic(() => import("../../components/common/FindUs"));
+import SectionOne from "../../components/common/HireBanner.jsx";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );

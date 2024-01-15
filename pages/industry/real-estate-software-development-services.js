@@ -393,15 +393,16 @@ function Travel(props) {
           <SectionTen
             oneName={"revolution travel crm"}
             oneVideo={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/RTC/RTC.mp4"
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Braininventory_real+estate+mockup+video+1.mp4"
             }
-            oneLink={"/project/revolution-travel-crm"}
+            oneLink={null}
+            oneImage={"https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+1.png"}
             twoName={"OUTING"}
             twoVideo={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/Dummy-1/travel.mp4"
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Braininventory_real+estate+mockup+video+2.mp4"
             }
             twoImage={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Travel/Dummy-1/Travel.png"
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+1.png"
             }
             twoLink={null}
             alt="Our Work"

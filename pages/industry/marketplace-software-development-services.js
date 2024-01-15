@@ -389,7 +389,7 @@ function MarketPlace(props) {
       <SectionTen
         oneName={"jeyab"}
         oneVideo={
-          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+1.mp4"
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Jeyab/Braininventory_marketplace+video.mp4"
         }
         oneLink={null}
         twoName={"SHOPMART"}

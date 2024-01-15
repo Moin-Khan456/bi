@@ -402,7 +402,7 @@ function Travel(props) {
               "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Braininventory_real+estate+mockup+video+2.mp4"
             }
             twoImage={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+1.png"
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+2.png"
             }
             twoLink={null}
             alt="Our Work"

@@ -396,6 +396,9 @@ function MarketPlace(props) {
         twoVideo={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+1.mp4"
         }
+        oneImage={
+          "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Jeyab/marketplace-2.png"
+        }
         twoImage={
           "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Marketplace/Dummy+1/Marketplace+mockup.png"
         }

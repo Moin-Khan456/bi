@@ -21,7 +21,7 @@ const Experienced = dynamic(() =>
   import("../../components/Mobile-Development/Experienced")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const SectionOne = dynamic(() => import("../../components/common/HireBanner"));
+import SectionOne from "../../components/Mobile-Development/SectionOne";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -164,12 +164,18 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/ionic-app-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <SectionOne
             subhead="A Smarter Way to Build Customized Applications."
-            title="Ionic App Development"
+            title="Ionic App"
             content={content}
             btn="Contact Us!"
             developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
@@ -198,7 +204,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Ionic App Development from %Brain Inventory"
             card={hireCards}
           />
-          
+
           <ChooseBraininventory
             reasons={chooseBI}
             alt="hybrid development company"

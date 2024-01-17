@@ -34,7 +34,8 @@ const Banner = () => {
         <div className="w-1/2 h-full lg:flex justify-center items-center hidden">
           <div className="w-[600px] h-[450px]  relative">
             <Image  
-         
+              width={1000}
+              height={900}
               src={"https://braininventory.s3.us-east-2.amazonaws.com/images/carrer.png"}
               alt="Career at Brain Inventory"
             />

@@ -21,7 +21,7 @@ const HireDedicatedCard = ({ setLocal }) => {
   }, [isOpen, setLocal]);
   return (
     <>
-       <div
+      <div
         ref={animationRef}
         className={`relative animate__animated ${
           isOpen ? "animate__bounceInRight" : "animate__bounceOutRight"
@@ -30,7 +30,7 @@ const HireDedicatedCard = ({ setLocal }) => {
         <h2 className="text-lg font-bold">
           Hire Dedicated Remote Developers From Brain Inventory
         </h2>
-        <span className="flex justify-end absolute top-1 right-4 text-white">
+        <span className="flex justify-end absolute top-1 right-4 text-white cursor-pointer">
           <FaRegWindowMinimize
             onClick={() => {
               setIsOpen(false);

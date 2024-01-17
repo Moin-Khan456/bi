@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 const Index = ({ para1, para2, para3, title, image }) => {
   return (
-    <main className="container px-4 lg:px-24 pt-28 lg:pt-32 lg:pb-20">
+    <main className="container px-4 lg:px-24">
       <h1 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
         Why you may need a <span className="text-[#7600EB]"> {title}</span>{" "}
         solution?
@@ -10,7 +10,6 @@ const Index = ({ para1, para2, para3, title, image }) => {
       <section className="grid xs:grid-rows-1 lg:grid-cols-2 gap-x-2 pt-8 w-full">
         <aside className="w-[75%]">
           <Image  
-         
             src={image}
             alt="Custom Software Development Company | Hire Dedicated Software Developers"
             width={700}

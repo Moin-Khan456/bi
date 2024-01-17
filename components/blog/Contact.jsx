@@ -51,7 +51,7 @@ const Contact = () => {
             className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
             placeholder="You should have a name"
           />
-          <p className="text-red-500 text-xl absolute right-2">
+          <p className="text-red-500 text-xl absolute -right-10 ">
             <ErrorMessage name="name" />
           </p>
         </div>
@@ -62,7 +62,7 @@ const Contact = () => {
               className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="Obviously, an email"
             />
-            <p className="text-red-500 text-xl absolute right-2">
+            <p className="text-red-500 text-xl absolute -right-10 ">
               <ErrorMessage name="email" />
             </p>
           </div>
@@ -73,7 +73,7 @@ const Contact = () => {
               className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="Your contact number"
             />
-            <p className="text-red-500 text-xl absolute right-2">
+            <p className="text-red-500 text-xl absolute -right-10 ">
               <ErrorMessage name="number" />
             </p>
           </div>
@@ -84,7 +84,7 @@ const Contact = () => {
             className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
             placeholder="What's your company name?"
           />
-          <p className="text-red-500 text-xl absolute right-2">
+          <p className="text-red-500 text-xl absolute -right-10 ">
             <ErrorMessage name="companyName" />
           </p>
         </div>
@@ -95,7 +95,7 @@ const Contact = () => {
             className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
             placeholder="Tell us, Everything!"
           />
-          <p className="text-red-500 text-xl absolute right-2">
+          <p className="text-red-500 text-xl absolute -right-10 ">
             <ErrorMessage name="feedback" />
           </p>
         </div>

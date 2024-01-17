@@ -85,7 +85,7 @@ const Header = () => {
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase lg:block hidden">
-                    <Link href="/contact">request A Quote</Link>
+                    <Link href="/contact#contact">request A Quote</Link>
                   </p>
                   <span
                     onClick={() => {
@@ -116,7 +116,7 @@ const Header = () => {
               <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase mobile-none">
-                    <Link href="/contact">request A Quote</Link>
+                    <Link href="/contact#contact">request A Quote</Link>
                   </p>
                   <span
                     onClick={() => {
@@ -586,72 +586,72 @@ const Industry = () => {
   const solutionLinks = [
     {
       _id: 2,
-      name: "Fitness Software Development",
+      name: "Fitness",
       link: "/industry/fitness-software-development-company",
     },
     {
       _id: 3,
-      name: "Healthcare Software Development",
+      name: "Healthcare",
       link: "/industry/healthcare-software-development-services",
     },
     {
       _id: 4,
-      name: "Blockchain Software Development",
+      name: "Blockchain",
       link: "/industry/blockchain-development-services",
     },
     {
       _id: 5,
-      name: "Accounting Software Development",
+      name: "Accounting",
       link: "/industry/accounting-software-development-services",
     },
     {
       _id: 6,
-      name: "Marketplace Software Development",
+      name: "Marketplace",
       link: "/industry/marketplace-software-development-services",
     },
     {
       _id: 7,
-      name: "Ed Tech Software Development",
+      name: "Ed Tech",
       link: "/industry/edtech-software-development-services",
     },
     {
       _id: 8,
-      name: "Travel Software Development",
+      name: "Travel",
       link: "/industry/travel-software-development-services",
     },
     {
       _id: 9,
-      name: "CRM Software Development",
+      name: "CRM",
       link: "/industry/crm-software-development-services",
     },
     {
       _id: 10,
-      name: "Ecommerce Software Development",
+      name: "Ecommerce",
       link: "/industry/ecommerce-software-development-services",
     },
     {
       _id: 11,
-      name: "Energy & Utility Software Development",
+      name: "Energy & Utility",
       link: "/industry/energy-and-utility-software-development-services",
     },
     {
       _id: 12,
-      name: "Meeting & Event Planning Software Development",
+      name: "Meeting & Event Planning",
       link: "/industry/meeting-and-event-planning-software-development-services",
     },
     {
       _id: 13,
-      name: "Supplychain Software Development",
+      name: "Supplychain",
       link: "/industry/supplychain-software-development-services",
     },
     {
       _id: 14,
-      name: "Transport and Logistic Software Development",
+      name: "Transport and Logistic",
       link: "/industry/transport-and-logistic-software-development-services",
     },
     {
       _id: 15,
-      name: "Real Estate Software Development",
+      name: "Real Estate",
       link: "/industry/real-estate-software-development-services",
     },
   ];

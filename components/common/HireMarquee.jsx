@@ -8,7 +8,7 @@ const HireMarquee = ({ title }) => {
                 duration={25000}
                 background="#fafafa00"
                 reverse={true}
-                height="200px"
+                height="150px"
             >
                 {array.map((el, index) => (
                     <section
@@ -23,7 +23,7 @@ const HireMarquee = ({ title }) => {
                 ))}
             </Marquee>
             <section className="border-y" />
-            <Marquee duration={20000} background="#fafafa00" height="250px">
+            <Marquee duration={20000} background="#fafafa00" height="150px">
                 <section className="flex space-x-10 mr-10 2xl:text-2xl text-xl items-center">
                     {array.map((el, index) => (
                         <section

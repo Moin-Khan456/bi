@@ -85,7 +85,7 @@ export default function PostPage({ post, featuredMedia }) {
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 ></div>
               </div>
-              <div className="fixed z-50 bottom-2 right-1 justify-end w-fit">
+              {/* <div className="fixed z-50 bottom-2 right-1 justify-end w-fit">
                 {localForm ? (
                   <HireDedicatedCard setLocal={setLocal} />
                 ) : (
@@ -98,7 +98,7 @@ export default function PostPage({ post, featuredMedia }) {
                     <FiMail />
                   </div>
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function Customer() {
   ];
 
   return (
-    <main className="my-4 ">
+    <main className="my-4">
       <section>
         <Image
           width={1450}

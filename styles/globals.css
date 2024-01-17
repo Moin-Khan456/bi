@@ -104,6 +104,9 @@ body {
   scroll-behavior: smooth;
 }
 
+.bpw-layout, .bpw-chat-container {
+  max-height: 600px !important;
+}
 .text-base-blue-1 {
   color: var(--base-blue-1);
 }

@@ -19,7 +19,7 @@ const CustomAppBenefits = dynamic(() =>
 );
 const CustomWeb = dynamic(() => import("../../components/customWeb"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const HireBanner = dynamic(() => import("../../components/common/HireBanner"));
+import HireBanner from "../../components/Mobile-Development/SectionOne";
 const ChooseBraininventoryApp = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );

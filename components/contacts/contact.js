@@ -15,8 +15,8 @@ function Contact(props) {
       .email(<RiErrorWarningFill />)
       .required(<RiErrorWarningFill />),
     number: Yup.string()
-      .min(10, <RiErrorWarningFill/>)
-      .max(10, <RiErrorWarningFill/>)
+      .min(10, <RiErrorWarningFill />)
+      .max(10, <RiErrorWarningFill />)
       .required(<RiErrorWarningFill />),
     companyName: Yup.string().required(<RiErrorWarningFill />),
     feedback: Yup.string().required(<RiErrorWarningFill />),
@@ -31,14 +31,20 @@ function Contact(props) {
   const handleSubmit = (data) => {
     fetch("/api/contact", {
       method: "POST",
-      body:{data: JSON.stringify(data), subject: "Thank You For Contacting Us | Brain Inventory"},
+      body: {
+        data: JSON.stringify(data),
+        subject: "Thank You For Contacting Us | Brain Inventory",
+      },
     }).then((res) => {
       console.log(res);
     });
     router.push("/thank-you");
   };
   return (
-    <div className="2xl:p-0 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24" id="contact">
+    <div
+      className="2xl:p-0 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24"
+      id="contact"
+    >
       <div className="container">
         <div className="flex flex-col lg:flex-row pt-8 lg:pt-24 max-w-full">
           <div className="flex flex-col w-full lg:w-[55%]">
@@ -71,25 +77,25 @@ function Contact(props) {
                     </p>
                   </div>
                   <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
-                    <div className="relative flex items-center">
+                    <div className="relative w-1/2">
                       <Field
                         type="text"
                         name="email"
                         className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
                         placeholder="Obviously, an email"
                       />
-                      <p className="text-red-500 text-xl absolute right-2">
+                      <p className="text-red-500 text-xl absolute top-4 right-2">
                         <ErrorMessage name="email" />
                       </p>
                     </div>
-                    <div className="relative flex items-center">
+                    <div className="relative w-1/2">
                       <Field
                         type="text"
                         name="number"
                         className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
                         placeholder="Your contact number"
                       />
-                      <p className="text-red-500 text-xl absolute right-2">
+                      <p className="text-red-500 text-xl absolute top-4 right-2">
                         <ErrorMessage name="number" />
                       </p>
                     </div>
@@ -127,14 +133,13 @@ function Contact(props) {
             <h3 className="Gilroy-Bold text-3xl text-white leading-10">
               Got a startup idea & need to get it <br /> validated?
             </h3>
-
             <p className="text-xl text-white Gilroy-light pt-2 pb-4">
               Let us give you our honest opinion.
             </p>
-
             <div className="relative w-60 h-60">
-              <Image  
-         
+              <Image
+                width={500}
+                height={600}
                 src={
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/sufiyan.png"
                 }
@@ -142,14 +147,16 @@ function Contact(props) {
                 alt="Brain Inventory Co founder"
               />
             </div>
-
             <p className="Gilroy-Bold text-lg mt-3">Sufiyan Rao I Co founder</p>
-
-            <h3 className="Gilroy-Bold text-lg pb-1">
+            <Link
+              href="mailto:sufiyan@braininventory.com"
+              className="Gilroy-Bold text-lg pb-1"
+            >
               Email: sufiyan@braininventory.com
-            </h3>
-
-            <h3 className="Gilroy-Bold text-lg">Phone: +91-810-956-1401</h3>
+            </Link> <br/>
+            <Link href="tel:+918109561401" className="Gilroy-Bold text-lg">
+              Phone: +91-810-956-1401
+            </Link>
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 const Index = ({ para1, para2, para3, type }) => {
   return (
-    <main className="container px-4 lg:px-20 pt-28 lg:pt-32 lg:pb-20">
+    <main className="container px-4 lg:px-20 lg:pb-20">
       <h1 className="text-4xl lg:text-5xl Gilroy-Bold w-fit">
         Why you may need a{" "}
         <span className="text-[#7600EB]"> {type} development</span> solution?

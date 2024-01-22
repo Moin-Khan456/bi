@@ -1,6 +1,7 @@
 import React from "react";
 import HomeButton from "../buttons/HomeButton";
 import Image from "next/image";
+import Link from "next/link";
 
 function HireRemote(props) {
   return (
@@ -28,9 +29,12 @@ function HireRemote(props) {
 
             <div>
               <h2 className="Gilroy-Bold text-black text-lg pt-6">Inquiries</h2>
-              <a className="text-black Gilroy-Light lg:pb-0 pb-6">
+              <Link
+                href={"mailto:askus@braininventory.com"}
+                className="text-black Gilroy-Light lg:pb-0 pb-6"
+              >
                 askus@braininventory.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>

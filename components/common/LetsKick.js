@@ -33,9 +33,9 @@ export default function LetsKick() {
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
-            <span className="text-sm lg:text-lg ">
+            <Link href={"mailto:askus@braininventory.com"} className="text-sm lg:text-lg ">
               askus@braininventory.com
-            </span>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-4">
@@ -51,7 +51,7 @@ export default function LetsKick() {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="text-lg">+91 8109561401</span>
+            <Link href={"tel:+918109561401"} className="text-lg">+91 8109561401</Link>
           </div>
         </div>
       </div>

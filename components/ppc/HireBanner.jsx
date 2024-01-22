@@ -11,6 +11,7 @@ import { MdCall } from "react-icons/md";
 import { BiEnvelope } from "react-icons/bi";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import Link from "next/link";
 
 export default function HireBanner({
   content,
@@ -75,7 +76,12 @@ export default function HireBanner({
           </div>
           <div className="max-w-full">
             <div className="lg:-mt-14 mr-14 lg:mr-0 -ml-8 lg:ml-0 bg-none w-full flex justify-center lg:block">
-              <Image width={750} height={750} src={image} alt="Custom Software Development Company | Application Development Company" />
+              <Image
+                width={750}
+                height={750}
+                src={image}
+                alt="Custom Software Development Company | Application Development Company"
+              />
             </div>
           </div>
         </div>
@@ -571,7 +577,7 @@ const Popup = ({ setPop, country }) => {
                 </div>
                 <div className="border-2 border-transparent px-4 text-xs">
                   <p className="font-bold">E-MAIL</p>
-                  <p className="font-normal">askus@braininventory.com</p>
+                  <Link href={"mailto:askus@braininventory.com"}  className="font-normal">askus@braininventory.com</Link>
                 </div>
               </div>
             </div>
@@ -597,7 +603,7 @@ const Popup = ({ setPop, country }) => {
               </div>
               <div className="border-2 border-transparent px-4 text-xs">
                 <p className="font-bold">E-MAIL</p>
-                <p className="font-normal">askus@braininventory.com</p>
+                <Link href={"mailto:askus@braininventory.com"} className="font-normal">askus@braininventory.com</Link>
               </div>
             </div>
           </div>

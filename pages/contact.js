@@ -13,6 +13,17 @@ const ContactBanner = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
+  useEffect(()=>{
+    if(typeof window !== "undefined"){
+      const url = window.location;
+      if(url.hash === "#contact"){
+        window.scrollTo({
+          top: 750,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [])
   return (
     <>
       <Script

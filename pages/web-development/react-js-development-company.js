@@ -120,6 +120,12 @@ function HireReactDeveloper(props) {
     "React JS is beneficial for large-scale projects and future expansions or updates.",
     "It utilizes a virtual Document Object Model (DOM) that efficiently updates and renders the UI.",
   ];
+  const card = [
+    "Transform your vision into a dynamic web platform",
+    "Industry Expert Developers | Tailored Business Solutions",
+    "Future-Ready Web Apps",
+    "Custom Integration and Development",
+  ];
   return (
     <>
       <Head>
@@ -169,6 +175,7 @@ function HireReactDeveloper(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6526.png"
               alt="ReactJS Web Development Company,"
+              card={card}
             />
             <WhyMean type="React Js" meanReasons={meanReasons} />
             <div className="flex justify-center px-10">

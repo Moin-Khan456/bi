@@ -16,6 +16,8 @@ export default function HireBanner({
   developmentImage,
   type,
   unique,
+  appDev = false,
+  webDev = false,
 }) {
   const card = [
     "100% resource replacement",
@@ -23,13 +25,19 @@ export default function HireBanner({
     "100% NDA-protected contract",
     "100% refund policy",
   ];
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const AOS = require("aos");
+  const webCard = [
+    "Transform your vision into a dynamic web platform",
+    "Industry Expert Developers | Tailored Business Solutions",
+    "Future-Ready Web Apps",
+    "Custom Integration and Development",
+  ];
+  const mobCard = [
+    "We build dynamic apps tailored to your business needs.",
+    "Expert developers | Post-Launch support",
+    "Timely delivery | Client Satisfaction",
+    "Intuitive and High Performance",
+  ];
 
-      AOS.init({});
-    }
-  });
   return (
     <main className="container padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 min-h-screen">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
@@ -106,7 +114,87 @@ export default function HireBanner({
           )}
         </section>
         <section>
-          {unique === "developer" ||
+          {appDev ? (
+            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+              <section className="started-subcription">
+                <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                <h2 className="Gilroy-Bold text-5xl">
+                  2 Business <span className="text-lg">Days</span>
+                </h2>
+              </section>
+              <section className="p-8 bg-line">
+                <ul className="list-subcription">
+                  {appCard.map((ele, index) => (
+                    <li key={index} className="flex items-center">
+                      <BiCheckCircle className="text-2xl mb-2" />
+                      {ele}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </section>
+          ) : webDev ? (
+            <section className=" ml-4 mr-4 lg:mb-0 mb-6">
+              <section className="started-subcription">
+                <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                <h2 className="Gilroy-Bold text-5xl">
+                  2 Business <span className="text-lg">Days</span>
+                </h2>
+              </section>
+              <section className="p-8 bg-line">
+                <ul className="list-subcription">
+                  {webCard.map((ele, index) => (
+                    <li key={index} className="flex items-center">
+                      <BiCheckCircle className="text-2xl mb-2" />
+                      {ele}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </section>
+          ) : unique === "developer" ||
+            unique === "analyst" ||
+            unique === "design" ? (
+            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+              <section className="started-subcription">
+                <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                <h2 className="Gilroy-Bold text-5xl">
+                  2 Business <span className="text-lg">Days</span>
+                </h2>
+              </section>
+              <section className="p-8 bg-line">
+                <ul className="list-subcription">
+                  {card &&
+                    card.map((ele, index) => (
+                      <li key={index} className="flex items-center">
+                        <BiCheckCircle className="text-2xl mb-2" />
+                        {ele}
+                      </li>
+                    ))}
+                </ul>
+              </section>
+            </section>
+          ) : (
+            <section
+              className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
+                type?.match("php") && "drop-shadow-image"
+              }`}
+            >
+              <Image
+                src={image}
+                className={`rounded-2xl ${
+                  type === "hire" ? "w-[700px]" : "w-[100%]"
+                }`}
+                blurDataURL="/loader.jpg"
+                placeholder="blur"
+                fetchPriority="high"
+                width={900}
+                height={900}
+                alt={alt}
+              />
+            </section>
+          )}
+          {/* {unique === "developer" ||
           unique === "analyst" ||
           unique === "design" ? (
             <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
@@ -147,7 +235,7 @@ export default function HireBanner({
                 alt={alt}
               />
             </section>
-          )}
+          )} */}
         </section>
       </section>
     </main>

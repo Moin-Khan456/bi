@@ -103,6 +103,12 @@ function HireAangularJsDeveloper(props) {
     "AngularJS provides built-in testing capabilities and encourages the use of test-driven development practices. This makes it easier for businesses to ensure the quality and stability of their applications through automated testing.",
     "Additionally, AngularJS's modular structure and clear separation of concerns contribute to easier code maintenance and updates.AngularJS can also be used to build hybrid mobile applications using frameworks like Ionic.",
   ];
+  const card = [
+    "Transform your vision into a dynamic web platform",
+    "Industry Expert Developers | Tailored Business Solutions",
+    "Future-Ready Web Apps",
+    "Custom Integration and Development",
+  ];
   return (
     <>
       <Head>
@@ -135,13 +141,12 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/angular-js-development-company"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6523.png"
           as="image"
         />
-
       </Head>
       <Suspense
         fallback={
@@ -160,6 +165,7 @@ function HireAangularJsDeveloper(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6523.png"
               alt="Angular JS Development Services"
+              card={card}
             />
             <WhyMean type="AngularJs" meanReasons={meanReasons} />
             <Benefits

@@ -168,6 +168,7 @@ function ReactNativeDeveloper(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6625.png"
               alt="React Native App Development "
+              appDev={true}
             />
             <WhyMean type="React Native App" meanReasons={meanReasons} />
             <Benefits

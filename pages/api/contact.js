@@ -7,7 +7,6 @@ import {
 async function handleContactUsRequest(data, subject) {
   return new Promise(async (resolve, reject) => {
     try {
-      console.log(data);
       const payload = {
         to: data.email,
         subject: subject ?? "Thank You For Contacting Us | Brain Inventory",
@@ -33,10 +32,9 @@ async function handleContactUsRequest(data, subject) {
 }
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    handleContactUsRequest(
-      JSON.parse(req.body.data),
-      JSON.parse(req.body.subject)
-    )
+    const reqData = JSON.parse(req.body)
+
+    handleContactUsRequest(reqData.data, reqData.subject)
       .then((resp) => {
         if (resp) {
           res.status(200).json({ success: true });

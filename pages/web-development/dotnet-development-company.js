@@ -20,7 +20,7 @@ const Experienced = dynamic(() =>
   import("../../components/Web-Development/Experienced")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-import  HireBanner from "../../components/common/HireBanner";
+import HireBanner from "../../components/common/HireBanner";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -148,9 +148,14 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
           as="image"
         />
-
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
           <Header></Header>
           <HireBanner
@@ -161,6 +166,7 @@ function HireAangularJsDeveloper(props) {
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
             alt="DotNet Development Company"
+            webDev={true}
           />
           <Customer />
           <Experienced

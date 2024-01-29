@@ -168,6 +168,7 @@ function IosDevelopment(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6648.png"
               alt="iOS Development Service"
+              appDev={true}
             />
             <WhyMean type="iOS App" meanReasons={meanReasons} />
             <Benefits

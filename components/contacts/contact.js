@@ -29,12 +29,13 @@ function Contact(props) {
     feedback: "",
   };
   const handleSubmit = (data) => {
+    const serializeData = {
+      data,
+      subject: "Thank You For Contacting Us | Brain Inventory",
+    };
     fetch("/api/contact", {
       method: "POST",
-      body: {
-        data: JSON.stringify(data),
-        subject: "Thank You For Contacting Us | Brain Inventory",
-      },
+      body: JSON.stringify(serializeData),
     }).then((res) => {
       console.log(res);
     });
@@ -153,7 +154,8 @@ function Contact(props) {
               className="Gilroy-Bold text-lg pb-1"
             >
               Email: sufiyan@braininventory.com
-            </Link> <br/>
+            </Link>{" "}
+            <br />
             <Link href="tel:+918109561401" className="Gilroy-Bold text-lg">
               Phone: +91-810-956-1401
             </Link>

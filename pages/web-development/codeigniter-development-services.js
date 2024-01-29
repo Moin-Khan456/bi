@@ -99,6 +99,11 @@ function HireAangularJsDeveloper(props) {
     "Cross-Platform Compatibility: CodeIgniter is compatible with various web servers and operating systems, making it versatile for deployment on different hosting environments.",
     "CodeIgniter is open-source and free to use, making it a cost-effective choice for web development projects.",
     "Its simplicity and code reusability features enable developers to build applications quickly, reducing development time and costs.",
+  ];  const card = [
+    "Transform your vision into a dynamic web platform",
+    "Industry Expert Developers | Tailored Business Solutions",
+    "Future-Ready Web Apps",
+    "Custom Integration and Development",
   ];
   return (
     <>
@@ -157,6 +162,7 @@ function HireAangularJsDeveloper(props) {
             alt="CodeIgniter development company"
             type="php"
             unique="Service"
+            card={card}
           />
           <Customer />
           <Experienced

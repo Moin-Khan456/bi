@@ -167,6 +167,7 @@ function HireAangularJsDeveloper(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6961.png"
               alt="Android application development"
+              appDev={true}
             />
             <WhyMean type="Android App" meanReasons={meanReasons} />
             <Benefits

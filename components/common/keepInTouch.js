@@ -17,18 +17,17 @@ export default function KeepInTouch() {
     feedback: Yup.string().required("Feedback is required"),
   });
   const sumbitContact = (data) => {
-    console.log(data);
+    const serializeData = {
+      data,
+      subject: "Thank You For Contacting Us | Brain Inventory",
+    };
     fetch("/api/contact", {
       method: "POST",
-      body: {
-        data: JSON.stringify(data),
-        subject: "Thank You For Contacting Us | Brain Inventory",
-      },
+      body: JSON.stringify(serializeData),
     }).then(() => {
       window.location.href = "/thank-you";
     });
   };
-  // subj: 'Thank You For Applying At Brain Inventory'
   return (
     <div id="talk" className="container px-4 lg:px-16 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">

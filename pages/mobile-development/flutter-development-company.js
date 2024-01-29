@@ -162,6 +162,7 @@ function Flutter(props) {
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6728.png"
               alt=" Flutter Development Company"
+              appDev={true}
             />
             <WhyMean type="Flutter App" meanReasons={meanReasons} />
             <Benefits

@@ -161,6 +161,7 @@ function SwiftDevelopment(props) {
             btn="Get a Quote"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6743.png"
             alt="Swift Application Development Services"
+            appDev={true}
           />
           <WhyMean type="Swift App" meanReasons={meanReasons} />
           <Benefits

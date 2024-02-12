@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import { RiErrorWarningFill } from "react-icons/ri";
-import { ErrorMessage, Field, Form, Formik } from "formik";
-
+import { ErrorMessage, Field, Form, Formik, resetForm } from "formik";
+import { useRouter } from "next/router";
+import { ThreeDots } from "react-loader-spinner";
 const Contact = () => {
+  const [pending, SetPending] = useState(false);
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(<RiErrorWarningFill />),
     email: Yup.string()
@@ -23,7 +25,9 @@ const Contact = () => {
     companyName: "",
     feedback: "",
   };
-  const handleSubmit = (data) => {
+  const router = useRouter();
+  const handleSubmit = (data, { resetForm }) => {
+    SetPending(true);
     const serializeData = {
       data,
       subject: "Thank You For Contacting Us | Brain Inventory",
@@ -32,9 +36,10 @@ const Contact = () => {
       method: "POST",
       body: JSON.stringify(serializeData),
     }).then((res) => {
-      console.log(res);
+      SetPending(false);
+      resetForm();
+      window.location.href = "/thank-you";
     });
-    router.push("/thank-you");
   };
 
   return (
@@ -122,7 +127,20 @@ const Contact = () => {
               </svg>
             </span>
             <span className="2xl:text-sm font-bold text-sm transition-all text-white">
-              Submit
+              {pending ? (
+                <ThreeDots
+                  visible={true}
+                  height="40"
+                  width="40"
+                  color="#ffffff"
+                  radius="10"
+                  ariaLabel="three-dots-loading"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                />
+              ) : (
+                "Submit"
+              )}
             </span>
           </button>
         </div>

@@ -3,12 +3,22 @@ import "../styles/globals.css";
 import HireDedicatedCard from "../components/blog/HireDedicatedCard";
 import { FiMail } from "react-icons/fi";
 import Script from "next/script";
-
+import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  // Accessing the current page URL
+  const { asPath } = router;
   const [localForm, setLocal] = useState(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localForm === null && setLocal(window.innerWidth < 1000 ? false : true);
+      localForm === null &&
+        setLocal(
+          window.innerWidth < 1000
+            ? false
+            : asPath == "/thank-you"
+            ? false
+            : true
+        );
       window.smartlook ||
         (function (d) {
           var o = (window.smartlook = function () {
@@ -27,8 +37,7 @@ function MyApp({ Component, pageProps }) {
         region: "eu",
       });
     }
-  });
-
+  }, [asPath]);
   return (
     <>
       {/* <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" />
@@ -54,5 +63,4 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
 export default MyApp;

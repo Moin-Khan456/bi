@@ -15,7 +15,7 @@ async function handleContactUsRequest(data, subject) {
       await sendMail(payload);
 
       const payload2 = {
-        to: "askus@braininventory.com",
+        to: "d.boyat@braininventory.com",
         subject: "New Inquiry",
         html: queryToSales(data),
       };

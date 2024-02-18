@@ -2,8 +2,6 @@ import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
 export default function KeySkill({ breif, points }) {
-  const point1 = points.slice(0, points.length / 2);
-  const point2 = points.slice(points.length / 2, points.length);
   return (
     <main>
       <section className="container padding-left-all-section-1 lg:pb-28">
@@ -12,34 +10,12 @@ export default function KeySkill({ breif, points }) {
             Our Key Skill Set
           </h2>
           <p className="Gilroy-Light !text-xl !leading-8 pb-6">{breif}</p>
-          <section className="hidden lg:flex justify-between lg:pr-72">
+          <section className="hidden lg:flex justify-between items-center">
             <section>
-              <ul className="team-list">
-                {point1.map((ele, index) => (
-                  <li key={index + 1}>
-                    <br />
-                    <IoMdArrowForward /> {ele}
-                  </li>
-                ))}
-              </ul>
-            </section>
-            <section>
-              <ul className="team-list">
-                {point2.map((ele, index) => (
-                  <li key={index + 1}>
-                    <br /> <IoMdArrowForward /> {ele}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          </section>
-
-          <section className="grid grid-cols-1 lg:hidden">
-            <section>
-              <ul className="team-list">
-                {points.map((ele, index) => (
-                  <li key={index + 1}>
-                    <br /> <IoMdArrowForward /> {ele}
+              <ul className="team-list grid grid-cols-3 justify-start">
+                {points?.map((ele, index) => (
+                  <li key={index + 1} className="grid grid-cols-2">
+                    <IoMdArrowForward className="w-[3rem] text-xl" /> <span className="pt-2 ">{ele}</span>
                   </li>
                 ))}
               </ul>

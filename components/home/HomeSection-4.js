@@ -9,7 +9,7 @@ const info = [
       orange: "Web",
       white: "Development",
     },
-    url: "/",
+    url: "/web-development/custom-web-development",
     video: "https://braininventory.s3.us-east-2.amazonaws.com/images/WebDevelopment.mp4",
     techList: [
       {
@@ -32,7 +32,7 @@ const info = [
       orange: "Mobile",
       white: "Development",
     },
-    url: "/",
+    url: "/mobile-development/custom-app-development",
     video: "https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4",
     techList: [
       {

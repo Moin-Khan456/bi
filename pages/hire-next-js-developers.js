@@ -22,7 +22,7 @@ import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 
-function HireAangularJsDeveloper() {
+function HireAangularJsDeveloper({data}) {
   const content =
     "BrainInventory is a prominent front-end development company located in India.Our Next.js developers are well-versed with handling technologies such as Node.js and React.js which enable us to offer flawless front-end applications to our customers.";
   const subhead1 =
@@ -214,13 +214,12 @@ function HireAangularJsDeveloper() {
           subhead={chooseBiSubhead}
           alt="Remote Next.js Developers"
         />
-
         <Engaged />
         <HireSteps type="Next Js" />
         <Clients tech="Next Js" />
         <FaqHire faq={faqdetails} />
         <hr />
-        {/* <BlogArticle data={data} /> */}
+        <BlogArticle data={data} />
         <KeepInTouch />
         <LocateUs />
         <LetsKick />
@@ -230,13 +229,14 @@ function HireAangularJsDeveloper() {
   );
 }
 export default HireAangularJsDeveloper;
-// export const getServerSideProps = async () => {
-//   const response = await axios.get(
-//     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3"
-//   );
-//   return {
-//     props: {
-//       data: response.data,
-//     },
-//   };
-// };
+
+export const getServerSideProps = async () => {
+  const response = await axios.get(
+    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3"
+  );
+  return {
+    props: {
+      data: response.data,
+    },
+  };
+};

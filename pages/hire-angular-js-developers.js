@@ -15,7 +15,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")

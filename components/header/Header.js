@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import TagManager from "react-gtm-module";
 import { MdOutlineUnfoldMore, MdUnfoldLess } from "react-icons/md";
+import RequestQuote from "./RequestQuoteForm.jsx";
+import Swal from "sweetalert2";
+import { ToastContainer, toast } from "react-toastify";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -38,6 +41,59 @@ const Header = () => {
   useEffect(() => {
     console.log(load);
   }, [load]);
+  const quotePopup = () => {
+    Swal.fire({
+      title: "Request A Quote",
+      html: `
+        <input id="swal-input-name" class="swal2-input" placeholder="Name">
+        <input id="swal-input-email" class="swal2-input" placeholder="Email">
+        <input id="swal-input-number" class="swal2-input" placeholder="Number">
+        <input id="swal-input-companyName" class="swal2-input" placeholder="Company Name">
+        <textarea id="swal-input-message" class="swal2-textarea" style="width: 60%; height: 100px;" placeholder="Message"></textarea>
+      `,
+      showCancelButton: true,
+      confirmButtonText: "Submit",
+      preConfirm: () => {
+        const name = document.getElementById("swal-input-name").value;
+        const email = document.getElementById("swal-input-email").value;
+        const number = document.getElementById("swal-input-number").value;
+        const companyName = document.getElementById(
+          "swal-input-companyName"
+        ).value;
+        const message = document.getElementById("swal-input-message").value;
+
+        const data = { name, email, number, companyName, message };
+        const serializeData = {
+          data,
+          subject: "Thank You For Contacting Us | Brain Inventory",
+        };
+        fetch("/api/contact", {
+          method: "POST",
+          body: JSON.stringify(serializeData),
+        }).then((res) => {
+          toast.success("Inquiry message has been sent...", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          window.location.href = "/thank-you";
+        });
+        return { name, email, number, companyName, message };
+      },
+      allowOutsideClick: () => !Swal.isLoading(),
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Handle the form submission
+        console.log(result.value);
+        // You can perform further actions here, such as sending the form data to a server
+      }
+    });
+  };
 
   return (
     <>
@@ -85,7 +141,7 @@ const Header = () => {
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase lg:block hidden">
-                    <Link href="/contact#contact">request A Quote</Link>
+                    <button>request A Quote</button>
                   </p>
                   <span
                     onClick={() => {
@@ -116,7 +172,7 @@ const Header = () => {
               <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase mobile-none">
-                    <Link href="/contact#contact">request A Quote</Link>
+                    <button onClick={quotePopup}>request A Quote</button>
                   </p>
                   <span
                     onClick={() => {
@@ -240,6 +296,13 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <ToastContainer
+        autoClose
+        closeOnClick
+        limit={1}
+        rtl={false}
+        pauseOnHover
+      />
     </>
   );
 };
@@ -573,7 +636,10 @@ const ServicesChildren = () => {
             Show More &nbsp; <MdOutlineUnfoldMore />
           </button>
         ) : (
-          <button className="flex items-center" onClick={() => setShowMore(false)}>
+          <button
+            className="flex items-center"
+            onClick={() => setShowMore(false)}
+          >
             Show Less &nbsp; <MdUnfoldLess />
           </button>
         )}

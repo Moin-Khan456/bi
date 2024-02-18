@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }) {
         defer
       /> */}
       <Component {...pageProps} />
-      <div className="fixed bottom-4 right-4">
+      <div className="fixed  !z-[9999] bottom-4 right-4">
         {localForm ? (
           <HireDedicatedCard setLocal={setLocal} />
         ) : (

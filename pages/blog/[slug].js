@@ -75,7 +75,7 @@ export default function Home({
                 <PopularBlogs data={data} />
               </div>
               <hr />
-              <Blogs blogs={blogs} pageNumber={currentPage} />
+              {/* <Blogs blogs={blogs} pageNumber={currentPage} /> */}
               <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}

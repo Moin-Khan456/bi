@@ -11,14 +11,10 @@ import LetsKick from "../../components/common/LetsKick.js";
 import Footer from "../../components/common/Footer.js";
 import { rediss } from "../../utils/redis.js";
 
-export default function Home({
-  data = [],
-  blogs = [],
-  totalPages,
-  page,
-}) {
+export default function Home({ data = [], blogs = [], totalPages, page }) {
   const [currentPage, setCurrentPage] = useState(page);
 
+  console.log({ data, blogs, totalPages, page });
   return (
     <>
       <Head>
@@ -71,9 +67,7 @@ export default function Home({
             <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
-              <div className="pb-2">
-                <PopularBlogs data={data} />
-              </div>
+              <div className="pb-2">{/* <PopularBlogs data={data} /> */}</div>
               <hr />
               {/* <Blogs blogs={blogs} pageNumber={currentPage} /> */}
               <Pagination

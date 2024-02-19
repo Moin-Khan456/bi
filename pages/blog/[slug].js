@@ -47,7 +47,7 @@ export default function Home() {
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
         />
         <meta property="og:url" content="https://braininventory.in/blog/1" />
-        <link
+        {/* <link
           rel="prev"
           href={`https://braininventory.in/blog/${
             currentPage > 1 ? currentPage - 1 : ""
@@ -58,7 +58,7 @@ export default function Home() {
           href={`https://braininventory.in/blog/${
             currentPage !== totalPages ? Number(currentPage) + 1 : ""
           }`}
-        />
+        /> */}
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <main className="relative second-component">

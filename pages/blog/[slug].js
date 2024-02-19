@@ -12,8 +12,8 @@ import Footer from "../../components/common/Footer.js";
 import { rediss } from "../../utils/redis.js";
 
 export default function Home({
-  data = false,
-  blogs = false,
+  data = [],
+  blogs = [],
   totalPages,
   page,
 }) {

@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../../components/header/Header.js";
 import axios from "axios";
-// import PopularBlogs from "../../components/blog/PopularBlogs";
-// import Blogs from "../../components/blog/Blogs";
-// import Pagination from "../../components/blog/Pagination";
+import PopularBlogs from "../../components/blog/PopularBlogs";
+import Blogs from "../../components/blog/Blogs";
+import Pagination from "../../components/blog/Pagination";
 import KeepInTouch from "../../components/common/keepInTouch.js";
 import LocateUs from "../../components/common/locateUs.js";
 import LetsKick from "../../components/common/LetsKick.js";
 import Footer from "../../components/common/Footer.js";
 // import { rediss } from "../../utils/redis.js";
 
-// export default function Home({ data = [], blogs = [], totalPages, page }) {
-export default function Home() {
-  const [currentPage, setCurrentPage] = useState(null);
+export default function Home({ data = [], blogs = [], totalPages, page }) {
+// export default function Home() {
+  const [currentPage, setCurrentPage] = useState(page);
 
-  // console.log({ data, blogs, totalPages, page });
+  console.log({ data, blogs, totalPages, page });
   return (
     <>
       <Head>
@@ -47,7 +47,7 @@ export default function Home() {
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
         />
         <meta property="og:url" content="https://braininventory.in/blog/1" />
-        {/* <link
+        <link
           rel="prev"
           href={`https://braininventory.in/blog/${
             currentPage > 1 ? currentPage - 1 : ""
@@ -58,7 +58,7 @@ export default function Home() {
           href={`https://braininventory.in/blog/${
             currentPage !== totalPages ? Number(currentPage) + 1 : ""
           }`}
-        /> */}
+        />
         <link rel="canonical" href="https://braininventory.in/blog/1" />
       </Head>
       <main className="relative second-component">
@@ -68,15 +68,15 @@ export default function Home() {
             <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
-              <div className="pb-2">{/* <PopularBlogs data={data} /> */}</div>
+              <div className="pb-2"><PopularBlogs data={data} /></div>
               <hr />
-              {/* <Blogs blogs={blogs} pageNumber={currentPage} /> */}
-              {/* <Pagination
+              <Blogs blogs={blogs} pageNumber={currentPage} />
+               <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -94,17 +94,17 @@ export async function getServerSideProps(context) {
   );
   const totalPages = await postsRes.headers.get("X-WP-Total");
 
-  // const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
-  // if (cachedBlog) {
-  //   return {
-  //     props: {
-  //       data: cachedBlog.slice(0, 3),
-  //       blogs: cachedBlog,
-  //       totalPages: totalPages,
-  //       page: context.query.slug,
-  //     },
-  //   };
-  // }
+  const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+  if (cachedBlog) {
+    return {
+      props: {
+        data: cachedBlog.slice(0, 3),
+        blogs: cachedBlog,
+        totalPages: totalPages,
+        page: context.query.slug,
+      },
+    };
+  }
 
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
@@ -116,13 +116,14 @@ export async function getServerSideProps(context) {
       },
     }
   );
-  // await rediss.set(
-  //   `blog-${context.query.slug}`,
-  //   JSON.stringify(response.data),
-  //   "EX",
-  //   300
-  // );
+  await rediss.set(
+    `blog-${context.query.slug}`,
+    JSON.stringify(response.data),
+    "EX",
+    300
+  );
 
+  console.log(response.data)
   return {
     props: {
       data: response?.data?.slice(0, 3) ?? [],

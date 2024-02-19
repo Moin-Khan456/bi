@@ -89,27 +89,22 @@ export default function Home() {
   );
 }
 export async function getServerSideProps(context) {
-  context.res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=600, stale-while-revalidate=3600"
-  );
-
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
   const totalPages = await postsRes.headers.get("X-WP-Total");
 
-  const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
-  if (cachedBlog) {
-    return {
-      props: {
-        data: cachedBlog.slice(0, 3),
-        blogs: cachedBlog,
-        totalPages: totalPages,
-        page: context.query.slug,
-      },
-    };
-  }
+  // const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+  // if (cachedBlog) {
+  //   return {
+  //     props: {
+  //       data: cachedBlog.slice(0, 3),
+  //       blogs: cachedBlog,
+  //       totalPages: totalPages,
+  //       page: context.query.slug,
+  //     },
+  //   };
+  // }
 
   const response = await axios.get(
     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
@@ -121,12 +116,12 @@ export async function getServerSideProps(context) {
       },
     }
   );
-  await rediss.set(
-    `blog-${context.query.slug}`,
-    JSON.stringify(response.data),
-    "EX",
-    300
-  );
+  // await rediss.set(
+  //   `blog-${context.query.slug}`,
+  //   JSON.stringify(response.data),
+  //   "EX",
+  //   300
+  // );
 
   return {
     props: {

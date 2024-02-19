@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../../components/header/Header.js";
 import axios from "axios";
-import PopularBlogs from "../../components/blog/PopularBlogs";
-import Blogs from "../../components/blog/Blogs";
-import Pagination from "../../components/blog/Pagination";
+// import PopularBlogs from "../../components/blog/PopularBlogs";
+// import Blogs from "../../components/blog/Blogs";
+// import Pagination from "../../components/blog/Pagination";
 import KeepInTouch from "../../components/common/keepInTouch.js";
 import LocateUs from "../../components/common/locateUs.js";
 import LetsKick from "../../components/common/LetsKick.js";
 import Footer from "../../components/common/Footer.js";
-import { rediss } from "../../utils/redis.js";
+// import { rediss } from "../../utils/redis.js";
 
-export default function Home({ data = [], blogs = [], totalPages, page }) {
-  const [currentPage, setCurrentPage] = useState(page);
+// export default function Home({ data = [], blogs = [], totalPages, page }) {
+export default function Home() {
+  const [currentPage, setCurrentPage] = useState(null);
 
-  console.log({ data, blogs, totalPages, page });
+  // console.log({ data, blogs, totalPages, page });
   return (
     <>
       <Head>
@@ -70,12 +71,12 @@ export default function Home({ data = [], blogs = [], totalPages, page }) {
               <div className="pb-2">{/* <PopularBlogs data={data} /> */}</div>
               <hr />
               {/* <Blogs blogs={blogs} pageNumber={currentPage} /> */}
-              <Pagination
+              {/* <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}
                 setCurrentPage={setCurrentPage}
                 currentPage={currentPage}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -87,52 +88,52 @@ export default function Home({ data = [], blogs = [], totalPages, page }) {
     </>
   );
 }
-export async function getServerSideProps(context) {
-  context.res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=600, stale-while-revalidate=3600"
-  );
+// export async function getServerSideProps(context) {
+//   context.res.setHeader(
+//     "Cache-Control",
+//     "public, s-maxage=600, stale-while-revalidate=3600"
+//   );
 
-  const postsRes = await fetch(
-    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
-  );
-  const totalPages = await postsRes.headers.get("X-WP-Total");
+//   const postsRes = await fetch(
+//     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+//   );
+//   const totalPages = await postsRes.headers.get("X-WP-Total");
 
-  const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
-  if (cachedBlog) {
-    return {
-      props: {
-        data: cachedBlog.slice(0, 3),
-        blogs: cachedBlog,
-        totalPages: totalPages,
-        page: context.query.slug,
-      },
-    };
-  }
+//   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+//   if (cachedBlog) {
+//     return {
+//       props: {
+//         data: cachedBlog.slice(0, 3),
+//         blogs: cachedBlog,
+//         totalPages: totalPages,
+//         page: context.query.slug,
+//       },
+//     };
+//   }
 
-  const response = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
-    { next: { revalidate: 600 } },
-    {
-      cache: "force-cache",
-      headers: {
-        "Cache-Control": "public, max-age=600",
-      },
-    }
-  );
-  await rediss.set(
-    `blog-${context.query.slug}`,
-    JSON.stringify(response.data),
-    "EX",
-    300
-  );
+//   const response = await axios.get(
+//     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
+//     { next: { revalidate: 600 } },
+//     {
+//       cache: "force-cache",
+//       headers: {
+//         "Cache-Control": "public, max-age=600",
+//       },
+//     }
+//   );
+//   await rediss.set(
+//     `blog-${context.query.slug}`,
+//     JSON.stringify(response.data),
+//     "EX",
+//     300
+//   );
 
-  return {
-    props: {
-      data: response?.data?.slice(0, 3) ?? [],
-      blogs: response?.data ?? [],
-      totalPages: totalPages,
-      page: context.query.slug,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data: response?.data?.slice(0, 3) ?? [],
+//       blogs: response?.data ?? [],
+//       totalPages: totalPages,
+//       page: context.query.slug,
+//     },
+//   };
+// }

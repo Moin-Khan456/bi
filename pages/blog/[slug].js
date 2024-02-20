@@ -9,7 +9,7 @@ import KeepInTouch from "../../components/common/keepInTouch.js";
 import LocateUs from "../../components/common/locateUs.js";
 import LetsKick from "../../components/common/LetsKick.js";
 import Footer from "../../components/common/Footer.js";
-// import { rediss } from "../../utils/redis.js";
+import { rediss } from "../../utils/redis.js";
 
 export default function Home({ data = [], blogs = [], totalPages, page }) {
 // export default function Home() {

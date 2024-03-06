@@ -12,13 +12,15 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       localForm === null &&
-        setLocal(
-          window.innerWidth < 1000
-            ? false
-            : asPath == "/thank-you"
-            ? false
-            : true
-        );
+        setTimeout(() => {
+          setLocal(
+            window.innerWidth < 1000
+              ? false
+              : asPath == "/thank-you"
+              ? false
+              : true
+          );
+        }, 10000);
       window.smartlook ||
         (function (d) {
           var o = (window.smartlook = function () {

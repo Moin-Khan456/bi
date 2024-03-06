@@ -189,7 +189,7 @@ function HireAangularJsDeveloper(props) {
               unique={"developer"}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/dotnet/1.png"
-              alt="Ionic development company"
+              alt=".NET development company"
               type="hire"
             />
             <Customer />

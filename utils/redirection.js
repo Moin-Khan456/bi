@@ -1,6 +1,343 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/undefined/1573",
+      destination:
+        "/posts/advantages-of-incorporating-chatbots-within-the-banking-sector/1573",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1570",
+      destination:
+        "/posts/the-future-of-social-media-platforms-how-businesses-can-leverage-their-power/1570",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1563",
+      destination:
+        "/posts/harnessing-the-power-of-python-revolutionizing-enterprise-application-development/1563",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1567",
+      destination:
+        "/posts/exploring-the-future-wordpress-web-development-services-and-cms-trends/1567",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1503",
+      destination:
+        "/posts/questions-to-ask-to-remote-workers-during-an-interview/1503",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1500",
+      destination:
+        "/posts/know-how-to-hire-a-shopify-developer-for-your-e-commerce-store-a-step-by-step-guide/1500",
+      permanent: true,
+    },
+    {
+      source: "/blog/[slug]",
+      destination: "/blog/1",
+      permanent: true,
+    },
+    {
+      source: "/posts/[slug]",
+      destination: "/blog/1",
+      permanent: true,
+    },
+    {
+      source: "/utils/wordpress",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/components/ppc/SocialNetwork",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/components/mean-stack-development/Advantage",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/mean-stack-development/locateUs",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/mean-stack-development/Faqhire",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-mean-stack-developers",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/utils/mailer",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/career",
+      destination: "/career",
+      permanent: true,
+    },
+
+    {
+      source: "/mobile-app-integration",
+      destination: "/mobile-development/mobile-app-integration",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/thankyou",
+      destination: "/thankyou",
+      permanent: true,
+    },
+
+    {
+      source: "/scripts/generate-sitemap",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/public/google0f5d76b9c6c1d8b3",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/contacts/whyWork",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/postcss.config",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/common/customer",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/next.config",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/README",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/company/experience",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/how-we-work",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/solution/project",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/components/mean-stack-development/FindUs",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/tailwind.config",
+      destination: "/",
+      permanent: true,
+    },
+
+    {
+      source: "/posts/",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/pages/hire-dedicated-remote-developers",
+      destination: "/hire-dedicated-remote-developers",
+      permanent: true,
+    },
+    {
+      source: "/pages/thank-you",
+      destination: "/thank-you",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/project/my-fit-mantra",
+      destination: "/project/my-fit-mantra",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/mobile-development/mobile-app-integration",
+      destination: "/mobile-development/mobile-app-integration",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/blog",
+      destination: "/blog/1",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/mobile-development/hybrid-app-development",
+      destination: "/mobile-development/hybrid-app-development",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-chatbot-developers",
+      destination: "/hire-chatbot-developers",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-react-js-developers",
+      destination: "/hire-react-js-developers",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/mobile-development/ios-app-development",
+      destination: "/mobile-development/ios-app-development",
+      permanent: true,
+    },
+    {
+      source: "/pages/web-development/node-js-development",
+      destination: "/web-development/node-js-development",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hireui-ux-ios-developers",
+      destination: "/hireui-ux-ios-developers",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/mobile-development/swift-app-development",
+      destination: "/mobile-development/swift-app-development",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/web-development/python-development",
+      destination: "/web-development/python-development",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/web-development/php-development",
+      destination: "/web-development/php-development",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-react-native-developers",
+      destination: "/hire-react-native-developers",
+      permanent: true,
+    },
+    {
+      source: "/pages/hire-php-developers",
+      destination: "/hire-php-developers",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-ios-developers",
+      destination: "/hire-ios-developers",
+      permanent: true,
+    },
+
+    {
+      source: "/pages/hire-vue-js-developers",
+      destination: "/hire-vue-js-developers",
+      permanent: true,
+    },
+    {
+      source: "/projects",
+      destination: "/portfolio",
+      permanent: true,
+    },
+    {
+      source: "/industry",
+      destination: "/",
+      permanent: true,
+    },
+    {
+      source: "/web-development/typescript-development-company",
+      destination: "/web-development/typescript-development-services",
+      permanent: true,
+    },
+    {
+      source: "/web-development/typescript-development-company",
+      destination: "/web-development/typescript-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/edtech-solution-providers",
+      destination: "/industry/edtech-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/web-development/shopify-development-company",
+      destination:
+        "/web-development/shopify-ecommerce-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/crm-development-company",
+      destination: "/industry/crm-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/industry/transport-and-logistic-software-development-service",
+      destination:
+        "/industry/transport-and-logistic-software-development-services",
+      permanent: true,
+    },
+    {
+      source: "/solution",
+      destination: "/solution/social-networking-development-company",
+      permanent: true,
+    },
+    {
+      source: "/web-app-development",
+      destination: "/web-development/custom-web-development",
+      permanent: true,
+    },
+    {
       source: "/mobile-app-development",
       destination: "/mobile-development/custom-app-development",
       permanent: true,

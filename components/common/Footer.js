@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FooterSections = [
   {
@@ -382,11 +384,20 @@ const organizations = [
 ];
 
 export default function Footer() {
+  const [expandedSections, setExpandedSections] = useState({});
+
+  const handleLoadMore = (index) => {
+    setExpandedSections((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
   return (
     <div className="py-10 mx-10 border-t">
       <div className="container lg:px-24">
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-2">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4"> 
           {FooterSections.map((section, index) => {
+            const isExpanded = expandedSections[index];
             return (
               <div
                 key={index}
@@ -395,24 +406,43 @@ export default function Footer() {
                 }
               >
                 <a href={section.link} className="cursor-pointer">
-                  <span className="text-xl Gilroy-Bold mb-4 cursor-pointer">
+                  <span className="text-[1rem] Gilroy-Bold mb-4 cursor-pointer mt-12">
                     {section.title}
                   </span>
                 </a>
                 <ul className="space-y-2">
-                  {section.links.map((link, index) => {
-                    return (
-                      <li
-                        className="text-white text-opacity-50 w-auto"
-                        key={index}
-                      >
-                        <a href={link.path} className="cursor-pointer">
-                          {link.name}
-                        </a>
-                      </li>
-                    );
-                  })}
+                  {section.links
+                    .map((link, linkIndex) => {
+                      return (
+                        <li
+                          className="text-white text-opacity-50 w-auto"
+                          key={linkIndex}
+                        >
+                          <a href={link.path} className="cursor-pointer">
+                            {link.name}
+                          </a>
+                        </li>
+                      );
+                    })
+                    .slice(0, isExpanded ? section.links.length : 10)}
                 </ul>
+                {section.links.length > 10 && (
+                  <button
+                    onClick={() => handleLoadMore(index)}
+                    className="text-black text-xs p-2 font-bold bg-white rounded-md mb-12 mt-4"
+                  >
+                    {isExpanded ? (
+                      <div className="flex items-center">
+                        {" "}
+                        Show Less &nbsp; <FaChevronUp />
+                      </div>
+                    ) : (
+                      <div className="flex items-center">
+                        Show More &nbsp; <FaChevronDown />
+                      </div>
+                    )}
+                  </button>
+                )}
               </div>
             );
           })}

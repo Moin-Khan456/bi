@@ -10,7 +10,7 @@ export default function App({ title, subhead, subhead1, subhead2, card }) {
             <h1 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
               {titleArray.map((ele, index) => (
                 <span className="" key={index}>
-                  {ele.includes("Brain") ? (
+                  {ele.includes("Brain") || ele.includes("Salesforce")? (
                     <span className="text-[#7600EB]">{ele}</span>
                   ) : (
                     <span>{ele}</span>

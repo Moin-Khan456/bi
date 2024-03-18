@@ -174,7 +174,7 @@ function HireAangularJsDeveloper(props) {
         />{' '}
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/dotnet-development-company"
+          content="https://braininventory.in/web-development/salesforce-development-company"
         />
         <meta
           property="og:image"
@@ -182,11 +182,11 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/web-development/dotnet-development-company"
+          content="https://braininventory.in/web-development/salesforce-development-company"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/web-development/dotnet-development-company"
+          href="https://braininventory.in/web-development/salesforce-development-company"
         />
         <link
           rel="preload"

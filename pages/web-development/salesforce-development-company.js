@@ -157,16 +157,16 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="Experience best Salesforce development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Best .Net Development Company | .Net Development Services"
+          content="Best Salesforce Development Company | Salesforce Development Services"
         />
         <meta
           property="og:description"
-          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="Experience best Salesforce development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
         />
         <meta
           property="og:image"

@@ -16,9 +16,6 @@ const AdvantageCustom = dynamic(() =>
 const BusinessPathways = dynamic(() =>
   import('../../components/Web-Development/BusinessPathways')
 );
-const Experienced = dynamic(() =>
-  import('../../components/Web-Development/Experienced')
-);
 const HireMarquee = dynamic(() =>
   import('../../components/common/HireMarquee')
 );
@@ -31,8 +28,6 @@ const BlogArticle = dynamic(() =>
   import('../../components/common/BlogArticle')
 );
 const KeySkill = dynamic(() => import('../../components/Hire/KeySkills'));
-
-const Hello = dynamic(() => import("../../components/common/FindUs"));
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -170,16 +165,8 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_.NET+preview+image.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_salesforce.jpg"
         />{' '}
-        <meta
-          property="og:url"
-          content="https://braininventory.in/web-development/salesforce-development-company"
-        />
-        <meta
-          property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Chatbot+Developers.jpg"
-        />
         <meta
           property="og:url"
           content="https://braininventory.in/web-development/salesforce-development-company"
@@ -195,60 +182,53 @@ function HireAangularJsDeveloper(props) {
           as="image"
         />
       </Head>
-      <Suspense
-        fallback={
-          {
-            /*<Loader />*/
-          }
-        }
-      >
-        <div className="relative">
-          <Header></Header>
-          <HireBanner
-            subhead="A Smarter Way to Build Customized Applications."
-            title="Salesforce Development"
-            content={content}
-            unique={'developer'}
-            btn="Contact Us!"
-            image="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
-            alt="Salesforce Development Company"
-          />
-          <Customer />
-          {/* This component is added */}
-          <AdvantageCustom
-            title="Salesforce Development That We Offer"
-            subhead={subhead}
-            reasons={experienceCards}
-          />
-          <HireMarquee title="Salesforce Development" />
-          {/* This component is added */}
-          <BusinessPathways
-            heading="Elevating User Journeys with Our Enhanced %Salesforce Development Process%"
-            subhead={subHeadPathways}
-            EngageOptions={EngageOptions}
-          />
-          <KeySkill
-            breif={keySkillsBreif}
-            heading="Tools and Technologies% in Salesforce Development"
-          />
-          <Hire
-            title="What Setsf Our %Salesforce Development% Apart in Terms of Excellence"
-            card={hireCards}
-            subhead1={subhead1}
-          />
-          <ChooseBraininventory
-            reasons={chooseBI}
-            alt="Hire Dedicated Laravel Developers"
-          />
-          <FaqHire faq={faqdetails} />
-          <hr />
-          <BlogArticle />
-          <KeepInTouch />
-          <LocateUs />
-          <LetsKick />
-          <Footer />
-        </div>
-      </Suspense>
+
+      <div className="relative">
+        <Header></Header>
+        <HireBanner
+          subhead="A Smarter Way to Build Customized Applications."
+          title="Salesforce Development"
+          content={content}
+          unique={'developer'}
+          btn="Contact Us!"
+          image="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
+          alt="Salesforce Development Company"
+        />
+        <Customer />
+        {/* This component is added */}
+        <AdvantageCustom
+          title="Salesforce Development That We Offer"
+          subhead={subhead}
+          reasons={experienceCards}
+        />
+        <HireMarquee title="Salesforce Development" />
+        {/* This component is added */}
+        <BusinessPathways
+          heading="Elevating User Journeys with Our Enhanced %Salesforce Development Process%"
+          subhead={subHeadPathways}
+          EngageOptions={EngageOptions}
+        />
+        <KeySkill
+          breif={keySkillsBreif}
+          heading="Tools and Technologies% in Salesforce Development"
+        />
+        <Hire
+          title="What Sets Our %Salesforce Development% Apart in Terms of Excellence"
+          card={hireCards}
+          subhead1={subhead1}
+        />
+        <ChooseBraininventory
+          reasons={chooseBI}
+          alt="Hire Dedicated Laravel Developers"
+        />
+        <FaqHire faq={faqdetails} />
+        <hr />
+        <BlogArticle />
+        <KeepInTouch />
+        <LocateUs />
+        <LetsKick />
+        <Footer />
+      </div>
     </>
   );
 }

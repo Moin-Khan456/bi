@@ -181,6 +181,10 @@ const FooterSections = [
         name: ".Net Development",
         path: "/web-development/dotnet-development-company",
       },
+      {
+        name: "Salesforce Development",
+        path: "/web-development/salesforce-development-company",
+      },
     ],
   },
   {

@@ -373,7 +373,7 @@ const ServicesChildren = () => {
     },
     {
       _id: 17,
-      name: "Salesforce Development Company",
+      name: "Salesforce Development",
       link: "/web-development/salesforce-development-company",
     },
   ];

@@ -232,11 +232,10 @@ function HireAangularJsDeveloper(props) {
             heading="Tools and Technologies% in Salesforce Development"
           />
           <Hire
-            title="What Sets Our %Salesforce Development% Apart in Terms of Excellence"
+            title="What Setsf Our %Salesforce Development% Apart in Terms of Excellence"
             card={hireCards}
             subhead1={subhead1}
           />
-          <Hello />
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"

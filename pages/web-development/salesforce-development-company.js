@@ -13,11 +13,14 @@ const Customer = dynamic(() => import('../../components/common/customer'));
 const AdvantageCustom = dynamic(() =>
   import('../../components/Web-Development/AdvantageCustom')
 );
-const HireMarquee = dynamic(() =>
-  import('../../components/common/HireMarquee')
+const BusinessPathways = dynamic(() =>
+  import('../../components/Web-Development/BusinessPathways')
 );
 const Experienced = dynamic(() =>
   import('../../components/Web-Development/Experienced')
+);
+const HireMarquee = dynamic(() =>
+  import('../../components/common/HireMarquee')
 );
 const Hire = dynamic(() => import('../../components/common/Hire'));
 import HireBanner from '../../components/common/HireBanner';
@@ -27,12 +30,40 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import('../../components/common/BlogArticle')
 );
+const KeySkill = dynamic(() => import('../../components/Hire/KeySkills'));
+
+const Hello = dynamic(() => import("../../components/common/FindUs"));
 
 function HireAangularJsDeveloper(props) {
   const content =
     "Brain Inventory is a company that values customer happiness above all else in today's technology-driven world. We have a team of highly trained Salesforce specialists and accredited programmers who offer Salesforce creation services at a competitive rate. All of our clients have been completely satisfied with our work.";
-  const subhead1 =
+  const subhead =
     'Our proficient consultants in Salesforce CRM assist you in analysing your business requirements by recognizing areas of improvement to enhance performance and efficiency. Our outreach spans across the globe, catering to countries such as the UK, Canada, the United States, and Jordan. We specialise in delivering a broad range of services to clients from diverse sectors.';
+  const subhead1 =
+    'We reject the notion that anything is impossible or unattainable. We are determined to fulfill your unique needs for an online presence. Our commitment to providing exactly what our clients desire has earned the trust and loyalty of people worldwide. There is no request too customized or complex that we cannot deliver. We make the impossible possible and overcome any obstacles to achieve the vision you have for your digital brand.';
+  const keySkillsBreif =
+    'Salesforce development leverages a variety of tools and technologies to create powerful and scalable solutions for businesses. Key tools include Salesforce Lightning, a component-based framework for building modern user interfaces, and Apex, a powerful programming language for building custom business logic and integrations. Developers also use Visualforce, a markup language for creating custom user interfaces, and Salesforce DX, a developer-friendly platform for managing the application development lifecycle. Additionally, Salesforce offers a robust ecosystem of third-party tools and technologies, such as Heroku for hosting and deploying applications, and MuleSoft for integrating Salesforce with other systems. With these tools and technologies, Salesforce developers can create highly customized and efficient solutions tailored to the unique needs of each business.';
+
+  const subHeadPathways =
+    'We have the expertise to achieve the desired outcomes for your Salesforce investments. We provide four options for engaging with us, which are designed to be convenient and adaptable to your business needs.';
+
+  const EngageOptions = [
+    {
+      head: 'DISCOVER',
+      content:
+        'We thoroughly examine your company and offerings to gain a comprehensive understanding of your products and services. Furthermore, we scrutinize your existing Salesforce setup in depth to establish the appropriate specifications.',
+    },
+    {
+      head: 'BUILD',
+      content:
+        'It is crucial to collaborate with an experienced Salesforce development services provider that has expert staff to optimize your business workflows. We finish projects on schedule, handling architecture configuration, solution ideation, development, and testing.',
+    },
+    {
+      head: 'DEPLOY',
+      content:
+        'The solution that is developed can sometimes be so important that it may provide capabilities to your Salesforce business that you have never encountered before. As a result, we make the solution accessible to users through the right tools without impacting any current information or functions.',
+    },
+  ];
 
   const hireCards = [
     {
@@ -183,29 +214,29 @@ function HireAangularJsDeveloper(props) {
             alt="Salesforce Development Company"
           />
           <Customer />
-          {/* <Experienced
-            title="Salesforce Development"
-            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/laravel/leio-mclaren-OzeOpF6kTyg-unsplash.png"
-            alt="Hire Laravel Developers"
-            para1={subhead1}
-            card={experienceCards}
-          /> */}
           {/* This component is added */}
           <AdvantageCustom
-            title="Salesforce Development "
-            subhead="Our proficient consultants in Salesforce CRM assist you in analysing your business requirements by recognizing areas of improvement to enhance performance and efficiency. Our outreach spans across the globe, catering to countries such as the UK, Canada, the United States, and Jordan. We specialise in delivering a broad range of services to clients from diverse sectors."
+            title="Salesforce Development That We Offer"
+            subhead={subhead}
             reasons={experienceCards}
           />
           <HireMarquee title="Salesforce Development" />
+          {/* This component is added */}
+          <BusinessPathways
+            heading="Elevating User Journeys with Our Enhanced %Salesforce Development Process%"
+            subhead={subHeadPathways}
+            EngageOptions={EngageOptions}
+          />
+          <KeySkill
+            breif={keySkillsBreif}
+            heading="Tools and Technologies% in Salesforce Development"
+          />
           <Hire
             title="What Sets Our %Salesforce Development% Apart in Terms of Excellence"
             card={hireCards}
+            subhead1={subhead1}
           />
-          {/* <Hire
-            title="Why to Choose %Brain Inventory% for WordPress Project Development?"
-            card={hireCards}
-          /> */}
-
+          <Hello />
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"

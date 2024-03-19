@@ -10,10 +10,10 @@ export default function AdvantageCustom({ title, reasons, subhead }) {
         <p className="opacity-50 Gilroy lg:pl-10 py-4">{subhead}</p>
       </section>
 
-      <section className='mx-8'>
+      <section className="mx-8">
         {reasons?.map((ele, index) => (
           <div className="container flex flex-col items-end" key={index}>
-            <div className="bg-customer p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full">
+            <div className="bg-customer p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full transform transition-transform hover:scale-[1.02]">
               <h5 className="text-2xl font-bold text-shadow lg:w-[15%]">
                 {ele?.head}
               </h5>

@@ -152,7 +152,7 @@ export default function HireBanner({
                 </ul>
               </section>
             </section>
-          ) : unique === "developer" ||
+          ) : unique === "developer" || unique === "Company" ||
             unique === "analyst" ||
             unique === "design" ? (
             <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">

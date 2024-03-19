@@ -191,7 +191,6 @@ function HireAangularJsDeveloper(props) {
           content={content}
           unique={'Company'}
           btn="Contact Us!"
-          image="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
           alt="Salesforce Development Company"
         />
         <Customer />

@@ -178,70 +178,7 @@ export default function HireBanner({
                 </ul>
               </section>
             </section>
-          ) 
-          // : (
-          //   <section
-          //     className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
-          //       type?.match("php") && "drop-shadow-image"
-          //     }`}
-          //   >
-          //     <Image
-          //       src={image}
-          //       className={`rounded-2xl ${
-          //         type === "hire" ? "w-[700px]" : "w-[100%]"
-          //       }`}
-          //       blurDataURL="/loader.jpg"
-          //       placeholder="blur"
-          //       fetchPriority="high"
-          //       width={900}
-          //       height={900}
-          //       alt={alt}
-          //     />
-          //   </section>
-          // )
-          }
-          {/* {unique === "developer" ||
-          unique === "analyst" ||
-          unique === "design" ? (
-            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
-              <section className="started-subcription">
-                <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                <h2 className="Gilroy-Bold text-5xl">
-                  2 Business <span className="text-lg">Days</span>
-                </h2>
-              </section>
-              <section className="p-8 bg-line">
-                <ul className="list-subcription">
-                  {card &&
-                    card.map((ele, index) => (
-                      <li key={index} className="flex items-center">
-                        <BiCheckCircle className="text-2xl mb-2" />
-                        {ele}
-                      </li>
-                    ))}
-                </ul>
-              </section>
-            </section>
-          ) : (
-            <section
-              className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${
-                type?.match("php") && "drop-shadow-image"
-              }`}
-            >
-              <Image
-                src={image}
-                className={`rounded-2xl ${
-                  type === "hire" ? "w-[700px]" : "w-[100%]"
-                }`}
-                blurDataURL="/loader.jpg"
-                placeholder="blur"
-                fetchPriority="high"
-                width={900}
-                height={900}
-                alt={alt}
-              />
-            </section>
-          )} */}
+          ) : null}
         </section>
       </section>
     </main>

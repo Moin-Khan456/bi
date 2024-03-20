@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+ 
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));

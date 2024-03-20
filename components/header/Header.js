@@ -527,6 +527,16 @@ const ServicesChildren = () => {
       link: "/hire-dotnet-developers",
     },
     {
+      _id: 21,
+      name: "Hire Salesforce Developers",
+      link: "/hire-salesforce-developers",
+    },
+    {
+      _id: 22,
+      name: "Hire Java Developers",
+      link: "/hire-java-developers",
+    },
+    {
       _id: 16,
       name: "Hire QA Analysts",
       link: "/hire-qa-analysts",
@@ -583,7 +593,10 @@ const ServicesChildren = () => {
             Show More &nbsp; <MdOutlineUnfoldMore />
           </button>
         ) : (
-          <button className="flex items-center" onClick={() => setShowMore(false)}>
+          <button
+            className="flex items-center"
+            onClick={() => setShowMore(false)}
+          >
             Show Less &nbsp; <MdUnfoldLess />
           </button>
         )}

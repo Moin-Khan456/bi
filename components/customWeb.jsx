@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 const Index = ({ para1, para2, para3, type }) => {
@@ -44,14 +43,14 @@ const Index = ({ para1, para2, para3, type }) => {
             )}
           </p>
           <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 ml-4 pr-20">
-            <Link href={"#talk"} className="flex flex-col justify-center Gilroy">
+            <button className="flex flex-col justify-center Gilroy">
               <span className="text-xs font-thin text-slate-400 pb-1">
                 Got a project in mind?
               </span>
               <span className="flex items-center justify-between w-full">
                 Contact Us! <BsArrowRight />
               </span>
-            </Link>
+            </button>
           </section>
         </section>
       </section>

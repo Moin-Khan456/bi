@@ -186,7 +186,7 @@ function HireAangularJsDeveloper(props) {
           <>
             <Header></Header>
             <HireBanner
-              heading="Transform your ideas into stunning Android apps with our expert Android app development services!"
+              heading="Transform your ideas into stunning Android apps with our expert Android app development services!" 
               title="Hire Android "
               content={content}
               btn="Contact Us!"

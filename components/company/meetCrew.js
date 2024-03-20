@@ -171,7 +171,6 @@ function meetCrew() {
                 <div key={el}>
                   <div className="w-[260px] h-[280px] mr-2 relative border-2 border-cutom object-cover">
                     <Image
-                       
                       srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

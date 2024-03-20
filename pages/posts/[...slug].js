@@ -63,8 +63,7 @@ export default function PostPage({ post, featuredMedia }) {
                 <h1 className="text-left Gilroy-Bold text-2xl mb-4  ">
                   {post.title.rendered}
                 </h1>
-                <Image  
-         
+                <Image
                   src={featuredMedia}
                   className="w-full lg:min-w-[1000px] lg:max-w-[1350px]"
                   width={900}

@@ -23,7 +23,7 @@ const HomeSectionNine = dynamic(() =>
 );
 const HomeSectionTen = dynamic(() =>
   import("../components/home/HomeSection-10.js")
-);
+)
 const HomeSectionEleven = dynamic(() =>
   import("../components/home/HomeSection-11.js")
 );

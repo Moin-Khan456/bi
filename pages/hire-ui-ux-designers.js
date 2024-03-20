@@ -179,7 +179,6 @@ function HireAangularJsDeveloper(props) {
               title="Hire UI/UX "
               content={content}
               btn="Get a Quote"
-              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+UIUX+Developers.png"
               alt="Hire UI/UX Designers"
               type="hire"
               unique="design"

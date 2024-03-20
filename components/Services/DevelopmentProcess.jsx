@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function Advantage({
+export default function DevelopmentProcess({
   subhead = null,
   title,
+  subPara,
   enableBtn = true,
   advantages,
   btn = null,
@@ -15,11 +16,22 @@ export default function Advantage({
             {subhead ? subhead : "Advantages to Hiring a"}{" "}
             <span className="text-[#7600EB]">{title}</span>
           </h2>
-          {advantages?.map((ele, index) => (
-            <p className="Gilroy-Light pb-6" key={index}>
-              {ele}
-            </p>
-          ))}
+          <p className="Gilroy-Light pb-6" >
+                  {subPara}
+                </p>
+          {advantages?.map((ele, index) => {
+            return (
+              <div className="flex flex-col gap-2" key={index}>
+                <h1 className="uppercase text-2xl opacity-60 font-bold">
+                  {" "}
+                  {ele.head}
+                </h1>
+                <p className="Gilroy-Light pb-6" key={index}>
+                  {ele.content}
+                </p>
+              </div>
+            );
+          })}
           {enableBtn && (
             <a href="#talk">
               <button className="rounded-2xl bg-contact-c py-4 w-full px-4">

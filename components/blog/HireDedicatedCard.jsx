@@ -23,7 +23,7 @@ const HireDedicatedCard = ({ setLocal }) => {
     <>
       <div
         ref={animationRef}
-        className={`relative !z-[9999] animate__animated ${
+        className={`relative animate__animated ${
           isOpen ? "animate__bounceInRight" : "animate__bounceOutRight"
         } max-w-[70vw] lg:w-[400px] lg:min-w-[400px] lg:max-w-[300px] lg:mt-12 p-4 bg-gradient-to-b from-[#6302dd] to-[#4601a1] max-h-[750px] rounded-md`}
       >

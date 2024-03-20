@@ -18,7 +18,10 @@ export default function App({
             <h1 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
               {titleArray.map((ele, index) => (
                 <span className="" key={index}>
-                  {ele.includes("Brain") || ele.includes("Salesforce")? (
+                  {console.log(ele.includes("Brain"))}
+                  {ele.includes("Brain") ? (
+                    <span className="text-[#7600EB]">{ele}</span>
+                  ) : ele.includes("Salesforce Development") ? (
                     <span className="text-[#7600EB]">{ele}</span>
                   ) : (
                     <span>{ele}</span>
@@ -35,7 +38,11 @@ export default function App({
             <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
               {subhead2}
             </p>
-            {enablePara && <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">{enablePara}</p>}
+            {enablePara && (
+              <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+                {enablePara}
+              </p>
+            )}
           </section>
         </section>
         <section className="lg:w-[40%] px-8 lg:px-0">

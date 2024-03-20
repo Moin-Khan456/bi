@@ -212,7 +212,7 @@ function HireSalesforceDeveloper(props) {
             <HireMarquee title="Android" />
             <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
             <Hire
-              title="Why Hire a Salesforce Developer from %Brain Inventory"
+              title="Why Hire a Salesforce Developer from % Brain Inventory%"
               card={hireCards}
             />{" "}
             <ChooseBraininventory

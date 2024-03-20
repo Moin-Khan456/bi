@@ -15,7 +15,7 @@ export default function BlogArticle() {
   }, []);
   return (
     <main className="px-6 2xl:p-10 lg:p-8 2xl:space-y-8 space-y-6 w-full blogArticles">
-      <section className="container padding-left-all-section-1">
+      <section className="container ">
         <section className="">
           <section>
             <section className="flex justify-between flex-col lg:flex-row">

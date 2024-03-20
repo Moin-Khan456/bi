@@ -77,33 +77,33 @@ export default function KeepInTouch() {
                     <Field
                       type="text"
                       name="name"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7] text-black"
+                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
                       placeholder="You should have a name"
                     />
                     <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
                       <Field
                         type="email"
                         name="email"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7] text-black"
+                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
                         placeholder="Obviously, an email"
                       />
                       <Field
                         type="number"
                         name="number"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7] text-black"
+                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
                         placeholder="Your contact number"
                       />
                     </div>
                     <Field
                       type="text"
                       name="companyName"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7] text-black"
+                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
                       placeholder="What's your company name?"
                     />
                     <Field
                       type="text"
                       name="feedback"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7] text-black"
+                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
                       placeholder="Tell us, Everything!"
                     />
                     <HomeButton type="submit">Submit</HomeButton>

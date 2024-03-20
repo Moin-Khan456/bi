@@ -32,7 +32,7 @@ async function handleContactUsRequest(data, subject) {
 }
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const reqData = JSON.parse(req.body)
+    const reqData = JSON.parse(req.body);
 
     handleContactUsRequest(reqData.data, reqData.subject)
       .then((resp) => {

@@ -12,12 +12,12 @@ const Contact = () => {
       .email(<RiErrorWarningFill />)
       .required(<RiErrorWarningFill />),
     number: Yup.string()
-      .matches(/^[0-9+]+$/, <RiErrorWarningFill />)
+      .min(10, <RiErrorWarningFill />)
+      .max(10, <RiErrorWarningFill />)
       .required(<RiErrorWarningFill />),
     companyName: Yup.string().required(<RiErrorWarningFill />),
     feedback: Yup.string().required(<RiErrorWarningFill />),
   });
-
   const initialValues = {
     name: "",
     email: "",

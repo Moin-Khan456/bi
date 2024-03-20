@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -28,13 +27,11 @@ const Index = ({
             >
               {title}
             </h1>
-            <Link href="#talk">
             <button
-              className="uppercase flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12">
+              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12">
               {btn}
               <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
             </button>
-            </Link>
             <p className="lg:w-[235px] relative top-11">{head}</p>
           </div>
           <div className="relative hidden lg:block">

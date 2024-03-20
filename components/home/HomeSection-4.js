@@ -10,7 +10,8 @@ const info = [
       white: "Development",
     },
     url: "/web-development/custom-web-development",
-    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/WebDevelopment.mp4",
+    video:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/WebDevelopment.mp4",
     techList: [
       {
         name: "Reactjs Development",
@@ -33,7 +34,8 @@ const info = [
       white: "Development",
     },
     url: "/mobile-development/custom-app-development",
-    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4",
+    video:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4",
     techList: [
       {
         name: "android native",
@@ -55,7 +57,7 @@ const info = [
       orange: "UI/UX",
       white: "Design",
     },
-    url: "/",
+    url: "/ui-ux-development-services",
     video: "https://braininventory.s3.us-east-2.amazonaws.com/images/UIUX.mp4",
     techList: [
       {
@@ -115,7 +117,7 @@ const Section = ({ info, url, video }) => {
   const [position, setPostion] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-        setPostion(true);
+      setPostion(true);
     });
   });
   return (

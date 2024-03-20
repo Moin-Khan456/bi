@@ -11,11 +11,14 @@ import LetsKick from "../../components/common/LetsKick.js";
 import Footer from "../../components/common/Footer.js";
 import { rediss } from "../../utils/redis.js";
 
-export default function Home({ data = [], blogs = [], totalPages, page }) {
-// export default function Home() {
+export default function Home({
+  data = false,
+  blogs = false,
+  totalPages,
+  page,
+}) {
   const [currentPage, setCurrentPage] = useState(page);
 
-  console.log({ data, blogs, totalPages, page });
   return (
     <>
       <Head>
@@ -68,10 +71,12 @@ export default function Home({ data = [], blogs = [], totalPages, page }) {
             <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
-              <div className="pb-2"><PopularBlogs data={data} /></div>
+              <div className="pb-2">
+                <PopularBlogs data={data} />
+              </div>
               <hr />
               <Blogs blogs={blogs} pageNumber={currentPage} />
-               <Pagination
+              <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}
                 setCurrentPage={setCurrentPage}
@@ -89,6 +94,11 @@ export default function Home({ data = [], blogs = [], totalPages, page }) {
   );
 }
 export async function getServerSideProps(context) {
+  context.res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=600, stale-while-revalidate=3600"
+  );
+
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
@@ -123,7 +133,6 @@ export async function getServerSideProps(context) {
     300
   );
 
-  console.log(response.data)
   return {
     props: {
       data: response?.data?.slice(0, 3) ?? [],

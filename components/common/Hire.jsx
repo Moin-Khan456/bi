@@ -1,34 +1,44 @@
 import * as React from "react";
 
-export default function App({ title, subhead, subhead1, subhead2, card }) {
+export default function App({
+  enablePara = false,
+  title,
+  colorText = "Brain",
+  subhead,
+  subhead1,
+  subhead2,
+  card,
+}) {
   const titleArray = title.split("%");
   return (
     <main className="container">
       <section className="relative flex flex-col lg:flex-row h-auto w-full">
-        <section className="lg:sticky lg:top-0 min-w-[50%] h-[200px] lg:min-h-screen ">
-          <section className="pb-12 lg:h-[200px] px-8 lg:px-0 lg:w-[700px] absolute lg:top-[15%] lg:left-[50%] max-w-[600px] lg:-translate-x-[45%] lg:-translate-y-[70%]">
+        <section className="lg:sticky lg:top-0 min-w-[50%] h-[250px] lg:min-h-screen ">
+          <section className="lg:h-[200px] px-8 lg:px-0 lg:w-[700px] absolute lg:top-[15%] lg:left-[50%] max-w-[600px] lg:-translate-x-[45%] lg:-translate-y-[50%]">
             <h1 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
-              {titleArray.map((ele, index) => (
-                <span className="" key={index}>
-                  {ele.includes("Brain") ? (
-                    <span className="text-[#7600EB]">{ele}</span>
-                  ) : (
-                    <span>{ele}</span>
-                  )}
-                </span>
-              ))}
+              {titleArray.map((ele, index) => {
+                console.log("🚀 ~ {titleArray.map ~ ele:", ele);
+                return (
+                  <span className="" key={index}>
+                    {ele.includes(colorText) ? (
+                      <span className="text-[#7600EB]">{ele}</span>
+                    ) : (
+                      <span>{ele}</span>
+                    )}
+                  </span>
+                );
+              })}
             </h1>
-            <div>
-              <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
-                {subhead}
-              </p>
-              <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
-                {subhead1}
-              </p>
-              <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
-                {subhead2}
-              </p>
-            </div>
+            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+              {subhead}
+            </p>
+            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+              {subhead1}
+            </p>
+            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+              {subhead2}
+            </p>
+            {enablePara && <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">{enablePara}</p>}
           </section>
         </section>
         <section className="lg:w-[40%] px-8 lg:px-0">

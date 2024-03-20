@@ -9,16 +9,17 @@ const Index = () => {
     <div className="rounded-md my-8 relative h-screen">
       <div className="video-section absolute top-0 left-0">
         <div className="container padding-left-all-section">
-          <div className="absolute top-0 m-auto pt-20">
-            <div className="p-6 lg-p-0">
-              <h5 className="monument lg:text-4xl pt-7">
+          <div className="absolute top-0 m-auto pt-20  ">
+            <div className="text-center">
+              <h5 className="monument lg:text-4xl pt-7 px-3">
                 CREATING IMPACTFUL SOCIAL
               </h5>
-              <h2 className="monument lg:text-[10.1rem] text-5xl lg:leading-[8.75rem] mt-7 relative">
+              <h2 className="monument lg:text-[10.1rem] text-[2.7rem] lg:leading-[8.75rem] mt-7   relative">
+                {" "}
                 SOLUTIONS
               </h2>
-              <h2 className="monument lg:text-[10rem] text-5xl relative">
-                TOGETHER
+              <h2 className="monument lg:text-[10rem] text-[2.7rem] relative   ">
+                TOGETHER{" "}
               </h2>
             </div>
 
@@ -33,8 +34,7 @@ const Index = () => {
               </div>
 
               <div className="lg:absolute lg:bottom-[-9rem] left-0 right-0 ">
-                <Image  
-         
+                <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/social-networking/Mask+Group+163.png"
                   alt="social networking app development company"
                   width={1800}

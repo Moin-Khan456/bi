@@ -165,9 +165,9 @@ function UiUxDevelopmentServices(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/uiux-services"
+          content="https://braininventory.in/ui-ux-development-services"
         />
-        <link rel="canonical" href="https://braininventory.in/uiux-services" />
+        <link rel="canonical" href="https://braininventory.in/ui-ux-development-services" />
       </Head>
       <Suspense
         fallback={

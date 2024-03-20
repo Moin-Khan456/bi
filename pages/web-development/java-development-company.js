@@ -122,10 +122,9 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Experience best Java development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
         />
-        {/* TODO - img */}
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_salesforce.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_java+web.png"
         />{' '}
         <meta
           property="og:url"
@@ -135,11 +134,10 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/java-development-company"
         />
-        {/* TODO */}
         <link
           rel="preload"
           fetchpriority="high"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/java-development-company.png"
           as="image"
         />
       </Head>
@@ -155,12 +153,12 @@ function HireAangularJsDeveloper(props) {
           alt="Java Development Company"
         />
         <Customer />
-        {/* TODO - img, heading */}
         <Experienced
           title="Java Development"
           type="why"
-          image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+170.png"     
+          image="https://braininventory.s3.us-east-2.amazonaws.com/images/java-development-company.png"     
           alt="Java Development Company"
+          blueSolution={true}
           para1={subhead1}
           para2={subhead2}
           para3={subhead3}
@@ -175,10 +173,10 @@ function HireAangularJsDeveloper(props) {
           title="Why to Choose %Brain Inventory% for Java Development?"
           card={hireCards}
         />
-        {/* TODO */}
         <ChooseBraininventory
           reasons={chooseBI}
           alt="Hire Dedicated Java Developers"
+          blueSolution={true}
         />
         <FaqHire faq={faqdetails} />
         <hr />

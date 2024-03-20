@@ -185,6 +185,10 @@ const FooterSections = [
         name: "Salesforce Development",
         path: "/web-development/salesforce-development-company",
       },
+      {
+        name: "Java Development",
+        path: "/web-development/java-development-company",
+      },
     ],
   },
   {

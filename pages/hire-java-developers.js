@@ -168,7 +168,7 @@ function HireJavaDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Android+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_java.png"
         />
         <meta
           property="og:url"

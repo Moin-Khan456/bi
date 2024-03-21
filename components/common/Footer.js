@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FooterSections = [
@@ -399,6 +400,14 @@ const organizations = [
 ];
 
 export default function Footer() {
+  const [expandedSections, setExpandedSections] = useState({});
+
+  const handleLoadMore = (index) => {
+    setExpandedSections((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
   return (
     <div className="py-10 mx-10 border-t">
       <div className="container lg:px-24">

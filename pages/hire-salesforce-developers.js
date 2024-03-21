@@ -161,7 +161,7 @@ function HireSalesforceDeveloper(props) {
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Android+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/image.png"
         />
         <meta
           property="og:url"
@@ -199,7 +199,7 @@ function HireSalesforceDeveloper(props) {
               type="hire"
               card={experienceCards}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Hire+salesforce+developers/Mask+Group+164.png"
-              alt="TypeScript Development Company"
+              alt="Salesforce Development Company"
               para1={subhead1}
               para2={subhead2}
               //   para3={subhead3}
@@ -218,7 +218,7 @@ function HireSalesforceDeveloper(props) {
             <ChooseBraininventory
               reasons={chooseBI}
               subhead={chooseBiSubhead}
-              alt="Hire Android App Developers & Programmers"
+              alt="Hire Salesforce Developers & Programmers"
             />
             {/* <Engaged /> */}
             {/* <HireSteps type="Android" /> */}

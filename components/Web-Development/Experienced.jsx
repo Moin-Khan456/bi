@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 const Index = ({
   para1,
   para2,
@@ -10,26 +10,32 @@ const Index = ({
   type,
   alt,
   hideImage = false,
+  blueSolution = false,
 }) => {
   return (
     <main className="container px-4 lg:px-24 pt-28 lg:pt-4 lg:pb-8">
       <section>
         <section>
-          {type === "why" ? (
+          {type === 'why' ? (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
-              Why you may need a{" "}
-              <span className="text-[#7600EB]"> {title}</span> solution?
+              Why you may need a{' '}
+              <span className="text-[#7600EB]"> {title}</span>{' '}
+              {!blueSolution ? (
+                <>solution?</>
+              ) : (
+                <span className="text-[#7600EB]"> Solution?</span>
+              )}
             </h2>
-          ) : type === "services" ? (
+          ) : type === 'services' ? (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
               <span className="text-[#7600EB]"> {title}</span> Services That We
               Offer
             </h2>
           ) : (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
-              Hire an Experienced{" "}
+              Hire an Experienced{' '}
               <span className="text-[#7600EB]"> {title}</span> to Upscale Your
-              Development{" "}
+              Development{' '}
             </h2>
           )}
         </section>

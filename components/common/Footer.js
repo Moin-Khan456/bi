@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FooterSections = [
   {

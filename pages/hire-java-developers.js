@@ -155,20 +155,20 @@ function HireJavaDeveloper(props) {
         <title>Hire Java Developers | Dedicated Java Developers</title>
         <meta
           name="description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Hire top-rated Java Developers from Brain Inventory. Our experienced developers build highly customized Java applications for different sizes of businesses."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Salesforce Developers | Dedicated Salesforce App Developers"
+          content="Hire Java Developers | Dedicated Java App Developers"
         />
         <meta
           property="og:description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Hire top-rated Java Developers from Brain Inventory. Our experienced developers build highly customized Java applications for different sizes of businesses."
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Android+Developers.jpg"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_java.png"
         />
         <meta
           property="og:url"

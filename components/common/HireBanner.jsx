@@ -40,14 +40,14 @@ export default function HireBanner({
   ];
 
   return (
-    <main className="container padding-left-all-section-1 pt-20 lg:py-32   min-h-full">
+    <main className="container padding-left-all-section-1 pt-20 lg:py-32 min-h-full">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-52`}>
         <section className="w-full">
           <section className="ml-4 lg:ml-0">
             <span className="text-2xl Gilroy-Bold lg:whitespace-normal">
               {heading}
             </span>
-            <h1 className="text-5xl lg:text-[5rem] Gilroy-Bold mt-4 whitespace-nowrap max-sm:whitespace-break-spaces">
+            <h1 className="text-5xl lg:text-[5rem] Gilroy-Bold mt-4 max-sm:whitespace-break-spaces">
               {title}
               {unique === "design" ? (
                 <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold">

@@ -144,27 +144,27 @@ function HireSalesforceDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Salesforce Developers | Dedicated Salesforce App Developers
+          Hire Salesforce Developers in 48 Hours | Expert Salesforce Developers
         </title>
         <meta
           name="description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Brain Inventory provides the opportunity to hire skilled Salesforce developers for your project needs. Access experienced and certified professionals with us."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Salesforce Developers | Dedicated Salesforce App Developers"
+          content="Hire Salesforce Developers in 48 Hours | Expert Salesforce Developers"
         />
         <meta
           property="og:description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Brain Inventory provides the opportunity to hire skilled Salesforce developers for your project needs. Access experienced and certified professionals with us."
         />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/image.png"
         />
         <meta
-          property="og:url"
+          property="og:url" 
           content="https://braininventory.in/hire-salesforce-developers"
         />
         <link

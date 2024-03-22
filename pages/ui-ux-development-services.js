@@ -145,26 +145,26 @@ function UiUxDevelopmentServices(props) {
   return (
     <>
       <Head>
-        <title>UIUX Service | Dedicated UIUX Service</title>
+        <title>Expert UI/UX Design And Development Services</title>
         <meta
           name="description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Brain Inventory offers expert UI/UX development services, creating stunning designs and user-friendly interfaces to enhance user experience and drive business growth."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Salesforce Developers | Dedicated Salesforce App Developers"
+          content="Expert UI/UX Design And Development Services"
         />
         <meta
           property="og:description"
-          content="Hire top-rated Salesforce Developers from Brain Inventory. Our experienced developers build highly customized Salesforce applications for different sizes of businesses."
+          content="Brain Inventory offers expert UI/UX development services, creating stunning designs and user-friendly interfaces to enhance user experience and drive business growth."
         />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Android+Developers.jpg"
         />
         <meta
-          property="og:url"
+          property="og:url" 
           content="https://braininventory.in/ui-ux-development-services"
         />
         <link rel="canonical" href="https://braininventory.in/ui-ux-development-services" />

@@ -33,6 +33,7 @@ const HireDedicatedCard = ({ setLocal }) => {
         <span className="flex justify-end absolute top-1 right-4 text-white cursor-pointer">
           <FaRegWindowMinimize
             onClick={() => {
+              localStorage.setItem("openPopup", false);
               setIsOpen(false);
             }}
             className="text-white cursor-pointer"

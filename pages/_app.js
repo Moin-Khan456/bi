@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       localForm === null &&
+        (JSON.parse(localStorage.getItem("openPopup")) ?? true) &&
         setLocal(
           window.innerWidth < 1000
             ? false

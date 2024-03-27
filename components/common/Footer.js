@@ -109,6 +109,14 @@ const FooterSections = [
         path: "/hire-dotnet-developers",
       },
       {
+        name: "Hire Salesforce Developers",
+        path: "/hire-salesforce-developers",
+      },
+      {
+        name: "Hire Java Developers",
+        path: "/hire-java-developers",
+      },
+      {
         name: "Hire QA Analyst",
         path: "/hire-qa-analysts",
       },
@@ -184,6 +192,10 @@ const FooterSections = [
       {
         name: "Salesforce Development",
         path: "/web-development/salesforce-development-company",
+      },
+      {
+        name: "Java Development",
+        path: "/web-development/java-development-company",
       },
     ],
   },
@@ -399,7 +411,7 @@ export default function Footer() {
   return (
     <div className="py-10 mx-10 border-t">
       <div className="container lg:px-24">
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4"> 
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {FooterSections.map((section, index) => {
             const isExpanded = expandedSections[index];
             return (

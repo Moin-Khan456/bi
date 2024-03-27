@@ -1,11 +1,14 @@
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
+
 export default function KeySkill({
   breif,
   points = null,
   gridCol = 4,
   heading = false,
 }) {
+  // const point1 = points.slice(0, points.length / 2);
+  // const point2 = points.slice(points.length / 2, points.length);
   return (
     <main>
       <section className="container padding-left-all-section-1 lg:pb-28">
@@ -27,7 +30,27 @@ export default function KeySkill({
           </h2>
           <p className="Gilroy-Light !text-xl !leading-8 pb-6">{breif}</p>
           <section className="hidden lg:flex justify-between lg:pr-72">
+            {/* <section>
+              <ul className="team-list">
+                {point1.map((ele, index) => (
+                  <li key={index + 1}>
+                    <br />
+                    <IoMdArrowForward /> {ele}
+                  </li>
+                ))}
+              </ul>
+            </section> */}
+            {/* <section>
+              <ul className="team-list">
+                {point2.map((ele, index) => (
+                  <li key={index + 1}>
+                    <br /> <IoMdArrowForward /> {ele}
+                  </li>
+                ))}
+              </ul>
+            </section> */}
           </section>
+
           {points && (
             <section className=" ">
               <ul className={`grid lg:grid-cols-${gridCol} md:grid-cols-2 grid-cols-1  gap-6`}>

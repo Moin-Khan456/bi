@@ -3,13 +3,13 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Index = () => {
   return (
-    <div className="container">
-      <div className="w-full flex flex-col items-center justify-center">
-        <div className="mx-2 lg:mx-8">
+    <div className="container padding-left-all-section-1">
+      <div className="w-full flex flex-col justify-center">
+        <div className="mx-2 lg:mx-12">
           <h1 className="text-xl lg:text-[4.3rem] leading-12 font-bold">
             Get Started Within 2 Business Days
           </h1>
-        </div>
+        </div>  
         <div className="container">
           <div className="flex flex-col lg:justify-around w-full items-center lg:flex-row py-8 px-0 ">
             <div className="grid-row-2 px-2 text-justify lg:w-[480px] col-start-1 col-end-3">

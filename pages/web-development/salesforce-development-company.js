@@ -148,20 +148,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Best Salesforce Development Company | Salesforce Development Services
+          Brain Inventory Services: Top Salesforce Development Company
         </title>
         <meta
           name="description"
-          content="Experience best Salesforce development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="We are a leading Salesforce development company, providing top-quality Salesforce development services to businesses worldwide. Partner with us for Salesforce solutions."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Best Salesforce Development Company | Salesforce Development Services"
+          content="Brain Inventory Services: Top Salesforce Development Company"
         />
         <meta
           property="og:description"
-          content="Experience best Salesforce development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="We are a leading Salesforce development company, providing top-quality Salesforce development services to businesses worldwide. Partner with us for Salesforce solutions."
         />
         <meta
           property="og:image"

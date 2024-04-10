@@ -14,7 +14,7 @@ import axios from "axios";
 import HireDedicatedCard from "../../components/blog/HireDedicatedCard";
 import { FiMail } from "react-icons/fi";
 
-export default function PostPage({ post, featuredMedia }) {
+export default function PostPage({ slug, post, featuredMedia }) {
   const [title, setTitle] = useState(
     data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog"
   );
@@ -47,12 +47,12 @@ export default function PostPage({ post, featuredMedia }) {
           <meta property="og:description" content={discription} />
           <link
             rel="canonical"
-            href={`https://braininventory.in/posts/${post.slug}/${post.id}`}
+            href={`https://braininventory.in/posts/${slug}/${post.id}`}
           />
           <meta property="og:image" content={featuredMedia} />
           <meta
             property="og:url"
-            content={`https://braininventory.in/posts/${post.slug}/${post.id}`}
+            content={`https://braininventory.in/posts/${slug}/${post.id}`}
           />
         </Head>
         <Header></Header>
@@ -123,6 +123,7 @@ export async function getServerSideProps(context) {
     post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
   return {
     props: {
+      slug: slug,
       post: post.data,
       featuredMedia: featuredMedia.data?.source_url,
     },

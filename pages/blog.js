@@ -22,6 +22,7 @@ export default function Home({ data, blogs, totalPages }) {
       setPostion(true);
     });
   });
+
   return (
     <>
       <Head>

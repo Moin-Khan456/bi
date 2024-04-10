@@ -33,6 +33,8 @@ export default function PostPage({ slug, post, featuredMedia }) {
       data.find((ele) => ele.id === post.id)?.description ||
         "Brain Inventory | Blog"
     );
+
+    console.log(slug);
   }, [post.id]);
 
   return (
@@ -47,12 +49,12 @@ export default function PostPage({ slug, post, featuredMedia }) {
           <meta property="og:description" content={discription} />
           <link
             rel="canonical"
-            href={`https://braininventory.in/posts/${slug}/${post.id}`}
+            href={`https://braininventory.in/posts/${slug[0]}/${post.id}`}
           />
           <meta property="og:image" content={featuredMedia} />
           <meta
             property="og:url"
-            content={`https://braininventory.in/posts/${slug}/${post.id}`}
+            content={`https://braininventory.in/posts/${slug[0]}/${post.id}`}
           />
         </Head>
         <Header></Header>

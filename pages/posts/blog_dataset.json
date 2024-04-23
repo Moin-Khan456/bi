@@ -1,4 +1,24 @@
 [ {
+  "Title": "LAMP vs. MEAN: Web Development Stack Comparison",
+  "description": "Explore the differences between LAMP (Linux, Apache, MySQL, PHP) and MEAN (MongoDB, Express.js, AngularJS, Node.js) stacks to choose the right one for your web development needs.",
+  "id": 1753
+  },
+  {
+  "Title": "Domain Extension Importance: .Com Vs .IO Explained",
+  "description": "Explore the significance of domain extensions like .com and .io. Learn how they impact branding, credibility, and audience perception in the digital landscape.",
+  "id": 1750
+  },
+  {
+  "Title": "Industries Set to Benefit Most from AI Advancements",
+  "description": "Explore which industries stand to gain the most from the rise of artificial intelligence (AI) and how this technology is transforming various sectors.",
+  "id": 1747
+  },
+  {
+  "Title": "LAMP Development Best Practices: Building Robust Web Apps",
+  "description": "Discover top tips for LAMP development, ensuring robustness and efficiency in your web applications. Learn best practices for PHP, MySQL, Apache, and Linux stack.",
+  "id": 1744
+  },
+  {
   "Title": "Elevate Fitness Goals: Gym App Development with React Native",
   "description": "Discover how gym app development with React Native can revolutionize fitness experiences. Learn about the benefits of using React Native for building gym apps.",
   "id": 1736

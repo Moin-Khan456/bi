@@ -14,9 +14,9 @@ const Header = () => {
 
   const handlesidebar = () => {
     if (navOpen) {
-      document.getElementById("sidenav").classList.add("-translate-y-full");
+      document.getElementById("sidenav")?.classList.add("-translate-y-full");
     } else {
-      document.getElementById("sidenav").classList.remove("-translate-y-full");
+      document.getElementById("sidenav")?.classList.remove("-translate-y-full");
     }
     setNavOpen(!navOpen);
   };
@@ -544,11 +544,16 @@ const ServicesChildren = () => {
   ];
 
   const [showMore, setShowMore] = useState(false);
+  const [showMoreWebLinks, setShowMoreWebLinks] = useState(false);
   return (
-    <div className="col-span-4 lg:grid lg:grid-cols-3 hidden">
+    <div className="col-span-4 lg:grid lg:grid-cols-3 lg:gap-6 hidden">
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Web Development</h2>
-        <ul className="space-y-2">
+        <ul
+          className={`space-y-2 ${
+            showMoreWebLinks ? "overflow-y-scroll" : "overflow-y-hidden"
+          } scrollbar-tiny h-[65vh] mr-3`}
+        >
           {webLinks?.map((ele) => (
             <li className="text-white text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
@@ -557,7 +562,23 @@ const ServicesChildren = () => {
             </li>
           ))}
         </ul>
+        {webLinks.length > 12 && !showMoreWebLinks ? (
+          <button
+            className="flex items-center"
+            onClick={() => setShowMoreWebLinks(true)}
+          >
+            Show More &nbsp; <MdOutlineUnfoldMore />
+          </button>
+        ) : (
+          <button
+            className="flex items-center"
+            onClick={() => setShowMoreWebLinks(false)}
+          >
+            Show Less &nbsp; <MdUnfoldLess />
+          </button>
+        )}
       </div>
+
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Mobile Development </h2>
         <ul className="space-y-2">
@@ -575,7 +596,7 @@ const ServicesChildren = () => {
         <ul
           className={`space-y-2 ${
             showMore ? "overflow-y-scroll" : "overflow-y-hidden"
-          } scrollbar-tiny h-[70%]`}
+          } scrollbar-tiny h-[65vh]`}
         >
           {hireLinks?.map((ele, index) => (
             <li className="text-white text-opacity-50" key={ele._id}>
@@ -585,7 +606,7 @@ const ServicesChildren = () => {
             </li>
           ))}
         </ul>
-        {hireLinks.length > 16 && !showMore ? (
+        {hireLinks.length > 12 && !showMore ? (
           <button
             className="flex items-center"
             onClick={() => setShowMore(true)}

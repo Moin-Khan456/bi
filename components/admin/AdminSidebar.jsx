@@ -1,6 +1,6 @@
 const AdminSidebar = ({ selectedComponent, handleComponentChange }) => {
   return (
-    <section className="h-screen bg-base-blue-2 w-[20%] rounded border border-gray-50">
+    <section className="h-screen bg-base-blue-2 w-[25%] rounded border border-gray-50">
       <div className="mx-auto w-[50%] flex flex-col gap-8 pt-14">
         <div
           className={`text-center py-2 rounded font-medium border cursor-pointer ${
@@ -8,7 +8,7 @@ const AdminSidebar = ({ selectedComponent, handleComponentChange }) => {
           }`}
           onClick={() => handleComponentChange("Blogs")}
         >
-          Blogs
+          Blogs Meta Data
         </div>
         <div
           className={`text-center py-2 rounded font-medium border cursor-pointer ${
@@ -16,7 +16,7 @@ const AdminSidebar = ({ selectedComponent, handleComponentChange }) => {
           }`}
           onClick={() => handleComponentChange("Mails")}
         >
-          Mails
+          Mails Data
         </div>
       </div>
     </section>

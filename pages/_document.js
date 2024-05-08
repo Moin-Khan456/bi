@@ -66,11 +66,21 @@ export default function Document() {
           crossorigin="anonymous"
         />
       </Head>
-      
+
       <Script
         strategy="afterInteractive"
         src="https://rum.corewebvitals.io/cwv/6577fca7b86b6a09f6ce71f8.js"
       />
+      <Script id="clarity" strategy="afterInteractive">
+        {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "m8bt6qludg");
+            `}
+      </Script>
+
       <body>
         <Main />
         <NextScript />

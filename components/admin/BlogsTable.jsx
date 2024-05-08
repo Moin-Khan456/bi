@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import data from "../../pages/posts/blog_dataset.json";
 
 const BlogsTable = () => {
@@ -20,6 +20,22 @@ const BlogsTable = () => {
   const paginatedData = data.slice(startIndex, endIndex);
 
   const totalPages = Math.ceil(data.length / pageSize);
+
+  const fetchBlogsMetaData = async () => {
+    try {
+      const res = await fetch("/api/admin", {
+        method: "GET",
+      });
+
+      console.log(res);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchBlogsMetaData();
+  }, []);
 
   return (
     <div className="overflow-x-auto">

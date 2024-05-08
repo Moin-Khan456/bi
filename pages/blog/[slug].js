@@ -102,6 +102,7 @@ export async function getServerSideProps(context) {
   const postsRes = await fetch(
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
   );
+
   const totalPages = await postsRes.headers.get("X-WP-Total");
 
   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));

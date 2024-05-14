@@ -250,13 +250,6 @@ function Home() {
                 highPrice: "2000",
                 offerCount: "1",
               },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.5",
-                bestRating: "4.7",
-                worstRating: "4.3",
-                ratingCount: "299",
-              },
             }),
           }}
         />

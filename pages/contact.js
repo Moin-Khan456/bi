@@ -13,17 +13,17 @@ const ContactBanner = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
-  useEffect(()=>{
-    if(typeof window !== "undefined"){
+  useEffect(() => {
+    if (typeof window !== "undefined") {
       const url = window.location;
-      if(url.hash === "#contact"){
+      if (url.hash === "#contact") {
         window.scrollTo({
           top: 750,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     }
-  }, [])
+  }, []);
   return (
     <>
       <Script
@@ -69,23 +69,57 @@ Contact us now."
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_contact.jpg"
         />
-        <meta
-          property="og:url"
-          content="https://braininventory.in/contact"
-        />
+        <meta property="og:url" content="https://braininventory.in/contact" />
 
-        
         <link rel="canonical" href="https://braininventory.in/contact" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Brain Inventory",
+              url: "https://braininventory.in/contact",
+              logo: "https://braininventory.in/_next/image?url=https%3A%2F%2Fbraininventory.s3.us-east-2.amazonaws.com%2Fimages%2Fmain%2FLogobg.png&w=256&q=75",
+              alternateName:
+                "Brain Inventory: Staff Augmentation | Custom Software Development Company",
+              sameAs: [
+                "https://www.instagram.com/braininventory_com/",
+                "https://in.linkedin.com/company/braininventory",
+                "https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw",
+              ],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+91-810-956-1401",
+                  contactType: "technical support",
+                  email: "askus@braininventory.com",
+                  areaServed: "IN",
+                  availableLanguage: ["en", "hi"],
+                },
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+1(206)6533419",
+                  contactType: "",
+                  email: "askus@braininventory.com",
+                  areaServed: "US",
+                  availableLanguage: "en",
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
       {/*<Loader />*/}
       <div className="relative   ">
         <Header />
         <ContactBanner />
-          <span className="container">
-            <Contact1 />
-            <LocateUs />
-            <LetsKick />
-          </span>
+        <span className="container">
+          <Contact1 />
+          <LocateUs />
+          <LetsKick />
+        </span>
         <Footer />
       </div>
     </>

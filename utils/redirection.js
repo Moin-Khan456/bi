@@ -1,6 +1,204 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/undefined/1465",
+      destination:
+        "/posts/key-qualities-to-seek-when-recruiting-it-staff-augmentation-experts/1465",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/694",
+      destination:
+        "/posts/effective-strategies-for-leading-a-dedicated-android-app-development-team/694",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/287",
+      destination:
+        "/posts/hiring-full-stack-software-developers-in-2023-all-inclusive-guide/287",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/243",
+      destination:
+        "/posts/mern-stack-the-ideal-choice-for-your-next-web-development-project/243",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/700",
+      destination:
+        "/posts/unlock-the-potential-of-flutter-hire-app-developers-for-your-next-project/700",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/685",
+      destination:
+        "/posts/building-your-dream-software-development-team-the-ultimate-hiring-guide/685",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/396",
+      destination:
+        "/posts/ai-and-machine-learning-influence-on-front-end-development/396",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/212",
+      destination: "/posts/angular-web-development-services-key-insights/212",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/225",
+      destination:
+        "/posts/understanding-ondc-a-comprehensive-overview-of-its-functionality/225",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/825",
+      destination:
+        "/posts/enhancing-business-success-with-angularjs-development/825",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/554",
+      destination:
+        "/posts/securing-a-skilled-react-native-developer-in-todays-competitive-market/554",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1141",
+      destination:
+        "/posts/exploring-innovations-and-trends-in-fantasy-sports-app-development/1141",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/296",
+      destination: "/posts/angular-web-development-key-benefits-in-2023/296",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/387",
+      destination:
+        "/posts/ai-in-web-development-enhancing-user-experience-and-efficiency/387",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/648",
+      destination:
+        "/posts/unlocking-success-essential-tips-for-selecting-the-perfect-blockchain/648",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/540",
+      destination:
+        "/posts/choosing-between-ready-made-and-custom-mobile-apps-for-your-business/540",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1389",
+      destination:
+        "/posts/exploring-on-site-resource-deployment-trends-in-2024/1389",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/816",
+      destination:
+        "/posts/the-future-of-mean-stack-in-web-development-2023/816",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/547",
+      destination:
+        "/posts/advantages-of-custom-software-development-for-businesses/547",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/302",
+      destination:
+        "/posts/advantages-of-choosing-flutter-for-mobile-app-development/302",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1361",
+      destination:
+        "/posts/a-comprehensive-guide-to-renewable-energy-software-development/1361",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/279",
+      destination:
+        "/posts/exploring-apples-vision-pro-a-fresh-perspective-on-spatial-computing/279",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/532",
+      destination: "/posts/the-advantages-of-ai-for-ux-designers/532",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/654",
+      destination:
+        "/posts/understanding-custom-financial-software-development-5-reasons-to-choose-it/654",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/390",
+      destination:
+        "/posts/ai-empowering-ux-designers-leveraging-ai-for-better-user-experiences/390",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1658",
+      destination: "/posts/on-site-resource-planning-best-practices/1658",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/651",
+      destination:
+        "/posts/benefits-of-hiring-a-web-design-agency-over-a-solo-web-designer/651",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1666",
+      destination: "/posts/ai-mi-automate-software-development/1666",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/658",
+      destination: "/posts/ecommerce-app-development-the-ultimate-guide/658",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/384",
+      destination:
+        "/posts/the-synergy-of-blockchain-and-ai-how-developers-combine-the-technologies/384",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/70",
+      destination:
+        "/posts/ways-to-grow-your-online-grocery-delivery-business-unleash-the-potential/70",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/33",
+      destination:
+        "/posts/exploring-the-world-of-travel-app-development-different-types-essential-features-and-future-trends/33",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/688",
+      destination:
+        "/posts/advantages-of-custom-software-development-for-financial-service-providers/688",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/682",
+      destination:
+        "/posts/top-custom-software-development-trends-to-watch-in-2023/682",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/1573",
       destination:
         "/posts/advantages-of-incorporating-chatbots-within-the-banking-sector/1573",

@@ -18,7 +18,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
   const [title, setTitle] = useState(
     data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog"
   );
-  const [localForm, setLocal] = useState(true);
   const [summary, setSummary] = useState(post.excerpt.rendered.split(":")[1]);
   const [discription, setDiscription] = useState(
     data.find((ele) => ele.id === post.id)?.description ??
@@ -33,8 +32,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
       data.find((ele) => ele.id === post.id)?.description ||
         "Brain Inventory | Blog"
     );
-
-    console.log(slug);
   }, [post.id]);
 
   return (
@@ -49,13 +46,14 @@ export default function PostPage({ slug, post, featuredMedia }) {
           <meta property="og:description" content={discription} />
           <link
             rel="canonical"
-            href={`https://braininventory.in/posts/${slug[0]}/${post.id}`}
+            href={`https://braininventory.in/posts/${slug}/${post.id}`}
           />
           <meta property="og:image" content={featuredMedia} />
           <meta
             property="og:url"
-            content={`https://braininventory.in/posts/${slug[0]}/${post.id}`}
+            content={`https://braininventory.in/posts/${slug}/${post.id}`}
           />
+          {!slug && <meta name="robots" content="noindex, nofollow" />}
         </Head>
         <Header></Header>
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
@@ -111,23 +109,72 @@ export default function PostPage({ slug, post, featuredMedia }) {
     </>
   );
 }
-export async function getServerSideProps(context) {
+// export async function getServerSideProps(context) {
+//   const { slug } = context.query;
+//   const fields = "id,title,_links,date,content,excerpt";
+
+//   const post = await axios.get(
+//     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts/${
+//       slug[slug.length - 1]
+//     }?_embed&_fields=${fields}`
+//   );
+
+//   const featuredMedia =
+//     post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
+//   return {
+//     props: {
+//       slug: slug,
+//       post: post.data,
+//       featuredMedia: featuredMedia.data?.source_url,
+//     },
+//   };
+// }
+
+export const getServerSideProps = async (context) => {
   const { slug } = context.query;
-  const fields = "id,title,_links,date,content,excerpt";
 
-  const post = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts/${
-      slug[slug.length - 1]
-    }?_embed&_fields=${fields}`
-  );
+  // If slug is undefined, show 404 page
+  if (!slug[0]) {
+    return {
+      notFound: true,
+    };
+  }
 
-  const featuredMedia =
-    post && (await axios.get(post.data["_links"]["wp:featuredmedia"][0].href));
-  return {
-    props: {
-      slug: slug,
-      post: post.data,
-      featuredMedia: featuredMedia.data?.source_url,
-    },
-  };
-}
+  const fields = "id,slug,title,_links,date,content,excerpt";
+
+  try {
+    // Fetch the post data using the slug, with specific fields and embedded data
+    const postResponse = await axios.get(
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?slug=${slug[0]}&_embed&_fields=${fields}`
+    );
+    const post = postResponse.data[0];
+
+    // If no post is found, show 404 page
+    if (!post) {
+      return {
+        notFound: true,
+      };
+    }
+
+    let featuredMediaUrl = null;
+
+    // Check if the post has a featured media and fetch its URL from the embedded data
+    if (post && post._embedded && post._embedded["wp:featuredmedia"]) {
+      featuredMediaUrl = post._embedded["wp:featuredmedia"][0].source_url;
+    }
+
+    return {
+      props: {
+        slug: slug[0],
+        post: post,
+        featuredMedia: featuredMediaUrl,
+      },
+    };
+  } catch (error) {
+    // Handle errors gracefully and show 404 page
+    console.error("Error fetching post data:", error);
+    return {
+      notFound: true,
+    };
+  }
+};

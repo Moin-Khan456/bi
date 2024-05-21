@@ -1,6 +1,29 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/undefined/697",
+      destination:
+        "/posts/unlocking-success-your-comprehensive-hiring-guide-for-vue-js-developers/697",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1097",
+      destination:
+        "/posts/7-must-have-android-studio-plugins-for-efficient-android-mobile-app-development/1097",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1431",
+      destination: "/posts/benefits-of-it-staff-augmentation-2024/1431",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1459",
+      destination:
+        "/posts/reasons-why-python-is-the-best-for-healthcare-applications/1459",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/1465",
       destination:
         "/posts/key-qualities-to-seek-when-recruiting-it-staff-augmentation-experts/1465",

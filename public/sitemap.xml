@@ -3161,6 +3161,7 @@
             2023-09-28
         </lastmod>
     </url>
+	<url>
 	   <loc>
         https://braininventory.in/posts/openai-writing-effective-prompts/1818
         </loc>
@@ -3168,7 +3169,7 @@
             2023-09-28
         </lastmod>
     </url>
-	</url>
+	<url>
 	   <loc>
         https://braininventory.in/posts/how-crm-development-help-business-growth/1828
         </loc>
@@ -3178,11 +3179,11 @@
     </url>
 	
     <url>
-	<loc>
+	 <loc>
 		https://braininventory.in/
-	</loc>
-	<lastmod>
+	 </loc>
+	 <lastmod>
 		2023-09-28
-	</lastmod>
+	 </lastmod>
     </url>
 </urlset>

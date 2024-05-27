@@ -44,4 +44,9 @@ Disallow: https://braininventory.in/posts/undefined/697
 Disallow: https://braininventory.in/posts/undefined/287
 Disallow: https://braininventory.in/posts/undefined/694
 Disallow: https://braininventory.in/posts/undefined/1465
+Disallow: https://braininventory.in/posts/undefined/1459
+Disallow: https://braininventory.in/posts/undefined/1431
+Disallow: https://braininventory.in/posts/undefined/1097
+
+
 Sitemap: https://braininventory.in/sitemap.xml

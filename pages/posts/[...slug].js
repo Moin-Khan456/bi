@@ -79,6 +79,7 @@ export default function PostPage({ slug, post, featuredMedia }) {
                     </small>
                   </label>
                 </span>
+
                 <div
                   className="card-text pb-5 slugall"
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}

@@ -14,7 +14,7 @@ export default function Document() {
           href="../public/fonts/Brinattan.ttf"
           as="font"
           type="font/ttf"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <link
           rel="preload"

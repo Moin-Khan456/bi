@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import Head from "next/head";
-import Header from "../../components/header/Header.js";
 import axios from "axios";
+import Head from "next/head";
+import dynamic from "next/dynamic.js";
+import React, { useState } from "react";
+import Header from "../../components/header/Header.js";
 import PopularBlogs from "../../components/blog/PopularBlogs";
 import Blogs from "../../components/blog/Blogs";
 import Pagination from "../../components/blog/Pagination";
@@ -127,12 +128,14 @@ export async function getServerSideProps(context) {
       },
     }
   );
-  await rediss.set(
+  const chachedBlog = await rediss.set(
     `blog-${context.query.slug}`,
     JSON.stringify(response.data),
     "EX",
     300
   );
+
+  console.log(chachedBlog);
 
   return {
     props: {

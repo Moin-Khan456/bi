@@ -1,6 +1,58 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/undefined/318",
+      destination:
+        "/posts/comparing-chatgpt-to-software-developers-which-is-superior/318",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1274",
+      destination:
+        "/posts/benefits-of-hiring-a-php-developer-for-your-next-project/1274",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/191",
+      destination:
+        "/posts/why-you-should-hire-a-pro-web-development-company/191",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/208",
+      destination:
+        "/posts/why-choose-react-native-for-app-development-top-10-reasons/208",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/284",
+      destination: "/posts/guide-to-hiring-angularjs-developers-in-2023/284",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1240",
+      destination:
+        "/posts/unveiling-the-top-technology-trends-shaping-the-food-industry-in-2023/1240",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/87",
+      destination:
+        "/posts/the-beginners-guide-to-it-staff-augmentation-what-is-it-and-how-does-it-work/87",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/339",
+      destination: "/posts/advantages-of-fantasy-sports-app-development/339",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/37",
+      destination:
+        "/posts/accounting-software-a-comprehensive-overview-of-features-and-benefits/37",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/357",
       destination:
         "/posts/utilizing-ais-potential-in-it-staff-augmentation/357",
@@ -711,7 +763,7 @@ const redirection = () => {
     {
       source: "/posts/undefined/1487",
       destination:
-        "posts/conduct-a-perfect-interview-ensuring-success-in-it-staff-augmentation-recruitment/1487",
+        "/posts/conduct-a-perfect-interview-ensuring-success-in-it-staff-augmentation-recruitment/1487",
       permanent: true,
     },
     {

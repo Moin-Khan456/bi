@@ -100,11 +100,15 @@ export async function getServerSideProps(context) {
     "public, s-maxage=600, stale-while-revalidate=3600"
   );
 
-  const postsRes = await fetch(
-    "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
-  );
+  let totalPages = await rediss.get(`totalPages`);
 
-  const totalPages = await postsRes.headers.get("X-WP-Total");
+  if (!totalPages) {
+    const postsRes = await fetch(
+      "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+    );
+    totalPages = postsRes.headers.get("X-WP-Total");
+    await rediss.set(`totalPages`, totalPages, "EX", 600);
+  }
 
   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
   if (cachedBlog) {
@@ -134,8 +138,6 @@ export async function getServerSideProps(context) {
     "EX",
     300
   );
-
-  console.log(chachedBlog);
 
   return {
     props: {

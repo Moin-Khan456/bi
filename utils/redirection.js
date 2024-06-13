@@ -1,6 +1,53 @@
 const redirection = () => {
   return [
     {
+      source: "/ui-ux-services",
+      destination: "/ui-ux-development-services",
+      permanent: true,
+    },
+    {
+      source:
+        "/posts/8-reasons-why-angularjs-is-key-for-web-application-development/1697",
+      destination:
+        "/posts/why-angularjs-is-key-for-web-application-development/1700",
+      permanent: true,
+    },
+    {
+      source:
+        "/posts/leveraging-react-js-for-custom-web-application-development-a-strategic-outsourcing-approach/1700",
+      destination:
+        "/posts/react-js-for-custom-web-application-development/1700",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/863",
+      destination:
+        "/posts/mastering-mobile-app-development-trends-and-techniques-of-2023/863",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1680",
+      destination: "/posts/nextjs-emerging-trends-2024/1680",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1373",
+      destination:
+        "/posts/higher-education-unleashing-the-potential-of-chatbot-app-development-services/1373",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/290",
+      destination: "/posts/why-lamp-tech-stack-is-ideal-for-your-business/290",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1355",
+      destination:
+        "/posts/when-and-why-hiring-full-stack-developers-is-extremely-logical/1355",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/318",
       destination:
         "/posts/comparing-chatgpt-to-software-developers-which-is-superior/318",

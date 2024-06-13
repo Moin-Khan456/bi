@@ -363,6 +363,15 @@ const FooterSections = [
       },
     ],
   },
+  {
+    title: "Services",
+    links: [
+      {
+        name: "UI/UX Development Services",
+        path: "/ui-ux-development-services",
+      },
+    ],
+  },
 ];
 const organizations = [
   {

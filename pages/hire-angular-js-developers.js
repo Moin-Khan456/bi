@@ -43,7 +43,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "AngularJS Customization",
       content:
-        "Angular JS is structural framework of JavaScript from AngularJS we started to use data binding and sharing between different pages effectively, we get flexibility to customize the features which are provided by Angular JS like directives, controllers, views as it follows MVC model this all ultimately helps us in reducing the repetitive code, create dynamic and efficient websites.",
+        "AngularJS, a JavaScript structural framework, revolutionizes data binding and sharing across pages. It empowers customization of features like directives, controllers, and views within the MVC model, leading to streamlined code, dynamic content, and efficient websites.",
     },
     {
       head: "AngularJS Portal Development",
@@ -76,27 +76,27 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Extensive Experience",
       content:
-        "Gaining hands-on experience with top-tier AngularJS libraries, such as Angular Materials, Angular Google Maps, NG-Bootstrap, NGX-Bootstrap, Prime NG, and RxJS is highly beneficial. As a developer working in the field of front-end development, you have to learn the basics of front-end development in order to build applications for different platforms.",
+        "Acquiring first hand expertise with premium AngularJS tools like Angular Materials, Angular Google Maps, NG-Bootstrap, NGX-Bootstrap, PrimeNG, and RxJS is extremely advantageous. As a programmer in the domain of front-end design, grasping the fundamentals of front-end programming is crucial for constructing apps across various platforms.",
     },
     {
       head: "Flexible Engagement Models",
       content:
-        "Instead of working on unwanted rigid and strict parameters, we offer flexibility to our clients to select from different engagement and hiring models. Our team is made up of professionals with a wide range of expertise and experience, who work together as a team to provide you with a high-quality service.",
+        "Instead of working on unwanted rigid and strict parameters, we offer flexibility to our clients to select from different engagement and hiring models. Our talented group comprises experts from various backgrounds who collaborate to deliver exceptional service to you.",
     },
     {
       head: "Maintenance and Support",
       content:
-        "Our dedicated Angular developers extend professional maintenance. support to ensure your web solutions are always up-to-date and running. Our team of professionals know the ins and outs of Angular, and will provide you with the best service possible. We can help you build your project from scratch or modify existing code, depending on what you need.",
+        "Our experienced Angular.js developers provide ongoing maintenance and assistance to guarantee that your web platforms stay current and fully operational. Our group of experts are fully versed in Angular and will give you top-notch service. We can construct your project from the ground up or change current code, according to your requirements.",
     },
     {
       head: "Cost-Effective Solutions",
       content:
-        "Brain Inventory understands your business needs, and we’re here to help you meet them. We offer variety of engagement models to choose from, tailored to your style, budget, timeline, and deliverables. This guarantees that all objectives are achieved with consistent process. We offer a variety of packages to fit your budget.",
+        "Brain Inventory understands your business needs, and we're here to help you meet them.We offer variety of engagement models to choose from, tailored to your style, budget, timeline, and deliverables. This guarantees that all objectives are achieved with consistent process. We offer budget-friendly packages.",
     },
     {
       head: "On time Delivery",
       content:
-        "At Brain Iventory, we believe that every business is unique, and that’s why we design and develop each project with a personalized approach. Our team of designers and developers leverage cutting-edge technologies and agile methodologies to deliver 95% of the projects on time.",
+        "At Brain Inventory, we believe that every business is unique, and that's why we design and develop each project with a personalized approach. Our group of creative and technical experts makes use of innovative techniques and flexible approaches to complete nearly all projects by the scheduled deadlines.",
     },
   ];
 
@@ -105,45 +105,45 @@ function HireAangularJsDeveloper(props) {
       id: "1",
       title: "Why hire dedicated AngularJS developers?",
       description:
-        "Hiring dedicated AngularJS developers can bring a number of benefits, such as flexibility, cost-effectiveness, higher output, expertise in the technology, ease of management, and quick responses to urgent matters.",
+        "Hiring dedicated AngularJS developers can bring several benefits, such as flexibility, cost-effectiveness, higher output, expertise in the technology, ease of management, and quick responses to urgent matters.",
     },
     {
       id: "2",
       title: "What pricing models do you offer?",
       description:
-        "Here at Brain Inventory, we strive to create pricing models that meet the needs of our clients. We have a variety of cost-effective options available, including full-time, part-time, and milestone-based models.",
+        "Here at Brain Inventory, we strive to create pricing models that meet the needs of our clients. We provide several affordable choices to suit your needs, including hiring full-time employees, part-time contractors, or paying for specific project milestones to be completed.",
     },
     {
       id: "3",
       title: "Do you think AngularJS would be suitable for my project?",
       description:
-        "We know that each project comes with its own specific requirements and thus, the ideal tech stack for each project is different. Please let us know what your project entails, and we’d be happy to provide expert advice on which tech stack to use that can scale well in the long run. Consider working with Brain Inventory experienced Angular Developers in India!",
+        "Every project has unique needs, so the best technology solutions vary. Let us know about your project's goals and details. Then our experts can suggest long-term, scalable technology stacks to meet those needs. For example, Brain Inventory's seasoned Angular developers in India may be a great fit to build and grow your web or mobile app.",
     },
     {
       id: "4",
       title:
         "Do we take care of maintaining the confidentiality of our client’s intellectual property?",
       description:
-        "Absolutely! From closing deals with an NDA to keeping source code secure in a private Git, we guarantee that our clients’ IPs will remain secure. We make sure all formalities, code ownership, and copyrights are taken care of when delivering projects.",
+        "We fully assure you that our clients' intellectual properties will stay protected! Whether finalizing agreements under non-disclosure or maintaining source code privately in Git, we promise complete confidentiality. All proprietary materials, coding rights, and patents are properly handled when we complete projects so that ownership and permissions are clear. Our process guarantees that confidentiality is upheld and legal formalities around intellectual property are satisfied.",
     },
     {
       id: "5",
       title:
         "Do you offer any kind of support and maintenance services post-deployment?",
       description:
-        "Yes, absolutely! After the successful completion of your Angular JS project, we offer services such as bug fixes, framework upgrades, continuous monitoring, and resolution of technical issues for the improvement of your Angular JS product.",
+        "Definitely! Once your AngularJS project is completed with success, we provide a range of services to enhance your AngularJS product, including bug repairs, framework updates, ongoing supervision, and resolution of technical problems.",
     },
   ];
 
   const advantages = [
-    "Are you considering using AngularJS? Then you’ll definitely want to hire experts, right? Before you go ahead and do that, make sure you’re well-informed about the development of AngularJS.",
-    "AngularJS is famous for its faster development and standout characteristics, such as flexibility, routing, form validation, filters, data binding, and more - all helping to ensure a top-notch operation.",
-    "AngularJS developers can craft highly interactive user interface that keeps customers engaged and makes their experience enjoyable, ensuring they return.",
-    "Rehiring AngularJS developers for your app development is a great idea due to the benefit of code re-usability. Not only does this help developers, but mobile app owners too. The code can be reused for the same app or stored for future use, saving the developers time and money when creating any other apps in the future. Code re-usability significantly reduces both development cost and time.",
+    "Were you thinking about adopting AngularJS? Then hiring experts is a must, isn't it? But before you proceed, ensure you're thoroughly informed about AngularJS development.",
+    "AngularJS is the developers choice for its faster development and stand-out characteristics such as flexibility, routing, form validation, filters, data binding, and more - all helping to ensure a top-notch functioning of your web applications.",
+    "AngularJS developers can craft highly interactive user interfaces that keep customers engaged and make their experience enjoyable, ensuring they return.",
+    "Either you already have a web application or looking to build a new platform, AngularJS will add immense benefit to the platform using the rich features and inbuilt libraries offered by AngularJS. The ability to reuse code provides benefits, the code can be reapplied for the same application or stored for later use, conserving the time and funds of programmers when making any other applications going forward.",
   ];
 
   const keySkillsBreif =
-    "If you want to hire dedicated AngularJS developers, BrainInventory is the place to go! We have built our reputation on the strength of our team and expertise in developing high-quality software solutions. Our customers are always happy with their services, because we come up with solutions that are reliable and keep them updated regularly. We’re available 24/7 to help you out via email or phone. Let’s have a look at some reasons to hire our developers for your project:";
+    "Talk about creating an enterprise level or an MVP level web application from ground up or upgrading your website, Brain Inventory handles it with a set process which makes the results as per our expectations. Thus we can assure you that we will be your perfect fit for hiring talented AngularJS developers. We've established our reputation through our skilled team's proficiency in creating robust software services. Our customers consistently express satisfaction with our services, as we craft dependable solutions and keep them current with regular updates. Our support is available 24/7 through both email and phone communication channels. There are several compelling reasons to bring our developers onto your project:";
   const keySkillsPoints = [
     "Dedicated Team",
     "Flexible Engagement Models",
@@ -155,12 +155,12 @@ function HireAangularJsDeveloper(props) {
     "Performance Management",
   ];
 
-  const chooseBiSubhead =
-    "Hiring dedicated AngularJS developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated AngularJS developers. Let’s look at some reasons to hire our developers:";
+  const chooseBiSubhead = `If you are looking for a company who believes in a systematic process, structured approach and effective sprint planning to accomplish the task on time, we are a good and genuine reason for you to hire our dedicated AngularJS developers. Brain Inventory is a great way to unlock the benefits of hiring dedicated AngularJS developers. Let's look at some reasons to hire our developers:`;
+
   const chooseBI = [
-    "We offer a full range of services that are tailored to your project. We do not just specialize in one particular area, or even one technology. We have deep experience in every aspect of software development and we can help you with any aspect of your project, from front-end to back-end development.",
-    "Our team is made up of highly qualified experts who have extensive experience working in the industry for many years. They are ready to work on any project you come up with and will provide detailed feedback on your ideas and requirements so that they can turn them into reliable and profitable software solutions.",
-    "We offer flexible payment terms so that you can pay only when it makes sense for you. There is no need for upfront payments if you do not need us right away but do want us later on when you have more time or budget for us!",
+    "We offer a full range of services that are tailored to your project. We do not just specialize in one particular area or even one technology. Our group has comprehensive knowledge covering all parts of software creation and can help at any point in your undertaking, regardless of whether it includes client side or server side improvement.",
+    "Our team consists of very capable professionals with many years of relevant industry experience. They are prepared to collaborate on any project concept you propose, offering thoughtful insights about your needs and goals. This enables them to craft dependable, value-generating software products aligned with your vision.",
+    "We provide adjustable payment schedules so you can settle your bill at times that work with your finances. There is no need for upfront payments if you do not need us right away but do want us later on when you have more time or budget for us!",
   ];
 
   return (

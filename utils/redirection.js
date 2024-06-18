@@ -1,6 +1,11 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/undefined/290",
+      destination: "/posts/why-lamp-tech-stack-is-ideal-for-your-business/290",
+      permanent: true,
+    },
+    {
       source: "/ui-ux-services",
       destination: "/ui-ux-development-services",
       permanent: true,

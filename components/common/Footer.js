@@ -408,7 +408,7 @@ const organizations = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ fromBlog }) {
   const [expandedSections, setExpandedSections] = useState({});
 
   const handleLoadMore = (index) => {
@@ -418,7 +418,11 @@ export default function Footer() {
     }));
   };
   return (
-    <div className="py-10 mx-10 border-t">
+    <div
+      className={`${fromBlog ? "mx-0" : "mx-10"}  py-10 border-t ${
+        fromBlog && "bg-black"
+      }`}
+    >
       <div className="container lg:px-24">
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {FooterSections.map((section, index) => {

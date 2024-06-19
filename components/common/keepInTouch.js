@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 
-export default function KeepInTouch() {
+export default function KeepInTouch({ fromBlog }) {
   const router = useRouter();
 
   const validationSchema = Yup.object().shape({
@@ -29,7 +29,12 @@ export default function KeepInTouch() {
     });
   };
   return (
-    <div id="talk" className="container px-4 lg:px-16 2xl:space-y-8 space-y-6">
+    <div
+      id="talk"
+      className={`container px-4 lg:px-16 2xl:space-y-8 space-y-6 ${
+        fromBlog && "text-slate-900"
+      }`}
+    >
       <div className="container padding-left-all-section">
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
@@ -77,36 +82,54 @@ export default function KeepInTouch() {
                     <Field
                       type="text"
                       name="name"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className={`bg-transparent p-4 focus:outline-none border ${
+                        fromBlog && "border-slate-900"
+                      } border-[#ffffff67] w-full ${
+                        fromBlog && "placeholder-slate-900"
+                      } placeholder-[#ffffffd7]`}
                       placeholder="You should have a name"
                     />
                     <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
                       <Field
                         type="email"
                         name="email"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
+                        className={`bg-transparent p-4 focus:outline-none border  border-[#ffffff67] flex-1 placeholder-[#ffffffd7] ${
+                          fromBlog && "border-slate-900"
+                        } ${fromBlog && "placeholder-slate-900"}`}
                         placeholder="Obviously, an email"
                       />
                       <Field
                         type="number"
                         name="number"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
+                        className={`bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7] ${
+                          fromBlog && "placeholder-slate-900"
+                        } ${fromBlog && "border-slate-900"}`}
                         placeholder="Your contact number"
                       />
                     </div>
                     <Field
                       type="text"
                       name="companyName"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className={`bg-transparent p-4 focus:outline-none border ${
+                        fromBlog && "border-slate-900"
+                      } border-[#ffffff67] w-full ${
+                        fromBlog && "placeholder-slate-900"
+                      } placeholder-[#ffffffd7]`}
                       placeholder="What's your company name?"
                     />
                     <Field
                       type="text"
                       name="feedback"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className={`bg-transparent p-4 focus:outline-none border ${
+                        fromBlog && "border-slate-900"
+                      } border-[#ffffff67] w-full ${
+                        fromBlog && "placeholder-slate-900"
+                      } placeholder-[#ffffffd7]`}
                       placeholder="Tell us, Everything!"
                     />
-                    <HomeButton type="submit">Submit</HomeButton>
+                    <HomeButton type="submit" fromBlog={fromBlog}>
+                      Submit
+                    </HomeButton>
                   </div>
                 </Form>
               </Formik>

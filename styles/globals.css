@@ -2468,36 +2468,35 @@ li.slide img {
 .slugall h2 mark {
   font-weight: 600;
   margin: 20px 0px 10px 0px;
-
   font-size: 1.875rem;
 }
 
 .slugall h2 mark strong {
   font-weight: 600;
   margin: 20px 0px 10px 0px;
-
   font-size: 1.875rem;
 }
 
 .slugall h2 strong mark {
   font-weight: 600;
   margin: 20px 0px 10px 0px;
-
   font-size: 1.875rem;
 }
 
 .slugall h3 mark {
   font-weight: 600;
   margin: 15px 0px 10px 0px;
-
   font-size: 1.5rem;
 }
 
 .slugall h3 strong {
   font-weight: 600;
   margin: 15px 0px 10px 0px;
-
   font-size: 1.5rem;
+}
+
+.wp-block-heading {
+  color: #ff21b8 !important;
 }
 
 .carousel .slider-wrapper {
@@ -3101,9 +3100,9 @@ a.btn-filled.btn {
   margin: auto !important;
 }
 
-/* .leading-\[10rem\] {
+.leading-\[10rem\] {
   line-height: 5rem;
-} */
+}
 
 /* .wp-block-heading mark {
   color: #631edd !important;

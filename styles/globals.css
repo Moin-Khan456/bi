@@ -211,6 +211,14 @@ body {
   color: transparent;
 }
 
+.dark-stroke-text {
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease;
+  -webkit-text-stroke-color: black !important;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+
 .text-work {
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease;
@@ -2429,12 +2437,67 @@ li.slide img {
 }
 
 .slugall p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .slugall p strong {
   font-family: "Gilroy-Bold";
+  font-size: 1.4rem;
+}
+
+.slugall p {
+  font-size: 1.1rem;
+}
+
+.slugall ul li strong {
+  font-size: 1.1rem;
+}
+
+.slugall ul li {
+  font-size: 1.1rem;
+}
+
+.slugall ol li strong {
   font-size: 1.2rem;
+}
+
+.slugall ol li {
+  font-size: 1.1rem;
+}
+
+.slugall h2 mark {
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+
+  font-size: 1.875rem;
+}
+
+.slugall h2 mark strong {
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+
+  font-size: 1.875rem;
+}
+
+.slugall h2 strong mark {
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+
+  font-size: 1.875rem;
+}
+
+.slugall h3 mark {
+  font-weight: 600;
+  margin: 15px 0px 10px 0px;
+
+  font-size: 1.5rem;
+}
+
+.slugall h3 strong {
+  font-weight: 600;
+  margin: 15px 0px 10px 0px;
+
+  font-size: 1.5rem;
 }
 
 .carousel .slider-wrapper {
@@ -3038,11 +3101,11 @@ a.btn-filled.btn {
   margin: auto !important;
 }
 
-.leading-\[10rem\] {
+/* .leading-\[10rem\] {
   line-height: 5rem;
-}
+} */
 
-.wp-block-heading mark {
+/* .wp-block-heading mark {
   color: #631edd !important;
   font-size: 2rem;
-}
+} */

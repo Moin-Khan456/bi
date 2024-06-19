@@ -11,8 +11,7 @@ import data from "./blog_dataset.json";
 import { useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-import HireDedicatedCard from "../../components/blog/HireDedicatedCard";
-import { FiMail } from "react-icons/fi";
+import { IoMdMoon } from "react-icons/io";
 
 export default function PostPage({ slug, post, featuredMedia }) {
   const [title, setTitle] = useState(
@@ -37,7 +36,7 @@ export default function PostPage({ slug, post, featuredMedia }) {
   return (
     <>
       {/*<Loader />*/}
-      <div className="relative  ">
+      <div className="relative bg-white ">
         <Head>
           <title>{title}</title>
           <meta name="description" content={discription} />
@@ -57,12 +56,16 @@ export default function PostPage({ slug, post, featuredMedia }) {
         </Head>
         <Header></Header>
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-          <div className="container pt-12 padding-left-all-section-1">
+          {/* <div className="h-8 w-8 rounded-md bg-slate-100 shadow-sm flex items-center justify-center absolute top-6 right-[17%] cursor-pointer">
+            <IoMdMoon className="text-base" />
+          </div> */}
+          <div className="container pt-12 padding-left-all-section-1 text-slate-950">
             <div className="grid grid-cols-3 gap-4 post-container">
               <div className="col-span-2 slug-img-container mt-8">
                 <h1 className="text-left Gilroy-Bold text-2xl mb-4  ">
                   {post.title.rendered}
                 </h1>
+
                 <Image
                   src={featuredMedia}
                   className="w-full lg:min-w-[1000px] lg:max-w-[1350px]"
@@ -102,10 +105,10 @@ export default function PostPage({ slug, post, featuredMedia }) {
             </div>
           </div>
         </div>
-        <KeepInTouch />
-        <LocateUs />
-        <LetsKick />
-        <Footer />
+        <KeepInTouch fromBlog={true} />
+        <LocateUs fromBlog={true} />
+        <LetsKick fromBlog={true} />
+        <Footer fromBlog={true} />
       </div>
     </>
   );

@@ -2455,6 +2455,7 @@ li.slide img {
 
 .slugall ul li {
   font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
 .slugall ol li strong {
@@ -2463,40 +2464,102 @@ li.slide img {
 
 .slugall ol li {
   font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
-.slugall h2 mark {
+.slugall h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+}
+
+.slugall h1 strong {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+}
+
+.slugall h1 mark strong {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+}
+
+.slugall h2 {
+  font-size: 2rem !important;
   font-weight: 600;
-  margin: 20px 0px 10px 0px;
-  font-size: 1.875rem;
+}
+
+.slugall h2 strong {
+  font-size: 2rem !important;
+  font-weight: 600;
 }
 
 .slugall h2 mark strong {
+  font-size: 2rem !important;
   font-weight: 600;
-  margin: 20px 0px 10px 0px;
-  font-size: 1.875rem;
 }
 
-.slugall h2 strong mark {
+.slugall h3 {
+  font-size: 1.75rem !important;
   font-weight: 600;
-  margin: 20px 0px 10px 0px;
-  font-size: 1.875rem;
-}
-
-.slugall h3 mark {
-  font-weight: 600;
-  margin: 15px 0px 10px 0px;
-  font-size: 1.5rem;
 }
 
 .slugall h3 strong {
+  font-size: 1.75rem !important;
   font-weight: 600;
-  margin: 15px 0px 10px 0px;
-  font-size: 1.5rem;
+}
+
+.slugall h3 mark strong {
+  font-size: 1.75rem !important;
+  font-weight: 600;
+}
+
+.slugall h4 {
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.slugall h4 strong {
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.slugall h4 mark strong {
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.slugall h5 {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+}
+
+.slugall h5 strong {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+}
+
+.slugall h5 mark strong {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+}
+
+.slugall h6 {
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+.slugall h6 strong {
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+.slugall h6 mark strong {
+  font-size: 1rem !important;
+  font-weight: 400;
 }
 
 .wp-block-heading {
   color: #ff21b8 !important;
+  margin: 15px 0px;
 }
 
 .carousel .slider-wrapper {

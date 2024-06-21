@@ -27,7 +27,7 @@ const locations = [
     placeName: "Jordan",
     address:
       "185 Wasfi Al-Tal Street, Ammon Oasis Complex P.O Box 4724 Amman 11953 Jordan ",
-    phone: "+962790961000",
+    phone: "+960770781000",
     image: "Jordan.png",
     alt: "Brain Inventory Jordan Office: 185 Wasfi Al-Tal Street, Ammon Oasis Complex P.O Box 4724 Amman 11953 Jordan",
   },

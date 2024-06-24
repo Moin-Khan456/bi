@@ -1,6 +1,11 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/popular-functions-of-reactjs-and-angularjs/1844",
+      destination: "/posts/reactjs-and-angularjs-functions/1844",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/290",
       destination: "/posts/why-lamp-tech-stack-is-ideal-for-your-business/290",
       permanent: true,

@@ -12,7 +12,7 @@ export default function HireBanner({
 }) {
   const card = [
     "Transform your vision into a dynamic web platform",
-    "Industry Expert Developers | Tailored Business Solutions",
+    "Industry Expert Developers | Tailored Business Services",
     "Future-Ready Web Apps",
     "Custom Integration and Development",
   ];
@@ -60,24 +60,24 @@ export default function HireBanner({
           {
             appDev ? (
               <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
-              <section className="started-subcription">
-                <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                <h2 className="Gilroy-Bold text-5xl">
-                  2 Business <span className="text-lg">Days</span>
-                </h2>
+                <section className="started-subcription">
+                  <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                  <h2 className="Gilroy-Bold text-5xl">
+                    2 Business <span className="text-lg">Days</span>
+                  </h2>
+                </section>
+                <section className="p-8 bg-line">
+                  <ul className="list-subcription">
+                    {mobCard &&
+                      mobCard.map((ele, index) => (
+                        <li key={index} className="flex">
+                          {/* <BiCheckCircle className="text-2xl mb-2" /> */}
+                          {ele}
+                        </li>
+                      ))}
+                  </ul>
+                </section>
               </section>
-              <section className="p-8 bg-line">
-                <ul className="list-subcription">
-                  {mobCard &&
-                    mobCard.map((ele, index) => (
-                      <li key={index} className="flex">
-                        {/* <BiCheckCircle className="text-2xl mb-2" /> */}
-                        {ele}
-                      </li>
-                    ))}
-                </ul>
-              </section>
-            </section>
             ) : (
               <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
                 <section className="started-subcription">

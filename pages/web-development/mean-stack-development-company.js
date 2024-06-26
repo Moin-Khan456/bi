@@ -37,7 +37,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Technical Expertise",
       content:
-        "We are a deep MEAN Stack development company with years of experience in the field. Our talented team has helped dozens of companies to build and launch highly innovative, scalable, and engaging web solutions. This will allow us to quickly leverage our experience within your project team and deliver brilliant results for you.",
+        "We are a deep MEAN Stack development company with years of experience in the field. Our talented team has helped dozens of companies to build and launch highly innovative, scalable, and engaging web services. This will allow us to quickly leverage our experience within your project team and deliver brilliant results for you.",
     },
     {
       head: "Flexible Time Preference",
@@ -86,7 +86,7 @@ function HireAangularJsDeveloper(props) {
     "We use cutting-edge technology like serverless computing to build scalable and maintainable applications.",
     "Our code is clean, modularized, and well-defined for easy maintenance and collaboration.",
     "We specialize in MEAN stack development, delivering robust and scalable applications.",
-    "We prioritize understanding your needs and providing tailored solutions.",
+    "We prioritize understanding your needs and providing tailored services.",
     "We offer affordable and high-quality software and services to our clients.",
   ];
   const benefitsList = [
@@ -99,7 +99,7 @@ function HireAangularJsDeveloper(props) {
     "MEAN (MongoDB, Express, Angular, Node) is favored by businesses for powerful and cost-effective software development.",
     "MEAN stack integrates MongoDB, Express Js, Angular Js, and Node Js to simplify the process of designing scalable and high-performance apps.",
     "MEAN Stack development offers ease of use and flexibility.",
-    "It enables businesses to quickly and efficiently deploy effective digital solutions.",
+    "It enables businesses to quickly and efficiently deploy effective digital services.",
     "Brain Inventory, a leading mean stack development company in India, is dedicated to delivering high-end products globally.",
     "They provide dynamic and scalable MEAN Stack web applications tailored to meet specific business needs.",
   ];
@@ -141,7 +141,13 @@ function HireAangularJsDeveloper(props) {
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <div className="pt-32">

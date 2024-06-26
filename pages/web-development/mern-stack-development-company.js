@@ -34,12 +34,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "On-Time Delivery",
       content:
-        "We are well-known for our distributed teams, agile methodologies, and efficient development approach. Our approach is backed by an extensive understanding of JavaScript and Node.js, and we will be happy to support you with implementing your idea or project through a carefully crafted solution using the MERN Stack stack.",
+        "We are well-known for our distributed teams, agile methodologies, and efficient development approach. Our approach is backed by an extensive understanding of JavaScript and Node.js, and we will be happy to support you with implementing your idea or project through a carefully crafted services using the MERN Stack stack.",
     },
     {
       head: "Seasoned Developers",
       content:
-        "Our team of experienced MERN Stack developers is ready to take your app to the next level. They have extensive knowledge and experience in creating world-class solutions for clients. You will benefit from our development process and project management technique, which give an efficient way to deliver high-quality software products.",
+        "Our team of experienced MERN Stack developers is ready to take your app to the next level. They have extensive knowledge and experience in creating world-class services for clients. You will benefit from our development process and project management technique, which give an efficient way to deliver high-quality software products.",
     },
     {
       head: "Strict NDA Terms",
@@ -83,9 +83,9 @@ function HireAangularJsDeveloper(props) {
     {
       id: "6",
       title:
-        "Can you develop custom MERN stack solutions for specific business needs?",
+        "Can you develop custom MERN stack servies for specific business needs?",
       description:
-        "Yes. The MERN (MV, KV, and RF) methodologies are the best methodologies today. Furthermore, with the power of React and Node.js, our experts at CodeCloud can deliver a solution that is better than what you’re used to.",
+        "Yes. The MERN (MV, KV, and RF) methodologies are the best methodologies today. Furthermore, with the power of React and Node.js, our experts at CodeCloud can deliver a service that is better than what you’re used to.",
     },
   ];
 
@@ -105,7 +105,7 @@ function HireAangularJsDeveloper(props) {
 
   const benefitsList = [
     "Node.js, Express.js, React.js, and MongoDB — what do they all have in common? They are all written in the latest version of JavaScript. The MERN stack combines components from the three technologies in a way that provides a better abstraction than any individual component could achieve on its own.",
-    "The MERN stack consists of MongoDB, ExpressJS, React, and Node.js. The MERN stack enables a full-stack solution for web development. It’s excellent for building modern applications that depend on data from multiple sources across networks.",
+    "The MERN stack consists of MongoDB, ExpressJS, React, and Node.js. The MERN stack enables a full-stack service for web development. It’s excellent for building modern applications that depend on data from multiple sources across networks.",
     "The MERN stack is designed to scale in many different ways. Firstly, all of the technologies in the stack were designed with scalability in mind. This means that they are easy to scale even in large environments, and easier to build when developing in smaller environments.",
   ];
   const meanReasons = [
@@ -153,7 +153,13 @@ function HireAangularJsDeveloper(props) {
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <div className="pt-32">

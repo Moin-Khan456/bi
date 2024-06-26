@@ -81,14 +81,14 @@ const Industries = () => {
                 Custom Fantasy Sports
               </li>
               <li data-tab="tab-2" className="hover-link">
-                Sports Betting Solution
+                Sports Betting Service
               </li>
               <li data-tab="tab-3" className="hover-link">
                 Custom Social Networks
               </li>
-              <li data-tab="tab-4">Healthcare Solutions</li>
+              <li data-tab="tab-4">Healthcare Services</li>
               <li data-tab="tab-5">eLearning & Lms</li>
-              <li data-tab="tab-6">On-Demand Solution</li>
+              <li data-tab="tab-6">On-Demand Service</li>
             </ul>
           </section>
         </section>

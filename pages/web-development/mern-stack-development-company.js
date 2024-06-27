@@ -120,19 +120,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>MERN Stack Development Services | MERN Stack Developers</title>
+        <title>
+          Top-Notch MERN Stack Development Services | Brain Inventory
+        </title>
         <meta
           name="description"
-          content="Bring success to your web solutions from Brain Inventory. We use the latest MERN Stack Technologies for scalable web and mobile app development. Contact us today."
+          content="As a leading MERN Stack development company, we transform your ideas into scalable web solutions. Our developers provide unique, custom MERN stack development services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="MERN Stack Development Services | MERN Stack Developers"
+          content="Top-Notch MERN Stack Development Services | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Bring success to your web solutions from Brain Inventory. We use the latest MERN Stack Technologies for scalable web and mobile app development. Contact us today."
+          content="As a leading MERN Stack development company, we transform your ideas into scalable web solutions. Our developers provide unique, custom MERN stack development services."
         />
         <meta
           property="og:url"

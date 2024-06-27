@@ -107,20 +107,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          MEAN Stack Development Services | MEAN Stack Development Company
+          MEAN Stack Development Company | Best MEAN Stack Development
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a Top MEAN Stack Development Company that builds web and mobile apps based on MongoDB, Express.js, AngularJS, and Node.js. Contact us today."
+          content="Your top choice for MEAN Stack development: expert services with MongoDB, Express.js, Angular, and Node.js. Elevate your web projects with our best-in-class services!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="MEAN Stack Development Services | MEAN Stack Development Company"
+          content="MEAN Stack Development Company | Best MEAN Stack Development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a Top MEAN Stack Development Company that builds web and mobile apps based on MongoDB, Express.js, AngularJS, and Node.js. Contact us today."
+          content="Your top choice for MEAN Stack development: expert services with MongoDB, Express.js, Angular, and Node.js. Elevate your web projects with our best-in-class services!"
         />
         <meta
           property="og:url"

@@ -152,19 +152,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire NodeJS Developers | Hire Dedicated Node JS Developer</title>
+        <title>Hire Node.js Developers | Hire Node.js Programmers</title>
         <meta
           name="description"
-          content="Hire Node JS programmers from Brain Inventory. We have a dedicated developers team that delivers Node.JS development services on time and on budget. Contact us today."
+          content="Staff your team quickly with Brain Inventory's Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire NodeJS Developers | Hire Dedicated Node JS Developer"
+          content="Hire Node.js Developers | Hire Node.js Programmers"
         />
         <meta
           property="og:description"
-          content="Hire Node JS programmers from Brain Inventory. We have a dedicated developers team that delivers Node.JS development services on time and on budget. Contact us today."
+          content="Staff your team quickly with Brain Inventory's Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
         />
 
         <meta
@@ -181,7 +181,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-node-js-developers"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main className="relative">
           <section>
             <Header></Header>
@@ -214,7 +220,7 @@ function HireAangularJsDeveloper(props) {
               subhead={chooseBiSubhead}
               alt="Remote Node.js Developers"
             />
-            
+
             <Engaged />
             <HireSteps type="NodeJS" />
             <Clients tech="NodeJS" />

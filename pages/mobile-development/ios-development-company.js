@@ -130,19 +130,21 @@ function IosDevelopment(props) {
   return (
     <>
       <Head>
-        <title>iOS App Development Services | Custom iOS App Development</title>
+        <title>
+          Best iOS App Development Services | iOS App Development Company
+        </title>
         <meta
           name="description"
-          content="Develop iOS apps with Top iOS application development company. Brain Inventory iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
+          content="As a leading iOS app development company in the USA, we offer premium iPhone application development services to create high-quality iOS apps."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="iOS App Development Services | Custom iOS App Development"
+          content="Best iOS App Development Services | iOS App Development Company"
         />
         <meta
           property="og:description"
-          content="Develop iOS apps with Top iOS application development company. Brain Inventory iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
+          content="As a leading iOS app development company in the USA, we offer premium iPhone application development services to create high-quality iOS apps."
         />
         <meta
           property="og:url"
@@ -157,7 +159,13 @@ function IosDevelopment(props) {
           href="https://braininventory.in/mobile-development/ios-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main className=" ">
           <Header />
           <section className="pt-32">

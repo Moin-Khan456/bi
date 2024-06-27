@@ -118,19 +118,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Mobile App Development Services | App Development Company</title>
+        <title>
+          Custom Mobile App Development Company | App Development Services
+        </title>
         <meta
           name="description"
-          content="At Brain Inventory, We are experts in developing native iOS and Android applications and cross-platform mobile apps for any industry. Get in touch with us today."
+          content="Turn your app ideas into reality with Brain Inventory's custom mobile app development services. Get your dream app developed by experts. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Custom Mobile App Development | Custom Mobile App Development Company"
+          content="Custom Mobile App Development Company | App Development Services"
         />
         <meta
           property="og:description"
-          content="At Brain Inventory, We are experts in developing native iOS and Android applications and cross-platform mobile apps for any industry. Get in touch with us today."
+          content="Turn your app ideas into reality with Brain Inventory's custom mobile app development services. Get your dream app developed by experts. Contact us today!"
         />
         <meta
           property="og:url"
@@ -145,51 +147,56 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/custom-app-development"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
-      <main className=" ">
-        <section>
-          <Header />
-          <HireBanner
-            heading="A Smarter Way to Build Customized Applications"
-            title="Custom Mobile App"
-            content={content}
-            btn="Get a Quote"
-            image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
-            alt="custom app development"
-            type="app"
-          />
-          <Customer />
-          <CustomWeb
-            para1={para1}
-            para2={para2}
-            para3={para3}
-            type="Custom App"
-          />
-          <HireMarquee title="Custom Mobile App" />
-          <CustomAppBenefits type="Mobile App" subhead={benefitSubHead} />
-          <Hire
-            title="Why Custom App Development from %Brain Inventory"
-            card={hireCards}
-            subhead={hireSub}
-          />
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
+        <main className=" ">
+          <section>
+            <Header />
+            <HireBanner
+              heading="A Smarter Way to Build Customized Applications"
+              title="Custom Mobile App"
+              content={content}
+              btn="Get a Quote"
+              image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
+              developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
+              alt="custom app development"
+              type="app"
+            />
+            <Customer />
+            <CustomWeb
+              para1={para1}
+              para2={para2}
+              para3={para3}
+              type="Custom App"
+            />
+            <HireMarquee title="Custom Mobile App" />
+            <CustomAppBenefits type="Mobile App" subhead={benefitSubHead} />
+            <Hire
+              title="Why Custom App Development from %Brain Inventory"
+              card={hireCards}
+              subhead={hireSub}
+            />
 
-          
-          <ChooseBraininventoryApp
-            head="Why Custom Web Development from"
-            blue="Brain inventory"
-            alt="custom app development"
-            reasons={reasonsForChoosing}
-          />
-          <hr />
-          <BlogArticle />
-          <FaqHire faq={faqdetails} />
-          <KeepInTouch />
-          <LocateUs />
-          <LetsKick />
-          <Footer />
-        </section>
-      </main>
+            <ChooseBraininventoryApp
+              head="Why Custom Web Development from"
+              blue="Brain inventory"
+              alt="custom app development"
+              reasons={reasonsForChoosing}
+            />
+            <hr />
+            <BlogArticle />
+            <FaqHire faq={faqdetails} />
+            <KeepInTouch />
+            <LocateUs />
+            <LetsKick />
+            <Footer />
+          </section>
+        </main>
       </Suspense>
     </>
   );

@@ -120,21 +120,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Custom Website Design And Development Services – Brain Inventory
-        </title>
+        <title>Custom Web Development | Top Agency - Brain Inventory</title>
         <meta
           name="description"
-          content="Brain Inventory is a leading custom web development company that offers reliable and customized web development solutions for your businesses. Contact us today."
+          content="Give your business the edge it needs with custom web development. Work with expert developers for custom services. Contact Brain Inventory today for a consultation."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Website Design And Development Services – Brain Inventory"
+          content="Custom Web Development | Top Agency - Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading custom web development company that offers reliable and customized web development solutions for your businesses. Contact us today."
+          content="Give your business the edge it needs with custom web development. Work with expert developers for custom services. Contact Brain Inventory today for a consultation."
         />
         <meta
           property="og:url"
@@ -156,7 +154,6 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
           as="image"
         />
-
       </Head>
 
       <Suspense

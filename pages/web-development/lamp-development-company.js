@@ -10,7 +10,7 @@ const ContactForm = dynamic(() =>
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
-import SectionOne from  "../../components/Web-Development/PageIntro.jsx";
+import SectionOne from "../../components/Web-Development/PageIntro.jsx";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -132,20 +132,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          LAMP Application Development Services | LAMP Web Development
+          Custom LAMP Application Development Services | LAMP Web Development
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a professional LAMP Application Development Company that provides Lamp Application Development Services as per your business requirements."
+          content="As a professional LAMP application development company, we offer LAMP services for business solutions. Hire LAMP developers to create dynamic web apps and websites."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="LAMP Application Development Services | LAMP Web Development"
+          content="Custom LAMP Application Development Services | LAMP Web Development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a professional LAMP Application Development Company that provides Lamp Application Development Services as per your business requirements."
+          content="As a professional LAMP application development company, we offer LAMP services for business solutions. Hire LAMP developers to create dynamic web apps and websites."
         />
         <meta
           property="og:url"
@@ -159,14 +159,20 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/lamp-development-company"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6518.png"
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <div className="pt-32">

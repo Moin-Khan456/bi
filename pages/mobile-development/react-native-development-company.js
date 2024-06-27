@@ -130,19 +130,21 @@ function ReactNativeDeveloper(props) {
   return (
     <>
       <Head>
-        <title>React Native App Development Company - Brain Inventory</title>
+        <title>
+          Leading React Native App development company | Brain Inventory
+        </title>
         <meta
           name="description"
-          content="Brain Inventory offers React Native app development Solutions to build cross-platform mobile apps. We provide world-class React Native App Development Services."
+          content="Brain Inventory is a prominent React Native app development company, offering swift React development services for cross-platform iOS and Android apps."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="React Native App Development Company - Brain Inventory"
+          content="Leading React Native App development company | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers React Native app development Solutions to build cross-platform mobile apps. We provide world-class React Native App Development Services."
+          content="Brain Inventory is a prominent React Native app development company, offering swift React development services for cross-platform iOS and Android apps."
         />
         <meta
           property="og:url"
@@ -157,7 +159,13 @@ function ReactNativeDeveloper(props) {
           href="https://braininventory.in/mobile-development/react-native-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main className="">
           <Header />
           <section className="pt-32">

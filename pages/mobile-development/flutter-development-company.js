@@ -124,19 +124,19 @@ function Flutter(props) {
   return (
     <>
       <Head>
-        <title>Flutter App Development Company | Flutter App Development</title>
+        <title>Flutter App Development Company | Best Flutter Services</title>
         <meta
           name="description"
-          content="Brain Inventory specializes in creating cost-effective and efficient applications with leading-edge flutter app development solutions. Contact us today."
+          content="As a top Flutter app development company, we specialize in creating high-performance, innovative applications. Our services ensure your Flutter apps perform excellently."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Flutter App Development Company | Flutter App Development"
+          content="Flutter App Development Company | Best Flutter Services"
         />
         <meta
           property="og:description"
-          content="Brain Inventory specializes in creating cost-effective and efficient applications with leading-edge flutter app development solutions. Contact us today."
+          content="As a top Flutter app development company, we specialize in creating high-performance, innovative applications. Our services ensure your Flutter apps perform excellently."
         />
         <meta
           property="og:url"
@@ -151,7 +151,13 @@ function Flutter(props) {
           href="https://braininventory.in/mobile-development/flutter-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main className="">
           <Header />
           <section className="pt-32">

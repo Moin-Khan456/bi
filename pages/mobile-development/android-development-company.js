@@ -129,19 +129,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Android App Development Services | Android App Developers</title>
+        <title>Expert Android App Development Services | Brain Inventory</title>
         <meta
           name="description"
-          content="Get professional Android App Development Services from Brain Inventory. Our Developers build high-quality and scalable android applications. Contact us today."
+          content="Brain Inventory provides Android app development services, crafted by skilled developers, to help your business grow with innovative and custom Android services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Android App Development Services | Android App Developers"
+          content="Expert Android App Development Services | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Get professional Android App Development Services from Brain Inventory. Our Developers build high-quality and scalable android applications. Contact us today."
+          content="Brain Inventory provides Android app development services, crafted by skilled developers, to help your business grow with innovative and custom Android services."
         />
         <meta
           property="og:url"
@@ -156,7 +156,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/android-development-company"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main className="">
           <Header />
           <section className="pt-32">

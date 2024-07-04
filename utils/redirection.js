@@ -1,6 +1,11 @@
 const redirection = () => {
   return [
     {
+      source: "/posts/the-crucial-role-of-crm-in-mobile-app-development/2027",
+      destination: "/posts/crm-in-mobile-app-development/2027",
+      permanent: true,
+    },
+    {
       source: "/posts/popular-functions-of-reactjs-and-angularjs/1844",
       destination: "/posts/reactjs-and-angularjs-functions/1844",
       permanent: true,

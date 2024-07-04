@@ -305,18 +305,18 @@ function Accounting(props) {
   return (
     <>
       <Head>
-        <title>Custom Accounting Software Development Services</title>
+        <title>Specialized Accounting Software Development Services | Brain Inventory</title>
         <meta
           property="description"
-          content="Brain Inventory specializes in accounting web and app development and creates efficient and user-friendly financial software tailored to your business needs."
+          content="At Brain Inventory, we offer custom accounting software development services that align with your business requirements, user expectations, and project timelines."
         />
         <meta
           property="og:title"
-          content="Custom Accounting Software Development Services"
+          content="Specialized Accounting Software Development Services | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory specializes in accounting web and app development and creates efficient and user-friendly financial software tailored to your business needs."
+          content="At Brain Inventory, we offer custom accounting software development services that align with your business requirements, user expectations, and project timelines."
         />
         <meta
           property="og:image"

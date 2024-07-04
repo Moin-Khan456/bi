@@ -265,18 +265,18 @@ function Blockchain(props) {
   return (
     <>
       <Head>
-        <title>Expert Blockchain Development Services- Brain Inventory</title>
+        <title>Top-Notch Blockchain Development Services</title>
         <meta
           property="description"
-          content="Brain Inventory's blockchain app development services deliver secure, decentralized solutions for your business needs. Reach out to us to acquire a seamless app."
+          content="We provide blockchain development services, offering decentralized solutions that enhance your business's security and transparency."
         />
         <meta
           property="og:description"
-          content="Brain Inventory's blockchain app development services deliver secure, decentralized solutions for your business needs. Reach out to us to acquire a seamless app."
+          content="We provide blockchain development services, offering decentralized solutions that enhance your business's security and transparency."
         />
         <meta
           name="og:title"
-          content="Expert Blockchain Development Services- Brain Inventory"
+          content="Top-Notch Blockchain Development Services"
         />
         <meta
           property="og:image"

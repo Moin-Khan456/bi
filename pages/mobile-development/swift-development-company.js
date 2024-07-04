@@ -125,20 +125,20 @@ function SwiftDevelopment(props) {
     <>
       <Head>
         <title>
-          Swift App Development Company | Swift App Development Solutions
+        Leading Swift App Development Company for Custom Apps
         </title>
         <meta
           name="description"
-          content="Brain inventory Swift App Developers build high-quality feature-rich Swift iOS development with unique mobile apps that drive business values. Contact us today."
+          content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Swift App Development Company | Swift App Development Solutions"
+          content="Leading Swift App Development Company for Custom Apps"
         />
         <meta
           property="og:description"
-          content="Brain inventory Swift App Developers build high-quality feature-rich Swift iOS development with unique mobile apps that drive business values. Contact us today."
+          content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
         />
         <meta property="og:url" content="https://braininventory.in/mobile-development/swift-development-company" />
         <meta

@@ -265,19 +265,19 @@ function Healthcare(props) {
     <>
       <Head>
         <title>
-          Custom Healthcare Software Development Services- Brain Inventory
+        Top Rated Healthcare Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
-          content="Brain Inventory is a leading healthcare app development company, specializing in creating innovative software for the healthcare industry's needs. Contact us!"
+          content="Brain Inventory, a prominent healthcare software development company, excels in utilizing advanced technologies to address tangible healthcare challenges."
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading healthcare app development company, specializing in creating innovative software for the healthcare industry's needs. Contact us!"
+          content="Brain Inventory, a prominent healthcare software development company, excels in utilizing advanced technologies to address tangible healthcare challenges."
         />
         <meta
           name="og:title"
-          content="Custom Healthcare Software Development Services- Brain Inventory"
+          content="Top Rated Healthcare Software Development Services | Brain Inventory"
         />
         <meta
           property="og:image"

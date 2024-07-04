@@ -83,9 +83,9 @@ const HomeSectionFour = () => {
         <div className=" w-full snap-y snap-mandatory">
           <div className="">
             <div className=" w-full top-0 z-40 bg-black 2xl:p-10 p-8">
-              <p className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
+              <h2 className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
                 what are you looking up-to?
-              </p>
+              </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
                 business. We, as a mobile application development company can

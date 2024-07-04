@@ -15,9 +15,9 @@ const HomeSectionThree = () => {
     <div className="container padding-left-all-section">
       <div className=" lg:flex items-start pt-12">
         <div className="w-full p-6 lg:p-10 pr-0 2xl:pb-16 xl:pb-12 pb-10 2xl:space-y-20 xl:space-y-16 space-y-12">
-          <p className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap">
+          <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap">
             work that make you say woww!
-          </p>
+          </h2>
           <div className="lg:flex justify-between 2xl:space-y-15 xl:space-y-12 space-y-10">
             <div className="lg:flex 2xl:space-y-20 xl:space-y-16 space-y-12">
               <div>

@@ -294,18 +294,18 @@ function MarketPlace(props) {
   return (
     <>
       <Head>
-        <title>Custom Marketplace Software Development Company</title>
+        <title>Brain Inventory - Marketplace Software Development Company</title>
         <meta
           property="description"
-          content="Looking for marketplace app development services? We create customized and user-friendly apps to boost your online marketplace success. Get in touch with us today!"
+          content="As a leading marketplace development company, we leverage the latest industry trends to create custom online platforms for buying and selling products."
         />
         <meta
           property="og:description"
-          content="Looking for marketplace app development services? We create customized and user-friendly apps to boost your online marketplace success. Get in touch with us today!"
+          content="As a leading marketplace development company, we leverage the latest industry trends to create custom online platforms for buying and selling products."
         />
         <meta
           name="og:title"
-          content="Custom Marketplace Software Development Company"
+          content="Brain Inventory - Marketplace Software Development Company"
         />
         <meta
           property="og:image"

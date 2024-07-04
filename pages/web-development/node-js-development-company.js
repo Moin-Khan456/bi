@@ -117,20 +117,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Node JS Development Services | Node JS Development Company
+          Node.js Development | Expert Nodejs Development Services
         </title>
         <meta
           name="description"
-          content="Brain Inventory provides quality Node JS development services to build secure, scalable, user-friendly web applications. We are a top Custom Software Development firm."
+          content="Brain Inventory is the top Node.js development company, providing services to build secure, real-time, and scalable Node.js applications tailored to your business needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Node JS Development Services | Node JS Development Company"
+          content="Node.js Development | Expert Nodejs Development Services"
         />
         <meta
           property="og:description"
-          content="Brain Inventory provides quality Node JS development services to build secure, scalable, user-friendly web applications. We are a top Custom Software Development firm."
+          content="Brain Inventory is the top Node.js development company, providing services to build secure, real-time, and scalable Node.js applications tailored to your business needs."
         />
         <meta
           property="og:url"

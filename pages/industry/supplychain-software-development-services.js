@@ -319,19 +319,19 @@ function SupplyChain(props) {
     <>
       <Head>
         <title>
-          Supplychain Software Development Services - Brain Inventory
+          Best Supply Chain Management Software Company | Brain Inventory
         </title>
         <meta
           property="description"
-          content="Brain Inventory is a leading supply chain software development company. Streamline operations, enhance visibility, and optimize logistics seamlessly. Contact us!"
+          content="Brain Inventory offers expert supply chain management software development, covering all your inventory management, asset tracking, and order management system needs."
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading supply chain software development company. Streamline operations, enhance visibility, and optimize logistics seamlessly. Contact us!"
+          content="Brain Inventory offers expert supply chain management software development, covering all your inventory management, asset tracking, and order management system needs."
         />
         <meta
           name="og:title"
-          content="Supplychain Software Development Services - Brain Inventory"
+          content="Best Supply Chain Management Software Company | Brain Inventory"
         />
         <meta
           property="og:image"

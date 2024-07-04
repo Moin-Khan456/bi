@@ -299,18 +299,18 @@ function Energy(props) {
   return (
     <>
       <Head>
-        <title>Energy and Utility Software Development Services</title>
+        <title>Energy And Utility Software Development Services | Brain Inventory</title>
         <meta
           property="description"
-          content="Explore cutting-edge energy and utility software development services at Brain Inventory. Elevate efficiency and innovation in the energy sector. Contact us!"
+          content="Switch to our utility management software for optimized energy needs. Brain Inventory's on-demand developers help you easily track and manage your utilities."
         />
         <meta
           property="og:description"
-          content="Explore cutting-edge energy and utility software development services at Brain Inventory. Elevate efficiency and innovation in the energy sector. Contact us!"
+          content="Switch to our utility management software for optimized energy needs. Brain Inventory's on-demand developers help you easily track and manage your utilities."
         />
         <meta
           name="og:title"
-          content="Energy and Utility Software Development Services"
+          content="Energy And Utility Software Development Services | Brain Inventory"
         />
         <meta
           property="og:image"

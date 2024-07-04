@@ -290,19 +290,19 @@ function Travel(props) {
     <>
       <Head>
         <title>
-          Real Estate Software Development Services- Brain Inventory
+          Efficient Real Estate Software Development Company | Brain Inventory
         </title>
         <meta
           property="description"
-          content="Brain Inventory is the best real estate software and mobile app development company. Contact us to elevate business operations and client relations. Call now!"
+          content="Brain Inventory, a real estate software development company, creates complex, secure, and customized proptech solutions to help real estate businesses thrive."
         />
         <meta
           property="og:description"
-          content="Brain Inventory is the best real estate software and mobile app development company. Contact us to elevate business operations and client relations. Call now!"
+          content="Brain Inventory, a real estate software development company, creates complex, secure, and customized proptech solutions to help real estate businesses thrive."
         />
         <meta
           name="og:title"
-          content="Real Estate Software Development Services- Brain Inventory"
+          content="Efficient Real Estate Software Development Company | Brain Inventory"
         />
         <meta
           property="og:image"

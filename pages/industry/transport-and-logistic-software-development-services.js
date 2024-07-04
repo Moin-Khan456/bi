@@ -290,19 +290,19 @@ function Logistic(props) {
     <>
       <Head>
         <title>
-          Transport and Logistic Software Development Services
+          Custom Transport And Logistic Software Development Services
         </title>
         <meta
           property="description"
-          content="Experience innovation with brain inventory, get effortless operations with transportation and logistics software development services. Reach out to us today!"
+          content="Brain Inventory is your trusted transport and logistics software development partner, creating reliable custom software solutions for logistics providers."
         />
         <meta
           property="og:description"
-          content="Experience innovation with brain inventory, get effortless operations with transportation and logistics software development services. Reach out to us today!"
+          content="Brain Inventory is your trusted transport and logistics software development partner, creating reliable custom software solutions for logistics providers."
         />
         <meta
           name="og:title"
-          content="Transport and Logistic Software Development Services"
+          content="Custom Transport And Logistic Software Development Services"
         />
         <meta
           property="og:image"

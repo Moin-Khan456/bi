@@ -275,18 +275,18 @@ function CrmDevelopment(props) {
   return (
     <>
       <Head>
-        <title>Custom CRM Software Development Services- Brain Inventory</title>
+        <title>Custom CRM Software Development Services | CRM Development</title>
         <meta
           property="description"
-          content="Brain Inventory CRM software development involves creating custom software to manage customer data, streamline sales, and enhance client relationships. Contact us!"
+          content="Brain Inventory offers custom CRM software development services to analyze your business needs and implement a tailored CRM solution for your goals. Contact us today!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory CRM software development involves creating custom software to manage customer data, streamline sales, and enhance client relationships. Contact us!"
+          content="Brain Inventory offers custom CRM software development services to analyze your business needs and implement a tailored CRM solution for your goals. Contact us today!"
         />
         <meta
           name="og:title"
-          content="Custom CRM Software Development Services- Brain Inventory"
+          content="Custom CRM Software Development Services | CRM Development"
         />
         <meta
           property="og:image"

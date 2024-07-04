@@ -313,19 +313,19 @@ function Ecommerce(props) {
     <>
       <Head>
         <title>
-          E-Commerce Software Development Services - Brain Inventory
+        Custom eCommerce Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
-          content="Brain Inventory is a leading e-commerce software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Brain Inventory is your trusted eCommerce development company with a skilled team specializing in creating state-of-the-art online store solutions."
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading e-commerce software development company. Our experts build scalable and innovative software for your online business. Contact us!"
+          content="Brain Inventory is your trusted eCommerce development company with a skilled team specializing in creating state-of-the-art online store solutions."
         />
         <meta
           name="og:title"
-          content="E-Commerce Software Development Services - Brain Inventory"
+          content="Custom eCommerce Software Development Services | Brain Inventory"
         />
         <meta
           property="og:image"

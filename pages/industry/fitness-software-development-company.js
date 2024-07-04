@@ -270,18 +270,18 @@ function Fitness(props) {
   return (
     <>
       <Head>
-        <title>Fitness Software Development Services - Brain Inventory</title>
+        <title>Top Fitness App Development Company | Brain Inventory</title>
         <meta
           property="description"
-          content="Looking for a fitness app development company? We specialize in creating user-friendly custom fitness apps to boost your brand's success. Contact us today!"
+          content="Brain Inventory, a fitness app development company, offers wellness and fitness software services tailored for gyms and personal trainers."
         />
         <meta
           name="og:title"
-          content="Fitness Software Development Services - Brain Inventory"
+          content="Top Fitness App Development Company | Brain Inventory"
         />
         <meta
           name="og:description"
-          content="Looking for a fitness app development company? We specialize in creating user-friendly custom fitness apps to boost your brand's success. Contact us today!"
+          content="Brain Inventory, a fitness app development company, offers wellness and fitness software services tailored for gyms and personal trainers."
         />
         <meta
           property="og:image"

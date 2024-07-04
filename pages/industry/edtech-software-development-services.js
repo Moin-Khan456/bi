@@ -321,18 +321,18 @@ function EdTech(props) {
   return (
     <>
       <Head>
-        <title>Edtech Software Development Services - Brain Inventory</title>
+        <title>Best Education Software Development Company | Brain Inventory</title>
         <meta
           property="description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+          content="Seeking effective educational software development? We are a custom software development company offering tailored solutions for the education sector."
         />
         <meta
           property="og:description"
-          content="Brain inventory is a leading education software development company that provides innovative e-learning software for schools, colleges, and universities. Contact us!"
+          content="Seeking effective educational software development? We are a custom software development company offering tailored solutions for the education sector."
         />
         <meta
           name="og:title"
-          content="Edtech Software Development Services - Brain Inventory"
+          content="Best Education Software Development Company | Brain Inventory"
         />
         <meta
           property="og:image"

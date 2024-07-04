@@ -55,18 +55,18 @@ export default function Hirededicatedremotedevelopers(props) {
   return (
     <>
       <Head>
-        <title>Hire Dedicated Remote Developer | Brain Inventory</title>
+        <title>Hire Remote Developers - Quick and Transparent Process</title>
         <meta
           name="description"
-          content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
+          content="Partner with Brain Inventory to hire industry-specific remote developers. We provide the top 1% of vetted remote developers for your team building needs."
         />
         <meta
           name="og:title"
-          content="Hire Dedicated Remote Developer | Brain Inventory"
+          content="Hire Remote Developers - Quick and Transparent Process"
         />
         <meta
           name="og:description"
-          content="Brain Inventory is a leading IT Staff Augmentation company. Use our IT augmentation services to get professional specialists on your project."
+          content="Partner with Brain Inventory to hire industry-specific remote developers. We provide the top 1% of vetted remote developers for your team building needs."
         />
         <meta
           property="og:url"

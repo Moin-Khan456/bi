@@ -295,18 +295,18 @@ function Travel(props) {
   return (
     <>
       <Head>
-        <title>Travel Software Development Services- Brain Inventory</title>
+        <title>Top-Rated Travel Software Development Company | Brain Inventory</title>
         <meta
           property="description"
-          content="Brain Inventory offers a travel software development service for the travel industry that streamlines operations and enhances customer experiences. Contact us!"
+          content="We specialize in custom travel software development, packed with features to ensure a seamless travel experience for your customers every time."
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers a travel software development service for the travel industry that streamlines operations and enhances customer experiences. Contact us!"
+          content="We specialize in custom travel software development, packed with features to ensure a seamless travel experience for your customers every time."
         />
         <meta
           name="og:title"
-          content="Travel Software Development Services- Brain Inventory"
+          content="Top-Rated Travel Software Development Company | Brain Inventory"
         />
         <meta
           property="og:image"

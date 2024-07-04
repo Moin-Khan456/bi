@@ -130,20 +130,20 @@ function HireReactDeveloper(props) {
     <>
       <Head>
         <title>
-          React JS Development Services | React JS Development Company
+          React JS Development Services | Trusted React JS Development Company
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
+          content="Brain Inventory is top ReactJS development company offering services to create feature-packed React web and mobile apps. Enhance your projects with our expert solutions."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="React JS Development Services | React JS Development Company"
+          content="React JS Development Services | Trusted React JS Development Company"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a top-notch React JS Development Company that offers React JS Development Solutions to create highly scalable And efficient web apps. Contact us today."
+          content="Brain Inventory is top ReactJS development company offering services to create feature-packed React web and mobile apps. Enhance your projects with our expert solutions."
         />
         <meta
           property="og:url"

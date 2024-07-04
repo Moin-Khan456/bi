@@ -115,20 +115,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Vue JS App Development Services | Vue JS App Development Company
+          Trusted Vue JS Development Company | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Build single-page web applications from Brain Inventory. We have an experienced team of web application developers, project managers, and full-stack engineers."
+          content="Brain Inventory, a top VueJS development company, delivers high-quality services for creating advanced and real-time web applications. Trust us for your VueJS needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Vue JS App Development Services | Vue JS App Development Company"
+          content="Trusted Vue JS Development Company | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Build single-page web applications from Brain Inventory. We have an experienced team of web application developers, project managers, and full-stack engineers."
+          content="Brain Inventory, a top VueJS development company, delivers high-quality services for creating advanced and real-time web applications. Trust us for your VueJS needs."
         />
         <meta property="og:url" content="https://braininventory.in/web-development/vue-js-development-company" />
         <meta

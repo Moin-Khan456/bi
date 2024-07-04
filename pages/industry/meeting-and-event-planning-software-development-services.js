@@ -296,18 +296,18 @@ function Meeting(props) {
   return (
     <>
       <Head>
-        <title>Meeting and Event Planning Software Development Services</title>
+        <title>Leading Meeting and Event Planning Software Development Company</title>
         <meta
           property="description"
-          content="Brain Inventory provides meeting and event planning software development services, for seamless event management and planning. Contact us for custom software!"
+          content="Brain Inventory leading meeting and event planning software development company, creates on-demand software tailored for seamless event handling and meeting management."
         />
         <meta
           property="og:description"
-          content="Brain Inventory provides meeting and event planning software development services, for seamless event management and planning. Contact us for custom software!"
+          content="Brain Inventory leading meeting and event planning software development company, creates on-demand software tailored for seamless event handling and meeting management."
         />
         <meta
           name="og:title"
-          content="Meeting and Event Planning Software Development Services"
+          content="Leading Meeting and Event Planning Software Development Company"
         />
         <meta
           property="og:image"

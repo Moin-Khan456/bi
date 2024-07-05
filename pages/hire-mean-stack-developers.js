@@ -23,9 +23,9 @@ import Clients from "../components/Hire/Clients";
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Hire a Mean developer from us, our team has extensive expertise in developing dynamic, scalable, and secure web applications along with other backend services like security, data integration, and integration of third-party systems.";
+    "Employ a proficient developer from our company, as our team possesses vast knowledge in creating interactive, adaptable, and protected web applications as well as additional backend functions such as ensuring security, incorporating data, and linking with external systems.";
   const subhead1 =
-    "Our MEAN Stack development team has a proven track record. Their skills are in-demand and they always keep abreast of the latest trends and technologies. This allows you to hire them at minimum prices. We manufacture custom MEAN Stack applications that make use of modern best practices and innovative technologies. We have an agile process to ensure speedy development cycles and responsive customer support; this helps you get your project up and running quickly while saving time and money on errors.";
+    "Our MEAN Stack development team is comprised of proficient and seasoned professionals who remain abreast of the latest advancements and sought-after competencies. This enables us to provide competitive rates for exceptional talent. We create bespoke MEAN Stack applications using state-of-the-art technologies and adhering to contemporary development methodologies. With an agile and iterative process, we can deliver projects rapidly while providing responsive support, helping clients launch their products faster and more affordably by reducing costly mistakes. Our proven development approach produces high-quality outcomes that fully meet project requirements.";
   const subhead2 =
     "We are a team of exceptional MEAN Stack developers with expertise in developing high-quality, feature-rich, and responsive applications using the latest modern technologies. Our MEAN stack developers have developed highly scalable web and mobile applications that run on all major platforms. Hire a dedicated team of MEAN Stack developers or hire a team of freelance MEAN Stack developers from Brain Inventory to build the best UI with an equally secured backend.";
 
@@ -61,17 +61,17 @@ function HireAangularJsDeveloper(props) {
     {
       head: "100% Transparency",
       content:
-        "We believe in being completely transparent with our clients. Our developers work dedicatedly on your project and keep you updated at every stage of development. This ensures that we understand what you want to achieve, how, and when you are achieving it using all the resources in-house and third party.",
+        "We are fully open and honest with our customers. Our programmers work tirelessly on your venture, keeping you informed during each phase of the process. This guarantees we comprehend your objectives, the methods for accomplishing them, and the timeline using all available in-house and external resources. Efficient realization of your vision is guaranteed when we uphold transparent and effective communication.",
     },
     {
       head: "No Lock-in Periods",
       content:
-        "With us, you can hire our developers for as long or as short a period as possible. That means, if you need to find 1,000 last-minute web developers, we are always here to help. Our commitment is to provide you with the highest quality service at competitive rates.",
+        "Our organization provides various choices for hiring developers, allowing you the flexibility to rapidly expand your team with 1,000 web developers on short notice or fulfill your long-term staffing requirements. We are here to offer our assistance. We are dedicated to providing top-notch service at competitive prices. You can rely on us to supply high-quality developers for any timeframe, big or small.",
     },
     {
       head: "Flexible Hiring Models",
       content:
-        "We offer flexible hiring models that can be customized as per your project requirements and budget. We are a team of professionals with extensive experience in the IT industry. Our experts have helped numerous companies in achieving their targets by providing various online and offline marketing solutions.",
+        "We provide adaptable staffing plans that can be tailored to your project needs and financial plan. Our group comprises professionals with broad experience in the IT field. Our specialists have helped countless organizations accomplish their objectives by giving an assortment of online and offline marketing arrangements.",
     },
     {
       head: "Highly Skilled Developers",
@@ -120,9 +120,9 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const advantages = [
-    "MEAN stack is an open-source technology that is free to use, which can help reduce the cost of development. Hiring a MEAN stack developer can provide cost savings compared to hiring developers with expertise in proprietary technologies. MEAN stack developer can provide expertise across the entire technology stack, allowing for more efficient development and better integration between front-end and back-end technologies.",
-    "MEAN stack is a versatile technology that can be used for a wide range of applications, from simple websites to complex web applications. A MEAN stack developer can provide customized solutions that meet your specific needs and objectives. MEAN stack developers can leverage these modules to develop applications more efficiently, allowing you to launch your product to market faster.",
-    "It can help design and develop applications that are scalable and flexible, even as your business needs evolve over time. Hiring a MEAN stack developer can provide numerous benefits for your business.",
+    "The MEAN stack is a group of open-source technologies that do not require licensing fees, which can lower development costs. Contracting a developer proficient in the MEAN stack can be more affordable than hiring developers skilled in commercial technologies. A MEAN stack developer can offer knowledge across the complete technology set, enabling more streamlined development and superior integration of front-end and back-end technologies.",
+    "Leveraging freely available open-source tools and tapping into the skills of developers proficient in MongoDB, Express.js, AngularJS, and Node.js, companies can lower expenses for building software. The MEAN stack is a flexible technology suite suitable for simple sites as well as intricate web apps.",
+    "MEAN stack developers can leverage these modules to develop applications more efficiently, allowing you to launch your product to market faster. It can help design and develop applications that are scalable and flexible, even as your business needs evolve over time. Hiring a MEAN stack developer can provide numerous benefits for your business.",
   ];
 
   const keySkillsBreif =
@@ -136,7 +136,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Hiring us for a mean stack development gives you an edge over your competition. Not only do we have experience with the technology as a whole, but also years of experience delivering apps and websites to meet your business needs. Our team's specialty is programming in the latest web technologies and providing efficient, reliable development services.";
+    "Hiring us for a mean stack development gives you an edge over your competition. Not only do we have experience with the technology as a whole, but also years of experience delivering apps and websites to meet your business needs. Our team excels in coding using the most up-to-date web technologies and delivering high-quality development services that are both effective and dependable. Initially, it may be challenging to distinguish our MEAN stack developers from others in the field. However, we offer a comprehensive range of services for your application, including backend and frontend development, as well as extensive expertise in utilizing Git tools such as GitHub.";
   const chooseBI = [
     "At a glance, it's hard to see how our MEAN stack developers are different from any others out there. We provide everything you need for your application: backend, frontend development, and lots of experience with Git tools like GitHub.",
     "Our code is well-documented, tested, and presented via Docker containers. Our web applications are based on Bootstrap and AngularJS using the MEAN stack framework that powers the most popular Node.js apps today.",
@@ -177,52 +177,55 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-mean-stack-developers"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
-            <Header></Header>
-            <HireBanner
-              heading="Upgrade Your Development Process With Our Expertise"
-              title="Hire MEAN stack"
-              content={content}
-              btn="Contact Us!"
-              unique={"developer"}
-              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+MEAN+Developers.png"
-              alt="Hire Dedicated MEAN Stack Developers"
-              type="hire"
-            />
-            <Customer />
-              <Experienced
-                title="Hire an Experienced MEAN stack Developers to Upscale Your Development"
-                subhead1={subhead1}
-                subhead2={subhead2}
-                card={experienceCards}
-              />
-              <Advantage
-                title="MEAN Stack Developers"
-                advantages={advantages}
-              />
-              <HireMarquee title="MEAN stack" />
-              <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-              <Hire
-                title="Why Hire MEAN Stack Developer from %Brain Inventory"
-                card={hireCards}
-              />
-              <ChooseBraininventory
-                reasons={chooseBI}
-                subhead={chooseBiSubhead}
-                alt="Hire Dedicated MEAN Stack Developers"
-              />
-              
-              <Engaged />
-              <HireSteps type="MEAN stack" />
-              <Clients tech="MEAN stack" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
+          <Header></Header>
+          <HireBanner
+            heading="Upgrade Your Development Process With Our Expertise"
+            title="Hire MEAN stack"
+            content={content}
+            btn="Contact Us!"
+            unique={"developer"}
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+MEAN+Developers.png"
+            alt="Hire Dedicated MEAN Stack Developers"
+            type="hire"
+          />
+          <Customer />
+          <Experienced
+            title="Hire an Experienced MEAN stack Developers to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage title="MEAN Stack Developers" advantages={advantages} />
+          <HireMarquee title="MEAN stack" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire MEAN Stack Developer from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="Hire Dedicated MEAN Stack Developers"
+          />
+
+          <Engaged />
+          <HireSteps type="MEAN stack" />
+          <Clients tech="MEAN stack" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
       </Suspense>
     </>

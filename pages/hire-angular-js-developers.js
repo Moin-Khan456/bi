@@ -81,17 +81,17 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Flexible Engagement Models",
       content:
-        "Instead of working on unwanted rigid and strict parameters, we offer flexibility to our clients to select from different engagement and hiring models. Our talented group comprises experts from various backgrounds who collaborate to deliver exceptional service to you.",
+        "Instead of working on unwanted rigid and strict parameters, we offer flexibility to our clients to select from different engagement and hiring models.Our talented group comprises experts from various backgrounds who collaborate to deliver exceptional service to you.",
     },
     {
       head: "Maintenance and Support",
       content:
-        "Our experienced Angular.js developers provide ongoing maintenance and assistance to guarantee that your web platforms stay current and fully operational. Our group of experts are fully versed in Angular and will give you top-notch service. We can construct your project from the ground up or change current code, according to your requirements.",
+        "Our experienced Angular.js developers provide ongoing maintenance and assistance to guarantee that your web platforms stay current and fully operational.Our group of experts are fully versed in Angular and will give you top-notch service. We can construct your project from the ground up or change current code, according to your requirements.",
     },
     {
       head: "Cost-Effective Solutions",
       content:
-        "Brain Inventory understands your business needs, and we're here to help you meet them.We offer variety of engagement models to choose from, tailored to your style, budget, timeline, and deliverables. This guarantees that all objectives are achieved with consistent process. We offer budget-friendly packages.",
+        "Brain Inventory understands your business needs, and we're here to help you meet them. We offer variety of engagement models to choose from, tailored to your style, budget, timeline, and deliverables. This guarantees that all objectives are achieved with consistent process. We offer budget-friendly packages.",
     },
     {
       head: "On time Delivery",
@@ -155,7 +155,7 @@ function HireAangularJsDeveloper(props) {
     "Performance Management",
   ];
 
-  const chooseBiSubhead = `If you are looking for a company who believes in a systematic process, structured approach and effective sprint planning to accomplish the task on time, we are a good and genuine reason for you to hire our dedicated AngularJS developers. Brain Inventory is a great way to unlock the benefits of hiring dedicated AngularJS developers. Let's look at some reasons to hire our developers:`;
+  const chooseBiSubhead = `If you are looking for a company who believes in a systematic process, structured approach and effective sprint planning to accomplish the task on time, we are a good and genuine reason for you to hire our dedicated AngularJS developers. Brain Inventory is a great way to unlock the benefits of hiring dedicated AngularJS developers.`;
 
   const chooseBI = [
     "We offer a full range of services that are tailored to your project. We do not just specialize in one particular area or even one technology. Our group has comprehensive knowledge covering all parts of software creation and can help at any point in your undertaking, regardless of whether it includes client side or server side improvement.",

@@ -16,7 +16,9 @@ const SectionTwo = ({
       <div className="container">
         <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative">
           <h1
-            className={`px-4 ${titleSize ?? 'lg:text-8xl'} text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
+            className={`px-4 ${
+              titleSize ?? "lg:text-8xl"
+            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
           >
             {!notBreakable ? (
               <span>
@@ -32,7 +34,7 @@ const SectionTwo = ({
             <span
               className={`${
                 lastSmall && "lg:absolute lg:left-80"
-              } lg:px-4 pb-4 text-[1.7rem] lg:ml-12 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
+              } lg:px-8 pb-4 text-[1.7rem] lg:ml-12 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
             >
               Development Company
             </span>

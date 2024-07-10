@@ -72,34 +72,33 @@ function Support() {
   const faqdetails = [
     {
       id: "1",
-      title: "How does you ensure user-friendly CRM software?",
+      title: "What are software maintenance and support services?",
       description:
-        "We at Brain Inventory, a leading CRM development company prioritise user experience in our design philosophy, ensuring that our CRM software are intuitive and easy to use.",
+        "IT support services are essential to guarantee that companies can continue operating as usual even in the event of unforeseen circumstances, assist in managing software platforms through the work of professionals, and enable an optimal experience for end users.",
     },
     {
       id: "2",
-      title: "How does Brain Inventory stay ahead of industry trends?",
+      title: "How much does it cost to avail of IT maintenance and support?",
       description:
-        "We stay informed about industry developments and continuously evolve our software, pushing the boundaries of CRM innovation to keep your business ahead of the curve.",
+        "The price for ongoing software support and updates varies based on the service level agreement you select and the specific upkeep required. Please reach out to us directly to receive a customized quote.",
     },
     {
       id: "3",
-      title: "Can your CRM software integrate with existing systems?",
+      title: "What are the advantages of software support services?",
       description:
-        "Yes, our CRM software are designed for seamless integration with your current systems, minimising disruption and ensuring smooth operations.",
+        "Our company offers reliable IT maintenance and support services that adhere to your timelines and budgetary constraints. We tailor our offerings to your unique project needs and specifications. Additionally, we provide regular progress reports to keep you informed throughout the process.",
     },
     {
       id: "4",
-      title: "What support do you offer after implementing CRM software?",
+      title: "Why Should I Opt For Software Maintenance And Support Services?",
       description:
-        "We at Brain Inventory, a leading CRM development company provide exceptional support and training to ensure your team maximises the benefits of our CRM software and can adapt quickly to the changes.",
+        "Software maintenance and support services provide critical value for businesses small and large. By regularly monitoring and upgrading systems, maintenance keeps operations running optimally. Choosing professional maintenance services reduces unexpected downtime from glitches while making sure customers consistently have a positive experience. With routine care and adjustments, maintenance sustains peak performance across the organization.",
     },
     {
       id: "5",
-      title:
-        "What security measures are in place to protect customer data within your CRM software?",
+      title: "Is Software Maintenance And Support Available After Deployment?",
       description:
-        "We employ industry-standard security measures to safeguard your customer data, ensuring its confidentiality and integrity, and providing peace of mind for your business operations.",
+        "Brain Inventory provides ongoing software maintenance and support after system deployment. We recognize that sustaining an efficient system is crucial for ideal functionality and maximum return on investment. Our comprehensive support offerings encompass maintenance, upgrades, patching, troubleshooting, and resolving any issues as they arise. By partnering with Brain Inventory for post-deployment sustenance, clients gain peace of mind knowing their system will be preserved at peak performance.",
     },
   ];
 

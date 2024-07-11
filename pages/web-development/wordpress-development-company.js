@@ -107,20 +107,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          WordPress Website Development Company | WordPress Development
+          Premium WordPress Website Development Services | Brain Inventory
         </title>
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="WordPress Website Development Company | WordPress Development"
+          content="Premium WordPress Website Development Services | Brain Inventory"
         />
         <meta
           name="description"
-          content="Unlock the potential of your online presence with our top-rated WordPress website development. Our expert WordPress developers create stunning, user-friendly websites tailored to your business needs."
+          content="As a seasoned provider of WordPress website development services, we craft sites with intuitive, interactive interfaces that cater to all users' needs."
         />
         <meta
           property="og:description"
-          content="Unlock the potential of your online presence with our top-rated WordPress website development. Our expert WordPress developers create stunning, user-friendly websites tailored to your business needs."
+          content="As a seasoned provider of WordPress website development services, we craft sites with intuitive, interactive interfaces that cater to all users' needs."
         />
         <meta
           property="og:image"

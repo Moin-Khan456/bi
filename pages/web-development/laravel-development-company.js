@@ -106,20 +106,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Brain Inventory | Laravel Development Company for Innovative Solutions
+          Laravel Development Company | Top Laravel Development Services
         </title>
         <meta
           name="description"
-          content="Elevate your online presence with Laravel web development. Our experts create scalable solutions for seamless performance and innovative features. Transform your digital landscape."
+          content="Brain Inventory, a reputable Laravel development company, delivers feature-rich web app Laravel development services across the USA and India."
         />
         <meta
           property="og:description"
-          content="Elevate your online presence with Laravel web development. Our experts create scalable solutions for seamless performance and innovative features. Transform your digital landscape."
+          content="Brain Inventory, a reputable Laravel development company, delivers feature-rich web app Laravel development services across the USA and India."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Brain Inventory | Laravel Development Company for Innovative Solutions"
+          content="Laravel Development Company | Top Laravel Development Services"
         />
         <meta
           property="og:url"
@@ -133,14 +133,20 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/laravel-development-company"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+170+(1).png"
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <SectionOne
@@ -174,9 +180,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Laravel Development from %Brain Inventory"
             card={hireCards}
           />
-          <div className="container">
-            
-          </div>
+          <div className="container"></div>
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Laravel Development Company"

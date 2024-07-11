@@ -372,7 +372,7 @@ const FooterSections = [
     links: [
       {
         name: "Support and Maintenance",
-        path: "/support",
+        path: "/software-maintenance-and-support-services",
       },
       {
         name: "UI/UX Development Services",

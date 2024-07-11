@@ -132,20 +132,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom LAMP Application Development Services | LAMP Web Development
+          Top-Notch Lamp Application Development Services | Brain Inventory
         </title>
         <meta
           name="description"
-          content="As a professional LAMP application development company, we offer LAMP services for business solutions. Hire LAMP developers to create dynamic web apps and websites."
+          content="Brain Inventory offers LAMP application development services. Contact us to hire LAMP developers for your business web development needs and achieve outstanding results!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom LAMP Application Development Services | LAMP Web Development"
+          content="Top-Notch Lamp Application Development Services | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="As a professional LAMP application development company, we offer LAMP services for business solutions. Hire LAMP developers to create dynamic web apps and websites."
+          content="Brain Inventory offers LAMP application development services. Contact us to hire LAMP developers for your business web development needs and achieve outstanding results!"
         />
         <meta
           property="og:url"

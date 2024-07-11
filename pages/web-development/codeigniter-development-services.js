@@ -99,7 +99,8 @@ function HireAangularJsDeveloper(props) {
     "Cross-Platform Compatibility: CodeIgniter is compatible with various web servers and operating systems, making it versatile for deployment on different hosting environments.",
     "CodeIgniter is open-source and free to use, making it a cost-effective choice for web development projects.",
     "Its simplicity and code reusability features enable developers to build applications quickly, reducing development time and costs.",
-  ];  const card = [
+  ];
+  const card = [
     "Transform your vision into a dynamic web platform",
     "Industry Expert Developers | Tailored Business Solutions",
     "Future-Ready Web Apps",
@@ -109,20 +110,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Expert CodeIgniter Development Services | Custom Web Solutions
+          CodeIgniter Development Services Experts | Brain Inventory
         </title>
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Expert CodeIgniter Development Services | Custom Web Solutions"
+          content="CodeIgniter Development Services Experts | Brain Inventory"
         />
         <meta
           name="description"
-          content="Experience our cutting-edge CodeIgniter application development services designed to propel your business toward unprecedented growth. Harness the power of innovation with our expert solutions."
+          content="Learn the potential of CodeIgniter through our expert development services. We specialize in creating efficient and scalable web applications with this powerful framework."
         />
         <meta
           property="og:description"
-          content="Experience our cutting-edge CodeIgniter application development services designed to propel your business toward unprecedented growth. Harness the power of innovation with our expert solutions."
+          content="Learn the potential of CodeIgniter through our expert development services. We specialize in creating efficient and scalable web applications with this powerful framework."
         />
         <meta
           property="og:url"
@@ -147,9 +148,14 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
           as="image"
         />
-
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header></Header>
           <SectionOne
@@ -184,7 +190,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Choose %Brain Inventory% for CodeIgniter Development? "
             card={hireCards}
           />
-          
+
           <ChooseBraininventory
             reasons={chooseBI}
             alt="CodeIgniter development company"

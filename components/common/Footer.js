@@ -27,6 +27,10 @@ const FooterSections = [
         name: "Contact Us",
         path: "/contact",
       },
+      {
+        name: "FAQs",
+        path: "/faqs",
+      },
     ],
   },
   {

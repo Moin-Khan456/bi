@@ -113,20 +113,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          PHP Development Company | Expert PHP Web Development Services
+          PHP Development Company | Proficient PHP Development Services
         </title>
         <meta
           name="description"
-          content="Discover top-notch PHP development services from a trusted PHP development company Brain Inventory. Our skilled developers create robust, scalable, and secure PHP web solutions tailored to your business needs."
+          content="Brain Inventory is a top-notch PHP development company, offering custom PHP web development services including custom web portals, e-commerce websites, and more."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="PHP Development Company | Expert PHP Web Development Services"
+          content="PHP Development Company | Proficient PHP Development Services"
         />
         <meta
           property="og:description"
-          content="Discover top-notch PHP development services from a trusted PHP development company Brain Inventory. Our skilled developers create robust, scalable, and secure PHP web solutions tailored to your business needs."
+          content="Brain Inventory is a top-notch PHP development company, offering custom PHP web development services including custom web portals, e-commerce websites, and more."
         />
         <meta
           property="og:image"
@@ -151,7 +151,13 @@ function HireAangularJsDeveloper(props) {
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main>
           <Header />
           <SectionOne

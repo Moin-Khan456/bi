@@ -30,8 +30,8 @@ function FaqHire({ faq }) {
                     <section className="flex md:block my-4 md:my-0">
                       <button onClick={() => collapsed(el.id)} className="">
                         <Image
-                          width={el.title.length > 120 ? 85 : 40}
-                          height={el.title.length > 90 ? 85 : 40}
+                          width={el.title.length > 120 ? 52 : 40}
+                          height={el.title.length > 90 ? 52 : 40}
                           src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
                           className="cursor-pointer"
                           alt="Custom Software Development Company | Hire Software Developers"
@@ -42,7 +42,7 @@ function FaqHire({ faq }) {
                 </section>
                 <section className="collapse-content flex">
                   <section>
-                    <p>{el.description}</p>
+                    <div>{el.description}</div>
                   </section>
                   <section></section>
                 </section>

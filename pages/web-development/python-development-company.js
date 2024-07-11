@@ -104,20 +104,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Brain Inventory | Python Development Company for Innovative Solutions
+          Expert Python Development Services | Python Development Company
         </title>
         <meta
           name="description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
+          content="We are a leading Python development company, providing high-quality services to build complex web platforms and backend systems tailored to meet your business needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Brain Inventory | Python Development Company for Innovative Solutions"
+          content="Expert Python Development Services | Python Development Company"
         />
         <meta
           property="og:description"
-          content="Unlock innovation and excellence with our Python development services. We are a trusted Python development company delivering top-notch solutions tailored to your business needs."
+          content="We are a leading Python development company, providing high-quality services to build complex web platforms and backend systems tailored to meet your business needs."
         />
         <meta
           property="og:url"
@@ -139,7 +139,13 @@ https://braininventory.in/web-development/python-development-company"
           as="image"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <SectionOne
@@ -169,9 +175,7 @@ https://braininventory.in/web-development/python-development-company"
             title="Why %Brain Inventory% for your Python-based project development?"
             card={hireCards}
           />
-          <div className="container">
-            
-          </div>
+          <div className="container"></div>
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Python Development Company"

@@ -270,17 +270,18 @@ const CompanyChildren = ({ setLoad }) => {
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link
-              href="/blog/1"
-              className="cursor-pointer"
-              // onClick={() => !page && setLoad(true)}
-            >
+            <Link href="/blog/1" className="cursor-pointer">
               Blog
             </Link>
           </li>
           <li className="text-white text-opacity-50">
             <Link href="/contact" className="cursor-pointer">
               Contact Us
+            </Link>
+          </li>
+          <li className="text-white text-opacity-50">
+            <Link href="/faqs" className="cursor-pointer">
+              FAQs
             </Link>
           </li>
         </ul>

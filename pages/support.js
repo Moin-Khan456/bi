@@ -23,7 +23,7 @@ const SectionTwo = dynamic(() =>
   import("../components/support/sectionTwo.jsx")
 );
 const SectionThree = dynamic(() =>
-  import("../components/support/SectionThree.jsx")
+  import("../components/support/sectionThree.jsx")
 );
 const SectionFour = dynamic(() =>
   import("../components/SolutionFitness/SectionFour.jsx")

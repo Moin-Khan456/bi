@@ -108,19 +108,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Best .Net Development Company | .Net Development Services</title>
+        <title>
+          Custom .NET Development Services - Let Scale Your Business
+        </title>
         <meta
           name="description"
-          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="Brain Inventory, top-rated .NET development company, offers custom, scalable, and intuitive .NET development services. High-quality services custom to your business needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Best .Net Development Company | .Net Development Services"
+          content="Custom .NET Development Services - Let Scale Your Business"
         />
         <meta
           property="og:description"
-          content="Experience best .NET development services at Brain Inventory. Our experts craft innovative web solutions, ensuring robust and scalable applications. Contact us!"
+          content="Brain Inventory, top-rated .NET development company, offers custom, scalable, and intuitive .NET development services. High-quality services custom to your business needs."
         />
         <meta
           property="og:image"

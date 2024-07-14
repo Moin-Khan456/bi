@@ -63,34 +63,34 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const faqdetails = [
-        {
-          title: "Do I need to hire a Shopify development agency to start a store?",
-          description:
-            "Yes, Hiring a Shopify development agency can give your store everything it needs. Well-established and experienced agencies will have developers who are familiar with the Shopify portal's latest features and functionality. They can also help you leverage the utmost potential from this e-commerce platform to enhance your online business.",
-        },
-        {
-          title:
-            "How much does Brain Inventory charge for Shopify store development services?",
-          description:
-            "Our pricing is based on the complexity of your store and the number of resources we need to allocate to it. We've put together a handy pricing calculator that will give you an average idea of the type of cost per month for your project. By using this tool, you can compare all of our different packages.",
-        },
-        {
-          title:
-            "Will I get a dedicated Project Manager for the Shopify development services I choose?",
-          description:
-            "Since technical knowledge is a prerequisite to managing WordPress, we provide a dedicated project manager who will be in touch with you and your team throughout the endeavor. The project manager will be able to troubleshoot and fix all the bugs that may arise during installation. This is an additional fee, payable when the software development starts.",
-        },
-        {
-          title: "What will be the mode of communication used?",
-          description:
-            "We utilize PMS tools such as Teamwork and ProofHub within our organization, but we are adaptable to the tools that your team prefers. Additionally, our team has prior experience with various project management systems like Jira, BaseCamp, Trello, WorkFront, Wrike, and similar platforms. Therefore, transitioning to your preferred PMS will be a seamless process for us.",
-        },
-        {
-          title:
-            "How long does it take for a Shopify web development agency to deliver the live project?",
-          description:
-            "The average duration to build an online store is three months. We create a unique theme for your eCommerce business based on your brand and industry requirements.",
-        },
+    {
+      title: "Do I need to hire a Shopify development agency to start a store?",
+      description:
+        "Yes, Hiring a Shopify development agency can give your store everything it needs. Well-established and experienced agencies will have developers who are familiar with the Shopify portal's latest features and functionality. They can also help you leverage the utmost potential from this e-commerce platform to enhance your online business.",
+    },
+    {
+      title:
+        "How much does Brain Inventory charge for Shopify store development services?",
+      description:
+        "Our pricing is based on the complexity of your store and the number of resources we need to allocate to it. We've put together a handy pricing calculator that will give you an average idea of the type of cost per month for your project. By using this tool, you can compare all of our different packages.",
+    },
+    {
+      title:
+        "Will I get a dedicated Project Manager for the Shopify development services I choose?",
+      description:
+        "Since technical knowledge is a prerequisite to managing WordPress, we provide a dedicated project manager who will be in touch with you and your team throughout the endeavor. The project manager will be able to troubleshoot and fix all the bugs that may arise during installation. This is an additional fee, payable when the software development starts.",
+    },
+    {
+      title: "What will be the mode of communication used?",
+      description:
+        "We utilize PMS tools such as Teamwork and ProofHub within our organization, but we are adaptable to the tools that your team prefers. Additionally, our team has prior experience with various project management systems like Jira, BaseCamp, Trello, WorkFront, Wrike, and similar platforms. Therefore, transitioning to your preferred PMS will be a seamless process for us.",
+    },
+    {
+      title:
+        "How long does it take for a Shopify web development agency to deliver the live project?",
+      description:
+        "The average duration to build an online store is three months. We create a unique theme for your eCommerce business based on your brand and industry requirements.",
+    },
   ];
 
   const advantages = [
@@ -108,20 +108,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom Shopify Development Services | Brain Inventory
+          Shopify Development Company | Premium Shopify Development Services
         </title>
         <meta
           name="description"
-          content="Brain Inventory offers top-notch Shopify eCommerce software development services. Elevate your online store with custom software and web development. Call us!"
+          content="Brain Inventory, a top Shopify development company, offers expert Shopify website design and development services to create exceptional online stores."
         />
         <meta
           name="og:description"
-          content="Brain Inventory offers top-notch Shopify eCommerce software development services. Elevate your online store with custom software and web development. Call us!"
+          content="Brain Inventory, a top Shopify development company, offers expert Shopify website design and development services to create exceptional online stores."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Shopify Development Services | Brain Inventory"
+          content="Shopify Development Company | Premium Shopify Development Services"
         />
         <meta
           property="og:url"
@@ -131,7 +131,7 @@ function HireAangularJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/web-development/shopify-ecommerce-software-development-services"
         />
-         <link
+        <link
           rel="preload"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6526.png"
@@ -154,39 +154,37 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-              <Experienced
-                title="Shopify Development"
-                type="why"
-                image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+170.png"
-                alt="Shopify Development Company"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="Shopify" />
-              <Advantage
-                title="Shopify Development Company"
-                desc="A Shopify development company offers a multitude of benefits to businesses looking to establish or enhance their online presence. First and foremost, Shopify is a robust and user-friendly e-commerce platform that is well-known for its scalability and customization options. When you engage a Shopify development company, you gain access to a team of experts who can tailor your online store to meet your unique business needs."
-                reasons={advantages}
-              />{" "}
-              <Hire
-                title="Why Choose %Brain Inventory% for Shopify Development?"
-                card={hireCards}
-              />
-              <div className="container">
-                
-              </div>
-              <ChooseBraininventory
-                reasons={chooseBI}
-                alt="TypeScript Development Company"
-              />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
+          <Experienced
+            title="Shopify Development"
+            type="why"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+170.png"
+            alt="Shopify Development Company"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="Shopify" />
+          <Advantage
+            title="Shopify Development Company"
+            desc="A Shopify development company offers a multitude of benefits to businesses looking to establish or enhance their online presence. First and foremost, Shopify is a robust and user-friendly e-commerce platform that is well-known for its scalability and customization options. When you engage a Shopify development company, you gain access to a team of experts who can tailor your online store to meet your unique business needs."
+            reasons={advantages}
+          />{" "}
+          <Hire
+            title="Why Choose %Brain Inventory% for Shopify Development?"
+            card={hireCards}
+          />
+          <div className="container"></div>
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="TypeScript Development Company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
       </div>
     </>

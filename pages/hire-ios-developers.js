@@ -38,12 +38,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "iOS App Migration",
       content:
-        "As an experienced ios app developer and expert in the field, we can help your business succeed by converting existing legacy applications over to the modern iOS 11/iPhone X operating system. We focus on the efficient migration of your current system or website with the help of our experts.",
+        "Utilizing our expertise as seasoned iOS app developers and industry specialists, we are well-equipped to assist your business in achieving success through the seamless transformation of legacy applications to the latest iOS 11/iPhone X operating system. Our concentration lies in the proficient migration of your current system or website with the aid of our expert team.",
     },
     {
       head: "iOS App UI/UX Design",
       content:
-        "It's a best practice to create a user-driven ROI: we want to know why customers choose you, how we can be more relevant, and what is the best way to reach them. Our dedicated iOS developers are adept at understanding the behavior of end users and crafting excellent UX or UI designs.",
+        "Adhering to best practices, we prioritize establishing a user-centric ROI strategy: we aim to understand the reasons behind customers choosing your business, enhance our relevance to them, and determine the most effective methods of reaching them. Our skilled iOS developers excel at comprehending end users' behaviors and creating superior UX/UI designs to optimize user experience. ",
     },
     {
       head: "iPhone Support and Maintenance",
@@ -113,9 +113,9 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const advantages = [
-    "An experienced iOS developer has in-depth knowledge of the iOS platform and is skilled in using various tools and technologies to build high-quality iOS apps. They have the necessary expertise to develop custom solutions that meet your unique business requirements.",
-    "Hiring an iOS developer can save you time and money in the long run. They can help you avoid costly mistakes and ensure that your app is developed efficiently and effectively. With a professional developer, you can expect to have your project completed on time and within budget.",
-    "iOS developers can create customized solutions that are tailored to your specific needs. They can work with you to understand your business requirements and design an app that meets your goals and objectives. This can help you achieve a competitive advantage and stand out in your industry. iOS developers provide ongoing support for your app after it has been launched. ",
+    "An experienced iOS developer possesses in-depth knowledge of the iOS platform and is proficient in using various tools and technologies to build high-quality apps. They have the expertise to create custom solutions tailored to your unique business requirements.",
+    "Engaging an iOS developer can result in time and cost savings over the long term. Their expertise can help prevent expensive errors and guarantee the efficient and effective development of your app. By partnering with a skilled developer, you can anticipate timely and budget-friendly completion of your project.",
+    "iOS developers have the capability to develop personalized solutions that are customized to your exact requirements. By collaborating with you to comprehend your business needs, they can design an app that aligns with your objectives and aspirations. This can assist you in gaining a competitive edge and distinguishing yourself in your industry. Additionally, iOS developers offer continuous support for your app post-launch.",
   ];
 
   const keySkillsBreif =
@@ -167,50 +167,56 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-ios-developers"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
-            <Header></Header>
-            {/* hirebanner heading half:-   with our expert iOS app development services! */}
-            <HireBanner
-              heading="Transform your ideas into stunning iOS apps"
-              title="Hire iOS"
-              content={content}
-              btn="Contact Us!"
-              unique={"developer"}
-              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+iOS+Developers.png"
-              alt="iOS app development services"
-              type="hire"
-            />
-            <Customer />
-            <Experienced
-              title="Hire Experienced iOS Developers to Upscale Your Development"
-              subhead1={subhead1}
-              subhead2={subhead2}
-              card={experienceCards}
-            />
-            <Advantage title="iOS Developers" advantages={advantages} />
-            <HireMarquee title="iOS" />
-            <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
-            <Hire
-              title="Why Hire iOS Developer from %Brain Inventory"
-              card={hireCards}
-            />
-            <ChooseBraininventory
-              reasons={chooseBI}
-              alt="iOS app development services"
-            />
-            
-            <Engaged />
-            <HireSteps type="iOS" />
-            <Clients tech="iOS" />
-            <FaqHire faq={faqdetails} />
-            <hr />
-            <BlogArticle />
-            <KeepInTouch />
-            <LocateUs />
-            <LetsKick />
-            <Footer />
-          </div>
+          <Header></Header>
+          {/* hirebanner heading half:-   with our expert iOS app development services! */}
+          <HireBanner
+            heading="Transform your ideas into stunning iOS apps"
+            title="Hire iOS"
+            content={content}
+            btn="Contact Us!"
+            unique={"developer"}
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+iOS+Developers.png"
+            alt="iOS app development services"
+            type="hire"
+          />
+          <Customer />
+          <Experienced
+            title="Hire Experienced iOS Developers to Upscale Your Development"
+            subhead1={subhead1}
+            subhead2={subhead2}
+            card={experienceCards}
+          />
+          <Advantage title="iOS Developers" advantages={advantages} />
+          <HireMarquee title="iOS" />
+          <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
+          <Hire
+            title="Why Hire iOS Developer from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="iOS app development services"
+          />
+
+          <Engaged />
+          <HireSteps type="iOS" />
+          <Clients tech="iOS" />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
+        </div>
       </Suspense>
     </>
   );

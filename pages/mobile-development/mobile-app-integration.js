@@ -139,19 +139,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Mobile App Integration Service Provider | Brain Inventory</title>
+        <title>
+          Professional Mobile Application Integration Services | Brain Inventory
+        </title>
         <meta
           name="description"
-          content="BrainInventory: Your Trusted Mobile App Integration Service Provider. Seamlessly integrate and optimize mobile apps for enhanced functionality and user experience with our expert solutions."
+          content="Brain Inventory excels in mobile app integration services, seamlessly connecting various backend systems and web services to enhance functionality and user experience."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Mobile App Integration Service Provider | Brain Inventory"
+          content="Professional Mobile Application Integration Services | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="BrainInventory: Your Trusted Mobile App Integration Service Provider. Seamlessly integrate and optimize mobile apps for enhanced functionality and user experience with our expert solutions."
+          content="Brain Inventory excels in mobile app integration services, seamlessly connecting various backend systems and web services to enhance functionality and user experience."
         />
         <meta
           property="og:image"
@@ -170,7 +172,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/mobile-app-integration"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <main>
           <Header />
           <SectionOne
@@ -203,7 +211,7 @@ function HireAangularJsDeveloper(props) {
             title="Why Mobile Application Integration from %Brain Inventory"
             card={hireCards}
           />
-          
+
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Mobile Application Integration Services"

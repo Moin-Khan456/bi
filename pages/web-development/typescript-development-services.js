@@ -93,22 +93,19 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title:
-        "What is TypeScript development?",
+      title: "What is TypeScript development?",
       description:
         "TypeScript is a programming language developed and maintained by Microsoft. This is a statically typed language that compiles JavaScript. TypeScript was created primarily to increase the productivity of programmers through features like type checking, class-based object-oriented programming mechanisms, and modules.",
     },
     {
       id: "2",
-      title:
-        "Do I own the ownership and the code of my Typescript Project?",
+      title: "Do I own the ownership and the code of my Typescript Project?",
       description:
         "After the basic software development, we give the complete rights to our client. This includes copyrights, source code, and any other IPs. The client builds and owns his or her software. There is a lot of power in this approach because it allows the client to make future changes by himself or herself or with our help. We love the position, where our client has all rights, responsibility, and benefits.",
     },
     {
       id: "3",
-      title:
-        "Why should I choose Typescript instead of other Frameworks?",
+      title: "Why should I choose Typescript instead of other Frameworks?",
       description:
         "Build innovative and faster apps to achieve business dreams. TypeScript is a super-powered superset of JavaScript that compiles to plain vanilla JavaScript. The TypeScript compiler produces readable, standards-based JavaScript. It provides all the tools necessary so that you can easily build any of your web and mobile applications using Typescript.",
     },
@@ -120,7 +117,8 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "5",
-      title: "How can I track the progress of my Typescript Development Project?",
+      title:
+        "How can I track the progress of my Typescript Development Project?",
       description:
         "We even try to meet and discuss the feedback before we start working on the next iteration. Keeping constant touch with updates and design prototypes keeps the clients updated about the project's progression.",
     },
@@ -144,20 +142,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          TypeScript Mobile App Development Services - Brain Inventory
+          Custom Typescript Development | Typescript App Development Company
         </title>
         <meta
           name="description"
-          content="Explore brain inventory typescript development services for robust, scalable, and efficient software development. Our experts deliver excellence. Contact us!"
+          content="Our TypeScript app development company transforms your ideas into robust applications, offering feature-rich services for enterprises to drive growth and efficiency."
         />
         <meta
           name="og:description"
-          content="Explore brain inventory typescript development services for robust, scalable, and efficient software development. Our experts deliver excellence. Contact us!"
+          content="Our TypeScript app development company transforms your ideas into robust applications, offering feature-rich services for enterprises to drive growth and efficiency."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="TypeScript Mobile App Development Services - Brain Inventory"
+          content="Custom Typescript Development | Typescript  App Development Company"
         />
         <meta
           property="og:url"
@@ -190,32 +188,37 @@ function HireAangularJsDeveloper(props) {
             unique="Company"
           />
           <Customer />
-              <Experienced
-                title="TypeScript Development"
-                type="why"
-                image="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+169.png"
-                alt="TypeScript Development Company"
-                para1={subhead1}
-                para2={subhead2}
-                para3={subhead3}
-              />
-              <HireMarquee title="TypeScript" />
-              <Advantage title="Custom TypeScript Development" desc="Custom TypeScript development offers several notable benefits that can greatly impact the success of a software project:" reasons={advantages} />{" "}
-              <Hire
-                title="Why to Choose %Brain Inventory% for Your TypeScript Development Needs?"
-                card={hireCards}
-              />
-              <div className="container">
-                
-              </div>
-              <ChooseBraininventory reasons={chooseBI} alt="TypeScript Development Company" />
-              <FaqHire faq={faqdetails} />
-              <hr />
-              <BlogArticle />
-              <KeepInTouch />
-              <LocateUs />
-              <LetsKick />
-              <Footer />
+          <Experienced
+            title="TypeScript Development"
+            type="why"
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+169.png"
+            alt="TypeScript Development Company"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+          />
+          <HireMarquee title="TypeScript" />
+          <Advantage
+            title="Custom TypeScript Development"
+            desc="Custom TypeScript development offers several notable benefits that can greatly impact the success of a software project:"
+            reasons={advantages}
+          />{" "}
+          <Hire
+            title="Why to Choose %Brain Inventory% for Your TypeScript Development Needs?"
+            card={hireCards}
+          />
+          <div className="container"></div>
+          <ChooseBraininventory
+            reasons={chooseBI}
+            alt="TypeScript Development Company"
+          />
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
         </div>
       </div>
     </>

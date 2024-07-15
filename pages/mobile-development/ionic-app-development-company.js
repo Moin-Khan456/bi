@@ -141,19 +141,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Ionic App Development | Ionic App Development Company</title>
+        <title>Ionic App Development | Top Ionic App Development Company</title>
         <meta
           name="description"
-          content="Craft seamless, high-performance applications tailored to your business needs. Let's transform your ideas into compelling, feature-rich experiences with Ionic App Development Service."
+          content="Brain Inventory top-notch Ionic app development company, specializing in creating feature-rich, cross-platform mobile applications with expert Ionic development services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Ionic App Development | Ionic App Development Company"
+          content="Ionic App Development | Top Ionic App Development Company"
         />
         <meta
           property="og:description"
-          content="Craft seamless, high-performance applications tailored to your business needs. Let's transform your ideas into compelling, feature-rich experiences with Ionic App Development Service."
+          content="Brain Inventory top-notch Ionic app development company, specializing in creating feature-rich, cross-platform mobile applications with expert Ionic development services."
         />
         <meta
           property="og:url"

@@ -135,21 +135,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hybrid App Development | Cross-Platform App Development Company
-        </title>
+        <title>Expert Hybrid App Development Company | Brain Inventory</title>
         <meta
           name="description"
-          content="Discover the future of app development with our hybrid and cross-platform solutions. Our expert team crafts innovative apps that work flawlessly on multiple devices, reducing development time and costs."
+          content="Searching for a reliable hybrid app development company? Our experienced team creates seamless, high-performance apps for both iOS and Android platforms."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hybrid App Development | Cross-Platform App Development Company"
+          content="Expert Hybrid App Development Company | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Discover the future of app development with our hybrid and cross-platform solutions. Our expert team crafts innovative apps that work flawlessly on multiple devices, reducing development time and costs."
+          content="Searching for a reliable hybrid app development company? Our experienced team creates seamless, high-performance apps for both iOS and Android platforms."
         />
         <meta
           property="og:image"
@@ -168,7 +166,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/mobile-development/hybrid-app-development"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="">
           <Header />
           <SectionOne
@@ -201,7 +205,7 @@ function HireAangularJsDeveloper(props) {
             card={hireCards}
             subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
           />
-          
+
           <ChooseBraininventory
             reasons={chooseBI}
             alt="hybrid development company"

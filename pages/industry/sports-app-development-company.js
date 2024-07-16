@@ -307,7 +307,7 @@ function SportAppDeveloper() {
             <PlatformDevelopment
               data={platformDevelopment}
               subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-              head="Marketplace SOFTWARE DEVELOPMENT SERVICES"
+              head="SPORTS APPS"
               description={platformDesc}
             />
 

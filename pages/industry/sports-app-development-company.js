@@ -32,9 +32,7 @@ const SectionThree = dynamic(() =>
 const SectionFour = dynamic(() =>
   import("../../components/SolutionFitness/SectionFour.jsx")
 );
-const SectionFive = dynamic(() =>
-  import("../../components/SolutionFitness/SectionFive.jsx")
-);
+
 const SectionSix = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSix.jsx")
 );
@@ -299,24 +297,11 @@ function SportAppDeveloper() {
               points={sectionThreeInsights}
               sectionThreeServices={sectionThreeServices}
             />
-            {/* <SectionThree
-              title="Services for Sports App Development"
-              points={sectionThreeServices}
-            /> */}
 
             <SectionFour
               title="Why Choose Brain Inventory?"
               description={sectionFourDesc}
               solutionList={solutionList}
-            />
-
-            <SectionFive
-              head="Sports Applications"
-              subhead="COMPARED TO Amazon"
-              description={sectionFiveDesc}
-              sectionFiveTableHead={sectionFiveTableHead}
-              sectionFiveTable={sectionFiveTable}
-              alt="Sports App Development Company"
             />
 
             <SectionSix
@@ -331,8 +316,8 @@ function SportAppDeveloper() {
 
             <PlatformDevelopment
               data={platformDevelopment}
-              subhead="WHY CHOOSE BRAIN INVENTORY FOR"
-              head="SPORTS APPS"
+              subhead=""
+              head="Special Features of Our Sports Apps"
               description={platformDesc}
             />
 

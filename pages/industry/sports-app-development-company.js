@@ -27,7 +27,7 @@ const SectionTwo = dynamic(() =>
   import("../../components/SolutionFitness/SectionTwo.jsx")
 );
 const SectionThree = dynamic(() =>
-  import("../../components/support/sectionThree.jsx")
+  import("../../components/industry/Sports-App-Development/sectionThree.jsx")
 );
 const SectionFour = dynamic(() =>
   import("../../components/SolutionFitness/SectionFour.jsx")
@@ -163,14 +163,6 @@ function SportAppDeveloper() {
     `In the past few years, college sports have undergone numerous alterations, from conferences announcing many modifications to athletes securing groundbreaking name, image and likeness (NIL) contracts. With so much upheaval recently, might 2024 mark the start of a more stable period, a "new normal" for college athletics? Or could more turbulence and transformation still lie ahead?`,
   ];
 
-  const sectionThreeServices = [
-    "We assist you in creating a sports web platform that incorporates live score tracking and play-by-play commentary so you can enthusiastically follow along with your preferred squad and match.",
-    "We develop custom sports betting software and services tailored to match your company's current needs and priorities. Our offerings include analytics platforms with real-time metrics, browser add-ons, and statistics trackers that automatically update based on the latest trends in your industry.",
-    "We are experts in creating mobile applications for broadcasting live sporting events. We design these apps to deliver high-definition telecasts with an optimal viewing experience, regardless of network connectivity.",
-    "We offer optimal solutions to simplify keeping track of and administering sports clubs and competitions through our sports club and competition administration services.",
-    "We develop mobile applications for enthusiasts of various sports like football, basketball, baseball, tennis, hockey, soccer, auto racing, and more on iOS and Android devices.",
-  ];
-
   const sectionFiveDesc =
     "Welcome to the cutting-edge realm of sports technology, where innovation intersects with functionality to drive success in the ever-evolving sports industry. As the world of sports continues to expand, a plethora of technological solutions, including sports software and mobile applications, have emerged as indispensable tools for athletes, coaches, and sports organizations alike. Now, let's delve into a head-to-head comparison.";
   const sectionFiveTable = [
@@ -218,6 +210,38 @@ function SportAppDeveloper() {
         "We are committed to building software that work seamlessly on various operating systems. At Brain Inventory, we excel in engineering marketplace softwares that operate flawlessly across multiple platforms.",
     },
   ];
+
+  const sectionThreeServices = {
+    title: "Services for Sports App Development",
+    desc: "We provide mobile applications for sports clubs, leagues, federations, and teams. Current trends and developments in the sports industry inform our offerings. The apps we create help sports organizations streamline numerous routine operations and furnish fans and sports enthusiasts with new training/coaching tools, viewing choices, and other useful features.",
+    points: [
+      {
+        id: 1,
+        title: "Sports Web Development",
+        desc: "We assist you in creating a sports web platform that incorporates live score tracking and play-by-play commentary so you can enthusiastically follow along with your preferred squad and match.",
+      },
+      {
+        id: 2,
+        title: "Sports Betting Software Development",
+        desc: "We develop custom sports betting software and services tailored to match your company's current needs and priorities. Our offerings include analytics platforms with real-time metrics, browser add-ons, and statistics trackers that automatically update based on the latest trends in your industry.",
+      },
+      {
+        id: 3,
+        title: "Sports Streaming App Solutions",
+        desc: "We are experts in creating mobile applications for broadcasting live sporting events. We design these apps to deliver high-definition telecasts with an optimal viewing experience, regardless of network connectivity.",
+      },
+      {
+        id: 4,
+        title: "Sports Team & League Management",
+        desc: "We offer optimal solutions to simplify keeping track of and administering sports clubs and competitions through our sports club and competition administration services.",
+      },
+      {
+        id: 5,
+        title: "Fantasy Sports Applications",
+        desc: "We develop mobile applications for enthusiasts of various sports like football, basketball, baseball, tennis, hockey, soccer, auto racing, and more on iOS and Android devices.",
+      },
+    ],
+  };
 
   return (
     <>
@@ -273,14 +297,15 @@ function SportAppDeveloper() {
             <SectionThree
               title="Insights into the Sports Development Industry"
               points={sectionThreeInsights}
+              sectionThreeServices={sectionThreeServices}
             />
-            <SectionThree
+            {/* <SectionThree
               title="Services for Sports App Development"
               points={sectionThreeServices}
-            />
+            /> */}
 
             <SectionFour
-              title="Solutions for Accounting Software Development"
+              title="Why Choose Brain Inventory?"
               description={sectionFourDesc}
               solutionList={solutionList}
             />

@@ -23,7 +23,9 @@ export default function Slider({ data, subhead, head, description }) {
           <h1 className="text-2xl lg:text-5xl MonumentBold w-[65%] py-4 uppercase">
             {head}
           </h1>
-          <p className="font-Satoshi text-slate-500 text-sm">{description}</p>
+          <p className="font-Satoshi text-slate-500 text-sm w-[90%]">
+            {description}
+          </p>
         </div>
         <div className="h-[700px] px-4 md:m-auto hidden lg:block">
           <Swiper

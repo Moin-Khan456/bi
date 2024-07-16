@@ -319,6 +319,11 @@ const FooterSections = [
         name: "Real Estate",
         path: "/industry/real-estate-software-development-services",
       },
+      {
+        _id: 16,
+        name: "Sports",
+        path: "/industry/sports-app-development-company",
+      },
     ],
   },
   {

@@ -139,19 +139,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire iOS Developers | Hire Dedicated iOS Developers</title>
+        <title>Hire Experienced iOS Developers | Hire iOS App Developers</title>
         <meta
           name="description"
-          content="Hire professional iOS Developers from Brain Inventory. Our experience team of iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
+          content="Hire iOS app developer in 24 hours. Find top iOS developers within your budget to build user-friendly apps. Get the best talent and start your project today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire iOS Developers | Hire Dedicated iOS Developers"
+          content="Hire Experienced iOS Developers | Hire iOS App Developers"
         />
         <meta
           property="og:description"
-          content="Hire professional iOS Developers from Brain Inventory. Our experience team of iOS developers build mobile apps for the iPhone and all iOS devices. Contact us today."
+          content="Hire iOS app developer in 24 hours. Find top iOS developers within your budget to build user-friendly apps. Get the best talent and start your project today!"
         />
         <meta
           property="og:image"

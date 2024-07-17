@@ -142,21 +142,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire a Dedicated PHP Developer | PHP Programmer - BrainInventory
-        </title>
+        <title>Hire PHP Developers | Hire Dedicated PHP Developers</title>
         <meta
           name="description"
-          content="Hire PHP developers with a strong understanding of object-oriented programming, MySQL, and web development. Contact us to work with our experienced PHP developers."
+          content="Hire expert PHP Developers from Brain Inventory proficient in all PHP frameworks for dynamic and interactive website and web app development solutions."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire a Dedicated PHP Developer | PHP Programmer - BrainInventory"
+          content="Hire PHP Developers | Hire Dedicated PHP Developers"
         />
         <meta
           property="og:description"
-          content="Hire PHP developers with a strong understanding of object-oriented programming, MySQL, and web development. Contact us to work with our experienced PHP developers."
+          content="Hire expert PHP Developers from Brain Inventory proficient in all PHP frameworks for dynamic and interactive website and web app development solutions."
         />
 
         <meta
@@ -174,7 +172,13 @@ function HireAangularJsDeveloper(props) {
         />
       </Head>
 
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
           <Header></Header>
           <HireBanner
@@ -207,7 +211,7 @@ function HireAangularJsDeveloper(props) {
             subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
             card={hireCards}
           />
-          
+
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Hire Dedicated PHP Developer"

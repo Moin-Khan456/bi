@@ -117,8 +117,7 @@ function HireAangularJsDeveloper(props) {
     },
     {
       id: "5",
-      title:
-        "Will the hired .Net resources work according to my time zone?",
+      title: "Will the hired .Net resources work according to my time zone?",
       description:
         "We're offering a special, high-quality team of dedicated Net developers who can work according to your time zone (EST/PST/CST/MST), deadline, and milestone.",
     },
@@ -149,19 +148,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire .NET Developers | Hire Dedicated .net Team</title>
+        <title>
+          Hire .NET Developers | Top .NET Programmers - Brain Inventory
+        </title>
         <meta
           name="description"
-          content="Hire Top dotnet Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire skilled .NET developers quickly and affordably, saving up to 40%. Access top-tier, AI-vetted talent for creating responsive mobile apps with intuitive user experiences."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire dotnet Developers | Hire Dedicated dotnet Team"
+          content="Hire .NET Developers | Top .NET Programmers - Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire Top dotnet Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire skilled .NET developers quickly and affordably, saving up to 40%. Access top-tier, AI-vetted talent for creating responsive mobile apps with intuitive user experiences."
         />
         <meta
           property="og:image"

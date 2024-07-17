@@ -178,19 +178,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Python Developer | Top Python Development Services</title>
+        <title>
+          Hire Python Developers - Flexible Hiring Models | Brain Inventory
+        </title>
         <meta
           name="description"
-          content="Looking to hire a skilled Python developer for your project? Our team of expert Python programmers offers top-notch development services. Get professional Python development services today."
+          content="Hire top Python developers from Brain Inventory in India. Certified experts deliver robust web apps on time. Flexible engagement. Book a free consultation today."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Python Developer | Top Python Development Services"
+          content="Hire Python Developers - Flexible Hiring Models | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Looking to hire a skilled Python developer for your project? Our team of expert Python programmers offers top-notch development services. Get professional Python development services today."
+          content="Hire top Python developers from Brain Inventory in India. Certified experts deliver robust web apps on time. Flexible engagement. Book a free consultation today."
         />
         <meta
           property="og:image"

@@ -1,20 +1,20 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/header/Header"
-import LocateUs from "../components/common/locateUs"
-import LetsKick from "../components/common/LetsKick"
-import Footer from "../components/common/Footer"
-import KeepInTouch from "../components/common/keepInTouch"
-import FaqHire from "../components/common/Faqhire"
-import Customer from "../components/common/customer"
-import Advantage from "../components/Hire/Advantage.jsx"
-import HireMarquee from "../components/common/HireMarquee"
-import KeySkill from "../components/Hire/KeySkillsCards.jsx"
-import Experienced from "../components/Web-Development/Experienced"
-import Hire from "../components/common/Hire"
-import HireBanner from "../components/common/HireBanner"
-import ChooseBraininventory from "../components/common/CommonChooseBraininventory"
-import BlogArticle from "../components/common/BlogArticle"
+import Header from "../components/header/Header";
+import LocateUs from "../components/common/locateUs";
+import LetsKick from "../components/common/LetsKick";
+import Footer from "../components/common/Footer";
+import KeepInTouch from "../components/common/keepInTouch";
+import FaqHire from "../components/common/Faqhire";
+import Customer from "../components/common/customer";
+import Advantage from "../components/Hire/Advantage.jsx";
+import HireMarquee from "../components/common/HireMarquee";
+import KeySkill from "../components/Hire/KeySkillsCards.jsx";
+import Experienced from "../components/Web-Development/Experienced";
+import Hire from "../components/common/Hire";
+import HireBanner from "../components/common/HireBanner";
+import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
+import BlogArticle from "../components/common/BlogArticle";
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -139,19 +139,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Ionic Developers | Hire Dedicated Ionic Team</title>
+        <title>Hire Ionic Developers | Dedicated Ionic App Developers</title>
         <meta
           name="description"
-          content="Hire Top Ionic Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire Ionic app developers skilled in crafting highly effective, engaging, and intuitive mobile applications using the Ionic development framework for your business needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Ionic Developers | Hire Dedicated Ionic Team"
+          content="Hire Ionic Developers | Dedicated Ionic App Developers"
         />
         <meta
           property="og:description"
-          content="Hire Top Ionic Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire Ionic app developers skilled in crafting highly effective, engaging, and intuitive mobile applications using the Ionic development framework for your business needs."
         />
         <meta
           property="og:image"
@@ -168,55 +168,55 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-ionic-developers"
         />
       </Head>
-        <div className="relative">
-          <>
-            <Header></Header>
-            <HireBanner
-              subhead="Upgrade Your Development Process With Our Expertise"
-              title="Hire Ionic"
-              content={content}
-              btn="Contact Us!"
-              unique={"developer"}
-              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+162.png"
-              alt="Ionic development company"
-              type="hire"
-            />
-            <Customer />
-            <Experienced
-              image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+163.png"
-              title="Ionic Developer"
-              para1={subhead1}
-              para2={subhead2}
-              para3={subhead3}
-              card={experienceCards}
-            />
-            <HireMarquee title="Ionic" />
-            <Advantage title="Ionic Developer" advantages={advantages} />
-            <KeySkill
-              breif={keySkillsBreif}
-              points={keySkillsPoints}
-              grid="lg:grid-cols-7"
-              width="w-[150px]"
-            />
-            <Hire
-              title="Why Hire Ionic Developers from %Brain Inventory"
-              card={hireCards}
-            />
-            <ChooseBraininventory
-              reasons={chooseBI}
-              subhead={chooseBiSubhead}
-              alt="Ionic development company"
-            />
+      <div className="relative">
+        <>
+          <Header></Header>
+          <HireBanner
+            subhead="Upgrade Your Development Process With Our Expertise"
+            title="Hire Ionic"
+            content={content}
+            btn="Contact Us!"
+            unique={"developer"}
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+162.png"
+            alt="Ionic development company"
+            type="hire"
+          />
+          <Customer />
+          <Experienced
+            image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+163.png"
+            title="Ionic Developer"
+            para1={subhead1}
+            para2={subhead2}
+            para3={subhead3}
+            card={experienceCards}
+          />
+          <HireMarquee title="Ionic" />
+          <Advantage title="Ionic Developer" advantages={advantages} />
+          <KeySkill
+            breif={keySkillsBreif}
+            points={keySkillsPoints}
+            grid="lg:grid-cols-7"
+            width="w-[150px]"
+          />
+          <Hire
+            title="Why Hire Ionic Developers from %Brain Inventory"
+            card={hireCards}
+          />
+          <ChooseBraininventory
+            reasons={chooseBI}
+            subhead={chooseBiSubhead}
+            alt="Ionic development company"
+          />
 
-            <FaqHire faq={faqdetails} />
-            <hr />
-            <BlogArticle />
-            <KeepInTouch />
-            <LocateUs />
-            <LetsKick />
-            <Footer />
-          </>
-        </div>
+          <FaqHire faq={faqdetails} />
+          <hr />
+          <BlogArticle />
+          <KeepInTouch />
+          <LocateUs />
+          <LetsKick />
+          <Footer />
+        </>
+      </div>
     </>
   );
 }

@@ -138,20 +138,21 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire QA Analyst | QA And Testing Specialists | Hire QA Engineer
+          Hire Quality Analyst (QA) Testers | Web and Mobile App Testing
+          Services
         </title>
         <meta
           name="description"
-          content="Hire Dedicated QA Analyst from Brain Inventory that improve product quality and reduce the risk of negative impact on customer satisfaction. Contact us today."
+          content="Hire skilled Quality Analysts and testers from Brain Inventory for comprehensive quality assurance testing services across Web, Mobile, and Enterprise software solutions."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire QA Analyst | QA & Testing Specialists | Hire QA Engineer"
+          content="Hire Quality Analyst (QA) Testers | Web and Mobile App Testing Services"
         />
         <meta
           property="og:description"
-          content="Hire Dedicated QA Analyst from Brain Inventory that improve product quality and reduce the risk of negative impact on customer satisfaction. Contact us today."
+          content="Hire skilled Quality Analysts and testers from Brain Inventory for comprehensive quality assurance testing services across Web, Mobile, and Enterprise software solutions."
         />
 
         <meta
@@ -169,7 +170,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-qa-analysts"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
           <Header></Header>
           <HireBanner
@@ -200,7 +207,7 @@ function HireAangularJsDeveloper(props) {
             subhead={chooseBiSubhead}
             alt="QA and Testing Specialists"
           />
-          
+
           <Engaged />
           <HireSteps type="QA Analyst" />
           <Clients tech="QA Analyst" />

@@ -147,20 +147,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Android Developers | Dedicated Android App Developers
+          Hire Dedicated Android Developers | Hire Android Developers
         </title>
         <meta
           name="description"
-          content="Hire top-rated Android Developers from Brain Inventory. Our experienced developers build highly customized Android applications for different sizes of businesses."
+          content="Get a custom Android app developed by experienced developers at Brain Inventory. Hire dedicated Android developers for feature-rich, high-quality applications."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Android Developers | Dedicated Android App Developers"
+          content="Hire Dedicated Android Developers | Hire  Android Developers"
         />
         <meta
           property="og:description"
-          content="Hire top-rated Android Developers from Brain Inventory. Our experienced developers build highly customized Android applications for different sizes of businesses."
+          content="Get a custom Android app developed by experienced developers at Brain Inventory. Hire dedicated Android developers for feature-rich, high-quality applications."
         />
         <meta
           property="og:image"

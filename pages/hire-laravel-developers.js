@@ -174,19 +174,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Laravel Developers | Hire Dedicated Laravel Developers</title>
+        <title>
+          Hire Laravel Developers Within 48 Hours | Best Laravel Developers
+        </title>
         <meta
           name="description"
-          content="Hire Dedicated Laravel Developers from Brain Inventory. Explore our Laravel web development services to get exceptional results for your projects. Contact us now!"
+          content="Looking to hire Laravel developer? Start with a risk-free trial, and hire top talent in 48 hours. Book a free consultation for expert Laravel development services today."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Laravel Developers | Hire Dedicated Laravel Developers"
+          content="Hire Laravel Developers Within 48 Hours | Best Laravel Developers"
         />
         <meta
           property="og:description"
-          content="Hire Dedicated Laravel Developers from Brain Inventory. Explore our Laravel web development services to get exceptional results for your projects. Contact us now!"
+          content="Looking to hire Laravel developer? Start with a risk-free trial, and hire top talent in 48 hours. Book a free consultation for expert Laravel development services today."
         />
         <meta
           property="og:image"
@@ -209,7 +211,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-laravel-developers"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
           <Header></Header>
           <HireBanner

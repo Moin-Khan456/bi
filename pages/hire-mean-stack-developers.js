@@ -147,20 +147,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire MEAN Stack Developers | Hire Dedicated Mean Stack Developers
+          Exceptional Mean Stack Developers | Hire MEAN stack Developers
         </title>
         <meta
           name="description"
-          content="Hire Top MEAN Stack Developer from Brain Inventory. Our MEAN Stack developers, experts in Node.js, MongoDB, Express.js, AngularJS and Bootstrap. Contact us today."
+          content="Hire top MEAN Stack developers from Brain Inventory for cutting-edge solutions. Access expert talents and the latest technologies for your projects. Inquire now!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire MEAN Stack Developers | Hire Dedicated Mean Stack Developers"
+          content="Exceptional Mean Stack Developers | Hire MEAN stack Developers"
         />
         <meta
           property="og:description"
-          content="Hire Top MEAN Stack Developer from Brain Inventory. Our MEAN Stack developers, experts in Node.js, MongoDB, Express.js, AngularJS and Bootstrap. Contact us today."
+          content="Hire top MEAN Stack developers from Brain Inventory for cutting-edge solutions. Access expert talents and the latest technologies for your projects. Inquire now!"
         />
         <meta
           property="og:image"

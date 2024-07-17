@@ -145,19 +145,19 @@ function HireAangularJsDeveloper() {
   return (
     <>
       <Head>
-        <title>Hire NextJS Developers | NextJS Development Company</title>
+        <title>Hire Next.js Developer | Top Remote Next.js Developers</title>
         <meta
           name="description"
-          content="Hire Top NextJS Developers from Brain Inventory. Our experienced developers help you build high-performing custom web apps. Contact us today."
+          content="Looking to hire Next JS developer for your next project? Our expert team at Brain Inventory will help you create high-performance applications tailored to your needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire NextJS Developers | NextJS Development Company"
+          content="Hire Next.js Developer | Top Remote Next.js Developers"
         />
         <meta
           property="og:description"
-          content="Hire Top NextJS Developers from Brain Inventory. Our experienced developers help you build high-performing custom web apps. Contact us today."
+          content="Looking to hire Next JS developer for your next project? Our expert team at Brain Inventory will help you create high-performance applications tailored to your needs."
         />
 
         <meta

@@ -143,19 +143,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Vue JS Developers | Hire Dedicated Vue JS Developers</title>
+        <title>
+          Hire Vue JS Developer | Dedicated Vue JS Programmer - Brain Inventory
+        </title>
         <meta
           name="description"
-          content="Hire experienced Vue JS Developers from Brain Inventory. Our top developers offers high-quality Vue JS Development Services to build scalable and secure apps. "
+          content="Hire Vue JS developers from Brain Inventory for custom web development. Our experts are available full-time, part-time, or hourly to meet your specific project needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Vue JS Developers | Hire Dedicated Vue JS Developers"
+          content="Hire Vue JS Developer | Dedicated Vue JS Programmer - Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire experienced Vue JS Developers from Brain Inventory. Our top developers offers high-quality Vue JS Development Services to build scalable and secure apps. "
+          content="Hire Vue JS developers from Brain Inventory for custom web development. Our experts are available full-time, part-time, or hourly to meet your specific project needs."
         />
         <meta
           property="og:image"

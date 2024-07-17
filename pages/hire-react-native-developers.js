@@ -157,20 +157,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire React Native Developers | Hire Dedicated React Native Team
+          Hire React Native Developers | Certified Expert at Affordable Price
         </title>
         <meta
           name="description"
-          content="Hire Top React Native Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire skilled React Native developers from the top 3.5% of AI-vetted Indian talent. Get remote programmers ready in less than 48 hours for your project needs."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire React Native Developers | Hire Dedicated React Native Team"
+          content="Hire React Native Developers | Certified Expert at Affordable Price"
         />
         <meta
           property="og:description"
-          content="Hire Top React Native Developers from Brain Inventory. Our experienced developers create user-centered mobile app for iOS and Android. Contact us today."
+          content="Hire skilled React Native developers from the top 3.5% of AI-vetted Indian talent. Get remote programmers ready in less than 48 hours for your project needs."
         />
         <meta
           property="og:image"

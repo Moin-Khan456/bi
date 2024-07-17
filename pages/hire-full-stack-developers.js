@@ -146,20 +146,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Full Stack Developers | Top Full Stack Development Services
+          Brain Inventory - Hire Full Stack Developers | At The Best Rates
         </title>
         <meta
           name="description"
-          content="Brain Inventory dedicated full-stack developers have strong skills in developing both the front end and the back end. Contact us to Hire full-stack developers."
+          content="Hire skilled full-stack developers quickly and affordably. Build user-friendly apps and websites with our experienced full-stack programmers. Find your team today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Full Stack Developer | Top Full Stack Development Services"
+          content="Brain Inventory - Hire Full Stack Developers | At The Best Rates"
         />
         <meta
           property="og:description"
-          content="Brain Inventory's dedicated full-stack developers have strong skills in developing both the front end and the back end. Contact us to Hire full-stack developers."
+          content="Hire skilled full-stack developers quickly and affordably. Build user-friendly apps and websites with our experienced full-stack programmers. Find your team today!"
         />
 
         <meta
@@ -175,7 +175,13 @@ function HireAangularJsDeveloper(props) {
           href="https://braininventory.in/hire-full-stack-developers"
         />
       </Head>
-      <Suspense fallback={{/*<Loader />*/}}>
+      <Suspense
+        fallback={
+          {
+            /*<Loader />*/
+          }
+        }
+      >
         <div className="relative">
           <div>
             <Header></Header>
@@ -208,7 +214,7 @@ function HireAangularJsDeveloper(props) {
               title="Why Hire Full Stack Developers from %Brain Inventory"
               card={hireCards}
             />
-            
+
             <ChooseBraininventory
               reasons={chooseBI}
               alt="Hire Full stack developers and programmers"

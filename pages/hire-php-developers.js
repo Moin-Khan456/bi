@@ -32,9 +32,9 @@ function HireAangularJsDeveloper(props) {
   const content =
     "One of the most popular scripting languages used to develop dynamic web content is PHP. We have a large pool of experienced and highly-skilled PHP developers who can build secure, scalable, and fast applications using only open-source technologies.";
   const subhead1 =
-    "PHP remains one of the most widely used server-side scripting languages for web development, and an experienced developer brings a wealth of expertise to the table. With their in-depth understanding of PHP's capabilities, frameworks like Laravel, Symfony, and CodeIgniter, as well as various libraries and tools, they can significantly accelerate your development processes.";
+    "We at Brain Inventory are a full-cycle digital solutions provider dedicated to crafting cutting-edge web, mobile and enterprise systems tailored to your company’s unique requirements. Because we recognize the pivotal role technology plays in business growth, our expert software engineers build flexible web frameworks capable of scaling to provide effective solutions on each and every project.";
   const subhead2 =
-    "Experienced PHP developers are well-versed in crafting robust, secure, and efficient applications. They can architect scalable solutions that cater to your business needs and user demands. Whether you're building e-commerce platforms, content management systems, or dynamic web applications, their proficiency ensures that your project not only functions smoothly but also adheres to coding best practices and industry standards. Furthermore, an experienced PHP developer can seamlessly integrate your applications with databases, APIs, and other third-party services, enhancing the functionality and user experience of your projects. Their ability to troubleshoot and debug code efficiently is invaluable, saving you time and resources in the long run.";
+    "Seasoned PHP programmers have expertise in constructing sturdy, protected, and high-performing web apps. They are able to design flexible solutions tailored to your business objectives and user needs. Regardless of whether you are developing online shops, content platforms, or dynamic sites, their proficiency guarantees your project not solely operates smoothly but also sticks to programming best practices and sector benchmarks.Moreover, a skilled PHP coder can flawlessly combine your apps with databases, APIs, and other external services, improving the capabilities and user experience of your projects. Their talent to effectively troubleshoot and debug code is invaluable, saving you time and assets in the long term.";
 
   const experienceCards = [
     {
@@ -45,7 +45,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "PHP Upgradation & Migration Services",
       content:
-        "Are you worried about the prospect of ​migrating your current .NET, NodeJS, or Python application to PHP? Are you overwhelmed by the complexity and cost involved in updating or upgrading your current application? At BrainInventory, we fully comprehend how costly and time-consuming it can be to migrate from one technology stack to another.",
+        "Do you have concerns about moving your existing .NET, NodeJS, or Python software over to PHP? Are you feeling bogged down by how complicated and expensive it would be to modify or improve your current system? At BrainInventory, we completely understand how pricey and time-intensive it can be to switch from one set of technologies to another.",
     },
     {
       head: "PHP Desktop Applications",
@@ -60,14 +60,14 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Custom Web Apps",
       content:
-        "Are you looking for a web app built from scratch? Our team of professional PHP developers is ready to provide you with the best solutions. We've built a lot of websites and developed numerous applications already, so we are familiar with how to make your project happen.",
+        "Do you require a customized web application developed from the ground up? Our squad of skilled PHP programmers is well-equipped to deliver top-notch solutions. We've constructed several websites and created countless programs in the past, and as a result, we possess the expertise necessary to bring your project to life.",
     },
   ];
 
   const hireCards = [
     {
       head: "Experienced PHP Developers",
-      content: `We're a leading web development company based in India, offering top-quality and affordable web and mobile app development services to clients worldwide. Our team of dedicated PHP developers is available for hire on a full-time basis. Our remote developers have five years of average experience serving clients of varying sizes and verticals.`,
+      content: `As a premier web development firm headquartered in India, we provide high-caliber yet cost-effective web and mobile application development solutions for customers globally. Our group of committed PHP programmers can be retained on a full-time basis to join your team remotely. On average, our remote developers possess 5 years of experience catering to the needs of diverse clients across industries.`,
     },
     {
       head: "Quick & Agile Process",
@@ -114,14 +114,13 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const benefitsList = [
-    "PHP developers specialize in the language, frameworks, and tools associated with PHP development. Their in-depth knowledge allows them to create efficient, secure, and high-performance applications.",
-    "PHP is an open-source language, and there are plenty of skilled PHP developers available, making it a cost-effective choice compared to some other languages. This affordability can be particularly beneficial for startups and small businesses.",
-    "PHP is a widely used language, so you have a vast talent pool to choose from when hiring developers. You can find professionals with a range of experience levels and specializations to suit your project's requirements.",
-    "PHP developers are experienced in creating web applications quickly. The extensive range of PHP frameworks like Laravel, Symfony, and CodeIgniter accelerates development by providing pre-built components and best practices.",
-    "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs.",
+    "Hiring a PHP developer brings many advantages for your web development projects. These experts have extensive knowledge of PHP, its frameworks, and related technologies, allowing them to create high-performing applications that are efficient, secure, and robust. Their specialized expertise in PHP makes them an extremely valuable contributor to any web dev team.",
+    "PHP is a widely used programming language that provides access to a large pool of talented developers to hire from. There is an extensive range of professionals with different skill levels and specializations to match the particular requirements of your software development endeavors.",
+    "Professionals proficient in PHP are adept at swiftly developing web applications. The availability of multiple PHP frameworks such as Laravel, Symfony, and CodeIgniter expedites the development process through the provision of ready-made elements and industry standards.",
+    "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs. ",
   ];
   const keySkillsBreif =
-    "Brain Inventory is a leading provider of web application development solutions and software development services. We are an offshore PHP web and mobile development company that serves businesses in more than 20 countries across the globe. We hire only the most experienced and certified developers with expertise in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Whether you need to launch a mobile platform or completely revamp your current website, we're here with you all the way through.";
+    "Brain Inventory is an acclaimed supplier of web application development solutions and software development services. As an offshore PHP web and mobile development firm, we cater to companies in over 20 nations worldwide. Our team comprises only the most seasoned and credentialed developers with proficiency in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Regardless of whether you need to launch a mobile platform or completely overhaul your current website, we will support you at every step of the process.";
   const keySkillsPoints = [
     "Quick post-sales service",
     "24*7 support",

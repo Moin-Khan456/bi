@@ -278,7 +278,7 @@ Our approach is tailored and flexible. At every stage, from conceptualization to
         />
         <meta
           property="og:image"
-          content="https://braininventory.s3.us-east-2.amazonaws.com/images/faqs.png"
+          content="https://braininventory.s3.us-east-2.amazonaws.com/images/FAQ.png"
         />
         <meta property="og:url" content="https://braininventory.in/faqs" />
         <link rel="canonical" href="https://braininventory.in/faqs" />

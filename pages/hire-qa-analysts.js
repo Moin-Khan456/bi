@@ -117,7 +117,7 @@ function HireAangularJsDeveloper(props) {
     "It can help identify and manage risks associated with software development, such as security vulnerabilities or compatibility issues. This can help reduce the risk of negative impact on customer satisfaction, brand reputation, or legal compliance.",
   ];
   const keySkillsBreif =
-    "Brain Inventory is a team of QA Analysts who perform highly effective and unbiased testing for our clients. We have a great support staff, which helps us to provide services in a prompt manner, efficiently, and at highly affordable prices. Our primary goal is to improve the overall product superiority. We have a wide range of clients ranging from start-ups to much bigger organizations. We are one of the most renowned companies for the QA process and are known for delivering high-quality products on time and within the given budget.";
+    "Brain Inventory consists of a group of QA testers who carry out extremely thorough and impartial testing for the companies we work with. Our outstanding assistance personnel allow us to deliver our services quickly, competently, and at very reasonable rates. Our primary goal is to improve the overall product superiority. We have a wide range of clients ranging from start-ups to much bigger organizations. We are one of the most renowned companies for the QA process and are known for delivering high-quality products on time and within the given budget.";
   const keySkillsPoints = [
     "Functional",
     "Test planning",
@@ -127,11 +127,11 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "A well-scrutinized and planned QA phase can help build trust in the product. You can hire a QA Analyst or a team of skillful quality assurance testers from Brain Inventory to get your website defects free in a professional manner. At Brain Inventory we use several techniques and tools for static testing. We have the right expertise to provide you with the best quality assurance services so that your work can be at all compromised. Our experts have years of experience in designing and testing applications. We do not compromise on their quality, because they are safe and secure.  We make sure that every single code is 100% tested before being released final product.";
+    "A meticulous and methodical quality assurance process can establish confidence in an offering. Engaging a quality assurance specialist or a squad of proficient quality control evaluators from Brain Inventory to rigorously assess your website skillfully can help ensure it is free of flaws.";
   const chooseBI = [
-    "We know how important it is to have a good QA analyst. You have the right to be confident that your UI testing will go well and lead to top-notch results.",
-    "Our QA analysts are well-trained, experienced, and dedicated in their work to ensure a quality product.",
-    "Their knowledge and skill set will help you in achieving success with any project.",
+    "At Brain Inventory we use several techniques and tools for static testing. We have the right expertise to provide you with the best quality assurance services so that your work can be at all compromised. Our experts have years of experience in designing and testing applications.",
+    "We do not sacrifice their superiority, for they are stable and protected. We guarantee that every individual code is assessed before being distributed as the finished good.",
+    "We comprehend how crucial it is to have an excellent QA expert. You have the privilege to be positive that your UI testing will go smoothly and prompt first-class outcomes. Our QA specialists are well-trained, skillful, and devoted in their responsibilities to ensure an excellent product. Their knowledge and skill set will aid you in accomplishing success with any undertaking.",
   ];
 
   return (

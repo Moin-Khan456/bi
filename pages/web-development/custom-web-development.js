@@ -21,7 +21,7 @@ const CustomBenefits = dynamic(() =>
 const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventoryCustom.jsx")
+  import("../../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -49,7 +49,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Scalable",
       content:
-        "Our solutions are flexible and can easily adjust to accommodate your business’ growth. They can be scaled as your company expands.",
+        "Our offerings are adaptable and can simply be modified to support the expansion of your organization. They can be enlarged as your firm increases in size.",
     },
     {
       head: "Collaboration",
@@ -59,7 +59,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Transparency",
       content:
-        "At Brain Inventory, we believe in full transparency in all our interactions with clients. We always make sure to be open and honest about what we are able to do and what is out of our capabilities. Plus, we keep you up-to-date with any alterations or advancements of the project.",
+        "Brain Inventory is committed to complete transparency in every client interaction. Our priority is to always communicate openly and truthfully regarding our abilities and limitations. Furthermore, we ensure that you are informed of any changes or progress in the project without delay.",
     },
     {
       head: "Content Management",
@@ -103,7 +103,7 @@ function HireAangularJsDeveloper(props) {
     "If it doesn’t have the elements of being working, engaging, and interactive, it’s not a good web design. Brain Inventory’s custom web design service is committed to that. Our process is unlike other creative agencies since we first focus on getting the answers to important questions.";
 
   const benefitSubHead =
-    "The benefits of having a custom website, app, or eCommerce platform are endless. It can help you build trust and credibility with your customers, provide the highest level of user experience, simplify the process of product creation and management, and more!";
+    "Developing a personalized website, application, or eCommerce platform offers numerous advantages. It assists in establishing trust and credibility with customers, delivers optimal user experience, streamlines product creation and administration, and much more. A tailored digital presence furnishes countless positives.";
 
   const benefitsList = [
     "A secure and reliable website with all the functionalities you need",
@@ -117,6 +117,13 @@ function HireAangularJsDeveloper(props) {
     "Maximize your website's performance, compatibility, and accessibility with our full optimization service.",
     "Our handcrafted admin panels allow your web administrators to quickly and easily make any changes they need.",
   ];
+
+  const chooseBI = [
+    "At Brain Inventory, we strive for total transparency in everything we do with our clients. We are careful to explain exactly what we can and can't deliver, so there are no unexpected disappointments. We also make it a top priority to keep customers updated if we implement any modifications or enhancements throughout a job. We aim to be completely upfront about our capabilities and processes so there is never any confusion. Our goal is to foster relationships built on trust by being forthcoming at every stage. We aim to be completely forthright at all times with those who work with us. Our goal is to foster trust and understanding through constant transparency.",
+    "Our delivery processes are transparent, our communication is excellent, and we offer a flexible approach; this allows us to deliver custom software projects to all types of businesses, ranging from startups to large enterprises.",
+    "Let us help you bring your vision into reality with an advanced and reliable website designed to perform and personalized just for you!",
+  ];
+
   return (
     <>
       <Head>
@@ -189,9 +196,8 @@ function HireAangularJsDeveloper(props) {
           />
 
           <ChooseBraininventory
-            head="Why Choose Brain inventory for Your Next"
-            blue="Assignment"
-            alt="custom web development company"
+            reasons={chooseBI}
+            alt="hybrid development company"
           />
           <BlogArticle />
           <FaqHire faq={faqdetails} />

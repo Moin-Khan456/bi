@@ -76,12 +76,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Outcome Focused",
       content:
-        "Brain Inventory is an app development company that operates globally. It provides cost-effective cross-platform mobile app development services to start-ups, SMEs, and enterprises who require customized apps for their businesses. Our skilled app developers develop the best mobile applications according to the client's specific preferences and requirements.",
+        "Brain Inventory is a mobile app development firm with a global presence. They offer affordable cross-platform app development solutions for startups, SMEs, and large organizations that need custom mobile apps tailored to their business needs. Their team of skilled app developers craft optimal mobile apps based on each client's particular specifications and desires.",
     },
     {
       head: "Competing Pricing",
       content:
-        "Brain Inventory offers budget-friendly hybrid app development services with significant value. Hybrid apps provide cost-effective solutions to a wide array of business problems. We have a team of seasoned professionals specializing in strategic planning, design and development, user experience integration, and technical expertise. Our SaaS-based applications run on Android, IOS, Windows Mobile & Desktops.",
+        "Brain Inventory provides affordable hybrid app development services that deliver considerable value. Hybrid apps give cost-efficient solutions for a wide range of business challenges. We have a team of experienced experts specializing in strategic planning, design and development, user experience integration, and technical know-how. Our SaaS-based apps are compatible with Android, iOS, Windows Mobile & Desktops.",
     },
     {
       head: "Agile Delivery Methods",
@@ -124,9 +124,8 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "We are a leading hybrid app development company that delivers smart solutions to our clients across the globe, with a 100% customer satisfaction record. We strive to build mobile applications that combine the best of both, native and web technologies. With our skilled and experienced mobile app developers offering best-in-class app solutions for several business domains, we have established ourselves as a trusted partner in the world of hybrid app development. With the help of our hybrid mobile app development services, you can quickly create a high-quality hybrid app for your business that meets your specific business requirements.",
-    "We will be able to quickly deliver your app to the stores with our point-and-click tool that enables the creation of hybrid apps easily without requiring you to write code or learn advanced programming languages. Having a smooth, effective user experience is crucial for the success of any application, and our hybrid mobile applications can provide a seamless user experience by integrating into other native apps in the smartphone.",
-    " Your customers will love it! Learn more about hybrid mobile app development services by contacting us today!",
+    "Our company is at the forefront of hybrid app development, providing intelligent solutions for clients worldwide. With a flawless track record of complete customer satisfaction, we aim to create mobile apps that integrate the optimal native and web technologies. Through our expertise and commitment to excellence, we build cutting-edge hybrid apps that meet our clients' needs. We have established ourselves as a trusted partner in the world of hybrid app development.",
+    "With the help of our hybrid mobile app development services, you can quickly create a high-quality hybrid app for your business that meets your specific business requirements. We will be able to quickly deliver your app to the stores with our point-and-click tool that enables the creation of hybrid apps easily without requiring you to write code or learn advanced programming languages. Having a smooth, effective user experience is crucial for the success of any application, and our hybrid mobile applications can provide a seamless user experience by integrating into other native apps in the smartphone. Your customers will love it!  Learn more about hybrid mobile app development services by contacting us today!",
   ];
   const benefitsList = [
     "We created an app that blends the look and feel of a website with the efficiency of a native application. Our designers will ensure that your app is both consistent with your brand and easy to navigate.",

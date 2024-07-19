@@ -39,7 +39,7 @@ function SwiftDevelopment(props) {
     {
       head: "Experienced Team",
       content:
-        "Every day, we strive to make Brain Inventory a better place for developers; that’s why our team of developers includes experts in the latest technologies, frameworks, and web applications. If you’re serious about making the next update to your website or application, then let our team help you along the way.",
+        "Each day, our goal is to enhance Brain Inventory as a more favorable environment for developers. This is why our team of developers consists of proficient individuals in cutting-edge technologies, frameworks, and web applications. If you are committed to improving your website or application with the next update, allow our team to support you throughout the process.",
     },
     {
       head: "Best Pricing",
@@ -124,9 +124,7 @@ function SwiftDevelopment(props) {
   return (
     <>
       <Head>
-        <title>
-        Leading Swift App Development Company for Custom Apps
-        </title>
+        <title>Leading Swift App Development Company for Custom Apps</title>
         <meta
           name="description"
           content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
@@ -140,7 +138,10 @@ function SwiftDevelopment(props) {
           property="og:description"
           content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
         />
-        <meta property="og:url" content="https://braininventory.in/mobile-development/swift-development-company" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/mobile-development/swift-development-company"
+        />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6743.png"
@@ -166,14 +167,13 @@ function SwiftDevelopment(props) {
           <WhyMean type="Swift App" meanReasons={meanReasons} />
           <Benefits
             type="Swift App"
-            subhead="Swift has evolved over the years to be a much more advanced and flexible tool. With this evolution comes the benefits of using Swift as your development language."
+            subhead="Swift has gone through significant improvements over time to become a highly sophisticated and adaptable programming language. Along with these enhancements come the advantages of utilizing Swift for software development."
             benefitsList={benefitsList}
           />
           <Hire
             title="Why Swift App Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Swift Application Development Services"

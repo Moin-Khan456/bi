@@ -35,7 +35,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Experienced Developers",
       content:
-        "We have gained expertise and skills in building custom web applications using Angular JS and other related frameworks and technologies. With our dedicated team of Angular developers, we craft Angular applications to ensure that they deliver all the features your business needs, the support your customers need, and the results your business deserves.",
+        "Over time, our team has developed specialized knowledge and capabilities in creating personalized web apps with Angular JS and similar platforms and tools. Our group of Angular specialists works diligently to build Angular apps that provide all the functions your company requires, the assistance your users need, and the outcomes your enterprise warrants. We have the skills and experience to make custom Angular web applications that meet your business objectives.",
     },
     {
       head: "Trusted Delivery Methods",
@@ -82,26 +82,24 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory specializes in delivering top-quality Angular web development services.",
-    "The team uses various frameworks and libraries such as Java, PHP, and HTML5.",
-    "Industry standards like the MVC design pattern and dependency injection are utilized for simpler app development.",
-    "The company combines expertise, experience, and advanced development practices to deliver high-end products.",
-    "Training services are provided to clients’ teams to ensure they stay updated with new technology and acquire new skills.",
-    "Brain Inventory develops applications using state-of-the-art frameworks and web technologies.",
-    "Frameworks like ReactJS, Angular (versions 1 and 2), Vue JS, and Node JS are extensively used.",
-    "Frameworks like ReactJS, Angular (versions 1 and 2), Vue JS, and Node JS are extensively used.",
+    "At Brain Inventory, our greatest joy stems from offering our clients unparalleled Angular web development services, which enable us to produce high-quality bespoke software using widely-accepted technologies.",
+    "Our experts utilize multiple frameworks and libraries, including Java, PHP, and HTML5. They make use of industry standards like the MVC (Model-View-Controller) design pattern and dependency injection to make building apps simpler.",
+    "Being the best Angular development company, we endow you with a high-end product by blending our years of expertise and experience with advanced development practices.",
+    "In addition to providing you with top-notch Angular development services, we also provide training for your team. This will ensure that employees are fully abreast with the new technology as well as catering to their growing interest in learning new skills.",
+    "We develop and also help our clients in developing applications using state-of-the-art frameworks and Web technologies. A few of the frameworks we extensively use in developing quality web & mobile apps include ReactJS, Angular (1, 2), Vue JS, Node JS, etc. We also provide technical support to users of these frameworks.",
   ];
 
   const benefitsList = [
-    "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML syntax to express your application’s components clearly and succinctly.",
-    "AngularJS goes far beyond the basics of the JavaScript programming language. It makes building complex, data-driven web applications easier by taking care of a lot of the grunt work that comes with it.",
-    "One of the most awesome features of AngularJS is dependency injection. Dependency Injection (DI) is a software design pattern that allows you to write and maintain your application code in a modular fashion, thus making it easy to test and use.",
+    "Several benefits of AngularJS development make it a popular choice for building web applications.",
+    "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML syntax to express your application's components clearly and succinctly.",
+    "AngularJS goes far beyond the basics of the JavaScript programming language. AngularJS simplifies developing complicated web applications that rely heavily on data by handling much of the tedious and repetitive work involved.",
+    "One of AngularJS's most useful capabilities is its support for dependency injection. Dependency injection is a design pattern in software engineering that allows you to write and sustain your program code in a modular way. This makes the code easy to test and utilize.",
   ];
   const meanReasons = [
-    "AngularJS is a popular JavaScript framework specifically designed for building dynamic and responsive SPAs. It allows businesses to create interactive web applications that provide a seamless user experience, similar to that of a desktop application. SPAs built with AngularJS can enhance user engagement and retention, leading to improved customer satisfaction.",
-    "AngularJS follows a modular architecture that promotes code reusability, making it easier to manage and maintain large-scale projects. The framework enables developers to break down complex applications into smaller, manageable components, facilitating collaboration and reducing development time.",
-    "AngularJS provides built-in testing capabilities and encourages the use of test-driven development practices. This makes it easier for businesses to ensure the quality and stability of their applications through automated testing.",
-    "Additionally, AngularJS's modular structure and clear separation of concerns contribute to easier code maintenance and updates.AngularJS can also be used to build hybrid mobile applications using frameworks like Ionic.",
+    "AngularJS is a popular JavaScript framework engineered for constructing active and adaptive single-page applications (SPAs). It enables companies to build interactive web apps that deliver a smooth user experience, comparable to a desktop program. SPAs made with AngularJS can boost user involvement and retention, resulting in enhanced customer fulfillment.",
+    "AngularJS utilizes a modular design that encourages code reuse, simplifying the management and upkeep of large applications. The framework allows developers to split up intricate programs into smaller, more controllable parts, promoting teamwork and decreasing the time spent coding.",
+    "AngularJS has in-built testing features that promote test-driven development. This assists companies in guaranteeing the quality and stability of their apps through automated testing. Furthermore, AngularJS's modular architecture and distinct separation of duties lead to simpler code maintenance and upgrades.",
+    "AngularJS can also construct hybrid mobile apps utilizing frameworks such as Ionic.",
   ];
   const card = [
     "Transform your vision into a dynamic web platform",
@@ -170,7 +168,7 @@ function HireAangularJsDeveloper(props) {
             <WhyMean type="AngularJs" meanReasons={meanReasons} />
             <Benefits
               type="Angular.JS Application"
-              subhead="AngularJS is the most popular JavaScript framework. And for a good reason. It helps you build single-page web applications faster than using other platforms. There are several benefits of AngularJS development that make it a popular choice for building web applications."
+              subhead="AngularJS is the most popular JavaScript framework. And for a good reason. It helps you build single-page web applications faster than using other platforms"
               benefitsList={benefitsList}
             />
             <Hire

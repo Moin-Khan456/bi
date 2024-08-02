@@ -123,7 +123,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Turn your app ideas into reality with Brain Inventory's custom mobile app development services. Get your dream app developed by experts. Contact us today!"
+          content="Turn your app ideas into reality with Brain Inventory custom mobile app development services. Get your dream app developed by experts. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -132,7 +132,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Turn your app ideas into reality with Brain Inventory's custom mobile app development services. Get your dream app developed by experts. Contact us today!"
+          content="Turn your app ideas into reality with Brain Inventory custom mobile app development services. Get your dream app developed by experts. Contact us today!"
         />
         <meta
           property="og:url"

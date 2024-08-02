@@ -299,14 +299,16 @@ function Energy(props) {
   return (
     <>
       <Head>
-        <title>Energy And Utility Software Development Services | Brain Inventory</title>
+        <title>
+          Energy And Utility Software Development Services | Brain Inventory
+        </title>
         <meta
           property="description"
-          content="Switch to our utility management software for optimized energy needs. Brain Inventory's on-demand developers help you easily track and manage your utilities."
+          content="Switch to our utility management software for optimized energy needs. Brain Inventory on-demand developers help you easily track and manage your utilities."
         />
         <meta
           property="og:description"
-          content="Switch to our utility management software for optimized energy needs. Brain Inventory's on-demand developers help you easily track and manage your utilities."
+          content="Switch to our utility management software for optimized energy needs. Brain Inventory on-demand developers help you easily track and manage your utilities."
         />
         <meta
           name="og:title"

@@ -154,7 +154,7 @@ function HireAangularJsDeveloper(props) {
         <title>Hire Node.js Developers | Hire Node.js Programmers</title>
         <meta
           name="description"
-          content="Staff your team quickly with Brain Inventory's Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
+          content="Staff your team quickly with Brain Inventory Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -163,7 +163,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Staff your team quickly with Brain Inventory's Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
+          content="Staff your team quickly with Brain Inventory Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
         />
 
         <meta

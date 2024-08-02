@@ -34,11 +34,11 @@ function HireAangularJsDeveloper(props) {
   const content =
     "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the software development industry. As a top TypeScript app development company, we prioritize customer needs.";
   const subhead1 =
-    "A TypeScript development solution can become a crucial asset for a variety of reasons. Firstly, TypeScript enhances the reliability and maintainability of large-scale JavaScript applications. Its static typing system allows developers to catch errors during the development process, reducing the likelihood of runtime issues and making the codebase more robust.";
+    "Employing TypeScript during development can be highly advantageous for various motives. For one, TypeScript enhances the reliability and simplicity of maintaining sizable JavaScript programs. Its static type verification allows programmers to spot errors as they code, decreasing the likelihood of issues arising at runtime and making the codebase more robust on the whole.";
   const subhead2 =
-    "TypeScript provides superior code organization and readability through features like interfaces, classes, and modules. This promotes better collaboration among development teams and streamlines code maintenance. Additionally, TypeScript's tooling support, including intelligent code completion and refactoring, boosts developer productivity and minimizes debugging time. Furthermore, as modern web development becomes increasingly complex, TypeScript's ability to scale with projects becomes invaluable.";
+    "TypeScript offers advanced capabilities for structuring and clarifying code using mechanisms such as interfaces, classes, and modules. This facilitates enhanced cooperation between programming groups and simplifies the process of updating code. Moreover, TypeScript's software support, including smart code completion and restructuring, increases developer efficiency and decreases the time spent troubleshooting.";
   const subhead3 =
-    "It's compatible with popular JavaScript libraries and frameworks like React, Angular, and Vue.js, making it an excellent choice for building sophisticated web applications. TypeScript's growing popularity within the developer community ensures access to a wealth of resources, libraries, and a supportive community.";
+    "In addition, modern web development has become progressively more intricate, so TypeScript's capacity to expand with projects is extremely beneficial. It works well with popular JavaScript libraries and frameworks such as React, Angular, and Vue.js, making TypeScript an outstanding option for constructing elaborate web apps.";
 
   const experienceCards = [
     {
@@ -133,8 +133,8 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Crafting an optimal web application using TypeScript feels like harnessing the magic of blending the finest attributes from various programming languages. TypeScript, grounded in JavaScript, integrates the most advantageous elements found in languages such as Java and C++. This amalgamation simplifies and streamlines the entire development journey for our team of TypeScript developers at Brain Inventory. Brain Inventory uses modern tools for web and mobile application development, including AngularJS, Node.js, and TypeScript. We believe this approach provides a better user experience than using traditional programming languages like Java or. NET.",
-    "Also, our choice of an extensive set of progressive enhancement techniques enables us to serve any kind of device — be it a desktop PC or mobile phone — from a single code base. We understand that no one likes getting into an IT rut. Our software solutions are always up-to-date and respond to the latest user needs adequately.",
+    "Developing a top-notch web application with TypeScript is like tapping into the power of combining the best features from multiple programming languages. TypeScript, which is based on JavaScript, incorporates the most beneficial aspects found in languages like Java and C++. This fusion makes the whole development process smoother and more efficient for our team of TypeScript programmers at Brain Inventory.",
+    "Brain Inventory uses modern tools for web and mobile application development, including AngularJS, Node.js, and TypeScript. We believe this approach provides a better user experience than using traditional programming languages like Java or. NET. Also, our choice of an extensive set of progressive enhancement techniques enables us to serve any kind of device — be it a desktop PC or mobile phone — from a single code base. We understand that no one likes getting into an IT rut. Our software solutions are always up-to-date and respond to the latest user needs adequately.",
     "As a team of passionate and professional developers, we understand the business value of your app. Our TypeScript developers specialize in developing and implementing scalable, secure TypeScript apps that allow you to boost productivity and cut costs.",
   ];
 

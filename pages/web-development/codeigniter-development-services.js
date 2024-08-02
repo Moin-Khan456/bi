@@ -33,11 +33,10 @@ function HireAangularJsDeveloper(props) {
   const content =
     "We are CodeIgniter web development service providers. We help you build such full-featured and dynamic web platforms with our innovative as well as customized CodeIgniter solutions that appeal to the most demanding of customers.";
   const subhead1 =
-    "A CodeIgniter development solution can be indispensable for various reasons. CodeIgniter is a lightweight and efficient PHP framework that facilitates rapid web application development. Its simplicity, small footprint, and MVC (Model-View-Controller) architecture make it an excellent choice for projects of all sizes.";
+    "A CodeIgniter development solution can be invaluable for several motivations. CodeIgniter is a nimble and proficient PHP structure that enables quick web application creation. Its straightforwardness, little impression, and MVC (Model-View-Controller) design make it a phenomenal decision for undertakings of all sizes. Regardless of whether you're assembling a dynamic site, a web application, or even an internet business stage, CodeIgniter gives the instruments and arrangement expected to improve advancement.";
   const subhead2 =
-    "Whether you're building a dynamic website, a web application, or even an e-commerce platform, CodeIgniter provides the tools and structure needed to streamline development. It offers robust security features, ensuring that your application is well-protected against common web vulnerabilities. This is especially crucial in an era where cybersecurity threats are increasingly prevalent.";
-  const subhead3 =
-    "CodeIgniter's extensive library of pre-built modules and a vibrant community of developers means that you can leverage a wealth of resources to expedite your development process. This saves time and effort while ensuring that your project benefits from best practices and industry standards. In today's competitive digital landscape, delivering a responsive and high-performing web application is paramount.";
+    "It offers robust security features, ensuring that your application is well-protected against common web vulnerabilities. In this day and age where cyberattacks are more and more common, having robust cybersecurity measures in place is vital. CodeIgniter's large selection of pre-made components and active developer community signifies that you can take advantage of ample resources to speed up your development workflow. This conserves time and effort while guaranteeing your project utilizes proven techniques and sector benchmarks. With the highly competitive online environment nowadays, shipping a reactive and efficient web app is crucial.";
+  const subhead3 = "";
 
   const hireCards = [
     {
@@ -89,15 +88,14 @@ function HireAangularJsDeveloper(props) {
   ];
   const chooseBI = [
     "Brain Inventory is one of the leading CodeIgniter (CI) development companies in India. We have a team of expert PHP developers who are well-versed in the platform and are capable of building large-scale applications that efficiently respond to user-specific requirements, both easily and quickly. Our application development service includes: designing and coding, flawless application testing, deployment on cloud platforms, managing customer support service, and bug fixing.",
-    "We solve this problem for our customers by providing them with top-notch CodeIgniter developers, who are not only experts with the skill but also have experience working on solutions for various financial firms, and budding startups. Our CodeIgniter team has vast experience working with multiple leading PHP frameworks like Codeigniter, Yii, and Laravel. They can help you develop your innovative ideas into real applications. It is due to all these reasons that Brain Inventory is acknowledged as one of the best agencies for delivering high-quality business results through custom code development services across all possible domains.",
-    "As a team of experienced professionals, we are dedicated to offering the best solutions and catering to the specific needs of our clients.",
+    "We solve this problem for our customers by providing them with top-notch CodeIgniter developers, who are not only experts with the skill but also have experience working on solutions for various financial firms, and budding startups. Our team at Brain Inventory has extensive expertise in building apps with popular PHP frameworks such as CodeIgniter, Yii, and Laravel. We can assist you in bringing your innovative concepts to life through customized code solutions for any industry. It's because of our skilled developers and commitment to delivering top-notch business outcomes that Brain Inventory is recognized as a premier agency for high-caliber custom code development services.",
   ];
   const advantages = [
-    "CodeIgniter is a lightweight PHP framework, which means it has a small footprint and doesn't require extensive system resources. This results in faster application performance, making it ideal for creating high-speed websites and applications.",
+    "Lightweight and Fast: CodeIgniter is a lightweight PHP framework, meaning it does not need a lot of system resources and has a small footprint. Because of this, CodeIgniter results in faster application performance, making it perfect for building high-speed websites and apps",
     "CodeIgniter provides built-in security features, including data validation, input filtering, and protection against common web vulnerabilities like SQL injection and cross-site scripting (XSS). This helps developers create more secure applications.",
     "CodeIgniter incorporates features like caching and optimization to enhance the performance of web applications.",
     "Cross-Platform Compatibility: CodeIgniter is compatible with various web servers and operating systems, making it versatile for deployment on different hosting environments.",
-    "CodeIgniter is open-source and free to use, making it a cost-effective choice for web development projects.",
+    "As an open-source platform, CodeIgniter is freely accessible, making it a budget-friendly option for web development endeavors.",
     "Its simplicity and code reusability features enable developers to build applications quickly, reducing development time and costs.",
   ];
   const card = [

@@ -118,15 +118,13 @@ function HireAangularJsDeveloper(props) {
     "The code can work on a range of operating systems, together with Windows, Linux, Android, and iOS. The programmers designed their own code for the algorithm to suit all platforms. This will make it easier for users to use this program on different devices.",
   ];
   const meanReasons = [
-    "LAMP is a free and open-source platform for developing websites, web applications, and content management systems.",
-    "LAMP stands for Linux, Apache, MySQL, and PHP.",
-    "Linux is the operating system, Apache is the web server software, MySQL is the relational database management system, and PHP is the server-side scripting language.",
-    "LAMP allows for scalable and customizable projects tailored to client requirements.",
-    "There are no predefined limitations in terms of design, development, or architecture.",
-    "Linux provides multiple versions and supports encryption and security architecture, beneficial for LAMP projects.",
-    "The intuitive and interactive user interface facilitates quick project creation.",
-    "LAMP offers new opportunities for creating high-quality content.",
-    "LAMP has gained popularity as a cost-effective solution for various web development needs.",
+    "The LAMP platform is a free and open-source platform for the development of LAMP-based projects without paying any extra costs.",
+    "This has become a popular way to build websites, web applications, and content management systems.",
+    "The name 'L' refers to Linux, Apache, and MySQL; 'A' refers to the ActiveX control provided by Microsoft to allow interaction with Microsoft Office documents; 'P' refers to the PHP (Hypertext Preprocessor); and 'M' refers to Movable Type.",
+    "LAMP is a highly flexible and adaptable platform. Developers can tailor their clients' projects to meet their specific needs.",
+    "There are virtually no restrictions on how the design, coding, or infrastructure of a project can be constructed.",
+    "The presence of many versions and support for encryption and security frameworks in Linux make it quite useful for LAMP projects.",
+    "The intuitive, interactive user interface will allow the creation of projects quicker than ever before and at the same time offer new opportunities for creating high-quality content.",
   ];
   return (
     <>

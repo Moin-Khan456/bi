@@ -34,11 +34,11 @@ function HireAangularJsDeveloper(props) {
   const content =
     "Our company offers premium-quality WordPress development services across the globe. Our team of highly skilled WordPress experts helps business organizations and independent entrepreneurs build responsive, adaptive, high-performance plug-ins and themes at competitive prices.";
   const subhead1 =
-    "A WordPress Website Development solution can be indispensable for individuals, businesses, and organizations for several compelling reasons. Firstly, WordPress is a user-friendly and highly customizable platform that enables you to create a website tailored to your specific needs and preferences, whether it's a personal blog, e-commerce store, portfolio site, or corporate web presence.";
+    "A WordPress website-building solution can be essential for people, companies and groups for various convincing motivations. To begin with, WordPress is an easy-to-understand and profoundly adaptable stage that empowers you to make a site customized to your particular needs and inclinations, regardless of whether it's an individual blog, web based business store, portfolio site, or corporate web nearness.";
   const subhead2 =
-    "Its extensive library of themes and plugins offers versatility and functionality, making it suitable for a wide range of purposes. Moreover, WordPress is known for its search engine optimization (SEO) capabilities, which can help improve your website's visibility on search engines, attracting more organic traffic and potential customers. Its responsive design ensures your website looks and functions well on various devices, catering to the growing mobile user base.";
+    "WordPress has a wide range of themes and plugins that make it versatile for many different uses. Additionally, WordPress is renowned for its search engine optimization features, which can boost your website's search ranking and draw more organic traffic and prospective buyers. Its responsive design means your website will look good and work well on mobile devices, reaching the expanding mobile user population.";
   const subhead3 =
-    "WordPress offers a robust content management system (CMS) that simplifies content creation and management, allowing you to effortlessly update your website with fresh content, images, and multimedia.";
+    "WordPress provides a powerful content management system (CMS) that streamlines creating and organizing content. This makes it easy to add new material, photos, and media to your site. The CMS allows hassle-free website updates with original content.";
 
   const hireCards = [
     {
@@ -91,17 +91,17 @@ function HireAangularJsDeveloper(props) {
   const chooseBI = [
     "Brain Inventory offers top WordPress development services in India created by a team that has acquired phenomenal abilities and skills in how customers work with WordPress websites. Our dedicated WordPress website developers offer creative inclusions, information on the market situation, and WordPress solutions that give true value for your money, and time, and websites that allow speedy downloads.",
     "We have more than 4 years of experience in the field of web design related to WordPress Product Development, Mobile App Development, and E-commerce Web Development. Our experts assist new business enterprises as well as startup companies to come up with unique site architecture that allows independent businesses to grow their industry and businesses with an experiential solution to build a strong online presence at no additional cost.",
-    "We believe your business should be able to work at its best in all areas. We take pride in our WordPress customizations and development which has helped hundreds of companies create more sales and online presence. That is why we are available to help you 24/7, with friendly support available around the clock.",
+    "We know your business deserves to thrive across all facets. We are proud of our WordPress customizations and development that have enabled hundreds of businesses to boost sales and build their brand online. This is why we provide assistance whenever you need it, with our friendly support team available at any hour of the day or night.",
   ];
 
   const [position, setPostion] = useState(true);
 
   const advantages = [
-    "WordPress offers a wide range of themes and plugins that allow you to customize your website's appearance and functionality to meet your specific needs.",
-    "WordPress is inherently SEO-friendly. It generates clean and structured code, offers SEO plugins, and allows you to optimize content easily, helping improve your website's visibility on search engines.",
+    "WordPress provides an extensive selection of themes and plugins that enable you to tailor your website's look and capabilities to suit your particular requirements.",
+    "WordPress has innate search engine optimization advantages. It produces tidy and organized code, provides plugins for SEO, and lets you effortlessly enhance content, which helps make your website more findable on search engines.",
     "Many WordPress themes are responsive, meaning they automatically adapt to different screen sizes, ensuring your website looks good on desktops, tablets, and smartphones.",
     "While no platform is completely immune to security threats, WordPress takes security seriously. Regular updates and security plugins help protect your website from common vulnerabilities.",
-    "WordPress itself is open-source and free to use. You can find free themes and plugins for many functionalities. While some premium themes and plugins come with a cost, they often provide advanced features and support.",
+    "WordPress is open-source software that anyone can use for free. There are many free themes and plugins available that provide various functions. Although premium themes and plugins cost money, they frequently offer advanced capabilities and support services.",
   ];
   return (
     <>

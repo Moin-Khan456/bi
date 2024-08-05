@@ -178,5 +178,6 @@ Disallow: https://braininventory.in/posts/undefined/544
 Disallow: https://braininventory.in/posts/undefined/893
 Disallow: https://braininventory.in/posts/undefined/1253
 Disallow: https://braininventory.in/posts/undefined/357 
+Disallow: https://braininventory.in/support 
 
 Sitemap: https://braininventory.in/sitemap.xml

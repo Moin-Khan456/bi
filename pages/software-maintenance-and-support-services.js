@@ -142,8 +142,14 @@ function Support() {
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Suppot-and-maintence.png"
         />
-        <meta property="og:url" content="https://braininventory.in/support" />
-        <link rel="canonical" href="https://braininventory.in/support" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/software-maintenance-and-support-services"
+        />
+        <link
+          rel="canonical"
+          href="https://braininventory.in/software-maintenance-and-support-services"
+        />
       </Head>
 
       <main className="">

@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import HomeButton from "../buttons/HomeButton";
-import Link from "next/link";
+import webFrame from "../../public/webDevelopers.gif";
+import Image from "next/image";
 
 const info = [
   {
@@ -10,8 +12,7 @@ const info = [
       white: "Development",
     },
     url: "/web-development/custom-web-development",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/WebDevelopment.mp4",
+    video: webFrame,
     techList: [
       {
         name: "Reactjs Development",
@@ -34,8 +35,7 @@ const info = [
       white: "Development",
     },
     url: "/mobile-development/custom-app-development",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/AppDevelopment.mp4",
+    video: webFrame,
     techList: [
       {
         name: "android native",
@@ -58,7 +58,7 @@ const info = [
       white: "Design",
     },
     url: "/ui-ux-development-services",
-    video: "https://braininventory.s3.us-east-2.amazonaws.com/images/UIUX.mp4",
+    video: webFrame,
     techList: [
       {
         name: "product design",
@@ -95,7 +95,7 @@ const HomeSectionFour = () => {
               </p>
             </div>
           </div>
-          <div className=""></div>
+          <div className="mt-20"></div>
           {info.map((el) => {
             return (
               <Section
@@ -121,13 +121,28 @@ const Section = ({ info, url, video }) => {
     });
   });
   return (
-    <div className="h-[75vh] relative">
-      <div className="md:absolute relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8  lg:flex items-center justify-between">
-        <div className="flex-col flex 2xl:space-y-16 xl:space-y-8 space-y-8">
+    <div className="h-full relative">
+      <div className="relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8  lg:flex items-center justify-between">
+        <div className="flex-col flex ">
           <p className="2xl:text-5xl xl:text-4xl text-3xl Gilroy-Bold 2xl:mb-8 xl:mb-6 mb-4">
             <span className="text-base-orange-1">{info.title.orange}</span>{" "}
             {info.title.white}
           </p>
+
+          {position && (
+            <div className="w-full block md:hidden">
+              <div className="h-[90%] w-[90%]">
+                <Image
+                  priority={true}
+                  src={video}
+                  alt="Web Development"
+                  width={1500}
+                  height={1500}
+                />
+              </div>
+            </div>
+          )}
+
           <ul className="2xl:text-2xl xl:text-xl text-lg 2xl:space-y-4 space-y-2">
             {info.techList.map((el) => {
               return (
@@ -139,23 +154,22 @@ const Section = ({ info, url, video }) => {
               );
             })}
           </ul>
-          <HomeButton>
-            <Link href={url}>learn more</Link>
-          </HomeButton>
+          <div className="mt-6">
+            <HomeButton>
+              <Link href={url}>learn more</Link>
+            </HomeButton>
+          </div>
         </div>
         {position && (
-          <div className="w-full lg:w-1/2">
-            <div className="h-[350px] w-full md:px-8 md:py-8 px-0 py-8">
-              <video
-                muted
-                loop
-                autoPlay={true}
-                controls={false}
-                loading="lazy"
-                poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
-              >
-                <source src={video} type="video/mp4" />
-              </video>
+          <div className="w-full lg:w-1/2 hidden md:block">
+            <div className="h-[90%] w-[90%]">
+              <Image
+                priority={true}
+                src={video}
+                alt="Web Development"
+                width={1500}
+                height={1500}
+              />
             </div>
           </div>
         )}
@@ -165,3 +179,16 @@ const Section = ({ info, url, video }) => {
 };
 
 export default HomeSectionFour;
+
+{
+  /* <video
+                muted
+                loop
+                autoPlay={true}
+                controls={false}
+                loading="lazy"
+                poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
+              >
+                <source src={video} type="video/mp4" />
+              </video> */
+}

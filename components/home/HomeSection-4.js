@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import HomeButton from "../buttons/HomeButton";
-import webFrame from "../../public/webDevelopers.gif";
+import webFrame from "../../public/webDeveloper.gif";
 import Image from "next/image";
 
 const info = [
@@ -131,7 +131,7 @@ const Section = ({ info, url, video }) => {
 
           {position && (
             <div className="w-full block md:hidden">
-              <div className="h-[90%] w-[90%]">
+              <div className="h-full w-full mb-4">
                 <Image
                   priority={true}
                   src={video}
@@ -154,15 +154,15 @@ const Section = ({ info, url, video }) => {
               );
             })}
           </ul>
-          <div className="mt-6">
+          <div className="mt-8">
             <HomeButton>
               <Link href={url}>learn more</Link>
             </HomeButton>
           </div>
         </div>
         {position && (
-          <div className="w-full lg:w-1/2 hidden md:block">
-            <div className="h-[90%] w-[90%]">
+          <div className="lg:w-1/2 hidden md:block lg:flex lg:justify-end">
+            <div className="h-[65%] w-[65%]">
               <Image
                 priority={true}
                 src={video}

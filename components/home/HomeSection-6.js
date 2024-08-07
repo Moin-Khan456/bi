@@ -87,7 +87,12 @@ const HomeSectionSix = () => {
           />
         </video>
       </div>
-      <Marquee duration={20000} background="#fafafa00" height="150px">
+      <Marquee
+        reverse={true}
+        duration={25000}
+        background="#fafafa00"
+        height="250px"
+      >
         <div className="flex space-x-10 mr-10 2xl:text-2xl text-xl items-center">
           <span>
             We partner on big and small projects with all kinds of clients -

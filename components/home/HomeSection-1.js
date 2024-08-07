@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import homeBanner from "../../public/HeroImage.svg";
 
 export default function HomeSectionOne({}) {
   return (
@@ -45,14 +44,17 @@ export default function HomeSectionOne({}) {
 
           <div className="mt-[-3rem]">
             <Image
-              srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-              sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
+              // srcSet="/image-320w.jpg 320w,
+              //   /image-480w.jpg 480w,
+              //   /image-800w.jpg 800w"
+              // sizes="(max-width: 320px) 280px,
+              //  (max-width: 480px) 440px,
+              //  800px"
               priority={true}
-              src={homeBanner}
+              fetchPriority="high"
+              src={
+                "https://braininventory.s3.us-east-2.amazonaws.com/images/homeBanner.webp"
+              }
               alt="custom software development solutions"
               width={1500}
               height={1500}

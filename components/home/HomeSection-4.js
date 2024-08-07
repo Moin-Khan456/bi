@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import HomeButton from "../buttons/HomeButton";
-import webFrame from "../../public/webDeveloper.gif";
 import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
+import HomeButton from "../buttons/HomeButton";
 
 const info = [
   {
@@ -12,7 +11,10 @@ const info = [
       white: "Development",
     },
     url: "/web-development/custom-web-development",
-    video: webFrame,
+    video:
+      "https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4",
+    thumbnail:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/WebsiteDevelopmentThumbnail.svg",
     techList: [
       {
         name: "Reactjs Development",
@@ -35,7 +37,10 @@ const info = [
       white: "Development",
     },
     url: "/mobile-development/custom-app-development",
-    video: webFrame,
+    video:
+      "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
+    thumbnail:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/MobileDevelopmentThumbnail.svg",
     techList: [
       {
         name: "android native",
@@ -58,7 +63,10 @@ const info = [
       white: "Design",
     },
     url: "/ui-ux-development-services",
-    video: webFrame,
+    video:
+      "https://braininventory.s3.us-east-2.amazonaws.com/videos/uxdesign.mp4",
+    thumbnail:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/UXDesignThumbnail.svg",
     techList: [
       {
         name: "product design",
@@ -104,6 +112,7 @@ const HomeSectionFour = () => {
                 url={el.url}
                 info={el}
                 video={el.video}
+                thumbnail={el.thumbnail}
               ></Section>
             );
           })}
@@ -113,15 +122,45 @@ const HomeSectionFour = () => {
   );
 };
 
-const Section = ({ info, url, video }) => {
-  const [position, setPostion] = useState(true);
+const Section = ({ info, url, video, thumbnail }) => {
+  // const [position, setPostion] = useState(true);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setPostion(true);
+  //   });
+  // });
+
+  const videoRef = useRef(null);
+  const sectionRef = useRef(null);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoRef.current.play();
+          } else {
+            videoRef.current.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const currentSectionRef = sectionRef.current;
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
+    }
+
+    return () => {
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
+      }
+    };
+  }, []);
+
   return (
-    <div className="h-full relative">
+    <div ref={sectionRef} className="h-full relative">
       <div className="relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8  lg:flex items-center justify-between">
         <div className="flex-col flex ">
           <p className="2xl:text-5xl xl:text-4xl text-3xl Gilroy-Bold 2xl:mb-8 xl:mb-6 mb-4">
@@ -129,19 +168,21 @@ const Section = ({ info, url, video }) => {
             {info.title.white}
           </p>
 
-          {position && (
-            <div className="w-full block md:hidden">
-              <div className="h-full w-full mb-4">
-                <Image
-                  priority={true}
-                  src={video}
-                  alt="Web Development"
-                  width={1500}
-                  height={1500}
-                />
-              </div>
+          <div className="w-full block md:hidden">
+            <div className="h-full w-full mb-4">
+              <video
+                ref={videoRef}
+                muted
+                loop
+                autoPlay={false}
+                controls={false}
+                loading="lazy"
+                poster={thumbnail}
+              >
+                <source src={video} type="video/mp4" />
+              </video>
             </div>
-          )}
+          </div>
 
           <ul className="2xl:text-2xl xl:text-xl text-lg 2xl:space-y-4 space-y-2">
             {info.techList.map((el) => {
@@ -154,41 +195,31 @@ const Section = ({ info, url, video }) => {
               );
             })}
           </ul>
-          <div className="mt-8">
+          <div className="mt-12">
             <HomeButton>
               <Link href={url}>learn more</Link>
             </HomeButton>
           </div>
         </div>
-        {position && (
-          <div className="lg:w-1/2 hidden md:block lg:flex lg:justify-end">
-            <div className="h-[65%] w-[65%]">
-              <Image
-                priority={true}
-                src={video}
-                alt="Web Development"
-                width={1500}
-                height={1500}
-              />
-            </div>
+
+        <div className="lg:w-1/2 hidden md:block lg:flex lg:justify-end">
+          <div className="h-[65%] w-[65%]">
+            <video
+              ref={videoRef}
+              muted
+              loop
+              autoPlay={false}
+              controls={false}
+              loading="lazy"
+              poster={thumbnail}
+            >
+              <source src={video} type="video/mp4" />
+            </video>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
 };
 
 export default HomeSectionFour;
-
-{
-  /* <video
-                muted
-                loop
-                autoPlay={true}
-                controls={false}
-                loading="lazy"
-                poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
-              >
-                <source src={video} type="video/mp4" />
-              </video> */
-}

@@ -14,7 +14,7 @@ const info = [
     title: "planning",
     details:
       "Our services emphasize on well-defined project planning and leave nothing for assumption to avoid miscommunication. We jot down how we are going to proceed further, define detailed technical specifications, devise the design & branding guidelines of the project, and get confirmation and approval from the clients’ end on the documents and materials.",
-    image: "Braininventory_planning.jpg",
+    image: "Braininventory_planning.svg",
     alt: "it staff augmentation services",
   },
   {
@@ -77,7 +77,6 @@ const Section = ({ info }) => {
         </span>
         <div className="xl:col-span-2 md:col-span-1 col-span-1 relative h-[350px]">
           <Image
-             
             srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"

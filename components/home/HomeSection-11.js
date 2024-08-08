@@ -29,7 +29,6 @@ const HomeSectionEleven = () => {
             >
               <div className="relative h-full flex">
                 <Image
-                   
                   srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
@@ -51,7 +50,7 @@ const HomeSectionEleven = () => {
           ))}
         </div>
 
-        <div className="mt-6">
+        <div className="mt-8">
           <Link href="/portfolio">
             <HomeButton>
               <span className="2xl:text-2xl text-xl transition-all">

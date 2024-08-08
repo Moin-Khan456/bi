@@ -13,15 +13,15 @@ const HomeSectionThree = () => {
   });
   return (
     <div className="container padding-left-all-section">
-      <div className=" lg:flex items-start pt-12">
-        <div className="w-full p-6 lg:p-10 pr-0 2xl:pb-16 xl:pb-12 pb-10 2xl:space-y-20 xl:space-y-16 space-y-12">
+      <div className=" lg:flex items-start pt-[3rem] md:pt-20">
+        <div className="w-full p-6 lg:p-10 pr-0 2xl:pb-16 xl:pb-12 pb-10 2xl:space-y-10 xl:space-y-8 space-y-6">
           <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap">
             work that make you say woww!
           </h2>
-          <div className="lg:flex justify-between 2xl:space-y-15 xl:space-y-12 space-y-10">
-            <div className="lg:flex 2xl:space-y-20 xl:space-y-16 space-y-12">
-              <div>
-                <p className="text-heading-4 leading-loose mb-4">
+          <div className="lg:flex justify-between">
+            <div className="lg:flex items-start md:gap-5 lg:gap-10">
+              <div className="flex flex-col gap-14 mb-6">
+                <p className="text-heading-4 leading-loose w-[70%]">
                   Namaste! Here you can discover who we are, how we work and
                   what we do. We approach all our projects with our 4 core
                   values.
@@ -32,7 +32,7 @@ const HomeSectionThree = () => {
                   </HomeButton>
                 </Link>
               </div>
-              {position && (
+              {/* {position && (
                 <div className="md:space-y-0 mt-0" style={{ marginTop: "0px" }}>
                   <video
                     muted
@@ -49,11 +49,35 @@ const HomeSectionThree = () => {
                     />
                   </video>
                 </div>
-              )}
+              )} */}
+              <div className="md:w-[80%] w-full lg:grid grid-cols-2 2xl:gap-4 xl:gap-4 gap-4 h-full">
+                <Box
+                  title="focus"
+                  textColor="black"
+                  color="orange"
+                  summary="We always have our eye on the detailing"
+                ></Box>
+                <Box
+                  title="passion"
+                  color="blue"
+                  summary="We love building amazing products"
+                ></Box>
+                <Box
+                  title="creativity"
+                  color="blue"
+                  summary="We are all about the creativity and vision"
+                ></Box>
+                <Box
+                  title="community"
+                  color="orange"
+                  summary="We are always open to everyone and anytime"
+                  textColor="black"
+                ></Box>
+              </div>
             </div>
           </div>
         </div>
-        <div className="md:w-[80%] w-full lg:grid grid-cols-2 2xl:gap-4 xl:gap-4 gap-4 2xl:py-4 xl:py-14 py-6 lg:py-12 pb-16 2xl:h-[85%] h-[90%]">
+        {/* <div className="md:w-[80%] w-full lg:grid grid-cols-2 2xl:gap-4 xl:gap-4 gap-4 2xl:py-4 xl:py-14 py-6 lg:py-12 pb-16 2xl:h-[85%] h-[90%]">
           <Box
             title="focus"
             textColor="black"
@@ -75,7 +99,7 @@ const HomeSectionThree = () => {
             color="orange"
             summary="We are always open to everyone and anytime"
           ></Box>
-        </div>
+        </div> */}
       </div>
     </div>
   );

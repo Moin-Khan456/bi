@@ -12,13 +12,13 @@ function HireDedicatedDeveloper(props) {
 
         <div className="h-[450px] bg-hire-image relative">
           <div className="absolute bottom-4 left-4">
-            <HomeButton>
-              <Link href="/hire-dedicated-remote-developers">
+            <Link href="/hire-dedicated-remote-developers">
+              <HomeButton>
                 <span className="2xl:text-2xl text-xl transition-all">
                   Hire Developers
                 </span>
-              </Link>
-            </HomeButton>
+              </HomeButton>
+            </Link>
           </div>
         </div>
       </div>

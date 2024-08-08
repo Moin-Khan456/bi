@@ -28,8 +28,8 @@ const HomeSectionTen = () => {
                   "Numetric-Online Accounting Software similar to QuickBooks",
               }}
             ></ProjectBox>
-            <div className="w-[30vw] h-[30vw] relative lg:mx-auto rounded-full border border-[#ffffff86] flex items-center">
-              <span className="w-[28vw] h-[28vw] mx-auto overflow-hidden rounded-full border border-[#ffffffc2] flex items-center">
+            <div className="w-[30vw] h-[30vw] relative lg:mx-auto rounded-full border border-transparent flex items-center">
+              {/* <span className="w-[28vw] h-[28vw] mx-auto overflow-hidden rounded-full border border-[#ffffffc2] flex items-center">
                 <span className="w-[26vw] h-[26vw] mx-auto overflow-hidden rounded-full border">
                   <video
                     muted
@@ -45,11 +45,11 @@ const HomeSectionTen = () => {
                     />
                   </video>
                 </span>
-              </span>
+              </span> */}
             </div>
             <Link
               href="/portfolio"
-              className="flex cursor-pointer lg:justify-center items-center space-x-8"
+              className="flex cursor-pointer lg:justify-center items-center space-x-8 "
             >
               <div className="flex lg:justify-center items-center space-x-8">
                 <div className="2xl:text-7xl lg:text-6xl text-5xl Gilroy-Bold stroke-text">
@@ -137,8 +137,7 @@ const ProjectBox = ({ info }) => {
   return (
     <div className="xl:space-y-6 lg:space-y-6 space-y-8 hover-image overflow-hidden">
       <div className="min-h-[350px] h-[425px] lg:w-full w-[30vw] min-w-[350px] overflow-hidden">
-        <Image  
-         
+        <Image
           src={info.images}
           alt={info.alt}
           loading="lazy"

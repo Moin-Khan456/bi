@@ -31,7 +31,7 @@ export default function KeepInTouch({ fromBlog }) {
   return (
     <div
       id="talk"
-      className={`container px-4 lg:px-16 2xl:space-y-8 space-y-6 ${
+      className={`container px-4 lg:px-16 2xl:space-y-8 space-y-6 pt-4 ${
         fromBlog && "text-slate-900"
       }`}
     >

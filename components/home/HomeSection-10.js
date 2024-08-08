@@ -49,7 +49,7 @@ const HomeSectionTen = () => {
             </div>
             <Link
               href="/portfolio"
-              className="flex cursor-pointer lg:justify-center items-center space-x-8"
+              className="flex cursor-pointer lg:justify-center items-center space-x-8 "
             >
               <div className="flex lg:justify-center items-center space-x-8">
                 <div className="2xl:text-7xl lg:text-6xl text-5xl Gilroy-Bold stroke-text">

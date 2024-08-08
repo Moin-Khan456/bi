@@ -71,6 +71,7 @@ const HomeSectionThree = () => {
                   title="community"
                   color="orange"
                   summary="We are always open to everyone and anytime"
+                  textColor="black"
                 ></Box>
               </div>
             </div>

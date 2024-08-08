@@ -42,7 +42,7 @@ export default function HomeSectionOne({}) {
             </div> */}
           </div>
 
-          <div className="mt-[-3rem]">
+          <div className="mt-[-3rem] hidden md:block">
             <Image
               // srcSet="/image-320w.jpg 320w,
               //   /image-480w.jpg 480w,
@@ -61,24 +61,6 @@ export default function HomeSectionOne({}) {
             />
           </div>
         </div>
-        {/* <div className="md:w-[45%] w-full  md:h-full mt-14 md:mt-0">
-          <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 ">
-            <video
-              muted
-              loop
-              autoPlay={true}
-              controls={false}
-              className="relative md:top-[3rem] top-0"
-              preload="metadata"
-              alt="custom software development solutions"
-            >
-              <source
-                src="https://braininventory.s3.us-east-2.amazonaws.com/videos/FinalVideo.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </div> */}
       </div>
     </div>
   );

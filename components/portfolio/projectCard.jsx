@@ -62,7 +62,10 @@ const MyComponent = () => {
   ];
   return (
     <div className="container padding-left-all-section-1">
-      <div className="grid grid-cols-1 lg:grid-cols-2 !justify-center mx-auto gap-24 px-0 items-center  " style={{justifyItems:"center"}}>
+      <div
+        className="grid grid-cols-1 lg:grid-cols-2 !justify-center mx-auto gap-0 md:gap-24 px-0 items-center  "
+        style={{ justifyItems: "center" }}
+      >
         {projects.map((project, index) => (
           <span key={index}>
             <Card

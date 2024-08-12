@@ -227,13 +227,13 @@ const Fatoura = () => {
         />
         <link
           rel="preload"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Mask+Group+248.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Revolution_Banner.webp"
           as="image"
           type="image/*"
           crossorigin="anonymous"
         />
       </Head>
-      <div className="bg-cover h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Mask+Group+248.png')]">
+      <div className="bg-cover h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Revolution_Banner.webp')]">
         <Header />
         <div className="container lg:pt-48">
           <SectionOne section={FatouraSectionOne} />

@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function HireBanner() {
   return (
-    <main className="container padding-left-all-section-1 pt-28 lg:pt-0 lg:pb-24 scale-y-110 bg-no-repeat bg-right min-h-screen lg:brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/accounting/Group+7168.png')]">
+    <main className="container padding-left-all-section-1 pt-28 lg:pt-0 lg:pb-24 scale-y-110 bg-no-repeat bg-right min-h-screen lg:brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/accounting_banner.webp')]">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-12 lg:pt-36`}>
         <section>
           <section className="ml-4 lg:ml-0">

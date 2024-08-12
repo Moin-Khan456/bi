@@ -295,7 +295,9 @@ function Travel(props) {
   return (
     <>
       <Head>
-        <title>Top-Rated Travel Software Development Company | Brain Inventory</title>
+        <title>
+          Top-Rated Travel Software Development Company | Brain Inventory
+        </title>
         <meta
           property="description"
           content="We specialize in custom travel software development, packed with features to ensure a seamless travel experience for your customers every time."
@@ -323,7 +325,7 @@ function Travel(props) {
         <link
           rel="preload"
           fetchpriority="high"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Group+7198.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/travel_banner.webp"
           as="image"
         />
       </Head>

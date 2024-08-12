@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 export default function HireBanner() {
   return (
-    <main className="h-screen  pt-28 lg:pt-32 lg:pb-24 lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Mask+group.png')] bg-contain bg-no-repeat bg-right">
+    <main className="h-screen  pt-28 lg:pt-32 lg:pb-24 lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/energy_utility_banner.webp')] bg-contain bg-no-repeat bg-right">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0 container`}>
         <section className="container padding-left-all-section-1 relative">
           <section className="ml-4 lg:ml-0 relative z-20">

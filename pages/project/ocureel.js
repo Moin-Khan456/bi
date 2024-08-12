@@ -143,13 +143,13 @@ const Virifi = () => {
         />
         <link
           rel="preload"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Mask+Group+192.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Banner.webp"
           as="image"
           type="image/*"
           crossorigin="anonymous"
         />
       </Head>
-      <div className="bg-cover relative z-20 w-full h-[105vh] lg:h-[140vh] bg-center lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Mask+Group+192.png')] bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
+      <div className="bg-cover relative z-20 w-full h-[105vh] lg:h-[140vh] bg-center lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Banner.webp')] bg-gradient-to-r from-violet-500 to-fuchsia-500 ">
         <Header />
         <div className="container">
           <SectionOne />
@@ -181,7 +181,7 @@ const Virifi = () => {
 
         <div className="bg-[#FDDEFE] relative lg:-top-52 lg:-mb-64">
           <div className="container">
-            <div className="lg:h-[80vh] bg-no-repeat bg-contain bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/ocureel+section+2.png')] relative lg:-top-28">
+            <div className="lg:h-[80vh] bg-no-repeat bg-contain bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Mobile+Version.webp')] relative lg:-top-28">
               <h1 className="transparent-text text-8xl bg-transparent w-72 px-8 h-[80vh] flex flex-col justify-end">
                 Mobile Version
               </h1>

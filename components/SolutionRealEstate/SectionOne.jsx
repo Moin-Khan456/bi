@@ -5,7 +5,7 @@ import { BiCheckCircle } from "react-icons/bi";
 import Link from "next/link";
 export default function HireBanner() {
   return (
-    <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Real+estate+assets/Real+estate+assets/Group+7223.png')]">
+    <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/realState_banner.webp')]">
       <div className="flex flex-col justify-center h-screen padding-left-all-section-1 ">
         <div className="text-center">
           <h1 className="MonumentRegular !font-extrabold uppercase text-3xl lg:text-[4rem] pt-16">

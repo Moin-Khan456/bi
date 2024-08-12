@@ -319,7 +319,7 @@ function Travel(props) {
         <link
           rel="preload"
           fetchpriority="high"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/travel/Group+7198.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/travel_banner.webp"
           as="image"
         />
       </Head>
@@ -396,7 +396,9 @@ function Travel(props) {
               "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Braininventory_real+estate+mockup+video+1.mp4"
             }
             oneLink={null}
-            oneImage={"https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+1.png"}
+            oneImage={
+              "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Real+estate+1.png"
+            }
             twoName={"OUTING"}
             twoVideo={
               "https://braininventory.s3.us-east-2.amazonaws.com/images/Industry+page+mockups/Real-estate/Braininventory_real+estate+mockup+video+2.mp4"

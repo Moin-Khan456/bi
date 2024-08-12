@@ -4,10 +4,9 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 const SectionOne = () => {
   return (
-    <div className="relative bg-cover overflow-hidden bg-center h-[100%] max-h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/fitness/daniel-apodaca-WdoQio6HPVA-unsplash.png')] ">
+    <div className="relative bg-cover overflow-hidden bg-center h-[100%] max-h-screen bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/fitness_banner.webp')] ">
       <div className="absolute top-10 -right-24 w-full">
-        <Image  
-         
+        <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/braininventory.in+spinner+white.png"
           alt="Fitness App Development Company"
           width={1200}

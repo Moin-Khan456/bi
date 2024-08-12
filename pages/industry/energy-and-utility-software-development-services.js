@@ -329,7 +329,7 @@ function Energy(props) {
         <link
           rel="preload"
           fetchpriority="high"
-          href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/energy_industry/Mask+group.png"
+          href="https://braininventory.s3.us-east-2.amazonaws.com/images/energy_utility_banner.webp"
           as="image"
         />
       </Head>

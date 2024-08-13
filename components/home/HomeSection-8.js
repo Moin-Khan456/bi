@@ -111,10 +111,10 @@ const Section = ({ info }) => {
             }
             width={1500}
             height={1500}
-            loading="lazy"
+            // loading="lazy"
+            // fetchPriority="high"
             alt={info.alt}
             objectFit="cover"
-            // className="md:h-[80%] lg:h-full"
           />
         </div>
         <p className="2xl:text-xl xl:text-lg text-base Gilroy-Light  xl:col-span-3 md:col-span-1 col-span-1 flex flex-col gap-4">

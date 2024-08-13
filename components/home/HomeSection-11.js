@@ -27,7 +27,7 @@ const HomeSectionEleven = () => {
               key={el}
               className="border border-blue h-40 2xl:p-12 lg:p-10 p-4"
             >
-              <div className="relative h-full flex">
+              <div className="relative h-full flex items-center">
                 <Image
                   srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,

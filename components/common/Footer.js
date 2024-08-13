@@ -529,7 +529,7 @@ export default function Footer({ fromBlog }) {
                     width={28}
                     height={28}
                     fetchPriority="low"
-                    priority="low"
+                    loading="lazy"
                     alt="Custom Software Development Company"
                   />
                 </Link>
@@ -547,7 +547,7 @@ export default function Footer({ fromBlog }) {
                     width={28}
                     height={28}
                     fetchPriority="low"
-                    priority="low"
+                    loading="lazy"
                     alt="Custom Software Development Company"
                   />
                 </Link>
@@ -565,7 +565,7 @@ export default function Footer({ fromBlog }) {
                     width={24}
                     height={24}
                     fetchPriority="low"
-                    priority="low"
+                    loading="lazy"
                     alt="Custom Software Development Company"
                   />
                 </Link>
@@ -583,7 +583,7 @@ export default function Footer({ fromBlog }) {
                     width={24}
                     height={24}
                     fetchPriority="low"
-                    priority="low"
+                    loading="lazy"
                     alt="Custom Software Development Company"
                   />
                 </Link>
@@ -601,7 +601,7 @@ export default function Footer({ fromBlog }) {
                     width={30}
                     height={30}
                     fetchPriority="low"
-                    priority="low"
+                    loading="lazy"
                     alt="Custom Software Development Company"
                   />
                 </Link>

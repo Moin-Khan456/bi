@@ -16,7 +16,7 @@ const HomeSectionThree = () => {
       <div className=" lg:flex items-start pt-0 md:pt-20">
         <div className="w-full p-6 pt-0 lg:p-10 pr-0 2xl:pb-16 xl:pb-12 pb-10 2xl:space-y-10 xl:space-y-8 space-y-6">
           <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap">
-            work that make you say woww!
+            Work that make you say woww!
           </h2>
           <div className="lg:flex justify-between">
             <div className="lg:flex items-start md:gap-5 lg:gap-10">

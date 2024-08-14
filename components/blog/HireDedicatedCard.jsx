@@ -47,6 +47,7 @@ const HireDedicatedCard = ({ setLocal }) => {
             width={25}
             height={25}
             className="pr-2"
+            loading="lazy"
           />{" "}
           Onboard dedicated remote developers to your project as quickly as in 2
           days.

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const info = [
   {
-    title: "discovery workshop",
+    title: "Discovery Workshop",
     details: [
       "We give the utmost importance to understand and document client’s inputs, design, and branding preferences.",
       `And clarify all the open-ended points to establish a precise and clear idea about both clients’ and project’s goals.`,
@@ -15,7 +15,7 @@ const info = [
     alt: "custom software development company",
   },
   {
-    title: "planning",
+    title: "Planning",
     details: [
       "Our services emphasize on well-defined project planning and leave nothing for assumption to avoid miscommunication.",
       "We jot down how we are going to proceed further, define detailed technical specifications, devise the design & branding guidelines of the project, and get confirmation and approval from the clients’ end on the documents and materials.",
@@ -24,7 +24,7 @@ const info = [
     alt: "it staff augmentation services",
   },
   {
-    title: "design",
+    title: "Design",
     details: [
       "We provide clients with Web, Tablet, and Mobile-specific UI designs of the projects based on the approved wireframes and design guidelines.",
       "As a trusted entity, we deliver clickable prototypes on Invision platform and the source files in either Photoshop or Sketch format.",
@@ -34,7 +34,7 @@ const info = [
     alt: "custom software development solution",
   },
   {
-    title: "development",
+    title: "Development",
     details: [
       "At this stage, we cater requirements for frontend, backend, web services, and API development integration.",
       "Along with preparing a strategy for Agile Scrum methodology, we factor the aspects of scalability, multi-tenancy, 3rd party integration, and craft an optimized clean code structure using cutting-edge technologies.",
@@ -44,7 +44,7 @@ const info = [
     alt: "custom application development company",
   },
   {
-    title: "testing",
+    title: "Testing",
     details: [
       "We test each sprint manually, report bugs and add those to product backlog.",
       "Once the bug fixing is done, we provide the quality release and then the final demo of the sprint is sent for clients’ approval.",
@@ -54,7 +54,7 @@ const info = [
     alt: "it staff augmentation services",
   },
   {
-    title: "maintainance",
+    title: "Maintainance",
     details: [
       "Our work doesn’t end with development, we go the extra mile for our clients. Through an Agile approach, we ensure product enhancement.",
       "We do regular Security Audits, Brain Inventory-weekly code backups, and constant system upgradation.",
@@ -70,7 +70,7 @@ const HomeSectionEight = () => {
     <div className="2xl:p-10 p-8 2xl:pb-40 pb-32">
       <div className="container padding-left-all-section">
         <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap mb-5">
-          the process that delivers the best!
+          The process that delivers the best!
         </h2>
 
         <div className="divide-y">

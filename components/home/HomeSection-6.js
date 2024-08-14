@@ -79,7 +79,7 @@ const HomeSectionSix = () => {
           autoPlay={true}
           controls={false}
           loading="lazy"
-          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/rotated+branding.png"
+          poster="https://braininventory.s3.us-east-2.amazonaws.com/images/branding+rotating.webp"
         >
           <source
             src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Final.mp4"

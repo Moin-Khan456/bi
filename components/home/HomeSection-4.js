@@ -14,18 +14,18 @@ const info = [
     video:
       "https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4",
     thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/WebsiteDevelopmentThumbnail.svg",
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp",
     techList: [
       {
-        name: "Reactjs Development",
+        name: "React Js Development",
         path: "/reactjsdevelopment",
       },
       {
-        name: "Angularjs Development",
+        name: "Angular Js Development",
         path: "/angularjs-development",
       },
       {
-        name: "Nodejs Development",
+        name: "Node Js Development",
         path: "/nodejs-development",
       },
     ],
@@ -40,18 +40,18 @@ const info = [
     video:
       "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
     thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/MobileDevelopmentThumbnail.svg",
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/Mobile+Development.webp",
     techList: [
       {
-        name: "android native",
+        name: "Android Development",
         path: "",
       },
       {
-        name: "ios native",
+        name: "iOS Development",
         path: "",
       },
       {
-        name: "react.native",
+        name: "React Native",
         path: "",
       },
     ],
@@ -66,18 +66,18 @@ const info = [
     video:
       "https://braininventory.s3.us-east-2.amazonaws.com/videos/uxdesign.mp4",
     thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/UXDesignThumbnail.svg",
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/UX+UI+Design.webp",
     techList: [
       {
-        name: "product design",
+        name: "Product Design",
         path: "",
       },
       {
-        name: "research",
+        name: "Research",
         path: "",
       },
       {
-        name: "consulting",
+        name: "Consulting",
         path: "",
       },
     ],
@@ -92,7 +92,7 @@ const HomeSectionFour = () => {
           <div className="">
             <div className=" w-full top-0 z-40 bg-black 2xl:p-10 p-8">
               <h2 className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
-                what are you looking up-to?
+                What are you looking up-to?
               </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
@@ -130,35 +130,6 @@ const Section = ({ info, url, video, thumbnail }) => {
     });
   });
 
-  // const videoRef = useRef(null);
-  // const sectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           videoRef.current.play();
-  //         } else {
-  //           videoRef.current.pause();
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.5 }
-  //   );
-
-  //   const currentSectionRef = sectionRef.current;
-  //   if (currentSectionRef) {
-  //     observer.observe(currentSectionRef);
-  //   }
-
-  //   return () => {
-  //     if (currentSectionRef) {
-  //       observer.unobserve(currentSectionRef);
-  //     }
-  //   };
-  // }, []);
-
   return (
     <div className="h-full relative">
       <div className="relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8  lg:flex items-center justify-between">
@@ -167,22 +138,6 @@ const Section = ({ info, url, video, thumbnail }) => {
             <span className="text-base-orange-1">{info.title.orange}</span>{" "}
             {info.title.white}
           </p>
-
-          {/* <div className="w-full block md:hidden">
-            <div className="h-full w-full mb-4">
-              <video
-                ref={videoRef}
-                muted
-                loop
-                autoPlay={false}
-                controls={false}
-                loading="lazy"
-                poster={thumbnail}
-              >
-                <source src={video} type="video/mp4" />
-              </video>
-            </div>
-          </div> */}
 
           <ul className="2xl:text-2xl xl:text-xl text-lg 2xl:space-y-4 space-y-2">
             {info.techList.map((el) => {
@@ -206,7 +161,6 @@ const Section = ({ info, url, video, thumbnail }) => {
           <div className="w-full lg:w-1/2  lg:flex lg:justify-end mt-3 md:mt-0">
             <div className="h-[65%] w-[100%] md:w-[65%]">
               <video
-                // ref={videoRef}
                 muted
                 loop
                 autoPlay={true}

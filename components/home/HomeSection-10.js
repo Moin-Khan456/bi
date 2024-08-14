@@ -7,7 +7,7 @@ const HomeSectionTen = () => {
       <div className="container padding-left-all-section">
         <div className="flex w-full lg:flex-row flex-col 2xl:gap-10 gap-8 2xl:py-10 2xl:px-0  px-8">
           <div className="lg:space-y-12 space-y-8 flex-1">
-            <p className="text-heading-1 Gilroy-Bold">our portfolio</p>
+            <p className="text-heading-1 Gilroy-Bold">Our Portfolio</p>
 
             <div className="lg:flex lg:space-x-10 lg:space-y-0 space-y-10">
               <CounterBox
@@ -53,7 +53,7 @@ const HomeSectionTen = () => {
             >
               <div className="flex lg:justify-center items-center space-x-8">
                 <div className="2xl:text-7xl lg:text-6xl text-5xl Gilroy-Bold stroke-text">
-                  wanna see <br /> more
+                  Wanna see <br /> more
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

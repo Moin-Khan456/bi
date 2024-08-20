@@ -167,6 +167,7 @@ const Section = ({ info, url, video, thumbnail }) => {
                 controls={false}
                 loading="lazy"
                 poster={thumbnail}
+                playsInline={true}
               >
                 <source src={video} type="video/mp4" />
               </video>

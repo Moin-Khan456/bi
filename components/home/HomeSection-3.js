@@ -77,29 +77,6 @@ const HomeSectionThree = () => {
             </div>
           </div>
         </div>
-        {/* <div className="md:w-[80%] w-full lg:grid grid-cols-2 2xl:gap-4 xl:gap-4 gap-4 2xl:py-4 xl:py-14 py-6 lg:py-12 pb-16 2xl:h-[85%] h-[90%]">
-          <Box
-            title="focus"
-            textColor="black"
-            color="orange"
-            summary="We always have our eye on the detailing"
-          ></Box>
-          <Box
-            title="passion"
-            color="blue"
-            summary="We love building amazing products"
-          ></Box>
-          <Box
-            title="creativity"
-            color="blue"
-            summary="We are all about the creativity and vision"
-          ></Box>
-          <Box
-            title="community"
-            color="orange"
-            summary="We are always open to everyone and anytime"
-          ></Box>
-        </div> */}
       </div>
     </div>
   );

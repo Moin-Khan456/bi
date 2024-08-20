@@ -70,7 +70,10 @@ export default function Home({
 
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
-            <h1 className="text-6xl pt-12 font-bold">Blogs</h1>
+            <h1 className="text-5xl pt-12 font-bold leading-12">
+              Mindful Blogs | Resource Augmentation | Web and Mobile Software
+              Development
+            </h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3">Popular Blogs</h3>
               <div className="pb-2">

@@ -78,6 +78,7 @@ const HomeSectionSix = () => {
           loop
           autoPlay={true}
           controls={false}
+          playsInline={true}
           loading="lazy"
           poster="https://braininventory.s3.us-east-2.amazonaws.com/images/branding+rotating.webp"
         >

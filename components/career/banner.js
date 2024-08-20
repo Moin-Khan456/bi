@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="lg:w-[60%] w-full  h-full  relative">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
             <h1 className="2xl:text-4xl xl:text-4xl mt-20 text-3xl stroke-text-3 Gilroy-Bold">
-              The Right place for you | Career at Brain Inventory
+              Apply for Full Time Job: Brain Inventory
             </h1>
 
             <h2 className="text-heading-1 Gilroy-Bold">
@@ -33,10 +33,12 @@ const Banner = () => {
         </div>
         <div className="w-1/2 h-full lg:flex justify-center items-center hidden">
           <div className="w-[600px] h-[450px]  relative">
-            <Image  
+            <Image
               width={1000}
               height={900}
-              src={"https://braininventory.s3.us-east-2.amazonaws.com/images/carrer.png"}
+              src={
+                "https://braininventory.s3.us-east-2.amazonaws.com/images/carrer.png"
+              }
               alt="Career at Brain Inventory"
             />
           </div>

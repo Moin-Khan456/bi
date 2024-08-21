@@ -2,7 +2,7 @@ export default function SectionOne({ faqsType, setFaqsType }) {
   return (
     <div className="container pt-28">
       <h1 className="MonumentBold text-4xl lg:text-[3.75rem] text-center">
-        FAQS
+        FAQS | IT Staff Augmentation Services | Custom Software Development
       </h1>
 
       <div className="flex justify-center gap-4 pt-8">

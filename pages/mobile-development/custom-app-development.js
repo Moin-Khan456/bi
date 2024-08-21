@@ -159,7 +159,7 @@ function HireAangularJsDeveloper(props) {
             <Header />
             <HireBanner
               heading="A Smarter Way to Build Customized Applications"
-              title="Custom Mobile App"
+              title="Custom Mobile Software"
               content={content}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"

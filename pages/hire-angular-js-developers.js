@@ -209,8 +209,8 @@ function HireAangularJsDeveloper(props) {
             <Header />
             <HireBanner
               heading="Get the Best"
-              title="Angular.js"
-              subtitle="Talent On-Demand"
+              title="Effortlessly Hire Angular.js"
+              subtitle="on Demand"
               content={content}
               card={card}
               unique={"developer"}

@@ -188,7 +188,7 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire MEAN stack"
+            title="Hire MEAN Stack"
             content={content}
             btn="Contact Us!"
             unique={"developer"}

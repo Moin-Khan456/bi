@@ -8,7 +8,7 @@ function contactBanner() {
         <div className="lg:w-1/2 w-full  h-full  relative">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
             <h1 className="2xl:text-5xl xl:text-5xl mt-20 text-4xl stroke-text-3 Gilroy-Bold">
-              Contact Us | Brain Inventory
+              Contact Us for Website and App Development | Staff Augmentation
             </h1>
 
             <div className="text-heading-1 Gilroy-Bold">
@@ -28,10 +28,7 @@ function contactBanner() {
                   <span className="text-base">call us now!</span>
                 </HomeButton>
               </a>
-              <a
-                className="btn-contact md:ml-8 ml-0"
-                href="#contact"
-              >
+              <a className="btn-contact md:ml-8 ml-0" href="#contact">
                 Drop an email
               </a>
             </div>

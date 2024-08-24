@@ -41,15 +41,3 @@ const PopularBlogs = ({ data }) => {
   );
 };
 export default PopularBlogs;
-
-// export async function getServerSideProps() {
-//   const response = await axios.get(
-//     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=_embedded,_links,&_embed&per_page=3&page=1"
-//   );
-//   console.log("Popular: ", response.data);
-//   return {
-//     props: {
-//       data: response.data,
-//     },
-//   };
-// }

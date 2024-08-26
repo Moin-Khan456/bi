@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
 import HomeSectionOne from "../components/home/HomeSection-1.js";
-
 const HomeSectionThree = dynamic(() =>
   import("../components/home/HomeSection-3.js")
 );
@@ -33,7 +32,6 @@ const KeepInTouch = dynamic(() =>
 );
 const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
-
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
 function Home() {
@@ -262,7 +260,6 @@ function Home() {
             <HomeSectionEight />
           </section>
           <HomeSectionNine />
-
           <section className="container">
             <HomeSectionTen />
             <HomeSectionEleven />

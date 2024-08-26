@@ -10,7 +10,6 @@ const info = [
       `And clarify all the open-ended points to establish a precise and clear idea about both clients’ and project’s goals.`,
       `We work in a collaborative approach involving key stakeholders to bring alignment in the business process.`,
     ],
-
     image: "Braininventory_discovery+workshop.webp",
     alt: "custom software development company",
   },
@@ -72,7 +71,6 @@ const HomeSectionEight = () => {
         <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap mb-5">
           The process that delivers the best!
         </h2>
-
         <div className="divide-y">
           {info.map((el) => (
             <Section key={el.title} info={el}></Section>

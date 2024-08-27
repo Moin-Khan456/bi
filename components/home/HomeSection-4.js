@@ -1,87 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import HomeButton from "../buttons/HomeButton";
-
-const info = [
-  {
-    id: 1,
-    title: {
-      orange: "Web",
-      white: "Development",
-    },
-    url: "/web-development/custom-web-development",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp",
-    techList: [
-      {
-        name: "React Js Development",
-        path: "/reactjsdevelopment",
-      },
-      {
-        name: "Angular Js Development",
-        path: "/angularjs-development",
-      },
-      {
-        name: "Node Js Development",
-        path: "/nodejs-development",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: {
-      orange: "Mobile",
-      white: "Development",
-    },
-    url: "/mobile-development/custom-app-development",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/Mobile+Development.webp",
-    techList: [
-      {
-        name: "Android Development",
-        path: "",
-      },
-      {
-        name: "iOS Development",
-        path: "",
-      },
-      {
-        name: "React Native",
-        path: "",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: {
-      orange: "UI/UX",
-      white: "Design",
-    },
-    url: "/ui-ux-development-services",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/uxdesign.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/UX+UI+Design.webp",
-    techList: [
-      {
-        name: "Product Design",
-        path: "",
-      },
-      {
-        name: "Research",
-        path: "",
-      },
-      {
-        name: "Consulting",
-        path: "",
-      },
-    ],
-  },
-];
+import { HomeSection4info } from "./Data";
 
 const HomeSectionFour = () => {
   return (
@@ -103,7 +23,7 @@ const HomeSectionFour = () => {
             </div>
           </div>
           <div className="mt-20"></div>
-          {info.map((el) => {
+          {HomeSection4info?.map((el) => {
             return (
               <Section
                 className="snap-start"

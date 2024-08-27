@@ -2,11 +2,8 @@ import Image from "next/image";
 import HomeButton from "../buttons/HomeButton";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useRouter } from "next/router";
 
 export default function KeepInTouch({ fromBlog }) {
-  const router = useRouter();
-
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
@@ -56,14 +53,12 @@ export default function KeepInTouch({ fromBlog }) {
               Have an idea? <br /> Get in touch, we’d be <br /> happy to hear
               from you
             </h2>
-
             <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-normal w-4/5">
               We are always looking out for new collaborations, whether you are
               a client who is passionate about a project or a talent who is
               interested in joining our team, our doors are always open.
             </p>
           </div>
-
           <div className="flex lg:justify-end justify-start ">
             <div className="flex flex-col xl:space-y-8 space-y-6 w-full">
               <Formik

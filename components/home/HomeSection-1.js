@@ -25,13 +25,7 @@ export default function HomeSectionOne({}) {
           </div>
           <div className="mt-[-3rem] hidden md:block">
             <Image
-              // srcSet="/image-320w.jpg 320w,
-              //   /image-480w.jpg 480w,
-              //   /image-800w.jpg 800w"
-              // sizes="(max-width: 320px) 280px,
-              //  (max-width: 480px) 440px,
-              //  800px"
-              priority={true}
+              priority
               fetchPriority="high"
               src={
                 "https://braininventory.s3.us-east-2.amazonaws.com/images/homeBanner.webp"

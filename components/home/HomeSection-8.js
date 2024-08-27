@@ -109,8 +109,6 @@ const Section = ({ info }) => {
             }
             width={1500}
             height={1500}
-            // loading="lazy"
-            // fetchPriority="high"
             alt={info.alt}
             objectFit="cover"
           />

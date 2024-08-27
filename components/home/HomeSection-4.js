@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import HomeButton from "../buttons/HomeButton";
 
 const info = [
@@ -88,9 +87,9 @@ const HomeSectionFour = () => {
   return (
     <div className="container padding-left-all-section">
       <div className="relative">
-        <div className=" w-full snap-y snap-mandatory">
-          <div className="">
-            <div className=" w-full top-0 z-40 bg-black 2xl:p-10 p-8">
+        <div className="w-full snap-y snap-mandatory">
+          <div>
+            <div className="w-full top-0 z-40 bg-black 2xl:p-10 p-8">
               <h2 className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
                 What are you looking up-to?
               </h2>
@@ -113,7 +112,7 @@ const HomeSectionFour = () => {
                 info={el}
                 video={el.video}
                 thumbnail={el.thumbnail}
-              ></Section>
+              />
             );
           })}
         </div>

@@ -8,7 +8,6 @@ const HomeSectionTen = () => {
         <div className="flex w-full lg:flex-row flex-col 2xl:gap-10 gap-8 2xl:py-10 2xl:px-0  px-8">
           <div className="lg:space-y-12 space-y-8 flex-1">
             <p className="text-heading-1 Gilroy-Bold">Our Portfolio</p>
-
             <div className="lg:flex lg:space-x-10 lg:space-y-0 space-y-10">
               <CounterBox
                 counterInfo={{ count: "100", message: "Projects Delivered" }}
@@ -17,7 +16,6 @@ const HomeSectionTen = () => {
                 counterInfo={{ count: "50", message: "Happy Clients" }}
               ></CounterBox>
             </div>
-
             <ProjectBox
               info={{
                 name: "Numetric.Work",
@@ -28,25 +26,7 @@ const HomeSectionTen = () => {
                   "Numetric-Online Accounting Software similar to QuickBooks",
               }}
             ></ProjectBox>
-            <div className="w-[30vw] h-[30vw] relative lg:mx-auto rounded-full border border-transparent flex items-center">
-              {/* <span className="w-[28vw] h-[28vw] mx-auto overflow-hidden rounded-full border border-[#ffffffc2] flex items-center">
-                <span className="w-[26vw] h-[26vw] mx-auto overflow-hidden rounded-full border">
-                  <video
-                    muted
-                    loop
-                    autoPlay={true}
-                    controls={false}
-                    className="relative top-20 scale-[2]"
-                    poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
-                  >
-                    <source
-                      src="https://braininventory.s3.us-east-2.amazonaws.com/videos/work.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </span>
-              </span> */}
-            </div>
+            <div className="w-[30vw] h-[30vw] relative lg:mx-auto rounded-full border border-transparent flex items-center"></div>
             <Link
               href="/portfolio"
               className="flex cursor-pointer lg:justify-center items-center space-x-8 "
@@ -74,7 +54,6 @@ const HomeSectionTen = () => {
           </div>
           <div className="lg:space-y-8 space-y-6 flex-1">
             <div className="lg:h-40 h-10"></div>
-
             <a
               href="https://dribbble.com/brain_inventory"
               target="_blank"
@@ -103,7 +82,6 @@ const HomeSectionTen = () => {
                 summary: "Mint, Sell & Buy NFTs inspired by open Sea",
               }}
             ></ProjectBox>
-
             <ProjectBox
               info={{
                 name: "Skedy",

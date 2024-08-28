@@ -32,24 +32,6 @@ const HomeSectionThree = () => {
                   </HomeButton>
                 </Link>
               </div>
-              {/* {position && (
-                <div className="md:space-y-0 mt-0" style={{ marginTop: "0px" }}>
-                  <video
-                    muted
-                    loop
-                    autoPlay={true}
-                    controls={false}
-                    className="md:w-full w-[94%]"
-                    loading="lazy"
-                    poster="https://braininventory.s3.us-east-2.amazonaws.com/images/work-v-thumbnail.png"
-                  >
-                    <source
-                      src="https://braininventory.s3.us-east-2.amazonaws.com/videos/squen.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div>
-              )} */}
               <div className="md:w-[80%] w-full lg:grid grid-cols-2 2xl:gap-4 xl:gap-4 gap-4 h-full">
                 <Box
                   title="focus"

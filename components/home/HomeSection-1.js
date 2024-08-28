@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Image from "next/image";
 
 export default function HomeSectionOne({}) {
@@ -11,7 +10,6 @@ export default function HomeSectionOne({}) {
               <span>Custom Software Development Company</span>
               <span>and Staff Augmentation Services</span>
             </h1>
-
             <div className="flex flex-col w-full px-4 lg:px-12 py-4">
               <h2 className="2xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs text-center flex flex-col gap-1">
                 <span>A digital production company focusing heavily</span>
@@ -24,24 +22,7 @@ export default function HomeSectionOne({}) {
                 </span>
               </h2>
             </div>
-
-            {/* <div className="rotating scroll-logo md:block hidden ">
-              <Image
-                srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-                sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
-                priority={true}
-                src="https://braininventory.s3.us-east-2.amazonaws.com/images/scrollAnimation.svg"
-                alt="custom software development solutions"
-                width={1500}
-                height={1500}
-              />
-            </div> */}
           </div>
-
           <div className="mt-[-3rem] hidden md:block">
             <Image
               // srcSet="/image-320w.jpg 320w,

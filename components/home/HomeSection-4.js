@@ -129,7 +129,6 @@ const Section = ({ info, url, video, thumbnail }) => {
       setPostion(true);
     });
   });
-
   return (
     <div className="h-full relative">
       <div className="relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8  lg:flex items-center justify-between">
@@ -138,7 +137,6 @@ const Section = ({ info, url, video, thumbnail }) => {
             <span className="text-base-orange-1">{info.title.orange}</span>{" "}
             {info.title.white}
           </p>
-
           <ul className="2xl:text-2xl xl:text-xl text-lg 2xl:space-y-4 space-y-2">
             {info.techList.map((el) => {
               return (
@@ -156,7 +154,6 @@ const Section = ({ info, url, video, thumbnail }) => {
             </Link>
           </div>
         </div>
-
         {position && (
           <div className="w-full lg:w-1/2  lg:flex lg:justify-end mt-3 md:mt-0">
             <div className="h-[65%] w-[100%] md:w-[65%]">

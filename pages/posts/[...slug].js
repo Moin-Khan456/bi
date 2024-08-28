@@ -11,7 +11,6 @@ import data from "./blog_dataset.json";
 import { useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
-import { IoMdMoon } from "react-icons/io";
 
 export default function PostPage({ slug, post, featuredMedia }) {
   const [title, setTitle] = useState(

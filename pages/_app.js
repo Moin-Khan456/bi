@@ -11,17 +11,20 @@ function MyApp({ Component, pageProps }) {
   // Accessing the current page URL
   const { asPath } = router;
   const [localForm, setLocal] = useState(null);
+
+  function throttle(callback, delay) {
+    let lastCall = 0;
+    return function (...args) {
+      const now = new Date().getTime();
+      if (now - lastCall >= delay) {
+        lastCall = now;
+        callback(...args);
+      }
+    };
+  }
+
   useEffect(() => {
     if (typeof window !== "undefined") {
-      localForm === null &&
-        (JSON.parse(localStorage.getItem("openPopup")) ?? true) &&
-        setLocal(
-          window.innerWidth < 1000
-            ? false
-            : asPath == "/thank-you"
-            ? false
-            : true
-        );
       window.smartlook ||
         (function (d) {
           var o = (window.smartlook = function () {
@@ -39,6 +42,29 @@ function MyApp({ Component, pageProps }) {
       window.smartlook("init", "a3459c65e0d69bf6b6ff9d9b4120d4f1dc6aa787", {
         region: "eu",
       });
+
+      const handleScroll = throttle(() => {
+        if (window.scrollY > 400) {
+          if (
+            localForm === null &&
+            (JSON.parse(localStorage.getItem("openPopup")) ?? true)
+          ) {
+            setLocal(
+              window.innerWidth < 1000
+                ? false
+                : asPath === "/thank-you"
+                ? false
+                : true
+            );
+          }
+        }
+      }, 200);
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
   }, [asPath]);
 

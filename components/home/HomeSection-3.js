@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
-import HomeButton from "../buttons/HomeButton.js";
 import Link from "next/link";
+import HomeButton from "../buttons/HomeButton.js";
 
 const HomeSectionThree = () => {
-  const [position, setPostion] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 274) {
-        setPostion(true);
-      }
-    });
-  });
   return (
     <div className="container padding-left-all-section">
       <div className=" lg:flex items-start pt-0 md:pt-20">
@@ -38,23 +29,23 @@ const HomeSectionThree = () => {
                   textColor="black"
                   color="orange"
                   summary="We always have our eye on the detailing"
-                ></Box>
+                />
                 <Box
                   title="passion"
                   color="blue"
                   summary="We love building amazing products"
-                ></Box>
+                />
                 <Box
                   title="creativity"
                   color="blue"
                   summary="We are all about the creativity and vision"
-                ></Box>
+                />
                 <Box
                   title="community"
                   color="orange"
                   summary="We are always open to everyone and anytime"
                   textColor="black"
-                ></Box>
+                />
               </div>
             </div>
           </div>
@@ -63,7 +54,6 @@ const HomeSectionThree = () => {
     </div>
   );
 };
-
 const Box = ({ title, summary, color, textColor }) => (
   <div
     className={

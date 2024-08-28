@@ -20,7 +20,6 @@ const HomeSectionEleven = () => {
         <h3 className="text-heading-1 2xl:pt-20 xl:pt-16 pt-14 2xl:pb-10 pb-8 Gilroy-Bold">
           We&apos;d love to add your logo here.
         </h3>
-
         <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 2xl:gap-20 xl:gap-12 gap-12">
           {logos.map((el) => (
             <div

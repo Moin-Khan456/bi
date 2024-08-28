@@ -11,10 +11,10 @@ const HomeSectionTen = () => {
             <div className="lg:flex lg:space-x-10 lg:space-y-0 space-y-10">
               <CounterBox
                 counterInfo={{ count: "100", message: "Projects Delivered" }}
-              ></CounterBox>
+              />
               <CounterBox
                 counterInfo={{ count: "50", message: "Happy Clients" }}
-              ></CounterBox>
+              />
             </div>
             <ProjectBox
               info={{
@@ -25,7 +25,7 @@ const HomeSectionTen = () => {
                 summary:
                   "Numetric-Online Accounting Software similar to QuickBooks",
               }}
-            ></ProjectBox>
+            />
             <div className="w-[30vw] h-[30vw] relative lg:mx-auto rounded-full border border-transparent flex items-center"></div>
             <Link
               href="/portfolio"
@@ -81,7 +81,7 @@ const HomeSectionTen = () => {
                 alt: "NFT Marketplace software development by Brain Inventory",
                 summary: "Mint, Sell & Buy NFTs inspired by open Sea",
               }}
-            ></ProjectBox>
+            />
             <ProjectBox
               info={{
                 name: "Skedy",
@@ -90,7 +90,7 @@ const HomeSectionTen = () => {
                 alt: "Skedy, school management app  developed by Brain Inventory",
                 summary: "School/Institution Management Solution",
               }}
-            ></ProjectBox>
+            />
           </div>
         </div>
       </div>

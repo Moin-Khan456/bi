@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import axios from "axios";
 import Link from "next/link";
 import Skeleton from "./HorizontalSkeleton";
 

@@ -44,7 +44,6 @@ export default function Home({
           property="og:description"
           content=" Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
         />
-
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
@@ -66,7 +65,6 @@ export default function Home({
       </Head>
       <main className="relative second-component">
         <Header />
-
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
             <h1 className="lg:text-5xl text-3xl pt-12 font-bold leading-12">
@@ -138,7 +136,9 @@ export async function getServerSideProps(context) {
     }
   );
 
-  await rediss.set(`totalPages`, response.headers["x-wp-total"], "EX", 600);
+  totalPages = response.headers["x-wp-total"];
+
+  await rediss.set(`totalPages`, totalPages, "EX", 600);
   await rediss.set(
     `blog-${context.query.slug}`,
     JSON.stringify(response.data),

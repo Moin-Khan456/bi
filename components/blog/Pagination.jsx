@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Pagination } from "antd";
 import { BsFillFastForwardFill } from "react-icons/bs";
 import { FaBackward } from "react-icons/fa";
 import { useRouter } from "next/router";
-import Loader from "../../components/common/loader";
+
 const App = ({ totalPages, itemsPerPage, setCurrentPage, currentPage }) => {
   const [load, setLoad] = useState(false);
   const router = useRouter();
@@ -47,7 +47,7 @@ const App = ({ totalPages, itemsPerPage, setCurrentPage, currentPage }) => {
         prevIcon={
           <FaBackward className="text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full" />
         }
-        onChange={handlePaginationChange} // Attach the event handler
+        onChange={handlePaginationChange}
       />
     </div>
   );

@@ -28,11 +28,7 @@ export default function Home({
         </title>
         <meta
           name="description"
-          content="Read the latest technology 
-          trends, news And updates and 
-          other topics about software And 
-          app development from Brain 
-          Inventory’s informative blogs!"
+          content="Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
         />
         <meta property="og:type" content="website" />
         <meta

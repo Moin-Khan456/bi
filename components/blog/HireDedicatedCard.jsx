@@ -64,7 +64,6 @@ const HireDedicatedCard = ({ setLocal }) => {
           Resources are thoroughly matched based on your particular skills and
           requirements.
         </h3>
-
         <h2 className="text-xl font-bold my-1">Contact Us!</h2>
         <Contact />
       </div>

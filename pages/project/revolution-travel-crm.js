@@ -20,9 +20,7 @@ const SectionFive = dynamic(() =>
 const SectionSix = dynamic(() =>
   import("../../components/project/projectRtc/sectionSix.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
-);
+
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
@@ -39,7 +37,6 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-
 const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm")
@@ -270,7 +267,6 @@ const Fatoura = () => {
           />
         </div>
       </div>
-
       <div className="max-w-full flex justify-center">
         <Image
           width={500}

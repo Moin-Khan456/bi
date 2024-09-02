@@ -21,7 +21,6 @@ const PopularBlogs = ({ data }) => {
                 blurDataURL="data:/image-loading.png"
                 placeholder="blur"
                 quality={50}
-                // loading="lazy"
                 priority="true"
                 fetchPriority="high"
                 width={300}

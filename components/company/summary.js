@@ -7,7 +7,7 @@ function summary() {
         <h1 className="2xl:text-4xl xl:text-4xl text-3xl Gilroy-Bold">
           Website and App Development Company Overview
         </h1>
-        <p className="2xl:text-6xl xl:text-5xl text-4xl stroke-text-3 Gilroy-Bold  pt-4 pb-8">
+        <p className="2xl:text-6xl xl:text-5xl text-4xl stroke-text-3 Gilroy-Bold pt-4 pb-8">
           thats who we are!
         </p>
         <p className="2xl:text-3xl xl:text-3xl text-2xl Gilroy-Bold leading-loose">

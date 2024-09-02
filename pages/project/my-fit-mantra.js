@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
@@ -14,12 +14,7 @@ const SectionThree = dynamic(() =>
 const SectionFour = dynamic(() =>
   import("../../components/project/projMFM/SectionFour.jsx")
 );
-const SectionFive = dynamic(() =>
-  import("../../components/project/sectionFive.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
-);
+
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -179,7 +174,6 @@ const Numetric = () => {
           content=" 
   https://braininventory.in/project/my-fit-mantra"
         />
-
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_MFM.jpg"
@@ -195,7 +189,6 @@ const Numetric = () => {
         <SectionOne section={NumetricSectionOne} />
         <h1 className="invisible">Fully Integrated Personal Trainer App</h1>
         <SectionTwo />
-
         <SectionThree
           text="Trainer's Perspective"
           image="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/Group+6447.png"
@@ -204,7 +197,6 @@ const Numetric = () => {
           text="Customer's Perspective"
           image="https://braininventory.s3.us-east-2.amazonaws.com/projects/MFM/mfm_collage.png"
         />
-
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
             <Image

@@ -20,7 +20,7 @@ const Blogs = ({ blogs }) => {
           {blogData?.map((post, index) => (
             <Link href={`/posts/${post.slug}/${post.id}`} key={index}>
               <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
-                <div className="relative ">
+                <div className="relative">
                   <div className="overlay">
                     <Image
                       src={post["_embedded"]["wp:featuredmedia"][0].source_url}

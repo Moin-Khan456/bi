@@ -145,14 +145,11 @@ const PopForm = ({ setLocal, country }) => {
   };
 
   const handleSubmit = (data) => {
-    // const router = useRouter();
-
     data = {
       ...data,
       country: country.city + " " + country.region + " " + country.country_name,
     };
 
-    // console.log("User:- ", data)
     fetch("/api/ppcmail", {
       method: "POST",
       body: JSON.stringify(data),
@@ -577,7 +574,12 @@ const Popup = ({ setPop, country }) => {
                 </div>
                 <div className="border-2 border-transparent px-4 text-xs">
                   <p className="font-bold">E-MAIL</p>
-                  <Link href={"mailto:askus@braininventory.com"}  className="font-normal">askus@braininventory.com</Link>
+                  <Link
+                    href={"mailto:askus@braininventory.com"}
+                    className="font-normal"
+                  >
+                    askus@braininventory.com
+                  </Link>
                 </div>
               </div>
             </div>
@@ -603,7 +605,12 @@ const Popup = ({ setPop, country }) => {
               </div>
               <div className="border-2 border-transparent px-4 text-xs">
                 <p className="font-bold">E-MAIL</p>
-                <Link href={"mailto:askus@braininventory.com"} className="font-normal">askus@braininventory.com</Link>
+                <Link
+                  href={"mailto:askus@braininventory.com"}
+                  className="font-normal"
+                >
+                  askus@braininventory.com
+                </Link>
               </div>
             </div>
           </div>

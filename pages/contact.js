@@ -10,7 +10,6 @@ const Contact1 = dynamic(() => import("../components/contacts/contact.js"));
 const ContactBanner = dynamic(() =>
   import("../components/contacts/contactBanner.js")
 );
-const Loader = dynamic(() => import("../components/common/loader.js"));
 
 function Contact() {
   useEffect(() => {
@@ -40,7 +39,6 @@ function Contact() {
         <title>
           Contact Brain Inventory to Kickstart Your Digital Journey Today
         </title>
-
         <meta
           name="description"
           content="Contact Brain Inventory for 
@@ -64,13 +62,11 @@ no obligation consulting for your website, software And App
 development projects.
 Contact us now."
         />
-
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_contact.jpg"
         />
         <meta property="og:url" content="https://braininventory.in/contact" />
-
         <link rel="canonical" href="https://braininventory.in/contact" />
 
         <script
@@ -111,7 +107,6 @@ Contact us now."
           }}
         />
       </Head>
-      {/*<Loader />*/}
       <div className="relative   ">
         <Header />
         <ContactBanner />

@@ -1,7 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import axios from "axios";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
 import LetsKick from "../components/common/LetsKick";
@@ -18,7 +16,6 @@ import Hire from "../components/common/Hire";
 import HireBanner from "../components/common/HireBanner";
 import Engaged from "../components/Hire/Engaged";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
-import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 
@@ -214,7 +211,6 @@ function HireAangularJsDeveloper() {
           subhead={chooseBiSubhead}
           alt="Remote Next.js Developers"
         />
-
         <Engaged />
         <HireSteps type="Next Js" />
         <Clients tech="Next Js" />
@@ -230,13 +226,3 @@ function HireAangularJsDeveloper() {
   );
 }
 export default HireAangularJsDeveloper;
-// export const getServerSideProps = async () => {
-//   const response = await axios.get(
-//     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=3"
-//   );
-//   return {
-//     props: {
-//       data: response.data,
-//     },
-//   };
-// };

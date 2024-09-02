@@ -17,8 +17,7 @@ export default function App({
           <section className="lg:h-[200px] px-8 lg:px-0 lg:w-[700px] absolute lg:top-[15%] lg:left-[50%] max-w-[600px] lg:-translate-x-[45%] lg:-translate-y-[50%]">
             <h1 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
               {titleArray.map((ele, index) => (
-                <span className="" key={index}>
-                  {console.log(ele.includes("Brain"))}
+                <span key={index}>
                   {ele.includes("Brain") ? (
                     <span className="text-[#7600EB]">{ele}</span>
                   ) : ele.includes("Salesforce Development") ? (

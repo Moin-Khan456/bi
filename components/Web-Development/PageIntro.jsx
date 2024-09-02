@@ -1,7 +1,6 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import Image from "next/image";
-import { BiCheckCircle } from "react-icons/bi";
+
 export default function HireBanner({
   heading,
   subtitle,
@@ -57,61 +56,45 @@ export default function HireBanner({
           </a>
         </section>
         <section>
-          {
-            appDev ? (
-              <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
-                <section className="started-subcription">
-                  <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                  <h2 className="Gilroy-Bold text-5xl">
-                    2 Business <span className="text-lg">Days</span>
-                  </h2>
-                </section>
-                <section className="p-8 bg-line">
-                  <ul className="list-subcription">
-                    {mobCard &&
-                      mobCard.map((ele, index) => (
-                        <li key={index} className="flex">
-                          {/* <BiCheckCircle className="text-2xl mb-2" /> */}
-                          {ele}
-                        </li>
-                      ))}
-                  </ul>
-                </section>
+          {appDev ? (
+            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+              <section className="started-subcription">
+                <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                <h2 className="Gilroy-Bold text-5xl">
+                  2 Business <span className="text-lg">Days</span>
+                </h2>
               </section>
-            ) : (
-              <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
-                <section className="started-subcription">
-                  <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                  <h2 className="Gilroy-Bold text-5xl">
-                    2 Business <span className="text-lg">Days</span>
-                  </h2>
-                </section>
-                <section className="p-8 bg-line">
-                  <ul className="list-subcription">
-                    {card &&
-                      card.map((ele, index) => (
-                        <li key={index} className="flex">
-                          {/* <BiCheckCircle className="text-2xl mb-2" /> */}
-                          {ele}
-                        </li>
-                      ))}
-                  </ul>
-                </section>
+              <section className="p-8 bg-line">
+                <ul className="list-subcription">
+                  {mobCard &&
+                    mobCard.map((ele, index) => (
+                      <li key={index} className="flex">
+                        {ele}
+                      </li>
+                    ))}
+                </ul>
               </section>
-            )
-            //   ) : (
-            //     <aside className="lg:mb-0 mb-6 bg-none max-w-full">
-            //       <Image
-            //         preload="metadata"
-            //         src={image}
-            //         className="w-full rounded-2xl"
-            //         width={700}
-            //         height={700}
-            //         alt={heading}
-            //       />
-            //     </aside>
-            //   )}
-          }
+            </section>
+          ) : (
+            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+              <section className="started-subcription">
+                <p className="Gilroy-Bold text-lg">Get Started Within</p>
+                <h2 className="Gilroy-Bold text-5xl">
+                  2 Business <span className="text-lg">Days</span>
+                </h2>
+              </section>
+              <section className="p-8 bg-line">
+                <ul className="list-subcription">
+                  {card &&
+                    card.map((ele, index) => (
+                      <li key={index} className="flex">
+                        {ele}
+                      </li>
+                    ))}
+                </ul>
+              </section>
+            </section>
+          )}
         </section>
       </section>
     </main>

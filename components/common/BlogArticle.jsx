@@ -15,14 +15,14 @@ export default function BlogArticle() {
   }, []);
   return (
     <main className="px-6 2xl:p-10 lg:p-8 2xl:space-y-8 space-y-6 w-full blogArticles">
-      <section className="container ">
-        <section className="">
+      <section className="container">
+        <section>
           <section>
             <section className="flex justify-between flex-col lg:flex-row">
               <h1 className="Gilroy-Bold text-4xl leading-[3rem] lg:w-2/5 my-4">
                 The ultimate blogs & articles
               </h1>
-              <section className="">
+              <section>
                 <button
                   type="button"
                   role="presentation"
@@ -30,12 +30,16 @@ export default function BlogArticle() {
                 >
                   <IoMdArrowBack />
                 </button>
-                <button role="presentation" type="button" className="border-2 border-white p-4 m-2 rounded-full">
+                <button
+                  role="presentation"
+                  type="button"
+                  className="border-2 border-white p-4 m-2 rounded-full"
+                >
                   <IoMdArrowForward />
                 </button>
               </section>
             </section>
-            <section className="flex flex-col lg:flex-row justify-center items-center ">
+            <section className="flex flex-col lg:flex-row justify-center items-center">
               {store?.map((ele, index) => (
                 <Link
                   href={
@@ -55,7 +59,7 @@ export default function BlogArticle() {
                       src={ele._embedded["wp:featuredmedia"][0].source_url}
                       alt={ele.title.rendered + " | Brain Inventory"}
                     />
-                    <section className="absolute inset-0 flex items-start justify-between flex-col p-4 "></section>
+                    <section className="absolute inset-0 flex items-start justify-between flex-col p-4" />
                   </section>
                 </Link>
               ))}

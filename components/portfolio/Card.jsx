@@ -1,7 +1,6 @@
 import React from "react";
 
 const Card = (props) => {
-  console.log("src:- ", props.image);
   return (
     <a href={props.link}>
       <div

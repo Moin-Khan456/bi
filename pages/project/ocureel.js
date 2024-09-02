@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
@@ -14,9 +14,7 @@ const SectionThree = dynamic(() =>
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
-);
+
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -43,13 +41,6 @@ const Slogan = dynamic(() =>
 const Footer = dynamic(() => import("../../components/common/Footer"));
 
 const Virifi = () => {
-  const VirifiSectionOne = {
-    brief:
-      "Certifies and verifies your files with protected confidentiality, E2E encryption,and helps you digitize your business with the next generation of verification.",
-    logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group+6385.png",
-    alt: "Virifi",
-  };
-
   const tech = [
     {
       image:
@@ -156,8 +147,8 @@ const Virifi = () => {
           <h1 className="invisible">Ocureel</h1>
         </div>
       </div>
-      <div className="">
-        <div className=" bg-white relative z-10 lg:-top-52 lg:pt-48">
+      <div>
+        <div className="bg-white relative z-10 lg:-top-52 lg:pt-48">
           <div className="container">
             <div className="flex container m-auto text-center justify-center text-black text-4xl lg:text-6xl py-4 lg:pt-32">
               <span className="font-bold">About</span>&nbsp; Ocureel
@@ -188,11 +179,8 @@ const Virifi = () => {
             </div>
           </div>
         </div>
-
         <SectionTwo />
-
         <SectionThree />
-
         <div className="container">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
@@ -202,7 +190,6 @@ const Virifi = () => {
             height={500}
           />
         </div>
-
         <ChallengeSection
           challenge="One significant challenge involved creating a schema that could effectively link multiple elements with each other. This required careful consideration of the relationships between different data components within the system to ensure efficient data management and retrieval. Implementing a secure and seamless payment process was another technical hurdle. The team needed to develop a solution that would allow trainers to accept payments directly into their wallets through the platform."
           solution="In order to address the aforementioned challenges, several technical solutions were implemented during the development of the project. Extensive discussions were held between the business owner, product analyst team and developers to identify the specific use cases. These discussions facilitated the thoughtful design of the schema, ensuring that every element of the project catered to the intended audience. MongoDB was chosen as the database solution due to its flexibility and built-in tools, which simplified the storage of dynamic data. For direct payment options, Stripe was selected as the payment aggregator. To provide users with the ability to connect their Stripe accounts, the Stripe Connect strategy was implemented. By utilizing the user's Stripe account, the platform was able to generate products on demand and securely process payments."

@@ -55,7 +55,6 @@ function Contact(props) {
             <p className="text-xl text-white Gilroy-light pb-4 lg:pb-0">
               Connect with our experts.
             </p>
-
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -154,7 +153,7 @@ function Contact(props) {
               className="Gilroy-Bold text-lg pb-1"
             >
               Email: sufiyan@braininventory.com
-            </Link>{" "}
+            </Link>
             <br />
             <Link href="tel:+918109561401" className="Gilroy-Bold text-lg">
               Phone: +91-810-956-1401
@@ -166,12 +165,10 @@ function Contact(props) {
           <h2 className="Gilroy-Bold text-5xl">
             want to be a part of our team?
           </h2>
-
           <p className="pt-4 pb-4 text-xl">
             If you have got powerful skills, we will pay your bills. Contact our
             HR at:
           </p>
-
           <div className="md:flex block">
             <a
               className="btn-career"

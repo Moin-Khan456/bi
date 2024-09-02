@@ -35,9 +35,6 @@ const Header = () => {
       }
     };
   }, []);
-  useEffect(() => {
-    console.log(load);
-  }, [load]);
 
   return (
     <>
@@ -79,7 +76,6 @@ const Header = () => {
               )}
             </span>
           </Link>
-
           {navOpen ? (
             <div className="dropdown lg:block  dropdown-hover">
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
@@ -201,7 +197,6 @@ const Header = () => {
                   Portfolio
                 </h3>
               </Link>
-
               <Link href="/career">
                 <h3 className="stroke-text text-3xl Gilroy-Bold text-left cursor-pointer lg:py-6">
                   Career
@@ -244,11 +239,7 @@ const Header = () => {
   );
 };
 
-const CompanyChildren = ({ setLoad }) => {
-  const [page, setPage] = useState(
-    typeof window !== "undefined" &&
-      window.location.href.split("/")[3] === "blog"
-  );
+const CompanyChildren = () => {
   return (
     <div className="col-span-4 lg:grid grid-cols-1">
       <div className="space-y-4">

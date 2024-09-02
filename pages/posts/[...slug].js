@@ -5,7 +5,6 @@ import Footer from "../../components/common/Footer";
 import KeepInTouch from "../../components/common/keepInTouch";
 import LocateUs from "../../components/common/locateUs";
 import Header from "../../components/header/Header";
-import Loader from "../../components/common/loader";
 import { getDate } from "../../utils/utils";
 import data from "./blog_dataset.json";
 import { useEffect } from "react";
@@ -34,7 +33,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
 
   return (
     <>
-      {/*<Loader />*/}
       <div className="relative bg-white ">
         <Head>
           <title>{title}</title>
@@ -55,9 +53,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
         </Head>
         <Header></Header>
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-          {/* <div className="h-8 w-8 rounded-md bg-slate-100 shadow-sm flex items-center justify-center absolute top-6 right-[17%] cursor-pointer">
-            <IoMdMoon className="text-base" />
-          </div> */}
           <div className="container pt-12 padding-left-all-section-1 text-slate-950">
             <div className="grid grid-cols-3 gap-4 post-container">
               <div className="col-span-2 slug-img-container mt-8">
@@ -87,20 +82,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
                   dangerouslySetInnerHTML={{ __html: post.content.rendered }}
                 ></div>
               </div>
-              {/* <div className="fixed z-50 bottom-2 right-1 justify-end w-fit">
-                {localForm ? (
-                  <HireDedicatedCard setLocal={setLocal} />
-                ) : (
-                  <div
-                    className="text-white bg-gradient-to-r from-[#000076] to-[#7600EB] p-4 rounded-full max-w-fit text-2xl m-2 ml-2 lg:m-8"
-                    onClick={() => {
-                      setLocal(true);
-                    }}
-                  >
-                    <FiMail />
-                  </div>
-                )}
-              </div> */}
             </div>
           </div>
         </div>

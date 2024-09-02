@@ -10,18 +10,15 @@ function contactBanner() {
             <h1 className="2xl:text-5xl xl:text-5xl mt-20 text-4xl stroke-text-3 Gilroy-Bold">
               Contact Us for Website and App Development | Staff Augmentation
             </h1>
-
             <div className="text-heading-1 Gilroy-Bold">
               lets do some great <br /> things together!
             </div>
-
             <div className="flex flex-col">
               <div className="Gilroy-Light text-xl text-gray-50">
                 While we are good at sign language, there are various other
                 simpler ways to connect with us. Talk to us in person.
               </div>
             </div>
-
             <div className="md:flex block">
               <a href="tel:+91-810-956-1401">
                 <HomeButton>
@@ -34,11 +31,11 @@ function contactBanner() {
             </div>
           </div>
         </div>
-        <div className="hero-bg-2 w-1/2 h-full lg:block hidden"></div>
+        <div className="hero-bg-2 w-1/2 h-full lg:block hidden" />
         <span
           id="circle"
           className="border absolute p-8 rounded-full border-blue -left-24 pointer-events-none"
-        ></span>
+        />
       </div>
     </div>
   );

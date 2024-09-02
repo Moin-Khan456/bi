@@ -6,10 +6,9 @@ const Index = ({ text, image }) => {
   return (
     <div>
       <PrajectBranding text={text} />
-      <div  className="container">
+      <div className="container">
         <div className="relative flex flex-col items-center py-8">
-          <Image  
-         
+          <Image
             src={image}
             alt="Custom Software Development Company | Application Development Company"
             width={1500}

@@ -11,7 +11,6 @@ export async function getPosts() {
     const postsRes = await axios.get(BASE_URL);
     const postsRes2 = await axios.get(BASE_URL2);
     restore = [...postsRes.data, ...postsRes2.data];
-    console.log(restore);
   }
   return restore;
 }

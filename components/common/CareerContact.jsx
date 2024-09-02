@@ -1,12 +1,9 @@
 import Image from "next/image";
 import HomeButton from "../buttons/HomeButton";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { useRouter } from "next/router";
 
 export default function KeepInTouch() {
-  const router = useRouter();
-
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
@@ -17,23 +14,24 @@ export default function KeepInTouch() {
     feedback: Yup.string().required("Feedback is required"),
   });
   const sumbitContact = (data) => {
-    console.log(data);
     fetch("/api/contact", {
       method: "POST",
-      body: {data: JSON.stringify(data), subject: "Thank You For Applying At Brain Inventory"},
-    }).then(()=>{
+      body: {
+        data: JSON.stringify(data),
+        subject: "Thank You For Applying At Brain Inventory",
+      },
+    }).then(() => {
       window.location.href = "/thank-you";
-    })
+    });
   };
-// subj: 'Thank You For Applying At Brain Inventory'
+
   return (
     <div id="talk" className="container px-4 lg:px-16 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">
         <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
           <div className="flex flex-col space-y-6">
             <div className="relative h-[100px] w-full lg:w-1/2">
-              <Image  
-         
+              <Image
                 src={
                   "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
                 }

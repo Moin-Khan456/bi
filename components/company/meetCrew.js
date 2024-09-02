@@ -153,13 +153,11 @@ function meetCrew() {
           <div className="flex self-center pr-6 pl-8">
             <div className="my-12 lg:my-0">
               <h2 className="text-black Gilroy-Bold text-5xl">meet the crew</h2>
-
               <p className="Gilroy-light text-black text-lg mt-6 mb-4">
                 Meet our exceptional team of technology advisors, growth
                 facilitators and subject matter experts with proven Industry
                 experiences.
               </p>
-
               <HomeButton>
                 <span className="text-sm text-black">See All Members</span>
               </HomeButton>

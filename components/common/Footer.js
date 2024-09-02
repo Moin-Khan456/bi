@@ -509,7 +509,6 @@ export default function Footer({ fromBlog }) {
               ))}
             </ul>
             <div className="text-xs lg:text-lg w-full Gilroy-Bold my-6 md:my-0">
-              {" "}
               © 2022 Brain Inventory - All rights reserved.
             </div>
           </div>

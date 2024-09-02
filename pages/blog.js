@@ -118,7 +118,7 @@ export async function getServerSideProps(context) {
     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=100"
   );
   const totalPages = postsRes.headers.get("X-WP-Total");
-  console.log(response.data[0]);
+
   return {
     props: {
       data: posts.data.slice(0, 3),

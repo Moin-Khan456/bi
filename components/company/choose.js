@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function choose(props) {
+function choose() {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-6 space-y-8 pt-24 pb-24 container">
       <div className="container padding-left-all-section">

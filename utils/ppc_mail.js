@@ -21,15 +21,13 @@ export function ppcMail(mailData) {
 
     transporter
       .sendMail(config)
-      .then((resp) => {
-        console.log(resp);
+      .then(() => {
         resolve({
           success: true,
           message: "Email sent",
         });
       })
       .catch((error) => {
-        console.log(error);
         reject({
           success: false,
           message: error.message,
@@ -55,15 +53,13 @@ export function ppcMailThank(mailData) {
 
     transporter
       .sendMail(config)
-      .then((resp) => {
-        console.log(resp);
+      .then(() => {
         resolve({
           success: true,
           message: "Email sent",
         });
       })
       .catch((error) => {
-        console.log(error);
         reject({
           success: false,
           message: error.message,

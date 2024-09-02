@@ -22,15 +22,13 @@ export function sendMail(mailData) {
 
     transporter
       .sendMail(config)
-      .then((resp) => {
-        console.log("resp:- ", resp);
+      .then(() => {
         resolve({
           success: true,
           message: "Email sent",
         });
       })
       .catch((error) => {
-        console.log(error);
         reject({
           success: false,
           message: error.message,

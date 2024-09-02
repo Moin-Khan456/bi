@@ -229,9 +229,8 @@ const OpeningJob = [
 ];
 function Opening() {
   const { register, handleSubmit, reset } = useForm();
-  // const [role, setrole] = useState(null);
+
   const sumbitContact = (data) => {
-    console.log(data);
     const formData = new FormData();
     formData.append("firstName", data.firstName);
     formData.append("lastName", data.lastName);

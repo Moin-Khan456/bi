@@ -7,7 +7,6 @@ function Staform(props) {
   const router = useRouter();
   const { register, handleSubmit, reset } = useForm();
   const sumbitContact = (data) => {
-    console.log(data);
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(data),

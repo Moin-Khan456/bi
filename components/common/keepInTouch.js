@@ -48,7 +48,6 @@ export default function KeepInTouch({ fromBlog }) {
                 alt="Keep In Touch With Brain Inventory Sales Executive"
               />
             </div>
-
             <h2 className="text-heading-1 Gilroy-Bold leading-normal w-[90%]">
               Have an idea? <br /> Get in touch, we’d be <br /> happy to hear
               from you

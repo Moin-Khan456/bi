@@ -27,7 +27,7 @@ const ethosValue = [
   },
 ];
 
-function ethos(props) {
+function ethos() {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24">
       <div className="container padding-left-all-section">

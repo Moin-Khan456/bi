@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { useState } from "react";
-import { useEffect } from "react";
 const Header = dynamic(() => import("../components/header/Header"));
 const BigHeadingScroll = dynamic(() =>
   import("../components/common/BigHeadingScroll")
@@ -18,7 +16,6 @@ const Ethos = dynamic(() => import("../components/company/ethos.js"));
 const Experience = dynamic(() => import("../components/company/experience.js"));
 const Choose = dynamic(() => import("../components/company/choose.js"));
 const MeetCrew = dynamic(() => import("../components/company/meetCrew"));
-const Loader = dynamic(() => import("../components/common/loader"));
 
 function Company() {
   return (
@@ -41,26 +38,23 @@ function Company() {
           property="og:description"
           content="Brain Inventory is a top-notch  IT Software and Staff  Augmentation company that started with a clear vision to build amazing products for clients worldwide."
         />
-
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_company.jpg"
         />
-
         <link rel="canonical" href="https://braininventory.in/company" />
       </Head>
-      {/*<Loader />*/}
-      <div className="relative ">
+      <div className="relative">
         <Header />
-        <Video></Video>
-        <Summary></Summary>
+        <Video />
+        <Summary />
         <div>
-          <Mission></Mission>
-          <Ethos></Ethos>
-          <Experience></Experience>
-          <MeetCrew></MeetCrew>
+          <Mission />
+          <Ethos />
+          <Experience />
+          <MeetCrew />
         </div>
-        <Choose></Choose>
+        <Choose />
         <BigHeadingScroll
           text={"Perfectly balanced as all things should be."}
         />

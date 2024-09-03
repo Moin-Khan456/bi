@@ -1,11 +1,11 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
+
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")
 );
@@ -25,12 +25,12 @@ import SectionOne from "../../components/Mobile-Development/SectionOne";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
-const FindUs = dynamic(() => import("../../components/common/FindUs.jsx"));
+
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper(props) {
+function HireAangularJsDeveloper() {
   const content =
     "We are a professional hybrid app development company that provides cost-effective solutions to businesses. We have a team of expert developers who combine elegant design with powerful functionality to develop apps that boost your ROI.";
   const subhead1 =
@@ -204,7 +204,6 @@ function HireAangularJsDeveloper(props) {
             card={hireCards}
             subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
           />
-
           <ChooseBraininventory
             reasons={chooseBI}
             alt="hybrid development company"

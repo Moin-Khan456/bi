@@ -1,11 +1,11 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import SectionOne from "../../components/industry/Sports-App-Development/sectionOne.jsx";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
-const Loader = dynamic(() => import("../../components/common/loader.js"));
+
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -19,9 +18,6 @@ const WhyMean = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
@@ -31,7 +27,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function SwiftDevelopment(props) {
+function SwiftDevelopment() {
   const content =
     "Swift is a modern programming language for Apple devices. You can use the language to create native apps for various platforms. Our swift development services prioritize functionality, speed, and security above everything else.";
 
@@ -92,8 +88,6 @@ function SwiftDevelopment(props) {
     },
   ];
 
-  const chooseBiSubhead =
-    "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
     "Brain Inventory prioritizes transparency in their software development approach.",
     "The focus is on creating user-friendly, feature-rich, and adaptable software.",
@@ -151,8 +145,8 @@ function SwiftDevelopment(props) {
           href="https://braininventory.in/mobile-development/swift-development-company"
         />
       </Head>
-      {/*<Loader />*/}
-      <div className="">
+
+      <div>
         <Header />
         <div className="pt-32">
           <SectionOne

@@ -1,10 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -19,9 +18,7 @@ const WhyMean = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
@@ -31,7 +28,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function ReactNativeDeveloper(props) {
+function ReactNativeDeveloper() {
   const content =
     "Native app development is one of the most profitable fields in the world. And if you need cross-platform compatibility for your app, you should consider our Brain Inventory effective team.";
 
@@ -97,8 +94,6 @@ function ReactNativeDeveloper(props) {
     },
   ];
 
-  const chooseBiSubhead =
-    "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
     "The React Native developers at Brain Inventory help you quickly and efficiently build high-quality native apps for multiple platforms.",
     "Our developers will develop your app with the latest developments across all major platforms, ensuring that it can scale across multiple devices connected to a single network.",
@@ -161,7 +156,7 @@ function ReactNativeDeveloper(props) {
           }
         }
       >
-        <main className="">
+        <main>
           <Header />
           <section className="pt-32">
             <SectionOne

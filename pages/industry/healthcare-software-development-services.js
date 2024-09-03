@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +37,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -265,7 +262,7 @@ function Healthcare(props) {
     <>
       <Head>
         <title>
-        Top Rated Healthcare Software Development Services | Brain Inventory
+          Top Rated Healthcare Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
@@ -292,10 +289,10 @@ function Healthcare(props) {
           href="https://braininventory.in/industry/healthcare-software-development-services"
         />
       </Head>
-      {/*<Loader />*/}
-      <main className="">
+
+      <main>
         <Header />
-        <section className="">
+        <section>
           <SectionOne />
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
@@ -332,7 +329,6 @@ function Healthcare(props) {
             classText="lg:text-3xl"
             title="Ready to start your journey with your custom healthcare app development? Just click the button below."
           />
-
           <PlatformDevelopment
             data={platformDevelopment}
             subhead="WHY CHOOSE BRAIN INVENTORY FOR"

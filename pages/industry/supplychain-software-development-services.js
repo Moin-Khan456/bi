@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
+
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +38,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -49,7 +47,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function SupplyChain(props) {
+function SupplyChain() {
   const faqdetails = [
     {
       id: "1",
@@ -358,7 +356,7 @@ function SupplyChain(props) {
         sectionDesc="As we navigate the dynamic world of supply chain management, let's delve into some key points underpinning this industry. From innovative supply chain software to the emergence of cutting-edge supply chain logistics management systems, these points will provide a clear depiction of the industry's landscape in 2023."
         setionThreeCards={setionThreeCards}
         pointers={true}
-      />{" "}
+      />
       <TiltMarquee title="Supply Chain Software Development" />
       <SectionFour
         title="Services for Supply Chain Software Development"

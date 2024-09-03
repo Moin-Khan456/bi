@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -41,12 +40,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
-const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionFitness/PlatformDevelopment.jsx")
-);
+
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -305,7 +299,9 @@ function Accounting(props) {
   return (
     <>
       <Head>
-        <title>Specialized Accounting Software Development Services | Brain Inventory</title>
+        <title>
+          Specialized Accounting Software Development Services | Brain Inventory
+        </title>
         <meta
           property="description"
           content="At Brain Inventory, we offer custom accounting software development services that align with your business requirements, user expectations, and project timelines."
@@ -331,10 +327,10 @@ function Accounting(props) {
           href="https://braininventory.in/industry/accounting-software-development-services"
         />
       </Head>
-      {/*<Loader />*/}
-      <main className="">
+
+      <main>
         <Header />
-        <section className="">
+        <section>
           <SectionOne />
           <SectionTwo
             className="container pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"

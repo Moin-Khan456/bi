@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projFatoura/SectionOne.jsx";
-
 const Header = dynamic(() => import("../../components/header/Header"));
 const SectionTwo = dynamic(() =>
   import("../../components/project/projFatoura/sectionTwo.jsx")
@@ -19,9 +18,6 @@ const SectionFive = dynamic(() =>
 );
 const SectionSix = dynamic(() =>
   import("../../components/project/projFatoura/sectionSix.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
 );
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
@@ -39,7 +35,6 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-
 const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm")
@@ -148,7 +143,8 @@ const Fatoura = () => {
     <>
       <Head>
         <title>
-        Brain Inventory Develop Invoicing And Payment Tool to Enhance Business Operations
+          Brain Inventory Develop Invoicing And Payment Tool to Enhance Business
+          Operations
         </title>
         <meta
           name="description"
@@ -167,18 +163,18 @@ const Fatoura = () => {
           property="og:url"
           content="https://braininventory.in/project/fatoura"
         />
-        
+
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_fatoura.jpg"
         />
-      <link
+        <link
           rel="canonical"
           href="https://braininventory.in/project/fatoura"
         />
       </Head>
       <Header />
-      <div className="container  pt-12">
+      <div className="container pt-12">
         <SectionOne section={FatouraSectionOne} />
       </div>
       <>
@@ -191,7 +187,6 @@ const Fatoura = () => {
       <SectionFour />
       <SectionFive />
       <SectionSix />
-
       <>
         <div className="py-8 mb-8 relative flex flex-col justify-center bg-[#F39573]">
           <div className="container">
@@ -199,8 +194,9 @@ const Fatoura = () => {
               L A N D I N G P A G E
             </h1>
             <div className="px-4 lg:px-48 lg:py-12">
-              <Image  
-          width={900} height={900}
+              <Image
+                width={900}
+                height={900}
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/fatoura/Group 6461.png"
                 alt="Custom Software Development Company | Application Development Company"
               />
@@ -208,10 +204,10 @@ const Fatoura = () => {
           </div>
         </div>
       </>
-      
       <div className="max-w-full flex justify-center">
-        <Image  
-          width={900} height={900}
+        <Image
+          width={900}
+          height={900}
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt="Custom Software Development Company | Application Development Company"
           className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%] container"
@@ -245,7 +241,6 @@ const Fatoura = () => {
       <ContactForm />
       <LocateUs />
       <Slogan />
-
       <Footer />
     </>
   );

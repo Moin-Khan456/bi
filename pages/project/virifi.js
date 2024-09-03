@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
@@ -23,9 +23,7 @@ const SectionSix = dynamic(() =>
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
-);
+
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -190,15 +188,12 @@ const Virifi = () => {
           />
         </div>
         <SectionTwo />
-
         <div>
           <SectionThree />
         </div>
-
         <div>
           <SectionFour />
         </div>
-
         <div className="flex w-full">
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
@@ -208,15 +203,12 @@ const Virifi = () => {
             className="w-full"
           />
         </div>
-
         <div>
           <SectionFive />
         </div>
-
         <div>
           <SectionSix />
         </div>
-
         <div>
           <>
             <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8-Gradient.png')]">
@@ -235,7 +227,6 @@ const Virifi = () => {
             </div>
           </>
         </div>
-
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
             <Image

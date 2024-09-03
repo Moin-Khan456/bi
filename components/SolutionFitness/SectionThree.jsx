@@ -29,7 +29,6 @@ const SectionThree = ({
           ))}
         </ul>
       </div>
-
       <div className="container bg-[#121212] py-8 px-2 lg:px-[3rem] mt-4 ">
         <h2 className="text-3xl font-Satoshi py-2">
           {setionThreeCards[1].head}
@@ -38,7 +37,6 @@ const SectionThree = ({
           {setionThreeCards[1].content}
         </p>
       </div>
-
       <leble
         className={`container block mx-auto bg-[#121212] ${
           pointers ? "lg:px-12 pt-4 pb-4" : "p-4 lg:p-12"

@@ -4,7 +4,6 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projocureel/SectionOne.jsx";
-
 const SectionTwo = dynamic(() =>
   import("../../components/project/projocureel/Sectiontwo.jsx")
 );
@@ -14,7 +13,6 @@ const SectionThree = dynamic(() =>
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -169,7 +167,6 @@ const Virifi = () => {
             </div>
           </div>
         </div>
-
         <div className="bg-[#FDDEFE] relative lg:-top-52 lg:-mb-64">
           <div className="container">
             <div className="lg:h-[80vh] bg-no-repeat bg-contain bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Mobile+Version.webp')] relative lg:-top-28">

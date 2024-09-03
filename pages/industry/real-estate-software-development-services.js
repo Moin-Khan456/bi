@@ -37,9 +37,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );

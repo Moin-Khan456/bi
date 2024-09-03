@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")
 );
@@ -25,7 +24,6 @@ import SectionOne from "../../components/Mobile-Development/SectionOne";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
-const FindUs = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -210,7 +208,6 @@ function HireAangularJsDeveloper(props) {
             title="Why Mobile Application Integration from %Brain Inventory"
             card={hireCards}
           />
-
           <ChooseBraininventory
             reasons={chooseBI}
             alt="Mobile Application Integration Services"

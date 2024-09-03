@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +37,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -275,7 +272,9 @@ function CrmDevelopment(props) {
   return (
     <>
       <Head>
-        <title>Custom CRM Software Development Services | CRM Development</title>
+        <title>
+          Custom CRM Software Development Services | CRM Development
+        </title>
         <meta
           property="description"
           content="Brain Inventory offers custom CRM software development services to analyze your business needs and implement a tailored CRM solution for your goals. Contact us today!"
@@ -301,8 +300,7 @@ function CrmDevelopment(props) {
           href="https://braininventory.in/industry/crm-software-development-services"
         />
       </Head>
-      {/*<Loader />*/}
-      <main className="">
+      <main>
         <Header />
         <SectionOne />
         <section>

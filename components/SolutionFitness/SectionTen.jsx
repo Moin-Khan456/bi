@@ -29,7 +29,10 @@ const Index = ({
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 absolute lg:top-80 top-32">
           {!oneLink ? (
-            <div className="m-6 lg:m-0 cursor-pointer" onClick={()=> setOne(true)}>
+            <div
+              className="m-6 lg:m-0 cursor-pointer"
+              onClick={() => setOne(true)}
+            >
               <video
                 className="rounded-3xl"
                 muted
@@ -41,11 +44,6 @@ const Index = ({
                 <source src={oneVideo} type="video/mp4" />
               </video>
               <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
-              {/* <p className="">
-              When examining solutions for the social industry, it&apos;s
-              essential to first conduct a thorough scope analysis. Here&apos;s
-              a brief rundown of the process:
-            </p> */}
             </div>
           ) : (
             <Link href={oneLink}>
@@ -61,16 +59,14 @@ const Index = ({
                   <source src={oneVideo} type="video/mp4" />
                 </video>
                 <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
-                {/* <p className="">
-              When examining solutions for the social industry, it&apos;s
-              essential to first conduct a thorough scope analysis. Here&apos;s
-              a brief rundown of the process:
-            </p> */}
               </div>
             </Link>
           )}
           {!twoLink ? (
-            <div className="lg:mt-24 m-6 lg:m-0 cursor-pointer" onClick={() => setTwo(!two)}>
+            <div
+              className="lg:mt-24 m-6 lg:m-0 cursor-pointer"
+              onClick={() => setTwo(!two)}
+            >
               <video
                 className="rounded-3xl"
                 muted
@@ -82,11 +78,6 @@ const Index = ({
                 <source src={twoVideo} type="video/mp4" />
               </video>
               <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
-              {/* <p className="">
-              When examining solutions for the social industry, it&apos;s
-              essential to first conduct a thorough scope analysis. Here&apos;s
-              a brief rundown of the process:
-            </p> */}
             </div>
           ) : (
             <Link href={twoLink}>
@@ -102,11 +93,6 @@ const Index = ({
                   <source src={twoVideo} type="video/mp4" />
                 </video>
                 <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
-                {/* <p className="">
-              When examining solutions for the social industry, it&apos;s
-              essential to first conduct a thorough scope analysis. Here&apos;s
-              a brief rundown of the process:
-            </p> */}
               </div>
             </Link>
           )}
@@ -123,7 +109,8 @@ const DialogBox = ({ setClose, image }) => {
   return (
     <div
       className=" bg-[#000000d2] flex justify-center items-center h-screen w-screen fixed top-0 left-0 z-[999999]"
-     cursor-pointer  onClick={() => setClose(false)}
+      cursor-pointer
+      onClick={() => setClose(false)}
     >
       <Image
         src={image}

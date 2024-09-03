@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -291,10 +290,9 @@ function Blockchain(props) {
           href="https://braininventory.in/industry/blockchain-development-services"
         />
       </Head>
-      {/*<Loader />*/}
-      <main className="">
+      <main>
         <Header />
-        <section className="">
+        <section>
           <div className="bg-no-repeat bg-left brightness-[1.35] bg-[url('/background-image2.png')]">
             <SectionOne />
             <SectionTwo
@@ -326,7 +324,6 @@ function Blockchain(props) {
             classText="lg:text-3xl"
             title="Ready to embark on this exciting journey? Click the button below to get started with blockchain app development."
           />
-
           <PlatformDevelopment
             data={platformDevelopment}
             subhead="WHY CHOOSE BRAIN INVENTORY FOR"

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +37,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -296,7 +293,9 @@ function Meeting(props) {
   return (
     <>
       <Head>
-        <title>Leading Meeting and Event Planning Software Development Company</title>
+        <title>
+          Leading Meeting and Event Planning Software Development Company
+        </title>
         <meta
           property="description"
           content="Brain Inventory leading meeting and event planning software development company, creates on-demand software tailored for seamless event handling and meeting management."

@@ -4,7 +4,6 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projectDetailOne.jsx";
-
 const SectionTwo = dynamic(() =>
   import("../../components/project/projMFM/sectionTwo.jsx")
 );
@@ -14,7 +13,6 @@ const SectionThree = dynamic(() =>
 const SectionFour = dynamic(() =>
   import("../../components/project/projMFM/SectionFour.jsx")
 );
-
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );

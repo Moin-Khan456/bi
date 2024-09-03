@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projectDetailOne.jsx";
-
 const Header = dynamic(() => import("../../components/header/Header"));
 const SectionTwo = dynamic(() =>
   import("../../components/project/projectDetailTwo.jsx")
@@ -13,9 +12,6 @@ const SectionThree = dynamic(() =>
 );
 const PojectCarousel = dynamic(() =>
   import("../../components/project/projectDetailCarousel.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
 );
 const ProjectDetailCard = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
@@ -50,7 +46,8 @@ const Numetric = () => {
     brief:
       "Create professional invoices and manage expenses. All you need for your growing business.",
     logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Logo.png",
-    image: "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Header.png",
+    image:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/project/Header.png",
     alt: "Numetric",
   };
   const carouselImages = [
@@ -95,31 +92,38 @@ const Numetric = () => {
       name: "ExpressJs",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/ererf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/ererf.png",
       name: "Redis",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdgf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdgf.png",
       name: "Nginx",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/dfdf.png",
       name: "AWS EC2",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/fddf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/fddf.png",
       name: "AWS S3",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/fdsf.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/fdsf.png",
       name: "AWS Lambda",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/nbhn.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/nbhn.png",
       name: "AWS API Gateway",
     },
     {
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/hgh.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/hgh.png",
       name: "AWS SES",
     },
   ];
@@ -128,49 +132,57 @@ const Numetric = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6420.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 2,
       name: "Gunjan Jain",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6423.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6423.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6429.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6429.png",
       role: "Software Architecture",
     },
     {
       id: 4,
       name: "Puneet Rajwani",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6432.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6432.png",
       role: "Software Architecture",
     },
     {
       id: 5,
       name: "Gautam Patil",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6426.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6426.png",
       role: "Software Engineer",
     },
     {
       id: 6,
       name: "Hussain Ali",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6435.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6435.png",
       role: "Software Engineer",
     },
     {
       id: 7,
       name: "Subhash Ajmera",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6438.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6438.png",
       role: "Software Engineer",
     },
     {
       id: 8,
       name: "Rahul Badwaya",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6441.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group+6441.png",
       role: "Software Engineer",
     },
   ];
@@ -218,11 +230,9 @@ const Numetric = () => {
         <SectionTwo />
         <SectionThree />
         <PojectCarousel images={carouselImages} />
-        
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
-            <Image  
-         
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
               alt="Custom Software Development Company | Application Development Company"
               className="rounded-3xl w-[100%]"

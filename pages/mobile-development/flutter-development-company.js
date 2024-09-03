@@ -1,10 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -19,9 +18,7 @@ const WhyMean = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
@@ -32,7 +29,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function Flutter(props) {
+function Flutter() {
   const content =
     "Brain Inventory specializes in creating cost-effective and efficient applications with our perfectly crafted, creative, and leading-edge flutter app development solutions for customers all around the globe. We help you develop high-end functional mobile applications.";
 
@@ -156,7 +153,7 @@ function Flutter(props) {
           }
         }
       >
-        <main className="">
+        <main>
           <Header />
           <section className="pt-32">
             <SectionOne

@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
+
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -19,9 +19,7 @@ const WhyMean = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
@@ -32,7 +30,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function IosDevelopment(props) {
+function IosDevelopment() {
   const content =
     "Our company is highly rated for developing iOS apps. Our knowledgeable team understands the requirements for your mobile or web app and has the skill to implement innovative solutions at each step of your project.";
 
@@ -99,8 +97,6 @@ function IosDevelopment(props) {
     },
   ];
 
-  const chooseBiSubhead =
-    "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
     "Brain Inventory's best India iOS app developers have successfully built top-ranking iOS apps for different apple app store categories such as Business, Healthcare, Entertainment, Lifestyle, Technology, Travel & more. This is due to our unique approach in the development of their apps which provides a comprehensive set of services for the clients ranging from design through to deployment.",
     "Our group of committed experts is well-versed in creating captivating user interfaces that are easy to use. We know to tailor our front-end development services into hybrid frameworks, specifically Android and iPhone apps, utilizing our exclusive frameworks, the android_native_app ecosystem. At Brain Inventory, we are enthusiastic about providing superb iOS applications for your organization.",
@@ -161,7 +157,7 @@ function IosDevelopment(props) {
           }
         }
       >
-        <main className=" ">
+        <main>
           <Header />
           <section className="pt-32">
             <SectionOne

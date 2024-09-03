@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +37,7 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -313,7 +310,7 @@ function Ecommerce(props) {
     <>
       <Head>
         <title>
-        Custom eCommerce Software Development Services | Brain Inventory
+          Custom eCommerce Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
@@ -340,7 +337,6 @@ function Ecommerce(props) {
           href="https://braininventory.in/industry/ecommerce-software-development-services"
         />
       </Head>
-      {/*<Loader />*/}
       <Header />
       <SectionOne />
       <SectionTwo
@@ -354,7 +350,7 @@ function Ecommerce(props) {
         sectionDesc="Unleash your business potential with Brain Inventory's cutting-edge eCommerce services-"
         setionThreeCards={setionThreeCards}
         pointers={true}
-      />{" "}
+      />
       <TiltMarquee title="E-COMERCE Software Development  E-COMMERCE Software Development" />
       <SectionFour
         title="Services for E-commerce Software Development"

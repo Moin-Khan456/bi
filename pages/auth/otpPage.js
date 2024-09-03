@@ -40,7 +40,6 @@ const otpPage = () => {
             <h2 className="Gilroy-Bold text-3xl text-white leading-10">
               Enter OTP
             </h2>
-
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -62,7 +61,6 @@ const otpPage = () => {
                       <ErrorMessage name="otp" />
                     </p>
                   </div>
-
                   <HomeButton type="submit">
                     <span className="text-base">Submit</span>
                   </HomeButton>

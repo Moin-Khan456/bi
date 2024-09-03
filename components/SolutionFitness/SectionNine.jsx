@@ -55,8 +55,7 @@ const Index = ({
       </div>
       <div className=" padding-left-all-section absolute top-0 left-0 right-0 lg:p-0 p-4">
         <div>
-          <Image  
-         
+          <Image
             src={src}
             width={500}
             height={400}

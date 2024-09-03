@@ -1,11 +1,10 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch")
 );
@@ -23,12 +22,12 @@ import HireBanner from "../../components/Mobile-Development/SectionOne";
 const ChooseBraininventoryApp = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
-const FindUs = dynamic(() => import("../../components/common/FindUs.jsx"));
+
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper(props) {
+function HireAangularJsDeveloper() {
   const content =
     "We offer a complete mobile application development platform that provides flexibility, scalability, and simplicity to quickly deploy custom mobile apps to engage your customers wherever they may be.";
   const hireCards = [
@@ -154,7 +153,7 @@ function HireAangularJsDeveloper(props) {
           }
         }
       >
-        <main className=" ">
+        <main>
           <section>
             <Header />
             <HireBanner

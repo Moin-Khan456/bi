@@ -23,9 +23,6 @@ const SectionSix = dynamic(() =>
 const SectionSeven = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/project/projectInquiryCard.jsx")
-);
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -57,7 +54,8 @@ const Bloomia = () => {
       "                                                                                                                                                                                                                           ",
     brief: "",
     logo: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 4230.png",
-    image: "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6382.png",
+    image:
+      "https://braininventory.s3.us-east-2.amazonaws.com/images/Group 6382.png",
     alt: "Bloomia",
   };
 
@@ -73,12 +71,14 @@ const Bloomia = () => {
     {
       id: 1,
       url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-1.png",
-      hover: "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+10.png",
+      hover:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+10.png",
     },
     {
       id: 2,
       url: "https://braininventory.s3.us-east-2.amazonaws.com/images/carousel-2.png",
-      hover: "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+11.png",
+      hover:
+        "https://braininventory.s3.us-east-2.amazonaws.com/images/Component+11.png",
     },
   ];
 
@@ -116,49 +116,57 @@ const Bloomia = () => {
     {
       id: 1,
       name: "Krishna Agrawal",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6420.png",
       role: "Sr. UI/UX Designer",
     },
     {
       id: 2,
       name: "Gunjan Jain",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6423.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6423.png",
       role: "Sr. Software Architecture",
     },
     {
       id: 3,
       name: "Pradyumna Garg",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6429.png",
       role: "Software Architecture",
     },
     {
       id: 4,
       name: "Puneet Rajwani",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6432.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6432.png",
       role: "Software Architecture",
     },
     {
       id: 5,
       name: "Gautam Patil",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6426.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6426.png",
       role: "Software Engineer",
     },
     {
       id: 6,
       name: "Hussain Ali",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6435.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6435.png",
       role: "Software Engineer",
     },
     {
       id: 7,
       name: "Subhash Ajmera",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6438.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6438.png",
       role: "Software Engineer",
     },
     {
       id: 8,
       name: "Rahul Badwaya",
-      image: "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6441.png",
+      image:
+        "https://braininventory.s3.us-east-2.amazonaws.com/projects/Group 6441.png",
       role: "Software Engineer",
     },
   ];
@@ -204,12 +212,12 @@ const Bloomia = () => {
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_bloomia.jpg"
-        />       
+        />
         <meta
           property="og:url"
           content="https://braininventory.in/project/bloomia"
-        />       
-        
+        />
+
         <link
           rel="canonical"
           href="https://braininventory.in/project/bloomia"
@@ -232,11 +240,9 @@ const Bloomia = () => {
           </div>
           <SectionFive />
           <SectionSix />
-          
           <div className="container">
             <div className="max-w-full flex justify-center">
-              <Image  
-         
+              <Image
                 src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
                 alt="Custom Software Development Company | Application Development Company"
                 width={600}
@@ -260,7 +266,7 @@ const Bloomia = () => {
               />
             </video>
           </div>
-          <div className="">
+          <div>
             <TechStack tech={tech} />
             <Team teamMembers={teamMembers} />
             <Milestone content={milestoneContent} />

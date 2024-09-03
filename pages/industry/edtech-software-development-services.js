@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -38,9 +37,6 @@ const SectionTen = dynamic(() =>
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
 );
@@ -49,7 +45,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function EdTech(props) {
+function EdTech() {
   const faqdetails = [
     {
       id: "1",
@@ -321,7 +317,9 @@ function EdTech(props) {
   return (
     <>
       <Head>
-        <title>Best Education Software Development Company | Brain Inventory</title>
+        <title>
+          Best Education Software Development Company | Brain Inventory
+        </title>
         <meta
           property="description"
           content="Seeking effective educational software development? We are a custom software development company offering tailored solutions for the education sector."
@@ -381,7 +379,6 @@ function EdTech(props) {
         btn="BUILD YOUR ED-TECH SOFTWARE"
         src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/Ed-Tech/Mask+group+(1).png"
       />
-
       <PlatformDevelopment
         data={platformDevelopment}
         subhead="WHY CHOOSE BRAIN INVENTORY FOR"

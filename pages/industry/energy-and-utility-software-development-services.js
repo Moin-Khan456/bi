@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -37,9 +36,6 @@ const SectionTen = dynamic(() =>
 );
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
-);
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
 );
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider")
@@ -333,7 +329,6 @@ function Energy(props) {
           as="image"
         />
       </Head>
-      {/*<Loader />*/}
       <Header />
       <SectionOne />
       <SectionTwo
@@ -347,7 +342,7 @@ function Energy(props) {
         sectionDesc="In the rapidly evolving Energy and Utility industry, you require not just ordinary software, but energy software that can keep up with an industry that's always set on turbo-speed. At Brain Inventory, we innovate and engineer softwares that is equipped to support your dynamic needs, optimized for the varied aspects of the energy and utility businesses."
         setionThreeCards={setionThreeCards}
         pointers={true}
-      />{" "}
+      />
       <TiltMarquee title="Energy & Utility Solution Development  Energy & Utility Solution Development" />
       <SectionFour
         title="Services for Energy & Utility Software Development"

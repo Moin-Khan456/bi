@@ -1,10 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
@@ -19,9 +18,7 @@ const WhyMean = dynamic(() =>
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
+
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
@@ -32,7 +29,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function HireAangularJsDeveloper() {
   const content =
     "Our team of experts uses the latest tools and technologies to build the industry-best Android apps. Our apps are 100% in sync with our client’s business needs, technologies, and needs.";
 

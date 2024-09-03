@@ -35,20 +35,22 @@ const App = ({ totalPages, itemsPerPage, setCurrentPage, currentPage }) => {
           </video>
         </div>
       ) : null}
-      <Pagination
-        defaultCurrent={currentPage}
-        total={totalPages}
-        pageSize={itemsPerPage}
-        className="text-white"
-        showSizeChanger={false}
-        nextIcon={
-          <BsFillFastForwardFill className="text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full" />
-        }
-        prevIcon={
-          <FaBackward className="text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full" />
-        }
-        onChange={handlePaginationChange}
-      />
+      <div>
+        <Pagination
+          defaultCurrent={currentPage}
+          total={totalPages}
+          pageSize={itemsPerPage}
+          className="text-white"
+          showSizeChanger={false}
+          nextIcon={
+            <BsFillFastForwardFill className="text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full" />
+          }
+          prevIcon={
+            <FaBackward className="text-white bg-[#17008d] w-[2rem] h-[2rem] p-2 rounded-full" />
+          }
+          onChange={handlePaginationChange}
+        />
+      </div>
     </div>
   );
 };

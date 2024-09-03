@@ -101,13 +101,13 @@ export async function getServerSideProps(context) {
 
   let totalPages = await rediss.get(`totalPages`);
 
-  // if (!totalPages) {
-  //   const postsRes = await fetch(
-  //     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
-  //   );
-  //   totalPages = postsRes.headers.get("X-WP-Total");
-  //   await rediss.set(`totalPages`, totalPages, "EX", 600);
-  // }
+  if (!totalPages) {
+    const postsRes = await fetch(
+      "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+    );
+    totalPages = postsRes.headers.get("X-WP-Total");
+    await rediss.set(`totalPages`, totalPages, "EX", 600);
+  }
 
   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
   if (cachedBlog) {
@@ -132,9 +132,6 @@ export async function getServerSideProps(context) {
     }
   );
 
-  totalPages = response.headers["x-wp-total"];
-
-  await rediss.set(`totalPages`, totalPages, "EX", 600);
   await rediss.set(
     `blog-${context.query.slug}`,
     JSON.stringify(response.data),

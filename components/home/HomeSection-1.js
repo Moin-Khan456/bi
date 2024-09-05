@@ -33,7 +33,6 @@ export default function HomeSectionOne({}) {
               alt="custom software development solutions"
               width={1500}
               height={1500}
-              layout="responsive"
             />
           </div>
         </div>

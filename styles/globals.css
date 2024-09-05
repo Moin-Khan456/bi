@@ -29,56 +29,67 @@
 @font-face {
   font-family: Jost;
   src: url("../public/fonts/Jost-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gilroy-Bold;
   src: url("../public/fonts/gilroy-bold-webfont.woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gilroy-SemiBold;
   src: url("../public/fonts/Gilroy-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "MonumentRegular";
   src: url("../public//fonts/MonumentExtended-Regular.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Monument";
   src: url("../public//fonts/MonumentExtended-Ultrabold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gilroy-Light;
   src: url("../public/fonts/Gilroy-Light.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Brinattan";
   src: url("../public/fonts/Brinattan.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gilroy-Medium;
   src: url("../public/fonts/gilroy-bold-webfont.woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Satoshi;
   src: url("../public/fonts/Satoshi.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: BetterGrad;
   src: url("../public/fonts/Better-Grade.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: AppleGaramond;
   src: url("../public/fonts/AppleGaramond-Light.ttf");
+  font-display: swap;
 }
 
 .font-Brinattan {

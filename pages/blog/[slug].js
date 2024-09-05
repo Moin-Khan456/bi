@@ -93,58 +93,138 @@ export default function Home({
     </>
   );
 }
-export async function getServerSideProps(context) {
-  context.res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=600, stale-while-revalidate=3600"
-  );
 
+// export async function getServerSideProps(context) {
+//   context.res.setHeader(
+//     "Cache-Control",
+//     "public, s-maxage=600, stale-while-revalidate=3600"
+//   );
+
+//   let totalPages = await rediss.get(`totalPages`);
+
+//   // if (!totalPages) {
+//   //   const postsRes = await fetch(
+//   //     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+//   //   );
+//   //   totalPages = postsRes.headers.get("X-WP-Total");
+//   //   await rediss.set(`totalPages`, totalPages, "EX", 600);
+//   // }
+
+//   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+//   if (cachedBlog) {
+//     return {
+//       props: {
+//         data: cachedBlog.slice(0, 3),
+//         blogs: cachedBlog,
+//         totalPages: totalPages,
+//         page: context.query.slug,
+//       },
+//     };
+//   }
+
+//   const response = await axios.get(
+//     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
+//     { next: { revalidate: 600 } },
+//     {
+//       cache: "force-cache",
+//       headers: {
+//         "Cache-Control": "public, max-age=600",
+//       },
+//     }
+//   );
+
+//   totalPages = response.headers["x-wp-total"];
+
+//   await rediss.set(`totalPages`, totalPages, "EX", 600);
+//   await rediss.set(
+//     `blog-${context.query.slug}`,
+//     JSON.stringify(response.data),
+//     "EX",
+//     300
+//   );
+
+//   return {
+//     props: {
+//       data: response?.data?.slice(0, 3) ?? [],
+//       blogs: response?.data ?? [],
+//       totalPages: totalPages,
+//       page: context.query.slug,
+//     },
+//   };
+// }
+
+export async function getStaticPaths() {
+  let totalBlogs = await rediss.get(`totalBlogs`);
+
+  if (!totalBlogs) {
+    const response = await axios.get(
+      "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
+    );
+    totalBlogs = response.headers["x-wp-total"];
+    await rediss.set(`totalBlogs`, totalBlogs, "EX", 600);
+  }
+
+  const itemsPerPage = 10;
+  const totalPages = Math.ceil(totalBlogs / itemsPerPage);
+
+  const paths = [];
+  for (let i = 1; i <= totalPages; i++) {
+    paths.push({
+      params: { slug: i.toString() },
+    });
+  }
+
+  return {
+    paths,
+    fallback: "blocking",
+  };
+}
+
+export async function getStaticProps(context) {
   let totalPages = await rediss.get(`totalPages`);
 
   if (!totalPages) {
-    const postsRes = await fetch(
+    const postsRes = await axios.get(
       "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
     );
-    totalPages = postsRes.headers.get("X-WP-Total");
+    totalPages = postsRes.headers["x-wp-totalpages"];
     await rediss.set(`totalPages`, totalPages, "EX", 600);
   }
 
-  const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
+  const cachedBlog = await rediss.get(`blog-${context.params.slug}`);
   if (cachedBlog) {
+    const blogs = JSON.parse(cachedBlog);
     return {
       props: {
-        data: cachedBlog.slice(0, 3),
-        blogs: cachedBlog,
+        data: blogs.slice(0, 3),
+        blogs: blogs,
         totalPages: totalPages,
-        page: context.query.slug,
+        page: context.params.slug,
       },
+      revalidate: 600,
     };
   }
 
   const response = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
-    { next: { revalidate: 600 } },
-    {
-      cache: "force-cache",
-      headers: {
-        "Cache-Control": "public, max-age=600",
-      },
-    }
+    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.params.slug}`,
+    { next: { revalidate: 600 } }
   );
 
+  const blogs = response.data;
   await rediss.set(
-    `blog-${context.query.slug}`,
-    JSON.stringify(response.data),
+    `blog-${context.params.slug}`,
+    JSON.stringify(blogs),
     "EX",
     300
   );
 
   return {
     props: {
-      data: response?.data?.slice(0, 3) ?? [],
-      blogs: response?.data ?? [],
+      data: blogs.slice(0, 3),
+      blogs: blogs,
       totalPages: totalPages,
-      page: context.query.slug,
+      page: context.params.slug,
     },
+    revalidate: 86400,
   };
 }

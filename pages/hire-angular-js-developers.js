@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -15,7 +14,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
@@ -24,7 +22,7 @@ const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 
-function HireAangularJsDeveloper(props) {
+function HireAangularJsDeveloper() {
   const content =
     "Brain Inventory is the top choice for employing an AngularJS developer or a skillful dedicated team. With Brain Inventory’s Angular developers, you’ll have the advantage of high-quality AngularJS development services that will satisfy your exact coding standards.";
   const card = [

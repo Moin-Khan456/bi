@@ -148,20 +148,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Best Salesforce Development Services | Salesforce Development company
+          Salesforce Development Services USA - Salesforce APP Development
         </title>
         <meta
           name="description"
-          content="We are a Salesforce development company specializing in Salesforce implementation, customization, and consulting services to enhance your business operations."
+          content="Looking for salesforce app development services? We are here to help you! Contact brain inventory for experienced salesforce app developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Best Salesforce Development Services | Salesforce Development company"
+          content="Salesforce Development Services USA - Salesforce APP Development"
         />
         <meta
           property="og:description"
-          content="We are a Salesforce development company specializing in Salesforce implementation, customization, and consulting services to enhance your business operations."
+          content="Looking for salesforce app development services? We are here to help you! Contact brain inventory for experienced salesforce app developers, for quality services."
         />
         <meta
           property="og:image"
@@ -187,9 +187,9 @@ function HireAangularJsDeveloper(props) {
         <Header></Header>
         <HireBanner
           subhead="A Smarter Way to Build Customized Applications."
-          title="Salesforce Development"
+          title="Salesforce App Development Company "
           content={content}
-          unique={"Company"}
+          unique={"brain inventory"}
           btn="Contact Us!"
           alt="Salesforce Development Company"
         />

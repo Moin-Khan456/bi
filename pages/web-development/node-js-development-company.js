@@ -112,19 +112,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Node.js Development | Expert Nodejs Development Services</title>
+        <title>Node JS Development Service Company USA | Brain Inventory</title>
         <meta
           name="description"
-          content="Brain Inventory is the top Node.js development company, providing services to build secure, real-time, and scalable Node.js applications tailored to your business needs."
+          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for the transparent and quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Node.js Development | Expert Nodejs Development Services"
+          content="Node JS Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is the top Node.js development company, providing services to build secure, real-time, and scalable Node.js applications tailored to your business needs."
+          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for the transparent and quality services."
         />
         <meta
           property="og:url"
@@ -158,6 +158,7 @@ function HireAangularJsDeveloper(props) {
             <SectionOne
               heading="Node.Js"
               title="Node.Js"
+              miniTitle={"Service by Brain Inventory"}
               content={content}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6498.png"

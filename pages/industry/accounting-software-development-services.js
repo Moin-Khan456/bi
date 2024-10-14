@@ -300,19 +300,19 @@ function Accounting(props) {
     <>
       <Head>
         <title>
-          Specialized Accounting Software Development Services | Brain Inventory
+          Accounting Consulting Services & Solutions | Brain Inventory
         </title>
         <meta
           property="description"
-          content="At Brain Inventory, we offer custom accounting software development services that align with your business requirements, user expectations, and project timelines."
+          content="Brain Inventory provides accounting consulting services to help your account & finance. Contact us to make your accounting services now."
         />
         <meta
           property="og:title"
-          content="Specialized Accounting Software Development Services | Brain Inventory"
+          content="Accounting Consulting Services & Solutions | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="At Brain Inventory, we offer custom accounting software development services that align with your business requirements, user expectations, and project timelines."
+          content="Brain Inventory provides accounting consulting services to help your account & finance. Contact us to make your accounting services now."
         />
         <meta
           property="og:image"
@@ -334,8 +334,9 @@ function Accounting(props) {
           <SectionOne />
           <SectionTwo
             className="container pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP ACCOUNTING SOFTWARE"
+            title="Accounting IT Services & Solutions Provide by Brain Inventory"
             head1="Pioneering Accounting Digital Frontier"
+            isHeadShow={false}
             description={sectionTwoDesc}
           />
           <SectionThree

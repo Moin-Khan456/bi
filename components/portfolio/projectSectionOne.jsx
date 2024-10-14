@@ -6,7 +6,7 @@ const Index = () => {
     <div className="py-8 px-0 lg:px-12 flex flex-col lg:flex-row justify-between">
       <div className="grid-row-2 xs:text-center lg:w-[480px] col-start-1 col-end-3">
         <h1 className="text-5xl text-center lg:text-left font-semibold py-4">
-          Portfolio of Mobile Software Development Company
+        Innovative Projects by Brain Inventory : Our Portfolio
         </h1>
         <p className="w-[100vw] text-center lg:text-left lg:w-[480px]">
           We blend skills across strategy, design and development to create

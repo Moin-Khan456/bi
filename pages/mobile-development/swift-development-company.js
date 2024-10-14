@@ -118,19 +118,21 @@ function SwiftDevelopment() {
   return (
     <>
       <Head>
-        <title>Leading Swift App Development Company for Custom Apps</title>
+        <title>
+          Swift App Development Company USA - Swift App Development Services
+        </title>
         <meta
           name="description"
-          content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
+          content="Hire expert Brain Inventory team for your swift app development solutions. We are a reported swift app development company. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Leading Swift App Development Company for Custom Apps"
+          content="Swift App Development Company USA - Swift App Development Services"
         />
         <meta
           property="og:description"
-          content="Explore our comprehensive range of custom swift app development services, crafted to align with your business needs. Join our skilled team for accelerated growth."
+          content="Hire expert Brain Inventory team for your swift app development solutions. We are a reported swift app development company. Contact us today!"
         />
         <meta
           property="og:url"
@@ -153,6 +155,7 @@ function SwiftDevelopment() {
             heading="Swift App"
             title="Top Swift App"
             content={content}
+            miniTitle={"Service by Brain Inventory"}
             btn="Get a Quote"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6743.png"
             alt="Swift Application Development Services"

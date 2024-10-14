@@ -291,11 +291,11 @@ function Logistic() {
         </title>
         <meta
           property="description"
-          content="Brain Inventory is your trusted transport and logistics software development partner, creating reliable custom software solutions for logistics providers."
+          content="Brain Inventory offers best custom transport and logistic software development IT solutions to build a platform for you. Contact us now."
         />
         <meta
           property="og:description"
-          content="Brain Inventory is your trusted transport and logistics software development partner, creating reliable custom software solutions for logistics providers."
+          content="Brain Inventory offers best custom transport and logistic software development IT solutions to build a platform for you. Contact us now."
         />
         <meta
           name="og:title"
@@ -317,6 +317,7 @@ function Logistic() {
       <Header />
       <SectionOne />
       <SectionTwo
+        isHeadShow={false}
         className="py-10 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
         head1="Streamlining Logistics Through Innovative Software Solutions"
         description={sectionTwoDesc}

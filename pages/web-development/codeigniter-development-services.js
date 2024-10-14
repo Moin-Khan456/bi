@@ -108,20 +108,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          CodeIgniter Development Services Experts | Brain Inventory
+          Codeigniter Web Development Service Company USA | Brain Inventory
         </title>
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="CodeIgniter Development Services Experts | Brain Inventory"
+          content="Codeigniter Web Development Service Company USA | Brain Inventory"
         />
         <meta
           name="description"
-          content="Learn the potential of CodeIgniter through our expert development services. We specialize in creating efficient and scalable web applications with this powerful framework."
+          content="Brain Inventory gives you the best solutions for codeigniter web development services. Elevate your brand with a custom ci development company. Contact us!"
         />
         <meta
           property="og:description"
-          content="Learn the potential of CodeIgniter through our expert development services. We specialize in creating efficient and scalable web applications with this powerful framework."
+          content="Brain Inventory gives you the best solutions for codeigniter web development services. Elevate your brand with a custom ci development company. Contact us!"
         />
         <meta
           property="og:url"
@@ -158,14 +158,14 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="CodeIgniter Development"
+            title="Codeigniter Web Development Services by"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_Services.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_Services.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
             alt="CodeIgniter development company"
             type="php"
-            unique="Service"
+            unique={"brain inventory"}
             card={card}
           />
           <Customer />

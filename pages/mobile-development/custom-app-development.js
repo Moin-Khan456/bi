@@ -118,20 +118,20 @@ function HireAangularJsDeveloper() {
     <>
       <Head>
         <title>
-          Custom Mobile App Development Company | App Development Services
+          Custom Mobile App Development Company USA - App Development Service
         </title>
         <meta
           name="description"
-          content="Turn your app ideas into reality with Brain Inventory custom mobile app development services. Get your dream app developed by experts. Contact us today!"
+          content="Looking for a custom mobile app development company? We are here to help you! Contact brain inventory for experienced mobile app developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Mobile App Development Company | App Development Services"
+          content="Custom Mobile App Development Company USA - App Development Service"
         />
         <meta
           property="og:description"
-          content="Turn your app ideas into reality with Brain Inventory custom mobile app development services. Get your dream app developed by experts. Contact us today!"
+          content="Looking for a custom mobile app development company? We are here to help you! Contact brain inventory for experienced mobile app developers, for quality services."
         />
         <meta
           property="og:url"
@@ -158,8 +158,9 @@ function HireAangularJsDeveloper() {
             <Header />
             <HireBanner
               heading="A Smarter Way to Build Customized Applications"
-              title="Custom Mobile Software"
+              title="Custom Mobile App Development Company"
               content={content}
+              unique={"brain inventory"}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
               developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"

@@ -130,20 +130,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Top-Notch Lamp Application Development Services | Brain Inventory
+          LAMP Application Development Service Company USA | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Brain Inventory offers LAMP application development services. Contact us to hire LAMP developers for your business web development needs and achieve outstanding results!"
+          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for transparent and quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Top-Notch Lamp Application Development Services | Brain Inventory"
+          content="LAMP Application Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers LAMP application development services. Contact us to hire LAMP developers for your business web development needs and achieve outstanding results!"
+          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for transparent and quality services."
         />
         <meta
           property="og:url"
@@ -176,6 +176,7 @@ function HireAangularJsDeveloper(props) {
           <div className="pt-32">
             <SectionOne
               heading="LAMP Application"
+              miniTitle={"Service by Brain Inventory"}
               title="Top LAMP"
               content={content}
               btn="Get a Quote"

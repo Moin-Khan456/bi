@@ -267,18 +267,18 @@ function Fitness() {
   return (
     <>
       <Head>
-        <title>Top Fitness App Development Company | Brain Inventory</title>
+        <title>Fitness IT Services & Solutions|Brain Inventory</title>
         <meta
           property="description"
-          content="Brain Inventory, a fitness app development company, offers wellness and fitness software services tailored for gyms and personal trainers."
+          content="Brain Inventory provides fitness IT services and solutions to improve fitness, and work. Contact us to improve your fitness in IT now."
         />
         <meta
           name="og:title"
-          content="Top Fitness App Development Company | Brain Inventory"
+          content="Fitness IT Services & Solutions|Brain Inventory"
         />
         <meta
           name="og:description"
-          content="Brain Inventory, a fitness app development company, offers wellness and fitness software services tailored for gyms and personal trainers."
+          content="Brain Inventory provides fitness IT services and solutions to improve fitness, and work. Contact us to improve your fitness in IT now."
         />
         <meta
           property="og:image"
@@ -298,7 +298,8 @@ function Fitness() {
         <SectionOne />
         <SectionTwo
           className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-          title="TOP FITNESS APP"
+          title="Fitness IT Service & Solutions Provider by Brain Inventory"
+          isHeadShow={false}
           head1="Reimagining Fitness with Innovation"
           description={sectionTwoDesc}
           lastSmall={true}

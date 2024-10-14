@@ -46,8 +46,7 @@ function Home() {
     <>
       <Head>
         <title>
-          Custom Software Development Company | Staff Augmentation - Brain
-          Inventory
+        Custom Software Development Service USA - Software Development Company
         </title>
         <meta
           name="google-site-verification"
@@ -56,11 +55,11 @@ function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Software Development Company | Staff Augmentation - Brain Inventory"
+          content="Custom Software Development Service USA - Software Development Company"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe."
+          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today."
         />
         <meta property="og:url" content="https://braininventory.in" />
         <meta
@@ -71,7 +70,7 @@ function Home() {
         <meta name="p:domain_verify" content="/googlec59025ad92b5fc4c.html" />
         <meta
           name="description"
-          content="Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe."
+          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today."
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />

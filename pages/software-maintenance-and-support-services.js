@@ -123,20 +123,18 @@ function Support() {
   return (
     <>
       <Head>
-        <title>
-          Expert Software Maintenance and Support Services | Brain Inventory
-        </title>
+        <title>Software Maintenance and Support Service Company</title>
         <meta
           property="description"
-          content="Access flexible software maintenance and support services for web and mobile, featuring ongoing maintenance, periodic security reviews, compliance, and SLA-driven support."
+          content="Brain Inventory provides expert and best software maintenance and support services for their customers satisfaction. Contact us today!"
         />
         <meta
           property="og:description"
-          content="Access flexible software maintenance and support services for web and mobile, featuring ongoing maintenance, periodic security reviews, compliance, and SLA-driven support."
+          content="Brain Inventory provides expert and best software maintenance and support services for their customers satisfaction. Contact us today!"
         />
         <meta
           name="og:title"
-          content="Expert Software Maintenance and Support Services | Brain Inventory"
+          content="Software Maintenance and Support Service Company"
         />
         <meta
           property="og:image"

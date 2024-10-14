@@ -81,6 +81,11 @@ export default function HireBanner({
                     Development
                   </span>
                 </>
+              ) : unique === "brain inventory" ? (
+                <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold">
+                  <br />
+                  Brain Inventory
+                </span>
               ) : (
                 <>
                   <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold">
@@ -153,10 +158,12 @@ export default function HireBanner({
                 </ul>
               </section>
             </section>
-          ) : unique === "developer" || unique === "Company" ||
+          ) : unique === "developer" ||
+            unique === "Company" ||
             unique === "analyst" ||
-            unique === "design" ? (
-            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6">
+            unique === "design" ||
+            unique === "brain inventory" ? (
+            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6 ">
               <section className="started-subcription">
                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
                 <h2 className="Gilroy-Bold text-5xl">

@@ -121,19 +121,21 @@ function HireAangularJsDeveloper() {
   return (
     <>
       <Head>
-        <title>Expert Android App Development Services | Brain Inventory</title>
+        <title>
+          Android App Development Company USA - Mobile App Development
+        </title>
         <meta
           name="description"
-          content="Brain Inventory provides Android app development services, crafted by skilled developers, to help your business grow with innovative and custom Android services."
+          content="Looking for an Android mobile app development company? Contact brain inventory for quality work of Android app development services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Expert Android App Development Services | Brain Inventory"
+          content="Android App Development Company USA - Mobile App Development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory provides Android app development services, crafted by skilled developers, to help your business grow with innovative and custom Android services."
+          content="Looking for an Android mobile app development company? Contact brain inventory for quality work of Android app development services."
         />
         <meta
           property="og:url"
@@ -159,10 +161,11 @@ function HireAangularJsDeveloper() {
           <Header />
           <section className="pt-32">
             <SectionOne
-              heading="Android App"
+              heading="Android Mobile App"
               title="Hire Android"
               content={content}
               btn="Get a Quote"
+              miniTitle={"Service by Brain Inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6961.png"
               alt="Android application development"
               appDev={true}

@@ -287,20 +287,18 @@ function Travel(props) {
   return (
     <>
       <Head>
-        <title>
-          Efficient Real Estate Software Development Company | Brain Inventory
-        </title>
+        <title>Best Real Estate Software Development Service Company</title>
         <meta
           property="description"
-          content="Brain Inventory, a real estate software development company, creates complex, secure, and customized proptech solutions to help real estate businesses thrive."
+          content="Brain Inventory offers best real estate software development IT services & solutions to build a unique platform for you. Contact us now."
         />
         <meta
           property="og:description"
-          content="Brain Inventory, a real estate software development company, creates complex, secure, and customized proptech solutions to help real estate businesses thrive."
+          content="Brain Inventory offers best real estate software development IT services & solutions to build a unique platform for you. Contact us now."
         />
         <meta
           name="og:title"
-          content="Efficient Real Estate Software Development Company | Brain Inventory"
+          content="Best Real Estate Software Development Service Company"
         />
         <meta
           property="og:image"
@@ -328,6 +326,7 @@ function Travel(props) {
           <SectionTwo
             className="pt-12 pb-12 bg-no-repeat bg-right brightness-[1.35]"
             head1="Unlocking the Future of the Real Estate Industry"
+            isHeadShow={false}
             description={sectionTwoDesc}
           />
 

@@ -175,20 +175,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Laravel Developers Within 48 Hours | Best Laravel Developers
+          Hire Dedicated Laravel Developers - Hire Laravel Developer India
         </title>
         <meta
           name="description"
-          content="Looking to hire Laravel developer? Start with a risk-free trial, and hire top talent in 48 hours. Book a free consultation for expert Laravel development services today."
+          content="Stuck to hire php laravel developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Laravel Developers Within 48 Hours | Best Laravel Developers"
+          content="Hire Dedicated Laravel Developers - Hire Laravel Developer India"
         />
         <meta
           property="og:description"
-          content="Looking to hire Laravel developer? Start with a risk-free trial, and hire top talent in 48 hours. Book a free consultation for expert Laravel development services today."
+          content="Stuck to hire php laravel developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
         />
         <meta
           property="og:image"
@@ -222,9 +222,9 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             subhead="A Smarter Way to Build Customized Applications."
-            title="Hire Laravel"
+            title="Hire Experienced Laravel Developers from"
             content={content}
-            unique={"developer"}
+            unique={"brain inventory"}
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/laravel/Group+6232.png"
             alt="Hire Dedicated Laravel Developers"

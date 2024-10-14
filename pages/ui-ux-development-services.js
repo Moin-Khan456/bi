@@ -145,29 +145,32 @@ function UiUxDevelopmentServices(props) {
   return (
     <>
       <Head>
-        <title>Expert UI/UX Design And Development Services</title>
+        <title>Best UI/UX Design And Development Services</title>
         <meta
           name="description"
-          content="Brain Inventory offers expert UI/UX development services, creating stunning designs and user-friendly interfaces to enhance user experience and drive business growth."
+          content="Brain Inventory provides the best ui/ux design and development services for your customers satisfaction. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Expert UI/UX Design And Development Services"
+          content="Best UI/UX Design And Development Services"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers expert UI/UX development services, creating stunning designs and user-friendly interfaces to enhance user experience and drive business growth."
+          content="Brain Inventory provides the best ui/ux design and development services for your customers satisfaction. Contact us today!"
         />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_Hire+Android+Developers.jpg"
         />
         <meta
-          property="og:url" 
+          property="og:url"
           content="https://braininventory.in/ui-ux-development-services"
         />
-        <link rel="canonical" href="https://braininventory.in/ui-ux-development-services" />
+        <link
+          rel="canonical"
+          href="https://braininventory.in/ui-ux-development-services"
+        />
       </Head>
       <Suspense
         fallback={
@@ -180,7 +183,7 @@ function UiUxDevelopmentServices(props) {
           <>
             <Header />
             <HireBanner
-              title="UI/UX Development"
+              title="Expert UI/UX Design And Development Services by"
               content={content}
               btn="Get a Quote"
               // subhead="A Smarter Way to Build Customized Applications."
@@ -188,7 +191,7 @@ function UiUxDevelopmentServices(props) {
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Android+Developers.png"
               alt="UIUX development Services"
               type="hire"
-              unique={"Service"}
+              unique={"brain inventory"}
             />{" "}
             <Customer />
             <Experienced

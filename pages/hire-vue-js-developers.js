@@ -143,21 +143,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire Vue JS Developer | Dedicated Vue JS Programmer - Brain Inventory
-        </title>
+        <title>Hire Dedicated VueJS Developers - Hire VueJS Programmer</title>
         <meta
           name="description"
-          content="Hire Vue JS developers from Brain Inventory for custom web development. Our experts are available full-time, part-time, or hourly to meet your specific project needs."
+          content="Hire a dedicated Vuejs developer from Brain Inventory for your custom web development solutions. Our experts are available on a full, part-time, or hourly basis. "
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Vue JS Developer | Dedicated Vue JS Programmer - Brain Inventory"
+          content="Hire Dedicated VueJS Developers - Hire VueJS Programmer"
         />
         <meta
           property="og:description"
-          content="Hire Vue JS developers from Brain Inventory for custom web development. Our experts are available full-time, part-time, or hourly to meet your specific project needs."
+          content="Hire a dedicated Vuejs developer from Brain Inventory for your custom web development solutions. Our experts are available on a full, part-time, or hourly basis. "
         />
         <meta
           property="og:image"
@@ -186,10 +184,10 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="Upgrade Your Development Process With Our Expertise"
-              title="Hire Vue js"
+              title="Hire Vue.js Developer with"
               content={content}
               btn="Contact Us!"
-              unique={"developer"}
+              unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
               alt="Vue.js Development Company"
               type="hire"

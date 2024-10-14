@@ -112,20 +112,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          PHP Development Company | Proficient PHP Development Services
+          PHP Web Development Company USA - PHP Development Services
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a top-notch PHP development company, offering custom PHP web development services including custom web portals, e-commerce websites, and more."
+          content="Looking for top-level PHP development services? We are here to help you! Contact brain inventory for an experienced PHP web developer, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="PHP Development Company | Proficient PHP Development Services"
+          content="PHP Web Development Company USA - PHP Development Services"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a top-notch PHP development company, offering custom PHP web development services including custom web portals, e-commerce websites, and more."
+          content="Looking for top-level PHP development services? We are here to help you! Contact brain inventory for an experienced PHP web developer, for quality services."
         />
         <meta
           property="og:image"
@@ -161,14 +161,14 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="PHP Development"
+            title="PHP Web Development Service Company from"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+1.png"
             alt="Custom PHP development"
             type="php"
-            unique="Company"
+            unique="brain inventory"
           />
           <Customer />
           <Experienced

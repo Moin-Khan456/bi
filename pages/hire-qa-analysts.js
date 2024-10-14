@@ -138,21 +138,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Quality Analyst (QA) Testers | Web and Mobile App Testing
-          Services
+          Hire Dedicated QA Tester - Testing Developers | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Hire skilled Quality Analysts and testers from Brain Inventory for comprehensive quality assurance testing services across Web, Mobile, and Enterprise software solutions."
+          content="Are you looking to hire a QA tester? Look no further! We have the best-certified QA testing developers, ready to help you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Quality Analyst (QA) Testers | Web and Mobile App Testing Services"
+          content="Hire Dedicated QA Tester - Testing Developers | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire skilled Quality Analysts and testers from Brain Inventory for comprehensive quality assurance testing services across Web, Mobile, and Enterprise software solutions."
+          content="Are you looking to hire a QA tester? Look no further! We have the best-certified QA testing developers, ready to help you. Contact us today!"
         />
 
         <meta
@@ -181,13 +180,13 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire QA"
+            title="Hire QA Testing Developer with"
             content={content}
             btn="Get a Quote"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
             alt="QA and Testing Specialists"
-            unique="analyst"
-          />
+            unique={"brain inventory"}
+            />
           <Customer />
           <Experienced
             title="Hire an Experienced QA Analyst to Upscale Your Development"

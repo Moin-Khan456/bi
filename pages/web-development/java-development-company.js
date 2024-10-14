@@ -109,20 +109,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Java Development Company | Top-Quality Java Development Services
+          Java Application Development Service Company USA - Java development
         </title>
         <meta
           name="description"
-          content="Brain Inventory, a top Java Development company, offers high-quality services for secure and reliable web and mobile apps. Trust us for expert Services."
+          content="Are you searching for a Java app development company? Contact brain inventory to give transparent & quality solutions for Java software development services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Java Development Company | Top-Quality Java Development Services"
+          content="Java Application Development Service Company USA - Java development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory, a top Java Development company, offers high-quality services for secure and reliable web and mobile apps. Trust us for expert Services."
+          content="Are you searching for a Java app development company? Contact brain inventory to give transparent & quality solutions for Java software development services."
         />
         <meta
           property="og:image"
@@ -148,9 +148,9 @@ function HireAangularJsDeveloper(props) {
         <Header></Header>
         <HireBanner
           subhead="A Smarter Way to Build Customized Applications."
-          title="Java Development"
+          title="Java Software Development Service Company"
           content={content}
-          unique={"Company"}
+          unique={"brain inventory"}
           btn="Contact Us!"
           alt="Java Development Company"
         />

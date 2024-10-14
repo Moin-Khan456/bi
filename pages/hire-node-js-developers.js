@@ -151,19 +151,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Node.js Developers | Hire Node.js Programmers</title>
+        <title>Hire Certified NodeJS Developer - NodeJS Developers USA</title>
         <meta
           name="description"
-          content="Staff your team quickly with Brain Inventory Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
+          content=" Looking to hire skilled Node.js developers from India? Hire an experienced and dedicated node js developer with the brain inventory. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Node.js Developers | Hire Node.js Programmers"
+          content="Hire Certified NodeJS Developer - NodeJS Developers USA"
         />
         <meta
           property="og:description"
-          content="Staff your team quickly with Brain Inventory Node.js developers for custom web apps on hourly or monthly basis. Hire dedicated Node.js developers today!"
+          content=" Looking to hire skilled Node.js developers from India? Hire an experienced and dedicated node js developer with the brain inventory. Contact us today!"
         />
 
         <meta
@@ -192,10 +192,10 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="Upgrade Your Development Process With Our Expertise"
-              title="Hire NodeJS"
+              title="Hire NodeJS Developer with"
               content={content}
               btn="Contact Us!"
-              unique={"developer"}
+              unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Node+JS+Developers.png"
               alt="Remote Node.js Developers"
               type="hire"

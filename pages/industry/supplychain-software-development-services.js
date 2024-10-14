@@ -316,20 +316,18 @@ function SupplyChain() {
   return (
     <>
       <Head>
-        <title>
-          Best Supply Chain Management Software Company | Brain Inventory
-        </title>
+        <title>Best Supply Chain Management Software Service Company</title>
         <meta
           property="description"
-          content="Brain Inventory offers expert supply chain management software development, covering all your inventory management, asset tracking, and order management system needs."
+          content="Brain Inventory services offer best supply chain management software IT solutions to build a platform where you can build customer loyalty. Call us!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers expert supply chain management software development, covering all your inventory management, asset tracking, and order management system needs."
+          content="Brain Inventory services offer best supply chain management software IT solutions to build a platform where you can build customer loyalty. Call us!"
         />
         <meta
           name="og:title"
-          content="Best Supply Chain Management Software Company | Brain Inventory"
+          content="Best Supply Chain Management Software Service Company"
         />
         <meta
           property="og:image"
@@ -347,6 +345,7 @@ function SupplyChain() {
       <Header />
       <SectionOne />
       <SectionTwo
+        isHeadShow={false}
         className="pt-20 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
         head1="Revolutionizing Supply Chain Management with Innovation"
         description={sectionTwoDesc}

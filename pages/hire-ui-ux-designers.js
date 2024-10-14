@@ -141,21 +141,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire UI/UX Designers at Affordable Prices | Brain Inventory
-        </title>
+        <title>Hire Experienced UI/UX Designers - UI/UX Designers USA</title>
         <meta
           name="description"
-          content="Hire UI/UX designers from Brain Inventory for custom web development, Android gaming, and more. Our certified developers excel in creating user-friendly interfaces."
+          content=" Searching for the best UI/UX designers? We are here to help you! Hire certified UI/UX designers for web development, android gaming, and many more. Contact us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire UI/UX Designers at Affordable Prices | Brain Inventory"
+          content="Hire Experienced UI/UX Designers - UI/UX Designers USA"
         />
         <meta
           property="og:description"
-          content="Hire UI/UX designers from Brain Inventory for custom web development, Android gaming, and more. Our certified developers excel in creating user-friendly interfaces."
+          content=" Searching for the best UI/UX designers? We are here to help you! Hire certified UI/UX designers for web development, android gaming, and many more. Contact us!"
         />
         <meta
           property="og:image"
@@ -183,12 +181,12 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="Provide Exceptional User Experience"
-              title="Hire UI/UX "
+              title="Hire UI/UX Designers with"
               content={content}
               btn="Get a Quote"
               alt="Hire UI/UX Designers"
               type="hire"
-              unique="design"
+              unique="brain inventory"
             />
             <Customer />
             <Experienced

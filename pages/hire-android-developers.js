@@ -146,20 +146,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Dedicated Android Developers | Hire Android Developers
+          Hire Experienced Android Developers - Hire Android App Developers
         </title>
         <meta
           name="description"
-          content="Get a custom Android app developed by experienced developers at Brain Inventory. Hire dedicated Android developers for feature-rich, high-quality applications."
+          content="Looking to hire a dedicated Android app developer? We are here to offer you the best solutions for Android app development applications. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Dedicated Android Developers | Hire  Android Developers"
+          content="Hire Experienced Android Developers - Hire Android App Developers"
         />
         <meta
           property="og:description"
-          content="Get a custom Android app developed by experienced developers at Brain Inventory. Hire dedicated Android developers for feature-rich, high-quality applications."
+          content="Looking to hire a dedicated Android app developer? We are here to offer you the best solutions for Android app development applications. Contact us today!"
         />
         <meta
           property="og:image"
@@ -186,13 +186,13 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="Transform your ideas into stunning Android apps with our expert Android app development services!"
-              title="Hire Android "
+              title="Hire Dedicated Android App Developers with"
               content={content}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Android+Developers.png"
               alt="Hire Android App Developers & Programmers"
               type="hire"
-              unique={"developer"}
+              unique={"brain inventory"}
             />{" "}
             <Customer />
             <Experienced

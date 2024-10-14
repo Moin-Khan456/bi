@@ -127,20 +127,20 @@ function HireReactDeveloper(props) {
     <>
       <Head>
         <title>
-          React JS Development Services | Trusted React JS Development Company
+          React JS Web Development Service Company USA | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Brain Inventory is top ReactJS development company offering services to create feature-packed React web and mobile apps. Enhance your projects with our expert solutions."
+          content="Looking for a React JS development company? Brain Inventory is the best React JS development company. Contact brain inventory for React JS services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="React JS Development Services | Trusted React JS Development Company"
+          content="React JS Web Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is top ReactJS development company offering services to create feature-packed React web and mobile apps. Enhance your projects with our expert solutions."
+          content="Looking for a React JS development company? Brain Inventory is the best React JS development company. Contact brain inventory for React JS services."
         />
         <meta
           property="og:url"
@@ -174,6 +174,7 @@ function HireReactDeveloper(props) {
             <SectionOne
               heading="React JS"
               title="Top React Js"
+              miniTitle={"Service by Brain Inventory"}
               content={content}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6526.png"

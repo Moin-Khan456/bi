@@ -314,7 +314,7 @@ function Ecommerce(props) {
         </title>
         <meta
           property="description"
-          content="Brain Inventory is your trusted eCommerce development company with a skilled team specializing in creating state-of-the-art online store solutions."
+          content="Brain Inventory provides ecommerce software development services to help your products. Contact us to make your ecommerce software development services now."
         />
         <meta
           property="og:description"
@@ -341,7 +341,8 @@ function Ecommerce(props) {
       <SectionOne />
       <SectionTwo
         className="pt-20 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
-        title="TOP ECOMMERCE SOFTWARE"
+        title="Custom Ecommerce Software Development Services by Brain Inventory"
+        isHeadShow={false}
         head1="Masterfully Crafting E-commerce Success Stories"
         description={sectionTwoDesc}
       />

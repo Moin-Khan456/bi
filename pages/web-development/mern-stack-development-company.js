@@ -121,20 +121,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Top-Notch MERN Stack Development Services | Brain Inventory
+          MERN Stack Development Service Company USA | Brain Inventory
         </title>
         <meta
           name="description"
-          content="As a leading MERN Stack development company, we transform your ideas into scalable web solutions. Our developers provide unique, custom MERN stack development services."
+          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company. Contact us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Top-Notch MERN Stack Development Services | Brain Inventory"
+          content="MERN Stack Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="As a leading MERN Stack development company, we transform your ideas into scalable web solutions. Our developers provide unique, custom MERN stack development services."
+          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company. Contact us!"
         />
         <meta
           property="og:url"
@@ -166,8 +166,9 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <div className="pt-32">
             <SectionOne
-              heading="Top MERN Stack"
+              heading="MERN Stack"
               title="Top MERN Stack"
+              miniTitle={"Service by Brain Inventory"}
               content={content}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6420+(1).png"

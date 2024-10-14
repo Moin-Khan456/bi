@@ -166,21 +166,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire Shopify Developers | Best Shopify Developers from Brain Inventory
-        </title>
+        <title>Dedicated Shopify Developers Hire - Shopify Developers</title>
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Shopify Developers | Best Shopify Developers from Brain Inventory"
+          content="Dedicated Shopify Developers Hire - Shopify Developers"
         />
         <meta
           name="description"
-          content="Find and hire skilled Shopify developers from our talent network for your long-term business needs. Explore our platform for full-time Shopify developer services."
+          content="Hire top-rated Shopify developers. Our experienced Shopify developers are committed to providing innovative solutions for your apps. Contact today!"
         />
         <meta
           property="og:description"
-          content="Find and hire skilled Shopify developers from our talent network for your long-term business needs. Explore our platform for full-time Shopify developer services."
+          content="Hire top-rated Shopify developers. Our experienced Shopify developers are committed to providing innovative solutions for your apps. Contact today!"
         />
         <meta
           property="og:image"
@@ -214,9 +212,9 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             subhead="A Smarter Way to Build Customized Applications."
-            title="Hire Shopify"
+            title="Hire Experienced Shopify Developers with"
             content={content}
-            unique={"developer"}
+            unique={"brain inventory"}
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/shopify/Mask+Group+159.png"
             alt="Hire Dedicated Laravel Developers"

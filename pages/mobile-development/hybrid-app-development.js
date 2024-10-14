@@ -134,19 +134,21 @@ function HireAangularJsDeveloper() {
   return (
     <>
       <Head>
-        <title>Expert Hybrid App Development Company | Brain Inventory</title>
+        <title>
+          Hybrid App Development Company USA - Hybrid App Design Service
+        </title>
         <meta
           name="description"
-          content="Searching for a reliable hybrid app development company? Our experienced team creates seamless, high-performance apps for both iOS and Android platforms."
+          content="Looking for a hybrid mobile app development service company? We are here to help you! Contact brain inventory experienced hybrid mobile app developers."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Expert Hybrid App Development Company | Brain Inventory"
+          content="Hybrid App Development Company USA - Hybrid App Design Service"
         />
         <meta
           property="og:description"
-          content="Searching for a reliable hybrid app development company? Our experienced team creates seamless, high-performance apps for both iOS and Android platforms."
+          content="Looking for a hybrid mobile app development service company? We are here to help you! Contact brain inventory experienced hybrid mobile app developers."
         />
         <meta
           property="og:image"
@@ -176,8 +178,9 @@ function HireAangularJsDeveloper() {
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="Hybrid App"
+            title="Hybrid Mobile App Development Services by"
             content={content}
+            unique={"brain inventory"}
             btn="Contact Us!"
             developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+2.png"

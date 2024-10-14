@@ -109,20 +109,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom .NET Development Services - Let Scale Your Business
+          Dot Net Development Company USA - .NET Software Development
         </title>
         <meta
           name="description"
-          content="Brain Inventory, top-rated .NET development company, offers custom, scalable, and intuitive .NET development services. High-quality services custom to your business needs."
+          content="Looking for a dot net software development company? Look no further! Contact brain inventory for experienced dot net developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom .NET Development Services - Let Scale Your Business"
+          content="Dot Net Development Company USA - .NET Software Development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory, top-rated .NET development company, offers custom, scalable, and intuitive .NET development services. High-quality services custom to your business needs."
+          content="Looking for a dot net software development company? Look no further! Contact brain inventory for experienced dot net developers, for quality services."
         />
         <meta
           property="og:image"
@@ -162,9 +162,9 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             subhead="A Smarter Way to Build Customized Applications."
-            title=".NET Development"
+            title="Dot NET Software Development CompanyBest Salesforce Development Services | Salesforce Development company"
             content={content}
-            unique="Company"
+            unique={"brain inventory"}
             btn="Contact Us!"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
             alt="DotNet Development Company"

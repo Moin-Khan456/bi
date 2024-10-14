@@ -121,20 +121,20 @@ function ReactNativeDeveloper() {
     <>
       <Head>
         <title>
-          Leading React Native App development company | Brain Inventory
+          React Native App Development Company USA - React Native Services
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a prominent React Native app development company, offering swift React development services for cross-platform iOS and Android apps."
+          content="Hire expert Brain Inventory team for your react native app development solutions. We are a trusted react native mobile app development company."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Leading React Native App development company | Brain Inventory"
+          content="React Native App Development Company USA - React Native Services"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a prominent React Native app development company, offering swift React development services for cross-platform iOS and Android apps."
+          content="Hire expert Brain Inventory team for your react native app development solutions. We are a trusted react native mobile app development company."
         />
         <meta
           property="og:url"
@@ -164,6 +164,7 @@ function ReactNativeDeveloper() {
               title="Top React Native"
               content={content}
               btn="Get a Quote"
+              miniTitle={"Service by Brain Inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6625.png"
               alt="React Native App Development "
               appDev={true}

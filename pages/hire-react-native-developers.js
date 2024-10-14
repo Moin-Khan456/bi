@@ -157,20 +157,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire React Native Developers | Certified Expert at Affordable Price
+          Hire Experienced React Native Developers | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Hire skilled React Native developers from the top 3.5% of AI-vetted Indian talent. Get remote programmers ready in less than 48 hours for your project needs."
+          content="Hire a dedicated reactive native app developer from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated experts."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire React Native Developers | Certified Expert at Affordable Price"
+          content="Hire Experienced React Native Developers | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire skilled React Native developers from the top 3.5% of AI-vetted Indian talent. Get remote programmers ready in less than 48 hours for your project needs."
+          content="Hire a dedicated reactive native app developer from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated experts."
         />
         <meta
           property="og:image"
@@ -199,10 +199,10 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="Upgrade Your Development Process With Our Expertise"
-              title="Hire React Native "
+              title="Hire React Native App Developers with"
               content={content}
               btn="Contact Us!"
-              unique={"developer"}
+              unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+React+Native+Developers.png"
               alt="React Native development company"
               type="hire"

@@ -141,19 +141,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire PHP Developers | Hire Dedicated PHP Developers</title>
+        <title>Hire Dedicated PHP Developers - Hire Indian PHP Developer</title>
         <meta
           name="description"
-          content="Hire expert PHP Developers from Brain Inventory proficient in all PHP frameworks for dynamic and interactive website and web app development solutions."
+          content="Looking to hire dedicated PHP developers? We have an experienced PHP developers team to give you the best solutions. Contact to hire php experts today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire PHP Developers | Hire Dedicated PHP Developers"
+          content="Hire Dedicated PHP Developers - Hire Indian PHP Developer"
         />
         <meta
           property="og:description"
-          content="Hire expert PHP Developers from Brain Inventory proficient in all PHP frameworks for dynamic and interactive website and web app development solutions."
+          content="Looking to hire dedicated PHP developers? We have an experienced PHP developers team to give you the best solutions. Contact to hire php experts today!"
         />
 
         <meta
@@ -182,10 +182,10 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="A Smarter Way to Build Customized Applications."
-            title="Hire PHP"
+            title="Hire a Dedicated PHP Developer with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Brainventory_PHP+developers+1.png"
             alt="Hire Dedicated PHP Developer"
           />

@@ -10,6 +10,7 @@ const SectionTwo = ({
   hideSubText,
   notBreakable,
   lastSmall,
+  isHeadShow=true,
 }) => {
   return (
     <div className={`${className} padding-left-all-section-1`}>
@@ -31,18 +32,22 @@ const SectionTwo = ({
             ) : (
               title
             )}
-            <span
-              className={`${
-                lastSmall && "lg:absolute lg:left-80"
-              } lg:px-8 pb-4 text-[1.7rem] lg:ml-12 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
-            >
-              Development Company
-            </span>
+            {isHeadShow ? (
+              <span
+                className={`${
+                  lastSmall && "lg:absolute lg:left-80"
+                } lg:px-8 pb-4 text-[1.7rem] lg:ml-12 lg:whitespace-nowrap Gilroy-SemiBold ${hideSubText}`}
+              >
+                Development Company
+              </span>
+            ) : null}
           </h1>
         </div>
-        <p className="text-[1.5rem] px-4 font-semibold">
-          <span className="text-[#F7D927]">Brain Inventory:</span> {head1}
-        </p>
+        {isHeadShow ? (
+          <p className="text-[1.5rem] px-4 font-semibold">
+            <span className="text-[#F7D927]">Brain Inventory:</span> {head1}
+          </p>
+        ) : null}
         <p className="text-[.875rem] opacity-50 p-4 ">{description}</p>
       </div>
     </div>

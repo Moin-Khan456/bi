@@ -127,19 +127,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Custom Web Development | Top Agency - Brain Inventory</title>
+        <title>Custom Website Development USA - Custom Web Design</title>
         <meta
           name="description"
-          content="Give your business the edge it needs with custom web development. Work with expert developers for custom services. Contact Brain Inventory today for a consultation."
+          content="Brain Inventory gives you the best solutions for custom web development services. Elevate your brand with a custom website design company. Contact us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Web Development | Top Agency - Brain Inventory"
+          content="Custom Website Development USA - Custom Web Design"
         />
         <meta
           property="og:description"
-          content="Give your business the edge it needs with custom web development. Work with expert developers for custom services. Contact Brain Inventory today for a consultation."
+          content="Brain Inventory gives you the best solutions for custom web development services. Elevate your brand with a custom website design company. Contact us!"
         />
         <meta
           property="og:url"
@@ -174,12 +174,13 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <SectionOne
             heading="Transform Your Brand with"
-            title="Custom Web"
+            title="Custom Web Development & Design Services by"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
             type="web"
+            unique={"brain inventory"}
             alt="custom web development company"
           />
           <Customer />

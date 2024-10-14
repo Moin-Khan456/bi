@@ -264,18 +264,18 @@ function Blockchain(props) {
   return (
     <>
       <Head>
-        <title>Top-Notch Blockchain Development Services</title>
+        <title>Blockchain IT Service & Solutions| Brain Inventory</title>
         <meta
           property="description"
-          content="We provide blockchain development services, offering decentralized solutions that enhance your business's security and transparency."
+          content="Brain Inventory provides the best blockchain IT services & solutions as per your requirements. Contact us to make your blockchain IT now."
         />
         <meta
           property="og:description"
-          content="We provide blockchain development services, offering decentralized solutions that enhance your business's security and transparency."
+          content="Brain Inventory provides the best blockchain IT services & solutions as per your requirements. Contact us to make your blockchain IT now."
         />
         <meta
           name="og:title"
-          content="Top-Notch Blockchain Development Services"
+          content="Blockchain IT Service & Solutions| Brain Inventory"
         />
         <meta
           property="og:image"
@@ -297,8 +297,9 @@ function Blockchain(props) {
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP BLOCKCHAIN APP"
+              title="Blockchain IT Services & Solutions by Brain Inventory"
               head1="Shaping the Future of Blockchain"
+              isHeadShow={false}
               description={sectionTwoDesc}
               lastSmall={true}
             />

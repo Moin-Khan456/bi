@@ -108,20 +108,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Best MEAN Stack Development | MERN Stack Development Services
+          Mean Stack Development Company USA - MEAN Stack Development
         </title>
         <meta
           name="description"
-          content="As a leading MERN stack development company, we transform your ideas into scalable web solutions. Our developers provide unique and custom MERN stack development."
+          content="Looking for mean stack development services? We are here to help you! Contact brain inventory for experienced mean stack developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Best MEAN Stack Development | MERN Stack Development Services"
+          content="Mean Stack Development Company USA - MEAN Stack Development"
         />
         <meta
           property="og:description"
-          content="As a leading MERN stack development company, we transform your ideas into scalable web solutions. Our developers provide unique and custom MERN stack development."
+          content="Looking for mean stack development services? We are here to help you! Contact brain inventory for experienced mean stack developers, for quality services."
         />
         <meta
           property="og:url"
@@ -153,7 +153,8 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <div className="pt-32">
             <SectionOne
-              heading="Top MEAN Stack"
+              heading="MEAN Stack"
+              miniTitle={"Service Company - Brain Inventory"}
               title="Hire Android"
               content={content}
               btn="Get a Quote"

@@ -292,19 +292,19 @@ function MarketPlace() {
     <>
       <Head>
         <title>
-          Brain Inventory - Marketplace Software Development Company
+          Marketplace Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
-          content="As a leading marketplace development company, we leverage the latest industry trends to create custom online platforms for buying and selling products."
+          content="Brain Inventory provides best marketplace software solutions to accelerate the digital transformation that improves customer engagement. Contact us today."
         />
         <meta
           property="og:description"
-          content="As a leading marketplace development company, we leverage the latest industry trends to create custom online platforms for buying and selling products."
+          content="Brain Inventory provides best marketplace software solutions to accelerate the digital transformation that improves customer engagement. Contact us today."
         />
         <meta
           name="og:title"
-          content="Brain Inventory - Marketplace Software Development Company"
+          content="Marketplace Software Development Services | Brain Inventory"
         />
         <meta
           property="og:image"
@@ -330,8 +330,9 @@ function MarketPlace() {
       <SectionOne />
       <SectionTwo
         className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-        title="TOP Marketplace SOFTWARE"
+        title="Marketplace IT Solutions & Services Provide by Brain Inventory"
         head1="Connecting Markets, Fueling Evolution"
+        isHeadShow={false}
         description={sectionTwoDesc}
       />
       <SectionThree

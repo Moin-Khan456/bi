@@ -31,12 +31,7 @@ function Career(props) {
         </title>
         <meta
           name="description"
-          content="Looking for a career at Brain 
-          Inventory? Seize the 
-          opportunity to join the team of 
-          top-notch software 
-          professionals and start working
-          on interesting projects!"
+          content="We are inviting students, graduates, and professionals who inspire us to join our creative work culture. Discover the difference with special opportunities at Brain Inventory."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -46,10 +41,7 @@ Inventory | Best Software Development Company "
         />
         <meta
           property="og:description"
-          content=" Looking for a 
-career at Brain Inventory? Seize the opportunity to join the 
-team of top-notch software professionals and start working 
-on interesting projects!"
+          content="We are inviting students, graduates, and professionals who inspire us to join our creative work culture. Discover the difference with special opportunities at Brain Inventory."
         />
 
         <meta

@@ -179,20 +179,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Python Developers - Flexible Hiring Models | Brain Inventory
+          Hire Experienced Python Developer - Hire Python Programmers
         </title>
         <meta
           name="description"
-          content="Hire top Python developers from Brain Inventory in India. Certified experts deliver robust web apps on time. Flexible engagement. Book a free consultation today."
+          content="Hire remote Python developers from Brain Inventory India. Our certified experts deliver web apps on time. Contact us with our experienced Python developers."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Python Developers - Flexible Hiring Models | Brain Inventory"
+          content="Hire Experienced Python Developer - Hire Python Programmers"
         />
         <meta
           property="og:description"
-          content="Hire top Python developers from Brain Inventory in India. Certified experts deliver robust web apps on time. Flexible engagement. Book a free consultation today."
+          content="Hire remote Python developers from Brain Inventory India. Our certified experts deliver web apps on time. Contact us with our experienced Python developers."
         />
         <meta
           property="og:image"
@@ -222,9 +222,9 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="A Smarter Way to Build Customized Applications."
-              title="Hire Python"
+              title="Dedicated Python Developers Hire with"
               content={content}
-              unique={"developer"}
+              unique={"brain inventory"}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Hire/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Dedicated Python Programmers"

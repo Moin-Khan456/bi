@@ -37,16 +37,11 @@ function Contact() {
       />
       <Head>
         <title>
-          Contact Brain Inventory to Kickstart Your Digital Journey Today
+        You Think We Create - Contact Brain Inventory
         </title>
         <meta
           name="description"
-          content="Contact Brain Inventory for 
-          any service, requirement And 
-          query. Get a free no obligation 
-          consulting for your website, 
-          software And App development 
-          projects. Contact us today!"
+          content="Contact Brain Inventory for any IT services, requirement And query. Get free consulting for your development projects. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -56,11 +51,7 @@ Inventory to Kick start Your Digital Journey Today "
         />
         <meta
           property="og:description"
-          content=" Contact Brain 
-Inventory for any service, requirement And query. Get a free 
-no obligation consulting for your website, software And App 
-development projects.
-Contact us now."
+          content="Contact Brain Inventory for any IT services, requirement And query. Get free consulting for your development projects. Contact us today!"
         />
         <meta
           property="og:image"

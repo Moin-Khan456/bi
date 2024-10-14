@@ -114,11 +114,11 @@ export const FaqsSchema = {
 export const ProductSchema = {
   "@context": "https://schema.org/",
   "@type": "Product",
-  name: "Custom Software Development Company | Staff Augmentation - Brain Inventory",
+  name: "Custom Software Development Service USA - Software Development Company",
   image:
     "https://braininventory.in/_next/image?url=https%3A%2F%2Fbraininventory.s3.us-east-2.amazonaws.com%2Fimages%2Fmain%2FLogobg.png&w=256&q=75",
   description:
-    "Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe.",
+    "At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today.",
   brand: {
     "@type": "Brand",
     name: "Brain Inventory",

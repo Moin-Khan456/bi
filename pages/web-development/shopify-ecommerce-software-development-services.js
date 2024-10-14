@@ -108,20 +108,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Shopify Development Company | Premium Shopify Development Services
+          Shopify Development Company USA - App & Web Development Company
         </title>
         <meta
           name="description"
-          content="Brain Inventory, a top Shopify development company, offers expert Shopify website design and development services to create exceptional online stores."
+          content="Looking for Shopify app & web development services? We are here to help you! Contact brain inventory experienced Shopify developers, for quality services."
         />
         <meta
           name="og:description"
-          content="Brain Inventory, a top Shopify development company, offers expert Shopify website design and development services to create exceptional online stores."
+          content="Looking for Shopify app & web development services? We are here to help you! Contact brain inventory experienced Shopify developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Shopify Development Company | Premium Shopify Development Services"
+          content="Shopify Development Company USA - App & Web Development Company"
         />
         <meta
           property="og:url"
@@ -143,15 +143,15 @@ function HireAangularJsDeveloper(props) {
         <div>
           <Header />
           <SectionOne
-            title="Shopify Development"
+            title="Shopify Website & App Development Company by"
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+168+(1).png"
             alt="Shopify Development Company"
             type="php"
-            unique="Company"
+            unique={"brain inventory"}
           />
           <Customer />
           <Experienced

@@ -293,19 +293,19 @@ function Travel() {
     <>
       <Head>
         <title>
-          Top-Rated Travel Software Development Company | Brain Inventory
+          Travel Software Development Service Company | Brain Inventory
         </title>
         <meta
           property="description"
-          content="We specialize in custom travel software development, packed with features to ensure a seamless travel experience for your customers every time."
+          content="Provide memorable experiences and boost customer loyalty with brain inventory custom software development for the travel industry. Give us a call!"
         />
         <meta
           property="og:description"
-          content="We specialize in custom travel software development, packed with features to ensure a seamless travel experience for your customers every time."
+          content="Provide memorable experiences and boost customer loyalty with brain inventory custom software development for the travel industry. Give us a call!"
         />
         <meta
           name="og:title"
-          content="Top-Rated Travel Software Development Company | Brain Inventory"
+          content="Travel Software Development Service Company | Brain Inventory"
         />
         <meta
           property="og:image"
@@ -333,7 +333,8 @@ function Travel() {
         <section>
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP Travel SOFTWARE"
+            title="Custom Travel Software Development Service by Brain Inventory"
+            isHeadShow={false}
             head1="Providing Superior Travel Services Online"
             description={sectionTwoDesc}
           />

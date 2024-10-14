@@ -7,6 +7,7 @@ export default function HireBanner({
   content,
   btn,
   image,
+  miniTitle,
   appDev = false,
 }) {
   const card = [
@@ -29,9 +30,9 @@ export default function HireBanner({
             <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">
               {heading} <br />
               <span className="development-text rotate-3 lg:text-[10rem] leading-[10rem] text-8xl">
-                Development
+                Development 
               </span>
-              <br /> Company
+              <br /> {miniTitle ? miniTitle : "Company"}
             </h1>
             <h2 className="lg:text-5xl text-4xl Gilroy-Bold mb-4 text-center lg:text-start">
               {subtitle}

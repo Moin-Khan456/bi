@@ -55,18 +55,20 @@ export default function Hirededicatedremotedevelopers(props) {
   return (
     <>
       <Head>
-        <title>Hire Remote Developers - Quick and Transparent Process</title>
+        <title>
+          Hire Dedicated Remote Developers India - Remote Developers
+        </title>
         <meta
           name="description"
-          content="Partner with Brain Inventory to hire industry-specific remote developers. We provide the top 1% of vetted remote developers for your team building needs."
+          content="Hire dedicated remote developers in India for your new projects. We are here to help you. We are trusted remote developers from india."
         />
         <meta
           name="og:title"
-          content="Hire Remote Developers - Quick and Transparent Process"
+          content="Hire Dedicated Remote Developers India - Remote Developers"
         />
         <meta
           name="og:description"
-          content="Partner with Brain Inventory to hire industry-specific remote developers. We provide the top 1% of vetted remote developers for your team building needs."
+          content="Hire dedicated remote developers in India for your new projects. We are here to help you. We are trusted remote developers from india."
         />
         <meta
           property="og:url"
@@ -91,7 +93,7 @@ export default function Hirededicatedremotedevelopers(props) {
         <Staform />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container lg:px-24">
-            <Image  
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/something.png"
               alt="Custom Software Development Company | Application Development Company"
               priority="low"
@@ -109,7 +111,7 @@ export default function Hirededicatedremotedevelopers(props) {
         <HireRemote />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 padding-left-all-section-1 container">
           <div className="container">
-            <Image  
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/staff-image.png"
               alt="Custom Software Development Company | Application Development Company"
               fetchPriority="low"

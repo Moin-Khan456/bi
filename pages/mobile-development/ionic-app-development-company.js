@@ -140,19 +140,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Ionic App Development | Top Ionic App Development Company</title>
+        <title>
+          Cross Platform Mobile App Development USA - Ionic App Development
+        </title>
         <meta
           name="description"
-          content="Brain Inventory top-notch Ionic app development company, specializing in creating feature-rich, cross-platform mobile applications with expert Ionic development services."
+          content="Looking for cross platform app development services? We are here to help you! Contact brain inventory experienced cross platform mobile app developers."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Ionic App Development | Top Ionic App Development Company"
+          content="Cross Platform Mobile App Development USA - Ionic App Development"
         />
         <meta
           property="og:description"
-          content="Brain Inventory top-notch Ionic app development company, specializing in creating feature-rich, cross-platform mobile applications with expert Ionic development services."
+          content="Looking for cross platform app development services? We are here to help you! Contact brain inventory experienced cross platform mobile app developers."
         />
         <meta
           property="og:url"
@@ -174,14 +176,14 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <SectionOne
             subhead="A Smarter Way to Build Customized Applications."
-            title="Ionic App"
+            title="Cross Platform Mobile App Development Services by"
             content={content}
             btn="Contact Us!"
             developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+173.png"
             alt="Ionic App Development Company"
             type="app"
-            unique="Company"
+            unique={"brain inventory"}
           />
           <Customer />
           <Experienced

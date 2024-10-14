@@ -300,11 +300,11 @@ function Energy(props) {
         </title>
         <meta
           property="description"
-          content="Switch to our utility management software for optimized energy needs. Brain Inventory on-demand developers help you easily track and manage your utilities."
+          content="Provide memorable experiences and boost customer loyalty with brain inventory energy & utility software development services. Give us a call!"
         />
         <meta
           property="og:description"
-          content="Switch to our utility management software for optimized energy needs. Brain Inventory on-demand developers help you easily track and manage your utilities."
+          content="Provide memorable experiences and boost customer loyalty with brain inventory energy & utility software development services. Give us a call!"
         />
         <meta
           name="og:title"
@@ -333,8 +333,9 @@ function Energy(props) {
       <SectionOne />
       <SectionTwo
         className="pt-20 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
-        title="TOP / Energy & Utility / SOFTWARE"
+        title="Energy & Utility Software Development Services by Brain Inventory"
         head1="Innovative energy solutions for a sustainable future"
+        isHeadShow={false}
         description={sectionTwoDesc}
       />
       <SectionThree

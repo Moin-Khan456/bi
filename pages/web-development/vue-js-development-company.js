@@ -113,19 +113,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Trusted Vue JS Development Company | Brain Inventory</title>
+        <title>Vue JS Development Service Company USA | Brain Inventory</title>
         <meta
           name="description"
-          content="Brain Inventory, a top VueJS development company, delivers high-quality services for creating advanced and real-time web applications. Trust us for your VueJS needs."
+          content="Are you looking for Vue JS development services? We are here to help! Contact Brain Inventory for experienced Vue JS developers to provide the best solutions."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Trusted Vue JS Development Company | Brain Inventory"
+          content="Vue JS Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory, a top VueJS development company, delivers high-quality services for creating advanced and real-time web applications. Trust us for your VueJS needs."
+          content="Are you looking for Vue JS development services? We are here to help! Contact Brain Inventory for experienced Vue JS developers to provide the best solutions."
         />
         <meta
           property="og:url"
@@ -153,6 +153,7 @@ function HireAangularJsDeveloper(props) {
           <SectionOne
             heading="Vue.Js"
             title="Vue.Js"
+            miniTitle={"Service by Brain Inventory"}
             content={content}
             btn="Get a Quote"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6461.png"

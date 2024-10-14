@@ -104,20 +104,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Expert Python Development Services | Python Development Company
+          Python Web Development Company USA - Python Development Agency
         </title>
         <meta
           name="description"
-          content="We are a leading Python development company, providing high-quality services to build complex web platforms and backend systems tailored to meet your business needs."
+          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for transparent & quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Expert Python Development Services | Python Development Company"
+          content="Python Web Development Company USA - Python Development Agency"
         />
         <meta
           property="og:description"
-          content="We are a leading Python development company, providing high-quality services to build complex web platforms and backend systems tailored to meet your business needs."
+          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for transparent & quality services."
         />
         <meta
           property="og:url"
@@ -150,14 +150,14 @@ https://braininventory.in/web-development/python-development-company"
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="Python Development"
+            title="Python Web Development Agency by"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+1.png"
             alt="Python Development Company"
             type="php"
-            unique="Company"
+            unique="brain inventory"
           />
           <Customer />
           <Experienced

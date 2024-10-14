@@ -146,20 +146,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Brain Inventory - Hire Full Stack Developers | At The Best Rates
+          Hire Certified Full Stack Developer - Hire Full Stack Programmer
         </title>
         <meta
           name="description"
-          content="Hire skilled full-stack developers quickly and affordably. Build user-friendly apps and websites with our experienced full-stack programmers. Find your team today!"
+          content="Are you looking to hire a full-stack developer? Look no further! We have the best dedicated full-stack developers, ready to work with you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Brain Inventory - Hire Full Stack Developers | At The Best Rates"
+          content="Hire Certified Full Stack Developer - Hire Full Stack Programmer"
         />
         <meta
           property="og:description"
-          content="Hire skilled full-stack developers quickly and affordably. Build user-friendly apps and websites with our experienced full-stack programmers. Find your team today!"
+          content="Are you looking to hire a full-stack developer? Look no further! We have the best dedicated full-stack developers, ready to work with you. Contact us today!"
         />
 
         <meta
@@ -187,10 +187,10 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               heading="A Smarter Way to Build Customized Applications."
-              title="Hire Full Stack"
+              title="Dedicated Full Stack Developer Hire with"
               content={content}
               btn="Contact Us!"
-              unique={"developer"}
+              unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/niclas-illg-FJ5e_2f96h4-unsplash.png"
               alt="Hire Full stack developers and programmers"
             />

@@ -8,7 +8,7 @@ const WorkBanner = () => {
         <div className="lg:w-[40%] w-full  md:h-full">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
             <h1 className="2xl:text-4xl lg:text-4xl pt-32 text-4xl Gilroy-Bold text-white">
-              Why Choose Brain Inventory for Website and App Development
+              How the work process is followed by Brain Inventory
             </h1>
             <div className="flex flex-col">
               <div className="text-white text-opacity-50 text-sm Gilroy-Bold">

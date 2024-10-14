@@ -214,27 +214,38 @@ function SocialMedia(props) {
     ],
 
     heading3: "UAT & Release",
-    subhead3: "In the bustling social industry, the significance of User Acceptance Testing (UAT) is often underestimated. Yet, it's a crucial determinant of product success. The following points outline how it can be effectively implemented.",
+    subhead3:
+      "In the bustling social industry, the significance of User Acceptance Testing (UAT) is often underestimated. Yet, it's a crucial determinant of product success. The following points outline how it can be effectively implemented.",
     list3: ["1. Plan", "2. Design", "3. Execute", "4. Evaluate"],
-    
-    
+
     heading4: "Aftercare",
-    subhead4: "Aftercare is a crucial facet of our services in the social industry. Here are the key points:",
-    list4: ["1. Regular Check-ins", "2. 24/7 Support", "3. Proactive Approach", "4. Feedback Incorporation"]
+    subhead4:
+      "Aftercare is a crucial facet of our services in the social industry. Here are the key points:",
+    list4: [
+      "1. Regular Check-ins",
+      "2. 24/7 Support",
+      "3. Proactive Approach",
+      "4. Feedback Incorporation",
+    ],
   };
   return (
     <>
       <Head>
-        <title>Social Media Marketing Company</title>
+        <title>
+          Social Media Marketing Services - Boost Your Online Presence
+        </title>
         <meta
           name="description"
-          content="Transforming ideas into vibrant social networks. As a leading social networking development company, we craft engaging platforms for meaningful connections. Discover more!"
+          content="Improve your brand's visibility with our social media marketing services. Learn ways to connect with your audience, gain more followers, and boost sales."
         />
         <meta
           property="og:description"
-          content="Transforming ideas into vibrant social networks. As a leading social networking development company, we craft engaging platforms for meaningful connections. Discover more."
+          content="Improve your brand's visibility with our social media marketing services. Learn ways to connect with your audience, gain more followers, and boost sales."
         />
-        <meta name="og:title" content="Social Media Marketing Company" />
+        <meta
+          name="og:title"
+          content="Social Media Marketing Services - Boost Your Online Presence"
+        />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_social+media+marketing.jpg"
@@ -254,7 +265,8 @@ function SocialMedia(props) {
           <SectionOne />
           <SectionTwo
             className="   pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP SOCIAL NETWORKING"
+            title="Effective Social Media Marketing Strategies by Brain Inventory"
+            isHeadShow={false}
             subTitle="App Development Company"
             head1="Fostering connections, catalyzing change."
             description="At Brain Inventory, we're more than just a social networking app development company. We're a forward-thinking technology partner with a mission to empower industries with innovative social solutions. Our expertise lies in delivering tailor-made apps that foster communication and engagement, transforming the way industries connect and collaborate. With Brain Inventory, you gain a strategic partner who understands the nuances of the social industry and can help you harness the power of digital technologies to drive growth and change."

@@ -158,20 +158,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Dedicated ReactJS Developers | Secure Top ReactJS Talent Today!
+          Hire Dedicated ReactJS Developers - ReactJS Developers USA
         </title>
         <meta
           name="description"
-          content="Find skilled React.js developers with expertise in building real-time, scalable web and mobile apps. Hire now with flexible engagement models!"
+          content="Are you looking to hire an expert React JS developer? Look no further! We have the best dedicated React JS developers, ready to work with you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Dedicated ReactJS Developers | Secure Top ReactJS Talent Today!"
+          content="Hire Dedicated ReactJS Developers - ReactJS Developers USA"
         />
         <meta
           property="og:description"
-          content="Find skilled React.js developers with expertise in building real-time, scalable web and mobile apps. Hire now with flexible engagement models!"
+          content="Are you looking to hire an expert React JS developer? Look no further! We have the best dedicated React JS developers, ready to work with you. Contact us today!"
         />
 
         <meta
@@ -205,10 +205,10 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire ReactJS "
+            title="Hire ReactJS Developers with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+react+js+developers.png"
             alt="Hire ReactJS Developers"
             type="hire"

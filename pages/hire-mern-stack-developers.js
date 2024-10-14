@@ -142,19 +142,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire MERN Stack Developers | Hire MERN stack programmers</title>
+        <title>
+          Hire Experienced MERN Stack Developers - Hire MERN Stack Developer
+        </title>
         <meta
           name="description"
-          content="Hire MERN Stack developers part-time or full-time for fast, secure, and scalable web apps. Our experts deliver high-quality solutions tailored to your business needs."
+          content="Hire an expert of MERN stack developers full-time and part-time for your web app solutions. Contact us for the certified MERN stack developers for you."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire MERN Stack Developers | Hire MERN stack programmers"
+          content="Hire Experienced MERN Stack Developers - Hire MERN Stack Developer"
         />
         <meta
           property="og:description"
-          content="Hire MERN Stack developers part-time or full-time for fast, secure, and scalable web apps. Our experts deliver high-quality solutions tailored to your business needs."
+          content="Hire an expert of MERN stack developers full-time and part-time for your web app solutions. Contact us for the certified MERN stack developers for you."
         />
 
         <meta
@@ -182,10 +184,10 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire MERN Stack"
+            title="Hire Dedicated MERN Stack Developers with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+MERN+Developers.png"
             alt="MERN stack development company"
             type="hire"

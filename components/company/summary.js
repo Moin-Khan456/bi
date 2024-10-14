@@ -1,11 +1,11 @@
 import React from "react";
 
-function summary() {
+function summary({ head }) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="pt-20 pb-20 container padding-left-all-section">
         <h1 className="2xl:text-4xl xl:text-4xl text-3xl Gilroy-Bold">
-          Website and App Development Company Overview
+          {head ? head : "Website and App Development Company Overview"}
         </h1>
         <p className="2xl:text-6xl xl:text-5xl text-4xl stroke-text-3 Gilroy-Bold pt-4 pb-8">
           thats who we are!

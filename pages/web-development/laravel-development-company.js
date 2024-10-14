@@ -106,20 +106,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Laravel Development Company | Top Laravel Development Services
+          Laravel Web Development Service Company USA | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Brain Inventory, a reputable Laravel development company, delivers feature-rich web app Laravel development services across the USA and India."
+          content="Are you looking for a laravel development company? Look no further! Brain Inventory provides the best laravel development services for you. Contact us today!"
         />
         <meta
           property="og:description"
-          content="Brain Inventory, a reputable Laravel development company, delivers feature-rich web app Laravel development services across the USA and India."
+          content="Are you looking for a laravel development company? Look no further! Brain Inventory provides the best laravel development services for you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Laravel Development Company | Top Laravel Development Services"
+          content="Laravel Web Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:url"
@@ -150,15 +150,15 @@ function HireAangularJsDeveloper(props) {
         <div className="">
           <Header />
           <SectionOne
-            title="Laravel Development"
+            title="Laravel Web Development Company by"
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+170+(1).png"
             alt="Laravel Development Company"
             type="php"
-            unique="Company"
+            unique={"brain inventory"}
           />
           <Customer />
           <Experienced

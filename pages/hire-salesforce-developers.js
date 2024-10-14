@@ -143,19 +143,19 @@ function HireSalesforceDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Salesforce Developers | Expert Salesforce Developers</title>
+        <title>Hire Experienced Salesforce Developers | Brain Inventory</title>
         <meta
           name="description"
-          content="Hire certified Salesforce developers for custom services, third-party tool integration, and maximizing Salesforce capabilities with expert guidance and support."
+          content="Hire dedicated salesforce developers from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated salesforce experts."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Salesforce Developers | Expert Salesforce Developers"
+          content="Hire Experienced Salesforce Developers | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire certified Salesforce developers for custom services, third-party tool integration, and maximizing Salesforce capabilities with expert guidance and support."
+          content="Hire dedicated salesforce developers from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated salesforce experts."
         />
         <meta
           property="og:image"
@@ -181,7 +181,7 @@ function HireSalesforceDeveloper(props) {
           <>
             <Header />
             <HireBanner
-              title="Hire Salesforce"
+              title="Hire Dedicated Salesforce Developers with"
               content={content}
               btn="Get a Quote"
               subhead="A Smarter Way to Build Customized Applications."
@@ -189,7 +189,7 @@ function HireSalesforceDeveloper(props) {
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Android+Developers.png"
               alt="Hire Salesforce Developers"
               type="hire"
-              unique={"developer"}
+              unique={"brain inventory"}
             />{" "}
             <Customer />
             <Experienced

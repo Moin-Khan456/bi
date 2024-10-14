@@ -139,19 +139,21 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Experienced iOS Developers | Hire iOS App Developers</title>
+        <title>
+          Certified iOS App Developers Hire - iOS App Developers USA
+        </title>
         <meta
           name="description"
-          content="Hire iOS app developer in 24 hours. Find top iOS developers within your budget to build user-friendly apps. Get the best talent and start your project today!"
+          content="Hire top-rated iOS app developers. Our experienced iOS app developers are committed to providing innovative solutions for your apps. Contact today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Experienced iOS Developers | Hire iOS App Developers"
+          content="Certified iOS App Developers Hire - iOS App Developers USA"
         />
         <meta
           property="og:description"
-          content="Hire iOS app developer in 24 hours. Find top iOS developers within your budget to build user-friendly apps. Get the best talent and start your project today!"
+          content="Hire top-rated iOS app developers. Our experienced iOS app developers are committed to providing innovative solutions for your apps. Contact today!"
         />
         <meta
           property="og:image"
@@ -179,10 +181,10 @@ function HireAangularJsDeveloper(props) {
           {/* hirebanner heading half:-   with our expert iOS app development services! */}
           <HireBanner
             heading="Transform your ideas into stunning iOS apps"
-            title="Hire iOS"
+            title="Hire Experienced iOS App developers with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+iOS+Developers.png"
             alt="iOS app development services"
             type="hire"

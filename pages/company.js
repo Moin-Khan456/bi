@@ -27,16 +27,16 @@ function Company() {
         </title>
         <meta
           name="description"
-          content="Brain Inventory is a top-notch IT Software and Staff Augmentation company that started with a clear vision to build amazing products for clients worldwide."
+          content="Brain Inventory is a top-level IT Software development company that started with a clear vision to build amazing products for clients worldwide."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Custom Software And App Development | Web Development Company - Brain Inventory"
+          content=" Custom Software App & Web Development Company | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Brain Inventory is a top-notch  IT Software and Staff  Augmentation company that started with a clear vision to build amazing products for clients worldwide."
+          content="Brain Inventory is a top-level IT Software development company that started with a clear vision to build amazing products for clients worldwide."
         />
         <meta
           property="og:image"
@@ -47,7 +47,7 @@ function Company() {
       <div className="relative">
         <Header />
         <Video />
-        <Summary />
+        <Summary head={"Website & App Development Company - Brain Inventory"}/>
         <div>
           <Mission />
           <Ethos />

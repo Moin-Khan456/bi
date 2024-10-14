@@ -111,20 +111,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom AngularJs Web Development Company - Brain Inventory
+        AngularJS Development Service Company USA | Brain Inventory
         </title>
         <meta
           name="description"
-          content="Get Top Angular web development Services from Brain Inventory. We specialize in developing client-centric web and mobile applications using AngularJS."
+          content="Looking for the best angular js app development company? The brain Inventory expert team is specialized in angular js development services. Contact us Today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom AngularJs Web Development Company - Brain Inventory"
+          content="AngularJS Development Service Company USA | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Get Top Angular web development Services from Brain Inventory. We specialize in developing client-centric web and mobile applications using AngularJS."
+          content="Looking for the best angular js app development company? The brain Inventory expert team is specialized in angular js development services. Contact us Today!"
         />
         <meta
           property="og:url"
@@ -157,8 +157,9 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <div className="pt-32">
             <SectionOne
-              heading="Angular.Js"
+              heading="Angular JS Web "
               title="Top AngularJs"
+              miniTitle={"Service by Brain Inventory"}
               content={content}
               btn="Get a Quote"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6523.png"

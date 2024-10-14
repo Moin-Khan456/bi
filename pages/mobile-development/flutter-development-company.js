@@ -119,19 +119,21 @@ function Flutter() {
   return (
     <>
       <Head>
-        <title>Flutter App Development Company | Best Flutter Services</title>
+        <title>
+          Flutter App Development Company USA - Flutter App Design Services
+        </title>
         <meta
           name="description"
-          content="As a top Flutter app development company, we specialize in creating high-performance, innovative applications. Our services ensure your Flutter apps perform excellently."
+          content="Looking for a flutter app development company? Look no further! Contact brain inventory for experienced flutter app development services, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Flutter App Development Company | Best Flutter Services"
+          content="Flutter App Development Company USA - Flutter App Design Services"
         />
         <meta
           property="og:description"
-          content="As a top Flutter app development company, we specialize in creating high-performance, innovative applications. Our services ensure your Flutter apps perform excellently."
+          content="Looking for a flutter app development company? Look no further! Contact brain inventory for experienced flutter app development services, for quality services."
         />
         <meta
           property="og:url"
@@ -161,6 +163,7 @@ function Flutter() {
               title="Top Flutter"
               content={content}
               btn="Get a Quote"
+              miniTitle={"Service by Brain Inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6728.png"
               alt=" Flutter Development Company"
               appDev={true}

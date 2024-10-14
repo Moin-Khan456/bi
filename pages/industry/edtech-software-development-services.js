@@ -317,20 +317,18 @@ function EdTech() {
   return (
     <>
       <Head>
-        <title>
-          Best Education Software Development Company | Brain Inventory
-        </title>
+        <title>Education & Research IT Company | Brain Inventory</title>
         <meta
           property="description"
-          content="Seeking effective educational software development? We are a custom software development company offering tailored solutions for the education sector."
+          content="Brain Inventory services offer education IT solutions to build a platform where the administration, faculty and students can collaborate easily. Call us!"
         />
         <meta
           property="og:description"
-          content="Seeking effective educational software development? We are a custom software development company offering tailored solutions for the education sector."
+          content="Brain Inventory services offer education IT solutions to build a platform where the administration, faculty and students can collaborate easily. Call us!"
         />
         <meta
           name="og:title"
-          content="Best Education Software Development Company | Brain Inventory"
+          content="Education & Research IT Company | Brain Inventory"
         />
         <meta
           property="og:image"
@@ -350,7 +348,8 @@ function EdTech() {
       <SectionOne />
       <SectionTwo
         className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-        title="TOP EdTech SOFTWARE"
+        title="Education App Service Provide by Brain Inventory"
+        isHeadShow={false}
         head1="Revolutionizing Ed-Tech Services"
         description={sectionTwoDesc}
       />

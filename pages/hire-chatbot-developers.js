@@ -175,19 +175,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Chatbot Developer - 100% Resource Replacement</title>
+        <title>Dedicated Chatbot Developer Hire - Chatbot Programmers</title>
         <meta
           name="description"
-          content="Hire top 1% of chatbot developers in India skilled in creating intelligent conversational interfaces for your business needs. Contact us today for expert solutions."
+          content="Are you looking to hire expert chatbot developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Chatbot Developer - 100% Resource Replacement"
+          content="Dedicated Chatbot Developer Hire - Chatbot Programmers"
         />
         <meta
           property="og:description"
-          content="Hire top 1% of chatbot developers in India skilled in creating intelligent conversational interfaces for your business needs. Contact us today for expert solutions."
+          content="Are you looking to hire expert chatbot developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
         />
         <meta
           property="og:image"
@@ -223,10 +223,10 @@ https://braininventory.in/hire-chatbot-developers"
             <Header></Header>
             <HireBanner
               heading="A Smarter Way to Build Customized Applications."
-              title="Hire Chatbot"
+              title="Hire Experienced Chatbot Developer with"
               content={content}
               btn="Contact Us!"
-              unique={"developer"}
+              unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_hire+chatbot+developers+1.png"
               alt="Hire Dedicated Chatbot Developers"
             />

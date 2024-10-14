@@ -44,7 +44,11 @@ export default function HireBanner({
               {title}
               <span className="text-developer text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
                 <br />
-                {unique === "integration" ? "Integration" : "Development"}
+                {unique === "brain inventory"
+                  ? "Brain Inventory"
+                  : unique === "integration"
+                  ? "Integration"
+                  : "Development"}
               </span>
             </h1>
             <h2 className="text-xl Gilroy-Bold my-4">{subhead}</h2>
@@ -72,25 +76,25 @@ export default function HireBanner({
           )} */}
         </section>
         <section className="flex justify-end">
-            <section className="lg:mb-0 mb-6 px-5 lg:px-0 w-[80%]">
-              <section className="started-subcription">
-                <p className="Gilroy-Bold text-lg">Get Started Within</p>
-                <h2 className="Gilroy-Bold text-5xl">
-                  2 Business <span className="text-lg">Days</span>
-                </h2>
-              </section>
-              <section className="p-4 lg:p-8 bg-line">
-                <ul className="">
-                  {card &&
-                    card.map((ele, index) => (
-                      <li key={index} className="py-5 flex">
-                        <BiCheckCircle className="text-2xl mb-1" />
-                        <span className="pl-2 pb-1">{ele}</span>
-                      </li>
-                    ))}
-                </ul>
-              </section>
+          <section className="lg:mb-0 mb-6 px-5 lg:px-0 w-[80%]">
+            <section className="started-subcription">
+              <p className="Gilroy-Bold text-lg">Get Started Within</p>
+              <h2 className="Gilroy-Bold text-5xl">
+                2 Business <span className="text-lg">Days</span>
+              </h2>
             </section>
+            <section className="p-4 lg:p-8 bg-line">
+              <ul className="">
+                {card &&
+                  card.map((ele, index) => (
+                    <li key={index} className="py-5 flex">
+                      <BiCheckCircle className="text-2xl mb-1" />
+                      <span className="pl-2 pb-1">{ele}</span>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          </section>
           {/* ) : (
             <section
               className={` mx-14 lg:mb-0 mb-6 bg-none max-w-[500px] my-4 ${

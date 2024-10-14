@@ -41,12 +41,12 @@ export default function Home({ data, blogs, totalPages }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog – Staff Augmentation | Software | Web | App Development 
+          content=" Insights and Innovations | Blogs by Brain Inventory 
 "
         />
         <meta
           property="og:description"
-          content=" Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
+          content=" Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
         />
 
         <meta

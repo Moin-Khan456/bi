@@ -262,19 +262,19 @@ Our approach is tailored and flexible. At every stage, from conceptualization to
     <>
       <Head>
         <title>
-          FAQs | Web And Mobile App Development | IT Staff Augmentation
+          Frequently Asked Questions | Brain Inventory Support & Information
         </title>
         <meta
           property="description"
-          content="Our FAQs cover queries on web and mobile app development, our process, services, and hiring dedicated resources."
+          content="Find answers to common questions about Brain Inventory, including services, support, and more. Explore our FAQ page for more information and resources."
         />
         <meta
           property="og:description"
-          content="Our FAQs cover queries on web and mobile app development, our process, services, and hiring dedicated resources."
+          content="Find answers to common questions about Brain Inventory, including services, support, and more. Explore our FAQ page for more information and resources."
         />
         <meta
           name="og:title"
-          content="FAQs | Web And Mobile App Development | IT Staff Augmentation"
+          content="Frequently Asked Questions | Brain Inventory Support & Information"
         />
         <meta
           property="og:image"

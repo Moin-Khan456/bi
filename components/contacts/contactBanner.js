@@ -7,12 +7,13 @@ function contactBanner() {
       <div className="h-screen bg-gradient-1 flex items-center relative">
         <div className="lg:w-1/2 w-full  h-full  relative">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
-            <h1 className="2xl:text-5xl xl:text-5xl mt-20 text-4xl stroke-text-3 Gilroy-Bold">
-              Contact Us for Website and App Development | Staff Augmentation
+           
+            <h1 class="text-5xl lg:text-[5rem] Gilroy-Bold mt-4 max-sm:whitespace-break-spaces">
+            Contact Brain Inventory
             </h1>
-            <div className="text-heading-1 Gilroy-Bold">
+            <h1 className="2xl:text-5xl xl:text-5xl mt-20 text-4xl stroke-text-3 Gilroy-Bold">
               lets do some great <br /> things together!
-            </div>
+            </h1>
             <div className="flex flex-col">
               <div className="Gilroy-Light text-xl text-gray-50">
                 While we are good at sign language, there are various other

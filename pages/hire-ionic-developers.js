@@ -140,19 +140,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Ionic Developers | Dedicated Ionic App Developers</title>
+        <title>Hire Experienced Ionic Developers | Brain Inventory</title>
         <meta
           name="description"
-          content="Hire Ionic app developers skilled in crafting highly effective, engaging, and intuitive mobile applications using the Ionic development framework for your business needs."
+          content="Are you looking to hire ionic developers? Look no further! We have the best-certified ionic developers, ready to help you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Ionic Developers | Dedicated Ionic App Developers"
+          content="Hire Experienced Ionic Developers | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire Ionic app developers skilled in crafting highly effective, engaging, and intuitive mobile applications using the Ionic development framework for your business needs."
+          content="Are you looking to hire ionic developers? Look no further! We have the best-certified ionic developers, ready to help you. Contact us today!"
         />
         <meta
           property="og:image"
@@ -174,10 +174,10 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             subhead="Upgrade Your Development Process With Our Expertise"
-            title="Hire Ionic"
+            title="Hire Dedicated Ionic Developers with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/ionic/Mask+Group+162.png"
             alt="Ionic development company"
             type="hire"

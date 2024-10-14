@@ -142,19 +142,21 @@ function HireAangularJsDeveloper() {
   return (
     <>
       <Head>
-        <title>Hire Next.js Developer | Top Remote Next.js Developers</title>
+        <title>
+          Hire Experienced Next.js Developer - Next.js Developers USA
+        </title>
         <meta
           name="description"
-          content="Looking to hire Next JS developer for your next project? Our expert team at Brain Inventory will help you create high-performance applications tailored to your needs."
+          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs. Contact us."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Next.js Developer | Top Remote Next.js Developers"
+          content="Hire Experienced Next.js Developer - Next.js Developers USA"
         />
         <meta
           property="og:description"
-          content="Looking to hire Next JS developer for your next project? Our expert team at Brain Inventory will help you create high-performance applications tailored to your needs."
+          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs. Contact us."
         />
 
         <meta
@@ -184,10 +186,10 @@ function HireAangularJsDeveloper() {
         <Header></Header>
         <HireBanner
           heading="Upgrade Your Development Process With Our Expertise"
-          title="Hire Next.js"
+          title="Hire Dedicated Next js Developers with"
           content={content}
           btn="Contact Us!"
-          unique={"developer"}
+          unique={"brain inventory"}
           image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+NextJS+Developers.png"
           alt="Remote Next.js Developers"
           type="hire"

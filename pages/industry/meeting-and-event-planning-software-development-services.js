@@ -293,20 +293,18 @@ function Meeting(props) {
   return (
     <>
       <Head>
-        <title>
-          Leading Meeting and Event Planning Software Development Company
-        </title>
+        <title>Meeting & Event Planning Software Development Company</title>
         <meta
           property="description"
-          content="Brain Inventory leading meeting and event planning software development company, creates on-demand software tailored for seamless event handling and meeting management."
+          content="Brain Inventory provides meeting and event planning software development services to help your employee and customer. Contact us now."
         />
         <meta
           property="og:description"
-          content="Brain Inventory leading meeting and event planning software development company, creates on-demand software tailored for seamless event handling and meeting management."
+          content="Brain Inventory provides meeting and event planning software development services to help your employee and customer. Contact us now."
         />
         <meta
           name="og:title"
-          content="Leading Meeting and Event Planning Software Development Company"
+          content="Meeting & Event Planning Software Development Company"
         />
         <meta
           property="og:image"
@@ -332,7 +330,8 @@ function Meeting(props) {
       <SectionOne />
       <SectionTwo
         className="pt-20 pb-32 bg-right bg-no-repeat bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] w-full"
-        title="TOP / Meeting & Event / Management / SOFTWARE"
+        title="Meeting & Event / Planning / Software / Development / by / Brain Inventory"
+        isHeadShow={false}
         head1="Your ultimate solution to seamless event planning!"
         description={sectionTwoDesc}
       />

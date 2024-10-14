@@ -244,21 +244,19 @@ function SportAppDeveloper() {
   return (
     <>
       <Head>
-        <title>
-          Custom Sports App Development Company | Sports App Development
-        </title>
+        <title>Custom Sports App Development Company - Sports Web Design</title>
         <meta
           name="description"
-          content="Brain Inventory specializes in professional sports app development, delivering top-tier software solutions for fantasy sports apps, sports betting apps, and more."
+          content="Brain Inventory specializes in professional sports app development, delivering best solutions for fantasy sports apps, sports betting apps, and much more."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Sports App Development Company | Sports App Development"
+          content="Custom Sports App Development Company - Sports Web Design"
         />
         <meta
           property="og:description"
-          content="Brain Inventory specializes in professional sports app development, delivering top-tier software solutions for fantasy sports apps, sports betting apps, and more."
+          content="Brain Inventory specializes in professional sports app development, delivering best solutions for fantasy sports apps, sports betting apps, and much more."
         />
         <meta
           property="og:url"
@@ -286,7 +284,8 @@ function SportAppDeveloper() {
           <section className="pt-32">
             <SectionTwo
               className="container pb-2 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-              title="TOP SPORTS APP"
+              title="Custom Sports App Development Services by Brain Inventory"
+              isHeadShow={false}
               head1="Elevating Performance with Innovative Sports Software Development"
               description={sectionTwoDesc}
             />

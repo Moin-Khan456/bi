@@ -20,21 +20,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Portfolio - Our Software Development Projects | Brain Inventory
-        </title>
+        <title>Showcase of Brain Inventory Projects | Portfolio</title>
         <meta
           name="description"
-          content="Explore our diverse portfolio of cutting-edge software solutions. Discover how our software development company has delivered innovation and excellence to clients worldwide."
+          content="Explore our portfolio to see a collection of successful projects and innovative solutions by Brain Inventory. Discover how we transform ideas into reality."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Portfolio - Our Software Development Projects | Brain Inventory"
+          content="Showcase of Brain Inventory Projects | Portfolio"
         />
         <meta
           property="og:description"
-          content="Explore our diverse portfolio of cutting-edge software solutions. Discover how our software development company has delivered innovation and excellence to clients worldwide."
+          content="Explore our portfolio to see a collection of successful projects and innovative solutions by Brain Inventory. Discover how we transform ideas into reality."
         />
 
         <meta
@@ -194,11 +192,11 @@ function HireAangularJsDeveloper(props) {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "Product",
-              name: "Custom Software Development Company | Staff Augmentation - Brain Inventory",
+              name: "Custom Software Development Service USA - Software Development Company",
               image:
                 "https://braininventory.in/_next/image?url=https%3A%2F%2Fbraininventory.s3.us-east-2.amazonaws.com%2Fimages%2Fmain%2FLogobg.png&w=256&q=75",
               description:
-                "Brain Inventory is a leading custom Software Development Company offering Staff Augmentation, IT Consulting, Software, Web, and App Development Services across the globe.",
+                "At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today.",
               brand: {
                 "@type": "Brand",
                 name: "Brain Inventory",

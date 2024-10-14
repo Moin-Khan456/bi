@@ -107,20 +107,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Premium WordPress Website Development Services | Brain Inventory
+          WordPress Website Design Company USA - WordPress Website Design
         </title>
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Premium WordPress Website Development Services | Brain Inventory"
+          content="WordPress Website Design Company USA - WordPress Website Design"
         />
         <meta
           name="description"
-          content="As a seasoned provider of WordPress website development services, we craft sites with intuitive, interactive interfaces that cater to all users' needs."
+          content="Are you looking for WordPress web design & development services? We are here to help! Contact Brain Inventory for experienced WordPress developers."
         />
         <meta
           property="og:description"
-          content="As a seasoned provider of WordPress website development services, we craft sites with intuitive, interactive interfaces that cater to all users' needs."
+          content="Are you looking for WordPress web design & development services? We are here to help! Contact Brain Inventory for experienced WordPress developers."
         />
         <meta
           property="og:image"
@@ -150,14 +150,14 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="WordPress Website Development"
+            title="WordPress Website Designing & Development Company by"
             content={content}
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+1.png"
             alt="WordPress website development services"
             type="php"
-            unique="Company"
+            unique="brain inventory"
           />
           <Customer />
           <Experienced

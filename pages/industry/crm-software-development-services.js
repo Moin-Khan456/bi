@@ -273,19 +273,19 @@ function CrmDevelopment(props) {
     <>
       <Head>
         <title>
-          Custom CRM Software Development Services | CRM Development
+          Custom CRM Software Development Services | Brain Inventory
         </title>
         <meta
           property="description"
-          content="Brain Inventory offers custom CRM software development services to analyze your business needs and implement a tailored CRM solution for your goals. Contact us today!"
+          content="Brain Inventory provides the best CRM development service & solutions as per your requirements. Contact us to make your custom crm now."
         />
         <meta
           property="og:description"
-          content="Brain Inventory offers custom CRM software development services to analyze your business needs and implement a tailored CRM solution for your goals. Contact us today!"
+          content="Brain Inventory provides the best CRM development service & solutions as per your requirements. Contact us to make your custom crm now."
         />
         <meta
           name="og:title"
-          content="Custom CRM Software Development Services | CRM Development"
+          content="Custom CRM Software Development Services | Brain Inventory"
         />
         <meta
           property="og:image"
@@ -308,8 +308,9 @@ function CrmDevelopment(props) {
             classText="lg:w-[75%]"
             hideSubText="hidden"
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="Unlock the Power of CRM Development"
+            title="Custom CRM Development Services by Brain Inventory"
             head1="Enabling Success through CRM"
+            isHeadShow={false}
             description={sectionTwoDesc}
             notBreakable={true}
           />

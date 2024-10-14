@@ -154,19 +154,19 @@ function HireJavaDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Hire Java Developers | Skilled Java Programmers in 48hr</title>
+        <title>Hire Experienced Java Developers - Java Developers USA</title>
         <meta
           name="description"
-          content="Hire top Java developers for your project. Work with vetted experts to ensure your Java development needs are met with precision and efficiency."
+          content="Hire dedicated Java developers from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated Java experts."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire Java Developers | Skilled Java Programmers in 48hr"
+          content="Hire Experienced Java Developers - Java Developers USA"
         />
         <meta
           property="og:description"
-          content="Hire top Java developers for your project. Work with vetted experts to ensure your Java development needs are met with precision and efficiency."
+          content="Hire dedicated Java developers from Brain Inventory for your remote development solutions. Contact us today to hire our dedicated Java experts."
         />
         <meta
           property="og:image"
@@ -192,7 +192,7 @@ function HireJavaDeveloper(props) {
           <>
             <Header />
             <HireBanner
-              title="Hire Java"
+              title="Hire Dedicated Remote Java Developers with"
               content={content}
               btn="Get a Quote"
               subhead="A Smarter Way to Build Customized Applications."
@@ -200,7 +200,7 @@ function HireJavaDeveloper(props) {
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Android+Developers.png"
               alt="Hire Java Developers"
               type="hire"
-              unique={"developer"}
+              unique={"brain inventory"}
             />{" "}
             <Customer />
             <Experienced

@@ -142,20 +142,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Custom Typescript Development | Typescript App Development Company
+        TypeScript Development Company USA - TypeScript Develop Services
         </title>
         <meta
           name="description"
-          content="Our TypeScript app development company transforms your ideas into robust applications, offering feature-rich services for enterprises to drive growth and efficiency."
+          content="Looking for type script development services? We are here to help you! Contact brain inventory for experienced type script developers, for quality services."
         />
         <meta
           name="og:description"
-          content="Our TypeScript app development company transforms your ideas into robust applications, offering feature-rich services for enterprises to drive growth and efficiency."
+          content="Looking for type script development services? We are here to help you! Contact brain inventory for experienced type script developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Custom Typescript Development | Typescript  App Development Company"
+          content="TypeScript Development Company USA - TypeScript Develop Services"
         />
         <meta
           property="og:url"
@@ -177,15 +177,15 @@ function HireAangularJsDeveloper(props) {
         <div>
           <Header />
           <SectionOne
-            title="TypeScript Development"
+            title="TypeScript Development Service Company by"
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
+            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+168.png"
             alt="Python Development Company"
             type="php"
-            unique="Company"
+            unique={"brain inventory"}
           />
           <Customer />
           <Experienced

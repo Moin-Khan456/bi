@@ -147,20 +147,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Exceptional Mean Stack Developers | Hire MEAN stack Developers
+          Hire Experienced Mean Stack Developers - Mean Stack Developer USA
         </title>
         <meta
           name="description"
-          content="Hire top MEAN Stack developers from Brain Inventory for cutting-edge solutions. Access expert talents and the latest technologies for your projects. Inquire now!"
+          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today to hire mean stack developers."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Exceptional Mean Stack Developers | Hire MEAN stack Developers"
+          content="Hire Experienced Mean Stack Developers - Mean Stack Developer USA"
         />
         <meta
           property="og:description"
-          content="Hire top MEAN Stack developers from Brain Inventory for cutting-edge solutions. Access expert talents and the latest technologies for your projects. Inquire now!"
+          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today to hire mean stack developers."
         />
         <meta
           property="og:image"
@@ -188,10 +188,10 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire MEAN Stack"
+            title="Hire Dedicated MEAN Stack Developers with"
             content={content}
             btn="Contact Us!"
-            unique={"developer"}
+            unique={"brain inventory"}
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+MEAN+Developers.png"
             alt="Hire Dedicated MEAN Stack Developers"
             type="hire"

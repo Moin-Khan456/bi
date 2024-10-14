@@ -28,17 +28,17 @@ export default function Home({
         </title>
         <meta
           name="description"
-          content="Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
+          content="Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Brain Inventory Blog – Staff Augmentation | Software | Web | App Development 
+          content=" Insights and Innovations | Blogs by Brain Inventory 
 "
         />
         <meta
           property="og:description"
-          content=" Read the latest technology trends, news And updates and other topics about software And app development from Brain Inventory’s informative blogs!"
+          content=" Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
         />
         <meta
           property="og:image"
@@ -64,7 +64,7 @@ export default function Home({
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
             <h1 className="lg:text-5xl text-3xl pt-12 font-bold leading-12">
-              Mindful Blogs | Resource Augmentation | Web and Mobile Software
+            Welcome to the Brain Inventory Blogs: Insights, Trends, and Innovations
               Development
             </h1>
             <div>

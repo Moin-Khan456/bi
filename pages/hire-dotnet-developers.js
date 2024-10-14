@@ -150,21 +150,19 @@ function HireAangularJsDeveloper(props) {
   return (
     <>
       <Head>
-        <title>
-          Hire .NET Developers | Top .NET Programmers - Brain Inventory
-        </title>
+        <title>Hire Experienced Dot NET Developers | Brain Inventory</title>
         <meta
           name="description"
-          content="Hire skilled .NET developers quickly and affordably, saving up to 40%. Access top-tier, AI-vetted talent for creating responsive mobile apps with intuitive user experiences."
+          content="Looking to hire a dedicated dot net developer? We are here to help you! Hire a talented .net developers team to give you the best solutions. Contact us."
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Hire .NET Developers | Top .NET Programmers - Brain Inventory"
+          content="Hire Experienced Dot NET Developers | Brain Inventory"
         />
         <meta
           property="og:description"
-          content="Hire skilled .NET developers quickly and affordably, saving up to 40%. Access top-tier, AI-vetted talent for creating responsive mobile apps with intuitive user experiences."
+          content="Looking to hire a dedicated dot net developer? We are here to help you! Hire a talented .net developers team to give you the best solutions. Contact us."
         />
         <meta
           property="og:image"
@@ -187,9 +185,9 @@ function HireAangularJsDeveloper(props) {
             <Header></Header>
             <HireBanner
               subhead="Upgrade Your Development Process With Our Expertise"
-              title="Hire .NET"
+              title="Hire Dedicated Dot Net Developers from"
               content={content}
-              unique={"developer"}
+              unique={"brain inventory"}
               btn="Contact Us!"
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/dotnet/1.png"
               alt="Ionic development company"

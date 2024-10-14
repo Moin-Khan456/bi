@@ -137,20 +137,20 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-          Professional Mobile Application Integration Services | Brain Inventory
+          API Integration Services USA - Third Party Integration Service
         </title>
         <meta
           name="description"
-          content="Brain Inventory excels in mobile app integration services, seamlessly connecting various backend systems and web services to enhance functionality and user experience."
+          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work. Call us!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Professional Mobile Application Integration Services | Brain Inventory"
+          content="API Integration Services USA - Third Party Integration Service"
         />
         <meta
           property="og:description"
-          content="Brain Inventory excels in mobile app integration services, seamlessly connecting various backend systems and web services to enhance functionality and user experience."
+          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work. Call us!"
         />
         <meta
           property="og:image"
@@ -180,14 +180,14 @@ function HireAangularJsDeveloper(props) {
           <Header />
           <SectionOne
             heading="A Smarter Way to Build Customized Applications."
-            title="Mobile Application"
+            title="Third Party API Integration Services by"
             content={content}
             btn="Contact Us!"
             developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_mobile+app+integration+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_mobile+app+integration+1.png"
             alt="Mobile Application Integration Services"
             type="app"
-            unique="integration"
+            unique={"brain inventory"}
           />
           <Customer />
           <Experienced

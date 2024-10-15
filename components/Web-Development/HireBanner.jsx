@@ -20,16 +20,16 @@ export default function HireBanner({
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
         <div className="">
           <div className="ml-4 lg:ml-0">
-            <h1 className="text-5xl lg:text-[3.5rem] Gilroy-Bold my-4 leading-[4rem] text-shadow">
+            <h3 className="text-5xl lg:text-[3.5rem] Gilroy-Bold my-4 leading-[4rem] text-shadow">
               {title}
               <span className="text-developer text-shadow-none text-5xl lg:text-[4.5rem] Gilroy-Bold font-extrabold">
                 <br />
                 Company
               </span>
-            </h1>
-            <h1 className="text-2xl Gilroy-Bold text-shadow mb-12">
+            </h3>
+            <h3 className="text-2xl Gilroy-Bold text-shadow mb-12">
               {heading}
-            </h1>
+            </h3>
             <h2 className="lg:text-5xl text-4xl Gilroy-Bold mb-4">
               {subtitle}
             </h2>
@@ -84,8 +84,7 @@ export default function HireBanner({
                 type === "php" && "drop-shadow-image"
               }`}
             >
-              <Image  
-         
+              <Image
                 src={image}
                 className="w-[100%] rounded-2xl bg-transparent"
                 fetchPriority="high"

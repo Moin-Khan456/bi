@@ -5,7 +5,7 @@ const Work = () => {
     <div className="p-8">
       <div className="container padding-left-all-section">
         <div>
-          <h1 className="Gilroy-Bold text-xl pb-4">how we work</h1>
+          <h3 className="Gilroy-Bold text-xl pb-4">how we work</h3>
           <h3 className="Gilroy-Bold text-4xl pb-3">
             the process is defined as a sequence of steps.
           </h3>

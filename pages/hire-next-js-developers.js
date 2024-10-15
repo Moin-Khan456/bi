@@ -147,7 +147,7 @@ function HireAangularJsDeveloper() {
         </title>
         <meta
           name="description"
-          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs. Contact us."
+          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -156,7 +156,7 @@ function HireAangularJsDeveloper() {
         />
         <meta
           property="og:description"
-          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs. Contact us."
+          content=" Are you looking for a next js developer for your next project? Brain Inventory is here to help you create fast and powerful apps according to your needs."
         />
 
         <meta

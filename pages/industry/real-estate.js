@@ -289,7 +289,7 @@ function Travel(props) {
       <Head>
         <title>Best Real Estate Software Development Service Company</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory offers best real estate software development IT services & solutions to build a unique platform for you. Contact us now."
         />
         <meta

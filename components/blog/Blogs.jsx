@@ -42,7 +42,7 @@ const Blogs = ({ blogs }) => {
                   </div>
                 </div>
                 <div className="lg:w-1/2 lg:pl-2">
-                  <h1 className="text-2xl font-bold">{post.title.rendered}</h1>
+                  <h3 className="text-2xl font-bold">{post.title.rendered}</h3>
                   <div
                     className="text-sm mt-2 text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}

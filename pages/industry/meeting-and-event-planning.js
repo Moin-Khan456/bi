@@ -295,7 +295,7 @@ function Meeting(props) {
       <Head>
         <title>Meeting & Event Planning Software Development Company</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides meeting and event planning software development services to help your employee and customer. Contact us now."
         />
         <meta

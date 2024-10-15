@@ -163,9 +163,9 @@ function HireAangularJsDeveloper(props) {
             />
             <WhyMean type="MEAN Stack" meanReasons={meanReasons} />
             <div className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
                 MEAN Stack Development
-              </h1>
+              </h3>
             </div>
             <Benefits
               type="MEAN Stack"

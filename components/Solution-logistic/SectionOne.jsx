@@ -8,14 +8,17 @@ export default function HireBanner() {
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section className="relative">
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h1 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
+            <h3 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Navigating Tomorrow:
-            </h1>
-            <h1 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase !leading-[3.5rem] mt-4 lg:!w-[700px]">
+            </h3>
+            <h3 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase !leading-[3.5rem] mt-4 lg:!w-[700px]">
               Transforming Logistics with Smart Solutions Today!
-            </h1>
+            </h3>
             <h2 className="text-md font-Satoshi text-white opacity-50 leading-7 pb-12 lg:w-[85%] lg:text-justify">
-            Navigating your way to streamlined transportation and logistics management has never been simpler. Unleashing the power of software, we at Brain Inventory bring innovation to your doorstep, transforming your logistic challenges into seamless operations.
+              Navigating your way to streamlined transportation and logistics
+              management has never been simpler. Unleashing the power of
+              software, we at Brain Inventory bring innovation to your doorstep,
+              transforming your logistic challenges into seamless operations.
             </h2>
           </section>
           <Link href="#talk">

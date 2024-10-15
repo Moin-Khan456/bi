@@ -7,9 +7,9 @@ export default function HireBanner() {
   return (
     <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/travel_banner.webp')]">
       <div className="flex flex-col justify-center h-screen padding-left-all-section-1 ">
-        <h1 className="MonumentRegular text-4xl lg:text-[3.75rem] lg:leading-[4rem] w-1/2 pt-16">
+        <h3 className="MonumentRegular text-4xl lg:text-[3.75rem] lg:leading-[4rem] w-1/2 pt-16">
           Your Gateway to Global Adventures
-        </h1>
+        </h3>
         <p className="w-1/2 text-xs pt-8">
           Welcome to Brain Inventory, Your gateway to the world of bespoke
           travel software! Explore, Innovate, and Transform your travel business

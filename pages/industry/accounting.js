@@ -303,7 +303,7 @@ function Accounting(props) {
           Accounting Consulting Services & Solutions | Brain Inventory
         </title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides accounting consulting services to help your account & finance. Contact us to make your accounting services now."
         />
         <meta

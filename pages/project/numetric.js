@@ -226,7 +226,7 @@ const Numetric = () => {
       <Header />
       <div className="container  pt-12">
         <SectionOne section={NumetricSectionOne} />
-        <h1 className="invisible">Cloud Based Accounting</h1>
+        <h3 className="invisible">Cloud Based Accounting</h3>
         <SectionTwo />
         <SectionThree />
         <PojectCarousel images={carouselImages} />

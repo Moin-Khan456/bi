@@ -261,20 +261,18 @@ function Healthcare(props) {
   return (
     <>
       <Head>
-        <title>
-          Top Rated Healthcare Software Development Services | Brain Inventory
-        </title>
+        <title>Healthcare IT Solutions & Services | Brain Inventory</title>
         <meta
-          property="description"
-          content="Brain Inventory, a prominent healthcare software development company, excels in utilizing advanced technologies to address tangible healthcare challenges."
+          name="description"
+          content="Brain Inventory provides healthcare IT services and solutions to improve patient care, and operations. Contact us to build your healthcare IT now."
         />
         <meta
           property="og:description"
-          content="Brain Inventory, a prominent healthcare software development company, excels in utilizing advanced technologies to address tangible healthcare challenges."
+          content="Brain Inventory provides healthcare IT services and solutions to improve patient care, and operations. Contact us to build your healthcare IT now."
         />
         <meta
           name="og:title"
-          content="Top Rated Healthcare Software Development Services | Brain Inventory"
+          content="Healthcare IT Solutions & Services | Brain Inventory"
         />
         <meta
           property="og:image"
@@ -296,8 +294,9 @@ function Healthcare(props) {
           <SectionOne />
           <SectionTwo
             className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
-            title="TOP HEALTHCARE SOFTWARE"
+            title="Health Care IT Services & Solutions by Brain Inventory"
             head1="Empowering Healthcare Digitally."
+            isHeadShow={false}
             description={sectionTwoDesc}
           />
           <SectionThree

@@ -7,7 +7,7 @@ const Index = ({
   sectionFiveTableHead,
   sectionFiveTable,
   tableFooter,
-  alt
+  alt,
 }) => {
   return (
     <div className="padding-left-all-section-1 rounded-md my-8 py-10 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')] bg-no-repeat bg-center">
@@ -15,17 +15,18 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h1 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
+            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
               {head}
-            </h1>
-            <h3 className="font-bold text-lg mb-6 monument uppercase">{subhead}</h3>
+            </h3>
+            <h3 className="font-bold text-lg mb-6 monument uppercase">
+              {subhead}
+            </h3>
             <p className="text-sm text-gray-400 font-medium leading-5 font-Satoshi">
               {description}
             </p>
           </div>
           <div>
-            <Image  
-         
+            <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/abstract-yellow-rocket-ship-concept-cartoon-style.png"
               width={800}
               height={500}
@@ -41,7 +42,10 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[0]?.map((ele, index) => (
-                <li className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs" key={index}>
+                <li
+                  className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs"
+                  key={index}
+                >
                   {ele}
                 </li>
               ))}
@@ -68,7 +72,10 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[2]?.map((ele, index) => (
-                <li className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs" key={index}>
+                <li
+                  className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs"
+                  key={index}
+                >
                   {ele}
                 </li>
               ))}
@@ -80,7 +87,10 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[3]?.map((ele, index) => (
-                <li className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs" key={index}>
+                <li
+                  className="bottom-border-five py-5 px-4 font-Satoshi opacity-50 text-xs"
+                  key={index}
+                >
                   {ele}
                 </li>
               ))}
@@ -92,14 +102,17 @@ const Index = ({
             </h2>
             <ul className="">
               {sectionFiveTable[4]?.map((ele, index) => (
-                <li className="bottom-border-five py-3 px-4 font-Satoshi opacity-50 text-xs" key={index}>
+                <li
+                  className="bottom-border-five py-3 px-4 font-Satoshi opacity-50 text-xs"
+                  key={index}
+                >
                   {ele}
                 </li>
               ))}
             </ul>
           </div>
         </div>
-          <div className="pt-4 px-4">{tableFooter}</div>
+        <div className="pt-4 px-4">{tableFooter}</div>
       </div>
     </div>
   );

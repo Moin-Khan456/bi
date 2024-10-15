@@ -141,7 +141,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work. Call us!"
+          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -150,7 +150,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work. Call us!"
+          content="Searching for an api integration service? Brain Inventory will help you! Contact dedicated third party software integration developers for quality work."
         />
         <meta
           property="og:image"

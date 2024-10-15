@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
- 
+
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
@@ -21,9 +21,9 @@ function ThankYou(props) {
           <Header></Header>
           <div className="2xl:py-32 xl:py-28 py-24 2xl:px-10 lg:px-8 mobile-padding">
             <div className="container padding-left-all-section">
-              <h1 className="text-center text-6xl text-white Gilroy-Bold">
+              <h3 className="text-center text-6xl text-white Gilroy-Bold">
                 Thank You
-              </h1>
+              </h3>
               <p className="text-center pt-6 text-lg pb-1">
                 Just A Short While.
               </p>

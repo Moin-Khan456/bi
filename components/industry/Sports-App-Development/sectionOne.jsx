@@ -6,9 +6,9 @@ export default function SectionOne() {
   return (
     <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/sports_banner.webp')]">
       <div className="flex flex-col justify-center items-center h-screen padding-left-all-section-1 text-center">
-        <h1 className="MonumentBold text-4xl lg:text-[3.75rem] lg:leading-[4rem] pt-16 w-[70%]">
+        <h3 className="MonumentBold text-4xl lg:text-[3.75rem] lg:leading-[4rem] pt-16 w-[70%]">
           Now monetise your passion for sports Realty
-        </h1>
+        </h3>
         <p className="lg:leading-[1.5rem] pt-8 w-[50%]">
           Sports have been there forever and is growing faster than ever. The
           world of sports moves quickly, and Brain Inventory sports development

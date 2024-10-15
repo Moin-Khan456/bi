@@ -16,9 +16,9 @@ function InterviewProcess() {
         </div>
         <div className="bg-hr-1 relative">
           <div className="overlay-content">
-            <h1>
+            <h3>
               01 <span className="line"></span>
-            </h1>
+            </h3>
             <h3>HR Interview</h3>
             <p>
               At a first stage a candidate would appear for HR screening where
@@ -29,9 +29,9 @@ function InterviewProcess() {
         </div>
         <div className="bg-hr-2 relative">
           <div className="overlay-content">
-            <h1>
+            <h3>
               02 <span className="line"></span>
-            </h1>
+            </h3>
             <h3>Personal Interview</h3>
             <p>
               At a first stage a candidate would appear for HR screening where
@@ -42,9 +42,9 @@ function InterviewProcess() {
         </div>
         <div className="bg-hr-3 relative">
           <div className="overlay-content">
-            <h1>
+            <h3>
               03 <span className="line"></span>
-            </h1>
+            </h3>
             <h3>Pratical Round</h3>
             <p>
               At a first stage a candidate would appear for HR screening where

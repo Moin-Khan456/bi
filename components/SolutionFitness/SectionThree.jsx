@@ -10,7 +10,7 @@ const SectionThree = ({
   return (
     <div className="container padding-left-all-section-1">
       <div className="container lg:block">
-        <h1 className="text-3xl font-Satoshi font-bold">{title}</h1>
+        <h3 className="text-3xl font-Satoshi font-bold">{title}</h3>
         <p className="text-sm py-6 opacity-50">{sectionDesc}</p>
       </div>
       <div className="container bg-[#121212] p-2 lg:p-8 !mb-8">

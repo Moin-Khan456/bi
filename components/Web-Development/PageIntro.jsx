@@ -30,7 +30,7 @@ export default function HireBanner({
             <h1 className="text-5xl Gilroy-Bold	drop-shadow-2xl-[#fff] mean_stack_development_text_shadow">
               {heading} <br />
               <span className="development-text rotate-3 lg:text-[10rem] leading-[10rem] text-8xl">
-                Development 
+                Development
               </span>
               <br /> {miniTitle ? miniTitle : "Company"}
             </h1>

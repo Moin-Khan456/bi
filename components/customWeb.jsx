@@ -4,14 +4,13 @@ import { BsArrowRight } from "react-icons/bs";
 const Index = ({ para1, para2, para3, type }) => {
   return (
     <main className="container px-4 lg:px-20 lg:pb-20">
-      <h1 className="text-4xl lg:text-5xl Gilroy-Bold w-fit">
+      <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit">
         Why you may need a{" "}
         <span className="text-[#7600EB]"> {type} development</span> solution?
-      </h1>
+      </h3>
       <section className="lg:mb-0 mb-6 flex flex-col lg:flex-row pt-8">
         {!(type === "Custom App") ? (
-          <Image  
-         
+          <Image
             width={700}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/preview/Braininventory_custom+web+development+-+webpage+image.png"
@@ -19,8 +18,7 @@ const Index = ({ para1, para2, para3, type }) => {
             className="w-96 lg:w-[40%] h-full rounded-2xl"
           />
         ) : (
-          <Image  
-         
+          <Image
             width={500}
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_custom+mobile+app+developers_+WHY+YOU+NEED+A+CUSTOM+APP+DEV.+SULUTION.png"

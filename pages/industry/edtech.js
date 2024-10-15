@@ -319,7 +319,7 @@ function EdTech() {
       <Head>
         <title>Education & Research IT Company | Brain Inventory</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory services offer education IT solutions to build a platform where the administration, faculty and students can collaborate easily. Call us!"
         />
         <meta

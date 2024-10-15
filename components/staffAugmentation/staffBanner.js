@@ -18,7 +18,7 @@ function staffBanner() {
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <div>
             <h1 className="lg:text-7xl text-4xl Gilroy-Bold">
-            Hire Best Remote Developers by Brain Inventory
+              Hire Best Remote Developers by Brain Inventory
             </h1>
             <p className="pt-6 lg:pr-[14rem] pb-6 color-light text-lg ">
               If you want to increase your efficiency and speed up your product

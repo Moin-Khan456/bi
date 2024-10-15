@@ -267,14 +267,14 @@ function Fitness() {
   return (
     <>
       <Head>
-        <title>Fitness IT Services & Solutions|Brain Inventory</title>
+        <title>Fitness IT Services & Solutions | Brain Inventory</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides fitness IT services and solutions to improve fitness, and work. Contact us to improve your fitness in IT now."
         />
         <meta
           name="og:title"
-          content="Fitness IT Services & Solutions|Brain Inventory"
+          content="Fitness IT Services & Solutions | Brain Inventory"
         />
         <meta
           name="og:description"

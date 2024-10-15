@@ -28,9 +28,9 @@ const Index = ({ titleSize, title, description, solutionList }) => {
               <div className="container padding-left-all-section-1">
                 <div className="lg:grid lg:grid-cols-3 gap-6 lg:p-0 p-7">
                   <div>
-                    <h1 className="text-2xl Gilroy-Bold lg:mb-0 mb-3">
+                    <h3 className="text-2xl Gilroy-Bold lg:mb-0 mb-3">
                       {el.text}
-                    </h1>
+                    </h3>
                   </div>
                   <div className="text-white col-span-2">
                     <p className="text-base text-gray-300 lg:px-9">{el.desc}</p>

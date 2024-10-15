@@ -16,16 +16,14 @@ export default function DevelopmentProcess({
             {subhead ? subhead : "Advantages to Hiring a"}{" "}
             <span className="text-[#7600EB]">{title}</span>
           </h2>
-          <p className="Gilroy-Light pb-6" >
-                  {subPara}
-                </p>
+          <p className="Gilroy-Light pb-6">{subPara}</p>
           {advantages?.map((ele, index) => {
             return (
               <div className="flex flex-col gap-2" key={index}>
-                <h1 className="uppercase text-2xl opacity-60 font-bold">
+                <h3 className="uppercase text-2xl opacity-60 font-bold">
                   {" "}
                   {ele.head}
-                </h1>
+                </h3>
                 <p className="Gilroy-Light pb-6" key={index}>
                   {ele.content}
                 </p>

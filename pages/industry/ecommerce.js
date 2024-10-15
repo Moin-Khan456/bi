@@ -313,7 +313,7 @@ function Ecommerce(props) {
           Custom eCommerce Software Development Services | Brain Inventory
         </title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides ecommerce software development services to help your products. Contact us to make your ecommerce software development services now."
         />
         <meta

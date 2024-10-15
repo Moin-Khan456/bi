@@ -15,9 +15,9 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h1 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
+            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
               {head}
-            </h1>
+            </h3>
             <h3 className="font-bold text-lg mb-6 monument uppercase">
               {subhead}
             </h3>
@@ -38,25 +38,39 @@ const Index = ({
         <div className="lg:flex block justify-between mt-8 lg:p-0 p-6 bg-black">
           <table className="border-[1px] border-white">
             <tr className="border-white border-[1px]">
-              <th className="w-[5%] border-x-[1px] border-white py-2">Supply Chain Management Company</th>
-              <th className="w-[5%] border-x-[1px] border-white py-2">Innovative Features</th>
-              <th className="w-[5%] border-x-[1px] border-white py-2">Client Base</th>
+              <th className="w-[5%] border-x-[1px] border-white py-2">
+                Supply Chain Management Company
+              </th>
+              <th className="w-[5%] border-x-[1px] border-white py-2">
+                Innovative Features
+              </th>
+              <th className="w-[5%] border-x-[1px] border-white py-2">
+                Client Base
+              </th>
             </tr>
             <tr className="border-white border-[1px]">
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">FedEx</td>
+              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+                FedEx
+              </td>
               <td className="px-4 py-2 border-x-[1px] border-white">
                 Specializes in developing comprehensive transportation
                 management systems and AI-powered predictive maintenance
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">More than 2.5 Million</td>
+              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+                More than 2.5 Million
+              </td>
             </tr>
             <tr className="border-white border-[1px]">
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">UPS</td>
+              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+                UPS
+              </td>
               <td className="px-4 py-2 border-x-[1px] border-white">
                 Features advanced supply chain analytics and cloud-based
                 solutions for efficiency and scalability
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">Over 3 Million</td>
+              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+                Over 3 Million
+              </td>
             </tr>
           </table>
         </div>

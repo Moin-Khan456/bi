@@ -185,7 +185,7 @@ const Numetric = () => {
       <Header />
       <div className=" pt-12">
         <SectionOne section={NumetricSectionOne} />
-        <h1 className="invisible">Fully Integrated Personal Trainer App</h1>
+        <h3 className="invisible">Fully Integrated Personal Trainer App</h3>
         <SectionTwo />
         <SectionThree
           text="Trainer's Perspective"

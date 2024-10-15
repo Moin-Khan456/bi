@@ -6,9 +6,9 @@ const Index = () => {
     <div className="container padding-left-all-section-1">
       <div className="w-full flex flex-col justify-center">
         <div className="mx-2 lg:mx-12">
-          <h1 className="text-xl lg:text-[4.3rem] leading-12 font-bold">
+          <h3 className="text-xl lg:text-[4.3rem] leading-12 font-bold">
             Get Started Within 2 Business Days
-          </h1>
+          </h3>
         </div>
         <div className="container">
           <div className="flex flex-col lg:justify-around w-full items-center lg:flex-row py-8 px-0 ">

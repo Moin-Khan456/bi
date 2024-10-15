@@ -3,7 +3,7 @@ import React from "react";
 const SectionThree = () => {
   return (
     <div className="container padding-left-all-section pb-12 lg:p-0 p-6">
-      <h1 className="text-3xl Gilroy-Bold">Social Media Industry Insights</h1>
+      <h3 className="text-3xl Gilroy-Bold">Social Media Industry Insights</h3>
       <p className="text-sm py-6 Gilroy-Bold opacity-50 tracking-wider ">
         In the fast-paced world of social media solutions, staying ahead of the
         curve is crucial. Here, we present some of the latest industry insights
@@ -64,8 +64,8 @@ const SectionThree = () => {
           <li className="font-semibold py-2 Gilroy-Medium">
             <span className="opacity-50">
               73% of marketers believe that their efforts through social media
-              marketing have been &apos;somewhat effective&apos; or &apos;very effective&apos; for
-              their business.
+              marketing have been &apos;somewhat effective&apos; or &apos;very
+              effective&apos; for their business.
             </span>
           </li>
         </ul>

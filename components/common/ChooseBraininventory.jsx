@@ -7,10 +7,10 @@ export default function ChooseBraininventory({ reasons, subhead, alt }) {
       <div className="container padding-left-all-section-1">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div>
-            <h1 className="Gilroy-Bold text-4xl leading-[3rem]">
+            <h3 className="Gilroy-Bold text-4xl leading-[3rem]">
               Why Choose Brain Inventory for Your Next{" "}
               <span className="text-[#7600EB]">Assignment</span>
-            </h1>
+            </h3>
             <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
               {subhead}
             </p>
@@ -81,8 +81,12 @@ export default function ChooseBraininventory({ reasons, subhead, alt }) {
             </a>
           </div>
           <div>
-            <Image  
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/choose-b1.png" alt="Hire dedicated remote developers | Custom software development company" width={700} height={700} />
+            <Image
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/choose-b1.png"
+              alt="Hire dedicated remote developers | Custom software development company"
+              width={700}
+              height={700}
+            />
           </div>
         </div>
       </div>

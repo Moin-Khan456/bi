@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export default function AdvantageCustom({ title, reasons, subhead }) {
   return (
     <div className="container px-4 lg:px-16">
       <section>
-        <h1 className="text-4xl lg:text-5xl Gilroy-Bold w-fit lg:pl-10">
+        <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit lg:pl-10">
           {title}
-        </h1>
+        </h3>
         <p className="opacity-50 Gilroy lg:pl-10 py-4">{subhead}</p>
       </section>
 

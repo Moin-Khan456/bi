@@ -12,7 +12,7 @@ const SectionSix = () => {
           width={500}
           height={500}
         />
-        <h1 className="text-[#FFD166]">Visuals</h1>
+        <h3 className="text-[#FFD166]">Visuals</h3>
       </div>
       <div className="relative h-[60vh] lg:h-[118vh] overflow-scroll no-scrollbar">
         <Image

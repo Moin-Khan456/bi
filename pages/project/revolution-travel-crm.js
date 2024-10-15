@@ -234,7 +234,7 @@ const Fatoura = () => {
         <Header />
         <div className="container lg:pt-48">
           <SectionOne section={FatouraSectionOne} />
-          <h1 className="invisible">What is Revolution Travel CRM?</h1>
+          <h3 className="invisible">What is Revolution Travel CRM?</h3>
         </div>
       </div>
       <>

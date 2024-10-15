@@ -265,7 +265,7 @@ Our approach is tailored and flexible. At every stage, from conceptualization to
           Frequently Asked Questions | Brain Inventory Support & Information
         </title>
         <meta
-          property="description"
+          name="description"
           content="Find answers to common questions about Brain Inventory, including services, support, and more. Explore our FAQ page for more information and resources."
         />
         <meta

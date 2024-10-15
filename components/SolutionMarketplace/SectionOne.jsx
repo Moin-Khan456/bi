@@ -7,12 +7,12 @@ const SectionOne = () => {
     <div className="relative bg-cover overflow-hidden bg-center h-[100%] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Group+7187.png')] ">
       <div className="container">
         <div className="py-36 px-12 flex flex-col justify-center text-center items-center">
-          <h1
+          <h3
             className="text-6xl my-4 lg:w-[75%] MonumentRegular text-shadow-sharp"
             data-text="Transforming Marketplaces into Digital Powerhouse Economics"
           >
             Transforming Marketplaces into Digital Powerhouse Economics
-          </h1>
+          </h3>
           <p className="lg:w-[800px]">
             Imagine how your business could soar with a custom-made marketplace
             software that not only meets, but exceeds your expectations. Begin

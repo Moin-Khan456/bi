@@ -14,9 +14,7 @@ const Projects = dynamic(() => import("../components/ppc/Projects.jsx"));
 const CustomSocialNetwork = dynamic(() =>
   import("../components/ppc/CustomSocialNetwork.jsx")
 );
-const Loader = dynamic(() =>
-  import("../components/common/loader")
-);
+const Loader = dynamic(() => import("../components/common/loader"));
 const HireBanner = dynamic(() => import("../components/ppc/HireBanner.jsx"));
 
 function HireAangularJsDeveloper(props) {
@@ -63,12 +61,15 @@ function HireAangularJsDeveloper(props) {
           property="og:description"
           content="Hire top-rated Web and Mobile app Developers from Brain Inventory to build highly scalable Application. Our experienced developers build highly customized applications for different sizes of businesses."
         />
-        <meta property="og:url" content="https://braininventory.in/custom-social-network-development" />
+        <meta
+          property="og:url"
+          content="https://braininventory.in/custom-social-network-development"
+        />
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.comimages/I-1.png"
         />
-        
+
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       {/*<Loader />*/}
@@ -116,15 +117,15 @@ function HireAangularJsDeveloper(props) {
 
           <div className="container">
             <div className="flex justify-between mx-8 lg:pl-24 my-8 lg:my-0">
-              <h1 className="text-head text-center lg:text-start mt-8 text-5xl lg:text-[4.5rem] font-extrabold font-satoshi">
+              <h3 className="text-head text-center lg:text-start mt-8 text-5xl lg:text-[4.5rem] font-extrabold font-satoshi">
                 <p className="w-full text-2xl font-normal">We are a</p>
                 creative social <br className="hidden lg:block" /> platform
                 development <br className="hidden lg:block" /> company
-              </h1>
+              </h3>
               <div className="flex flex-col">
                 {!localForm && (
                   <div className="w-full h-[70%] hidden lg:block">
-                    <Image  
+                    <Image
                       src="https://braininventory.s3.us-east-2.amazonaws.com/images/ppc/Group+6771.png"
                       priority={true}
                       alt="Custom Software Development Company | Application Development Company"
@@ -137,23 +138,22 @@ function HireAangularJsDeveloper(props) {
               </div>
             </div>
           </div>
-              <TailMatrix />
-              <Network />
-              <CustomSocialNetwork />
-              <Projects />
-              <Idea />
-              <Trust />
-              <WhyBI />
-              <div className="flex justify-center">
-                <Image  
-         
-                  src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
-                  alt="Custom Software Development Company | Application Development Company"
-                  width={1500}
-                  height={1500}
-                  className=" w-[35%]"
-                />
-              </div>
+          <TailMatrix />
+          <Network />
+          <CustomSocialNetwork />
+          <Projects />
+          <Idea />
+          <Trust />
+          <WhyBI />
+          <div className="flex justify-center">
+            <Image
+              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6813.png"
+              alt="Custom Software Development Company | Application Development Company"
+              width={1500}
+              height={1500}
+              className=" w-[35%]"
+            />
+          </div>
         </div>
       </div>
     </>

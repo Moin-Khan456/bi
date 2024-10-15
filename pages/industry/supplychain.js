@@ -318,7 +318,7 @@ function SupplyChain() {
       <Head>
         <title>Best Supply Chain Management Software Service Company</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory services offer best supply chain management software IT solutions to build a platform where you can build customer loyalty. Call us!"
         />
         <meta

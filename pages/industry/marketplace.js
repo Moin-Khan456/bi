@@ -295,7 +295,7 @@ function MarketPlace() {
           Marketplace Software Development Services | Brain Inventory
         </title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides best marketplace software solutions to accelerate the digital transformation that improves customer engagement. Contact us today."
         />
         <meta

@@ -5,15 +5,14 @@ const Index = () => {
     <>
       <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8.png')] bg-repeat lg:py-24 lg:-my-12">
         <div className="container">
-          <h1 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
+          <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
             <span className="text-[#7600EB]"> Admin&apos;s</span> Outlook
-          </h1>
+          </h3>
 
           <div className="px-4 lg:px-24 lg:py-12 ">
             <div className="">
               <div>
-                <Image  
-         
+                <Image
                   className="w-full"
                   width={2000}
                   height={500}
@@ -23,8 +22,7 @@ const Index = () => {
               </div>
 
               <div>
-                <Image  
-         
+                <Image
                   className="w-full"
                   width={2000}
                   height={500}
@@ -38,8 +36,7 @@ const Index = () => {
       </div>
 
       <div>
-        <Image  
-         
+        <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 289.png"
           alt="Custom Software Development Company | Application Development Company"
           width={2000}

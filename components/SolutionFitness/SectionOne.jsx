@@ -16,9 +16,9 @@ const SectionOne = () => {
       </div>
       <div className="bg-gradient-to-r from-black to-transparent">
         <div className="container py-72 px-12">
-          <h1 className="MonumentRegular text-sm">
+          <h3 className="MonumentRegular text-sm">
             MOBILIZING FITNESS WITH INNOVATION
-          </h1>
+          </h3>
           <h2 className="Brinattan text-5xl text-[#F7D927] py-10">
             Fitness Meets Design
           </h2>

@@ -8,14 +8,19 @@ export default function HireBanner() {
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section className="relative">
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h1 className="text-3xl lg:text-[2.972rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
+            <h3 className="text-3xl lg:text-[2.972rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Supply Chain Synergy:
-            </h1>
+            </h3>
             <h2 className="text-2xl lg:text-[2rem] MonumentBold uppercase leading-[3rem] mt-4 lg:!w-[1150px]">
               Unleashing Efficiency, Driving Excellence with Smart Solutions!
             </h2>
             <h2 className="text-md font-Satoshi text-white opacity-50 leading-7 py-12 lg:w-[85%] lg:text-justify">
-            Opt for Brain Inventory&apos;s supply chain solutions to enact an orchestra of seamless order fulfillment, inventory planning, and transportation. Experience the unparalleled expertise of a platform that offers the market&apos;s best supply chain management software, which is solely focused on bolstering efficiency and optimizing your bottom line. 
+              Opt for Brain Inventory&apos;s supply chain solutions to enact an
+              orchestra of seamless order fulfillment, inventory planning, and
+              transportation. Experience the unparalleled expertise of a
+              platform that offers the market&apos;s best supply chain
+              management software, which is solely focused on bolstering
+              efficiency and optimizing your bottom line. 
             </h2>
           </section>
           <Link href="#talk">

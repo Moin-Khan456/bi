@@ -276,7 +276,7 @@ function CrmDevelopment(props) {
           Custom CRM Software Development Services | Brain Inventory
         </title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides the best CRM development service & solutions as per your requirements. Contact us to make your custom crm now."
         />
         <meta

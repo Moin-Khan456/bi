@@ -69,7 +69,7 @@ export default function Home({ data, blogs, totalPages }) {
         <Header />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section">
-            <h1 className="text-6xl pt-12 Gilroy-Bold">Blogs</h1>
+            <h3 className="text-6xl pt-12 Gilroy-Bold">Blogs</h3>
 
             <div>
               <h3 className="text-xl Gilroy-Bold mt-8 mb-3">Popular Blogs</h3>

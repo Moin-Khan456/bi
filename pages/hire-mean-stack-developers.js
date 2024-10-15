@@ -151,7 +151,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today to hire mean stack developers."
+          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -160,7 +160,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today to hire mean stack developers."
+          content="Looking to hire dedicated MEAN Stack developers? We are here to offer you the best solutions for web applications. Contact us today"
         />
         <meta
           property="og:image"

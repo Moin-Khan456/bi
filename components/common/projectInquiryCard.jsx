@@ -38,9 +38,9 @@ const FindUs = () => {
                 <p className="text-xs font-bold">Get In Touch</p>
                 <p className="text-xl font-bold">Let’s get to it, together.</p>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold lg:w-full py-12">
+              <h3 className="text-4xl lg:text-6xl font-bold lg:w-full py-12">
                 Project Inquiry
-              </h1>
+              </h3>
             </div>
           </div>
         </div>

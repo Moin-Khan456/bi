@@ -266,7 +266,7 @@ function Blockchain(props) {
       <Head>
         <title>Blockchain IT Service & Solutions| Brain Inventory</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides the best blockchain IT services & solutions as per your requirements. Contact us to make your blockchain IT now."
         />
         <meta

@@ -125,7 +125,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company. Contact us!"
+          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -134,7 +134,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company. Contact us!"
+          content="Brain Inventory gives you the best solutions for MERN stack development services. Elevate your brand with a custom MERN stack web development company."
         />
         <meta
           property="og:url"
@@ -176,9 +176,9 @@ function HireAangularJsDeveloper(props) {
             />
             <WhyMean type="MERN Stack" meanReasons={meanReasons} />
             <div className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
+              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-8xl font-extrabold font-Satoshi">
                 MERN Stack Development
-              </h1>
+              </h3>
             </div>
             <Benefits
               type="MERN Stack"

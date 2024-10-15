@@ -115,7 +115,7 @@ function HireAangularJsDeveloper(props) {
         <title>Node JS Development Service Company USA | Brain Inventory</title>
         <meta
           name="description"
-          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for the transparent and quality services."
+          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -124,7 +124,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for the transparent and quality services."
+          content="Looking for node js development services? We are here to help you! Contact brain inventory for experienced node js developer, for quality services."
         />
         <meta
           property="og:url"
@@ -166,9 +166,9 @@ function HireAangularJsDeveloper(props) {
             />
             <WhyMean type="Node.Js" meanReasons={meanReasons} />
             <div className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
                 Node.Js Development Services
-              </h1>
+              </h3>
             </div>
             <Benefits type="Node.Js" subhead="" benefitsList={benefitsList} />
             <Hire

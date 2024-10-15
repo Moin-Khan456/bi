@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <div className="container">
       <div className="py-8 relative flex flex-col items-center justify-center bg-[#000]">
-        <h1 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-white">
+        <h3 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-white">
           What is
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6516.png"
@@ -14,7 +14,7 @@ const Index = () => {
             className="h-12 lg:h-32 mx-4"
           />
           CRM?
-        </h1>
+        </h3>
         <div className="px-2 lg:px-48 py-4">
           <p className="font-bold text-white py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-50">
             Revolution Travel CRM (RTC) is a complete Travel planning platform

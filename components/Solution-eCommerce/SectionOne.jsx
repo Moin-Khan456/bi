@@ -10,10 +10,10 @@ export default function HireBanner() {
         <section className="relative">
           <section className="bg-shadow rounded-full" />
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h1 className="text-3xl lg:text-[2.972rem] stroke-text-ecommerce MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
+            <h3 className="text-3xl lg:text-[2.972rem] stroke-text-ecommerce MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Empowering Commerce, Enriching Experiences: Your Tomorrow, Our
               Technology!
-            </h1>
+            </h3>
             <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4 lg:w-[65%] lg:text-justify">
               Are you ready to evolve? Brain Inventory, a leading eCommerce
               development company, offers top-tier ecommerce services designed
@@ -28,8 +28,7 @@ export default function HireBanner() {
           </Link>
         </section>
         <section className="pt-0 pl-12 ed-tech-dropshadow relative z-10 right-0 hidden lg:block">
-          <Image  
-         
+          <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/eCommerce/Mask+group.png"
             alt="Custom Web Development"
             className={`rounded-2xl w-[54%] ed-tech-dropshadow absolute -right-9 bottom-5`}

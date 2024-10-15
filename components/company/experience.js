@@ -62,9 +62,9 @@ function experience() {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 ">
       <div className="container padding-left-all-section">
-        <h1 className="text-4xl mb-2 Gilroy-Bold">
+        <h3 className="text-4xl mb-2 Gilroy-Bold">
           the brain inventory experience
-        </h1>
+        </h3>
         <p className="pb-8 Gilroy-light text-gray-400">
           We are driven by strong fundamentals or values that drive everthing we
           do at Moshi; from our hiring. to <br /> the way we deal with our
@@ -75,15 +75,14 @@ function experience() {
             <div key={el} className="mb-8">
               <div className="relative w-60 h-60  center block m-auto">
                 <Image
-                   
                   srcSet="/image-320w.jpg 320w,
               /image-480w.jpg 480w,
               /image-800w.jpg 800w"
                   sizes="(max-width: 320px) 280px,
              (max-width: 480px) 440px,
              800px"
-             width={400}
-             height={400}
+                  width={400}
+                  height={400}
                   src={
                     "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                     el.image

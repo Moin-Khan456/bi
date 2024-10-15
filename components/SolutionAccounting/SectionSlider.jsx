@@ -20,9 +20,9 @@ export default function Slider({ data, subhead, head, description }) {
           <h5 className="text-md font-bold MonumentBold tracking-wide">
             {subhead}
           </h5>
-          <h1 className="text-2xl lg:text-5xl MonumentBold w-[65%] py-4 uppercase">
+          <h3 className="text-2xl lg:text-5xl MonumentBold w-[65%] py-4 uppercase">
             {head}
-          </h1>
+          </h3>
           <p className="font-Satoshi text-slate-500 text-sm w-[90%]">
             {description}
           </p>
@@ -38,7 +38,7 @@ export default function Slider({ data, subhead, head, description }) {
             {data.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-technology p-6 lg:h-[500px] max-w-[400px] m-2">
-                  <h1 className="text-3xl font-semibold py-6">{item.head}</h1>
+                  <h3 className="text-3xl font-semibold py-6">{item.head}</h3>
                   <p className="text-xl opacity-50">{item.content}</p>
                 </div>
               </SwiperSlide>
@@ -51,7 +51,7 @@ export default function Slider({ data, subhead, head, description }) {
               className="bg-technology p-6 lg:h-[600px] lg:w-[400px] my-4"
               key={index}
             >
-              <h1 className="text-3xl font-semibold py-6">{item.head}</h1>
+              <h3 className="text-3xl font-semibold py-6">{item.head}</h3>
               <p className="text-xl opacity-50">{item.content}</p>
             </div>
           ))}

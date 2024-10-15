@@ -10,7 +10,7 @@ const SectionTwo = ({
   hideSubText,
   notBreakable,
   lastSmall,
-  isHeadShow=true,
+  isHeadShow = true,
 }) => {
   return (
     <div className={`${className} padding-left-all-section-1`}>

@@ -7,7 +7,7 @@ export default function SectionOne() {
     <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Support.jpg')]">
       <div className="flex flex-col justify-center items-center h-screen padding-left-all-section-1 text-center">
         <h1 className="MonumentBold text-4xl lg:text-[3.75rem] lg:leading-[4rem] pt-16 w-[70%]">
-        Expert Software Maintenance and Support Services by Brain Inventory
+          Expert Software Maintenance and Support Services by Brain Inventory
         </h1>
         <p className="lg:leading-[1.5rem] pt-8 w-[50%]">
           Brain Inventory thinks the sole means to boost productivity and

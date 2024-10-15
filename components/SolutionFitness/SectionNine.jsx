@@ -26,7 +26,7 @@ const Index = ({
           <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {" "}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-              <h1 key={index}>{pageCategoryAbbr}&nbsp;</h1>
+              <h3 key={index}>{pageCategoryAbbr}&nbsp;</h3>
             ))}
           </div>
         </Marquee>
@@ -41,7 +41,7 @@ const Index = ({
           <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
             {" "}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
-              <h1 key={index}>{pageCategoryAbbr}&nbsp;</h1>
+              <h3 key={index}>{pageCategoryAbbr}&nbsp;</h3>
             ))}
           </div>
         </Marquee>

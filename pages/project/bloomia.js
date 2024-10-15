@@ -226,7 +226,7 @@ const Bloomia = () => {
       <Header />
       <div className="container  pt-12">
         <SectionOne section={BloomiaSectionOne} />
-        <h1 className="invisible">Bloomia</h1>
+        <h3 className="invisible">Bloomia</h3>
       </div>
       <SectionTwo carouselImages={section2CarouselImages} />
       {position && (

@@ -134,7 +134,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for transparent and quality services."
+          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -143,7 +143,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for transparent and quality services."
+          content="Looking for lamp app development services? We are here to help you! Contact brain inventory for experienced lamp app developers, for quality services."
         />
         <meta
           property="og:url"
@@ -185,9 +185,9 @@ function HireAangularJsDeveloper(props) {
             />
             <WhyMean type="LAMP Application" meanReasons={meanReasons} />
             <div className="flex justify-center px-10">
-              <h1 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
                 LAMP Application Development Service
-              </h1>
+              </h3>
             </div>
             <Benefits
               type="LAMP Application"

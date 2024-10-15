@@ -108,7 +108,7 @@ function HireAangularJsDeveloper(props) {
         </title>
         <meta
           name="description"
-          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for transparent & quality services."
+          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for quality services."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -117,7 +117,7 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:description"
-          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for transparent & quality services."
+          content="Looking for a Python development company? We are here to help you! Contact brain inventory for experienced Python developers, for quality services."
         />
         <meta
           property="og:url"

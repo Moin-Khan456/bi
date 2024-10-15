@@ -125,7 +125,7 @@ function Support() {
       <Head>
         <title>Software Maintenance and Support Service Company</title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory provides expert and best software maintenance and support services for their customers satisfaction. Contact us today!"
         />
         <meta

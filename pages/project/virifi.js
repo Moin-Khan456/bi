@@ -175,7 +175,7 @@ const Virifi = () => {
         <div className="w-full px-4 flex flex-col items-center pt-12 justify-center lg:block lg:px-12 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8.png')]">
           <div className="container">
             <SectionOne section={VirifiSectionOne} />
-            <h1 className="invisible">Virifi</h1>
+            <h3 className="invisible">Virifi</h3>
           </div>
         </div>
         <div>
@@ -212,9 +212,9 @@ const Virifi = () => {
         <div>
           <>
             <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8-Gradient.png')]">
-              <h1 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
+              <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
                 Marketing <span className="text-[#7600EB]">Website</span>
-              </h1>
+              </h3>
               <div className="px-4 lg:px-48 lg:py-12 ">
                 <Image
                   src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Group 6425.png"

@@ -22,11 +22,11 @@ const Index = ({
         <p className="text-slate-400 py-4">{subheadAbove}</p>
         <div className="lg:grid lg:grid-cols-2 gap-0 h-auto bg-[#4601a1] overflow-y-hidden rounded-3xl relative section-six-card">
           <div className="p-4 lg:p-12">
-            <h1
+            <h3
               className={`font-bold lg:text-3xl MonumentRegular ${titleClass} ${classText}`}
             >
               {title}
-            </h1>
+            </h3>
             <button
               className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12">
               {btn}

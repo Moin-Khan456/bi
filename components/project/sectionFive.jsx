@@ -15,9 +15,9 @@ const Index = () => {
               height={700}
               className="w-28 lg:w-44"
             />
-            <h1 className="text-3xl lg:text-5xl font-bold Gilroy-SemiBold">
+            <h3 className="text-3xl lg:text-5xl font-bold Gilroy-SemiBold">
               Perspective
-            </h1>
+            </h3>
           </div>
         </div>
         <div className="flex justify-center">

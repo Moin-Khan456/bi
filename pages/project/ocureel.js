@@ -142,7 +142,7 @@ const Virifi = () => {
         <Header />
         <div className="container">
           <SectionOne />
-          <h1 className="invisible">Ocureel</h1>
+          <h3 className="invisible">Ocureel</h3>
         </div>
       </div>
       <div>
@@ -170,9 +170,9 @@ const Virifi = () => {
         <div className="bg-[#FDDEFE] relative lg:-top-52 lg:-mb-64">
           <div className="container">
             <div className="lg:h-[80vh] bg-no-repeat bg-contain bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Mobile+Version.webp')] relative lg:-top-28">
-              <h1 className="transparent-text text-8xl bg-transparent w-72 px-8 h-[80vh] flex flex-col justify-end">
+              <h3 className="transparent-text text-8xl bg-transparent w-72 px-8 h-[80vh] flex flex-col justify-end">
                 Mobile Version
-              </h1>
+              </h3>
             </div>
           </div>
         </div>

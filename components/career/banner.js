@@ -9,12 +9,12 @@ const Banner = () => {
       <div className="h-auto min-h-[65vh] pt-32 flex items-center relative">
         <div className="lg:w-[60%] w-full  h-full  relative">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">
-            <h1 className="2xl:text-4xl xl:text-4xl mt-20 text-3xl stroke-text-3 Gilroy-Bold">
-            lets do some great things together!
-            </h1>
+            <h3 className="2xl:text-4xl xl:text-4xl mt-20 text-3xl stroke-text-3 Gilroy-Bold">
+              lets do some great things together!
+            </h3>
 
             <h1 className="text-heading-1 Gilroy-Bold">
-            Explore Opportunities by Brain Inventory
+              Explore Opportunities by Brain Inventory
             </h1>
 
             <div className="flex flex-col">

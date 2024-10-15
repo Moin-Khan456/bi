@@ -3,13 +3,13 @@ import React from "react";
 const Index = ({ para1, para2, para3, title, image }) => {
   return (
     <main className="container px-4 lg:px-24">
-      <h1 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
+      <h3 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
         Why you may need a <span className="text-[#7600EB]"> {title}</span>{" "}
         solution?
-      </h1>
+      </h3>
       <section className="grid xs:grid-rows-1 lg:grid-cols-2 gap-x-2 pt-8 w-full">
         <aside className="w-[75%]">
-          <Image  
+          <Image
             src={image}
             alt="Custom Software Development Company | Hire Dedicated Software Developers"
             width={700}

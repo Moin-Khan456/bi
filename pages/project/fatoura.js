@@ -190,9 +190,9 @@ const Fatoura = () => {
       <>
         <div className="py-8 mb-8 relative flex flex-col justify-center bg-[#F39573]">
           <div className="container">
-            <h1 className="text-center text-3xl lg:text-5xl border-2 border-[#F39573] border-b-white lg:mx-44">
+            <h3 className="text-center text-3xl lg:text-5xl border-2 border-[#F39573] border-b-white lg:mx-44">
               L A N D I N G P A G E
-            </h1>
+            </h3>
             <div className="px-4 lg:px-48 lg:py-12">
               <Image
                 width={900}

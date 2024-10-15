@@ -7,9 +7,9 @@ export default function HireBanner() {
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0 container`}>
         <section className="container padding-left-all-section-1 relative">
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h1 className="stroke-text-yellow MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
+            <h3 className="stroke-text-yellow MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Energizing Tomorrow
-            </h1>
+            </h3>
             <h2 className="text-[2.13638rem] lg:w-[500px]  MonumentRegular leading-[3.01138rem] mb-[2rem]">
               Powering Progress with Innovative Solutions!
             </h2>

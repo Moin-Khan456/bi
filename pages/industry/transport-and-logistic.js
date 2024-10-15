@@ -290,7 +290,7 @@ function Logistic() {
           Custom Transport And Logistic Software Development Services
         </title>
         <meta
-          property="description"
+          name="description"
           content="Brain Inventory offers best custom transport and logistic software development IT solutions to build a platform for you. Contact us now."
         />
         <meta

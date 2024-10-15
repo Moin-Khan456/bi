@@ -52,9 +52,9 @@ export default function HireBanner({
                   alt="Custom Software Development Company | Application Development Company"
                 />
               </div>
-              <h1 className="text-4xl leading-[3rem] Gilroy-Bold font-bold text-center lg:text-start lg:my-2">
+              <h3 className="text-4xl leading-[3rem] Gilroy-Bold font-bold text-center lg:text-start lg:my-2">
                 We Develop Highly Engaging Custom Social Networks
-              </h1>
+              </h3>
             </div>
             <div className="rounded-xl lg:m-0 m-6 lg:my-[2.3em]">
               <p className="text-slate-500 text-sm w-full Gilroy-Semibold font-bold leading-6 text-center lg:text-start">
@@ -439,7 +439,7 @@ const Popup = ({ setPop, country }) => {
           data-aos="zoom-in"
         >
           <div className="flex justify-between text-black mt-2">
-            <h1 className="font-bold text-3xl">Enquire Now</h1>
+            <h3 className="font-bold text-3xl">Enquire Now</h3>
             <span
               className="p-2 border-2 border-black rounded-full"
               onClick={() => {

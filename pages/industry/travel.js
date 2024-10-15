@@ -296,7 +296,7 @@ function Travel() {
           Travel Software Development Service Company | Brain Inventory
         </title>
         <meta
-          property="description"
+          name="description"
           content="Provide memorable experiences and boost customer loyalty with brain inventory custom software development for the travel industry. Give us a call!"
         />
         <meta

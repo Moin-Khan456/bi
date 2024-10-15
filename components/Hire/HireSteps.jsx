@@ -6,9 +6,9 @@ export default function HireSteps({ type }) {
       <div className="container padding-left-all-section-1">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div>
-            <h1 className="Gilroy-Bold text-4xl lg:text-6xl lg:leading-[4.5rem]">
+            <h3 className="Gilroy-Bold text-4xl lg:text-6xl lg:leading-[4.5rem]">
               Hire {type} App Developers From Brain Inventory in 4 Easy Steps
-            </h1>
+            </h3>
             <a href="#talk">
               <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-7">
                 Book a Call

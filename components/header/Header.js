@@ -291,7 +291,7 @@ const ServicesChildren = () => {
     {
       _id: 2,
       name: "Angular JS Development",
-      link: "/web-development/angular-js-development-company",
+      link: "/web-development/angularjs-development-company",
     },
     {
       _id: 3,
@@ -321,22 +321,22 @@ const ServicesChildren = () => {
     {
       _id: 8,
       name: "LAMP Development",
-      link: "/web-development/lamp-development-company",
+      link: "/web-development/lamp-application-development-services",
     },
     {
       _id: 9,
       name: "PHP Development",
-      link: "/web-development/php-development-company",
+      link: "/web-development/php-development-service-company",
     },
     {
       _id: 10,
       name: "Python Development",
-      link: "/web-development/python-development-company",
+      link: "/web-development/python-web-development-company",
     },
     {
       _id: 11,
       name: "Wordpress Website Development",
-      link: "/web-development/wordpress-development-company",
+      link: "/web-development/wordpress-website-design-company",
     },
     {
       _id: 12,
@@ -346,7 +346,7 @@ const ServicesChildren = () => {
     {
       _id: 13,
       name: "CodeIgniter Development",
-      link: "/web-development/codeigniter-development-services",
+      link: "/web-development/codeigniter-web-development-services",
     },
     {
       _id: 14,
@@ -356,7 +356,7 @@ const ServicesChildren = () => {
     {
       _id: 15,
       name: "Shopify Development",
-      link: "/web-development/shopify-ecommerce-software-development-services",
+      link: "/web-development/shopify-web-development-company",
     },
     {
       _id: 16,
@@ -366,7 +366,7 @@ const ServicesChildren = () => {
     {
       _id: 17,
       name: "Salesforce Development",
-      link: "/web-development/salesforce-development-company",
+      link: "/web-development/salesforce-development-services",
     },
     {
       _id: 18,
@@ -378,32 +378,32 @@ const ServicesChildren = () => {
     {
       _id: 1,
       name: "Custom App Development",
-      link: "/mobile-development/custom-app-development",
+      link: "/mobile-development/custom-mobile-app-development-company",
     },
     {
       _id: 2,
       name: "iOS App Development",
-      link: "/mobile-development/ios-development-company",
+      link: "/mobile-development/ios-app-development-company",
     },
     {
       _id: 3,
       name: "Android App Development",
-      link: "/mobile-development/android-development-company",
+      link: "/mobile-development/android-app-development-company",
     },
     {
       _id: 4,
       name: "React Native App Development",
-      link: "/mobile-development/react-native-development-company",
+      link: "/mobile-development/react-native-app-development-company",
     },
     {
       _id: 5,
       name: "Flutter App Development",
-      link: "/mobile-development/flutter-development-company",
+      link: "/mobile-development/flutter-app-development-company",
     },
     {
       _id: 6,
       name: "Swift App Development",
-      link: "/mobile-development/swift-development-company",
+      link: "/mobile-development/swift-app-development-services",
     },
     {
       _id: 7,
@@ -413,12 +413,12 @@ const ServicesChildren = () => {
     {
       _id: 8,
       name: "Mobile App Integration",
-      link: "/mobile-development/mobile-app-integration",
+      link: "/mobile-development/mobile-api-integration-services",
     },
     {
       _id: 9,
       name: "Ionic App Development",
-      link: "/mobile-development/ionic-app-development-company",
+      link: "/mobile-development/cross-platform-mobile-app-development",
     },
   ];
 
@@ -426,22 +426,22 @@ const ServicesChildren = () => {
     {
       _id: 1,
       name: "Hire Angular JS Developers",
-      link: "/hire-angular-js-developers",
+      link: "/hire-angularjs-developers",
     },
     {
       _id: 2,
       name: "Hire React JS Developers",
-      link: "/hire-react-js-developers",
+      link: "/hire-reactjs-developers",
     },
     {
       _id: 3,
       name: "Hire Node JS Developers",
-      link: "/hire-node-js-developers",
+      link: "/hire-nodejs-developers",
     },
     {
       _id: 4,
       name: "Hire Vue JS Developers",
-      link: "/hire-vue-js-developers",
+      link: "/hire-vuejs-developers",
     },
     {
       _id: 5,
@@ -461,7 +461,7 @@ const ServicesChildren = () => {
     {
       _id: 9,
       name: "Hire Android Developers",
-      link: "/hire-android-developers",
+      link: "/hire-android-app-developers",
     },
     {
       _id: 10,
@@ -531,7 +531,7 @@ const ServicesChildren = () => {
     {
       _id: 16,
       name: "Hire QA Analysts",
-      link: "/hire-qa-analysts",
+      link: "/hire-qa-testers",
     },
   ];
 
@@ -623,77 +623,77 @@ const Industry = () => {
     {
       _id: 2,
       name: "Fitness",
-      link: "/industry/fitness-software-development-company",
+      link: "/industry/fitness",
     },
     {
       _id: 3,
       name: "Healthcare",
-      link: "/industry/healthcare-software-development-services",
+      link: "/industry/healthcare",
     },
     {
       _id: 4,
       name: "Blockchain",
-      link: "/industry/blockchain-development-services",
+      link: "/industry/blockchain",
     },
     {
       _id: 5,
       name: "Accounting",
-      link: "/industry/accounting-software-development-services",
+      link: "/industry/accounting",
     },
     {
       _id: 6,
       name: "Marketplace",
-      link: "/industry/marketplace-software-development-services",
+      link: "/industry/marketplace",
     },
     {
       _id: 7,
       name: "Ed Tech",
-      link: "/industry/edtech-software-development-services",
+      link: "/industry/edtech",
     },
     {
       _id: 8,
       name: "Travel",
-      link: "/industry/travel-software-development-services",
+      link: "/industry/travel",
     },
     {
       _id: 9,
       name: "CRM",
-      link: "/industry/crm-software-development-services",
+      link: "/industry/crm",
     },
     {
       _id: 10,
       name: "Ecommerce",
-      link: "/industry/ecommerce-software-development-services",
+      link: "/industry/ecommerce",
     },
     {
       _id: 11,
       name: "Energy & Utility",
-      link: "/industry/energy-and-utility-software-development-services",
+      link: "/industry/energy-and-utility",
     },
     {
       _id: 12,
       name: "Meeting & Event Planning",
-      link: "/industry/meeting-and-event-planning-software-development-services",
+      link: "/industry/meeting-and-event-planning",
     },
     {
       _id: 13,
       name: "Supplychain",
-      link: "/industry/supplychain-software-development-services",
+      link: "/industry/supplychain",
     },
     {
       _id: 14,
       name: "Transport and Logistic",
-      link: "/industry/transport-and-logistic-software-development-services",
+      link: "/industry/transport-and-logistic",
     },
     {
       _id: 15,
       name: "Real Estate",
-      link: "/industry/real-estate-software-development-services",
+      link: "/industry/real-estate",
     },
     {
       _id: 16,
       name: "Sports",
-      link: "/industry/sports-app-development-company",
+      link: "/industry/sports",
     },
   ];
 

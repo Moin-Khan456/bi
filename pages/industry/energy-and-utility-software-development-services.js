@@ -316,11 +316,11 @@ function Energy(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/industry/energy-and-utility-software-development-services"
+          content="https://braininventory.in/industry/energy-and-utility"
         />
         <link
           rel="canonical"
-          href="https://braininventory.in/industry/energy-and-utility-software-development-services"
+          href="https://braininventory.in/industry/energy-and-utility"
         />
         <link
           rel="preload"

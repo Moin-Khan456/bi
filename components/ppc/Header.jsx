@@ -4,7 +4,7 @@ import Link from "next/link";
 import TagManager from "react-gtm-module";
 import { BsArrowRight } from "react-icons/bs";
 
-const Header = ({pop, setPop}) => {
+const Header = ({ pop, setPop }) => {
   const config = {
     companyChildren: CompanyChildren,
     servicesChildren: ServicesChildren,
@@ -57,9 +57,8 @@ const Header = ({pop, setPop}) => {
             <span className="text-4xl Gilroy-Bold z-30">
               {!navOpen && (
                 <div className="relative w-32 h-8 cursor-pointer">
-                  <Image  
-         
-                  priority={true} 
+                  <Image
+                    priority={true}
                     src="/newLogo.png"
                     className="cursor-pointer"
                     alt="it service company offers web and app design and development"
@@ -102,11 +101,16 @@ const Header = ({pop, setPop}) => {
               </label>
             </div>
           ) : (
-            <div className="dropdown lg:block  dropdown-hover" onClick={()=>{setPop(true)}}>
+            <div
+              className="dropdown lg:block  dropdown-hover"
+              onClick={() => {
+                setPop(true);
+              }}
+            >
               <label className="btn w-auto bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex  justify-between align-middle items-center bg-gradient-to-r from-[#000076] to-[#7600EB] h-11 z-[100]">
                   <div className="px-4 flex items-center text-xs Gilroy-Bold font-bold text-white normal-case mobile-none">
-                    <p>Start a Project &nbsp;</p> <BsArrowRight/>
+                    <p>Start a Project &nbsp;</p> <BsArrowRight />
                   </div>
                 </div>
               </label>
@@ -218,42 +222,66 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Web Development</h2>
         <ul className="space-y-2">
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/custom-web-development" className="cursor-pointer">
+            <Link
+              href="/web-development/custom-web-development"
+              className="cursor-pointer"
+            >
               <a>Custom Web Development</a>
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/angular-js-development" className="cursor-pointer">
+            <Link
+              href="/web-development/angular-js-development"
+              className="cursor-pointer"
+            >
               Angular JS Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/react-js-development" className="cursor-pointer">
+            <Link
+              href="/web-development/react-js-development"
+              className="cursor-pointer"
+            >
               React JS Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/node-js-development" className="cursor-pointer">
+            <Link
+              href="/web-development/node-js-development"
+              className="cursor-pointer"
+            >
               Node JS Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/vue-js-development" className="cursor-pointer">
+            <Link
+              href="/web-development/vue-js-development"
+              className="cursor-pointer"
+            >
               Vue JS Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/mean-stack-development" className="cursor-pointer">
+            <Link
+              href="/web-development/mean-stack-development"
+              className="cursor-pointer"
+            >
               MEAN Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/mern-development" className="cursor-pointer">
+            <Link
+              href="/web-development/mern-development"
+              className="cursor-pointer"
+            >
               MERN Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/web-development/lamp-development" className="cursor-pointer">
+            <Link
+              href="/web-development/lamp-development"
+              className="cursor-pointer"
+            >
               LAMP Development
             </Link>
           </li>
@@ -262,33 +290,51 @@ const ServicesChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">Mobile Development </h2>
         <ul className="space-y-2">
-        <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/custom-app-development" className="cursor-pointer">
+          <li className="text-white text-opacity-50">
+            <Link
+              href="/mobile-development/custom-mobile-app-development-company"
+              className="cursor-pointer"
+            >
               Custom App Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/ios-development" className="cursor-pointer">
+            <Link
+              href="/mobile-development/ios-development"
+              className="cursor-pointer"
+            >
               iOS App Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/android-development" className="cursor-pointer">
+            <Link
+              href="/mobile-development/android-development"
+              className="cursor-pointer"
+            >
               Android App Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/react-native-development" className="cursor-pointer">
+            <Link
+              href="/mobile-development/react-native-development"
+              className="cursor-pointer"
+            >
               React Native App Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/flutter-development" className="cursor-pointer">
+            <Link
+              href="/mobile-development/flutter-development"
+              className="cursor-pointer"
+            >
               Flutter App Development
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/mobile-development/swift-development" className="cursor-pointer">
+            <Link
+              href="/mobile-development/swift-development"
+              className="cursor-pointer"
+            >
               Swift App Development
             </Link>
           </li>
@@ -298,22 +344,22 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Hire Dedicated Developers</h2>
         <ul className="space-y-2">
           <li className="text-white text-opacity-50">
-            <Link href="/hire-angular-js-developers" className="cursor-pointer">
+            <Link href="/hire-angularjs-developers" className="cursor-pointer">
               Hire Angular JS Developers
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-react-js-developers" className="cursor-pointer">
+            <Link href="/hire-reactjs-developers" className="cursor-pointer">
               React JS Developers
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-node-js-developers" className="cursor-pointer">
+            <Link href="/hire-nodejs-developers" className="cursor-pointer">
               Node JS Developers
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-vue-js-developers" className="cursor-pointer">
+            <Link href="/hire-vuejs-developers" className="cursor-pointer">
               Vue Js Developers
             </Link>
           </li>
@@ -338,7 +384,10 @@ const ServicesChildren = () => {
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-android-developers" className="cursor-pointer">
+            <Link
+              href="/hire-android-app-developers"
+              className="cursor-pointer"
+            >
               Android developers
             </Link>
           </li>
@@ -348,12 +397,15 @@ const ServicesChildren = () => {
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-react-native-developers" className="cursor-pointer">
+            <Link
+              href="/hire-react-native-developers"
+              className="cursor-pointer"
+            >
               React Native developer
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-qa-analysts" className="cursor-pointer">
+            <Link href="/hire-qa-testers" className="cursor-pointer">
               QA Analyst
             </Link>
           </li>

@@ -15,7 +15,7 @@ export default function App({
       <section className="relative flex flex-col lg:flex-row lg:gap-10 h-auto w-full">
         <section className="lg:sticky lg:top-0 min-w-[50%] h-[250px] lg:min-h-screen ">
           <section className="lg:h-[200px] px-8 lg:px-0 lg:w-[700px] absolute lg:top-[15%] lg:left-[50%] max-w-[600px] lg:-translate-x-[45%] lg:-translate-y-[50%]">
-            <h1 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
+            <h2 className="Gilroy-Bold lg:text-6xl text-[1.9rem] lg:leading-[4.5rem]">
               {titleArray.map((ele, index) => (
                 <span key={index}>
                   {ele.includes("Brain") ? (
@@ -27,7 +27,7 @@ export default function App({
                   )}
                 </span>
               ))}
-            </h1>
+            </h2>
             <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
               {subhead}
             </p>

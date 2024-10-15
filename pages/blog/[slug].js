@@ -2,9 +2,9 @@ import axios from "axios";
 import Head from "next/head";
 import React, { useState } from "react";
 import Header from "../../components/header/Header.js";
-import PopularBlogs from "../../components/blog/PopularBlogs";
-import Blogs from "../../components/blog/Blogs";
-import Pagination from "../../components/blog/Pagination";
+import PopularBlogs from "../../components/blog/PopularBlogs.jsx";
+import Blogs from "../../components/blog/Blogs.jsx";
+import Pagination from "../../components/blog/Pagination.jsx";
 import KeepInTouch from "../../components/common/keepInTouch.js";
 import LocateUs from "../../components/common/locateUs.js";
 import LetsKick from "../../components/common/LetsKick.js";
@@ -22,10 +22,7 @@ export default function Home({
   return (
     <>
       <Head>
-        <title>
-          Brain Inventory Blog – Staff Augmentation | Software | Web | App
-          Development
-        </title>
+        <title>Insights and Innovations | Blogs by Brain Inventory</title>
         <meta
           name="description"
           content="Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
@@ -64,8 +61,8 @@ export default function Home({
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
             <h1 className="lg:text-5xl text-3xl pt-12 font-bold leading-12">
-            Welcome to the Brain Inventory Blogs: Insights, Trends, and Innovations
-              Development
+              Welcome to the Brain Inventory Blogs: Insights, Trends, and
+              Innovations Development
             </h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3 hidden lg:block">

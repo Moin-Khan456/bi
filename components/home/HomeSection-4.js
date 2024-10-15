@@ -35,7 +35,7 @@ const info = [
       orange: "Mobile",
       white: "Development",
     },
-    url: "/mobile-development/custom-app-development",
+    url: "/mobile-development/custom-mobile-app-development-company",
     video:
       "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
     thumbnail:

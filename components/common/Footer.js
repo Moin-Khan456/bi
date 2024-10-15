@@ -38,19 +38,19 @@ const FooterSections = [
     links: [
       {
         name: "Hire Angular Js Developers",
-        path: "/hire-angular-js-developers",
+        path: "/hire-angularjs-developers",
       },
       {
         name: "Hire React Js Developers",
-        path: "/hire-react-js-developers",
+        path: "/hire-reactjs-developers",
       },
       {
         name: "Hire Node Js Developers",
-        path: "/hire-node-js-developers",
+        path: "/hire-nodejs-developers",
       },
       {
         name: "Hire Vue Js Developers",
-        path: "/hire-vue-js-developers",
+        path: "/hire-vuejs-developers",
       },
       {
         name: "Hire Next Js Developers",
@@ -70,7 +70,7 @@ const FooterSections = [
       },
       {
         name: "Hire Android Developers",
-        path: "/hire-android-developers",
+        path: "/hire-android-app-developers",
       },
       {
         name: "Hire iOS Developers",
@@ -122,7 +122,7 @@ const FooterSections = [
       },
       {
         name: "Hire QA Analyst",
-        path: "/hire-qa-analysts",
+        path: "/hire-qa-testers",
       },
     ],
   },
@@ -135,7 +135,7 @@ const FooterSections = [
       },
       {
         name: "Angular JS Development",
-        path: "/web-development/angular-js-development-company",
+        path: "/web-development/angularjs-development-company",
       },
       {
         name: "React JS Development",
@@ -159,19 +159,19 @@ const FooterSections = [
       },
       {
         name: "LAMP Development",
-        path: "/web-development/lamp-development-company",
+        path: "/web-development/lamp-application-development-services",
       },
       {
         name: "PHP Development",
-        path: "/web-development/php-development-company",
+        path: "/web-development/php-development-service-company",
       },
       {
         name: "Python Development",
-        path: "/web-development/python-development-company",
+        path: "/web-development/python-web-development-company",
       },
       {
         name: "Wordpress Website Development",
-        path: "/web-development/wordpress-development-company",
+        path: "/web-development/wordpress-website-design-company",
       },
       {
         name: "Laravel Development",
@@ -179,7 +179,7 @@ const FooterSections = [
       },
       {
         name: "CodeIgniter Development",
-        path: "/web-development/codeigniter-development-services",
+        path: "/web-development/codeigniter-web-development-services",
       },
       {
         name: "TypeScript Development",
@@ -187,7 +187,7 @@ const FooterSections = [
       },
       {
         name: "Shopify Development",
-        path: "/web-development/shopify-ecommerce-software-development-services ",
+        path: "/web-development/shopify-web-development-company ",
       },
       {
         name: ".Net Development",
@@ -195,7 +195,7 @@ const FooterSections = [
       },
       {
         name: "Salesforce Development",
-        path: "/web-development/salesforce-development-company",
+        path: "/web-development/salesforce-development-services",
       },
       {
         name: "Java Development",
@@ -209,27 +209,27 @@ const FooterSections = [
     links: [
       {
         name: "Custom App Development",
-        path: "/mobile-development/custom-app-development",
+        path: "/mobile-development/custom-mobile-app-development-company",
       },
       {
         name: "iOS App Development",
-        path: "/mobile-development/ios-development-company",
+        path: "/mobile-development/ios-app-development-company",
       },
       {
         name: "Android App Development",
-        path: "/mobile-development/android-development-company",
+        path: "/mobile-development/android-app-development-company",
       },
       {
         name: "React Native App Development",
-        path: "/mobile-development/react-native-development-company",
+        path: "/mobile-development/react-native-app-development-company",
       },
       {
         name: "Flutter App Development",
-        path: "/mobile-development/flutter-development-company",
+        path: "/mobile-development/flutter-app-development-company",
       },
       {
         name: "Swift App Development",
-        path: "/mobile-development/swift-development-company",
+        path: "/mobile-development/swift-app-development-services",
       },
       {
         name: "Hybrid App Development",
@@ -237,11 +237,11 @@ const FooterSections = [
       },
       {
         name: "Mobile App Integration",
-        path: "/mobile-development/mobile-app-integration",
+        path: "/mobile-development/mobile-api-integration-services",
       },
       {
         name: "Ionic App Development",
-        path: "/mobile-development/ionic-app-development-company",
+        path: "/mobile-development/cross-platform-mobile-app-development",
       },
     ],
   },
@@ -252,77 +252,77 @@ const FooterSections = [
       {
         _id: 2,
         name: "Fitness",
-        path: "/industry/fitness-software-development-company",
+        path: "/industry/fitness",
       },
       {
         _id: 3,
         name: "Healthcare",
-        path: "/industry/healthcare-software-development-services",
+        path: "/industry/healthcare",
       },
       {
         _id: 4,
         name: "Blockchain",
-        path: "/industry/blockchain-development-services",
+        path: "/industry/blockchain",
       },
       {
         _id: 5,
         name: "Accounting",
-        path: "/industry/accounting-software-development-services",
+        path: "/industry/accounting",
       },
       {
         _id: 6,
         name: "Marketplace",
-        path: "/industry/marketplace-software-development-services",
+        path: "/industry/marketplace",
       },
       {
         _id: 7,
         name: "Ed Tech App Provider",
-        path: "/industry/edtech-software-development-services ",
+        path: "/industry/edtech ",
       },
       {
         _id: 8,
         name: "Travel",
-        path: "/industry/travel-software-development-services",
+        path: "/industry/travel",
       },
       {
         _id: 9,
         name: "CRM",
-        path: "/industry//crm-software-development-services",
+        path: "/industry//crm",
       },
       {
         _id: 10,
         name: "Ecommerce",
-        path: "/industry/ecommerce-software-development-services",
+        path: "/industry/ecommerce",
       },
       {
         _id: 11,
         name: "Energy & Utility",
-        path: "/industry/energy-and-utility-software-development-services",
+        path: "/industry/energy-and-utility",
       },
       {
         _id: 12,
         name: "Meeting & Event Planning",
-        path: "/industry/meeting-and-event-planning-software-development-services",
+        path: "/industry/meeting-and-event-planning",
       },
       {
         _id: 13,
         name: "Supplychain",
-        path: "/industry/supplychain-software-development-services",
+        path: "/industry/supplychain",
       },
       {
         _id: 14,
         name: "Transport and Logistic",
-        path: "/industry/transport-and-logistic-software-development-services",
+        path: "/industry/transport-and-logistic",
       },
       {
         _id: 15,
         name: "Real Estate",
-        path: "/industry/real-estate-software-development-services",
+        path: "/industry/real-estate",
       },
       {
         _id: 16,
         name: "Sports",
-        path: "/industry/sports-app-development-company",
+        path: "/industry/sports",
       },
     ],
   },

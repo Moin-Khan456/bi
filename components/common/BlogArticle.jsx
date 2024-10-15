@@ -19,9 +19,9 @@ export default function BlogArticle() {
         <section>
           <section>
             <section className="flex justify-between flex-col lg:flex-row">
-              <h1 className="Gilroy-Bold text-4xl leading-[3rem] lg:w-2/5 my-4">
+              <h3 className="Gilroy-Bold text-4xl leading-[3rem] lg:w-2/5 my-4">
                 The ultimate blogs & articles
-              </h1>
+              </h3>
               <section>
                 <button
                   type="button"

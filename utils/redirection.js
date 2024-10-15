@@ -498,7 +498,7 @@ const redirection = () => {
     {
       source: "/posts/undefined/1285",
       destination:
-        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-ionic-app-development-company/1285",
+        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-cross-platform-mobile-app-development/1285",
       permanent: true,
     },
     {
@@ -1183,8 +1183,8 @@ const redirection = () => {
     },
 
     {
-      source: "/mobile-app-integration",
-      destination: "/mobile-development/mobile-app-integration",
+      source: "/mobile-api-integration-services",
+      destination: "/mobile-development/mobile-api-integration-services",
       permanent: true,
     },
 
@@ -1289,8 +1289,8 @@ const redirection = () => {
     },
 
     {
-      source: "/pages/mobile-development/mobile-app-integration",
-      destination: "/mobile-development/mobile-app-integration",
+      source: "/pages/mobile-development/mobile-api-integration-services",
+      destination: "/mobile-development/mobile-api-integration-services",
       permanent: true,
     },
 
@@ -1313,8 +1313,8 @@ const redirection = () => {
     },
 
     {
-      source: "/pages/hire-react-js-developers",
-      destination: "/hire-react-js-developers",
+      source: "/pages/hire-reactjs-developers",
+      destination: "/hire-reactjs-developers",
       permanent: true,
     },
 
@@ -1371,8 +1371,8 @@ const redirection = () => {
     },
 
     {
-      source: "/pages/hire-vue-js-developers",
-      destination: "/hire-vue-js-developers",
+      source: "/pages/hire-vuejs-developers",
+      destination: "/hire-vuejs-developers",
       permanent: true,
     },
     {
@@ -1397,24 +1397,22 @@ const redirection = () => {
     },
     {
       source: "/industry/edtech-solution-providers",
-      destination: "/industry/edtech-software-development-services",
+      destination: "/industry/edtech",
       permanent: true,
     },
     {
       source: "/web-development/shopify-development-company",
-      destination:
-        "/web-development/shopify-ecommerce-software-development-services",
+      destination: "/web-development/shopify-web-development-company",
       permanent: true,
     },
     {
       source: "/industry/crm-development-company",
-      destination: "/industry/crm-software-development-services",
+      destination: "/industry/crm",
       permanent: true,
     },
     {
       source: "/industry/transport-and-logistic-software-development-service",
-      destination:
-        "/industry/transport-and-logistic-software-development-services",
+      destination: "/industry/transport-and-logistic",
       permanent: true,
     },
     {
@@ -1429,7 +1427,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-app-development",
-      destination: "/mobile-development/custom-app-development",
+      destination: "/mobile-development/custom-mobile-app-development-company",
       permanent: true,
     },
     {
@@ -1439,47 +1437,47 @@ const redirection = () => {
     },
     {
       source: "/industry/accounting-solution-development-company",
-      destination: "/industry/accounting-software-development-services",
+      destination: "/industry/accounting",
       permanent: true,
     },
     {
       source: "/industry/blockchain-solution-development-company",
-      destination: "/industry/blockchain-development-services",
+      destination: "/industry/blockchain",
       permanent: true,
     },
     {
       source: "/industry/crm-solution-development-company",
-      destination: "/industry/crm-software-development-services",
+      destination: "/industry/crm",
       permanent: true,
     },
     {
       source: "/industry/edtech-solution-development-company",
-      destination: "/industry/edtech-software-development-services",
+      destination: "/industry/edtech",
       permanent: true,
     },
     {
       source: "/industry/travel-solution-development-company",
-      destination: "/industry/travel-software-development-services",
+      destination: "/industry/travel",
       permanent: true,
     },
     {
       source: "/industry/marketplace-solution-development-company",
-      destination: "/industry/marketplace-software-development-services",
+      destination: "/industry/marketplace",
       permanent: true,
     },
     {
       source: "/industry/healthcare-solution-development-company",
-      destination: "/industry/healthcare-software-development-services",
+      destination: "/industry/healthcare",
       permanent: true,
     },
     {
       source: "/industry/fitness-solution-development-company",
-      destination: "/industry/fitness-software-development-company",
+      destination: "/industry/fitness",
       permanent: true,
     },
     {
       source: "/custom-app-development",
-      destination: "/mobile-development/custom-app-development",
+      destination: "/mobile-development/custom-mobile-app-development-company",
       permanent: true,
     },
     {
@@ -1489,7 +1487,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/swift-development",
-      destination: "/mobile-development/swift-development-company",
+      destination: "/mobile-development/swift-app-development-services",
       permanent: true,
     },
     {
@@ -1499,7 +1497,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/react-native-development",
-      destination: "/mobile-development/react-native-development-company",
+      destination: "/mobile-development/react-native-app-development-company",
       permanent: true,
     },
     {
@@ -1509,7 +1507,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/ios-development",
-      destination: "/mobile-development/ios-development-company",
+      destination: "/mobile-development/ios-app-development-company",
       permanent: true,
     },
     {
@@ -1519,7 +1517,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/flutter-development",
-      destination: "/mobile-development/flutter-development-company",
+      destination: "/mobile-development/flutter-app-development-company",
       permanent: true,
     },
     {
@@ -1529,7 +1527,7 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/android-development",
-      destination: "/mobile-development/android-development-company",
+      destination: "/mobile-development/android-app-development-company",
       permanent: true,
     },
     {
@@ -1539,7 +1537,7 @@ const redirection = () => {
     },
     {
       source: "/web-development/angular-js-development",
-      destination: "/web-development/angular-js-development-company",
+      destination: "/web-development/angularjs-development-company",
       permanent: true,
     },
     {
@@ -1549,7 +1547,7 @@ const redirection = () => {
     },
     {
       source: "/web-development/lamp-development",
-      destination: "/web-development/lamp-development-company",
+      destination: "/web-development/lamp-application-development-services",
       permanent: true,
     },
     {
@@ -1604,32 +1602,32 @@ const redirection = () => {
     },
     {
       source: "/web-development/php-development",
-      destination: "/web-development/php-development-company",
+      destination: "/web-development/php-development-service-company",
       permanent: true,
     },
     {
       source: "/web-development/python-development",
-      destination: "/web-development/python-development-company",
+      destination: "/web-development/python-web-development-company",
       permanent: true,
     },
     {
       source: "/web-development/wordpress-development",
-      destination: "/web-development/wordpress-development-company",
+      destination: "/web-development/wordpress-website-design-company",
       permanent: true,
     },
     {
       source: "/web-development/codeigniter-development-service",
-      destination: "/web-development/codeigniter-development-services",
+      destination: "/web-development/codeigniter-web-development-services",
       permanent: true,
     },
     {
       source: "/web-development/codeigniter-development",
-      destination: "/web-development/codeigniter-development-services",
+      destination: "/web-development/codeigniter-web-development-services",
       permanent: true,
     },
     {
       source: "/hire-angular-js-developer",
-      destination: "/hire-angular-js-developers",
+      destination: "/hire-angularjs-developers",
       permanent: true,
     },
     {

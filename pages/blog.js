@@ -26,10 +26,7 @@ export default function Home({ data, blogs, totalPages }) {
   return (
     <>
       <Head>
-        <title>
-          Brain Inventory Blog – Staff Augmentation | Software | Web | App
-          Development
-        </title>
+        <title>Insights and Innovations | Blogs by Brain Inventory</title>
         <meta
           name="description"
           content="Read the latest technology 
@@ -41,12 +38,12 @@ export default function Home({ data, blogs, totalPages }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Insights and Innovations | Blogs by Brain Inventory 
+          content="Insights and Innovations | Blogs by Brain Inventory 
 "
         />
         <meta
           property="og:description"
-          content=" Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
+          content="Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
         />
 
         <meta

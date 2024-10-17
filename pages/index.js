@@ -118,7 +118,7 @@ function Home() {
           rel="icon"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png"
         />
-        {/* <link rel="canonical" href="https://braininventory.in" /> */}
+        <link rel="canonical" href="https://braininventory.in" />
       </Head>
       <Suspense fallback={null}>
         <main className="relative">

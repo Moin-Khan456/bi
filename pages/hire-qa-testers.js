@@ -6,11 +6,15 @@ const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const Loader = dynamic(() => import("../components/common/loader.js"));
-const KeepInTouch = dynamic(() => import("../components/common/keepInTouch.js"));
+const KeepInTouch = dynamic(() =>
+  import("../components/common/keepInTouch.js")
+);
 const FaqHire = dynamic(() => import("../components/common/Faqhire.jsx"));
 const Customer = dynamic(() => import("../components/common/customer.jsx"));
 const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
-const HireMarquee = dynamic(() => import("../components/common/HireMarquee.jsx"));
+const HireMarquee = dynamic(() =>
+  import("../components/common/HireMarquee.jsx")
+);
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hello = dynamic(() => import("../components/common/FindUs.jsx"));
@@ -19,7 +23,9 @@ import HireBanner from "../components/common/HireBanner.jsx";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory.jsx")
 );
-const BlogArticle = dynamic(() => import("../components/common/BlogArticle.jsx"));
+const BlogArticle = dynamic(() =>
+  import("../components/common/BlogArticle.jsx")
+);
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));

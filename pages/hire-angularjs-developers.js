@@ -5,11 +5,15 @@ const Header = dynamic(() => import("../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
-const KeepInTouch = dynamic(() => import("../components/common/keepInTouch.js"));
+const KeepInTouch = dynamic(() =>
+  import("../components/common/keepInTouch.js")
+);
 const FaqHire = dynamic(() => import("../components/common/Faqhire.jsx"));
 const Customer = dynamic(() => import("../components/common/customer.jsx"));
 const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
-const HireMarquee = dynamic(() => import("../components/common/HireMarquee.jsx"));
+const HireMarquee = dynamic(() =>
+  import("../components/common/HireMarquee.jsx")
+);
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
@@ -20,7 +24,9 @@ const ChooseBraininventory = dynamic(() =>
 );
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
-const BlogArticle = dynamic(() => import("../components/common/BlogArticle.jsx"));
+const BlogArticle = dynamic(() =>
+  import("../components/common/BlogArticle.jsx")
+);
 
 function HireAangularJsDeveloper() {
   const content =

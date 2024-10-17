@@ -22,7 +22,7 @@ function Company() {
     <>
       <Head>
         <title>
-          Custom Software And App Development | Web Development Company - Brain
+          Software And App Development | Web Development Company - Brain
           Inventory
         </title>
         <meta
@@ -32,7 +32,7 @@ function Company() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Custom Software App & Web Development Company | Brain Inventory"
+          content="Software App & Web Development Company | Brain Inventory"
         />
         <meta
           property="og:description"

@@ -21,7 +21,7 @@ const SectionTwo = ({
             <span className="lg:px-4 pb-3 lg:text-[1.7rem] lg:ml-52 lg:whitespace-nowrap lg:absolute bottom-10 right-40 Gilroy-SemiBold ">
               {subTitle}
             </span>
-          </h3>
+          </h1>
         </div>
         {isHeadShow ? (
           <p className="text-3xl px-4">

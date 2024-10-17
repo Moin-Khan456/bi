@@ -74,7 +74,7 @@ const FooterSections = [
       },
       {
         name: "Hire iOS Developers",
-        path: "/hire-ios-developers",
+        path: "/hire-ios-app-developers",
       },
       {
         name: "Hire React Native Developers",

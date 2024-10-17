@@ -1365,8 +1365,8 @@ const redirection = () => {
     },
 
     {
-      source: "/pages/hire-ios-developers",
-      destination: "/hire-ios-developers",
+      source: "/pages/hire-ios-app-developers",
+      destination: "/hire-ios-app-developers",
       permanent: true,
     },
 
@@ -1632,7 +1632,7 @@ const redirection = () => {
     },
     {
       source: "/hire-ios-developer",
-      destination: "/hire-ios-developers",
+      destination: "/hire-ios-app-developers",
       permanent: true,
     },
     {

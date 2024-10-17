@@ -466,7 +466,7 @@ const ServicesChildren = () => {
     {
       _id: 10,
       name: "Hire iOS Developers",
-      link: "/hire-ios-developers",
+      link: "/hire-ios-app-developers",
     },
     {
       _id: 11,

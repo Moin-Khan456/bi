@@ -392,7 +392,7 @@ const ServicesChildren = () => {
             </Link>
           </li>
           <li className="text-white text-opacity-50">
-            <Link href="/hire-ios-developers" className="cursor-pointer">
+            <Link href="/hire-ios-app-developers" className="cursor-pointer">
               iOS developers
             </Link>
           </li>

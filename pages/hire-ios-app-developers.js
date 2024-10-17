@@ -161,12 +161,12 @@ function HireAangularJsDeveloper(props) {
         />
         <meta
           property="og:url"
-          content="https://braininventory.in/hire-ios-developers"
+          content="https://braininventory.in/hire-ios-app-developers"
         />
 
         <link
           rel="canonical"
-          href="https://braininventory.in/hire-ios-developers"
+          href="https://braininventory.in/hire-ios-app-developers"
         />
       </Head>
       <Suspense

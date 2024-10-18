@@ -15,10 +15,14 @@ export default function PostPage({ slug, post, featuredMedia }) {
   const [title, setTitle] = useState(
     data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog"
   );
-  const [summary, setSummary] = useState(post.excerpt.rendered.split(":")[1]);
+  const [summary, setSummary] = useState(
+    post.excerpt.rendered.includes(":")
+      ? post.excerpt.rendered.split(":")[1]
+      : post.excerpt.rendered
+  );
   const [discription, setDiscription] = useState(
     data.find((ele) => ele.id === post.id)?.description ??
-      summary.split(". ")[0]
+      summary?.split(". ")?.[0]
   );
 
   useEffect(() => {

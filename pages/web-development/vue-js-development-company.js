@@ -29,13 +29,13 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "As a strong proponent of state-of-the-art web development technologies and a top-notch VueJS developer, we deliver unmatched products at an affordable cost. Our team of experienced, dedicated Vue JS developers utilizes reusable UI components.";
+    "As a strong proponent of state-of-the-art web development technologies and a top-notch Vue JS Development Company, we deliver unmatched products at an affordable cost. Our team of experienced, dedicated Vue JS developers utilizes reusable UI components.";
 
   const hireCards = [
     {
       head: "Dedicated Vue.js Development Team",
       content:
-        "Brain Inventory is an emerging Vuejs web development company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of responsive web design to help you expand, grow and flourish.",
+        "Brain Inventory is an emerging Vuejs web development company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of custom web development services to help you expand, grow and flourish.",
     },
     {
       head: "Fixed Price Model",
@@ -91,7 +91,7 @@ function HireAangularJsDeveloper(props) {
     "Vue.js is a quick, productive, and adaptable platform utilized to develop both backend and frontend applications.",
     "By using Vue.js, you can construct single-page web apps with Vuex and Vuetify in addition to other tools for making customized user interfaces for your project like a router, filters, etc.",
     "Without needing advanced coding abilities. It allows rapid development of interactive web interfaces without complex code.",
-    "Hire a Vue.js developer from Brain Inventory to build interactive applications. We develop apps using high coding standards, the latest tools and technology, proper planning, research, and proven methodologies.",
+    "Vue.Js Development services from Brain Inventory to build interactive applications. We develop apps using high coding standards, the latest tools and technology, proper planning, research, and proven methodologies.",
     "Our Vue developers have a strong focus on UI/UX designs and provide flexible delivery models.",
   ];
 

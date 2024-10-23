@@ -16,15 +16,15 @@ const info = [
       "https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp",
     techList: [
       {
-        name: "React Js Development",
+        name: "React JS Development Services",
         path: "/reactjsdevelopment",
       },
       {
-        name: "Angular Js Development",
+        name: "AngularJS Development Services",
         path: "/angularjs-development",
       },
       {
-        name: "Node Js Development",
+        name: "Node JS Development Services",
         path: "/nodejs-development",
       },
     ],
@@ -42,15 +42,15 @@ const info = [
       "https://braininventory.s3.us-east-2.amazonaws.com/images/Mobile+Development.webp",
     techList: [
       {
-        name: "Android Development",
+        name: "Android App Development Services",
         path: "",
       },
       {
-        name: "iOS Development",
+        name: "iOS App Development Services",
         path: "",
       },
       {
-        name: "React Native",
+        name: "React Native Development Services",
         path: "",
       },
     ],
@@ -95,7 +95,7 @@ const HomeSectionFour = () => {
               </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
-                business. We, as a mobile application development company can
+                business. We, as a Mobile App Development Company can
                 provide high quality standard mobile app of any category. We
                 have worked with diverse brands, organizations, start-ups and
                 individuals to create powerful apps from excellent idea.

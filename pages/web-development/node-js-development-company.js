@@ -35,7 +35,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Transparency",
       content:
-        "Brain Inventory is an emerging Vuejs web development company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of responsive web design to help you expand, grow and flourish.",
+        "Brain Inventory is an emerging Node JS Web Development Company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of responsive web design to help you expand, grow and flourish.",
     },
     {
       head: "Uplifted User Experience",
@@ -84,7 +84,7 @@ function HireAangularJsDeveloper(props) {
   const chooseBiSubhead =
     "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
-    "Web and Mobile App Development with Node.js The trend of Single Page Applications has made Node.js high in demand across all industries and OS. This is the reason why leading IT brands have already started using node js development services.",
+    "Node JS Web Development The trend of Single Page Applications has made Node.js high in demand across all industries and OS. This is the reason why leading IT brands have already started using node js development services.",
     "High interactive web applications require backend server-side technologies to bring out real-time processing abilities and push information to the browser instantly.",
     " This can be accomplished easily by utilizing node.js with the help of custom development services from our team of developers.",
     "Not only this, but we also provide assistance to enterprises to boost their online performance with flexible and feature-rich solutions for them that include scalable components, increase security, create a steady foundation, and much more (quite literally).",

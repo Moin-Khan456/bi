@@ -59,7 +59,7 @@ function HireAangularJsDeveloper(props) {
       id: "2",
       title: "Is MERN stack best for web development?",
       description:
-        "Yes, MERN stack development is a combination of technologies that are used to build highly scalable, robust, and maintainable applications. MERN stack is being used by some of the most popular companies like Google, Facebook, Dropbox, and many others due to its capability to run on multiple platforms.",
+        "Yes, MERN Stack Development Services is a combination of technologies that are used to build highly scalable, robust, and maintainable applications. MERN stack is being used by some of the most popular companies like Google, Facebook, Dropbox, and many others due to its capability to run on multiple platforms.",
     },
     {
       id: "3",
@@ -92,7 +92,7 @@ function HireAangularJsDeveloper(props) {
   const chooseBiSubhead =
     "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
-    "Brain Inventory is a trusted and reliable choice for MERN stack development.",
+    "Brain Inventory is a trusted and reliable choice for MERN Stack Development Services.",
     "Expert developers with deep understanding of MongoDB, Express, React.js, and Node.js.",
     "Proficiency in creating custom web applications with optimal performance.",
     "Stay up-to-date with the latest advancements in technology, including cloud services, DevOps, and continuous integration and delivery.",

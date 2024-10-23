@@ -94,7 +94,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const advantages = [
-    "Shopify development companies can expedite the launch of your online store, saving you time and effort. They are well-versed in the intricacies of the platform, ensuring a smooth setup and efficient configuration. Additionally, these professionals stay updated with the latest industry trends and Shopify updates, guaranteeing that your store remains competitive and up-to-date.",
+    "Shopify Web Development Company can expedite the launch of your online store, saving you time and effort. They are well-versed in the intricacies of the platform, ensuring a smooth setup and efficient configuration. Additionally, these professionals stay updated with the latest industry trends and Shopify updates, guaranteeing that your store remains competitive and up-to-date.",
     "Another significant advantage of partnering with a Shopify development company is ongoing support and maintenance. They can provide regular updates, security enhancements, and troubleshooting, ensuring that your e-commerce site operates smoothly and securely.",
   ];
 

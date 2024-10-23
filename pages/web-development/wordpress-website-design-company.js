@@ -32,7 +32,7 @@ const ChooseBraininventory = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Our company offers premium-quality WordPress development services across the globe. Our team of highly skilled WordPress experts helps business organizations and independent entrepreneurs build responsive, adaptive, high-performance plug-ins and themes at competitive prices.";
+    "Our company offers premium-quality Wordpress website design service across the globe. Our team of highly skilled WordPress experts helps business organizations and independent entrepreneurs build responsive, adaptive, high-performance plug-ins and themes at competitive prices.";
   const subhead1 =
     "A WordPress website-building solution can be essential for people, companies and groups for various convincing motivations. To begin with, WordPress is an easy-to-understand and profoundly adaptable stage that empowers you to make a site customized to your particular needs and inclinations, regardless of whether it's an individual blog, web based business store, portfolio site, or corporate web nearness.";
   const subhead2 =
@@ -48,12 +48,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Rich Experience",
       content:
-        "We are a trusted provider of responsive WordPress development services, with experience in developing high-quality and scalable WordPress websites for clients across diverse industry verticals. Whether you need to convert your existing site into a responsive one or want to launch a new responsive WordPress website, we have the expertise and resources to get the job done.",
+        "We are a trusted provider of responsive Wordpress website design service, with experience in developing high-quality and scalable WordPress websites for clients across diverse industry verticals. Whether you need to convert your existing site into a responsive one or want to launch a new responsive WordPress website, we have the expertise and resources to get the job done.",
     },
     {
       head: "Delivery on Time",
       content:
-        "Delivering WordPress website development services is our main task. To ensure that all the projects are delivered on time, we have organized a group of expert developers who are fully dedicated to the successful completion of each assignment. Dedication and consistency are what we attach the most importance to when carrying out all our projects.",
+        "Delivering Wordpress website designs is our main task. To ensure that all the projects are delivered on time, we have organized a group of expert developers who are fully dedicated to the successful completion of each assignment. Dedication and consistency are what we attach the most importance to when carrying out all our projects.",
     },
     {
       head: "Customer-Focused Work Approach",
@@ -89,7 +89,7 @@ function HireAangularJsDeveloper(props) {
     },
   ];
   const chooseBI = [
-    "Brain Inventory offers top WordPress development services in India created by a team that has acquired phenomenal abilities and skills in how customers work with WordPress websites. Our dedicated WordPress website developers offer creative inclusions, information on the market situation, and WordPress solutions that give true value for your money, and time, and websites that allow speedy downloads.",
+    "Brain Inventory offers top Wordpress website design service USA created by a team that has acquired phenomenal abilities and skills in how customers work with WordPress websites. Our dedicated WordPress website developers offer creative inclusions, information on the market situation, and WordPress solutions that give true value for your money, and time, and websites that allow speedy downloads.",
     "We have more than 4 years of experience in the field of web design related to WordPress Product Development, Mobile App Development, and E-commerce Web Development. Our experts assist new business enterprises as well as startup companies to come up with unique site architecture that allows independent businesses to grow their industry and businesses with an experiential solution to build a strong online presence at no additional cost.",
     "We know your business deserves to thrive across all facets. We are proud of our WordPress customizations and development that have enabled hundreds of businesses to boost sales and build their brand online. This is why we provide assistance whenever you need it, with our friendly support team available at any hour of the day or night.",
   ];
@@ -155,7 +155,7 @@ function HireAangularJsDeveloper(props) {
             btn="Contact Us!"
             // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+1.png"
-            alt="WordPress website development services"
+            alt="Wordpress website designs"
             type="php"
             unique="brain inventory"
           />
@@ -182,7 +182,7 @@ function HireAangularJsDeveloper(props) {
 
           <ChooseBraininventory
             reasons={chooseBI}
-            alt="WordPress website development services"
+            alt="Wordpress website designs"
           />
           <FaqHire faq={faqdetails} />
           <hr />

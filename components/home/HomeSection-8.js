@@ -35,7 +35,7 @@ const info = [
   {
     title: "Development",
     details: [
-      "At this stage, we cater requirements for frontend, backend, web services, and API development integration.",
+      "At this stage, we cater requirements for frontend, backend, web services, and API Integration Services.",
       "Along with preparing a strategy for Agile Scrum methodology, we factor the aspects of scalability, multi-tenancy, 3rd party integration, and craft an optimized clean code structure using cutting-edge technologies.",
       "We make sure to involve and implement clients’ reviews in each sprint/milestone.",
     ],

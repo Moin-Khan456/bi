@@ -32,7 +32,7 @@ const ChooseBraininventory = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the software development industry. As a top TypeScript app development company, we prioritize customer needs.";
+    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the custom software development industry. As a top TypeScript app development company, we prioritize customer needs.";
   const subhead1 =
     "A Laravel development solution can be indispensable for various reasons. Firstly, Laravel is a robust and widely used PHP framework known for its elegance and simplicity, making it an excellent choice for developing web applications and websites. Its extensive ecosystem of pre-built components and libraries accelerates development, reducing time-to-market for your project.";
   const subhead2 =
@@ -43,7 +43,7 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Experienced Developers",
-      content: `Our Laravel developers are the backbone of our business. Having spent time in the industry, they have used their experience to architect custom web applications using Laravel and related frameworks. We craft custom web applications that give you the functionality you need with ease of use and security.`,
+      content: `Our Laravel developers are the backbone of our business. Having spent time in the industry, they have used their experience to architect custom web development using Laravel and related frameworks. We craft custom web development that give you the functionality you need with ease of use and security.`,
     },
     {
       head: "Trusted Delivery Methods",
@@ -79,7 +79,7 @@ function HireAangularJsDeveloper(props) {
       id: "3",
       title: "Do you use any project management tools?",
       description:
-        "The most common project management tools used in the software development industry are JIRA, Pivotal Tracker, and Trello. We use these and other tools to manage client projects. These tools help us keep track of what needs to be done, who is responsible for it, what's already been done, whether we're on schedule or not — pretty much everything you'd want to know in order to confidently make business decisions.",
+        "The most common project management tools used in the custom software development industry are JIRA, Pivotal Tracker, and Trello. We use these and other tools to manage client projects. These tools help us keep track of what needs to be done, who is responsible for it, what's already been done, whether we're on schedule or not — pretty much everything you'd want to know in order to confidently make business decisions.",
     },
     {
       id: "4",
@@ -97,7 +97,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory is a leading Laravel application development company, based in India and working with clients worldwide to fulfill their requirements. We offer top-notch web development services, which include custom web design, website development, and mobile app development along with offshore outsourcing & customized software development services at competitive rates. We are driven by the innovative thinking of our developers who have outclass skills and strong technical backgrounds.",
+    "Brain Inventory is a leading Laravel Development Services, based in India and working with clients worldwide to fulfill their requirements. We offer top-notch Custom Web Development Services, which include custom web design, website development, and Custom Mobile App Development along with offshore outsourcing & customized custom software development services at competitive rates. We are driven by the innovative thinking of our developers who have outclass skills and strong technical backgrounds.",
     "While you have the opportunity to rest assured that we will handle even the most complicated design or programming requirements, we know that every project is different and unique, so we always listen closely to your needs and requirements. Our team of Laravel developers here at Brain Inventory is eager to help you work towards solving your technological problems.",
     "Our developers have an extensive understanding of the framework and this allows us to take advantage of unique features that a standard PHP developer may not know about. Therefore, we can help your business build sophisticated software solutions that leverage what the framework has to offer.",
   ];

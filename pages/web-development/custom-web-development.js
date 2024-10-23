@@ -39,7 +39,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Agile Approach",
       content:
-        "Our approach to custom website design is agile, which means that we are flexible and can adapt to changes as they occur. This approach ensures that the end result is always in line with your vision and requirements.",
+        "Our approach to Custom Website Development is agile, which means that we are flexible and can adapt to changes as they occur. This approach ensures that the end result is always in line with your vision and requirements.",
     },
     {
       head: "Customized Package",
@@ -54,7 +54,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Collaboration",
       content:
-        "Collaboration is a crucial part of our approach and we firmly believe that achieving success can be best done by partnering with our clients. We will collaborate closely with you to make sure your custom website design lives up to your expectations and needs.",
+        "Collaboration is a crucial part of our approach and we firmly believe that achieving success can be best done by partnering with our clients. We will collaborate closely with you to make sure your Custom Website Development lives up to your expectations and needs.",
     },
     {
       head: "Transparency",
@@ -90,7 +90,7 @@ function HireAangularJsDeveloper(props) {
     {
       id: "4",
       title:
-        "How does Brain Inventory approach custom website design projects?",
+        "How does Brain Inventory approach Custom Website Development projects?",
       description:
         "Brain Inventory takes an agile, collaborative, and transparent approach when crafting custom website designs. We always strive to work closely with our clients and keep them in the loop throughout the whole process. Our team of experts will gain an understanding of your vision and requirements to create a website that meets your expectations.",
     },
@@ -100,7 +100,7 @@ function HireAangularJsDeveloper(props) {
     "While it’s true that you can use custom solutions to build a unique website, the way your business needs to be structured and the features your customers are looking for will determine whether or not using a custom solution is necessary. If you own a restaurant, for example, you don’t need much. A simple website featuring your menu, team overview, location, and contact information would probably be enough. But if you are looking for something that will help your restaurant to stand out (and not just from a design standpoint), then a custom approach is the way to go.";
 
   const para2 =
-    "If it doesn’t have the elements of being working, engaging, and interactive, it’s not a good web design. Brain Inventory’s custom web design service is committed to that. Our process is unlike other creative agencies since we first focus on getting the answers to important questions.";
+    "If it doesn’t have the elements of being working, engaging, and interactive, it’s not a good web design. Brain Inventory’s Custom Web Development is committed to that. Our process is unlike other creative agencies since we first focus on getting the answers to important questions.";
 
   const benefitSubHead =
     "Developing a personalized website, application, or eCommerce platform offers numerous advantages. It assists in establishing trust and credibility with customers, delivers optimal user experience, streamlines product creation and administration, and much more. A tailored digital presence furnishes countless positives.";

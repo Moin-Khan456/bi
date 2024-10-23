@@ -53,7 +53,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Trusted Delivery Methods",
       content:
-        "Brain Inventory, a leading Python application development company in India, has achieved our position through impeccable execution of services. We offer a wide range of software development services to clients across the globe. Our approach to providing these services guarantees you complete peace of mind in the form of quality and timely delivery.",
+        "Brain Inventory, a leading Python application development company USA, has achieved our position through impeccable execution of services. We offer a wide range of custom software development services to clients across the globe. Our approach to providing these services guarantees you complete peace of mind in the form of quality and timely delivery.",
     },
   ];
 
@@ -96,7 +96,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory is a top-rated Python development company across India, USA, Canada, and Jordan. We have established a reputation as a reliable provider of quality software solutions to thousands of clients worldwide. Our team of Python developers possesses profound expertise and a wealth of experience in constructing applications that deliver exceptional performance and minimal latency.",
+    "Brain Inventory is a top-rated Python Web Development Company across India, USA, Canada, and Jordan. We have established a reputation as a reliable provider of quality software solutions to thousands of clients worldwide. Our team of Python developers possesses profound expertise and a wealth of experience in constructing applications that deliver exceptional performance and minimal latency.",
     "With the help of our team of dedicated and qualified experts and consultants, we can apply comprehensive knowledge of the field to address any aspect of application development. Over the years, we have been able to work with companies of all sizes and have always put our client’s success first. With Brain Inventory as your development company, you can be assured that you will get the best service.",
     "Our developers are skilled and trained in Python Django web development. We also use the latest technologies and frameworks, such as Python 3.7.0 and Django, Web2py, and Flask. Our team of Python developers is ready to transform your ideas into reality. Our expertise with Python web app development gives us the unique ability to create anything and everything using the latest technologies.",
   ];

@@ -32,7 +32,7 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Brain Inventory is your best go-to PHP web development company. It's the complete package. We have well-trained & multicultural PHP developers, delivering cutting-edge solutions to global businesses worldwide.";
+    "Brain Inventory is your best go-to PHP Development Company. It's the complete package. We have well-trained & multicultural PHP developers, delivering cutting-edge solutions to global businesses worldwide.";
   const subhead1 =
     "PHP development services have a number of benefits. To begin with, PHP is a flexible and popular scripting language that lets you make dynamic and interactive web apps. It gives a robust and scalable framework that's especially good for startups and businesses wanting to create a strong online presence. Custom PHP development means you can adjust software and web apps to meet your business's specific requirements, providing flexibility that ready-made solutions frequently don't offer.";
   const subhead2 =
@@ -52,7 +52,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Competitive Rates",
       content:
-        "We offer the best affordable PHP web development services to help you bring your business online. Our team of PHP developers has years of experience in developing robust and user-friendly web applications using many in-demand programming languages like WordPress, Magento, Drupal, Joomla, Codeigniter, and Laravel.",
+        "We offer the best affordable PHP Development Services to help you bring your business online. Our team of PHP developers has years of experience in developing robust and user-friendly web applications using many in-demand programming languages like WordPress, Magento, Drupal, Joomla, Codeigniter, and Laravel.",
     },
     {
       head: "Flexible Engagement Models",
@@ -66,7 +66,7 @@ function HireAangularJsDeveloper(props) {
       id: "1",
       title: "How to select the right PHP development company?",
       description:
-        "When looking for the top PHP web development company, you should carefully examine a number of things. The development process is only one part of the equation. There are other factors that must be considered, including experience with the specific technologies required for your project, communication skills, and so on.",
+        "When looking for the top PHP Development Company, you should carefully examine a number of things. The development process is only one part of the equation. There are other factors that must be considered, including experience with the specific technologies required for your project, communication skills, and so on.",
     },
     {
       id: "2",
@@ -103,8 +103,8 @@ function HireAangularJsDeveloper(props) {
     "PHP provides substantial malleability. Programmers can adapt solutions to satisfy particular commercial requirements, culminating in profoundly individualized internet-based software.",
   ];
   const chooseBI = [
-    "Brain Inventory is a premier overseas IT solutions firm based in India. We provide end-to-end software engineering solutions ranging from crafting digital roadmaps for clients’ web properties to executing, upgrading and supporting them. Our exceptionally skilled programmers are also able to help clients tailor and amalgamate their current apps or boost their online footprint.",
-    "We build robust and intuitive custom PHP web applications that cater to the changing business landscape. Our team of PHP developers and designers have the expertise and vision to develop the most innovative, attractive, and robust web solutions. So that, our clients can match their future business objectives without the extra cost of future upgrading or addition of features.",
+    "Brain Inventory is a premier overseas IT solutions firm based in USA. We provide end-to-end software engineering solutions ranging from crafting digital roadmaps for clients’ web properties to executing, upgrading and supporting them. Our exceptionally skilled programmers are also able to help clients tailor and amalgamate their current apps or boost their online footprint.",
+    "We build robust and intuitive custom PHP Web Development that cater to the changing business landscape. Our team of PHP developers and designers have the expertise and vision to develop the most innovative, attractive, and robust web solutions. So that, our clients can match their future business objectives without the extra cost of future upgrading or addition of features.",
     "We also provide easy maintenance solutions, unparalleled support services, and online training facilities for our clients to understand the vast scope of our work in developing reliable applications using the latest techniques and approaches in PHP technologies. We thoroughly evaluate and verify the quality of our PHP web services to make sure they function flawlessly on desktop computers, laptops, and mobile phones. This allows us to provide our clients with premier dependability and superiority in their software applications.",
   ];
 

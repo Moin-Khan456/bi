@@ -32,7 +32,7 @@ const ChooseBraininventory = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the software development industry. As a top TypeScript app development company, we prioritize customer needs.";
+    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the software development industry. As a top TypeScript Development Company, we prioritize customer needs.";
   const subhead1 =
     "Employing TypeScript during development can be highly advantageous for various motives. For one, TypeScript enhances the reliability and simplicity of maintaining sizable JavaScript programs. Its static type verification allows programmers to spot errors as they code, decreasing the likelihood of issues arising at runtime and making the codebase more robust on the whole.";
   const subhead2 =
@@ -81,7 +81,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Quality Assurance",
       content:
-        "At Brain Inventory, we are committed to creating only the highest-quality websites for our clients. Our specialists test our final products with the utmost care; and only after they pass these tests do we deploy them. This attention to detail sets us apart from other web design companies.",
+        "At Brain Inventory, we are committed to creating only the highest-quality websites for our clients. Our specialists test our final products with the utmost care; and only after they pass these tests do we deploy them. This attention to detail sets us apart from other Web Design Agency.",
     },
     {
       head: "Confidentiality",

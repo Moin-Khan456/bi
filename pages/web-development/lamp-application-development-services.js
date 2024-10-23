@@ -37,7 +37,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Agile Procedure",
       content:
-        "Brain Inventory is a software development company with experience in creating Agile software products. We’re here to help our clients understand Agile technology and apply it to their projects. This way we can deliver high-quality software products that are more tested and therefore more reliable for their customers.",
+        "Brain Inventory is a Custom Software Development Company with experience in creating Agile software products. We’re here to help our clients understand Agile technology and apply it to their projects. This way we can deliver high-quality software products that are more tested and therefore more reliable for their customers.",
     },
     {
       head: "Customer Satisfaction",
@@ -101,7 +101,7 @@ function HireAangularJsDeveloper(props) {
   const chooseBiSubhead =
     "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
   const chooseBI = [
-    "Our lamp web development services offer advanced web-based application creation platforms.",
+    "Our LAMP application development services offer advanced web-based application creation platforms.",
     "We have strict selection standards for our development platforms.",
     "We exclusively develop web-based software applications, ensuring code integrity.",
     "We provide encrypted data for secure work delivery.",

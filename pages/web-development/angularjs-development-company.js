@@ -29,7 +29,7 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "At Braininventory, we provide services for web development in Angular. Having a strong team of professional and experienced developers, we provide you with high-level services in the area of web development and app development.";
+    "At Braininventory, we provide services for custom web development in Angular. Having a strong team of professional and experienced developers, we provide you with high-level services in the area of custom web development and app development.";
 
   const hireCards = [
     {
@@ -40,7 +40,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Trusted Delivery Methods",
       content:
-        "We’re offering high-quality web development services to clients across the globe. Our services are an optimum combination of quality and timely delivery. Throughout AngularJS application development, we focus on delivering solutions that meet your business goals, timeline, and budget. We employ the Agile methodology to keep you in the loop throughout development.",
+        "We’re offering high-quality custom web development services to clients across the globe. Our services are an optimum combination of quality and timely delivery. Throughout AngularJS application development, we focus on delivering solutions that meet your business goals, timeline, and budget. We employ the Agile methodology to keep you in the loop throughout development.",
     },
     {
       head: "Competitive Rates",
@@ -82,10 +82,10 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "At Brain Inventory, our greatest joy stems from offering our clients unparalleled Angular web development services, which enable us to produce high-quality bespoke software using widely-accepted technologies.",
+    "At Brain Inventory, our greatest joy stems from offering our clients unparalleled AngularJS Development Services, which enable us to produce high-quality bespoke software using widely-accepted technologies.",
     "Our experts utilize multiple frameworks and libraries, including Java, PHP, and HTML5. They make use of industry standards like the MVC (Model-View-Controller) design pattern and dependency injection to make building apps simpler.",
-    "Being the best Angular development company, we endow you with a high-end product by blending our years of expertise and experience with advanced development practices.",
-    "In addition to providing you with top-notch Angular development services, we also provide training for your team. This will ensure that employees are fully abreast with the new technology as well as catering to their growing interest in learning new skills.",
+    "Being the best AngularJS Development Company, we endow you with a high-end product by blending our years of expertise and experience with advanced development practices.",
+    "In addition to providing you with top-notch AngularJS Development Services, we also provide training for your team. This will ensure that employees are fully abreast with the new technology as well as catering to their growing interest in learning new skills.",
     "We develop and also help our clients in developing applications using state-of-the-art frameworks and Web technologies. A few of the frameworks we extensively use in developing quality web & mobile apps include ReactJS, Angular (1, 2), Vue JS, Node JS, etc. We also provide technical support to users of these frameworks.",
   ];
 

@@ -27,7 +27,7 @@ function HireAangularJsDeveloper(props) {
   const subhead1 =
     "Brain Inventory employs a group of Vue.js developers who specialize in creating tailored web application solutions for various platforms. Our Vue.js developers possess a comprehensive knowledge of HTML, CSS, and JavaScript, with over 5 years of expertise in utilizing contemporary web development tools and libraries. Leverage their experience to create efficient software that is code review ready and can be debugged in our Chrome Extension New Relic plugin.";
   const subhead2 =
-    "We are a Vue.js development company that delivers high-quality, customized web solutions across different platforms. We create fully responsive website designs from redefining the original meaning of a functionality to optimizing the function with concise code. Our profound understanding of the structure, its interfaces, and inner workings empowers us to create sturdy websites with advanced features and intricate capabilities that are constructed across various levels at the same time. Leveraging our proficiency in Vue JS, we assist our esteemed clients in tackling intricate problems and surmounting initial hurdles.";
+    "We are a Vue JS Development Company that delivers high-quality, customized web solutions across different platforms. We create fully responsive website designs from redefining the original meaning of a functionality to optimizing the function with concise code. Our profound understanding of the structure, its interfaces, and inner workings empowers us to create sturdy websites with advanced features and intricate capabilities that are constructed across various levels at the same time. Leveraging our proficiency in Vue JS, we assist our esteemed clients in tackling intricate problems and surmounting initial hurdles.";
 
   const experienceCards = [
     {
@@ -189,7 +189,7 @@ function HireAangularJsDeveloper(props) {
               btn="Contact Us!"
               unique={"brain inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/Braininventory_Hire+Vue+Js+Developers.png"
-              alt="Vue.js Development Company"
+              alt="Vue JS Development Company"
               type="hire"
             />
             <Customer />{" "}
@@ -209,7 +209,7 @@ function HireAangularJsDeveloper(props) {
             <ChooseBraininventory
               reasons={chooseBI}
               subhead={chooseBiSubhead}
-              alt="Vue.js Development Company"
+              alt="Vue JS Development Company"
             />
             <Engaged />
             <HireSteps type="Vue JS" />

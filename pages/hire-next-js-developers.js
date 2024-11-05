@@ -21,11 +21,11 @@ import Clients from "../components/Hire/Clients";
 
 function HireAangularJsDeveloper() {
   const content =
-    "Brain Inventory, an esteemed company specializing in front-end development, is based in India. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
+    "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
   const subhead1 =
-    "Hire Next JS is considered one of the most professional, cost-effective, and quality-oriented developers in India. We have a proven track record of rendering the best services in major industry verticals. Hire us today and unlock your business growth with the right web development solutions!";
+    "Hire Next JS is considered one of the most professional, cost-effective, and quality-oriented developers in USA. We have a proven track record of rendering the best services in major industry verticals. Hire us today and unlock your business growth with the right web development solutions!";
   const subhead2 =
-    "Our next js developer team is the best in its field. Our team is proud to have the necessary abilities to offer tailored progressive web app services to clients across the globe. So if you need a trustworthy partner to assist with your company's web development requirements, search no more. We are the ideal choice. We will be able to provide unmatched web development services to our clients. We have a team of expert developers who can create high-impact web applications that would help your business achieve a competitive edge in the market. We develop the best out of the Next.js framework and come up with responsive applications.";
+    "Our next js developer team is the best in its field. Our team is proud to have the necessary abilities to offer tailored progressive web app services to clients across the globe. So if you need a trustworthy partner to assist with your company's web development requirements, search no more. We are the ideal choice. We will be able to provide unmatched custom web development services to our clients. We have a team of expert developers who can create high-impact web applications that would help your business achieve a competitive edge in the market. We develop the best out of the Next.js framework and come up with responsive applications.";
 
   const experienceCards = [
     {

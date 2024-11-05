@@ -126,7 +126,7 @@ function MarketPlace() {
     "Unleash the potential of online marketplace software development in partnership with us. We are pioneers in crafting revolutionary services that redefine the online marketplace landscape. With our collaboration, you're not simply creating a website or an app; you're crafting a seamless shopping experience that enthralls and immerses users right from the beginning.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, we transcend the role of a mere online marketplace software development company. We are visionary technology partners on a mission to empower industries with cutting-edge online marketplace software. Our core competence revolves around crafting bespoke applications that not only facilitate seamless commerce and engagement but also revolutionize the very fabric of business connections.";
+    "At Brain Inventory, we transcend the role of a mere online marketplace custom software development company. We are visionary technology partners on a mission to empower industries with cutting-edge online marketplace software. Our core competence revolves around crafting bespoke applications that not only facilitate seamless commerce and engagement but also revolutionize the very fabric of business connections.";
 
   const sectionFiveDesc =
     "Despite Amazon's dominance in the online marketplace landscape, a growing number of new platforms are carving out their niches, each offering unique features and user experiences. Let's take a look at how these newcomers are faring against the industry giant.";
@@ -182,7 +182,7 @@ function MarketPlace() {
     },
   ];
   const keyDesc =
-    "At Brain Inventory, we offer a full suite of custom ecommerce development services to meet the unique requirements of your business. Leveraging our expertise in web and mobile app development, we design and deliver multi-vendor marketplaces that not only optimize your business operations but also enhance the customer experience. ";
+    "At Brain Inventory, we offer a full suite of custom ecommerce development services to meet the unique requirements of your business. Leveraging our expertise in web and Mobile App Development Services, we design and deliver multi-vendor marketplaces that not only optimize your business operations but also enhance the customer experience. ";
   const keyFeatures = [
     {
       head: "Multi-Vendor Support",

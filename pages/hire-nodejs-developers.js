@@ -28,7 +28,7 @@ function HireAangularJsDeveloper(props) {
   const content =
     "Looking to develop real-time, data-intensive, and scalable web and mobile applications? Look no further than our team of top-tier Nodejs developers. Highly skilled in developing event-driven and non-blocking I/O model-based solutions.";
   const subhead1 =
-    "Brain Inventory has become one of the leading Node.js development company as a result of its impressive achievements and skilled developers. Our managers consistently choose Brain Inventory as their preferred option for recruiting remote Node.js programmers owing to our rigorous privacy practices, punctual project completion, and unmatched technical proficiency.";
+    "Brain Inventory has become one of the leading Node JS Development Company as a result of its impressive achievements and skilled developers. Our managers consistently choose Brain Inventory as their preferred option for recruiting remote Node.js programmers owing to our rigorous privacy practices, punctual project completion, and unmatched technical proficiency.";
   const subhead2 =
     "Our Node.js developers create robust, scalable back-end systems with cutting-edge performance. We build event-driven, data-focused architectures using non-blocking I/O for lightning speed and responsiveness. We work closely with clients to build customized Node.js solutions that meet their specific needs and exceed expectations. We stay current on industry trends and best practices. Contact us to create the ideal solution for your organization.";
 
@@ -64,7 +64,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Agile Methodology",
       content:
-        "Our software development process follows Agile methods, with work split into brief cycles known as sprints. At the end of each sprint, we show you the new capabilities and features that were added that week. This promotes openness and guarantees you can observe the advancement being achieved. This repetitive technique permits us to concentrate our efforts on the top-priority items and swiftly integrate feedback. You can be confident that we are steadily providing incremental value on a foreseeable schedule.",
+        "Our custom software development process follows Agile methods, with work split into brief cycles known as sprints. At the end of each sprint, we show you the new capabilities and features that were added that week. This promotes openness and guarantees you can observe the advancement being achieved. This repetitive technique permits us to concentrate our efforts on the top-priority items and swiftly integrate feedback. You can be confident that we are steadily providing incremental value on a foreseeable schedule.",
     },
     {
       head: "Cost-Effective Solutions",

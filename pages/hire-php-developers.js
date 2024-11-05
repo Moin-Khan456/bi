@@ -45,7 +45,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "PHP Upgradation & Migration Services",
       content:
-        "Do you have concerns about moving your existing .NET, NodeJS, or Python software over to PHP? Are you feeling bogged down by how complicated and expensive it would be to modify or improve your current system? At BrainInventory, we completely understand how pricey and time-intensive it can be to switch from one set of technologies to another.",
+        "Do you have concerns about moving your existing .NET, NodeJS, or Python software over to PHP? Are you feeling bogged down by how complicated and expensive it would be to modify or improve your current system? At Brain Inventory, we completely understand how pricey and time-intensive it can be to switch from one set of technologies to another.",
     },
     {
       head: "PHP Desktop Applications",
@@ -60,14 +60,14 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Custom Web Apps",
       content:
-        "Do you require a customized web application developed from the ground up? Our squad of skilled PHP programmers is well-equipped to deliver top-notch solutions. We've constructed several websites and created countless programs in the past, and as a result, we possess the expertise necessary to bring your project to life.",
+        "Do you require aCustom Web Development Services from the ground up? Our squad of skilled PHP programmers is well-equipped to deliver top-notch solutions. We've constructed several websites and created countless programs in the past, and as a result, we possess the expertise necessary to bring your project to life.",
     },
   ];
 
   const hireCards = [
     {
       head: "Experienced PHP Developers",
-      content: `As a premier web development firm headquartered in India, we provide high-caliber yet cost-effective web and mobile application development solutions for customers globally. Our group of committed PHP programmers can be retained on a full-time basis to join your team remotely. On average, our remote developers possess 5 years of experience catering to the needs of diverse clients across industries.`,
+      content: `As a premier Web Design Agency headquartered in USA, we provide high-caliber yet cost-effective web and mobile application development solutions for customers globally. Our group of committed PHP programmers can be retained on a full-time basis to join your team remotely. On average, our remote developers possess 5 years of experience catering to the needs of diverse clients across industries.`,
     },
     {
       head: "Quick & Agile Process",
@@ -82,7 +82,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "No Recruitment & Training Hassles",
       content:
-        "With the increasing demand for offshore development, Indian firms have established their dominance in offshore software development. The reason behind this success is that Indian companies are home to some of the most skilled IT professionals who have a lot of expertise in accomplishing technically challenging tasks for clients around the globe.",
+        "With the increasing demand for offshore development, Indian firms have established their dominance in offshore software development. The reason behind this success is the companies are home to some of the most skilled IT professionals who have a lot of expertise in accomplishing technically challenging tasks for clients around the globe.",
     },
     {
       head: "Guaranteed Results",
@@ -96,7 +96,7 @@ function HireAangularJsDeveloper(props) {
       id: "1",
       title: "Why should I hire PHP developers from Brain Inventory?",
       description:
-        "As a proficient and highly experienced PHP development company in India, we are providing a comprehensive range of PHP Web Development Services. Our developers are skilled as well as experts to work on every kind of small, medium, and large project including custom web development services. Our team of expert developers provides excellent web application solutions. Our dedicated team goes beyond code modification to ensure that our clients get continuous value from their Web applications.",
+        "As a proficient and highly experienced PHP development company in USA, we are providing a comprehensive range of PHP Web Development Services. Our developers are skilled as well as experts to work on every kind of small, medium, and large project including custom web development services. Our team of expert developers provides excellent web application solutions. Our dedicated team goes beyond code modification to ensure that our clients get continuous value from their Web applications.",
     },
     {
       id: "2",
@@ -120,7 +120,7 @@ function HireAangularJsDeveloper(props) {
     "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs. ",
   ];
   const keySkillsBreif =
-    "Brain Inventory is an acclaimed supplier of web application development solutions and software development services. As an offshore PHP web and mobile development firm, we cater to companies in over 20 nations worldwide. Our team comprises only the most seasoned and credentialed developers with proficiency in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Regardless of whether you need to launch a mobile platform or completely overhaul your current website, we will support you at every step of the process.";
+    "Brain Inventory is an acclaimed supplier of Custom Mobile App Development solutions and Custom Software Development Services. As an offshore PHP web and mobile development firm, we cater to companies in over 20 nations worldwide. Our team comprises only the most seasoned and credentialed developers with proficiency in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Regardless of whether you need to launch a mobile platform or completely overhaul your current website, we will support you at every step of the process.";
   const keySkillsPoints = [
     "Quick post-sales service",
     "24*7 support",
@@ -134,7 +134,7 @@ function HireAangularJsDeveloper(props) {
     "Hiring dedicated Python developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Python developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
     "Brain Inventory, one of the most prominent PHP development companies is proud to introduce its team of experts. These PHP developers work with highly customized features and follow SCRUM methodology for every project. They are highly trained in different flexible PHP frameworks—CodeIgniter, Zend, Symfony, Laravel, and CakePHP—explaining the reason behind their constant success.",
-    "With smartphones growing in popularity, the craze for apps, and the plethora of choices among customers, mobile application development has become a challenging yet lucrative business venture. DesignerInteractions is a Mobile Applications Development Company, offering the best PHP development services at the most affordable rates. Our right-priced PHP developers make you win every time, and that's exactly why we're India's Most Preferred PHP Development Company. ",
+    "With smartphones growing in popularity, the craze for apps, and the plethora of choices among customers, mobile application development has become a challenging yet lucrative business venture. DesignerInteractions is a Mobile App Development Company, offering the best PHP development services at the most affordable rates. Our right-priced PHP developers make you win every time, and that's exactly why we're India's Most Preferred PHP Development Company. ",
     "Brain Inventory is an independent IT company that offers the services of PHP developers. We were founded in 2019 and have been offering our services to different businesses ever since. We assist clients in building their products and websites with a well-organized approach that can help them reduce development costs and increase the returns on investment.",
   ];
 
@@ -196,6 +196,7 @@ function HireAangularJsDeveloper(props) {
             alt="Hire PHP Developers"
             para1={subhead1}
             para2={subhead2}
+            changeText={"Hire a Dedicated"}
             card={experienceCards}
           />
           <HireMarquee title="PHP Developers" />
@@ -207,7 +208,7 @@ function HireAangularJsDeveloper(props) {
           <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
           <Hire
             title="Why Hire PHP Developers from %Brain Inventory"
-            subhead="As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
+            subhead="As one of the most renowned Hybrid App Development Company, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
             card={hireCards}
           />
 

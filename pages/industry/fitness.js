@@ -88,7 +88,7 @@ function Fitness() {
     {
       id: "2",
       text: "Virtual Fitness Coaching Development",
-      desc: "Creating custom virtual fitness training programs is now easier than ever. Our team uses the latest technology to develop websites and apps that link users with professional fitness coaches.",
+      desc: "Creating custom virtual fitness training programs is now easier than ever. Our Brain Inventory team uses the latest technology to develop websites and apps that link users with professional fitness coaches.",
     },
     {
       id: "3",
@@ -98,7 +98,7 @@ function Fitness() {
     {
       id: "4",
       text: "Fitness Community and Social Development",
-      desc: "Our proficiency extends to crafting fitness development platforms for fitness communities, fostering connections and motivation within the fitness community. These applications are thoughtfully designed to ensure ease of use, seamless interaction, and an enriching user experience.",
+      desc: "Our proficiency extends to crafting fitness app development platforms for fitness communities, fostering connections and motivation within the fitness community. These applications are thoughtfully designed to ensure ease of use, seamless interaction, and an enriching user experience.",
     },
     {
       id: "5",
@@ -152,7 +152,7 @@ function Fitness() {
     {
       head: "Expert Collaborators",
       content:
-        "Need an accomplished team to steer your fitness development? Look no further. Our team comprises proficient individuals, each equipped with unparalleled technical prowess, poised to turn your visions into reality. We’re not just a team; we’re your adept allies on the path to excellence within the fitness industry.",
+        "Need an accomplished team to steer your fitness development? Look no further. Our Brain Inventory team comprises proficient individuals, each equipped with unparalleled technical prowess, poised to turn your visions into reality. We’re not just a team; we’re your adept allies on the path to excellence within the fitness industry.",
     },
     {
       head: "User-Centric Approach to App Design",

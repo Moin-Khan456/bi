@@ -26,7 +26,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Brain Inventory is a marketplace that brings together some of the best Shopify developers from India. We have a team of experts who can handle your requirements regarding store development and create your customized Shopify online store.";
+    "Brain Inventory is a marketplace that brings together some of the best Shopify developers for you. We have a team of experts who can handle your requirements regarding store development and create your customized Shopify online store.";
   const subhead1 =
     "To optimize their growth efforts on Shopify, it would be prudent for a business to enlist the expertise of a proficient Shopify developer. Shopify is a robust e-commerce solution that mandates specialized proficiency to unleash its full potential and ensure a seamless online shopping experience.";
   const subhead2 =
@@ -236,6 +236,7 @@ function HireAangularJsDeveloper(props) {
 Expert Shopify developers are crucial for ensuring the smooth performance of an e-commerce website. They can combine various add-ons, applications, and external services, which improves the overall user experience and expands the capabilities of the online shop. This boosts the site's effectiveness and enables businesses to remain competitive in the fast-changing e-commerce environment.
 Another benefit is the time and money savings that come with recruiting a Shopify developer. Their specialized expertise expedites the development process, decreasing the time required to launch a completely functional online store.
 "
+            subhead1={"Dedicated"}
           />
           <KeySkill
             breif={keySkillsBreif}

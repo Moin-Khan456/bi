@@ -100,7 +100,7 @@ function IosDevelopment() {
   const chooseBI = [
     "Brain Inventory's best India iOS app developers have successfully built top-ranking iOS apps for different apple app store categories such as Business, Healthcare, Entertainment, Lifestyle, Technology, Travel & more. This is due to our unique approach in the development of their apps which provides a comprehensive set of services for the clients ranging from design through to deployment.",
     "Our group of committed experts is well-versed in creating captivating user interfaces that are easy to use. We know to tailor our front-end development services into hybrid frameworks, specifically Android and iPhone apps, utilizing our exclusive frameworks, the android_native_app ecosystem. At Brain Inventory, we are enthusiastic about providing superb iOS applications for your organization.",
-    "At Brain Inventory, we're passionate about delivering top-quality iOS apps for your business. And with our long experience in the app-development industry, we're able to deliver a package that's tailored to meet your specific needs. Our designers are up-to-date with the latest technologies, so they know how to make the most of the tools available.",
+    "At Brain Inventory, we're passionate about delivering top-quality iOS apps for your business. And with our long experience in the iOS App Development  services we're able to deliver a package that's tailored to meet your specific needs. Our designers are up-to-date with the latest technologies, so they know how to make the most of the tools available.",
     "That's why we use the best technology possible in your iOS apps, such as universal graphic styles and real-time 3D rendering, so you can create stunning user interfaces.",
   ];
 

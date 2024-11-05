@@ -37,7 +37,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: ".NET Web Application Development",
       content:
-        "Dedicated software development is required when you need your web application to be customized, upgraded, and fixed at your request at any time. We also provide continuous customer support and guidance throughout the project execution period to ensure a smooth launch.",
+        "Dedicated Custom Software Development Services is required when you need your web application to be customized, upgraded, and fixed at your request at any time. We also provide continuous customer support and guidance throughout the project execution period to ensure a smooth launch.",
     },
     {
       head: "Custom .NET Development",
@@ -57,7 +57,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: ".NET Mobile Application Development",
       content:
-        "We provide .NET programmers to assist with your hybrid app development needs. We provide the software so that you can build high-functioning mobile apps for more efficient communication and increased productivity. Our professional app developers are experts in creating hybrid mobile applications, cross-platform app development, and feature-rich apps.",
+        "We provide .NET programmers to assist with your Hybrid App Development Services need. We provide the software so that you can build high-functioning mobile apps for more efficient communication and increased productivity. Our professional app developers are experts in creating hybrid mobile applications, Cross Platform Mobile App Development, and feature-rich apps.",
     },
   ];
 
@@ -65,12 +65,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Speedy Set-up",
       content:
-        "Brain Inventory has expertise in delivering complex projects in the domain of web development using advanced technologies and frameworks. Our ASP.NET developers would be exploring new frameworks and platforms with a strong inclination to build scalable, secure, and maintainable software that has the potential to meet your business goals.",
+        "Brain Inventory has expertise in delivering complex projects in the domain of custom web development using advanced technologies and frameworks. Our ASP.NET developers would be exploring new frameworks and platforms with a strong inclination to build scalable, secure, and maintainable software that has the potential to meet your business goals.",
     },
     {
       head: "Treasure Trove of Talents",
       content:
-        "With our wide range of experts from dozens of domains ranging from web development to graphic designing, we offer you to hire on a need basis. You can order expertise one time or as per your requirement. Whenever you need us, pay for our services only. We are flexible in providing as much as number of hours as per your needs and requirements.",
+        "With our wide range of experts from dozens of domains ranging from custom web development to graphic designing, we offer you to hire on a need basis. You can order expertise one time or as per your requirement. Whenever you need us, pay for our services only. We are flexible in providing as much as number of hours as per your needs and requirements.",
     },
     {
       head: "Massive Cost Optimization",
@@ -80,7 +80,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "End-to-end Solutions",
       content:
-        "The modular web development model gives you the flexibility to handle any project at a more reasonable cost. To make your app development as easy as possible, we have integrated full-stack end-to-end outsourcing services to build high-performing web architecture. We also assist you with an easy and hassle-free development that enables fast and quick delivery of web applications for all major platforms.",
+        "The modular custom web development model gives you the flexibility to handle any project at a more reasonable cost. To make your app development as easy as possible, we have integrated full-stack end-to-end outsourcing services to build high-performing web architecture. We also assist you with an easy and hassle-free development that enables fast and quick delivery of web applications for all major platforms.",
     },
     {
       head: "100% Transparency",
@@ -100,7 +100,7 @@ function HireAangularJsDeveloper(props) {
       id: "2",
       title: "How much does it cost to hire Dot Net developers?",
       description:
-        "We're shifting the web development industry with the concept of competence-based hourly billing. By pursuing this new model, we can build and deploy complex software applications on time and on budget without heavy up-front expenses. We put a bigger premium on the skills of our expert developers as opposed to hours worked.",
+        "We're shifting the custom web development industry with the concept of competence-based hourly billing. By pursuing this new model, we can build and deploy complex software applications on time and on budget without heavy up-front expenses. We put a bigger premium on the skills of our expert developers as opposed to hours worked.",
     },
     {
       id: "3",
@@ -140,7 +140,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Choosing Brain Inventory developer for your next React Native assignment can provide several benefits. First and foremost, we have a team of experienced React Native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
+    "Choosing Brain Inventory developer for your next React Native assignment can provide several benefits. First and foremost, you can hire expert react native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
   const chooseBI = [
     "Brain Inventory is a technology firm that focuses on ASP.Net development services. With a group of highly capable .NET developers, the company aims to deliver premium services at competitive rates. The dedicated team of professionals with extensive expertise can fully assist clients in building tailored applications. The major focus of the company has been to provide technical expertise by its own team with ongoing training programs in order to provide flexibility as per the industry demand. Our .NET developers are highly skilled, meet quality standards, and work in an organized manner.",
     "Our company provides services that allow our customers to build web and desktop apps. Additionally, we create and build effective software solutions for clients in various industries, like healthcare, e-commerce, and education. Our team of .NET software engineers always guarantees complete client fulfillment with top-notch solutions constructed on Microsoft technologies.",
@@ -196,14 +196,16 @@ function HireAangularJsDeveloper(props) {
             <Customer />
             <Experienced
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/hire/dotnet/2.png"
-              title=".NET Developer"
+              title=".NET Developers"
               para1={subhead1}
               para2={subhead2}
               para3={subhead3}
               card={experienceCards}
+              changeText={"Hire Experienced"}
+
             />
             <HireMarquee title=".NET" />
-            <Advantage title=".NET Developer" advantages={advantages} />
+            <Advantage title=".NET Developers" advantages={advantages} />
             <KeySkill
               breif={keySkillsBreif}
               points={keySkillsPoints}

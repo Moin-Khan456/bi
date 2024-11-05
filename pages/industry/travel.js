@@ -132,7 +132,7 @@ function Travel() {
     "Joining forces with us will elevate your travel portal software to soaring success. As pioneers in the field, we specialize in crafting groundbreaking apps that redefine the travel industry. But our collaboration isn't just about building a website or app; it's about co-creating an immersive travel adventure that empowers travelers and ignites excitement from the very beginning.";
 
   const sectionTwoDesc =
-    "Deciding to hire Brain Inventory for your travel software development needs is a game-changing move. We're not just another software development company; we are a team of seasoned experts who will transform your vision into reality.";
+    "Deciding to hire Brain Inventory for your travel software development needs is a game-changing move. We're not just another Custom Software Development Company; we are a team of seasoned experts who will transform your vision into reality.";
 
   const sectionFiveDesc =
     "We are unquestionably witnessing a period of digital revolution in travel. While industry titans like Expedia and Booking.com have laid the foundation, we are now witnessing the emergence of innovative platforms seeking their own niche in this dynamic landscape. Let's delve into these rising stars:";

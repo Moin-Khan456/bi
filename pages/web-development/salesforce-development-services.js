@@ -111,9 +111,9 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory, a leading Salesforce development, implementation, and integration partner in India, is here to help enhance your Salesforce experience. We help you deliver an unmatched customer experience for your organization by tapping into the power of Salesforce.",
+    "Brain Inventory, a leading Salesforce development, implementation, and integration partner in USA, is here to help enhance your Salesforce experience. We help you deliver an unmatched customer experience for your organization by tapping into the power of Salesforce.",
     "We provide end-to-end Salesforce professional services including Salesforce customization, development, app building, Pardot, CPQ, and more, backed by a team of certified experts. Today, we have successful Salesforce deployments in our portfolio, including Fortune 500 companies.",
-    "Our team is dedicated and devoted to our clients, not to the latest technology or any major software vendors. We aim to work with the best technologies to serve our clients and their customers' interests. Our Salesforce consulting services in India support business growth and success through cloud enablement.",
+    "Our team is dedicated and devoted to our clients, not to the latest technology or any major software vendors. We aim to work with the best technologies to serve our clients and their customers' interests. Our Salesforce consulting services in USA support business growth and success through cloud enablement.",
   ];
 
   const experienceCards = [
@@ -196,7 +196,7 @@ function HireAangularJsDeveloper(props) {
         <Customer />
         {/* This component is added */}
         <AdvantageCustom
-          title="Salesforce Development That We Offer"
+          title="Salesforce Development Services That We Offer"
           subhead={subhead}
           reasons={experienceCards}
         />

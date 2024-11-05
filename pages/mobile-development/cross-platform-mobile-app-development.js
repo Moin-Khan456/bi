@@ -31,7 +31,7 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Brain Inventory is a leading enterprise-grade Ionic app development company offering high-quality and scalable mobile apps integrated with Web APIs over secure communication channels.";
+    "Brain Inventory is a leading enterprise-grade Cross Platform App Development Company offering high-quality and scalable mobile apps integrated with Web APIs over secure communication channels.";
   const subhead1 =
     "Developing an app through Ionic can prove to be extremely advantageous for both developers and businesses for multiple reasons. The most significant benefit is its cross-platform development strategy, which enables the creation of mobile apps that operate smoothly on both iOS and Android platforms, saving a considerable amount of time and expenses. Furthermore, Ionic employs web technologies, such as CSS, HTML, and JavaScript, which allows a larger group of developers access to it and promotes the reuse of web-based skills.";
   const subhead2 =
@@ -123,7 +123,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory is a professional Ionic App Development Company in India that focuses on developing quality mobile applications and providing cutting-edge services to numerous clients all over the globe. The company is privately held and has a solid financial standing. We are well known for developing interactive and incredible hybrid apps with premium UI and offer a complete suite of services ranging from software development, consultancy, and prototyping to agile products in all leading technologies including .NET, Node.js, iOS, Android, Hyperloop, Angular, React native iOS app development at affordable rates for startups and established businesses.",
+    "Brain Inventory is a professional Cross Platform App Development Company in USA that focuses on developing quality mobile applications and providing cutting-edge services to numerous clients all over the globe. The company is privately held and has a solid financial standing. We are well known for developing interactive and incredible hybrid apps with premium UI and offer a complete suite of services ranging from software development, consultancy, and prototyping to agile products in all leading technologies including .NET, Node.js, iOS, Android, Hyperloop, Angular, React native iOS app development at affordable rates for startups and established businesses.",
     "We provides innovative mobile app creation solutions for companies and new ventures. Their tools and services help organizations construct and improve their mobile apps. These offerings facilitate the design, deployment, and administration of business mobile applications.",
     "BrainInventory’s Ionic framework functions in a cloud setting, empowering users to build native cross-platform apps that work with both iOS and Android operating systems. Through the Ionic platform, companies gain the flexibility to develop mobile apps that can be used on multiple devices.",
   ];
@@ -181,7 +181,7 @@ function HireAangularJsDeveloper(props) {
             btn="Contact Us!"
             developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+173.png"
-            alt="Ionic App Development Company"
+            alt="Cross Platform App Development Company"
             type="app"
             unique={"brain inventory"}
           />

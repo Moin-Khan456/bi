@@ -111,9 +111,9 @@ function HireAangularJsDeveloper() {
     "Android apps are highly customizable and simple to manage.",
   ];
   const meanReasons = [
-    "Android application development involves writing system code in Java and user interface code in Java, C, or C++.",
+    "Android App Development Services involves writing system code in Java and user interface code in Java, C, or C++.",
     "The operating system of an Android device is Linux-based and can be customized through installed Android applications.",
-    "Android application development is a thriving industry due to the potential provided by the customized operating system.",
+    "Android App Development Services is a thriving industry due to the potential provided by the customized operating system.",
     "Our aim at Brain Inventory is to assist you in creating mobile applications that allow your company to engage with its clients in a secure, cost-efficient, and efficient way.",
     " With our established reputation as developers, Brain Inventory is recognized for producing top-notch applications, ensuring that we meet your needs by offering solutions that effectively meet your business goals.",
   ];
@@ -167,7 +167,7 @@ function HireAangularJsDeveloper() {
               btn="Get a Quote"
               miniTitle={"Service by Brain Inventory"}
               image="https://braininventory.s3.us-east-2.amazonaws.com/images/Group+6961.png"
-              alt="Android application development"
+              alt="Android App Development Services"
               appDev={true}
             />
             <WhyMean type="Android App" meanReasons={meanReasons} />
@@ -183,7 +183,7 @@ function HireAangularJsDeveloper() {
             <ChooseBraininventory
               reasons={chooseBI}
               subhead={chooseBiSubhead}
-              alt="Android application development"
+              alt="Android App Development Services"
             />{" "}
             <Industries />
             <FaqHire faq={faqdetails} />

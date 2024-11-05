@@ -31,7 +31,7 @@ const BlogArticle = dynamic(() =>
 
 function Flutter() {
   const content =
-    "Brain Inventory specializes in creating cost-effective and efficient applications with our perfectly crafted, creative, and leading-edge flutter app development solutions for customers all around the globe. We help you develop high-end functional mobile applications.";
+    "Brain Inventory specializes in creating cost-effective and efficient applications with our perfectly crafted, creative, and leading-edge Flutter App Development Service for customers all around the globe. We help you develop high-end functional mobile applications.";
 
   const hireCards = [
     {
@@ -93,7 +93,7 @@ function Flutter() {
   const chooseBI = [
     "Flutter offers businesses an affordable option to promptly test their concepts while also providing a sustainable technology foundation to grow over time.",
     "With a single codebase, you can use Flutter to access a wider range of users across various devices.",
-    "We are a Flutter app development firm devoted to crafting aesthetically pleasing and feature-rich mobile apps for Android, iOS, and Windows.",
+    "We are a Flutter App Development Company devoted to crafting aesthetically pleasing and feature-rich mobile apps for Android, iOS, and Windows.",
     " Regardless if you're building brand new apps or incrementally improving existing ones, we guarantee your application stays current with the most recent capabilities, functionalities, and design trends.",
     "With access to the most sophisticated tools and technologies available, every Flutter app we create will not just appear fantastic, but also operate seamlessly across all platforms.",
     "We assist clients in crafting visually appealing cross-platform apps tailored for various sectors such as mobile commerce, healthcare, and travel. Our team of app developers and designers boasts extensive experience in creating mobile applications using Flutter & Native platforms.",

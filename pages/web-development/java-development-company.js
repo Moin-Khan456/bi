@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Brain Inventory offers comprehensive Java development services for the development and enhancement of robust business applications, software solutions, and cloud-based products using reliable and flexible Java technologies. Our company assists customers with efficiently and securely designing, constructing, maintaining, upgrading, and scaling Java applications.";
+    "Brain Inventory offers comprehensive Java Software Development Services for the development and enhancement of robust business applications, software solutions, and cloud-based products using reliable and flexible Java technologies. Our company assists customers with efficiently and securely designing, constructing, maintaining, upgrading, and scaling Java applications.";
 
   const subhead1 =
     "You may need a Java development solution for various reasons, primarily because Java is a versatile and powerful programming language widely used for developing robust, scalable, and secure applications across diverse domains. Whether you're building enterprise-grade software, web applications, mobile apps, or embedded systems, Java offers a rich ecosystem of libraries, frameworks, and tools that streamline development processes and accelerate time-to-market. ";
@@ -168,7 +168,7 @@ function HireAangularJsDeveloper(props) {
         <HireMarquee title="Java Development" />
         <Advantage
           title="Java Development Company"
-          desc="A Java development company offers numerous benefits to businesses seeking to build robust and scalable software solutions. Firstly, Java is a versatile programming language known for its platform independence, making it suitable for developing applications that can run on any device or operating system. By partnering with a Java development company, businesses can leverage the language's extensive ecosystem of libraries, frameworks, and tools to accelerate the development process and reduce time-to-market."
+          desc="A Java development company offers numerous benefits to businesses seeking to build robust and scalable software solutions. Firstly, Java is a versatile programming language known for its platform independence, making it suitable for developing applications that can run on any device or operating system. By partnering with a Java Software Development Company, businesses can leverage the language's extensive ecosystem of libraries, frameworks, and tools to accelerate the development process and reduce time-to-market."
           reasons={advantages}
         />
         <Hire

@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Brain Inventory offers complete mobile application design, development, and integration services across different platforms. Our goal is to provide mobile application development on multiple platforms for startups or multinational companies.";
+    "Brain Inventory offers complete mobile application design, development, and integration services across different platforms. Our goal is to provide Mobile Application Integration on multiple platforms for startups or multinational companies.";
   const subhead1 =
     "In the modern digital environment, the importance of having a Mobile Application Integration solution cannot be overstated. This is because mobile apps have become increasingly essential in both our personal and work lives. With the proliferation of mobile applications, there is a growing demand for smooth interaction and sharing of information among these apps and various other platforms like databases, cloud services, and third-party APIs.";
   const subhead2 =
@@ -122,7 +122,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Mobile application integration services are important to enable your enterprise application to be integrated with cloud platforms for faster creation of digital services. Brain Inventories is an elite mobile application development company that offers complete solutions for mobile app design, development, deployment, and maintenance of applications for iPhone, iPad, Android, and Windows Mobile devices. The skilled and experienced team of developers uses innovative solutions to improve your business and connect with your customers in a better way. With our strategic planning process, we can design and develop result-oriented mobile applications that become successful for your business. ",
+    "Mobile application integration services are important to enable your enterprise application to be integrated with cloud platforms for faster creation of digital services. Brain Inventories is an elite Mobile Application Integration company that offers complete solutions for mobile app design, development, deployment, and maintenance of applications for iPhone, iPad, Android, and Windows Mobile devices. The skilled and experienced team of developers uses innovative solutions to improve your business and connect with your customers in a better way. With our strategic planning process, we can design and develop result-oriented mobile applications that become successful for your business. ",
     "We understand the need of businesses to connect with users via multiple platforms and hence we make sure that your brand gets all the attention it deserves. Whether you want to launch a new customer app or build a robust mobile game, Brain Inventory is here for your app development requirements that will increase enterprise mobility and bring business growth. ",
     "Our mobility services enable mobile application brands to explore fresh opportunities while delivering a seamless and functional experience with precise, rich, and future-ready solutions",
   ];

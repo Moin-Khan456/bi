@@ -35,9 +35,10 @@ function HireAangularJsDeveloper(props) {
 
   const experienceCards = [
     {
+      
       head: "Front End Full Stack Development",
       content:
-        "Full-stack developers possess a complete understanding of all aspects of web development and are proficient in backend frameworks like PHP, Python Django. Once the user interacts with your website, you need to ensure that there is a smooth transition between the front end to the back end so that end users' experience is seamless and optimized.",
+        "Full-stack developers possess a complete understanding of all aspects of custom web development and are proficient in backend frameworks like PHP, Python Django. Once the user interacts with your website, you need to ensure that there is a smooth transition between the front end to the back end so that end users' experience is seamless and optimized.",
     },
     {
       head: "Back End Full Stack Development",
@@ -93,14 +94,14 @@ function HireAangularJsDeveloper(props) {
       id: "1",
       title: "What does a full-stack developer do?",
       description:
-        "A full-stack developer is one who can develop a complete web or application solution from scratch. This kind of employee has expertise in various aspects of web development like HTML, CSS, JavaScript, and frameworks like Angular js. A front-end developer builds the user interface, while the back-end developer is in charge of creating data models and interacting with databases and servers. This complete role of full stack developer in India is becoming popular because it involves less outsourcing and costs considerably less.",
+        "A full-stack developer is one who can develop a complete web or application solution from scratch. This kind of employee has expertise in various aspects of custom web development like HTML, CSS, JavaScript, and frameworks like Angular js. A front-end developer builds the user interface, while the back-end developer is in charge of creating data models and interacting with databases and servers. This complete role of full stack developer in India is becoming popular because it involves less outsourcing and costs considerably less.",
     },
     {
       id: "2",
       title:
         "What are the benefits if you take full-stack developers for hire?",
       description:
-        "Full Stack Web Developers are the new generation of web development specialists that can handle everything from design to the actual coding, leaving you with a fully functional website that will function to your satisfaction. The key advantages of hiring Full Stack Web Developers are comprehensive technical assistance, privacy, confidentiality, flexibility, timely delivery, enriched domain, and technical expertise.",
+        "Full Stack Web Developers are the new generation of custom web development specialists that can handle everything from design to the actual coding, leaving you with a fully functional website that will function to your satisfaction. The key advantages of hiring Full Stack Web Developers are comprehensive technical assistance, privacy, confidentiality, flexibility, timely delivery, enriched domain, and technical expertise.",
     },
     {
       id: "3",
@@ -124,7 +125,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const keySkillsBreif =
-    "Bringing on board a comprehensive web development group can be an energizing venture for an aspiring business visionary as you start chipping away at your application or site. However, where would it be a good idea for you to start? There are various benefits to doing as such, and enlisting devoted full-stack web engineers from Brain Inventory is the manner by which you approach it. We have years of experience in web development and information technology. Here are some reasons to hire such web developers.";
+    "Bringing on board a comprehensive custom web development group can be an energizing venture for an aspiring business visionary as you start chipping away at your application or site. However, where would it be a good idea for you to start? There are various benefits to doing as such, and enlisting devoted full-stack web engineers from Brain Inventory is the manner by which you approach it. We have years of experience in custom web development and information technology. Here are some reasons to hire such web developers.";
   const keySkillsPoints = [
     "Exclusive Team",
     "Agile Engagement Models",

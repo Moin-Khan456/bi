@@ -89,7 +89,7 @@ function SwiftDevelopment() {
   ];
 
   const chooseBI = [
-    "Brain Inventory prioritizes transparency in their software development approach.",
+    "Brain Inventory prioritizes transparency in their Custom Software Development Services.",
     "The focus is on creating user-friendly, feature-rich, and adaptable software.",
     "The challenge of ensuring customer understanding is recognized and addressed.",
     "Developers at Brain Inventory are proficient in multiple languages such as C, C++, and iOS Development.",
@@ -164,7 +164,7 @@ function SwiftDevelopment() {
           <WhyMean type="Swift App" meanReasons={meanReasons} />
           <Benefits
             type="Swift App"
-            subhead="Swift has gone through significant improvements over time to become a highly sophisticated and adaptable programming language. Along with these enhancements come the advantages of utilizing Swift for software development."
+            subhead="Swift has gone through significant improvements over time to become a highly sophisticated and adaptable programming language. Along with these enhancements come the advantages of utilizing Swift for Software Development Company ."
             benefitsList={benefitsList}
           />
           <Hire

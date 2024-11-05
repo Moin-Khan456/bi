@@ -119,7 +119,7 @@ function Accounting(props) {
     {
       id: "8",
       text: "Automation Features",
-      desc: "Experience streamlined processes through the automation of repetitive accounting tasks with Brain Inventory. Our accounting software development offers superior automation features that can drastically reduce manual data entry, and eliminate possible errors.",
+      desc: "Experience streamlined processes through the automation of repetitive accounting tasks with Brain Inventory. Our accounting software development services offers superior automation features that can drastically reduce manual data entry, and eliminate possible errors.",
     },
   ];
   const sectionFourDesc =
@@ -129,7 +129,7 @@ function Accounting(props) {
     "At Brain Inventory, we understand that accounting is the backbone of every business. That's why we develop software that simplify accounting processes, ensuring you can focus on the core aspects of your business. With us, website and app development is seamless, efficient, and tailored to your specific needs.";
 
   const sectionFiveDesc =
-    "In a landscape dominated by QuickBooks, a stalwart in the accounting system industry, a new wave of accounting software development is emerging, each offering unique features and tailored user experiences. Let's delve into how these newcomers are establishing their niches and how they stack up against the industry giant:";
+    "In a landscape dominated by QuickBooks, a stalwart in the accounting system industry, a new wave of accounting software development services is emerging, each offering unique features and tailored user experiences. Let's delve into how these newcomers are establishing their niches and how they stack up against the industry giant:";
 
   const sectionFiveTable = [
     ["FreshBooks", "Xero", "Wave", "Zoho Books"],
@@ -153,7 +153,7 @@ function Accounting(props) {
   ];
 
   const platformDesc =
-    "Welcome to Brain Inventory, your reliable partner for accounting app development. We understand your need for an efficient, robust, and user-friendly accounting system tailored to meet your specific business requirements. Our expert developers are adept at creating accounting software with crucial features essential for smooth financial management. Here's a quick rundown of what you can expect from our custom-built accounting software development:";
+    "Welcome to Brain Inventory, your reliable partner for accounting app development. We understand your need for an efficient, robust, and user-friendly accounting system tailored to meet your specific business requirements. Our expert developers are adept at creating accounting software with crucial features essential for smooth financial management. Here's a quick rundown of what you can expect from our custom-built accounting software development services:";
   const keyFeatures = [
     {
       head: "Double-Entry Accounting",
@@ -207,7 +207,7 @@ function Accounting(props) {
     },
   ];
   const keyDesc =
-    "At Brain Inventory, the focus is always on delivering innovative, efficient, and high-quality accounting software development. This emphasis is evident in the impressive array of features that their services offer. The unique and defining elements include:";
+    "At Brain Inventory, the focus is always on delivering innovative, efficient, and high-quality accounting software development services. This emphasis is evident in the impressive array of features that their services offer. The unique and defining elements include:";
   const platformDevelopment = [
     {
       head: "Expertise in Accounting Software",

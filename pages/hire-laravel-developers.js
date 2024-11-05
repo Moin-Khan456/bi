@@ -40,7 +40,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Laravel Web Development",
       content:
-        "Hire professional Laravel web development services to build scalable, secure, and robust applications for your business. When your website traffic and sales are on the rise, hire our Laravel app developers with excellent skills at competitive rates. If you have a challenging or complex application requirement, contact our web application development company now.",
+        "Hire Dedicated Laravel development services to build scalable, secure, and robust applications for your business. When your website traffic and sales are on the rise, hire our Laravel app developers with excellent skills at competitive rates. If you have a challenging or complex application requirement, contact our Custom Software Development Services now.",
     },
     {
       head: "Laravel Extension Development",
@@ -72,7 +72,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "Save infrastructure cost",
       content:
-        "Our app development company boasts a talented team of experts who can create apps that will surpass your hopes. The cost of our services is reasonable too. We provide top-notch work for affordable rates. Review our development packages to select the ideal option for your application, and rest assured our staff will complete the project on schedule and supply expert assistance.",
+        "Our App Development Agency boasts a talented team of experts who can create apps that will surpass your hopes. The cost of our services is reasonable too. We provide top-notch work for affordable rates. Review our development packages to select the ideal option for your application, and rest assured our staff will complete the project on schedule and supply expert assistance.",
     },
     {
       head: "On-time Deliveries",
@@ -132,7 +132,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "We’re one of the most trusted Laravel development companies offering custom web and hybrid app development services to clients spread across the globe. We support our clients throughout the project lifecycle with an aim to conceive, design, and implement software that exceeds their expectations",
+    "We’re one of the most trusted Laravel development company offering custom web and hybrid app development services to clients spread across the globe. We support our clients throughout the project lifecycle with an aim to conceive, design, and implement software that exceeds their expectations",
     "Laravel has emerged as the preferred framework for building web applications with high speed and productivity. It is now the top selection for web developers and companies wanting to surpass rivals and provide a smooth experience to their expanding customer base.",
     "If you need talented Laravel application creators with vast knowledge in constructing intricate and advanced web apps, our tremendously qualified team can assist. Brain Inventory has a group of Laravel framework coders who can construct robust open-source programs on this MVC framework. Our experienced Laravel developers have numerous hands-on Laravel development experience and are skilled in developing, testing, deploying, and supporting the latest version of this framework. Our company generates high-quality and reliable Laravel web applications with improved performance using a full stack of development ecosystems.",
   ];
@@ -238,6 +238,7 @@ function HireAangularJsDeveloper(props) {
             para2={subhead2}
             para3={subhead3}
             card={experienceCards}
+            changeText={"Hire a"}
           />
           <HireMarquee title="Laravel Developer" />
           <AdvantageVerticalCards

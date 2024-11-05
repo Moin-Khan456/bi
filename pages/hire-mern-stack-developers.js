@@ -81,7 +81,7 @@ function HireAangularJsDeveloper(props) {
     {
       head: "On-time Project Delivery",
       content:
-        "The MERN stack is considered the premier technology for building web and mobile apps today. It offers a robust set of tools to construct modern web and mobile applications. MERN stack developers in India are committed to meeting deadlines and can work on projects in any time zone. They make sure your project gets finished and delivered as scheduled.",
+        "The MERN stack is considered the premier technology for building web and mobile apps today. It offers a robust set of tools to construct modern web and mobile applications. MERN stack developers in USA are committed to meeting deadlines and can work on projects in any time zone. They make sure your project gets finished and delivered as scheduled.",
     },
   ];
 

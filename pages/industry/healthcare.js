@@ -123,7 +123,7 @@ function Healthcare(props) {
     },
   ];
   const sectionFourDesc =
-    "Elevate your healthcare software development services with us. We stand as pioneers in crafting ingenious services that revolutionise the healthcare industry. With us, you're not just building medical software – you're shaping an experience that empowers and enhances user engagement right from the start.";
+    "Elevate your healthcare custom software development services with us. We stand as pioneers in crafting ingenious services that revolutionise the healthcare industry. With us, you're not just building medical software – you're shaping an experience that empowers and enhances user engagement right from the start.";
 
   const sectionTwoDesc =
     "When it comes to healthcare software company, Brain Inventory stands as a pillar of excellence in the custom healthcare software development industry. Our proficiency is evident in our cutting-edge services, marked by innovative features and robust design, tailored to revolutionise the healthcare sector.";

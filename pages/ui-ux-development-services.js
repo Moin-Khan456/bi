@@ -32,7 +32,7 @@ function UiUxDevelopmentServices(props) {
     {
       head: "User Experience (UX) Development",
       content:
-        "We develop intuitive user interfaces with dynamic visual components such as animated graphics in two or three dimensions and integrated media features. This provides users with a seamless, cohesive experience as they navigate the custom software solutions we design.",
+        "We develop intuitive user interfaces with dynamic visual components such as animated graphics in two or three dimensions and integrated media features. This provides users with a seamless, cohesive experience as they navigate the Custom Software Development Services we design.",
     },
     {
       head: "User Interface (UI) Development",
@@ -47,7 +47,7 @@ function UiUxDevelopmentServices(props) {
     {
       head: "Web & Mobile App UI/UX Development",
       content:
-        "We employ various tools such as Xamarin, DevExpress, Ionic, Appcelerator, and Apache Cordova to build highly responsive interfaces and user experiences for mobile web applications that are optimized for touchscreen devices. Leveraging these frameworks, we can offer intuitive designs that provide an enhanced experience for progressive web apps on mobile platforms.",
+        "We employ various tools such as Xamarin, DevExpress, Ionic, Appcelerator, and Apache Cordova to build highly responsive interfaces and user experiences for App Development Services that are optimized for touchscreen devices. Leveraging these frameworks, we can offer intuitive designs that provide an enhanced experience for progressive web apps on mobile platforms.",
     },
     {
       head: "Intuitive & Interactive Solutions",
@@ -114,7 +114,7 @@ function UiUxDevelopmentServices(props) {
     {
       head: "UX AUDIT PROCESS",
       content:
-        " We employ data-driven techniques to enhance the rate at which visitors become customers. We also guarantee that essential user-tailored functions, such as calls-to-action, menu selections, and primary site navigation are readily apparent and recognizable. This makes it straightforward for visitors to accomplish what they set out to do when accessing the website.",
+        " We employ data-driven techniques to enhance the rate at which visitors become customers. We also guarantee that essential user-tailored functions, such as calls-to-action, menu selections, and primary site navigation are readily apparent and recognizable. This makes it straight forward for visitors to accomplish what they set out to do when accessing the website.",
     },
     {
       head: "VISUAL DESIGN PROCESS ",

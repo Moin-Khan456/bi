@@ -26,7 +26,7 @@ const Clients = dynamic(() => import("../components/Hire/Clients"));
 
 function HireAangularJsDeveloper(props) {
   const content =
-    "Hire top React Native developers from Brain Inventory to make your dream app a reality. Our developers have expertise in building truly native-like apps for Android, iOS, Web, and Desktop devices.";
+    "Hire React Native Developers from Brain Inventory to make your dream app a reality. Our developers have expertise in building truly native-like apps for Android, iOS, Web, and Desktop devices.";
   const subhead1 =
     "We are a team of React Native developers that are well-versed in all the versions of React Native from 0.60 to 0.71. We have dedicated React Native app developers who have a strong understanding of the ReactJS JavaScript library adhering to supreme coding standards such as W3C and ECMAScript. This team is highly skilled at developing mobile apps with both Windows Phone and iPhone platforms using Android SDK tools.";
   const subhead2 =

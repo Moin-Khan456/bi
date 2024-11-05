@@ -34,11 +34,11 @@ function HireAangularJsDeveloper(props) {
   const content =
     "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the custom software development industry. As a top TypeScript app development company, we prioritize customer needs.";
   const subhead1 =
-    "A Laravel development solution can be indispensable for various reasons. Firstly, Laravel is a robust and widely used PHP framework known for its elegance and simplicity, making it an excellent choice for developing web applications and websites. Its extensive ecosystem of pre-built components and libraries accelerates development, reducing time-to-market for your project.";
+    "A Laravel Development Services can be indispensable for various reasons. Firstly, Laravel is a robust and widely used PHP framework known for its elegance and simplicity, making it an excellent choice for developing web applications and websites. Its extensive ecosystem of pre-built components and libraries accelerates development, reducing time-to-market for your project.";
   const subhead2 =
     "Security is paramount in today's digital landscape, and Laravel excels in this regard. The framework includes built-in security features like protection against SQL injection, cross-site scripting, and cross-site request forgery, helping safeguard your application and data from potential threats.";
   const subhead3 =
-    "Scalability is another key consideration. As your business grows, your application must scale to accommodate increased traffic and user demand. Laravel's scalability features, coupled with its efficient and modular codebase, make it easier to expand and enhance your application as needed. Moreover, a Laravel development solution offers robust support for tasks such as authentication, authorization, and data migration.";
+    "Scalability is another key consideration. As your business grows, your application must scale to accommodate increased traffic and user demand. Laravel's scalability features, coupled with its efficient and modular codebase, make it easier to expand and enhance your application as needed. Moreover, a Laravel Development Services offers robust support for tasks such as authentication, authorization, and data migration.";
 
   const hireCards = [
     {

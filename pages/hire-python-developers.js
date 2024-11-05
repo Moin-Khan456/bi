@@ -72,12 +72,12 @@ function HireAangularJsDeveloper(props) {
     {
       head: "On-time Delivery",
       content:
-        "Maintaining a team of dedicated Python developers is not easy. It's challenging to keep every developer on the same page, especially if your code is as large and complex as ours. Braininventory's catalog of experienced Python coders allows us to seek out individual talent to work with our in-house team.",
+        "Maintaining a team of dedicated Python developers is not easy. It's challenging to keep every developer on the same page, especially if your code is as large and complex as ours. Brain inventory's catalog of experienced Python coders allows us to seek out individual talent to work with our in-house team.",
     },
     {
       head: "Cost-Efficient",
       content:
-        "BrainInventory adhere to the principle of providing solutions of unparalleled quality at the most competitive prices to all our clients. Our expertise in inventory management services has helped us keep a long list of clients happy who rely upon our services. We are always looking to improve our processes to better serve our customers.",
+        "Brain Inventory adhere to the principle of providing solutions of unparalleled quality at the most competitive prices to all our clients. Our expertise in inventory management services has helped us keep a long list of clients happy who rely upon our services. We are always looking to improve our processes to better serve our customers.",
     },
     {
       head: "24X7 Availability",

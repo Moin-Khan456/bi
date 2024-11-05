@@ -129,7 +129,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Choosing Brain Inventory developer for your next React Native assignment can provide several benefits. First and foremost, we have a team of experienced React Native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
+    "Choosing Brain Inventory developer for your next React Native App Development assignment can provide several benefits. First and foremost, we have a team of experienced React Native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
   const chooseBI = [
     "Brain Inventory is a mobile app development company dedicated to developing and deploying exciting applications that help companies to reach mobile users around the globe. Our team of expert designers and developers is empowered with progressive technology and best practices, which are instrumental in maintaining the quality of our products. ",
     " We have the most expert and skilled Ionic development team which is capable of delivering 100% managed code, tested and optimized applications that are considerably better than other alternatives in terms of performance, speed, and security. ",

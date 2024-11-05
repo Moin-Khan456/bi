@@ -121,10 +121,10 @@ function Blockchain(props) {
     },
   ];
   const sectionFourDesc =
-    "Welcome to Brain Inventory, where we weave technology and innovation together to bring you industry-leading blockchain services. We are a technologically advanced mobile application and website development company, committed to pushing the boundaries of blockchain technology. With a team of experts armed with years of experience in blockchain development, we guarantee to deliver high-grade and reliable software for your business, irrespective of size and industry sector.";
+    "Welcome to Brain Inventory, where we weave technology and innovation together to bring you industry-leading blockchain services. We are a technologically advanced mobile application and Custom Web Development Company, committed to pushing the boundaries of blockchain technology. With a team of experts armed with years of experience in blockchain development, we guarantee to deliver high-grade and reliable software for your business, irrespective of size and industry sector.";
 
   const sectionTwoDesc =
-    "At Brain Inventory, a leading blockchain development company, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge software development services by creating secure, efficient, and customized blockchain platforms.";
+    "At Brain Inventory, a leading blockchain development company, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge Custom Software Development Services by creating secure, efficient, and customized blockchain platforms.";
 
   const sectionFiveDesc =
     "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let’s take a closer look at some of these contenders:";

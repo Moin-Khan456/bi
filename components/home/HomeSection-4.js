@@ -17,15 +17,15 @@ const info = [
     techList: [
       {
         name: "React JS Development Services",
-        path: "/reactjsdevelopment",
+        path: "/web-development/react-js-development-company",
       },
       {
         name: "AngularJS Development Services",
-        path: "/angularjs-development",
+        path: "/web-development/angularjs-development-company",
       },
       {
         name: "Node JS Development Services",
-        path: "/nodejs-development",
+        path: "/web-development/node-js-development-company",
       },
     ],
   },
@@ -43,15 +43,15 @@ const info = [
     techList: [
       {
         name: "Android App Development Services",
-        path: "",
+        path: "/mobile-development/android-app-development-company",
       },
       {
         name: "iOS App Development Services",
-        path: "",
+        path: "/mobile-development/ios-app-development-company",
       },
       {
         name: "React Native Development Services",
-        path: "",
+        path: "/mobile-development/react-native-app-development-company",
       },
     ],
   },
@@ -95,10 +95,10 @@ const HomeSectionFour = () => {
               </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
-                business. We, as a Mobile App Development Company can
-                provide high quality standard mobile app of any category. We
-                have worked with diverse brands, organizations, start-ups and
-                individuals to create powerful apps from excellent idea.
+                business. We, as a Mobile App Development Company can provide
+                high quality standard mobile app of any category. We have worked
+                with diverse brands, organizations, start-ups and individuals to
+                create powerful apps from excellent idea.
               </p>
             </div>
           </div>
@@ -140,9 +140,13 @@ const Section = ({ info, url, video, thumbnail }) => {
             {info.techList.map((el) => {
               return (
                 <li key={el.name} className="bg-image-name cursor-pointer">
-                  <Link href={el.path}>
+                  {el.path ? (
+                    <Link href={el.path}>
+                      <span>{el.name}</span>
+                    </Link>
+                  ) : (
                     <span>{el.name}</span>
-                  </Link>
+                  )}
                 </li>
               );
             })}

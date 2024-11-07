@@ -519,7 +519,7 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.facebook.com/BrainInventoryIndia/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={
@@ -537,7 +537,7 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://in.linkedin.com/company/braininventory"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={
@@ -555,7 +555,7 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://dribbble.com/brain_inventory"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={
@@ -573,7 +573,7 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.instagram.com/braininventory_com/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={
@@ -591,7 +591,7 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={

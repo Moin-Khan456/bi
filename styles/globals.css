@@ -3099,6 +3099,7 @@ a.btn-filled.btn {
   height: 38px;
   width: 100%;
   color: #000;
+  background-color: #fff;
   border-radius: 4px;
   padding-left: 8px;
   padding-right: 3px;
@@ -3262,6 +3263,7 @@ select#countryCode {
   width: 22%;
   border-radius: 4px;
   padding-left: 8px;
+  background-color: #fff;
   color: #000;
   padding-right: 3px;
   border: 1px solid #ccc;

@@ -3096,7 +3096,7 @@ a.btn-filled.btn {
 }
 
 .contact-form input {
-  height: 38px;
+  height: 40px;
   width: 100%;
   color: #000;
   background-color: #fff;
@@ -3259,7 +3259,7 @@ img.logo-classic-2 {
 
 
 select#countryCode {
-  height: 42px;
+  height: 40px;
   width: 22%;
   border-radius: 4px;
   padding-left: 8px;

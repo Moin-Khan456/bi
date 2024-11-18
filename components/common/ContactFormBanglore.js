@@ -140,7 +140,7 @@ const ContactFormBanglore = () => {
 
     try {
       const response = await axios.post(
-        'http://98.81.225.55:3000/api/v1/user/contact',
+        'https://contact-2-xzk8.onrender.com/api/v1/user/contact',
         finalValues,
         {
           headers: {

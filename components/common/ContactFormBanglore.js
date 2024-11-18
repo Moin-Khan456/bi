@@ -140,7 +140,7 @@ const ContactFormBanglore = () => {
 
     try {
       const response = await axios.post(
-        'https://contact-2-xzk8.onrender.com/api/v1/user/contact',
+        'https://bi.theaiventure.com/api/v1/user/contact',
         finalValues,
         {
           headers: {

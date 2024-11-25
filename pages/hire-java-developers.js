@@ -20,14 +20,31 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link.js";
 
 function HireJavaDeveloper(props) {
   const content =
     "Hire a Java developer with extensive experience utilizing popular object-relational mapping technologies such as Spring, Struts, and Hibernate. Our Java engineers have a comprehensive understanding of Core Java, Advanced Java, J2EE, and server platforms such as JBoss and GlassFish.";
   const subhead1 =
     "Hiring an experienced Java developer can significantly enhance your development endeavors. Java, known for its versatility and robustness, powers a wide array of applications, from web and mobile to enterprise solutions. An experienced Java developer brings proficiency in Java frameworks like Spring and Hibernate, ensuring efficient application development and seamless integration. Our programmers have a strong command of Java's object-oriented features, allowing them to build software that can grow and be updated without difficulty. They have a comprehensive understanding of Java's resources, frameworks, and applications, equipping them to address intricate coding issues with confidence.";
-  const subhead2 =
-    "Moreover, our experienced Java developers excel in crafting high-performance, secure, and reliable applications. Their expertise extends to database management, API integrations, and ensuring compliance with industry best practices and coding standards. In essence, hiring our experienced Java developers not only accelerates your development timelines but also ensures the delivery of robust, scalable, and feature-rich solutions aligned with your business goals.";
+  const subhead2 = (
+    <>
+      Moreover, our experienced Java developers excel in crafting
+      high-performance, secure, and reliable applications. Their expertise
+      extends to database management,{" "}
+      <Link
+        href="/mobile-development/mobile-api-integration-services"
+        className="text-[#2186ff]"
+      >
+        API integrations
+      </Link>
+      , and ensuring compliance with industry best practices and coding
+      standards. In essence, hiring our experienced Java developers not only
+      accelerates your development timelines but also ensures the delivery of
+      robust, scalable, and feature-rich solutions aligned with your business
+      goals.
+    </>
+  );
 
   const experienceCards = [
     {
@@ -70,8 +87,18 @@ function HireJavaDeveloper(props) {
     },
     {
       head: "Team Collaboration",
-      content:
-        "A group of Java developers at Brain Inventory work together, enabling them to take advantage of each other's specialized skills and knowledge. This collaborative approach allows the developers to build on one another's strengths, resulting in more creative and productive solutions.",
+      content: (
+        <>
+          A group of Java developers at{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>{" "}
+          work together, enabling them to take advantage of each other's
+          specialized skills and knowledge. This collaborative approach allows
+          the developers to build on one another's strengths, resulting in more
+          creative and productive solutions.
+        </>
+      ),
     },
     {
       head: "Quality Assurance",
@@ -146,8 +173,39 @@ function HireJavaDeveloper(props) {
     "Improved Expandability",
   ];
 
-  const chooseBiSubhead =
-    "Boost your software development plan by moving from freelance Java programmers to committed, permanent Java specialists with Brain Inventory. Leave behind conventional recruitment techniques and reveal the possibilities for ventures that can without much of a stretch scale, adaptable work processes, upgraded portability, and cost-viability, and the sky is the limit from there. Take charge of your development initiatives by leveraging our knowledge of cutting-edge technologies.Brain Inventory is a reputable and trustworthy Java development Company with a group of authorized Java coders who are proficient and well-versed in constructing protected, flexible, and robust B2B & SaaS platforms. Brain Inventory provides recruiting services to source committed Java programmers from India with a proven track record and steadfast devotion to permanent jobs. Our Java experts have broad experience in key domains such as software design methodologies, service-based architecture concepts, software creation, and expertise in data structures and algorithms. Moreover, they have a deep grasp of technologies like Spring/Hibernate as well as skills in SQL, Unix, and related fields. Depend on us to strengthen your initiatives with dedicated, highly competent Java developers who spur creativity and achieve the highest standards of quality.";
+  const chooseBiSubhead = (
+    <>
+      Boost your software development plan by moving from freelance Java
+      programmers to committed, permanent Java specialists with{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      . Leave behind conventional recruitment techniques and reveal the
+      possibilities for ventures that can without much of a stretch scale,
+      adaptable work processes, upgraded portability, and cost-viability, and
+      the sky is the limit from there. Take charge of your development
+      initiatives by leveraging our knowledge of cutting-edge technologies.Brain
+      Inventory is a reputable and trustworthy{" "}
+      <Link
+        href="/web-development/java-development-company"
+        className="text-[#2186ff]"
+      >
+        Java development Company
+      </Link>{" "}
+      with a group of authorized Java coders who are proficient and well-versed
+      in constructing protected, flexible, and robust B2B & SaaS platforms.
+      Brain Inventory provides recruiting services to source committed Java
+      programmers from India with a proven track record and steadfast devotion
+      to permanent jobs. Our Java experts have broad experience in key domains
+      such as software design methodologies, service-based architecture
+      concepts, software creation, and expertise in data structures and
+      algorithms. Moreover, they have a deep grasp of technologies like
+      Spring/Hibernate as well as skills in SQL, Unix, and related fields.
+      Depend on us to strengthen your initiatives with dedicated, highly
+      competent Java developers who spur creativity and achieve the highest
+      standards of quality.
+    </>
+  );
 
   const chooseBI = [];
 

@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -35,13 +36,32 @@ function ReactNativeDeveloper() {
   const hireCards = [
     {
       head: "Agile Procedure",
-      content:
-        "Brain Inventory is a Custom Software Development company that implements nimble development methods to provide an exceptional software product within your financial constraints. Our group comprehends the intricate demands encountered by clients and constructs groundbreaking, streamlined, and affordable solutions utilizing a nimble methodology to generate an outstanding result.",
+      content: (
+        <>
+          Brain Inventory is a{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Custom Software Development company 
+          </Link>{" "}
+          that implements nimble development methods to provide an exceptional
+          software product within your financial constraints. Our group
+          comprehends the intricate demands encountered by clients and
+          constructs groundbreaking, streamlined, and affordable solutions
+          utilizing a nimble methodology to generate an outstanding result.
+        </>
+      ),
     },
     {
       head: "Customer Satisfaction",
-      content:
-        "We utilize the most modern tools and techniques to provide customized, flexible, safe, and innovative business solutions tailored to your specific requirements. Our staff consists of a seasoned group of top-tier programmers. Our guiding principles are to always put the customer first and provide them with the optimal solution to suit their needs.",
+      content: (
+        <>
+          We utilize the most modern tools and techniques to provide customized,
+          flexible, safe, and innovative business solutions tailored to your
+          specific requirements. <Link href="/company" className="text-[#2186ff]">Our staff</Link> consists of a seasoned group of
+          top-tier programmers. Our guiding principles are to always put the
+          customer first and provide them with the optimal solution to suit
+          their needs.
+        </>
+      ),
     },
     {
       head: "Dedicated Teams",
@@ -113,7 +133,16 @@ function ReactNativeDeveloper() {
     "React Native has been around for a while and is very good at creating a smooth user interface compared to other similar Mobile App Development Services frameworks.",
     " It doesn't need any outside tools, has support from important contributors and developers, and has a large community of developers that can help make your app more efficient and effective.",
     "The obsession with the new and latest trends in technology is increasing every day. This has led to the creation of new apps which have been developed on the basis of react native. The reason behind this is that they are user-friendly, feature-rich, and most importantly fast.",
-    "To expand your business, have a top-notch app developed specifically for it. Our company can create mobile apps, web apps, and games using various technologies such as React Native for app development, React Native templates for apps, or services from a Mobile App Development Services firm.",
+    <>
+      To expand your business, have a top-notch app developed specifically for
+      it. Our company can create mobile apps, web apps, and games using various
+      technologies such as React Native for app development, React Native
+      templates for apps, or services from a{" "}
+      <Link href="/mobile-app-development-company" className="text-[#2186ff]">
+        Mobile App Development Services
+      </Link>{" "}
+      firm.
+    </>,
     "We can build high-quality, custom apps tailored to your business needs using the latest techniques.",
   ];
 

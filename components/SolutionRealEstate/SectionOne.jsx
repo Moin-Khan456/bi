@@ -20,7 +20,14 @@ export default function HireBanner() {
             Experience the future of real estate with Brain Inventory&apos;s
             cutting-edge software development, dedicated to driving success in
             your realty ventures. Harness the power of our innovative real
-            estate mobile app development for transformative industry solutions.
+            estate{" "}
+            <Link
+              href="/mobile-development/custom-mobile-app-development-company"
+              className="text-[#2186ff]"
+            >
+              mobile app development
+            </Link>{" "}
+            for transformative industry solutions.
           </p>
           <Link href="#talk">
             <button className="w-fit flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">

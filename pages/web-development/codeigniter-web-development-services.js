@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
@@ -55,7 +56,19 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Cost-effective",
-      content: `Our skilled professionals are capable of developing high-quality, cost-effective software solutions. We establish partnerships with you to learn about your business goals and objectives and then we execute a strategy that turns those goals into results. Our team is capable of delivering quality services promptly that are aligned with your budget.`,
+      content: (
+        <>
+          Our skilled professionals are capable of developing high-quality,
+          cost-effective software solutions. We establish partnerships with you
+          to learn about your business goals and objectives and then we execute
+          a strategy that turns those goals into results.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our team
+          </Link>{" "}
+          is capable of delivering quality services promptly that are aligned
+          with your budget.
+        </>
+      ),
     },
   ];
 
@@ -87,7 +100,24 @@ function HireAangularJsDeveloper(props) {
     },
   ];
   const chooseBI = [
-    "Brain Inventory is one of the leading Codeigniter Development Company USA. We have a team of expert PHP developers who are well-versed in the platform and are capable of building large-scale applications that efficiently respond to user-specific requirements, both easily and quickly. Our application development service includes: designing and coding, flawless application testing, deployment on cloud platforms, managing customer support service, and bug fixing.",
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is one of the leading Codeigniter Development Company USA. We have a team
+      of{" "}
+      <Link href="/hire-php-developers" className="text-[#2186ff]">
+        expert PHP developers
+      </Link>{" "}
+      who are well-versed in the platform and are capable of building
+      large-scale applications that efficiently respond to user-specific
+      requirements, both easily and quickly. Our{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        application development service
+      </Link>{" "}
+      includes: designing and coding, flawless application testing, deployment
+      on cloud platforms, managing customer support service, and bug fixing.
+    </>,
     "We solve this problem for our customers by providing them with top-notch CodeIgniter developers, who are not only experts with the skill but also have experience working on solutions for various financial firms, and budding startups. Our team at Brain Inventory has extensive expertise in building apps with popular PHP frameworks such as CodeIgniter, Yii, and Laravel. We can assist you in bringing your innovative concepts to life through customized code solutions for any industry. It's because of our skilled developers and commitment to delivering top-notch business outcomes that Brain Inventory is recognized as a premier agency for high-caliber custom code development services.",
   ];
   const advantages = [

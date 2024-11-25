@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import { useRouter } from "next/navigation";
+
 const Index = ({ para1, para2, para3, type }) => {
+  const router = useRouter();
   return (
     <main className="container px-4 lg:px-20 lg:pb-20">
       <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit">
@@ -41,7 +44,12 @@ const Index = ({ para1, para2, para3, type }) => {
             )}
           </p>
           <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 ml-4 pr-20">
-            <button className="flex flex-col justify-center Gilroy">
+            <button
+              className="flex flex-col justify-center Gilroy"
+              onClick={() => {
+                router.push("/contact")
+              }}
+            >
               <span className="text-xs font-thin text-slate-400 pb-1">
                 Got a project in mind?
               </span>

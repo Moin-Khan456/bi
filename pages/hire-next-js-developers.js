@@ -18,14 +18,42 @@ import Engaged from "../components/Hire/Engaged";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper() {
   const content =
     "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
-  const subhead1 =
-    "Hire Next JS is considered one of the most professional, cost-effective, and quality-oriented developers in USA. We have a proven track record of rendering the best services in major industry verticals. Hire us today and unlock your business growth with the right web development solutions!";
-  const subhead2 =
-    "Our next js developer team is the best in its field. Our team is proud to have the necessary abilities to offer tailored progressive web app services to clients across the globe. So if you need a trustworthy partner to assist with your company's web development requirements, search no more. We are the ideal choice. We will be able to provide unmatched custom web development services to our clients. We have a team of expert developers who can create high-impact web applications that would help your business achieve a competitive edge in the market. We develop the best out of the Next.js framework and come up with responsive applications.";
+  const subhead1 = (
+    <>
+      Hire Next JS is considered one of the most professional, cost-effective,
+      and quality-oriented developers in USA. We have a proven track record of
+      rendering the best services in major industry verticals.{" "}
+      <Link href="/hire-dedicated-remote-developers" className="text-[#2186ff]">
+        Hire us
+      </Link>{" "}
+      today and unlock your business growth with the right web development
+      solutions!
+    </>
+  );
+  const subhead2 = (
+    <>
+      Our next js developer team is the best in its field. Our team is proud to
+      have the necessary abilities to offer tailored progressive web app
+      services to clients across the globe. So if you need a trustworthy partner
+      to assist with your company's web development requirements, search no
+      more. We are the ideal choice. We will be able to provide unmatched{" "}
+      <Link
+        href="/web-development/custom-web-development"
+        className="text-[#2186ff]"
+      >
+        custom web development
+      </Link>{" "}
+      services to our clients. We have a team of expert developers who can
+      create high-impact web applications that would help your business achieve
+      a competitive edge in the market. We develop the best out of the Next.js
+      framework and come up with responsive applications.
+    </>
+  );
 
   const experienceCards = [
     {
@@ -87,8 +115,22 @@ function HireAangularJsDeveloper() {
     {
       id: "1",
       title: "Do you provide post-deployment support?",
-      description:
-        "After deployment, your customer's app is ready to go, and it automatically scales with traffic. But sometimes you have to troubleshoot a problem with the app performance and it's hard to do so – especially if there is no documentation on how to solve certain tasks. At Brain Inventory, we offer professional support in case you need help fixing an issue with Next.js apps. We will help you solve any issues related to deployments and operations of your application.",
+      description: (
+        <>
+          After deployment, your customer's app is ready to go, and it
+          automatically scales with traffic. But sometimes you have to
+          troubleshoot a problem with the app performance and it's hard to do so
+          – especially if there is no documentation on how to solve certain
+          tasks. At{" "}
+          <Link href="/" className="text-[#2186ff]">
+            {" "}
+            Brain Inventory
+          </Link>{" "}
+          , we offer professional support in case you need help fixing an issue
+          with Next.js apps. We will help you solve any issues related to
+          deployments and operations of your application.
+        </>
+      ),
     },
     {
       id: "2",
@@ -117,10 +159,27 @@ function HireAangularJsDeveloper() {
   ];
 
   const advantages = [
-    "Next.js is a robust framework with powerful capabilities for server-side rendering, which can substantially boost the speed of web apps. Hiring a Next.js developer enables optimizing your app's performance through server-side rendering and other techniques.",
-    "It also furnishes inherent SEO enhancement abilities, like computerized meta-tag creation and enhanced server-side rendering. Engaging a programmer well-versed in Next.js can guarantee your site positions profoundly in indexed lists and is handily found by clients.",
-    "With its incorporated features and simplified configuration, Next.js provides a streamlined development experience. By working with a Next.js engineer, you will be able to accomplish site development faster and more efficiently, saving you both time and money.",
-    "Next.js is an extremely scalable framework that can handle heavy traffic and large amounts of data with ease. Bringing on a Next.js developer helps guarantee your website is built to scale seamlessly and adapt as your business expands. Contact us to work with our highly skilled developer!",
+    <>
+      Next.js is a robust framework with powerful capabilities for server-side
+      rendering, which can substantially boost the speed of web apps. Hiring a
+      Next.js developer enables optimizing your app's performance through
+      server-side rendering and other techniques.", "It also furnishes inherent
+      SEO enhancement abilities, like computerized meta-tag creation and
+      enhanced server-side rendering. Engaging a programmer well-versed in
+      Next.js can guarantee your site positions profoundly in indexed lists and
+      is handily found by clients.", "With its incorporated features and
+      simplified configuration, Next.js provides a streamlined development
+      experience. By working with a Next.js engineer, you will be able to
+      accomplish site development faster and more efficiently, saving you both
+      time and money.", "Next.js is an extremely scalable framework that can
+      handle heavy traffic and large amounts of data with ease. Bringing on a
+      Next.js developer helps guarantee your website is built to scale
+      seamlessly and adapt as your business expands.{" "}
+      <Link href="/contact" className="text-[#2186ff]">
+        Contact us
+      </Link>{" "}
+      to work with our highly skilled developer!
+    </>,
   ];
 
   const keySkillsBreif =

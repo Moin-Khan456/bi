@@ -20,6 +20,7 @@ const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hello = dynamic(() => import("../components/common/FindUs.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
 import HireBanner from "../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory.jsx")
 );
@@ -31,8 +32,16 @@ const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "The quality assurance team is an essential part of any software development company. Our team has a strong passion to ensure that our products are built with high-quality standards and meet industry standards.";
+  const content = (
+    <>
+      The quality assurance team is an essential part of any{" "}
+      <Link href="/" className="text-[#2186ff]">
+        software development company
+      </Link>
+      . Our team has a strong passion to ensure that our products are built with
+      high-quality standards and meet industry standards.
+    </>
+  );
   const subhead1 =
     "We have Quality Analysts for hire with 3+ years of working experience, who have an excellent understanding of software testing. We provide a full range of services from Quality Assurance, Software Development Life Cycle, agile methodologies, and automated testing to deployment automation. Our maturity in controlling the quality from writing the first line of code with linters, and quality coding habits in development to highly matured deployment pipelines with several quality checks makes us the perfect partner for you.";
   const subhead2 =
@@ -137,7 +146,17 @@ function HireAangularJsDeveloper(props) {
   const chooseBI = [
     "At Brain Inventory we use several techniques and tools for static testing. We have the right expertise to provide you with the best quality assurance services so that your work can be at all compromised. Our experts have years of experience in designing and testing applications.",
     "We do not sacrifice their superiority, for they are stable and protected. We guarantee that every individual code is assessed before being distributed as the finished good.",
-    "We comprehend how crucial it is to have an excellent QA expert. You have the privilege to be positive that your UI testing will go smoothly and prompt first-class outcomes. Our QA specialists are well-trained, skillful, and devoted in their responsibilities to ensure an excellent product. Their knowledge and skill set will aid you in accomplishing success with any undertaking.",
+    <>
+      We comprehend how crucial it is to have an excellent QA expert. You have
+      the privilege to be positive that your{" "}
+      <Link href="/hire-ui-ux-designers" className="text-[#2186ff]">
+        UI testing
+      </Link>{" "}
+      will go smoothly and prompt first-class outcomes. Our QA specialists are
+      well-trained, skillful, and devoted in their responsibilities to ensure an
+      excellent product. Their knowledge and skill set will aid you in
+      accomplishing success with any undertaking.
+    </>,
   ];
 
   return (

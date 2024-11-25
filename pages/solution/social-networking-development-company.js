@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Marquee from "react-easy-marquee";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
@@ -181,8 +182,22 @@ function SocialMedia(props) {
         "Unleash the power of social industry solutions and watch as your lead generation skyrockets. Our cutting-edge technology leaves no stone unturned, exploring every corner of the digital world to find your perfect customers. With us, see your leads increase in as little as 60 seconds. Don’t just chase leads, let us bring them to you.",
     },
   ];
-  const approachDesc =
-    "At Brain Inventory, one of the leading social media app development company, we approach social media app development with a unique mix of innovation, creativity, and technology. We prioritize understanding your business and users, crafting a rich digital experience that aligns perfectly with your goals. Our strategy is fuelled by your vision, and powered by our passion to transform social connectivity.";
+  const approachDesc = (
+    <>
+      At Brain Inventory, one of the leading social media{" "}
+      <Link
+        href="/mobile-development/custom-mobile-app-development-company"
+        className="text-[#2186ff]"
+      >
+        app development company
+      </Link>
+      , we approach social media app development with a unique mix of
+      innovation, creativity, and technology. We prioritize understanding your
+      business and users, crafting a rich digital experience that aligns
+      perfectly with your goals. Our strategy is fuelled by your vision, and
+      powered by our passion to transform social connectivity.
+    </>
+  );
   const approachPoints = {
     heading1: "Scope Analysis Process",
     subhead1:
@@ -269,7 +284,23 @@ function SocialMedia(props) {
             isHeadShow={false}
             subTitle="App Development Company"
             head1="Fostering connections, catalyzing change."
-            description="At Brain Inventory, we're more than just a social networking app development company. We're a forward-thinking technology partner with a mission to empower industries with innovative social solutions. Our expertise lies in delivering tailor-made apps that foster communication and engagement, transforming the way industries connect and collaborate. With Brain Inventory, you gain a strategic partner who understands the nuances of the social industry and can help you harness the power of digital technologies to drive growth and change."
+            description={
+              <>
+                At{" "}
+                <Link href="/" className="text-[#2186ff]">
+                  Brain Inventory
+                </Link>
+                , we're more than just a social networking app development
+                company. We're a forward-thinking technology partner with a
+                mission to empower industries with innovative social solutions.
+                Our expertise lies in delivering tailor-made apps that foster
+                communication and engagement, transforming the way industries
+                connect and collaborate. With Brain Inventory, you gain a
+                strategic partner who understands the nuances of the social
+                industry and can help you harness the power of digital
+                technologies to drive growth and change
+              </>
+            }
           />
           <SectionThree />
           <Marquee duration={20000} background="#F7D927">

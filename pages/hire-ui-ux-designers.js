@@ -20,14 +20,29 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
   const content =
     "BrainInventory is a creative design agency, where you can hire UI/UX designers to help you elevate your product to the next level. Our experienced and proficient professionals have helped clients in various sectors.";
   const subhead1 =
     "User interface (UI) developers are a key part of every web or mobile app's success. They create appealing, usable, and effective interfaces for customers to interact with your business. A top-notch interface attracts customers and increases conversion rates, helping you grow your startup faster.";
-  const subhead2 =
-    "There are several areas where UI design and development play a vital role in increasing your website's conversion rate, brand recognition along with the overall user experience. The key is to enlist the help of an experienced front-end development company that will be able to create a unique platform for your business. Brain Inventory team of based in USA helps clients design responsive, mobile-friendly web applications that can be accessed anywhere on any device. Our developer ensures that each project we take up is manageable by working with you at every stage of development so that you get complete control over the final output.";
+  const subhead2 = (
+    <>
+      There are several areas where UI design and development play a vital role
+      in increasing your website's conversion rate, brand recognition along with
+      the overall user experience. The key is to enlist the help of an
+      experienced front-end development company that will be able to create a
+      unique platform for your business.{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory 
+      </Link>{" "}
+      team of based in USA helps clients design responsive, mobile-friendly web applications that
+      can be accessed anywhere on any device. Our developer ensures that each
+      project we take up is manageable by working with you at every stage of
+      development so that you get complete control over the final output.
+    </>
+  );
 
   const experienceCards = [
     {

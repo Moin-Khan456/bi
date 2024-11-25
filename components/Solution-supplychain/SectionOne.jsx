@@ -15,12 +15,15 @@ export default function HireBanner() {
               Unleashing Efficiency, Driving Excellence with Smart Solutions!
             </h2>
             <h2 className="text-md font-Satoshi text-white opacity-50 leading-7 py-12 lg:w-[85%] lg:text-justify">
-              Opt for Brain Inventory&apos;s supply chain solutions to enact an
-              orchestra of seamless order fulfillment, inventory planning, and
-              transportation. Experience the unparalleled expertise of a
-              platform that offers the market&apos;s best supply chain
-              management software, which is solely focused on bolstering
-              efficiency and optimizing your bottom line. 
+              Opt for{" "}
+              <Link href="/" className="text-[#2186ff]">
+                Brain Inventory&apos;s
+              </Link>{" "}supply chain solutions to enact an orchestra of seamless order
+              fulfillment, inventory planning, and transportation. Experience
+              the unparalleled expertise of a platform that offers the
+              market&apos;s best supply chain management software, which is
+              solely focused on bolstering efficiency and optimizing your bottom
+              line. 
             </h2>
           </section>
           <Link href="#talk">

@@ -25,7 +25,9 @@ const SectionTwo = ({
               <span>
                 {title.split(" ").map((ele, index) => (
                   <>
-                    <span className="block">{ele}</span>
+                    <span className="block" key={index}>
+                      {ele}
+                    </span>
                   </>
                 ))}
               </span>

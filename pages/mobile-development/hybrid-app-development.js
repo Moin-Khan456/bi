@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Mobile-Development/SectionOne";
+import Link from "next/link";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -71,7 +72,21 @@ function HireAangularJsDeveloper() {
   const hireCards = [
     {
       head: "Efficient Integration",
-      content: `Our experts are very well-versed in a variety of programming languages and the latest technology trends. Based on the requirement, we can offer our agnostic mobile app development services or cost-effective Hybrid Mobile App Development Finally, you can request a cross-platform mobile app that will help in working smoothly with different devices.`,
+      content: (
+        <>
+          Our experts are very well-versed in a variety of programming languages
+          and the latest technology trends. Based on the requirement, we can
+          offer our agnostic mobile app development services or cost-effective
+          Hybrid Mobile App Development Finally, you can request a
+          <Link
+            href="/mobile-development/cross-platform-mobile-app-development"
+            className="text-[#2186ff]"
+          >
+            cross-platform mobile app
+          </Link>
+          that will help in working smoothly with different devices.
+        </>
+      ),
     },
     {
       head: "Outcome Focused",
@@ -90,8 +105,21 @@ function HireAangularJsDeveloper() {
     },
     {
       head: "Customer Satisfaction",
-      content:
-        "Client success is no longer measured only by the end results. It's different today—a major part of the client success story depends on how a provider might provide to them throughout the process of building something together. At Brain Inventory, client satisfaction is the number one priority of our team.",
+      content: (
+        <>
+          Client success is no longer measured only by the end results. It's
+          different today—a major part of the client success story depends on
+          how a provider might provide to them throughout the process of
+          building something together. At{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>{" "}
+          , client satisfaction is the number one priority of{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            our team.
+          </Link>{" "}
+        </>
+      ),
     },
   ];
 
@@ -205,7 +233,18 @@ function HireAangularJsDeveloper() {
           <Hire
             title="Why Hybrid App Development from %Brain Inventory"
             card={hireCards}
-            subhead="As one of the most renowned mobile app development company, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
+            subhead={
+              <>
+                As one of the most renowned{" "}
+                <Link href="javascript:void(0)" className="text-[#2186ff]">
+                  mobile app development company
+                </Link>
+                , Brain Inventory is celebrated for meeting modern business
+                demands and providing top-notch solutions at an affordable price
+                worldwide. If you’re in search of a mobile app developer, here’s
+                why we should be your first pick:
+              </>
+            }
           />
           <ChooseBraininventory
             reasons={chooseBI}

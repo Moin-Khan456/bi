@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -89,10 +90,24 @@ function SwiftDevelopment() {
   ];
 
   const chooseBI = [
-    "Brain Inventory prioritizes transparency in their Custom Software Development Services.",
+    <>
+      Brain Inventory prioritizes transparency in their{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Custom Software Development Services.
+      </Link>
+    </>,
     "The focus is on creating user-friendly, feature-rich, and adaptable software.",
     "The challenge of ensuring customer understanding is recognized and addressed.",
-    "Developers at Brain Inventory are proficient in multiple languages such as C, C++, and iOS Development.",
+    <>
+      Developers at Brain Inventory are proficient in multiple languages such as
+      C, C++, and{" "}
+      <Link
+        href="/mobile-development/ios-app-development-company"
+        className="text-[#2186ff]"
+      >
+        iOS Development
+      </Link>
+    </>,
     "The expertise of developers allows them to quickly understand job requirements and deliver desired results.",
     "High-quality coding assistance is ensured by hiring professionals with expertise in Apple, Android, and HTML5 technologies.",
     "Subject-specific training enhances collaboration with customers to achieve better end results.",

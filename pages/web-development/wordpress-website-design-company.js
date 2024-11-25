@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -31,8 +32,18 @@ const ChooseBraininventory = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Our company offers premium-quality Wordpress website design service across the globe. Our team of highly skilled WordPress experts helps business organizations and independent entrepreneurs build responsive, adaptive, high-performance plug-ins and themes at competitive prices.";
+  const content = (
+    <>
+      Our company offers premium-quality Wordpress website design service across
+      the globe.{" "}
+      <Link href="/company" className="text-[#2186ff]">
+        Our team
+      </Link>{" "}
+      of highly skilled WordPress experts helps business organizations and
+      independent entrepreneurs build responsive, adaptive, high-performance
+      plug-ins and themes at competitive prices.
+    </>
+  );
   const subhead1 =
     "A WordPress website-building solution can be essential for people, companies and groups for various convincing motivations. To begin with, WordPress is an easy-to-understand and profoundly adaptable stage that empowers you to make a site customized to your particular needs and inclinations, regardless of whether it's an individual blog, web based business store, portfolio site, or corporate web nearness.";
   const subhead2 =
@@ -89,8 +100,29 @@ function HireAangularJsDeveloper(props) {
     },
   ];
   const chooseBI = [
-    "Brain Inventory offers top Wordpress website design service USA created by a team that has acquired phenomenal abilities and skills in how customers work with WordPress websites. Our dedicated WordPress website developers offer creative inclusions, information on the market situation, and WordPress solutions that give true value for your money, and time, and websites that allow speedy downloads.",
-    "We have more than 4 years of experience in the field of web design related to WordPress Product Development, Mobile App Development, and E-commerce Web Development. Our experts assist new business enterprises as well as startup companies to come up with unique site architecture that allows independent businesses to grow their industry and businesses with an experiential solution to build a strong online presence at no additional cost.",
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      offers top Wordpress website design service USA created by a team that has
+      acquired phenomenal abilities and skills in how customers work with
+      WordPress websites. Our dedicated WordPress website developers offer
+      creative inclusions, information on the market situation, and WordPress
+      solutions that give true value for your money, and time, and websites that
+      allow speedy downloads.
+    </>,
+    <>
+      We have more than 4 years of experience in the field of web design related
+      to WordPress Product Development,{" "}
+      <Link href="/mobile-app-development-company" className="text-[#2186ff]">
+        Mobile App Development
+      </Link>
+      , and E-commerce Web Development. Our experts assist new business
+      enterprises as well as startup companies to come up with unique site
+      architecture that allows independent businesses to grow their industry and
+      businesses with an experiential solution to build a strong online presence
+      at no additional cost.
+    </>,
     "We know your business deserves to thrive across all facets. We are proud of our WordPress customizations and development that have enabled hundreds of businesses to boost sales and build their brand online. This is why we provide assistance whenever you need it, with our friendly support team available at any hour of the day or night.",
   ];
 

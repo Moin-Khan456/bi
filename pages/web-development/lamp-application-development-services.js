@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -36,13 +37,34 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Agile Procedure",
-      content:
-        "Brain Inventory is a Custom Software Development Company with experience in creating Agile software products. We’re here to help our clients understand Agile technology and apply it to their projects. This way we can deliver high-quality software products that are more tested and therefore more reliable for their customers.",
+      content: (
+        <>
+          Brain Inventory is a{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Custom Software Development Company
+          </Link>{" "}
+          with experience in creating Agile software products. We’re here to
+          help our clients understand Agile technology and apply it to their
+          projects. This way we can deliver high-quality software products that
+          are more tested and therefore more reliable for their customers.
+        </>
+      ),
     },
     {
       head: "Customer Satisfaction",
-      content:
-        "Complete user-friendly, scalable, secure, and new business solutions as per the need of your business are what we focus on. We believe in delivering world-class solutions within a time frame that suits our client’s needs - no matter how big or small. Our team consists of a collection of elite developers who have mastered their craft.",
+      content: (
+        <>
+          Complete user-friendly, scalable, secure, and new business solutions
+          as per the need of your business are what we focus on. We believe in
+          delivering world-class solutions within a time frame that suits our
+          client’s needs - no matter how big or small.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our team
+          </Link>{" "}
+          consists of a collection of elite developers who have mastered their
+          craft.
+        </>
+      ),
     },
     {
       head: "Dedicated Teams",

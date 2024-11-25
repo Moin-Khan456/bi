@@ -20,14 +20,27 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
   const content =
     "Our software engineers are experts in the MERN stack and skilled at building apps using this tech stack. They have a demonstrated history of completing complex projects, utilizing cutting-edge instruments designed to accelerate development and simplify the building process.";
   const subhead1 =
     "Our team of MERN stack developers have extensive expertise in creating novel and sturdy web apps for companies. They are highly skilled at delivering feature-rich, hybrid, and robust web applications that strictly adhere to enterprise guidelines. The team is experienced with implementing REST APIs with JSON, XML, and COBOL integration code generation, MVC patterns, HTML5, CSS3, JavaScript for mobile, and cross-platform mobile frameworks like Xamarin, Ionic, and Cordova.";
-  const subhead2 =
-    "At Brain Inventory, we go beyond just creating a website. We help improve your business with custom web and mobile applications seamlessly integrated into your current systems and workflows. Our MERN developers do this by thoroughly gathering requirements, evaluating your existing software, and applying proven best practices to deliver a tailored solution. This improves the end user experience and your bottom line.";
+  const subhead2 = (
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we go beyond just creating a website. We help improve your business with
+      custom web and mobile applications seamlessly integrated into your current
+      systems and workflows. Our MERN developers do this by thoroughly gathering
+      requirements, evaluating your existing software, and applying proven best
+      practices to deliver a tailored solution. This improves the end user
+      experience and your bottom line.
+    </>
+  );
 
   const experienceCards = [
     {
@@ -65,8 +78,19 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Technical Expertise",
-      content:
-        "Our experience in this domain has helped us to create best-in-class modular Angular application development solutions for our clients. We provide different ways to develop your eCommerce platform using Angular. We have been able to understand the complexity and make sure that we are able to solve every problem equally efficiently.",
+      content: (
+        <>
+          Our experience in this domain has helped us to create best-in-class
+          modular{" "}
+          <Link href="/web-development/angularjs-development-company" className="text-[#2186ff]">
+            Angular application development solutions
+          </Link>{" "}
+          for our clients. We provide different ways to develop your eCommerce
+          platform using Angular. We have been able to understand the complexity
+          and make sure that we are able to solve every problem equally
+          efficiently.
+        </>
+      ),
     },
     {
       head: "Hassle-free App Development",
@@ -131,8 +155,23 @@ function HireAangularJsDeveloper(props) {
     "NDAs signed",
   ];
 
-  const chooseBiSubhead =
-    "Brain Inventory is a proficient MERN stack development company that creates web applications with the latest front-end technologies and industry standards. We guarantee that your application runs smoothly on all devices while meeting its performance and functionality requirements. Our team produces top-notch code that complies with best practices, written in scalable languages, and utilizing open-source libraries to achieve scalable and comprehensive solutions.";
+  const chooseBiSubhead = (
+    <>
+      Brain Inventory is a proficient{" "}
+      <Link
+        href="/web-development/mern-stack-development-company"
+        className="text-[#2186ff]"
+      >
+        MERN stack development company
+      </Link>{" "}
+      that creates web applications with the latest front-end technologies and
+      industry standards. We guarantee that your application runs smoothly on
+      all devices while meeting its performance and functionality requirements.
+      Our team produces top-notch code that complies with best practices,
+      written in scalable languages, and utilizing open-source libraries to
+      achieve scalable and comprehensive solutions.
+    </>
+  );
   const chooseBI = [
     "We can give you the highest quality, best-in-class MERN stack application development services. We never compromise on the quality of our work and ensure that you get exactly what you want. Our wide range of experience in MERN stack development makes us a top choice for your next project.",
     "Expanding your team by adding MERN stack engineers is a brilliant strategy that will enable you to develop forward-looking applications. Our group of experienced and gifted programmers enjoys crafting software using state-of-the-art technologies such as Node.js, React, React Native, and Angular. You can rely on us to construct high-quality, scalable, and durable applications for both startups and major corporations. We have a wealth of experience developing enterprise-level solutions for companies of all sizes.",

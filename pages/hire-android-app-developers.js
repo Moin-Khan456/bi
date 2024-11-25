@@ -18,20 +18,63 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link";
 
 function HireAangularJsDeveloper(props) {
   const content =
     "BrainInventory team is a pool of highly experienced, creative, and dedicated app developers with experience in developing highly customized Android applications for different sizes of businesses from different industries.";
-  const subhead1 =
-    "Brain Inventory has a wide pool of available Android app developers, programmers, and coders to meet your requirements for a strategic support package on Google-based mobile app development projects. Our qualified and experienced developers are always ready to provide you with any kind of support if required. They have skills and training in different languages like Java/C++, Python, PHP, JavaScript, Ruby, and so on.";
-  const subhead2 =
-    "As an established app developer, we provide highly scalable Android app development services to help you create innovative cross-platform apps. Our mobile app developers specialize in delivering end-to-end mobility solutions for businesses across diverse industries. With a network of highly skilled and professional Android app developers, we build application infrastructure that supports a wide range of features, functions, and capabilities using the latest technologies and protocols. Hire Android developers from Brain Inventory to develop your next great app.";
+  const subhead1 = (
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      has a wide pool of available Android app developers, programmers, and
+      coders to meet your requirements for a strategic support package on
+      Google-based mobile app development projects. Our qualified and
+      experienced developers are always ready to provide you with any kind of
+      support if required. They have skills and training in different languages
+      like Java/C++, Python, PHP, JavaScript, Ruby, and so on.
+    </>
+  );
+  const subhead2 = (
+    <>
+      As an established app developer, we provide highly scalable{" "}
+      <Link
+        href="/mobile-development/android-app-development-company"
+        className="text-[#2186ff]"
+      >
+        Android app development
+      </Link>{" "}
+      services to help you create innovative cross-platform apps. Our mobile app
+      developers specialize in delivering end-to-end mobility solutions for
+      businesses across diverse industries. With a network of highly skilled and
+      professional Android app developers, we build application infrastructure
+      that supports a wide range of features, functions, and capabilities using
+      the latest technologies and protocols. Hire Android developers from Brain
+      Inventory to develop your next great app.
+    </>
+  );
 
   const experienceCards = [
     {
       head: "Custom Android App Developers",
-      content:
-        "As a highly skilled mobile application development company, we are dedicated to delivering exceptional mobile apps tailored specifically to your business. With expertise in Android app development, we can handle a diverse range of projects to meet your unique requirements. Our focus is on creating high-performing apps that offer an impressive user experience, contributing to the success of your business.",
+      content: (
+        <>
+          As a highly skilled{" "}
+          <Link
+            href="/mobile-app-development-company"
+            className="text-[#2186ff]"
+          >
+            mobile application development company
+          </Link>
+          , we are dedicated to delivering exceptional mobile apps tailored
+          specifically to your business. With expertise in Android app
+          development, we can handle a diverse range of projects to meet your
+          unique requirements. Our focus is on creating high-performing apps
+          that offer an impressive user experience, contributing to the success
+          of your business.
+        </>
+      ),
     },
     {
       head: "Android Game Developers",

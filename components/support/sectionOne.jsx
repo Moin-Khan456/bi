@@ -11,10 +11,15 @@ export default function SectionOne() {
         </h1>
         <p className="lg:leading-[1.5rem] pt-8 w-[50%]">
           Brain Inventory thinks the sole means to boost productivity and
-          decrease problems is with consistent support. WWhen custom software development concludes, we start software maintenance so your
-          application keeps operating optimally. We have a team of dedicated
-          developers and software maintenance specialists who look after your
-          product at each phase and ensure it runs flawlessly.
+          decrease problems is with consistent support. When{" "}
+          <Link href="/" className="text-[#2186ff]">
+            {" "}
+            custom software development
+          </Link>{" "}
+          concludes, we start software maintenance so your application keeps
+          operating optimally. We have a team of dedicated developers and
+          software maintenance specialists who look after your product at each
+          phase and ensure it runs flawlessly.
         </p>
         <div>
           <Link href="#talk">

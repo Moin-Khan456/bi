@@ -18,6 +18,7 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
 import HireBanner from "../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory.jsx")
@@ -29,8 +30,20 @@ const BlogArticle = dynamic(() =>
 );
 
 function HireAangularJsDeveloper() {
-  const content =
-    "Brain Inventory is the top choice for employing an AngularJS developer or a skillful dedicated team. With Brain Inventory’s Angular developers, you’ll have the advantage of high-quality AngularJS development services that will satisfy your exact coding standards.";
+  const content = (
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is the top choice for employing an AngularJS developer or a skillful
+      dedicated team. With Brain Inventory’s Angular developers, you’ll have the
+      advantage of high-quality{" "}
+      <Link href="/web-development/angularjs-development-company" className="text-[#2186ff]">
+        AngularJS development
+      </Link>{" "}
+      services that will satisfy your exact coding standards.
+    </>
+  );
   const card = [
     "100% resource replacement",
     "Flexible hiring models",
@@ -40,8 +53,19 @@ function HireAangularJsDeveloper() {
 
   const subhead1 =
     "Angular is the leading JavaScript framework for creating timely solutions. It has quickly become the most preferred programming language amongst the developers and the business community. If using a JavaScript framework is part of your application development, then you can’t do better than Angular. A great bonus is that they’re cost-effective while delivering fantastic results – perfect when you’re on a tight budget or are working with limited manpower. Even better, Angular can be integrated with any existing JSP or PHP application so no need to hire separate teams for each of those technologies!";
-  const subhead2 =
-    "So the need is to hire Angularjs developers who are worthy and well-experienced, who offers better services at an affordable price. However, you are just in the right place as Brain Invetory will help you develop your robust and well-secure dynamic web applications. The company ensures the quality and the time-saving processing without any hiring fee.";
+  const subhead2 = (
+    <>
+      So the need is to hire Angularjs developers who are worthy and
+      well-experienced, who offers better services at an affordable price.
+      However, you are just in the right place as{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      will help you develop your robust and well-secure dynamic web
+      applications. The company ensures the quality and the time-saving
+      processing without any hiring fee.
+    </>
+  );
 
   const experienceCards = [
     {
@@ -66,8 +90,18 @@ function HireAangularJsDeveloper() {
     },
     {
       head: "UI/UX Development",
-      content:
-        "UI and UX are important part of the website development lifecycle process it helps in getting the visualisation appear on the screens. User Interface is all about the how the website is going to look like with all the themes, colours, images and positioning of the contents and User Experience is about the working of the website with UI.",
+      content: (
+        <>
+          <Link href="/hire-ui-ux-designers" className="text-[#2186ff]">
+            UI and UX
+          </Link>{" "}
+          are important part of the website development lifecycle process it
+          helps in getting the visualisation appear on the screens. User
+          Interface is all about the how the website is going to look like with
+          all the themes, colours, images and positioning of the contents and
+          User Experience is about the working of the website with UI.
+        </>
+      ),
     },
     {
       head: "Web & API service integration",

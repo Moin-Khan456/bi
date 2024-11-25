@@ -20,7 +20,14 @@ const Banner = () => {
             <div className="flex flex-col">
               <div className="Gilroy-Light text-xl tracking-widest text-gray-50">
                 While we are good at sign language, there are various other
-                simpler ways to connect with us. Talk to us in person.
+                simpler ways to connect with us.{" "}
+                <Link
+                  href="/contact"
+                  className="text-[#2186ff]"
+                >
+                  Talk to us
+                </Link>{" "}
+                in person.
               </div>
             </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -187,8 +188,22 @@ function Travel(props) {
     },
   ];
 
-  const keyDesc =
-    "Navigating the complex world of transportation and logistics can seem overwhelming, but with Brain Inventory's innovative softwares, it doesn't have to be. As a leading logistic software development company, we provide advanced software for logistics. Tailored to your needs, our transport management software simplifies the process, effectively revolutionizing your operational strategy.";
+  const keyDesc = (
+    <>
+      Navigating the complex world of transportation and logistics can seem
+      overwhelming, but with Brain Inventory's innovative softwares, it doesn't
+      have to be. As a leading logistic{" "}
+      <Link
+        href="/"
+        className="text-[#2186ff]"
+      >
+        software development company
+      </Link>
+      , we provide advanced software for logistics. Tailored to your needs, our
+      transport management software simplifies the process, effectively
+      revolutionizing your operational strategy.
+    </>
+  );
   const keyFeatures = [
     {
       head: "Property Listings and Search",

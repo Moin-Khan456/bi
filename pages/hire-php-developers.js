@@ -20,6 +20,7 @@ const Experienced = dynamic(() =>
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -54,20 +55,61 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "PHP CMS Development",
-      content:
-        "Want to build a CMS development and not sure where to start? If yes, our expert developers can help you. Our team has years of experience in building robust custom web applications using the most reliable and scalable frameworks. Hire us for your next project and enhance your website revenue with a performant full-stack solution.",
+      content: (
+        <>
+          Want to build a CMS development and not sure where to start? If yes,
+          our expert developers can help you. Our team has years of experience
+          in building robust custom web applications using the most reliable and
+          scalable frameworks.{" "}
+          <Link
+            href="/hire-dedicated-remote-developers"
+            className="text-[#2186ff]"
+          >
+            Hire us
+          </Link>{" "}
+          for your next project and enhance your website revenue with a
+          performant full-stack solution.
+        </>
+      ),
     },
     {
       head: "Custom Web Apps",
-      content:
-        "Do you require aCustom Web Development Services from the ground up? Our squad of skilled PHP programmers is well-equipped to deliver top-notch solutions. We've constructed several websites and created countless programs in the past, and as a result, we possess the expertise necessary to bring your project to life.",
+      content: (
+        <>
+          Do you require a{" "}
+          <Link
+            href="/web-development/custom-web-development"
+            className="text-[#2186ff]"
+          >
+            Custom Web Development Services
+          </Link>{" "}
+          from the ground up? Our squad of skilled PHP programmers is
+          well-equipped to deliver top-notch solutions. We've constructed
+          several websites and created countless programs in the past, and as a
+          result, we possess the expertise necessary to bring your project to
+          life
+        </>
+      ),
     },
   ];
 
   const hireCards = [
     {
       head: "Experienced PHP Developers",
-      content: `As a premier Web Design Agency headquartered in USA, we provide high-caliber yet cost-effective web and mobile application development solutions for customers globally. Our group of committed PHP programmers can be retained on a full-time basis to join your team remotely. On average, our remote developers possess 5 years of experience catering to the needs of diverse clients across industries.`,
+      content: (
+        <>
+          As a premier{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            Web Design Agency
+          </Link>{" "}
+          headquartered in USA, we provide high-caliber yet cost-effective web
+          and mobile application development solutions for customers globally.
+          Our group of committed PHP programmers can be retained on a full-time
+          basis to join your team remotely. On average, our remote developers
+          possess 5 years of experience catering to the needs of diverse clients
+          across industries.
+        </>
+      ),
     },
     {
       head: "Quick & Agile Process",
@@ -119,8 +161,28 @@ function HireAangularJsDeveloper(props) {
     "Professionals proficient in PHP are adept at swiftly developing web applications. The availability of multiple PHP frameworks such as Laravel, Symfony, and CodeIgniter expedites the development process through the provision of ready-made elements and industry standards.",
     "PHP developers are skilled at creating scalable solutions that can handle increased traffic and evolving user needs. ",
   ];
-  const keySkillsBreif =
-    "Brain Inventory is an acclaimed supplier of Custom Mobile App Development solutions and Custom Software Development Services. As an offshore PHP web and mobile development firm, we cater to companies in over 20 nations worldwide. Our team comprises only the most seasoned and credentialed developers with proficiency in custom Web Application Development, Mobile App Development, E-commerce Development, and CMS development. Regardless of whether you need to launch a mobile platform or completely overhaul your current website, we will support you at every step of the process.";
+  const keySkillsBreif = (
+    <>
+      Brain Inventory is an acclaimed supplier of{" "}
+      <Link
+        href="/mobile-development/custom-mobile-app-development-company"
+        className="text-[#2186ff]"
+      >
+        Custom Mobile App Development solutions
+      </Link>{" "}
+      and{" "}
+      <Link href="/javascript:void(0)" className="text-[#2186ff]">
+        Custom Mobile App Development Services
+      </Link>{" "}
+      . As an offshore PHP web and mobile development firm, we cater to
+      companies in over 20 nations worldwide. Our team comprises only the most
+      seasoned and credentialed developers with proficiency in custom Web
+      Application Development, Mobile App Development, E-commerce Development,
+      and CMS development. Regardless of whether you need to launch a mobile
+      platform or completely overhaul your current website, we will support you
+      at every step of the process.
+    </>
+  );
   const keySkillsPoints = [
     "Quick post-sales service",
     "24*7 support",
@@ -133,8 +195,31 @@ function HireAangularJsDeveloper(props) {
   const chooseBiSubhead =
     "Hiring dedicated Python developers from Brain Inventory is a great way to unlock the benefits of hiring dedicated Python developers. Let’s look at some reasons to hire our developers:";
   const chooseBI = [
-    "Brain Inventory, one of the most prominent PHP development companies is proud to introduce its team of experts. These PHP developers work with highly customized features and follow SCRUM methodology for every project. They are highly trained in different flexible PHP frameworks—CodeIgniter, Zend, Symfony, Laravel, and CakePHP—explaining the reason behind their constant success.",
-    "With smartphones growing in popularity, the craze for apps, and the plethora of choices among customers, mobile application development has become a challenging yet lucrative business venture. DesignerInteractions is a Mobile App Development Company, offering the best PHP development services at the most affordable rates. Our right-priced PHP developers make you win every time, and that's exactly why we're India's Most Preferred PHP Development Company. ",
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>, one of the most prominent PHP development companies is proud to
+      introduce its team of experts. These PHP developers work with highly
+      customized features and follow SCRUM methodology for every project. They
+      are highly trained in different flexible PHP frameworks—CodeIgniter, Zend,
+      Symfony, Laravel, and CakePHP—explaining the reason behind their constant
+      success.
+    </>,
+    <>
+      With smartphones growing in popularity, the craze for apps, and the
+      plethora of choices among customers, mobile application development has
+      become a challenging yet lucrative business venture. DesignerInteractions
+      is a Mobile App Development Company, offering the best{" "}
+      <Link
+        href="/web-development/php-development-company"
+        className="text-[#2186ff]"
+      >
+        PHP development services
+      </Link>{" "}
+      at the most affordable rates. Our right-priced PHP developers make you win
+      every time, and that's exactly why we're India's Most Preferred PHP
+      Development Company.
+    </>,
     "Brain Inventory is an independent IT company that offers the services of PHP developers. We were founded in 2019 and have been offering our services to different businesses ever since. We assist clients in building their products and websites with a well-organized approach that can help them reduce development costs and increase the returns on investment.",
   ];
 
@@ -208,7 +293,21 @@ function HireAangularJsDeveloper(props) {
           <KeySkill breif={keySkillsBreif} points={keySkillsPoints} />
           <Hire
             title="Why Hire PHP Developers from %Brain Inventory"
-            subhead="As one of the most renowned Hybrid App Development Company, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you’re in search of a mobile app developer, here’s why we should be your first pick:"
+            subhead={
+              <>
+                As one of the most renowned{" "}
+                <Link
+                  href="/mobile-development/hybrid-app-development"
+                  className="text-[#2186ff]"
+                >
+                  Hybrid App Development Company
+                </Link>
+                , Brain Inventory is celebrated for meeting modern business
+                demands and providing top-notch solutions at an affordable price
+                worldwide. If you’re in search of a mobile app developer, here’s
+                why we should be your first pick:
+              </>
+            }
             card={hireCards}
           />
 

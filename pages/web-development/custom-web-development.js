@@ -11,6 +11,7 @@ const KeepInTouch = dynamic(() =>
 );
 const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
 import SectionOne from "../../components/common/HireBanner";
+import Link from "next/link.js";
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
@@ -119,7 +120,18 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "At Brain Inventory, we strive for total transparency in everything we do with our clients. We are careful to explain exactly what we can and can't deliver, so there are no unexpected disappointments. We also make it a top priority to keep customers updated if we implement any modifications or enhancements throughout a job. We aim to be completely upfront about our capabilities and processes so there is never any confusion. Our goal is to foster relationships built on trust by being forthcoming at every stage. We aim to be completely forthright at all times with those who work with us. Our goal is to foster trust and understanding through constant transparency.",
+    <>
+      At <Link href="/" className="text-[#2186ff]">Brain Inventory</Link>, we strive for total
+      transparency in everything we do with our clients. We are careful to
+      explain exactly what we can and can't deliver, so there are no unexpected
+      disappointments. We also make it a top priority to keep customers updated
+      if we implement any modifications or enhancements throughout a job. We aim
+      to be completely upfront about our capabilities and processes so there is
+      never any confusion. Our goal is to foster relationships built on trust by
+      being forthcoming at every stage. We aim to be completely forthright at
+      all times with those who work with us. Our goal is to foster trust and
+      understanding through constant transparency.
+    </>,
     "Our delivery processes are transparent, our communication is excellent, and we offer a flexible approach; this allows us to deliver custom software projects to all types of businesses, ranging from startups to large enterprises.",
     "Let us help you bring your vision into reality with an advanced and reliable website designed to perform and personalized just for you!",
   ];

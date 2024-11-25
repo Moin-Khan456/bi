@@ -19,6 +19,7 @@ const CustomAppBenefits = dynamic(() =>
 const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import HireBanner from "../../components/Mobile-Development/SectionOne.jsx";
+import Link from "next/link.js";
 const ChooseBraininventoryApp = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
@@ -33,8 +34,18 @@ function HireAangularJsDeveloper() {
   const hireCards = [
     {
       head: "Customer Satisfaction",
-      content:
-        "We work on the latest frameworks and technologies to deliver you user-friendly, scalable, secure, and new business solutions as per your need. From complex custom software solutions to simple web applications, we help you achieve the power and the magic of software without compromising on the elegance.",
+      content: (
+        <>
+          We work on the latest frameworks and technologies to deliver you
+          user-friendly, scalable, secure, and new business solutions as per
+          your need. From complex{" "}
+          <Link href="/" className="text-[#2186ff]">
+            custom software solutions
+          </Link>{" "}
+          to simple web applications, we help you achieve the power and the
+          magic of software without compromising on the elegance.
+        </>
+      ),
     },
     {
       head: "Agile Procedure",
@@ -100,18 +111,49 @@ function HireAangularJsDeveloper() {
     "Nowadays, it's virtually impossible to find an organization that doesn't have an app or a web application. As businesses strive to find quick and easy solutions, they tend to use ready-made platforms. But often these ready-made solutions are not completely suitable for their specific needs, leaving them disappointed. A great solution to this issue is Custom Mobile App Development Company";
   const para2 =
     "The process of developing a custom mobile application is a more intelligent approach to creating specialized software tailored to your needs. We have supported organizations across a variety of scales and sectors in achieving their optimal outcomes at each stage, from conceptualization through to deployment.";
-  const para3 =
-    "Our mobile app development team is experienced in creating applications for multiple platforms such as iOS, Android, and Flutter, React Native, and Ionic cross-platform solutions. As one of the top-rated Custom Mobile App Development companies in the US and India, we have the knowledge to create Custom Mobile App Development Services that meet your business needs.";
+  const para3 = (
+    <>
+      Our{" "}
+      <Link href="/hire-android-app-developers" className="text-[#2186ff]">
+        mobile app development team
+      </Link>{" "}
+      is experienced in creating applications for multiple platforms such as
+      iOS, Android, and Flutter, React Native, and Ionic cross-platform
+      solutions. As one of the top-rated Custom Mobile App Development companies
+      in the US and India, we have the knowledge to create Custom{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        Mobile App Development Services
+      </Link>{" "}
+      that meet your business needs
+    </>
+  );
 
-  const benefitSubHead =
-    "Boost your business growth with us. Our superior mobile app development services can help you do just that. Mobile apps have become extremely popular with businesses and service providers, and for good reason. They are highly effective for engaging with your target customers. Here are a few advantages of having a mobile app for your business:";
+  const benefitSubHead = (
+    <>
+      Boost your business growth with us. Our superior mobile app development
+      services can help you do just that. Mobile apps have become extremely
+      popular with businesses and service providers, and for good reason. They
+      are highly effective for engaging with your target customers. Here are a
+      few advantages of having a mobile app for your business
+    </>
+  );
   const hireSub =
     "As one of the most renowned mobile app development firms, Brain Inventory is celebrated for meeting modern business demands and providing top-notch solutions at an affordable price worldwide. If you're in search of a mobile app developer, here's why we should be your first pick:";
 
   const reasonsForChoosing = [
     "We offer a premier mobile app development service, enabling customers to transform and expand their enterprise through cutting-edge mobile solutions. The custom mobile apps we help conceive and construct are robust, visually stunning, and provide an exceptional user experience.",
     "Plus, they allow you to extend your reach, raise your brand’s visibility, and generate customer interactions and loyalty. If you seek to create an app from the ground up or add new features to an existing one, we’re here to meet your needs and enable you to outpace your competition. ",
-    "Furthermore, our knowledgeable team has expertise in multiple platforms on a range of operating systems and mobile devices - from Android and iOS app development to hybrid apps and cross-platform.",
+    <>
+      Furthermore, our knowledgeable team has expertise in multiple platforms on
+      a range of operating systems and mobile devices - from Android and{" "}
+      <Link
+        href="/mobile-development/ios-app-development-company"
+        className="text-[#2186ff]"
+      >
+        iOS app development
+      </Link>{" "}
+      to hybrid apps and cross-platform.
+    </>,
     "At Brain Inventory, we use tried-and-tested approaches and dependable processes for software creation - We know that successful custom mobile app development is evolutionary. In view of this fact, we’re ready to offer our support now as well as in the future should your specifications change or you intend on bringing other devices or operating systems into the mix for your products.",
   ];
   return (

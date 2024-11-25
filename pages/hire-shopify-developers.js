@@ -19,6 +19,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -119,8 +120,26 @@ function HireAangularJsDeveloper(props) {
     },
   ];
 
-  const keySkillsBreif =
-    "Brain Inventory is an expert team of enthusiastic, talented, and proficient Shopify developers available for hire. Our extensive experience in creating Shopify apps, themes, and custom solutions can assist you in increasing your business income. We collaborate as part of your squad to deliver comprehensive end-to-end assistance in building native or custom Shopify apps and integrating them flawlessly with your site. With our reasonably priced and cost-effective Shopify App development services, we can construct an innovative online store for you that satisfies all your needs and surpasses your business goals.";
+  const keySkillsBreif = (
+    <>
+      Brain Inventory is an expert team of enthusiastic, talented, and
+      proficient Shopify developers available for hire. Our extensive experience
+      in creating Shopify apps, themes, and custom solutions can assist you in
+      increasing your business income. We collaborate as part of your squad to
+      deliver comprehensive end-to-end assistance in building native or custom
+      Shopify apps and integrating them flawlessly with your site. With our
+      reasonably priced and cost-effective{" "}
+      <Link
+        href="/web-development/shopify-ecommerce-software-development-services"
+        className="text-[#2186ff]"
+      >
+        {" "}
+        Shopify App development services
+      </Link>
+      , we can construct an innovative online store for you that satisfies all
+      your needs and surpasses your business goals.
+    </>
+  );
   const keySkillsPoints = [
     "Speed of Development",
     "Flexibility",
@@ -132,7 +151,21 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "We at Brain Inventory are a digital agency headquartered in India offering end-to-end services. Our experts assist eCommerce businesses in designing, building, and launching their Shopify stores. We provide specialized support right from conceptualization to custom development and store setup along with infrastructure and app integration. If you need assistance with custom theme creation, store launch, or migration from another platform, our skilled team has the right experience and capabilities to deliver your Shopify project on schedule with the utmost quality.",
+    <>
+      We at Brain Inventory are a digital agency headquartered in India offering
+      end-to-end services. Our experts assist eCommerce businesses in designing,
+      building, and launching their Shopify stores. We provide specialized
+      support right from conceptualization to{" "}
+      <Link href="/" className="text-[#2186ff]">
+        {" "}
+        custom development
+      </Link> {" "}
+      and store setup along with infrastructure and app integration. If you need
+      assistance with custom theme creation, store launch, or migration from
+      another platform, our skilled team has the right experience and
+      capabilities to deliver your Shopify project on schedule with the utmost
+      quality.
+    </>,
     "We have an amazing team of Shopify developers, who are highly skilled and experienced in developing eCommerce websites with intuitive UI and user-friendly UX. If you want to open a multi-vendor store or just want your existing store to be updated with new features, then we'll help you to achieve this in no time. Unlike other companies, our expertise is not limited to the development of customized themes. We can provide online marketing support too as we have also been into web marketing & designing for many years.",
   ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -230,8 +231,15 @@ function CrmDevelopment(props) {
     },
     {
       head: "The Impact of CRM on Business Success",
-      content:
-        "CRM software development services are vital for businesses seeking a competitive edge and efficient customer management. Below are some hard-hitting stats to convey the significant impact of CRM on Business Success:",
+      content: (
+        <>
+          CRM <Link href="/" className="text-[#2186ff]">software development services</Link> {" "}     
+           are vital for businesses seeking a
+          competitive edge and efficient customer management. Below are some
+          hard-hitting stats to convey the significant impact of CRM on Business
+          Success:
+        </>
+      ),
       tableHead: ["Statistic"],
       tableContent: [
         [

@@ -21,6 +21,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/Mobile-Development/SectionOne.jsx";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
@@ -79,8 +80,19 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Flexible Engagement Models",
-      content:
-        "We do not confine ourselves to one engagement model. Our company has a flexible engagement model where you are free to select the engagement mode, which is most suitable for your requirements. We make sure that our operations are guided by the standards set by the industry and encompass creative processes in compliance with the client's needs.",
+      content: (
+        <>
+          We do not confine ourselves to one engagement model.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our company
+          </Link>{" "}
+          has a flexible engagement model where you are free to select the
+          engagement mode, which is most suitable for your requirements. We make
+          sure that our operations are guided by the standards set by the
+          industry and encompass creative processes in compliance with the
+          client's needs.
+        </>
+      ),
     },
     {
       head: "Competitive Pricing",
@@ -125,7 +137,15 @@ function HireAangularJsDeveloper(props) {
   const chooseBI = [
     "Brain Inventory is a professional Cross Platform App Development Company in USA that focuses on developing quality mobile applications and providing cutting-edge services to numerous clients all over the globe. The company is privately held and has a solid financial standing. We are well known for developing interactive and incredible hybrid apps with premium UI and offer a complete suite of services ranging from software development, consultancy, and prototyping to agile products in all leading technologies including .NET, Node.js, iOS, Android, Hyperloop, Angular, React native iOS app development at affordable rates for startups and established businesses.",
     "We provides innovative mobile app creation solutions for companies and new ventures. Their tools and services help organizations construct and improve their mobile apps. These offerings facilitate the design, deployment, and administration of business mobile applications.",
-    "BrainInventory’s Ionic framework functions in a cloud setting, empowering users to build native cross-platform apps that work with both iOS and Android operating systems. Through the Ionic platform, companies gain the flexibility to develop mobile apps that can be used on multiple devices.",
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        BrainInventory’s
+      </Link>{" "}
+      Ionic framework functions in a cloud setting, empowering users to build
+      native cross-platform apps that work with both iOS and Android operating
+      systems. Through the Ionic platform, companies gain the flexibility to
+      develop mobile apps that can be used on multiple devices.
+    </>,
   ];
 
   const benefitsList = [
@@ -135,7 +155,14 @@ function HireAangularJsDeveloper(props) {
     "The framework has a thriving community and frequent updates, ensuring it remains up-to-date with the latest trends and technologies.",
     "With its cross-platform capabilities and reuse of web-based skills, Ionic development can be a cost-effective solution for businesses.",
     "Developers can build apps quickly, making it suitable for rapid development and prototyping.",
-    "Ionic is continually evolving, making it a versatile and future-proof choice for mobile app development.",
+    <>
+      Ionic is continually evolving, making it a versatile and future-proof
+      choice for{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        {" "}
+        mobile app development.
+      </Link>
+    </>,
   ];
   return (
     <>

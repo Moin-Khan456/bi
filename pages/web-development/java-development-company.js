@@ -21,6 +21,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import HireBanner from "../../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -29,12 +30,37 @@ const BlogArticle = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Brain Inventory offers comprehensive Java Software Development Services for the development and enhancement of robust business applications, software solutions, and cloud-based products using reliable and flexible Java technologies. Our company assists customers with efficiently and securely designing, constructing, maintaining, upgrading, and scaling Java applications.";
+  const content = (
+    <>
+      Brain Inventory offers comprehensive Java Software Development Services
+      for the development and enhancement of robust business applications,
+      software solutions, and cloud-based products using reliable and flexible
+      Java technologies.{" "}
+      <Link href="/company" className="text-[#2186ff]">
+        Our company
+      </Link>{" "}
+      assists customers with efficiently and securely designing, constructing,
+      maintaining, upgrading, and scaling Java applications.
+    </>
+  );
 
   const subhead1 =
     "You may need a Java development solution for various reasons, primarily because Java is a versatile and powerful programming language widely used for developing robust, scalable, and secure applications across diverse domains. Whether you're building enterprise-grade software, web applications, mobile apps, or embedded systems, Java offers a rich ecosystem of libraries, frameworks, and tools that streamline development processes and accelerate time-to-market. ";
-  const subhead2 = `Java's platform independence, thanks to its "write once, run anywhere" philosophy, allows developers to create applications that can run on any device or operating system with a Java Virtual Machine (JVM). This portability makes Java an ideal choice for building cross-platform applications that cater to a broad audience. `;
+  const subhead2 = (
+    <>
+      Java's platform independence, thanks to its "write once, run anywhere"
+      philosophy, allows developers to create applications that can run on any
+      device or operating system with a Java Virtual Machine (JVM). This
+      portability makes Java an ideal choice for building{" "}
+      <Link
+        href="/mobile-development/cross-platform-mobile-app-development"
+        className="text-[#2186ff]"
+      >
+        cross-platform applications
+      </Link>{" "}
+      that cater to a broad audience.{" "}
+    </>
+  );
   const subhead3 =
     "Java's strong type system, extensive standard libraries, and mature ecosystem empower developers to create complex and feature-rich applications efficiently. With its focus on performance, reliability, and security, Java is well-suited for developing mission-critical applications, including enterprise systems, financial applications, e-commerce platforms, and more.";
 
@@ -46,8 +72,18 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Agile Approach",
-      content:
-        "Our agile software development methodology follows the leading standards to ensure maximum efficiency and openness in all aspects of the project. By leveraging agile best practices, we bring unrivaled productivity and visibility to software creation and all associated processes.",
+      content: (
+        <>
+          Our agile{" "}
+          <Link href="/" className="text-[#2186ff]">
+            software development methodology
+          </Link>{" "}
+          follows the leading standards to ensure maximum efficiency and
+          openness in all aspects of the project. By leveraging agile best
+          practices, we bring unrivaled productivity and visibility to software
+          creation and all associated processes.
+        </>
+      ),
     },
     {
       head: "Hyper Growth Approach",

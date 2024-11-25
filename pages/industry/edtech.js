@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -82,7 +83,17 @@ function EdTech() {
     {
       id: "1",
       text: "Learning Management Systems (LMS)",
-      desc: "In the digital age, Brain Inventory helps create robust Learning Management Systems for enhanced edtech industry services. As a leading web and mobile app development company, we understand the distinct needs of the education industry.",
+      desc: (
+        <>
+          In the digital age, Brain Inventory helps create robust Learning
+          Management Systems for enhanced edtech industry services. As a leading
+          web and{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            mobile app development company
+          </Link>
+          , we understand the distinct needs of the education industry.
+        </>
+      ),
     },
     {
       id: "2",
@@ -102,12 +113,35 @@ function EdTech() {
     {
       id: "5",
       text: "Teacher and Student Portals",
-      desc: "We specialize in crafting effective, user-friendly Teacher and Student Portals. Our expert team is proficient at developing portals that boost educational interactivity and accountability.",
+      desc: (
+        <>
+          We specialize in crafting effective, user-friendly Teacher and Student
+          Portals.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our expert team
+          </Link>{" "}
+          is proficient at developing portals that boost educational
+          interactivity and accountability.
+        </>
+      ),
     },
     {
       id: "6",
       text: "AI-Powered Personalized Learning",
-      desc: "At Brain Inventory, we redefine education, by crafting smart, intuitive and interactive learning environments, fuelled by state-of-the-art Artificial Intelligence algorithms. With an experienced education software development company, you benefit from engaging and personalized learning experiences, custom-built to meet diverse educational needs, while promoting effortless understanding and retention.",
+      desc: (
+        <>
+          At Brain Inventory, we redefine education, by crafting smart,
+          intuitive and interactive learning environments, fuelled by
+          state-of-the-art Artificial Intelligence algorithms. With an
+          experienced education{" "}
+          <Link href="/" className="text-[#2186ff]">
+            software development company
+          </Link>
+          , you benefit from engaging and personalized learning experiences,
+          custom-built to meet diverse educational needs, while promoting
+          effortless understanding and retention.
+        </>
+      ),
     },
     {
       id: "7",

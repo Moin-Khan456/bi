@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HireSteps({ type }) {
@@ -38,9 +39,13 @@ export default function HireSteps({ type }) {
             <div className="bg-technology p-10 lg:ml-8 mb-4">
               <h3 className="Gilroy-Bold text-2xl">Share Your Requirements</h3>
               <p className="Gilroy-Light text-lg opacity-60 pt-2">
-                We’ll schedule a quick call and understand your project
-                requirements thoroughly. Don’t worry! It’s secure and
-                confidential.
+                We’ll schedule a{" "}
+                <Link href="tel:+918109561401" className="text-[#2186ff]">
+                  quick call
+                </Link>
+                {" "}
+                and understand your project requirements thoroughly. Don’t
+                worry! It’s secure and confidential.
               </p>
             </div>
             <div className="bg-technology p-10 lg:ml-8 mb-4">

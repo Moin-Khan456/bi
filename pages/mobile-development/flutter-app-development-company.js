@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -36,8 +37,22 @@ function Flutter() {
   const hireCards = [
     {
       head: "Agile Procedure",
-      content:
-        "Brain Inventory is a specialized software development company making Agile Software Engineering processes and practices possible. We help our clients understand Agile technology and apply it to their projects. This way, we are able to deliver high-quality software products that are more tested and therefore more reliable for our clients.",
+      content: (
+        <>
+          Brain Inventory is a specialized{" "}
+          <Link href="/" className="text-[#2186ff]">
+            software development company
+          </Link>{" "}
+          making Agile Software Engineering processes and practices possible. We
+          help{" "}
+          <Link href="/portfolio" className="text-[#2186ff]">
+            our clients
+          </Link>{" "}
+          understand Agile technology and apply it to their projects. This way,
+          we are able to deliver high-quality software products that are more
+          tested and therefore more reliable for our clients.
+        </>
+      ),
     },
     {
       head: "Customer Satisfaction",
@@ -46,8 +61,18 @@ function Flutter() {
     },
     {
       head: "Dedicated Teams",
-      content:
-        "Our dedicated team is responsible for building, testing, and deploying software applications. The team is usually made up of software engineers, quality assurance specialists and project managers. The main benefit of this model is that it allows us to provide you with the best experience possible.",
+      content: (
+        <>
+          <Link href="/company" className="text-[#2186ff]">
+            Our dedicated team
+          </Link>{" "}
+          is responsible for building, testing, and deploying software
+          applications. The team is usually made up of software engineers,
+          quality assurance specialists and project managers. The main benefit
+          of this model is that it allows us to provide you with the best
+          experience possible.
+        </>
+      ),
     },
     {
       head: "Competitive Pricing",
@@ -96,14 +121,34 @@ function Flutter() {
     "We are a Flutter App Development Company devoted to crafting aesthetically pleasing and feature-rich mobile apps for Android, iOS, and Windows.",
     " Regardless if you're building brand new apps or incrementally improving existing ones, we guarantee your application stays current with the most recent capabilities, functionalities, and design trends.",
     "With access to the most sophisticated tools and technologies available, every Flutter app we create will not just appear fantastic, but also operate seamlessly across all platforms.",
-    "We assist clients in crafting visually appealing cross-platform apps tailored for various sectors such as mobile commerce, healthcare, and travel. Our team of app developers and designers boasts extensive experience in creating mobile applications using Flutter & Native platforms.",
+    <>
+      We assist clients in crafting visually appealing cross-platform apps
+      tailored for various sectors such as mobile commerce, healthcare, and
+      travel.{" "}
+      <Link href="/hire-dedicated-remote-developers" className="text-[#2186ff]">
+        Our team of app developers
+      </Link>{" "}
+      and designers boasts extensive experience in creating mobile applications
+      using Flutter & Native platforms.
+    </>,
     "They recognize the importance of teamwork in app development and are committed to enhancing your business with their skills and innovative ideas.",
   ];
 
   const benefitsList = [
     "Widgets are a huge part of using your app. Not only do they look pretty, but they allow you to change the UI without altering the application logic. Flutter has an entire library of beautiful widgets that you can use in your app if you want or even build custom widgets on the fly.",
-    "Flutter provides a high level of performance, compared to other cross-platform UI Frameworks.",
-    "Flutter is a super-fast mobile UI framework for building high-quality, beautiful apps on iOS and Android. Flutter makes it simple to build modern native apps that rival the performance of JavaScript.",
+    <>
+      Flutter provides a high level of performance, compared to other
+      cross-platform{" "}
+      <Link href="/hire-ui-ux-designers" className="text-[#2186ff]">
+        UI Frameworks.
+      </Link>{" "}
+      UI Frameworks.
+    </>,
+    <>
+      Flutter is a super-fast mobile UI framework for building high-quality,
+      beautiful apps on iOS and Android. Flutter makes it simple to build modern
+      native apps that rival the performance of JavaScript.
+    </>,
     "Hot reloading is an important feature that helps you improve your development process and allows you to save a lot of time when you are working on an app.",
   ];
   const meanReasons = [
@@ -171,12 +216,33 @@ function Flutter() {
             <WhyMean type="Flutter App" meanReasons={meanReasons} />
             <Benefits
               type="Flutter App"
-              subhead="Flutter is a new mobile and web-development framework for creating apps that run on iOS, Android, and the Web. There are several benefits of Flutter App Development:"
+              subhead={
+                <>
+                  Flutter is a new mobile and{" "}
+                  <Link
+                    href="/web-development/custom-web-development"
+                    className="text-[#2186ff]"
+                  >
+                    web-development framework
+                  </Link>{" "}
+                  for creating apps that run on iOS, Android, and the Web. There
+                  are several benefits of Flutter App Development:
+                </>
+              }
               benefitsList={benefitsList}
             />
             <Hire
               title="Why Flutter App Development from %Brain Inventory"
-              subhead="We are not only a mobile app development company but, more importantly, a Flutter app development company to build apps that users love to explore."
+              subhead={
+                <>
+                  We are not only a{" "}
+                  <Link href="javascript:void(0)" className="text-[#2186ff]">
+                    mobile app development company
+                  </Link>{" "}
+                  but, more importantly, a Flutter app development company to
+                  build apps that users love to explore.
+                </>
+              }
               card={hireCards}
             />{" "}
             <ChooseBraininventory

@@ -7,6 +7,7 @@ const ContactForm = dynamic(() =>
 import FaqHire from "../components/common/Faqhire.jsx";
 import LetsKick from "../components/common/LetsKick.js";
 import BlogArticle from "../components/common/BlogArticle.jsx";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../components/header/Header.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const SectionOne = dynamic(() => import("../components/faqs/sectionOne.jsx"));
@@ -157,8 +158,11 @@ export default function Faqs() {
         "What are the most popular types of software development services I can expect from Brain Inventory?",
       description: (
         <div>
-          Brain Inventory offers a comprehensive range of software development
-          services to meet any need.
+          Brain Inventory offers a comprehensive range of{" "}
+          <Link href="/" className="text-[#2186ff]">
+            software development services
+          </Link>{" "}
+          to meet any need.
           <p className="py-2">
             Brain Inventory has the expertise to build custom software and
             applications for all platforms. We offer:{" "}
@@ -215,8 +219,26 @@ export default function Faqs() {
       id: 4,
       title:
         "What distinguishes Cross-platform development from Native App development?",
-      description:
-        "When building apps for mobile devices, native development involves utilizing the platform-specific languages and tools. Objective-C and Swift code is written in Xcode for Apple platforms to produce iOS apps. For Android, developers write Java or Kotlin code in Android Studio to produce apps. With cross-platform approaches, a single codebase can generate apps across multiple operating systems like iOS, Android, and Windows Phone. The cross-platform framework enables writing code once that can then be deployed to the different platforms. This prevents needing to rewrite the application for each operating system natively.",
+      description: (
+        <>
+          When building apps for mobile devices, native development involves
+          utilizing the platform-specific languages and tools. Objective-C and
+          Swift code is written in Xcode for Apple platforms to produce iOS
+          apps. For Android, developers write Java or Kotlin code in Android
+          Studio to produce apps. With{" "}
+          <Link
+            href="/mobile-development/cross-platform-mobile-app-development"
+            className="text-[#2186ff]"
+          >
+            cross-platform approaches
+          </Link>
+          , a single codebase can generate apps across multiple operating
+          systems like iOS, Android, and Windows Phone. The cross-platform
+          framework enables writing code once that can then be deployed to the
+          different platforms. This prevents needing to rewrite the application
+          for each operating system natively.
+        </>
+      ),
     },
     {
       id: 5,
@@ -253,8 +275,18 @@ Our approach is tailored and flexible. At every stage, from conceptualization to
     {
       id: 10,
       title: `How can I get started with Brain Inventory for my software development project?`,
-      description: `Embarking on a project with Brain Inventory is effortless! You can get in touch with us via our website or contact us directly to set up a meeting. Our specialists will talk through your project needs, offer tailored suggestions, and walk you through the subsequent actions to commence your project experience with us.
-`,
+      description: (
+        <>
+          Embarking on a project with Brain Inventory is effortless! You can get
+          in touch with us via our website or{" "}
+          <Link href="/contact" className="text-[#2186ff]">
+            contact us
+          </Link>{" "}
+          directly to set up a meeting. Our specialists will talk through your
+          project needs, offer tailored suggestions, and walk you through the
+          subsequent actions to commence your project experience with us.
+        </>
+      ),
     },
   ];
 

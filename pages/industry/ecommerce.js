@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -282,8 +283,13 @@ function Ecommerce(props) {
     },
   ];
 
-  const approachDesc =
-    "At Brain Inventory, our approach to building eCommerce software is unique and effective. We aim to create s that fit our clients' needs and the aspirations of travelers who will use them. Here's how we do it:";
+  const approachDesc = (
+    <>
+      At <Link href="/" className="text-[#2186ff]">Brain Inventory</Link>, our approach to building eCommerce software is unique
+      and effective. We aim to create s that fit our clients' needs and the
+      aspirations of travelers who will use them. Here's how we do it:
+    </>
+  );
   const approachPoints = [
     {
       head: "Comprehensive Needs Assessment",

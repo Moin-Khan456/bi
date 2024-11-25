@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -34,8 +35,18 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Transparency",
-      content:
-        "Brain Inventory is an emerging Node JS Web Development Company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of responsive web design to help you expand, grow and flourish.",
+      content: (
+        <>
+          <Link href="/" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>{" "}
+          is an emerging Node JS Web Development Company with an experienced and
+          flexible team of web application developers, sysops, project managers,
+          and full-stack engineers. We are committed to making your business
+          thrive and leveraging the advantages of responsive web design to help
+          you expand, grow and flourish.
+        </>
+      ),
     },
     {
       head: "Uplifted User Experience",
@@ -102,7 +113,13 @@ function HireAangularJsDeveloper(props) {
     "BrainInventory is a highly regarded Node.js development company.",
     "BrainInventory is a highly regarded Node.js development company.",
     "Node.js enables the creation of server-side applications using JavaScript-based technologies like V8.",
-    "BrainInventory has a vibrant team of web development professionals.",
+    <>
+      BrainInventory has a vibrant team of{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        web development
+      </Link>{" "}
+      professionals.
+    </>,
     "Developers stay updated with the latest trends and technologies in web development.",
     "Preferred choice for startups and emerging businesses due to continuous research and best-in-class services.",
     "Extensive experience in Node development for a wide range of industries.",

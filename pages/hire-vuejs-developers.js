@@ -20,6 +20,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -32,8 +33,19 @@ function HireAangularJsDeveloper(props) {
   const experienceCards = [
     {
       head: "Custom Application Development",
-      content:
-        "Our company has a team of developers proficient in Vue.js who have built many applications for an assortment of clients. These programmers are extremely well-versed in Vue.js and adept at customizing it to specific needs. They harness cutting-edge tools to build robust, extensible web applications using the newest and most advanced frameworks available today.",
+      content: (
+        <>
+          <Link href="/company" className="text-[#2186ff]">
+            Our company
+          </Link>{" "}
+          has a team of developers proficient in Vue.js who have built many
+          applications for an assortment of clients. These programmers are
+          extremely well-versed in Vue.js and adept at customizing it to
+          specific needs. They harness cutting-edge tools to build robust,
+          extensible web applications using the newest and most advanced
+          frameworks available today.
+        </>
+      ),
     },
     {
       head: "Single Page Application Development",
@@ -42,8 +54,21 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Native Mobile Apps Development",
-      content:
-        "We provide the best Vue Native developers, who create cross-platform applications. Our platform is inbuilt with a rich web application development suite and tons of interactive features for your business goals. Our expert developers focus on quality, performance, and timely delivery to ensure the highest level of satisfaction from you as an end-user.",
+      content: (
+        <>
+          We provide the best Vue Native developers, who create{" "}
+          <Link
+            href="/mobile-development/cross-platform-mobile-app-development"
+            className="text-[#2186ff]"
+          >
+            cross-platform applications
+          </Link>
+          . Our platform is inbuilt with a rich web application development
+          suite and tons of interactive features for your business goals. Our
+          expert developers focus on quality, performance, and timely delivery
+          to ensure the highest level of satisfaction from you as an end-user.
+        </>
+      ),
     },
     {
       head: "SSR with Vue and Nuxt.js",
@@ -52,8 +77,22 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Real-time Application Development",
-      content:
-        "As a leading Vue JS development company, we deliver high-performing and interactive web applications that help our clients to deliver new customer experiences. Our expertise in building real-time web applications has enabled us to offer great performance, scalability and automation features required by modern web applications.",
+      content: (
+        <>
+          As a leading{" "}
+          <Link
+            href="/web-development/vue-js-development-company"
+            className="text-[#2186ff]"
+          >
+            Vue JS development company
+          </Link>
+          , we deliver high-performing and interactive web applications that
+          help our clients to deliver new customer experiences. Our expertise in
+          building real-time web applications has enabled us to offer great
+          performance, scalability and automation features required by modern
+          web applications.
+        </>
+      ),
     },
   ];
 
@@ -65,13 +104,36 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Cost Optimization",
-      content:
-        "If you want to hire Vue JS professional developers from us, then we are the best option for you. Our hiring models are designed to reduce 60 to 70% of app development costs and prove time-savvy. We also offer all software developers and designers online training at no additional cost.",
+      content: (
+        <>
+          If you want to hire Vue JS professional developers from us, then we
+          are the best option for you. Our hiring models are designed to reduce
+          60 to 70% of{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            app development
+          </Link>{" "}
+          costs and prove time-savvy. We also offer all software developers and
+          designers online training at no additional cost.
+        </>
+      ),
     },
     {
       head: "100% Client Satisfaction",
-      content:
-        "Whether it's a small business or a large organization, we offer 24/7 post-development Support & Maintenance with online ticket resolving with affordable maintenance packages that make the client 100% satisfied. We have developed special relationships with various business organizations across the world who need help with website maintenance, software development, and other IT services.",
+      content: (
+        <>
+          Whether it's a small business or a large organization, we offer 24/7
+          post-development Support & Maintenance with online ticket resolving
+          with affordable maintenance packages that make the client 100%
+          satisfied. We have developed special relationships with various
+          business organizations across the world who need help with website
+          maintenance,{" "}
+          <Link href="/" className="text-[#2186ff]">
+            {" "}
+            software development
+          </Link>
+          , and other IT services.
+        </>
+      ),
     },
     {
       head: "Latest Technologies",

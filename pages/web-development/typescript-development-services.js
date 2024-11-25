@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
@@ -31,8 +32,18 @@ const ChooseBraininventory = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the software development industry. As a top TypeScript Development Company, we prioritize customer needs.";
+  const content = (
+    <>
+      Efficient development of a high-quality and secure application is what we
+      do best.{" "}
+      <Link href="/company" className="text-[#2186ff]">
+        Our experts
+      </Link>{" "}
+      experts are highly trained and experienced in the software development
+      industry. As a top TypeScript Development Company, we prioritize customer
+      needs.
+    </>
+  );
   const subhead1 =
     "Employing TypeScript during development can be highly advantageous for various motives. For one, TypeScript enhances the reliability and simplicity of maintaining sizable JavaScript programs. Its static type verification allows programmers to spot errors as they code, decreasing the likelihood of issues arising at runtime and making the codebase more robust on the whole.";
   const subhead2 =
@@ -80,8 +91,19 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Quality Assurance",
-      content:
-        "At Brain Inventory, we are committed to creating only the highest-quality websites for our clients. Our specialists test our final products with the utmost care; and only after they pass these tests do we deploy them. This attention to detail sets us apart from other Web Design Agency.",
+      content: (
+        <>
+          At Brain Inventory, we are committed to creating only the
+          highest-quality websites for our clients. Our specialists test our
+          final products with the utmost care; and only after they pass these
+          tests do we deploy them. This attention to detail sets us apart from
+          other{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            {" "}
+            Web Design Agency.
+          </Link>
+        </>
+      ),
     },
     {
       head: "Confidentiality",
@@ -133,8 +155,32 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Developing a top-notch web application with TypeScript is like tapping into the power of combining the best features from multiple programming languages. TypeScript, which is based on JavaScript, incorporates the most beneficial aspects found in languages like Java and C++. This fusion makes the whole development process smoother and more efficient for our team of TypeScript programmers at Brain Inventory.",
-    "Brain Inventory uses modern tools for web and mobile application development, including AngularJS, Node.js, and TypeScript. We believe this approach provides a better user experience than using traditional programming languages like Java or. NET. Also, our choice of an extensive set of progressive enhancement techniques enables us to serve any kind of device — be it a desktop PC or mobile phone — from a single code base. We understand that no one likes getting into an IT rut. Our software solutions are always up-to-date and respond to the latest user needs adequately.",
+    <>
+      Developing a top-notch web application with TypeScript is like tapping
+      into the power of combining the best features from multiple programming
+      languages. TypeScript, which is based on JavaScript, incorporates the most
+      beneficial aspects found in languages like Java and C++. This fusion makes
+      the whole development process smoother and more efficient for our team of
+      TypeScript programmers at{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      .
+    </>,
+    <>
+      Brain Inventory uses modern tools for web and{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        mobile application development
+      </Link>
+      , including AngularJS, Node.js, and TypeScript. We believe this approach
+      provides a better user experience than using traditional programming
+      languages like Java or. NET. Also, our choice of an extensive set of
+      progressive enhancement techniques enables us to serve any kind of device
+      — be it a desktop PC or mobile phone — from a single code base. We
+      understand that no one likes getting into an IT rut. Our software
+      solutions are always up-to-date and respond to the latest user needs
+      adequately.
+    </>,
     "As a team of passionate and professional developers, we understand the business value of your app. Our TypeScript developers specialize in developing and implementing scalable, secure TypeScript apps that allow you to boost productivity and cut costs.",
   ];
 
@@ -142,7 +188,7 @@ function HireAangularJsDeveloper(props) {
     <>
       <Head>
         <title>
-        TypeScript Development Company USA - TypeScript Develop Services
+          TypeScript Development Company USA - TypeScript Develop Services
         </title>
         <meta
           name="description"

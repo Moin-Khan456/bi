@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../components/header/Header"));
 const WorkBanner = dynamic(() => import("../components/work/workBanner.js"));
 const Work = dynamic(() => import("../components/work/work.js"));
@@ -29,8 +30,13 @@ export default function HowWeWork() {
     {
       id: 1,
       title: "What services does your IT company provide?",
-      description:
-        "We offer a wide range of IT services, including software development, web development, mobile app development, cloud computing, cybersecurity, IT consulting, and more.",
+      description: (
+        <>
+          We offer a wide range of IT services, including <Link href="/" className="text-[#2186ff]">software development</Link>,
+          web development, mobile app development, cloud computing,
+          cybersecurity, IT consulting, and more.
+        </>
+      ),
     },
     {
       id: 2,

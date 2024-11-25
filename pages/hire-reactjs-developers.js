@@ -20,12 +20,31 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "At Brain Inventory, we can bring you Dedicated ReactJS Developers to expand your team in just two days! Our developers have a great deal of experience with leading web technologies.";
-  const subhead1 =
-    "At Brain Inventory, our software engineering team consists of experts in creating ReactJS web applications that can effortlessly handle scalability and adaptability. With our extensive knowledge in integrating different front-end and back-end technologies like React + Ruby on Rails, React + NodeJS, React + PHP with AngularJS or VueJS, we can assist you in expanding your product to manage real-time traffic from various platforms such as mobile and desktop.";
+  const content = (
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we can bring you Dedicated ReactJS Developers to expand your team in
+      just two days! Our developers have a great deal of experience with leading
+      web technologies.
+    </>
+  );
+  const subhead1 = (
+    <>
+      At Brain Inventory, our software engineering team consists of experts in
+      creating <Link href="/web-development/react-js-development-company" className="text-[#2186ff]">ReactJS web applications</Link> that can effortlessly handle scalability
+      and adaptability. With our extensive knowledge in integrating different
+      front-end and back-end technologies like React + Ruby on Rails, React +
+      NodeJS, React + PHP with AngularJS or VueJS, we can assist you in
+      expanding your product to manage real-time traffic from various platforms
+      such as mobile and desktop.
+    </>
+  );
   const subhead2 =
     "We offer time-tested and cost-effective Web Development Services to help your business obtain a visually stunning, modern web solution with our ReactJS developers for hire. Whether it is a dynamic content website, eCommerce storefront, streaming application, IoT management application development, etc. - We offer efficient application services that improve business results for all of your requirements. Let's plan a quick conversation to review your project's specifics. You can rest assured that any information shared will remain private and confidential.";
 
@@ -42,8 +61,17 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "UI/UX Development",
-      content:
-        "Choosing the right partner is crucial to the successful outcome of your project. Our company is at the forefront of creating ReactJS apps, with a demonstrated history of developing lively, compelling software solutions.",
+      content: (
+        <>
+          Choosing the right partner is crucial to the successful outcome of
+          your project.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our company
+          </Link>{" "}
+          is at the forefront of creating ReactJS apps, with a demonstrated
+          history of developing lively, compelling software solutions.
+        </>
+      ),
     },
     {
       head: "Plugin Development",
@@ -146,7 +174,7 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBiSubhead =
-    "Our talented team of ReactJS programmers provides a wide range of digital solutions to help you innovate your business and boost enterprise productivity. Our custom Web Development are highly valued by our clients who want to establish themselves as industry frontrunners by building reliable, scalable, and efficient applications. We specialize in building very interactive web applications like user-friendly Salesforce systems, backend portals for smooth data handling, and ecommerce apps. We collaborate closely with clients to provide exactly what they need at an affordable cost. With help from our talented ReactJS programmers, you can be assured your project is managed by experts who keep up with modern frontend tech like AngularJS and ReactJS. If you're an app developer looking for a ReactJS specialist, get in touch with our crew at Brain Inventory.";
+    <>Our talented team of ReactJS programmers provides a wide range of digital solutions to help you innovate your business and boost enterprise productivity. Our <Link href="/web-development/custom-web-development" className="text-[#2186ff]">custom Web Development</Link> are highly valued by our clients who want to establish themselves as industry frontrunners by building reliable, scalable, and efficient applications. We specialize in building very interactive web applications like user-friendly Salesforce systems, backend portals for smooth data handling, and ecommerce apps. We collaborate closely with clients to provide exactly what they need at an affordable cost. With help from our talented ReactJS programmers, you can be assured your project is managed by experts who keep up with modern frontend tech like AngularJS and ReactJS. If you're an app developer looking for a ReactJS specialist, get in touch with our crew at Brain Inventory.</>;
   const chooseBI = [
     "Experienced React developers with a vast knowledge base.",
     "High-quality and precise coding solutions.",

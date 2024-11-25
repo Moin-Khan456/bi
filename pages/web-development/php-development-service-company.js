@@ -12,6 +12,7 @@ const HireMarquee = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch.js")
@@ -51,8 +52,18 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Competitive Rates",
-      content:
-        "We offer the best affordable PHP Development Services to help you bring your business online. Our team of PHP developers has years of experience in developing robust and user-friendly web applications using many in-demand programming languages like WordPress, Magento, Drupal, Joomla, Codeigniter, and Laravel.",
+      content: (
+        <>
+          We offer the best affordable PHP Development Services to help you
+          bring your business online.{" "}
+          <Link href="/hire-php-developers" className="text-[#2186ff]">
+            Our team of PHP developers
+          </Link>{" "}
+          has years of experience in developing robust and user-friendly web
+          applications using many in-demand programming languages like
+          WordPress, Magento, Drupal, Joomla, Codeigniter, and Laravel.
+        </>
+      ),
     },
     {
       head: "Flexible Engagement Models",
@@ -103,8 +114,25 @@ function HireAangularJsDeveloper(props) {
     "PHP provides substantial malleability. Programmers can adapt solutions to satisfy particular commercial requirements, culminating in profoundly individualized internet-based software.",
   ];
   const chooseBI = [
-    "Brain Inventory is a premier overseas IT solutions firm based in USA. We provide end-to-end software engineering solutions ranging from crafting digital roadmaps for clients’ web properties to executing, upgrading and supporting them. Our exceptionally skilled programmers are also able to help clients tailor and amalgamate their current apps or boost their online footprint.",
-    "We build robust and intuitive custom PHP Web Development that cater to the changing business landscape. Our team of PHP developers and designers have the expertise and vision to develop the most innovative, attractive, and robust web solutions. So that, our clients can match their future business objectives without the extra cost of future upgrading or addition of features.",
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is a premier overseas IT solutions firm based in USA. We provide
+      end-to-end software engineering solutions ranging from crafting digital
+      roadmaps for clients’ web properties to executing, upgrading and
+      supporting them. Our exceptionally skilled programmers are also able to
+      help clients tailor and amalgamate their current apps or boost their
+      online footprint.
+    </>,
+    <>
+      We build robust and intuitive custom PHP Web Development that cater to the
+      changing business landscape. <Link href="/company" className="text-[#2186ff]">Our team</Link> of PHP developers and designers have
+      the expertise and vision to develop the most innovative, attractive, and
+      robust web solutions. So that, our clients can match their future business
+      objectives without the extra cost of future upgrading or addition of
+      features.
+    </>,
     "We also provide easy maintenance solutions, unparalleled support services, and online training facilities for our clients to understand the vast scope of our work in developing reliable applications using the latest techniques and approaches in PHP technologies. We thoroughly evaluate and verify the quality of our PHP web services to make sure they function flawlessly on desktop computers, laptops, and mobile phones. This allows us to provide our clients with premier dependability and superiority in their software applications.",
   ];
 

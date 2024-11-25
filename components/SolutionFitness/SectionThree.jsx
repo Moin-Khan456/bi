@@ -23,8 +23,14 @@ const SectionThree = ({
         <ul className="list-disc list-inside text-sm pl-8 mb-4 mt-0 py-6 ">
           {setionThreeCards[0].points?.map((item, index) => (
             <li className="font-semibold py-2 font-Satoshi" key={index}>
-              {item.split("%")[0]}{" "}
-              <span className="opacity-50">{item.split("%")[1]}</span>
+              {typeof item === "string" ? (
+                <>
+                  {item.split("%")[0]}{" "}
+                  <span className="opacity-50">{item.split("%")[1]}</span>
+                </>
+              ) : (
+                item
+              )}
             </li>
           ))}
         </ul>

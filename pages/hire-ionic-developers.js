@@ -15,6 +15,7 @@ import Hire from "../components/common/Hire";
 import HireBanner from "../components/common/HireBanner";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
 import BlogArticle from "../components/common/BlogArticle";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -62,8 +63,21 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Speedy Set-up",
-      content:
-        "No time would be squandered in onboarding when you enlist Ionic experts from us. We are a top-notch ionic app development company incorporating team members from around the world. There is no job too tough for our software developers as we have a reputation for producing glitch-free results within given deadlines.",
+      content: (
+        <>
+          No time would be squandered in onboarding when you enlist Ionic
+          experts from us. We are a top-notch{" "}
+          <Link
+            href="/mobile-development/cross-platform-mobile-app-development"
+            className="text-[#2186ff]"
+          >
+            ionic app development company
+          </Link>
+          incorporating team members from around the world. There is no job too
+          tough for our software developers as we have a reputation for
+          producing glitch-free results within given deadlines.
+        </>
+      ),
     },
     {
       head: "Flexibility",
@@ -128,10 +142,38 @@ function HireAangularJsDeveloper(props) {
     "Enhanced Scalability",
   ];
 
-  const chooseBiSubhead =
-    "Choosing Brain Inventory developer for your next React Native App Development assignment can provide several benefits. First and foremost, we have a team of experienced React Native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
+  const chooseBiSubhead = (
+    <>
+      Choosing{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      developer for your next{" "}
+      <Link
+        href="/mobile-development/react-native-app-development-company"
+        className="text-[#2186ff]"
+      >
+        React Native App Development
+      </Link>{" "}
+      assignment can provide several benefits. First and foremost, we have a
+      team of experienced React Native developers who can provide the expertise
+      and knowledge needed to create a high-quality application. They can work
+      with you to understand your requirements and goals, and provide customized
+      solutions that meet your specific needs.
+    </>
+  );
   const chooseBI = [
-    "Brain Inventory is a mobile app development company dedicated to developing and deploying exciting applications that help companies to reach mobile users around the globe. Our team of expert designers and developers is empowered with progressive technology and best practices, which are instrumental in maintaining the quality of our products. ",
+    <>
+      Brain Inventory is a{" "}
+      <Link href="/mobile-app-development-company" className="text-[#2186ff]">
+        mobile app development company
+      </Link>{" "}
+      dedicated to developing and deploying exciting applications that help
+      companies to reach mobile users around the globe. Our team of expert
+      designers and developers is empowered with progressive technology and best
+      practices, which are instrumental in maintaining the quality of our
+      products.
+    </>,
     " We have the most expert and skilled Ionic development team which is capable of delivering 100% managed code, tested and optimized applications that are considerably better than other alternatives in terms of performance, speed, and security. ",
     "With our experienced team of Ionic developers, you can now get compelling mobile applications for Android, iOS, and the Web with a seamless interface and improved functionalities developed in a secure infrastructure. With ever-growing competition, businesses look to technology to improve their customer experience.",
     "It has become essential for them to provide the best service through mobile apps and responsive websites. A solution to help customers from all around the world meet their business goals. Our experts understand your business needs to evolve into a digital enterprise with highly performing and full-featured sites that are customized by our developers at NO EXTRA COST according to your preferences.",

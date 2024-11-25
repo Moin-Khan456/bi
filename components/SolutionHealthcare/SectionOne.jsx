@@ -32,7 +32,8 @@ const Index = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center max-w-[1450px] relative z-20 px-2">
           <p className="lg:w-[350px] pb-32 lg:pb-0 text-sm text-slate-400">
             At Brain Inventory, we&apos;re leaders in the design and development
-            of healthcare services. Our team of expert developers and designers
+            of healthcare services. <Link href="/company" className="text-[#2186ff]">Our team of expert</Link>{" "}      
+             developers and designers
             are brimming with innovative ideas to transform your vision into
             reality.
           </p>

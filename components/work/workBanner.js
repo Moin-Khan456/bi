@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const WorkBanner = () => {
@@ -14,7 +15,7 @@ const WorkBanner = () => {
               <div className="text-white text-opacity-50 text-sm Gilroy-Bold">
                 We turn ideas into reality by getting involved with customers to
                 create the best product. All steps from Ideation to
-                Deployment/Maintenance are our forte in software development.
+                Deployment/Maintenance are our forte in <Link href="/" className="text-[#2186ff]">software development.</Link>
               </div>
               <div></div>
             </div>

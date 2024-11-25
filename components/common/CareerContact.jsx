@@ -2,6 +2,7 @@ import Image from "next/image";
 import HomeButton from "../buttons/HomeButton";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import Link from "next/link";
 
 export default function KeepInTouch() {
   const validationSchema = Yup.object().shape({
@@ -51,7 +52,11 @@ export default function KeepInTouch() {
             <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-normal w-4/5">
               We are always looking out for new collaborations, whether you are
               a client who is passionate about a project or a talent who is
-              interested in joining our team, our doors are always open.
+              interested in joining{" "}
+              <Link href="" className="text-[#2186ff]">
+                our team
+              </Link>
+              , our doors are always open.
             </p>
           </div>
 

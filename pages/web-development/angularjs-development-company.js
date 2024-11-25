@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -28,8 +29,18 @@ const BlogArticle = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "At Braininventory, we provide services for custom web development in Angular. Having a strong team of professional and experienced developers, we provide you with high-level services in the area of custom web development and app development.";
+  const content = (
+    <>
+      At Braininventory, we provide services for{" "}
+      <Link href="/custom-web-development" className="text-[#2186ff]">
+        custom web development
+      </Link>
+      {"  "}
+      in Angular. Having a strong team of professional and experienced
+      developers, we provide you with high-level services in the area of custom
+      web development and app development.
+    </>
+  );
 
   const hireCards = [
     {
@@ -82,7 +93,15 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "At Brain Inventory, our greatest joy stems from offering our clients unparalleled AngularJS Development Services, which enable us to produce high-quality bespoke software using widely-accepted technologies.",
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , our greatest joy stems from offering our clients unparalleled AngularJS
+      Development Services, which enable us to produce high-quality bespoke
+      software using widely-accepted technologies.
+    </>,
     "Our experts utilize multiple frameworks and libraries, including Java, PHP, and HTML5. They make use of industry standards like the MVC (Model-View-Controller) design pattern and dependency injection to make building apps simpler.",
     "Being the best AngularJS Development Company, we endow you with a high-end product by blending our years of expertise and experience with advanced development practices.",
     "In addition to providing you with top-notch AngularJS Development Services, we also provide training for your team. This will ensure that employees are fully abreast with the new technology as well as catering to their growing interest in learning new skills.",

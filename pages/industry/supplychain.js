@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 
@@ -272,7 +273,18 @@ function SupplyChain() {
       points: [
         "Supply chain management softwares has proved to be a game-changer for organizations across the globe. According to a report by Mordor Intelligence, the global supply chain management software market is projected to reach USD 24.6 billion by 2023, growing at a CAGR of 10.2% during the forecast period (2021-2026) source.",
         "The rising complexities in business operations have led to a significant escalation in the demand for robust supply chain software. Research by Technavio predicts that the global supply chain software market will grow by $ 9.56 billion during 2022-2026 source.",
-        "A study by Grand View Research reveals that the global logistics market size is expected to reach USD 15.5 Trillion By 2023 source. Rising e-commerce and the need for “just-in-time” delivery has led to the evolution of new technologies in this sector, a narrative we at Brain Inventory are familiar with as we aid businesses in revolutionizing their supply chain logistics management.",
+        <>
+          A study by Grand View Research reveals that the global logistics
+          market size is expected to reach USD 15.5 Trillion By 2023 source.
+          Rising{" "}
+          <Link href="/industry/ecommerce" className="text-[#2186ff]">
+            e-commerce
+          </Link>{" "}
+          and the need for “just-in-time” delivery has led to the evolution of
+          new technologies in this sector, a narrative we at Brain Inventory are
+          familiar with as we aid businesses in revolutionizing their supply
+          chain logistics management.
+        </>,
       ],
     },
     {

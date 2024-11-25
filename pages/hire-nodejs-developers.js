@@ -15,6 +15,7 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkills"));
 const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link";
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
@@ -27,10 +28,36 @@ const Clients = dynamic(() => import("../components/Hire/Clients"));
 function HireAangularJsDeveloper(props) {
   const content =
     "Looking to develop real-time, data-intensive, and scalable web and mobile applications? Look no further than our team of top-tier Nodejs developers. Highly skilled in developing event-driven and non-blocking I/O model-based solutions.";
-  const subhead1 =
-    "Brain Inventory has become one of the leading Node JS Development Company as a result of its impressive achievements and skilled developers. Our managers consistently choose Brain Inventory as their preferred option for recruiting remote Node.js programmers owing to our rigorous privacy practices, punctual project completion, and unmatched technical proficiency.";
-  const subhead2 =
-    "Our Node.js developers create robust, scalable back-end systems with cutting-edge performance. We build event-driven, data-focused architectures using non-blocking I/O for lightning speed and responsiveness. We work closely with clients to build customized Node.js solutions that meet their specific needs and exceed expectations. We stay current on industry trends and best practices. Contact us to create the ideal solution for your organization.";
+  const subhead1 = (
+    <>
+      Brain Inventory has become one of the leading{" "}
+      <Link
+        href="/web-development/node-js-development-company"
+        className="text-[#2186ff]"
+      >
+        Node JS Development Company{" "}
+      </Link>
+      as a result of its impressive achievements and skilled developers. Our
+      managers consistently choose Brain Inventory as their preferred option for
+      recruiting remote Node.js programmers owing to our rigorous privacy
+      practices, punctual project completion, and unmatched technical
+      proficiency.
+    </>
+  );
+  const subhead2 = (
+    <>
+      Our Node.js developers create robust, scalable back-end systems with
+      cutting-edge performance. We build event-driven, data-focused
+      architectures using non-blocking I/O for lightning speed and
+      responsiveness. We work closely with clients to build customized Node.js
+      solutions that meet their specific needs and exceed expectations. We stay
+      current on industry trends and best practices.{" "}
+      <Link href="/contact" className="text-[#2186ff]">
+        Contact us
+      </Link>{" "}
+      to create the ideal solution for your organization.
+    </>
+  );
 
   const experienceCards = [
     {
@@ -40,18 +67,57 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Node.js Development",
-      content:
-        "Node.js development can be complex, but having the right team behind you makes conquering difficulties much easier. Our company provides customized solutions to help businesses reach their objectives. Our knowledgeable Node.js developers offer a variety of services, including add-ons, gateways, interactive applications, and personalized control panels, to match your needs. By partnering with our skilled professionals, we can collaborate to take on your most significant Node.js undertakings and accomplish your aims.",
+      content: (
+        <>
+          Node.js development can be complex, but having the right team behind
+          you makes conquering difficulties much easier.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our company
+          </Link>{" "}
+          provides customized solutions to help businesses reach their
+          objectives. Our knowledgeable Node.js developers offer a variety of
+          services, including add-ons, gateways, interactive applications, and
+          personalized control panels, to match your needs. By partnering with
+          our skilled professionals, we can collaborate to take on your most
+          significant Node.js undertakings and accomplish your aims.
+        </>
+      ),
     },
     {
       head: "API Development & Integration",
-      content:
-        "Node. js-based API development and integration have become increasingly vital components for organizations looking to create high-performing services and applications. This technology enables the development of RESTful APIs, which allow for seamless integration with third-party components and enhanced functionalities. Ultimately, our goal is to help our clients optimize their applications and services.",
+      content: (
+        <>
+          Node. js-based{" "}
+          <Link
+            href="/mobile-development/mobile-api-integration-services"
+            className="text-[#2186ff]"
+          >
+            API development and integration
+          </Link>{" "}
+          have become increasingly vital components for organizations looking to
+          create high-performing services and applications. This technology
+          enables the development of RESTful APIs, which allow for seamless
+          integration with third-party components and enhanced functionalities.
+          Ultimately, our goal is to help our clients optimize their
+          applications and services.
+        </>
+      ),
     },
     {
       head: "UI/UX Development",
-      content:
-        "Our team of Node.js specialists and programmers are experts in creative UX/UI design and the development of efficient system monitoring dashboards. Our focus on UI/UX ensures that we create delightful user experiences that leave a lasting impression on the mind of users. We specialize in designing and developing web applications.",
+      content: (
+        <>
+          Our team of Node.js specialists and programmers are experts in
+          creative{" "}
+          <Link href="/hire-ui-ux-designers" className="text-[#2186ff]">
+            UX/UI design
+          </Link>{" "}
+          and the development of efficient system monitoring dashboards. Our
+          focus on UI/UX ensures that we create delightful user experiences that
+          leave a lasting impression on the mind of users. We specialize in
+          designing and developing web applications.
+        </>
+      ),
     },
     {
       head: "Node.js Support and Maintenance",
@@ -63,8 +129,22 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Agile Methodology",
-      content:
-        "Our custom software development process follows Agile methods, with work split into brief cycles known as sprints. At the end of each sprint, we show you the new capabilities and features that were added that week. This promotes openness and guarantees you can observe the advancement being achieved. This repetitive technique permits us to concentrate our efforts on the top-priority items and swiftly integrate feedback. You can be confident that we are steadily providing incremental value on a foreseeable schedule.",
+      content: (
+        <>
+          Our{" "}
+          <Link href="/" className="text-[#2186ff]">
+            custom software development
+          </Link>{" "}
+          process follows Agile methods, with work split into brief cycles known
+          as sprints. At the end of each sprint, we show you the new
+          capabilities and features that were added that week. This promotes
+          openness and guarantees you can observe the advancement being
+          achieved. This repetitive technique permits us to concentrate our
+          efforts on the top-priority items and swiftly integrate feedback. You
+          can be confident that we are steadily providing incremental value on a
+          foreseeable schedule.
+        </>
+      ),
     },
     {
       head: "Cost-Effective Solutions",
@@ -73,8 +153,15 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Dedicated Team",
-      content:
-        "We have a dedicated development team, who are well-versed in delivering high-end business solutions on several frameworks and technologies. In the beginning, we utilized Framework 4 as well as the latest version of Qlik Sense / Power BI, which offers flexible report creation options and the ability to streamline reporting processes.",
+      content: (
+        <>
+          We have a <Link href="/hire-dedicated-remote-developers" className="text-[#2186ff]">dedicated development team</Link>, who are well-versed in
+          delivering high-end business solutions on several frameworks and
+          technologies. In the beginning, we utilized Framework 4 as well as the
+          latest version of Qlik Sense / Power BI, which offers flexible report
+          creation options and the ability to streamline reporting processes.
+        </>
+      ),
     },
     {
       head: "Flexible Environment",

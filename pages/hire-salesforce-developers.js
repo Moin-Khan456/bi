@@ -20,6 +20,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
+import Link from "next/link.js";
 
 function HireSalesforceDeveloper(props) {
   const content =
@@ -123,8 +124,25 @@ function HireSalesforceDeveloper(props) {
     "Capitalizing on the know-how of a Salesforce developer expedites the implementation process.",
   ];
 
-  const keySkillsBreif =
-    "At Brain Inventory, we highly appreciate the confidence placed in us and handle your projects with utmost care to ensure openness, punctuality, and absolute contentment. You have the option to employ a Salesforce developer from our company for a wide array of Salesforce development, deployment, integration, and customization solutions. Our proficient Salesforce developers possess extensive expertise in flawlessly implementing Salesforce, creating customized applications for specific industries, and all aspects of Salesforce.";
+  const keySkillsBreif = (
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we highly appreciate the confidence placed in us and handle your
+      projects with utmost care to ensure openness, punctuality, and absolute
+      contentment. You have the option to employ a Salesforce developer from{" "}
+      <Link href="/company" className="text-[#2186ff]">
+        our company
+      </Link>{" "}
+      for a wide array of Salesforce development, deployment, integration, and
+      customization solutions. Our proficient Salesforce developers possess
+      extensive expertise in flawlessly implementing Salesforce, creating
+      customized applications for specific industries, and all aspects of
+      Salesforce.
+    </>
+  );
   const keySkillsPoints = [
     "Verified Work History",
     "Proven experience in CRM solutions",

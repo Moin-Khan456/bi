@@ -35,7 +35,10 @@ const info = [
   {
     title: "Development",
     details: [
-      "At this stage, we cater requirements for frontend, backend, web services, and API Integration Services.",
+      <>
+        At this stage, we cater requirements for frontend, backend, web
+        services, and <Link href="/mobile-development/mobile-api-integration-services" className="text-[#2186ff]">API Integration Services.</Link>
+      </>,
       "Along with preparing a strategy for Agile Scrum methodology, we factor the aspects of scalability, multi-tenancy, 3rd party integration, and craft an optimized clean code structure using cutting-edge technologies.",
       "We make sure to involve and implement clients’ reviews in each sprint/milestone.",
     ],

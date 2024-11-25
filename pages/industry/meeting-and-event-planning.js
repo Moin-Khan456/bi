@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -127,8 +128,21 @@ function Meeting(props) {
   const sectionFourDesc =
     "Well-thought-out software solutions have now become an integral part of the meeting and event planning industry. Brain Inventory leads the steer by designing software platforms that cater specifically to this robust industry by bridging the gap between technology and the growing needs of the industry. With innovative offerings such as meeting software development, event business management systems, and various event management solutions, we are committed to enhancing the efficiency and productivity of your event planning processes.";
 
-  const sectionTwoDesc =
-    "At Brain Inventory, we seamlessly integrate conference and event management through top-notch meeting software development. Our expertise lies in creating robust event business management systems, making us a leader in the meeting and event planning software development industry. With softwares ranging from cloud-based event management software to corporate meeting management programs, we are committed to revolutionizing your event planning experience.";
+  const sectionTwoDesc = (
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we seamlessly integrate conference and event management through
+      top-notch meeting software development. Our expertise lies in creating
+      robust event business management systems, making us a leader in the
+      meeting and event planning software development industry. With softwares
+      ranging from cloud-based event management software to corporate meeting
+      management programs, we are committed to revolutionizing your event
+      planning experience.
+    </>
+  );
 
   const sectionFiveDesc =
     "In this digital era where planning and collaboration occur virtually, efficient meeting softwares isn't just a luxury, but a necessary tool. Key players like Zoom are leading the pack. However, several other contenders offer unique features and solutions for the meeting planning industry. Let's analyze some of these trailblazers in the meeting software scene:";

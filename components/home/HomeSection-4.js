@@ -95,7 +95,7 @@ const HomeSectionFour = () => {
               </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
-                business. We, as a Mobile App Development Company can provide
+                business. We, as a <Link href="javascript:void(0)" className="text-[#2186ff]">Mobile App Development Company</Link> can provide
                 high quality standard mobile app of any category. We have worked
                 with diverse brands, organizations, start-ups and individuals to
                 create powerful apps from excellent idea.

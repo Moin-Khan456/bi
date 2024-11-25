@@ -20,14 +20,45 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
   const content =
     "Employ a proficient developer from our company, as our team possesses vast knowledge in creating interactive, adaptable, and protected web applications as well as additional backend functions such as ensuring security, incorporating data, and linking with external systems.";
-  const subhead1 =
-    "Our MEAN Stack development team is comprised of proficient and seasoned professionals who remain abreast of the latest advancements and sought-after competencies. This enables us to provide competitive rates for exceptional talent. We create bespoke MEAN Stack applications using state-of-the-art technologies and adhering to contemporary development methodologies. With an agile and iterative process, we can deliver projects rapidly while providing responsive support, helping clients launch their products faster and more affordably by reducing costly mistakes. Our proven development approach produces high-quality outcomes that fully meet project requirements.";
-  const subhead2 =
-    "We are a team of exceptional MEAN Stack developers with expertise in developing high-quality, feature-rich, and responsive applications using the latest modern technologies. Our MEAN stack developers have developed highly scalable web and mobile applications that run on all major platforms. Hire a dedicated team of MEAN Stack developers or hire a team of freelance MEAN Stack developers from Brain Inventory to build the best UI with an equally secured backend.";
+  const subhead1 = (
+    <>
+      Our{" "}
+      <Link
+        href="/web-development/mean-stack-development-company"
+        className="text-[#2186ff]"
+      >
+        MEAN Stack development
+      </Link>{" "}
+      team is comprised of proficient and seasoned professionals who remain
+      abreast of the latest advancements and sought-after competencies. This
+      enables us to provide competitive rates for exceptional talent. We create
+      bespoke MEAN Stack applications using state-of-the-art technologies and
+      adhering to contemporary development methodologies. With an agile and
+      iterative process, we can deliver projects rapidly while providing
+      responsive support, helping clients launch their products faster and more
+      affordably by reducing costly mistakes. Our proven development approach
+      produces high-quality outcomes that fully meet project requirements.
+    </>
+  );
+  const subhead2 = (
+    <>
+      We are a team of exceptional MEAN Stack developers with expertise in
+      developing high-quality, feature-rich, and responsive applications using
+      the latest modern technologies. Our MEAN stack developers have developed
+      highly scalable web and mobile applications that run on all major
+      platforms. Hire a dedicated team of MEAN Stack developers or{" "}
+      <Link href="/hire-dedicated-remote-developers" className="text-[#2186ff]">
+        hire a team of freelance
+      </Link>
+      MEAN Stack developers from Brain Inventory to build the best UI with an
+      equally secured backend.
+    </>
+  );
 
   const experienceCards = [
     {

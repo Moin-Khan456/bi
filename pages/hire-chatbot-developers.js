@@ -21,6 +21,7 @@ const Experienced = dynamic(() =>
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -67,7 +68,7 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Technical Knowledge",
-      content: `We at Brain Inventory engage in the business of developing advanced chatbots for enterprises. Our suite is targeted at improving the processes and customer experience of businesses. We not only keep you connected with your customers but also help you achieve your business goals, be it sales or awareness.`,
+      content: <>We at <Link href="/" className="text-[#2186ff]"> Brain Inventory</Link>      engage in the business of developing advanced chatbots for enterprises. Our suite is targeted at improving the processes and customer experience of businesses. We not only keep you connected with your customers but also help you achieve your business goals, be it sales or awareness.</>,
     },
     {
       head: "Competitive Pricing",

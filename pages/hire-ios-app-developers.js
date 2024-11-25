@@ -20,10 +20,19 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link.js";
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "We are a top-rated iOS app development company. Our team knows what you need for your mobile or web application and has the expertise to execute innovation in every stage of your project.";
+  const content = (
+    <>
+      We are a top-rated{" "}
+      <Link href="/mobile-development/ios-app-development-company" className="text-[#2186ff]">
+        iOS app development company
+      </Link>
+      . Our team knows what you need for your mobile or web application and has
+      the expertise to execute innovation in every stage of your project.
+    </>
+  );
   const subhead1 =
     "Our iOS app development team designs and builds your business applications with great attention to detail. Our experienced iOS app developers are committed to providing innovative solutions that help make your business a success. At Brain Inventory, you can hire an iOS developer to build feature-rich, interactive, and secure applications for iPhone. By hiring an iOS developer from Brain Inventory, you can access the quality and power of these mobile devices as natively developed apps, with no extra conversion costs.";
   const subhead2 =
@@ -118,8 +127,22 @@ function HireAangularJsDeveloper(props) {
     "iOS developers have the capability to develop personalized solutions that are customized to your exact requirements. By collaborating with you to comprehend your business needs, they can design an app that aligns with your objectives and aspirations. This can assist you in gaining a competitive edge and distinguishing yourself in your industry. Additionally, iOS developers offer continuous support for your app post-launch.",
   ];
 
-  const keySkillsBreif =
-    "We, at Brain Inventory with a team of highly skilled iPhone app developers. Our skilled app developers can develop your iOS app from scratch or redesign it to meet your requirements.  We always offer the lowest rates because our focus is on providing cost-effective solutions and budget-friendly services. We provide iPhone application development to clients of all types, including individuals, startups, and corporations. Offering robust solutions at a competitive price, we make sure that your product development comes out perfect for the target audience.";
+  const keySkillsBreif = (
+    <>
+      We, at Brain Inventory with a team of highly skilled iPhone app
+      developers. Our skilled app developers can develop your iOS app from
+      scratch or redesign it to meet your requirements. We always offer the
+      lowest rates because our focus is on providing cost-effective solutions
+      and budget-friendly services. We provide iPhone{" "}
+      <Link href="/mobile-app-development-company" className="text-[#2186ff]">
+        application development
+      </Link>{" "}
+      to clients of all types, including individuals, startups, and
+      corporations. Offering robust solutions at a competitive price, we make
+      sure that your product development comes out perfect for the target
+      audience.
+    </>
+  );
   const keySkillsPoints = [
     "Dedicated Team",
     "Flexible Engagement Models",
@@ -133,7 +156,19 @@ function HireAangularJsDeveloper(props) {
 
   const chooseBI = [
     "Our best iPhone app developers have huge experience building the best iPhone apps. We have a proven record of success in delivering top-ranking iOS/iPad applications. Our remote iPhone app developers build robust, secure, business-centric, high-performance, and interactive apps to take your app idea to the next level. We have the right iOS developers. We offer top-class developers who are highly skilled and extremely motivated. We believe in delivering results and will go above and beyond to ensure that we not only meet but exceed your expectations. However, you need to hire the correct group of developers working together for optimal results on your features or app development project.",
-    'At Brain Inventory, we pride ourselves in providing advanced solutions for your business to make sure it not only survives but thrives. Our iOS application developers work with the client to create highly reliable, versatile, and secure application software. We have worked on complex-tech projects and delivered the desired results. We possess the diligence to upscale your iOS app from a simple creation to a top-rated application that your users need. "Delivering awesome products with ease".',
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we pride ourselves in providing advanced solutions for your business to
+      make sure it not only survives but thrives. Our iOS application developers
+      work with the client to create highly reliable, versatile, and secure
+      application software. We have worked on complex-tech projects and
+      delivered the desired results. We possess the diligence to upscale your
+      iOS app from a simple creation to a top-rated application that your users
+      need. Delivering awesome products with ease.
+    </>,
   ];
 
   return (

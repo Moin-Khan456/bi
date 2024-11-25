@@ -18,6 +18,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -36,8 +37,18 @@ function HireAangularJsDeveloper(props) {
   const experienceCards = [
     {
       head: ".NET Web Application Development",
-      content:
-        "Dedicated Custom Software Development Services is required when you need your web application to be customized, upgraded, and fixed at your request at any time. We also provide continuous customer support and guidance throughout the project execution period to ensure a smooth launch.",
+      content: (
+        <>
+          Dedicated{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Custom Software Development Services
+          </Link>{" "}
+          is required when you need your web application to be customized,
+          upgraded, and fixed at your request at any time. We also provide
+          continuous customer support and guidance throughout the project
+          execution period to ensure a smooth launch.
+        </>
+      ),
     },
     {
       head: "Custom .NET Development",
@@ -51,21 +62,62 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: ".NET Integration Services",
-      content:
-        "Our dot net developers have been working for many years on dot net application development. We have handled challenging technologies and accomplished tasks for our clients. We truly provide superior platforms for a wide range of business applications and focus on the integration aspect which is an important part of delivering an effective final solution.",
+      content: (
+        <>
+          Our have been working for many years on{" "}
+          <Link
+            href="/web-development/dotnet-development-company"
+            className="text-[#2186ff]"
+          >
+            dot net application development
+          </Link>. We have handled challenging
+          technologies and accomplished tasks for our clients. We truly provide
+          superior platforms for a wide range of business applications and focus
+          on the integration aspect which is an important part of delivering an
+          effective final solution.
+        </>
+      ),
     },
     {
       head: ".NET Mobile Application Development",
-      content:
-        "We provide .NET programmers to assist with your Hybrid App Development Services need. We provide the software so that you can build high-functioning mobile apps for more efficient communication and increased productivity. Our professional app developers are experts in creating hybrid mobile applications, Cross Platform Mobile App Development, and feature-rich apps.",
+      content: (
+        <>
+          We provide .NET programmers to assist with your{" "}
+          <Link
+            href="/mobile-development/hybrid-app-development"
+            className="text-[#2186ff]"
+          >
+            Hybrid App Development Services
+          </Link>{" "}
+          need. We provide the software so that you can build high-functioning
+          mobile apps for more efficient communication and increased
+          productivity. Our professional app developers are experts in creating
+          hybrid mobile applications, Cross Platform Mobile App Development, and
+          feature-rich apps.
+        </>
+      ),
     },
   ];
 
   const hireCards = [
     {
       head: "Speedy Set-up",
-      content:
-        "Brain Inventory has expertise in delivering complex projects in the domain of custom web development using advanced technologies and frameworks. Our ASP.NET developers would be exploring new frameworks and platforms with a strong inclination to build scalable, secure, and maintainable software that has the potential to meet your business goals.",
+      content: (
+        <>
+          Brain Inventory has expertise in delivering complex projects in the
+          domain of{" "}
+          <Link
+            href="/web-development/custom-web-development"
+            className="text-[#2186ff]"
+          >
+            custom web development
+          </Link>{" "}
+          using advanced technologies and frameworks. Our ASP.NET developers
+          would be exploring new frameworks and platforms with a strong
+          inclination to build scalable, secure, and maintainable software that
+          has the potential to meet your business goals.
+        </>
+      ),
     },
     {
       head: "Treasure Trove of Talents",
@@ -143,7 +195,16 @@ function HireAangularJsDeveloper(props) {
     "Choosing Brain Inventory developer for your next React Native assignment can provide several benefits. First and foremost, you can hire expert react native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
   const chooseBI = [
     "Brain Inventory is a technology firm that focuses on ASP.Net development services. With a group of highly capable .NET developers, the company aims to deliver premium services at competitive rates. The dedicated team of professionals with extensive expertise can fully assist clients in building tailored applications. The major focus of the company has been to provide technical expertise by its own team with ongoing training programs in order to provide flexibility as per the industry demand. Our .NET developers are highly skilled, meet quality standards, and work in an organized manner.",
-    "Our company provides services that allow our customers to build web and desktop apps. Additionally, we create and build effective software solutions for clients in various industries, like healthcare, e-commerce, and education. Our team of .NET software engineers always guarantees complete client fulfillment with top-notch solutions constructed on Microsoft technologies.",
+    <>
+      <Link href="/company" className="text-[#2186ff]">
+        Our company
+      </Link>{" "}
+      provides services that allow our customers to build web and desktop apps.
+      Additionally, we create and build effective software solutions for clients
+      in various industries, like healthcare, e-commerce, and education. Our
+      team of .NET software engineers always guarantees complete client
+      fulfillment with top-notch solutions constructed on Microsoft technologies
+    </>,
     "We're issue-solvers who persevere until we attain solutions that excel across all major platforms—from desktop programs to data warehouses to mobile applications!",
   ];
 
@@ -202,7 +263,6 @@ function HireAangularJsDeveloper(props) {
               para3={subhead3}
               card={experienceCards}
               changeText={"Hire Experienced"}
-
             />
             <HireMarquee title=".NET" />
             <Advantage title=".NET Developers" advantages={advantages} />

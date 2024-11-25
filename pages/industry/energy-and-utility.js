@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -50,8 +51,18 @@ function Energy(props) {
     {
       id: "1",
       title: "What exactly is energy software development?",
-      description:
-        "Energy software development refers to the creation of specialized software services to manage and streamline processes in the energy and utility industry.",
+      description: (
+        <>
+          <Link
+            href="/web-development/custom-web-development"
+            className="text-[#2186ff]"
+          >
+            Energy software development
+          </Link>
+          refers to the creation of specialized software services to manage and
+          streamline processes in the energy and utility industry.
+        </>
+      ),
     },
     {
       id: "2",
@@ -340,7 +351,19 @@ function Energy(props) {
       />
       <SectionThree
         title="Insights into the Energy & Utility Industry"
-        sectionDesc="In the rapidly evolving Energy and Utility industry, you require not just ordinary software, but energy software that can keep up with an industry that's always set on turbo-speed. At Brain Inventory, we innovate and engineer softwares that is equipped to support your dynamic needs, optimized for the varied aspects of the energy and utility businesses."
+        sectionDesc={
+          <>
+            In the rapidly evolving Energy and Utility industry, you require not
+            just ordinary software, but energy software that can keep up with an
+            industry that's always set on turbo-speed. At{" "}
+            <Link href="/" className="text-[#2186ff]">
+              Brain Inventory
+            </Link>
+            , we innovate and engineer softwares that is equipped to support
+            your dynamic needs, optimized for the varied aspects of the energy
+            and utility businesses.
+          </>
+        }
         setionThreeCards={setionThreeCards}
         pointers={true}
       />

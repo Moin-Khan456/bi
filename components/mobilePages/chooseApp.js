@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Component } from "react";
 
 const ChooseApp = () => {
@@ -9,11 +10,14 @@ const ChooseApp = () => {
             why choose brain inventory for <br /> mobile app development
           </h2>
           <p className="mb-8">
-            Being a well-known mobile application development company, Brain
-            Inventory is recognized for serving modern business needs and
-            delivering the best-in-class solutions at a competitive cost across
-            the globe. Here’s why we can be the best choice when it comes to
-            building mobile apps:
+            Being a well-known{" "}
+            <Link href="javascript:void(0)" className="text-[#2186ff]">
+              mobile application development company
+            </Link>
+            , Brain Inventory is recognized for serving modern business needs
+            and delivering the best-in-class solutions at a competitive cost
+            across the globe. Here’s why we can be the best choice when it comes
+            to building mobile apps:
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-4 gap-0">
@@ -38,9 +42,15 @@ const ChooseApp = () => {
           <div className="bg-development-simply-culture mb-4 lg-mb-0">
             <h2>Dedicated Teams</h2>
             <p>
-              We have a dedicated team of mobile app developers who are well
-              versed in delivering high-end business solutions on several
-              frameworks and technologies.
+              We have a dedicated{" "}
+              <Link
+                href="/hire-dedicated-remote-developers"
+                className="text-[#2186ff]"
+              >
+                team of mobile app developers
+              </Link>{" "}
+              who are well versed in delivering high-end business solutions on
+              several frameworks and technologies.
             </p>
           </div>
 

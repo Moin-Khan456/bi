@@ -21,6 +21,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Mobile-Development/SectionOne";
+import Link from "next/link";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -29,12 +30,50 @@ const BlogArticle = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Brain Inventory offers complete mobile application design, development, and integration services across different platforms. Our goal is to provide Mobile Application Integration on multiple platforms for startups or multinational companies.";
-  const subhead1 =
-    "In the modern digital environment, the importance of having a Mobile Application Integration solution cannot be overstated. This is because mobile apps have become increasingly essential in both our personal and work lives. With the proliferation of mobile applications, there is a growing demand for smooth interaction and sharing of information among these apps and various other platforms like databases, cloud services, and third-party APIs.";
-  const subhead2 =
-    "A fundamental rationale for needing a Mobile Application Integration solution is to enhance user satisfaction. Users desire mobile applications that function coherently and seamlessly. Integration ensures that information is synchronized across various apps, avoiding data isolation and providing users with a harmonious experience. For instance, a customer's details should remain consistent between a company's CRM app and its digital commerce platform, guaranteeing that customer interactions are effortless and precise.";
+  const content = (
+    <>
+      {" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      offers complete mobile application design, development, and integration
+      services across different platforms. Our goal is to provide Mobile
+      Application Integration on multiple platforms for startups or
+      multinational companies.
+    </>
+  );
+  const subhead1 = (
+    <>
+      In the modern digital environment, the importance of having a Mobile
+      Application Integration solution cannot be overstated. This is because
+      mobile apps have become increasingly essential in both our personal and
+      work lives. With the proliferation of{" "}
+      <Link
+        href="/mobile-development/custom-mobile-app-development-company"
+        className="text-[#2186ff]"
+      >
+        mobile applications
+      </Link>
+      , there is a growing demand for smooth interaction and sharing of
+      information among these apps and various other platforms like databases,
+      cloud services, and third-party APIs
+    </>
+  );
+  const subhead2 = (
+    <>
+      A fundamental rationale for needing a Mobile Application Integration
+      solution is to enhance user satisfaction. Users desire mobile applications
+      that function coherently and seamlessly. Integration ensures that
+      information is synchronized across various apps, avoiding data isolation
+      and providing users with a harmonious experience. For instance, a
+      customer's details should remain consistent between a company's{" "}
+      <Link href="/industry/crm" className="text-[#2186ff]">
+        CRM app
+      </Link>{" "}
+      and its digital commerce platform, guaranteeing that customer interactions
+      are effortless and precise.
+    </>
+  );
   const subhead3 =
     "A solution that merges mobile apps with existing backend infrastructure enables companies to optimize their internal procedures and work processes. By connecting mobile applications with core systems, employees can retrieve real-time information and team up in a more productive manner.";
 
@@ -73,8 +112,20 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Focus on your business goals and user experience",
-      content:
-        "We strive to harmonize your commercial objectives and customer requirements to construct user-focused mobile software integration that aids in generating extra income. We construct mobile applications from the ground up and incorporate application programming interfaces that eliminate operational impediments and improve workflows. Our skilled team of designers and developers craft robust mobile apps that thrill users through an optimal blend of ingenuity and practicality.",
+      content: (
+        <>
+          We strive to harmonize your commercial objectives and customer
+          requirements to construct user-focused mobile software integration
+          that aids in generating extra income. We construct mobile applications
+          from the ground up and incorporate application programming interfaces
+          that eliminate operational impediments and improve workflows.{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Our skilled team
+          </Link>{" "}
+          of designers and developers craft robust mobile apps that thrill users
+          through an optimal blend of ingenuity and practicality.
+        </>
+      ),
     },
     {
       head: "Integrity & Transparency",

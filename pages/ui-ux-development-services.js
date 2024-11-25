@@ -20,6 +20,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
+import Link from "next/link.js";
 
 function UiUxDevelopmentServices(props) {
   const content =
@@ -31,8 +32,18 @@ function UiUxDevelopmentServices(props) {
   const experienceCards = [
     {
       head: "User Experience (UX) Development",
-      content:
-        "We develop intuitive user interfaces with dynamic visual components such as animated graphics in two or three dimensions and integrated media features. This provides users with a seamless, cohesive experience as they navigate the Custom Software Development Services we design.",
+      content: (
+        <>
+          We develop intuitive user interfaces with dynamic visual components
+          such as animated graphics in two or three dimensions and integrated
+          media features. This provides users with a seamless, cohesive
+          experience as they navigate the{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Custom Software Development Services
+          </Link>{" "}
+          we design.
+        </>
+      ),
     },
     {
       head: "User Interface (UI) Development",
@@ -46,8 +57,23 @@ function UiUxDevelopmentServices(props) {
     },
     {
       head: "Web & Mobile App UI/UX Development",
-      content:
-        "We employ various tools such as Xamarin, DevExpress, Ionic, Appcelerator, and Apache Cordova to build highly responsive interfaces and user experiences for App Development Services that are optimized for touchscreen devices. Leveraging these frameworks, we can offer intuitive designs that provide an enhanced experience for progressive web apps on mobile platforms.",
+      content: (
+        <>
+          We employ various tools such as Xamarin, DevExpress, Ionic,
+          Appcelerator, and Apache Cordova to build highly responsive interfaces
+          and user experiences for{" "}
+          <Link
+            href="/mobile-development/custom-mobile-app-development-company"
+            className="text-[#2186ff]"
+          >
+            App Development Services
+            
+          </Link>{" "}
+          that are optimized for touchscreen devices. Leveraging these
+          frameworks, we can offer intuitive designs that provide an enhanced
+          experience for progressive web apps on mobile platforms.
+        </>
+      ),
     },
     {
       head: "Intuitive & Interactive Solutions",
@@ -74,8 +100,19 @@ function UiUxDevelopmentServices(props) {
     },
     {
       head: "Customer Support And UI Testing",
-      content:
-        "Our company focuses on user interface and user experience design. We create adaptive, intuitive, and responsive designs that function across multiple platforms and devices. We comprehensively evaluate the ease of use and ability to scale our solutions in terms of components and navigation.",
+      content: (
+        <>
+          <Link href="/company" className="text-[#2186ff]">
+            {" "}
+            Our company
+          </Link>
+          focuses on user interface and user experience design. We create
+          adaptive, intuitive, and responsive designs that function across
+          multiple platforms and devices. We comprehensively evaluate the ease
+          of use and ability to scale our solutions in terms of components and
+          navigation.
+        </>
+      ),
     },
   ];
 

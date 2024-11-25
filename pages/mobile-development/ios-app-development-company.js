@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -31,8 +32,17 @@ const BlogArticle = dynamic(() =>
 );
 
 function IosDevelopment() {
-  const content =
-    "Our company is highly rated for developing iOS apps. Our knowledgeable team understands the requirements for your mobile or web app and has the skill to implement innovative solutions at each step of your project.";
+  const content = (
+    <>
+      {" "}
+      <Link href="/company" className="text-[#2186ff]">
+        Our company
+      </Link>{" "}
+      is highly rated for developing iOS apps. Our knowledgeable team
+      understands the requirements for your mobile or web app and has the skill
+      to implement innovative solutions at each step of your project.
+    </>
+  );
 
   const hireCards = [
     {
@@ -47,13 +57,37 @@ function IosDevelopment() {
     },
     {
       head: "Dedicated Teams",
-      content:
-        "Owing to our intrinsic passion for developing cutting-edge iPhone apps, we have a dedicated team of iPhone app developers who are well-versed in delivering high-end business solutions on various frameworks and technologies. The strategies and solutions we have implemented have brought us accolades as well as industry recognition.",
+      content: (
+        <>
+          Owing to our intrinsic passion for developing cutting-edge iPhone
+          apps, we have a{" "}
+          <Link
+            href="/mobile-development/ios-app-development-company"
+            className="text-[#2186ff]"
+          >
+            dedicated team of iPhone app developers
+          </Link>{" "}
+          who are well-versed in delivering high-end business solutions on
+          various frameworks and technologies. The strategies and solutions we
+          have implemented have brought us accolades as well as industry
+          recognition.
+        </>
+      ),
     },
     {
       head: "Competitive Pricing",
-      content:
-        "As our business has grown, we’ve been able to improve our rates and pricing to make sure we are able to stay competitive in a very challenging industry. Brain Inventory is able to offer a combination of cost-effective rates with amazing quality work no matter what your budget may be.",
+      content: (
+        <>
+          As our business has grown, we’ve been able to improve our rates and
+          pricing to make sure we are able to stay competitive in a very
+          challenging industry.{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>{" "}
+          is able to offer a combination of cost-effective rates with amazing
+          quality work no matter what your budget may be.
+        </>
+      ),
     },
     {
       head: "Flexible Engagement Models",
@@ -99,7 +133,17 @@ function IosDevelopment() {
 
   const chooseBI = [
     "Brain Inventory's best India iOS app developers have successfully built top-ranking iOS apps for different apple app store categories such as Business, Healthcare, Entertainment, Lifestyle, Technology, Travel & more. This is due to our unique approach in the development of their apps which provides a comprehensive set of services for the clients ranging from design through to deployment.",
-    "Our group of committed experts is well-versed in creating captivating user interfaces that are easy to use. We know to tailor our front-end development services into hybrid frameworks, specifically Android and iPhone apps, utilizing our exclusive frameworks, the android_native_app ecosystem. At Brain Inventory, we are enthusiastic about providing superb iOS applications for your organization.",
+    <>
+      Our group of committed experts is well-versed in creating captivating user
+      interfaces that are easy to use. We know to tailor our front-end
+      development services into hybrid frameworks, specifically Android and
+      iPhone apps, utilizing our exclusive frameworks, the android_
+      <Link href="/hire-react-native-developers" className="text-[#2186ff]">
+        native_app ecosystem
+      </Link>
+      . At Brain Inventory, we are enthusiastic about providing superb iOS
+      applications for your organization.
+    </>,
     "At Brain Inventory, we're passionate about delivering top-quality iOS apps for your business. And with our long experience in the iOS App Development  services we're able to deliver a package that's tailored to meet your specific needs. Our designers are up-to-date with the latest technologies, so they know how to make the most of the tools available.",
     "That's why we use the best technology possible in your iOS apps, such as universal graphic styles and real-time 3D rendering, so you can create stunning user interfaces.",
   ];

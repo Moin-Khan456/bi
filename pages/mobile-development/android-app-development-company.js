@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -30,8 +31,16 @@ const BlogArticle = dynamic(() =>
 );
 
 function HireAangularJsDeveloper() {
-  const content =
-    "Our team of experts uses the latest tools and technologies to build the industry-best Android apps. Our apps are 100% in sync with our client’s business needs, technologies, and needs.";
+  const content = (
+    <>
+      <Link href="/company" className="text-[#2186ff]">
+        Our team of experts
+      </Link>{" "}
+      uses the latest tools and technologies to build the industry-best Android
+      apps. Our apps are 100% in sync with our client’s business needs,
+      technologies, and needs.
+    </>
+  );
 
   const hireCards = [
     {
@@ -95,12 +104,26 @@ function HireAangularJsDeveloper() {
     },
   ];
 
-  const chooseBiSubhead =
-    "Have you got an awesome idea for a product, service, or startup project? Brain Inventory helps companies scale operations with best-in-class mobile apps for the Android platform. We differentiate ourselves from other app development companies by offering various Android app development solutions that can be tailored to the client’s requirements.";
+  const chooseBiSubhead = (
+    <>
+      Have you got an awesome idea for a product, service, or startup project?
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      helps companies scale operations with best-in-class mobile apps for the
+      Android platform. We differentiate ourselves from other{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        app development companies
+      </Link>{" "}
+      by offering various Android app development solutions that can be tailored
+      to the client’s requirements.
+    </>
+  );
   const chooseBI = [
     "We offer high-end Android app development services in India. Our company develops premier mobile applications that fully satisfy the needs of our customers.",
     "We leverage all essential technologies and resources to build these solutions optimally and affordably.",
-    "You can contact us at any time at your convenience for a no-frills quote! The application development process is never a walk in the park and it requires constant efforts from both sides — the app developer and the client.",
+    <>You can <Link href="/contact" className="text-[#2186ff]">contact us</Link>{" "}      
+     at any time at your convenience for a no-frills quote! The application development process is never a walk in the park and it requires constant efforts from both sides — the app developer and the client.</>,
     "Our team has a rich experience in this domain, from conception to design and development you can be assured that we have understood your needs and will deliver exactly what you have been looking for! We bring our best to every one of your requirements, so contact us at any time to avail of our services!",
   ];
 

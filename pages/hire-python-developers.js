@@ -20,6 +20,7 @@ const Experienced = dynamic(() =>
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -86,8 +87,18 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Vast Technical Knowledge",
-      content:
-        "We are a Python development company the developers and designers. Our team includes experts in various fields of technology. We have a dedicated team for the development and success of every project that we undertake. We have helped many large companies to achieve their growth targets and goals.",
+      content: (
+        <>
+          We are a{" "}
+          <Link href="/web-development/python-web-development-company" className="text-[#2186ff]">
+            Python development company
+          </Link>{" "}
+          the developers and designers. Our team includes experts in various
+          fields of technology. We have a dedicated team for the development and
+          success of every project that we undertake. We have helped many large
+          companies to achieve their growth targets and goals.
+        </>
+      ),
     },
   ];
 
@@ -142,7 +153,16 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "At Brain Inventory, our Python developers are equipped with the skills and expertise needed to develop software that precisely meets your needs. We are a team of dedicated professionals with extensive experience in delivering high-quality software solutions on schedule.",
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , our Python developers are equipped with the skills and expertise needed
+      to develop software that precisely meets your needs. We are a team of
+      dedicated professionals with extensive experience in delivering
+      high-quality software solutions on schedule.
+    </>,
     "We offer the best Python migration services in business today. Being specialists in Python, we stay abreast of its evolving landscape and how these changes benefit your business. Our support enables your team to boost productivity and concentrate on valuable initiatives, utilizing cutting-edge applications for faster development and enhanced collaboration.",
     "Quality development is our utmost priority at Brain Inventory. Our developers are constantly pushing the envelope when it comes to quality. All of our code is reviewed by another developer before being deployed to production. Automated testing is done for all major aspects of the application, unit tests for more granular components, and acceptance tests after each sprint to verify that the end-to-end use cases have been implemented.",
   ];
@@ -165,8 +185,21 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "API development",
-      content:
-        "We are IT Professionals who have a wealth of experience in Python API development. We have designed and developed small, medium, and large-size custom apps using Python. Our developers can build a reliable, scalable solution that fits your needs and budget, whether it's just for one application or an enterprise-level system.",
+      content: (
+        <>
+          We are IT Professionals who have a wealth of experience in Python{" "}
+          <Link
+            href="/mobile-development/mobile-api-integration-services"
+            className="text-[#2186ff]"
+          >
+            API development
+          </Link>
+          . We have designed and developed small, medium, and large-size custom
+          apps using Python. Our developers can build a reliable, scalable
+          solution that fits your needs and budget, whether it's just for one
+          application or an enterprise-level system.
+        </>
+      ),
     },
     {
       head: "Python Migration & Integration",

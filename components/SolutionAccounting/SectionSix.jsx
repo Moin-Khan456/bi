@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -13,6 +14,7 @@ const Index = ({
   classText,
   titleClass,
 }) => {
+  const router = useRouter();
   return (
     <div className="padding-left-all-section-1 rounded-md my-8 py-10 px-4">
       <div className="container padding-left-all-section-1">
@@ -28,7 +30,13 @@ const Index = ({
               {title}
             </h3>
             <button
-              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12">
+              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12"
+              onClick={() => {
+                router.push(
+                  "/mobile-development/custom-mobile-app-development-company"
+                );
+              }}
+            >
               {btn}
               <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
             </button>

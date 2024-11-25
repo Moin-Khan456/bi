@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -31,8 +32,16 @@ const ChooseBraininventory = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Brain Inventory is a top Shopify development company with capabilities of Shopify custom development services. We assist you in building a fully functional e-commerce portal using Shopify.";
+  const content = (
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is a top Shopify development company with capabilities of Shopify custom
+      development services. We assist you in building a fully functional
+      e-commerce portal using Shopify.
+    </>
+  );
   const subhead1 =
     "There are many convincing reasons why you might require custom Shopify development services. Shopify provides a convenient and easy-to-use platform that streamlines creating and running an online shop, making it a great option for enterprises of all scales. Partnering with a Shopify developer allows you to unlock the platform's full capabilities, tailoring it to match your brand's special identity and requirements.";
   const subhead2 =
@@ -43,7 +52,18 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Dedicated Point-of-contact",
-      content: `Our team of highly qualified, trained, and experienced professionals offers solid back up support when you need it. Our single point of contact makes communication easier. We integrate and understand how your business functions and deliver the necessary solutions at all levels of your business.`,
+      content: (
+        <>
+          <Link href="/company" className="text-[#2186ff]">
+            Our team
+          </Link>{" "}
+          of highly qualified, trained, and experienced professionals offers
+          solid back up support when you need it. Our single point of contact
+          makes communication easier. We integrate and understand how your
+          business functions and deliver the necessary solutions at all levels
+          of your business.
+        </>
+      ),
     },
     {
       head: "Scalable Operations",

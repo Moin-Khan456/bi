@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -119,7 +120,17 @@ function Accounting(props) {
     {
       id: "8",
       text: "Automation Features",
-      desc: "Experience streamlined processes through the automation of repetitive accounting tasks with Brain Inventory. Our accounting software development services offers superior automation features that can drastically reduce manual data entry, and eliminate possible errors.",
+      desc: (
+        <>
+          Experience streamlined processes through the automation of repetitive
+          accounting tasks with Brain Inventory. Our accounting{" "}
+          <Link href="/" className="text-[#2186ff]">
+            software development services
+          </Link>{" "}
+          offers superior automation features that can drastically reduce manual
+          data entry, and eliminate possible errors.
+        </>
+      ),
     },
   ];
   const sectionFourDesc =
@@ -281,8 +292,16 @@ function Accounting(props) {
     },
     {
       head: "Design and Development",
-      content:
-        "Our expert team designs and develops the software, using the latest technologies to ensure it's secure, user-friendly, and efficient.",
+      content: (
+        <>
+          <Link href="/company" className="text-[#2186ff]">
+            {" "}
+            Our expert team{" "}
+          </Link>
+          designs and develops the software, using the latest technologies to
+          ensure it's secure, user-friendly, and efficient.
+        </>
+      ),
     },
     {
       head: "Testing and Quality Assurance",

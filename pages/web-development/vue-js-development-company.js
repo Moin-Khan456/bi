@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -34,8 +35,24 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Dedicated Vue.js Development Team",
-      content:
-        "Brain Inventory is an emerging Vuejs web development company with an experienced and flexible team of web application developers, sysops, project managers, and full-stack engineers. We are committed to making your business thrive and leveraging the advantages of custom web development services to help you expand, grow and flourish.",
+      content: (
+        <>
+          <Link href="" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>{" "}
+          is an emerging Vuejs web development company with an experienced and
+          flexible team of web application developers, sysops, project managers,
+          and full-stack engineers. We are committed to making your business
+          thrive and leveraging the advantages of{" "}
+          <Link
+            href="/web-development/custom-web-development"
+            className="text-[#2186ff]"
+          >
+            custom web development
+          </Link>{" "}
+          services to help you expand, grow and flourish.
+        </>
+      ),
     },
     {
       head: "Fixed Price Model",

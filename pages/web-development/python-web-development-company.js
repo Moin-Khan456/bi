@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -47,8 +48,19 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "Experienced Developers",
-      content:
-        "We have gained expertise and skills in building custom web applications using Python and other related frameworks and technologies. With our dedicated team of Python developers, we craft Python applications to ensure that they deliver all the features your business needs, the support your customers need, and the results your business deserves.",
+      content: (
+        <>
+          We have gained expertise and skills in building custom web
+          applications using Python and other related frameworks and
+          technologies. With our{" "}
+          <Link href="/hire-python-developers" className="text-[#2186ff]">
+            dedicated team of Python developers
+          </Link>
+          , we craft Python applications to ensure that they deliver all the
+          features your business needs, the support your customers need, and the
+          results your business deserves.
+        </>
+      ),
     },
     {
       head: "Trusted Delivery Methods",
@@ -96,8 +108,29 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory is a top-rated Python Web Development Company across India, USA, Canada, and Jordan. We have established a reputation as a reliable provider of quality software solutions to thousands of clients worldwide. Our team of Python developers possesses profound expertise and a wealth of experience in constructing applications that deliver exceptional performance and minimal latency.",
-    "With the help of our team of dedicated and qualified experts and consultants, we can apply comprehensive knowledge of the field to address any aspect of application development. Over the years, we have been able to work with companies of all sizes and have always put our client’s success first. With Brain Inventory as your development company, you can be assured that you will get the best service.",
+    <>
+      Brain Inventory is a top-rated Python{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        Web Development
+      </Link>{" "}
+      Company across India, USA, Canada, and Jordan. We have established a
+      reputation as a reliable provider of quality software solutions to
+      thousands of clients worldwide. Our team of Python developers possesses
+      profound expertise and a wealth of experience in constructing applications
+      that deliver exceptional performance and minimal latency.
+    </>,
+    <>
+      With the help of our team of dedicated and qualified experts and
+      consultants, we can apply comprehensive knowledge of the field to address
+      any aspect of application development. Over the years, we have been able
+      to work with companies of all sizes and have always put our client’s
+      success first. With{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      as your development company, you can be assured that you will get the best
+      service.
+    </>,
     "Our developers are skilled and trained in Python Django web development. We also use the latest technologies and frameworks, such as Python 3.7.0 and Django, Web2py, and Flask. Our team of Python developers is ready to transform your ideas into reality. Our expertise with Python web app development gives us the unique ability to create anything and everything using the latest technologies.",
   ];
   return (

@@ -21,6 +21,7 @@ const HireMarquee = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import HireBanner from "../../components/common/HireBanner";
+import Link from "next/link";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -30,8 +31,18 @@ const BlogArticle = dynamic(() =>
 const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Brain Inventory is a company that values customer happiness above all else in today's technology-driven world. We have a team of highly trained Salesforce specialists and accredited programmers who offer Salesforce creation services at a competitive rate. All of our clients have been completely satisfied with our work.";
+  const content = (
+    <>
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is a company that values customer happiness above all else in today's
+      technology-driven world. We have a team of highly trained Salesforce
+      specialists and accredited programmers who offer Salesforce creation
+      services at a competitive rate. All of our clients have been completely
+      satisfied with our work.
+    </>
+  );
   const subhead =
     "Our proficient consultants in Salesforce CRM assist you in analysing your business requirements by recognizing areas of improvement to enhance performance and efficiency. Our outreach spans across the globe, catering to countries such as the UK, Canada, the United States, and Jordan. We specialise in delivering a broad range of services to clients from diverse sectors.";
   const subhead1 =
@@ -111,9 +122,23 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory, a leading Salesforce development, implementation, and integration partner in USA, is here to help enhance your Salesforce experience. We help you deliver an unmatched customer experience for your organization by tapping into the power of Salesforce.",
+    <>
+      Brain Inventory, a leading Salesforce development, implementation, and
+      integration partner in USA, is here to help enhance your Salesforce
+      experience. We help you deliver an unmatched customer experience for your
+      organization by tapping into the power of Salesforce.
+    </>,
     "We provide end-to-end Salesforce professional services including Salesforce customization, development, app building, Pardot, CPQ, and more, backed by a team of certified experts. Today, we have successful Salesforce deployments in our portfolio, including Fortune 500 companies.",
-    "Our team is dedicated and devoted to our clients, not to the latest technology or any major software vendors. We aim to work with the best technologies to serve our clients and their customers' interests. Our Salesforce consulting services in USA support business growth and success through cloud enablement.",
+    <>
+      <Link href="/company" className="text-[#2186ff]">
+        Our team
+      </Link>{" "}
+      is dedicated and devoted to our clients, not to the latest technology or
+      any major software vendors. We aim to work with the best technologies to
+      serve our clients and their customers' interests. Our Salesforce
+      consulting services in USA support business growth and success through
+      cloud enablement.
+    </>,
   ];
 
   const experienceCards = [

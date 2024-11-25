@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const WhyWork = () => {
@@ -9,7 +10,7 @@ const WhyWork = () => {
             why work with <br /> brain inventory?
           </h2>
           <p className="pt-8 text-gray-300 text-base lg:w-8/12">
-            When you join Brain Inventory, you join a thriving company and
+            When you join <Link href="/" className="text-[#2186ff]">Brain Inventory</Link>, you join a thriving company and
             become a part of a diverse collection of free- thinkers and industry
             experts who are all driven to use technology to reimagine what’s
             possible. At Brain Inventory, you explore new challenges, get

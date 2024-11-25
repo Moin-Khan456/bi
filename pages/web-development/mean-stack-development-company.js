@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -80,7 +81,13 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Staying up to date with the latest technology and frameworks is crucial in software development.",
+    <>
+      Staying up to date with the latest technology and frameworks is crucial in{" "}
+      <Link href="/" className="text-[#2186ff]">
+        software development
+      </Link>
+      .
+    </>,
     "Having the right partner can make a significant difference in achieving development goals.",
     "Our team has the experience and expertise to help you succeed.",
     "We use cutting-edge technology like serverless computing to build scalable and maintainable applications.",
@@ -99,7 +106,13 @@ function HireAangularJsDeveloper(props) {
     "When developing robust software applications, the ability to rapidly deploy the app at a large scale is frequently a critical factor.",
     "MEAN (MongoDB, Express, Angular, Node) is a popular technology stack among companies aiming to construct high-performance software in a cost-effective manner.",
     "Mean stack development combines MongoDB, Express Js, Angular Js, and Node Js to create highly scalable and efficient applications that are customized to meet specific business objectives.",
-    "The biggest advantage of using MEAN stack development services is that it offers a user-friendly and adaptable approach to app development.",
+    <>
+      The biggest advantage of using MEAN stack development services is that it
+      offers a user-friendly and adaptable approach to{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        app development.
+      </Link>
+    </>,
     "In the end, the MEAN Stack enables businesses to rapidly and proficiently launch impactful digital products.",
     "This is why Brain Inventory, a premier MEAN Stack development firm in India, is dedicated to providing top-tier solutions for clients worldwide",
     "We build customizable and expandable MEAN Stack web apps from the ground up to meet all your business requirements.",

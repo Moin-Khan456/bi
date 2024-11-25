@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -103,7 +104,18 @@ function Fitness() {
     {
       id: "5",
       text: "Gamification Features",
-      desc: "At Brain Inventory, a leading fitness app development company, we're redefining fitness with gamification, adding game-like elements to make workouts engaging and fun. From competitive leaderboards to rewarding achievements, we incorporate various game mechanics into our fitness website.",
+      desc: (
+        <>
+          At Brain Inventory, a leading fitness{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            app development company
+          </Link>
+          , we're redefining fitness with gamification, adding game-like
+          elements to make workouts engaging and fun. From competitive
+          leaderboards to rewarding achievements, we incorporate various game
+          mechanics into our fitness website.
+        </>
+      ),
     },
     {
       id: "6",
@@ -151,8 +163,19 @@ function Fitness() {
   const platformDevelopment = [
     {
       head: "Expert Collaborators",
-      content:
-        "Need an accomplished team to steer your fitness development? Look no further. Our Brain Inventory team comprises proficient individuals, each equipped with unparalleled technical prowess, poised to turn your visions into reality. We’re not just a team; we’re your adept allies on the path to excellence within the fitness industry.",
+      content: (
+        <>
+          Need an accomplished team to steer your fitness development? Look no
+          further. Our{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            Brain Inventory team
+          </Link>{" "}
+          comprises proficient individuals, each equipped with unparalleled
+          technical prowess, poised to turn your visions into reality. We’re not
+          just a team; we’re your adept allies on the path to excellence within
+          the fitness industry.
+        </>
+      ),
     },
     {
       head: "User-Centric Approach to App Design",

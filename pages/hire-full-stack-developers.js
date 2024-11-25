@@ -20,6 +20,7 @@ const Experienced = dynamic(() =>
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
@@ -35,10 +36,23 @@ function HireAangularJsDeveloper(props) {
 
   const experienceCards = [
     {
-      
       head: "Front End Full Stack Development",
-      content:
-        "Full-stack developers possess a complete understanding of all aspects of custom web development and are proficient in backend frameworks like PHP, Python Django. Once the user interacts with your website, you need to ensure that there is a smooth transition between the front end to the back end so that end users' experience is seamless and optimized.",
+      content: (
+        <>
+          Full-stack developers possess a complete understanding of all aspects
+          of{" "}
+          <Link
+            href="/web-development/custom-web-development"
+            className="text-[#2186ff]"
+          >
+            custom web development
+          </Link>{" "}
+          and are proficient in backend frameworks like PHP, Python Django. Once
+          the user interacts with your website, you need to ensure that there is
+          a smooth transition between the front end to the back end so that end
+          users' experience is seamless and optimized.
+        </>
+      ),
     },
     {
       head: "Back End Full Stack Development",
@@ -52,8 +66,18 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "MEAN Stack Developer",
-      content:
-        "Full-Stack Development is the process of encompassing a software development process that entails the creation of both server-side and client-side applications. The MEAN stack is a group of intertwined technologies aimed at facilitating this task, our Full-Stack Web App Development Services are backed by this world-class, open-source technology.",
+      content: (
+        <>
+          Full-Stack Development is the process of encompassing a software
+          development process that entails the creation of both server-side and
+          client-side applications. The MEAN stack is a group of intertwined
+          technologies aimed at facilitating this task, our Full-Stack Web{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            App Development Services
+          </Link>{" "}
+          are backed by this world-class, open-source technology.
+        </>
+      ),
     },
     {
       head: "Full-stack Support and Maintenance",
@@ -65,7 +89,19 @@ function HireAangularJsDeveloper(props) {
   const hireCards = [
     {
       head: "Flexible Hiring Models",
-      content: `Partnering with our company provides the opportunity to leverage a range of adaptable staffing solutions. We have developed and customized each of these solutions internally to meet the demands of different sectors and organizations. By collaborating with our agency, you can anticipate that high-caliber candidates will be matched to your business needs.`,
+      content: (
+        <>
+          Partnering with{" "}
+          <Link href="/company" className="text-[#2186ff]">
+            our company
+          </Link>{" "}
+          provides the opportunity to leverage a range of adaptable staffing
+          solutions. We have developed and customized each of these solutions
+          internally to meet the demands of different sectors and organizations.
+          By collaborating with our agency, you can anticipate that high-caliber
+          candidates will be matched to your business needs.
+        </>
+      ),
     },
     {
       head: "End-to-End Full Stack Competence",
@@ -124,8 +160,18 @@ function HireAangularJsDeveloper(props) {
     "With their wide range of abilities, Full Stack Developers can readily detect and fix problems whether they originate on the client-side or server-side of an application.",
   ];
 
-  const keySkillsBreif =
-    "Bringing on board a comprehensive custom web development group can be an energizing venture for an aspiring business visionary as you start chipping away at your application or site. However, where would it be a good idea for you to start? There are various benefits to doing as such, and enlisting devoted full-stack web engineers from Brain Inventory is the manner by which you approach it. We have years of experience in custom web development and information technology. Here are some reasons to hire such web developers.";
+  const keySkillsBreif = (
+    <>
+      Bringing on board a comprehensive custom web development group can be an
+      energizing venture for an aspiring business visionary as you start
+      chipping away at your application or site. However, where would it be a
+      good idea for you to start? There are various benefits to doing as such,
+      and enlisting devoted full-stack web engineers from <Link href="/" className="text-[#2186ff]">Brain Inventory</Link> is the
+      manner by which you approach it. We have years of experience in custom web
+      development and information technology. Here are some reasons to hire such
+      web developers.
+    </>
+  );
   const keySkillsPoints = [
     "Exclusive Team",
     "Agile Engagement Models",

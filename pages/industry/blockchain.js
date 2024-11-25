@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -82,7 +83,19 @@ function Blockchain(props) {
     {
       id: "1",
       text: "Custom Blockchain Development",
-      desc: "At Brain Inventory, we believe in the power of technology to transform businesses. That's why we offer custom blockchain development services - designed to put our clients at the cutting-edge of their industries. Our team of skilled developers is experienced in creating secure, efficient, and scalable blockchain-based applications.",
+      desc: (
+        <>
+          At Brain Inventory, we believe in the power of technology to transform
+          businesses. That's why we offer custom blockchain development services
+          - designed to put{" "}
+          <Link href="/portfolio" className="text-[#2186ff]">
+            our clients
+          </Link>{" "}
+          at the cutting-edge of their industries. Our team of skilled
+          developers is experienced in creating secure, efficient, and scalable
+          blockchain-based applications.
+        </>
+      ),
     },
     {
       id: "2",
@@ -120,11 +133,38 @@ function Blockchain(props) {
       desc: "At Brain Inventory, we specialize in developing secure, permissioned blockchain networks for businesses. With our expertise in leading blockchain technologies, we deliver customized apps tailored to your business needs.",
     },
   ];
-  const sectionFourDesc =
-    "Welcome to Brain Inventory, where we weave technology and innovation together to bring you industry-leading blockchain services. We are a technologically advanced mobile application and Custom Web Development Company, committed to pushing the boundaries of blockchain technology. With a team of experts armed with years of experience in blockchain development, we guarantee to deliver high-grade and reliable software for your business, irrespective of size and industry sector.";
+  const sectionFourDesc = (
+    <>
+      Welcome to Brain Inventory, where we weave technology and innovation
+      together to bring you industry-leading blockchain services. We are a
+      technologically advanced mobile application and{" "}
+      <Link
+        href="/web-development/custom-web-development"
+        className="text-[#2186ff]"
+      >
+        Custom Web Development Company
+      </Link>
+      , committed to pushing the boundaries of blockchain technology. With a{" "}
+      <Link href="/company" className="text-[#2186ff]">
+        team of experts
+      </Link>{" "}
+      armed with years of experience in blockchain development, we guarantee to
+      deliver high-grade and reliable software for your business, irrespective
+      of size and industry sector.
+    </>
+  );
 
-  const sectionTwoDesc =
-    "At Brain Inventory, a leading blockchain development company, we understand the transformative potential of blockchain technology. We can transform your business with our cutting-edge Custom Software Development Services by creating secure, efficient, and customized blockchain platforms.";
+  const sectionTwoDesc = (
+    <>
+      At Brain Inventory, a leading blockchain development company, we
+      understand the transformative potential of blockchain technology. We can
+      transform your business with our cutting-edge{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Custom Software Development Services
+      </Link>{" "}
+      by creating secure, efficient, and customized blockchain platforms.
+    </>
+  );
 
   const sectionFiveDesc =
     "The digital health revolution is here, with a multitude of web and mobile applications now vying for the attention of healthcare seekers. WebMD may be a veteran in the space, but a slew of newer applications are seeking to carve out their own niche in this ever-growing market. Let’s take a closer look at some of these contenders:";

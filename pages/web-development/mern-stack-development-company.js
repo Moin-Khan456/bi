@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -27,8 +28,16 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Brain Inventory is a team of experienced professionals who are passionate about the latest innovations and technologies. We are trained in all facets of the MERN stack and have expertise in React.js, NodeJS, and more.";
+  const content = (
+    <>
+      <Link href="/         " className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is a team of experienced professionals who are passionate about the latest
+      innovations and technologies. We are trained in all facets of the MERN
+      stack and have expertise in React.js, NodeJS, and more.
+    </>
+  );
 
   const hireCards = [
     {
@@ -109,7 +118,14 @@ function HireAangularJsDeveloper(props) {
     "The MERN stack was assembled with scalability as a principal goal. Each component technology was engineered for scaling, whether in large or small deployments. This facilitates effortless expansion in massive environments and simplified initial development in more modest settings. The stack's architecture allows seamless growth at any stage.",
   ];
   const meanReasons = [
-    "The MERN Stack (Micro-eCommerce + FaaS + NLP) is a collection of software tools for scalable web and mobile app development.",
+    <>
+      The MERN Stack (Micro-eCommerce + FaaS + NLP) is a collection of software
+      tools for scalable web and{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        mobile app development
+      </Link>
+      .
+    </>,
     "MERN Stack enables rapid application development in days rather than months or years.",
     "JavaScript is the most popular programming language known for its simplicity and ease of use.",
     "JavaScript comes with many libraries that aid in faster completion of day-to-day tasks.",

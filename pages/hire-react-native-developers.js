@@ -16,6 +16,7 @@ const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
@@ -27,8 +28,16 @@ const Clients = dynamic(() => import("../components/Hire/Clients"));
 function HireAangularJsDeveloper(props) {
   const content =
     "Hire React Native Developers from Brain Inventory to make your dream app a reality. Our developers have expertise in building truly native-like apps for Android, iOS, Web, and Desktop devices.";
-  const subhead1 =
-    "We are a team of React Native developers that are well-versed in all the versions of React Native from 0.60 to 0.71. We have dedicated React Native app developers who have a strong understanding of the ReactJS JavaScript library adhering to supreme coding standards such as W3C and ECMAScript. This team is highly skilled at developing mobile apps with both Windows Phone and iPhone platforms using Android SDK tools.";
+  const subhead1 = (
+    <>
+      We are a team of React Native developers that are well-versed in all the
+      versions of React Native from 0.60 to 0.71. We have dedicated React Native
+      app developers who have a strong understanding of the ReactJS JavaScript
+      library adhering to supreme coding standards such as W3C and ECMAScript.
+      This team is highly skilled at developing mobile apps with both Windows
+      Phone and iPhone platforms using Android SDK tools.
+    </>
+  );
   const subhead2 =
     "Leverage top-tier skills, resources, and expertise to design and develop mobile applications that meet your business needs. Hire React Native developers from Brain Inventory to craft exceptional mobile solutions with a deep understanding of your specific requirements. Our team of seasoned and certified React Native developers possesses extensive knowledge and expertise in crafting customized solutions that comply with the standards and requirements of various industries. Hire our dedicated React Native developers to deliver exceptional experiences at the highest level.";
 
@@ -40,8 +49,21 @@ function HireAangularJsDeveloper(props) {
     },
     {
       head: "React Native QA and Testing",
-      content:
-        "Hire the best React Native App developers to ensure your applications are built on a stable framework and follow best practices. It is crucial that you hire a company that will help you test your application for responsiveness, bugs, and possible threats post-mobile app development to ensure maximum efficiency and performance.",
+      content: (
+        <>
+          Hire the best React Native App developers to ensure your applications
+          are built on a stable framework and follow best practices. It is
+          crucial that you hire a company that will help you test your
+          application for responsiveness, bugs, and possible threats post-
+          <Link
+            href="/mobile-app-development-company"
+            className="text-[#2186ff]"
+          >
+            mobile app development
+          </Link>{" "}
+          to ensure maximum efficiency and performance.
+        </>
+      ),
     },
     {
       head: "React Native Migration & Upgradation",
@@ -134,8 +156,24 @@ function HireAangularJsDeveloper(props) {
     "It enables developers to build applications with a native look and feel, enhancing the user experience. This is accomplished through native components and APIs, which allow the application to interact with the underlying platform directly. Additionally, it can save your business money by reducing the time and effort needed to develop a mobile application.",
   ];
 
-  const keySkillsBreif =
-    "We are one of the best React Native development company in the industry. Our team of React native developers provide you with a seamless user experience and high-end features to give your app a elegant look & feel. We will design, develop, and deploy your cross-platform mobile application at the fastest pace. From brainstorming to mock-up and showcasing, our developer will make sure that you receive a flawless definition of your idea through our proprietary process that ensures simplicity, consistency, and user experience flawlessness.";
+  const keySkillsBreif = (
+    <>
+      We are one of the best{" "}
+      <Link
+        href="/mobile-development/react-native-app-development-compan"
+        className="text-[#2186ff]"
+      >
+        React Native development company
+      </Link>{" "}
+      in the industry. Our team of React native developers provide you with a
+      seamless user experience and high-end features to give your app a elegant
+      look & feel. We will design, develop, and deploy your cross-platform
+      mobile application at the fastest pace. From brainstorming to mock-up and
+      showcasing, our developer will make sure that you receive a flawless
+      definition of your idea through our proprietary process that ensures
+      simplicity, consistency, and user experience flawlessness.
+    </>
+  );
   const keySkillsPoints = [
     "Dedicated Team",
     "On Time Delivery",
@@ -148,9 +186,28 @@ function HireAangularJsDeveloper(props) {
   const chooseBiSubhead =
     "Choosing Brain Inventory developer for your next React Native assignment can provide several benefits. First and foremost, we have a team of experienced React Native developers who can provide the expertise and knowledge needed to create a high-quality application. They can work with you to understand your requirements and goals, and provide customized solutions that meet your specific needs.";
   const chooseBI = [
-    "Choosing a Brain Inventory developer for your next React Native project offers numerous benefits. Our team of experienced React Native developers brings the expertise and knowledge necessary to create high-quality applications. They collaborate with you to understand your requirements and goals, delivering customized solutions tailored to your specific needs.",
+    <>
+      Choosing a{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      developer for your next React Native project offers numerous benefits. Our
+      team of experienced React Native developers brings the expertise and
+      knowledge necessary to create high-quality applications. They collaborate
+      with you to understand your requirements and goals, delivering customized
+      solutions tailored to your specific needs.
+    </>,
     "We can offer a level of support and maintenance that may not be available with a freelance developer. We can provide ongoing updates, and bug fixes, as well as support for any issues that may arise during the development process. This can provide peace of mind and ensure that your application continues to function smoothly over time.",
-    "Our team consists of skilled developers with diverse expertise and access to a network of partners and vendors, offering additional services and support. This enables us to develop your application using the latest technologies and best practices while optimizing for performance and usability. To hire a developer or learn more about our services, contact us!",
+    <>
+      Our team consists of skilled developers with diverse expertise and access
+      to a network of partners and vendors, offering additional services and
+      support. This enables us to develop your application using the latest
+      technologies and best practices while optimizing for performance and
+      usability. To hire a developer or learn more about our services,{" "}
+      <Link href="/contact" className="text-[#2186ff]">
+        contact us!
+      </Link>
+    </>,
   ];
 
   return (

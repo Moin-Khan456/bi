@@ -11,6 +11,7 @@ const ContactForm = dynamic(() =>
 const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
+import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
@@ -97,7 +98,13 @@ function HireReactDeveloper(props) {
     "React helps in building high-performing and scalable web applications.",
     "It is fully interoperable with other JavaScript MV frameworks.",
     "Braininventory is a top ReactJS Development Company offering expertise in building web interfaces using React.js.",
-    "Their services include designing, software development, mentoring, and training.",
+    <>
+      Their services include designing,{" "}
+      <Link href="/" className="text-[#2186ff]">
+        software development
+      </Link>
+      , mentoring, and training.
+    </>,
     "They have successfully completed numerous React.js projects, showcasing their team’s creativity and expertise.",
     "Brain Inventory understands the need for high-performing and engaging web applications.",
     "They use ReactJS as one of the technologies in their stack to build applications with the desired features and functionalities.",

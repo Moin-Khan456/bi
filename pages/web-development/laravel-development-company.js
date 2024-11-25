@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner";
+import Link from "next/link.js";
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
@@ -31,8 +32,20 @@ const ChooseBraininventory = dynamic(() =>
 );
 
 function HireAangularJsDeveloper(props) {
-  const content =
-    "Efficient development of a high-quality and secure application is what we do best. Our experts are highly trained and experienced in the custom software development industry. As a top TypeScript app development company, we prioritize customer needs.";
+  const content = (
+    <>
+      Efficient development of a high-quality and secure application is what we
+      do best. Our experts are highly trained and experienced in the{" "}
+      <Link href="/" className="text-[#2186ff]">
+        custom software development
+      </Link>{" "}
+      industry. As a top TypeScript{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        app development company
+      </Link>
+      , we prioritize customer needs.
+    </>
+  );
   const subhead1 =
     "A Laravel Development Services can be indispensable for various reasons. Firstly, Laravel is a robust and widely used PHP framework known for its elegance and simplicity, making it an excellent choice for developing web applications and websites. Its extensive ecosystem of pre-built components and libraries accelerates development, reducing time-to-market for your project.";
   const subhead2 =
@@ -97,8 +110,39 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "Brain Inventory is a leading Laravel Development Services, based in India and working with clients worldwide to fulfill their requirements. We offer top-notch Custom Web Development Services, which include custom web design, website development, and Custom Mobile App Development along with offshore outsourcing & customized custom software development services at competitive rates. We are driven by the innovative thinking of our developers who have outclass skills and strong technical backgrounds.",
-    "While you have the opportunity to rest assured that we will handle even the most complicated design or programming requirements, we know that every project is different and unique, so we always listen closely to your needs and requirements. Our team of Laravel developers here at Brain Inventory is eager to help you work towards solving your technological problems.",
+    <>
+      Brain Inventory is a leading Laravel Development Services, based in India
+      and working with clients worldwide to fulfill their requirements. We offer
+      top-notch{" "}
+      <Link
+        href="/web-development/custom-web-development"
+        className="text-[#2186ff]"
+      >
+        Custom Web Development Services
+      </Link>
+      , which include{" "}
+      <Link href="javascript:void(0)" className="text-[#2186ff]">
+        custom web design
+      </Link>{" "}
+      , website development, and{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Custom Mobile App Development
+      </Link>{" "}
+      along with offshore outsourcing & customized custom software development
+      services at competitive rates. We are driven by the innovative thinking of
+      our developers who have outclass skills and strong technical backgrounds.
+    </>,
+    <>
+      While you have the opportunity to rest assured that we will handle even
+      the most complicated design or programming requirements, we know that
+      every project is different and unique, so we always listen closely to your
+      needs and requirements.{" "}
+      <Link href="/hire-laravel-developers" className="text-[#2186ff]">
+        Our team of Laravel developers
+      </Link>{" "}
+      here at Brain Inventory is eager to help you work towards solving your
+      technological problems.
+    </>,
     "Our developers have an extensive understanding of the framework and this allows us to take advantage of unique features that a standard PHP developer may not know about. Therefore, we can help your business build sophisticated software solutions that leverage what the framework has to offer.",
   ];
 

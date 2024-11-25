@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -51,8 +52,16 @@ function Healthcare(props) {
     {
       id: "1",
       title: "What services do you provide in healthcare software development?",
-      description:
-        "We at Brain Inventory, a learning healthcare app development company offer end-to-end healthcare development services, including strategic consulting, UI/UX design, development, testing, and maintenance.",
+      description: (
+        <>
+          We at Brain Inventory, a learning healthcare{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            app development company
+          </Link>{" "}
+          offer end-to-end healthcare development services, including strategic
+          consulting, UI/UX design, development, testing, and maintenance.
+        </>
+      ),
     },
     {
       id: "2",
@@ -94,7 +103,18 @@ function Healthcare(props) {
     {
       id: "3",
       text: "Health and Fitness Tracking Development",
-      desc: "Amid the growing interest in health and fitness, our Health and Fitness Tracking App development expertise shines. We specialise in creating user-centric, engaging, and secure web and mobile apps that enable users to monitor their health, fitness routines, and wellness journeys effectively.",
+      desc: (
+        <>
+          Amid the growing interest in health and fitness, our Health and
+          Fitness{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            Tracking App development expertise
+          </Link>{" "}
+          shines. We specialise in creating user-centric, engaging, and secure
+          web and mobile apps that enable users to monitor their health, fitness
+          routines, and wellness journeys effectively.
+        </>
+      ),
     },
     {
       id: "4",
@@ -109,7 +129,26 @@ function Healthcare(props) {
     {
       id: "6",
       text: "AI and Machine Learning",
-      desc: "At Brain Inventory, a leading healthcare app development company, we're incorporating AI and Machine Learning for diagnostics, predictive analytics, and decision support, ensuring superb healthcare development. Our expert team of developers specialises in creating intelligent systems that can easily make sense of complex healthcare data.",
+      desc: (
+        <>
+          At{" "}
+          <Link href="/" className="text-[#2186ff]">
+            Brain Inventory
+          </Link>
+          , a leading{" "}
+          <Link
+            href="/hire-dedicated-remote-developers"
+            className="text-[#2186ff]"
+          >
+            healthcare app development company
+          </Link>
+          , we're incorporating AI and Machine Learning for diagnostics,
+          predictive analytics, and decision support, ensuring superb healthcare
+          development. Our expert team of developers specialises in creating
+          intelligent systems that can easily make sense of complex healthcare
+          data.
+        </>
+      ),
     },
     {
       id: "7",
@@ -122,8 +161,18 @@ function Healthcare(props) {
       desc: "At Brain Inventory, a leading healthcare software company, our team of professional developers deeply comprehend the complexities of healthcare systems. Our knowledge, coupled with our technological proficiency, has allowed us to develop a tested, effective approach to EHR integration.",
     },
   ];
-  const sectionFourDesc =
-    "Elevate your healthcare custom software development services with us. We stand as pioneers in crafting ingenious services that revolutionise the healthcare industry. With us, you're not just building medical software – you're shaping an experience that empowers and enhances user engagement right from the start.";
+  const sectionFourDesc = (
+    <>
+      Elevate your healthcare{" "}
+      <Link href="/" className="text-[#2186ff]">
+        custom software development services
+      </Link>{" "}
+      with us. We stand as pioneers in crafting ingenious services that
+      revolutionise the healthcare industry. With us, you're not just building
+      medical software – you're shaping an experience that empowers and enhances
+      user engagement right from the start.
+    </>
+  );
 
   const sectionTwoDesc =
     "When it comes to healthcare software company, Brain Inventory stands as a pillar of excellence in the custom healthcare software development industry. Our proficiency is evident in our cutting-edge services, marked by innovative features and robust design, tailored to revolutionise the healthcare sector.";
@@ -152,8 +201,16 @@ function Healthcare(props) {
     "User Base",
   ];
 
-  const platformDesc =
-    "When it comes to healthcare software development, Brain Inventory, a leading healthcare app development company emerges as a transformative force. With our pioneering strategies, extensive experience, and unwavering commitment to excellence, we deliver robust services that resonate with your users, facilitating enhanced healthcare experiences.";
+  const platformDesc = (
+    <>
+      When it comes to healthcare software development, Brain Inventory, a
+      leading healthcare <Link href="" className="text-[#2186ff]"></Link>{" "}
+      emerges as a transformative force. With our pioneering strategies,
+      extensive experience, and unwavering commitment to excellence, we deliver
+      robust services that resonate with your users, facilitating enhanced
+      healthcare experiences.
+    </>
+  );
   const platformDevelopment = [
     {
       head: "Customer Satisfaction",

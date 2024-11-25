@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 const validationSchema = Yup.object().shape({
   fullName: Yup.string().required("Full Name is required"),
@@ -34,7 +35,11 @@ const ContactForm = () => {
           <p>
             We are always looking out for new collaborations, whether you are a
             client who is passionate about a project or a talent who is
-            interested in joining our team, our doors are always open.
+            interested in joining{" "}
+            <Link href="/company" className="text-[#2186ff]">
+              our team
+            </Link>
+            , our doors are always open.
           </p>
         </section>
         <Formik

@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import SectionOne from "../../components/industry/Sports-App-Development/sectionOne.jsx";
+import Link from "next/link.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -76,8 +77,20 @@ function SportAppDeveloper() {
     },
   ];
 
-  const sectionTwoDesc =
-    "Our company has evolved into a reliable provider of sports software development services. We design products packed with impactful features that are notable for their superior speed, robust security protections, and distinctive user experience. We comprehend the ideal composition of sports software and construct applications that heighten the enjoyment for users, regardless of whether they are supporters, athletes, trainers, or simply sports enthusiasts.";
+  const sectionTwoDesc = (
+    <>
+      <Link href="/company" className="text-[#2186ff]">
+        Our company
+      </Link>{" "}
+      has evolved into a reliable provider of sports software development
+      services. We design products packed with impactful features that are
+      notable for their superior speed, robust security protections, and
+      distinctive user experience. We comprehend the ideal composition of sports
+      software and construct applications that heighten the enjoyment for users,
+      regardless of whether they are supporters, athletes, trainers, or simply
+      sports enthusiasts.
+    </>
+  );
 
   const solutionList = [
     {
@@ -236,7 +249,26 @@ function SportAppDeveloper() {
       {
         id: 5,
         title: "Fantasy Sports Applications",
-        desc: "We develop mobile applications for enthusiasts of various sports like football, basketball, baseball, tennis, hockey, soccer, auto racing, and more on iOS and Android devices.",
+        desc: (
+          <>
+            We develop mobile applications for enthusiasts of various sports
+            like football, basketball, baseball, tennis, hockey, soccer, auto
+            racing, and more on{" "}
+            <Link
+              href="/mobile-development/ios-app-development-company"
+              className="text-[#2186ff]"
+            >
+              iOS
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/mobile-development/android-app-development-company"
+              className="text-[#2186ff]"
+            >
+              Android devices.
+            </Link>{" "}
+          </>
+        ),
       },
     ],
   };

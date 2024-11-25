@@ -21,6 +21,7 @@ const Experienced = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import HireBanner from "../../components/common/HireBanner";
+import Link from "next/link.js";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -89,9 +90,30 @@ function HireAangularJsDeveloper(props) {
   ];
 
   const chooseBI = [
-    "At Brain Inventory, we are committed to providing quality .NET development services with optimal time management and trust-worthy quality. Our Certified .NET developers adopt cutting-edge technology viz. C We are a team of dedicated, experienced, and passionate professionals, working for your satisfaction with a 100% focus on our work. ",
+    <>
+      At{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>
+      , we are committed to providing quality .NET development services with
+      optimal time management and trust-worthy quality. Our Certified .NET
+      developers adopt cutting-edge technology viz. C We are a team of
+      dedicated, experienced, and passionate professionals, working for your
+      satisfaction with a 100% focus on our work.{" "}
+    </>,
     "We have an experience of over 4+ years in the .NET domain and are developers at heart having started developing applications for the .NET platform back in 2002. When you deal with us, you'll be getting skills that are sharpened by continuous learning and interaction with the best software professionals around the globe. ",
-    ".NET developers from our great tech pool possess experience in building perfect software solutions that are powerful, maintainable, and well-tested. They have extensive practice in working on large-scale projects for various industrial verticals in the industry. Their skills and expertise cover Microsoft .NET Framework development, ASP.NET, C Are you looking for an experienced .NET development partner? Contact us today and I would be pleased to demonstrate our capabilities.",
+    <>
+      .NET developers from our great tech pool possess experience in building
+      perfect software solutions that are powerful, maintainable, and
+      well-tested. They have extensive practice in working on large-scale
+      projects for various industrial verticals in the industry. Their skills
+      and expertise cover Microsoft .NET Framework development, ASP.NET, C Are
+      you looking for an experienced .NET development partner?{" "}
+      <Link href="/contact" className="text-[#2186ff]">
+        Contact us
+      </Link>{" "}
+      today and I would be pleased to demonstrate our capabilities.
+    </>,
   ];
 
   const reasons = [
@@ -162,7 +184,7 @@ function HireAangularJsDeveloper(props) {
           <Header></Header>
           <HireBanner
             subhead="A Smarter Way to Build Customized Applications."
-            title="Dot NET Software Development CompanyBest Salesforce Development Services | Salesforce Development company"
+            title="Dot NET Software Development Company"
             content={content}
             unique={"brain inventory"}
             btn="Contact Us!"

@@ -85,9 +85,9 @@ function Blockchain(props) {
       text: "Custom Blockchain Development",
       desc: (
         <>
-          At Brain Inventory, we believe in the power of technology to transform
+         {` At Brain Inventory, we believe in the power of technology to transform
           businesses. That's why we offer custom blockchain development services
-          - designed to put{" "}
+          - designed to put`}{" "}
           <Link href="/portfolio" className="text-[#2186ff]">
             our clients
           </Link>{" "}

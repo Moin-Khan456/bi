@@ -121,12 +121,12 @@ function HireAangularJsDeveloper(props) {
       head: "100% Client Satisfaction",
       content: (
         <>
-          Whether it's a small business or a large organization, we offer 24/7
+          {` Whether it's a small business or a large organization, we offer 24/7
           post-development Support & Maintenance with online ticket resolving
           with affordable maintenance packages that make the client 100%
           satisfied. We have developed special relationships with various
           business organizations across the world who need help with website
-          maintenance,{" "}
+          maintenance,`}{" "}
           <Link href="/" className="text-[#2186ff]">
             {" "}
             software development

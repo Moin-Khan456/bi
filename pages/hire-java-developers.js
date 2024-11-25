@@ -89,14 +89,14 @@ function HireJavaDeveloper(props) {
       head: "Team Collaboration",
       content: (
         <>
-          A group of Java developers at{" "}
+          {`A group of Java developers at{" "}`}
           <Link href="/" className="text-[#2186ff]">
             Brain Inventory
           </Link>{" "}
-          work together, enabling them to take advantage of each other's
+         {` work together, enabling them to take advantage of each other's
           specialized skills and knowledge. This collaborative approach allows
           the developers to build on one another's strengths, resulting in more
-          creative and productive solutions.
+          creative and productive solutions.`}
         </>
       ),
     },

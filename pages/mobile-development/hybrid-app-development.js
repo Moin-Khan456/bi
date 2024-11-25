@@ -107,10 +107,10 @@ function HireAangularJsDeveloper() {
       head: "Customer Satisfaction",
       content: (
         <>
-          Client success is no longer measured only by the end results. It's
+          {`Client success is no longer measured only by the end results. It's
           different today—a major part of the client success story depends on
           how a provider might provide to them throughout the process of
-          building something together. At{" "}
+          building something together. At`}{" "}
           <Link href="/" className="text-[#2186ff]">
             Brain Inventory
           </Link>{" "}

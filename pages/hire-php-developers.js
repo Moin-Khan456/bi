@@ -83,11 +83,11 @@ function HireAangularJsDeveloper(props) {
           >
             Custom Web Development Services
           </Link>{" "}
-          from the ground up? Our squad of skilled PHP programmers is
+          {`from the ground up? Our squad of skilled PHP programmers is
           well-equipped to deliver top-notch solutions. We've constructed
           several websites and created countless programs in the past, and as a
           result, we possess the expertise necessary to bring your project to
-          life
+          life`}
         </>
       ),
     },
@@ -198,7 +198,8 @@ function HireAangularJsDeveloper(props) {
     <>
       <Link href="/" className="text-[#2186ff]">
         Brain Inventory
-      </Link>, one of the most prominent PHP development companies is proud to
+      </Link>
+      , one of the most prominent PHP development companies is proud to
       introduce its team of experts. These PHP developers work with highly
       customized features and follow SCRUM methodology for every project. They
       are highly trained in different flexible PHP frameworks—CodeIgniter, Zend,
@@ -216,9 +217,9 @@ function HireAangularJsDeveloper(props) {
       >
         PHP development services
       </Link>{" "}
-      at the most affordable rates. Our right-priced PHP developers make you win
+      {`at the most affordable rates. Our right-priced PHP developers make you win
       every time, and that's exactly why we're India's Most Preferred PHP
-      Development Company.
+      Development Company.`}
     </>,
     "Brain Inventory is an independent IT company that offers the services of PHP developers. We were founded in 2019 and have been offering our services to different businesses ever since. We assist clients in building their products and websites with a well-organized approach that can help them reduce development costs and increase the returns on investment.",
   ];

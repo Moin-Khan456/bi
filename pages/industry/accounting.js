@@ -298,8 +298,8 @@ function Accounting(props) {
             {" "}
             Our expert team{" "}
           </Link>
-          designs and develops the software, using the latest technologies to
-          ensure it's secure, user-friendly, and efficient.
+         {`designs and develops the software, using the latest technologies to
+          ensure it's secure, user-friendly, and efficient.`}
         </>
       ),
     },

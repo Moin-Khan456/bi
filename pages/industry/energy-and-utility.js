@@ -353,9 +353,9 @@ function Energy(props) {
         title="Insights into the Energy & Utility Industry"
         sectionDesc={
           <>
-            In the rapidly evolving Energy and Utility industry, you require not
+            {`In the rapidly evolving Energy and Utility industry, you require not
             just ordinary software, but energy software that can keep up with an
-            industry that's always set on turbo-speed. At{" "}
+            industry that's always set on turbo-speed. At`}{" "}
             <Link href="/" className="text-[#2186ff]">
               Brain Inventory
             </Link>

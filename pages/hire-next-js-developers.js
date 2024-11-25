@@ -37,11 +37,11 @@ function HireAangularJsDeveloper() {
   );
   const subhead2 = (
     <>
-      Our next js developer team is the best in its field. Our team is proud to
+      {`Our next js developer team is the best in its field. Our team is proud to
       have the necessary abilities to offer tailored progressive web app
       services to clients across the globe. So if you need a trustworthy partner
       to assist with your company's web development requirements, search no
-      more. We are the ideal choice. We will be able to provide unmatched{" "}
+      more. We are the ideal choice. We will be able to provide unmatched`}{" "}
       <Link
         href="/web-development/custom-web-development"
         className="text-[#2186ff]"
@@ -117,15 +117,15 @@ function HireAangularJsDeveloper() {
       title: "Do you provide post-deployment support?",
       description: (
         <>
-          After deployment, your customer's app is ready to go, and it
+          {` After deployment, your customer's app is ready to go, and it
           automatically scales with traffic. But sometimes you have to
           troubleshoot a problem with the app performance and it's hard to do so
           – especially if there is no documentation on how to solve certain
-          tasks. At{" "}
+          tasks. At`}{" "}
           <Link href="/" className="text-[#2186ff]">
             {" "}
             Brain Inventory
-          </Link>{" "}
+          </Link>
           , we offer professional support in case you need help fixing an issue
           with Next.js apps. We will help you solve any issues related to
           deployments and operations of your application.
@@ -160,7 +160,7 @@ function HireAangularJsDeveloper() {
 
   const advantages = [
     <>
-      Next.js is a robust framework with powerful capabilities for server-side
+      {`Next.js is a robust framework with powerful capabilities for server-side
       rendering, which can substantially boost the speed of web apps. Hiring a
       Next.js developer enables optimizing your app's performance through
       server-side rendering and other techniques.", "It also furnishes inherent
@@ -174,7 +174,7 @@ function HireAangularJsDeveloper() {
       time and money.", "Next.js is an extremely scalable framework that can
       handle heavy traffic and large amounts of data with ease. Bringing on a
       Next.js developer helps guarantee your website is built to scale
-      seamlessly and adapt as your business expands.{" "}
+      seamlessly and adapt as your business expands.`}{" "}
       <Link href="/contact" className="text-[#2186ff]">
         Contact us
       </Link>{" "}

@@ -110,10 +110,10 @@ function Fitness() {
           <Link href="javascript:void(0)" className="text-[#2186ff]">
             app development company
           </Link>
-          , we're redefining fitness with gamification, adding game-like
+          {`, we're redefining fitness with gamification, adding game-like
           elements to make workouts engaging and fun. From competitive
           leaderboards to rewarding achievements, we incorporate various game
-          mechanics into our fitness website.
+          mechanics into our fitness website.`}
         </>
       ),
     },

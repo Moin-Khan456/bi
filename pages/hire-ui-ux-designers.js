@@ -29,18 +29,19 @@ function HireAangularJsDeveloper(props) {
     "User interface (UI) developers are a key part of every web or mobile app's success. They create appealing, usable, and effective interfaces for customers to interact with your business. A top-notch interface attracts customers and increases conversion rates, helping you grow your startup faster.";
   const subhead2 = (
     <>
-      There are several areas where UI design and development play a vital role
+      {`There are several areas where UI design and development play a vital role
       in increasing your website's conversion rate, brand recognition along with
       the overall user experience. The key is to enlist the help of an
       experienced front-end development company that will be able to create a
-      unique platform for your business.{" "}
+      unique platform for your business.`}{" "}
       <Link href="/" className="text-[#2186ff]">
-        Brain Inventory 
+        Brain Inventory
       </Link>{" "}
-      team of based in USA helps clients design responsive, mobile-friendly web applications that
-      can be accessed anywhere on any device. Our developer ensures that each
-      project we take up is manageable by working with you at every stage of
-      development so that you get complete control over the final output.
+      team of based in USA helps clients design responsive, mobile-friendly web
+      applications that can be accessed anywhere on any device. Our developer
+      ensures that each project we take up is manageable by working with you at
+      every stage of development so that you get complete control over the final
+      output.
     </>
   );
 

@@ -289,8 +289,8 @@ function SocialMedia(props) {
                 At{" "}
                 <Link href="/" className="text-[#2186ff]">
                   Brain Inventory
-                </Link>
-                , we're more than just a social networking app development
+                </Link>{" "}
+                {`,we're more than just a social networking app development
                 company. We're a forward-thinking technology partner with a
                 mission to empower industries with innovative social solutions.
                 Our expertise lies in delivering tailor-made apps that foster
@@ -298,7 +298,7 @@ function SocialMedia(props) {
                 connect and collaborate. With Brain Inventory, you gain a
                 strategic partner who understands the nuances of the social
                 industry and can help you harness the power of digital
-                technologies to drive growth and change
+                technologies to drive growth and change`}
               </>
             }
           />

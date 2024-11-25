@@ -194,10 +194,10 @@ function HireAangularJsDeveloper(props) {
           >
             API development
           </Link>
-          . We have designed and developed small, medium, and large-size custom
+          {`. We have designed and developed small, medium, and large-size custom
           apps using Python. Our developers can build a reliable, scalable
           solution that fits your needs and budget, whether it's just for one
-          application or an enterprise-level system.
+          application or an enterprise-level system.`}
         </>
       ),
     },

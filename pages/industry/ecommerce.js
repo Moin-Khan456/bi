@@ -285,9 +285,9 @@ function Ecommerce(props) {
 
   const approachDesc = (
     <>
-      At <Link href="/" className="text-[#2186ff]">Brain Inventory</Link>, our approach to building eCommerce software is unique
+      At <Link href="/" className="text-[#2186ff]">Brain Inventory</Link>, {`our approach to building eCommerce software is unique
       and effective. We aim to create s that fit our clients' needs and the
-      aspirations of travelers who will use them. Here's how we do it:
+      aspirations of travelers who will use them. Here's how we do it:`}
     </>
   );
   const approachPoints = [

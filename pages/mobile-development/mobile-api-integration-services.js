@@ -61,12 +61,12 @@ function HireAangularJsDeveloper(props) {
   );
   const subhead2 = (
     <>
-      A fundamental rationale for needing a Mobile Application Integration
+      {`A fundamental rationale for needing a Mobile Application Integration
       solution is to enhance user satisfaction. Users desire mobile applications
       that function coherently and seamlessly. Integration ensures that
       information is synchronized across various apps, avoiding data isolation
       and providing users with a harmonious experience. For instance, a
-      customer's details should remain consistent between a company's{" "}
+      customer's details should remain consistent between a company's`}{" "}
       <Link href="/industry/crm" className="text-[#2186ff]">
         CRM app
       </Link>{" "}

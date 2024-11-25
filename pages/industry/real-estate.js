@@ -190,9 +190,9 @@ function Travel(props) {
 
   const keyDesc = (
     <>
-      Navigating the complex world of transportation and logistics can seem
+      {`Navigating the complex world of transportation and logistics can seem
       overwhelming, but with Brain Inventory's innovative softwares, it doesn't
-      have to be. As a leading logistic{" "}
+      have to be. As a leading logistic`}{" "}
       <Link
         href="/"
         className="text-[#2186ff]"

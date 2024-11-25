@@ -86,11 +86,11 @@ function HireAangularJsDeveloper(props) {
           <Link href="/company" className="text-[#2186ff]">
             Our company
           </Link>{" "}
-          has a flexible engagement model where you are free to select the
+          {`has a flexible engagement model where you are free to select the
           engagement mode, which is most suitable for your requirements. We make
           sure that our operations are guided by the standards set by the
           industry and encompass creative processes in compliance with the
-          client's needs.
+          client's needs.`}
         </>
       ),
     },

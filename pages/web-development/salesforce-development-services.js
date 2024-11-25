@@ -36,11 +36,11 @@ function HireAangularJsDeveloper(props) {
       <Link href="/" className="text-[#2186ff]">
         Brain Inventory
       </Link>{" "}
-      is a company that values customer happiness above all else in today's
+      {`is a company that values customer happiness above all else in today's
       technology-driven world. We have a team of highly trained Salesforce
       specialists and accredited programmers who offer Salesforce creation
       services at a competitive rate. All of our clients have been completely
-      satisfied with our work.
+      satisfied with our work.`}
     </>
   );
   const subhead =
@@ -133,11 +133,11 @@ function HireAangularJsDeveloper(props) {
       <Link href="/company" className="text-[#2186ff]">
         Our team
       </Link>{" "}
-      is dedicated and devoted to our clients, not to the latest technology or
+      {`is dedicated and devoted to our clients, not to the latest technology or
       any major software vendors. We aim to work with the best technologies to
       serve our clients and their customers' interests. Our Salesforce
       consulting services in USA support business growth and success through
-      cloud enablement.
+      cloud enablement.`}
     </>,
   ];
 

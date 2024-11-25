@@ -39,18 +39,17 @@ function HireAangularJsDeveloper(props) {
       head: "Front End Full Stack Development",
       content: (
         <>
-          Full-stack developers possess a complete understanding of all aspects
-          of{" "}
+          {`Full-stack developers possess a complete understanding of all aspects of `}
           <Link
             href="/web-development/custom-web-development"
             className="text-[#2186ff]"
           >
             custom web development
-          </Link>{" "}
-          and are proficient in backend frameworks like PHP, Python Django. Once
-          the user interacts with your website, you need to ensure that there is
-          a smooth transition between the front end to the back end so that end
-          users' experience is seamless and optimized.
+          </Link>
+          {` and are proficient in backend frameworks like PHP, Python Django. Once
+         the user interacts with your website, you need to ensure that there is
+        a smooth transition between the front end to the back end so that end
+         users' experience is seamless and optimized.`}
         </>
       ),
     },
@@ -166,10 +165,13 @@ function HireAangularJsDeveloper(props) {
       energizing venture for an aspiring business visionary as you start
       chipping away at your application or site. However, where would it be a
       good idea for you to start? There are various benefits to doing as such,
-      and enlisting devoted full-stack web engineers from <Link href="/" className="text-[#2186ff]">Brain Inventory</Link> is the
-      manner by which you approach it. We have years of experience in custom web
-      development and information technology. Here are some reasons to hire such
-      web developers.
+      and enlisting devoted full-stack web engineers from{" "}
+      <Link href="/" className="text-[#2186ff]">
+        Brain Inventory
+      </Link>{" "}
+      is the manner by which you approach it. We have years of experience in
+      custom web development and information technology. Here are some reasons
+      to hire such web developers.
     </>
   );
   const keySkillsPoints = [

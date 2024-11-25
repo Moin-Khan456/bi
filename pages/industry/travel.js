@@ -141,7 +141,7 @@ function Travel() {
       >
         travel software development
       </Link>{" "}
-      needs is a game-changing move. We're not just another{" "}
+      {`needs is a game-changing move. We're not just another`}{" "}
       <Link href="/" className="text-[#2186ff]">
         Custom Software Development Company
       </Link>, we are a team of seasoned experts who will transform your vision into

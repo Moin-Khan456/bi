@@ -142,11 +142,11 @@ function Healthcare(props) {
           >
             healthcare app development company
           </Link>
-          , we're incorporating AI and Machine Learning for diagnostics,
+          {`, we're incorporating AI and Machine Learning for diagnostics,
           predictive analytics, and decision support, ensuring superb healthcare
           development. Our expert team of developers specialises in creating
           intelligent systems that can easily make sense of complex healthcare
-          data.
+          data.`}
         </>
       ),
     },
@@ -167,10 +167,10 @@ function Healthcare(props) {
       <Link href="/" className="text-[#2186ff]">
         custom software development services
       </Link>{" "}
-      with us. We stand as pioneers in crafting ingenious services that
+      {`with us. We stand as pioneers in crafting ingenious services that
       revolutionise the healthcare industry. With us, you're not just building
       medical software – you're shaping an experience that empowers and enhances
-      user engagement right from the start.
+      user engagement right from the start.`}
     </>
   );
 

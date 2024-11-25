@@ -48,10 +48,10 @@ function HireAangularJsDeveloper(props) {
     "You may need a Java development solution for various reasons, primarily because Java is a versatile and powerful programming language widely used for developing robust, scalable, and secure applications across diverse domains. Whether you're building enterprise-grade software, web applications, mobile apps, or embedded systems, Java offers a rich ecosystem of libraries, frameworks, and tools that streamline development processes and accelerate time-to-market. ";
   const subhead2 = (
     <>
-      Java's platform independence, thanks to its "write once, run anywhere"
+      {`Java's platform independence, thanks to its "write once, run anywhere"
       philosophy, allows developers to create applications that can run on any
       device or operating system with a Java Virtual Machine (JVM). This
-      portability makes Java an ideal choice for building{" "}
+      portability makes Java an ideal choice for building`}{" "}
       <Link
         href="/mobile-development/cross-platform-mobile-app-development"
         className="text-[#2186ff]"

@@ -62,7 +62,7 @@ function HireAangularJsDeveloper(props) {
         <>
           As a highly skilled{" "}
           <Link
-            href="/mobile-app-development-company"
+            href="/mobile-development/custom-mobile-app-development-company"
             className="text-[#2186ff]"
           >
             mobile application development company

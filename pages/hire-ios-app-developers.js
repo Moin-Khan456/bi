@@ -26,7 +26,10 @@ function HireAangularJsDeveloper(props) {
   const content = (
     <>
       We are a top-rated{" "}
-      <Link href="/mobile-development/ios-app-development-company" className="text-[#2186ff]">
+      <Link
+        href="/mobile-development/ios-app-development-company"
+        className="text-[#2186ff]"
+      >
         iOS app development company
       </Link>
       . Our team knows what you need for your mobile or web application and has
@@ -133,9 +136,12 @@ function HireAangularJsDeveloper(props) {
       developers. Our skilled app developers can develop your iOS app from
       scratch or redesign it to meet your requirements. We always offer the
       lowest rates because our focus is on providing cost-effective solutions
-      and budget-friendly services. We provide iPhone{" "}
-      <Link href="/mobile-app-development-company" className="text-[#2186ff]">
-        application development
+      and budget-friendly services. We provide{" "}
+      <Link
+        href="/mobile-development/ios-app-development-company"
+        className="text-[#2186ff]"
+      >
+        iPhone application development
       </Link>{" "}
       to clients of all types, including individuals, startups, and
       corporations. Offering robust solutions at a competitive price, we make

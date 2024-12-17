@@ -23,7 +23,7 @@ import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HireIsoAppDeveloper(props) {
   const content = (
     <>
       We are a top-rated{" "}
@@ -310,4 +310,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireIsoAppDeveloper;

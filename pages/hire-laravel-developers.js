@@ -28,7 +28,7 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HireLaravelDeveloper(props) {
   const content =
     "Our group of proficient Laravel programmers excel at adapting the platform to suit particular business needs and providing top-tier resolutions. We collaborate with you throughout the entire process, ensuring your application is customized to deliver the best possible user experience.";
   const subhead1 =
@@ -388,4 +388,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireLaravelDeveloper;

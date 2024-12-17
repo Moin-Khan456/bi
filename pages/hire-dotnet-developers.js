@@ -26,7 +26,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify"
 
 
-function HireAangularJsDeveloper(props) {
+function HireDotnetDeveloper(props) {
   const content =
     "Brain Inventory .NET developers can help companies get their products to market in minimal time. Our pool consists of Microsoft Certified professionals with experience from various industries, including healthcare, education, technology, finance, and more.";
   const subhead1 =
@@ -342,4 +342,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireDotnetDeveloper;

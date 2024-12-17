@@ -26,7 +26,7 @@ const ChooseBraininventory = dynamic(() =>
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
 
-function HireAangularJsDeveloper(props) {
+function HireNodeJsDeveloper(props) {
   const content =
     "Looking to develop real-time, data-intensive, and scalable web and mobile applications? Look no further than our team of top-tier Nodejs developers. Highly skilled in developing event-driven and non-blocking I/O model-based solutions.";
   const subhead1 = (
@@ -369,4 +369,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireNodeJsDeveloper;

@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function NodeJsDevelopment(props) {
   const content =
     "We are a reliable Node js development company that helps you deliver better products and services faster than your competitors do. Our expert team of software developers is always available 24/7.";
 
@@ -210,4 +210,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default NodeJsDevelopment;

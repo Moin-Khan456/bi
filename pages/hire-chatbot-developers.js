@@ -29,7 +29,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify"
 
 
-function HireAangularJsDeveloper(props) {
+function HireChatbotDeveloper(props) {
   const content =
     "Imagine an app that can have a conversation with your customer. Stop imagining and make it real by hiring our chatbot developer. We offer the best AI chatbot development services for building unique apps for platforms.";
   const subhead1 =
@@ -341,4 +341,4 @@ https://braininventory.in/hire-chatbot-developers"
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireChatbotDeveloper;

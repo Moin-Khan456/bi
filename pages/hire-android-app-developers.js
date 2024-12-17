@@ -20,7 +20,7 @@ import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link";
 
-function HireAangularJsDeveloper(props) {
+function HireAndroidAppDeveloper(props) {
   const content =
     "BrainInventory team is a pool of highly experienced, creative, and dedicated app developers with experience in developing highly customized Android applications for different sizes of businesses from different industries.";
   const subhead1 = (

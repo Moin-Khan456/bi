@@ -30,7 +30,7 @@ const OurDevelopers = dynamic(() =>
 );
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HirePythonDeveloper(props) {
   const content =
     "Hire a Python based web development team from us, and get a high-quality product at affordable rates. We are one of the prominent app developers in our area.";
   const subhead1 =
@@ -347,4 +347,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HirePythonDeveloper;

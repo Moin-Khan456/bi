@@ -27,7 +27,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify"
 
 
-function HireAangularJsDeveloper(props) {
+function HireShopifyDeveloper(props) {
   const content =
     "Brain Inventory is a marketplace that brings together some of the best Shopify developers for you. We have a team of experts who can handle your requirements regarding store development and create your customized Shopify online store.";
   const subhead1 =
@@ -353,4 +353,4 @@ Another benefit is the time and money savings that come with recruiting a Shopif
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireShopifyDeveloper;

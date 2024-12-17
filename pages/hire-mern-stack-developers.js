@@ -23,7 +23,7 @@ import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HireMernStackDeveloper(props) {
   const content =
     "Our software engineers are experts in the MERN stack and skilled at building apps using this tech stack. They have a demonstrated history of completing complex projects, utilizing cutting-edge instruments designed to accelerate development and simplify the building process.";
   const subhead1 =
@@ -320,4 +320,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireMernStackDeveloper;

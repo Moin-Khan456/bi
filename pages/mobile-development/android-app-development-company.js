@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper() {
+function AndroidAppDevelopment() {
   const content = (
     <>
       <Link href="/company" className="text-[#2186ff]">
@@ -223,4 +223,4 @@ function HireAangularJsDeveloper() {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default AndroidAppDevelopment;

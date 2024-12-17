@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function VueJsDevelopment(props) {
   const content =
     "As a strong proponent of state-of-the-art web development technologies and a top-notch Vue JS Development Company, we deliver unmatched products at an affordable cost. Our team of experienced, dedicated Vue JS developers utilizes reusable UI components.";
 
@@ -204,4 +204,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default VueJsDevelopment;

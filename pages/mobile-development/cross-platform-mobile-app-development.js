@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function CrossPlatformMobileApp(props) {
   const content =
     "Brain Inventory is a leading enterprise-grade Cross Platform App Development Company offering high-quality and scalable mobile apps integrated with Web APIs over secure communication channels.";
   const subhead1 =
@@ -250,4 +250,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default CrossPlatformMobileApp;

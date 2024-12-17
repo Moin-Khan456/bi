@@ -20,7 +20,7 @@ import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 
-function HireAangularJsDeveloper() {
+function HireNextJsDeveloper() {
   const content =
     "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
   const subhead1 = (
@@ -316,4 +316,4 @@ function HireAangularJsDeveloper() {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireNextJsDeveloper

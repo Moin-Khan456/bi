@@ -23,7 +23,7 @@ import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HireUxUiDesigners(props) {
   const content =
     "BrainInventory is a creative design agency, where you can hire UI/UX designers to help you elevate your product to the next level. Our experienced and proficient professionals have helped clients in various sectors.";
   const subhead1 =
@@ -291,4 +291,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireUxUiDesigners;

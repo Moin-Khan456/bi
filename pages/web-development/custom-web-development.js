@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function CustomWebDevelopment(props) {
   const content =
     "Our agile web design and development teams build fast and responsive websites with state of art features based on your ideas. We provide right framework for your project, allowing us to iterate quickly.";
   const hireCards = [
@@ -224,4 +224,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default CustomWebDevelopment;

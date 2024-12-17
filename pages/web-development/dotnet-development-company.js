@@ -29,7 +29,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper(props) {
+function DotnetDevelopment(props) {
   const content =
     "We are a proficient .NET development company that builds secure and scalable .NET development services utilizing the potential and versatility of the .NET platform to build a variety of applications for diverse domains.";
   const subhead1 =
@@ -230,4 +230,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default DotnetDevelopment;

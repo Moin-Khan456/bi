@@ -23,7 +23,7 @@ import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
 
-function HireAangularJsDeveloper(props) {
+function HireVueJsDeveloper(props) {
   const content =
     "Our team has specialized expertise in Vue.js development. We have been crafting innovative, real-time web applications using Vue.js for many years. We are dedicated to leveraging our substantial experience to build highly responsive Vue.js applications that push the boundaries of functionality. Vue.js mastery and a drive to create smarter solutions are at the heart of what we do.";
   const subhead1 =
@@ -356,4 +356,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireVueJsDeveloper;

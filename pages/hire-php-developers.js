@@ -30,7 +30,7 @@ const OurDevelopers = dynamic(() =>
 );
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HirePhpDeveloper(props) {
   const content =
     "One of the most popular scripting languages used to develop dynamic web content is PHP. We have a large pool of experienced and highly-skilled PHP developers who can build secure, scalable, and fast applications using only open-source technologies.";
   const subhead1 =
@@ -414,4 +414,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HirePhpDeveloper;

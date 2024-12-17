@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
 );
 const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
 
-function HireAangularJsDeveloper(props) {
+function SalesforceDevelopment(props) {
   const content = (
     <>
       <Link href="/" className="text-[#2186ff]">
@@ -257,4 +257,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default SalesforceDevelopment;

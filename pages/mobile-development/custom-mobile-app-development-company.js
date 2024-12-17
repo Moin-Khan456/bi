@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper() {
+function CustomMobileAppDevelopment() {
   const content =
     "We offer a complete Custom Mobile App Development platform that provides flexibility, scalability, and simplicity to quickly deploy custom mobile apps to engage your customers wherever they may be.";
   const hireCards = [
@@ -244,4 +244,4 @@ function HireAangularJsDeveloper() {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default CustomMobileAppDevelopment;

@@ -30,7 +30,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function CodeIgniterWebDevelopment(props) {
   const content =
     "We are CodeIgniter web development service providers. We help you build such full-featured and dynamic web platforms with our innovative as well as customized CodeIgniter solutions that appeal to the most demanding of customers.";
   const subhead1 =
@@ -235,4 +235,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default CodeIgniterWebDevelopment;

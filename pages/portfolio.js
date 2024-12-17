@@ -16,7 +16,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const ContactForm = dynamic(() => import("../components/common/ContactForm"));
 const LocateUs = dynamic(() => import("../components/portfolio/LocateUs"));
 
-function HireAangularJsDeveloper(props) {
+function Portfolio(props) {
   return (
     <>
       <Head>
@@ -227,4 +227,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default Portfolio;

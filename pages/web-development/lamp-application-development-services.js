@@ -30,7 +30,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function HireAangularJsDeveloper(props) {
+function LampApplicationDevelopment(props) {
   const content =
     "At Brain Inventory, we specialize in developing the best LAMP (Linux, Apache MySQL, and PHP) applications. We are something that can give you relief from all the technical problems related to your project.";
 
@@ -237,4 +237,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default LampApplicationDevelopment

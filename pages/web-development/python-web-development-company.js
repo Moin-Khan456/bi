@@ -31,7 +31,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function PythonWebDevelopment(props) {
   const content =
     "We have successfully delivered complex web applications, and dynamic websites using advanced frameworks such as Flask, and Django. We employ a result-oriented approach and years of experience to ensure that our solutions work efficiently and effectively.";
   const subhead1 =
@@ -225,4 +225,4 @@ https://braininventory.in/web-development/python-web-development-company"
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default PythonWebDevelopment;

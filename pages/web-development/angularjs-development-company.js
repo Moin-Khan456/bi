@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function AangularJsDevelopment(props) {
   const content = (
     <>
       At Braininventory, we provide services for{" "}
@@ -209,4 +209,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default AangularJsDevelopment;

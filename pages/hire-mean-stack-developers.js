@@ -23,7 +23,7 @@ import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify"
 
-function HireAangularJsDeveloper(props) {
+function HireMeanStackDeveloper(props) {
   const content =
     "Employ a proficient developer from our company, as our team possesses vast knowledge in creating interactive, adaptable, and protected web applications as well as additional backend functions such as ensuring security, incorporating data, and linking with external systems.";
   const subhead1 = (
@@ -308,4 +308,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireMeanStackDeveloper;

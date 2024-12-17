@@ -27,7 +27,7 @@ const Clients = dynamic(() => import("../components/Hire/Clients"));
 import DOMPurify from "isomorphic-dompurify";
 
 
-function HireAangularJsDeveloper(props) {
+function HireReactNativeDeveloper(props) {
   const content =
     "Hire React Native Developers from Brain Inventory to make your dream app a reality. Our developers have expertise in building truly native-like apps for Android, iOS, Web, and Desktop devices.";
   const subhead1 = (
@@ -350,4 +350,4 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireReactNativeDeveloper;

@@ -22,7 +22,7 @@ import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
 
-function HireAangularJsDeveloper(props) {
+function HireReactJsDeveloper(props) {
   const content = (
     <>
       At{" "}
@@ -365,4 +365,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireReactJsDeveloper;

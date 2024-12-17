@@ -28,7 +28,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify"
 
 
-function HireAangularJsDeveloper(props) {
+function HireFullStackDeveloper(props) {
   const content =
     "Our team is focused on providing cost-effective solutions to different clients, irrespective of their requirements. We provide custom solutions and flexible pricing options. Our developers work round the clock to deliver quality work.";
   const subhead1 =
@@ -381,4 +381,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireFullStackDeveloper;

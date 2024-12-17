@@ -127,41 +127,51 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Do you need to hire dedicated ReactJS developers?",
+      title: "How Do I Hire ReactJS Developers?",
       description:
-        "It could be the best way to ensure that work is done with the highest optimization. Hiring dedicated ReactJS developers comes with a range of benefits, like flexibility, cost-effectiveness, increased productivity, and easy management.",
+      <>
+      <p> To hire dedicated ReactJS developers, you can -</p>
+       <ul className="ml-10">
+         <li className="list-disc">
+         Prepare and share the JD.
+         </li>
+         <li className="list-disc">You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
+         </li>
+         <li className="list-disc">Conduct both Technical and team compatibility rounds of interviews.
+         </li>
+         <li className="list-disc">Complete the onboarding process.
+         </li>
+         <li className="list-disc">
+         You are good to go.
+         </li>
+       </ul>
+     </>
     },
     {
       id: "2",
       title:
-        "Do you offer support and maintenance after the deployment of your Reactjs project?",
+        "Why Hire ReactJS Developers from Brain Inventory?",
       description:
-        "Yes, we certainly do. We provide bug fixes, framework updates, continual monitoring, and technical glitch resolution to ensure that your Reactjs product is running optimally.",
+        "Your project is backed by excellent development skills and rock-solid experience in ReactJS if you hire experts from Brain Inventory. ",
     },
     {
       id: "3",
-      title: "What are the key advantages of React.JS?",
+      title: "Can I migrate my current web application to ReactJs?",
       description:
-        "React.js is a highly popular option as it streamlines the development process, makes ongoing maintenance easier, and works with various browsers. It has a clean, simple API that makes it easy to pick up and build React apps quickly. There are libraries for virtually every technology you might want to use in your site, including HTML5 elements, CSS3 animations, and today's best practices in DOM manipulation.",
+        "Yes. It is possible with the help of ReactJS migration, our team can migrate your current web application to ReactJS. In the process, your current framework elements will be switched to ReactJS without needing to build everything from scratch. ",
     },
     {
       id: "4",
       title:
-        "Are you able to hire a ReactJS developer on an hourly or project-based basis?",
+        "Can I hire a ReactJS developer to work on hourly or project-based tasks?",
       description:
-        "Absolutely! At BrainInventory, we offer several types of hiring models, including hourly, monthly, and yearly. So, you can hire a developer per hour or for a specific project/task and switch the hiring model whenever you need.",
+        "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire ReactJS developers to work hourly or give them project-based tasks. ",
     },
     {
       id: "5",
-      title: "Do you need help finishing your app development project?",
+      title: "Do you provide support and maintenance services after deployment?",
       description:
-        "Absolutely! We have had many clients whose mission-critical app projects weren't completed for one reason or another. We fully appreciate the urgency of bringing your app dreams to life. Why don't you arrange a call with us, so our professionals can get to know your concepts, and decide on the most suitable solution?",
-    },
-    {
-      id: "6",
-      title: "Will I get reports about the project's progress?",
-      description:
-        "Our goal is to help you stay on track and make informed decisions. We will send you regular updates on your project's progress so that you can focus on moving forward toward success.",
+        "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied. ",
     },
   ];
 
@@ -208,7 +218,54 @@ function HireAangularJsDeveloper(props) {
     "Adherence to project timelines.",
     "Effective communication skills.",
   ];
-
+  const jsonLdScript ={
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How Do I Hire ReactJS Developers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `To hire dedicated ReactJS developers, you can - 
+        You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
+        Conduct both Technical and team compatibility rounds of interviews.
+        Complete the onboarding process.
+        You are good to go.
+        Prepare and share the JD.`
+      }
+    },{
+      "@type": "Question",
+      "name": "Why Hire ReactJS Developers from Brain Inventory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your project is backed by excellent development skills and rock-solid experience in ReactJS if you hire experts from Brain Inventory."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I migrate my current web application to ReactJs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. It is possible with the help of ReactJS migration, our team can migrate your current web application to ReactJS. In the process, your current framework elements will be switched to ReactJS without needing to build everything from scratch."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I hire a ReactJS developer to work on hourly or project-based tasks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire ReactJS developers to work hourly or give them project-based tasks."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do you provide support and maintenance services after deployment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied."
+      }
+    }]
+  }
+  
+  
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -247,6 +304,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-reactjs-developers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd}}
         />
       </Head>
       <Suspense

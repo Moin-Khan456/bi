@@ -28,6 +28,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const OurDevelopers = dynamic(() =>
   import("../components/Hire/OurDevelopers.jsx")
 );
+import DOMPurify from "isomorphic-dompurify"
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -136,22 +137,55 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Why should I hire PHP developers from Brain Inventory?",
+      title: "Are PHP developers still in demand?",
       description:
-        "As a proficient and highly experienced PHP development company in USA, we are providing a comprehensive range of PHP Web Development Services. Our developers are skilled as well as experts to work on every kind of small, medium, and large project including custom web development services. Our team of expert developers provides excellent web application solutions. Our dedicated team goes beyond code modification to ensure that our clients get continuous value from their Web applications.",
+        "Yes, PHP developers are in high demand because PHP is a language that powers a large portion of the web. It is super versatile and can be used in various sectors including healthcare, e-commerce, education, and entertainment. ",
     },
     {
       id: "2",
-      title: "Can I hire PHP developers for hourly or project-based tasks?",
+      title: "Can I hire a PHP developer for hourly or project-based tasks?",
       description:
-        "Yes, you can get PHP developers for hire for hourly or project-based tasks. Hiring a full-time software developer would be more expensive than getting a freelance developer for hire, which is why some businesses take the more affordable route of hiring a freelancer. Hiring a skilled PHP programmer will enable you to get the job done without breaking your budget.",
+        "Yes, you can hire PHP developers for both hourly and project-based tasks, depending on the unique requirements of your project.",
     },
     {
       id: "3",
       title:
-        "Can your PHP developer help me complete my incomplete app development project?",
+        "What are some key features of PHP programming that PHP web developers choose it for?",
       description:
-        "Of course, we'll be the right partner for your mid-way project transition. You are probably in the middle of your mobile app development project and have some questions about what to do next. You might be asking yourself if there is a better option out there than your current mobile app development partner. We understand that your previous partner is unable to complete its work on time or you aren't satisfied with the progress of your mobile app development project. Our team of expert PHP developers takes complete ownership of your projects and works in a highly effective and structured manner to deliver the projects on time with excellent quality. Our team is competent enough to take up any kind of mid-way project transition, whether it is from another company or due to any client switching.",
+      <>
+      <p> Some of the prominent features for which PHP web developers choose PHP include-  </p>
+       <ul className="ml-10">
+         <li className="list-disc">
+         Free and open-source library
+         </li>
+         <li className="list-disc">Compatible with all OS 
+         </li>
+         <li className="list-disc">It is dynamic and flexible
+         </li>
+         <li className="list-disc">Database flexibility
+         </li>
+         <li className="list-disc">
+         Works well with CMSs
+         </li>
+         <li className="list-disc">
+         Plenty of handy resources and tools 
+         </li >
+       </ul>
+       <p>Contact us to Hire a dedicated PHP developer </p>
+     </>
+    },
+    {
+      id: "4",
+      title: "How does PHP app development differ from PHP web development?",
+      description:
+        "PHP app development focuses on backend processes and functionality, while on the other hand, PHP web development focuses on creating front-end (user-facing) web interfaces.",
+    },
+    {
+      id: "5",
+      title: "What skills should a PHP developer have?",
+      description:
+        `A PHP developer should be proficient in PHP of course, then a basic knowledge of Ajax, jQuery, and MySQL is good. Also, if you’re going to be a full-stack developer, you must be aware of languages like HTML, CSS, and JavaScript.
+        Contact Brain Inventory if you want to hire dedicated PHP developers.`,
     },
   ];
 
@@ -223,7 +257,54 @@ function HireAangularJsDeveloper(props) {
     </>,
     "Brain Inventory is an independent IT company that offers the services of PHP developers. We were founded in 2019 and have been offering our services to different businesses ever since. We assist clients in building their products and websites with a well-organized approach that can help them reduce development costs and increase the returns on investment.",
   ];
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Are PHP developers still in demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, PHP developers are in high demand because PHP is a language that powers a large portion of the web. It is super versatile and can be used in various sectors including healthcare, e-commerce, education, and entertainment. Contact us to hire a PHP developer."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I hire a PHP developer for hourly or project-based tasks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can hire PHP developers for both hourly and project-based tasks, depending on the unique requirements of your project."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are some key features of PHP programming that PHP web developers choose it for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Some of the prominent features for which PHP web developers choose PHP include- 
+          Free and open-source library
+          Compatible with all OS
+          It is dynamic and flexible
+          Database flexibility
+          Works well with CMSs
+          Plenty of handy resources and tools
+          Contact us to Hire a dedicated PHP developer.`
+      }
+    },{
+      "@type": "Question",
+      "name": "How does PHP app development differ from PHP web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PHP app development focuses on backend processes and functionality, while on the other hand, PHP web development focuses on creating front-end (user-facing) web interfaces."
+      }
+    },{
+      "@type": "Question",
+      "name": "What skills should a PHP developer have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A PHP developer should be proficient in PHP of course, then a basic knowledge of Ajax, jQuery, and MySQL is good. Also, if you’re going to be a full-stack developer, you must be aware of languages like HTML, CSS, and JavaScript.Contact Brain Inventory if you want to hire dedicated PHP developers."
+      }
+    }]
+  }
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -254,6 +335,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-php-developers"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
         />
       </Head>
 

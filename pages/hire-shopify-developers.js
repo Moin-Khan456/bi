@@ -24,6 +24,8 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
+import DOMPurify from "isomorphic-dompurify"
+
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -93,30 +95,37 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What steps should I follow to Hire Shopify Developer?",
+      title: "Should I hire a Shopify developer?",
       description:
-        "First, Screen the Developers Against Your Necessities For your engaging application, you require a qualified Website Development Company. You need to go over each development necessity and check whether the level of developers in the given company can cater to them or not.",
+        `Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store's design and put some "beyond basic" functionalities to appeal to your audience. `,
     },
     {
       id: "2",
       title:
-        "Can I hire Shopify theme developers for hourly or project-based tasks?",
+        "Is Shopify worth it for a small business?",
       description:
-        "If you are looking for custom Shopify app development or support from a Shopify expert, we help you get the best developers to hire. Depending on your project and requirements, we may suggest hiring Shopify developers or outsourcing Shopify development to India. No matter what type of software developer you need, be it for an hourly contract or full-time job, we will send you a quote and proposal with the right rates based on your needs within 24 hours.",
+        "Yes. Shopify is an ideal platform for small businesses as it is easy to use, convenient, and an ideal option if you are just starting to build your online presence.",
     },
     {
       id: "3",
       title:
-        "What project development methodology do your Shopify coders follow?",
+        "Are Shopify Developers in Demand?",
       description:
-        "We follow a systematic approach of managing projects that helps us to understand the client's requirements and makes them more efficient at the same time. Our developers are always up-to-date with all the latest technologies and web standards. They have a good knowledge of various web programming languages such as ASP.NET, C The project methodology that our developers follow is: Requirement Gathering and Analysis Wireframing and Designing Development Testing & QA Support",
+        "Yes. Shopify developers are in high demand as they can build, customize, and optimize your online presence. ",
     },
     {
       id: "4",
       title:
-        "Do you provide Shopify migration services for our existing websites?",
+        "How Much Does It Cost To Hire a Shopify Developer?",
       description:
-        "As a Shopify expert, we provide smooth and easy migration services for all your installed applications. Shopify experts will take note of every configuration performed earlier on your account. This ensures there is no chance of missing out on any important data as the procedure takes place. We can even help you set up the new store by installing plugins and apps again so that you are ready for transactions as soon as possible.",
+        "The cost to hire a Shopify developer depends on the complexity of the Shopify website, the features required, and the developer’s expertise with Shopify development. ",
+    },
+    {
+      id: "5",
+      title:
+        "What can our Shopify Programmers do for you?",
+      description:
+        "Our Shopify developers can help you in creating customized features for your website, develop themes and plugins to make your store look appealing and optimize your store’s speed to help in your SEO efforts. ",
     },
   ];
 
@@ -196,6 +205,47 @@ function HireAangularJsDeveloper(props) {
         "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
     },
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Should I hire a Shopify developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store's design and put some \"beyond basic\" functionalities to appeal to your audience."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is Shopify worth it for a small business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shopify is an ideal platform for small businesses as it is easy to use, convenient, and an ideal option if you are just starting to build your online presence."
+      }
+    },{
+      "@type": "Question",
+      "name": "Are Shopify Developers in Demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shopify developers are in high demand as they can build, customize, and optimize your online presence."
+      }
+    },{
+      "@type": "Question",
+      "name": "How Much Does It Cost To Hire a Shopify Developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost to hire a Shopify developer depends on the complexity of the Shopify website, the features required, and the developer’s expertise with Shopify development."
+      }
+    },{
+      "@type": "Question",
+      "name": "What can our Shopify Programmers do for you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Shopify developers can help you in creating customized features for your website, develop themes and plugins to make your store look appealing and optimize your store’s speed to help in your SEO efforts."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -232,6 +282,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-shopify-developers"
+        />
+        <script 
+         type="application/ld+json"
+         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

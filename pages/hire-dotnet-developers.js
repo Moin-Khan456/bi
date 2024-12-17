@@ -23,6 +23,8 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
+import DOMPurify from "isomorphic-dompurify"
+
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -144,34 +146,34 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What steps should I follow to hire an ASP.NET developer?",
+      title:
+        "How Much Does It Cost To Hire a .NET Developer?",
       description:
-        "Every project is different, and this means that every project requires a different developer and thus a different set of developer skills. There are hundreds, if not thousands, of programming languages out there, and the more you have, the better chances you have to hit the nail on the head with your development needs. If you are in need of a developer and have yet to find a talented one, our expert team can provide a solid solution. We at BrainInventory offer a very productive and economical way of finding .NET developers for your .NET development project.",
+        "The cost of hiring a .NET developer depends on the complexity of the project, the developer’s expertise, and the hiring model you choose (hourly or project-based). ",
     },
     {
       id: "2",
-      title: "How much does it cost to hire Dot Net developers?",
+      title: "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
       description:
-        "We're shifting the custom web development industry with the concept of competence-based hourly billing. By pursuing this new model, we can build and deploy complex software applications on time and on budget without heavy up-front expenses. We put a bigger premium on the skills of our expert developers as opposed to hours worked.",
+        "Yes. You can hire a dedicated ASP.NET developer for hourly or project-based tasks, depending on the project’s requirements and budget. We at Brain Inventory offer flexible models for our clients, which we can discuss in our scheduled meeting. ",
     },
     {
       id: "3",
-      title: "What our Dot Net programmers can do for you?",
+      title: "Are .NET Developers in Demand? ",
       description:
-        "Our ASP.NET programmers can help you with the following services- Custom app development Cloud migration Framework architecture Enterprise solutions Web portal development Application modernization Mobile app development CMS website development Remote ASP dot net migration services",
+        "Yes. .NET developers are in high demand if you want to build critical applications. Hire .NET developers and make your next project successful with us. ",
     },
     {
       id: "4",
-      title:
-        "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
+      title: "Can your .NET developers join and take over mid-project?",
       description:
-        "Brain Inventory provides tailored hiring models for different needs. We offer Fixed Price Model as well as Time and Material Model and other project tailored engagement models. Our customized hiring models are tailored to project purpose, budget, deliverables, deadlines, and approach.",
+        "Yes. They can. As soon as you onboard .NET developers to join and take mid-projects, you can expect them to integrate seamlessly within your team and pick the project speed within 2 weeks.",
     },
     {
       id: "5",
-      title: "Will the hired .Net resources work according to my time zone?",
+      title: "How do you handle time zone differences between your talents and us?",
       description:
-        "We're offering a special, high-quality team of dedicated Net developers who can work according to your time zone (EST/PST/CST/MST), deadline, and milestone.",
+        "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45\, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers.  ",
     },
   ];
 
@@ -207,7 +209,47 @@ function HireAangularJsDeveloper(props) {
     </>,
     "We're issue-solvers who persevere until we attain solutions that excel across all major platforms—from desktop programs to data warehouses to mobile applications!",
   ];
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How Much Does It Cost To Hire a .NET Developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost of hiring a .NET developer depends on the complexity of the project, the developer’s expertise, and the hiring model you choose (hourly or project-based)."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can hire a dedicated ASP.NET developer for hourly or project-based tasks, depending on the project’s requirements and budget. We at Brain Inventory offer flexible models for our clients, which we can discuss in our scheduled meeting."
+      }
+    },{
+      "@type": "Question",
+      "name": "Are .NET Developers in Demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. .NET developers are in high demand if you want to build critical applications. Hire .NET developers and make your next project successful with us."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can your .NET developers join and take over mid-project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. They can. As soon as you onboard .NET developers to join and take mid-projects, you can expect them to integrate seamlessly within your team and pick the project speed within 2 weeks."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do you handle time zone differences between your talents and us?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45\, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -238,6 +280,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-dotnet-developers"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense fallback={null}>

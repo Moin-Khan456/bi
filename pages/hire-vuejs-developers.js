@@ -21,6 +21,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -150,33 +151,48 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What steps should I follow to hire Vue JS developers?",
+      title: "Do you provide support and maintenance services after deployment?",
       description:
-        "When it comes to hiring a Vue developer, you need to ensure that you have screened the developers you are going to recruit. This means matching their aptitudes with your project necessities. Ensure to include tech specialists just as partners to help settle on an official conclusion. The best part is that we have got you covered by all challenges in hiring project-fit Vue developers. Just let us know your project requirements and we will do the heavy lifting to build a robust app solution!",
+        "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction.",
     },
     {
       id: "2",
-      title: "Can I Hire Vue.js developers for hourly or project-based tasks?",
+      title: "What are the advantages of using Vue in web development?",
       description:
-        "Brain Inventory provides a wide variety of available positions so that you can find the best match for your project needs. If you’re not sure if an hourly option is right for your project or would like to discuss alternatives like project-based hiring and different payment terms, please contact us.",
+        "Vue is a popular framework because it is easier to learn, lightweight, uses a virtual DOM, and promotes reusability.",
     },
     {
       id: "3",
-      title: "Do you provide NDA for my project?",
+      title: "What are some of the best Vue libraries and plugins?",
       description:
-        "As a client and as a team member, you'll have 100% ownership of your project. It includes NDA, copyright, and source code, intellectual property rights, confidential letters.",
+        "Some of the best Vue libraries and plugins include Vux, Buefy, Vuetify, Quasar, iView, and KeenUI.",
     },
     {
       id: "4",
-      title: "What is Vue.js used for?",
+      title: "Are Vue JS developers in demand?",
       description:
-        "Vue.js is an open-source JavaScript framework that's primarily used to build web interfaces and one-page applications. However, it can also be applied to both desktop and mobile app development with HTML extensions and other useful plugins. The primary purpose of Vue.js is to help developers create Web interfaces that can adapt to changing needs.",
+        "Yes. VueJS developers are expected to stay in demand because the framework is well-supported by active community members, has valuable contributors from around the world, and boasts some great features for easy development. Businesses looking to turn their creative ideas into modern, efficient applications should hire dedicated VueJS developers to leverage the full potential of this versatile framework.",
     },
     {
       id: "5",
-      title: "Is Vue.js the same as JavaScript?",
+      title: "Does Vue have a future?",
       description:
-        "Vue.js is an open-source JavaScript framework used for developing user interface and SPAs. To start Vue.js coding developers need to have the basic knowledge of HTML, CSS, and JavaScript. It is built on top of the Nitro UI toolkit and makes it easy for developers to create stunning web interfaces.",
+      <>
+      <p> Yes. Vue has a bright future due to </p>
+       <ul className="ml-10">
+         <li className="list-disc">
+         Strong and active community.
+         </li>
+         <li className="list-disc">Gentle learning curve.
+         </li>
+         <li className="list-disc">Support from large corporations like Xiaomi, and Alibaba.
+         </li>
+         <li className="list-disc">Continuous evolution.
+         </li>
+       </ul>
+       <p>Hire VueJS developers to take advantage of the VueJS features and its ability to build high-performing applications. 
+       </p>
+     </>,
     },
   ];
 
@@ -201,7 +217,54 @@ function HireAangularJsDeveloper(props) {
     "Our team members are well-versed in modern web development technologies such as vue js, angular js, react js, etc. Our team has exceptional abilities in fixing bugs and enhancing applications to make them faster and more responsive than previously.",
     "We have in-depth knowledge working with Vue.js, allowing us to provide a comprehensive range of services for your app development needs. We utilize established Agile development principles to write efficient and reusable code. Our adaptable staffing models can satisfy your specific app development requirements.",
   ];
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Do you provide support and maintenance services after deployment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the advantages of using Vue in web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vue is a popular framework because it is easier to learn, lightweight, uses a virtual DOM, and promotes reusability."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are some of the best Vue libraries and plugins?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some of the best Vue libraries and plugins include Vux, Buefy, Vuetify, Quasar, iView, and KeenUI."
+      }
+    },{
+      "@type": "Question",
+      "name": "Are Vue JS developers in demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. VueJS developers are expected to stay in demand because the framework is well-supported by active community members, has valuable contributors from around the world, and boasts some great features for easy development. Businesses looking to turn their creative ideas into modern, efficient applications should hire dedicated VueJS developers to leverage the full potential of this versatile framework."
+      }
+    },{
+      "@type": "Question",
+      "name": "Does Vue have a future?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Yes. Vue has a bright future due to 
+        Gentle learning curve.
+        Support from large corporations like Xiaomi, and Alibaba.
+        Continuous evolution.
+        Hire VueJS developers to take advantage of the VueJS features and its ability to build high-performing applications.
+        Strong and active community.`
+      }
+    }]
+  }
+  
+  
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -232,6 +295,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-vuejs-developers"
+        />
+        <script 
+         type="application/ld+json"
+         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

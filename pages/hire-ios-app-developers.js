@@ -21,6 +21,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify"
 
 function HireAangularJsDeveloper(props) {
   const content = (
@@ -97,27 +98,33 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Do you sign an NDA? Is my app idea secure with you?",
+      title: "How to hire an iOS developer?",
       description:
-        "Yes, we provide complete documentation and details on the resources used for the solution we create for your company. This is because we have to protect our client's intellectual property. After all, we are not just creating a working app that looks good; we're creating an entire platform that users can use over months, years, and hopefully decades. It's important that you have no doubt about the reliability of what you're getting from our iOS developers.",
+        "Today’s online marketplace is way easier to find iOS experts as compared to traditional setups. You can hire iOS developers on sites like Toptal, Indeed, LinkedIn, Fiverr, etc. Also, keep a keen eye on college IT contests as you can find good talent from there. ",
     },
     {
       id: "2",
-      title: "How much experience do your iOS app developers carry?",
+      title: "Can I pay and Hire iPhone Developers full-time?",
       description:
-        "We have a diverse pool of developers with different levels of experience and skill sets. With the help of our rigorous screening method, we handpick developers who fulfill our requirements for excellence only when they have successfully passed all the screening levels. Based on your project specifications and developers’ talents and experience, we deploy them to your team. We work on a paid basis, but we also offer full-time employment as part of our services",
+        "Yes, with the right contacts, and recommendations – it is possible to hire full-time iPhone developers. ",
     },
     {
       id: "3",
-      title: "How much does it cost to hire an iOS developer?",
+      title: "How can I communicate with the iOS developers I hired?",
       description:
-        "The cost to hire an iOS Developer depends on the development platform and the complexity of the design. There is no one size fits all solution, but you can get a rough estimate of what it would cost if you work with a freelancer or a company that works as a team.",
+        "If you have hired remote developers, you can establish communication channels for regular and effective communication. Tools like Google Meet and Zoom can help to conduct meetings with iOS developers while also sharing the screen.",
     },
     {
       id: "4",
-      title: "Will I get post-mobile app development support?",
+      title: "How do I test your iOS Developers’ expertise?",
       description:
-        "Yes, we do. We offer a fully managed (SaaS) mobile application development platform that allows you to concentrate on your core business functions and realize the full potential of your mobile application. We have a flexible bucket model that allows you to hire our mobile app developers to provide dedicated app support and maintenance services when required.",
+        "You can ask for 1-2 applications that they have developed and published in the store. If they show you the codes also, it means they are genuine and you can consider hiring them. Contact Brain Inventory to hire iOS app developers.",
+    },
+    {
+      id: "5",
+      title: "How do you use the iOS developer assessment for hiring? ",
+      description:
+        "An iOS developer assessment is a part of the hiring process where you can evaluate a candidate’s technical skills and expertise in iOS app development. This can help you in making informed decisions about a candidate’s suitability for the required role. ",
     },
   ];
 
@@ -170,7 +177,48 @@ function HireAangularJsDeveloper(props) {
       need. Delivering awesome products with ease.
     </>,
   ];
-
+  const jsonLdScript ={
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How to hire an iOS developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Today’s online marketplace is way easier to find iOS experts as compared to traditional setups. You can hire iOS developers on sites like Toptal, Indeed, LinkedIn, Fiverr, etc. Also, keep a keen eye on college IT contests as you can find good talent from there."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can I pay and Hire iPhone Developers full-time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ys, with the right contacts, and recommendations– it is possible to hire full-time iPhone developers."
+      }
+    },{
+      "@type": "Question",
+      "name": "How can I communicate with the iOS developers I hired?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have hired remote developers, you can establish communication channels for regular and effective communication. Tools like Google Meet and Zoom can help to conduct meetings with iOS developers while also sharing the screen."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do I test your iOS Developers’ expertise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can ask for 1-2 applications that they have developed and published in the store. If they show you the codes also, it means they are genuine and you can consider hiring them. Contact Brain Inventory to hire iOS app developers."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do you use the iOS developer assessment for hiring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An iOS developer assessment is a part of the hiring process where you can evaluate a candidate’s technical skills and expertise in iOS app development. This can help you in making informed decisions about a candidate’s suitability for the required role."
+      }
+    }]
+  }
+  
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))   
   return (
     <>
       <Head>
@@ -202,6 +250,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-ios-app-developers"
+        />
+        <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
         />
       </Head>
       <Suspense

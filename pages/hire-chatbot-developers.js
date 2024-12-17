@@ -26,6 +26,8 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
+import DOMPurify from "isomorphic-dompurify"
+
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -95,33 +97,53 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What is bespoke about chatbot development services?",
+      title: "What tools do AI Chatbot Developers use?",
       description:
-        "A good chatbot is what every brand needs to stay in touch with its customers more frequently and effectively. And we are all set to build for you a good chatbot – one that offers best-in-class development services, has a clear purpose, a smooth flow of conversation and an interesting storyline. You just create your ideal customer profile for the desired results. Get in touch with us now to experience the magic.",
+      <>
+      <p>Some of the essential tools that AI chatbot developers use are-  </p>
+       <ul className="ml-10">
+         <li className="list-disc">
+         Chatbase
+         </li>
+         <li className="list-disc">Dialogflow 
+         </li>
+         <li className="list-disc">Microsoft Bot framework
+         </li>
+         <li className="list-disc">Rasa
+         </li>
+         <li className="list-disc">
+         Botpress
+         </li>
+         <li className="list-disc">
+         Chatfuel  
+         </li >
+       </ul>
+       <p>Contact us to Hire dedicated chatbot developers </p>
+     </>
     },
     {
       id: "2",
       title: "How is Chatbot different from a mobile application?",
       description:
-        "Chatbot is a new way of communicating with your customers. Unlike any other competitors, the chatbots from Chatbot offers consumers with a unique and feature rich experience. It is superior to artificial intelligence that provides a more engaging experience for the customers, and as well as our support team.",
+        "Chatbots are much simpler and faster than mobile apps. To use chatbots, you just need to start a conversation. While a mobile app has to be downloaded on your phone, sign up with an account if you want to use it. Chatbots don’t need memory in your mobile phones.",
     },
     {
       id: "3",
-      title: "Is It Possible To Build A bot That Support Multi-Languages?",
+      title: "Can chatbots be used to improve customer service?",
       description:
-        "Yes. We can build a bot that will support multi-launguages and also improve the effectiveness of your business with its advanced technology that will unleash the power of Artificial Intelligence and Machine Learning to increase your engagement, automate tasks, create micro-conversations and much more.",
+        "Yes. chatbots are being used by many businesses today to improve their customer service. Chatbots give quicker responses, are available 24*7, and give a personalized service to the customer. Hire a chatbot developer by partnering with us. ",
     },
     {
       id: "4",
-      title: "What makes your Chatbot Development services better than others?",
+      title: "What does an AI Chatbot Developer do?",
       description:
-        "When it comes to building a chatbot for your business, we have the expertise in doing so. We have tested various different types of Chatbots for numerous industries ranging from financial to ecommerce. The results have been impressive and our customers are very satisfied.",
+        "An AI chatbot developer designs and builds AI programs to communicate with humans through text, or audio. An AI chatbot can interact with users more naturally, leading to a human-like conversation. The work of an AI chatbot developer typically includes conversation design, NLP implementation, coding and development, testing, and maintenance. ",
     },
     {
       id: "5",
-      title: "Can chatbots be used to improve customer service?",
+      title: "How long does it take to develop a chatbot?",
       description:
-        "With the advancement of technology, chatbots have become a new way for companies to improve customer service. This is not surprising considering that 68% of customers would recommend businesses to others if they received good customer service. Not all customers are able to contact companies via phone or email which is where chatbots come into play.",
+        "Developing a chatbot requires 4-12 weeks, depending on the technical complexity. ",
     },
   ];
 
@@ -173,6 +195,54 @@ function HireAangularJsDeveloper(props) {
         "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
     },
   ];
+  const jsonLdScript ={
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What tools do AI Chatbot Developers use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Some of the essential tools that AI chatbot developers use are- 
+        Dialogflow 
+        Microsoft Bot framework
+        Rasa
+        Botpress
+        Chatfuel 
+        Chatbase
+  Contact us to Hire dedicated chatbot developers.`
+      }
+    },{
+      "@type": "Question",
+      "name": "How is Chatbot different from a mobile application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chatbots are much simpler and faster than mobile apps. To use chatbots, you just need to start a conversation. While a mobile app has to be downloaded on your phone, sign up with an account if you want to use it. Chatbots don’t need memory in your mobile phones."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can chatbots be used to improve customer service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. chatbots are being used by many businesses today to improve their customer service. Chatbots give quicker responses, are available 24*7, and give a personalized service to the customer. Hire a chatbot developer by partnering with us."
+      }
+    },{
+      "@type": "Question",
+      "name": "What does an AI Chatbot Developer do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI chatbot developer designs and builds AI programs to communicate with humans through text, or audio. An AI chatbot can interact with users more naturally, leading to a human-like conversation. The work of an AI chatbot developer typically includes conversation design, NLP implementation, coding and development, testing, and maintenance."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does it take to develop a chatbot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Developing a chatbot requires 4-12 weeks, depending on the technical complexity."
+      }
+    }]
+  }
+const sanitizedJsonLd  = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -210,6 +280,10 @@ https://braininventory.in/hire-chatbot-developers"
         <link
           rel="canonical"
           href="https://braininventory.in/hire-chatbot-developers"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
         />
       </Head>
       <Suspense

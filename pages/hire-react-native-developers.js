@@ -24,6 +24,8 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
+import DOMPurify from "isomorphic-dompurify";
+
 
 function HireAangularJsDeveloper(props) {
   const content =
@@ -119,34 +121,34 @@ function HireAangularJsDeveloper(props) {
     {
       id: "1",
       title:
-        "Can your React Native developer help me complete my incomplete app development project?",
+        "How do I find React Native developers?",
       description:
-        "In other words, our React Native developers are always ready to help you. We understand the implications of your transition from one project to another and that may include troubleshoot, debugging, integration testing, and code review. Yep, because there are many factors involved in all the stages of this project development lifecycle. That is why we are here with our valuable experience which speaks a lot about our commitment towards your app development needs at all times.",
+        "You can find React native developers on some of the most popular online platforms like LinkedIn, Stack Overflow, and Indeed. ",
     },
     {
       id: "2",
-      title: "How can I choose the developer of my choice?",
+      title: "Is React Native worth it in 2025?",
       description:
-        "We have a strong team of skilled full-stack React Native programmers to handle your project. Brain Inventory has carefully selected few developers from its diverse team who are not only talented but also active in the community. These gifted developers will be assigned to take care of all your requirements and deliver whatever you want. If you want, you can conduct as many interviews as you want, before you initiate the project.",
+        "Yes, React Native is worth it in 2025. The popularity of React Native is not going to fade very soon, thanks to its mature ecosystem, large developer community, and ease of use features. ",
     },
     {
       id: "3",
       title:
-        "Do you provide support and maintenance services after deployment?",
+        "What engagement models do you offer for hiring React Native developers?",
       description:
-        "Yes, we do provide support and maintenance services after project completion. Our post-project services include bug fixes, framework upgrade, continuous monitoring, and technical glitch resolution for enhancements of your React Native product.",
+        "If you want to hire React Native developers, we offer some of the most common engagement models like- hourly basis, dedicated developer, fixed price projects, and even a hybrid model which combines the benefits of both dedicated and hourly models. Based on your project requirements, you can schedule a meeting with us and choose any.",
     },
     {
       id: "4",
-      title: "Do you provide NDA and IP protection for my project?",
+      title: "How much does it cost to hire a React Native developer?",
       description:
-        "Your project and business is safe with us. We guarantee that you will have 100% ownership of the project and its intellectual property rights, including NDA and other confidentiality agreements, copyright for the entire project without any exceptions, etc.",
+        "The cost to hire a React native developer varies from project to project. It depends on the complexity, number of features, uniqueness, and timelines of the project.",
     },
     {
       id: "5",
-      title: "How much does it cost to hire a React Native developer?",
+      title: "Why is React Native the preferred choice for mobile app development compared to others?",
       description:
-        "The cost to hire a React Native Developer depends on many factors like development platform, the type of app, complexity of the design, number of pages and features and functions, maintenance cost and more.",
+        "React Native is a preferred choice for mobile app development because it allows developers to build a variety of apps using a single codebase, and constant support from its active community helps developers get answers to any situation they may find themselves stuck in.",
     },
   ];
 
@@ -209,7 +211,47 @@ function HireAangularJsDeveloper(props) {
       </Link>
     </>,
   ];
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How do I find React Native developers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can find React native developers on some of the most popular online platforms like LinkedIn, Stack Overflow, and Indeed."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is React Native worth it in 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, React Native is worth it in 2025. The popularity of React Native is not going to fade very soon–thanks to its mature ecosystem, large developer community, and ease of use features."
+      }
+    },{
+      "@type": "Question",
+      "name": "What engagement models do you offer for hiring React Native developers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you want to hire React Native developers, we offer some of the most common engagement models like- hourly basis, dedicated developer, fixed price projects, and even a hybrid model which combines the benefits of both dedicated and hourly models. Based on your project requirements, you can schedule a meeting with us and choose any."
+      }
+    },{
+      "@type": "Question",
+      "name": "How much does it cost to hire a React Native developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost to hire a React native developer varies from project to project. It depends on the complexity, number of features, uniqueness, and timelines of the project."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why is React Native the preferred choice for mobile app development compared to others?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "React Native is a preferred choice for mobile app development because it allows developers to build a variety of apps using a single codebase, and constant support from its active community helps developers get answers to any situation they may find themselves stuck in."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -242,6 +284,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-react-native-developers"
+        />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
         />
       </Head>
       <Suspense

@@ -4,7 +4,6 @@ import Header from "../components/header/Header.js";
 import LocateUs from "../components/common/locateUs.js";
 import LetsKick from "../components/common/LetsKick.js";
 import Footer from "../components/common/Footer.js";
-import Loader from "../components/common/loader.js";
 import KeepInTouch from "../components/common/keepInTouch.js";
 import FaqHire from "../components/common/Faqhire.jsx";
 import Customer from "../components/common/customer.jsx";
@@ -12,15 +11,12 @@ import Advantage from "../components/Hire/Advantage.jsx";
 import HireMarquee from "../components/common/HireMarquee.jsx";
 import KeySkill from "../components/Hire/KeySkills.jsx";
 import Experienced from "../components/Web-Development/Experienced.jsx";
-
 import Hire from "../components/common/Hire.jsx";
 import HireBanner from "../components/common/HireBanner.jsx";
-import Engaged from "../components/Hire/Engaged.jsx";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory.jsx";
 import BlogArticle from "../components/common/BlogArticle.jsx";
-import HireSteps from "../components/Hire/HireSteps.jsx";
-import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 
 function HireJavaDeveloper(props) {
   const content =
@@ -93,7 +89,7 @@ function HireJavaDeveloper(props) {
           <Link href="/" className="text-[#2186ff]">
             Brain Inventory
           </Link>{" "}
-         {` work together, enabling them to take advantage of each other's
+          {` work together, enabling them to take advantage of each other's
           specialized skills and knowledge. This collaborative approach allows
           the developers to build on one another's strengths, resulting in more
           creative and productive solutions.`}
@@ -115,40 +111,33 @@ function HireJavaDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How are Brain Inventory's Java developers different?",
+      title: "Can I hire Dedicated Java Developers for Project-Based Tasks?",
       description:
-        "Our Java programmers are well-versed in Spring microservice architecture, have expertise with J2EE enterprise applications, employ optimal coding techniques and technology sector standards, uphold non-disclosure agreements, and implement Agile development methods for software creation.",
+        "Yes. You can hire Java developers for project-based tasks. ",
     },
     {
       id: "2",
-      title: "What Skills should I look for in a Java developer?",
+      title: "How much does it cost to hire full-time Java developers?",
       description:
-        "A developer who builds software using the Java programming language must be adept at creating Java-based applications for the web, mobile devices, and business environments. They should be familiar with serverless computing and cloud-based infrastructure.",
+        "The cost to hire full-time Java developers depends on the project. Factors like the time required to build a project, the number of developers required, their level of expertise, and the complexity of the project decide the overall cost of full-time developers. Contact us to hire remote Java developers.",
     },
     {
       id: "3",
-      title:
-        "How much does it cost to hire Java developers from Brain Inventory?",
+      title: "Can I manage my tech hiring campaigns remotely?",
       description:
-        "Our company offers flexible engagement options to meet your software development requirements. We utilize Agile software development practices. We adhere to strict non-disclosure agreements to safeguard your privacy and maintain the integrity of your intellectual property.",
+        "Yes. With the help of the right resources and tools at your disposal, you can manage your tech hiring campaigns from anywhere.",
     },
     {
       id: "4",
-      title: "What types of Java development services do you provide?",
+      title: "I want to hire Java developers. How do we proceed?",
       description:
-        "Our company provides bespoke Java programming services, including the integration of Java 2 Enterprise Edition and the development of content management systems. We also offer ongoing support and maintenance for Java projects, as well as the development of customized content management systems using Java.",
+        "To hire a Java developer, you must clearly define your project goals. Then define the required skill set to find candidates through online job boards and freelance platforms like Upwork and Toptal.",
     },
     {
       id: "5",
       title: "Why should I use the Spring framework in Java?",
       description:
-        "When you want to develop a high-performance Java application that has reusable code modules and is easy to test, employing the Spring framework is recommended. The Spring framework allows you to build Java applications with high performance, code reusability, and testability.",
-    },
-    {
-      id: "6",
-      title: "Who manages the project?",
-      description:
-        "Our company has a capable and experienced project management office that specializes in large, complex projects utilizing advanced technologies. Most of our undertakings are led by project managers on our staff. However, we can also supply you with a custom team of Java developers to be directed by your project managers, ours, or both together in a collaborative effort. We aim to minimize the management burden on your end by being highly transparent about the development process and proactively mitigating risks.",
+        "You must use the Spring framework in Java because it can simplify complex application development, by utilizing features like dependency injection, aspect-oriented programming, lightweight architecture, and less boilerplate code. ",
     },
   ];
 
@@ -206,7 +195,53 @@ function HireJavaDeveloper(props) {
       standards of quality.
     </>
   );
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I hire Dedicated Java Developers for Project-Based Tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can hire Java developers for project-based tasks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does it cost to hire full-time Java developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost to hire full-time Java developers depends on the project. Factors like the time required to build a project, the number of developers required, their level of expertise, and the complexity of the project decide the overall cost of full-time developers. Contact us to hire remote Java developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I manage my tech hiring campaigns remotely?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. With the help of the right resources and tools at your disposal, you can manage your tech hiring campaigns from anywhere.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "I want to hire Java developers. How do we proceed?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "To hire a Java developer, you must clearly define your project goals. Then define the required skill set to find candidates through online job boards and freelance platforms like Upwork and Toptal.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why should I use the Spring framework in Java?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You must use the Spring framework in Java because it can simplify complex application development, by utilizing features like dependency injection, aspect-oriented programming, lightweight architecture, and less boilerplate code.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   const chooseBI = [];
 
   return (
@@ -237,6 +272,10 @@ function HireJavaDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-java-developers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

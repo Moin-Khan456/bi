@@ -31,7 +31,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper() {
+function HybridAppDevelopment() {
   const content =
     "We are a professional Hybrid Mobile App Development Services company that provides cost-effective solutions to businesses. We have a team of expert developers who combine elegant design with powerful functionality to develop apps that boost your ROI.";
   const subhead1 =
@@ -263,4 +263,4 @@ function HireAangularJsDeveloper() {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HybridAppDevelopment;

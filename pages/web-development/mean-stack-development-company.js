@@ -30,7 +30,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function HireAangularJsDeveloper(props) {
+function MeanStackDevelopment(props) {
   const content =
     "As a MEAN Stack Development Company, we are proficient and knowledgeable in the MEAN JavaScript bundle – MongoDB, ExpressJS, AngularJS, and NodeJS and have successfully delivered varied projects using these technologies.";
 
@@ -210,4 +210,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default MeanStackDevelopment;

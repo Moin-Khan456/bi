@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
 import LetsKick from "../components/common/LetsKick";
 import Footer from "../components/common/Footer";
-import Loader from "../components/common/loader";
 import KeepInTouch from "../components/common/keepInTouch";
 import FaqHire from "../components/common/Faqhire";
 import Customer from "../components/common/customer";
@@ -21,8 +19,9 @@ import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 
-function HireAangularJsDeveloper(props) {
+function HireUxUiDesigners(props) {
   const content =
     "BrainInventory is a creative design agency, where you can hire UI/UX designers to help you elevate your product to the next level. Our experienced and proficient professionals have helped clients in various sectors.";
   const subhead1 =
@@ -104,28 +103,33 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How do I hire a UI/UX designer?",
+      title: "Should I hire a UI/UX designer?",
       description:
-        "Once you have identified the designer, your most important decision is to select an engagement model. This basically means you'll determine how much value the designer will add to your project and how much time they will be available for working on it.",
+        "Yes. you must consider hiring experienced UI/UX designers to improve your product’s experience for the user. A well-designed user interface helps in achieving user satisfaction and customer loyalty for the longest time.",
     },
     {
       id: "2",
-      title:
-        "How much will it cost to hire dedicated UI/UX designers from Brain Inventory?",
+      title: "How do I find a UI UX designer?",
       description:
-        "The costs of hiring a designer have a major impact on how much you can afford for your project. In addition, it depends on the expectation of your design needs, length, and complexity of the project. Hiring an expert in the field with experience and expertise will cost you much more than a newbie designer. So there are many factors that affect how much it costs to hire designers for any particular project such as their experience, location, and others like that but ultimately it depends on each client's requirements and budget.",
+        "You can find UI/UX designers on a variety of platforms including Behance, 99designs, Upwork, Toptal, and Fiverr.",
     },
     {
       id: "3",
-      title: "How do I know if a UI/UX designer is skilled enough?",
+      title: "How much does it cost to hire a UI designer",
       description:
-        "In today's technology-driven world, the need to develop user-friendly interfaces is growing at an exponential rate. To know about the skills and experience of our UI/UX designers, you can take their interview and select on the basis of the results. We have the best talent in our team that has been selected, passing our screening process. As we keep things transparent, you can check their portfolios, client ratings, and reviews before hiring.",
+        "The cost depends on the complexity of your project. Generally, it's not too pricey to hire a UI designer remotely or on an hourly basis.",
     },
     {
       id: "4",
-      title: "What is the difference between UX design and UI design?",
+      title: "Is UX design worth it?",
       description:
-        "UX designers use their experience, knowledge, and creativity to create interfaces that make the user's job easier and more efficient. They also include features that help refine your experience with an application or website. UI designers work with visual design elements to create beautiful images and layouts that correspond to each section of the interface.",
+        "Yes. UX design is worth it because it creates better user experiences by reducing complex elements, anticipating user needs, and addressing pain points.",
+    },
+    {
+      id: "5",
+      title: "What is the difference between a UI Designer and a UX Designer?",
+      description:
+        "The main difference between a UI designer and a UX designer is that a UI designer focuses on the look and feel of a product, whereas a UX designer focuses on the user interface, i.e. user’s side of the product.",
     },
   ];
 
@@ -153,7 +157,54 @@ function HireAangularJsDeveloper(props) {
     "Successful applications need to not only be visually appealing, but they must also be intuitive to use at all stages of their customer lifecycle by various types of users. Brain Inventory has extensive experience in UI & UX development.",
     "Our creative team creates a solution that satisfies the primary objectives while ensuring usability through an effective user interface, which changes the way people interact with products and services everywhere they are used.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should I hire a UI/UX designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. you must consider hiring experienced UI/UX designers to improve your product’s experience for the user. A well-designed user interface helps in achieving user satisfaction and customer loyalty for the longest time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I find a UI UX designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can find UI/UX designers on a variety of platforms including Behance, 99designs, Upwork, Toptal, and Fiverr.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does it cost to hire a UI designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost depends on the complexity of your project. Generally, it's not too pricey to hire a UI designer remotely or on an hourly basis.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is UX design worth it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. UX design is worth it because it creates better user experiences by reducing complex elements, anticipating user needs, and addressing pain points.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between a UI Designer and a UX Designer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The main difference between a UI designer and a UX designer is that a UI designer focuses on the look and feel of a product, whereas a UX designer focuses on the user interface, i.e. user’s side of the product.",
+        },
+      },
+    ],
+  };
 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -183,6 +234,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-ui-ux-designers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense
@@ -239,4 +294,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireUxUiDesigners;

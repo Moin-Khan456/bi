@@ -17,7 +17,7 @@ const CustomSocialNetwork = dynamic(() =>
 const Loader = dynamic(() => import("../components/common/loader"));
 const HireBanner = dynamic(() => import("../components/ppc/HireBanner.jsx"));
 
-function HireAangularJsDeveloper(props) {
+function CustomSocialNetworkDevelopment(props) {
   const [pop, setPop] = useState(false);
   const [localForm, setLocal] = useState(true);
   const [loadComp, setLoadComp] = useState(false);
@@ -160,4 +160,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default CustomSocialNetworkDevelopment;

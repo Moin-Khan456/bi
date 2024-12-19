@@ -1,6 +1,8 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 const Header = dynamic(() => import("../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
@@ -18,7 +20,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
 import HireBanner from "../components/common/HireBanner.jsx";
-import Link from "next/link.js";
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory.jsx")
@@ -38,7 +39,10 @@ function HireAangularJsDeveloper() {
       is the top choice for employing an AngularJS developer or a skillful
       dedicated team. With Brain Inventory’s Angular developers, you’ll have the
       advantage of high-quality{" "}
-      <Link href="/web-development/angularjs-development-company" className="text-[#2186ff]">
+      <Link
+        href="/web-development/angularjs-development-company"
+        className="text-[#2186ff]"
+      >
         AngularJS development
       </Link>{" "}
       services that will satisfy your exact coding standards.
@@ -141,35 +145,57 @@ function HireAangularJsDeveloper() {
   const faqdetails = [
     {
       id: "1",
-      title: "Why hire dedicated AngularJS developers?",
-      description:
-        "Hiring dedicated AngularJS developers can bring several benefits, such as flexibility, cost-effectiveness, higher output, expertise in the technology, ease of management, and quick responses to urgent matters.",
+      title: "What are the main advantages of AngularJS?",
+      description: (
+        <>
+          <p> The key benefits of using AngularJS for your next project are-</p>
+          <ul className="ml-10 list-disc">
+            <li>Reusable components across the project seamlessly.</li>
+            <li>
+              Pre-built modules can be integrated easily, without the need for
+              extensive modifications.
+            </li>
+            <li>
+              Automatic synchronization of user interface with the underlying
+              data models.
+            </li>
+            <li>
+              Easy access to a vast community of developers, libraries, and
+              resources.
+            </li>
+            <li>
+              Rapid creation of application prototypes to validate your ideas
+              timely.
+            </li>
+            <li>Test application during the development process itself.</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "2",
-      title: "What pricing models do you offer?",
+      title: "What is the scope of AngularJS?",
       description:
-        "Here at Brain Inventory, we strive to create pricing models that meet the needs of our clients. We provide several affordable choices to suit your needs, including hiring full-time employees, part-time contractors, or paying for specific project milestones to be completed.",
+        "The Scope in the AngularJS framework is a built-in feature that acts as the binding part between HTML (view) and JavaScript (controller).",
     },
     {
       id: "3",
-      title: "Do you think AngularJS would be suitable for my project?",
+      title: "Which country developers are best for AngularJS development?",
       description:
-        "Every project has unique needs, so the best technology solutions vary. Let us know about your project's goals and details. Then our experts can suggest long-term, scalable technology stacks to meet those needs. For example, Brain Inventory's seasoned Angular developers in India may be a great fit to build and grow your web or mobile app.",
+        "Countries in Asia such as India, China, Philippines are some of the popular countries to hire AngularJS developers.This is because the developers here are highly skilled and provide value for money. The time zone difference is also not too much, as professionals in these countries adjust their time according to yours.",
     },
     {
       id: "4",
-      title:
-        "Do we take care of maintaining the confidentiality of our client’s intellectual property?",
+      title: "Why do businesses hire dedicated AngularJS developers?",
       description:
-        "We fully assure you that our clients' intellectual properties will stay protected! Whether finalizing agreements under non-disclosure or maintaining source code privately in Git, we promise complete confidentiality. All proprietary materials, coding rights, and patents are properly handled when we complete projects so that ownership and permissions are clear. Our process guarantees that confidentiality is upheld and legal formalities around intellectual property are satisfied.",
+        "Businesses hire dedicated AngularJS developers for faster deployment, value for money, high scalability, strong community support, and technical expertise. Dedicated AngularJS developers are a great option if you are looking to complete a project within timelines, and don’t want to go through a full-fledged hiring process.",
     },
     {
       id: "5",
       title:
-        "Do you offer any kind of support and maintenance services post-deployment?",
+        "Do you offer any kind of post-deployment support and maintenance services?",
       description:
-        "Definitely! Once your AngularJS project is completed with success, we provide a range of services to enhance your AngularJS product, including bug repairs, framework updates, ongoing supervision, and resolution of technical problems.",
+        "Yes, we do offer post-deployment support and maintenance services. We continuously monitor the software for any bugs or issues that may arise, if any, our team fixes them so as to provide you with a smooth experience.",
     },
   ];
 
@@ -200,7 +226,60 @@ function HireAangularJsDeveloper() {
     "Our team consists of very capable professionals with many years of relevant industry experience. They are prepared to collaborate on any project concept you propose, offering thoughtful insights about your needs and goals. This enables them to craft dependable, value-generating software products aligned with your vision.",
     "We provide adjustable payment schedules so you can settle your bill at times that work with your finances. There is no need for upfront payments if you do not need us right away but do want us later on when you have more time or budget for us!",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the main advantages of AngularJS?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `The key benefits of using AngularJS for your next project are-
+        Pre-built modules can be integrated easily, without the need for extensive modifications. 
+        Automatic synchronization of user interface with the underlying data models.
+        Easy access to a vast community of developers, libraries, and resources.
+        Rapid creation of application prototypes to validate your ideas timely.
+        Test application during the development process itself.
+        Reusable components across the project seamlessly.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the scope of AngularJS?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Scope in the AngularJS framework is a built-in feature that acts as the binding part between HTML (view) and JavaScript (controller).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which country developers are best for AngularJS development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Countries in Asia such as India, China, Philippines are some of the popular countries to hire AngularJS developers. This is because the developers here are highly skilled and provide value for money. The time zone difference is also not too much, as professionals in these countries adjust their time according to yours.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do businesses hire dedicated AngularJS developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Businesses hire dedicated AngularJS developers for faster deployment, value for money, high scalability, strong community support, and technical expertise. Dedicated AngularJS developers are a great option if you are looking to complete a project within timelines, and don’t want to go through a full-fledged hiring process.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer any kind of post-deployment support and maintenance services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we do offer post-deployment support and maintenance services. We continuously monitor the software for any bugs or issues that may arise, if any, our team fixes them so as to provide you with a smooth experience.",
+        },
+      },
+    ],
+  };
 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -232,6 +311,10 @@ function HireAangularJsDeveloper() {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-angularjs-developers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
 

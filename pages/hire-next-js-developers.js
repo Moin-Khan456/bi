@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
@@ -19,8 +19,9 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 
-function HireAangularJsDeveloper() {
+function HireNextJsDeveloper() {
   const content =
     "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
   const subhead1 = (
@@ -114,47 +115,34 @@ function HireAangularJsDeveloper() {
   const faqdetails = [
     {
       id: "1",
-      title: "Do you provide post-deployment support?",
-      description: (
-        <>
-          {` After deployment, your customer's app is ready to go, and it
-          automatically scales with traffic. But sometimes you have to
-          troubleshoot a problem with the app performance and it's hard to do so
-          – especially if there is no documentation on how to solve certain
-          tasks. At`}{" "}
-          <Link href="/" className="text-[#2186ff]">
-            {" "}
-            Brain Inventory
-          </Link>
-          , we offer professional support in case you need help fixing an issue
-          with Next.js apps. We will help you solve any issues related to
-          deployments and operations of your application.
-        </>
-      ),
+      title: "Why hire a next.js developer?",
+      description:
+        "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently.",
     },
     {
       id: "2",
-      title: "Do you provide me with absolute ownership of the source code?",
+      title: "Should I use Next.js in 2025 and ahead?",
       description:
-        "The final ownership of the source code is yours. Every code we write for you is yours to keep. We retain no rights over your project’s computer files or intellectual property in any way except as stated in this agreement.",
+        "Yes, NextJS is a perfect choice for businesses in 2025 because of its flexibility, industry adoption, and proven performance.",
     },
     {
       id: "3",
-      title: "Will the hired Next.js resources work according to my time zone?",
+      title: "How does next.js improve my app performance?",
       description:
-        "The most innovative platform for the development of your cross-platform app that lets you hire Next.js developers from us to work according to your time zone (EST/PST/CST/MST), deadline, and milestone.",
+        "NextJS improves the app performance by automatically splitting your code into smaller chunks. You can optimize your application further by using a feature called “dynamic imports” to load components only when needed.",
     },
     {
       id: "4",
-      title: "What is Next JS used for?",
+      title:
+        "Do you provide support and maintenance services after deployment?",
       description:
-        "Next.js is a framework made for creating server-side rendered web applications. It's used for handling the view layer for the web, but more importantly it's built on top of the most popular JavaScript library out there: React. The Next.js framework takes all of the ideas from React — including Immutable State and Server-Side Rendering — and turns them into one piece of software that can be used in any JavaScript project.",
+        "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated Next JS developers.",
     },
     {
       id: "5",
-      title: "Can Next JS be added to an existing project?",
+      title: "What are the benefits of using next.js? ",
       description:
-        "Yes, you can utilize Next.js with React and other React frameworks. A typical approach is to add a Next.js script tag to an individual widget or component which will result in a wireframe-like iteration of the application view.",
+        "Next.JS has become a preferred choice for modern app development because it offers a combination of flexibility, power, and the fact that it is a developer-friendly framework. Hire Next is developers to turn your business ideas into highly creative apps. ",
     },
   ];
 
@@ -197,7 +185,54 @@ function HireAangularJsDeveloper() {
     "We understand that Next.js delivers highest quality frontend development and after years of experience in the industry, we have a team of dedicated Next JS developers with vast experience and technical knowledge. Our developers are highly skilled and well equipped with the technological skills to deliver quality web applications specializing in Next.js development services. Hire our Next.js experts and get exactly what you want in your software application.",
     "Hire dedicated Next.js experts from us to build lightweight, server-side, and simple test-driven apps. We have Next.js developers for hire whose expertise can be leveraged to develop smooth, high-performing, and scalable web apps. We understand the importance of good design, functional programming, and responsive Web Applications at BrainInventory.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why hire a next.js developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I use Next.js in 2025 and ahead?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, NextJS is a perfect choice for businesses in 2025 because of its flexibility, industry adoption, and proven performance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does next.js improve my app performance?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NextJS improves the app performance by automatically splitting your code into smaller chunks. You can optimize your application further by using a feature called “dynamic imports” to load components only when needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide support and maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated Next JS developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the benefits of using next.js?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Next.JS has become a preferred choice for modern app development because it offers a combination of flexibility, power, and the fact that it is a developer-friendly framework. Hire Next is developers to turn your business ideas into highly creative apps.",
+        },
+      },
+    ],
+  };
 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -237,6 +272,10 @@ function HireAangularJsDeveloper() {
           as="image"
           type="image/*"
           crossorigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Loader />
@@ -286,4 +325,4 @@ function HireAangularJsDeveloper() {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default HireNextJsDeveloper;

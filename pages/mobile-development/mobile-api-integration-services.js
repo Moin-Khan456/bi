@@ -29,7 +29,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper(props) {
+function MobileApiIntegration(props) {
   const content = (
     <>
       {" "}
@@ -276,4 +276,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default MobileApiIntegration;

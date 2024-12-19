@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -17,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -25,11 +23,9 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const OurDevelopers = dynamic(() =>
-  import("../components/Hire/OurDevelopers.jsx")
-);
+import DOMPurify from "isomorphic-dompurify";
 
-function HireAangularJsDeveloper(props) {
+function HirePythonDeveloper(props) {
   const content =
     "Hire a Python based web development team from us, and get a high-quality product at affordable rates. We are one of the prominent app developers in our area.";
   const subhead1 =
@@ -90,7 +86,10 @@ function HireAangularJsDeveloper(props) {
       content: (
         <>
           We are a{" "}
-          <Link href="/web-development/python-web-development-company" className="text-[#2186ff]">
+          <Link
+            href="/web-development/python-web-development-company"
+            className="text-[#2186ff]"
+          >
             Python development company
           </Link>{" "}
           the developers and designers. Our team includes experts in various
@@ -105,34 +104,34 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Is 15 days risk-free trial period completely free?",
+      title: "Is Python in high demand?",
       description:
-        "The period between the estimation and delivery of a project should be utilized to evaluate the abilities of the prospective development resource. This is an ideal opportunity to test the flexibility, responsiveness, communication strength, and code quality of the developer.",
+        "Yes. Python is in high demand. Yes. Python is in high demand. The statistics speak for themselves. According to a survey conducted by Stack Overflow, “Python was the third most popular programming language with respondents using it 48.24% of the time”. ",
     },
     {
       id: "2",
-      title: "Can you help me build my website using Python?",
+      title: "How do I hire a Python developer?",
       description:
-        "Sure, we can help you build a website using Python – an open-source web language. Our development team for sure has skills and experience in using this language as well as Django – an excellent framework that allows our experts to make website building faster.",
+        "Hire a Python developer by clearly defining your project goals and requirements. You can search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with Python frameworks like Django, and assess their technical skills and communication abilities to ensure they fit your project needs. ",
     },
     {
       id: "3",
-      title:
-        "Can you help me in migrating my existing application into Python?",
+      title: "What are the types of Python projects you have worked on?",
       description:
-        "With our expertise and experience in migrating from legacy systems, we can assure you that your migration from your current system to Python will be hassle-free. Our dedicated team has the patience and skills to ensure that your migrated Python application works as smoothly as Silk.",
+        "We have worked on different types of Python projects including the most basic ones like password generator, and countdown timer. More advanced ones like a conversational AI, or an image recognition system.",
     },
     {
       id: "4",
-      title: "How much will it cost to build a Python-based app?",
+      title:
+        "Who provides the workstations to the Python developers I hire for my project?",
       description:
-        "The pricing of a Python project is never blueprinted and fixed. The development cost depends upon several factors the size of the application, your requirements, and the time required to complete project deliverables. Our Python developers have years of experience in creating a variety of software projects both for our clients and their in-house teams. We will be happy to assist you with planning the complexity in such a way that you get to experience cost savings.",
+        "When you hire Python developers for your project requirement, it becomes your responsibility to provide them with a workstation and all the basic resources required to complete the development process (computer, tools, monitor, etc). However, if you choose to hire remote developers, it is the agency’s responsibility with whom they are associated. You just need to pay an affordable amount to the agency and get developers on board.",
     },
     {
       id: "5",
-      title: "Will I have complete control over the hired Python developers?",
+      title: "How fast can we get people assigned to our project?",
       description:
-        "Our Python developers are always ready to help you with your business needs. You can contact our customer support at any time to establish a new development process that would match your requirements. We ensure customer satisfaction and offer a money-back guarantee in case the Python developers fail to deliver the desired result.",
+        "If you hire a dedicated Python developer from a company like ours, you can get people assigned to your project as soon as you can imagine. Just select the work and pricing model for your project, and get a professional on board. ",
     },
   ];
 
@@ -207,7 +206,53 @@ function HireAangularJsDeveloper(props) {
         "Transitioning your existing applications to Python is now simpler than ever. Our team of senior Python developers can assist you in migrating your applications or seamlessly integrating Python modules into your current codebase quickly and efficiently. Our Senior Python Developers have extensive experience in the development, refactoring, and testing of applications.",
     },
   ];
-
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Python in high demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Python is in high demand. Yes. Python is in high demand. The statistics speak for themselves. According to a survey conducted by Stack Overflow, “Python was the third most popular programming language with respondents using it 48.24% of the time”.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I hire a Python developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hire a Python developer by clearly defining your project goals and requirements. You can search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with Python frameworks like Django, and assess their technical skills and communication abilities to ensure they fit your project needs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the types of Python projects you have worked on?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We have worked on different types of Python projects including the most basic ones like password generator, and countdown timer. More advanced ones like a conversational AI, or an image recognition system.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who provides the workstations to the Python developers I hire for my project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When you hire Python developers for your project requirement, it becomes your responsibility to provide them with a workstation and all the basic resources required to complete the development process (computer, tools, monitor, etc). However, if you choose to hire remote developers, it is the agency’s responsibility with whom they are associated. You just need to pay an affordable amount to the agency and get developers on board.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How fast can we get people assigned to our project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you hire a dedicated Python developer from a company like ours, you can get people assigned to your project as soon as you can imagine. Just select the work and pricing model for your project, and get a professional on board.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -240,6 +285,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-python-developers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
 
@@ -302,4 +351,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HirePythonDeveloper;

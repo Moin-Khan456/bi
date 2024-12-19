@@ -1,12 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import OurDevelopers from "../components/Hire/OurDevelopers";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -18,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -26,8 +23,9 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
+import DOMPurify from "isomorphic-dompurify";
 
-function HireAangularJsDeveloper(props) {
+function HireLaravelDeveloper(props) {
   const content =
     "Our group of proficient Laravel programmers excel at adapting the platform to suit particular business needs and providing top-tier resolutions. We collaborate with you throughout the entire process, ensuring your application is customized to deliver the best possible user experience.";
   const subhead1 =
@@ -53,10 +51,7 @@ function HireAangularJsDeveloper(props) {
           When your website traffic and sales are on the rise, hire our Laravel
           app developers with excellent skills at competitive rates. If you have
           a challenging or complex application requirement, contact our{" "}
-          <Link
-            href="/"
-            className="text-[#2186ff]"
-          >
+          <Link href="/" className="text-[#2186ff]">
             Custom Software Development Services
           </Link>{" "}
           now.
@@ -127,28 +122,45 @@ function HireAangularJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How can I hire a Laravel developer from Brain Inventory?",
-      description:
-        "Brain Inventory makes hiring a Laravel developer/team simple. We offer three levels of engagement: hourly, fixed fee, and an exclusive managed service. Your experience with us starts by providing your project requirements and desired timeline and budget. From there, we develop a list of potential candidates based on your project description and desired skills. We interview each candidate based on the criteria you provide and include you in the process to ensure accountability throughout the entire interview process. With Brain Inventory, you will feel confident knowing you are working with an experienced team that is dedicated to your success.",
+      title: "How to hire Laravel developers?",
+      description: (
+        <>
+          <p>You can hire Laravel developers by following any one of these- </p>
+          <ul className="ml-10 list-disc">
+            <li>Creating a detailed job ad</li>
+            <li>
+              Make professional connections and take recommendations from them
+            </li>
+            <li>Reach out to hiring platforms</li>
+            <li>Joining freelancing platforms like Fiverr and Upwork</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "2",
-      title: "Will the Laravel developer work in my time zone?",
+      title: "Is Laravel still in demand?",
       description:
-        "As a leading Laravel development company, we have clients from around the globe. So our team of top-notch Laravel engineers works in flexible time zones, to provide round-the-clock development and support services for our clients.",
+        "Yes. Laravel is a popular framework that is still in demand due to its elegant and simple syntax. It makes it easier for even a novice to learn the framework and get started with it.",
     },
     {
       id: "3",
-      title: "Will the developers report daily about the project's progress?",
+      title: "Can you provide dedicated Laravel developers for my project?",
       description:
-        "Yes! Normally, we'll give you a progress report once a week, let you know how the project's going, and adjust our plan accordingly. This is the best way to keep you informed and make sure your expectations are always met.",
+        "Yes, you can hire a dedicated Laravel developer through various platforms and IT outsourcing companies that specialize in providing a team of experts. You can hire them on an hourly basis, or project basis, depending on the requirements of your project. ",
     },
     {
       id: "4",
       title:
-        "Do your Laravel developers work with the latest Laravel versions?",
+        "Will the hired Laravel developers work according to my time zone?",
       description:
-        "Laravel is a very fast, modern, and powerful PHP web framework to build web applications with clean code. At Brain Inventory, we provide the latest Laravel development with updated versions on a regular basis. Our developers are always working hard on their courses to upgrade their skills and fulfill the customer's needs with required Laravel templates or custom development services.",
+        "Yes. The hired Laravel developers will typically work according to your time preferences. Just make sure to communicate your time zone needs with the hiring agency or developer you may be considering.",
+    },
+    {
+      id: "5",
+      title: "How experienced are your Laravel developers?",
+      description:
+        "Our Laravel developers have a high level of experience in the Laravel framework, its core features, and architecture, and proficiency in handling both the front-end and back-end aspects of your project effectively. Contact us to hire a Laravel developer.",
     },
   ];
 
@@ -216,6 +228,57 @@ function HireAangularJsDeveloper(props) {
         "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
     },
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to hire Laravel developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `You can hire Laravel developers by following any one of these- 
+          Creating a detailed job ad 
+          Reach out to hiring platforms
+          Joining freelancing platforms like Fiverr and Upwork.
+          Make professional connections and take recommendations from them`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Laravel still in demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Laravel is a popular framework that is still in demand due to its elegant and simple syntax. It makes it easier for even a novice to learn the framework and get started with it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you provide dedicated Laravel developers for my project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, you can hire a dedicated Laravel developer through various platforms and IT outsourcing companies that specialize in providing a team of experts. You can hire them on an hourly basis, or project basis, depending on the requirements of your project.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will the hired Laravel developers work according to my time zone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. The hired Laravel developers will typically work according to your time preferences. Just make sure to communicate your time zone needs with the hiring agency or developer you may be considering.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How experienced are your Laravel developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our Laravel developers have a high level of experience in the Laravel framework, its core features, and architecture, and proficiency in handling both the front-end and back-end aspects of your project effectively. Contact us to hire a Laravel developer.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -254,6 +317,10 @@ function HireAangularJsDeveloper(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-laravel-developers"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense
@@ -319,4 +386,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireLaravelDeveloper;

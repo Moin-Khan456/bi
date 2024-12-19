@@ -31,7 +31,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function ShopifyWebDevelopment(props) {
   const content = (
     <>
       <Link href="/" className="text-[#2186ff]">
@@ -210,4 +210,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default ShopifyWebDevelopment;

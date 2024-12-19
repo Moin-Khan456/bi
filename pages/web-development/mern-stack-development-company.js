@@ -27,7 +27,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
-function HireAangularJsDeveloper(props) {
+function MernStackDevelopment(props) {
   const content = (
     <>
       <Link href="/         " className="text-[#2186ff]">
@@ -223,4 +223,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default MernStackDevelopment;

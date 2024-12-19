@@ -31,7 +31,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/ChooseBraininventory.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function WordPressWebDesign(props) {
   const content = (
     <>
       Our company offers premium-quality Wordpress website design service across
@@ -229,4 +229,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default WordPressWebDesign;

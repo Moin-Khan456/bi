@@ -31,7 +31,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function PhpDevelopment(props) {
   const content =
     "Brain Inventory is your best go-to PHP Development Company. It's the complete package. We have well-trained & multicultural PHP developers, delivering cutting-edge solutions to global businesses worldwide.";
   const subhead1 =
@@ -231,4 +231,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default PhpDevelopment;

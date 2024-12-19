@@ -31,7 +31,7 @@ const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
 
-function HireAangularJsDeveloper(props) {
+function HireQaTesters(props) {
   const content = (
     <>
       The quality assurance team is an essential part of any{" "}
@@ -248,4 +248,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireQaTesters;

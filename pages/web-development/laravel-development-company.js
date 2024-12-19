@@ -31,7 +31,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
 
-function HireAangularJsDeveloper(props) {
+function LaravelDevelopment(props) {
   const content = (
     <>
       Efficient development of a high-quality and secure application is what we
@@ -241,4 +241,4 @@ function HireAangularJsDeveloper(props) {
     </>
   );
 }
-export default HireAangularJsDeveloper;
+export default LaravelDevelopment;

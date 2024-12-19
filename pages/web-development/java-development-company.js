@@ -29,7 +29,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
 
-function HireAangularJsDeveloper(props) {
+function JavaDevelopment(props) {
   const content = (
     <>
       Brain Inventory offers comprehensive Java Software Development Services
@@ -228,4 +228,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default JavaDevelopment;

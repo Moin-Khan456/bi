@@ -17,7 +17,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import Link from "next/link.js";
 
-function HireAangularJsDeveloper(props) {
+function HireIconicDeveloper(props) {
   const content =
     "Brain Inventory offers one of the most viable approaches to hiring top-grade Ionic app developers for your mobile app development needs. Our array of expertise is mainly anchored on two powerful technical mobilizations like Ionic, and React Native.";
   const subhead1 =
@@ -264,4 +264,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAangularJsDeveloper;
+export default HireIconicDeveloper;

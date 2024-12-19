@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
 import LocateUs from "../components/common/locateUs.js";
 import LetsKick from "../components/common/LetsKick.js";
 import Footer from "../components/common/Footer.js";
-import Loader from "../components/common/loader.js";
 import KeepInTouch from "../components/common/keepInTouch.js";
 import FaqHire from "../components/common/Faqhire.jsx";
 import Customer from "../components/common/customer.jsx";
@@ -21,6 +19,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 
 function HireReactJsDeveloper(props) {
   const content = (
@@ -128,29 +127,28 @@ function HireReactJsDeveloper(props) {
     {
       id: "1",
       title: "How Do I Hire ReactJS Developers?",
-      description:
-      <>
-      <p> To hire dedicated ReactJS developers, you can -</p>
-       <ul className="ml-10">
-         <li className="list-disc">
-         Prepare and share the JD.
-         </li>
-         <li className="list-disc">You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
-         </li>
-         <li className="list-disc">Conduct both Technical and team compatibility rounds of interviews.
-         </li>
-         <li className="list-disc">Complete the onboarding process.
-         </li>
-         <li className="list-disc">
-         You are good to go.
-         </li>
-       </ul>
-     </>
+      description: (
+        <>
+          <p> To hire dedicated ReactJS developers, you can -</p>
+          <ul className="ml-10 list-disc">
+            <li>Prepare and share the JD.</li>
+            <li>
+              You will receive pre-vetted expert ReactJS developers matching
+              work experience as per JD.
+            </li>
+            <li>
+              Conduct both Technical and team compatibility rounds of
+              interviews.
+            </li>
+            <li>Complete the onboarding process.</li>
+            <li>You are good to go.</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "2",
-      title:
-        "Why Hire ReactJS Developers from Brain Inventory?",
+      title: "Why Hire ReactJS Developers from Brain Inventory?",
       description:
         "Your project is backed by excellent development skills and rock-solid experience in ReactJS if you hire experts from Brain Inventory. ",
     },
@@ -169,7 +167,8 @@ function HireReactJsDeveloper(props) {
     },
     {
       id: "5",
-      title: "Do you provide support and maintenance services after deployment?",
+      title:
+        "Do you provide support and maintenance services after deployment?",
       description:
         "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied. ",
     },
@@ -218,53 +217,58 @@ function HireReactJsDeveloper(props) {
     "Adherence to project timelines.",
     "Effective communication skills.",
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How Do I Hire ReactJS Developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `To hire dedicated ReactJS developers, you can - 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How Do I Hire ReactJS Developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `To hire dedicated ReactJS developers, you can - 
         You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
         Conduct both Technical and team compatibility rounds of interviews.
         Complete the onboarding process.
         You are good to go.
-        Prepare and share the JD.`
-      }
-    },{
-      "@type": "Question",
-      "name": "Why Hire ReactJS Developers from Brain Inventory?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your project is backed by excellent development skills and rock-solid experience in ReactJS if you hire experts from Brain Inventory."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I migrate my current web application to ReactJs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. It is possible with the help of ReactJS migration, our team can migrate your current web application to ReactJS. In the process, your current framework elements will be switched to ReactJS without needing to build everything from scratch."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I hire a ReactJS developer to work on hourly or project-based tasks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire ReactJS developers to work hourly or give them project-based tasks."
-      }
-    },{
-      "@type": "Question",
-      "name": "Do you provide support and maintenance services after deployment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied."
-      }
-    }]
-  }
-  
-  
+        Prepare and share the JD.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why Hire ReactJS Developers from Brain Inventory?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Your project is backed by excellent development skills and rock-solid experience in ReactJS if you hire experts from Brain Inventory.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I migrate my current web application to ReactJs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. It is possible with the help of ReactJS migration, our team can migrate your current web application to ReactJS. In the process, your current framework elements will be switched to ReactJS without needing to build everything from scratch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I hire a ReactJS developer to work on hourly or project-based tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire ReactJS developers to work hourly or give them project-based tasks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide support and maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied.",
+        },
+      },
+    ],
+  };
+
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
@@ -307,7 +311,7 @@ function HireReactJsDeveloper(props) {
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd}}
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

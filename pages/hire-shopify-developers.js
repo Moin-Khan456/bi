@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -24,8 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import DOMPurify from "isomorphic-dompurify"
-
+import DOMPurify from "isomorphic-dompurify";
 
 function HireShopifyDeveloper(props) {
   const content =
@@ -96,34 +94,29 @@ function HireShopifyDeveloper(props) {
     {
       id: "1",
       title: "Should I hire a Shopify developer?",
-      description:
-        `Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store's design and put some "beyond basic" functionalities to appeal to your audience. `,
+      description: `Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store's design and put some "beyond basic" functionalities to appeal to your audience. `,
     },
     {
       id: "2",
-      title:
-        "Is Shopify worth it for a small business?",
+      title: "Is Shopify worth it for a small business?",
       description:
         "Yes. Shopify is an ideal platform for small businesses as it is easy to use, convenient, and an ideal option if you are just starting to build your online presence.",
     },
     {
       id: "3",
-      title:
-        "Are Shopify Developers in Demand?",
+      title: "Are Shopify Developers in Demand?",
       description:
         "Yes. Shopify developers are in high demand as they can build, customize, and optimize your online presence. ",
     },
     {
       id: "4",
-      title:
-        "How Much Does It Cost To Hire a Shopify Developer?",
+      title: "How Much Does It Cost To Hire a Shopify Developer?",
       description:
         "The cost to hire a Shopify developer depends on the complexity of the Shopify website, the features required, and the developer’s expertise with Shopify development. ",
     },
     {
       id: "5",
-      title:
-        "What can our Shopify Programmers do for you?",
+      title: "What can our Shopify Programmers do for you?",
       description:
         "Our Shopify developers can help you in creating customized features for your website, develop themes and plugins to make your store look appealing and optimize your store’s speed to help in your SEO efforts. ",
     },
@@ -168,7 +161,7 @@ function HireShopifyDeveloper(props) {
       <Link href="/" className="text-[#2186ff]">
         {" "}
         custom development
-      </Link> {" "}
+      </Link>{" "}
       and store setup along with infrastructure and app integration. If you need
       assistance with custom theme creation, store launch, or migration from
       another platform, our skilled team has the right experience and
@@ -208,44 +201,50 @@ function HireShopifyDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Should I hire a Shopify developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store's design and put some \"beyond basic\" functionalities to appeal to your audience."
-      }
-    },{
-      "@type": "Question",
-      "name": "Is Shopify worth it for a small business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shopify is an ideal platform for small businesses as it is easy to use, convenient, and an ideal option if you are just starting to build your online presence."
-      }
-    },{
-      "@type": "Question",
-      "name": "Are Shopify Developers in Demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Shopify developers are in high demand as they can build, customize, and optimize your online presence."
-      }
-    },{
-      "@type": "Question",
-      "name": "How Much Does It Cost To Hire a Shopify Developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost to hire a Shopify developer depends on the complexity of the Shopify website, the features required, and the developer’s expertise with Shopify development."
-      }
-    },{
-      "@type": "Question",
-      "name": "What can our Shopify Programmers do for you?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Shopify developers can help you in creating customized features for your website, develop themes and plugins to make your store look appealing and optimize your store’s speed to help in your SEO efforts."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Should I hire a Shopify developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: 'Yes. You should hire dedicated Shopify developers if you want to add custom features to your online website. They can even improve your store\'s design and put some "beyond basic" functionalities to appeal to your audience.',
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Shopify worth it for a small business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Shopify is an ideal platform for small businesses as it is easy to use, convenient, and an ideal option if you are just starting to build your online presence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are Shopify Developers in Demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Shopify developers are in high demand as they can build, customize, and optimize your online presence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How Much Does It Cost To Hire a Shopify Developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost to hire a Shopify developer depends on the complexity of the Shopify website, the features required, and the developer’s expertise with Shopify development.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What can our Shopify Programmers do for you?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our Shopify developers can help you in creating customized features for your website, develop themes and plugins to make your store look appealing and optimize your store’s speed to help in your SEO efforts.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -283,9 +282,9 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           rel="canonical"
           href="https://braininventory.in/hire-shopify-developers"
         />
-        <script 
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

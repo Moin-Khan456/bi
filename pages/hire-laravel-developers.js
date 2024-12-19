@@ -1,12 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import OurDevelopers from "../components/Hire/OurDevelopers";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -18,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -26,7 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 
 function HireLaravelDeveloper(props) {
   const content =
@@ -54,10 +51,7 @@ function HireLaravelDeveloper(props) {
           When your website traffic and sales are on the rise, hire our Laravel
           app developers with excellent skills at competitive rates. If you have
           a challenging or complex application requirement, contact our{" "}
-          <Link
-            href="/"
-            className="text-[#2186ff]"
-          >
+          <Link href="/" className="text-[#2186ff]">
             Custom Software Development Services
           </Link>{" "}
           now.
@@ -129,21 +123,19 @@ function HireLaravelDeveloper(props) {
     {
       id: "1",
       title: "How to hire Laravel developers?",
-      description:
-      <>
-      <p>You can hire Laravel developers by following any one of these- </p>
-       <ul className="ml-10">
-         <li className="list-disc">
-         Creating a detailed job ad 
-         </li>
-         <li className="list-disc">Make professional connections and take recommendations from them
-         </li>
-         <li className="list-disc">Reach out to hiring platforms
-         </li>
-         <li className="list-disc">Joining freelancing platforms like Fiverr and Upwork 
-         </li>
-       </ul>
-     </>
+      description: (
+        <>
+          <p>You can hire Laravel developers by following any one of these- </p>
+          <ul className="ml-10 list-disc">
+            <li>Creating a detailed job ad</li>
+            <li>
+              Make professional connections and take recommendations from them
+            </li>
+            <li>Reach out to hiring platforms</li>
+            <li>Joining freelancing platforms like Fiverr and Upwork</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "2",
@@ -239,48 +231,54 @@ function HireLaravelDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How to hire Laravel developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `You can hire Laravel developers by following any one of these- 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to hire Laravel developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `You can hire Laravel developers by following any one of these- 
           Creating a detailed job ad 
           Reach out to hiring platforms
           Joining freelancing platforms like Fiverr and Upwork.
-          Make professional connections and take recommendations from them`
-      }
-    },{
-      "@type": "Question",
-      "name": "Is Laravel still in demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Laravel is a popular framework that is still in demand due to its elegant and simple syntax. It makes it easier for even a novice to learn the framework and get started with it."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can you provide dedicated Laravel developers for my project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can hire a dedicated Laravel developer through various platforms and IT outsourcing companies that specialize in providing a team of experts. You can hire them on an hourly basis, or project basis, depending on the requirements of your project."
-      }
-    },{
-      "@type": "Question",
-      "name": "Will the hired Laravel developers work according to my time zone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The hired Laravel developers will typically work according to your time preferences. Just make sure to communicate your time zone needs with the hiring agency or developer you may be considering."
-      }
-    },{
-      "@type": "Question",
-      "name": "How experienced are your Laravel developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Laravel developers have a high level of experience in the Laravel framework, its core features, and architecture, and proficiency in handling both the front-end and back-end aspects of your project effectively. Contact us to hire a Laravel developer."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+          Make professional connections and take recommendations from them`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is Laravel still in demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Laravel is a popular framework that is still in demand due to its elegant and simple syntax. It makes it easier for even a novice to learn the framework and get started with it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you provide dedicated Laravel developers for my project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, you can hire a dedicated Laravel developer through various platforms and IT outsourcing companies that specialize in providing a team of experts. You can hire them on an hourly basis, or project basis, depending on the requirements of your project.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will the hired Laravel developers work according to my time zone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. The hired Laravel developers will typically work according to your time preferences. Just make sure to communicate your time zone needs with the hiring agency or developer you may be considering.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How experienced are your Laravel developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our Laravel developers have a high level of experience in the Laravel framework, its core features, and architecture, and proficiency in handling both the front-end and back-end aspects of your project effectively. Contact us to hire a Laravel developer.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

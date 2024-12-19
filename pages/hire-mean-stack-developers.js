@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
 import LetsKick from "../components/common/LetsKick";
 import Footer from "../components/common/Footer";
-import Loader from "../components/common/loader";
 import KeepInTouch from "../components/common/keepInTouch";
 import FaqHire from "../components/common/Faqhire";
 import Customer from "../components/common/customer";
@@ -21,7 +19,7 @@ import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 
 function HireMeanStackDeveloper(props) {
   const content =
@@ -133,7 +131,8 @@ function HireMeanStackDeveloper(props) {
     },
     {
       id: "3",
-      title: "Can I hire a mean stack developer on a short-term or project basis?",
+      title:
+        "Can I hire a mean stack developer on a short-term or project basis?",
       description:
         "You can hire MEAN stack developers on a part-time, full-time, or hourly basis. Depending on your project requirements, Brain Inventory offers multiple working models like these. ",
     },
@@ -174,48 +173,54 @@ function HireMeanStackDeveloper(props) {
     "Our code is well-documented, tested, and presented via Docker containers. Our web applications are based on Bootstrap and AngularJS using the MEAN stack framework that powers the most popular Node.js apps today.",
     "We understand the importance of finding an expert who can satisfy your requirements for your new MEAN project. You need reliable MEAN stack development company you can put your trust in; and as we speak, here are several reasons why you should choose BI as your MEAN stack partner NOW.",
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Why is MEAN stack in demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MEAN stack is in growing demand because it uses JavaScript for both the front-end and back-end web applications. This is a more modern approach for development which makes it a popular choice among developers today."
-      }
-    },{
-      "@type": "Question",
-      "name": "Why should I hire a dedicated development team of remote MEAN Stack developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A dedicated development team of remote MEAN stack developers can help your business cut down costs, as you only pay for the total hours worked. Also, you don’t need to pay for office space, equipment, electricity bills, and employee benefits."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I hire a mean stack developer on a short-term or project basis?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can hire MEAN stack developers on a part-time, full-time, or hourly basis. Depending on your project requirements, Brain Inventory offers multiple working models like these."
-      }
-    },{
-      "@type": "Question",
-      "name": "What is your standard duration to develop a mean stack project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The total time required to develop a mean stack project varies from one project to another. It depends on several factors including the complexity of the application, unique features, integrations, or modifications. Still, if you hire dedicated MEAN stack developers, who are professional in their approach, you can expect the project to be completed on time."
-      }
-    },{
-      "@type": "Question",
-      "name": "Is MEAN worth it in 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MEAN stack is worth it and relevant in 2025 because, in today’s fast-paced digital world, efficiency is paramount to success. MEAN stack offers a unique blend of MongoDB, Express.js, Angular, and Node.js which makes it a flexible and scalable platform for web development."
-      }
-    }]
-  }
-  
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why is MEAN stack in demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "MEAN stack is in growing demand because it uses JavaScript for both the front-end and back-end web applications. This is a more modern approach for development which makes it a popular choice among developers today.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why should I hire a dedicated development team of remote MEAN Stack developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A dedicated development team of remote MEAN stack developers can help your business cut down costs, as you only pay for the total hours worked. Also, you don’t need to pay for office space, equipment, electricity bills, and employee benefits.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I hire a mean stack developer on a short-term or project basis?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can hire MEAN stack developers on a part-time, full-time, or hourly basis. Depending on your project requirements, Brain Inventory offers multiple working models like these.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is your standard duration to develop a mean stack project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The total time required to develop a mean stack project varies from one project to another. It depends on several factors including the complexity of the application, unique features, integrations, or modifications. Still, if you hire dedicated MEAN stack developers, who are professional in their approach, you can expect the project to be completed on time.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is MEAN worth it in 2025?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "MEAN stack is worth it and relevant in 2025 because, in today’s fast-paced digital world, efficiency is paramount to success. MEAN stack offers a unique blend of MongoDB, Express.js, Angular, and Node.js which makes it a flexible and scalable platform for web development.",
+        },
+      },
+    ],
+  };
+
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -250,8 +255,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           href="https://braininventory.in/hire-mean-stack-developers"
         />
         <script
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

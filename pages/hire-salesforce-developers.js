@@ -4,7 +4,6 @@ import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
 import LetsKick from "../components/common/LetsKick";
 import Footer from "../components/common/Footer";
-import Loader from "../components/common/loader";
 import KeepInTouch from "../components/common/keepInTouch";
 import FaqHire from "../components/common/Faqhire";
 import Customer from "../components/common/customer";
@@ -12,17 +11,12 @@ import Advantage from "../components/Hire/Advantage.jsx";
 import HireMarquee from "../components/common/HireMarquee";
 import KeySkill from "../components/Hire/KeySkills.jsx";
 import Experienced from "../components/Web-Development/Experienced";
-
 import Hire from "../components/common/Hire";
 import HireBanner from "../components/common/HireBanner";
-import Engaged from "../components/Hire/Engaged";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
 import BlogArticle from "../components/common/BlogArticle";
-import HireSteps from "../components/Hire/HireSteps";
-import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
-import DOMPurify from "isomorphic-dompurify"
-
+import DOMPurify from "isomorphic-dompurify";
 
 function HireSalesforceDeveloper(props) {
   const content =
@@ -98,8 +92,7 @@ function HireSalesforceDeveloper(props) {
     },
     {
       id: "3",
-      title:
-        "How much does a Salesforce Developer charge per hour?",
+      title: "How much does a Salesforce Developer charge per hour?",
       description:
         "A Salesforce developer typically charges based on their experience level, and the complexity of the project. ",
     },
@@ -116,7 +109,6 @@ function HireSalesforceDeveloper(props) {
         "Yes, he will adjust his time according to your time zone. You just need to communicate it beforehand. Contact us to hire a dedicated salesforce developer. ",
     },
   ];
-
 
   const advantages = [
     "Employing a Salesforce developer provides numerous benefits for companies looking to fully utilize the capabilities of the Salesforce platform. These developers are experts in adapting the platform to suit your business's individual requirements.",
@@ -163,44 +155,50 @@ function HireSalesforceDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What are the Benefits of a Salesforce Developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Salesforce developers can help to ensure secured access to sensitive data and support a robust authentication system. They are especially helpful if you want to add customized security features to your company application. They can work on a variety of projects including finance, healthcare, and retail."
-      }
-    },{
-      "@type": "Question",
-      "name": "Where can I hire a Salesforce Developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can hire a Salesforce developer from a development company like Brain Inventory, job boards like LinkedIn, or freelance websites like Upwork and Toptal."
-      }
-    },{
-      "@type": "Question",
-      "name": "How much does a Salesforce Developer charge per hour?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Salesforce developer typically charges based on their experience level, and the complexity of the project."
-      }
-    },{
-      "@type": "Question",
-      "name": "What kind of support is available after ending the project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "After the project ends, we provide ongoing maintenance, bug fixes, technical assistance, user support, training, and consultation."
-      }
-    },{
-      "@type": "Question",
-      "name": "Will the Salesforce developer work according to my time zone?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, he will adjust his time according to your time zone. You just need to communicate it beforehand. Contact us to hire a dedicated salesforce developer."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the Benefits of a Salesforce Developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Salesforce developers can help to ensure secured access to sensitive data and support a robust authentication system. They are especially helpful if you want to add customized security features to your company application. They can work on a variety of projects including finance, healthcare, and retail.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I hire a Salesforce Developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can hire a Salesforce developer from a development company like Brain Inventory, job boards like LinkedIn, or freelance websites like Upwork and Toptal.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does a Salesforce Developer charge per hour?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A Salesforce developer typically charges based on their experience level, and the complexity of the project.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What kind of support is available after ending the project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "After the project ends, we provide ongoing maintenance, bug fixes, technical assistance, user support, training, and consultation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Will the Salesforce developer work according to my time zone?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, he will adjust his time according to your time zone. You just need to communicate it beforehand. Contact us to hire a dedicated salesforce developer.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -231,8 +229,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           href="https://braininventory.in/hire-salesforce-developers"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

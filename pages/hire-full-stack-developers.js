@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -17,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -25,8 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import DOMPurify from "isomorphic-dompurify"
-
+import DOMPurify from "isomorphic-dompurify";
 
 function HireFullStackDeveloper(props) {
   const content =
@@ -129,22 +126,36 @@ function HireFullStackDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What are the key benefits of using full-stack web development services?",
-      description:
-      <>
-      <p className="ml-4">The key benefits of using full-stack web development services are-</p>
-       <ol className="ml-10">
-         <li className="list-disc">
-         Reduced costs- Instead of hiring multiple developers, you can get the job done with a single skilled person in full-stack development.
-         </li>
-         <li className="list-disc">Faster development process- Since there’s only one person involved, you get his full attention and time which leads to a faster development process.
-         </li>
-         <li className="list-disc">Complete ownership- A full-stack developer takes complete ownership of the project. so no hassle of dividing the tasks among multiple people.
-         </li>
-         <li className="list-disc">Hassle-free upgrades- Full stack developers are highly skilled and they can handle any updates and changes smoothly. 
-         </li>
-       </ol>
-     </>
+      title:
+        "What are the key benefits of using full-stack web development services?",
+      description: (
+        <>
+          <p className="ml-4">
+            The key benefits of using full-stack web development services are-
+          </p>
+          <ol className="ml-10 list-disc">
+            <li>
+              Reduced costs- Instead of hiring multiple developers, you can get
+              the job done with a single skilled person in full-stack
+              development.
+            </li>
+            <li>
+              Faster development process- Since there’s only one person
+              involved, you get his full attention and time which leads to a
+              faster development process.
+            </li>
+            <li>
+              Complete ownership- A full-stack developer takes complete
+              ownership of the project. so no hassle of dividing the tasks among
+              multiple people.
+            </li>
+            <li>
+              Hassle-free upgrades- Full stack developers are highly skilled and
+              they can handle any updates and changes smoothly.
+            </li>
+          </ol>
+        </>
+      ),
     },
     {
       id: "2",
@@ -155,45 +166,32 @@ function HireFullStackDeveloper(props) {
     },
     {
       id: "3",
-      title:
-        "What steps should I follow to hire a full-stack developer?",
+      title: "What steps should I follow to hire a full-stack developer?",
       description:
         "First, you must clearly define your project goals and requirements. The next step is to search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with front-end and back-end frameworks, and assess their technical skills and communication abilities to ensure they fit your project needs.",
     },
     {
       id: "4",
       title: "What Development Process Do You Follow?",
-      description:
-      <>
-      <p> Key steps in a full-stack development include- </p>
-       <ul className="ml-10">
-         <li className="list-disc">
-         Project planning and requirements
-         </li>
-         <li className="list-disc">Design and architecture 
-         </li>
-         <li className="list-disc">Front-end development
-         </li>
-         <li className="list-disc">Back-end development
-         </li>
-         <li className="list-disc">
-         Testing and quality assurance
-         </li>
-         <li className="list-disc">
-         Deployment 
-         </li >
-         <li className="list-disc">
-         Maintenance and updates  
-         </li >
-       </ul>
-     </>
+      description: (
+        <>
+          <p> Key steps in a full-stack development include- </p>
+          <ul className="ml-10 list-disc">
+            <li>Project planning and requirements</li>
+            <li>Design and architecture</li>
+            <li>Front-end development</li>
+            <li>Back-end development</li>
+            <li>Testing and quality assurance</li>
+            <li>Deployment</li>
+            <li>Maintenance and updates</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "5",
-      title:
-        "Is a full-stack developer in demand in India?",
-      description:
-        `Yes. They are in high demand today. Full-stack developers can easily handle both front-end and back-end designing, making it a cost-effective option for businesses today. 
+      title: "Is a full-stack developer in demand in India?",
+      description: `Yes. They are in high demand today. Full-stack developers can easily handle both front-end and back-end designing, making it a cost-effective option for businesses today. 
         Hire a dedicated full-stack developer from a leading company like Brain Inventory, contact us to schedule a meeting. `,
     },
   ];
@@ -238,55 +236,61 @@ function HireFullStackDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What are the key benefits of using full-stack web development services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `The key benefits of using full-stack web development services are-
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the key benefits of using full-stack web development services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `The key benefits of using full-stack web development services are-
               1. Reduced costs- Instead of hiring multiple developers, you can get the job done with a single skilled person in full-stack development.
               2. Faster development process- Since there's only one person involved, you get his full attention and time which leads to a faster development process.
               3. Complete ownership- A full-stack developer takes complete ownership of the project. so no hassle of dividing the tasks among multiple people.
-              4. Hassle-free upgrades- Full stack developers are highly skilled and they can handle any updates and changes smoothly.`
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I Hire a full-stack developer for hourly or project-based tasks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Depending on your project requirements, you can hire a full-stack developer for either hourly or project-based tasks."
-      }
-    },{
-      "@type": "Question",
-      "name": "What steps should I follow to hire a full-stack developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "First, you must clearly define your project goals and requirements. The next step is to search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with front-end and back-end frameworks, and assess their technical skills and communication abilities to ensure they fit your project needs."
-      }
-    },{
-      "@type": "Question",
-      "name": "What Development Process Do You Follow?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `Key steps in a full-stack development include- 
+              4. Hassle-free upgrades- Full stack developers are highly skilled and they can handle any updates and changes smoothly.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I Hire a full-stack developer for hourly or project-based tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Depending on your project requirements, you can hire a full-stack developer for either hourly or project-based tasks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What steps should I follow to hire a full-stack developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "First, you must clearly define your project goals and requirements. The next step is to search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with front-end and back-end frameworks, and assess their technical skills and communication abilities to ensure they fit your project needs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What Development Process Do You Follow?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Key steps in a full-stack development include- 
                   Project planning and requirements 
                   Design and architecture
                   Front-end development
                   Back-end development
                   Testing and quality assurance
                   Deployment
-                  Maintenance and updates`
-      }
-    },{
-      "@type": "Question",
-      "name": "Is a full-stack developer in demand in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. They are in high demand today. Full-stack developers can easily handle both front-end and back-end designing, making it a cost-effective option for businesses today. Hire a dedicated full-stack developer from a leading company like Brain Inventory, contact us to schedule a meeting."
-      }
-    }]
-  }
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+                  Maintenance and updates`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is a full-stack developer in demand in India?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. They are in high demand today. Full-stack developers can easily handle both front-end and back-end designing, making it a cost-effective option for businesses today. Hire a dedicated full-stack developer from a leading company like Brain Inventory, contact us to schedule a meeting.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -320,8 +324,8 @@ function HireFullStackDeveloper(props) {
           href="https://braininventory.in/hire-full-stack-developers"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

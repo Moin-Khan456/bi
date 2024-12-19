@@ -23,8 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import DOMPurify from "isomorphic-dompurify"
-
+import DOMPurify from "isomorphic-dompurify";
 
 function HireDotnetDeveloper(props) {
   const content =
@@ -72,11 +71,11 @@ function HireDotnetDeveloper(props) {
             className="text-[#2186ff]"
           >
             dot net application development
-          </Link>. We have handled challenging
-          technologies and accomplished tasks for our clients. We truly provide
-          superior platforms for a wide range of business applications and focus
-          on the integration aspect which is an important part of delivering an
-          effective final solution.
+          </Link>
+          . We have handled challenging technologies and accomplished tasks for
+          our clients. We truly provide superior platforms for a wide range of
+          business applications and focus on the integration aspect which is an
+          important part of delivering an effective final solution.
         </>
       ),
     },
@@ -146,14 +145,14 @@ function HireDotnetDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title:
-        "How Much Does It Cost To Hire a .NET Developer?",
+      title: "How Much Does It Cost To Hire a .NET Developer?",
       description:
         "The cost of hiring a .NET developer depends on the complexity of the project, the developer’s expertise, and the hiring model you choose (hourly or project-based). ",
     },
     {
       id: "2",
-      title: "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
+      title:
+        "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
       description:
         "Yes. You can hire a dedicated ASP.NET developer for hourly or project-based tasks, depending on the project’s requirements and budget. We at Brain Inventory offer flexible models for our clients, which we can discuss in our scheduled meeting. ",
     },
@@ -171,9 +170,10 @@ function HireDotnetDeveloper(props) {
     },
     {
       id: "5",
-      title: "How do you handle time zone differences between your talents and us?",
+      title:
+        "How do you handle time zone differences between your talents and us?",
       description:
-        "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45\, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers.  ",
+        "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers.  ",
     },
   ];
 
@@ -212,44 +212,50 @@ function HireDotnetDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How Much Does It Cost To Hire a .NET Developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost of hiring a .NET developer depends on the complexity of the project, the developer’s expertise, and the hiring model you choose (hourly or project-based)."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. You can hire a dedicated ASP.NET developer for hourly or project-based tasks, depending on the project’s requirements and budget. We at Brain Inventory offer flexible models for our clients, which we can discuss in our scheduled meeting."
-      }
-    },{
-      "@type": "Question",
-      "name": "Are .NET Developers in Demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. .NET developers are in high demand if you want to build critical applications. Hire .NET developers and make your next project successful with us."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can your .NET developers join and take over mid-project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. They can. As soon as you onboard .NET developers to join and take mid-projects, you can expect them to integrate seamlessly within your team and pick the project speed within 2 weeks."
-      }
-    },{
-      "@type": "Question",
-      "name": "How do you handle time zone differences between your talents and us?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45\, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How Much Does It Cost To Hire a .NET Developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost of hiring a .NET developer depends on the complexity of the project, the developer’s expertise, and the hiring model you choose (hourly or project-based).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I hire a dedicated ASP.NET developer for hourly or project-based tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can hire a dedicated ASP.NET developer for hourly or project-based tasks, depending on the project’s requirements and budget. We at Brain Inventory offer flexible models for our clients, which we can discuss in our scheduled meeting.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are .NET Developers in Demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. .NET developers are in high demand if you want to build critical applications. Hire .NET developers and make your next project successful with us.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can your .NET developers join and take over mid-project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. They can. As soon as you onboard .NET developers to join and take mid-projects, you can expect them to integrate seamlessly within your team and pick the project speed within 2 weeks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you handle time zone differences between your talents and us?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We communicate the time zone differences with our clients. According to their preference, we manage our work and schedule meetings during overlapping hours. We use tools like Zoom c45, Google Meet, etc to keep our clients updated with the project’s progress regularly and keep them in the loop throughout the development process. Contact us to hire dedicated .NET developers.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -282,8 +288,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           href="https://braininventory.in/hire-dotnet-developers"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense fallback={null}>

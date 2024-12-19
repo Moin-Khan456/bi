@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -17,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -25,10 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const OurDevelopers = dynamic(() =>
-  import("../components/Hire/OurDevelopers.jsx")
-);
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 
 function HirePythonDeveloper(props) {
   const content =
@@ -91,7 +86,10 @@ function HirePythonDeveloper(props) {
       content: (
         <>
           We are a{" "}
-          <Link href="/web-development/python-web-development-company" className="text-[#2186ff]">
+          <Link
+            href="/web-development/python-web-development-company"
+            className="text-[#2186ff]"
+          >
             Python development company
           </Link>{" "}
           the developers and designers. Our team includes experts in various
@@ -118,14 +116,14 @@ function HirePythonDeveloper(props) {
     },
     {
       id: "3",
-      title:
-        "What are the types of Python projects you have worked on?",
+      title: "What are the types of Python projects you have worked on?",
       description:
         "We have worked on different types of Python projects including the most basic ones like password generator, and countdown timer. More advanced ones like a conversational AI, or an image recognition system.",
     },
     {
       id: "4",
-      title: "Who provides the workstations to the Python developers I hire for my project?",
+      title:
+        "Who provides the workstations to the Python developers I hire for my project?",
       description:
         "When you hire Python developers for your project requirement, it becomes your responsibility to provide them with a workstation and all the basic resources required to complete the development process (computer, tools, monitor, etc). However, if you choose to hire remote developers, it is the agency’s responsibility with whom they are associated. You just need to pay an affordable amount to the agency and get developers on board.",
     },
@@ -208,47 +206,53 @@ function HirePythonDeveloper(props) {
         "Transitioning your existing applications to Python is now simpler than ever. Our team of senior Python developers can assist you in migrating your applications or seamlessly integrating Python modules into your current codebase quickly and efficiently. Our Senior Python Developers have extensive experience in the development, refactoring, and testing of applications.",
     },
   ];
-const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Is Python in high demand?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. Python is in high demand. Yes. Python is in high demand. The statistics speak for themselves. According to a survey conducted by Stack Overflow, “Python was the third most popular programming language with respondents using it 48.24% of the time”."
-    }
-  },{
-    "@type": "Question",
-    "name": "How do I hire a Python developer?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hire a Python developer by clearly defining your project goals and requirements. You can search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with Python frameworks like Django, and assess their technical skills and communication abilities to ensure they fit your project needs."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the types of Python projects you have worked on?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We have worked on different types of Python projects including the most basic ones like password generator, and countdown timer. More advanced ones like a conversational AI, or an image recognition system."
-    }
-  },{
-    "@type": "Question",
-    "name": "Who provides the workstations to the Python developers I hire for my project?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "When you hire Python developers for your project requirement, it becomes your responsibility to provide them with a workstation and all the basic resources required to complete the development process (computer, tools, monitor, etc). However, if you choose to hire remote developers, it is the agency’s responsibility with whom they are associated. You just need to pay an affordable amount to the agency and get developers on board."
-    }
-  },{
-    "@type": "Question",
-    "name": "How fast can we get people assigned to our project?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "If you hire a dedicated Python developer from a company like ours, you can get people assigned to your project as soon as you can imagine. Just select the work and pricing model for your project, and get a professional on board."
-    }
-  }]
-}
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Is Python in high demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Python is in high demand. Yes. Python is in high demand. The statistics speak for themselves. According to a survey conducted by Stack Overflow, “Python was the third most popular programming language with respondents using it 48.24% of the time”.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I hire a Python developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Hire a Python developer by clearly defining your project goals and requirements. You can search on various platforms like LinkedIn, Indeed, Toptal, and freelance sites like Upwork and Fiverr. Before hiring any candidate, look for their experience with Python frameworks like Django, and assess their technical skills and communication abilities to ensure they fit your project needs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the types of Python projects you have worked on?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We have worked on different types of Python projects including the most basic ones like password generator, and countdown timer. More advanced ones like a conversational AI, or an image recognition system.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who provides the workstations to the Python developers I hire for my project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When you hire Python developers for your project requirement, it becomes your responsibility to provide them with a workstation and all the basic resources required to complete the development process (computer, tools, monitor, etc). However, if you choose to hire remote developers, it is the agency’s responsibility with whom they are associated. You just need to pay an affordable amount to the agency and get developers on board.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How fast can we get people assigned to our project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you hire a dedicated Python developer from a company like ours, you can get people assigned to your project as soon as you can imagine. Just select the work and pricing model for your project, and get a professional on board.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -284,7 +288,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
 

@@ -1,12 +1,11 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -18,7 +17,6 @@ const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link";
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
@@ -156,11 +154,18 @@ function HireNodeJsDeveloper(props) {
       head: "Dedicated Team",
       content: (
         <>
-          We have a <Link href="/hire-dedicated-remote-developers" className="text-[#2186ff]">dedicated development team</Link>, who are well-versed in
-          delivering high-end business solutions on several frameworks and
-          technologies. In the beginning, we utilized Framework 4 as well as the
-          latest version of Qlik Sense / Power BI, which offers flexible report
-          creation options and the ability to streamline reporting processes.
+          We have a{" "}
+          <Link
+            href="/hire-dedicated-remote-developers"
+            className="text-[#2186ff]"
+          >
+            dedicated development team
+          </Link>
+          , who are well-versed in delivering high-end business solutions on
+          several frameworks and technologies. In the beginning, we utilized
+          Framework 4 as well as the latest version of Qlik Sense / Power BI,
+          which offers flexible report creation options and the ability to
+          streamline reporting processes.
         </>
       ),
     },
@@ -186,20 +191,21 @@ function HireNodeJsDeveloper(props) {
     },
     {
       id: "2",
-      title: "Can I Hire a Node.js developer for hourly or project-based tasks?",
+      title:
+        "Can I Hire a Node.js developer for hourly or project-based tasks?",
       description:
         "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire NodeJS developers to work hourly or give them project-based tasks. ",
     },
     {
       id: "3",
-      title:
-        "Why should I hire a dedicated NodeJS developer?",
+      title: "Why should I hire a dedicated NodeJS developer?",
       description:
         "You should hire a NodeJS developer to ensure that your application is scalable, and gives a high-performance and smooth user experience at an affordable cost.",
     },
     {
       id: "4",
-      title: "What applications can be developed through the Node.js framework?",
+      title:
+        "What applications can be developed through the Node.js framework?",
       description:
         "NodeJS is a versatile framework that can be used to build a variety of applications including websites, APIs, web applications, complex single-page applications, real-time communication tools, and mobile applications.",
     },
@@ -219,6 +225,7 @@ function HireNodeJsDeveloper(props) {
 
   const keySkillsBreif =
     "Brain Inventory is a proficient NodeJS development company that undertakes diverse projects and has expertise in working with the most prevalent frameworks. The NodeJS developers at Brain Inventory employ several tools and libraries, which they have utilized in real-life projects and projects they have constructed. Among these tools, Spark Core is a composite of nodes, SQL databases, and JavaScript. If you're seeking reasons to hire our Node JS developers for your project, here are a few:";
+    
   const keySkillsPoints = [
     "Scalability",
     "Experience With Cloud",
@@ -235,48 +242,54 @@ function HireNodeJsDeveloper(props) {
     "We have a team of elite Node.js developers to hire for your project. Our team is proficient at building data, event-driven, and non-blocking I/O-based server-side solutions that are efficient and flawless at connection management; and, thus, performance. Hire us if you want an end product/app, website, or infrastructure with ease of scalability to suit your purposes through our unique blend of skills since we specialize in building modern apps infused with the latest technologies from the ground up till the end product or from any stage of the software development lifecycle.",
     "Our dedicated developers will be working for you directly and not for some other client who may or may not understand what exactly the whole app is about. So whether it's a small project or a large one – we will help you conquer them!",
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Do you provide support and maintenance services after deployment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I Hire a Node.js developer for hourly or project-based tasks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire NodeJS developers to work hourly or give them project-based tasks."
-      }
-    },{
-      "@type": "Question",
-      "name": "Why should I hire a dedicated NodeJS developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You should hire a NodeJS developer to ensure that your application is scalable, and gives a high-performance and smooth user experience at an affordable cost."
-      }
-    },{
-      "@type": "Question",
-      "name": "What applications can be developed through the Node.js framework?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NodeJS is a versatile framework that can be used to build a variety of applications including websites, APIs, web applications, complex single-page applications, real-time communication tools, and mobile applications."
-      }
-    },{
-      "@type": "Question",
-      "name": "What can our Node.js developers do for you?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Node.JS developers can build high-performing, scalable applications for your project. They also provide post-deployment support and maintenance to fix any bugs or technical errors that may arise."
-      }
-    }]
-  }
-  
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do you provide support and maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we do. In every project, we provide post-deployment services to keep our clients satisfied.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I Hire a Node.js developer for hourly or project-based tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. At Brain Inventory, we offer different types of models to suit your project requirements. You can hire NodeJS developers to work hourly or give them project-based tasks.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why should I hire a dedicated NodeJS developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You should hire a NodeJS developer to ensure that your application is scalable, and gives a high-performance and smooth user experience at an affordable cost.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What applications can be developed through the Node.js framework?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NodeJS is a versatile framework that can be used to build a variety of applications including websites, APIs, web applications, complex single-page applications, real-time communication tools, and mobile applications.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What can our Node.js developers do for you?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our Node.JS developers can build high-performing, scalable applications for your project. They also provide post-deployment support and maintenance to fix any bugs or technical errors that may arise.",
+        },
+      },
+    ],
+  };
+
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

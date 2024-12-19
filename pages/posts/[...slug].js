@@ -34,7 +34,6 @@ export default function PostPage({ slug, post, featuredMedia }) {
         "Brain Inventory | Blog"
     );
   }, [post.id]);
-
   return (
     <>
       <div className="relative bg-white ">
@@ -60,9 +59,9 @@ export default function PostPage({ slug, post, featuredMedia }) {
           <div className="container pt-12 padding-left-all-section-1 text-slate-950">
             <div className="grid grid-cols-3 gap-4 post-container">
               <div className="col-span-2 slug-img-container mt-8">
-                <h3 className="text-left Gilroy-Bold text-2xl mb-4  ">
+                <h1 className="text-left Gilroy-Bold text-4xl mb-4">
                   {post.title.rendered}
-                </h3>
+                </h1>
 
                 <Image
                   src={featuredMedia}

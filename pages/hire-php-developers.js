@@ -204,17 +204,13 @@ function HirePhpDeveloper(props) {
       >
         Custom Mobile App Development solutions
       </Link>{" "}
-      and{" "}
-      <Link href="/javascript:void(0)" className="text-[#2186ff]">
-        Custom Mobile App Development Services
-      </Link>{" "}
-      . As an offshore PHP web and mobile development firm, we cater to
-      companies in over 20 nations worldwide. Our team comprises only the most
-      seasoned and credentialed developers with proficiency in custom Web
-      Application Development, Mobile App Development, E-commerce Development,
-      and CMS development. Regardless of whether you need to launch a mobile
-      platform or completely overhaul your current website, we will support you
-      at every step of the process.
+      and Custom Mobile App Development Services. As an offshore PHP web and
+      mobile development firm, we cater to companies in over 20 nations
+      worldwide. Our team comprises only the most seasoned and credentialed
+      developers with proficiency in custom Web Application Development, Mobile
+      App Development, E-commerce Development, and CMS development. Regardless
+      of whether you need to launch a mobile platform or completely overhaul
+      your current website, we will support you at every step of the process.
     </>
   );
   const keySkillsPoints = [
@@ -246,7 +242,7 @@ function HirePhpDeveloper(props) {
       become a challenging yet lucrative business venture. DesignerInteractions
       is a Mobile App Development Company, offering the best{" "}
       <Link
-        href="/web-development/php-development-company"
+        href="/web-development/php-development-service-company"
         className="text-[#2186ff]"
       >
         PHP development services

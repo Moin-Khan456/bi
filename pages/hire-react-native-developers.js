@@ -58,7 +58,7 @@ function HireReactNativeDeveloper(props) {
           crucial that you hire a company that will help you test your
           application for responsiveness, bugs, and possible threats post-
           <Link
-            href="/mobile-app-development-company"
+            href="/mobile-development/custom-mobile-app-development-company"
             className="text-[#2186ff]"
           >
             mobile app development
@@ -162,7 +162,7 @@ function HireReactNativeDeveloper(props) {
     <>
       We are one of the best{" "}
       <Link
-        href="/mobile-development/react-native-app-development-compan"
+        href="/mobile-development/react-native-app-development-company"
         className="text-[#2186ff]"
       >
         React Native development company

@@ -51,11 +51,11 @@ export default function BlogArticle() {
                   target="_self"
                   key={index}
                 >
-                  <section className="my-4 lg:mr-4 relative h-64" key={index}>
+                  <section className="my-4 lg:mr-4 relative h-full rounded-xl" key={index}>
                     <Image
                       width={500}
                       height={300}
-                      className="h-full rounded-3xl"
+                      className="h-full rounded-xl object-contain"
                       src={ele._embedded["wp:featuredmedia"][0].source_url}
                       alt={ele.title.rendered + " | Brain Inventory"}
                     />

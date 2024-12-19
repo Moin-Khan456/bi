@@ -133,15 +133,15 @@ function HireFullStackDeveloper(props) {
       description:
       <>
       <p className="ml-4">The key benefits of using full-stack web development services are-</p>
-       <ol className="ml-10">
-         <li className="list-disc">
+       <ol className="ml-10 list-disc">
+         <li >
          Reduced costs- Instead of hiring multiple developers, you can get the job done with a single skilled person in full-stack development.
          </li>
-         <li className="list-disc">Faster development process- Since there’s only one person involved, you get his full attention and time which leads to a faster development process.
+         <li >Faster development process- Since there’s only one person involved, you get his full attention and time which leads to a faster development process.
          </li>
-         <li className="list-disc">Complete ownership- A full-stack developer takes complete ownership of the project. so no hassle of dividing the tasks among multiple people.
+         <li >Complete ownership- A full-stack developer takes complete ownership of the project. so no hassle of dividing the tasks among multiple people.
          </li>
-         <li className="list-disc">Hassle-free upgrades- Full stack developers are highly skilled and they can handle any updates and changes smoothly. 
+         <li >Hassle-free upgrades- Full stack developers are highly skilled and they can handle any updates and changes smoothly. 
          </li>
        </ol>
      </>
@@ -166,23 +166,23 @@ function HireFullStackDeveloper(props) {
       description:
       <>
       <p> Key steps in a full-stack development include- </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Project planning and requirements
          </li>
-         <li className="list-disc">Design and architecture 
+         <li >Design and architecture 
          </li>
-         <li className="list-disc">Front-end development
+         <li >Front-end development
          </li>
-         <li className="list-disc">Back-end development
+         <li >Back-end development
          </li>
-         <li className="list-disc">
+         <li >
          Testing and quality assurance
          </li>
-         <li className="list-disc">
+         <li >
          Deployment 
          </li >
-         <li className="list-disc">
+         <li >
          Maintenance and updates  
          </li >
        </ul>

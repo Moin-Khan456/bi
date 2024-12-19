@@ -101,20 +101,20 @@ function HireChatbotDeveloper(props) {
       description:
       <>
       <p>Some of the essential tools that AI chatbot developers use are-  </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Chatbase
          </li>
-         <li className="list-disc">Dialogflow 
+         <li >Dialogflow 
          </li>
-         <li className="list-disc">Microsoft Bot framework
+         <li >Microsoft Bot framework
          </li>
-         <li className="list-disc">Rasa
+         <li >Rasa
          </li>
-         <li className="list-disc">
+         <li >
          Botpress
          </li>
-         <li className="list-disc">
+         <li >
          Chatfuel  
          </li >
        </ul>

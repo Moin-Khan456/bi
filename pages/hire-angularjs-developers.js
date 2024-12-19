@@ -147,20 +147,20 @@ function HireAangularJsDeveloper() {
       description:
         <>
          <p> The key benefits of using AngularJS for your next project are-</p>
-          <ul className="ml-10">
-            <li className="list-disc">
+          <ul className="ml-10 list-disc">
+            <li >
             Reusable components across the project seamlessly.
             </li>
-            <li className="list-disc">Pre-built modules can be integrated easily, without the need for extensive modifications. 
+            <li >Pre-built modules can be integrated easily, without the need for extensive modifications. 
             </li>
-            <li className="list-disc">Automatic synchronization of user interface with the underlying data models.
+            <li >Automatic synchronization of user interface with the underlying data models.
             </li>
-            <li className="list-disc">Easy access to a vast community of developers, libraries, and resources.
+            <li>Easy access to a vast community of developers, libraries, and resources.
             </li>
-            <li className="list-disc">
+            <li >
             Rapid creation of application prototypes to validate your ideas timely.
             </li>
-            <li className="list-disc">
+            <li >
             Test application during the development process itself. 
             </li >
           </ul>

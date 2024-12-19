@@ -19,7 +19,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
-
+import DOMPurify from "isomorphic-dompurify"
 function HireNextJsDeveloper() {
   const content =
     "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";

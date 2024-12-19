@@ -179,15 +179,15 @@ function HireVueJsDeveloper(props) {
       description:
       <>
       <p> Yes. Vue has a bright future due to </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Strong and active community.
          </li>
-         <li className="list-disc">Gentle learning curve.
+         <li >Gentle learning curve.
          </li>
-         <li className="list-disc">Support from large corporations like Xiaomi, and Alibaba.
+         <li >Support from large corporations like Xiaomi, and Alibaba.
          </li>
-         <li className="list-disc">Continuous evolution.
+         <li >Continuous evolution.
          </li>
        </ul>
        <p>Hire VueJS developers to take advantage of the VueJS features and its ability to build high-performing applications. 

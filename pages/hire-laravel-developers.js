@@ -132,15 +132,15 @@ function HireLaravelDeveloper(props) {
       description:
       <>
       <p>You can hire Laravel developers by following any one of these- </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Creating a detailed job ad 
          </li>
-         <li className="list-disc">Make professional connections and take recommendations from them
+         <li >Make professional connections and take recommendations from them
          </li>
-         <li className="list-disc">Reach out to hiring platforms
+         <li >Reach out to hiring platforms
          </li>
-         <li className="list-disc">Joining freelancing platforms like Fiverr and Upwork 
+         <li >Joining freelancing platforms like Fiverr and Upwork 
          </li>
        </ul>
      </>

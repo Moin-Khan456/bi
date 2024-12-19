@@ -154,20 +154,20 @@ function HirePhpDeveloper(props) {
       description:
       <>
       <p> Some of the prominent features for which PHP web developers choose PHP include-  </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Free and open-source library
          </li>
-         <li className="list-disc">Compatible with all OS 
+         <li >Compatible with all OS 
          </li>
-         <li className="list-disc">It is dynamic and flexible
+         <li >It is dynamic and flexible
          </li>
-         <li className="list-disc">Database flexibility
+         <li >Database flexibility
          </li>
-         <li className="list-disc">
+         <li >
          Works well with CMSs
          </li>
-         <li className="list-disc">
+         <li >
          Plenty of handy resources and tools 
          </li >
        </ul>

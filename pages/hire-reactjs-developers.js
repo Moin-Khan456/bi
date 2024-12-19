@@ -21,6 +21,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify"
 
 function HireReactJsDeveloper(props) {
   const content = (
@@ -131,17 +132,17 @@ function HireReactJsDeveloper(props) {
       description:
       <>
       <p> To hire dedicated ReactJS developers, you can -</p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Prepare and share the JD.
          </li>
-         <li className="list-disc">You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
+         <li >You will receive pre-vetted expert ReactJS developers matching work experience as per JD.
          </li>
-         <li className="list-disc">Conduct both Technical and team compatibility rounds of interviews.
+         <li >Conduct both Technical and team compatibility rounds of interviews.
          </li>
-         <li className="list-disc">Complete the onboarding process.
+         <li >Complete the onboarding process.
          </li>
-         <li className="list-disc">
+         <li >
          You are good to go.
          </li>
        </ul>

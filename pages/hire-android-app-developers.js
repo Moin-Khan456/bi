@@ -19,7 +19,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link";
-
+import DOMPurify from "isomorphic-dompurify"
 function HireAndroidAppDeveloper(props) {
   const content =
     "BrainInventory team is a pool of highly experienced, creative, and dedicated app developers with experience in developing highly customized Android applications for different sizes of businesses from different industries.";
@@ -146,13 +146,13 @@ function HireAndroidAppDeveloper(props) {
       description:
       <>
       <p> The time required to develop an Android app depends on the app’s complexity. </p>
-       <ul className="ml-10">
-         <li className="list-disc">
+       <ul className="ml-10 list-disc">
+         <li >
          Simple apps take 1-2 months of time to develop.
          </li>
-         <li className="list-disc">Mid-level apps take 3-6 months of time to develop.
+         <li >Mid-level apps take 3-6 months of time to develop.
          </li>
-         <li className="list-disc">Complex apps take 6 months of time or a year to develop.
+         <li >Complex apps take 6 months of time or a year to develop.
          </li>
        </ul>
      </>

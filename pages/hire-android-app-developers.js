@@ -333,4 +333,4 @@ function HireAangularJsDeveloper(props) {
   );
 }
 
-export default HireAndroidAppDeveloper;
+export default HireAangularJsDeveloper;

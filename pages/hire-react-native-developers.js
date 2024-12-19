@@ -1,11 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -13,7 +12,6 @@ const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire"));
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -25,7 +23,6 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
 import DOMPurify from "isomorphic-dompurify";
-
 
 function HireReactNativeDeveloper(props) {
   const content =
@@ -120,8 +117,7 @@ function HireReactNativeDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title:
-        "How do I find React Native developers?",
+      title: "How do I find React Native developers?",
       description:
         "You can find React native developers on some of the most popular online platforms like LinkedIn, Stack Overflow, and Indeed. ",
     },
@@ -146,7 +142,8 @@ function HireReactNativeDeveloper(props) {
     },
     {
       id: "5",
-      title: "Why is React Native the preferred choice for mobile app development compared to others?",
+      title:
+        "Why is React Native the preferred choice for mobile app development compared to others?",
       description:
         "React Native is a preferred choice for mobile app development because it allows developers to build a variety of apps using a single codebase, and constant support from its active community helps developers get answers to any situation they may find themselves stuck in.",
     },
@@ -214,44 +211,50 @@ function HireReactNativeDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How do I find React Native developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can find React native developers on some of the most popular online platforms like LinkedIn, Stack Overflow, and Indeed."
-      }
-    },{
-      "@type": "Question",
-      "name": "Is React Native worth it in 2025?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, React Native is worth it in 2025. The popularity of React Native is not going to fade very soon–thanks to its mature ecosystem, large developer community, and ease of use features."
-      }
-    },{
-      "@type": "Question",
-      "name": "What engagement models do you offer for hiring React Native developers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you want to hire React Native developers, we offer some of the most common engagement models like- hourly basis, dedicated developer, fixed price projects, and even a hybrid model which combines the benefits of both dedicated and hourly models. Based on your project requirements, you can schedule a meeting with us and choose any."
-      }
-    },{
-      "@type": "Question",
-      "name": "How much does it cost to hire a React Native developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost to hire a React native developer varies from project to project. It depends on the complexity, number of features, uniqueness, and timelines of the project."
-      }
-    },{
-      "@type": "Question",
-      "name": "Why is React Native the preferred choice for mobile app development compared to others?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "React Native is a preferred choice for mobile app development because it allows developers to build a variety of apps using a single codebase, and constant support from its active community helps developers get answers to any situation they may find themselves stuck in."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How do I find React Native developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can find React native developers on some of the most popular online platforms like LinkedIn, Stack Overflow, and Indeed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is React Native worth it in 2025?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, React Native is worth it in 2025. The popularity of React Native is not going to fade very soon–thanks to its mature ecosystem, large developer community, and ease of use features.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What engagement models do you offer for hiring React Native developers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you want to hire React Native developers, we offer some of the most common engagement models like- hourly basis, dedicated developer, fixed price projects, and even a hybrid model which combines the benefits of both dedicated and hourly models. Based on your project requirements, you can schedule a meeting with us and choose any.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does it cost to hire a React Native developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The cost to hire a React native developer varies from project to project. It depends on the complexity, number of features, uniqueness, and timelines of the project.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why is React Native the preferred choice for mobile app development compared to others?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "React Native is a preferred choice for mobile app development because it allows developers to build a variety of apps using a single codebase, and constant support from its active community helps developers get answers to any situation they may find themselves stuck in.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -285,9 +288,9 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           rel="canonical"
           href="https://braininventory.in/hire-react-native-developers"
         />
-         <script
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

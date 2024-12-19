@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
 import LetsKick from "../components/common/LetsKick";
 import Footer from "../components/common/Footer";
-import Loader from "../components/common/loader";
 import KeepInTouch from "../components/common/keepInTouch";
 import FaqHire from "../components/common/Faqhire";
 import Customer from "../components/common/customer";
@@ -21,7 +19,7 @@ import BlogArticle from "../components/common/BlogArticle";
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 
 function HireMernStackDeveloper(props) {
   const content =
@@ -83,7 +81,10 @@ function HireMernStackDeveloper(props) {
         <>
           Our experience in this domain has helped us to create best-in-class
           modular{" "}
-          <Link href="/web-development/angularjs-development-company" className="text-[#2186ff]">
+          <Link
+            href="/web-development/angularjs-development-company"
+            className="text-[#2186ff]"
+          >
             Angular application development solutions
           </Link>{" "}
           for our clients. We provide different ways to develop your eCommerce
@@ -115,7 +116,7 @@ function HireMernStackDeveloper(props) {
       id: "1",
       title: "Do you sign an NDA?",
       description:
-        'Yes, we do. At Brain Inventory, we prioritize your project’s confidentiality and ensure the safety of any sensitive information by signing a non-disclosure agreement. ',
+        "Yes, we do. At Brain Inventory, we prioritize your project’s confidentiality and ensure the safety of any sensitive information by signing a non-disclosure agreement. ",
     },
     {
       id: "2",
@@ -184,49 +185,54 @@ function HireMernStackDeveloper(props) {
     "Expanding your team by adding MERN stack engineers is a brilliant strategy that will enable you to develop forward-looking applications. Our group of experienced and gifted programmers enjoys crafting software using state-of-the-art technologies such as Node.js, React, React Native, and Angular. You can rely on us to construct high-quality, scalable, and durable applications for both startups and major corporations. We have a wealth of experience developing enterprise-level solutions for companies of all sizes.",
     "You can depend on us for building enterprise-grade applications that are scalable and robust. We have acres of experience in developing enterprise-level products for startups as well as large enterprises.",
   ];
-const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Do you sign an NDA?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we do. At Brain Inventory, we prioritize your project’s confidentiality and ensure the safety of any sensitive information by signing a non-disclosure agreement."
-    }
-  },{
-    "@type": "Question",
-    "name": "Do you provide support & maintenance services after deployment?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated MERN Stack developers."
-    }
-  },{
-    "@type": "Question",
-    "name": "Is MERN stack in demand in 2025?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, the MERN stack will be in demand in the year 2025 also. It has an evolving stack, with new tools and features being added to help developers build better applications."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can I Hire a Dedicated MERN Developer for the hourly or project-based task?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. You can hire dedicated MERN stack developers for hourly or project-based tasks if you choose Brain Inventory as your development partner. We offer multiple working models to suit your project requirements."
-    }
-  },{
-    "@type": "Question",
-    "name": "Where can I find the best MERN stack developers to hire?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "You can find the best MERN stack developers on- Toptal, Arc, Vlink, Uplers, and Mindbowser. A job listing on professional networks like LinkedIn and Indeed also helps in shortlisting MERN stack developers according to your requirements."
-    }
-  }]
-}
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do you sign an NDA?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we do. At Brain Inventory, we prioritize your project’s confidentiality and ensure the safety of any sensitive information by signing a non-disclosure agreement.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide support & maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated MERN Stack developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is MERN stack in demand in 2025?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, the MERN stack will be in demand in the year 2025 also. It has an evolving stack, with new tools and features being added to help developers build better applications.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I Hire a Dedicated MERN Developer for the hourly or project-based task?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You can hire dedicated MERN stack developers for hourly or project-based tasks if you choose Brain Inventory as your development partner. We offer multiple working models to suit your project requirements.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where can I find the best MERN stack developers to hire?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can find the best MERN stack developers on- Toptal, Arc, Vlink, Uplers, and Mindbowser. A job listing on professional networks like LinkedIn and Indeed also helps in shortlisting MERN stack developers according to your requirements.",
+        },
+      },
+    ],
+  };
 
-
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

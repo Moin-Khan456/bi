@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "../styles/globals.css";
 import HireDedicatedCard from "../components/blog/HireDedicatedCard";
 import { FiMail } from "react-icons/fi";
-import Script from "next/script";
 import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {

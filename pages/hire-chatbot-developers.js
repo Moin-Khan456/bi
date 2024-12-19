@@ -1,12 +1,10 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import OurDevelopers from "../components/Hire/OurDevelopers";
 const Header = dynamic(() => import("../components/header/Header"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const FaqHire = dynamic(() => import("../components/common/Faqhire"));
 const Customer = dynamic(() => import("../components/common/customer"));
@@ -18,7 +16,6 @@ const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
-const Hello = dynamic(() => import("../components/common/FindUs"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link.js";
@@ -26,8 +23,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../components/common/CommonChooseBraininventory")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import DOMPurify from "isomorphic-dompurify"
-
+import DOMPurify from "isomorphic-dompurify";
 
 function HireChatbotDeveloper(props) {
   const content =
@@ -70,7 +66,20 @@ function HireChatbotDeveloper(props) {
   const hireCards = [
     {
       head: "Technical Knowledge",
-      content: <>We at <Link href="/" className="text-[#2186ff]"> Brain Inventory</Link>      engage in the business of developing advanced chatbots for enterprises. Our suite is targeted at improving the processes and customer experience of businesses. We not only keep you connected with your customers but also help you achieve your business goals, be it sales or awareness.</>,
+      content: (
+        <>
+          We at{" "}
+          <Link href="/" className="text-[#2186ff]">
+            {" "}
+            Brain Inventory
+          </Link>{" "}
+          engage in the business of developing advanced chatbots for
+          enterprises. Our suite is targeted at improving the processes and
+          customer experience of businesses. We not only keep you connected with
+          your customers but also help you achieve your business goals, be it
+          sales or awareness.
+        </>
+      ),
     },
     {
       head: "Competitive Pricing",
@@ -98,28 +107,22 @@ function HireChatbotDeveloper(props) {
     {
       id: "1",
       title: "What tools do AI Chatbot Developers use?",
-      description:
-      <>
-      <p>Some of the essential tools that AI chatbot developers use are-  </p>
-       <ul className="ml-10 list-disc">
-         <li >
-         Chatbase
-         </li>
-         <li >Dialogflow 
-         </li>
-         <li >Microsoft Bot framework
-         </li>
-         <li >Rasa
-         </li>
-         <li >
-         Botpress
-         </li>
-         <li >
-         Chatfuel  
-         </li >
-       </ul>
-       <p>Contact us to Hire dedicated chatbot developers </p>
-     </>
+      description: (
+        <>
+          <p>
+            Some of the essential tools that AI chatbot developers use are-{" "}
+          </p>
+          <ul className="ml-10 list-disc">
+            <li>Chatbase</li>
+            <li>Dialogflow</li>
+            <li>Microsoft Bot framework</li>
+            <li>Rasa</li>
+            <li>Botpress</li>
+            <li>Chatfuel</li>
+          </ul>
+          <p>Contact us to Hire dedicated chatbot developers </p>
+        </>
+      ),
     },
     {
       id: "2",
@@ -195,54 +198,60 @@ function HireChatbotDeveloper(props) {
         "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
     },
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What tools do AI Chatbot Developers use?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `Some of the essential tools that AI chatbot developers use are- 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What tools do AI Chatbot Developers use?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Some of the essential tools that AI chatbot developers use are- 
         Dialogflow 
         Microsoft Bot framework
         Rasa
         Botpress
         Chatfuel 
         Chatbase
-  Contact us to Hire dedicated chatbot developers.`
-      }
-    },{
-      "@type": "Question",
-      "name": "How is Chatbot different from a mobile application?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Chatbots are much simpler and faster than mobile apps. To use chatbots, you just need to start a conversation. While a mobile app has to be downloaded on your phone, sign up with an account if you want to use it. Chatbots don’t need memory in your mobile phones."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can chatbots be used to improve customer service?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. chatbots are being used by many businesses today to improve their customer service. Chatbots give quicker responses, are available 24*7, and give a personalized service to the customer. Hire a chatbot developer by partnering with us."
-      }
-    },{
-      "@type": "Question",
-      "name": "What does an AI Chatbot Developer do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An AI chatbot developer designs and builds AI programs to communicate with humans through text, or audio. An AI chatbot can interact with users more naturally, leading to a human-like conversation. The work of an AI chatbot developer typically includes conversation design, NLP implementation, coding and development, testing, and maintenance."
-      }
-    },{
-      "@type": "Question",
-      "name": "How long does it take to develop a chatbot?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Developing a chatbot requires 4-12 weeks, depending on the technical complexity."
-      }
-    }]
-  }
-const sanitizedJsonLd  = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
+  Contact us to Hire dedicated chatbot developers.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is Chatbot different from a mobile application?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Chatbots are much simpler and faster than mobile apps. To use chatbots, you just need to start a conversation. While a mobile app has to be downloaded on your phone, sign up with an account if you want to use it. Chatbots don’t need memory in your mobile phones.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can chatbots be used to improve customer service?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. chatbots are being used by many businesses today to improve their customer service. Chatbots give quicker responses, are available 24*7, and give a personalized service to the customer. Hire a chatbot developer by partnering with us.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What does an AI Chatbot Developer do?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An AI chatbot developer designs and builds AI programs to communicate with humans through text, or audio. An AI chatbot can interact with users more naturally, leading to a human-like conversation. The work of an AI chatbot developer typically includes conversation design, NLP implementation, coding and development, testing, and maintenance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to develop a chatbot?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Developing a chatbot requires 4-12 weeks, depending on the technical complexity.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -282,8 +291,8 @@ https://braininventory.in/hire-chatbot-developers"
           href="https://braininventory.in/hire-chatbot-developers"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

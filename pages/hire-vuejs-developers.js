@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
 import LocateUs from "../components/common/locateUs.js";
 import LetsKick from "../components/common/LetsKick.js";
 import Footer from "../components/common/Footer.js";
-import Loader from "../components/common/loader.js";
 import KeepInTouch from "../components/common/keepInTouch.js";
 import FaqHire from "../components/common/Faqhire.jsx";
 import Customer from "../components/common/customer.jsx";
@@ -151,7 +149,8 @@ function HireVueJsDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Do you provide support and maintenance services after deployment?",
+      title:
+        "Do you provide support and maintenance services after deployment?",
       description:
         "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction.",
     },
@@ -176,23 +175,21 @@ function HireVueJsDeveloper(props) {
     {
       id: "5",
       title: "Does Vue have a future?",
-      description:
-      <>
-      <p> Yes. Vue has a bright future due to </p>
-       <ul className="ml-10 list-disc">
-         <li >
-         Strong and active community.
-         </li>
-         <li >Gentle learning curve.
-         </li>
-         <li >Support from large corporations like Xiaomi, and Alibaba.
-         </li>
-         <li >Continuous evolution.
-         </li>
-       </ul>
-       <p>Hire VueJS developers to take advantage of the VueJS features and its ability to build high-performing applications. 
-       </p>
-     </>,
+      description: (
+        <>
+          <p> Yes. Vue has a bright future due to </p>
+          <ul className="ml-10 list-disc">
+            <li>Strong and active community.</li>
+            <li>Gentle learning curve.</li>
+            <li>Support from large corporations like Xiaomi, and Alibaba.</li>
+            <li>Continuous evolution.</li>
+          </ul>
+          <p>
+            Hire VueJS developers to take advantage of the VueJS features and
+            its ability to build high-performing applications.
+          </p>
+        </>
+      ),
     },
   ];
 
@@ -220,50 +217,55 @@ function HireVueJsDeveloper(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Do you provide support and maintenance services after deployment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are the advantages of using Vue in web development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vue is a popular framework because it is easier to learn, lightweight, uses a virtual DOM, and promotes reusability."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are some of the best Vue libraries and plugins?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some of the best Vue libraries and plugins include Vux, Buefy, Vuetify, Quasar, iView, and KeenUI."
-      }
-    },{
-      "@type": "Question",
-      "name": "Are Vue JS developers in demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VueJS developers are expected to stay in demand because the framework is well-supported by active community members, has valuable contributors from around the world, and boasts some great features for easy development. Businesses looking to turn their creative ideas into modern, efficient applications should hire dedicated VueJS developers to leverage the full potential of this versatile framework."
-      }
-    },{
-      "@type": "Question",
-      "name": "Does Vue have a future?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `Yes. Vue has a bright future due to 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Do you provide support and maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the advantages of using Vue in web development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Vue is a popular framework because it is easier to learn, lightweight, uses a virtual DOM, and promotes reusability.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are some of the best Vue libraries and plugins?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Some of the best Vue libraries and plugins include Vux, Buefy, Vuetify, Quasar, iView, and KeenUI.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are Vue JS developers in demand?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. VueJS developers are expected to stay in demand because the framework is well-supported by active community members, has valuable contributors from around the world, and boasts some great features for easy development. Businesses looking to turn their creative ideas into modern, efficient applications should hire dedicated VueJS developers to leverage the full potential of this versatile framework.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does Vue have a future?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Yes. Vue has a bright future due to 
         Gentle learning curve.
         Support from large corporations like Xiaomi, and Alibaba.
         Continuous evolution.
         Hire VueJS developers to take advantage of the VueJS features and its ability to build high-performing applications.
-        Strong and active community.`
-      }
-    }]
-  }
-  
-  
+        Strong and active community.`,
+        },
+      },
+    ],
+  };
+
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
@@ -296,9 +298,9 @@ function HireVueJsDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/hire-vuejs-developers"
         />
-        <script 
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

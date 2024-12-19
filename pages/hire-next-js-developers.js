@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import LocateUs from "../components/common/locateUs";
@@ -19,7 +19,8 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
+
 function HireNextJsDeveloper() {
   const content =
     "Brain Inventory, an esteemed company specializing in front-end development, is based in USA. Our team of Next.js developers possess extensive knowledge and expertise in utilizing technologies like Node.js and React.js. This proficiency empowers us to deliver impeccable front-end applications to our valued clientele.";
@@ -115,7 +116,8 @@ function HireNextJsDeveloper() {
     {
       id: "1",
       title: "Why hire a next.js developer?",
-      description: "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently."
+      description:
+        "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently.",
     },
     {
       id: "2",
@@ -131,7 +133,8 @@ function HireNextJsDeveloper() {
     },
     {
       id: "4",
-      title: "Do you provide support and maintenance services after deployment?",
+      title:
+        "Do you provide support and maintenance services after deployment?",
       description:
         "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated Next JS developers.",
     },
@@ -182,47 +185,53 @@ function HireNextJsDeveloper() {
     "We understand that Next.js delivers highest quality frontend development and after years of experience in the industry, we have a team of dedicated Next JS developers with vast experience and technical knowledge. Our developers are highly skilled and well equipped with the technological skills to deliver quality web applications specializing in Next.js development services. Hire our Next.js experts and get exactly what you want in your software application.",
     "Hire dedicated Next.js experts from us to build lightweight, server-side, and simple test-driven apps. We have Next.js developers for hire whose expertise can be leveraged to develop smooth, high-performing, and scalable web apps. We understand the importance of good design, functional programming, and responsive Web Applications at BrainInventory.",
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Why hire a next.js developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently."
-      }
-    },{
-      "@type": "Question",
-      "name": "Should I use Next.js in 2025 and ahead?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, NextJS is a perfect choice for businesses in 2025 because of its flexibility, industry adoption, and proven performance."
-      }
-    },{
-      "@type": "Question",
-      "name": "How does next.js improve my app performance?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NextJS improves the app performance by automatically splitting your code into smaller chunks. You can optimize your application further by using a feature called “dynamic imports” to load components only when needed."
-      }
-    },{
-      "@type": "Question",
-      "name": "Do you provide support and maintenance services after deployment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated Next JS developers."
-      }
-    },{
-      "@type": "Question",
-      "name": "What are the benefits of using next.js?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Next.JS has become a preferred choice for modern app development because it offers a combination of flexibility, power, and the fact that it is a developer-friendly framework. Hire Next is developers to turn your business ideas into highly creative apps."
-      }
-    }]
-  }
-  
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Why hire a next.js developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NextJS developers have expertise and a deep understanding of the framework, to help ensure your project is built quickly and efficiently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I use Next.js in 2025 and ahead?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, NextJS is a perfect choice for businesses in 2025 because of its flexibility, industry adoption, and proven performance.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does next.js improve my app performance?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NextJS improves the app performance by automatically splitting your code into smaller chunks. You can optimize your application further by using a feature called “dynamic imports” to load components only when needed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide support and maintenance services after deployment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we provide post-deployment support and maintenance services to foster trust and build long-lasting relationships with our clients. This gives us a competitive edge in the market and promotes user satisfaction. Contact us to hire dedicated Next JS developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the benefits of using next.js?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Next.JS has become a preferred choice for modern app development because it offers a combination of flexibility, power, and the fact that it is a developer-friendly framework. Hire Next is developers to turn your business ideas into highly creative apps.",
+        },
+      },
+    ],
+  };
+
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
@@ -264,9 +273,9 @@ function HireNextJsDeveloper() {
           type="image/*"
           crossorigin="anonymous"
         />
-        <script 
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Loader />
@@ -316,4 +325,4 @@ function HireNextJsDeveloper() {
     </>
   );
 }
-export default HireNextJsDeveloper
+export default HireNextJsDeveloper;

@@ -19,7 +19,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 function HireAndroidAppDeveloper(props) {
   const content =
     "BrainInventory team is a pool of highly experienced, creative, and dedicated app developers with experience in developing highly customized Android applications for different sizes of businesses from different industries.";
@@ -143,19 +143,20 @@ function HireAndroidAppDeveloper(props) {
     {
       id: "3",
       title: "What is the timeline needed to develop an Android app?",
-      description:
-      <>
-      <p> The time required to develop an Android app depends on the app’s complexity. </p>
-       <ul className="ml-10 list-disc">
-         <li >
-         Simple apps take 1-2 months of time to develop.
-         </li>
-         <li >Mid-level apps take 3-6 months of time to develop.
-         </li>
-         <li >Complex apps take 6 months of time or a year to develop.
-         </li>
-       </ul>
-     </>
+      description: (
+        <>
+          <p>
+            {" "}
+            The time required to develop an Android app depends on the app’s
+            complexity.{" "}
+          </p>
+          <ul className="ml-10 list-disc">
+            <li>Simple apps take 1-2 months of time to develop.</li>
+            <li>Mid-level apps take 3-6 months of time to develop.</li>
+            <li>Complex apps take 6 months of time or a year to develop.</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "4",
@@ -165,7 +166,8 @@ function HireAndroidAppDeveloper(props) {
     },
     {
       id: "5",
-      title: "Can your developers help me create a new project for Android Studio?",
+      title:
+        "Can your developers help me create a new project for Android Studio?",
       description:
         "Yes. Our team of developers has easy access to the Android Studio, which is a very useful platform for creating Android apps for various devices like phones, tablets, TVs, etc. Contact us to hire Android developers.",
     },
@@ -196,50 +198,56 @@ function HireAndroidAppDeveloper(props) {
     "Our Android app developers hold extensive experience in harnessing leading-edge technologies to design location-based apps, gaming platforms, entertainment solutions, messaging applications, and M-commerce innovations. Brain Inventory's team is renowned for constructing intricate, yet seamless Android apps that function across multiple smartphone models. Our unwavering focus is on delivering dependable, high-quality apps at competitive prices, all while prioritizing a client-centric development mindset.",
     "Our skilled developers can help you create customized, scalable, and customer-centric solutions. Hiring the best developers gives you a competitive edge, allowing your business to scale quickly and efficiently.",
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Can I hire an Android developer for hourly or project-based tasks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. you can hire an android developer for hourly or project-based tasks. At Brain Inventory, we offer flexible working models to suit your budget and timelines."
-      }
-    },{
-      "@type": "Question",
-      "name": "Why do companies prefer to hire a dedicated Android Developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Companies prefer to hire dedicated Android developers because it is more affordable than hiring in-house or individuals."
-      }
-    },{
-      "@type": "Question",
-      "name": "What is the timeline needed to develop an Android app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `The time required to develop an Android app depends on the app’s complexity. 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Can I hire an Android developer for hourly or project-based tasks?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. you can hire an android developer for hourly or project-based tasks. At Brain Inventory, we offer flexible working models to suit your budget and timelines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do companies prefer to hire a dedicated Android Developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Companies prefer to hire dedicated Android developers because it is more affordable than hiring in-house or individuals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the timeline needed to develop an Android app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `The time required to develop an Android app depends on the app’s complexity. 
         Mid-level apps take 3-6 months of time to develop
         Complex apps take 6 months of time or a year to develop
-        Simple apps take 1-2 months of time to develop`
-      }
-    },{
-      "@type": "Question",
-      "name": "Can you help me upload my mobile app to the Google Play Store?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we can. Our team has access to all the available resources and tools needed to upload a mobile application to the Google Play store."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can your developers help me create a new project for Android Studio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our team of developers has easy access to the Android Studio, which is a very useful platform for creating Android apps for various devices like phones, tablets, TVs, etc. Contact us to hire Android developers."
-      }
-    }]
-  }
-  
+        Simple apps take 1-2 months of time to develop`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you help me upload my mobile app to the Google Play Store?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we can. Our team has access to all the available resources and tools needed to upload a mobile application to the Google Play store.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can your developers help me create a new project for Android Studio?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Our team of developers has easy access to the Android Studio, which is a very useful platform for creating Android apps for various devices like phones, tablets, TVs, etc. Contact us to hire Android developers.",
+        },
+      },
+    ],
+  };
+
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
@@ -272,9 +280,9 @@ function HireAndroidAppDeveloper(props) {
           rel="canonical"
           href="https://braininventory.in/hire-android-app-developers"
         />
-        <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

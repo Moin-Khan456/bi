@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";
 import LocateUs from "../components/common/locateUs.js";
 import LetsKick from "../components/common/LetsKick.js";
 import Footer from "../components/common/Footer.js";
-import Loader from "../components/common/loader.js";
 import KeepInTouch from "../components/common/keepInTouch.js";
 import FaqHire from "../components/common/Faqhire.jsx";
 import Customer from "../components/common/customer.jsx";
@@ -21,7 +19,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
-import DOMPurify from "isomorphic-dompurify"
+import DOMPurify from "isomorphic-dompurify";
 
 function HireIsoAppDeveloper(props) {
   const content = (
@@ -183,48 +181,54 @@ function HireIsoAppDeveloper(props) {
       need. Delivering awesome products with ease.
     </>,
   ];
-  const jsonLdScript ={
+  const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How to hire an iOS developer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Today’s online marketplace is way easier to find iOS experts as compared to traditional setups. You can hire iOS developers on sites like Toptal, Indeed, LinkedIn, Fiverr, etc. Also, keep a keen eye on college IT contests as you can find good talent from there."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can I pay and Hire iPhone Developers full-time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ys, with the right contacts, and recommendations– it is possible to hire full-time iPhone developers."
-      }
-    },{
-      "@type": "Question",
-      "name": "How can I communicate with the iOS developers I hired?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you have hired remote developers, you can establish communication channels for regular and effective communication. Tools like Google Meet and Zoom can help to conduct meetings with iOS developers while also sharing the screen."
-      }
-    },{
-      "@type": "Question",
-      "name": "How do I test your iOS Developers’ expertise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can ask for 1-2 applications that they have developed and published in the store. If they show you the codes also, it means they are genuine and you can consider hiring them. Contact Brain Inventory to hire iOS app developers."
-      }
-    },{
-      "@type": "Question",
-      "name": "How do you use the iOS developer assessment for hiring?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An iOS developer assessment is a part of the hiring process where you can evaluate a candidate’s technical skills and expertise in iOS app development. This can help you in making informed decisions about a candidate’s suitability for the required role."
-      }
-    }]
-  }
-  
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))   
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to hire an iOS developer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Today’s online marketplace is way easier to find iOS experts as compared to traditional setups. You can hire iOS developers on sites like Toptal, Indeed, LinkedIn, Fiverr, etc. Also, keep a keen eye on college IT contests as you can find good talent from there.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I pay and Hire iPhone Developers full-time?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ys, with the right contacts, and recommendations– it is possible to hire full-time iPhone developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I communicate with the iOS developers I hired?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If you have hired remote developers, you can establish communication channels for regular and effective communication. Tools like Google Meet and Zoom can help to conduct meetings with iOS developers while also sharing the screen.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I test your iOS Developers’ expertise?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can ask for 1-2 applications that they have developed and published in the store. If they show you the codes also, it means they are genuine and you can consider hiring them. Contact Brain Inventory to hire iOS app developers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you use the iOS developer assessment for hiring?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An iOS developer assessment is a part of the hiring process where you can evaluate a candidate’s technical skills and expertise in iOS app development. This can help you in making informed decisions about a candidate’s suitability for the required role.",
+        },
+      },
+    ],
+  };
+
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -257,9 +261,9 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           rel="canonical"
           href="https://braininventory.in/hire-ios-app-developers"
         />
-        <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html:sanitizedJsonLd}}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

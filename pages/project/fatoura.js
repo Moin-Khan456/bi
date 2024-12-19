@@ -233,7 +233,7 @@ const Fatoura = () => {
       <Milestone content={milestoneContent} />
       <VisitProject
         projectName="fatoura.work"
-        projectLink="https://fatoura.work/"
+        projectLink="https://fatoura.app/"
         mockup="#"
       />
       <ProjectSectionTwo />

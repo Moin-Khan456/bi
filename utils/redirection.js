@@ -11,6 +11,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/trends-in-fitness-app-development/1884",
+      destination: "/posts/trends-in-custom-fitness-app-development/1884",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/290",
       destination: "/posts/why-lamp-tech-stack-is-ideal-for-your-business/290",
       permanent: true,
@@ -498,13 +503,25 @@ const redirection = () => {
     {
       source: "/posts/undefined/1285",
       destination:
-        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-cross-platform-mobile-app-development/1285",
+        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-ionic-app-development-company/1285",
+      permanent: true,
+    },
+    {
+      source: "/posts/unlocking-efficiency-the-benefits-of-engaging-an-cross-platform-mobile-app-development/1285",
+      destination:
+        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-ionic-app-development-company/1285",
       permanent: true,
     },
     {
       source: "/posts/undefined/1553",
       destination:
         "/posts/crafting-a-dynamic-and-responsive-dashboard-with-react-js-development-services/1553",
+      permanent: true,
+    },
+    {
+      source: "/posts/advantages-of-custom-blockchain/974",
+      destination:
+        "/posts/advantages-of-custom-blockchain-development-services/974",
       permanent: true,
     },
     {
@@ -590,6 +607,11 @@ const redirection = () => {
     {
       source: "/posts/undefined/913",
       destination: "/posts/explore-top-node-js-developer-toolkit-2023/913",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/946",
+      destination: "/your-go-to-guide-essential-tools-for-react-native-developer/946",
       permanent: true,
     },
     {
@@ -2428,6 +2450,12 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/undefined/819",
+      destination:
+        "/posts/top-reasons-to-choose-reactjs-for-your-next-project/819",
+      permanent: true,
+    },
+    {
       source:
         "/posts/transforming-your-business-with-custom-web-development-solutions",
       destination:
@@ -2499,6 +2527,16 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/dockerizing-a-node-typescript-postgres-app/1891",
+      destination: "/posts/dockizing-a-node-typescript-postgres-app/1891",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1144",
+      destination: "/posts/unveiling-the-pros-and-cons-of-hybrid-apps-a-comprehensive-guide/1144",
+      permanent: true,
+    },
+    {
       source:
         "/posts/engage-a-skilled-and-committed-ui-ux-specialist-for-your-project",
       destination:
@@ -2533,6 +2571,13 @@ const redirection = () => {
     {
       source:
         "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services",
+      destination:
+        "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services/7",
+      permanent: true,
+    },
+    {
+      source:
+        "/posts/undefined/7",
       destination:
         "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services/7",
       permanent: true,

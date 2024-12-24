@@ -11,6 +11,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/trends-in-fitness-app-development/1884",
+      destination: "/posts/trends-in-custom-fitness-app-development/1884",
+      permanent: true,
+    },
+    {
       source: "/posts/undefined/290",
       destination: "/posts/why-lamp-tech-stack-is-ideal-for-your-business/290",
       permanent: true,
@@ -498,13 +503,25 @@ const redirection = () => {
     {
       source: "/posts/undefined/1285",
       destination:
-        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-cross-platform-mobile-app-development/1285",
+        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-ionic-app-development-company/1285",
+      permanent: true,
+    },
+    {
+      source: "/posts/unlocking-efficiency-the-benefits-of-engaging-an-cross-platform-mobile-app-development/1285",
+      destination:
+        "/posts/unlocking-efficiency-the-benefits-of-engaging-an-ionic-app-development-company/1285",
       permanent: true,
     },
     {
       source: "/posts/undefined/1553",
       destination:
         "/posts/crafting-a-dynamic-and-responsive-dashboard-with-react-js-development-services/1553",
+      permanent: true,
+    },
+    {
+      source: "/posts/advantages-of-custom-blockchain/974",
+      destination:
+        "/posts/advantages-of-custom-blockchain-development-services/974",
       permanent: true,
     },
     {
@@ -590,6 +607,11 @@ const redirection = () => {
     {
       source: "/posts/undefined/913",
       destination: "/posts/explore-top-node-js-developer-toolkit-2023/913",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/946",
+      destination: "/your-go-to-guide-essential-tools-for-react-native-developer/946",
       permanent: true,
     },
     {
@@ -1187,6 +1209,11 @@ const redirection = () => {
       destination: "/mobile-development/mobile-api-integration-services",
       permanent: true,
     },
+    {
+      source: "/industry/energy-and-utility-software-development-services",
+      destination: "/industry/energy-and-utility",
+      permanent: true,
+    },
 
     {
       source: "/pages/thankyou",
@@ -1293,6 +1320,11 @@ const redirection = () => {
       destination: "/mobile-development/mobile-api-integration-services",
       permanent: true,
     },
+    {
+      source: "/mobile-development/mobile-app-integration",
+      destination: "/mobile-development/mobile-api-integration-services",
+      permanent: true,
+    },
 
     {
       source: "/pages/blog",
@@ -1314,6 +1346,11 @@ const redirection = () => {
 
     {
       source: "/pages/hire-reactjs-developers",
+      destination: "/hire-reactjs-developers",
+      permanent: true,
+    },
+    {
+      source: "/hire-react-js-developers",
       destination: "/hire-reactjs-developers",
       permanent: true,
     },
@@ -1346,6 +1383,11 @@ const redirection = () => {
       destination: "/web-development/python-development",
       permanent: true,
     },
+    {
+      source: "/web-development/python-development-company",
+      destination: "/web-development/python-web-development-company",
+      permanent: true,
+    },
 
     {
       source: "/pages/web-development/php-development",
@@ -1372,6 +1414,11 @@ const redirection = () => {
 
     {
       source: "/pages/hire-vuejs-developers",
+      destination: "/hire-vuejs-developers",
+      permanent: true,
+    },
+    {
+      source: "/hire-vue-js-developers",
       destination: "/hire-vuejs-developers",
       permanent: true,
     },
@@ -1406,12 +1453,32 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/shopify-ecommerce-software-development-services",
+      destination: "/web-development/shopify-web-development-company",
+      permanent: true,
+    },
+    {
+      source: "/industry/ecommerce-software-development-services",
+      destination: "/industry/ecommerce",
+      permanent: true,
+    },
+    {
       source: "/industry/crm-development-company",
       destination: "/industry/crm",
       permanent: true,
     },
     {
+      source: "/industry/crm-software-development-services",
+      destination: "/industry/crm",
+      permanent: true,
+    },
+    {
       source: "/industry/transport-and-logistic-software-development-service",
+      destination: "/industry/transport-and-logistic",
+      permanent: true,
+    },
+    {
+      source: "/industry/transport-and-logistic-software-development-services",
       destination: "/industry/transport-and-logistic",
       permanent: true,
     },
@@ -1431,6 +1498,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-app-development-company",
+      destination: "/mobile-development/custom-mobile-app-development-company",
+      permanent: true,
+    },
+    {
       source: "/blog",
       destination: "/blog/1",
       permanent: true,
@@ -1441,12 +1513,42 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/industry/accounting-software-development-services",
+      destination: "/industry/accounting",
+      permanent: true,
+    },
+    {
+      source: "/industry/meeting-and-event-planning-software-development-services",
+      destination: "/industry/meeting-and-event-planning",
+      permanent: true,
+    },
+    {
+      source: "/industry/real-estate-software-development-services",
+      destination: "/industry/real-estate",
+      permanent: true,
+    },
+    {
+      source: "/industry/supplychain-software-development-services",
+      destination: "/industry/supplychain",
+      permanent: true,
+    },
+    {
       source: "/industry/blockchain-solution-development-company",
       destination: "/industry/blockchain",
       permanent: true,
     },
     {
+      source: "/industry/blockchain-development-services",
+      destination: "/industry/blockchain",
+      permanent: true,
+    },
+    {
       source: "/industry/crm-solution-development-company",
+      destination: "/industry/crm",
+      permanent: true,
+    },
+    {
+      source: "/industry//crm-software-development-services",
       destination: "/industry/crm",
       permanent: true,
     },
@@ -1466,12 +1568,27 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/industry/marketplace-software-development-services",
+      destination: "/industry/marketplace",
+      permanent: true,
+    },
+    {
       source: "/industry/healthcare-solution-development-company",
       destination: "/industry/healthcare",
       permanent: true,
     },
     {
+      source: "/industry/healthcare-software-development-services",
+      destination: "/industry/healthcare",
+      permanent: true,
+    },
+    {
       source: "/industry/fitness-solution-development-company",
+      destination: "/industry/fitness",
+      permanent: true,
+    },
+    {
+      source: "/industry/fitness-software-development-company",
       destination: "/industry/fitness",
       permanent: true,
     },
@@ -1482,11 +1599,16 @@ const redirection = () => {
     },
     {
       source: "/swift-app-development",
-      destination: "/mobile-development/swift-development",
+      destination: "/mobile-development/swift-app-development-services",
       permanent: true,
     },
     {
       source: "/mobile-development/swift-development",
+      destination: "/mobile-development/swift-app-development-services",
+      permanent: true,
+    },
+    {
+      source: "/mobile-development/swift-development-company",
       destination: "/mobile-development/swift-app-development-services",
       permanent: true,
     },
@@ -1502,7 +1624,7 @@ const redirection = () => {
     },
     {
       source: "/ios-app-development",
-      destination: "/mobile-development/ios-development",
+      destination: "/mobile-development/ios-app-development-company",
       permanent: true,
     },
     {
@@ -1511,8 +1633,13 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-development/ios-development-company",
+      destination: "/mobile-development/ios-app-development-company",
+      permanent: true,
+    },
+    {
       source: "/flutter-app-development",
-      destination: "/mobile-development/flutter-development",
+      destination: "/mobile-development/flutter-app-development-company",
       permanent: true,
     },
     {
@@ -1521,8 +1648,13 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-development/flutter-development-company",
+      destination: "/mobile-development/flutter-app-development-company",
+      permanent: true,
+    },
+    {
       source: "/android-app-development",
-      destination: "/mobile-development/android-development",
+      destination: "/mobile-development/android-app-development-company",
       permanent: true,
     },
     {
@@ -1531,8 +1663,28 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/mobile-development/android-development-company",
+      destination: "/mobile-development/android-app-development-company",
+      permanent: true,
+    },
+    {
+      source: "/support",
+      destination: "/software-maintenance-and-support-services",
+      permanent: true,
+    },
+    // {
+    //   source: "/suport",
+    //   destination: "/software-maintenance-and-support-services",
+    //   permanent: true,
+    // },
+    {
       source: "/angularjs-development",
-      destination: "/web-development/angular-js-development",
+      destination: "/web-development/angularjs-development-company",
+      permanent: true,
+    },
+    {
+      source: "/web-development/angular-js-development-company",
+      destination: "/web-development/angularjs-development-company",
       permanent: true,
     },
     {
@@ -1581,6 +1733,21 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/hire-node-js-developers",
+      destination: "/hire-nodejs-developers",
+      permanent: true,
+    },
+    {
+      source: "/hire-android-developers",
+      destination: "/hire-android-app-developers",
+      permanent: true,
+    },
+    {
+      source: "/hire-qa-analysts",
+      destination: "/hire-qa-testers",
+      permanent: true,
+    },
+    {
       source: "/reactjsdevelopment",
       destination: "/web-development/react-js-development",
       permanent: true,
@@ -1616,13 +1783,28 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/wordpress-development-company",
+      destination: "/web-development/wordpress-website-design-company",
+      permanent: true,
+    },
+    {
       source: "/web-development/codeigniter-development-service",
+      destination: "/web-development/codeigniter-web-development-services",
+      permanent: true,
+    },
+    {
+      source: "/web-development/codeigniter-development-services",
       destination: "/web-development/codeigniter-web-development-services",
       permanent: true,
     },
     {
       source: "/web-development/codeigniter-development",
       destination: "/web-development/codeigniter-web-development-services",
+      permanent: true,
+    },
+    {
+      source: "/mobile-development/ionic-app-development-company",
+      destination: "/hire-ionic-developers",
       permanent: true,
     },
     {
@@ -2268,6 +2450,12 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/undefined/819",
+      destination:
+        "/posts/top-reasons-to-choose-reactjs-for-your-next-project/819",
+      permanent: true,
+    },
+    {
       source:
         "/posts/transforming-your-business-with-custom-web-development-solutions",
       destination:
@@ -2339,6 +2527,16 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/posts/dockerizing-a-node-typescript-postgres-app/1891",
+      destination: "/posts/dockizing-a-node-typescript-postgres-app/1891",
+      permanent: true,
+    },
+    {
+      source: "/posts/undefined/1144",
+      destination: "/posts/unveiling-the-pros-and-cons-of-hybrid-apps-a-comprehensive-guide/1144",
+      permanent: true,
+    },
+    {
       source:
         "/posts/engage-a-skilled-and-committed-ui-ux-specialist-for-your-project",
       destination:
@@ -2373,6 +2571,13 @@ const redirection = () => {
     {
       source:
         "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services",
+      destination:
+        "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services/7",
+      permanent: true,
+    },
+    {
+      source:
+        "/posts/undefined/7",
       destination:
         "/posts/unlock-the-hidden-potential-of-your-workforce-with-it-staff-augmentation-services/7",
       permanent: true,

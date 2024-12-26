@@ -30,6 +30,8 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
+
 function LampApplicationDevelopment(props) {
   const content =
     "At Brain Inventory, we specialize in developing the best LAMP (Linux, Apache MySQL, and PHP) applications. We are something that can give you relief from all the technical problems related to your project.";
@@ -81,42 +83,36 @@ function LampApplicationDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How long exactly will it take to develop a LAMP website?",
+      title: "What is LAMP software development?",
       description:
-        "The time frame for developing a LAMP website depends on the number of your team, their skills, and the complexity of your business. It also depends upon the requirements that you defined during the initial discussion of your project.",
+        "LAMP development uses Linux, Apache, MySQL, and PHP to build websites and web applications. ",
     },
     {
       id: "2",
       title:
-        "The time frame for developing a LAMP website depends on the number of your team, their skills, and the complexity of your business. It also depends upon the requirements that you defined during the initial discussion of your project.",
+        "Which operating system is used in LAMP?",
       description:
-        "The time frame for developing a LAMP website depends on the number of your team, their skills, and the complexity of your business. It also depends upon the requirements that you defined during the initial discussion of your project.",
+        "LAMP uses the Linux operating system, Apache web server, MySQL database, and PHP programming language for web development. ",
     },
     {
       id: "3",
       title:
-        "Do you provide maintenance and support services after development?",
+        "Why should I choose LAMP application development services?",
       description:
-        "Brain Inventory provides a full maintenance and support cycle after the completion of your Lamp project. We ensure that, during this time, we focus on performance enhancement, fixing any bugs, and other activities. After initial launching, we will maintain close contact with you to provide the necessary updates and guidance needed to maintain the stable operation of your website or web application.",
+        "You should choose LAMP application development services if you want a cost-effective and highly customizable platform to build dynamic web applications. LAMP offers a large and active community, which again makes it an ideal option for developers and businesses alike. ",
     },
     {
       id: "4",
-      title: "How do you secure the LAMP stack development?",
+      title: "How long do lamp development services require?",
       description:
-        "The LAMP stack, which stands for Linux, Apache, MySQL, and PHP, is the most widely used software stack known today. The LAMP stack enables you to have a faster web presence, better deliverability, and availability of your site. With our expert computer network specialists, we secure your company’s website by enabling automatic updates, configuring a firewall, and hiding Apache-sensitive information.",
+        "The time required to build applications using LAMP depends on the complexity of your project. A basic application would barely take half an hour though.",
     },
     {
       id: "5",
-      title: "How do you test for quality?",
+      title: "Why lamp is preferred for developing a PHP application?",
       description:
-        "BrainInventory is a company that provides a complete and accurate assessment of working memory, attention span, and critical thinking. The services are provided all over the world. Brain Focus has a dedicated team that takes on the tasks of testing and maintaining our website. We employ a series of research methods like usability testing, A/B testing, card sorting, eye-tracking, etc.",
-    },
-    {
-      id: "6",
-      title:
-        "Can you develop custom LAMP solutions for specific business needs?",
-      description:
-        "Yes. The MERN (MV, KV, and RF) methodologies are the best methodologies today. Furthermore, with the power of React and Node.js, our experts at CodeCloud can deliver a solution that is better than what you’re used to.",
+        `LAMP uses LINUX as its operating system, making it highly compatible across various platforms. This benefit of cross-platform compatibility makes it an ideal choice for developing a PHP application. 
+        Brain Inventory is a leading LAMP application development company, we hold years of experience and our expert team will help you develop projects faster. `,
     },
   ];
 
@@ -148,6 +144,48 @@ function LampApplicationDevelopment(props) {
     "The presence of many versions and support for encryption and security frameworks in Linux make it quite useful for LAMP projects.",
     "The intuitive, interactive user interface will allow the creation of projects quicker than ever before and at the same time offer new opportunities for creating high-quality content.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What is LAMP software development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LAMP development uses Linux, Apache, MySQL, and PHP to build websites and web applications."
+      }
+    },{
+      "@type": "Question",
+      "name": "Which operating system is used in LAMP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LAMP uses the Linux operating system, Apache web server, MySQL database, and PHP programming language for web development."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why should I choose LAMP application development services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should choose LAMP application development services if you want a cost-effective and highly customizable platform to build dynamic web applications. LAMP offers a large and active community, which again makes it an ideal option for developers and businesses alike."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long do lamp development services require?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The time required to build applications using LAMP depends on the complexity of your project. A basic application would barely take half an hour though."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why lamp is preferred for developing a PHP application?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `LAMP uses LINUX as its operating system, making it highly compatible across various platforms. This benefit of cross-platform compatibility makes it an ideal choice for developing a PHP application. 
+        Brain Inventory is a leading LAMP application development company, we hold years of experience and our expert team will help you develop projects faster.`
+      }
+    }]
+  }
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -184,6 +222,10 @@ function LampApplicationDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6518.png"
           as="image"
+        />
+        <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

@@ -30,6 +30,7 @@ const BlogArticle = dynamic(() =>
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
+import DOMPurity from "isomorphic-dompurify"
 
 function PythonWebDevelopment(props) {
   const content =
@@ -73,30 +74,36 @@ function PythonWebDevelopment(props) {
     {
       id: "1",
       title:
-        "Can you assist me with my custom Python project requirements, which is not listed on this page?",
+        "Why is Python the fastest-growing language?",
       description:
-        "Absolutely! Whether your requirements are well-defined or ambiguous, our team works with you to deliver exceptional results. You can rest assured that you'll always work with the most qualified experts on your project. We do not compromise on quality because we know the difference that a successful Python project makes while driving revenue and decreasing expenses.",
+        "Python is considered the fastest-growing language because of its easy-to-read and easy-to-write code, allowing developers at all levels to get their hands on Python quickly. ",
     },
     {
       id: "2",
       title:
         "How do you ensure the quality of your Python Development projects?",
       description:
-        "Adopting a modern and flexible development methodology, we ensure quality in our Python development projects by implementing a thorough testing process. Our process includes unit testing, integration testing, and system testing. We follow industry-standard coding practices and conduct regular code reviews to ensure high-quality and maintainable code. Not only is our development process tested for bugs by professional testers, but it also provides the developer with an opportunity to learn from his/her mistakes. Each line of code developed is peer-reviewed by other developers, who not only provide constructive feedback but also help the developer build a reputation for writing high-quality and maintainable code.",
+        `We ensure the exceptional quality of our Python-developed projects by strictly adhering to PEP 8 style guidelines, performing code reviews regularly with the seniors, maintaining code consistency, and employing type annotations. 
+        We are a leading Python development company, contact us to discuss your project. `,
     },
     {
       id: "3",
       title:
-        "How do you handle communication and project management during the development process?",
+        "Can you provide examples of your previous Python Development projects?",
       description:
-        "At Brain Inventory, we use agile project management methodologies to ensure effective communication and timely delivery of projects. We also hold weekly project standups via Google Hangouts and/or weekly team meetings as well as continuous in-platform communication using various tools such as Slack, Trello, JIRA, or email.",
+        "Yes, we can show you the portfolio of our previously developed Python projects if you ask. Contact us at the Python development agency to discuss our projects and client testimonials.",
     },
     {
       id: "4",
-      title: "What is your pricing model?",
+      title: "How long does it take to complete a Python Development project?",
       description:
-        "Our pricing model is adaptable, offering you the choice to hire Python developers on an hourly basis, engage them monthly, or opt for a dedicated project arrangement. Our Python developers come with proven expertise in the field of development. They are full-stack Python developers proficient in designing and building full-stack modern web applications with frameworks like Django or Flask.",
+        "If the project is complex, it requires a couple of months to complete it. However, a simple project would be completed within weeks.",
     },
+    {
+      id:"5",
+      title:"What is the main use of Python?",
+      description:"Python can be employed for web development, search engine optimization, software development, task automation, and scientific computing. "
+    }
   ];
 
   const advantages = [
@@ -133,6 +140,48 @@ function PythonWebDevelopment(props) {
     </>,
     "Our developers are skilled and trained in Python Django web development. We also use the latest technologies and frameworks, such as Python 3.7.0 and Django, Web2py, and Flask. Our team of Python developers is ready to transform your ideas into reality. Our expertise with Python web app development gives us the unique ability to create anything and everything using the latest technologies.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Why is Python the fastest-growing language?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Python is considered the fastest-growing language because of its easy-to-read and easy-to-write code, allowing developers at all levels to get their hands on Python quickly."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do you ensure the quality of your Python Development projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `We ensure the exceptional quality of our Python-developed projects by strictly adhering to PEP 8 style guidelines, performing code reviews regularly with the seniors, maintaining code consistency, and employing type annotations. 
+       We are a leading Python development company, contact us to discuss your project.`
+      }
+    },{
+      "@type": "Question",
+      "name": "Can you provide examples of your previous Python Development projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we can show you the portfolio of our previously developed Python projects if you ask. Contact us at the Python development agency to discuss our projects and client testimonials."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does it take to complete a Python Development project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the project is complex, it requires a couple of months to complete it. However, a simple project would be completed within weeks."
+      }
+    },{
+      "@type": "Question",
+      "name": "What is the main use of Python?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Python can be employed for web development, search engine optimization, software development, task automation, and scientific computing."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurity.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -155,7 +204,7 @@ function PythonWebDevelopment(props) {
         <meta
           property="og:url"
           content=" 
-https://braininventory.in/web-development/python-web-development-company"
+        https://braininventory.in/web-development/python-web-development-company"
         />
         <meta
           property="og:image"
@@ -170,6 +219,10 @@ https://braininventory.in/web-development/python-web-development-company"
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+1.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

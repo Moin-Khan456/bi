@@ -27,6 +27,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
 
 function NodeJsDevelopment(props) {
   const content =
@@ -63,32 +64,49 @@ function NodeJsDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How much does it cost to develop a NodeJs app?",
+      title: "How to choose the best Node.js development company?",
       description:
-        "It depends. The answer to this simple question is not so simple in reality. The total cost of development of a NodeJs app can vary largely depending on the functionalities required, the kind of resource you are hiring, and the engagement mode you choose to develop your digital product at various stages. In short, the more complex features you plan to implement, the more time developers will be required to develop them.",
+        "In order to choose the best Node JS development company, you should ask them to show you the track record of their developed projects, strong communication skills, ability to scale the project as per your needs, expertise in relevant frameworks, and also by checking their client testimonials and website reviews.",
     },
     {
       id: "2",
-      title: "Do you use any project management tools?",
+      title: "Do you offer support and maintenance after development?",
       description:
-        "We stay organized by using industry-standard project management tools like Jira, Trello, Pivotal Tracker, Asana, etc. We can create the task, assign the work and monitor the development progress. You check for updates daily. We’ve got it covered!",
+        "Yes, we do. Ensuring that your application runs smoothly and any bug that may arise is addressed quickly. ",
     },
     {
       id: "3",
-      title: "Do you provide NDA and IP protection for my project?",
-      description:
-        "You will have 100% ownership of your project. It includes NDA, copyright, source code, intellectual property rights, confidential letters, other MoUs, etc. Since we can’t disclose the name of a client, I would give you an example of our brand identity work for a private investment bank.",
+      title: "Why choose Node.js for my project?",
+      description: (
+        <>
+          <p>
+            The reasons you should choose Node.js for your next project may
+            include-
+          </p>
+          <ul className="ml-10 list-disc">
+            <li>
+              It is ideal for building web applications that require fast
+              responses, like online games.{" "}
+            </li>
+            <li>It’s ability to build highly scalable applications </li>
+            <li>Active and thriving community to support you throughout </li>
+            <li>Readily available modules to speed up the development time </li>
+            <li>Easy to learn language </li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "4",
-      title: "Will I get post-development support?",
+      title: "What kind of applications can you build using Node js?",
       description:
-        "For the maintenance of the web app, you do not require to hire a full-time, dedicated developer as we have a flexible bucket model, which allows you to hire Node.js developers to provide dedicated support and maintenance service when required. As per our agreement with our clients, we agree that 50% of any enhancement made in the web app should be paid for by the client. So if you want us to make any changes to some part of your website functionality, just let us know about it and we will get back to you later.",
+        "You can build a variety of applications including single-page applications, social media apps, the Internet of Things, streaming service apps, real-time chats, and remote collaboration apps. Our experts at Node JS Web Development Company can build any of these applications using Node JS, contact us to know further details. ",
     },
     {
       id: "5",
-      title: "We already have designs ready, can you work with those?",
-      description: "Yes, we do!",
+      title: "How can Node.js web development services benefit my business?",
+      description:
+        "Node JS development services can benefit your business by providing faster development cycles, cost-effective development, and building scalable applications for your next project. ",
     },
   ];
 
@@ -126,6 +144,58 @@ function NodeJsDevelopment(props) {
     "Deep understanding of the Node platform.",
     "Individual attention given to each Node project to accommodate special requirements.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How to choose the best Node.js development company?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In order to choose the best Node JS development company, you should ask them to show you the track record of their developed projects, strong communication skills, ability to scale the project as per your needs, expertise in relevant frameworks, and also by checking their client testimonials and website reviews.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer support and maintenance after development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, we do. Ensuring that your application runs smoothly and any bug that may arise is addressed quickly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why choose Node.js for my project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `The reasons you should choose Node.js for your next project may include- 
+        It is ideal for building web applications that require fast responses, like online games. 
+        It’s ability to build highly scalable applications
+        Active and thriving community to support you throughout 
+        Readily available modules to speed up the development time
+        Easy to learn language`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What kind of applications can you build using Node js?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can build a variety of applications including single-page applications, social media apps, the Internet of Things, streaming service apps, real-time chats, and remote collaboration apps. Our experts at Node JS Web Development Company can build any of these applications using Node JS, contact us to know further details.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can Node.js web development services benefit my business?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Node JS development services can benefit your business by providing faster development cycles, cost-effective development, and building scalable applications for your next project.",
+        },
+      },
+    ],
+  };
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -160,6 +230,10 @@ function NodeJsDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6498.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

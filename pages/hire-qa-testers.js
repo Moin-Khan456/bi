@@ -30,7 +30,7 @@ const BlogArticle = dynamic(() =>
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
-
+import DOMPurify from "isomorphic-dompurify"
 function HireQaTesters(props) {
   const content = (
     <>
@@ -102,27 +102,34 @@ function HireQaTesters(props) {
     {
       id: "1",
       title:
-        "What are the top reasons you should select Brain Inventory for hiring QA analysts?",
+        "Where can I hire a QA Tester?",
       description:
-        "Brain Inventory is a leading testing consulting firm, providing test strategy, software assurance, and testing consulting services. They have a big pool of talent in their QA analyst department whose main focus is to provide quality solutions for their clients. The team of professionals at Brain Inventory who work on various types of projects includes team members with varied experience levels and skill sets. By availing the services of these QA Analysts you can be assured of having an amazing end result that will prove beneficial for your business, increasing its efficiency and sales conversion rate.",
+        "To hire a QA tester, you must stay active within the developer and tester community. Keep a keen eye on college fests, where good candidates participate in tech contests. Also by maintaining professional connections on LinkedIn, you can get recommendations or post a job listing to find a suitable match for your upcoming projects.",
     },
     {
       id: "2",
-      title: "Can I hire QA analysts for hourly or project-based tasks?",
+      title: "How much does it cost to hire a QA Tester?",
       description:
-        "Hiring a quality assurance analyst is a challenge in today's scenario. It is difficult to hire people who have the expertise and ability to meet your project requirements. Brain Inventory gives you multiple ways to hire QA Analysts for your project. We offer three hiring models: hourly, monthly, and yearly. The tenure depends on the size of your project, requirements, and availability of the resource.",
+        "The cost to hire QA testers depends on the years of experience, location, and complexity of the project. Entry-level testers may charge less but senior ones would demand a higher rate as they have significant experience. ",
     },
     {
       id: "3",
-      title: "What is the cost of hiring a QA?",
+      title: "How much does a QA Tester charge per hour?",
       description:
-        "The cost associated with QA does not just depend upon the complexity of the project you are about to undertake but also depends upon the type of software project. If a software application is big and complex, then it will require more testers than a small, simple app. Because testing involves multiple steps, our charges for recruitment will vary based on your requirements and requirements for testing.",
+        "It can range between 20-30$ on average.",
     },
     {
       id: "4",
+      title: "Can I hire QA analysts for hourly or project-based tasks?",
+      description:
+        "Yes, you can hire QA analysts for both hourly and project-based tasks. Depending on your project’s requirements and scope, many agencies offer flexible working models from which you can choose the analysts. Our company Brain Inventory also offers both models and lets you choose the testers based on project deliverables. ",
+    },
+    {
+      id: "5",
       title: "Can the hired QA work in our time zone?",
       description:
-        "Brain Inventory has years of expertise in developing real-time QA testing tools. We're dedicated to providing developers with a fast and efficient testing platform across various locations and time zones.",
+        `Yes. At the time of hiring, you can ensure that the QA tester you hire works in your time zone. It facilitates smooth communication and collaboration so that you can conduct regular meetings and discuss real-time issues. 
+        Contact us to hire a QA testing developer, who will work at your time convenience. `
     },
   ];
 
@@ -158,7 +165,48 @@ function HireQaTesters(props) {
       accomplishing success with any undertaking.
     </>,
   ];
-
+  const jsonLdScript = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Where can I hire a QA Tester?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To hire a QA tester, you must stay active within the developer and tester community. Keep a keen eye on college fests, where good candidates participate in tech contests. Also by maintaining professional connections on LinkedIn, you can get recommendations or post a job listing to find a suitable match for your upcoming projects."
+        }
+      },{
+        "@type": "Question",
+        "name": "How much does it cost to hire a QA Tester?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost to hire QA testers depends on the years of experience, location, and complexity of the project. Entry-level testers may charge less but senior ones would demand a higher rate as they have significant experience."
+        }
+      },{
+        "@type": "Question",
+        "name": "How much does a QA Tester charge per hour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It can range between 20-30$ on average."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I hire QA analysts for hourly or project-based tasks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can hire QA analysts for both hourly and project-based tasks. Depending on your project’s requirements and scope, many agencies offer flexible working models from which you can choose the analysts. Our company Brain Inventory also offers both models and lets you choose the testers based on project deliverables."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can the hired QA work in our time zone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Yes. At the time of hiring, you can ensure that the QA tester you hire works in your time zone. It facilitates smooth communication and collaboration so that you can conduct regular meetings and discuss real-time issues. 
+          Contact us to hire a QA testing developer, who will work at your time convenience.`
+        }
+      }]    
+  }
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -192,6 +240,10 @@ function HireQaTesters(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/hire-qa-testers"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

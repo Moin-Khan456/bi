@@ -30,6 +30,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
 
 function HireReactDeveloper(props) {
   const content =
@@ -61,32 +62,32 @@ function HireReactDeveloper(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "How does React.js reduce app development costs?",
+      title: "What are ReactJS Development Services?",
       description:
-        "Reactjs is a JavaScript library for building user interfaces. Components develop and maintainable, reusable, and composable UI framework for creating user interfaces. Reactjs is designed to make your code more readable. It reduces the complexity of building large apps by making it possible to create self-contained components that manage their own state, which makes your app scalable with simple code. This reduces the app development cost.",
+        "ReactJS development services refer to the professional services offered by ReactJS developers who are experts in building dynamic applications using the React Javascript library. ",
     },
     {
       id: "2",
-      title: "Why choose to React over Angular for your web app development?",
+      title: "Do you use any project management tools?",
       description:
-        "The battle between Angular.js and React.js has been going on for quite a long time now. The reason behind this is the flexibility of both the frameworks and the benefits they provide when it comes to building modern web applications. Although Angular.js has been ruling the roost for quite some time now, React is considered to be a decent contender with the upper hand over Angular as far as features like high performance, compatibility, and ease of learning and understanding are concerned.",
+        "Yes, we do. We employ tools like Trello, Notion, Jira, and Github to facilitate a smoother workflow between our team members and easily manage the variety of projects we handle at a time.",
     },
     {
       id: "3",
-      title: "How much does it cost to develop a React.js web app?",
+      title: "Can you migrate my existing web application to React?",
       description:
-        "The cost of a project to build an exclusive ReactJS web application for you depends on many factors, including the development platform, categories, complexity of the app, the country of a developer, and the number of features you need.",
+        "Yes. At our React JS web development company, we can migrate your existing web application to React but it typically involves rewriting the codes and identifying the reusable elements in your current HTML to convert them into React components. ",
     },
     {
       id: "4",
-      title: "How long does it take to build a React.js-based app?",
+      title: "How long does it take to build a React. js-based app?",
       description:
-        "Figuring out how long it takes to build a React.js app depends on various factors like the development platform, the complexity of the design, the experience level of the developer, features and functionalities, testing, etc. We will be able to tell you the estimated time after knowing all these aspects. Contact us with your requirement to know the estimated time.",
+        "The time required to build a ReactJS-based app depends on the app’s complexity. If it is a simple app with minimal elements, it will take around 2-3 months. But if it requires the addition of more complex elements, it may take more than three months to build a React JS-based app. ",
     },
     {
       id: "5",
-      title: "Will I get post-development support?",
-      description: "Yes, we will provide post-support services.",
+      title: "Is React JS frontend or backend?",
+      description: "ReactJS is a frontend JS library that is employed to build exceptional user interfaces. We are a leading ReactJS development company, contact us to discuss your dream project.",
     },
   ];
 
@@ -130,6 +131,47 @@ function HireReactDeveloper(props) {
     "Future-Ready Web Apps",
     "Custom Integration and Development",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What are ReactJS Development Services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ReactJS development services refer to the professional services offered by ReactJS developers who are experts in building dynamic applications using the React Javascript library."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do you use any project management tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we do. We employ tools like Trello, Notion, Jira, and Github to facilitate a smoother workflow between our team members and easily manage the variety of projects we handle at a time."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can you migrate my existing web application to React?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. At our React JS web development company, we can migrate your existing web application to React but it typically involves rewriting the codes and identifying the reusable elements in your current HTML to convert them into React components."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does it take to build a React. js-based app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The time required to build a ReactJS-based app depends on the app’s complexity. If it is a simple app with minimal elements, it will take around 2-3 months. But if it requires the addition of more complex elements, it may take more than three months to build a React JS-based app."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is React JS frontend or backend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ReactJS is a frontend JS library that is employed to build exceptional user interfaces. We are a leading ReactJS development company, contact us to discuss your dream project."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))  
   return (
     <>
       <Head>
@@ -166,6 +208,10 @@ function HireReactDeveloper(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6526.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

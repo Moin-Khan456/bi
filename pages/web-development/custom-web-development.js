@@ -27,6 +27,8 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify"
+
 
 function CustomWebDevelopment(props) {
   const content =
@@ -72,28 +74,47 @@ function CustomWebDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "What is a custom web design?",
+      title: "Why do you need web development services?",
       description:
-        "Custom web design isn’t just about the visuals of your website – it’s an in-depth process to understand your business and create a comprehensive digital presence to bring success. Our approach involves learning about you, devising a strategy, creating a great user experience, designing the website and programming it accordingly, as well as implementing marketing tactics. All aspects are meticulously crafted to help you reach your organizational objectives and ensure you get the best ROI.",
+        "Custom Web development services are essential for your business if you are looking to establish a strong online presence, reach an international audience, sell products and services through an e-commerce store, improve customer satisfaction, or improve branding and marketing.",
     },
     {
       id: "2",
-      title: "Can I check up on my website while it’s being developed?",
+      title: "Why is custom web design better than templates?",
       description:
-        "Yes! We create your website on a development server and provide you with a username and password so you can follow the progress. We believe in transparency and flexibility, so any feedback or suggestions you have for reaching your desired goals are more than welcome. Even once it has been custom-built and is live, you can still keep an eye on it from the back end.",
+        "Custom web design is always better than ready-made templates because it offers greater flexibility to put design elements as per your unique business goals, brand identity, and project requirements. It allows you to offer a more personalized experience to the customer. On the other hand, templates are pre-designed, and the brand has to fit in. Opt for custom website development if you want to maintain your brand’s credibility for a long time.",
     },
     {
       id: "3",
-      title: "How long does it take to construct and launch a web application?",
+      title: "Why is custom website design essential for your brand?",
       description:
-        "It really depends on the complexity of the project, user flows, and designs. The app creation process can range from weeks to months. To ensure fast deployment and maximum customer satisfaction, Brain Inventory uses the Agile Scrum methodology for its software development, which divides it into 2/3-week milestones.",
+        "A custom website design is crucial for your business if you want to give a personalized experience to the user and create an online presence that aligns perfectly with your brand image. Unlike generic templates, custom web development builds brand credibility and fosters trust in your customers.",
     },
     {
       id: "4",
       title:
-        "How does Brain Inventory approach Custom Website Development projects?",
+        "What are the benefits of custom web design?",
+      description: (
+        <>
+          <p> The benefits associated with a custom web design are- </p>
+          <ul className="ml-10 list-disc">
+            <li>An improved user experience </li>
+            <li>A significant boost in the search engine results</li>
+            <li>Increased conversions</li>
+            <li>
+              Scalability, the website can scale easily, to accommodate your
+              growing business needs
+            </li>
+            <li>It creates a more personalized experience</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      id: "5",
+      title: "Can I check up on my website while it’s being developed?",
       description:
-        "Brain Inventory takes an agile, collaborative, and transparent approach when crafting custom website designs. We always strive to work closely with our clients and keep them in the loop throughout the whole process. Our team of experts will gain an understanding of your vision and requirements to create a website that meets your expectations.",
+        "Yes. Absolutely. You can keep a check on your website while it's being developed. It allows for instant feedback to the development team so that changes can be made in the initial stage only. At our custom website design company, we conduct regular meetings with our clients to ensure they are on the same page and stay satisfied with every stage of the development process.",
     },
   ];
 
@@ -135,7 +156,52 @@ function CustomWebDevelopment(props) {
     "Our delivery processes are transparent, our communication is excellent, and we offer a flexible approach; this allows us to deliver custom software projects to all types of businesses, ranging from startups to large enterprises.",
     "Let us help you bring your vision into reality with an advanced and reliable website designed to perform and personalized just for you!",
   ];
-
+const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why do you need web development services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Custom Web development services are essential for your business if you are looking to establish a strong online presence, reach an international audience, sell products and services through an e-commerce store, improve customer satisfaction, or improve branding and marketing."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is custom web design better than templates?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Custom web design is always better than ready-made templates because it offers greater flexibility to put design elements as per your unique business goals, brand identity, and project requirements. It allows you to offer a more personalized experience to the customer. On the other hand, templates are pre-designed, and the brand has to fit in. Opt for custom website development if you want to maintain your brand’s credibility for a long time."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is custom website design essential for your brand?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A custom website design is crucial for your business if you want to give a personalized experience to the user and create an online presence that aligns perfectly with your brand image. Unlike generic templates, custom web development builds brand credibility and fosters trust in your customers."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the benefits of custom web design?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `The benefits associated with a custom web design are- 
+      A significant boost in the search engine results
+      Increased conversions
+      Scalability, the website can scale easily, to accommodate your growing business needs
+      It creates a more personalized experience
+      An improved user experience`
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I check up on my website while it’s being developed?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Absolutely. You can keep a check on your website while it's being developed. It allows for instant feedback to the development team so that changes can be made in the initial stage only. At our custom website design company, we conduct regular meetings with our clients to ensure they are on the same page and stay satisfied with every stage of the development process."
+    }
+  }]
+}
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -172,6 +238,10 @@ function CustomWebDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
 

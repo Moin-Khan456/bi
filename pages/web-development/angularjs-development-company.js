@@ -27,6 +27,8 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify"
+
 
 function AangularJsDevelopment(props) {
   const content = (
@@ -68,28 +70,66 @@ function AangularJsDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Will Angular remain significant in 2023?",
+      title: "What types of applications can be developed using AngularJS?",
       description:
-        "The latest results of the Stack Overflow Developer Survey 2023 show that Angular remains one of the most popular development languages to work with. Fully 83% of all developers are either using Angular or plan to start using it by 2023. This makes Angular one of the top most desired technologies not only now but also in the future.",
+        "AngularJS web app development can be utilized to develop single-page applications, mobile applications, firebase powered applications, web applications, and Google Chrome extensions.",
     },
     {
       id: "2",
-      title: "Do you use any project management tools?",
-      description:
-        "We use the most industry-standard project management tools like Asana, Pivotal Tracker, JIRA, Trello, and Slack. These tools will allow you to gain insight into what’s being developed and how fast we work.",
+      title: "How does AngularJS improve application performance?",
+      description: (
+        <>
+          <ul className="ml-10 list-disc">
+            <li>
+              Two-Way Data Binding: It reduces manual updates by establishing an
+              automatic synchronization between the model and the view.
+            </li>
+            <li>
+              Routing Optimization: Optimizing routes with lazy loading and
+              preloading strategies improves overall application speed.
+            </li>
+            <li>
+              Single Responsibility Principle (SRP): Both AngularJS and Angular
+              promote dividing the application into smaller, focused components
+              or controllers.
+            </li>
+            <li>
+              Avoid Memory Leaks: Both frameworks emphasize unsubscribing from
+              observables or event listeners to prevent memory leaks.{" "}
+            </li>
+            <li>
+              DOM Manipulation Optimization: It has efficient DOM manipulation
+              methodologies to manipulate DOM in the form of Directives which
+              ensures efficient rendering and DOM updates.
+            </li>
+            <li>
+              Modular Architecture: It allows developers to break organized
+              architecture into simpler modules for better lazy loading,
+              enabling only the necessary modules/components to load, thereby
+              improving application speed.
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "3",
-      title: "Why should we choose Angular over JavaScript?",
+      title: "Is AngularJS suitable for large-scale applications?",
       description:
-        "The JavaScript framework Angular was created by Google. It was created to organize and simplify JavaScript code, making it a more popular and simple choice for development. Additionally, when compared to JavaScript, Angular takes less time to develop and launch an app. This means that you can have a working prototype of your idea up and running in as little as a few days. In a nutshell, the framework offers code reusability and well-structured architecture. We will guide you through the process of developing a customized web or mobile application quickly, efficiently, and without the need to worry about things that are not really important for a successful project outcome.",
+        "Yes. AngularJS is suitable for building complex, large-scale applications. ",
     },
     {
       id: "4",
-      title: "Is Angular suitable for backend development?",
+      title: "Why do many businesses and developers prefer AngularJS?",
       description:
-        "Angular.js is one of the most popular JavaScript frameworks in use for building front-end applications. Its popularity is well-deserved; it offers a wide variety of features and makes user interaction with the website much smoother. However, one shortcoming of Angular.js is its inability to seamlessly communicate with back-end servers. This article examines how this is achieved through different approaches, including some prebuilt solutions, as well as how to solve it in a custom manner.",
+        "Faster development with the help of features like MVC architecture, code reusability, and two-way data binding attracts many businesses and developers today. We offer AngularJS development services to help you build tailored applications according to your unique business needs. ",
     },
+    {
+      id: "5",
+      title: "Will Angular remain significant in 2025?",
+      description:
+        "Yes. Angular will continue to remain significant in 2025 because it can develop dynamic user interfaces and enterprise-level applications with minimum effort. We, as an AngularJS development company, suggest you prefer AngularJS for building complex and large-scale applications.",
+    }
   ];
 
   const chooseBI = [
@@ -126,6 +166,53 @@ function AangularJsDevelopment(props) {
     "Future-Ready Web Apps",
     "Custom Integration and Development",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What types of applications can be developed using AngularJS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AngularJS web app development can be utilized to develop single-page applications, mobile applications, firebase powered applications, web applications, and Google Chrome extensions."
+      }
+    },{
+      "@type": "Question",
+      "name": "How does AngularJS improve application performance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Two-Way Data Binding: It reduces manual updates by establishing an automatic synchronization between the model and the view.
+        Single Responsibility Principle (SRP): Both AngularJS and Angular promote dividing the application into smaller, focused components or controllers.
+        Avoid Memory Leaks: Both frameworks emphasize unsubscribing from observables or event listeners to prevent memory leaks.
+        DOM Manipulation Optimization: It has efficient DOM manipulation methodologies to manipulate DOM in the form of Directives which ensures efficient rendering and DOM updates.
+        Modular Architecture: It allows developers to break organized architecture into simpler modules for better lazy loading, enabling only the necessary modules/components to load, thereby improving application speed.
+        Routing Optimization: Optimizing routes with lazy loading and preloading strategies improves overall application speed.`
+      }
+    },{
+      "@type": "Question",
+      "name": "Is AngularJS suitable for large-scale applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AngularJS is suitable for building complex, large-scale applications."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why do many businesses and developers prefer AngularJS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Faster development with the help of features like MVC architecture, code reusability, and two-way data binding attracts many businesses and developers today. We offer AngularJS development services to help you build tailored applications according to your unique business needs."
+      }
+    },{
+      "@type": "Question",
+      "name": "Will Angular remain significant in 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Angular will continue to remain significant in 2025 because it can develop dynamic user interfaces and enterprise-level applications with minimum effort. We, as an AngularJS development company, suggest you prefer AngularJS for building complex and large-scale applications."
+      }
+    }]
+  }
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+
   return (
     <>
       <Head>
@@ -163,6 +250,10 @@ function AangularJsDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6523.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

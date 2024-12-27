@@ -30,6 +30,8 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
+
 function MeanStackDevelopment(props) {
   const content =
     "As a MEAN Stack Development Company, we are proficient and knowledgeable in the MEAN JavaScript bundle – MongoDB, ExpressJS, AngularJS, and NodeJS and have successfully delivered varied projects using these technologies.";
@@ -55,28 +57,34 @@ function MeanStackDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Why hire Mean Stack developers from Brain Inventory?",
+      title: "Is MEAN stack still in demand?",
       description:
-        "We offer a complete range of services in which our developers are industry-savvy and exceptionally talented. We always ensure that you get the best service, irrespective of whether you require simpler or advanced technology. Our passion for excellent customer experience and exceptional professional skills have made us one of the leading service providers for MongoDB, AngularJS, and NodeJS.",
+        "The world of web development has changed significantly in recent years, but the demand for MEAN stack is still there. The popularity of MEAN stack development services is due to its robustness, scalability, and the ever-evolving ecosystem of JavaScript.",
     },
     {
       id: "2",
-      title: "Do I own my source code and project strategies?",
+      title: "Can Your Current Web Application Migrate to MEAN Stack?",
       description:
-        "Yes, the client has complete ownership of the project and it will constitute the NDA or Non-Disclosure Agreement, source code, copyright, and other intellectual property rights. The client also has all control over the materials generated under their agreement and is required to provide no assistance or support to any third party who might seek to build upon or use the software without first requesting permission from MyProjects.",
+        "Yes, the majority of the applications can be migrated to the MEAN stack depending on their current technology. ",
     },
     {
       id: "3",
       title:
-        "Do you offer other services apart from the Mean Stack development?",
+        "Is MEAN Stack the Right Fit for Large-scale Enterprise Applications?",
       description:
-        "When you choose to hire developers from our team at BrainInventory, you can rest assured that your project will be in capable hands. Our developers are skilled in a variety of programming languages and technologies, including AngularJs, MongoDB, and MVC Net. Throughout the development process, our project management team will keep you frequently updated on the progress of your project. We believe that transparency and open communication are key to a successful collaboration, and we make it a priority to keep our clients informed every step of the way.",
+        "Yes, with the help of an expert, you can use the MEAN stack for developing large-scale enterprise applications. Contact us to hire MEAN stack developers as we are a leading, genuine name in offering MEAN stack development services. ",
     },
     {
       id: "4",
-      title: "What is the cost of Mean Stack development?",
+      title: "Is MEAN a full-stack solution?",
       description:
-        "The cost of hiring Meant Stack developers is budget-friendly in our company. However, the cost of development depends upon the complexity of the project, requirements, features, and project specifications. The rate of development depends upon the skillset of individual developers for each level.",
+        "MEAN stands for MongoDB, Express, AngularJS, and Node JS. These components together form a full-stack solution for developing fast and efficient web applications.",
+    },
+    {
+      id: "5",
+      title: "What types of applications can be developed using the MEAN stack?",
+      description:
+        "We can develop real-time applications, streaming apps, enterprise apps, complex apps, and secondary business apps using the MEAN stack framework. ",
     },
   ];
 
@@ -117,6 +125,48 @@ function MeanStackDevelopment(props) {
     "This is why Brain Inventory, a premier MEAN Stack development firm in India, is dedicated to providing top-tier solutions for clients worldwide",
     "We build customizable and expandable MEAN Stack web apps from the ground up to meet all your business requirements.",
   ];
+
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Is MEAN stack still in demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The world of web development has changed significantly in recent years, but the demand for MEAN stack is still there. The popularity of MEAN stack development services is due to its robustness, scalability, and the ever-evolving ecosystem of JavaScript."
+      }
+    },{
+      "@type": "Question",
+      "name": "Can Your Current Web Application Migrate to MEAN Stack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the majority of the applications can be migrated to the MEAN stack depending on their current technology."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is MEAN Stack the Right Fit for Large-scale Enterprise Applications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with the help of an expert, you can use the MEAN stack for developing large-scale enterprise applications. Contact us to hire MEAN stack developers as we are a leading, genuine name in offering MEAN stack development services."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is MEAN a full-stack solution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MEAN stands for MongoDB, Express, AngularJS, and Node JS. These components together form a full-stack solution for developing fast and efficient web applications."
+      }
+    },{
+      "@type": "Question",
+      "name": "What types of applications can be developed using the MEAN stack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We can develop real-time applications, streaming apps, enterprise apps, complex apps, and secondary business apps using the MEAN stack framework."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))    
   return (
     <>
       <Head>
@@ -153,6 +203,10 @@ function MeanStackDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6420+(1).png"
           as="image"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

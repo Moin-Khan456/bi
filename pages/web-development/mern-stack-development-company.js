@@ -27,10 +27,12 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
+
 function MernStackDevelopment(props) {
   const content = (
     <>
-      <Link href="/         " className="text-[#2186ff]">
+      <Link href="/" className="text-[#2186ff]">
         Brain Inventory
       </Link>{" "}
       is a team of experienced professionals who are passionate about the latest
@@ -62,39 +64,47 @@ function MernStackDevelopment(props) {
       id: "1",
       title: "Can you list out some key benefits of MERN?",
       description:
-        "MERN is a micro-framework that can be used for both front-end and back-end development. It supports MVC architecture, resulting in a smoother development process. MERN comes with a pre-built suite of extensive testing tools.",
+        "Yes, MERN stack development services are still in demand and they will continue to be. MERN stack uses a single language- JavaScript, making it easier to learn even for beginners. Also, the code reusability factor has contributed a lot to its immense popularity. ",
     },
     {
       id: "2",
-      title: "Is MERN stack best for web development?",
-      description:
-        "Yes, MERN Stack Development Services is a combination of technologies that are used to build highly scalable, robust, and maintainable applications. MERN stack is being used by some of the most popular companies like Google, Facebook, Dropbox, and many others due to its capability to run on multiple platforms.",
+      title: "What are the major benefits of using MERN Stack web Development?",
+      description: (
+        <>
+          <p>The major benefits of using the MERN stack include-</p>
+          <ul className="ml-10 list-disc">
+            <li>
+              Scalability, as it allows for upscaling and downscaling with no
+              compromise on the code integrity
+            </li>
+            <li>Strong community support </li>
+            <li>It is free and open-source </li>
+            <li>
+              It uses the language Node.js to handle multiple actions
+              asynchronously{" "}
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "3",
-      title: "Are MERN-based websites secure?",
+      title: "Is MERN stack best for web development?",
       description:
-        "MERN is a platform for developing websites and applications about user privacy and security. The MERN framework allows you to create safe websites with less coding, greater speed, and scalability, built around standards so that your users can seamlessly share their data across the web.",
+        "Yes, it is best for building dynamic and scalable web applications because it uses a single-language environment. ",
     },
     {
       id: "4",
       title:
-        "Do you provide support and maintenance services after development?",
+        "Why should I choose MERN Stack for my project?",
       description:
-        "We offer support and maintenance services according to your requirement. We can always offer you more options concerning getting your development done. Sometimes it’s better to give us a call before starting the full-blown development project, so we can get started on it right away without any delays or constraints caused by other commitments.",
+        "MERN stack gives an advantage of cross-platform technology and can easily use the native features of the device to give a satisfactory user experience. ",
     },
     {
       id: "5",
-      title: "Do you reuse the code?",
+      title: "What services do you offer under MERN Stack development?",
       description:
-        "We provide open-source licenses and proprietary private or commercial licenses based on your request and needs. If you have any queries, please feel free to contact us!",
-    },
-    {
-      id: "6",
-      title:
-        "Can you develop custom MERN stack servies for specific business needs?",
-      description:
-        "Yes. The MERN (MV, KV, and RF) methodologies are the best methodologies today. Furthermore, with the power of React and Node.js, our experts at CodeCloud can deliver a service that is better than what you’re used to.",
+        "MERN stack development allows building applications using MongoDB, Express.js, React, and Node.js. Using these languages, our MERN stack development company offers various services including custom application development, enterprise application development, e-commerce application development, interactive UI development, React.js development, express.js development, MongoDB development, and CMS development services.",
     },
   ];
 
@@ -133,6 +143,51 @@ function MernStackDevelopment(props) {
     "Brain Inventory is a recommended option for creating an amazing website with an attractive design.",
     "The team of experts at Brain Inventory can assist in developing the best website.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Is the MERN stack still in demand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, MERN stack development services are still in demand and they will continue to be. MERN stack uses a single language- JavaScript, making it easier to learn even for beginners. Also, the code reusability factor has contributed a lot to its immense popularity."
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the major benefits of using MERN Stack web Development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `The major benefits of using the MERN stack include- 
+        Scalability, as it allows for upscaling and downscaling with no compromise on the code integrity
+        Strong community support
+        It is free and open-source 
+        It uses the language Node.js to handle multiple actions asynchronously`
+      }
+    },{
+      "@type": "Question",
+      "name": "Is MERN stack best for web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it is best for building dynamic and scalable web applications because it uses a single-language environment."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why should I choose MERN Stack for my project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MERN stack gives an advantage of cross-platform technology and can easily use the native features of the device to give a satisfactory user experience."
+      }
+    },{
+      "@type": "Question",
+      "name": "What services do you offer under MERN Stack development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MERN stack development allows building applications using MongoDB, Express.js, React, and Node.js. Using these languages, our MERN stack development company offers various services including custom application development, enterprise application development, e-commerce application development, interactive UI development, React.js development, express.js development, MongoDB development, and CMS development services."
+      }
+    }]
+  }
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -169,6 +224,10 @@ function MernStackDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6420+(1).png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

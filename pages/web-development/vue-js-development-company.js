@@ -27,6 +27,7 @@ const Industries = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
 
 function VueJsDevelopment(props) {
   const content =
@@ -74,28 +75,35 @@ function VueJsDevelopment(props) {
   const faqdetails = [
     {
       id: "1",
-      title: "Why and when should I use Vue.js?",
+      title: "What are the benefits of Vue.js application development?",
       description:
-        "Vuejs is a fast and lightweight JavaScript framework for building high-performing, reactive user interfaces. Vue.js is based on the modern, progressive template engine. The class-based component model provides a clean separation of concerns at the core of your application and makes it easy to reuse pieces of code. Vue provides a simple API for data binding and view rendering for components so you can focus on what matters the most: the user interface.",
+        "Some benefits associated with Vue.js application development include its easy-to-use nature–it only requires basic knowledge of HTML, CSS, etc. Its virtual DOM feature, and component-based architecture. ",
     },
     {
       id: "2",
-      title: "Do you use any project management tools?",
+      title: "How long does it take to develop a Vue.js app?",
       description:
-        "Yes, we believe that good project management tools can be the key to the success of your project. Vue.js developers know and use top Jira, Slack, Asana, Trello, and other tools like these perfectly. If you have any other tool preference then you can always give us a chance to use our Vue.js Developers in your management tool as well and we will be comfortable using it as well.",
+        "It depends on the project’s complexity and requirements. However, the average time is 2-3 months to develop a basic Vue.js app. ",
     },
     {
       id: "3",
-      title: "How much does it cost to develop the Vue app?",
+      title: "Does VueJS allow you to build mobile-friendly websites?",
       description:
-        "The total cost of the Vue js app depends on various factors like the functionalities you are implementing, the kind of resource you are hiring, and the engagement model you choose to develop your digital product. To be more precise, the more complex features and functionalities you plan to implement, the more time Vue js developers will be required to develop them.",
+        "Yes. VueJS allows you to build mobile-friendly websites since it is a front-end framework that is used to create responsive designs, adaptable to different screen sizes.",
     },
     {
       id: "4",
-      title: "Do you provide NDA and IP protection for my project?",
-      description:
-        "You will have 100% ownership of your project. It includes NDA, copyright, source code, intellectual property rights, confidential letters, other MoUs, etc. If a client ends up dropping out of the project or decides to buy the software outright, you’ll be able to stop working on it immediately and move forward with your next idea without being held accountable for the incomplete project by your next client.",
+      title:
+        "What should you consider before choosing a Vue.js development company? ",
+      description: `You must check their previously developed projects if they are up and running successfully. Also, check for client reviews and testimonials to see if they deliver on time and meet their client's expectations. 
+      We are a leading Vue JS development company whom you can trust with your upcoming projects, contact us to discuss our past projects and experience. `,
     },
+    {
+      id: "5",
+      title: "What kinds of applications can be built with Vuejs? ",
+      description:
+        "You can build single-page applications, web interfaces, chat applications, and social networking applications using Vue.js.",
+    }
   ];
 
   const chooseBiSubhead =
@@ -127,6 +135,48 @@ function VueJsDevelopment(props) {
     "Vue is a progressive framework that can be introduced into existing codebases without requiring major changes.",
     "Vue can enhance the performance and functionality of utility business applications without altering existing structures.",
   ];
+  const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What are the benefits of Vue.js application development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some benefits associated with Vue.js application development include its easy-to-use nature–it only requires basic knowledge of HTML, CSS, etc. Its virtual DOM feature, and component-based architecture."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does it take to develop a Vue.js app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the project’s complexity and requirements. However, the average time is 2-3 months to develop a basic Vue.js app."
+      }
+    },{
+      "@type": "Question",
+      "name": "Does VueJS allow you to build mobile-friendly websites?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. VueJS allows you to build mobile-friendly websites since it is a front-end framework that is used to create responsive designs, adaptable to different screen sizes."
+      }
+    },{
+      "@type": "Question",
+      "name": "What should you consider before choosing a Vue.js development company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `You must check their previously developed projects if they are up and running successfully. Also, check for client reviews and testimonials to see if they deliver on time and meet their client's expectations. 
+        We are a leading Vue JS development company whom you can trust with your upcoming projects, contact us to discuss our past projects and experience.`
+      }
+    },{
+      "@type": "Question",
+      "name": "What kinds of applications can be built with Vuejs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can build single-page applications, web interfaces, chat applications, and social networking applications using Vue.js."
+      }
+    }]
+  }
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript)); 
   return (
     <>
       <Head>
@@ -161,6 +211,10 @@ function VueJsDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6461.png"
           as="image"
+        />
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       {/*<Loader />*/}

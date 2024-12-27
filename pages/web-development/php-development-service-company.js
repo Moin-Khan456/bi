@@ -30,6 +30,8 @@ const ChooseBraininventory = dynamic(() =>
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
+import DOMPurify from "isomorphic-dompurify";
+
 
 function PhpDevelopment(props) {
   const content =
@@ -76,32 +78,51 @@ function PhpDevelopment(props) {
     {
       id: "1",
       title: "How to select the right PHP development company?",
-      description:
-        "When looking for the top PHP Development Company, you should carefully examine a number of things. The development process is only one part of the equation. There are other factors that must be considered, including experience with the specific technologies required for your project, communication skills, and so on.",
+      description: (
+        <>
+          <p>
+            Choose the right PHP development company by assessing them on the
+            following measures-
+          </p>
+          <ul className="ml-10 list-disc">
+            <li>A proven record in PHP development</li>
+            <li>Reviewing their portfolio </li>
+            <li>
+              Client reviews and testimonials give an insight into their
+              expertise
+            </li>
+            <li>Technical proficiency </li>
+            <li>Ensure that they give future support </li>
+            <li>Cost and budget without compromising on quality</li>
+          </ul>
+        </>
+      ),
     },
     {
       id: "2",
-      title: "Which is better: PHP or Node.js?",
+      title: "What is the future of PHP development?",
       description:
-        "PHP and Node.js are two of the most widely used web programming languages. It has been found that PHP developers areWe way more in demand than Node.js, which makes it more advantageous to learn PHP rather than Node.js.",
+        "PHP’s future in web development looks promising with PHP 8’s continuous evolution boosting its competitiveness. Also, its integration with modern technologies like APIs and cloud services makes it a good option for building fast and scalable applications.",
     },
     {
       id: "3",
       title: "How much does it cost to develop a website using PHP?",
       description:
-        "There are several factors that affect the overall cost of a PHP web development project. The project cost depends on the platform, categories, complexity of the application, developers' skills, and the location where a client wants to hire developers for his job. The price range varies depending on these factors, and in some cases, it could be restricted by the budget or other limitations. Contact us for a free quote to get an estimated cost for your project.",
+        "The cost to develop a website using PHP depends on several factors including the design, features, complexity, and the developer you choose to partner with.  A simple website will cost less, but a website with more complex functionalities demands high charges.",
     },
     {
       id: "4",
-      title: "How long does it take to build a website using PHP?",
+      title: "Which is the best PHP framework currently?",
       description:
-        "As a PHP web application development company, we often get queries regarding how much time it takes to develop an app. The estimation of the time period depends on various factors. That's why; you need to have a definite requirement/scope of work with you before we can figure out the exact time frame that will be required for your project and provide our realistic estimation.",
+        `Laravel is currently the best and most popular PHP framework because of the several unique features it offers. As an open-source framework, it facilitates the easy development of applications.
+        Contact Brain Inventory to get access to the best PHP development services. Contact Brain Inventory to get access to the best PHP development services. `,
     },
     {
       id: "5",
-      title: "Will I get post-development support?",
+      title: "Will my PHP application work on different mobiles and tablets?",
       description:
-        "Certainly! We offer a flexible bucket model for web app maintenance, eliminating the need to hire a full-time dedicated developer. With this model, you can engage our PHP developers for dedicated support and maintenance services as needed.",
+        `Yes, a PHP application will work seamlessly across different mobiles and tablets. 
+          Contact us at PHP web development company to discuss your project in detail.`,
     },
   ];
 
@@ -135,7 +156,55 @@ function PhpDevelopment(props) {
     </>,
     "We also provide easy maintenance solutions, unparalleled support services, and online training facilities for our clients to understand the vast scope of our work in developing reliable applications using the latest techniques and approaches in PHP technologies. We thoroughly evaluate and verify the quality of our PHP web services to make sure they function flawlessly on desktop computers, laptops, and mobile phones. This allows us to provide our clients with premier dependability and superiority in their software applications.",
   ];
-
+const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How to select the right PHP development company?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Choose the right PHP development company by assessing them on the following measures- 
+      A proven record in PHP development
+      Reviewing their portfolio 
+      Client reviews and testimonials give an insight into their expertise
+      Technical proficiency 
+      Ensure that they give future support 
+      Cost and budget without compromising on quality`
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the future of PHP development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "PHP’s future in web development looks promising with PHP 8’s continuous evolution boosting its competitiveness. Also, its integration with modern technologies like APIs and cloud services makes it a good option for building fast and scalable applications."
+    }
+  },{
+    "@type": "Question",
+    "name": "How much does it cost to develop a website using PHP?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The cost to develop a website using PHP depends on several factors including the design, features, complexity, and the developer you choose to partner with.  A simple website will cost less, but a website with more complex functionalities demands high charges."
+    }
+  },{
+    "@type": "Question",
+    "name": "Which is the best PHP framework currently?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Laravel is currently the best and most popular PHP framework because of the several unique features it offers. As an open-source framework, it facilitates the easy development of applications.
+      Contact Brain Inventory to get access to the best PHP development services. Contact Brain Inventory to get access to the best PHP development services.`
+    }
+  },{
+    "@type": "Question",
+    "name": "Will my PHP application work on different mobiles and tablets?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Yes, a PHP application will work seamlessly across different mobiles and tablets. 
+      Contact us at PHP web development company to discuss your project in detail.`
+    }
+  }]
+}
+const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
   return (
     <>
       <Head>
@@ -176,6 +245,10 @@ function PhpDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+1.png"
           as="image"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

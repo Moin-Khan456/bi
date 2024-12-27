@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }) {
         defer
       /> */}
       <Component {...pageProps} />
-      <div className="fixed bottom-4 right-4">
+      <div className="fixed bottom-4 right-4 z-20">
         {localForm ? (
           <HireDedicatedCard setLocal={setLocal} />
         ) : (

@@ -1448,6 +1448,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/industry/edtech-software-development-services",
+      destination: "/industry/edtech",
+      permanent: true,
+    },
+    {
       source: "/web-development/shopify-development-company",
       destination: "/web-development/shopify-web-development-company",
       permanent: true,
@@ -1494,6 +1499,11 @@ const redirection = () => {
     },
     {
       source: "/mobile-app-development",
+      destination: "/mobile-development/custom-mobile-app-development-company",
+      permanent: true,
+    },
+    {
+      source : "/mobile-development/custom-app-development",
       destination: "/mobile-development/custom-mobile-app-development-company",
       permanent: true,
     },
@@ -1563,6 +1573,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/industry/travel-software-development-services",
+      destination: "/industry/travel",
+      permanent: true,
+    },
+    {
       source: "/industry/marketplace-solution-development-company",
       destination: "/industry/marketplace",
       permanent: true,
@@ -1619,6 +1634,11 @@ const redirection = () => {
     },
     {
       source: "/mobile-development/react-native-development",
+      destination: "/mobile-development/react-native-app-development-company",
+      permanent: true,
+    },
+    {
+      source: "/mobile-development/react-native-development-company",
       destination: "/mobile-development/react-native-app-development-company",
       permanent: true,
     },
@@ -1694,11 +1714,16 @@ const redirection = () => {
     },
     {
       source: "/lamp-development",
-      destination: "/web-development/lamp-development",
+      destination: "/web-development/lamp-application-development-services",
       permanent: true,
     },
     {
       source: "/web-development/lamp-development",
+      destination: "/web-development/lamp-application-development-services",
+      permanent: true,
+    },
+    {
+      source: "/web-development/lamp-development-company",
       destination: "/web-development/lamp-application-development-services",
       permanent: true,
     },
@@ -1773,6 +1798,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/php-development-company",
+      destination: "/web-development/php-development-service-company",
+      permanent: true,
+    },
+    {
       source: "/web-development/python-development",
       destination: "/web-development/python-web-development-company",
       permanent: true,
@@ -1813,7 +1843,17 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/hire-angular-js-developers",
+      destination: "/hire-angularjs-developers",
+      permanent: true,
+    },
+    {
       source: "/hire-ios-developer",
+      destination: "/hire-ios-app-developers",
+      permanent: true,
+    },
+    {
+      source: "/hire-ios-developers",
       destination: "/hire-ios-app-developers",
       permanent: true,
     },

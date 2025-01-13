@@ -226,6 +226,23 @@ const OpeningJob = [
       "Maintain and extend current client and server-side applications responsible for integration and business logic",
     ],
   },
+  {
+    JobTitle: "UI UX Designer",
+    Position: "1",
+    JobId: "BI2022-0011",
+    description:
+      "User Research, Wireframing , Prototyping, Visual Design, Responsive Design, Design Systems.",
+    Experience: "2.5 to 3 Years",
+    roles: [
+      "To conduct user research to understand project needs, pain points, and behavior",
+      "Create user personas, customer journey maps, and wireframes to guide design solutions of the project",
+      "High Fidelity Design and prototype user interfaces using design and prototyping tools such as Figma",
+      "Ensure designs align with brand guidelines, and accessibility standards while maintaining a consistent design system",
+      "Collaborate with developers to ensure smooth implementation of designs",
+      "Conduct usability testing and analyze feedback to iterate and refine designs",
+      "Stay up-to-date with design trends, tools, and best practices",
+    ],
+  },
 ];
 function Opening() {
   const { register, handleSubmit, reset } = useForm();

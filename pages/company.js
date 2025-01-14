@@ -47,7 +47,7 @@ function Company() {
       <div className="relative">
         <Header />
         <Video />
-        <Summary head={"Website & App Development Company - Brain Inventory"}/>
+        <Summary head={"Website and App Development Company Overview"}/>
         <div>
           <Mission />
           <Ethos />

@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
-
+import visionImg from "../../public/assets/company-assets/vision.webp"
+import missionImg from "../../public/assets/company-assets/mission.webp"
 const missionType = [
   {
-    image: "1.svg",
+    image: visionImg,
     title: "Our Vision",
     description:
       "Pioneering software for a future that anticipates tomorrow’s needs, expands possibilities and ensures universal tech accessibility for all.",
   },
   {
-    image: "2.svg",
+    image: missionImg,
     title: "Our Mission",
     description:
       "Deliver top-notch software empowering success in the digital era. We commit to excellence, ethics, collaboration, and attracting talent to meet evolving client needs, with a global positive impact.",
@@ -25,7 +26,6 @@ function mission() {
               <div className="w-32 mr-2 relative">
                 <Image
                   src={
-                    "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
                     el.image
                   }
                   width={100}
@@ -33,8 +33,8 @@ function mission() {
                   alt="Brain Inventory"
                 />
               </div>
-              <div className="w-96">
-                <h2 className="2xl:text-xl xl:text-lg text-xl Gilroy-Bold">
+              <div className="w-90">
+                <h2 className="2xl:text-xl xl:text-lg text-xl Gilroy-Bold text-primaryTx">
                   {el.title}
                 </h2>
                 <p className="2xl:text-base xl:text-base text-lg Gilroy-Light">

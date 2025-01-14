@@ -1,63 +1,57 @@
 import React from "react";
 import Image from "next/image";
+import icon1 from "../../public/assets/company-assets/360.webp"
+import icon2 from "../../public/assets/company-assets/client.webp"
+import icon3 from "../../public/assets/company-assets/industry.webp"
+import icon4 from "../../public/assets/company-assets/market.webp"
 
+const info =[
+  {
+    image:icon1,
+    title:"360,Approach",
+  },
+  {
+    image:icon2,
+    title:"Client,Centricity",
+  },
+  {
+    image:icon3,
+    title:"Industry,Expertise",
+    size:"w-30"
+  },
+  {
+    image:icon4,
+    title:"Go to Time to, Market",
+  },
+]
 function choose() {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-6 space-y-8 pt-24 pb-24 container">
       <div className="container padding-left-all-section">
         <h3 className="text-4xl Gilroy-Bold mb-2">
-          Why choose braininventory?
+        Why Choose Brain Inventory
         </h3>
         <p className="text-base color-light">
           Using deep domain expertise of our software developers. we create
           impactful digital solutions that drive meaningful change with a
           strategic vision.
         </p>
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4 mt-8">
-          <div className="bg-vision">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 mt-8">
+         {
+          info && info.map((data,index)=>(
+            <div className="bg-primaryBg flex flex-col items-center" key={index}>
             <Image
-              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon1.svg"
-              className="text-center m-auto block w-16"
+              src={data.image}
+              className={`text-center m-auto block w-20`}
               alt="Custom Software Development Company | Application Development Company"
               width={40}
               height={40}
             />
-            <h3 className="text-center Gilroy-Bold text-xl">360 Approach</h3>
+            <h3 className="text-center Gilroy-Bold mt-3 text-xl">{data.title.split(",")[0]}</h3>
+            <h3 className="text-center Gilroy-Bold text-xl">{data.title.split(",")[1]}</h3>
           </div>
-          <div className="bg-vision">
-            <Image
-              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon2.svg"
-              className="text-center m-auto block  w-16"
-              alt="Custom Software Development Company | Application Development Company"
-              width={40}
-              height={40}
-            />
-            <h3 className="text-center Gilroy-Bold text-xl">
-              Client-Centricity
-            </h3>
-          </div>
-          <div className="bg-vision">
-            <Image
-              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon3.svg"
-              className="text-center m-auto block w-16"
-              alt="Custom Software Development Company | Application Development Company"
-              width={40}
-              height={40}
-            />
-            <h3 className="text-center Gilroy-Bold text-xl">
-              Domain Expertise
-            </h3>
-          </div>
-          <div className="bg-vision">
-            <Image
-              src="https://braininventory.s3.us-east-2.amazonaws.com/images/Icon4.svg"
-              className="text-center m-auto block w-16"
-              alt="Custom Software Development Company | Application Development Company"
-              width={40}
-              height={40}
-            />
-            <h3 className="text-center Gilroy-Bold text-xl">Time-to-Market</h3>
-          </div>
+          ))
+         }
         </div>
       </div>
     </div>

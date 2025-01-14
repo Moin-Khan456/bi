@@ -54,7 +54,7 @@ const Contact = () => {
             <Field
               type="text"
               name="name"
-              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
+              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-primaryBg text-primaryBg lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="You should have a name"
             />
             <p className="text-red-500 text-xl absolute -right-10 ">
@@ -65,7 +65,7 @@ const Contact = () => {
             <Field
               type="text"
               name="email"
-              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
+              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-primaryBg text-primaryBg lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="Obviously, an email"
             />
             <p className="text-red-500 text-xl absolute -right-10 ">
@@ -76,7 +76,7 @@ const Contact = () => {
             <Field
               type="text"
               name="number"
-              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
+              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-primaryBg text-primaryBg lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="Your contact number"
             />
             <p className="text-red-500 text-xl absolute -right-10 ">
@@ -87,7 +87,7 @@ const Contact = () => {
             <Field
               type="text"
               name="companyName"
-              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
+              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-primaryBg text-primaryBg lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="What's your company name?"
             />
             <p className="text-red-500 text-xl absolute -right-10 ">
@@ -98,7 +98,7 @@ const Contact = () => {
             <Field
               type="text"
               name="feedback"
-              className="bg-transparent p-1 m-1 focus:outline-none border-b-2 border-white  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
+              className="bg-transparent text-primaryBg p-1 m-1 focus:outline-none border-b-2 border-primaryBg  lg:min-w-[350px] placeholder-[#ffffffd7] placeholder:text-xs"
               placeholder="Tell us, Everything!"
             />
             <p className="text-red-500 text-xl absolute -right-10 ">

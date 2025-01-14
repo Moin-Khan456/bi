@@ -8,10 +8,10 @@ const HomeSectionNine = () => {
       <div className="relative w-full">
         <div className="sticky top-0 z-20">
           <div className=" w-full  p-10 2xl:space-y-8 xl:space-y-6 space-y-4  bg-gradient-5">
-            <p className="Gilroy-Bold text-heading-1">
+            <p className="Gilroy-Bold text-heading-1 text-primaryBg">
               lets discuss your project
             </p>
-            <p className="text-heading-4 Gilroy-SemiBold">
+            <p className="text-heading-4 Gilroy-SemiBold text-secondaryTx">
               Get free consultation and let us know your project idea to turn it
               into an amazing digital product.
             </p>

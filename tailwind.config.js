@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primaryBg: "var(--primary-bg)",
+        primaryTx: "var(--primary-text)",
+        secondaryTx: "var(--secondary-text)",
+        secondaryBg: "var(--secondary-bg)"
+      },
       animation: {
         "spin-slow": "spin 10s linear infinite",
       },

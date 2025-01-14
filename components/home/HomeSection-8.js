@@ -1,14 +1,13 @@
 import Image from "next/image";
 import HomeButton from "../buttons/HomeButton";
 import Link from "next/link";
-
+import { useEffect, useRef, useState } from "react";
 const info = [
   {
     title: "Discovery Workshop",
     details: [
       "We give the utmost importance to understand and document client’s inputs, design, and branding preferences.",
-      `And clarify all the open-ended points to establish a precise and clear idea about both clients’ and project’s goals.`,
-      `We work in a collaborative approach involving key stakeholders to bring alignment in the business process.`,
+      " And clarify all the open-ended points to establish a precise and clear idea about both clients’ and project’s goals.,We work in a collaborative approach involving key stakeholders to bring alignment in the business process.",
     ],
     image: "Braininventory_discovery+workshop.webp",
     alt: "custom software development company",
@@ -37,7 +36,13 @@ const info = [
     details: [
       <>
         At this stage, we cater requirements for frontend, backend, web
-        services, and <Link href="/mobile-development/mobile-api-integration-services" className="text-[#2186ff]">API Integration Services.</Link>
+        services, and{" "}
+        <Link
+          href="/mobile-development/mobile-api-integration-services"
+          className="text-[#2186ff]"
+        >
+          API Integration Services.
+        </Link>
       </>,
       "Along with preparing a strategy for Agile Scrum methodology, we factor the aspects of scalability, multi-tenancy, 3rd party integration, and craft an optimized clean code structure using cutting-edge technologies.",
       "We make sure to involve and implement clients’ reviews in each sprint/milestone.",
@@ -68,61 +73,111 @@ const info = [
 ];
 
 const HomeSectionEight = () => {
+  const [activeSection, setActiveSection] = useState("Discovery Workshop");
+
+  // Create references for each section
+  const sectionRefs = info.reduce((acc, section) => {
+    acc[section.title] = useRef(null);
+    return acc;
+  }, {});
+
+  useEffect(() => {
+    const observers = Object.entries(sectionRefs).map(([title, ref]) => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveSection(title);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
+  const scrollToSection = (title) => {
+    sectionRefs[title].current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="2xl:p-10 p-8 2xl:pb-40 pb-32">
       <div className="container padding-left-all-section">
         <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap mb-5">
           The process that delivers the best!
         </h2>
-        <div className="divide-y">
-          {info?.map((el) => (
-            <Section key={el.title} info={el}></Section>
-          ))}
+        <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 pt-10">
+          {/* Navigation */}
+          <nav className=" md:w-full md:sticky md:top-0 md:h-screen md:p-8 md:flex md:flex-col md:justify-center hidden">
+            {info.map((section, index) => (
+              <div key={index} className="flex items-center space-x-4">
+                <button
+                  onClick={() => scrollToSection(section.title)}
+                  className={`text-4xl font-bold text-left transition-colors ${
+                    activeSection === section.title
+                      ? "text-blue-600"
+                      : "text-transparent hover:text-blue-600/80"
+                  } stroke-blue-600 stroke-2`}
+                  style={{ WebkitTextStroke: "1px #2563eb" }}
+                >
+                  {section.title}
+                 {
+                  index<=info.length-2? <div className="h-10 w-full border-l border-primaryTx" />:""
+                 }
+
+                </button>
+                {/* Divider Line */}
+              </div>
+            ))}
+          </nav>
+
+          {/* Content */}
+          <div className="flex-1 p-8">
+            <div className="max-w-3xl mx-auto space-y-[20vh]">
+              {info.map((section, index) => (
+                <section
+                  key={index}
+                  ref={sectionRefs[section.title]}
+                  className="min-h-screen flex items-center"
+                >
+                  <div className="flex flex-col gap-4">
+                      <>
+                      <h1 className="lg:hidden block Gilroy-SemiBold text-3xl text-primaryTx">{section.title}</h1>       
+                     {
+                      section.details.map((detail,index)=>(
+                        <p
+                        key={index}
+                        className="text-sm Gilroy-SemiBold leading-relaxed"
+                      >
+                        {detail}
+                      </p>
+                      ))
+                     }
+                      </>
+                    <Image
+                      src={`https://braininventory.s3.us-east-2.amazonaws.com/images/${section.image}`}
+                      alt={section.alt}
+                      width={800}
+                      height={450}
+                      className="rounded-lg"
+                    />
+                  </div>
+                </section>
+              ))}
+            </div>
+          </div>
         </div>
-        <Link href="/portfolio">
-          <HomeButton>
-            <span className="2xl:text-2xl text-xl transition-all">
-              Explore more
-            </span>
-          </HomeButton>
-        </Link>
       </div>
     </div>
-  );
-};
-
-const Section = ({ info }) => {
-  return (
-    <>
-      <div className="grid xl:grid-cols-5 md:grid-cols-2 grid-cols-1  2xl:gap-10 gap-8 2xl:pt-10 2xl:pb-12 py-8">
-        <span className="xl:col-span-5 md:col-span-2 col-span-1 stroke-text Gilroy-Bold text-heading-1">
-          {info.title}
-        </span>
-        <div className="xl:col-span-2 md:col-span-1 col-span-1 relative sm:h-full md:h-full lg:h-[350px]">
-          <Image
-            srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-            sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
-            src={
-              "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
-              info.image
-            }
-            width={1500}
-            height={1500}
-            alt={info.alt}
-            objectFit="cover"
-          />
-        </div>
-        <p className="2xl:text-xl xl:text-lg text-base Gilroy-Light  xl:col-span-3 md:col-span-1 col-span-1 flex flex-col gap-4">
-          {info?.details?.map((el) => (
-            <span key={el}>{el}</span>
-          ))}
-        </p>
-      </div>
-    </>
   );
 };
 

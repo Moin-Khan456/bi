@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Facebook from "../../public/assets/footer-assets/Facebook.webp";
+import Instagram from "../../public/assets/footer-assets/Instagram.webp";
+import Linkedin from "../../public/assets/footer-assets/LinkedIn.webp";
+import Behance from "../../public/assets/footer-assets/Behance.webp";
+import dribble from "../../public/assets/footer-assets/Dribbble.webp";
+import Youtube from "../../public/assets/footer-assets/YouTube.webp";
+import Clutch from "../../public/assets/footer-assets/Clutch.webp";
+import GoodFirms from "../../public/assets/footer-assets/GoodFirms.webp";
+import TrustPilot from "../../public/assets/footer-assets/TrustPilot.webp";
+import Upwork from "../../public/assets/footer-assets/UpWork.webp";
 
 const FooterSections = [
   {
@@ -389,7 +399,7 @@ const FooterSections = [
 const organizations = [
   {
     _id: 1,
-    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm1.png",
+    src: GoodFirms,
     alt: "brain inventory best rating and reviews on Good Firm",
     href: "https://www.goodfirms.co/company/brain-inventory",
     width: 90,
@@ -397,7 +407,7 @@ const organizations = [
   },
   {
     _id: 2,
-    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm3.png",
+    src: Clutch,
     alt: "brain inventory best rating and reviews on Clutch",
     href: "https://clutch.co/profile/brain-inventory",
     width: 70,
@@ -405,7 +415,7 @@ const organizations = [
   },
   {
     _id: 3,
-    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm4.png",
+    src: TrustPilot,
     alt: "brain inventory best rating and reviews on Trust Pilot",
     href: "https://www.trustpilot.com/review/braininventory.com",
     width: 120,
@@ -413,7 +423,7 @@ const organizations = [
   },
   {
     _id: 4,
-    src: "https://braininventory.s3.us-east-2.amazonaws.com/images/footer-firm5.png",
+    src: Upwork,
     alt: "brain inventory best rating and reviews on Upwork",
     href: "https://www.upwork.com/ag/braininventory/",
     width: 120,
@@ -432,11 +442,11 @@ export default function Footer({ fromBlog }) {
   };
   return (
     <div
-      className={`${fromBlog ? "mx-0" : "mx-10"}  py-10 border-t ${
-        fromBlog && "bg-black"
-      }`}
+      className={`bg-secondaryBg ${
+        fromBlog ? "mx-0" : "mx-0"
+      } sm:px-0 px-5 py-10 border-t ${fromBlog && "bg-black"}`}
     >
-      <div className="container lg:px-24">
+      <div className="container px-8 lg:px-24 bg-secondaryBg">
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {FooterSections.map((section, index) => {
             const isExpanded = expandedSections[index];
@@ -448,7 +458,7 @@ export default function Footer({ fromBlog }) {
                 }
               >
                 <a href={section.link} className="cursor-pointer">
-                  <span className="text-[1rem] Gilroy-Bold mb-4 cursor-pointer mt-12">
+                  <span className="text-[1.2rem]  text-primaryTx Gilroy-Bold mb-4 cursor-pointer mt-12">
                     {section.title}
                   </span>
                 </a>
@@ -457,7 +467,7 @@ export default function Footer({ fromBlog }) {
                     .map((link, linkIndex) => {
                       return (
                         <li
-                          className="text-white text-opacity-50 w-auto"
+                          className="text-secondaryTx text-opacity-50 w-auto"
                           key={linkIndex}
                         >
                           <a href={link.path} className="cursor-pointer">
@@ -471,7 +481,7 @@ export default function Footer({ fromBlog }) {
                 {section.links.length > 10 && (
                   <button
                     onClick={() => handleLoadMore(index)}
-                    className="text-black text-xs p-2 font-bold bg-white rounded-md mb-12 mt-4"
+                    className="text-white text-xs p-2 font-bold bg-primaryTx rounded-md mb-12 mt-4"
                   >
                     {isExpanded ? (
                       <div className="flex items-center">
@@ -522,9 +532,7 @@ export default function Footer({ fromBlog }) {
                   // rel="noopener noreferrer"
                 >
                   <Image
-                    src={
-                      "https://braininventory.s3.us-east-2.amazonaws.com/images/meta.svg"
-                    }
+                    src={Facebook}
                     width={28}
                     height={28}
                     fetchPriority="low"
@@ -540,9 +548,7 @@ export default function Footer({ fromBlog }) {
                   // rel="noopener noreferrer"
                 >
                   <Image
-                    src={
-                      "https://braininventory.s3.us-east-2.amazonaws.com/images/linkedIn.svg"
-                    }
+                    src={Linkedin}
                     width={28}
                     height={28}
                     fetchPriority="low"
@@ -558,11 +564,9 @@ export default function Footer({ fromBlog }) {
                   // rel="noopener noreferrer"
                 >
                   <Image
-                    src={
-                      "https://braininventory.s3.us-east-2.amazonaws.com/images/dribble.svg"
-                    }
-                    width={24}
-                    height={24}
+                    src={dribble}
+                    width={28}
+                    height={28}
                     fetchPriority="low"
                     loading="lazy"
                     alt="Custom Software Development Company"
@@ -576,11 +580,9 @@ export default function Footer({ fromBlog }) {
                   // rel="noopener noreferrer"
                 >
                   <Image
-                    src={
-                      "https://braininventory.s3.us-east-2.amazonaws.com/images/instagram.svg"
-                    }
-                    width={24}
-                    height={24}
+                    src={Instagram}
+                    width={28}
+                    height={28}
                     fetchPriority="low"
                     loading="lazy"
                     alt="Custom Software Development Company"
@@ -594,11 +596,25 @@ export default function Footer({ fromBlog }) {
                   // rel="noopener noreferrer"
                 >
                   <Image
-                    src={
-                      "https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.svg"
-                    }
-                    width={30}
-                    height={30}
+                    src={Behance}
+                    width={28}
+                    height={28}
+                    fetchPriority="low"
+                    loading="lazy"
+                    alt="Custom Software Development Company"
+                  />
+                </Link>
+              </span>
+              <span className="cursor-pointer">
+                <Link
+                  href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
+                  target="_blank"
+                  // rel="noopener noreferrer"
+                >
+                  <Image
+                    src={Youtube}
+                    width={32}
+                    height={32}
                     fetchPriority="low"
                     loading="lazy"
                     alt="Custom Software Development Company"

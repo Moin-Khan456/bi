@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TagManager from "react-gtm-module";
 import { MdOutlineUnfoldMore, MdUnfoldLess } from "react-icons/md";
-
+import HeaderLogo from "../../public/assets/header-assets/logo.webp"
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [load, setLoad] = useState(false);
@@ -65,7 +65,7 @@ const Header = () => {
                 <div className="relative w-36 h-12 cursor-pointer">
                   <Image
                     priority={true}
-                    src="https://braininventory.s3.us-east-2.amazonaws.com/images/main/Logobg.png"
+                    src={HeaderLogo}
                     className="cursor-pointer"
                     alt="it service company offers web and app design and development"
                     preload="metadata"
@@ -79,7 +79,7 @@ const Header = () => {
           {navOpen ? (
             <div className="dropdown lg:block  dropdown-hover">
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
+                <div className="flex justify-between align-middle items-center bg-primaryTx h-11 z-[100]">
                   <p className="px-4 text-xs Gilroy-Light lowercase lg:block hidden">
                     <Link href="/contact#contact">request A Quote</Link>
                   </p>
@@ -110,7 +110,7 @@ const Header = () => {
           ) : (
             <div className="dropdown lg:block  dropdown-hover">
               <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className="flex  justify-between align-middle items-center bg-case-blue-request h-11 z-[100]">
+                <div className="flex  justify-between align-middle items-center h-11 z-[100] bg-primaryTx ">
                   <p className="px-4 text-xs Gilroy-Light lowercase mobile-none">
                     <Link href="/contact#contact">request A Quote</Link>
                   </p>
@@ -118,7 +118,7 @@ const Header = () => {
                     onClick={() => {
                       handlesidebar();
                     }}
-                    className="bg-base-blue-1 items-center h-11 px-4 text-white"
+                    className="bg-primaryTx mx-2 items-center h-11 px-4 text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ const Header = () => {
         </div>
         <div
           id="sidenav"
-          className="fixed inset-0 overflow-hidden transition-transform -translate-y-full duration-300 bg-gradient-4 z-40 flex gap-10"
+          className="fixed inset-0 overflow-hidden transition-transform -translate-y-full duration-300 bg-primaryBg z-40 flex gap-10"
         >
           <div className="grid lg:grid-cols-4 grid-cols-1 px-8 py-16 lg:px-28 w-full">
             <div className="">
@@ -245,32 +245,32 @@ const CompanyChildren = () => {
       <div className="space-y-4">
         <h2 className="text-2xl Gilroy-Bold">About</h2>
         <ul className="space-y-2">
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/company" className="cursor-pointer">
               Our Company
             </Link>
           </li>
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/how-we-work" className="cursor-pointer">
               How we work
             </Link>
           </li>
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/career" className="cursor-pointer">
               Careers
             </Link>
           </li>
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/blog/1" className="cursor-pointer">
               Blog
             </Link>
           </li>
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/contact" className="cursor-pointer">
               Contact Us
             </Link>
           </li>
-          <li className="text-white text-opacity-50">
+          <li className="text-secondaryTx text-opacity-50">
             <Link href="/faqs" className="cursor-pointer">
               FAQs
             </Link>

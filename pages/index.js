@@ -140,8 +140,8 @@ function Home() {
             <KeepInTouch />
             <LocateUs />
             <LetsKick />
-            <Footer />
           </section>
+      <Footer />
         </main>
       </Suspense>
     </>

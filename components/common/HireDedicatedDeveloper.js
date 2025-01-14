@@ -6,7 +6,7 @@ function HireDedicatedDeveloper(props) {
   return (
     <div className="container padding-left-all-section">
       <div className=" 2xl:p-10 p-8 ">
-        <h3 className="text-heading-1 Gilroy-Bold mb-8">
+        <h3 className="text-heading-1 text-secondaryTx Gilroy-Bold mb-8">
           Hire Dedicated Developers
         </h3>
 
@@ -14,7 +14,7 @@ function HireDedicatedDeveloper(props) {
           <div className="absolute bottom-4 left-4">
             <Link href="/hire-dedicated-remote-developers">
               <HomeButton>
-                <span className="2xl:text-2xl text-xl transition-all">
+                <span className="2xl:text-2xl text-xl text-primaryBg transition-all">
                   Hire Developers
                 </span>
               </HomeButton>

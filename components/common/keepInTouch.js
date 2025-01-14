@@ -28,38 +28,48 @@ export default function KeepInTouch({ fromBlog }) {
   return (
     <div
       id="talk"
-      className={`container px-4 lg:px-16 2xl:space-y-8 space-y-6 pt-4 ${
+      className={`container px-4 lg:px-[2rem] bg-secondaryBg 2xl:space-y-8 space-y-6 py-4 ${
         fromBlog && "text-slate-900"
       }`}
     >
       <div className="container padding-left-all-section">
-        <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
-          <div className="flex flex-col space-y-6">
-            <div className="relative h-[100px] w-full lg:w-1/2">
-              <Image
-                src={
-                  "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
-                }
-                loading="lazy"
-                fetchPriority="low"
-                width={500}
-                height={500}
-                objectFit="contain"
-                alt="Keep In Touch With Brain Inventory Sales Executive"
-              />
-            </div>
+        <div className="mobile-padding grid lg:grid-cols-1 content-center grid-cols-1 ">
+          <div className="flex sm:flex-row flex-col justify-between text-left sm:items-center space-y-6 ">
             <h2 className="text-heading-1 Gilroy-Bold leading-normal w-[90%]">
-              Have an idea? <br /> Get in touch, we’d be <br /> happy to hear
-              from you
+              <br /> Get in touch, we’d be <br /> happy to hear from you
             </h2>
-            <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-normal w-4/5">
-              We are always looking out for new collaborations, whether you are
-              a client who is passionate about a project or a talent who is
-              interested in joining our team, our doors are always open.
-            </p>
+            <div className="text-lg Gilroy-Bold leading-normal ">
+              <p>askus@braininventory.com</p>
+              <p>+91 8109561401</p>
+            </div>
           </div>
-          <div className="flex lg:justify-end justify-start ">
-            <div className="flex flex-col xl:space-y-8 space-y-6 w-full">
+          <div className="mt-6">
+            <HomeButton fromBlog={fromBlog}>
+              <span className="2xl:text-2xl text-xl transition-all">
+                Contact Us
+              </span>
+            </HomeButton>
+          </div>
+          <div className="border border-b-1 border-primaryTx my-10"></div>
+          <div className="flex sm:flex-row flex-col lg:justify-end justify-start text-secondaryTx ">
+            <div className="flex flex-col py-6 ">
+              <h2 className="text-heading-1 Gilroy-Bold leading-normal w-full sm:w-[70%] mb-8">
+                Want to join us ?
+              </h2>
+              <p className=" Gilroy-light leading-normal Gilroy-LightBold text-xl w-full sm:w-[70%]">
+                We are always looking out for new <br /> collaborations,
+              </p>
+              <p className="Gilroy-light leading-normal w-full sm:w-[70%] Gilroy-LightBold text-xl">
+                whether{" "}
+                <span className="text-primaryTx font-bold">
+                  YOU ARE A CLIENT
+                </span>{" "}
+                who is passionate about a project or{" "}
+                <span className="text-primaryTx font-bold">A TALENT</span> who
+                is interested in joining our team, our doors are always open.
+              </p>
+            </div>
+            <div className="flex flex-col xl:space-y-8 space-y-6 w-full ">
               <Formik
                 initialValues={{
                   name: "",
@@ -72,22 +82,22 @@ export default function KeepInTouch({ fromBlog }) {
                 onSubmit={sumbitContact}
               >
                 <Form>
-                  <div className="flex flex-col xl:space-y-8 pt-8 space-y-6">
+                  <div className="flex flex-col xl:space-y-8 pt-8 space-y-6 ">
                     <Field
                       type="text"
                       name="name"
-                      className={`bg-transparent p-4 focus:outline-none border ${
+                      className={`bg-transparent p-4 focus:outline-none text-primaryTx border border-primaryTx ${
                         fromBlog && "border-slate-900"
-                      } border-[#ffffff67] w-full ${
+                      } border-primaryTx w-full ${
                         fromBlog && "placeholder-slate-900"
-                      } placeholder-[#ffffffd7]`}
+                      } placeholder-secondaryTx Gilroy-Bold text-lg`}
                       placeholder="You should have a name"
                     />
                     <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
                       <Field
                         type="email"
                         name="email"
-                        className={`bg-transparent p-4 focus:outline-none border  border-[#ffffff67] flex-1 placeholder-[#ffffffd7] ${
+                        className={`bg-transparent p-4 focus:outline-none border border-primaryTx flex-1 placeholder-secondaryTx Gilroy-Bold text-lg ${
                           fromBlog && "border-slate-900"
                         } ${fromBlog && "placeholder-slate-900"}`}
                         placeholder="Obviously, an email"
@@ -95,7 +105,7 @@ export default function KeepInTouch({ fromBlog }) {
                       <Field
                         type="number"
                         name="number"
-                        className={`bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7] ${
+                        className={`bg-transparent p-4 focus:outline-none border border-primaryTx flex-1 placeholder-secondaryTx Gilroy-Bold text-lg ${
                           fromBlog && "placeholder-slate-900"
                         } ${fromBlog && "border-slate-900"}`}
                         placeholder="Your contact number"
@@ -104,21 +114,21 @@ export default function KeepInTouch({ fromBlog }) {
                     <Field
                       type="text"
                       name="companyName"
-                      className={`bg-transparent p-4 focus:outline-none border ${
+                      className={`bg-transparent p-4 focus:outline-none border border-primaryTx ${
                         fromBlog && "border-slate-900"
                       } border-[#ffffff67] w-full ${
                         fromBlog && "placeholder-slate-900"
-                      } placeholder-[#ffffffd7]`}
+                      } placeholder-secondaryTx Gilroy-Bold text-lg`}
                       placeholder="What's your company name?"
                     />
                     <Field
                       type="text"
                       name="feedback"
-                      className={`bg-transparent p-4 focus:outline-none border ${
+                      className={`bg-transparent p-4 focus:outline-none border border-primaryTx ${
                         fromBlog && "border-slate-900"
                       } border-[#ffffff67] w-full ${
                         fromBlog && "placeholder-slate-900"
-                      } placeholder-[#ffffffd7]`}
+                      } placeholder-secondaryTx Gilroy-Bold text-lg`}
                       placeholder="Tell us, Everything!"
                     />
                     <HomeButton type="submit" fromBlog={fromBlog}>

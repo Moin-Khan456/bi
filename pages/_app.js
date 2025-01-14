@@ -80,7 +80,7 @@ function MyApp({ Component, pageProps }) {
           <HireDedicatedCard setLocal={setLocal} />
         ) : (
           <div
-            className="text-white bg-gradient-to-r from-[#000076] to-[#7600EB] p-4 rounded-full max-w-fit text-2xl m-2 ml-2 lg:m-8 cursor-pointer"
+            className="text-primaryBg bg-primaryTx p-4 rounded-full max-w-fit text-2xl m-2 ml-2 lg:m-8 cursor-pointer"
             onClick={() => {
               setLocal(true);
             }}

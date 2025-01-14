@@ -4,7 +4,7 @@ const array = new Array(3).fill(null);
 
 const HomeSectionSix = () => {
   return (
-    <div className="lg:h-screen flex flex-col justify-center ">
+    <div className="lg:h-screen flex flex-col justify-center text-secondaryTx">
       <Marquee
         duration={25000}
         background="#fafafa00"
@@ -14,23 +14,23 @@ const HomeSectionSix = () => {
         {array.map((el, index) => (
           <div
             key={index}
-            className="flex space-x-5 mr-10 2xl:text-2xl text-xl items-center"
+            className="flex space-x-10 mr-10 2xl:text-2xl text-xl items-center"
           >
-            <svg
+             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 mb-1 text-white"
+              className="h-8 w-8 mb-1 text-slate-900"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
-            <span className="underline pb-2 underline-offset-[12px] decoration-1">
+            <span className="pb-2 decoration-1">
               career@braininventory.com
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 mb-1 text-white"
+              className="h-8 w-8 mb-1 text-slate-900"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -43,7 +43,7 @@ const HomeSectionSix = () => {
             <span>+917722885755</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 mb-1 text-white"
+              className="h-8 w-8 mb-1 text-slate-900"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -52,13 +52,13 @@ const HomeSectionSix = () => {
             </svg>
             <Link
               href={"mailto:askus@braininventory.com"}
-              className="underline pb-2 underline-offset-[12px] decoration-1"
+              className="pb-2 decoration-1"
             >
               askus@braininventory.com
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 mb-1 text-white"
+              className="h-8 w-8 mb-1 text-slate-900"
               viewBox="0 0 20 20"
               fill="currentColor"
             >

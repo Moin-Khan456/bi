@@ -1,61 +1,75 @@
 import React, { Component } from "react";
-
+const technologies = [
+  {
+    title: "Design",
+    technology: [
+      "Figma",
+      "Photoshop",
+      "Illustrator",
+      "Abode XD",
+      "After Effects",
+      "Invision",
+    ],
+    rightBorder: true,
+  },
+  {
+    title: "Mobile",
+    technology: [
+      "Kotlin",
+      "Swift",
+      "Java",
+      "React Native",
+      "Flutter",
+      "Objective C",
+    ],
+    rightBorder: true,
+  },
+  {
+    title: "Technologies",
+    technology: [
+      "Docker",
+      "Blockchain",
+      "Ruby on Rails",
+      "Ardunio",
+      "NLP",
+      "Data Mining",
+    ],
+    rightBorder: true,
+  },
+  {
+    title: "Server Side",
+    technology: ["LAMP", "Node js", "Mongo", "Redis"],
+    rightBorder: false,
+  },
+];
 const LanguageTool = () => {
   return (
-    <main className="p-4 lg:p-14 2xl:space-y-8 space-y-6">
+    <main className="p-4 mt-16 lg:p-14 2xl:space-y-8 space-y-6 bg-secondaryBg">
       <section className="container">
         <div>
-          <h2 className="Gilroy-Bold lg:text-4xl text-3xl text-white pt-8">
-            languages, tools and frameworks
+          <h2 className="Gilroy-Bold lg:text-4xl text-3xl text-secondaryTx pt-8">
+            Languages, Tools and Frameworks
           </h2>
           <p className=" pb-8 pt-2">
-            Whatever the field or platform, we make it happen
+            Whatever the field or platform, we make it happen{" "}
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 grid-cols-1">
-          <div className="bg-stack lg:mb-0 mb-4">
-            <h2>Design</h2>
-            <ul className="text-center">
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>Abode XD</li>
-              <li>After Effects</li>
-              <li>Sketch</li>
-              <li>Invision</li>
-            </ul>
-          </div>
-
-          <div className="bg-stack lg:mb-0 mb-4">
-            <h2>Mobile</h2>
-            <ul className="text-center">
-              <li>Kotlin</li>
-              <li>Swift</li>
-              <li>Java</li>
-              <li>React Native</li>
-              <li>Flutter</li>
-              <li>Objective C</li>
-            </ul>
-          </div>
-          <div className="bg-stack lg:mb-0 mb-4">
-            <h2>Technologies</h2>
-            <ul className="text-center">
-              <li>Docker</li>
-              <li>Blockchain</li>
-              <li>Ruby on Rails</li>
-              <li>Ardunio</li>
-              <li>NLP</li>
-              <li>Data Mining</li>
-            </ul>
-          </div>
-          <div className="bg-stack lg:mb-0 mb-4">
-            <h2>Server Side</h2>
-            <ul className="text-center">
-              <li>LAMP</li>
-              <li>Node js</li>
-              <li>Mongo</li>
-              <li>Redis</li>
-            </ul>
-          </div>
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 ">
+        {technologies.map((data, index) => (
+            <div
+              className={`border-4 ${
+                data.rightBorder ? "lg:border-r-0" : ""
+              } border-primaryTx`}
+              key={index}
+            >
+              <h2 className="p-4 text-xl Gilroy-Bold">{data.title}</h2>
+              <ul className={`px-4 py-2 Gilroy-SemiBold bg-primaryBg ${data.rightBorder ? "":"h-[160px]"}`}>
+                {data.technology.map((value, i) => (
+                  <li key={i}>{value}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
     </main>

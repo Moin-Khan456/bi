@@ -150,11 +150,10 @@ export default function HowWeWork() {
       >
         <main>
           <Header />
-          <section className="relative   container">
+          <section className="relative container">
             <WorkBanner />
             <Work />
           </section>
-          <HomeSectionSix />
           <section className="container">
             <ChooseApp />
             <LanguageTool />

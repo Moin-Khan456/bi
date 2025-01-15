@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Faqs({ faq }) {
   const collapsed = (id) => {
@@ -14,27 +15,24 @@ function Faqs({ faq }) {
         <div>
           {faq?.map((el) => {
             return (
-              <div key={el.id} className="collapse bg-opening mb-6">
+              <div key={el.id} className="collapse bg-secondaryBg mb-6">
                 <label htmlFor="faq-checkbox" />
                 <input type="checkbox" id="faq-checkbox" />
                 <div className="collapse-title text-xl font-medium">
                   <div className="md:flex block justify-between items-center">
                     <div>
-                      <h2 className="text-2xl text-white Gilroy-Bold">
+                      <h2 className="text-2xl text-secondaryTx Gilroy-Bold">
                         {el.title}
                       </h2>
                     </div>
-                    <div className="flex md:block my-4 md:my-0">
-                      <button onClick={() => collapsed(el.id)} className="">
-                        <Image
-                          src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
-                          className="cursor-pointer"
-                          alt="Custom Software Development Company | Application Development Company"
-                          width={40}
-                          height={40}
-                        />
-                      </button>
-                    </div>
+                    <button
+                      onClick={() => collapsed(el.id)}
+                      className="flex items-center justify-center"
+                    >
+                      <div className="flex justify-center items-center w-10 h-10 bg-primaryTx rounded-full">
+                        <IoIosArrowDown className="text-white text-lg" />
+                      </div>
+                    </button>
                   </div>
                 </div>
                 <div className="collapse-content flex">

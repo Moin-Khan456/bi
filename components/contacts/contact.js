@@ -5,15 +5,14 @@ import * as Yup from "yup";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { RiErrorWarningFill } from "react-icons/ri";
+import SufiyanImage from "../../public/assets/contact-assets/sufiyan.webp"
 import Image from "next/image";
 
-function Contact(props) {
+function Contact() {
   const router = useRouter();
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(<RiErrorWarningFill />),
-    email: Yup.string()
-      .email(<RiErrorWarningFill />)
-      .required(<RiErrorWarningFill />),
+    email: Yup.string().email(<RiErrorWarningFill />).required(<RiErrorWarningFill />),
     number: Yup.string()
       .min(10, <RiErrorWarningFill />)
       .max(10, <RiErrorWarningFill />)
@@ -21,6 +20,7 @@ function Contact(props) {
     companyName: Yup.string().required(<RiErrorWarningFill />),
     feedback: Yup.string().required(<RiErrorWarningFill />),
   });
+
   const initialValues = {
     name: "",
     email: "",
@@ -28,6 +28,7 @@ function Contact(props) {
     companyName: "",
     feedback: "",
   };
+
   const handleSubmit = (data) => {
     const serializeData = {
       data,
@@ -41,58 +42,78 @@ function Contact(props) {
     });
     router.push("/thank-you");
   };
+
   return (
-    <div
-      className="2xl:p-0 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24"
-      id="contact"
-    >
-      <div className="container">
-        <div className="flex flex-col lg:flex-row pt-8 lg:pt-24 max-w-full">
-          <div className="flex flex-col w-full lg:w-[55%]">
-            <h2 className="Gilroy-Bold text-3xl text-white leading-10">
-              awesomeness awaits!
-            </h2>
-            <p className="text-xl text-white Gilroy-light pb-4 lg:pb-0">
-              Connect with our experts.
+    <div className="md:pr-8 py-16 lg:pr-16 bg-secondaryBg">
+      <div className="container mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-secondaryTx mb-8">
+          Got a startup idea & need to get it validated?
+        </h2>
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Left Panel - Founder Info */}
+          <div className="lg:w-2/3  border-r-4 border-primaryTx">
+            <p className="text-lg Gilroy-SemiBold text-center text-secondaryTx mb-4">Connect with our Founder</p>
+            <div className="relative w-60 h-60 mx-auto">
+              <Image
+                width={500}
+                height={600}
+                src={SufiyanImage}
+                alt="Brain Inventory Co-Founder"
+                className="object-cover"
+              />
+            </div>
+            <p className="font-bold text-lg mt-4 text-center">Sufiyan Rao</p>
+            <p className="text-center mt-2">
+              <Link href="mailto:sufiyan@braininventory.com" className="text-secondaryTx Gilroy-SemiBold">
+               Email : sufiyan@braininventory.com
+              </Link>
             </p>
+            <p className="text-center Gilroy-SemiBold ml-[-85px] mt-2">
+              <Link href="tel:+918109561401" className="text-secondaryTx">
+               Phone : +91 81095 61401
+              </Link>
+            </p>
+          </div>
+
+          {/* Right Panel - Contact Form */}
+          <div className="lg:w-2/3">
+            <p className="ext-lg Gilroy-SemiBold  text-secondaryTx mb-4">or you could send us a message, and we will connnect with you!</p>
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
               onSubmit={handleSubmit}
             >
-              <Form
-                id="GTM-MWMG4P2"
-                className="flex flex-col xl:space-y-4 pt-8 space-y-6 lg:w-full"
-              >
-                <div className="flex flex-col xl:space-y-8 pt-8 space-y-6 lg:w-4/5">
-                  <div className="relative flex items-center">
-                    <Field
+              <Form className="space-y-6"  id="GTM-MWMG4P2">
+                <div className="space-y-4">
+                  <div>
+                  <Field
                       type="text"
                       name="name"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-primaryTx w-full placeholder-secondaryTx"
                       placeholder="You should have a name"
                     />
-                    <p className="text-red-500 text-xl absolute right-2">
+                     <p className="text-red-500 text-xl absolute right-2">
                       <ErrorMessage name="name" />
                     </p>
                   </div>
-                  <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
-                    <div className="relative w-1/2">
-                      <Field
+
+                  <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="w-full">
+                    <Field
                         type="text"
                         name="email"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                        className="bg-transparent p-4 focus:outline-none border border-primaryTx w-full placeholder-secondaryTx"
                         placeholder="Obviously, an email"
                       />
                       <p className="text-red-500 text-xl absolute top-4 right-2">
                         <ErrorMessage name="email" />
                       </p>
                     </div>
-                    <div className="relative w-1/2">
-                      <Field
+                    <div className="w-full">
+                    <Field
                         type="text"
                         name="number"
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                        className="bg-transparent p-4 focus:outline-none border border-primaryTx w-full placeholder-secondaryTx"
                         placeholder="Your contact number"
                       />
                       <p className="text-red-500 text-xl absolute top-4 right-2">
@@ -100,92 +121,67 @@ function Contact(props) {
                       </p>
                     </div>
                   </div>
-                  <div className="relative flex items-center">
-                    <Field
+
+                  <div>
+                  <Field
                       type="text"
                       name="companyName"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-primaryTx w-full placeholder-secondaryTx"
                       placeholder="What's your company name?"
                     />
-                    <p className="text-red-500 text-xl absolute right-2">
+                   <p className="text-red-500 text-xl absolute right-2">
                       <ErrorMessage name="companyName" />
                     </p>
                   </div>
-                  <div className="relative flex items-center">
-                    <Field
+
+                  <div>
+                  <Field
                       type="text"
                       name="feedback"
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-primaryTx w-full placeholder-secondaryTx"
                       placeholder="Tell us, Everything!"
                     />
-                    <p className="text-red-500 text-xl absolute right-2">
+                      <p className="text-red-500 text-xl absolute right-2">
                       <ErrorMessage name="feedback" />
                     </p>
                   </div>
-                  <HomeButton type="submit">
-                    <span className="text-base">Submit</span>
-                  </HomeButton>
                 </div>
+
+                <HomeButton type="submit">
+                  <span className="text-base">Submit</span>
+                </HomeButton>
               </Form>
             </Formik>
           </div>
-          <div className="blue-section lg:mt-0 mt-16 w-full lg:w-[50%]">
-            <h3 className="Gilroy-Bold text-3xl text-white leading-10">
-              Got a startup idea & need to get it <br /> validated?
-            </h3>
-            <p className="text-xl text-white Gilroy-light pt-2 pb-4">
-              Let us give you our honest opinion.
-            </p>
-            <div className="relative w-60 h-60">
-              <Image
-                width={500}
-                height={600}
-                src={
-                  "https://braininventory.s3.us-east-2.amazonaws.com/images/sufiyan.png"
-                }
-                className="w-60 h-60"
-                alt="Brain Inventory Co founder"
-              />
-            </div>
-            <p className="Gilroy-Bold text-lg mt-3">Sufiyan Rao I Co founder</p>
-            <Link
-              href="mailto:sufiyan@braininventory.com"
-              className="Gilroy-Bold text-lg pb-1"
-            >
-              Email: sufiyan@braininventory.com
-            </Link>
-            <br />
-            <Link href="tel:+918109561401" className="Gilroy-Bold text-lg">
-              Phone: +91-810-956-1401
-            </Link>
-          </div>
         </div>
-
-        <div className="pt-40">
+      </div>
+      <div className="pt-40 container px-36">
+          <div className="flex justify-between ">
           <h2 className="Gilroy-Bold text-5xl">
-            want to be a part of our team?
+          Want to be a part of our team?
           </h2>
+          <Link className="cursor-pointer" href="/career">
+            <p className="view-opening cursor-pointer ">View openings</p>
+          </Link>
+          </div>
           <p className="pt-4 pb-4 text-xl">
-            If you have got powerful skills, we will pay your bills. Contact our
-            HR at:
+          If you have got powerful skills, we will pay your bills. Contact our HR at:
           </p>
           <div className="md:flex block">
             <a
-              className="btn-career"
+              className="px-2 py-1 bg-primaryTx text-primaryBg mr-4"
               href="mailto:career@braininventory.com?subject=Me&body=Hello!"
             >
-              career@braininventory.com
+              E-mail Us
             </a>
-            <a className="btn-contact" href="tel:+91-810-956-1401">
-              +91-810-956-1401
+            <a className="px-2 py-1 border-2 border-primaryTx text-primaryTx" href="tel:+91-810-956-1401">
+              Call Us
             </a>
           </div>
-          <Link className="cursor-pointer" href="/career">
-            <p className="view-opening cursor-pointer">View openings</p>
-          </Link>
+         
         </div>
-      </div>
     </div>
   );
 }
+
 export default Contact;

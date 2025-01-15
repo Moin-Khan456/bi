@@ -4,10 +4,14 @@ import dynamic from "next/dynamic";
 const ContactForm = dynamic(() =>
   import("../components/common/ContactForm.jsx")
 );
+const KeepInTouch = dynamic(() =>
+  import("../components/common/keepInTouch.js")
+);
 import FaqHire from "../components/common/Faqhire.jsx";
-import LetsKick from "../components/common/LetsKick.js";
+import Faq from "../components/mobilePages/faqs.js";
 import BlogArticle from "../components/common/BlogArticle.jsx";
 import Link from "next/link.js";
+const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Header = dynamic(() => import("../components/header/Header.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const SectionOne = dynamic(() => import("../components/faqs/sectionOne.jsx"));
@@ -320,16 +324,16 @@ Our approach is tailored and flexible. At every stage, from conceptualization to
         <Header />
         <SectionOne setFaqsType={setFaqsType} faqsType={faqsType} />
         <section>
-          {faqsType === "On-Site" && <FaqHire faq={onStaffFaqs} />}
+          {faqsType === "On-Site" && <Faq faq={onStaffFaqs} />}
           {faqsType === "IT Staff Augmentation" && (
-            <FaqHire faq={itStaffAugmentation} />
+            <Faq faq={itStaffAugmentation} />
           )}
           {faqsType === "Development/Technologies/Services" && (
-            <FaqHire faq={devTechServicesFaqs} />
+            <Faq faq={devTechServicesFaqs} />
           )}
           <hr />
           <BlogArticle />
-          <ContactForm />
+          <KeepInTouch/>
           <LetsKick />
           <hr />
           <Footer />

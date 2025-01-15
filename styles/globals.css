@@ -152,9 +152,7 @@ body {
 }
 
 .bg-gradient-1 {
-  background: rgb(99, 2, 221);
-  background: transparent linear-gradient(290deg, #17008d 0%, #000000 100%) 0%
-    0% no-repeat padding-box;
+  background: var(--secondary-text);
 }
 
 .bg-gradient-2 {

@@ -11,7 +11,7 @@ function Faqs({ faq }) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">
-        <h2 className="text-4xl pb-8 Gilroy-Bold">faq&rsquo;s</h2>
+        <h2 className="text-4xl pb-8 Gilroy-Bold">Faq&rsquo;s</h2>
         <div>
           {faq?.map((el) => {
             return (
@@ -30,7 +30,7 @@ function Faqs({ faq }) {
                       className="flex items-center justify-center"
                     >
                       <div className="flex justify-center items-center w-10 h-10 bg-primaryTx rounded-full">
-                        <IoIosArrowDown className="text-white text-lg" />
+                        <IoIosArrowDown className="text-primaryBg text-lg" />
                       </div>
                     </button>
                   </div>

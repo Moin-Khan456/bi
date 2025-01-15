@@ -1,5 +1,3 @@
-import HomeButton from "../buttons/HomeButton";
-import Link from "next/link";
 
 export default function LetsKick({ fromBlog }) {
   return (

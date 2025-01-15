@@ -10,6 +10,7 @@ import {
   ProductSchema,
   WebsiteSchema,
 } from "../components/meta/home-schemas.js";
+import { info } from "../components/home/homeData.js";
 const HomeSectionThree = dynamic(() =>
   import("../components/home/HomeSection-3.js")
 );
@@ -131,7 +132,7 @@ function Home() {
           </section>
           <HomeSectionSix />
           <section className="container flex justify-center">
-            <HomeSectionEight />
+            <HomeSectionEight info={info}/>
           </section>
           <HomeSectionNine />
           <section className="container">

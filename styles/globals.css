@@ -309,6 +309,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-careerImg {
+  background-image: url("../public/assets/career-assets/career-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .rolling-animation {
   animation-name: rolling;
@@ -453,9 +459,13 @@ h4.openings-title {
 }
 
 .bg-development-simply {
-  background: #6302dd38 0% 0% no-repeat padding-box;
-  border: 1px solid var(--primary-text);
+  background: var(--secondary-bg) 0% 0% no-repeat padding-box;
+  border: 4px solid var(--primary-text);
   padding: 2rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-development-simply-culture {
@@ -463,6 +473,7 @@ h4.openings-title {
   padding: 0rem 1rem;
   margin-top: 2rem;
   transition: all 500ms ease 0s;
+  
 }
 
 .bg-development-simply-culture:hover {
@@ -477,6 +488,7 @@ h4.openings-title {
   font-family: "Gilroy-Bold";
   font-size: 1.6rem;
   width: 200px;
+
 }
 
 .bg-development-simply-culture h2 {
@@ -511,12 +523,9 @@ h4.openings-title {
 }
 
 .btn-apply {
-  background: #6302dd 0% 0% no-repeat padding-box;
-  height: 55px;
-  padding: 0px 2rem;
+  background: var(--primary-text) 0% 0% no-repeat padding-box;
   font-size: 16px;
-  margin-left: 1rem;
-  border: 1px solid #6302dd;
+  color: var(--primary-bg);
 }
 
 .carousel .control-dots {
@@ -562,9 +571,9 @@ button.btn-details {
 
 label.experiene-label {
   letter-spacing: 0px;
-  color: #e1cfcf;
+  color: var(--secondary-text);
   opacity: 1;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ul.list-job li {

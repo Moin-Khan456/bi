@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import HomeSectionEight from "../components/home/HomeSection-8.js";
+import { CareerInfo, OpeningJob } from "../components/career/careerData.js";
+import KeepInTouch from "../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../components/header/Header"));
 const Banner = dynamic(() => import("../components/career/banner.js"));
 const WhyWork = dynamic(() => import("../components/contacts/whyWork.js"));
 const Footer = dynamic(() => import("../components/common/Footer"));
-const KeepInTouch = dynamic(() => import("../components/common/CareerContact.jsx"));
+
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const MeetCrew = dynamic(() => import("../components/company/meetCrew.js"));
 const Culture = dynamic(() => import("../components/career/culture.js"));
@@ -48,10 +51,7 @@ Inventory | Best Software Development Company "
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/hr-1.jpg"
         />
-        <meta
-          property="og:url"
-          content="https://braininventory.in/career"
-        />
+        <meta property="og:url" content="https://braininventory.in/career" />
         <link rel="canonical" href="https://braininventory.in/career" />
       </Head>
       {/*<Loader />*/}
@@ -61,19 +61,18 @@ Inventory | Best Software Development Company "
           <Banner />
           <WhyWork />
         </section>
-              <main>
-                <MeetCrew />
-                <section className="container">
-                  <Culture />
-                </section>
-                <InterviewProcess />
-                <section className="container">
-                  <Opening />
-                  <KeepInTouch />
-                  <LocateUs />
-                  <Footer />
-                </section>
-              </main>
+        <main>
+          <section className="container">
+            <Culture />
+          </section>
+          <HomeSectionEight info={CareerInfo} />
+          <section className="container">
+            <Opening OpeningJob={OpeningJob} />
+            <KeepInTouch/>
+            <LocateUs />
+            <Footer />
+          </section>
+        </main>
       </div>
     </>
   );

@@ -1,27 +1,41 @@
+import Image from "next/image";
 import React from "react";
 
 const Card = (props) => {
+  const isVideo = typeof props.image === "string" && props.image.endsWith(".mp4");
+
   return (
-    <a href={props.link}>
-      <div
-        className={`card my-4 relative w-[80vw] md:w-[380px] lg:w-[500px] xl:w-[660px] xs:h-80 ${
-          props.number % 2 !== 0 ? "lg:pr-8" : "lg:pl-8"
-        }`}
-      >
-        <video
-          className="rounded-3xl"
-          muted
-          loop
-          autoPlay={true}
-          controls={false}
-          poster={props.poster}
-          preload="metadata"
-        >
-          <source src={props.image} type="video/mp4" />
-        </video>
-        <div className="card-body">
-          <h3 className="card-title">{props.title}</h3>
-          <h4 className="card-subtitle">{props.subtitle}</h4>
+    <a href={props.link} className="block">
+      <div className="relative group">
+        {/* Conditionally render video or image based on file type */}
+        {isVideo ? (
+          <video
+            className="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 w-full"
+            muted
+            loop
+            autoPlay
+            controls={false}
+            poster={props.poster}
+          >
+            <source src={props.image} type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            src={props.image}
+            alt={props.title}
+            className="rounded-lg shadow-lg transition-transform transform group-hover:scale-105"
+            width={500}
+            height={300}
+            layout="responsive" // Ensures proper scaling for responsive designs
+          />
+        )}
+
+        {/* Card Content */}
+        <div className="mt-6">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold Gilroy-Bold">
+            {props.title}
+          </h3>
+          <p className="text-gray-500 text-base sm:text-lg">{props.subtitle}</p>
         </div>
       </div>
     </a>

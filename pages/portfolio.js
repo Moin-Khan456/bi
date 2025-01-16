@@ -6,15 +6,15 @@ const Footer = dynamic(() => import("../components/common/Footer"));
 const ProjectSectionOne = dynamic(() =>
   import("../components/portfolio/projectSectionOne.jsx")
 );
-const ProjectSectionTwo = dynamic(() =>
-  import("../components/portfolio/projectSectionTwo.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../components/common/keepInTouch.js")
 );
 const ProjectCards = dynamic(() =>
   import("../components/portfolio/projectCard.jsx")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const ContactForm = dynamic(() => import("../components/common/ContactForm"));
-const LocateUs = dynamic(() => import("../components/portfolio/LocateUs"));
+const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
 function Portfolio(props) {
   return (
@@ -217,10 +217,11 @@ function Portfolio(props) {
       <div className="container  pt-12">
         <ProjectSectionOne />
         <ProjectCards />
-        <ProjectSectionTwo />
-        <BlogArticle />
-        <ContactForm className="pl-24" />
-        <LocateUs />
+        <hr className="border-2 border-primaryTx my-10"/>
+        <BlogArticle />        
+        <KeepInTouch/>
+          <LocateUs/>
+          <LetsKick/>
         <Footer />
       </div>
     </>

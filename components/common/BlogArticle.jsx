@@ -72,7 +72,7 @@ export default function BlogArticle() {
                 alt={`Image ${index}`}
                 width={400}
                 height={250}
-                className="w-full h-auto object-cover"
+                className="w-full h-[230px] object-content"
               />
             </div>
           ))}

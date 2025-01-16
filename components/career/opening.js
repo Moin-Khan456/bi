@@ -56,7 +56,7 @@ function Opening({OpeningJob}) {
                 <div
                   key={el.JobTitle}
                   id={el.JobTitle}
-                  className="collapse bg-secondaryBg mb-6 py-3 border-4 border-primaryTx"
+                  className="collapse bg-secondaryBg mb-6 py-3 border-2 border-primaryTx"
                 >
                   <div className="collapse-title text-xl font-medium">
                     <div className="md:flex block justify-between items-center">

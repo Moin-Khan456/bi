@@ -459,10 +459,10 @@ h4.openings-title {
   background: var(--secondary-bg) 0% 0% no-repeat padding-box;
   border: 4px solid var(--primary-text);
   padding: 2rem 1rem;
-
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto; */
 }
 
 .bg-development-simply-culture {
@@ -495,6 +495,14 @@ h4.openings-title {
   line-height: 40px;
   width: 200px;
   height: 130px;
+}
+.bg-development-simply-culture .heading {
+  line-height: 5px;
+  font-family: "Gilroy-Bold";
+  font-size: 2rem;
+  line-height: 40px;
+  width: auto;
+  height: 80px;
 }
 
 .bg-development-simply-culture p {
@@ -1938,6 +1946,11 @@ ul.list-modal {
   height: 100vh;
   background-size: cover;
 }
+.bg-it-stuff{
+  background-image: url("../public/assets/it-stuff-assets/itstaff_bi.webp");
+  height: 100vh;
+  background-size: cover;
+}
 
 .bg-hire-image {
   background-image: url("https://braininventory.s3.us-east-2.amazonaws.com/images/hireStaff.webp");
@@ -2273,8 +2286,8 @@ ol li {
 }
 
 .bg-customer {
-  background: #0f0228 0% 0% no-repeat padding-box;
-  border: 1px solid #7600eb;
+  background: var(--primary-text) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--primary-text);
   border-radius: 30px;
 }
 

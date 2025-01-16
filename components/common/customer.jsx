@@ -28,7 +28,7 @@ export default function Customer() {
         <section className="lg:bottom-24 relative lg:px-32">
           <section className="grid lg:grid-cols-2 grid-cols-1 gap-3 bg-customer">
             <section className="p-8 pl-11 flex items-center">
-              <h2 className="Gilroy-Bold text-3xl leading-10">
+              <h2 className="Gilroy-Bold text-3xl leading-10 text-primaryBg">
                 100+ Satisfied Customers, including Fortune Organizations, Have
                 Placed Their Confidence in Us
               </h2>

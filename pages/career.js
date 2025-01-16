@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import HomeSectionEight from "../components/home/HomeSection-8.js";
-import { CareerInfo, OpeningJob } from "../components/career/careerData.js";
+import { careerCategories, CareerHeroSection, CareerInfo, OpeningJob, whyWorkData, whyWorkDataCareer } from "../components/career/careerData.js";
 import KeepInTouch from "../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../components/header/Header"));
 const Banner = dynamic(() => import("../components/career/banner.js"));
@@ -58,12 +58,12 @@ Inventory | Best Software Development Company "
       <div className="relative  ">
         <Header />
         <section className="container">
-          <Banner />
-          <WhyWork />
+          <Banner info={CareerHeroSection}/>
+          <WhyWork info={whyWorkDataCareer} />
         </section>
         <main>
           <section className="container">
-            <Culture />
+            <Culture categories={careerCategories} />
           </section>
           <HomeSectionEight info={CareerInfo} />
           <section className="container">

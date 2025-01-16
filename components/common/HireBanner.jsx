@@ -82,7 +82,7 @@ export default function HireBanner({
                   </span>
                 </>
               ) : unique === "brain inventory" ? (
-                <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold">
+                <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold ">
                   <br />
                   Brain Inventory
                 </span>

@@ -440,9 +440,8 @@ body {
 
 p.view-opening {
   text-decoration: underline;
-
   letter-spacing: 0px;
-  color: #ff9100;
+  color: var(--primary-text);
   font-size: 1.4rem;
   padding-top: 1rem;
 }
@@ -519,6 +518,7 @@ h4.openings-title {
   background: #6302dd38 0% 0% no-repeat padding-box;
   border: 1px solid #6302dd;
 }
+
 
 .btn-apply {
   background: var(--primary-text) 0% 0% no-repeat padding-box;
@@ -2936,7 +2936,7 @@ a.btn-filled.btn {
 .ant-pagination-item-ellipsis,
 .anticon-left svg,
 .anticon-right svg {
-  color: white !important;
+  color: var(--primary-text) !important;
 }
 
 .anticon-left svg,
@@ -2954,8 +2954,8 @@ a.btn-filled.btn {
 }
 
 .ant-pagination-item-active {
-  background-color: black !important;
-  color: white !important;
+  background-color: var(--secondary-bg) !important;
+  color: var(--primary-bg) !important;
   border-radius: 10rem !important;
 }
 

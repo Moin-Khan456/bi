@@ -161,7 +161,7 @@ function Contact() {
           Want to be a part of our team?
           </h2>
           <Link className="cursor-pointer" href="/career">
-            <p className="view-opening cursor-pointer ">View openings</p>
+            <p className="view-opening cursor-pointer ">View Job Openings</p>
           </Link>
           </div>
           <p className="pt-4 pb-4 text-xl">

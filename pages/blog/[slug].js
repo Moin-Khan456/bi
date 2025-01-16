@@ -60,9 +60,9 @@ export default function Home({
         <Header />
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
-            <h1 className="lg:text-5xl text-3xl pt-12 font-bold leading-12">
-              Welcome to the Brain Inventory Blogs: Insights, Trends, and
-              Innovations Development
+            <h1 className="lg:text-4xl text-2xl pt-12 font-bold sm:leading-12">
+              Mindful Blogs | Resource Augmentation | <br/> Web and Mobile Software
+              Development
             </h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3 hidden lg:block">
@@ -71,7 +71,6 @@ export default function Home({
               <div className="pb-2 hidden lg:block">
                 <PopularBlogs data={data} />
               </div>
-              <hr className="hidden lg:block" />
               <Blogs blogs={blogs} pageNumber={currentPage} />
               <Pagination
                 itemsPerPage={10}

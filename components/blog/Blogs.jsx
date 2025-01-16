@@ -13,47 +13,54 @@ const Blogs = ({ blogs }) => {
   }, [blogData, blogs]);
   return (
     <div className="container">
+      <h2 className="bg-primaryBg text-xl Gilroy-Bold mt-8">All Blogs</h2>
       {blogData === null ? (
         <Skeleton />
       ) : (
         <>
           {blogData?.map((post, index) => (
             <Link href={`/posts/${post.slug}/${post.id}`} key={index}>
-              <div className="lg:w-[75%] flex flex-col lg:flex-row my-8 border-b-2 border-slate-600 ">
-                <div className="relative">
-                  <div className="overlay">
-                    <Image
-                      src={post["_embedded"]["wp:featuredmedia"][0].source_url}
-                      fetchPriority="high"
-                      loading="lazy"
-                      width={300}
-                      height={300}
-                      alt={
-                        post["_embedded"]["wp:featuredmedia"][0].alt_text ??
-                        "Brain Inventory exclusive content"
-                      }
-                      className="w-full max-w-[450px] mx-0 my-0 lg:my-2 rounded-md "
-                    />
-                  </div>
-                  <div className="absolute bottom-3 left-4">
-                    <HomeButton>
-                      <span className="text-sm">Read More</span>
-                    </HomeButton>
-                  </div>
+              <div className="flex flex-col sm:flex-row border-2 border-primaryTx  overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-primaryBg mt-4">
+                {/* Image Section */}
+                <div className="h-48 sm:h-auto sm:w-2/4 sm:p-4 ">
+                  <Image
+                    src={post["_embedded"]["wp:featuredmedia"][0].source_url}
+                    fetchPriority="high"
+                    loading="lazy"
+                    width={300}
+                    height={300}
+                    alt={
+                      post["_embedded"]["wp:featuredmedia"][0].alt_text ??
+                      "Brain Inventory exclusive content"
+                    }
+                    className="w-full h-full sm:object-contain sm:rounded-xl"
+                  />
                 </div>
-                <div className="lg:w-1/2 lg:pl-2">
-                  <h3 className="text-2xl font-bold">{post.title.rendered}</h3>
+
+                {/* Content Section */}
+                <div className=" p-6 sm:w-2/3">
+                  {/* Date */}
+                  <p className=" flex flex-col justify-between text-sm text-secondaryTx">{post.date.split("T")[0]}</p>
+
+                  {/* Title */}
+                  <h3 className="flex flex-col justify-between text-xl font-bold text-secondaryTx mt-2">
+                  {post.title.rendered}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="flex flex-col justify-between text-sm mt-4 line-clamp-3">
                   <div
-                    className="text-sm mt-2 text-justify"
                     dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
                   />
-                  <span className="flex mt-2 mb-2">
-                    <label>
-                      <small className="text-sm text-white text-opacity-50">
-                        {blogDate(post.date)}
-                      </small>
-                    </label>
-                  </span>
+                  </p>
+
+                  {/* Read More Button */}
+                  <Link
+                    href={`/posts/${post.slug}/${post.id}`}
+                    className="inline-block mt-6 text-sm font-bold text-primaryBg bg-primaryTx px-4 py-2 transition-colors duration-200"
+                  >
+                    Read More
+                  </Link>
                 </div>
               </div>
             </Link>

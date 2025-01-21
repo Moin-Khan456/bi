@@ -23,6 +23,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -198,7 +199,7 @@ function ShopifyWebDevelopment(props) {
             reasons={chooseBI}
             alt="TypeScript Development Company"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

@@ -28,6 +28,8 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 
 function NodeJsDevelopment(props) {
   const content =
@@ -271,9 +273,9 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
               alt="Node JS Web Development Services"
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch />
             <LocateUs />
             <hr />
             <Footer />

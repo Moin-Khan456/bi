@@ -19,9 +19,9 @@ export default function App({
               {titleArray.map((ele, index) => (
                 <span key={index}>
                   {ele.includes("Brain") ? (
-                    <span className="text-[#7600EB]">{ele}</span>
+                    <span className="text-primaryTx">{ele}</span>
                   ) : ele.includes("Salesforce Development") ? (
-                    <span className="text-[#7600EB]">{ele}</span>
+                    <span className="text-primaryTx">{ele}</span>
                   ) : (
                     <span>{ele}</span>
                   )}

@@ -4,7 +4,7 @@ const Index = ({ para1, para2, para3, title, image }) => {
   return (
     <main className="container px-4 lg:px-24">
       <h3 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
-        Why you may need a <span className="text-[#7600EB]"> {title}</span>{" "}
+        Why you may need a <span className="text-primaryTx"> {title}</span>{" "}
         solution?
       </h3>
       <section className="grid xs:grid-rows-1 lg:grid-cols-2 gap-x-2 pt-8 w-full">

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import SectionOne from "../../components/project/projectRtc/SectionOne.jsx";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 
 const SectionTwo = dynamic(() =>
   import("../../components/project/projectRtc/sectionTwo.jsx")
@@ -37,10 +38,7 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+import LocateUs from "../../components/common/locateUs.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -254,7 +252,7 @@ const Fatoura = () => {
             height={500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6533.png"
             alt="Custom Software Development Company | Application Development Company"
-            className="w-[34rem]"
+            className="w-[34rem] filter invert"
           />
         </div>
         <div className="relative w-full h-screen lg:h-[78vh] overflow-y-scroll no-scrollbar">
@@ -263,7 +261,7 @@ const Fatoura = () => {
             height={1500}
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6535.png"
             alt="Custom Software Development Company | Application Development Company"
-            className="w-full"
+            className="w-full filter invert"
           />
         </div>
       </div>
@@ -273,7 +271,7 @@ const Fatoura = () => {
           height={500}
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/IMG_0984.png"
           alt="Custom Software Development Company | Application Development Company"
-          className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%]"
+          className="rounded-3xl w-full px-4 lg:w-[50%] py-[5%] "
         />
       </div>
       <ChallengeSection challenge={challenge} solution={solution} />
@@ -301,7 +299,7 @@ const Fatoura = () => {
       />
       <ProjectSectionTwo />
       <BlogArticle />
-      <ContactForm />
+      <KeepInTouch />
       <LocateUs />
       <Slogan />
       <Footer />

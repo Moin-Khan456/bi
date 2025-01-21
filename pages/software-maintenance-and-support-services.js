@@ -7,6 +7,8 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import LetsKick from "../components/common/LetsKick.js";
 import FaqHire from "../components/common/Faqhire.jsx";
 import { ChooseUs } from "../components/support/chooseUs.jsx";
+import Faqs from "../components/mobilePages/faqs.js";
+import KeepInTouch from "../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../components/header/Header.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -171,11 +173,11 @@ function Support() {
 
           <Link href="#talk">
             <button
-              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-gradient-to-r from-[#000076] to-[#7600EB] rounded-full   px-8
+              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-primaryTx text-primaryBg rounded-full   px-8
                              py-4 my-12"
             >
               START PROJECT
-              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full" />
             </button>
           </Link>
 
@@ -217,10 +219,11 @@ function Support() {
             twoLink={null}
             alt="Our Work"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
-          <ContactForm />
+                      <KeepInTouch />
+          
           <LetsKick />
           <hr />
           <Footer />

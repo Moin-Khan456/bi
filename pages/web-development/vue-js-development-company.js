@@ -28,6 +28,8 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 
 function VueJsDevelopment(props) {
   const content =
@@ -103,7 +105,7 @@ function VueJsDevelopment(props) {
       title: "What kinds of applications can be built with Vuejs? ",
       description:
         "You can build single-page applications, web interfaces, chat applications, and social networking applications using Vue.js.",
-    }
+    },
   ];
 
   const chooseBiSubhead =
@@ -138,45 +140,51 @@ function VueJsDevelopment(props) {
   const jsonLdScript = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "What are the benefits of Vue.js application development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Some benefits associated with Vue.js application development include its easy-to-use nature–it only requires basic knowledge of HTML, CSS, etc. Its virtual DOM feature, and component-based architecture."
-      }
-    },{
-      "@type": "Question",
-      "name": "How long does it take to develop a Vue.js app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the project’s complexity and requirements. However, the average time is 2-3 months to develop a basic Vue.js app."
-      }
-    },{
-      "@type": "Question",
-      "name": "Does VueJS allow you to build mobile-friendly websites?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. VueJS allows you to build mobile-friendly websites since it is a front-end framework that is used to create responsive designs, adaptable to different screen sizes."
-      }
-    },{
-      "@type": "Question",
-      "name": "What should you consider before choosing a Vue.js development company?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `You must check their previously developed projects if they are up and running successfully. Also, check for client reviews and testimonials to see if they deliver on time and meet their client's expectations. 
-        We are a leading Vue JS development company whom you can trust with your upcoming projects, contact us to discuss our past projects and experience.`
-      }
-    },{
-      "@type": "Question",
-      "name": "What kinds of applications can be built with Vuejs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can build single-page applications, web interfaces, chat applications, and social networking applications using Vue.js."
-      }
-    }]
-  }
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript)); 
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the benefits of Vue.js application development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Some benefits associated with Vue.js application development include its easy-to-use nature–it only requires basic knowledge of HTML, CSS, etc. Its virtual DOM feature, and component-based architecture.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to develop a Vue.js app?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "It depends on the project’s complexity and requirements. However, the average time is 2-3 months to develop a basic Vue.js app.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does VueJS allow you to build mobile-friendly websites?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. VueJS allows you to build mobile-friendly websites since it is a front-end framework that is used to create responsive designs, adaptable to different screen sizes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What should you consider before choosing a Vue.js development company?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `You must check their previously developed projects if they are up and running successfully. Also, check for client reviews and testimonials to see if they deliver on time and meet their client's expectations. 
+        We are a leading Vue JS development company whom you can trust with your upcoming projects, contact us to discuss our past projects and experience.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What kinds of applications can be built with Vuejs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can build single-page applications, web interfaces, chat applications, and social networking applications using Vue.js.",
+        },
+      },
+    ],
+  };
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -213,8 +221,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
           as="image"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       {/*<Loader />*/}
@@ -246,9 +254,9 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
             alt="Vue.js Application Development Company"
           />{" "}
           <Industries />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <BlogArticle />
-          <ContactForm />
+          <KeepInTouch />
           <LocateUs />
           <hr />
           <Footer />

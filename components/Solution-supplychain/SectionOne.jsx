@@ -14,7 +14,7 @@ export default function HireBanner() {
             <h2 className="text-2xl lg:text-[2rem] MonumentBold uppercase leading-[3rem] mt-4 lg:!w-[1150px]">
               Unleashing Efficiency, Driving Excellence with Smart Solutions!
             </h2>
-            <h2 className="text-md font-Satoshi text-white opacity-50 leading-7 py-12 lg:w-[85%] lg:text-justify">
+            <h2 className="text-md font-Satoshi text-secondaryTx opacity-50 leading-7 py-12 lg:w-[85%] lg:text-justify">
               Opt for{" "}
               <Link href="/" className="text-[#2186ff]">
                 Brain Inventory&apos;s
@@ -27,9 +27,9 @@ export default function HireBanner() {
             </h2>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </section>

@@ -9,7 +9,7 @@ const SectionThree = () => {
         curve is crucial. Here, we present some of the latest industry insights
         sourced from the reputable data aggregator, Statista.
       </p>
-      <div className="bg-[#121212] p-8">
+      <div className="bg-secondaryBg p-8">
         <h2 className="text-3xl Gilroy-Bold py-4">
           The Current Landscape of Social Media
         </h2>
@@ -40,7 +40,7 @@ const SectionThree = () => {
         </ul>
       </div>
 
-      <div className="bg-[#121212] p-8 my-6">
+      <div className="bg-secondaryBg p-8 my-6">
         <h2 className="text-3xl Gilroy-Bold py-4">
           Impact of Social Media on Business
         </h2>

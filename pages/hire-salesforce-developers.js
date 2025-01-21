@@ -17,6 +17,7 @@ import ChooseBraininventory from "../components/common/CommonChooseBraininventor
 import BlogArticle from "../components/common/BlogArticle";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireSalesforceDeveloper(props) {
   const content =
@@ -284,7 +285,7 @@ function HireSalesforceDeveloper(props) {
             {/* <Engaged /> */}
             {/* <HireSteps type="Android" /> */}
             {/* <Clients tech="Android" /> */}
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

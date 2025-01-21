@@ -15,8 +15,8 @@ const Index = ({
   return (
     <div className="rounded-md my-8 py-10 lg:space-x-6 relative ">
       <div className=" py-32 lg:pb-[22rem]">
-        <Marquee duration={fast} reverse={true} className="mb-6">
-          <div className="stroke-text-seven lg:text-8xl uppercase text-5xl flex">
+        <Marquee duration={fast} reverse={true} className="mb-6 ">
+          <div className="stroke-text-seven lg:text-8xl text-primaryTx uppercase text-5xl flex">
             {[1, 2].map((_, index) => (
               <h2 key={index}>{pageCategory}&nbsp;</h2>
             ))}
@@ -64,20 +64,19 @@ const Index = ({
           ></Image>
         </div>
         <div>
-          <h2 className="text-center font-Brinattan lg:text-6xl text-4xl pt-6 lg:py-10">
+          <h2 className="text-center text-primaryTx font-Brinattan lg:text-6xl text-4xl pt-6 lg:py-10">
             Sharing Your Vision
           </h2>
-          <p className="text-center lg:w-[60%] m-auto text-lg text-white">
+          <p className="text-center lg:w-[60%] m-auto text-lg text-secondaryTx">
             We love create experiences that enable people to connect, express
             themselves and establish meaningful relationships
           </p>
           <Link href="#talk">
             <button
-              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-gradient-to-r from-[#000076] to-[#7600EB] rounded-full   px-8
-                             py-4 my-12"
+              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-primaryBg rounded-full border border-primaryTx  px-8 py-4 my-12"
             >
               START PROJECT
-              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full" />
             </button>
           </Link>
         </div>

@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireNextJsDeveloper() {
   const content =
@@ -314,7 +315,7 @@ function HireNextJsDeveloper() {
         <Engaged />
         <HireSteps type="Next Js" />
         <Clients tech="Next Js" />
-        <FaqHire faq={faqdetails} />
+        <Faqs faq={faqdetails} />
         <hr />
         {/* <BlogArticle data={data} /> */}
         <KeepInTouch />

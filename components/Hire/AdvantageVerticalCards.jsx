@@ -10,7 +10,7 @@ export default function Advantage({
     <div className="container px-4 lg:px-12">
       <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit lg:pl-10">
         Advantages of Hiring a {subhead1 ? subhead1 : null}{" "}
-        <span className="text-[#7600EB]">{title}</span>
+        <span className="text-primaryTx">{title}</span>
       </h3>
       <p className="Gilroy-Semibold font-semibold leading-7 tracking-wider text-lg p-4 lg:p-10 opacity-60 lg:pt-8">
         {subhead}
@@ -19,7 +19,7 @@ export default function Advantage({
         {reasons?.map((ele, index) => (
           <div
             key={index}
-            className="bg-customer px-6 py-8 mx-8 text-start text-slate-400 my-2 lg:w-full  leading-8 Gilroy-Semibold tracking-wider"
+            className="bg-customer px-6 py-8 mx-8 text-start text-primaryBg my-2 lg:w-full  leading-8 Gilroy-Light tracking-wider"
           >
             {ele}
           </div>

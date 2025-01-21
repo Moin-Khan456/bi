@@ -5,7 +5,7 @@ const Index = ({ carouselImages }) => {
   return (
     <div className="pt-12 pb-0 my-8 relative flex flex-col justify-center">
       <div className="flex items-center">
-        <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12" />
+        <div className="w-12 lg:w-32 h-2 bg-secondaryTx mr-4 lg:mr-12" />
         <h3 className="text-3xl lg:text-5xl font-bold Gilroy-SemiBold">
           Dark UI/
         </h3>

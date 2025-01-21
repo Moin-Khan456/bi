@@ -22,7 +22,7 @@ const Index = ({}) => {
           height={1500}
           className="lg:w-[70%] mx-auto"
         />
-        <div className="absolute top-96 inset-0 bg-gradient-to-b from-transparent to-black opacity-70 h-96 w-full" />
+        <div className="absolute top-96 inset-0  opacity-70 h-96 w-full" />
       </div>
       <div className="px-4 lg:px-48">
         <h3 className="text-4xl lg:text-5xl font-bold text-center">

@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -424,10 +426,10 @@ function Meeting(props) {
         twoLink={null}
         alt="Our Work"
       />
-      <FaqHire faq={faqdetails} />
+      <Faqs faq={faqdetails} />
       <hr />
       <BlogArticle />
-      <ContactForm />
+      <KeepInTouch />
       <LetsKick />
       <hr />
       <Footer />

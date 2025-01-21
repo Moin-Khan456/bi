@@ -16,6 +16,7 @@ import HireBanner from "../components/common/HireBanner";
 import ChooseBraininventory from "../components/common/CommonChooseBraininventory";
 import BlogArticle from "../components/common/BlogArticle";
 import Link from "next/link.js";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireIconicDeveloper(props) {
   const content =
@@ -251,7 +252,7 @@ function HireIconicDeveloper(props) {
             alt="Ionic development company"
           />
 
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

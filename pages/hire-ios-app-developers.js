@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireIsoAppDeveloper(props) {
   const content = (
@@ -308,7 +309,7 @@ function HireIsoAppDeveloper(props) {
           <Engaged />
           <HireSteps type="iOS" />
           <Clients tech="iOS" />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -85,7 +87,7 @@ function Blockchain(props) {
       text: "Custom Blockchain Development",
       desc: (
         <>
-         {` At Brain Inventory, we believe in the power of technology to transform
+          {` At Brain Inventory, we believe in the power of technology to transform
           businesses. That's why we offer custom blockchain development services
           - designed to put`}{" "}
           <Link href="/portfolio" className="text-[#2186ff]">
@@ -333,7 +335,7 @@ function Blockchain(props) {
       <main>
         <Header />
         <section>
-          <div className="bg-no-repeat bg-left brightness-[1.35] bg-[url('/background-image2.png')]">
+          <div className="bg-no-repeat bg-center brightness-[1.35] bg-[url('/background-image2.png')]">
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
@@ -407,10 +409,10 @@ function Blockchain(props) {
             twoLink={null}
             alt="Our Work"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
-          <ContactForm />
+          <KeepInTouch />
           <LetsKick />
           <hr />
           <Footer />

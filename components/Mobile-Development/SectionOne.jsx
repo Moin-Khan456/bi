@@ -57,7 +57,7 @@ export default function HireBanner({
             </h2>
           </section>
 
-          <section className="bg-banner-sot rounded-xl p-6 lg:mt-20 mb-10 lg:m-0 m-6">
+          <section className="bg-banner-sot rounded-xl p-6 lg:mt-20 mb-10 lg:m-0 m-6 text-primaryBg">
             <p className="Gilroy-Light text-lg">{content}</p>
           </section>
           {/* {!card && (

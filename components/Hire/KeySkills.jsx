@@ -13,13 +13,13 @@ export default function KeySkill({
     <main>
       <section className="container padding-left-all-section-1 lg:pb-28">
         <section className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
-          <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
+          <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10 text-primaryBg">
             {heading
               ? heading.split("%").map((head, index) => {
                   return (
                     <>
                       {index === 0 ? (
-                        <span className="!text-[#7600EB]">{head}</span>
+                        <span className="!text-primaryBg">{head}</span>
                       ) : (
                         head
                       )}
@@ -60,9 +60,9 @@ export default function KeySkill({
                     className="flex gap-4 h-auto font-light opacity-60  items-start"
                   >
                     <span>
-                      <IoMdArrowForward className="text-xl mt-1" />
+                      <IoMdArrowForward className="text-xl mt-1 text-primaryBg" />
                     </span>
-                    <span className="col-span-4 ">{ele}</span>
+                    <span className="col-span-4 text-primaryBg ">{ele}</span>
                   </li>
                 ))}
               </ul>

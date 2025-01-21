@@ -11,6 +11,7 @@ import {
   WebsiteSchema,
 } from "../components/meta/home-schemas.js";
 import { info } from "../components/home/homeData.js";
+import LocateUs from "../components/common/locateUs.js";
 const HomeSectionThree = dynamic(() =>
   import("../components/home/HomeSection-3.js")
 );
@@ -38,7 +39,6 @@ const HomeSectionEleven = dynamic(() =>
 const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
-const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 

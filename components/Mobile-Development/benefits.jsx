@@ -7,11 +7,11 @@ export default function KeySkill({ type, subhead, benefitsList }) {
         <div className="p-8 advantage-para lg:m-0 my-6">
           <h3 className="2xl:text-5xl xl:text-4xl text-3xl Gilroy-Bold mb-8 leading-10">
             Benefits of{" "}
-            <span className="text-[#7600EB]">{type} Development</span>
+            <span className="text-primaryTx">{type} Development</span>
           </h3>
-          <p className="Gilroy-Light text-xs text-white w-full lg:w-full text-justify tracking-wide leading-8">
+          <h3 className="xl:text-xl text-lg opacity-60 text-secondaryTx Gilroy-Light mb-8 leading-10">
             {subhead}
-          </p>
+          </h3>
           <div
             className={`grid grid-cols-1 lg:grid-cols-${
               benefitsList.length > 4 ? 4 : benefitsList.length

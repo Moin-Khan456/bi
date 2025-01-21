@@ -14,7 +14,7 @@ export default function AdvantageCustom({ title, reasons, subhead }) {
         {reasons?.map((ele, index) => (
           <div className="container flex flex-col items-end" key={index}>
             <div className="bg-customer p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full transform transition-transform hover:scale-[1.02]">
-              <h5 className="text-2xl font-bold text-shadow lg:w-[15%]">
+              <h5 className="text-2xl font-bold text-shadow lg:w-[15%] text-primaryBg">
                 {ele?.head}
               </h5>
               <p className="Gilroy-Light text-sm tracking-wide leading-8 pb-6 lg:w-[70%]">

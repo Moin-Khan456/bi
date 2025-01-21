@@ -9,7 +9,7 @@ const Index = ({ para1, para2, para3, type }) => {
     <main className="container px-4 lg:px-20 lg:pb-20">
       <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit">
         Why you may need a{" "}
-        <span className="text-[#7600EB]"> {type} development</span> solution?
+        <span className="text-primaryTx"> {type} development</span> solution?
       </h3>
       <section className="lg:mb-0 mb-6 flex flex-col lg:flex-row pt-8">
         {!(type === "Custom App") ? (
@@ -43,17 +43,17 @@ const Index = ({ para1, para2, para3, type }) => {
               </>
             )}
           </p>
-          <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 ml-4 pr-20">
+          <section className="bg-primaryTx w-fit px-5 py-3 rounded-2xl mt-4 ml-4 pr-20">
             <button
               className="flex flex-col justify-center Gilroy"
               onClick={() => {
                 router.push("/contact")
               }}
             >
-              <span className="text-xs font-thin text-slate-400 pb-1">
+              <span className="text-xs font-thin text-primaryBg pb-1">
                 Got a project in mind?
               </span>
-              <span className="flex items-center justify-between w-full">
+              <span className="flex items-center text-primaryBg justify-between w-full">
                 Contact Us! <BsArrowRight />
               </span>
             </button>

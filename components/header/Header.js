@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TagManager from "react-gtm-module";
 import { MdOutlineUnfoldMore, MdUnfoldLess } from "react-icons/md";
-import HeaderLogo from "../../public/assets/header-assets/logo.webp"
+import HeaderLogo from "../../public/assets/header-assets/logo.webp";
+
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [load, setLoad] = useState(false);
   const [blockName, setBlockName] = useState("companyChildren");
+
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-MWMG4P2" });
   }, [blockName]);
@@ -21,25 +23,37 @@ const Header = () => {
     setNavOpen(!navOpen);
   };
 
+  const navbarRef = useRef(null);
+
   useEffect(() => {
     let prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
+    const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if (window.pageYOffset > 50) {
+      const navbar = navbarRef.current;
+      if (navbar && window.pageYOffset > 50) {
         if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").classList.remove("scrollUp");
+          navbar.classList.add("scrollDown");
+          navbar.classList.remove("scrollUp"); // Show the navbar
         } else {
-          document.getElementById("navbar").classList.add("scrollUp");
+          navbar.classList.add("scrollUp");
+          navbar.classList.remove("scrollDown"); // Hide the navbar
         }
         prevScrollpos = currentScrollPos;
       }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
       {load && (
-        <div className="fixed z-50  w-screen h-screen bg-black">
+        <div className="fixed z-50 w-screen h-screen bg-black">
           <video
             className="absolute top-0 left-0 w-full h-full object-contain scale-50 z-0 xs:rounded-b-3xl lg:rounded-r-3xl mobileContactVideo"
             muted
@@ -57,7 +71,8 @@ const Header = () => {
       <nav>
         <div
           id="navbar"
-          className="fixed top-0 flex justify-between items-center w-full py-3 px-4 lg:px-8 z-50"
+          ref={navbarRef}
+          className="fixed top-0 flex justify-between items-center w-full py-3 px-4 lg:px-8 z-50 transition-transform duration-300"
         >
           <Link href="/" className="cursor-pointer">
             <span className="text-4xl Gilroy-Bold z-30">
@@ -77,21 +92,21 @@ const Header = () => {
             </span>
           </Link>
           {navOpen ? (
-            <div className="dropdown lg:block  dropdown-hover">
+            <div className="dropdown lg:block dropdown-hover">
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className="flex justify-between align-middle items-center bg-primaryTx h-11 z-[100]">
-                  <p className="px-4 text-xs Gilroy-Light lowercase lg:block hidden">
+                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1">
+                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none  bg-primaryTx">
                     <Link href="/contact#contact">request A Quote</Link>
                   </p>
                   <span
                     onClick={() => {
                       handlesidebar();
                     }}
-                    className="bg-base-blue-1 items-center h-11 px-4 text-white"
+                    className="bg-primaryTx mx-2 items-center h-11 px-4 text-primaryBg"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 relative top-3"
+                      className="h-6 w-6 relative top-3 "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -108,17 +123,17 @@ const Header = () => {
               </label>
             </div>
           ) : (
-            <div className="dropdown lg:block  dropdown-hover">
+            <div className="dropdown lg:block dropdown-hover">
               <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className="flex  justify-between align-middle items-center h-11 z-[100] bg-primaryTx ">
-                  <p className="px-4 text-xs Gilroy-Light lowercase mobile-none">
+                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1 ">
+                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none  bg-primaryTx">
                     <Link href="/contact#contact">request A Quote</Link>
                   </p>
                   <span
                     onClick={() => {
                       handlesidebar();
                     }}
-                    className="bg-primaryTx mx-2 items-center h-11 px-4 text-white"
+                    className="bg-primaryTx mx-2 items-center h-11 px-4 text-primaryBg"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -280,6 +295,8 @@ const CompanyChildren = () => {
     </div>
   );
 };
+
+export default Header;
 
 const ServicesChildren = () => {
   const webLinks = [
@@ -547,7 +564,7 @@ const ServicesChildren = () => {
           } scrollbar-tiny h-[65vh] mr-3`}
         >
           {webLinks?.map((ele) => (
-            <li className="text-white text-opacity-50" key={ele._id}>
+            <li className="text-secondaryTx text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -556,14 +573,14 @@ const ServicesChildren = () => {
         </ul>
         {webLinks.length > 12 && !showMoreWebLinks ? (
           <button
-            className="flex items-center"
+            className="flex text-sm items-center bg-primaryTx text-primaryBg px-3 py-1 rounded Gilroy-Bold"
             onClick={() => setShowMoreWebLinks(true)}
           >
             Show More &nbsp; <MdOutlineUnfoldMore />
           </button>
         ) : (
           <button
-            className="flex items-center"
+            className="flex text-sm items-center bg-primaryTx text-primaryBg px-3 py-1 rounded  Gilroy-Bold"
             onClick={() => setShowMoreWebLinks(false)}
           >
             Show Less &nbsp; <MdUnfoldLess />
@@ -575,7 +592,7 @@ const ServicesChildren = () => {
         <h2 className="text-2xl Gilroy-Bold">Mobile Development </h2>
         <ul className="space-y-2">
           {mobileLinks?.map((ele) => (
-            <li className="text-white text-opacity-50" key={ele._id}>
+            <li className="text-secondaryTx text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -591,7 +608,7 @@ const ServicesChildren = () => {
           } scrollbar-tiny h-[65vh]`}
         >
           {hireLinks?.map((ele, index) => (
-            <li className="text-white text-opacity-50" key={ele._id}>
+            <li className="text-secondaryTx text-opacity-50" key={ele._id}>
               <Link href={ele.link} className="cursor-pointer">
                 {ele.name}
               </Link>
@@ -600,14 +617,14 @@ const ServicesChildren = () => {
         </ul>
         {hireLinks.length > 12 && !showMore ? (
           <button
-            className="flex items-center"
+            className="flex text-sm items-center bg-primaryTx text-primaryBg px-3 py-1 rounded  Gilroy-Bold"
             onClick={() => setShowMore(true)}
           >
             Show More &nbsp; <MdOutlineUnfoldMore />
           </button>
         ) : (
           <button
-            className="flex items-center"
+            className="flex text-sm items-center bg-primaryTx text-primaryBg px-3 py-1 rounded  Gilroy-Bold"
             onClick={() => setShowMore(false)}
           >
             Show Less &nbsp; <MdUnfoldLess />
@@ -703,8 +720,8 @@ const Industry = () => {
         <h2 className="text-2xl Gilroy-Bold">Industry</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
-            <li className="text-white text-opacity-50" key={ele._id}>
-              <Link href={ele.link} className="cursor-pointer">
+            <li className=" text-opacity-50 text-secondaryTx" key={ele._id}>
+              <Link href={ele.link} className="cursor-pointer ">
                 {ele.name}
               </Link>
             </li>
@@ -729,8 +746,8 @@ const Solution = () => {
         <h2 className="text-2xl Gilroy-Bold">Solutions</h2>
         <ul className="space-y-2">
           {solutionLinks?.map((ele) => (
-            <li className="text-white text-opacity-50" key={ele._id}>
-              <Link href={ele.link} className="cursor-pointer">
+            <li className="text-secondaryTx text-opacity-50" key={ele._id}>
+              <Link href={ele.link} className="cursor-pointer text-secondaryTx">
                 {ele.name}
               </Link>
             </li>
@@ -740,4 +757,3 @@ const Solution = () => {
     </div>
   );
 };
-export default Header;

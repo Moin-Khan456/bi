@@ -15,7 +15,7 @@ export default function KeySkill({ type, subhead }) {
         <div className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
           <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
             Benefits of Custom{" "}
-            <span className="text-[#7600EB]">{type} Development</span>
+            <span className="text-primaryTx">{type} Development</span>
           </h2>
           <p className="Gilroy-Light !text-xl !leading-8 pb-6">{subhead}</p>
           <div className="">

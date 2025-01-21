@@ -28,6 +28,7 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify"
+import Faqs from "../../components/mobilePages/faqs.js";
 
 
 function CustomWebDevelopment(props) {
@@ -282,8 +283,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
             reasons={chooseBI}
             alt="hybrid development company"
           />
+          <Faqs faq={faqdetails} />
           <BlogArticle />
-          <FaqHire faq={faqdetails} />
           <KeepInTouch />
           <LocateUs />
           <LetsKick />

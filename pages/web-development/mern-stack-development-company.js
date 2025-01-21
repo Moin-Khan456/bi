@@ -28,6 +28,8 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 
 function MernStackDevelopment(props) {
   const content = (
@@ -269,9 +271,9 @@ function MernStackDevelopment(props) {
               alt="MERN Stack Development services"
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch />
             <LocateUs />
             <hr />
             <Footer />

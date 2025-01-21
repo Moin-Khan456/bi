@@ -4,7 +4,8 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projectDetailOne.jsx";
-
+import KeepInTouch from "../../components/common/keepInTouch.js";
+import LocateUs from "../../components/common/locateUs.js";
 const SectionTwo = dynamic(() =>
   import("../../components/project/sectionTwo.jsx")
 );
@@ -36,10 +37,8 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+// import LocateUs from "../components/common/locateUs.js";
+
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -273,7 +272,7 @@ const Bloomia = () => {
             <VisitProject projectName="Bloomia.app" />
             <ProjectSectionTwo />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch />
             <LocateUs />
             <Slogan />
             <Footer />

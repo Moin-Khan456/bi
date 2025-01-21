@@ -15,7 +15,7 @@ function Staform(props) {
     router.push("/thank-you");
   };
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+    <div className="2xl:p-10 p-8 2xl:space-y-8 bg-secondaryBg space-y-6">
       <div className="container padding-left-all-section-1">
         <div className="container bg-staff padding-left-all-section-1">
           <div className="mobile-padding grid lg:grid-cols-2 grid-cols-1">
@@ -46,7 +46,7 @@ function Staform(props) {
                       {...register("name")}
                       type="text"
                       required
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-secondaryTx w-full placeholder-secondaryTx"
                       placeholder="You should have a name"
                     ></input>
                     <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
@@ -54,14 +54,14 @@ function Staform(props) {
                         {...register("email")}
                         type="email"
                         required
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
+                        className="bg-transparent p-4 focus:outline-none border border-secondaryTx flex-1 placeholder-secondaryTx"
                         placeholder="Obviously, an email"
                       ></input>
                       <input
                         {...register("number")}
                         type="number"
                         required
-                        className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] flex-1 placeholder-[#ffffffd7]"
+                        className="bg-transparent p-4 focus:outline-none border border-secondaryTx flex-1 placeholder-secondaryTx"
                         placeholder="Your contact number"
                       ></input>
                     </div>
@@ -69,14 +69,14 @@ function Staform(props) {
                       {...register("companyName")}
                       type="text"
                       required
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-secondaryTx w-full placeholder-secondaryTx"
                       placeholder="What's your company name?"
                     ></input>
                     <input
                       {...register("feedback")}
                       type="text"
                       required
-                      className="bg-transparent p-4 focus:outline-none border border-[#ffffff67] w-full placeholder-[#ffffffd7]"
+                      className="bg-transparent p-4 focus:outline-none border border-secondaryTx w-full placeholder-secondaryTx"
                       placeholder="Tell us, Everything!"
                     ></input>
                     <HomeButton type="submit">

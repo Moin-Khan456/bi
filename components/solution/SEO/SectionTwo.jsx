@@ -25,7 +25,7 @@ const SectionTwo = ({
         </div>
         {isHeadShow ? (
           <p className="text-3xl px-4">
-            <span className="text-[#7600EB]">Brain Inventory:</span> {head1}
+            <span className="text-primaryTx">Brain Inventory:</span> {head1}
           </p>
         ) : null}
         <p className="text-[1rem] text-slate-500 p-4">{description}</p>

@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
 const ContactForm = dynamic(() =>
@@ -298,7 +300,7 @@ function Accounting(props) {
             {" "}
             Our expert team{" "}
           </Link>
-         {`designs and develops the software, using the latest technologies to
+          {`designs and develops the software, using the latest technologies to
           ensure it's secure, user-friendly, and efficient.`}
         </>
       ),
@@ -424,10 +426,10 @@ function Accounting(props) {
             twoLink={"/project/numetric"}
             alt="Our Work"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
-          <ContactForm />
+          <KeepInTouch />
           <LetsKick />
           <hr />
           <Footer />

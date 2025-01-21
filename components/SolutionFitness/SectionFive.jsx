@@ -15,13 +15,13 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
+            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-primaryTx monument">
               {head}
             </h3>
             <h3 className="font-bold text-lg mb-6 monument uppercase">
               {subhead}
             </h3>
-            <p className="text-sm text-gray-400 font-medium leading-5 font-Satoshi">
+            <p className="text-sm text-gray-600 font-medium leading-5 font-Satoshi">
               {description}
             </p>
           </div>
@@ -35,7 +35,7 @@ const Index = ({
             ></Image>
           </div>
         </div>
-        <div className="lg:flex block justify-between mt-8 lg:p-0 p-6 bg-black">
+        <div className="lg:flex block justify-between mt-8 lg:p-0 p-6 bg-primaryBg">
           <div className="border-sectionfive w-full">
             <h2 className="font-bold text-xl bottom-border-five p-4 font-Satoshi lg:whitespace-nowrap">
               {sectionFiveTableHead[0]}

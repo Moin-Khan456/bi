@@ -15,7 +15,7 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-[#F7D927] monument">
+            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-primaryTx monument">
               {head}
             </h3>
             <h3 className="font-bold text-lg mb-6 monument uppercase">
@@ -35,53 +35,53 @@ const Index = ({
             ></Image>
           </div>
         </div>
-        <div className="lg:flex block justify-between mt-8 lg:p-0 p-6 bg-black">
-          <table className="border-[1px] border-white">
-            <tr className="border-white border-[1px]">
-              <th className="w-[5%] border-x-[1px] border-white py-2">
+        <div className="lg:flex block justify-between mt-8 lg:p-0 p-6 bg-primaryBg">
+          <table className="border-[1px] border-secondaryTx">
+            <tr className="border-secondaryTx border-[1px]">
+              <th className="w-[5%] border-x-[1px] border-secondaryTx py-2">
                 Real Estate Software
               </th>
-              <th className="w-[5%] border-x-[1px] border-white py-2">
+              <th className="w-[5%] border-x-[1px] border-secondaryTx py-2">
                 Innovative Features
               </th>
-              <th className="w-[5%] border-x-[1px] border-white py-2">
+              <th className="w-[5%] border-x-[1px] border-secondaryTx py-2">
                 User Base
               </th>
             </tr>
-            <tr className="border-white border-[1px]">
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+            <tr className="border-secondaryTx border-[1px]">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 Buildium
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx">
                 Offers personalized real estate software solutions for an
                 effective property management experience
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 Over 2 Million
               </td>
             </tr>
-            <tr className="border-white border-[1px]">
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+            <tr className="border-secondaryTx border-[1px]">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 CoreLogic
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx">
                 Provides real estate data and analytics to help appraisers,
                 lenders, and housing professionals
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 More than 3 Million
               </td>
             </tr>
-            <tr className="border-white border-[1px]">
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+            <tr className="border-secondaryTx border-[1px]">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 Appfolio
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx">
                 Delivers all-in-one real estate software development solution
                 loaded with interactive features for property managers and
                 landlords
               </td>
-              <td className="px-4 py-2 border-x-[1px] border-white text-center">
+              <td className="px-4 py-2 border-x-[1px] border-secondaryTx text-center">
                 Over 4 Million
               </td>
             </tr>

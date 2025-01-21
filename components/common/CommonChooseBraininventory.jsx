@@ -18,9 +18,9 @@ export default function ChooseBraininventory({
               {!blueSolution ? (
                 <>Your Next</>
               ) : (
-                <span className="text-[#7600EB]"> Your Next</span>
+                <span className="text-primaryTx"> Your Next</span>
               )}{' '}
-              <span className="text-[#7600EB]">Assignment</span>
+              <span className="text-primaryTx">Assignment</span>
             </h2>
             <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
               {subhead}
@@ -41,7 +41,7 @@ export default function ChooseBraininventory({
                 </div>
               ))}
             <a href="#talk">
-              <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-4">
+              <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-4 text-primaryBg">
                 Get a Quote
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

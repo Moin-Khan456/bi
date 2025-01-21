@@ -7,6 +7,7 @@ import KeepInTouch from "../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../components/header/Header"));
 const Banner = dynamic(() => import("../components/career/banner.js"));
 const WhyWork = dynamic(() => import("../components/contacts/whyWork.js"));
+const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"));
 
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
@@ -70,6 +71,7 @@ Inventory | Best Software Development Company "
             <Opening OpeningJob={OpeningJob} />
             <KeepInTouch/>
             <LocateUs />
+            <LetsKick/>
             <Footer />
           </section>
         </main>

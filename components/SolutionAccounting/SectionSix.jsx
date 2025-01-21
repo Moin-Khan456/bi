@@ -22,7 +22,7 @@ const Index = ({
           {headAbove}
         </h2>
         <p className="text-slate-400 py-4">{subheadAbove}</p>
-        <div className="lg:grid lg:grid-cols-2 gap-0 h-auto bg-[#4601a1] overflow-y-hidden rounded-3xl relative section-six-card">
+        <div className="lg:grid lg:grid-cols-2 gap-0 h-auto bg-primaryTx text-primaryBg overflow-y-hidden rounded-3xl relative section-six-card">
           <div className="p-4 lg:p-12">
             <h3
               className={`font-bold lg:text-3xl MonumentRegular ${titleClass} ${classText}`}
@@ -38,7 +38,7 @@ const Index = ({
               }}
             >
               {btn}
-              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full " />
             </button>
             <p className="lg:w-[235px] relative top-11">{head}</p>
           </div>

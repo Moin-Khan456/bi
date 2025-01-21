@@ -15,15 +15,15 @@ export default function Clients({ tech }) {
         </p>
         <div>
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 mb-4 ">
-            <div className="bg-engagedment p-8 rounded-2xl">
+            <div className="bg-engagedment text-primaryBg p-8 rounded-2xl">
               <h3 className="Gilroy-Bold text-4xl py-2">50+</h3>
               <p>IT Professionals</p>
             </div>
-            <div className="bg-opening p-8 rounded-2xl">
+            <div className="bg-opening text-primaryBg p-8 rounded-2xl">
               <h3 className="Gilroy-Bold text-4xl py-2">10+</h3>
               <p>{tech} Developers</p>
             </div>
-            <div className=" bg-opening p-8 rounded-2xl">
+            <div className=" bg-opening text-primaryBg p-8 rounded-2xl">
               <h3 className="Gilroy-Bold text-4xl py-2">3+</h3>
               <p>Project Manager</p>
             </div>

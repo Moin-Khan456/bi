@@ -4,7 +4,7 @@ import React from "react";
 const TeamSlider = ({ teamMembers }) => {
   return (
     <div className="team-slider py-12 container">
-      <h2 className="text-white lg:text-6xl font-bold my-4 lg:my-24 text-center">
+      <h2 className="text-secondaryTx lg:text-6xl font-bold my-4 lg:my-24 text-center">
         Meet the Team
       </h2>
       <div className="flex flex-wrap sm:flex-nowrap overflow-x-scroll scrollbar-thin project-team lg:pl-0">
@@ -21,10 +21,10 @@ const TeamSlider = ({ teamMembers }) => {
                 height={1800}
                 className="w-8/12 h-auto"
               />
-              <h3 className="text-white font-bold text-lg mt-2">
+              <h3 className="text-secondaryTx font-bold text-lg mt-2">
                 {member.name}
               </h3>
-              <p className="text-gray-400 text-sm">{member.role}</p>
+              <p className="text-secondaryTx opacity-60 text-sm">{member.role}</p>
             </div>
           </div>
         ))}

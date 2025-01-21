@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireUxUiDesigners(props) {
   const content =
@@ -281,7 +282,7 @@ function HireUxUiDesigners(props) {
             <Engaged />
             <HireSteps type="UI/UX" />
             <Clients tech="UI/UX" />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

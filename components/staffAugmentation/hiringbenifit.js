@@ -13,7 +13,7 @@ function Hiringbenifit(props) {
         </h2>
 
         <div className="lg:flex mt-12 justify-between">
-          <div className="lg:w-[30%]">
+          <div className="lg:w-[30%] text-secondaryTx">
             <p className="mb-6 Gilroy-Medium color-light text-lg">
               With the advent of technology, India has become a hub for startups
             </p>

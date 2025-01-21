@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireVueJsDeveloper(props) {
   const content =
@@ -345,7 +346,7 @@ function HireVueJsDeveloper(props) {
             <Engaged />
             <HireSteps type="Vue JS" />
             <Clients tech="Vue JS" />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

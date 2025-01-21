@@ -3,20 +3,20 @@ import React from "react";
 const Index = () => {
   return (
     <div className="container">
-      <div className="py-8 relative flex flex-col items-center justify-center bg-[#000]">
-        <h3 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-white">
+      <div className="py-8 relative flex flex-col items-center justify-center bg-primaryBg">
+        <h3 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-secondaryTx">
           What is
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6516.png"
             alt="Custom Software Development Company | Application Development Company"
             width={500}
             height={500}
-            className="h-12 lg:h-32 mx-4"
+            className="h-12 lg:h-32 mx-4 filter invert"
           />
           CRM?
         </h3>
         <div className="px-2 lg:px-48 py-4">
-          <p className="font-bold text-white py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-50">
+          <p className="font-bold text-secondaryTx py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-50">
             Revolution Travel CRM (RTC) is a complete Travel planning platform
             with the capability to plan travel from across the world using its
             rich API integrations. Admin, Travel Agent and Customer are the

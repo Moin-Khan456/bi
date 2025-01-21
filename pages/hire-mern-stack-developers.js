@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireMernStackDeveloper(props) {
   const content =
@@ -313,7 +314,7 @@ function HireMernStackDeveloper(props) {
           <Engaged />
           <HireSteps type="MERN Stack" />
           <Clients tech="MERN Stack" />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

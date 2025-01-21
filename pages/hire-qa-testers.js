@@ -2,8 +2,7 @@ import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const Header = dynamic(() => import("../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const Loader = dynamic(() => import("../components/common/loader.js"));
 const KeepInTouch = dynamic(() =>
@@ -31,6 +30,7 @@ const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));
 const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
 import DOMPurify from "isomorphic-dompurify"
+import Faqs from "../components/mobilePages/faqs.js";
 function HireQaTesters(props) {
   const content = (
     <>
@@ -287,7 +287,7 @@ function HireQaTesters(props) {
           <Engaged />
           <HireSteps type="QA Analyst" />
           <Clients tech="QA Analyst" />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

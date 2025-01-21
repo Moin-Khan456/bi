@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 const Index = () => {
   return (
-    <div className="max-w-full flex flex-col px-4 lg:px-12 py-8 bg-[#000] semi-container">
+    <div className="max-w-full flex flex-col px-4 lg:px-12 py-8 bg-primaryBg semi-container">
       <h3 className="flex text-end justify-center text-3xl lg:text-5xl lg:mx-44 fatoura__text">
         TYPEFACE & COLORS
       </h3>

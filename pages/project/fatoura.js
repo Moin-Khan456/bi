@@ -3,6 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projFatoura/SectionOne.jsx";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header"));
 const SectionTwo = dynamic(() =>
   import("../../components/project/projFatoura/sectionTwo.jsx")
@@ -35,10 +36,7 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+import LocateUs from "../../components/common/locateUs.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -238,7 +236,7 @@ const Fatoura = () => {
       />
       <ProjectSectionTwo />
       <BlogArticle />
-      <ContactForm />
+            <KeepInTouch />
       <LocateUs />
       <Slogan />
       <Footer />

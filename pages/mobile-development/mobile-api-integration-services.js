@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import SectionOne from "../../components/Mobile-Development/SectionOne";
 import Link from "next/link";
+import Faqs from "../../components/mobilePages/faqs";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -263,7 +264,7 @@ function MobileApiIntegration(props) {
             reasons={chooseBI}
             alt="Mobile Application Integration Services"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

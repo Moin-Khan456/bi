@@ -1,4 +1,5 @@
 import React from "react";
+import { BiCheckCircle } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function HireBanner({
@@ -44,12 +45,12 @@ export default function HireBanner({
             </p>
           </section>
           <a href="#talk" className="flex justify-center lg:block">
-            <section className="bg-gradient-to-r from-[#000076] to-[#7600EB] w-fit px-5 py-3 rounded-2xl mt-4 pr-12 ">
+            <section className="bg-primaryTx w-fit px-5 py-3 rounded-2xl mt-4 pr-12 ">
               <button className="flex flex-col justify-center Gilroy">
-                <span className="text-xs font-thin text-slate-400 pb-1">
+                <span className="text-xs font-thin text-primaryBg pb-1">
                   Got a project in mind?
                 </span>
-                <span className="flex items-center justify-between w-full">
+                <span className="flex items-center justify-between text-primaryBg w-full">
                   {btn} <BsArrowRight />
                 </span>
               </button>
@@ -67,12 +68,12 @@ export default function HireBanner({
               </section>
               <section className="p-8 bg-line">
                 <ul className="list-subcription">
-                  {mobCard &&
-                    mobCard.map((ele, index) => (
-                      <li key={index} className="flex">
-                        {ele}
-                      </li>
-                    ))}
+                  {mobCard.map((ele, index) => (
+                    <li key={index} className="flex items-center">
+                      <BiCheckCircle className="text-2xl mb-2" />
+                      {ele}
+                    </li>
+                  ))}
                 </ul>
               </section>
             </section>

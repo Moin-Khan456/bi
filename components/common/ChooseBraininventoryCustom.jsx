@@ -8,7 +8,7 @@ export default function ChooseBraininventory({ head, blue, alt }) {
         <div className="">
           <div>
             <h3 className="Gilroy-Bold text-4xl leading-[3rem] my-4">
-              {head} <span className="text-[#7600EB]">{blue}</span>
+              {head} <span className="text-primaryTx">{blue}</span>
             </h3>
             <div className="flex flex-col lg:flex-row w-full">
               <div className="bg-technology p-10 lg:ml-8 mb-4 flex flex-col items-center">

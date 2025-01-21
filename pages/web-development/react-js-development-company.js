@@ -31,6 +31,9 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
+import LetsKick from "../../components/common/LetsKick.js";
 
 function HireReactDeveloper(props) {
   const content =
@@ -250,11 +253,11 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
               alt="ReactJS Web Development Company"
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch />
             <LocateUs />
-            <hr />
+            <LetsKick/>
             <Footer />
           </div>
         </div>

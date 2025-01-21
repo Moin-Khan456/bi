@@ -7,7 +7,7 @@ const WhyMean = ({ type, meanReasons }) => {
       <section>
         <h3 className="text-3xl text-center lg:text-start lg:text-5xl pl-8">
           Why you may need a &nbsp;
-          <span className="text-[#7600EB]">{type} Development</span> services?
+          <span className="text-primaryTx">{type} Development</span> services?
         </h3>
         <aside className="flex flex-row gap-4 w-full">
           <ol className="text-xl w-full py-4 font-Satoshi">

@@ -16,13 +16,13 @@ const SectionOne = () => {
       </div>
       <div className="bg-gradient-to-r from-black to-transparent">
         <div className="container py-72 px-12">
-          <h3 className="MonumentRegular text-sm">
+          <h3 className="MonumentRegular text-primaryBg text-sm">
             MOBILIZING FITNESS WITH INNOVATION
           </h3>
-          <h2 className="Brinattan text-5xl text-[#F7D927] py-10">
+          <h2 className="Brinattan text-5xl text-primaryTx py-10 borderShadow"> 
             Fitness Meets Design
           </h2>
-          <p className="lg:max-w-[38%] opacity-70">
+          <p className="lg:max-w-[38%] text-primaryBg opacity-70">
             At{" "}
             <Link href="/" className="text-[#2186ff]">
               Brain Inventory
@@ -32,9 +32,9 @@ const SectionOne = () => {
             industry, we&apos;re here to take your business to another level.
           </p>
           <Link href="#talk">
-            <button className="flex items-center font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </div>

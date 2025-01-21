@@ -10,13 +10,13 @@ export default function BusinessPathways({
     <main>
       <section className="container padding-left-all-section-1 lg:pb-28">
         <section className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
-          <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
+          <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10 text-primaryBg">
             {heading ? (
               heading.split(/(%.*?%)/).map((part, index) => {
                 // Check if part is between '%' symbols
                 if (part.startsWith('%') && part.endsWith('%')) {
                   return (
-                    <span key={index} className="text-[#7600EB]">
+                    <span key={index} className="text-primaryTx">
                       {part.slice(1, -1)}
                     </span>
                   );
@@ -36,7 +36,7 @@ export default function BusinessPathways({
           {EngageOptions && <div className="grid lg:grid-row-3 md:grid-row-2 grid-row-1 gap-6">
             {EngageOptions.map((option, index) => (
               <div key={index} className="p-0 advantage-para m-0">
-                <h2 className="text-2xl Gilroy-Bold mb-1 leading-8 text-gray-400">
+                <h2 className="text-2xl Gilroy-Bold mb-1 leading-8 text-primaryBg">
                   {option.head}
                 </h2>
 

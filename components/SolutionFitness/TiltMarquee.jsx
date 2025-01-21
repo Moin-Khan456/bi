@@ -7,7 +7,7 @@ const TiltMarquee = ({ title }) => {
     <div className="relative overflow-hidden py-24 ">
       <div className="relative z-20 -rotate-[2deg] overflow-hidden">
         <Marquee duration={25000} reverse={false}>
-          <div className="bg-[#F7D927] text-black font-bold MonumentBold">
+          <div className="bg-primaryTx text-primaryBg font-bold MonumentBold">
             <h3 className="text-5xl flex py-4 uppercase">
               {title} &nbsp; <PiStarFourFill /> &nbsp;
               {title} &nbsp;&nbsp;
@@ -19,7 +19,7 @@ const TiltMarquee = ({ title }) => {
       </div>
       <div className="relative z-10 rotate-[3deg] overflow-hidden">
         <Marquee duration={25000} reverse={true}>
-          <div className="text-[#F7D927] font-bold MonumentBold">
+          <div className="text-primaryTx font-bold MonumentBold">
             <h3 className="text-5xl flex py-4 uppercase">
               &nbsp;&nbsp;{title} &nbsp; <PiStarFourFill /> &nbsp;
               {title} &nbsp;&nbsp;

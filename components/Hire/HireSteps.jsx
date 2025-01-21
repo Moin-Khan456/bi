@@ -11,7 +11,7 @@ export default function HireSteps({ type }) {
               Hire {type} App Developers From Brain Inventory in 4 Easy Steps
             </h3>
             <a href="#talk">
-              <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-7">
+              <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-7 text-primaryBg">
                 Book a Call
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function HireSteps({ type }) {
               <h3 className="Gilroy-Bold text-2xl">Share Your Requirements</h3>
               <p className="Gilroy-Light text-lg opacity-60 pt-2">
                 We’ll schedule a{" "}
-                <Link href="tel:+918109561401" className="text-[#2186ff]">
+                <Link href="tel:+918109561401" className="Gilroy-Bold text-primaryBg">
                   quick call
                 </Link>
                 {" "}

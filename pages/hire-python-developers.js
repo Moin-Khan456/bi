@@ -24,6 +24,7 @@ const ChooseBraininventory = dynamic(() =>
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HirePythonDeveloper(props) {
   const content =
@@ -337,7 +338,7 @@ function HirePythonDeveloper(props) {
               reasons={chooseBI}
               alt="Dedicated Python Programmers"
             />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

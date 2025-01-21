@@ -24,6 +24,7 @@ const ChooseBraininventory = dynamic(() =>
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireDotnetDeveloper(props) {
   const content =
@@ -334,7 +335,7 @@ function HireDotnetDeveloper(props) {
               alt="Ionic development company"
             />
 
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

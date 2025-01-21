@@ -7,11 +7,11 @@ export default function KeySkill({ title, subhead, benefitsList }) {
         <div className="p-8 advantage-para lg:m-0 my-6">
           <h3 className="2xl:text-5xl xl:text-4xl text-3xl Gilroy-Bold mb-8 leading-10">
             Advantages of Hiring a{" "}
-            <span className="text-[#7600EB]">{title}</span>
+            <span className="text-primaryTx">{title}</span>
           </h3>
-          <p className="Gilroy-Light text-xs text-white w-full lg:w-[100%] tracking-wide leading-8">
+          <h3 className="xl:text-xl text-lg opacity-60 text-secondaryTx Gilroy-Light mb-8 leading-10">
             {subhead}
-          </p>
+          </h3>
           <div className="">
             <div>
               <div className="flex flex-col lg:flex-row justify-between w-full py-8">

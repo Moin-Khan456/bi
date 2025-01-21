@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projectDetailOne.jsx";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const SectionTwo = dynamic(() =>
   import("../../components/project/projMFM/sectionTwo.jsx")
 );
@@ -29,10 +30,7 @@ const ProjectSectionTwo = dynamic(() =>
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+import LocateUs from "../../components/common/locateUs.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -239,7 +237,7 @@ const Numetric = () => {
           <BlogArticle />
         </div>
         <div className="mx-4">
-          <ContactForm />
+            <KeepInTouch />
         </div>
         <LocateUs />
         <Slogan />

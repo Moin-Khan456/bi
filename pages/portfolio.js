@@ -13,8 +13,7 @@ const ProjectCards = dynamic(() =>
   import("../components/portfolio/projectCard.jsx")
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
 function Portfolio(props) {
   return (

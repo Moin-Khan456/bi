@@ -3,6 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Marquee from "react-easy-marquee";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const Footer = dynamic(() => import("../../components/common/Footer"));
@@ -303,8 +305,8 @@ function SocialMedia(props) {
             }
           />
           <SectionThree />
-          <Marquee duration={20000} background="#F7D927">
-            <h2 className="text-5xl text-black MonumentBold">
+          <Marquee duration={20000} background="#1b48de">
+            <h2 className="text-5xl text-primaryBg MonumentBold">
               SEO ✦ MARKETING ✦ BRANDING ✦ SEO ✦ MARKETING ✦ BRANDING ✦ SEO ✦
               MARKETING ✦ BRANDING ✦
             </h2>
@@ -359,9 +361,9 @@ function SocialMedia(props) {
             points={approachPoints}
           />
           <SectionTen />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <BlogArticle />
-          <ContactForm />
+          <KeepInTouch />
           <LocateUs />
           <hr />
           <Footer />

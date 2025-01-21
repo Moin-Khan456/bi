@@ -16,6 +16,7 @@ const Experienced = dynamic(() => import("../components/common/Hire"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 import HireBanner from "../components/common/HireBanner";
 import Link from "next/link";
+import Faqs from "../components/mobilePages/faqs";
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const ChooseBraininventory = dynamic(() =>
@@ -369,7 +370,7 @@ function HireNodeJsDeveloper(props) {
             <Engaged />
             <HireSteps type="NodeJS" />
             <Clients tech="NodeJS" />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

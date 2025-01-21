@@ -13,7 +13,7 @@ const SectionThree = ({
         <h3 className="text-3xl font-Satoshi font-bold">{title}</h3>
         <p className="text-sm py-6 opacity-50">{sectionDesc}</p>
       </div>
-      <div className="container bg-[#121212] p-2 lg:p-8 !mb-8">
+      <div className="container bg-secondaryBg p-2 lg:p-8 !mb-8">
         <h2 className="text-3xl font-Satoshi py-4">
           {setionThreeCards[0].head}
         </h2>
@@ -35,7 +35,7 @@ const SectionThree = ({
           ))}
         </ul>
       </div>
-      <div className="container bg-[#121212] py-8 px-2 lg:px-[3rem] mt-4 ">
+      <div className="container bg-secondaryBg py-8 px-2 lg:px-[3rem] mt-4 ">
         <h2 className="text-3xl font-Satoshi py-2">
           {setionThreeCards[1].head}
         </h2>
@@ -44,7 +44,7 @@ const SectionThree = ({
         </p>
       </div>
       <leble
-        className={`container block mx-auto bg-[#121212] ${
+        className={`container block mx-auto bg-secondaryBg ${
           pointers ? "lg:px-12 pt-4 pb-4" : "p-4 lg:p-12"
         }`}
       >
@@ -58,32 +58,32 @@ const SectionThree = ({
           </ul>
         ) : (
           <table className="w-full px-12">
-            <thead className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-2 lg:px-12 ">
+            <thead className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-2 lg:px-12 ">
               <tr>
                 {setionThreeCards[1].tableHead.map((ele, index) => (
                   <th
                     key={index}
-                    className="border border-1 font-Satoshi font-bold py-4 border-slate-300 text-left px-1 lg:px-12"
+                    className="border border-1 font-Satoshi font-bold py-4 border-secondaryTx text-left px-1 lg:px-12"
                   >
                     {ele}
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className=" font-Satoshi font-semibold py-4 border-slate-300 px-1 lg:px-12 ">
+            <tbody className=" font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
               {setionThreeCards[1].tableContent.map((ele, index) => (
                 <tr
                   key={index}
-                  className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-1 lg:px-12 "
+                  className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 "
                 >
-                  <td className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-1 lg:px-12 ">
+                  <td className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
                     {ele[0]}
                   </td>
-                  <td className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-1 lg:px-12 ">
+                  <td className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
                     {ele[1]}
                   </td>
                   {ele.length > 2 && (
-                    <td className="border border-1 font-Satoshi font-semibold py-4 border-slate-300 px-1 lg:px-12 ">
+                    <td className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
                       {ele[2]}
                     </td>
                   )}

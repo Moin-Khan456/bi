@@ -13,9 +13,9 @@ const Index = ({ section }) => {
           className="lg:w-1/2 py-12"
           alt={section.alt}
         />
-        <h3 className="text-lg lg:text-2xl lg:w-[70%]">
+        <h3 className="text-lg lg:text-2xl lg:w-[70%] text-primaryBg">
           {section.brief}{" "}
-          <span className="text-[#F39573]">{section.styleBrief}</span>
+          <span className="text-primaryBg">{section.styleBrief}</span>
         </h3>
         <div className="lg:flex flex-col py-12">
           <span className="flex justify-center items-center lg:justify-start px-4 text-xs py-8">

@@ -12,6 +12,8 @@ const SectionTwo = ({
   lastSmall,
   isHeadShow = true,
 }) => {
+  const MainTitle = title.split(" ")[0]
+  let colorChange = ['Marketplace','Accounting','Education','Custom']
   return (
     <div className={`${className} padding-left-all-section-1`}>
       <div className="container">
@@ -22,7 +24,7 @@ const SectionTwo = ({
             } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
           >
             {!notBreakable ? (
-              <span>
+              <span className={`${colorChange.includes(MainTitle)?`text-secondaryTx`:`text-primaryBg`}`}>
                 {title.split(" ").map((ele, index) => (
                   <>
                     <span className="block" key={index}>

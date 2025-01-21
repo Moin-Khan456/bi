@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 export default function HireBanner() {
   return (
-    <main className="h-screen  pt-28 lg:pt-32 lg:pb-24 bg-gradient-to-b from-[#220554] to-[rgba(34,5,84,0.02)]">
+    <main className="h-screen  pt-28 lg:pt-32 lg:pb-24 bg-primaryBg">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0 container`}>
         <section className="container padding-left-all-section-1 relative">
           <section className="ml-4 lg:ml-0 relative z-20">
@@ -22,9 +22,9 @@ export default function HireBanner() {
             </h6>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </section>

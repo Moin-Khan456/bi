@@ -23,6 +23,7 @@ const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireReactNativeDeveloper(props) {
   const content =
@@ -339,7 +340,7 @@ function HireReactNativeDeveloper(props) {
             <Engaged />
             <HireSteps type="React Native" />
             <Clients tech="React Native" />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

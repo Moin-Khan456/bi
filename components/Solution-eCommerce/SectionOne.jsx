@@ -14,16 +14,16 @@ export default function HireBanner() {
               Empowering Commerce, Enriching Experiences: Your Tomorrow, Our
               Technology!
             </h3>
-            <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4 lg:w-[65%] lg:text-justify">
+            <h2 className="text-sm font-Satoshi text-primaryBg opacity-60 leading-7 mb-4 lg:w-[65%] lg:text-justify">
               Are you ready to evolve? Brain Inventory, a leading eCommerce
               development company, offers top-tier ecommerce services designed
               to propel your brand to new heights.
             </h2>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </section>

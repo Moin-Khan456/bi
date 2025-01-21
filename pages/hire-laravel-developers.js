@@ -24,6 +24,7 @@ const ChooseBraininventory = dynamic(() =>
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireLaravelDeveloper(props) {
   const content =
@@ -373,7 +374,7 @@ function HireLaravelDeveloper(props) {
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

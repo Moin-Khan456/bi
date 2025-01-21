@@ -20,22 +20,22 @@ const Index = ({
           {type === "why" ? (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
               Why you may need a{" "}
-              <span className="text-[#7600EB]"> {title}</span>{" "}
+              <span className="text-primaryTx"> {title}</span>{" "}
               {!blueSolution ? (
                 <>solution?</>
               ) : (
-                <span className="text-[#7600EB]"> Solution?</span>
+                <span className="text-primaryTx"> Solution?</span>
               )}
             </h2>
           ) : type === "services" ? (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
-              <span className="text-[#7600EB]"> {title}</span> Services That We
+              <span className="text-primaryTx"> {title}</span> Services That We
               Offer
             </h2>
           ) : (
             <h2 className="text-4xl lg:text-5xl Gilroy-Bold lg:w-fit">
               {changeText ? changeText : "Hire an Experienced"}{" "}
-              <span className="text-[#7600EB]"> {title}</span> to Upscale Your
+              <span className="text-primaryTx"> {title}</span> to Upscale Your
               Development{" "}
             </h2>
           )}
@@ -66,10 +66,10 @@ const Index = ({
           {card?.map((ele, index) => (
             <div className="container flex flex-col items-end" key={index}>
               <div className="bg-customer  hover:scale-[1.01] transition-all p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full">
-                <h5 className="text-2xl font-bold  text-shadow lg:w-[15%]">
+                <h5 className="text-2xl font-bold text-primaryBg text-shadow lg:w-[15%]">
                   {ele?.head}
                 </h5>
-                <p className="Gilroy-Light text-sm tracking-wide leading-8 pb-6 lg:w-[70%]">
+                <p className="Gilroy-Light text-sm text-primaryBg tracking-wide leading-8 pb-6 lg:w-[70%]">
                   {ele?.content}
                 </p>
               </div>

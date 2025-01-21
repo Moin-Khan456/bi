@@ -214,8 +214,8 @@ body {
 }
 .better-grade-white {
   font-family: BetterGrad;
-  color: #fff;
-  text-shadow: 0 0 20px white;
+  color: var(--primary-text);
+  text-shadow: 0 0 20px var(--secondary-bg);
 }
 
 .stroke-text {
@@ -523,8 +523,8 @@ h4.openings-title {
 }
 
 .bg-opening {
-  background: #6302dd38 0% 0% no-repeat padding-box;
-  border: 1px solid #6302dd;
+  background: var(--primary-text);
+  border: 1px solid var(--primary-text);
 }
 
 
@@ -1001,7 +1001,7 @@ html {
 }
 
 .hover-bg-yellow-h:hover .color-hover {
-  background-color: #ff9100;
+  background-color: var(--secondary-text);
 }
 
 .object-fit-custom img {
@@ -1135,7 +1135,7 @@ ul.industries_list li {
   white-space: nowrap;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: var(--primary-text);
   line-height: 90px;
   cursor: pointer;
   letter-spacing: -1.2px;
@@ -1150,7 +1150,7 @@ img.img_industry_1 {
 
 li.hover-link.current,
 ul.industries_list li:hover {
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: var(--primary-text);
 }
 
 .flex-custom {
@@ -1160,7 +1160,7 @@ ul.industries_list li:hover {
 }
 
 .color-light {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--secondary-text);
 }
 
 .bg-services-div {
@@ -1984,6 +1984,12 @@ ul.list-modal {
   background-size: cover;
   height: 60vh;
 }
+.bg-hr-4 {
+  background-image: url("https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png");
+  background-size: cover;
+  height: 100vh;
+  opacity: 150px;
+}
 
 .bg-hr-color {
   background-color: #6302dd;
@@ -2035,12 +2041,12 @@ ul.list-modal {
 }
 
 .bg-staff {
-  background: #180035 0% 0% no-repeat padding-box;
+  background:var(--secondary-bg) 0% 0% no-repeat padding-box;
   padding: 4rem 2rem;
 }
 
 .class-inventory {
-  background: #631edd 0% 0% no-repeat padding-box;
+  background: var(--primary-text) 0% 0% no-repeat padding-box;
   padding: 1rem;
   margin-top: 7rem;
   position: relative;
@@ -2149,7 +2155,7 @@ ul.list-modal {
 }
 
 .p-section {
-  background: #631edd 0% 0% no-repeat padding-box;
+  background: var(--primary-text) 0% 0% no-repeat padding-box;
   padding: 10px;
   padding-left: 1.5rem;
   padding-top: 1rem;
@@ -2293,14 +2299,16 @@ ol li {
 
 .advantage-para p {
   text-align: left;
-  color: #ffffff;
+  color: var(--primary-bg);
   opacity: 0.6;
   font-size: 18px;
 }
 
 .bg-contact-c {
-  background: transparent linear-gradient(276deg, #7600eb 0%, #000076 100%) 0%
-    0% no-repeat padding-box;
+  background-color: var(--secondary-bg);
+}
+.bg-contact-c p{
+  color: var(--primary-text) !important
 }
 
 .item-list {
@@ -2323,39 +2331,41 @@ ol li {
 }
 
 .bg-technology {
-  background: #11012a 0% 0% no-repeat padding-box;
-  border: 1px solid #7600eb;
+  background: var(--primary-text) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--primary-text);
   border-radius: 30px;
+  color: var(--primary-bg);
 }
 
 .bg-engagedment {
-  background: transparent linear-gradient(290deg, #7600eb 0%, #000076 100%) 0%
-    0% no-repeat padding-box;
+  background-color:var(--primary-text);
 }
 
 .bg-banner-sot {
-  background: #11012a 0% 0% no-repeat padding-box;
+  background: var(--primary-text);
 }
 
 .started-subcription {
-  background: transparent linear-gradient(290deg, #7600eb 0%, #000076 100%) 0%
-    0% no-repeat padding-box;
+  background: var(--primary-text);
   border-radius: 30px 30px 0px 0px;
+  color: var(--primary-bg) !important;
   padding: 2rem;
 }
 
 .list-subcription li {
   font-family: "Gilroy-Bold";
-  line-height: 3rem;
   font-size: 1.1rem;
-  display: inline-flex;
-  align-items: flex-end;
-  line-height: 36px;
+  display: flex; /* Use flex for proper alignment */
+  align-items: center; /* Vertically center align items */
+  gap: 0.5rem; /* Add spacing between icon and text */
+  line-height: 1.5rem; /* Adjust line height for better readability */
   margin-bottom: 1.5rem;
 }
 
 .list-subcription li svg {
-  height: 20px;
+  height: 1.25rem; /* Set a consistent height for the icon */
+  width: 1.25rem; /* Set a consistent width */
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .bg-line {
@@ -2610,7 +2620,7 @@ a.btn-filled.btn {
 }
 
 .text-container {
-  background-color: #000000;
+  background-color: var(--primary-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2626,7 +2636,8 @@ a.btn-filled.btn {
   color: transparent;
   font-stretch: extra-expanded;
   transform: scaleX(110%);
-  -webkit-text-stroke: 2px #2d2d2d;
+  -webkit-text-stroke: 2px var(--primary-text);
+  opacity: 60;
 }
 
 /*Project Template*/
@@ -2815,7 +2826,7 @@ a.btn-filled.btn {
   font-size: 2em;
   position: relative;
   transition: all 0.4s ease;
-  border: 1px solid #4601a1;
+  border: 1px solid var(--primary-text);
   text-align: left;
   z-index: 1;
   overflow: hidden;
@@ -2830,7 +2841,7 @@ a.btn-filled.btn {
   height: 0%;
   width: 100%;
   z-index: -1;
-  background-color: #4601a1;
+  background-color: var(--primary-text);
   opacity: 0;
   transition: all 0.4s ease-in;
 }
@@ -2848,10 +2859,15 @@ a.btn-filled.btn {
 
 .hover-btn:hover {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.14);
+  color: var(--primary-bg);
+}
+.hover-btn:hover p{
+  color: var(--primary-bg);
 }
 
 .border-sectionfive {
   border: 1px solid #ccc;
+  
 }
 
 .bottom-border-five {
@@ -2861,7 +2877,7 @@ a.btn-filled.btn {
 .stroke-text-seven {
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke-color: var(--primary-text);
   -webkit-text-stroke-width: 1px;
   color: transparent;
   letter-spacing: 2px;
@@ -2875,7 +2891,7 @@ a.btn-filled.btn {
   -webkit-text-stroke-width: 0.5px;
   font-family: Monument;
   color: transparent;
-  color: #010a1f;
+  color: var(--primary-bg);
   text-shadow: 0px 0px 8px #00bfff99;
   letter-spacing: 0.2rem;
 }
@@ -2910,11 +2926,7 @@ a.btn-filled.btn {
 }
 
 .bg-section-two {
-  background: linear-gradient(
-    90deg,
-    rgba(117, 0, 234, 1) 0%,
-    rgba(4, 0, 122, 1) 100%
-  );
+  background:var(--primary-text)
 }
 
 @media screen and (min-width: 1680px) {
@@ -2941,8 +2953,11 @@ a.btn-filled.btn {
 
 .development-text {
   font-family: BetterGrad;
-  color: #7b06e1;
-  text-shadow: 2px 1px 0px #ee9e14;
+  color: var(--primary-text);
+  text-shadow: 2px 1px 0px #1bdeac;
+}
+.borderShadow{
+  text-shadow: 2px 1px 0px var(--primary-bg);
 }
 
 .ant-pagination-item a,

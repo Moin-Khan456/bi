@@ -23,13 +23,13 @@ const Index = ({
           {headAbove}
         </h2>
         <p className="text-slate-400 py-4">{subheadAbove}</p>
-        <div className="lg:grid lg:grid-cols-2 gap-0 h-[450px] bg-[#4601a1] rounded-2xl relative section-six-card">
+        <div className="lg:grid lg:grid-cols-2 gap-0 h-[450px] bg-primaryTx text-primaryBg rounded-2xl relative section-six-card">
           <div className="p-12">
             <h2 className={`font-bold MonumentRegular !text-2xl ${classText}`}>
               {title}
             </h2>
             <button
-              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8
+              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-secondaryTx border-[1px] px-8
                              py-4 my-12"
               onClick={() => {
                 router.push(
@@ -38,7 +38,7 @@ const Index = ({
               }}
             >
               {btn}
-              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full bg-[#9347E7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full" />
             </button>
             <p className="lg:w-[235px] relative top-11">{head}</p>
           </div>

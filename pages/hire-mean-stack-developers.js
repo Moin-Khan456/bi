@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps";
 import Clients from "../components/Hire/Clients";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireMeanStackDeveloper(props) {
   const content =
@@ -301,7 +302,7 @@ function HireMeanStackDeveloper(props) {
           <Engaged />
           <HireSteps type="MEAN stack" />
           <Clients tech="MEAN stack" />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

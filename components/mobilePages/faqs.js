@@ -9,7 +9,7 @@ function Faqs({ faq }) {
   };
 
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
+    <section className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">
         <h2 className="text-4xl pb-8 Gilroy-Bold">FAQ&rsquo;s</h2>
         <div>
@@ -46,7 +46,7 @@ function Faqs({ faq }) {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Faqs;

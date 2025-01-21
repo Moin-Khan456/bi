@@ -8,7 +8,7 @@ const SectionOne = () => {
       <div className="container">
         <div className="py-36 px-12 flex flex-col justify-center text-center items-center">
           <h3
-            className="text-6xl my-4 lg:w-[75%] MonumentRegular text-shadow-sharp"
+            className="text-6xl my-4 lg:w-[73%] MonumentRegular text-shadow-sharp"
             data-text="Transforming Marketplaces into Digital Powerhouse Economics"
           >
             Transforming Marketplaces into Digital Powerhouse Economics
@@ -20,9 +20,9 @@ const SectionOne = () => {
             interface, and optimized performance.
           </p>
           <Link href="#talk">
-            <button className="flex items-center font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </div>

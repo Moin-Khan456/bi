@@ -8,7 +8,7 @@ const Loader = dynamic(() => import("../../components/common/loader.js"));
 const ContactForm = dynamic(() =>
   import("../../components/common/ContactForm.jsx")
 );
-const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
 import Link from "next/link.js";
@@ -28,6 +28,8 @@ const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
 import DOMPurify from "isomorphic-dompurify"
+import KeepInTouch from "../../components/common/keepInTouch.js";
+import LetsKick from "../../components/common/LetsKick.js";
 
 
 function AangularJsDevelopment(props) {
@@ -135,7 +137,7 @@ function AangularJsDevelopment(props) {
   const chooseBI = [
     <>
       At{" "}
-      <Link href="/" className="text-[#2186ff]">
+      <Link href="/" className="text-primaryTx opacity-100 Gilroy-Bold">
         Brain Inventory
       </Link>
       , our greatest joy stems from offering our clients unparalleled AngularJS
@@ -288,10 +290,11 @@ function AangularJsDevelopment(props) {
             />{" "}
             <ChooseBraininventory reasons={chooseBI} />
             <Industries />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch/>
             <LocateUs />
+            <LetsKick/>
             <hr />
             <Footer />
           </div>

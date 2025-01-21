@@ -21,6 +21,7 @@ import BlogArticle from "../components/common/BlogArticle.jsx";
 import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link.js";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function UiUxDevelopmentServices(props) {
   const content =
@@ -271,7 +272,7 @@ function UiUxDevelopmentServices(props) {
             {/* <Engaged /> */}
             {/* <HireSteps type="Android" /> */}
             {/* <Clients tech="Android" /> */}
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

@@ -24,6 +24,7 @@ const ChooseBraininventory = dynamic(() =>
 );
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 
 function HireChatbotDeveloper(props) {
   const content =
@@ -336,7 +337,7 @@ https://braininventory.in/hire-chatbot-developers"
               reasons={chooseBI}
               alt="Hire Dedicated Chatbot Developers"
             />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

@@ -9,10 +9,10 @@ export default function HireBanner() {
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section>
           <section className="ml-4 lg:ml-0">
-            <h2 className="text-4xl lg:text-[3.5rem] MonumentRegular leading-[1.3] mt-4">
+            <h2 className="text-4xl lg:text-[3.5rem] text-primaryBg MonumentRegular leading-[1.3] mt-4">
               Unleashing Blockchain&apos;s Boundless Potential
             </h2>
-            <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">
+            <h2 className="text-sm font-Satoshi text-primaryBg opacity-50 leading-7 mb-4">
               Embrace next-gen technology with our Blockchain Development
               Services for superior security, transparency and efficiency.
               Explore limitless possibilities with Blockchain, including
@@ -22,9 +22,9 @@ export default function HireBanner() {
             </h2>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full text-primaryBg bg-primaryTx px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </section>

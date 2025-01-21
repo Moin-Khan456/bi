@@ -5,10 +5,11 @@ import Link from "next/link";
 
 function HireRemote(props) {
   return (
-    <div className="bg-white mt-20 mb-20">
-      <div className="container padding-left-all-section-1">
-        <div className="lg:flex items-center">
-          <div>
+    <div className="bg-primaryBg mt-20 mb-20">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
+          {/* Image Section */}
+          <div className="w-[80%] flex items-center mx-auto justify-center">
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire.png"
               alt="Custom Software Development Company | Application Development Company"
@@ -16,22 +17,27 @@ function HireRemote(props) {
               priority="low"
               width={500}
               height={500}
-              className="lg:h-[400px] p-10 lg:p-0 transform-property"
+              className="lg:h-[400px] w-full max-w-xs lg:max-w-full"
             />
           </div>
-          <div className="pl-6">
-            <h3 className="text-3xl text-black Gilroy-Bold mb-4">
-              Hire Remote Developers to Enhance your <br /> team capability now.
-            </h3>
-            <HomeButton>
-              <span className="text-black text-base">Let’s talk</span>
-            </HomeButton>
 
-            <div>
-              <h2 className="Gilroy-Bold text-black text-lg pt-6">Inquiries</h2>
+          {/* Content Section */}
+          <div className="text-center lg:text-left">
+            <h3 className="text-3xl text-secondaryTx Gilroy-Bold mb-4">
+              Hire Remote Developers to Enhance your <br className="hidden lg:block" /> 
+              team capability now.
+            </h3>
+            <div className="flex justify-center lg:justify-start">
+              <HomeButton>
+                <span className="text-secondaryTx text-base">Let’s talk</span>
+              </HomeButton>
+            </div>
+
+            <div className="mt-6">
+              <h2 className="Gilroy-Bold text-secondaryTx text-lg">Inquiries</h2>
               <Link
-                href={"mailto:askus@braininventory.com"}
-                className="text-black Gilroy-Light lg:pb-0 pb-6"
+                href="mailto:askus@braininventory.com"
+                className="text-secondaryTx Gilroy-Light"
               >
                 askus@braininventory.com
               </Link>

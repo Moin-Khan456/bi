@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projvirifi/SectionOne.jsx";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 
 const SectionTwo = dynamic(() =>
   import("../../components/project/projvirifi/SectionTwo.jsx")
@@ -37,10 +38,8 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo.jsx")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+import LocateUs from "../../components/common/locateUs.js";
+
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -211,9 +210,9 @@ const Virifi = () => {
         </div>
         <div>
           <>
-            <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8-Gradient.png')]">
-              <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
-                Marketing <span className="text-[#7600EB]">Website</span>
+            <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-primaryTx">
+              <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44 text-primaryBg">
+                Marketing <span className="text-primaryBg">Website</span>
               </h3>
               <div className="px-4 lg:px-48 lg:py-12 ">
                 <Image
@@ -271,7 +270,7 @@ const Virifi = () => {
           <BlogArticle />
         </div>
         <div className="mx-4">
-          <ContactForm />
+          <KeepInTouch />
         </div>
         <LocateUs />
         <Slogan />

@@ -6,7 +6,7 @@ const Index = () => {
     <div className="container padding-left-all-section-1">
       <div className="w-full flex flex-col justify-center">
         <div className="mx-2 lg:mx-12">
-          <h3 className="text-xl lg:text-[4.3rem] leading-12 font-bold">
+          <h3 className="text-xl lg:text-[4.3rem] leading-none font-bold">
             Get Started Within 2 Business Days
           </h3>
         </div>
@@ -19,9 +19,9 @@ const Index = () => {
               </p>
             </div>
             <a href="#talk" className="py-4 lg:py-0">
-              <div className="bg-gradient-to-r from-[#000076] to-[#7600EB] px-4 lg:px-8 py-8 rounded-2xl w-full lg:w-fit flex justify-center">
+              <div className="bg-primaryTx px-4 lg:px-8 py-8 rounded-2xl w-full lg:w-fit flex justify-center">
                 <button className="flex justify-center Gilroy">
-                  <span className="flex items-center justify-between w-full">
+                  <span className="flex items-center justify-between w-full text-primaryBg">
                     Ready? &nbsp; <BsArrowRight /> &nbsp; Talk with us
                   </span>
                 </button>

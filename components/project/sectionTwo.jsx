@@ -3,11 +3,11 @@ import Carousel from "./projectDetailCarousel.jsx";
 import Image from "next/image";
 const Index = ({ carouselImages }) => {
   return (
-    <div className="py-8 my-8 relative flex flex-col justify-center bg-[#2F45C5] inset-0 bg-gradient-to-b from-[#2F45C5] to-black">
+    <div className="py-8 my-8 relative flex flex-col justify-center bg-primaryTx">
       <div className="container">
         <div className="flex items-center">
-          <div className="w-12 lg:w-32 h-2 bg-[#EBEBFC] opacity-50 mr-4 lg:mr-12" />
-          <h3 className="text-3xl lg:text-5xl font-bold Gilroy-SemiBold">
+          <div className="w-12 lg:w-32 h-2 bg-primaryBg mr-4 lg:mr-12" />
+          <h3 className="text-3xl text-primaryBg lg:text-5xl font-bold Gilroy-SemiBold">
             What is{" "}
           </h3>
           <Image
@@ -19,7 +19,7 @@ const Index = ({ carouselImages }) => {
           />
         </div>
         <div className="px-4 lg:px-48 py-4">
-          <p className="font-Satoshi font-bold text-2xl opacity-50">
+          <p className="font-Satoshi font-bold text-2xl text-primaryBg opacity-70">
             Bloomia is a comprehensive platform designed to assist and motivate
             users in performing kegel exercises, which offer numerous benefits
             for both men and women. These exercises focus on strengthening the

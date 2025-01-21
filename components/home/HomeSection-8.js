@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 const HomeSectionEight = ({ info }) => {
   const [activeSection, setActiveSection] = useState("Discovery Workshop");
 
-  // Create references for each section
   const sectionRefs = info.content.reduce((acc, section) => {
     acc[section.title] = useRef(null);
     return acc;

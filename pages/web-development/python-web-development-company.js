@@ -31,6 +31,7 @@ const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
 import DOMPurity from "isomorphic-dompurify"
+import Faqs from "../../components/mobilePages/faqs.js";
 
 function PythonWebDevelopment(props) {
   const content =
@@ -266,7 +267,7 @@ const sanitizedJsonLd = DOMPurity.sanitize(JSON.stringify(jsonLdScript))
             reasons={chooseBI}
             alt="Python Development Company"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

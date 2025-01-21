@@ -23,6 +23,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
@@ -216,7 +217,7 @@ function WordPressWebDesign(props) {
             reasons={chooseBI}
             alt="Wordpress website designs"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

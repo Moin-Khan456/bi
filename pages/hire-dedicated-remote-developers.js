@@ -15,6 +15,8 @@ import Logo from "../components/staffAugmentation/logo";
 import Faq from "../components/common/Faqhire";
 import Loader from "../components/common/loader";
 import Image from "next/image";
+import Faqs from "../components/mobilePages/faqs";
+import LetsKick from "../components/common/LetsKick";
 export default function Hirededicatedremotedevelopers(props) {
   const faqdetails = [
     {
@@ -118,15 +120,16 @@ export default function Hirededicatedremotedevelopers(props) {
               priority="low"
               width={500}
               height={500}
-              className="w-full"
+              className="w-full filter invert"
             />
             <StaffPratice />
             <Logo />
           </div>
         </div>
-        <Faq faq={faqdetails} />
+        <Faqs faq={faqdetails} />
         <KeepInTouch />
         <LocateUs />
+        <LetsKick/>
         <Footer />
       </div>
     </>

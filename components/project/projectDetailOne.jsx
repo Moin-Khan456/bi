@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Index = ({ section }) => {
+  
   return (
     <main className="container lg:min-h-screen">
       <div className="py-8 px-0 lg:px-12 flex flex-col items-center">
@@ -12,11 +13,11 @@ const Index = ({ section }) => {
             alt={section.alt}
             width={800}
             height={800}
-            className={`w-1/2 lg:w-1/4 ${
+            className={`w-1/2 lg:w-1/4 filter invert ${
               section.alt === "MyFitMantra" && "lg:scale-[0.7]"
             }`}
           />
-          <p className="hidden lg:block">{section.space}</p>
+          <p className="hidden lg:block text-primaryTx">{section.space}</p>
           <div className="w-[95%] flex justify-center py-4 lg:py-8">
             <Image
               src={section.image}
@@ -24,6 +25,7 @@ const Index = ({ section }) => {
               width={800}
               height={800}
               preload="metadata"
+              className="filter invert"
             />
           </div>
           <p className="w-[70vw] lg:w-[400px] text-center lg:ml-12 py-4 lg:py-8">

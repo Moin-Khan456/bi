@@ -20,6 +20,7 @@ const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"));
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import HireBanner from "../../components/Mobile-Development/SectionOne.jsx";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const ChooseBraininventoryApp = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
@@ -232,7 +233,7 @@ function CustomMobileAppDevelopment() {
             />
             <hr />
             <BlogArticle />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <KeepInTouch />
             <LocateUs />
             <LetsKick />

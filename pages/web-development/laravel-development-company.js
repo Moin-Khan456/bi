@@ -23,6 +23,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const Hello = dynamic(() => import("../../components/common/FindUs"));
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
@@ -229,7 +230,7 @@ function LaravelDevelopment(props) {
             reasons={chooseBI}
             alt="Laravel Development Company"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

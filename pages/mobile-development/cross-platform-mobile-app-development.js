@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/Mobile-Development/SectionOne.jsx";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory.jsx")
 );
@@ -237,7 +238,7 @@ function CrossPlatformMobileApp(props) {
             reasons={chooseBI}
             alt="hybrid development company"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

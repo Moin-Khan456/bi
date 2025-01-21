@@ -12,16 +12,16 @@ export default function HireBanner() {
             <h3 className="text-3xl lg:text-[4rem]  whitespace-nowrap MonumentBold uppercase leading-[1.3] mt-4">
               Igniting <br /> Education <br /> with Innovation
             </h3>
-            <h2 className="text-sm font-Satoshi text-slate-400 leading-7 mb-4">
+            <h2 className="text-sm font-Satoshi text-secondaryTx opacity-50 leading-7 mb-4">
               Amplify your business potential with a top-tier ed-tech platform
               from Brain Inventory! We transform the educational landscape,
               making learning accessible, engaging, and impactful.
             </h2>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-gradient-to-r from-[#000076] to-[#7600EB] px-6 py-4 my-12">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
               LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full bg-[#9347e7]" />
+              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>
           </Link>
         </section>

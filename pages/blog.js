@@ -10,8 +10,7 @@ const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
 import { useRouter } from "next/router";
-const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 
 export default function Home({ data, blogs, totalPages }) {

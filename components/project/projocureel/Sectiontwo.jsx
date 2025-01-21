@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 const Index = () => {
   return (
-    <div className="relative flex flex-col lg:flex-row items-end justify-center bg-white max-w-full">
+    <div className="relative flex flex-col lg:flex-row items-end justify-center bg-primaryBg max-w-full">
       <div className="bg-[#e8fdd0] lg:h-screen lg:w-[60%]">
-        <h3 className="text-5xl Gilroy-bold text-black font-bold w-[70%] px-8 pt-12">
+        <h3 className="text-5xl Gilroy-bold text-secondaryTx font-bold w-[70%] px-8 pt-12">
           Get Inspired
         </h3>
         <Image

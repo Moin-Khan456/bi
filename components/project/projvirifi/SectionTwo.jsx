@@ -2,11 +2,11 @@ import React from "react";
 const Index = () => {
   return (
     <div className="container py-8 relative flex flex-col justify-center ">
-      <h3 className="text-3xl lg:text-5xl text-center font-bold text-white">
-        Project <span className="text-[#7600EB]">Overview</span>
+      <h3 className="text-3xl lg:text-5xl text-center font-bold text-secondaryTx">
+        Project <span className="text-primaryTx">Overview</span>
       </h3>
       <div className="px-2 lg:px-48 py-4">
-        <p className="font-bold text-white py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-50">
+        <p className="font-bold text-secondaryTx py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-60">
           Virifi.io serves as the foundational digital infrastructure supporting
           our strategic solutions across various business domains. With its
           robust technology, Virifi.io underpins a wide range of applications in

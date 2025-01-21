@@ -23,6 +23,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 import SectionOne from "../../components/common/HireBanner.jsx";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx")
 );
@@ -223,7 +224,7 @@ function CodeIgniterWebDevelopment(props) {
             reasons={chooseBI}
             alt="CodeIgniter development company"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

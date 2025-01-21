@@ -22,6 +22,7 @@ const Experienced = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire"));
 import HireBanner from "../../components/common/HireBanner";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
 const ChooseBraininventory = dynamic(() =>
   import("../../components/common/CommonChooseBraininventory")
 );
@@ -217,7 +218,7 @@ function DotnetDevelopment(props) {
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"
           />
-          <FaqHire faq={faqdetails} />
+          <Faqs faq={faqdetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

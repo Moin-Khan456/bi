@@ -4,13 +4,11 @@ import dynamic from "next/dynamic";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
 const Header = dynamic(() => import("../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
-const FaqHire = dynamic(() => import("../components/common/Faqhire.jsx"));
 const Customer = dynamic(() => import("../components/common/customer.jsx"));
 const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
 const HireMarquee = dynamic(() =>
@@ -29,11 +27,13 @@ const Clients = dynamic(() => import("../components/Hire/Clients.jsx"));
 const BlogArticle = dynamic(() =>
   import("../components/common/BlogArticle.jsx")
 );
+const Faq = dynamic(() => import("../components/mobilePages/faqs.js"));
+
 
 function HireAangularJsDeveloper() {
   const content = (
     <>
-      <Link href="/" className="text-[#2186ff]">
+      <Link href="/" className="Gilroy-Bold text-xl text-secondaryBg">
         Brain Inventory
       </Link>{" "}
       is the top choice for employing an AngularJS developer or a skillful
@@ -41,7 +41,7 @@ function HireAangularJsDeveloper() {
       advantage of high-quality{" "}
       <Link
         href="/web-development/angularjs-development-company"
-        className="text-[#2186ff]"
+        className="Gilroy-Bold text-xl text-secondaryBg"
       >
         AngularJS development
       </Link>{" "}
@@ -62,7 +62,7 @@ function HireAangularJsDeveloper() {
       So the need is to hire Angularjs developers who are worthy and
       well-experienced, who offers better services at an affordable price.
       However, you are just in the right place as{" "}
-      <Link href="/" className="text-[#2186ff]">
+      <Link href="/" className="Gilroy-Bold text-xl text-secondaryBg">
         Brain Inventory
       </Link>{" "}
       will help you develop your robust and well-secure dynamic web
@@ -96,7 +96,7 @@ function HireAangularJsDeveloper() {
       head: "UI/UX Development",
       content: (
         <>
-          <Link href="/hire-ui-ux-designers" className="text-[#2186ff]">
+          <Link href="/hire-ui-ux-designers" className="Gilroy-Bold text-xl text-secondaryBg">
             UI and UX
           </Link>{" "}
           are important part of the website development lifecycle process it
@@ -360,7 +360,7 @@ function HireAangularJsDeveloper() {
             <Engaged />
             <HireSteps type="AngularJS" />
             <Clients tech="AngularJS" />
-            <FaqHire faq={faqdetails} />
+            <Faq faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

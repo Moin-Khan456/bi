@@ -20,6 +20,7 @@ import HireSteps from "../components/Hire/HireSteps.jsx";
 import Clients from "../components/Hire/Clients.jsx";
 import Link from "next/link";
 import DOMPurify from "isomorphic-dompurify";
+import Faqs from "../components/mobilePages/faqs.js";
 function HireAndroidAppDeveloper(props) {
   const content =
     "BrainInventory team is a pool of highly experienced, creative, and dedicated app developers with experience in developing highly customized Android applications for different sizes of businesses from different industries.";
@@ -327,7 +328,7 @@ function HireAndroidAppDeveloper(props) {
             <Engaged />
             <HireSteps type="Android" />
             <Clients tech="Android" />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

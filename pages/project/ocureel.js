@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SectionOne from "../../components/project/projocureel/SectionOne.jsx";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const SectionTwo = dynamic(() =>
   import("../../components/project/projocureel/Sectiontwo.jsx")
 );
@@ -26,10 +27,7 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo.jsx")
 );
-const LocateUs = dynamic(() => import("../../components/portfolio/LocateUs"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm")
-);
+import LocateUs from "../../components/common/locateUs.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -146,13 +144,13 @@ const Virifi = () => {
         </div>
       </div>
       <div>
-        <div className="bg-white relative z-10 lg:-top-52 lg:pt-48">
+        <div className="bg-PrimaryBg relative z-10 lg:-top-52 lg:pt-48">
           <div className="container">
-            <div className="flex container m-auto text-center justify-center text-black text-4xl lg:text-6xl py-4 lg:pt-32">
+            <div className="flex container m-auto text-center justify-center text-secondaryTx text-4xl lg:text-6xl py-4 lg:pt-32">
               <span className="font-bold">About</span>&nbsp; Ocureel
             </div>
             <div className="w-full py-4">
-              <p className="text-black opacity-50 font-Satoshi px-2 lg:px-72 text-center text-2xl font-semibold leading-10 lg:leading-[4rem] flex justify-center">
+              <p className="text-secondaryTx opacity-50 font-Satoshi px-2 lg:px-72 text-center text-2xl font-semibold leading-10 lg:leading-[4rem] flex justify-center">
                 A game-changing social video content application which went
                 viral in no time. Ocureel is a video content platform which
                 takes users on the ultimate adventure of creating real-life
@@ -220,7 +218,7 @@ const Virifi = () => {
           <BlogArticle />
         </div>
         <div className="mx-4">
-          <ContactForm />
+            <KeepInTouch />
         </div>
         <LocateUs />
         <Slogan />

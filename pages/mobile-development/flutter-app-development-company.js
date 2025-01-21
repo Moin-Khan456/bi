@@ -2,6 +2,8 @@ import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
+import Faqs from "../../components/mobilePages/faqs.js";
+import KeepInTouch from "../../components/common/keepInTouch.js";
 const Header = dynamic(() => import("../../components/header/Header.js"));
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"));
@@ -250,9 +252,9 @@ function Flutter() {
               alt="Flutter Development Company"
             />{" "}
             <Industries />
-            <FaqHire faq={faqdetails} />
+            <Faqs faq={faqdetails} />
             <BlogArticle />
-            <ContactForm />
+            <KeepInTouch />
             <LocateUs />
             <hr />
             <Footer />

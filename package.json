@@ -64,7 +64,7 @@
     "autoprefixer": "^10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
-    "framer-motion": "^11.0.12",
+    "framer-motion": "^11.18.2",
     "gsap": "^3.12.5",
     "postcss": "^8.4.28",
     "react-gsap": "^3.2.1",

@@ -3,9 +3,9 @@ import React from "react";
 function Card({ tech }) {
   return (
     <div className="container">
-      <div className="bg-[#1A1A1A] rounded-3xl shadow-lg py-8 md:flex md:justify-between mx-12 lg:mx-24">
+      <div className="bg-primaryTx rounded-3xl shadow-lg py-8 md:flex md:justify-between mx-12 lg:mx-24">
         <div className="w-full">
-          <h2 className="text-4xl font-bold text-white text-center mb-8">
+          <h2 className="text-4xl font-bold text-primaryBg text-center mb-8">
             Tech Stacks Used
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:px-48 py-12">
@@ -21,7 +21,7 @@ function Card({ tech }) {
                   height={500}
                   className="tech_img"
                 />
-                <p>{ele.name}</p>
+                <p className="text-primaryBg">{ele.name}</p>
               </div>
             ))}
           </div>

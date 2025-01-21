@@ -15,7 +15,7 @@ const Index = ({ section }) => {
           className="lg:w-[15%] py-28 lg:py-4"
           alt="Fatoura"
         />
-        <h3 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-[#FFD166]">
+        <h3 className="text-4xl Gilroy-Bold flex items-center lg:text-6xl text-primaryBg">
           Online{" "}
           <Image
             width={1500}
@@ -25,12 +25,12 @@ const Index = ({ section }) => {
             className="w-1/6"
           />
         </h3>
-        <h3 className="text-4xl Gilroy-Bold lg:text-6xl pb-12 text-[#FFD166]">
+        <h3 className="text-4xl Gilroy-Bold lg:text-6xl pb-12 text-primaryBg">
           Creation Platform{" "}
         </h3>
         <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between py-4">
           <div>
-            <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs">
+            <span className="flex justify-center lg:justify-left items-center px-4 py-4 text-xs text-primaryBg">
               Made With&nbsp;&nbsp;&nbsp;
               <Image
                 width={500}

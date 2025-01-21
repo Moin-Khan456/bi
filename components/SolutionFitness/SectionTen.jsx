@@ -43,7 +43,7 @@ const Index = ({
               >
                 <source src={oneVideo} type="video/mp4" />
               </video>
-              <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
+              <h3 className="monument text-secondaryTx text-3xl mt-4">{oneName}</h3>
             </div>
           ) : (
             <Link href={oneLink}>
@@ -58,7 +58,7 @@ const Index = ({
                 >
                   <source src={oneVideo} type="video/mp4" />
                 </video>
-                <h3 className="monument text-white text-3xl mt-4">{oneName}</h3>
+                <h3 className="monument text-secondaryTx text-3xl mt-4">{oneName}</h3>
               </div>
             </Link>
           )}
@@ -77,7 +77,7 @@ const Index = ({
               >
                 <source src={twoVideo} type="video/mp4" />
               </video>
-              <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
+              <h3 className="monument text-secondaryTx text-3xl mt-4">{twoName}</h3>
             </div>
           ) : (
             <Link href={twoLink}>
@@ -92,7 +92,7 @@ const Index = ({
                 >
                   <source src={twoVideo} type="video/mp4" />
                 </video>
-                <h3 className="monument text-white text-3xl mt-4">{twoName}</h3>
+                <h3 className="monument text-SecondaryTx text-3xl mt-4">{twoName}</h3>
               </div>
             </Link>
           )}
@@ -108,7 +108,7 @@ export default Index;
 const DialogBox = ({ setClose, image }) => {
   return (
     <div
-      className=" bg-[#000000d2] flex justify-center items-center h-screen w-screen fixed top-0 left-0 z-[999999]"
+      className=" bg-primaryTx flex justify-center items-center h-screen w-screen fixed top-0 left-0 z-[999999]"
       cursor-pointer
       onClick={() => setClose(false)}
     >

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Header from "../components/header/Header.js";

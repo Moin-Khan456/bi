@@ -11,7 +11,7 @@ const Culture = ({ categories }) => {
       </p>
       <div className="flex flex-wrap justify-center gap-6">
         {categories.content.map((feature, index) => (
-         <div class="flex justify-center items-center border-2 border-primaryTx bg-secondaryBg h-[116px] w-[285px] sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-1.5rem)] lg:w-[calc(25%-1.5rem)] bg-development-simply">
+         <div key={index} class="flex justify-center items-center border-2 border-primaryTx bg-secondaryBg h-[116px] w-[285px] sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-1.5rem)] lg:w-[calc(25%-1.5rem)] bg-development-simply">
          <h3 class="text-center text-xl Gilroy-SemiBold font-medium text-secondaryTx">{feature}</h3>
        </div>
         ))}

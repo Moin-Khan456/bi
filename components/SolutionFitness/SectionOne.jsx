@@ -15,7 +15,7 @@ const SectionOne = () => {
         />
       </div>
       <div className="bg-gradient-to-r from-black to-transparent">
-        <div className="container py-72 px-12">
+        <div className="container py-44 px-12">
           <h3 className="MonumentRegular text-primaryBg text-sm">
             MOBILIZING FITNESS WITH INNOVATION
           </h3>

@@ -335,7 +335,6 @@ function Blockchain(props) {
       <main>
         <Header />
         <section>
-          <div className="bg-no-repeat bg-center brightness-[1.35] bg-[url('/background-image2.png')]">
             <SectionOne />
             <SectionTwo
               className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
@@ -345,7 +344,6 @@ function Blockchain(props) {
               description={sectionTwoDesc}
               lastSmall={true}
             />
-          </div>
           <SectionThree
             title="Blockchain Industry Insights"
             sectionDesc="Blockchain stands as a dynamic and transformative technological industry, reshaping industries through decentralization and transparency. Here are intriguing insights into the realm of blockchain:"

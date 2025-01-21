@@ -13,7 +13,7 @@ const SectionTwo = ({
   isHeadShow = true,
 }) => {
   const MainTitle = title.split(" ")[0]
-  let colorChange = ['Marketplace','Accounting','Education','Custom','Fitness']
+  let colorChange = ['Marketplace','Accounting','Education','Custom','Fitness','Health']
   return (
     <div className={`${className} padding-left-all-section-1`}>
       <div className="container">

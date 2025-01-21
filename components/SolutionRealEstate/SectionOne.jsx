@@ -8,7 +8,7 @@ export default function HireBanner() {
     <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/realState_banner.webp')]">
       <div className="flex flex-col justify-center h-screen padding-left-all-section-1 ">
         <div className="text-center">
-          <h3 className="MonumentRegular !font-extrabold uppercase text-3xl lg:text-[4rem] pt-16 text-primaryBg">
+          <h3 className="MonumentRegular !font-extrabold uppercase text-3xl lg:text-[3.5rem] pt-16 text-primaryBg">
             Revolutionizing Realty
           </h3>
           <h2 className="MonumentRegular text-primaryBg !font-bold uppercase text-xl lg:text-[2.5rem] lg:pt-8">

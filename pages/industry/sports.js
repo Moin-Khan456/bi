@@ -45,6 +45,7 @@ const SectionNine = dynamic(() =>
 const SectionTen = dynamic(() =>
   import("../../components/SolutionFitness/SectionTen.jsx")
 );
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 
 function SportAppDeveloper() {
   const title = "How Do We Approach Sports Software Development?";
@@ -394,6 +395,7 @@ function SportAppDeveloper() {
             <BlogArticle />
             <KeepInTouch />
             <LocateUs />
+            <LetsKick/>
             <hr />
             <Footer />
           </section>

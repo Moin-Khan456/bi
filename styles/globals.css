@@ -132,7 +132,7 @@ body {
 }
 
 .bg-case-blue-request {
-  background-color: #6302dd;
+  background-color: var(--secondary-bg);
 }
 
 .bg-base-blue-2 {

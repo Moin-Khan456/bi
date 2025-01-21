@@ -39,7 +39,7 @@ function Hiringbenifit(props) {
               priority="low"
               width={500}
               height={500}
-              className="px-12"
+              className="px-12 filter invert"
             />
           </div>
 

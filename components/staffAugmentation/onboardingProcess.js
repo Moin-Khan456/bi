@@ -33,7 +33,7 @@ function OnboardingProcess(props) {
                         </ul>
                     </div>
                     <div className='mt-8'>
-                    <h3 className='text-center Gilroy-Bold text-xl bg-hight-orange pt-3 pb-3 mb-3'>Brain Inventory Contact resourse</h3>
+                    <h3 className='text-center Gilroy-Bold text-xl bg-primaryTx text-primaryBg pt-3 pb-3 mb-3'>Brain Inventory Contact resourse</h3>
                         <ul>
                             <li className='text-center Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> $2000.00 </li>
                             <li className='text-center Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> Included </li>
@@ -41,7 +41,7 @@ function OnboardingProcess(props) {
                             <li className='text-center Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> Included</li>
                             <li className='text-center Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> Included</li>
                             <li className='text-center Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> Included</li>
-                            <li className='text-center bg-hight-orange Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> $2,000</li>
+                            <li className='text-center bg-primaryTx text-primaryBg Gilroy-Bold text-lg mb-3 pb-3 pt-3 border-custom'> $2,000</li>
                         </ul>
                     </div>
                 </div>

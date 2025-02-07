@@ -393,6 +393,14 @@ const FooterSections = [
         name: "UI/UX Development Services",
         path: "/ui-ux-development-services",
       },
+      {
+        name: "IT Staff Augmentation",
+        path: "/it-staff-augmentation",
+      },
+      {
+        name: "Mobile app development services",
+        path: "/mobile-app-development-services",
+      },
     ],
   },
 ];

@@ -8,7 +8,7 @@ import {
   listEngagement,
   technologies,
 } from "../data/about-us-data/howWeWorkData.js";
-const Header = dynamic(() => import("../components/header/Header"));
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
 const WorkBanner = dynamic(() => import("../components/work/workBanner.js"));
 const Work = dynamic(() => import("../components/work/work.js"));
 const ChooseApp = dynamic(() =>
@@ -20,8 +20,8 @@ const LanguageTool = dynamic(() =>
 const EngagementModal = dynamic(() =>
   import("../components/mobilePages/engagementModal.js")
 );
-const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"));
-const Footer = dynamic(() => import("../components/common/Footer"));
+const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
@@ -58,21 +58,21 @@ export default function HowWeWork() {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/logo/Braininventory_logo.png"
         />
          <link rel="canonical" href="https://braininventory.in/how-we-work" />
-        <Script
+        <screenTopcript
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
           crossOrigin="anonymous"
-        ></Script>
-        <Script
+        ></screenTopcript>
+        <script
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
           crossOrigin="anonymous"
-        ></Script>
-        <Script
+        ></script>
+        <script
           async
           src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
           crossOrigin="anonymous"
-        ></Script>
+        ></script>
        
       </Head>
       <Suspense

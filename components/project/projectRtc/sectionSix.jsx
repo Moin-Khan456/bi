@@ -8,7 +8,7 @@ const SectionSix = () => {
         <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6515.png"
           alt="Custom Software Development Company | Application Development Company"
-          className="w-48"
+          className="w-48 filter invert"
           width={500}
           height={500}
         />

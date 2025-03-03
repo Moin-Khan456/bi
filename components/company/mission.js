@@ -1,22 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import visionImg from "../../public/assets/company-assets/vision.webp"
-import missionImg from "../../public/assets/company-assets/mission.webp"
-const missionType = [
-  {
-    image: visionImg,
-    title: "Our Vision",
-    description:
-      "Pioneering software for a future that anticipates tomorrow’s needs, expands possibilities and ensures universal tech accessibility for all.",
-  },
-  {
-    image: missionImg,
-    title: "Our Mission",
-    description:
-      "Deliver top-notch software empowering success in the digital era. We commit to excellence, ethics, collaboration, and attracting talent to meet evolving client needs, with a global positive impact.",
-  },
-];
-function mission() {
+
+function mission({missionType}) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section">

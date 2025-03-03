@@ -71,7 +71,7 @@ function Support() {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "What are software maintenance and support services?",
@@ -173,8 +173,7 @@ function Support() {
 
           <Link href="#talk">
             <button
-              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-primaryTx text-primaryBg rounded-full   px-8
-                             py-4 my-12"
+              className="flex items-center m-auto justify-center font-Satoshi font-bold text-xs bg-primaryTx text-primaryBg rounded-full px-8 py-4 my-12"
             >
               START PROJECT
               <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full" />
@@ -219,11 +218,10 @@ function Support() {
             twoLink={null}
             alt="Our Work"
           />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
                       <KeepInTouch />
-          
           <LetsKick />
           <hr />
           <Footer />

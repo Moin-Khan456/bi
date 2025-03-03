@@ -11,38 +11,24 @@ import { useEffect } from "react";
 import Image from "next/image";
 import axios from "axios";
 
-export default function PostPage({ slug, post, featuredMedia }) {
+export default function PostPage({ slug, post, featuredMedia  }) {
+
   const [title, setTitle] = useState(
-    data.find((ele) => ele.id === post.id)?.Title ?? "Brain Inventory | Blog"
+    post.yoast_head_json.title ?? "Brain Inventory | Blog"
   );
-  const [summary, setSummary] = useState(
-    post.excerpt.rendered.includes(":")
-      ? post.excerpt.rendered.split(":")[1]
-      : post.excerpt.rendered
-  );
-  const [discription, setDiscription] = useState(
-    data.find((ele) => ele.id === post.id)?.description ??
-      summary?.split(". ")?.[0]
+  const [description, setDescription] = useState(
+    post.yoast_head_json.description ?? "Brain Inventory | Blog"
   );
 
-  useEffect(() => {
-    setTitle(
-      data.find((ele) => ele.id === post.id)?.Title || "Brain Inventory | Blog"
-    );
-    setDiscription(
-      data.find((ele) => ele.id === post.id)?.description ||
-        "Brain Inventory | Blog"
-    );
-  }, [post.id]);
   return (
     <>
-      <div className="relative bg-white ">
+      <div className="relative bg-primaryBg ">
         <Head>
           <title>{title}</title>
-          <meta name="description" content={discription} />
+          <meta name="description" content={description} />
           <link rel="og:title" content={title} />
           <meta property="og:title" content={title} />
-          <meta property="og:description" content={discription} />
+          <meta property="og:description" content={description} />
           <link
             rel="canonical"
             href={`https://braininventory.in/posts/${slug}/${post.id}`}
@@ -127,7 +113,7 @@ export const getServerSideProps = async (context) => {
     };
   }
 
-  const fields = "id,slug,title,_links,date,content,excerpt";
+  const fields = "id,slug,title,_links,date,content,excerpt,yoast_head_json";
 
   try {
     // Fetch the post data using the slug, with specific fields and embedded data
@@ -135,7 +121,6 @@ export const getServerSideProps = async (context) => {
       `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?slug=${slug[0]}&_embed&_fields=${fields}`
     );
     const post = postResponse.data[0];
-
     // If no post is found, show 404 page
     if (!post) {
       return {

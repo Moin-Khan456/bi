@@ -30,7 +30,7 @@ const Index = () => {
           className="w-[80px] absolute top-40 right-48 hidden lg:block"
         />
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center max-w-[1450px] relative z-20 px-2">
-          <p className="lg:w-[350px] pb-32 lg:pb-0 text-sm text-slate-400">
+          <p className="lg:w-[350px] pb-14 lg:pb-0 text-sm text-slate-400">
             At Brain Inventory, we&apos;re leaders in the design and development
             of healthcare services. <Link href="/company" className="text-[#2186ff]">Our team of expert</Link>{" "}      
              developers and designers

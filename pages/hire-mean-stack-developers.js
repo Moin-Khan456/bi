@@ -116,7 +116,7 @@ function HireMeanStackDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Why is MEAN stack in demand?",
@@ -302,7 +302,7 @@ function HireMeanStackDeveloper(props) {
           <Engaged />
           <HireSteps type="MEAN stack" />
           <Clients tech="MEAN stack" />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

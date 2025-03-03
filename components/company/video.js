@@ -2,7 +2,7 @@ import React from "react";
 
 function video() {
   return (
-    <div>
+    <div className="flex justify-center">
       <video
         muted
         loop

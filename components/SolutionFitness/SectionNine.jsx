@@ -12,9 +12,11 @@ const Index = ({
   slow,
   fast,
 }) => {
+  const page = "BLOCKCHAIN APP DEVELOPMENT"
+  const isTrue = page===pageCategory
   return (
     <div className="rounded-md my-8 py-10 lg:space-x-6 relative ">
-      <div className=" py-32 lg:pb-[22rem]">
+      <div className=" sm:py-32 lg:pb-[22rem]">
         <Marquee duration={fast} reverse={true} className="mb-6 ">
           <div className="stroke-text-seven lg:text-8xl text-primaryTx uppercase text-5xl flex">
             {[1, 2].map((_, index) => (
@@ -54,13 +56,13 @@ const Index = ({
         </Marquee>
       </div>
       <div className=" padding-left-all-section absolute top-0 left-0 right-0 lg:p-0 p-4">
-        <div>
+        <div className={`sm:mt-inherit ${isTrue ? 'mt-[4.3rem]': 'mt-[1.3rem]'}`}>
           <Image
             src={src}
             width={500}
             height={400}
             alt={alt}
-            className="m-auto block"
+            className="m-auto block w-[330px] sm:w-[500px] mb-8"
           ></Image>
         </div>
         <div>

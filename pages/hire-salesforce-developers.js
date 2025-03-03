@@ -78,7 +78,7 @@ function HireSalesforceDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "What are the Benefits of a Salesforce Developer?",
@@ -285,7 +285,7 @@ function HireSalesforceDeveloper(props) {
             {/* <Engaged /> */}
             {/* <HireSteps type="Android" /> */}
             {/* <Clients tech="Android" /> */}
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

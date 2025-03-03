@@ -97,7 +97,7 @@ function HireIconicDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "What steps should I follow to Hire an Ionic Developer?",
@@ -252,7 +252,7 @@ function HireIconicDeveloper(props) {
             alt="Ionic development company"
           />
 
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

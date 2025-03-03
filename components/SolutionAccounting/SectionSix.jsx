@@ -16,7 +16,7 @@ const Index = ({
 }) => {
   const router = useRouter();
   return (
-    <div className="padding-left-all-section-1 rounded-md my-8 py-10 px-4">
+    <div className="padding-left-all-section-1 rounded-md sm:my-8 mb-8 sm:py-10 pb-10 px-4">
       <div className="container padding-left-all-section-1">
         <h2 className={`MonumentRegular text-[1.5625rem] ${classText}`}>
           {headAbove}
@@ -29,8 +29,10 @@ const Index = ({
             >
               {title}
             </h3>
+            <p className="lg:w-[235px] relative top-11 lg:opacity-0 opacity-100">{head}</p>
+
             <button
-              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 my-12"
+              className="flex items-center font-Satoshi font-bold text-xs rounded-full border-gray-50 border-[1px] px-8 py-4 sm:my-12 mt-20"
               onClick={() => {
                 router.push(
                   "/mobile-development/custom-mobile-app-development-company"
@@ -40,7 +42,7 @@ const Index = ({
               {btn}
               <GoArrowUpRight className="font-extrabold text-3xl ml-4 p-2 rounded-full " />
             </button>
-            <p className="lg:w-[235px] relative top-11">{head}</p>
+            <p className="lg:w-[235px] relative top-11 opacity-0 lg:opacity-100">{head}</p>
           </div>
           <div className="relative hidden lg:block">
             {src && (

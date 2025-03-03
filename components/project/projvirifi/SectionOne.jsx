@@ -18,7 +18,7 @@ const Index = ({ section }) => {
           <span className="text-primaryBg">{section.styleBrief}</span>
         </h3>
         <div className="lg:flex flex-col py-12">
-          <span className="flex justify-center items-center lg:justify-start px-4 text-xs py-8">
+          <span className="flex justify-center text-primaryBg items-center lg:justify-start px-4 text-xs py-8">
             Made With&nbsp;&nbsp;&nbsp;
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/XD.png"

@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 export default function HireBanner() {
   return (
-    <main className="container h-screen padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 bg-right">
+    <main className="container sm:h-screen padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 bg-right">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section className="relative">
           <section className="ml-4 lg:ml-0 relative z-20">
-            <h3 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
+            <h3 className="text-4xl  lg:text-[2.5rem] MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Navigating Tomorrow:
             </h3>
-            <h3 className="text-2xl lg:text-[2.5rem] MonumentBold uppercase !leading-[3.5rem] mt-4 lg:!w-[700px]">
+            <h3 className="text-4xl lg:text-[2.5rem] MonumentBold uppercase !leading-[3.5rem] mt-4 lg:!w-[700px]">
               Transforming Logistics with Smart Solutions Today!
             </h3>
             <h2 className="text-md font-Satoshi text-secondaryTx opacity-50 leading-7 pb-12 lg:w-[85%] lg:text-justify">
@@ -22,7 +22,7 @@ export default function HireBanner() {
             </h2>
           </section>
           <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4">
+            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 ml-4">
               LEVERAGE THE POWER OF US &nbsp;{" "}
               <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
             </button>

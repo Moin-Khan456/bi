@@ -333,7 +333,11 @@ body {
     transform: translate3d(0%, 0, 0);
   }
 }
-
+@media (max-width:768px) {
+  .bg-careerImg{
+    background-position: left;
+  }
+}
 /* Last copied till here */
 .font-Satoshi {
   font-family: Satoshi !important;
@@ -574,7 +578,29 @@ button.btn-details {
     white-space: nowrap;
   }
 }
+/* Add this to your global CSS or a CSS module */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  transition: all 0.5s ease-in-out;
+}
 
+.card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 label.experiene-label {
   letter-spacing: 0px;
   color: var(--secondary-text);
@@ -1001,8 +1027,13 @@ html {
 }
 
 .hover-bg-yellow-h:hover .color-hover {
-  background-color: var(--secondary-text);
+  background-color: #1d48d793;
+  color: var(--primary-text);
 }
+/* .hover-bg-yellow-h:hover .color-hover svg:hover {
+  color: var(--primary-text);
+
+} */
 
 .object-fit-custom img {
   object-fit: cover;
@@ -1286,9 +1317,9 @@ ul.list-modal {
 .about-timeline .timeline-box h6 {
   font-size: 55px;
   line-height: 1;
-  color: #6302dd;
+  color: var(--primary-bg);
   font-weight: 700;
-  background-color: #000;
+  background-color: var(--primary-text);
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -1302,7 +1333,7 @@ ul.list-modal {
 .about-timeline .timeline-box p {
   font-size: 18px;
   line-height: 27px;
-  color: #fff;
+  color: var(--secondary-text);
   font-weight: 400;
   margin-bottom: 26px;
 }
@@ -1314,10 +1345,10 @@ ul.list-modal {
 .about-timeline .start-point h4 {
   font-size: 17px;
   line-height: 23px;
-  color: #fff;
+  color: var(--primary-bg);
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #6302dd;
+  background-color: var(--primary-text);
   border-radius: 16px;
   display: block;
   width: auto;
@@ -1330,7 +1361,7 @@ ul.list-modal {
 .about-timeline .black-dot {
   width: 25px;
   height: 25px;
-  background-color: #fff;
+  background-color: var(--secondary-text);
   border-radius: 50%;
   display: block;
   margin: 0 auto 62px;
@@ -1360,17 +1391,17 @@ ul.list-modal {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #fff;
+  background-color: var(--secondary-text);
   left: 50%;
   top: 0;
   transform: translate(-50%, 0%);
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
-  border-left: 1px solid #fff;
+  border-left: 1px solid var(--secondary-text);
 }
 
 .about-timeline .timeline-row .horizontal-line {
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--secondary-text);
   width: calc(100% - 150px);
   margin: 0 auto;
   position: absolute;
@@ -1385,7 +1416,7 @@ ul.list-modal {
   margin: 0;
   padding: 0;
   width: 2px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--secondary-text);
   height: calc(100% - 150px);
   position: absolute;
   top: 0;
@@ -1401,11 +1432,11 @@ ul.list-modal {
 
 .about-timeline .corner {
   position: absolute;
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--secondary-text);
   width: 76px;
   height: 76px;
   right: 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--secondary-text);
   top: 74.9px;
   border-radius: 0 70px 0 0;
   top: 0;
@@ -1414,7 +1445,7 @@ ul.list-modal {
 .about-timeline .timeline-row:nth-child(2n + 2) .corner {
   right: inherit;
   left: 0;
-  border-left: 1px solid #fff;
+  border-left: 1px solid var(--secondary-text);
   border-right: 0;
   border-radius: 70px 0 0 0;
 }
@@ -1424,7 +1455,7 @@ ul.list-modal {
   top: inherit;
   border-radius: 0;
   border-top: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--secondary-text);
   border-radius: 0 0 70px 0;
   right: 0;
   z-index: 1;
@@ -1434,7 +1465,7 @@ ul.list-modal {
 .about-timeline .timeline-row:nth-child(2n + 2) .corner {
   right: inherit;
   left: 0;
-  border-left: 1px solid #fff;
+  border-left: 1px solid var(--secondary-text);
   border-right: 0;
   border-radius: 70px 0 0 0;
 }
@@ -1491,8 +1522,8 @@ ul.list-modal {
 .about-timeline .corner.bl {
   bottom: 0;
   left: 0;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid var(--secondary-text);
+  border-bottom: 1px solid var(--secondary-text);
   border-radius: 0 0 0 100%;
   border-right: none;
   border-top: none;
@@ -1939,6 +1970,10 @@ ul.list-modal {
     max-width: 100%;
     max-height: unset;
   }
+  .about-timeline .end-tm-point {
+    width: 100%;
+  }
+  
 }
 
 .bg-solution {
@@ -2274,6 +2309,7 @@ ol li {
 .hover-home-button:hover svg {
   margin-left: 2rem;
   transition: all 400ms ease;
+  
 }
 
 .hover-overlay {
@@ -2637,7 +2673,7 @@ a.btn-filled.btn {
   font-stretch: extra-expanded;
   transform: scaleX(110%);
   -webkit-text-stroke: 2px var(--primary-text);
-  opacity: 60;
+  opacity: 30%;
 }
 
 /*Project Template*/
@@ -2745,7 +2781,7 @@ a.btn-filled.btn {
   font-family: AppleGaramond;
 }
 .text-shadow {
-  text-shadow: 0px 2px 8px #ffff;
+  color:#ffff;
 }
 
 .admin-sidebar {
@@ -2905,7 +2941,6 @@ a.btn-filled.btn {
   text-shadow: 5px 5px 30px rgb(255, 191, 0);
   letter-spacing: 0.2rem;
   color: #000;
-  font-size: 5.49194rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -2926,7 +2961,7 @@ a.btn-filled.btn {
 }
 
 .bg-section-two {
-  background:var(--primary-text)
+  background:var(--secondary-bg)
 }
 
 @media screen and (min-width: 1680px) {
@@ -3292,4 +3327,14 @@ select#countryCode {
 
 .mt-20444 {
   margin-bottom: 2rem;
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.collapse-open .collapse-content {
+  max-height: 100vh; /* Adjust as per content size */
 }

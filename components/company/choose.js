@@ -1,30 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import icon1 from "../../public/assets/company-assets/360.webp"
-import icon2 from "../../public/assets/company-assets/client.webp"
-import icon3 from "../../public/assets/company-assets/industry.webp"
-import icon4 from "../../public/assets/company-assets/market.webp"
 
-const info =[
-  {
-    image:icon1,
-    title:"360,Approach",
-  },
-  {
-    image:icon2,
-    title:"Client,Centricity",
-  },
-  {
-    image:icon3,
-    title:"Industry,Expertise",
-    size:"w-30"
-  },
-  {
-    image:icon4,
-    title:"Go to Time to, Market",
-  },
-]
-function choose() {
+
+
+function choose({info}) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-6 space-y-8 pt-24 pb-24 container">
       <div className="container padding-left-all-section">

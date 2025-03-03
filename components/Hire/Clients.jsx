@@ -3,7 +3,7 @@ import Carousel from "./Carousel.jsx";
 
 export default function Clients({ tech }) {
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 my-52 lg:my-0">
+    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 sm:my-52 lg:my-0 mb-[9rem]">
       <div className="container padding-left-all-section-1">
         <h3 className="Gilroy-Bold text-4xl">
           Gaining Client’s Trust Since 2011 & Many More to Go

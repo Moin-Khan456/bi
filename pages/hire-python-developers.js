@@ -102,7 +102,7 @@ function HirePythonDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Is Python in high demand?",
@@ -338,7 +338,7 @@ function HirePythonDeveloper(props) {
               reasons={chooseBI}
               alt="Dedicated Python Programmers"
             />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

@@ -112,7 +112,7 @@ function HireMernStackDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Do you sign an NDA?",
@@ -314,7 +314,7 @@ function HireMernStackDeveloper(props) {
           <Engaged />
           <HireSteps type="MERN Stack" />
           <Clients tech="MERN Stack" />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

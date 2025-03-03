@@ -1,5 +1,5 @@
 import React from "react";
-import { BiCheckCircle } from "react-icons/bi";
+import { BiAbacus, BiCheckCircle } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function HireBanner({
@@ -40,7 +40,7 @@ export default function HireBanner({
             </h2>
           </section>
           <section className="rounded-xl py-6 mt-16 mb-10 lg:m-0 m-6">
-            <p className="Gilroy-Light text-sm w-full lg:w-[70%] leading-6 text-center lg:text-start">
+            <p className="Gilroy-Light text-lg sm:text-sm w-full lg:w-[70%] leading-6 text-center lg:text-start">
               {content}
             </p>
           </section>
@@ -90,7 +90,8 @@ export default function HireBanner({
                   {card &&
                     card.map((ele, index) => (
                       <li key={index} className="flex">
-                        {ele}
+                      <BiCheckCircle className="text-2xl mb-2" />
+                      {ele}
                       </li>
                     ))}
                 </ul>

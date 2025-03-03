@@ -4,24 +4,24 @@ const SectionThree = ({
   title,
   sectionDesc,
   pointers,
-  setionThreeCards,
+  sectionThreeCards,
   tableFooter,
 }) => {
   return (
-    <div className="container padding-left-all-section-1">
+    <div className="container padding-left-all-section-1 px-4">
       <div className="container lg:block">
         <h3 className="text-3xl font-Satoshi font-bold">{title}</h3>
         <p className="text-sm py-6 opacity-50">{sectionDesc}</p>
       </div>
       <div className="container bg-secondaryBg p-2 lg:p-8 !mb-8">
         <h2 className="text-3xl font-Satoshi py-4">
-          {setionThreeCards[0].head}
+          {sectionThreeCards[0].head}
         </h2>
         <p className="font-Satoshi font-semibold text-sm opacity-50">
-          {setionThreeCards[0].content}
+          {sectionThreeCards[0].content}
         </p>
         <ul className="list-disc list-inside text-sm pl-8 mb-4 mt-0 py-6 ">
-          {setionThreeCards[0].points?.map((item, index) => (
+          {sectionThreeCards[0].points?.map((item, index) => (
             <li className="font-semibold py-2 font-Satoshi" key={index}>
               {typeof item === "string" ? (
                 <>
@@ -37,10 +37,10 @@ const SectionThree = ({
       </div>
       <div className="container bg-secondaryBg py-8 px-2 lg:px-[3rem] mt-4 ">
         <h2 className="text-3xl font-Satoshi py-2">
-          {setionThreeCards[1].head}
+          {sectionThreeCards[1].head}
         </h2>
         <p className="font-Satoshi font-semibold text-sm opacity-50">
-          {setionThreeCards[1].content}
+          {sectionThreeCards[1].content}
         </p>
       </div>
       <leble
@@ -50,7 +50,7 @@ const SectionThree = ({
       >
         {pointers ? (
           <ul className="px-[2rem]">
-            {setionThreeCards[1].tableContent.map((ele) => (
+            {sectionThreeCards[1].tableContent.map((ele) => (
               <li className="list-disc py-2" key={ele}>
                 {ele}
               </li>
@@ -60,7 +60,7 @@ const SectionThree = ({
           <table className="w-full px-12">
             <thead className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-2 lg:px-12 ">
               <tr>
-                {setionThreeCards[1].tableHead.map((ele, index) => (
+                {sectionThreeCards[1].tableHead.map((ele, index) => (
                   <th
                     key={index}
                     className="border border-1 font-Satoshi font-bold py-4 border-secondaryTx text-left px-1 lg:px-12"
@@ -71,7 +71,7 @@ const SectionThree = ({
               </tr>
             </thead>
             <tbody className=" font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
-              {setionThreeCards[1].tableContent.map((ele, index) => (
+              {sectionThreeCards[1].tableContent.map((ele, index) => (
                 <tr
                   key={index}
                   className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 "

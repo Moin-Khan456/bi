@@ -9,7 +9,8 @@ const Index = ({ section }) => {
         width={600}
         height={600}
         src={section.logo}
-        className="lg:w-1/6 py-12"
+        className="lg:w-1/6 py-12 w-[50%] sm:w-[100%]"
+        style={{filter:"invert(1)"}}
         alt="Fatoura"
       />
       <h3 className="text-4xl lg:text-6xl">

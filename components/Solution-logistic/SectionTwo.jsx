@@ -18,8 +18,8 @@ const SectionTwo = ({
         <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative">
           <h1
             className={`px-4 ${
-              titleSize ?? "lg:text-[4rem]"
-            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
+              titleSize ?? "lg:text-8xl"
+            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
           >
             Custom Transport & Logistic Software Development Services by Brain
             Inventory

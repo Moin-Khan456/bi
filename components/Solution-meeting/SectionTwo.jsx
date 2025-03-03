@@ -11,10 +11,10 @@ const SectionTwo = ({
 }) => {
   return (
     <div className={`${className} container padding-left-all-section-1`}>
-      <div className="">
-        <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative">
+      <div className="px-4 filter invert">
+        <div className="flex lg:items-end flex-col md:flex-col lg:flex-row py-8 relative ">
           <h1
-            className={`lg:text-7xl text-4xl whitespace-nowrap ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase`}
+            className={`lg:text-7xl text-4xl whitespace-nowrap ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase`}
           >
             {title.split("/").map((ele) => (
               <>

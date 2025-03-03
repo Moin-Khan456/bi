@@ -13,7 +13,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
             {subhead}
           </h3>
           <div
-            className={`grid grid-cols-1 lg:grid-cols-${
+            className={`grid grid-cols-1  lg:grid-cols-${
               benefitsList.length > 4 ? 4 : benefitsList.length
             } gap-4 w-full py-8 lg:w-[95%]`}
           >

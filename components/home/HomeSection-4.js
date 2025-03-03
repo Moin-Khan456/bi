@@ -90,13 +90,13 @@ const HomeSectionFour = () => {
         <div className="w-full snap-y snap-mandatory">
           <div>
             <div className="w-full top-0 z-40  2xl:p-10 p-8">
-              <h2 className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
+              <h2 id="looking" className="2xl:text-6xl xl:text-5xl text-4xl Gilroy-Bold mb-8 2xl:mt-16 xl:mt-14 mt-12">
                 What are you looking up-to?
               </h2>
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
                 business. We, as a{" "}
-                <Link href="javascript:void(0)" className="text-[#2186ff]">
+                <Link href="#looking" className="text-[#2186ff]">
                   Mobile App Development Company
                 </Link>{" "}
                 can provide high quality standard mobile app of any category. We

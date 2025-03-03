@@ -143,7 +143,7 @@ function HireDotnetDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "How Much Does It Cost To Hire a .NET Developer?",
@@ -335,7 +335,7 @@ function HireDotnetDeveloper(props) {
               alt="Ionic development company"
             />
 
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

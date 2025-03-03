@@ -14,7 +14,7 @@ const Index = () => {
               <h5 className="monument lg:text-4xl pt-7 px-3">
                 CREATING IMPACTFUL SOCIAL
               </h5>
-              <h2 className="monument lg:text-[10.1rem] text-[2.7rem] lg:leading-[8.75rem] mt-7   relative">
+              <h2 className="monument lg:text-[10.1rem] text-[2.7rem] lg:leading-[8.75rem] mt-7 relative">
                 {" "}
                 SOLUTIONS
               </h2>

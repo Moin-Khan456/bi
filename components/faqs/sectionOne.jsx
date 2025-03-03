@@ -9,7 +9,7 @@ export default function SectionOne({ faqsType, setFaqsType }) {
       </h1>
       <div className="flex md:flex-row flex-col gap-4  pt-8">
         <button
-          className={`px-6 py-2 font-bold text-lg border rounded-3xl border-primaryTx text-primaryTx ${
+          className={`px-6 py-2 font-bold sm:text-lg text-sm border rounded-3xl border-primaryTx text-primaryTx ${
             faqsType === "Development/Technologies/Services" && "bg-secondaryBg"
           }`}
           onClick={() => setFaqsType("Development/Technologies/Services")}
@@ -17,7 +17,7 @@ export default function SectionOne({ faqsType, setFaqsType }) {
           Development/Technologies/Services
         </button>
         <button
-          className={`px-6 py-2 font-bold text-lg border rounded-3xl border-primaryTx text-primaryTx ${
+          className={`px-6 py-2 font-bold sm:text-lg text-sm border rounded-3xl border-primaryTx text-primaryTx ${
             faqsType === "On-Site" &&
             "bg-secondaryBg"
           }`}
@@ -26,7 +26,7 @@ export default function SectionOne({ faqsType, setFaqsType }) {
           On-Site
         </button>
         <button
-          className={`px-6 py-2 font-bold text-lg border rounded-3xl border-primaryTx text-primaryTx ${
+          className={`px-6 py-2 font-bold sm:text-lg text-sm border rounded-3xl border-primaryTx text-primaryTx ${
             faqsType === "IT Staff Augmentation" &&
             "bg-secondaryBg"
           }`}

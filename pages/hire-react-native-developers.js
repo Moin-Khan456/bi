@@ -115,7 +115,7 @@ function HireReactNativeDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "How do I find React Native developers?",
@@ -340,7 +340,7 @@ function HireReactNativeDeveloper(props) {
             <Engaged />
             <HireSteps type="React Native" />
             <Clients tech="React Native" />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

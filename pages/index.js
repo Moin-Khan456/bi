@@ -1,8 +1,12 @@
-import { useState, useEffect, Suspense } from "react";
+import React, {  Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Header from "../components/header/Header.js";
-import HomeSectionOne from "../components/home/HomeSection-1.js";
+const Header = dynamic(() =>
+  import("../components/header/Header.js"),{ssr:false}
+);
+const HomeSectionOne = dynamic(() =>
+  import("../components/home/HomeSection-1.js")
+);
 import {
   FaqsSchema,
   LocalBusinessSchema,
@@ -16,7 +20,7 @@ const HomeSectionThree = dynamic(() =>
   import("../components/home/HomeSection-3.js")
 );
 const HomeSectionFour = dynamic(() =>
-  import("../components/home/HomeSection-4.js")
+  import("../components/home/HomeSection-4.js"),{ssr:false}
 );
 const HireDedicatedDeveloper = dynamic(() =>
   import("../components/common/HireDedicatedDeveloper.js")
@@ -25,22 +29,22 @@ const HomeSectionSix = dynamic(() =>
   import("../components/home/HomeSection-6.js")
 );
 const HomeSectionEight = dynamic(() =>
-  import("../components/home/HomeSection-8.js")
+  import("../components/home/HomeSection-8.js"),{ssr:false}
 );
 const HomeSectionNine = dynamic(() =>
   import("../components/home/HomeSection-9.js")
 );
 const HomeSectionTen = dynamic(() =>
-  import("../components/home/HomeSection-10.js")
+  import("../components/home/HomeSection-10.js"),{ssr:false}
 );
 const HomeSectionEleven = dynamic(() =>
   import("../components/home/HomeSection-11.js")
 );
 const KeepInTouch = dynamic(() =>
-  import("../components/common/keepInTouch.js")
+  import("../components/common/keepInTouch.js"),{ssr:false}
 );
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../components/common/Footer.js"));
+const Footer = dynamic(() => import("../components/common/Footer.js"),{ssr:false});
 
 function Home() {
   return (
@@ -121,7 +125,7 @@ function Home() {
         />
         <link rel="canonical" href="https://braininventory.in/" />
       </Head>
-      <Suspense fallback={null}>
+      <Suspense fallback={""}>
         <main className="relative">
           <Header />
           <section className="container">

@@ -98,7 +98,7 @@ function HireQaTesters(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -287,7 +287,7 @@ function HireQaTesters(props) {
           <Engaged />
           <HireSteps type="QA Analyst" />
           <Clients tech="QA Analyst" />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

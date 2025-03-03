@@ -31,7 +31,7 @@ export default function HireBanner({
     }
   });
   return (
-    <main className="container h-full py-20 px-10">
+    <main className="container h-full py-20 sm:px-10 px-5">
       <section
         className={`grid lg:grid-cols-2 grid-cols-1 px-4 lg:px-12 lg:gap-x-32 items-center justify-between`}
       >
@@ -75,8 +75,8 @@ export default function HireBanner({
             </a>
           )} */}
         </section>
-        <section className="flex justify-end">
-          <section className="lg:mb-0 mb-6 px-5 lg:px-0 w-[80%]">
+        <section className="flex sm:justify-end">
+          <section className="lg:mb-0 mb-6 px-5 lg:px-0 sm:w-[80%]">
             <section className="started-subcription">
               <p className="Gilroy-Bold text-lg">Get Started Within</p>
               <h2 className="Gilroy-Bold text-5xl">
@@ -87,9 +87,9 @@ export default function HireBanner({
               <ul className="">
                 {card &&
                   card.map((ele, index) => (
-                    <li key={index} className="py-5 flex">
+                    <li key={index} className="py-3 flex">
                       <BiCheckCircle className="text-2xl mb-1" />
-                      <span className="pl-2 pb-1">{ele}</span>
+                      <span className="pl-2  text-[1.1rem] Gilroy-Bold">{ele}</span>
                     </li>
                   ))}
               </ul>

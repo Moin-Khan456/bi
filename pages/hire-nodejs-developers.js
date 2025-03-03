@@ -182,7 +182,7 @@ function HireNodeJsDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -370,7 +370,7 @@ function HireNodeJsDeveloper(props) {
             <Engaged />
             <HireSteps type="NodeJS" />
             <Clients tech="NodeJS" />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

@@ -3,7 +3,7 @@ import React from "react";
 const SectionThree = ({
   title,
   sectionDesc,
-  setionThreeCards,
+  sectionThreeCards,
   tableFooter,
 }) => {
   return (
@@ -14,10 +14,10 @@ const SectionThree = ({
       </div>
       <div className="container bg-primaryBg p-8 mt-4">
         <h2 className="text-3xl font-Satoshi py-4">
-          {setionThreeCards[0]?.head}
+          {sectionThreeCards[0]?.head}
         </h2>
         <p className="font-Satoshi font-semibold text-sm opacity-50">
-          {setionThreeCards[0]?.content}
+          {sectionThreeCards[0]?.content}
         </p>
       </div>
 
@@ -25,7 +25,7 @@ const SectionThree = ({
         <table className="w-full px-12">
           <thead className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-2 lg:px-12 ">
             <tr>
-              {setionThreeCards[0]?.tableHead.map((ele, index) => (
+              {sectionThreeCards[0]?.tableHead.map((ele, index) => (
                 <th
                   key={index}
                   className="border border-1 font-Satoshi font-bold py-4 border-secondaryTx text-left px-1 lg:px-12"
@@ -36,7 +36,7 @@ const SectionThree = ({
             </tr>
           </thead>
           <tbody className=" font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 ">
-            {setionThreeCards[0]?.tableContent.map((ele, index) => (
+            {sectionThreeCards[0]?.tableContent.map((ele, index) => (
               <tr
                 key={index}
                 className="border border-1 font-Satoshi font-semibold py-4 border-secondaryTx px-1 lg:px-12 "

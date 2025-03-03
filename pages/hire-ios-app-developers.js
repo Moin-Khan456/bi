@@ -97,7 +97,7 @@ function HireIsoAppDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "How to hire an iOS developer?",
@@ -309,7 +309,7 @@ function HireIsoAppDeveloper(props) {
           <Engaged />
           <HireSteps type="iOS" />
           <Clients tech="iOS" />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

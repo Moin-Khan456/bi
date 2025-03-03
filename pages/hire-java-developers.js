@@ -109,7 +109,7 @@ function HireJavaDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Can I hire Dedicated Java Developers for Project-Based Tasks?",
@@ -334,7 +334,7 @@ function HireJavaDeveloper(props) {
             {/* <Engaged /> */}
             {/* <HireSteps type="Android" /> */}
             {/* <Clients tech="Android" /> */}
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

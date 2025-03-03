@@ -15,7 +15,7 @@ function StafFaq() {
           Do you have a Question for us?
         </h2>
         <div>
-          {faqdetails.map((el) => {
+          {faqDetails.map((el) => {
             return (
               <div key={el.id} className="collapse  bg-opening mb-6">
                 <label htmlFor="staff-faq-checkbox" />

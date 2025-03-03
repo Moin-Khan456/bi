@@ -5,10 +5,10 @@ import { BiCheckCircle } from "react-icons/bi";
 import Link from "next/link";
 export default function HireBanner() {
   return (
-    <main className="container h-screen padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 lg:bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/eCommerce/Frame+7196.png')] bg-contain bg-right">
+    <main className="container sm:h-screen padding-left-all-section-1 pt-28 lg:pt-32 lg:pb-24 bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/eCommerce/Frame+7196.png')] sm:bg-contain bg-cover bg-right">
       <section className={`grid lg:grid-cols-2 grid-cols-1 gap-x-0`}>
         <section className="relative">
-          <section className="bg-shadow rounded-full" />
+          <section className="sm:bg-shadow sm:rounded-full" />
           <section className="ml-4 lg:ml-0 relative z-20">
             <h3 className="text-3xl lg:text-[2.972rem] stroke-text-ecommerce MonumentBold uppercase leading-[1.3] mt-4 lg:!w-[900px]">
               Empowering Commerce, Enriching Experiences: Your Tomorrow, Our

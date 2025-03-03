@@ -147,7 +147,7 @@ function HireVueJsDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -346,7 +346,7 @@ function HireVueJsDeveloper(props) {
             <Engaged />
             <HireSteps type="Vue JS" />
             <Clients tech="Vue JS" />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

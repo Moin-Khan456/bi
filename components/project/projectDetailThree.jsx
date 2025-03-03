@@ -1,11 +1,11 @@
 import React from "react";
-import PrajectBranding from "./ProjectBranding.jsx";
+import ProjectBranding from "./ProjectBranding.jsx";
 import Image from "next/image.js";
 
 const Index = () => {
   return (
     <div>
-      <PrajectBranding />
+      <ProjectBranding />
       <div className="relative flex flex-col items-center">
         <Image  
          

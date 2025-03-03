@@ -130,7 +130,7 @@ function HirePhpDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Are PHP developers still in demand?",
@@ -394,7 +394,7 @@ function HirePhpDeveloper(props) {
             reasons={chooseBI}
             alt="Hire Dedicated PHP Developer"
           />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

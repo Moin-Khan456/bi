@@ -281,7 +281,14 @@ function Opening() {
 
   const collapsed = (id) => {
     const element = document.getElementById(id);
-    element.classList.toggle("collapse-open");
+    const arrow = element.querySelector(".arrow-icon");
+    if (element.classList.contains("collapse-open")) {
+      element.classList.remove("collapse-open");
+      arrow.classList.toggle("rotate-180");
+    } else {
+      element.classList.add("collapse-open");
+      arrow.classList.toggle("rotate-180");
+    }
   };
 
   return (
@@ -299,7 +306,7 @@ function Opening() {
                   id={el.JobTitle}
                   className="collapse bg-secondaryBg mb-6 py-3 border-2 border-primaryTx"
                 >
-                  <div className="collapse-title text-xl font-medium">
+                  <div className="collapse-title !cursor-auto text-xl font-medium">
                     <div className="md:flex block justify-between items-center">
                       <div className="md:w-[30%]">
                       <div className="flex items-center gap-2">
@@ -320,7 +327,7 @@ function Opening() {
                         <label className="experiene-label">Positions</label>
                         <h4 className="lg:text-base text-sm">{el.Position}</h4>
                       </div>
-                      <div className="flex md:block">
+                      <div className="flex md:block my-5">
                         <label
                           htmlFor="my-modal"
                           onClick={() => roleShowing(el.JobTitle)}
@@ -337,6 +344,7 @@ function Opening() {
                           alt="Brain Inventory Software Company"
                           width={18}
                           height={12}
+                          className="arrow-icon rotate-0 transition-all delay-100"
                           />
                         </button>
                       </div>
@@ -344,7 +352,7 @@ function Opening() {
                   </div>
                   <div className="collapse-content flex">
                     <div>
-                      <p>Key Skills: {el.description}</p>
+                      <p> <span className="Gilroy-Bold">Key Skills:</span> {el.description}</p>
                       <h2 className="text-2xl my-4">Description</h2>
                       <ul className="ml-4">
                         {el.roles &&

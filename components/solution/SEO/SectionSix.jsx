@@ -17,13 +17,13 @@ const Index = ({
 }) => {
   const router = useRouter();
   return (
-    <div className="container rounded-md my-8 px-4">
+    <div className="container rounded-md !my-8 px-4">
       <div className="container padding-left-all-section ">
         <h2 className={`MonumentRegular text-[1.5625rem] ${classText}`}>
           {headAbove}
         </h2>
         <p className="text-slate-400 py-4">{subheadAbove}</p>
-        <div className="lg:grid lg:grid-cols-2 gap-0 h-[450px] bg-primaryTx text-primaryBg rounded-2xl relative section-six-card">
+        <div className="lg:grid lg:grid-cols-2 gap-0 sm:h-[450px] h-full bg-primaryTx text-primaryBg rounded-2xl relative section-six-card">
           <div className="p-12">
             <h2 className={`font-bold MonumentRegular !text-2xl ${classText}`}>
               {title}

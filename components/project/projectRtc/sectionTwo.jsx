@@ -4,14 +4,14 @@ const Index = () => {
   return (
     <div className="container">
       <div className="py-8 relative flex flex-col items-center justify-center bg-primaryBg">
-        <h3 className="text-3xl lg:text-6xl text-center flex items-center font-bold text-secondaryTx">
+        <h3 className="text-3xl lg:text-6xl text-center sm:flex items-center font-bold text-secondaryTx">
           What is
           <Image
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/Group+6516.png"
             alt="Custom Software Development Company | Application Development Company"
             width={500}
             height={500}
-            className="h-12 lg:h-32 mx-4 filter invert"
+            className="h-20 lg:h-32 mx-4 filter invert"
           />
           CRM?
         </h3>

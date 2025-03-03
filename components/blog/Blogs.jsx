@@ -19,7 +19,7 @@ const Blogs = ({ blogs }) => {
       ) : (
         <>
           {blogData?.map((post, index) => (
-            <Link href={`/posts/${post.slug}/${post.id}`} key={index}>
+            <Link href={`/posts/${post.slug}`} key={index}>
               <div className="flex flex-col sm:flex-row border-2 border-primaryTx  overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-primaryBg mt-4">
                 {/* Image Section */}
                 <div className="h-48 sm:h-auto sm:w-2/4 sm:p-4 ">
@@ -56,7 +56,7 @@ const Blogs = ({ blogs }) => {
 
                   {/* Read More Button */}
                   <Link
-                    href={`/posts/${post.slug}/${post.id}`}
+                    href={`/posts/${post.slug}`}
                     className="inline-block mt-6 text-sm font-bold text-primaryBg bg-primaryTx px-4 py-2 transition-colors duration-200"
                   >
                     Read More

@@ -101,7 +101,7 @@ function HireUxUiDesigners(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Should I hire a UI/UX designer?",
@@ -282,7 +282,7 @@ function HireUxUiDesigners(props) {
             <Engaged />
             <HireSteps type="UI/UX" />
             <Clients tech="UI/UX" />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

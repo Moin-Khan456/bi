@@ -21,7 +21,7 @@ const SectionTwo = ({
           <h1
             className={`px-4 ${
               titleSize ?? "lg:text-8xl"
-            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
+            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
           >
             {!notBreakable ? (
               <span className={`${colorChange.includes(MainTitle)?`text-secondaryTx`:`text-primaryBg`}`}>

@@ -1,33 +1,7 @@
 import React from "react";
 
-const ethosValue = [
-  {
-    description: "Clients are friends. Each of their problems are ours.",
-  },
-  {
-    description: "We dont assume. We arrive at solutions through careful",
-  },
-  {
-    description: "Ownership and accountability are our",
-  },
-  {
-    description: "100+  digital talent cares about your project.",
-  },
-  {
-    description: "100+  digital talent cares about your project.",
-  },
-  {
-    description: "We Know how to play digital for brand value.",
-  },
-  {
-    description: "Clients are friends. Each of their problems are ours.",
-  },
-  {
-    description: "Clients are friends. Each of their problems are ours.",
-  },
-];
 
-function ethos() {
+function ethos({ethosValue}) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6 pt-24 pb-24">
       <div className="container padding-left-all-section">

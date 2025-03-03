@@ -124,7 +124,7 @@ function HireReactJsDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "How Do I Hire ReactJS Developers?",
@@ -357,7 +357,7 @@ function HireReactJsDeveloper(props) {
           <Engaged />
           <HireSteps type="ReactJS" />
           <Clients tech="ReactJS" />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

@@ -2,17 +2,9 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
-import Faqs from "../../components/mobilePages/faqs.js";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm.jsx")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
-const Approach = dynamic(() =>
-  import("../../components/SolutionFitness/Approach.jsx")
-);
+const Header = dynamic(() => import("../../components/header/Header.js"), {
+  ssr: false,
+});
 const SectionOne = dynamic(() =>
   import("../../components/SolutionHealthcare/SectionOne.jsx")
 );
@@ -22,6 +14,9 @@ const SectionTwo = dynamic(() =>
 const SectionThree = dynamic(() =>
   import("../../components/SolutionHealthcare/SectionThree.jsx")
 );
+const TiltMarquee = dynamic(() =>
+  import("../../components/SolutionFitness/TiltMarquee.jsx")
+);
 const SectionFour = dynamic(() =>
   import("../../components/SolutionFitness/SectionFour.jsx")
 );
@@ -29,25 +24,37 @@ const SectionFive = dynamic(() =>
   import("../../components/SolutionFitness/SectionFive.jsx")
 );
 const SectionSix = dynamic(() =>
-  import("../../components/solution/SEO/SectionSix.jsx")
+  import("../../components/solution/SEO/SectionSix.jsx"),{ssr:false}
+);
+const PlatformDevelopment = dynamic(() =>
+  import("../../components/SolutionAccounting/SectionSlider.jsx")
 );
 const SectionNine = dynamic(() =>
   import("../../components/SolutionFitness/SectionNine.jsx")
 );
+const PlatformSection = dynamic(() =>
+  import("../../components/SolutionAccounting/PlatformSection.jsx")
+);
+const Approach = dynamic(() =>
+  import("../../components/SolutionFitness/Approach.jsx")
+);
 const SectionTen = dynamic(() =>
-  import("../../components/SolutionFitness/SectionTen.jsx")
+  import("../../components/SolutionFitness/SectionTen.jsx"),{ssr:false}
 );
-const TiltMarquee = dynamic(() =>
-  import("../../components/SolutionFitness/TiltMarquee.jsx")
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
+  ssr: false,
+});
+const BlogArticle = dynamic(() =>
+  import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-
-const PlatformDevelopment = dynamic(() =>
-  import("../../components/SolutionAccounting/SectionSlider.jsx")
+const KeepInTouch = dynamic(
+  () => import("../../components/common/keepInTouch.js"),
+  { ssr: false }
 );
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx")
-);
+const Footer = dynamic(() => import("../../components/common/Footer.js"), {
+  ssr: false,
+});
 
 function Healthcare(props) {
   const faqdetails = [
@@ -260,7 +267,7 @@ function Healthcare(props) {
     },
   ];
 
-  const setionThreeCards = [
+  const sectionThreeCards = [
     {
       head: "Impact of Online Platforms in Healthcare",
       content:
@@ -352,7 +359,7 @@ function Healthcare(props) {
         <section>
           <SectionOne />
           <SectionTwo
-            className="pt-52 pb-32 bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
+            className="pt-[3rem] sm:pb-32 pb-[3rem] bg-no-repeat bg-right brightness-[1.35] bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/solution/grid-matrix.png')]"
             title="Health Care IT Services & Solutions by Brain Inventory"
             head1="Empowering Healthcare Digitally."
             isHeadShow={false}
@@ -361,7 +368,7 @@ function Healthcare(props) {
           <SectionThree
             title="Healthcare Industry Insights"
             sectionDesc="Healthcare is a rapidly evolving industry that is increasingly becoming technologically driven. Here are some captivating insights about the healthcare industry:"
-            setionThreeCards={setionThreeCards}
+            sectionThreeCards={sectionThreeCards}
           />
           <TiltMarquee title="HEALTHCARE THROUGH INNOVATION ✦ HEALTHCARE THROUGH INNOVATION" />
           <SectionFour
@@ -402,7 +409,7 @@ function Healthcare(props) {
             alt="Healthcare Software Development Services"
             src="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/healthcare/jared-rice-NTyBbu66_SI-unsplash.png"
           />
-          <PlatformDevelopment
+          <PlatformSection
             data={keyFeatures}
             subhead="KEY FEATURES OF"
             head="CUSTOM HEALTHCARE SOFTWARE DEVELOPMENT"

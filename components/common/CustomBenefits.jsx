@@ -10,7 +10,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
             Benefits of Custom
             <span className="text-primaryBg">{type} Development</span>
           </h2>
-          <h3 className="xl:text-xl text-lg opacity-60 text-secondaryTx Gilroy-Light mb-8 leading-10">
+          <h3 className="xl:text-xl text-lg opacity-60 text-primaryBg Gilroy-Light mb-8 leading-10">
             {subhead}
           </h3>
           <section className="">

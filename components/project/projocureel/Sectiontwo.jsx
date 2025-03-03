@@ -27,7 +27,7 @@ const Index = () => {
           className=""
         />
       </div>
-      <h3 className="transparent-text text-8xl lg:absolute lg:top-10 lg:right-8">
+      <h3 className="text-[3rem] transparent-text sm:text-8xl lg:absolute lg:top-10 lg:right-8 right-3">
         Website Version
       </h3>
     </div>

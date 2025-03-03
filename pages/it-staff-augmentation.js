@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import HomeSectionEight from "../components/home/HomeSection-8.js";
+const HomeSectionEight = dynamic(() => import("../components/home/HomeSection-8.js"),{ssr:false});
+const KeepInTouch = dynamic(() => import("../components/common/keepInTouch.js"),{ssr:false});
 
-import KeepInTouch from "../components/common/keepInTouch.js";
 import {
   heroItStuff,
   itStaffAugmentationFaq,
@@ -13,13 +13,14 @@ import {
   whyWorkDataItStuff,
 } from "../components/it-stuff/dataItStuff.js";
 import RolesSkillSets from "../components/it-stuff/Role&SkillSet.jsx";
-import Faq from "../components/mobilePages/faqs.js";
+
+const Faq = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const Header = dynamic(() => import("../components/header/Header"));
 const Banner = dynamic(() => import("../components/career/banner.js"));
 const WhyWork = dynamic(() => import("../components/contacts/whyWork.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 
-const Footer = dynamic(() => import("../components/common/Footer"));
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const Culture = dynamic(() => import("../components/career/culture.js"));

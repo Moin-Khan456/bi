@@ -2,7 +2,7 @@ import React from "react";
 const Index = () => {
   return (
     <div className="container py-8 relative flex flex-col justify-center ">
-      <h3 className="text-3xl lg:text-5xl text-center font-bold text-secondaryTx">
+      <h3 className="text-3xl lg:text-6xl text-center font-bold text-secondaryTx">
         Project <span className="text-primaryTx">Overview</span>
       </h3>
       <div className="px-2 lg:px-48 py-4">

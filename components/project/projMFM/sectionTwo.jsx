@@ -28,7 +28,7 @@ const Index = ({}) => {
         <h3 className="text-4xl lg:text-5xl font-bold text-center">
           What is MyFit Mantra?
         </h3>
-        <p className="text-center font-thin tracking-wide text-2xl leading-10 opacity-50 lg:my-24">
+        <p className="text-center my-10 font-thin tracking-wide text-[1rem]  sm:text-2xl leading-7 sm:leading-10 opacity-50 lg:my-24">
           My Fit Mantra (MFM) is a comprehensive training software designed to
           cater to the diverse needs of trainers and individuals seeking to
           achieve their fitness goals. With its wide range of features and

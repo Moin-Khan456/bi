@@ -6,10 +6,10 @@ export default function SectionOne() {
   return (
     <main className="relative bg-no-repeat bg-center bg-cover  bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Support.jpg')]">
       <div className="flex flex-col justify-center items-center h-screen padding-left-all-section-1 text-center">
-        <h1 className="MonumentBold text-4xl lg:text-[3.75rem] lg:leading-[4rem] pt-16 w-[70%] text-primaryBg">
+        <h1 className="MonumentBold text-4xl sm:text-4xl lg:text-[3rem] lg:leading-[4rem] mt-20 w-[100%] sm:w-[90%] text-primaryBg">
           Expert Software Maintenance and Support Services by Brain Inventory
         </h1>
-        <p className="lg:leading-[1.5rem] pt-8 w-[50%] text-primaryBg">
+        <p className="lg:leading-[1.5rem] pt-8 w-[80%] sm:w-[50%] text-primaryBg">
           Brain Inventory thinks the sole means to boost productivity and
           decrease problems is with consistent support. When{" "}
           <Link href="/" className="text-[#2186ff]">

@@ -28,6 +28,7 @@ const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo.jsx")
 );
 import LocateUs from "../../components/common/locateUs.js";
+import { milestoneContent, teamMembers, tech } from "../../data/portfolio-data/ocureelData.js";
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle")
 );
@@ -36,67 +37,8 @@ const Slogan = dynamic(() =>
 );
 const Footer = dynamic(() => import("../../components/common/Footer"));
 
-const Virifi = () => {
-  const tech = [
-    {
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/CCVXV.png",
-      name: "React Native",
-    },
-    {
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/BFVDC.png",
-      name: "Firebase",
-    },
-    {
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/GNBVDS.png",
-      name: "NoSQL",
-    },
+const Ocureel = () => {
 
-    {
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/rtc/rgdgfg.png",
-      name: "Docker",
-    },
-  ];
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Shivam Singh",
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%20-1.png",
-      role: "Sr. Software Architecture",
-    },
-    {
-      id: 3,
-      name: "Shubham patidar",
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%206300.png",
-      role: "Mobile Developer",
-    },
-    {
-      id: 2,
-      name: "Pritesh Patil",
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%206301.png",
-      role: "Quality Analyst",
-    },
-
-    {
-      id: 4,
-      name: "Darshan Boyat",
-      image:
-        "https://braininventory.s3.us-east-2.amazonaws.com/images/ocureel/Group%20-2.png",
-      role: "Jr. Software Enginner",
-    },
-  ];
-
-  const milestoneContent = [
-    "Awarded as the best Social Ultimate Game",
-    "Less than 2 seconds loading time on Reel scrolling",
-    "1K download at the launch party itself",
-  ];
   return (
     <>
       <Head>
@@ -150,7 +92,7 @@ const Virifi = () => {
               <span className="font-bold">About</span>&nbsp; Ocureel
             </div>
             <div className="w-full py-4">
-              <p className="text-secondaryTx opacity-50 font-Satoshi px-2 lg:px-72 text-center text-2xl font-semibold leading-10 lg:leading-[4rem] flex justify-center">
+              <p className="text-secondaryTx opacity-50 font-Satoshi px-2 lg:px-72 text-center sm:text-2xl text-sm font-semibold sm:leading-10 leading-5 lg:leading-[4rem] flex justify-center">
                 A game-changing social video content application which went
                 viral in no time. Ocureel is a video content platform which
                 takes users on the ultimate adventure of creating real-life
@@ -168,7 +110,7 @@ const Virifi = () => {
         <div className="bg-[#FDDEFE] relative lg:-top-52 lg:-mb-64">
           <div className="container">
             <div className="lg:h-[80vh] bg-no-repeat bg-contain bg-[url('https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Mobile+Version.webp')] relative lg:-top-28">
-              <h3 className="transparent-text text-8xl bg-transparent w-72 px-8 h-[80vh] flex flex-col justify-end">
+              <h3 className="transparent-text sm:text-8xl text-5xl bg-transparent w-72 px-8 sm:h-[80vh] h-[30vh] flex flex-col justify-end">
                 Mobile Version
               </h3>
             </div>
@@ -218,7 +160,7 @@ const Virifi = () => {
           <BlogArticle />
         </div>
         <div className="mx-4">
-            <KeepInTouch />
+          <KeepInTouch />
         </div>
         <LocateUs />
         <Slogan />
@@ -228,4 +170,4 @@ const Virifi = () => {
   );
 };
 
-export default Virifi;
+export default Ocureel;

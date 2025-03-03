@@ -127,7 +127,7 @@ function HireAndroidAppDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -328,7 +328,7 @@ function HireAndroidAppDeveloper(props) {
             <Engaged />
             <HireSteps type="Android" />
             <Clients tech="Android" />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

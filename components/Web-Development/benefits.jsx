@@ -9,7 +9,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
             Benefits of{" "}
             <span className="text-primaryTx">{type} Development</span>
           </h3>
-          <h3 className="xl:text-xl text-sm Gilroy-Light mb-8 leading-10 opacity-50">
+          <h3 className="xl:text-xl text-lg Gilroy-Light mb-8 leading-10 opacity-70">
             {subhead}
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full py-8">
@@ -19,7 +19,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
                 className="bg-customer p-8 lg:w-full hover:scale-[1.05] duration-150 ease-in-out"
                 key={index}
               >
-                <p className="opacity-50">{ele}</p>
+                <p className="opacity-70">{ele}</p>
               </div>
             ))}
           </div>

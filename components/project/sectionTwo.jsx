@@ -19,7 +19,7 @@ const Index = ({ carouselImages }) => {
           />
         </div>
         <div className="px-4 lg:px-48 py-4">
-          <p className="font-Satoshi font-bold text-2xl text-primaryBg opacity-70">
+          <p className="font-Satoshi font-bold sm:text-2xl text-[1rem] text-primaryBg opacity-70">
             Bloomia is a comprehensive platform designed to assist and motivate
             users in performing kegel exercises, which offer numerous benefits
             for both men and women. These exercises focus on strengthening the

@@ -124,7 +124,7 @@ function HireFullStackDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -373,7 +373,7 @@ function HireFullStackDeveloper(props) {
               reasons={chooseBI}
               alt="Hire Full stack developers and programmers"
             />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

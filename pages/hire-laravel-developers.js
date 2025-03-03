@@ -120,7 +120,7 @@ function HireLaravelDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "How to hire Laravel developers?",
@@ -374,7 +374,7 @@ function HireLaravelDeveloper(props) {
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"
           />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

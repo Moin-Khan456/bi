@@ -113,7 +113,7 @@ function HireNextJsDeveloper() {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Why hire a next.js developer?",
@@ -315,7 +315,7 @@ function HireNextJsDeveloper() {
         <Engaged />
         <HireSteps type="Next Js" />
         <Clients tech="Next Js" />
-        <Faqs faq={faqdetails} />
+        <Faqs faq={faqDetails} />
         <hr />
         {/* <BlogArticle data={data} /> */}
         <KeepInTouch />

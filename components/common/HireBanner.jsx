@@ -47,7 +47,7 @@ export default function HireBanner({
             <span className="text-2xl Gilroy-Bold lg:whitespace-normal">
               {heading}
             </span>
-            <h1 className="text-5xl lg:text-[5rem] Gilroy-Bold mt-4 max-sm:whitespace-break-spaces">
+            <h1 className="sm:text-5xl text-3xl lg:text-[5rem] Gilroy-Bold mt-4 max-sm:whitespace-break-spaces">
               {title}
               {unique === "design" ? (
                 <span className="text-developer text-5xl lg:text-[5.3rem] Gilroy-Bold font-extrabold">
@@ -111,7 +111,7 @@ export default function HireBanner({
                   <span className="text-xs font-thin text-slate-400 pb-1">
                     Got a project in mind?
                   </span>
-                  <span className="flex items-center justify-between w-full">
+                  <span className="flex text-primaryBg items-center justify-between w-full">
                     {btn} <BsArrowRight />
                   </span>
                 </button>

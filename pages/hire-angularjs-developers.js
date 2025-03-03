@@ -4,16 +4,16 @@ import dynamic from "next/dynamic";
 import Link from "next/link.js";
 import DOMPurify from "isomorphic-dompurify";
 const Header = dynamic(() => import("../components/header/Header.js"));
-import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+import LocateUs from "../components/common/locateUs.js";
+const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"));
 const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
 const Customer = dynamic(() => import("../components/common/customer.jsx"));
 const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
-const HireMarquee = dynamic(() =>
-  import("../components/common/HireMarquee.jsx")
-);
+const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
+
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Experienced = dynamic(() => import("../components/common/Hire.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
@@ -142,7 +142,7 @@ function HireAangularJsDeveloper() {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "What are the main advantages of AngularJS?",
@@ -359,8 +359,10 @@ function HireAangularJsDeveloper() {
             />
             <Engaged />
             <HireSteps type="AngularJS" />
+            <section className="mb-[9rem]">
             <Clients tech="AngularJS" />
-            <Faq faq={faqdetails} />
+            </section>
+            <Faq faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

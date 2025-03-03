@@ -10,7 +10,7 @@ export default function Advantage({ title, advantages }) {
             <span className="text-primaryTx">{title}</span>
           </h2>
           {advantages?.map((ele, index) => (
-            <p className="Gilroy-Light pb-6" key={index}>
+            <p className="Gilroy-Light pb-6 !text-secondaryTx" key={index}>
               {ele}
             </p>
           ))}

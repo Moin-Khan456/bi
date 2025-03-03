@@ -4,7 +4,7 @@ const array = new Array(3).fill(null);
 
 const HomeSectionSix = () => {
   return (
-    <div className="lg:h-screen flex flex-col justify-center text-secondaryTx">
+    <div className="max-w-screen-xl flex flex-col mx-auto text-secondaryTx">
       <Marquee
         duration={25000}
         background="#fafafa00"

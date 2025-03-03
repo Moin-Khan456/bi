@@ -4,58 +4,9 @@ import HomeButton from "../buttons/HomeButton";
 import Image from "next/image";
 import checkImg from "../../public/assets/how-we-work-assets/Vector.webp";
 
-const listEngagement = [
-  {
-    title: "Dedicated Hiring",
-    questions: [
-      "Have a large project in hand? Need a team for ongoing work under your control?",
-      "Dedicated hiring is best for you. Monthly pay as you go. Get access to the best iOS app developers in the industry.",
-    ],
-    answers: [
-      "8 Hours daily billing",
-      "An exhaustive pool of developers with 4+ Years of experience",
-      "Get a dedicated account manager",
-      "Seamlessly communicate with Skype, Email, Zoom, Jira, Confluence, and Slack",
-      "Authorized Source Code",
-      "An all-inclusive project tracking",
-      "Assistance to scale your application performance",
-    ],
-  },
-  {
-    title: "Time & Material Based Hiring",
-    questions: [
-      "If your project scope is not defined, we recommend you going for the Time and Materials based model.",
-      "You get to hire iPhone app developers for the hours you need, based on your requirement.",
-    ],
-    answers: [
-      "Hire best app developers for the hours you need",
-      "An exhaustive pool of developers with 4+ Years of experience",
-      "Seamlessly communicate with Skype, Email, Zoom, Jira, Confluence, and Slack",
-      "Authorized Source Code",
-      "Get complete control over your project development",
-      "An all-inclusive project tracking",
-      "Assistance to scale your application performance",
-    ],
-  },
-  {
-    title: "Fixed Price Model",
-    questions: [
-      "If your project scope is defined, you can go for a fixed pricing model.",
-      "As you send your requirements, we will create a time break up with our proposal based on the features.",
-    ],
-    answers: [
-      "Hire best app developers for the hours you need",
-      "An exhaustive pool of developers with 4+ Years of experience",
-      "Seamlessly communicate with Skype, Email, Zoom, Jira, Confluence, and Slack",
-      "Authorized Source Code",
-      "Get complete control over your project development",
-      "An all-inclusive project tracking",
-      "Assistance to scale your application performance",
-    ],
-  },
-];
 
-function EngagementModal() {
+
+function EngagementModal({listEngagement}) {
   return (
     <div className="lg:p-14 p-8 space-y-6 bg-primaryBg">
       <h2 className="Gilroy-Bold lg:text-4xl text-3xl text-secondaryTx pt-4 pb-4">

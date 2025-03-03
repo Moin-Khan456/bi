@@ -250,7 +250,7 @@ const FooterSections = [
         path: "/mobile-development/mobile-api-integration-services",
       },
       {
-        name: "Ionic App Development",
+        name: "Cross Platform App Development",
         path: "/mobile-development/cross-platform-mobile-app-development",
       },
     ],
@@ -394,12 +394,12 @@ const FooterSections = [
         path: "/ui-ux-development-services",
       },
       {
-        name: "IT Staff Augmentation",
-        path: "/it-staff-augmentation",
+        name: "Mobile App Development Services",
+        path: "/mobile-app-development-services",
       },
       {
-        name: "Mobile app development services",
-        path: "/mobile-app-development-services",
+        name: "IT Stuff Augmentation",
+        path: "/it-staff-augmentation",
       },
     ],
   },

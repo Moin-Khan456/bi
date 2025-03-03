@@ -10,7 +10,7 @@ export default function Advantage({
   return (
     <div className="lg:mt-52">
       <div className="container padding-left-all-section-1 lg:mt-24">
-        <div className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6 mt-[200px]">
+        <div className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6 sm:mt-[200px]">
           <h2 className="2xl:text-6xl xl:text-5xl text-primaryBg text-3xl Gilroy-Bold mb-8 leading-10">
             {subhead ? subhead : "Advantages to Hiring a"}{" "}
             <span className="text-primaryBg">{title}</span>

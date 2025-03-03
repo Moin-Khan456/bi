@@ -13,7 +13,7 @@ export default function KeySkill({ type, subhead }) {
     <div>
       <div className="container padding-left-all-section-1 pb-28">
         <div className="bg-customer lg:p-12 p-8 advantage-para lg:pl-20 lg:pr-20 lg:m-0 m-6">
-          <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
+          <h2 className="2xl:text-6xl xl:text-5xl text-primaryBg text-3xl Gilroy-Bold mb-8 leading-10">
             Benefits of Custom{" "}
             <span className="text-primaryTx">{type} Development</span>
           </h2>
@@ -23,9 +23,9 @@ export default function KeySkill({ type, subhead }) {
               <ul className="team-list">
                 {" "}
                 {benefitsList.map((ele, index) => (
-                  <li key={index+1}>
+                  <li key={index+1} className="text-primaryBg opacity-65">
                     {ele.startsWith("Easier") && <br />}
-                    <IoMdArrowForward className="max-w-[2rem] min-w-[2rem]" />{" "}
+                    <IoMdArrowForward className="text-primaryBg max-w-[2rem] min-w-[2rem]" />{" "}
                     {ele}
                   </li>
                 ))}

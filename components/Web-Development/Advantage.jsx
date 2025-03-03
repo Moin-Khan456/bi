@@ -7,7 +7,7 @@ export default function Advantage({ title, reasons, desc, benefitFooter }) {
         Benefits of <span className="text-primaryTx">{title}</span>
       </h3>
       <p className="opacity-50 Golroy-Bold lg:pl-10 py-4">{desc}</p>
-      <div className="flex flex-col my-8 h-auto w-[92%] ">
+      <div className="flex flex-col my-8 h-auto w-full sm:w-[92%] ">
         {reasons?.map((ele, index) => (
           <div
             key={index}

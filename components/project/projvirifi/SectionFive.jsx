@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic.js";
+const TiltMarquee = dynamic(() =>
+  import("../../SolutionFitness/TiltMarquee.jsx"),{ssr:false}
+);
 const Index = () => {
   return (
     <>
       <div className="py-8 mb-8 relative flex flex-col justify-center bg-virifi-m bg-primaryTx bg-repeat lg:py-24 lg:-my-12">
         <div className="container">
-          <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl  lg:mx-44">
-            <span className="text-primaryBg"> Admin&apos;s</span> Outlook
+          <h3 className="text-center text-3xl Gilroy-Bold lg:text-6xl opacity-100 text-primaryBg lg:mx-44">
+            <span className=""> Admin&apos;s</span> Outlook
           </h3>
 
           <div className="px-4 lg:px-24 lg:py-12 ">
@@ -36,13 +40,15 @@ const Index = () => {
       </div>
 
       <div>
-        <Image
+        {/* <Image
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 289.png"
           alt="Custom Software Development Company | Application Development Company"
           width={2000}
           height={100}
           className="w-full"
-        />
+        /> */}
+         <TiltMarquee
+             title="Certification Subscription" />
       </div>
     </>
   );

@@ -1,26 +1,22 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-// import "./styles.css";
-
-// import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function Slider({ data, subhead, head, description }) {
+  let isTrue = ["ACCOUNTING software DEVELOPMENT services"].includes(head)
+  
   return (
     <>
-      <div className="container my-12">
-        <div className="text-center flex flex-col items-center py-12">
+      <div className="container my-12 py-6 sm:py-0">
+        <div className={`text-center flex flex-col items-center sm:py-12 pb-12 sm:mt-[90px]  mt-0`}>
           <h5 className="text-md font-bold MonumentBold tracking-wide">
             {subhead}
           </h5>
-          <h3 className="text-2xl lg:text-5xl MonumentBold w-[65%] py-4 uppercase">
+          <h3 className="text-2xl lg:text-5xl MonumentBold sm:w-[65%] py-4 uppercase">
             {head}
           </h3>
           <p className="font-Satoshi text-slate-500 text-sm w-[90%]">
@@ -45,7 +41,7 @@ export default function Slider({ data, subhead, head, description }) {
             ))}
           </Swiper>
         </div>
-        <div className="w-[95%] px-4 md:m-auto block lg:hidden">
+        <div className="lg:w-[95%] w-[100%] px-4 md:m-auto block lg:hidden">
           {data.map((item, index) => (
             <div
               className="bg-technology p-6 lg:h-[600px] lg:w-[400px] my-4"

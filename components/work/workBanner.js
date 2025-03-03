@@ -3,8 +3,8 @@ import React from "react";
 
 const WorkBanner = () => {
   return (
-    <div className="h-[100vh] items-center relative flex">
-      <h2 className="2xl:px-14 xl:px-12 px-15 text-4xl stroke-text-mobile Gilroy-Bold"></h2>
+    <div className="h-[100vh] items-center relative flex xl:[80vh] 2xl:[60vh]">
+      <h2 className="2xl:px-14 text-4xl stroke-text-mobile Gilroy-Bold"></h2>
       <div className="md:flex block relative">
         <div className="lg:w-[60%] w-full md:h-full">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 flex flex-col justify-center 2xl:space-y-5 xl:space-y-4 space-y-3 h-full">

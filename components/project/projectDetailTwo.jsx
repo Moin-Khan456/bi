@@ -19,7 +19,7 @@ const Index = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-center">
             What is Numetric.work?
           </h2>
-          <p className="text-center font-thin tracking-wide text-2xl leading-10 opacity-50 lg:my-24">
+          <p className="text-start font-thin tracking-wide sm:text-2xl sm:leading-10 text-[1rem] leading-7 opacity-50 lg:my-24 my-6">
             NuMetric.work is an online accounting tool designed for
             self-employed individuals and small businesses, allowing them to
             efficiently manage their finances. With features such as invoice

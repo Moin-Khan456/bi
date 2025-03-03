@@ -104,7 +104,7 @@ function HireChatbotDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "What tools do AI Chatbot Developers use?",
@@ -337,7 +337,7 @@ https://braininventory.in/hire-chatbot-developers"
               reasons={chooseBI}
               alt="Hire Dedicated Chatbot Developers"
             />
-            <Faqs faq={faqdetails} />
+            <Faqs faq={faqDetails} />
             <hr />
             <BlogArticle />
             <KeepInTouch />

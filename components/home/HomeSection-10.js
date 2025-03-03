@@ -18,7 +18,8 @@ export default function HomeSectionTen() {
 
   return (
     !isActive ? (
-      <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-[repeat(0,minmax(0,1fr))] gap-2 p-4 bg-secondaryBg">
+      <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-[repeat(0,minmax(0,1fr))] gap-2 p-4 bg-secondaryBg max-w-screen-xl mx-auto
+      ">
       <div class="col-start-1 row-start-1 col-end-2 row-end-2 h-full p-4 order-1">
         <p className="text-heading-1 Gilroy-Bold text-secondaryTx">
           Our Portfolio
@@ -90,11 +91,13 @@ export default function HomeSectionTen() {
       </div>
 
       <div class="col-start-1 md:col-start-2 row-start-7 mx-auto col-end-2 md:col-end-3 row-end-8  order-6">
-        <HomeButton>
+       <Link href={"/portfolio"}>
+       <HomeButton>
           <span className="2xl:text-2xl text-xl text-primaryTx transition-all">
             Check all our projects
           </span>
         </HomeButton>
+       </Link>
       </div>
     </div>
     ):(

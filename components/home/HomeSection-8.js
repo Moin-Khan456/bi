@@ -1,44 +1,55 @@
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const HomeSectionEight = ({ info }) => {
   const [activeSection, setActiveSection] = useState("Discovery Workshop");
+  const containerRef = useRef(null); // Ref for the scroll container
 
-  // Initialize refs outside of the reduce function
-  const sectionRefs = useRef(
-    info.content.reduce((acc, section) => {
-      acc[section.title] = React.createRef();
-      return acc;
-    }, {})
-  ).current;
+  // Debounce function to limit scroll event frequency
+  const debounce = (func, delay) => {
+    let timeoutId;
+    return (...args) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => func(...args), delay);
+    };
+  };
 
   useEffect(() => {
-    const observers = Object.entries(sectionRefs).map(([title, ref]) => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveSection(title);
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
+    const container = containerRef.current;
+    if (!container) return;
 
-      if (ref.current) {
-        observer.observe(ref.current);
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(".snap-section");
+      let currentActive = "";
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        // Check if the section is in the visible area of the viewport
+        if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
+          currentActive = section.getAttribute("data-title");
+        }
+      });
+
+      // Only update state if the active section has changed
+      if (currentActive && currentActive !== activeSection) {
+        setActiveSection(currentActive);
       }
+    };
 
-      return observer;
-    });
+    // Debounce the scroll handler to reduce frequency of updates
+    const debouncedScrollHandler = debounce(handleScroll, 10);
+
+    container.addEventListener("scroll", debouncedScrollHandler);
+    handleScroll(); // Initial check after mounting
 
     return () => {
-      observers.forEach((observer) => observer.disconnect());
+      container.removeEventListener("scroll", debouncedScrollHandler);
     };
-  }, [sectionRefs]);
+  }, [activeSection]); // Re-run effect if activeSection changes
 
   const scrollToSection = (title) => {
-    sectionRefs[title]?.current?.scrollIntoView({ behavior: "smooth" });
+    const section = document.querySelector(`[data-title="${title}"]`);
+    section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -82,13 +93,16 @@ const HomeSectionEight = ({ info }) => {
           </nav>
 
           {/* Content */}
-          <div className="flex-1 p-8">
-            <div className="max-w-3xl mx-auto space-y-[20vh]">
+          <div
+            ref={containerRef}
+            className="flex-1 p-8 overflow-y-scroll sm:snap-y sm:snap-mandatory h-[100vh] scroll-smooth"
+          >
+            <div className="max-w-3xl mx-auto space-y-20 sm:space-y-[20vh]">
               {info.content.map((section, index) => (
                 <section
                   key={index}
-                  ref={sectionRefs[section.title]}
-                  className="min-h-screen flex items-center"
+                  data-title={section.title}
+                  className="snap-section snap-start sm:min-h-screen flex items-center"
                 >
                   <div className="flex flex-col gap-4">
                     <h1 className="lg:hidden block Gilroy-SemiBold text-3xl text-primaryTx">
@@ -105,8 +119,8 @@ const HomeSectionEight = ({ info }) => {
                     <Image
                       src={section.image}
                       alt={section.alt}
-                      width={400}
-                      height={350}
+                      width={350}
+                      height={300}
                       className="rounded-lg flex justify-center"
                     />
                   </div>

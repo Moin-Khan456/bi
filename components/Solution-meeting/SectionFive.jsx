@@ -15,7 +15,7 @@ const Index = ({
         <div className="lg:grid lg:grid-cols-2 gap-6">
           <div className="p-6 lg:p-0">
             <h3 className="font-bold text-lg monument">RISE OF</h3>
-            <h3 className="font-bold lg:text-7xl lg:leading-[70px] uppercase lg:w-[400px] text-primaryTx monument">
+            <h3 className="font-bold lg:text-7xl text-3xl lg:leading-[70px] uppercase lg:w-[400px] text-primaryTx monument">
               {head}
             </h3>
             <h3 className="font-bold text-lg mb-6 monument uppercase">
@@ -51,7 +51,7 @@ const Index = ({
               ))}
             </ul>
           </div>
-          <div className="border-sectionfive w-[30%]">
+          <div className="border-sectionfive sm:w-[30%]">
             <h2 className="font-bold text-sm bottom-border-five p-4 font-Satoshi">
               {sectionFiveTableHead[1]}
             </h2>

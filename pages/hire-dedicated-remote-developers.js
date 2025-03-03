@@ -18,7 +18,7 @@ import Image from "next/image";
 import Faqs from "../components/mobilePages/faqs";
 import LetsKick from "../components/common/LetsKick";
 export default function Hirededicatedremotedevelopers(props) {
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title:
@@ -126,7 +126,7 @@ export default function Hirededicatedremotedevelopers(props) {
             <Logo />
           </div>
         </div>
-        <Faqs faq={faqdetails} />
+        <Faqs faq={faqDetails} />
         <KeepInTouch />
         <LocateUs />
         <LetsKick/>

@@ -91,7 +91,7 @@ function HireShopifyDeveloper(props) {
     },
   ];
 
-  const faqdetails = [
+  const faqDetails = [
     {
       id: "1",
       title: "Should I hire a Shopify developer?",
@@ -340,7 +340,7 @@ Another benefit is the time and money savings that come with recruiting a Shopif
             reasons={chooseBI}
             alt="Hire Dedicated Shopify Developers"
           />
-          <Faqs faq={faqdetails} />
+          <Faqs faq={faqDetails} />
           <hr />
           <BlogArticle />
           <KeepInTouch />

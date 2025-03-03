@@ -13,7 +13,7 @@ const SectionTwo = ({
   isHeadShow = true,
 }) => {
   const MainTitle = title.split(" ")[0]
-  let colorChange = ['Marketplace','Accounting','Education','Custom','Fitness','Health']
+  let colorChange = ['Marketplace','Accounting','Education','Custom','Fitness','Health','Blockchain']
   return (
     <div className={`${className} padding-left-all-section-1`}>
       <div className="container">
@@ -21,7 +21,7 @@ const SectionTwo = ({
           <h1
             className={`px-4 ${
               titleSize ?? "lg:text-8xl"
-            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
+            } text-4xl  ${classText} monument grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-1 items-end w-auto lg:max-w-auto uppercase leading-[4rem]`}
           >
             {!notBreakable ? (
               <span className={`${colorChange.includes(MainTitle)?`text-secondaryTx`:`text-primaryBg`}`}>

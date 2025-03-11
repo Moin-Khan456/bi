@@ -24,8 +24,8 @@ const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
@@ -134,7 +134,7 @@ function Flutter() {
               }
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="Flutter Development Company"
             />{" "}

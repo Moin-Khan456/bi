@@ -2,14 +2,12 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Script from "next/script";
-const Header = dynamic(() => import("../components/header/Header"));
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
+const ContactBanner = dynamic(() => import("../components/contacts/contactBanner.js"));
+const Contact1 = dynamic(() => import("../components/contacts/contact.js"),{ssr:false});
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
-const Footer = dynamic(() => import("../components/common/Footer"));
-const Contact1 = dynamic(() => import("../components/contacts/contact.js"));
-const ContactBanner = dynamic(() =>
-  import("../components/contacts/contactBanner.js")
-);
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 
 function Contact() {
   useEffect(() => {

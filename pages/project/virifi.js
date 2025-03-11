@@ -1,11 +1,15 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import SectionOne from "../../components/project/projvirifi/SectionOne.jsx";
-import KeepInTouch from "../../components/common/keepInTouch.js";
+import { milestoneContent, teamMembers, tech, VirifiSectionOne } from "../../data/portfolio-data/virifiData.js";
 
+const Header = dynamic(() =>
+  import("../../components/header/Header"),{ssr:false}
+);
+const SectionOne = dynamic(() =>
+  import("../../components/project/projvirifi/SectionOne.jsx")
+);
 const SectionTwo = dynamic(() =>
   import("../../components/project/projvirifi/SectionTwo.jsx")
 );
@@ -24,7 +28,6 @@ const SectionSix = dynamic(() =>
 const ChallengeSection = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
 );
-
 const TechStack = dynamic(() =>
   import("../../components/project/projectTechstack.jsx")
 );
@@ -38,19 +41,22 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo.jsx")
 );
-import LocateUs from "../../components/common/locateUs.js";
-import { milestoneContent, teamMembers, tech, VirifiSectionOne } from "../../data/portfolio-data/virifiData.js";
 const TiltMarquee = dynamic(() =>
   import("../../components/SolutionFitness/TiltMarquee.jsx")
 );
-
 const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle")
+  import("../../components/common/BlogArticle"),{ssr:false}
+);
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() =>
+  import("../../components/common/locateUs.js")
 );
 const Slogan = dynamic(() =>
   import("../../components/project/ProjectSlogan.jsx")
 );
-const Footer = dynamic(() => import("../../components/common/Footer"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 const Virifi = () => {
  

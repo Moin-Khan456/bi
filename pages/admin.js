@@ -1,6 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../components/header/Header";
 
 const AdminSidebar = dynamic(() =>

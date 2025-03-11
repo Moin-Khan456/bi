@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { approachDesc, approachPoints, faqDetails, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList, title } from "../../data/industry-data/fitnessData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
@@ -52,7 +53,6 @@ const BlogArticle = dynamic(
 );
 const KeepInTouch = dynamic(
   () => import("../../components/common/keepInTouch.js"),
-  { ssr: false }
 );
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));

@@ -63,6 +63,8 @@ const Header = ({ pop, setPop }) => {
                     className="cursor-pointer"
                     alt="it service company offers web and app design and development"
                     preload="metadata"
+                    width={100}
+                    height={100}
                   />
                 </div>
               )}

@@ -4,11 +4,10 @@ const HireMarquee = ({ title }) => {
     const array = new Array(3).fill(null);
     return (
         <main className="lg:h-auto flex flex-col justify-center my-0">
-            {/* First Marquee: Left to Right (reverse={true}) */}
             <Marquee
                 duration={25000}
                 background="#fafafa00"
-                reverse={true} // Changed to true for left to right
+                reverse={true}
                 height="150px"
             >
                 {array.map((el, index) => (

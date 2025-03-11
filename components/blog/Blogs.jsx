@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React, { memo, useEffect, useState } from "react";
-import HomeButton from "../../components/common/HomeBtn";
-import { blogDate } from "../../utils/utils";
 import Link from "next/link";
 import Skeleton from "./Skeleton";
 

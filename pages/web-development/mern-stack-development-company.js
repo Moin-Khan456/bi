@@ -1,39 +1,33 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm.jsx")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
-const Hire = dynamic(() => import("../../components/common/Hire"));
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/mernStackData.js";
+
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
 import SectionOne from "../../components/Web-Development/PageIntro.jsx";
-import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const Hire = dynamic(() => import("../../components/common/Hire"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
-  import("../../components/Web-Development/industries.jsx")
+  import("../../components/Web-Development/industries.jsx"),{ssr:false}
 );
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx")
-);
-import DOMPurify from "isomorphic-dompurify";
 const Faqs = dynamic(() =>
   import("../../components/mobilePages/faqs.js"),{ssr:false}
 );
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/mernStackData.js";
-
+const BlogArticle = dynamic(() =>
+  import("../../components/common/BlogArticle.jsx"),{ssr:false}
+);
+const KeepInTouch = dynamic(() => import("../../components/common/keepInTouch.js"));
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 function MernStackDevelopment(props) {
  
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
@@ -113,7 +107,7 @@ function MernStackDevelopment(props) {
               title="Why MERN Stack Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="MERN Stack Development services"
             />{" "}

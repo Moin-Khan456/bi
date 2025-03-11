@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
-
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../components/header/Header"));
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
+const Timeline = dynamic(() => import("../components/portfolio/timeline"));
 const LocateUs = dynamic(() => import("../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick"));
-const Footer = dynamic(() => import("../components/common/Footer"));
-const Loader = dynamic(() => import("../components/common/loader"));
-const Timeline = dynamic(() => import("../components/portfolio/timeline"));
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 
 function ThankYou(props) {
   return (

@@ -1,32 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import HomeSectionEight from "../components/home/HomeSection-8.js";
-import { careerCategories, CareerHeroSection, CareerInfo, OpeningJob, whyWorkData, whyWorkDataCareer } from "../components/career/careerData.js";
-import KeepInTouch from "../components/common/keepInTouch.js";
-const Header = dynamic(() => import("../components/header/Header"));
+import { careerCategories, CareerHeroSection, CareerInfo, OpeningJob, whyWorkDataCareer } from "../components/career/careerData.js";
+
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
 const Banner = dynamic(() => import("../components/career/banner.js"));
 const WhyWork = dynamic(() => import("../components/contacts/whyWork.js"));
-const LetsKick = dynamic(() => import("../components/common/LetsKick"));
-const Footer = dynamic(() => import("../components/common/Footer"));
-
-const LocateUs = dynamic(() => import("../components/common/locateUs"));
-const MeetCrew = dynamic(() => import("../components/company/meetCrew.js"));
 const Culture = dynamic(() => import("../components/career/culture.js"));
-const Newsletter = dynamic(() => import("../components/career/Newsletter.js"));
-const InterviewProcess = dynamic(() =>
-  import("../components/career/interviewProcess.js")
-);
-const Opening = dynamic(() => import("../components/career/opening.js"));
-const Loader = dynamic(() => import("../components/common/loader"));
+const HomeSectionEight = dynamic(() => import("../components/home/HomeSection-8.js"),{ssr:false});
+const Opening = dynamic(() => import("../components/career/opening.js"),{ssr:false});
+const KeepInTouch = dynamic(() => import("../components/common/keepInTouch.js"));
+const LocateUs = dynamic(() => import("../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../components/common/LetsKick"));
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 
 function Career(props) {
-  const [loadMore, setLoadMore] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setLoadMore(true);
-    });
-  }, []);
   return (
     <>
       <Head>

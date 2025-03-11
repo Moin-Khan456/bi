@@ -12,11 +12,12 @@ import {
   subhead2,
   subhead3,
 } from "../../data/mobile-development-data/mobileAppData.js";
+
 const Header = dynamic(() => import("../../components/header/Header"), {
   ssr: false,
 });
 const SectionOne = dynamic(() =>
-  import("../../components/Mobile-Development/SectionOne")
+  import("../../components/Mobile-Development/SectionOne"),{ssr:false}
 );
 const Customer = dynamic(() => import("../../components/common/customer"));
 const Experienced = dynamic(() =>
@@ -29,8 +30,8 @@ const Benefits = dynamic(() =>
   import("../../components/Mobile-Development/benefits")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
@@ -124,7 +125,7 @@ function MobileApiIntegration(props) {
             title="Why Mobile Application Integration from %Brain Inventory"
             card={hireCards}
           />
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Mobile Application Integration Services"
           />

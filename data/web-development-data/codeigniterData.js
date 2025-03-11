@@ -40,33 +40,112 @@ export const hireCards = [
   ),
 },
 ];
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Can CodeIgniter handle large-scale and complex web applications?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, CodeIgniter’s scalability feature allows it to handle large-scale and complex web applications. With caching, modular architecture, and optimization capabilities, it ensures an efficient performance."
+    }
+  },{
+    "@type": "Question",
+    "name": "How Can CodeIgniter Increase My Web Application’s Security?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `CodeIgniter can increase the security of your web application by providing features like: 
+Password hashing, which protects user credentials from potential attacks 
+Session expiration handles user sessions effortlessly 
+Encodes outputs from special characters into HTML entities 
+Defines validation rules for the inputs given by the user, to ensure the data is protected before processing 
+Contact us to learn more about Codeigniter web development services.`
+    }
+  },{
+    "@type": "Question",
+    "name": "What kind of support and maintenance can I expect from a brain inventory?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our codeigniter development company provides easy bug fixing and troubleshooting, performance optimization, 24/7 monitoring and support, and third party integration services to our esteemed clients."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why choose CodeIgniter for web development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Codeigniter is a popular choice for web development due to the following reasons: 
+Ease of use
+Rapid development process
+MVC architecture
+Lightweight nature
+Excellent performance`
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you develop custom CodeIgniter applications?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our Codeigniter development services include creating a custom codeigniter application also. Contact us to schedule a meeting and discuss more."
+    }
+  }]
+}
 
 export const faqDetails = [
-{
-  id: "1",
-  title: "How much does it cost to build a website with CodeIgniter?",
-  description:
-    "The cost of creating a website using CI will depend on many factors, including the scale of your website, and the complexities involved in developing it. It is dependent on the skillset and experience required for developing and implementing a fully functional online platform. The larger your website, the more complex is the chain of processes that need to be followed during its development.",
-},
-{
-  id: "2",
-  title: "How long does it take to develop the CodeIgniter website?",
-  description:
-    "With a framework as productive and developer-friendly as CodeIgniter, you can be sure that the time taken to complete your project is going to be considerably little. The team behind this widely-used web application development framework gives a great volume of advanced features along with a very familiar development experience. When combined with the testing and debugging functionality, this structure allows you to create applications within the shortest possible time keeping uppermost priority on security and deployment aspects.",
-},
-{
-  id: "3",
-  title: "How secure is the CodeIgniter development structure?",
-  description:
-    "CodeIgniter boasts a robust security system on par with industry standards. We prioritize safeguarding your databases by strictly controlling access, ensuring that unauthorized access is prevented. Our comprehensive security measures are designed to deter and mitigate any potential breaches. With over a decade of development experience, our expertise shines through. For top-notch CodeIgniter development services, reach out to Brain Inventory today!",
-},
-{
-  id: "4",
-  title:
-    "Is there any additional cost involved in CodeIgniter Web Development services?",
-  description:
-    "CodeIgniter web development services come with no extra charges, and we also offer flexible hiring models for clients who prefer to focus on specific aspects, such as one-time projects or custom development.",
-},
+  {
+    id: "1",
+    title: "Can CodeIgniter handle large-scale and complex web applications?",
+    description:
+      "Yes, CodeIgniter’s scalability feature allows it to handle large-scale and complex web applications. With caching, modular architecture, and optimization capabilities, it ensures an efficient performance. ",
+  },
+  {
+    id: "2",
+    title: "How Can CodeIgniter Increase My Web Application’s Security?",
+    description:
+    <>
+    <p>CodeIgniter can increase the security of your web application by providing features like:  </p>
+    <ul className="list-disc ml-6">
+     <li>Password hashing, which protects user credentials from potential attacks </li>
+     <li>Session expiration handles user sessions effortlessly 
+     </li>
+     <li>Encodes outputs from special characters into HTML entities 
+     </li>
+     <li>Defines validation rules for the inputs given by the user, to ensure the data is protected before processing 
+     </li>
+    </ul>
+    </>
+  },
+  {
+    id: "3",
+    title: "What kind of support and maintenance can I expect from a brain inventory?",
+    description:
+      "Our codeigniter development company provides easy bug fixing and troubleshooting, performance optimization, 24/7 monitoring and support, and third party integration services to our esteemed clients. ",
+  },
+  {
+    id: "4",
+    title:
+      "Why choose CodeIgniter for web development?",
+    description:
+    <>
+    <p>Codeigniter is a popular choice for<Link href={"https://braininventory.in/web-development/custom-web-development"}>web development </Link> due to the following reasons:  </p>
+    <ul className="list-disc ml-6">
+     <li>Password hashing, which protects user credentials from potential attacks </li>
+     <li>Session expiration handles user sessions effortlessly 
+     </li>
+     <li>Encodes outputs from special characters into HTML entities 
+     </li>
+     <li>Defines validation rules for the inputs given by the user, to ensure the data is protected before processing 
+     </li>
+    </ul>
+    </>
+  },
+  {
+    id:5,
+    title: "Do you develop custom CodeIgniter applications?",
+    description:<>
+    Yes. Our Codeigniter development services include creating a custom codeigniter application also. <Link href={"https://braininventory.in/contact"}>Contact us</Link> to schedule a meeting and discuss more. 
+    </>
+  }
 ];
 export const chooseBI = [
 <>

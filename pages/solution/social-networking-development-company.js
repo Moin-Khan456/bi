@@ -17,7 +17,8 @@ import {
   sectionFourDesc,
   solutionList,
 } from "../../data/solution-data/social-networkData.js";
-const Header = dynamic(() => import("../../components/header/Header"));
+
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
 const SectionOne = dynamic(() =>
   import("../../components/solution/SEO/SectionOne.jsx")
 );
@@ -66,7 +67,7 @@ const KeepInTouch = dynamic(
 );
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 function SocialMedia(props) {
   return (

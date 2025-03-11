@@ -79,38 +79,81 @@ export const content = (
         "Data and content safety is our prime focus. We understand the vast importance of business data security and preventing it from any kind of plagiarism or data breach. That's why completely protect your business information against any kind of unauthorized access or leakage to make sure it is absolutely safe.",
     },
   ];
-
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why should I choose TypeScript Frameworks?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The reasons for which you must choose the TypeScript framework include its ability to develop large-scale or enterprise-level applications, easy restructuring of codes, it is easier to learn, and cross-compatibility features."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you also offer backend development services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, our TypeScript development company offers backend development services. Contact us to fix a meeting and discuss more."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is TypeScript for frontend or backend?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "TypeScript can be used for both frontend and backend. On the frontend, TypeScript can be used to develop web applications using Angular, React, or Vue. While on the backend, it can be used to develop server-side applications using Node.js."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can you do the backend in TypeScript?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, we can. Typescript can be used for both the frontend and the backend."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I get a TypeScript development cost estimation?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The development cost of a TypeScript project depends on the project’s complexity, features, scope, and location of the developing team. Contact us to know in detail about the TypeScript Development services."
+    }
+  }]
+}
   export const faqDetails = [
     {
       id: "1",
-      title: "What is TypeScript development?",
+      title: "Why should I choose TypeScript Frameworks?",
       description:
-        "TypeScript is a programming language developed and maintained by Microsoft. This is a statically typed language that compiles JavaScript. TypeScript was created primarily to increase the productivity of programmers through features like type checking, class-based object-oriented programming mechanisms, and modules.",
+        "The reasons for which you must choose the TypeScript framework include its ability to develop large-scale or enterprise-level applications, easy restructuring of codes, it is easier to learn, and cross-compatibility features. ",
     },
     {
       id: "2",
-      title: "Do I own the ownership and the code of my Typescript Project?",
+      title: "Do you also offer backend development services?",
       description:
-        "After the basic software development, we give the complete rights to our client. This includes copyrights, source code, and any other IPs. The client builds and owns his or her software. There is a lot of power in this approach because it allows the client to make future changes by himself or herself or with our help. We love the position, where our client has all rights, responsibility, and benefits.",
+        "Yes, our TypeScript development company offers backend development services. Contact us to fix a meeting and discuss more. ",
     },
     {
       id: "3",
-      title: "Why should I choose Typescript instead of other Frameworks?",
+      title: "Is TypeScript for frontend or backend?",
       description:
-        "Build innovative and faster apps to achieve business dreams. TypeScript is a super-powered superset of JavaScript that compiles to plain vanilla JavaScript. The TypeScript compiler produces readable, standards-based JavaScript. It provides all the tools necessary so that you can easily build any of your web and mobile applications using Typescript.",
+        <>
+        TypeScript can be used for both frontend and backend. On the frontend, TypeScript can be used to develop web applications using <Link className="text-blue-500" href={"https://braininventory.in/web-development/angularjs-development-company"}>Angular</Link>, <Link className="text-blue-500" href={"https://braininventory.in/web-development/react-js-development-company"}>React</Link>, or Vue. While on the backend, it can be used to develop server-side applications using Node.js. 
+        </>
     },
     {
       id: "4",
-      title: "How much does it cost For Typescript Development Services?",
+      title: "Can you do the backend in TypeScript?",
       description:
-        "As you can see, the actual costs of an offshore development project are difficult to predict in advance. There are too many details that need to be taken into account. But instead of making it appear as if the entire process is nearly impossible to control, we make sure that we communicate these details to you at the initial stages of the project so that you remain informed at all times.",
+        "Yes, we can. Typescript can be used for both the frontend and the backend.",
     },
     {
       id: "5",
       title:
-        "How can I track the progress of my Typescript Development Project?",
+        "Can I get a TypeScript development cost estimation?",
       description:
-        "We even try to meet and discuss the feedback before we start working on the next iteration. Keeping constant touch with updates and design prototypes keeps the clients updated about the project's progression.",
+        <>
+        The development cost of a TypeScript project depends on the project’s complexity, features, scope, and location of the developing team. <Link href={"https://braininventory.in/contact"}>Contact us</Link> to know in detail about the TypeScript Development services. 
+        </>
     },
   ];
 

@@ -8,9 +8,19 @@ import {
   meeting,
   missionType,
 } from "../data/about-us-data/companyData.js";
+
 const Header = dynamic(() => import("../components/header/Header"), {
   ssr: false,
 });
+const Video = dynamic(() => import("../components/company/video.js"));
+const Summary = dynamic(() => import("../components/company/summary.js"));
+const Mission = dynamic(() => import("../components/company/mission.js"));
+const Ethos = dynamic(() => import("../components/company/ethos.js"));
+const Experience = dynamic(() => import("../components/company/experience.js"));
+const MeetCrew = dynamic(() => import("../components/company/meetCrew"), {
+  ssr: false,
+});
+const Choose = dynamic(() => import("../components/company/choose.js"));
 const BigHeadingScroll = dynamic(() =>
   import("../components/common/BigHeadingScroll")
 );
@@ -20,16 +30,6 @@ const LetsKick = dynamic(() => import("../components/common/LetsKick"));
 const Footer = dynamic(() => import("../components/common/Footer"), {
   ssr: false,
 });
-const Video = dynamic(() => import("../components/company/video.js"));
-const Summary = dynamic(() => import("../components/company/summary.js"));
-const Mission = dynamic(() => import("../components/company/mission.js"));
-const Ethos = dynamic(() => import("../components/company/ethos.js"));
-const Experience = dynamic(() => import("../components/company/experience.js"));
-const Choose = dynamic(() => import("../components/company/choose.js"));
-const MeetCrew = dynamic(() => import("../components/company/meetCrew"), {
-  ssr: false,
-});
-
 function Company() {
   return (
     <>

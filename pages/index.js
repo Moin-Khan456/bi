@@ -1,12 +1,6 @@
-import React, {  Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() =>
-  import("../components/header/Header.js"),{ssr:false}
-);
-const HomeSectionOne = dynamic(() =>
-  import("../components/home/HomeSection-1.js")
-);
+import React, {  Suspense } from "react";
 import {
   FaqsSchema,
   LocalBusinessSchema,
@@ -15,10 +9,10 @@ import {
   WebsiteSchema,
 } from "../components/meta/home-schemas.js";
 import { info } from "../components/home/homeData.js";
-import LocateUs from "../components/common/locateUs.js";
-const HomeSectionThree = dynamic(() =>
-  import("../components/home/HomeSection-3.js")
-);
+
+const Header = dynamic(() =>import("../components/header/Header.js"),{ssr:false});
+const HomeSectionOne = dynamic(() =>import("../components/home/HomeSection-1.js"));
+const HomeSectionThree = dynamic(() => import("../components/home/HomeSection-3.js"));
 const HomeSectionFour = dynamic(() =>
   import("../components/home/HomeSection-4.js"),{ssr:false}
 );
@@ -41,8 +35,9 @@ const HomeSectionEleven = dynamic(() =>
   import("../components/home/HomeSection-11.js")
 );
 const KeepInTouch = dynamic(() =>
-  import("../components/common/keepInTouch.js"),{ssr:false}
+  import("../components/common/keepInTouch.js")
 );
+const LocateUs = dynamic(() =>import("../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../components/common/Footer.js"),{ssr:false});
 
@@ -125,7 +120,7 @@ function Home() {
         />
         <link rel="canonical" href="https://braininventory.in/" />
       </Head>
-      <Suspense fallback={""}>
+      <Suspense fallback={null}>
         <main className="relative">
           <Header />
           <section className="container">
@@ -146,7 +141,7 @@ function Home() {
             <LocateUs />
             <LetsKick />
           </section>
-      <Footer />
+          <Footer />
         </main>
       </Suspense>
     </>

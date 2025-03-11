@@ -38,38 +38,103 @@ export const content = (
         "Our commitment to helping our clients achieve their business goals requires us to offer flexibility and customization. While we have a number of specific templates in place to handle certain engagement models, we are always willing to help you select the model that is most suitable for your company’s needs.",
     },
   ];
-
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How to choose an Android app development company?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `In order to choose an Android app development company, you must consider the following factors: 
+Technical proficiency 
+Positive reviews about the company 
+Portfolio review to gauge their design capabilities
+Communication and collaboration policy 
+Approach to data security
+Post launch support
+Scalability and future needs`
+    }
+  },{
+    "@type": "Question",
+    "name": "How profitable are Android apps?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The income an Android app generates depends on a variety of factors like the app’s popularity, user engagement, and monetization model. There is no general figure that shows the profitability of Android apps. However, according to statistics, the top 200 apps on the app store are earning an average of $82,500 per day."
+    }
+  },{
+    "@type": "Question",
+    "name": "How long does it take to develop an Android app?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Developing an Android app typically depends on the complexity, a simple app may take a couple of months, while a complicated app with extensive features may take a year or more. Also, it depends on the expertise of the Android mobile app development company to develop an app within timelines."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why should you hire Android app developers for your business?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The significant reasons for which you must hire Android app developers include a wider customer reach, an increase in user engagement, and better brand loyalty. Android app developers are skilled developers who leverage the latest tools and technologies to deliver a unique experience customized to your business needs."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you offer post-launch support services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our android app development services include post-launch support and maintenance to keep your app up and running in the market."
+    }
+  }]
+}
   export const faqDetails = [
     {
       id: "1",
       title:
-        "What are the factors to consider while hiring an Android app development company?",
+        "How to choose an Android app development company?",
       description:
-        "Having an android app for your business is a must to improve the efficiency and productivity of your staff. There are several aspects that you need to consider while selecting an android app development company. There are certain factors like development methodology, check out their portfolio, talk with their previous clients, employee strength, and many more which play vital role in making your choice easier.",
+      <>
+      <p>In order to choose an Android app development company, you must consider the following factors:  </p>
+      <ul className="list-disc ml-6">
+       <li>Technical proficiency </li>
+       <li>Positive reviews about the company 
+       </li>
+       <li>Portfolio review to gauge their design capabilities
+       </li>
+       <li>Communication and collaboration policy 
+       </li>
+       <li>Approach to data security
+       </li>
+       <li>Post launch support
+       </li>
+       <li>Scalability and future needs
+       </li>
+      </ul>
+      </>
     },
     {
       id: "2",
-      title: "Will I be getting any support after project completion?",
+      title: "How profitable are Android apps?",
       description:
-        "Yes, we offer in-depth post app-launch maintenance support to our clients. Under which, we look into design update requirements, UAT, version updates. The reason behind this is because as small agency, you need strong support system for your work that’s why we provide an excellent solution for every client.",
+        "The income an Android app generates depends on a variety of factors like the app’s popularity, user engagement, and monetization model. There is no general figure that shows the profitability of Android apps. However, according to statistics, the top 200 apps on the app store are earning an average of $82,500 per day. ",
     },
     {
       id: "3",
-      title: "How much can Android app development cost?",
+      title: "How long does it take to develop an Android app?",
       description:
-        "Though the cost of an Android app varies greatly, the cost of development depends on various factors. There are some basic factors that determine the cost of developing an app like your project requirements, type of app development solution, and features included in the mobile application.",
+        "Developing an Android app typically depends on the complexity, a simple app may take a couple of months, while a complicated app with extensive features may take a year or more. Also, it depends on the expertise of the Android mobile app development company to develop an app within timelines. ",
     },
     {
       id: "4",
-      title: "How much time Android app development can take?",
+      title: "Why should you hire Android app developers for your business?",
       description:
-        "The time required for Android app development can vary significantly depending on the complexity of the app, the features required, and the level of expertise of the development team. There are many considerations to make when developing an Android app, including whether you need an iPhone version or not, which SDK platform should be used (SDK 22, 24, or 25), what Android library modules you need to integrate into your app, and so on.",
+        <>
+        The significant reasons for which you must <Link className="text-blue-600" href={"https://braininventory.in/hire-android-app-developers"}>hire Android app developers</Link> include a wider customer reach, an increase in user engagement, and better brand loyalty. Android app developers are skilled developers who leverage the latest tools and technologies to deliver a unique experience customized to your business needs. 
+        </>
     },
     {
-      id: "4",
-      title: "Why Android app development is the right choice for Startups?",
+      id: "5",
+      title: "Do you offer post-launch support services?",
       description:
-        "There are many advantages that startups can get through Android app development like higher ROI, higher productivity, feature-rich apps, interoperability, ample opportunities, etc.",
+        "Yes. Our android app development services include post-launch support and maintenance to keep your app up and running in the market. ",
     },
   ];
 

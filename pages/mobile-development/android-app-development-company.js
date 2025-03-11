@@ -1,10 +1,24 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { benefitsList, chooseBI, chooseBiSubhead, content, faqDetails, hireCards, meanReasons } from "../../data/mobile-development-data/androidData.js";
-const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
-const SectionOne = dynamic(() =>
-  import("../../components/Web-Development/PageIntro.jsx")
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import {
+  benefitsList,
+  chooseBI,
+  chooseBiSubhead,
+  content,
+  faqDetails,
+  hireCards,
+  jsonLdScript,
+  meanReasons,
+} from "../../data/mobile-development-data/androidData.js";
+
+const Header = dynamic(() => import("../../components/header/Header.js"), {
+  ssr: false,
+});
+const SectionOne = dynamic(
+  () => import("../../components/Web-Development/PageIntro.jsx"),
+  { ssr: false }
 );
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
@@ -13,22 +27,32 @@ const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
-const Industries = dynamic(() =>
-  import("../../components/Web-Development/industries.jsx")
+const Industries = dynamic(
+  () => import("../../components/Web-Development/industries.jsx"),
+  { ssr: false }
 );
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx")
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
+  ssr: false,
+});
+const BlogArticle = dynamic(
+  () => import("../../components/common/BlogArticle.jsx"),
+  { ssr: false }
 );
-const KeepInTouch = dynamic(() => import("../../components/common/keepInTouch.js"),{ssr:false});
+const KeepInTouch = dynamic(
+  () => import("../../components/common/keepInTouch.js"),
+  { ssr: false }
+);
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"), {
+  ssr: false,
+});
 
 function AndroidAppDevelopment() {
-  
+ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -59,6 +83,10 @@ function AndroidAppDevelopment() {
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/android-app-development-company"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense
@@ -91,7 +119,7 @@ function AndroidAppDevelopment() {
               title="Why Android App Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               subhead={chooseBiSubhead}
               alt="Android App Development Services"
@@ -102,6 +130,7 @@ function AndroidAppDevelopment() {
             <KeepInTouch />
             <LocateUs />
             <section className="pb-4" />
+            <LetsKick />
             <hr />
             <Footer />
           </section>

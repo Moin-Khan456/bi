@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import Head from "next/head";
-import Header from "../components/header/Header";
-import Footer from "../components/common/Footer";
-import LocateUs from "../components/common/locateUs";
-import KeepInTouch from "../components/common/keepInTouch";
-import StaffBanner from "../components/staffAugmentation/staffBanner";
-import Staform from "../components/staffAugmentation/staform";
-import OurProcess from "../components/staffAugmentation/ourProcess";
-import HireRemote from "../components/staffAugmentation/hireRemote";
-import OnboardingProcess from "../components/staffAugmentation/onboardingProcess";
-import Hiringbenifit from "../components/staffAugmentation/hiringbenifit";
-import StaffPratice from "../components/staffAugmentation/staffPratice";
-import Logo from "../components/staffAugmentation/logo";
-import Faq from "../components/common/Faqhire";
-import Loader from "../components/common/loader";
 import Image from "next/image";
-import Faqs from "../components/mobilePages/faqs";
-import LetsKick from "../components/common/LetsKick";
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
+const StaffBanner = dynamic(() => import("../components/staffAugmentation/staffBanner"));
+const Staform = dynamic(() => import("../components/staffAugmentation/staform"),{ssr:false});
+const OurProcess = dynamic(() => import("../components/staffAugmentation/ourProcess"));
+const HireRemote = dynamic(() => import("../components/staffAugmentation/hireRemote"));
+const OnboardingProcess = dynamic(() => import("../components/staffAugmentation/onboardingProcess"));
+const Hiringbenifit = dynamic(() => import("../components/staffAugmentation/hiringbenifit"));
+const StaffPratice = dynamic(() => import("../components/staffAugmentation/staffPratice"));
+const Logo = dynamic(() => import("../components/staffAugmentation/logo"));
+const Faqs = dynamic(() => import("../components/mobilePages/faqs"),{ssr:false});
+const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
+const LocateUs = dynamic(() => import("../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../components/common/LetsKick"));
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 export default function Hirededicatedremotedevelopers(props) {
   const faqDetails = [
     {
@@ -85,7 +85,7 @@ export default function Hirededicatedremotedevelopers(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png"
           as="image"
           type="image/*"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Head>
 

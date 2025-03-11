@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { BsArrowRight } from "react-icons/bs";
 import Marquee from "react-easy-marquee";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const Header = dynamic(() => import("../components/ppc/Header.jsx"));
+const Header = dynamic(() => import("../components/ppc/Header.jsx"),{ssr:false});
 const TailMatrix = dynamic(() => import("../components/ppc/Tailmatrix.jsx"));
 const Idea = dynamic(() => import("../components/ppc/Idea.jsx"));
 const WhyBI = dynamic(() => import("../components/ppc/WhyBI.jsx"));
@@ -14,13 +13,11 @@ const Projects = dynamic(() => import("../components/ppc/Projects.jsx"));
 const CustomSocialNetwork = dynamic(() =>
   import("../components/ppc/CustomSocialNetwork.jsx")
 );
-const Loader = dynamic(() => import("../components/common/loader"));
-const HireBanner = dynamic(() => import("../components/ppc/HireBanner.jsx"));
+const HireBanner = dynamic(() => import("../components/ppc/HireBanner.jsx"),{ssr:false});
 
 function CustomSocialNetworkDevelopment(props) {
   const [pop, setPop] = useState(false);
   const [localForm, setLocal] = useState(true);
-  const [loadComp, setLoadComp] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {

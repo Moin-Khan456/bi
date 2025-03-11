@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Link from "next/link.js";
-import { approachDesc, approachPoints, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList } from "../../data/industry-data/accountingData.js";
-import { faqDetails } from "../../data/industry-data/blockchainData.js";
+import { approachDesc, approachPoints, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList,faqDetails } from "../../data/industry-data/accountingData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>

@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
 export default function KeySkill({
-  breif,
+  brief,
   points = null,
   gridCol = 4,
   heading = false,
@@ -28,7 +28,7 @@ export default function KeySkill({
                 })
               : "Our Key Skill Set"}
           </h2>
-          <p className="Gilroy-Light !text-xl !leading-8 pb-6">{breif}</p>
+          <p className="Gilroy-Light !text-xl !leading-8 pb-6">{brief}</p>
           <section className="hidden lg:flex justify-between lg:pr-72">
             {/* <section>
               <ul className="team-list">

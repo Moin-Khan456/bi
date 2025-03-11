@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 
 
 export default function Slider({ data, subhead, head, description }) {
-  let isTrue = ["ACCOUNTING software DEVELOPMENT services"].includes(head)
   
   return (
     <>

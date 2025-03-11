@@ -1,36 +1,33 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, benefitSubHead, chooseBI, content, faqDetails, hireCards, jsonLdScript, para1, para2 } from "../../data/web-development-data/customWebData.js";
+
 const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
-const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
-const Loader = dynamic(() => import("../../components/common/loader"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch"),{ssr:false}
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"));
 import SectionOne from "../../components/common/HireBanner";
-import Link from "next/link.js";
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
+const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"),{ssr:false});
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
 );
 const CustomBenefits = dynamic(() =>
   import("../../components/common/CustomBenefits.jsx")
 );
-const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"),{ssr:false});
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory")
 );
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-import DOMPurify from "isomorphic-dompurify"
-
-import { benefitsList, benefitSubHead, chooseBI, content, faqDetails, hireCards, jsonLdScript, para1, para2 } from "../../data/web-development-data/customWebData.js";
-
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 function CustomWebDevelopment(props) {
   
@@ -111,7 +108,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
             card={hireCards}
           />
 
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="hybrid development company"
           />

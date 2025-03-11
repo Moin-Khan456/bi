@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BiCheckCircle } from 'react-icons/bi';
 
-export default function ChooseBraininventory({
+export default function ChooseBrainInventory({
   reasons,
   subhead,
   alt,

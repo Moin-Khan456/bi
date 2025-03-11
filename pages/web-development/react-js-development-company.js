@@ -1,38 +1,34 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const Footer = dynamic(() => import("../../components/common/Footer"));
-const Loader = dynamic(() => import("../../components/common/loader"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm.jsx")
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
-const KeepInTouch = dynamic(() => import("../../components/common/keepInTouch.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"),{ssr:false});
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, card, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/reactjsDevelopmentData.js";
 
-const Hire = dynamic(() => import("../../components/common/Hire"));
-import SectionOne from "../../components/Web-Development/PageIntro.jsx";
-import Link from "next/link.js";
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
+const SectionOne = dynamic(() =>
+  import("../../components/Web-Development/PageIntro.jsx")
+);
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const Hire = dynamic(() => import("../../components/common/Hire"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
   import("../../components/Web-Development/industries.jsx"),{ssr:false}
 );
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-import DOMPurify from "isomorphic-dompurify";
-import { benefitsList, card, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/reactjsDevelopmentData.js";
+const KeepInTouch = dynamic(() => import("../../components/common/keepInTouch.js"));
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 function HireReactDeveloper(props) {
  
@@ -110,7 +106,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
               title="Why React JS Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="ReactJS Web Development Company"
             />{" "}

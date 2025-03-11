@@ -1,41 +1,47 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
+import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"), {
+import DOMPurify from "isomorphic-dompurify";
+
+const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm.jsx")
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
+const SectionOne = dynamic(() => import("../../components/Web-Development/PageIntro.jsx"), {
   ssr: false,
 });
-const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-import SectionOne from "../../components/Web-Development/PageIntro.jsx";
-import Link from "next/link.js";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
   { ssr: false }
 );
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
+  ssr: false,
+});
 const BlogArticle = dynamic(
   () => import("../../components/common/BlogArticle.jsx"),
   { ssr: false }
 );
-import DOMPurify from "isomorphic-dompurify";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import LetsKick from "../../components/common/LetsKick.js";
+const KeepInTouch = dynamic(
+  () => import("../../components/common/keepInTouch.js"),
+);
+const LocateUs = dynamic(
+  () => import("../../components/common/locateUs.js"),
+);
+const LetsKick = dynamic(
+  () => import("../../components/common/LetsKick.js"),
+);
+const Footer = dynamic(
+  () => import("../../components/footer/Footer.js"),{ssr:false}
+);
 import {
   benefitsList,
   card,
@@ -123,7 +129,7 @@ function AangularJsDevelopment(props) {
               title="Why AngularJS Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory reasons={chooseBI} />
+            <ChooseBrainInventory reasons={chooseBI} />
             <Industries />
             <Faqs faq={faqDetails} />
             <BlogArticle />

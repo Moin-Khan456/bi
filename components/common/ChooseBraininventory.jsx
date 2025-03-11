@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function ChooseBraininventory({ reasons, subhead, alt }) {
+export default function ChooseBrainInventory({ reasons, subhead, alt }) {
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section-1">

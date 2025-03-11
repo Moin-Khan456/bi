@@ -70,33 +70,44 @@ export const content = (
   export const faqDetails = [
     {
       id: "1",
-      title: "What kind of applications can you develop using Java?",
+      title: "Which API is used in Salesforce?",
       description:
-        "Java and its popular frameworks Spring and Hibernate allow developers to build complex enterprise applications easily. These frameworks facilitate the creation of solutions like e-commerce sites, customer relationship management systems, financial technology applications, Internet of Things connected devices, and other domain-specific programs. The capabilities provided by Java, Spring, and Hibernate make it simple to construct robust and scalable applications for business needs.",
+        <>
+        Salesforce uses multiple APIs like REST API, Bulk API, Streaming API, Metadata API, and SOAP API. You should choose the type of API depending on the requirements of your project. For example, if you want to develop an application which gives real-time notifications to the user, you can use the streaming API. Our Java development company specializes in building customized and robust applications using Salesforce. <Link className="text-blue-600" href={"https://braininventory.in/contact"}>Contact us</Link> to learn more. 
+
+        </>
     },
     {
       id: "2",
-      title: "Which Java technologies are your Java developers proficient in?",
+      title: "What is a Salesforce custom app?",
       description:
-        "Our highly skilled Java programmers have years of experience working with various Java technologies and frameworks such as Spring, Hibernate, J2EE, Struts, Maven, and Servlets.",
+        <>
+        A <Link className="text-blue-600" href={"https://braininventory.in/web-development/salesforce-development-services"}>Salesforce custom app</Link> is an app that is designed to solve a specific business problem. They are made up of customized features which you can insert using the Lightning components in Salesforce. You can even customize the applications’ description, logo, colors, and adjust the elements according to unique business identities. 
+        </>
     },
     {
       id: "3",
-      title: "Is Java still a good option for software development?",
+      title: "Which platform is used for developing an app in Salesforce?",
       description:
-        "Java has been evolving ever since its creation. With each new release, Java introduces enhanced capabilities, including improved lambda expressions, robust data typing, and more powerful support for running multiple threads simultaneously. As a result, Java remains the programming language of choice for many software developers and technology companies.",
+        "The Salesforce platform is used for developing an app in Salesforce.Java application development services can help you to develop a robust application with high-performance and scalability features. ",
     },
     {
       id: "4",
-      title: "Why choose Java for web development for your next project?",
+      title: "What type of software tool is Salesforce?",
       description:
-        "Java provides a collection of classes and libraries that aid in creating web applications that are secure, adaptable, and packed with various features. The primary advantage of selecting Java for your web development endeavor is the availability of a vast array of packages that offer an extensive range of functionalities.",
+        <>
+        Salesforce is a cloud-based software tool that offers customer relationship management (CRM) tools to help businesses in managing their everyday sales, marketing, and other core functions. <Link href={"tel:+918109561401"}>Call us</Link> to know in detail about our Java development services. 
+
+        </>
     },
     {
       id: "5",
-      title: "How can I keep track of my Java development project?",
+      title: "Do you develop custom Salesforce-based software solutions?",
       description:
-        "As a reputable firm specializing in Java programming, our organization employs an Agile methodology for all mobile application projects so as to maintain cohesion between customers, investors, administrators, and staff. We also utilize various technologies to enable seamless communication and provide you access to all specifics regarding the progress of development by issuing login credentials.",
+        <>
+        Yes. Our Java <Link className="text-blue-600" href={"https://braininventory.in/"}>software development company</Link> develops customized Salesforce-based software solutions for your business. Contact us to discuss your unique needs and timelines for the required project. 
+
+        </>
     },
   ];
 
@@ -110,3 +121,45 @@ export const content = (
     "As a renowned Java development company, Brain Inventory boasts a team of proficient Java developers who are committed to constructing scalable applications using cutting-edge Java technology stacks while meeting stringent performance requirements. With our extensive experience as a Java software engineering firm, we possess exceptional proficiency in a variety of Java technologies, including Core Java, Spring Java, J2EE, Hibernate, Microservices, Spring Boot, Kafka, as well as databases such as MySQL, SQL, and Oracle.",
     "Through the efforts of our dedicated Java programmers, we provide comprehensive Java web development services to cater to your target market with dependable and tangible Java solutions. Our primary objective is to differentiate your organization by delivering feature-rich Java enterprise applications that contribute to your long-term growth and innovation strategies.",
   ];
+
+ export const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Which API is used in Salesforce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Salesforce uses multiple APIs like REST API, Bulk API, Streaming API, Metadata API, and SOAP API. You should choose the type of API depending on the requirements of your project. For example, if you want to develop an application which gives real-time notifications to the user, you can use the streaming API. Our Java development company specializes in building customized and robust applications using Salesforce. Contact us to learn more."
+      }
+    },{
+      "@type": "Question",
+      "name": "What is a Salesforce custom app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Salesforce custom app is an app that is designed to solve a specific business problem. They are made up of customized features which you can insert using the Lightning components in Salesforce. You can even customize the applications’ description, logo, colors, and adjust the elements according to unique business identities."
+      }
+    },{
+      "@type": "Question",
+      "name": "Which platform is used for developing an app in Salesforce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `The Salesforce platform is used for developing an app in Salesforce. 
+  Java application development services can help you to develop a robust application with high-performance and scalability features.`
+      }
+    },{
+      "@type": "Question",
+      "name": "What type of software tool is Salesforce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Salesforce is a cloud-based software tool that offers customer relationship management (CRM) tools to help businesses in managing their everyday sales, marketing, and other core functions. Call us to know in detail about our Java development services."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do you develop custom Salesforce-based software solutions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our Java software development company develops customized Salesforce-based software solutions for your business. Contact us to discuss your unique needs and timelines for the required project."
+      }
+    }]
+  }  

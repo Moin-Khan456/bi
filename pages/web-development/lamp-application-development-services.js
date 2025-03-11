@@ -1,42 +1,36 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const ContactForm = dynamic(() =>
-  import("../../components/common/ContactForm.jsx")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
-const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-import SectionOne from "../../components/Web-Development/PageIntro.jsx";
-import HireBanner from "../../components/common/HireBanner";
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/lampApplicationData.js";
 
-import Link from "next/link.js";
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+import SectionOne from "../../components/Web-Development/PageIntro.jsx";
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ProjectInquiry = dynamic(() =>
-  import("../../components/common/projectInquiryCard.jsx")
-);
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
-  import("../../components/Web-Development/industries.jsx")
+  import("../../components/Web-Development/industries.jsx"),{ssr:false}
+);
+const Faqs = dynamic(() =>
+  import("../../components/mobilePages/faqs.js"),{ssr:false}
 );
 const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx")
+  import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-import DOMPurify from "isomorphic-dompurify";
-import Faqs from "../../components/mobilePages/faqs.js";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/lampApplicationData.js";
-
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js"),{ssr:false}
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 function LampApplicationDevelopment(props) {
 
   const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
@@ -116,7 +110,7 @@ function LampApplicationDevelopment(props) {
               title="Why LAMP Application Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="Lamp Development Services"
             />{" "}
@@ -125,6 +119,7 @@ function LampApplicationDevelopment(props) {
             <BlogArticle />
             <KeepInTouch />
             <LocateUs />
+            <LetsKick/>
             <hr />
             <Footer />
           </div>

@@ -42,31 +42,100 @@ export const content = (
         "We are committed to utilizing a productive development process that promotes openness and foreseeability in managing the investment for your project. After thoroughly understanding your needs, we work together with you to define clear goals and boundaries for the project, providing an accurate evaluation of the time and budget required to complete the development.",
     },
   ];
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why should I choose laravel for my project",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can choose laravel because of its robust and highly popular PHP framework. It also has a rich set of inbuilt features to help developers build and scale applications effectively."
+    }
+  },{
+    "@type": "Question",
+    "name": "What services does your Laravel Development team offer?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our company offers a comprehensive range of Laravel development services to support your business needs. Some of which include custom Laravel development, Laravel API development, Laravel e-commerce solutions, Enterprise-level app development, and more."
+    }
+  },{
+    "@type": "Question",
+    "name": "Does the Laravel framework secure your web app?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, Laravel provides a strong set of features, using which you can secure your web application from potential threats and data breaches."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can you help me complete my incomplete web/app development project?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, definitely. Our Laravel development company has a team of experts that can help you in building a project from scratch and completing your existing project as well."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the advantages of laravel development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Advantages of Laravel development include: 
+Rapid development
+Efficient routing 
+Enhanced security features
+Easy syntax 
+Community support
+Scalability
+Easy maintenance 
 
+Contact our Laravel web development company for assistance in your future projects.`
+    }
+  }]
+}
   export const faqDetails = [
     {
       id: "1",
-      title: "How much does it cost to develop a Laravel app?",
+      title: "Why should I choose laravel for my project",
       description:
-        "The total cost of Laravel development depends on various factors like the functionalities you are implementing, the kind of resource you are hiring, and the engagement model you choose to develop your digital product. To be more precise, the more complex features and functions you plan to implement, the more time Laravel developers will be required to develop them. The cost of outsourcing a Laravel project can vary based on the geographic location of the developers you hire and the specific custom requirements of your business. Ultimately, the price for developing a Laravel app is influenced by both the region from which you source your resources and the unique needs of your project.",
+        <>
+        You can choose laravel because of its robust and highly popular <Link className="text-blue-600" href={"https://braininventory.in/web-development/php-development-service-company"}>PHP framework</Link>. It also has a rich set of inbuilt features to help developers build and scale applications effectively.
+        </>
     },
     {
       id: "2",
-      title: "Can Laravel be used for scalable application development?",
+      title: "What services does your Laravel Development team offer?",
       description:
-        "The Laravel framework was created by Taylor Otwell and it is compatible with PHP 5.4.4+. It's a free and open-source framework that offers the creation of modern and highly scalable distributed cloud-native applications with caching, cloud storage, session drivers, and read-write separation of the database, among many others. Our experience with custom Laravel development projects includes the creation of highly scalable web applications to handle millions of users.",
+      <>
+      Our company offers a comprehensive range of Laravel development services to support your business needs. Some of which include custom Laravel development, Laravel <Link href={"https://braininventory.in/mobile-development/mobile-api-integration-services"} className="text-blue-600">API development</Link>, Laravel <Link href={"https://braininventory.in/industry/ecommerce"} className="text-blue-600">e-commerce</Link> solutions, Enterprise-level app development, and more. 
+      </>
     },
     {
       id: "3",
-      title: "Do you use any project management tools?",
+      title: "Does the Laravel framework secure your web app?",
       description:
-        "The most common project management tools used in the custom software development industry are JIRA, Pivotal Tracker, and Trello. We use these and other tools to manage client projects. These tools help us keep track of what needs to be done, who is responsible for it, what's already been done, whether we're on schedule or not — pretty much everything you'd want to know in order to confidently make business decisions.",
+        "Yes, Laravel provides a strong set of features, using which you can secure your web application from potential threats and data breaches. ",
     },
     {
       id: "4",
-      title: "Do you provide NDA and IP protection for my project?",
+      title: "Can you help me complete my incomplete web/app development project?",
       description:
-        "Yes, you will be provided with an NDA document, a copyright transfer letter, and a signed source code transfer letter before starting the project.",
+        "Yes, definitely. Our Laravel development company has a team of experts that can help you in building a project from scratch and completing your existing project as well. ",
+    },
+    {
+      id: "5",
+      title: "What are the advantages of laravel development? ",
+      description:
+       <>
+       <p>Advantages of Laravel development include: </p>
+       <ul className="list-disc ml-6">
+        <li>Rapid development</li>
+        <li>Efficient routing </li>
+        <li>Enhanced security features</li>
+        <li>Easy syntax </li>
+        <li>Community support</li>
+        <li>Scalability</li>
+        <li>Easy maintenance </li>
+       </ul>
+       </>
     },
   ];
 

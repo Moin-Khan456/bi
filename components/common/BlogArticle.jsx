@@ -6,8 +6,9 @@ import Link from "next/link";
 
 // Skeleton with Glass Shining Effect
 const SkeletonCard = () => (
-  <div className="flex-shrink-0 w-[85vw] sm:w-[60%] md:w-[40%] lg:w-[30%] rounded-lg overflow-hidden shadow-lg snap-section snap-center bg-gray-200 relative animate-pulse">
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-20 animate-shimmer" />
+  <div className="relative flex-shrink-0 w-[85vw] sm:w-[60%] md:w-[40%] lg:w-[30%] rounded-lg overflow-hidden shadow-lg snap-section snap-center bg-gray-200 ">
+    {/* Shimmer Effect */}
+    <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-shimmer" />
     <div className="w-full h-[230px] bg-gray-300" />
   </div>
 );
@@ -95,7 +96,7 @@ export default function BlogArticle() {
         <section
           className="flex overflow-x-scroll scroll-smooth no-scrollbar snap-x snap-mandatory gap-4 px-4"
           ref={carouselRef}
-          style={{ scrollPadding: '0 16px' }}
+          style={{ scrollPadding: "0 16px" }}
         >
           {loading
             ? Array.from({ length: 6 }).map((_, index) => (
@@ -118,7 +119,7 @@ export default function BlogArticle() {
                     <h3 className="text-xl font-semibold mb-2">
                       {ele.title.rendered}
                     </h3>
-                    <div 
+                    <div
                       className="text-gray-600 line-clamp-3"
                       dangerouslySetInnerHTML={{ __html: ele.excerpt.rendered }}
                     />

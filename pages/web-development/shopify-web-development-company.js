@@ -1,34 +1,30 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
+import { advantages, chooseBI, content, faqDetails, hireCards, jsonLdScript, subhead1, subhead2, subhead3 } from "../../data/web-development-data/shopifyWebData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"), {
-  ssr: false,
-});
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
+const SectionOne = dynamic(() =>
+  import("../../components/common/HireBanner.jsx")
 );
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced.jsx")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced.jsx")
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const SectionOne = dynamic(() =>
-  import("../../components/common/HireBanner.jsx")
+
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
-import Link from "next/link.js";
-import { advantages, chooseBI, content, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/web-development-data/shopifyWebData.js";
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
 });
@@ -36,12 +32,17 @@ const BlogArticle = dynamic(
   () => import("../../components/common/BlogArticle.jsx"),
   { ssr: false }
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
 );
-
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"), {
+  ssr: false,
+});
 function ShopifyWebDevelopment(props) {
  
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -74,6 +75,10 @@ function ShopifyWebDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6526.png"
           as="image"
+        />
+           <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       {/*<Loader />*/}
@@ -112,7 +117,7 @@ function ShopifyWebDevelopment(props) {
             card={hireCards}
           />
           <div className="container"></div>
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="TypeScript Development Company"
           />

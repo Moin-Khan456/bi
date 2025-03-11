@@ -1,41 +1,39 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header"), {
-  ssr: false,
-});
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
-const Footer = dynamic(() => import("../../components/common/Footer"), {
-  ssr: false,
-});
-const Loader = dynamic(() => import("../../components/common/loader"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch")
-);
-const Customer = dynamic(() => import("../../components/common/customer"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
-);
-const HireMarquee = dynamic(() =>
-  import("../../components/common/HireMarquee")
-);
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced")
-);
-const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-import SectionOne from "../../components/common/HireBanner";
-import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 import {
   advantages,
   chooseBI,
   content,
   faqDetails,
   hireCards,
+  jsonLdScript,
   subhead1,
   subhead2,
   subhead3,
 } from "../../data/web-development-data/typescriptDevelopmentData.js";
+
+const Header = dynamic(() => import("../../components/header/Header"), {
+  ssr: false,
+});
+const SectionOne = dynamic(() =>
+  import("../../components/common/HireBanner")
+);
+const Customer = dynamic(() => import("../../components/common/customer"));
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced")
+);
+const HireMarquee = dynamic(() =>
+  import("../../components/common/HireMarquee")
+);
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
+);
+const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory.jsx")
+);
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
 });
@@ -43,11 +41,18 @@ const BlogArticle = dynamic(
   () => import("../../components/common/BlogArticle"),
   { ssr: false }
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch")
 );
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
+const Footer = dynamic(() => import("../../components/common/Footer"), {
+  ssr: false,
+});
 
 function TypeScriptDeveloper(props) {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
+
   return (
     <>
       <Head>
@@ -80,6 +85,10 @@ function TypeScriptDeveloper(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+168.png"
           as="image"
+        />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       {/*<Loader />*/}
@@ -118,7 +127,7 @@ function TypeScriptDeveloper(props) {
             card={hireCards}
           />
           <div className="container"></div>
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="TypeScript Development Company"
           />

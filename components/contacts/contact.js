@@ -4,7 +4,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { RiErrorWarningFill } from "react-icons/ri";
 import SufiyanImage from "../../public/assets/contact-assets/sufiyan.webp"
 import Image from "next/image";
 

@@ -1,39 +1,35 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"));
+import DOMPurity from "isomorphic-dompurify"
+import { advantages, chooseBI, content, faqDetails, hireCards, jsonLdScript, subhead1, subhead2, subhead3 } from "../../data/web-development-data/pythonWebData.js";
 
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+const SectionOne = dynamic(() => import("../../components/common/HireBanner.jsx"));
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced.jsx")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced.jsx")
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const SectionOne = dynamic(() => import("../../components/common/HireBanner.jsx"));
-
-
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory.jsx")
+);
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
 );
-import DOMPurity from "isomorphic-dompurify"
-import { advantages, chooseBI, content, faqDetails, hireCards, jsonLdScript, subhead1, subhead2, subhead3 } from "../../data/web-development-data/pythonWebData.js";
-
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 function PythonWebDevelopment(props) {
  
 const sanitizedJsonLd = DOMPurity.sanitize(JSON.stringify(jsonLdScript))  
@@ -117,7 +113,7 @@ const sanitizedJsonLd = DOMPurity.sanitize(JSON.stringify(jsonLdScript))
             card={hireCards}
           />
           <div className="container"></div>
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Python Development Company"
           />

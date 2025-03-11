@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../components/header/Header"));
-const Footer = dynamic(() => import("../components/common/Footer"));
+
+const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
 const ProjectSectionOne = dynamic(() =>
   import("../components/portfolio/projectSectionOne.jsx")
-);
-const KeepInTouch = dynamic(() =>
-  import("../components/common/keepInTouch.js")
 );
 const ProjectCards = dynamic(() =>
   import("../components/portfolio/projectCard.jsx")
 );
-const BlogArticle = dynamic(() => import("../components/common/BlogArticle"));
-import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+const BlogArticle = dynamic(() => import("../components/common/BlogArticle"),{ssr:false});
+const KeepInTouch = dynamic(() =>
+  import("../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() => import("../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../components/common/Footer"),{ssr:false});
 
 function Portfolio(props) {
   return (

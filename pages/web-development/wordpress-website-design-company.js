@@ -1,36 +1,34 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
-);
+import { advantages, chooseBI, content, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/web-development-data/wordpressWebData.js";
 
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+const SectionOne = dynamic(() => import("../../components/common/HireBanner.jsx"));
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced.jsx")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced.jsx")
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const SectionOne = dynamic(() => import("../../components/common/HireBanner.jsx"));
-import Link from "next/link.js";
-import { advantages, chooseBI, content, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/web-development-data/wordpressWebData.js";
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
+);
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
 );
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function WordPressWebDesign(props) {
 
@@ -84,7 +82,6 @@ function WordPressWebDesign(props) {
             title="WordPress Website Designing & Development Company by"
             content={content}
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+1.png"
             alt="Wordpress website designs"
             type="php"
@@ -111,7 +108,7 @@ function WordPressWebDesign(props) {
             card={hireCards}
           />
 
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Wordpress website designs"
           />

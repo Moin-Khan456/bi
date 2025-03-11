@@ -13,8 +13,8 @@ import {
   subhead3,
 } from "../../data/mobile-development-data/cross-platformData.js";
 
-const Header = dynamic(() => import("../../components/header/Header.js"));
-import SectionOne from "../../components/Mobile-Development/SectionOne.jsx";
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+const SectionOne = dynamic(() => import("../../components/Mobile-Development/SectionOne.jsx"),{ssr:false});
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
 const Experienced = dynamic(() =>
   import("../../components/Mobile-Development/Experienced.jsx")
@@ -26,8 +26,8 @@ const Benefits = dynamic(() =>
   import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
@@ -115,7 +115,7 @@ function CrossPlatformMobileApp(props) {
             title="Why Ionic App Development from %Brain Inventory"
             card={hireCards}
           />
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="hybrid development company"
           />

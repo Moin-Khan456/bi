@@ -1,21 +1,36 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import Header from "../../components/header/Header";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import SectionOne from "../../components/project/projectDetailOne.jsx";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import LocateUs from "../../components/common/locateUs.js";
-import { BloomiaSectionOne, carouselImages, challenge, milestoneContent, section2CarouselImages, sectionOneImg, sectionTwoImg, solution, teamMembers, tech } from "../../data/portfolio-data/bloomiaData.js";
+import {
+  BloomiaSectionOne,
+  carouselImages,
+  challenge,
+  milestoneContent,
+  section2CarouselImages,
+  sectionOneImg,
+  sectionTwoImg,
+  solution,
+  teamMembers,
+  tech,
+} from "../../data/portfolio-data/bloomiaData.js";
+
+const Header = dynamic(() => import("../../components/header/Header"), {
+  ssr: false,
+});
+const SectionOne = dynamic(() =>
+  import("../../components/project/projectDetailOne.jsx")
+);
 const SectionTwo = dynamic(() =>
   import("../../components/project/sectionTwo.jsx")
 );
 const SectionThree = dynamic(() =>
   import("../../components/project/sectionThree.jsx")
 );
-const PojectCarousel = dynamic(() =>
+const ProjectCarousel = dynamic(() =>
   import("../../components/project/sectionFour.jsx")
 );
+
 const SectionFive = dynamic(() =>
   import("../../components/project/sectionFive.jsx")
 );
@@ -38,23 +53,28 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-// import LocateUs from "../components/common/locateUs.js";
 
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle")
+const BlogArticle = dynamic(
+  () => import("../../components/common/BlogArticle"),
+  { ssr: false }
 );
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Slogan = dynamic(() =>
   import("../../components/project/ProjectSlogan.jsx")
 );
 
-const Footer = dynamic(() => import("../../components/common/Footer"));
+const Footer = dynamic(() => import("../../components/common/Footer"), {
+  ssr: false,
+});
 
 const Bloomia = () => {
-  
-  const [position, setPostion] = useState(true);
+  const [position, setPosition] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setPostion(true);
+      setPosition(true);
     });
   });
 
@@ -104,7 +124,7 @@ const Bloomia = () => {
               sectionOneImg={sectionOneImg}
               sectionTwoImg={sectionTwoImg}
             />
-            <PojectCarousel carouselImages={carouselImages} />
+            <ProjectCarousel carouselImages={carouselImages} />
           </div>
           <SectionFive />
           <SectionSix />

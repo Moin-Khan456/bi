@@ -1,37 +1,37 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
+import { advantages, chooseBI, content, faqDetails, hireCards, jsonLdScript, subhead1, subhead2, subhead3 } from "../../data/web-development-data/javaDevelopmentData.js";
+
 const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
-const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch")
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
+import HireBanner from "../../components/common/HireBanner";
 const Customer = dynamic(() => import("../../components/common/customer"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced")
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-import HireBanner from "../../components/common/HireBanner";
-import Link from "next/link.js";
-import { advantages, chooseBI, content, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/web-development-data/javaDevelopmentData.js";
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory")
 );
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle"),{ssr:false}
 );
-
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 function JavaDevelopment(props) {
-  
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -69,6 +69,11 @@ function JavaDevelopment(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/java-development-company.png"
           as="image"
         />
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        />
       </Head>
 
       <div className="relative">
@@ -102,7 +107,7 @@ function JavaDevelopment(props) {
           title="Why to Choose %Brain Inventory% for Java Development?"
           card={hireCards}
         />
-        <ChooseBraininventory
+        <ChooseBrainInventory
           reasons={chooseBI}
           alt="Hire Dedicated Java Developers"
           blueSolution={true}

@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link.js";
 import { approachDesc, approachPoints, faqDetails, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList } from "../../data/industry-data/travelData.js";
-import { faqdetails } from "../../data/industry-data/accountingData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });

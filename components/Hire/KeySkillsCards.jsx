@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function KeySkill({ breif, points, grid, width }) {
+export default function KeySkill({ brief, points, grid, width }) {
   return (
     <div>
       <div className="container px-4 lg:px-6 lg:pb-12">
@@ -8,11 +8,11 @@ export default function KeySkill({ breif, points, grid, width }) {
           <h2 className="2xl:text-6xl xl:text-5xl text-3xl Gilroy-Bold mb-8 leading-10">
             Our Key Skill Set
           </h2>
-          <p className="Gilroy-Light !text-xl !leading-8 pb-6">{breif}</p>
+          <p className="Gilroy-Light !text-xl !leading-8 pb-6">{brief}</p>
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="container">
               <ul
-                className={`team-list grid grid-cols-1 gap-4 lg:gap-0 ${
+                className={` Gilroy-SemiBold grid grid-cols-1 gap-4 lg:gap-0 ${
                   grid ?? "lg:grid-cols-4"
                 }`}
               >

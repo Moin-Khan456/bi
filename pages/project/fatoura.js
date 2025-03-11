@@ -1,10 +1,24 @@
 import React from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-import SectionOne from "../../components/project/projFatoura/SectionOne.jsx";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-const Header = dynamic(() => import("../../components/header/Header"));
+import dynamic from "next/dynamic";
+import {
+  challenge,
+  FatouraSectionOne,
+  milestoneContent,
+  sectionOneImg,
+  sectionTwoImg,
+  solution,
+  teamMembers,
+  tech,
+} from "../../data/portfolio-data/fatouraData.js";
+
+const Header = dynamic(() => import("../../components/header/Header"), {
+  ssr: false,
+});
+const SectionOne = dynamic(() =>
+  import("../../components/project/projFatoura/SectionOne.jsx")
+);
 const SectionTwo = dynamic(() =>
   import("../../components/project/projFatoura/sectionTwo.jsx")
 );
@@ -36,18 +50,22 @@ const VisitProject = dynamic(() =>
 const ProjectSectionTwo = dynamic(() =>
   import("../../components/project/projectSectionTwo")
 );
-import LocateUs from "../../components/common/locateUs.js";
-import { challenge, FatouraSectionOne, milestoneContent, sectionOneImg, sectionTwoImg, solution, teamMembers, tech } from "../../data/portfolio-data/fatouraData.js";
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle")
+const BlogArticle = dynamic(
+  () => import("../../components/common/BlogArticle"),
+  { ssr: false }
 );
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const Slogan = dynamic(() =>
   import("../../components/project/ProjectSlogan.jsx")
 );
-const Footer = dynamic(() => import("../../components/common/Footer"));
+const Footer = dynamic(() => import("../../components/common/Footer"), {
+  ssr: false,
+});
 
 const Fatoura = () => {
- 
   return (
     <>
       <Head>
@@ -147,7 +165,7 @@ const Fatoura = () => {
       />
       <ProjectSectionTwo />
       <BlogArticle />
-            <KeepInTouch />
+      <KeepInTouch />
       <LocateUs />
       <Slogan />
       <Footer />

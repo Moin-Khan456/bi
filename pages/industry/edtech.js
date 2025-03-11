@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Link from "next/link.js";
 import { approachDesc, approachPoints, faqDetails, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList } from "../../data/industry-data/edtechData.js";
-import { faqdetails } from "../../data/industry-data/accountingData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
@@ -25,7 +23,7 @@ const SectionFive = dynamic(() =>
   import("../../components/SolutionFitness/SectionFive.jsx")
 );
 const SectionSix = dynamic(() =>
-  import("../../components/SolutionAccounting/SectionSix.jsx")
+  import("../../components/SolutionAccounting/SectionSix.jsx"),{ssr:false}
 );
 const PlatformDevelopment = dynamic(() =>
   import("../../components/SolutionAccounting/SectionSlider.jsx")

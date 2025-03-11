@@ -16,7 +16,7 @@ export const content = (
     "Our proficient consultants in Salesforce CRM assist you in analysing your business requirements by recognizing areas of improvement to enhance performance and efficiency. Our outreach spans across the globe, catering to countries such as the UK, Canada, the United States, and Jordan. We specialise in delivering a broad range of services to clients from diverse sectors.";
   export const subhead1 =
     "We reject the notion that anything is impossible or unattainable. We are determined to fulfill your unique needs for an online presence. Our commitment to providing exactly what our clients desire has earned the trust and loyalty of people worldwide. There is no request too customized or complex that we cannot deliver. We make the impossible possible and overcome any obstacles to achieve the vision you have for your digital brand.";
-  export const keySkillsBreif =
+  export const keySkillsBrief =
     "Salesforce development leverages a variety of tools and technologies to create powerful and scalable solutions for businesses. Key tools include Salesforce Lightning, a component-based framework for building modern user interfaces, and Apex, a powerful programming language for building custom business logic and integrations. Developers also use Visualforce, a markup language for creating custom user interfaces, and Salesforce DX, a developer-friendly platform for managing the application development lifecycle. Additionally, Salesforce offers a robust ecosystem of third-party tools and technologies, such as Heroku for hosting and deploying applications, and MuleSoft for integrating Salesforce with other systems. With these tools and technologies, Salesforce developers can create highly customized and efficient solutions tailored to the unique needs of each business.";
 
   export const subHeadPathways =
@@ -61,32 +61,83 @@ export const content = (
         "Our software engineers prioritize crafting uncomplicated, coherent code that is straightforward and performs well. We take pride in writing uncluttered, effective code - this dedication to simplicity and efficiency distinguishes our work from that of our rivals.",
     },
   ];
-
+ export const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Which language is used in Salesforce development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Developers can use Apex, JavaScript, Python, and other query languages for Salesforce development. However, most of them prefer using Apex due to its customization features. Contact our Salesforce development company to discuss your project."
+      }
+    },{
+      "@type": "Question",
+      "name": "How does Salesforce development work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Salesforce development services usually involve the programming language Apex to create customized features and logic for building UI. Developers can also connect Salesforce with third-party tools like payment gateways to make applications more sturdy and functional."
+      }
+    },{
+      "@type": "Question",
+      "name": "Is Salesforce front-end or back-end?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Salesforce is generally called a back-end framework but it also includes front-end elements like Lightning for creating beautiful user interfaces."
+      }
+    },{
+      "@type": "Question",
+      "name": "Will you work according to my time zone preference?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We will conduct a meeting with you to understand your time zone preferences, company norms, and cultural differences to make the workflow smoother in the long run."
+      }
+    },{
+      "@type": "Question",
+      "name": "Which platform is used for developing an app in Salesforce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Salesforce platform is used for developing an app in Salesforce. Using tools like Apex, Lightning components and other programming languages, developers can create custom applications easily. Contact our Salesforce app development company to learn more about Salesforce and its applications in your industry."
+      }
+    }]
+  }
+  
   export const faqDetails = [
     {
       id: "1",
-      title: "What is Salesforce CRM Development?",
+      title: "Which language is used in Salesforce development?",
       description:
-        "Salesforce is an adaptable and powerful tool for managing client connections that enables you to efficiently oversee multifaceted trade tasks. The progression of tweaking Salesforce to address an organization's novel necessities is known as Salesforce CRM development. Through customization, Salesforce can be molded into a customized instrument explicitly intended to encourage an association's particular methods and objectives.",
+        <>
+        Developers can use Apex, JavaScript, <Link className="text-blue-600" href={"https://braininventory.in/web-development/python-web-development-company"}>Python</Link>, and other query languages for Salesforce development. However, most of them prefer using Apex due to its customization features. Contact our Salesforce development company to discuss your project. 
+
+        </>
     },
     {
       id: "2",
-      title: "What are the benefits of Salesforce development services?",
+      title: "How does Salesforce development work?",
       description:
-        "Selecting suitable Salesforce development solutions can result in a higher return on investment, smoother workflows, availability of tailored characteristics and features, bespoke add-ons that cater to your enterprise requirements, and empower you to enhance customer gratification to an unprecedented level.",
+        "Salesforce development services usually involve the programming language Apex to create customized features and logic for building UI. Developers can also connect Salesforce with third-party tools like payment gateways to make applications more sturdy and functional.",
     },
     {
       id: "3",
       title:
-        "How much time should I expect for Salesforce application development?",
+        "Is Salesforce front-end or back-end?",
       description:
-        "We will determine the overall duration of the development process, taking into consideration the specific requirements of your business and the intricacies associated with your project. To ensure that the final application aligns with your needs, we subject it to thorough testing by our QA team.",
+        "Salesforce is generally called a back-end framework but it also includes front-end elements like Lightning for creating beautiful user interfaces. ",
     },
     {
       id: "4",
-      title: "Why Should I Invest in Salesforce CRM Development?",
+      title: "Will you work according to my time zone preference?",
       description:
-        "Salesforce CRM Company is an attractive investment opportunity for businesses looking to enhance their customer management practices. -Firstly, Salesforce is the premier customer relationship management platform globally. -Secondly, Salesforce CRM is highly adaptable, and user-friendly, and can expand as a company grows. -Thirdly, Salesforce provides a robust network of integrations and places a high priority on protecting customer data. -Finally, Salesforce is continuously improving and enhancing its offerings.",
+        "Yes. We will conduct a meeting with you to understand your time zone preferences, company norms, and cultural differences to make the workflow smoother in the long run.",
+    },
+    {
+      id: "5",
+      title: "Which platform is used for developing an app in Salesforce?",
+      description:
+        <>
+        The Salesforce platform is used for developing an app in Salesforce. Using tools like Apex, Lightning components and other programming languages, developers can create <Link className="text-blue-600" href={"https://braininventory.in/mobile-development/custom-mobile-app-development-company"}>custom applications</Link> easily. Contact our Salesforce app development company to learn more about Salesforce and its applications in your industry.
+        </>
     },
   ];
 

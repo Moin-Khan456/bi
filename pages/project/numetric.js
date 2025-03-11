@@ -2,19 +2,18 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import SectionOne from "../../components/project/projectDetailOne.jsx";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import LocateUs from "../../components/common/locateUs.js";
 import { carouselImages, challenge, milestoneContent, NumetricSectionOne, solution, teamMembers, tech } from "../../data/portfolio-data/numetricData.js";
-const Header = dynamic(() => import("../../components/header/Header"));
+
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
+const SectionOne = dynamic(() => import("../../components/project/projectDetailOne.jsx"));
 const SectionTwo = dynamic(() =>
   import("../../components/project/projectDetailTwo.jsx")
 );
 const SectionThree = dynamic(() =>
   import("../../components/project/projectDetailThree.jsx")
 );
-const PojectCarousel = dynamic(() =>
-  import("../../components/project/projectDetailCarousel.jsx")
+const ProjectCarousel = dynamic(() =>
+  import("../../components/project/projectDetailCarousel.jsx"),{ssr:false}
 );
 const ProjectDetailCard = dynamic(() =>
   import("../../components/project/projectDetailCard.jsx")
@@ -34,12 +33,18 @@ const ProjectSectionTwo = dynamic(() =>
 );
 
 const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle")
+  import("../../components/common/BlogArticle"),{ssr:false}
+);
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() =>
+  import("../../components/common/locateUs.js")
 );
 const Slogan = dynamic(() =>
   import("../../components/project/ProjectSlogan.jsx")
 );
-const Footer = dynamic(() => import("../../components/common/Footer"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 const Numetric = () => {
  
@@ -80,7 +85,7 @@ const Numetric = () => {
         <h3 className="invisible">Cloud Based Accounting</h3>
         <SectionTwo />
         <SectionThree />
-        <PojectCarousel images={carouselImages} />
+        <ProjectCarousel images={carouselImages} />
         <div className="flex justify-center w-full py-12">
           <div className="container lg:px-28">
             <Image

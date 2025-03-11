@@ -1,39 +1,40 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"));
-const Loader = dynamic(() => import("../../components/common/loader.js"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
+import DOMPurify from "isomorphic-dompurify";
+import { advantages, card, chooseBI, content, faqDetails, hireCards, jsonLdScript, subhead1, subhead2, subhead3 } from "../../data/web-development-data/codeigniterData.js";
+
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+const SectionOne = dynamic(()=> import("../../components/common/HireBanner.jsx"))
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced.jsx")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee.jsx")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced.jsx")
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-import SectionOne from "../../components/common/HireBanner.jsx";
-import Link from "next/link.js";
-import Faqs from "../../components/mobilePages/faqs.js";
-import { advantages, card, chooseBI, content, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/web-development-data/codeigniterData.js";
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
+);
+const Faqs = dynamic(() =>
+  import("../../components/mobilePages/faqs.js"),{ssr:false}
+);
 const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx")
+  import("../../components/common/BlogArticle.jsx"),{ssr:false}
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
 );
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function CodeIgniterWebDevelopment(props) {
- 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -76,10 +77,14 @@ function CodeIgniterWebDevelopment(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
           as="image"
         />
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        />
       </Head>
       <Suspense
         fallback={
-          {
+          { 
             /*<Loader />*/
           }
         }
@@ -119,7 +124,7 @@ function CodeIgniterWebDevelopment(props) {
             card={hireCards}
           />
 
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="CodeIgniter development company"
           />

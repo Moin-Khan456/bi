@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link.js";
 import dynamic from "next/dynamic";
 import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons } from "../../data/mobile-development-data/reactNativeData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
   import("../../components/Web-Development/PageIntro.jsx")
@@ -15,8 +16,8 @@ const Benefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
   import("../../components/Web-Development/industries.jsx"),{ssr:false}
@@ -95,7 +96,7 @@ function ReactNativeDeveloper() {
               subhead="The Mobile App Development Services services we offer can help businesses realize their business goals by increasing brand exposure, building engagement and loyalty, accelerating digital transformation journeys, leveraging data, and optimizing tactics."
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="React Native App Development "
             />{" "}

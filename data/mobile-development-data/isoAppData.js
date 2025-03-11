@@ -67,37 +67,132 @@ export const content = (
   export const faqDetails = [
     {
       id: "1",
-      title: "Do I own the ownership and the code of my application?",
+      title: "How to choose an iOS app development company?",
       description:
-        "We are a leading iOS app development company and we hand over the source code and ownership of the application to you once it is successfully deployed on the App Store. When signing any contract, we openly discuss with our clients about the source code ownership and project handover. You can rest assured that we will deliver a high-quality, highly integrated, and maintainable application that exceeds your expectations.",
+      <>
+      <p>While choosing an iOS app development company, you may consider the following factors: </p>
+      <ul className="list-disc ml-6">
+       <li>Positive testimonials from clients</li>
+       <li>Communication tools being used
+       </li>
+       <li>Team’s expertise 
+       </li>
+       <li>Access to the latest tools and technologies 
+       </li>
+       <li>Transparent pricing structure
+       </li>
+       <li>Flexible working hours
+       </li>
+       <li>Focus on user experience 
+       </li>
+      </ul>
+      </>
     },
     {
       id: "2",
-      title: "Which tools and technologies do you use?",
+      title: "How long does it take to develop an iOS app?",
       description:
-        "Xcode is one of the most powerful tools for iOS development. It has a lot of features like a database, debugger, and an amazing interface that make it easy to work with Swift, Objective-C, and Java.",
+        "Developing an iOS app typically depends on the complexity, a simple app may take 1-3 months of time while a complicated app with extensive features may take 3-6 months or more.",
     },
     {
       id: "3",
       title:
-        "What are the factors to consider while deciding iOS app development company?",
+        "Why should I choose iOS app development?",
       description:
-        "Choosing the right company to work with for your iOS app is an important decision. There are many factors to consider when choosing a development team including their past projects, whether they have a reputation for quality code, proactive customer support, etc.",
+      <>
+      <p>Typical reasons for which you should choose iOS app development include:  </p>
+      <ul className="list-disc ml-6">
+       <li>iOS users are more likely to purchase apps as compared to Android users. </li>
+       <li>The primary language for iOS development is Swift, which is relatively easier to learn. 
+       </li>
+       <li>Apple is known for its robust security features. 
+       </li>
+       <li>iOS users enjoy a smoother, and a more positive experience with the apps. 
+       </li>
+      </ul>
+      </>
     },
     {
       id: "4",
-      title: "How much does it cost to develop an iOS app?",
+      title: "How does the process of Android app development differ from iOS?",
       description:
-        "There is no fixed cost for developing an iPhone app. The cost of developing a startup or a small business app depends on several factors, including performance, functionality, use of visual effects, development time, team strength, and so on. It depends on your requirements and the type of your business.",
+      <>
+      <p>The process of <Link className="text-blue-600" href={"https://braininventory.in/mobile-development/android-app-development-company"}>Android app development</Link> differs from iOS in the following ways: </p>
+      <ul className="list-disc ml-6">
+       <li>The programming language Swift is being used in iOS, while <Link className="text-blue-600" href={"https://braininventory.in/web-development/java-development-company"}>Java</Link> and Kotlin are used for Android development. 
+       </li>
+       <li><Link className="text-blue-600" href={"https://braininventory.in/hire-android-app-developers"}>Android developers</Link> use Android Studio while Apple developers use Xcode. 
+       </li>
+       <li>Apple is known for its robust security features.Android development offers flexibility in <Link className="text-blue-600" href={"https://braininventory.in/ui-ux-development-services"}>UI design</Link>, which iOS development doesn’t.  
+       </li>
+       <li>iOS users enjoy a smoother, and a more positive experience with the apps. 
+       </li>
+      </ul>
+      </>
     },
     {
-      id: "4",
+      id: "5",
       title:
-        "Does the iOS application you are creating support the latest version of iPhone?",
+        "What language is the best for iOS development?",
       description:
-        "Yes, iOS is the most current version of the iPhone. Our offshore iPhone app development team has released a number of apps for iOS which have been downloaded thousands of times by users all over the world.",
+        "Swift is the best and most preferred language for iOS development as it was especially created by Apple for its developers. Its ease of use, excellent performance and elegant features make it an ideal language for developing apps for the iOS platform. ",
     },
   ];
+  export const jsonLdScript = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How to choose an iOS app development company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `While choosing an iOS app development company, you may consider the following factors: 
+  Positive testimonials from clients
+  Communication tools being used
+  Team’s expertise 
+  Access to the latest tools and technologies 
+  Transparent pricing structure
+  Flexible working hours
+  Focus on user experience`
+      }
+    },{
+      "@type": "Question",
+      "name": "How long does it take to develop an iOS app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Developing an iOS app typically depends on the complexity, a simple app may take 1-3 months of time while a complicated app with extensive features may take 3-6 months or more."
+      }
+    },{
+      "@type": "Question",
+      "name": "Why should I choose iOS app development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Typical reasons for which you should choose iOS app development include: 
+  iOS users are more likely to purchase apps as compared to Android users. 
+  The primary language for iOS development is Swift, which is relatively easier to learn. 
+  Apple is known for its robust security features. 
+  iOS users enjoy a smoother, and a more positive experience with the apps.`
+      }
+    },{
+      "@type": "Question",
+      "name": "How does the process of Android app development differ from iOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `The process of Android app development differs from iOS in the following ways: 
+  The programming language Swift is being used in iOS, while Java and Kotlin are used for Android development. 
+  Android developers use Android Studio while Apple developers use Xcode. 
+  Android development offers flexibility in UI design, which iOS development doesn’t.`
+      }
+    },{
+      "@type": "Question",
+      "name": "What language is the best for iOS development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Swift is the best and most preferred language for iOS development as it was especially created by Apple for its developers. Its ease of use, excellent performance and elegant features make it an ideal language for developing apps for the iOS platform."
+      }
+    }]
+  }
+  
 
   export const chooseBI = [
     "Brain Inventory's best India iOS app developers have successfully built top-ranking iOS apps for different apple app store categories such as Business, Healthcare, Entertainment, Lifestyle, Technology, Travel & more. This is due to our unique approach in the development of their apps which provides a comprehensive set of services for the clients ranging from design through to deployment.",

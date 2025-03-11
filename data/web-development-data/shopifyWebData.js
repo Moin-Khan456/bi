@@ -49,35 +49,126 @@ export const content = (
         "A comprehensive agile development approach allows our team to satisfy the changing needs of our clients and provide them with exceptional products. Our teams begin by determining goals and then measuring success. They set checkpoints to make sure they are on track and adjust their plan as necessary.",
     },
   ];
-
+export const jsonLdScript={
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why should I pick Shopify for my eCommerce development project?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You should pick Shopify for your ecommerce development project because it gives a mobile-first design, extensive app store integration, strong security, 24/7 customer support, and a user-friendly interface. All of this makes Shopify an ideal platform for businesses of all sizes in setting up an online store without even having coding knowledge."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do I have full Shopify store access, including the code?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You can’t have full access to a Shopify store, instead you can only access specific sections of a store with the permission of a collaborator."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the benefits of Shopify development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `The benefits of Shopify development are:
+Ease of use
+Supports a wide range of businesses
+Customizable themes
+Low startup costs
+Strong customer support 
+Good for dropshipping 
+Contact our Shopify app development company to learn more.`
+    }
+  },{
+    "@type": "Question",
+    "name": "How does Shopify work?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `A Shopify development company can help you set up your Shopify store by following a step-by-step process. 
+Sign up and choose your plan
+Set up your store
+Upload product images and information
+Add payment methods and shipping details
+Make your store live 
+Use organic and paid marketing to grow your business`
+    }
+  },{
+    "@type": "Question",
+    "name": "How can Shopify help me grow my online website?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A Shopify website development company can help you set up your Shopify store and access features like email marketing campaigns, social media integration and a responsive website to help in getting online rankings and growing your business."
+    }
+  }]
+}
   export const faqDetails = [
     {
-      title: "Do I need to hire a Shopify development agency to start a store?",
+      id:1,
+      title: "Why should I pick Shopify for my eCommerce development project?",
       description:
-        "Yes, Hiring a Shopify development agency can give your store everything it needs. Well-established and experienced agencies will have developers who are familiar with the Shopify portal's latest features and functionality. They can also help you leverage the utmost potential from this e-commerce platform to enhance your online business.",
+        <>
+        You should pick Shopify for your <Link className="text-blue-600" href={"https://braininventory.in/industry/ecommerce"}>ecommerce development</Link> project because it gives a mobile-first design, extensive app store integration, strong security, 24/7 customer support, and a user-friendly interface. All of this makes Shopify an ideal platform for businesses of all sizes in setting up an online store without even having coding knowledge. 
+
+        </>
     },
     {
+      id:2,
       title:
-        "How much does Brain Inventory charge for Shopify store development services?",
+        "Do I have full Shopify store access, including the code?",
       description:
-        "Our pricing is based on the complexity of your store and the number of resources we need to allocate to it. We've put together a handy pricing calculator that will give you an average idea of the type of cost per month for your project. By using this tool, you can compare all of our different packages.",
+        "No. You can’t have full access to a Shopify store, instead you can only access specific sections of a store with the permission of a collaborator. ",
     },
     {
+      id:3,
       title:
-        "Will I get a dedicated Project Manager for the Shopify development services I choose?",
+        "What are the benefits of Shopify development?",
       description:
-        "Since technical knowledge is a prerequisite to managing WordPress, we provide a dedicated project manager who will be in touch with you and your team throughout the endeavor. The project manager will be able to troubleshoot and fix all the bugs that may arise during installation. This is an additional fee, payable when the software development starts.",
+      <>
+      <p>The benefits of Shopify development are: </p>
+      <ul className="list-disc ml-6">
+       <li>Ease of use</li>
+       <li>Supports a wide range of businesses
+       </li>
+       <li>Customizable themes
+       </li>
+       <li>Low startup costs 
+       </li>
+       <li>Strong customer support 
+       </li>
+       <li>Good for dropshipping 
+       </li>
+      </ul>
+      <p><Link className="text-blue-600" href={"https://braininventory.in/contact"}>Contact</Link> our Shopify app development company to learn more. </p>
+      </>
     },
     {
-      title: "What will be the mode of communication used?",
+      id:4,
+      title: "How does Shopify work?",
       description:
-        "We utilize PMS tools such as Teamwork and ProofHub within our organization, but we are adaptable to the tools that your team prefers. Additionally, our team has prior experience with various project management systems like Jira, BaseCamp, Trello, WorkFront, Wrike, and similar platforms. Therefore, transitioning to your preferred PMS will be a seamless process for us.",
+      <>
+      <p>A Shopify development company can help you set up your Shopify store by following a step-by-step process. </p>
+      <ul className="list-disc ml-6">
+       <li>Sign up and choose your plan</li>
+       <li>Set up your store
+       </li>
+       <li>Upload product images and information
+       </li>
+       <li>Add payment methods and shipping details
+       </li>
+       <li>Make your store live 
+       </li>
+       <li>Use organic and paid marketing to grow your business
+       </li>
+      </ul>
+      </>
     },
     {
+      id:5,
       title:
-        "How long does it take for a Shopify web development agency to deliver the live project?",
+        "How can Shopify help me grow my online website?",
       description:
-        "The average duration to build an online store is three months. We create a unique theme for your eCommerce business based on your brand and industry requirements.",
+        "A Shopify website development company can help you set up your Shopify store and access features like email marketing campaigns, social media integration and a responsive website to help in getting online rankings and growing your business. ",
     },
   ];
 

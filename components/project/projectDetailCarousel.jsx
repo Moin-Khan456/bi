@@ -55,8 +55,8 @@ const ImageSlider = ({ images }) => {
          
               src={image.url}
               alt={`Image ${index + 1}`}
-              className="rounded-3xl"
-              width={800} height={300} objectFit={"cover"}
+              className="rounded-3xl object-cover"
+              width={800} height={300} 
             />
           </div>
         ))}

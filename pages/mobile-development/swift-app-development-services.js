@@ -9,6 +9,7 @@ import {
   hireCards,
   meanReasons,
 } from "../../data/mobile-development-data/swiftAppData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
@@ -22,8 +23,8 @@ const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
@@ -103,7 +104,7 @@ function SwiftDevelopment() {
             title="Why Swift App Development from %Brain Inventory"
             card={hireCards}
           />{" "}
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Swift Application Development Services"
           />{" "}

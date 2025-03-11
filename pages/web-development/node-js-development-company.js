@@ -1,40 +1,50 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const Footer = dynamic(() => import("../../components/common/Footer"));
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import {
+  benefitsList,
+  chooseBI,
+  content,
+  faqDetails,
+  hireCards,
+  jsonLdScript,
+  meanReasons,
+} from "../../data/web-development-data/nodejsData.js";
 
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
-
-const Hire = dynamic(() => import("../../components/common/Hire"));
-import SectionOne from "../../components/Web-Development/PageIntro.jsx";
-import Link from "next/link.js";
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
+const SectionOne = dynamic(() =>
+  import("../../components/Web-Development/PageIntro.jsx")
+);
 const WhyMean = dynamic(() =>
   import("../../components/Web-Development/WhyMean.jsx")
 );
 const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const Hire = dynamic(() => import("../../components/common/Hire"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
-const Industries = dynamic(() =>
-  import("../../components/Web-Development/industries.jsx"),{ssr:false}
+const Industries = dynamic(
+  () => import("../../components/Web-Development/industries.jsx"),
+  { ssr: false }
 );
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle.jsx"),{ssr:false}
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
+  ssr: false,
+});
+const BlogArticle = dynamic(
+  () => import("../../components/common/BlogArticle.jsx"),
+  { ssr: false }
 );
-import DOMPurify from "isomorphic-dompurify";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/web-development-data/nodejsData.js";
-
 const KeepInTouch = dynamic(() =>
   import("../../components/common/keepInTouch.js")
 );
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 
 function NodeJsDevelopment(props) {
-  
-const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -71,8 +81,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
           as="image"
         />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense
@@ -84,7 +94,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
       >
         <div className=" ">
           <Header />
-          <div className="pt-32">
+          <div className="sm:pt-32">
             <SectionOne
               heading="Node.Js"
               title="Node.Js"
@@ -95,8 +105,8 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
               alt="Node JS Web Development Services"
             />
             <WhyMean type="Node.Js" meanReasons={meanReasons} />
-            <div className="flex justify-center px-10">
-              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-2xl lg:text-6xl font-extrabold font-Satoshi">
+            <div className="flex justify-start sm:ml-[3rem] pl-10 sm:px-10">
+              <h3 className="text-head mean_stack_development_text_shadow mt-8 text-4xl lg:text-6xl font-extrabold font-Satoshi">
                 Node.Js Development Services
               </h3>
             </div>
@@ -105,7 +115,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
               title="Why Node.Js Development from %Brain Inventory"
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="Node JS Web Development Services"
             />{" "}

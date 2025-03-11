@@ -1,46 +1,45 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
+import { chooseBI, content, EngageOptions, experienceCards, faqDetails, hireCards, jsonLdScript, keySkillsBrief, subhead1, subHeadPathways } from "../../data/web-development-data/salesforceDevelopmentData";
+
 const Header = dynamic(() => import("../../components/header/Header"), {
   ssr: false,
 });
+const HireBanner = dynamic(() => import("../../components/common/HireBanner"));
+const Customer = dynamic(() => import("../../components/common/customer"));
+const AdvantageCustom = dynamic(() =>
+  import("../../components/Web-Development/AdvantageCustom")
+);
+const HireMarquee = dynamic(() =>
+  import("../../components/common/HireMarquee")
+);
+const BusinessPathways = dynamic(() =>
+  import("../../components/Web-Development/BusinessPathways")
+);
+const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
+const Hire = dynamic(() => import("../../components/common/Hire"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory")
+);
+const Faqs = dynamic(() => import("../../components/mobilePages/faqs"), {
+  ssr: false,
+});
+const BlogArticle = dynamic(
+  () => import("../../components/common/BlogArticle"),
+  { ssr: false }
+);
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch")
+);
 const LocateUs = dynamic(() => import("../../components/common/locateUs"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer"), {
   ssr: false,
 });
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch")
-);
-const Faqs = dynamic(() => import("../../components/mobilePages/faqs"), {
-  ssr: false,
-});
-
-const Customer = dynamic(() => import("../../components/common/customer"));
-const AdvantageCustom = dynamic(() =>
-  import("../../components/Web-Development/AdvantageCustom")
-);
-const BusinessPathways = dynamic(() =>
-  import("../../components/Web-Development/BusinessPathways")
-);
-const HireMarquee = dynamic(() =>
-  import("../../components/common/HireMarquee")
-);
-const Hire = dynamic(() => import("../../components/common/Hire"));
-import HireBanner from "../../components/common/HireBanner";
-import Link from "next/link";
-import { chooseBI, content, EngageOptions, experienceCards, faqDetails, hireCards, keySkillsBreif, subhead1, subHeadPathways } from "../../data/web-development-data/salesforceDevelopmentData";
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
-);
-const BlogArticle = dynamic(
-  () => import("../../components/common/BlogArticle"),
-  { ssr: false }
-);
-const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
-
 function SalesforceDevelopment(props) {
-  
+ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -78,6 +77,11 @@ function SalesforceDevelopment(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
           as="image"
         />
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        />
       </Head>
 
       <div className="relative">
@@ -105,7 +109,7 @@ function SalesforceDevelopment(props) {
           EngageOptions={EngageOptions}
         />
         <KeySkill
-          breif={keySkillsBreif}
+          brief={keySkillsBrief}
           heading="Tools and Technologies% in Salesforce Development"
         />
         <Hire
@@ -113,7 +117,7 @@ function SalesforceDevelopment(props) {
           card={hireCards}
           subhead1={subhead1}
         />
-        <ChooseBraininventory
+        <ChooseBrainInventory
           reasons={chooseBI}
           alt="Hire Dedicated Laravel Developers"
         />

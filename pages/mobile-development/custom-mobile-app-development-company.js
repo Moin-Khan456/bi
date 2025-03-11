@@ -2,8 +2,9 @@ import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { benefitSubHead, content, faqDetails, hireCards, hireSub, para1, para2, para3, reasonsForChoosing } from "../../data/mobile-development-data/customMobileData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
-const HireBanner = dynamic(() => import("../../components/Mobile-Development/SectionOne.jsx"));
+const HireBanner = dynamic(() => import("../../components/Mobile-Development/SectionOne.jsx"),{ssr:false});
 
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
 const CustomWeb = dynamic(() => import("../../components/customWeb.jsx"),{ssr:false});
@@ -14,8 +15,8 @@ const CustomAppBenefits = dynamic(() =>
   import("../../components/Mobile-Development/CustomAppBenefits.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventoryApp = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+const ChooseBrainInventoryApp = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}
@@ -98,7 +99,7 @@ function CustomMobileAppDevelopment() {
               subhead={hireSub}
             />
 
-            <ChooseBraininventoryApp
+            <ChooseBrainInventoryApp
               head="Why Custom Web Development from"
               blue="Brain inventory"
               alt="custom app development"

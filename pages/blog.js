@@ -9,16 +9,16 @@ const Pagination = dynamic(() => import("../components/blog/Pagination"));
 const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
-import { useRouter } from "next/router";
-import LocateUs from "../components/common/locateUs.js";const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
-const Footer = dynamic(() => import("../components/common/Footer.js"));
+import LocateUs from "../components/common/locateUs.js";
+const LetsKick = dynamic(() => import("../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../components/common/Footer.js"),{ssr:false});
 
 export default function Home({ data, blogs, totalPages }) {
-  const [position, setPostion] = useState(true);
+  const [position, setPosition] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setPostion(true);
+      setPosition(true);
     });
   });
 

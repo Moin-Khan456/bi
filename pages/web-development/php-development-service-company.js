@@ -1,42 +1,40 @@
-import React, { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header.js"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
-const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr
-  :false
-});
-const Loader = dynamic(() => import("../../components/common/loader.js"));
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { chooseBI, content, faqDetails, hireCards, jsonLdScript, reasons, subhead1, subhead2, subhead3 } from "../../data/web-development-data/phpDevelopmentData.js";
+
+const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
+const SectionOne = dynamic(() => import("../../components/common/HireBanner.jsx"));
 const Customer = dynamic(() => import("../../components/common/customer.jsx"));
-const HireMarquee = dynamic(() =>
-  import("../../components/common/HireMarquee.jsx")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire.jsx"));
-const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-import SectionOne from "../../components/common/HireBanner.jsx";
-import Link from "next/link.js";
-const Hello = dynamic(() => import("../../components/common/FindUs.jsx"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch.js")
-);
-const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
-const Advantage = dynamic(() =>
-  import("../../components/Web-Development/Advantage.jsx")
-);
+
 const Experienced = dynamic(() =>
   import("../../components/Web-Development/Experienced.jsx")
 );
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const HireMarquee = dynamic(() =>
+  import("../../components/common/HireMarquee.jsx")
 );
+const Advantage = dynamic(() =>
+  import("../../components/Web-Development/Advantage.jsx")
+);
+const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
+);
+const Faqs = dynamic(()=>import("../../components/mobilePages/faqs.js"),{ssr:false}) 
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ss
     :false
   }
 );
-import DOMPurify from "isomorphic-dompurify";
-import { chooseBI, content, faqDetails, hireCards, jsonLdScript, reasons, subhead1, subhead2, subhead3 } from "../../data/web-development-data/phpDevelopmentData.js";
-const Faqs = dynamic(()=>import("../../components/mobilePages/faqs.js"),{ssr:false}) 
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch.js")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr
+  :false
+});
 
 function PhpDevelopment(props) {
  
@@ -123,7 +121,7 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
             title="Why PHP Development Integration from %Brain Inventory"
             card={hireCards}
           />
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Custom PHP development"
           />

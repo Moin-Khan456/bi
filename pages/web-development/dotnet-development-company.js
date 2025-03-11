@@ -1,38 +1,40 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("../../components/header/Header"));
-const LocateUs = dynamic(() => import("../../components/common/locateUs"));
-const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
-const Footer = dynamic(() => import("../../components/common/Footer"));
-const KeepInTouch = dynamic(() =>
-  import("../../components/common/keepInTouch")
-);
-const FaqHire = dynamic(() => import("../../components/common/Faqhire"));
+import DOMPurify from "isomorphic-dompurify";
+import { chooseBI, content, faqDetails, hireCards, jsonLdScript, reasons, subhead1, subhead2, subhead3 } from "../../data/web-development-data/dotnetDevelopmentData.js";
+
+const Header = dynamic(() => import("../../components/header/Header"),{ssr:false});
+import HireBanner from "../../components/common/HireBanner";
 const Customer = dynamic(() => import("../../components/common/customer"));
-const AdvantageVerticalCards = dynamic(() =>
-  import("../../components/Hire/AdvantageVerticalCards.jsx")
+const Experienced = dynamic(() =>
+  import("../../components/Web-Development/Experienced")
 );
 const HireMarquee = dynamic(() =>
   import("../../components/common/HireMarquee")
 );
-const Experienced = dynamic(() =>
-  import("../../components/Web-Development/Experienced")
+const AdvantageVerticalCards = dynamic(() =>
+  import("../../components/Hire/AdvantageVerticalCards.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
-import HireBanner from "../../components/common/HireBanner";
-import Link from "next/link.js";
-import Faqs from "../../components/mobilePages/faqs.js";
-import { chooseBI, content, faqDetails, hireCards, reasons, subhead1, subhead2, subhead3 } from "../../data/web-development-data/dotnetDevelopmentData.js";
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
-);
-const BlogArticle = dynamic(() =>
-  import("../../components/common/BlogArticle")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/CommonChooseBrainInventory")
 );
 
+const Faqs = dynamic(() =>
+  import("../../components/mobilePages/faqs.js"),{ssr:false}
+);
+const BlogArticle = dynamic(() =>
+  import("../../components/common/BlogArticle"),{ssr:false}
+);
+const KeepInTouch = dynamic(() =>
+  import("../../components/common/keepInTouch")
+);
+const LocateUs = dynamic(() => import("../../components/common/locateUs"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
+const Footer = dynamic(() => import("../../components/common/Footer"),{ssr:false});
 function DotnetDevelopment(props) {
- 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -78,6 +80,10 @@ function DotnetDevelopment(props) {
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
           as="image"
         />
+          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
+        />
       </Head>
       <Suspense
         fallback={
@@ -119,7 +125,7 @@ function DotnetDevelopment(props) {
             card={hireCards}
           />
 
-          <ChooseBraininventory
+          <ChooseBrainInventory
             reasons={chooseBI}
             alt="Hire Dedicated Laravel Developers"
           />

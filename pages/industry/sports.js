@@ -14,6 +14,7 @@ import {
   solutionList,
   title,
 } from "../../data/industry-data/sportData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });

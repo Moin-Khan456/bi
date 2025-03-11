@@ -32,32 +32,84 @@ export const hireCards = [
 ];
 
 export const faqDetails = [
-{
-  id: "1",
-  title:
-    "Why should I choose ASP.NET framework for enterprise app development?",
-  description:
-    "ASP.NET is a free web framework developed by Microsoft. It helps you to build any type of application - mobile, web, desktop, gaming, IoT, cloud, etc. ASP.NET provides a customer-centric approach to solution development. It has a modern membership API and numerous authentication features that help you to implement user identity management in your application easily.",
-},
-{
-  id: "2",
-  title: "Can I choose .NET for eCommerce application development?",
-  description:
-    ".NET is an ideal technology for shopping or e-commerce websites thanks to its flexibility, open-source features, and impeccable performance. You can effortlessly add/remove/edit items and products from your website. Moreover, your online store will become more advanced with new features such as a wish list, purchase history, site analytics, etc. You'll be able to monitor/control every aspect of your online shop due to the versatility of .NET.",
-},
-{
-  id: "3",
-  title: "When should I migrate my application to .NET Core?",
-  description:
-    "With the introduction of .NET Core 1.0, Microsoft has provided a lightweight, open-source and cross-platform version of their full-featured .NET Framework for developing web and cloud-based applications. .NET Core is a modular framework that contains only the most essential components required by your application and runs on Windows, OS X and Linux.",
-},
-{
-  id: "4",
-  title: "Will you work according to my time zone preference?",
-  description:
-    "We are ready to help you conquer your IT needs. From building a new website for your top-level executives, down to building the server with which your company's web analytics run. We've got you covered from every angle and at any time of the day. This means you can count on us 24/7/ whether you're in need of .Net programmers or services related to .Net that we provide.",
-},
+  {
+    id: "1",
+    title:
+      "Why are .NET developers in demand these days?",
+    description:
+    <>
+      While there are a number of reasons including a large and active community support, security features, and Microsoft Azure integration, the primary reason behind the increasing demand for .NET developers is cross-compatibility. With .NET, developers can build flexible applications for all operating systems like Windows, Linux, etc. This saves a lot of time and money for organizations. <br></br> <Link className="text-blue-600" href={"https://braininventory.in/contact"}>Contact</Link> our .NET software development company to learn more. ,
+      </>
+  },
+  {
+    id: "2",
+    title: "Do you have a dedicated .NET team available?",
+    description:
+      "Yes. Our .NET development company has a dedicated team of .NET professionals. Contact us to learn more. ",
+  },
+  {
+    id: "3",
+    title: "Why is the .NET framework preferred for software development?",
+    description:
+      <>
+      .NET framework is a preferred choice for <Link className="text-blue-600" href={"https://braininventory.in/"}>software development</Link> because of the features like cross-platform compatibility, language flexibility, active community support, and seamless integration with Microsoft products like Azure.
+      </>
+  },
+  {
+    id: "4",
+    title: "Are Applications developed using the .NET platform Mobile friendly?",
+    description:
+      "Yes. applications developed using the .NET platform are mobile-friendly since .NET allows developers to create apps using a single code, which can run seamlessly across different screen sizes. So the cross-compatibility feature of .NET allows applications to be developed mobile-friendly. ",
+  },
+  {
+    id: "5",
+    title: "Can I use .NET to develop an e-commerce application?",
+    description:
+      <>
+      Yes, you can use the .NET framework to develop an e-commerce application efficiently. Contact our Dot Net Development Company to discuss more about your project and how we can join hands to take your <Link className="text-blue-600" href={"https://braininventory.in/industry/ecommerce"}>e-commerce app</Link> to the next level. 
+      </>
+  },
 ];
+export const jsonLdScript={
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why are .NET developers in demand these days?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "While there are a number of reasons including a large and active community support, security features, and Microsoft Azure integration, the primary reason behind the increasing demand for .NET developers is cross-compatibility. With .NET, developers can build flexible applications for all operating systems like Windows, Linux, etc. This saves a lot of time and money for organizations. Contact our .NET software development company to learn more."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you have a dedicated .NET team available?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Our .NET development company has a dedicated team of .NET professionals. Contact us to learn more."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is the .NET framework preferred for software development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": ".NET framework is a preferred choice for software development because of the features like cross-platform compatibility, language flexibility, active community support, and seamless integration with Microsoft products like Azure."
+    }
+  },{
+    "@type": "Question",
+    "name": "Are Applications developed using the .NET platform Mobile friendly?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. applications developed using the .NET platform are mobile-friendly since .NET allows developers to create apps using a single code, which can run seamlessly across different screen sizes. So the cross-compatibility feature of .NET allows applications to be developed mobile-friendly."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I use .NET to develop an e-commerce application?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, you can use the .NET framework to develop an e-commerce application efficiently. Contact our Dot Net Development Company to discuss more about your project and how we can join hands to take your e-commerce app to the next level."
+    }
+  }]
+}
 
 export const chooseBI = [
 <>

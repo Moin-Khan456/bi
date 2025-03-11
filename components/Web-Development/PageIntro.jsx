@@ -1,5 +1,5 @@
 import React from "react";
-import { BiAbacus, BiCheckCircle } from "react-icons/bi";
+import {  BiCheckCircle } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function HireBanner({

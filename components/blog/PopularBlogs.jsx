@@ -12,7 +12,7 @@ const PopularBlogs = ({ data }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {data?.map((post, index) => (
             <Link
-              href={`/posts/${post.slug}/${post.id}`}
+              href={`/posts/${post.slug}`}
               key={index}
               className="w-full"
             >
@@ -38,7 +38,7 @@ const PopularBlogs = ({ data }) => {
                   />
                 </div>
                 <div className="px-2 absolute bottom-3">
-                  <Link href={`/posts/${post.slug}/${post.id}`}
+                  <Link href={`/posts/${post.slug}`}
               key={index}
               className="bg-primaryTx Gilroy-SemiBold px-3 py-1 text-primaryBg">
                   Read More

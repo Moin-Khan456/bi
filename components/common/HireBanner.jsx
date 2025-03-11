@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
 import "aos/dist/aos.css";
 

@@ -15,6 +15,7 @@ import {
   sectionTwoDesc,
   solutionList,
 } from "../../data/industry-data/blockchainData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
@@ -62,7 +63,6 @@ const BlogArticle = dynamic(
 );
 const KeepInTouch = dynamic(
   () => import("../../components/common/keepInTouch.js"),
-  { ssr: false }
 );
 const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
 const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));

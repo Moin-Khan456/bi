@@ -1,14 +1,17 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
 import {
   benefitsList,
   chooseBI,
   content,
   faqDetails,
   hireCards,
+  jsonLdScript,
   meanReasons,
 } from "../../data/mobile-development-data/isoAppData.js";
+
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
 });
@@ -22,8 +25,8 @@ const Benefits = dynamic(() =>
   import("../../components/Web-Development/benefits.jsx")
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
-const ChooseBraininventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+const ChooseBrainInventory = dynamic(() =>
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
@@ -48,6 +51,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function IosDevelopment() {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -78,6 +82,10 @@ function IosDevelopment() {
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/ios-app-development-company"
+        />
+          <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense
@@ -110,7 +118,7 @@ function IosDevelopment() {
               subhead="Most successful smartphone and tablet apps are developed by iOS app development companies. Developing a mobile application with the help of an iPhone app developer is one of the things that can bring your business more profits, success, and revenue growth."
               card={hireCards}
             />{" "}
-            <ChooseBraininventory
+            <ChooseBrainInventory
               reasons={chooseBI}
               alt="iOS Development Service"
             />{" "}

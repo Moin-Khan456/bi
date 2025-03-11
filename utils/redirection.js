@@ -1463,6 +1463,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/web-development/salesforce-development-company",
+      destination: "/web-development/salesforce-development-services",
+      permanent: true,
+    },
+    {
       source: "/industry/ecommerce-software-development-services",
       destination: "/industry/ecommerce",
       permanent: true,

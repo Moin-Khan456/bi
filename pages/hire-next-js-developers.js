@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic.js";
 import DOMPurify from "isomorphic-dompurify";
 import { advantages, chooseBI, chooseBiSubhead, content, experienceCards, faqDetails, hireCards, jsonLdScript, keySkillsBrief, keySkillsPoints, subhead1, subhead2 } from "../data/hire-dedicated-remote-developer-data/hireNextJsData.js";
 

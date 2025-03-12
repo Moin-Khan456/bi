@@ -11,7 +11,7 @@ export default function ChooseBrainInventory({
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section-1">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-10" >
           <div>
             <h2 className="Gilroy-Bold text-4xl leading-[3rem]">
               Why Choose Brain inventory for{' '}

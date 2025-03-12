@@ -14,7 +14,7 @@ const TiltMarquee = dynamic(() =>
   import("../components/SolutionFitness/TiltMarquee.jsx")
 );
 import SectionFour from "../components/SolutionFitness/SectionFour.jsx"
-import ChooseUs from "../components/support/chooseUs.jsx"
+import { ChooseUs } from "../components/support/chooseUs.jsx"
 import SectionNine from "../components/SolutionFitness/SectionNine.jsx"
 
 const SectionTen = dynamic(() => import("../components/SolutionFitness/SectionTen.jsx").then(mod => mod.default), { ssr: false });

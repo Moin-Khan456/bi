@@ -6,30 +6,19 @@ import { GoArrowUpRight } from "react-icons/go";
 import { benefitsOfSoftwareMaintenanceAndSupportService, chooseBI, faqDetails, sectionTwoDesc, softwareMaintenanceandSupportImportantPoints, solutionList } from "../data/supportData.js";
 
 const Header = dynamic(() => import("../components/header/Header.js"),{ssr:false});
-const SectionOne = dynamic(() =>
-  import("../components/support/sectionOne.jsx")
-);
-const SectionTwo = dynamic(() =>
-   import("../components/support/sectionTwo.jsx")
-);
-const SectionThree = dynamic(() =>
-  import("../components/support/sectionThree.jsx")
-);
+
+import SectionOne from "../components/support/sectionOne.jsx"
+import SectionTwo from "../components/support/sectionTwo.jsx"
+import SectionThree from "../components/support/sectionThree.jsx"
 const TiltMarquee = dynamic(() =>
   import("../components/SolutionFitness/TiltMarquee.jsx")
 );
-const SectionFour = dynamic(() =>
-  import("../components/SolutionFitness/SectionFour.jsx")
-);
-const ChooseUs = dynamic(() =>
-  import("../components/support/chooseUs.jsx")
-);
-const SectionNine = dynamic(() =>
-  import("../components/SolutionFitness/SectionNine.jsx")
-);
-const SectionTen = dynamic(() =>
-  import("../components/SolutionFitness/SectionTen.jsx"),{ssr:false}
-);
+import SectionFour from "../components/SolutionFitness/SectionFour.jsx"
+import ChooseUs from "../components/support/chooseUs.jsx"
+import SectionNine from "../components/SolutionFitness/SectionNine.jsx"
+
+const SectionTen = dynamic(() => import("../components/SolutionFitness/SectionTen.jsx").then(mod => mod.default), { ssr: false });
+
 const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle.jsx"),{ssr:false});
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch.js"));

@@ -98,7 +98,7 @@ export const faqDetails = [
   id: "1",
   title: "How to hire Laravel developers?",
   description: (
-    <>
+    <div className="space-y-2">
       <p>You can hire Laravel developers by following any one of these- </p>
       <ul className="ml-10 list-disc">
         <li>Creating a detailed job ad</li>
@@ -108,7 +108,7 @@ export const faqDetails = [
         <li>Reach out to hiring platforms</li>
         <li>Joining freelancing platforms like Fiverr and Upwork</li>
       </ul>
-    </>
+    </div>
   ),
 },
 {

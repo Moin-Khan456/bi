@@ -154,7 +154,7 @@ export const content =
       id: "5",
       title: "Does Vue have a future?",
       description: (
-        <>
+        <div className="space-y-2">
           <p> Yes. Vue has a bright future due to </p>
           <ul className="ml-10 list-disc">
             <li>Strong and active community.</li>
@@ -166,7 +166,7 @@ export const content =
             Hire VueJS developers to take advantage of the VueJS features and
             its ability to build high-performing applications.
           </p>
-        </>
+        </div>
       ),
     },
   ];

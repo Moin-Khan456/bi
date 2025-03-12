@@ -116,7 +116,7 @@ export const content = (
       id: "1",
       title: "What are the main advantages of AngularJS?",
       description: (
-        <>
+        <div className="space-y-2">
           <p> The key benefits of using AngularJS for your next project are-</p>
           <ul className="ml-10 disc">
             <li>Reusable components across the project seamlessly.</li>
@@ -138,7 +138,7 @@ export const content = (
             </li>
             <li>Test application during the development process itself.</li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

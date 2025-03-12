@@ -103,7 +103,7 @@ export const content =
       title:
         "What are the key benefits of using full-stack web development services?",
       description: (
-        <>
+        <div className="space-y-2">
           <p className="ml-4">
             The key benefits of using full-stack web development services are-
           </p>
@@ -128,7 +128,7 @@ export const content =
               they can handle any updates and changes smoothly.
             </li>
           </ol>
-        </>
+        </div>
       ),
     },
     {
@@ -148,7 +148,7 @@ export const content =
       id: "4",
       title: "What Development Process Do You Follow?",
       description: (
-        <>
+        <div className="space-y-2">
           <p> Key steps in a full-stack development include- </p>
           <ul className="ml-10 list-disc">
             <li>Project planning and requirements</li>
@@ -159,7 +159,7 @@ export const content =
             <li>Deployment</li>
             <li>Maintenance and updates</li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

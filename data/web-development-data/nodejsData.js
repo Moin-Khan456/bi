@@ -48,7 +48,7 @@ export const content =
       id: "3",
       title: "Why choose Node.js for my project?",
       description: (
-        <>
+        <div className="space-y-2">
           <p>
             The reasons you should choose Node.js for your next project may
             include-
@@ -63,7 +63,7 @@ export const content =
             <li>Readily available modules to speed up the development time </li>
             <li>Easy to learn language </li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

@@ -82,7 +82,7 @@ export const content =
       id: "1",
       title: "What tools do AI Chatbot Developers use?",
       description: (
-        <>
+        <div className="space-y-2">
           <p>
             Some of the essential tools that AI chatbot developers use are-{" "}
           </p>
@@ -95,7 +95,7 @@ export const content =
             <li>Chatfuel</li>
           </ul>
           <p>Contact us to Hire dedicated chatbot developers </p>
-        </>
+        </div>
       ),
     },
     {

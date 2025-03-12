@@ -64,7 +64,7 @@ export const content =
       title:
         "What are the benefits of custom web design?",
       description: (
-        <>
+        <div className="space-y-2">
           <p> The benefits associated with a custom web design are- </p>
           <ul className="ml-10 list-disc">
             <li>An improved user experience </li>
@@ -76,7 +76,7 @@ export const content =
             </li>
             <li>It creates a more personalized experience</li>
           </ul>
-        </>
+        </div>
       )
     },
     {

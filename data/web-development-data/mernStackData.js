@@ -40,7 +40,7 @@ export const content = (
       id: "2",
       title: "What are the major benefits of using MERN Stack web Development?",
       description: (
-        <>
+        <div className="space-y-2">
           <p>The major benefits of using the MERN stack include-</p>
           <ul className="ml-10 list-disc">
             <li>
@@ -54,7 +54,7 @@ export const content = (
               asynchronously{" "}
             </li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

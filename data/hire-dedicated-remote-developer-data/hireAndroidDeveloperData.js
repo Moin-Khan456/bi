@@ -123,7 +123,7 @@ export const faqDetails = [
   id: "3",
   title: "What is the timeline needed to develop an Android app?",
   description: (
-    <>
+    <div className="space-y-2">
       <p>
         {" "}
         The time required to develop an Android app depends on the app’s
@@ -134,7 +134,7 @@ export const faqDetails = [
         <li>Mid-level apps take 3-6 months of time to develop.</li>
         <li>Complex apps take 6 months of time or a year to develop.</li>
       </ul>
-    </>
+    </div>
   ),
 },
 {

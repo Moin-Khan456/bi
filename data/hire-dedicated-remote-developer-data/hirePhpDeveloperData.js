@@ -121,7 +121,7 @@ export const content =
       title:
         "What are some key features of PHP programming that PHP web developers choose it for?",
       description: (
-        <>
+        <div className="space-y-2">
           <p>
             {" "}
             Some of the prominent features for which PHP web developers choose
@@ -136,7 +136,7 @@ export const content =
             <li>Plenty of handy resources and tools</li>
           </ul>
           <p>Contact us to Hire a dedicated PHP developer </p>
-        </>
+        </div>
       ),
     },
     {

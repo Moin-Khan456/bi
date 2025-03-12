@@ -47,7 +47,7 @@ export const content = (
       id: "2",
       title: "How does AngularJS improve application performance?",
       description: (
-        <>
+        <div className="space-y-2">
           <ul className="ml-10 list-disc">
             <li>
               Two-Way Data Binding: It reduces manual updates by establishing an
@@ -78,7 +78,7 @@ export const content = (
               improving application speed.
             </li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

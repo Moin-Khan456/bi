@@ -106,7 +106,7 @@ export const content = (
       id: "1",
       title: "How Do I Hire ReactJS Developers?",
       description: (
-        <>
+        <div className="space-y-2">
           <p> To hire dedicated ReactJS developers, you can -</p>
           <ul className="ml-10 list-disc">
             <li>Prepare and share the JD.</li>
@@ -121,7 +121,7 @@ export const content = (
             <li>Complete the onboarding process.</li>
             <li>You are good to go.</li>
           </ul>
-        </>
+        </div>
       ),
     },
     {

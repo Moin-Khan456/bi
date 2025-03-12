@@ -10,7 +10,7 @@ const SectionOne = dynamic(() =>
   import("../components/support/sectionOne.jsx")
 );
 const SectionTwo = dynamic(() =>
-  import("../components/support/sectionTwo.jsx")
+   import("../components/support/sectionTwo.jsx")
 );
 const SectionThree = dynamic(() =>
   import("../components/support/sectionThree.jsx")

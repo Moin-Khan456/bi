@@ -39,9 +39,8 @@ const LocateUs = dynamic(
 const LetsKick = dynamic(
   () => import("../../components/common/LetsKick.js"),
 );
-const Footer = dynamic(
-  () => import("../../components/footer/Footer.js"),{ssr:false}
-);
+const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
+
 import {
   benefitsList,
   card,

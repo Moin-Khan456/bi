@@ -28,13 +28,12 @@ const Experienced = dynamic(() =>
 );
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const Advantage = dynamic(() =>
-  import("../components/Hire/Advantagebrief.jsx")
+  import("../components/Hire/AdvantageBreif.jsx")
 );
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire"));
-const ChooseBrainInventory = dynamic(() =>
-  import("../components/common/CommonChooseBrainInventory")
-);
+const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBrainInventory.jsx"));
+
 const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"), {
   ssr: false,
 });

@@ -21,7 +21,7 @@ const TiltMarquee = dynamic(() =>
 const SectionFour = dynamic(() =>
   import("../components/SolutionFitness/SectionFour.jsx")
 );
-const {ChooseUs} = dynamic(() =>
+const ChooseUs = dynamic(() =>
   import("../components/support/chooseUs.jsx")
 );
 const SectionNine = dynamic(() =>

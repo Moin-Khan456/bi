@@ -18,7 +18,7 @@ const AdvantageVerticalCards = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBrainInventory")
+  import("../../components/common/CommonChooseBraininventory")
 );
 
 const Faqs = dynamic(() =>

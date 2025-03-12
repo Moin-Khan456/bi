@@ -156,7 +156,7 @@ export const content =
       description: (
         <div className="space-y-2">
           <p> Yes. Vue has a bright future due to </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>Strong and active community.</li>
             <li>Gentle learning curve.</li>
             <li>Support from large corporations like Xiaomi, and Alibaba.</li>

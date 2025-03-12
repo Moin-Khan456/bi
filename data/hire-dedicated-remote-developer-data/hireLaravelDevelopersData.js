@@ -100,7 +100,7 @@ export const faqDetails = [
   description: (
     <div className="space-y-2">
       <p>You can hire Laravel developers by following any one of these- </p>
-      <ul className="ml-10 list-disc">
+      <ul className="!ml-7 disc">
         <li>Creating a detailed job ad</li>
         <li>
           Make professional connections and take recommendations from them

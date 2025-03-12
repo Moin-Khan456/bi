@@ -127,7 +127,7 @@ export const content =
             Some of the prominent features for which PHP web developers choose
             PHP include-{" "}
           </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>Free and open-source library</li>
             <li>Compatible with all OS</li>
             <li>It is dynamic and flexible</li>

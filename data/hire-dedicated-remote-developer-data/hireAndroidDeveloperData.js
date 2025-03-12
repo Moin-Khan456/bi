@@ -129,7 +129,7 @@ export const faqDetails = [
         The time required to develop an Android app depends on the app’s
         complexity.{" "}
       </p>
-      <ul className="ml-10 list-disc">
+      <ul className="!ml-7 disc">
         <li>Simple apps take 1-2 months of time to develop.</li>
         <li>Mid-level apps take 3-6 months of time to develop.</li>
         <li>Complex apps take 6 months of time or a year to develop.</li>

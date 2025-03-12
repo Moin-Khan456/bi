@@ -48,7 +48,7 @@ export const content = (
       title: "How does AngularJS improve application performance?",
       description: (
         <div className="space-y-2">
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>
               Two-Way Data Binding: It reduces manual updates by establishing an
               automatic synchronization between the model and the view.

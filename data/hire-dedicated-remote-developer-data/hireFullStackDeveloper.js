@@ -107,7 +107,7 @@ export const content =
           <p className="ml-4">
             The key benefits of using full-stack web development services are-
           </p>
-          <ol className="ml-10 list-disc">
+          <ol className="!ml-7 disc">
             <li>
               Reduced costs- Instead of hiring multiple developers, you can get
               the job done with a single skilled person in full-stack
@@ -150,7 +150,7 @@ export const content =
       description: (
         <div className="space-y-2">
           <p> Key steps in a full-stack development include- </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>Project planning and requirements</li>
             <li>Design and architecture</li>
             <li>Front-end development</li>

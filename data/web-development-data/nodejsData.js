@@ -53,7 +53,7 @@ export const content =
             The reasons you should choose Node.js for your next project may
             include-
           </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>
               It is ideal for building web applications that require fast
               responses, like online games.{" "}

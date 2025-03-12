@@ -42,7 +42,7 @@ export const content = (
       description: (
         <div className="space-y-2">
           <p>The major benefits of using the MERN stack include-</p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>
               Scalability, as it allows for upscaling and downscaling with no
               compromise on the code integrity

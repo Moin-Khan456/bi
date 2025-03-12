@@ -108,7 +108,7 @@ export const content = (
       description: (
         <div className="space-y-2">
           <p> To hire dedicated ReactJS developers, you can -</p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>Prepare and share the JD.</li>
             <li>
               You will receive pre-vetted expert ReactJS developers matching

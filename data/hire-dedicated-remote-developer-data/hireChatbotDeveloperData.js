@@ -86,7 +86,7 @@ export const content =
           <p>
             Some of the essential tools that AI chatbot developers use are-{" "}
           </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>Chatbase</li>
             <li>Dialogflow</li>
             <li>Microsoft Bot framework</li>

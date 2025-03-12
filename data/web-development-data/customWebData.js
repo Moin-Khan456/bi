@@ -66,7 +66,7 @@ export const content =
       description: (
         <div className="space-y-2">
           <p> The benefits associated with a custom web design are- </p>
-          <ul className="ml-10 list-disc">
+          <ul className="!ml-7 disc">
             <li>An improved user experience </li>
             <li>A significant boost in the search engine results</li>
             <li>Increased conversions</li>

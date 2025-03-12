@@ -50,7 +50,7 @@ export const faqDetails = [
         Choose the right PHP development company by assessing them on the
         following measures-
       </p>
-      <ul className="ml-10 list-disc">
+      <ul className="!ml-7 disc">
         <li>A proven record in PHP development</li>
         <li>Reviewing their portfolio </li>
         <li>

@@ -51,39 +51,82 @@ export const hireCards = [
 ];
 
 export const faqDetails = [
-{
-  id: "1",
-  title: "Can React Native be used for both web and mobile?",
-  description:
-    "Developers can build cross-platform apps in React Native Web, which means they have access to the same code base and user interface as their mobile or web app. All their mobile or web apps will be able to use this single codebase and have the same user experience on both iOS and Android devices. Developing multiple platforms will allow these developers to create richer features for customers creating more immersive user experiences with less effort than before.",
-},
-{
-  id: "2",
-  title: "Why should I choose React Native for app development?",
-  description:
-    "React Native is an exciting new app development framework for building mobile apps that target iOS and Android platforms. It’s built on top of the React JavaScript library and lets you build stunning, native-like user interfaces that can scale across a number of devices without having to write code for each different target platform separately.",
-},
-{
-  id: "3",
-  title: "What after-sales services do you offer?",
-  description:
-    "Brain Inventory offers full support and maintenance services for our clients. We are dedicated to helping you achieve your goals with your mobile application by providing the best possible support, documentation, and documentation-creation services.",
-},
-{
-  id: "4",
-  title: "How long will it take to develop a React Native app?",
-  description:
-    "It depends on the size of your React Native development venture and the app’s design, highlights, and purpose. There are three troubleshooting tips for a React Native developer when it comes to optimizing for performance:",
-},
-{
-  id: "4",
-  title:
-    "React Native development or native development? How can we decide?",
-  description:
-    "While they both have their benefits and drawbacks, the most common difference between React Native and Native is the user experience. React Native is designed to be a faster and better solution for creating cross-platform apps than Native. If you don’t have the time or budget to develop native apps, React Native is your best option.",
-},
+  {
+    id: "1",
+    title: "How long does it take to develop a React native mobile app?",
+    description:
+      <>
+      The time required to develop a React Native mobile app is variable. Depending upon the app’s complexity, developer experience, and the team size, the app may take from a few weeks to several months. <Link className="text-blue-500" href={"https://braininventory.in/contact"}>Contact</Link> our React Native App Development Company to get more details. 
+      </>
+  },
+  {
+    id: "2",
+    title: "How do you hire a React Native app development company?",
+    description:
+      "To hire a React Native Mobile App Development Company, you must first study their website thoroughly. Look for genuine client reviews, the size and expertise of their team, pricing models, and technical expertise required to develop the project. However, before going through all of this, determine your project goals and budget clearly so that you can finalize a company without any confusion. ",
+  },
+  {
+    id: "3",
+    title: "Can existing mobile apps be migrated to React Native?",
+    description:
+      <>
+      Yes, it is possible to migrate the existing mobile apps to React Native. Developers can easily re-develop parts or all of an app using React Native’s single codebase feature for both <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/ios-app-development-company"}>iOS</Link> and <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/android-app-development-company"}>Android platforms</Link>. This potentially reduces the development time and extra costs that otherwise are needed for app migration. 
+      </>
+  },
+  {
+    id: "4",
+    title: "What technology companies are using React?",
+    description:
+      "Many companies are using React Native Development Services, including Facebook, Airbnb, Dropbox, Uber, and Netflix. ",
+  },
+  {
+    id: "5",
+    title:
+      "Can I use react native to develop both iOS and Android applications?",
+    description:
+      "Yes, React Native can be used to develop both iOS and Android applications using a single codebase. Developers have the freedom to write code just once, and deploy it in both platforms. ",
+  },
 ];
-
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How long does it take to develop a React native mobile app?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The time required to develop a React Native mobile app is variable. Depending upon the app’s complexity, developer experience, and the team size, the app may take from a few weeks to several months. Contact our React Native App Development Company to get more details."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do you hire a React Native app development company?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "To hire a React Native Mobile App Development Company, you must first study their website thoroughly. Look for genuine client reviews, the size and expertise of their team, pricing models, and technical expertise required to develop the project. However, before going through all of this, determine your project goals and budget clearly so that you can finalize a company without any confusion."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can existing mobile apps be migrated to React Native?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, it is possible to migrate the existing mobile apps to React Native. Developers can easily re-develop parts or all of an app using React Native’s single codebase feature for both iOS and Android platforms. This potentially reduces the development time and extra costs that otherwise are needed for app migration."
+    }
+  },{
+    "@type": "Question",
+    "name": "What technology companies are using React?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many companies are using React Native Development Services, including Facebook, Airbnb, Dropbox, Uber, and Netflix."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I use react native to develop both iOS and Android applications?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, React Native can be used to develop both iOS and Android applications using a single codebase. Developers have the freedom to write code just once, and deploy it in both platforms."
+    }
+  }]
+}
 export const chooseBI = [
 "The React Native app developers at Brain Inventory help you quickly and efficiently build high-quality native apps for multiple platforms.",
 "Our developers will develop your app with the latest developments across all major platforms, ensuring that it can scale across multiple devices connected to a single network.",

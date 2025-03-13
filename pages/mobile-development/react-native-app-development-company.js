@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
 import Head from "next/head";
-import Link from "next/link.js";
 import dynamic from "next/dynamic";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons } from "../../data/mobile-development-data/reactNativeData.js";
+import React, { Suspense } from "react";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons,jsonLdScript } from "../../data/mobile-development-data/reactNativeData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
@@ -32,7 +32,7 @@ const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function ReactNativeDeveloper() {
- 
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -63,6 +63,10 @@ function ReactNativeDeveloper() {
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/react-native-app-development-company"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

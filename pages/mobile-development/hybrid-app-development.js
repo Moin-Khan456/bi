@@ -2,7 +2,8 @@ import React, { Suspense } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { benefitsList, chooseBI, content, experienceCards, faqDetails, hireCards, subhead1, subhead2, subhead3 } from "../../data/mobile-development-data/hybridAppData.js";
+import DOMPurify from "isomorphic-dompurify";
+import { benefitsList, chooseBI, content, experienceCards, faqDetails, hireCards, subhead1, subhead2, subhead3,jsonLdScript } from "../../data/mobile-development-data/hybridAppData.js";
 
 const Header = dynamic(() => import("../../components/header/Header"), {
   ssr: false,
@@ -43,6 +44,7 @@ const Footer = dynamic(() => import("../../components/common/Footer"), {
 });
 
 function HybridAppDevelopment() {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -77,6 +79,10 @@ function HybridAppDevelopment() {
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/hybrid-app-development"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

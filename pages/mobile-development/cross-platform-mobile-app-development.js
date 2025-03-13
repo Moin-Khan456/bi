@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
 import {
   benefitsList,
   chooseBI,
@@ -11,6 +12,7 @@ import {
   subhead1,
   subhead2,
   subhead3,
+  jsonLdScript
 } from "../../data/mobile-development-data/cross-platformData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
@@ -47,6 +49,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function CrossPlatformMobileApp(props) {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -73,6 +76,10 @@ function CrossPlatformMobileApp(props) {
         <link
           rel="canonical"
           href="https://braininventory.in/mobile-development/cross-platform-mobile-app-development"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />
       </Head>
       <Suspense

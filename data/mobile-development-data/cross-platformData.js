@@ -76,33 +76,84 @@ export const hireCards = [
 ];
 
 export const faqDetails = [
-{
-  id: "1",
-  title: "How to select the right Ionic development company?",
-  description:
-    "An ionic development company should be a blend of perfection, knowledge, and experience. Ionic is one of the booming mobile app development frameworks for creating hybrid apps for the web as well as for Android and iOS platforms. To use this framework, you need to hire an expert for ionic app development services. As there are multiple options to choose from, you can go through the customer feedback in order to find out which company can provide the best ionic app development services based on your requirements.",
-},
-{
-  id: "2",
-  title: "Which one is better: Ionic or React Native?",
-  description:
-    "Ionic and React Native are both cross-platform development tools that allow you to create Native-like apps for multiple mobile platforms, such as iOS and Android. Both have their own advantages, but I suggest you go with Ionic when building Native-like apps.",
-},
-{
-  id: "3",
-  title:
-    "How much does it cost to develop a Cross-Platform App Using Ionic?",
-  description:
-    "App development cost is a very common concern among app owners. It all depends on the type of your app, the number of platforms you plan to launch your app on (iOS, Android, Windows Phone), the level of complexity of functionality you need in your app, and how quickly you want your app developed. The more advanced is your app and the faster you want it to be ready, the higher the overall cost.",
-},
-{
-  id: "4",
-  title: "How long does it take to build a cross-platform App With Ionic?",
-  description:
-    "The cross-platform development process depends on various factors, like the development platform, the complexity of the design, the experience level of the developer, features and functionality, testing, and many more. With Brain Inventory you can get instant quotes for starting your project – instantly get in touch with top app developers, estimate project costs quickly, and compare options based on your budget or just to evaluate costs.",
-},
+  {
+    id: "1",
+    title: "Are Ionic and Angular the same?",
+    description:
+      <>
+      No, Ionic and Angular are not the same frameworks. <Link className="text-blue-500" href={"https://braininventory.in/web-development/angularjs-development-company"}>Angular</Link> is popular for building web applications, while Ionic app development services are especially designed for building <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/hybrid-app-development"}>hybrid mobile apps</Link> with Angular as the underlying framework for logic and structure. 
+      </>
+  },
+  {
+    id: "2",
+    title: "Is Ionic better than Flutter?",
+    description:
+     <>
+     Flutter is known to give a better performance than Ionic, especially for complex applications. Its native rendering engine makes it an excellent choice whenever the demand revolves around high performance of an application. However, Ionic is preferred if you need a framework that can seamlessly integrate with advanced web technologies and a rapid development environment. <br></br>
+     <Link className="text-blue-500" href={"https://braininventory.in/contact"}>Contact Brain Inventory</Link> for Cross Platform App Development Services. 
+     </>,
+  },
+  {
+    id: "3",
+    title:
+      "Is Ionic better than React Native?",
+    description:
+      <>No, React Native is known to be a better alternative than Ionic in scenarios when native-like user experience is required. <Link className="text-blue-500" href={"tel:+918109561401"}>Call</Link> our cross-platform App Development Company to know more.</>
+  },
+  {
+    id: "4",
+    title: "What is Ionic in app development?",
+    description:
+      "Ionic is a framework which is used for developing mobile applications using technologies like CSS, JavaScript, and HTML. It can provide cross-platform app development, easier updates, a fast development process, and a native-like experience. ",
+  },
+  {
+    id: "5",
+    title: "Is Ionic good for iOS?",
+    description:
+      "Yes, Ionic is a good choice of framework for developing iOS apps since it provides access to iOS-like features through plugins, making it possible to create apps that give a look and feel of Apple applications. ",
+  },
 ];
-
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Are Ionic and Angular the same?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, Ionic and Angular are not the same frameworks. Angular is popular for building web applications, while Ionic app development services are especially designed for building hybrid mobile apps with Angular as the underlying framework for logic and structure."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is Ionic better than Flutter?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Flutter is known to give a better performance than Ionic, especially for complex applications. Its native rendering engine makes it an excellent choice whenever the demand revolves around high performance of an application. However, Ionic is preferred if you need a framework that can seamlessly integrate with advanced web technologies and a rapid development environment. 
+Contact Brain Inventory for Cross Platform App Development Services.`
+    }
+  },{
+    "@type": "Question",
+    "name": "Is Ionic better than React Native?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, React Native is known to be a better alternative than Ionic in scenarios when native-like user experience is required. Call our cross-platform App Development Company to know more."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is Ionic in app development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ionic is a framework which is used for developing mobile applications using technologies like CSS, JavaScript, and HTML. It can provide cross-platform app development, easier updates, a fast development process, and a native-like experience."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is Ionic good for iOS?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, Ionic is a good choice of framework for developing iOS apps since it provides access to iOS-like features through plugins, making it possible to create apps that give a look and feel of Apple applications."
+    }
+  }]
+}
 export const chooseBI = [
 "Brain Inventory is a professional Cross Platform App Development Company in USA that focuses on developing quality mobile applications and providing cutting-edge services to numerous clients all over the globe. The company is privately held and has a solid financial standing. We are well known for developing interactive and incredible hybrid apps with premium UI and offer a complete suite of services ranging from software development, consultancy, and prototyping to agile products in all leading technologies including .NET, Node.js, iOS, Android, Hyperloop, Angular, React native iOS app development at affordable rates for startups and established businesses.",
 "We provides innovative mobile app creation solutions for companies and new ventures. Their tools and services help organizations construct and improve their mobile apps. These offerings facilitate the design, deployment, and administration of business mobile applications.",

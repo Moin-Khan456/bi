@@ -94,10 +94,12 @@ const Header = () => {
           {navOpen ? (
             <div className="dropdown lg:block dropdown-hover">
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1">
-                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none  bg-primaryTx">
-                    <Link href="/contact#contact">request A Quote</Link>
+                <div className=" flex justify-between align-middle items-center h-11 z-[100] gap-1">
+                    <Link href="/contact#contact">
+                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none bg-primaryTx">
+                    request A Quote
                   </p>
+                  </Link>
                   <span
                     onClick={() => {
                       handlesidebar();

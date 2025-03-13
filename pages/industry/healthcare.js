@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import DOMPurify from "isomorphic-dompurify";
-import { approachDesc, approachPoints, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList,faqDetails } from "../../data/industry-data/healthcareData.js";
+import { approachDesc, approachPoints, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList,faqDetails ,jsonLdScript} from "../../data/industry-data/healthcareData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,

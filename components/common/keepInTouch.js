@@ -108,6 +108,7 @@ export default function KeepInTouch({ fromBlog }) {
                           name="name"
                           className="bg-transparent p-4 border border-primaryTx w-full placeholder-secondaryTx Gilroy-Bold text-lg focus:outline-none"
                           placeholder="You should have a name"
+                          autoComplete="off"
                         />
                         <ErrorMessage
                           name="name"

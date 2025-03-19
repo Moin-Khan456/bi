@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HomeButton from "../buttons/HomeButton";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";

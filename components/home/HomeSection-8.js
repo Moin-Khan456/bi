@@ -56,13 +56,13 @@ const HomeSectionEight = ({ info }) => {
     <div className="2xl:p-10 p-8 2xl:pb-40 pb-32">
       <div className="container padding-left-all-section">
         <h2 className="text-heading-2 Gilroy-Bold lg:whitespace-nowrap mb-5">
-          {info.title}
+          {info?.title}
         </h2>
         <p className="text-lg text-secondaryTx">{info?.description}</p>
         <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 pt-10">
           {/* Navigation */}
           <nav className="md:w-full md:sticky md:top-0 md:h-screen md:p-8 md:flex md:flex-col md:justify-center hidden">
-            {info.content.map((section, index) => (
+            {info?.content.map((section, index) => (
               <div key={index} className="flex items-center space-x-4">
                 <button
                   onClick={() => scrollToSection(section.title)}
@@ -98,7 +98,7 @@ const HomeSectionEight = ({ info }) => {
             className="flex-1 p-8 overflow-y-scroll sm:snap-y sm:snap-mandatory h-[100vh] scroll-smooth"
           >
             <div className="max-w-3xl mx-auto space-y-20 sm:space-y-[20vh]">
-              {info.content.map((section, index) => (
+              {info?.content.map((section, index) => (
                 <section
                   key={index}
                   data-title={section.title}

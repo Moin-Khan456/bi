@@ -17,7 +17,7 @@ const Index = ({ projectName, projectLink, mockup }) => {
             </button>
           </div>
         </a>
-        <a href={projectLink} target="__blank">
+        <a href={projectLink} target="_blank" rel="noopener noreferrer">
           <div className="col-end-7 col-span-2 flex justify-center m-9 bg-primaryTx w-fit h-fit py-3 rounded-2xl mt-4 px-8 ml-8 lg:ml-0">
             <button className="flex flex-col items-center Gilroy">
               <span className="flex justify-between items-center lg:text-lg font-semibold text-primaryBg pb-1">

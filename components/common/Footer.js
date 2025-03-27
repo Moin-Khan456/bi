@@ -527,7 +527,7 @@ export default function Footer({ fromBlog }) {
               ))}
             </ul>
             <div className="text-xs lg:text-lg w-full Gilroy-Bold my-6 md:my-0">
-              © 2022 Brain Inventory - All rights reserved.
+              © 2025 Brain Inventory - All rights reserved.
             </div>
           </div>
           <div className="flex flex-col space-y-4 md:ml-auto">
@@ -537,7 +537,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.facebook.com/BrainInventoryIndia/"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={Facebook}
@@ -553,7 +552,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://in.linkedin.com/company/braininventory"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={Linkedin}
@@ -569,7 +567,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://dribbble.com/brain_inventory"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={dribble}
@@ -585,7 +582,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.instagram.com/braininventory_com/"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={Instagram}
@@ -601,7 +597,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={Behance}
@@ -617,7 +612,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
-                  // rel="noopener noreferrer"
                 >
                   <Image
                     src={Youtube}

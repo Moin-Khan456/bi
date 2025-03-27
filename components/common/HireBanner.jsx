@@ -162,7 +162,7 @@ export default function HireBanner({
             unique === "analyst" ||
             unique === "design" ||
             unique === "brain inventory" ? (
-            <section className="lg:ml-20 lg:mr-20 ml-4 mr-4 lg:mb-0 mb-6 ">
+            <section className="lg:ml-[7.5rem] lg:mr-[3.5rem] ml-4 mr-4 lg:mb-0 mb-6 ">
               <section className="started-subcription">
                 <p className="Gilroy-Bold text-lg">Get Started Within</p>
                 <h2 className="Gilroy-Bold text-5xl">

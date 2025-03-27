@@ -5,35 +5,35 @@ export const content =
   export const subhead1 =
     "As conversational AI and chatbots gain popularity, hiring a talented chatbot developer could give your business a significant edge. They have in-depth knowledge of natural language processing, machine learning, and programming, enabling them to build chatbots that understand language nuance, grasp context, and have smooth conversations. With their skills, they can make chatbots that accurately respond to users and feel like a real person instead of just answering questions.";
   export const subhead2 =
-    "Experienced chatbot developers bring a wealth of knowledge in choosing the right platform or framework, whether it's building custom solutions or utilizing established platforms like Dialogflow, Microsoft Bot Framework, or Rasa. They can tailor chatbots to your specific needs, whether it's customer support, e-commerce, information retrieval, or any other domain.";
+    `Experienced chatbot developers bring a wealth of knowledge in choosing the right platform or framework, whether it's building custom solutions or utilizing established platforms like Dialogflow, Microsoft Bot Framework, or Rasa. They can tailor chatbots to your specific needs, whether it's customer support, e-commerce, information retrieval, or any other domain.`;
   export const subhead3 =
-    "Additionally, a proficient programmer can seamlessly incorporate chatbots into current databases, systems, and APIs, guaranteeing a consistent and productive interaction for users. They possess extensive knowledge in creating conversational pathways, managing diverse user intentions, and enhancing the chatbot's answers by employing iterative learning and enhancement processes.";
+    "Additionally, a proficient programmer can seamlessly incorporate chatbots into current databases, systems, and APIs, guaranteeing a consistent and productive interaction for users. They possess extensive knowledge in creating conversational pathways, managing diverse user intentions, and enhancing the chatbot's answers by employing iterative learning and enhancement processes. Hire chatbot developer and get started with your project. ";
 
   export const experienceCards = [
     {
       head: "Custom Chatbot Development",
       content:
-        "The chatbots, in general, are being adopted by some of the leading enterprises to automate their customer service and improve their efficiency. The chatbot development is so far the most trending technology that has enabled businesses to deliver 'the best customer experience' to their customers across multiple channels and touchpoints.",
+        "The chatbots, in general, are being adopted by some of the leading enterprises to automate their customer service and improve their efficiency. The chatbot development is so far the most trending technology that has enabled businesses to deliver 'the best customer experience' to their customers across multiple channels and touchpoints. Hire chatbot developer to build intelligent solutions and drive customer interactions. ",
     },
     {
       head: "Multilingual Chatbot Development",
       content:
-        "Translating the content of your website and online applications isn’t enough. It means nothing if your visitors or customers feel it is not pitched to them in their own language, in a culturally-appropriate tone of voice. That’s why you need native language chatbots if you want to win your audience in any country.",
+        "Translating the content of your website and online applications isn’t enough. It means nothing if your visitors or customers feel it is not pitched to them in their own language, in a culturally-appropriate tone of voice. That’s why you need to hire chatbot developers if you want to win your audience in any country. ",
     },
     {
       head: "Integration With ERP Systems",
       content:
-        "As an online chatbot service provider, we are an agile team that serves businesses with a comprehensive solution for automating their communication, simple and easy. We offer chatbot integration with ERP systems. These systems are well-equipped with analytical capabilities and provide actionable business insights that facilitate better decision making.",
+        "As an online chatbot service provider, we are an agile team that serves businesses with a comprehensive solution for automating their communication, simple and easy. We offer chatbot integration with ERP systems. These systems are well-equipped with analytical capabilities and provide actionable business insights that facilitate better decision making. Call us to schedule a meeting and hire chatbot developer for your next project. ",
     },
     {
       head: "Chatbot Testing",
       content:
-        "We recognize that automated testing is a line of automation testing and hence requires manual intervention for the most reliable outcomes. Our own Chatbot test experts ensure that your Chatbot will function as good as new even after months of usage. We employ the best-in-class software for affirming trustworthiness of your Chatbot and eliminating possible errors.",
+        "We recognize that automated testing is a line of automation testing and hence requires manual intervention for the most reliable outcomes. Our own Chatbot test experts ensure that your Chatbot will function as good as new even after months of usage. We employ the best-in-class software for affirming the trustworthiness of your Chatbot and eliminating possible errors. You can hire chatbot developer from our company and start leveraging the benefits.  ",
     },
     {
       head: "Voice-Enabled Chatbots",
       content:
-        "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the echo, are virtual assistants that understand voice commands and answer questions using speech synthesis.",
+        "Voice recognition and text to speech (TTS) applications have opened several opportunities for developing new, more efficient, and personalized ways to interact with users. Chances are you have interacted with them already. Siri in Apple devices or Amazon's Alexa in the Echo, are virtual assistants that understand voice commands and answer questions using speech synthesis. Businesses looking to improve their customers' interaction process can Hire dedicated chatbot developers from Brain Inventory. ",
     },
   ];
 
@@ -42,28 +42,19 @@ export const content =
       head: "Technical Knowledge",
       content: (
         <>
-          We at{" "}
-          <Link href="/" className="text-[#2186ff]">
-            {" "}
-            Brain Inventory
-          </Link>{" "}
-          engage in the business of developing advanced chatbots for
-          enterprises. Our suite is targeted at improving the processes and
-          customer experience of businesses. We not only keep you connected with
-          your customers but also help you achieve your business goals, be it
-          sales or awareness.
+          We at Brain Inventory engage in the business of developing advanced chatbots for enterprises. Our suite is targeted at improving the processes and customer experience of businesses. We not only keep you connected with your customers but also help you achieve your business goals, be it sales or awareness. Hire chatbot developers from Brain Inventory who are not only experts in the technical field but can communicate effortlessly with your team. 
         </>
       ),
     },
     {
       head: "Competitive Pricing",
       content:
-        "We, at BrainInventory , offer an exclusive range of cutting-edge tools and bot solutions to ensure that your online presence is intelligently enhanced through the use of these amazing conversational interfaces. With our years of experience in the industry, you can rest assured that a number of customized bot solutions will be incorporated in our plans.",
+        "We, at Brain Inventory, offer an exclusive range of cutting-edge tools and bot solutions to ensure that your online presence is intelligently enhanced through the use of these amazing conversational interfaces. Hire chatbot developers with our years of experience in the industry, and stay assured that a number of customized bot solutions will be incorporated in our plans. ",
     },
     {
       head: "Custom Solutions",
       content:
-        "Every business is unique. So why use a one-size-fits-all chatbot when you could have a custom chatbot that fits your need perfectly? We've been helping businesses create custom bots for a variety of industries. We pride ourselves on providing everything you need to communicate with your customers, the hosting site, dashboard, and setup.",
+        "Every business is unique. So why use a one-size-fits-all chatbot when you could have a custom chatbot that fits your needs perfectly? We've been helping businesses create custom bots for a variety of industries. We pride ourselves on providing everything you need to communicate with your customers, the hosting site, dashboard, and setup.",
     },
     {
       head: "User-centric Apps",
@@ -125,7 +116,7 @@ export const content =
   ];
 
   export const keySkillsBrief =
-    "Chatbots are intelligent interactive virtual assistants that simulate conversations with customers. They can be used in a diverse range of industries (apart from marketing) including banking, education, and healthcare among others. Our chatbot development services make it possible to develop life- like customer services which helps clients in diverse industries increase customer engagement while simultaneously reducing operational costs. When developing a custom Chatbot application, We deploy the latest technology development methodologies based on your specific objectives. Our systematic approach is centered around rapid discovery of your business needs, just-in-time requirement gathering, and elaboration of the solution.";
+    "Chatbots are intelligent interactive virtual assistants that simulate conversations with customers. They can be used in a diverse range of industries (apart from marketing) including banking, education, and healthcare among others. Our chatbot development services make it possible to develop life-like customer services which helps clients in diverse industries increase customer engagement while simultaneously reducing operational costs. When developing a custom Chatbot application, we deploy the latest technology development methodologies based on your specific objectives. Our systematic approach is centered around rapid discovery of your business needs, just-in-time requirement gathering, and elaboration of the solution.";
   export const keySkillsPoints = [
     "Cost-effective",
     "Personalized Support",
@@ -135,14 +126,15 @@ export const content =
   ];
 
   export const chooseBI = [
-    "Brain Inventory can be leveraged to provide a personal and engaging experience as well as create the perfect digital representation of your brand. Every chatbot is unique and built first to meet your business needs, giving you an ability to curate customer conversations rather than replying in standard chunks or using cutouts to minimize human intervention. We help you with all stages of the bot development lifecycle — from concepting to deployment, ensuring that your chatbot will become part of your online marketing strategy and generate leads and sales for your business.",
+    "Brain Inventory can be leveraged to provide a personal and engaging experience as well as create the perfect digital representation of your brand. Every chatbot is unique and built first to meet your business needs, giving you the ability to curate customer conversations rather than replying in standard chunks or using cutouts to minimize human intervention. We help you with all stages of the bot development lifecycle — from concepting to deployment, ensuring that your chatbot will become part of your online marketing strategy and generate leads and sales for your business.",
     "Using the conversational chatbot development services of Brain Inventory, you can build a human-like interaction between your business and its customers. We have the best team of experienced and talented chatbot developers who will help develop your bots to deliver better user experience without making them sound like robots.",
     "Offering custom-built chatbot development solutions to businesses across the globe, we empower them with the new technology that is taking over the traditional software industry. We deliver quality chatbot solutions at an affordable price. This has won us passionate fans who are convinced by our expertise in delivering high-quality chatbots.",
   ];
 
   export const reasons = [
-    "Bringing on board a proficient chatbot creator provides various benefits that can greatly influence the triumph of your endeavor. Most importantly, their mastery in natural language understanding (NLU) and artificial intelligence (AI) enables them to construct chatbots that comprehend and react to user inputs precisely, generating a more intuitive and effectual user experience. Furthermore, a skilled chatbot developer can modify the bot's capabilities to align with your distinct business requirements, whether it's customer assistance, lead creation, or information distribution.",
-    "A competent chatbot architect possesses essential skills that are invaluable, such as the expertise to select optimal development tools and frameworks that ensure maximum performance and flexibility. They can seamlessly integrate the chatbot with your existing systems, data sources, and application interfaces, streamlining workflows and enhancing overall productivity. Their ability to design engaging conversational flows and continually improve the bot’s responses through data analysis and iteration results in a bot that evolves and meets users’ expectations over time.",
+    `Bringing on board a proficient chatbot creator provides various benefits that can greatly influence the triumph of your endeavor. Most importantly, their mastery in natural language understanding (NLU) and artificial intelligence (AI) enables them to construct chatbots that comprehend and react to user inputs precisely, generating a more intuitive and effective user experience. Furthermore, a skilled chatbot developer can modify the bot's capabilities to align with your distinct business requirements, whether it's customer assistance, lead creation, or information distribution.\n
+
+A competent chatbot architect possesses essential skills that are invaluable, such as the expertise to select optimal development tools and frameworks that ensure maximum performance and flexibility. Hire chatbot developers as they can seamlessly integrate the chatbot with your existing systems, data sources, and application interfaces, streamlining workflows and enhancing overall productivity. Their ability to design engaging conversational flows and continually improve the bot’s responses through data analysis and iteration results in a bot that evolves and meets users’ expectations over time.`,
   ];
 
   export const banners = [

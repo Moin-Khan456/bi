@@ -22,13 +22,13 @@ export default function ChooseBrainInventory({
               )}{' '}
               <span className="text-primaryTx">Assignment</span>
             </h2>
-            <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+            <p className="Gilroy-Light text-lg opacity-80 pt-4 pb-6">
               {subhead}
             </p>
             {reasons &&
               reasons.map((ele, index) => (
                 <div className="flex items-start" key={index}>
-                  <div className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+                  <div className="Gilroy-Light text-lg opacity-80 pt-4 pb-6">
                     <div className="w-full flex">
                       <span>
                         <BiCheckCircle className={`mt-1 mr-2 text-[1rem]`} />

@@ -7,7 +7,6 @@ const Card = (props) => {
   return (
     <a href={props.link} className="block">
       <div className="relative group">
-        {/* Conditionally render video or image based on file type */}
         {isVideo ? (
           <video
             className="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 w-full"
@@ -26,11 +25,10 @@ const Card = (props) => {
             className="rounded-lg shadow-lg transition-transform transform group-hover:scale-105"
             width={500}
             height={300}
-            layout="responsive" // Ensures proper scaling for responsive designs
+            layout="responsive" 
           />
         )}
 
-        {/* Card Content */}
         <div className="mt-6">
           <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold Gilroy-Bold">
             {props.title}

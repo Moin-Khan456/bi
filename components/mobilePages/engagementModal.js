@@ -4,8 +4,6 @@ import HomeButton from "../buttons/HomeButton";
 import Image from "next/image";
 import checkImg from "../../public/assets/how-we-work-assets/Vector.webp";
 
-
-
 function EngagementModal({listEngagement}) {
   return (
     <div className="lg:p-14 p-8 space-y-6 bg-primaryBg">

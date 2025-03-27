@@ -30,7 +30,7 @@ const Index = ({ para1, para2, para3, type }) => {
           />
         )}
         <section className="">
-          <p className="Gilroy-Light leading-7 font-[10] text-xl p-4 opacity-60 lg:pt-8">
+          <p className="Gilroy-Light leading-7 font-[10] text-xl p-4 opacity-80 lg:pt-8">
             {para1}
             <br />
             <br />

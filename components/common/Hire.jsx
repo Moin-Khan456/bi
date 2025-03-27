@@ -28,17 +28,17 @@ export default function App({
                 </span>
               ))}
             </h2>
-            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+            <p className="text-lg font-thin opacity-80 lg:mt-4 hidden lg:block">
               {subhead}
             </p>
-            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+            <p className="text-lg font-thin opacity-80 lg:mt-4 hidden lg:block">
               {subhead1}
             </p>
-            <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+            <p className="text-lg font-thin opacity-80 lg:mt-4 hidden lg:block">
               {subhead2}
             </p>
             {enablePara && (
-              <p className="text-lg font-thin opacity-60 lg:mt-4 hidden lg:block">
+              <p className="text-lg font-thin opacity-80 lg:mt-4 hidden lg:block">
                 {enablePara}
               </p>
             )}
@@ -49,7 +49,7 @@ export default function App({
             {card.map((ele, index) => (
               <section className="bg-technology p-10 lg:ml-8 mb-4" key={index}>
                 <h3 className="Gilroy-Bold text-3xl">{ele.head}</h3>
-                <p className="Gilroy-Light text-lg opacity-60 pt-4">
+                <p className="Gilroy-Light text-lg opacity-80 pt-4">
                   {ele.content}
                 </p>
               </section>

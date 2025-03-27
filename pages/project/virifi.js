@@ -103,13 +103,6 @@ const Virifi = () => {
           </div>
         </div>
         <div>
-          {/* <Image
-            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 287.png"
-            className="lg:-mt-8 w-full"
-            width={2000}
-            height={100}
-            alt="Custom Software Development Company | Application Development Company"
-          /> */}
            <TiltMarquee
              title="Sign Verify Certify" />
         </div>
@@ -121,13 +114,7 @@ const Virifi = () => {
           <SectionFour />
         </div>
         <div className="flex w-full">
-          {/* <Image
-            src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Repeat Grid 1.png"
-            alt="Custom Software Development Company | Application Development Company"
-            width={2000}
-            height={100}
-            className="w-full"
-          /> */}
+
         </div>
             <TiltMarquee
              title="User Management User Details" />

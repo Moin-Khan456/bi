@@ -8,7 +8,7 @@ export default function Clients({ tech }) {
         <h3 className="Gilroy-Bold text-4xl">
           Gaining Client’s Trust Since 2011 & Many More to Go
         </h3>
-        <p className="Gilroy-Light text-xl leading-8 opacity-60 pt-4 pb-4">
+        <p className="Gilroy-Light text-xl leading-8 opacity-80 pt-4 pb-4">
           We paint the bright future for businesses working on digital
           landscapes and firmly believe in providing productive long-term
           business relationships.

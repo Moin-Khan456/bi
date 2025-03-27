@@ -14,7 +14,7 @@ export default function HireBanner() {
               Empowering Commerce, Enriching Experiences: Your Tomorrow, Our
               Technology!
             </h3>
-            <h2 className="text-sm font-Satoshi text-primaryBg opacity-60 leading-7 mb-4 lg:w-[65%] lg:text-justify">
+            <h2 className="text-sm font-Satoshi text-primaryBg opacity-80 leading-7 mb-4 lg:w-[65%] lg:text-justify">
               Are you ready to evolve? Brain Inventory, a leading eCommerce
               development company, offers top-tier ecommerce services designed
               to propel your brand to new heights.

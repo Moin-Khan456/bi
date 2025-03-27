@@ -11,13 +11,13 @@ const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
 );
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
-const Advantage = dynamic(() =>
-  import("../components/Hire/AdvantageCards.jsx")
-);
+const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
+
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire"));
-const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBraininventory.jsx"));
-
+const ChooseBrainInventory = dynamic(() =>
+  import("../components/common/CommonChooseBrainInventory")
+);
 const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"),{ssr:false});
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
@@ -29,19 +29,19 @@ function HireChatbotDeveloper(props) {
   return (
     <>
       <Head>
-        <title>Dedicated Chatbot Developer Hire - Chatbot Programmers</title>
+        <title>Hire AI Chatbot Developers - Chatbot Development Services</title>
         <meta
           name="description"
-          content="Are you looking to hire expert chatbot developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
+          content="Looking to Hire dedicated Chatbot developers. Look no further! We have the best-certified ai chatbot developers, ready to help you. Contact us today!"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Dedicated Chatbot Developer Hire - Chatbot Programmers"
+          content="Hire AI Chatbot Developers - Chatbot Development Services"
         />
         <meta
           property="og:description"
-          content="Are you looking to hire expert chatbot developers? Look no further! We have the best-certified chatbot developers, ready to help you. Contact us today!"
+          content="Looking to Hire dedicated Chatbot developers. Look no further! We have the best-certified ai chatbot developers, ready to help you. Contact us today!"
         />
         <meta
           property="og:image"
@@ -81,7 +81,7 @@ https://braininventory.in/hire-chatbot-developers"
             <Header></Header>
             <HireBanner
               heading="A Smarter Way to Build Customized Applications."
-              title="Hire Experienced Chatbot Developer with"
+              title="Hire Expert AI Chatbot Developers from "
               content={content}
               btn="Contact Us!"
               unique={"brain inventory"}
@@ -99,10 +99,10 @@ https://braininventory.in/hire-chatbot-developers"
               card={experienceCards}
             />
             <HireMarquee title="Chatbot Developers" />
-            <Advantage title="Chatbot Developer" benefitsList={reasons} />
+            <Advantage title="Chatbot Developer" advantages={reasons} />
             <KeySkill brief={keySkillsBrief} points={keySkillsPoints} />
             <Hire
-              title="Why Hire Chatbot Developers from %Brain Inventory"
+              title="Why Hire Dedicated Chatbot Developers from Brain Inventory?"
               card={hireCards}
             />
 

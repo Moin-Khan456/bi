@@ -18,7 +18,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() =>
   import("../../components/mobilePages/faqs.js"),{ssr:false}
@@ -96,7 +96,6 @@ function CodeIgniterWebDevelopment(props) {
             title="Codeigniter Web Development Services by"
             content={content}
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_Services.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_codeigniter+1.png"
             alt="CodeIgniter development company"
             type="php"

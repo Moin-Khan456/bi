@@ -54,7 +54,7 @@ const Index = ({
               className="rounded-2xl lg:w-[75%] py-4"
             />
           )}
-          <p className="Gilroy-Light leading-8 font-[10] text-lg opacity-60 w-full">
+          <p className="Gilroy-Light leading-8 font-[10] text-lg opacity-80 w-full">
             {para1}
             <br />
             {para2}
@@ -66,7 +66,7 @@ const Index = ({
           {card?.map((ele, index) => (
             <div className="container flex flex-col items-end" key={index}>
               <div className="bg-customer  hover:scale-[1.01] transition-all p-8 lg:py-8 advantage-para my-6 flex flex-col lg:flex-row items-center justify-evenly w-full lg:w-full">
-                <h5 className="text-2xl font-bold text-primaryBg text-shadow lg:w-[15%]">
+                <h5 className="text-2xl font-bold text-left sm:text-center  text-primaryBg text-shadow lg:w-[15%]">
                   {ele?.head}
                 </h5>
                 <p className="Gilroy-Light text-sm text-primaryBg tracking-wide leading-8 pb-6 lg:w-[70%]">

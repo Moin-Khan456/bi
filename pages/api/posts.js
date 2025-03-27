@@ -1,9 +1,7 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const { connectToDatabase } = require('../../lib/mongodb');
 const ObjectId = require('mongodb').ObjectId;
 
 export default async function handler(req, res) {
-    // switch the methods
     switch (req.method) {
         case 'GET': {
             return getPosts(req, res);
@@ -20,7 +18,6 @@ export default async function handler(req, res) {
     }
 }
 
-// Getting all posts.
 async function getPosts(req, res) {
     try {
         let { db } = await connectToDatabase();
@@ -41,7 +38,6 @@ async function getPosts(req, res) {
     }
 }
 
-// Adding a new post
 async function addPost(req, res) {
     try {
         let { db } = await connectToDatabase();
@@ -58,7 +54,6 @@ async function addPost(req, res) {
     }
 }
 
-// Updating a post
 async function updatePost(req, res) {
     try {
         let { db } = await connectToDatabase();
@@ -82,7 +77,6 @@ async function updatePost(req, res) {
     }
 }
 
-// deleting a post
 async function deletePost(req, res) {
     try {
         let { db } = await connectToDatabase();

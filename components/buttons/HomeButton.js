@@ -10,14 +10,14 @@ const HomeButton = ({ children, type, fromBlog }) => {
           className="2xl:h-10 transition-all lg:h-8 h-6 2xl:w-10 lg:w-8 w-6 absolute -left-1 top-1/2 -translate-y-1/2"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor" // Use currentColor to inherit the color
+          stroke="currentColor"
         >
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="1"
             d="M17 8l4 4m0 0l-4 4m4-4H3"
-            className="stroke-primaryBg group-hover:stroke-primaryTx" // Change stroke color on hover
+            className="stroke-primaryBg group-hover:stroke-primaryTx" 
           />
         </svg>
       </span>

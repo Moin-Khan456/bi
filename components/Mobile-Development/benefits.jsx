@@ -9,7 +9,7 @@ export default function KeySkill({ type, subhead, benefitsList }) {
             Benefits of{" "}
             <span className="text-primaryTx">{type} Development</span>
           </h3>
-          <h3 className="xl:text-xl text-lg opacity-60 text-secondaryTx Gilroy-Light mb-8 leading-10">
+          <h3 className="xl:text-xl text-lg opacity-80 text-secondaryTx Gilroy-Light mb-8 leading-10">
             {subhead}
           </h3>
           <div

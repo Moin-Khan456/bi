@@ -12,7 +12,7 @@ const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
 const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire"));
-const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBraininventory.jsx"));
+const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBrainInventory"));
 const Engaged = dynamic(() => import("../components/Hire/Engaged"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps"));
 const Clients = dynamic(() => import("../components/Hire/Clients"));
@@ -29,7 +29,7 @@ function HireMeanStackDeveloper(props) {
     <>
       <Head>
         <title>
-          Hire Experienced Mean Stack Developers - Mean Stack Developer USA
+        Hire MEAN Stack Developers - Hire Dedicated MEAN Stack Developers
         </title>
         <meta
           name="description"
@@ -74,7 +74,7 @@ function HireMeanStackDeveloper(props) {
           <Header></Header>
           <HireBanner
             heading="Upgrade Your Development Process With Our Expertise"
-            title="Hire Dedicated MEAN Stack Developers with"
+            title="Hire MEAN Stack Developers with "
             content={content}
             btn="Contact Us!"
             unique={"brain inventory"}

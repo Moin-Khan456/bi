@@ -5,7 +5,6 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// List of country codes
 const countryCodes = [
   { code: '+1', name: 'United States/Canada' },
   { code: '+7', name: 'Russia/Kazakhstan' },
@@ -104,12 +103,10 @@ const countryCodes = [
   { code: '+297', name: 'Aruba' },
   { code: '+298', name: 'Faroe Islands' },
   { code: '+299', name: 'Greenland' },
-  // Add more as needed
 ];
 
 
 const ContactFormBanglore = () => {
-  // Validation schema using Yup
   const validationSchema = Yup.object({
     name: Yup.string()
       .required('Name is required')
@@ -122,19 +119,17 @@ const ContactFormBanglore = () => {
       .required('Email is required'),
   });
 
-  // Initial form values
   const initialValues = {
     name: '',
-    countryCode: '+91', // Default country code
+    countryCode: '+91',
     contact: '',
     email: '',
   };
 
-  // Form submission handler
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     const finalValues = {
       name: values.name,
-      contact: `${values.countryCode} ${values.contact}`, // Full contact number
+      contact: `${values.countryCode} ${values.contact}`, 
       email: values.email,
     };
 
@@ -148,7 +143,6 @@ const ContactFormBanglore = () => {
           },
         }
       );
-      console.log('API Response:', response.data);
       alert('Thank You, Submit SuccessFully.')
       resetForm();
     } catch (error) {
@@ -175,7 +169,6 @@ const ContactFormBanglore = () => {
 
 <div className='mt-20444'>
             <div className='' style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              {/* Country Code Dropdown */}
               <Field as="select" name="countryCode" id="countryCode">
                 {countryCodes.map((country) => (
                   <option key={country.code} value={country.code}>
@@ -183,7 +176,6 @@ const ContactFormBanglore = () => {
                   </option>
                 ))}
               </Field>
-              {/* Contact Input */}
               <Field
                 type="text"
                 id="contact"

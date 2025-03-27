@@ -148,7 +148,7 @@ export const content =
       id: "4",
       title: "What Development Process Do You Follow?",
       description: (
-        <div className="space-y-2">
+        <>
           <p> Key steps in a full-stack development include- </p>
           <ul className="!ml-7 disc">
             <li>Project planning and requirements</li>
@@ -159,7 +159,7 @@ export const content =
             <li>Deployment</li>
             <li>Maintenance and updates</li>
           </ul>
-        </div>
+        </>
       ),
     },
     {

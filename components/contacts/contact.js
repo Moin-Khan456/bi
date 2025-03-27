@@ -48,7 +48,6 @@ function Contact() {
           Got a startup idea & need to get it validated?
         </h2>
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Left Panel - Founder Info */}
           <div className="lg:w-2/3  sm:border-r-4 sm:border-primaryTx">
             <p className="text-lg Gilroy-SemiBold text-center text-secondaryTx mb-4">Connect with our Founder</p>
             <div className="relative w-60 h-60 mx-auto">
@@ -72,10 +71,8 @@ function Contact() {
               </Link>
             </p>
           </div>
-
-          {/* Right Panel - Contact Form */}
           <div className="lg:w-2/3 p-6 sm:p-0">
-            <p className="ext-lg Gilroy-SemiBold  text-secondaryTx mb-4">or you could send us a message, and we will connnect with you!</p>
+            <p className="ext-lg Gilroy-SemiBold  text-secondaryTx mb-4">or you could send us a message, and we will connect with you!</p>
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -96,8 +93,6 @@ function Contact() {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-
-                      {/* Email & Number Fields */}
                       <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
                         <div className="flex-1">
                           <Field
@@ -127,8 +122,6 @@ function Contact() {
                           />
                         </div>
                       </div>
-
-                      {/* Company Name Field */}
                       <div>
                         <Field
                           type="text"
@@ -137,8 +130,6 @@ function Contact() {
                           placeholder="What's your company name?"
                         />
                       </div>
-
-                      {/* Feedback Field */}
                       <div>
                         <Field
                           as="textarea"

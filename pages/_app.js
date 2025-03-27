@@ -3,11 +3,14 @@ import "../styles/globals.css";
 import HireDedicatedCard from "../components/blog/HireDedicatedCard";
 import { FiMail } from "react-icons/fi";
 import { useRouter } from "next/router";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  // Accessing the current page URL
   const { asPath } = router;
   const [localForm, setLocal] = useState(null);
 
@@ -74,7 +77,10 @@ function MyApp({ Component, pageProps }) {
         src="https://mediafiles.botpress.cloud/658b4e1a-0e00-4bc2-a5d4-e2941f86b8c9/webchat/config.js"
         defer
       /> */}
+
+<QueryClientProvider client={queryClient}>
       <Component {...pageProps} />
+    </QueryClientProvider>
       <div className="fixed bottom-4 right-4 z-20">
         {localForm ? (
           <HireDedicatedCard setLocal={setLocal} />

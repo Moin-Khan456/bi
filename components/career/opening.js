@@ -245,6 +245,24 @@ const OpeningJob = [
       "Stay up-to-date with design trends, tools, and best practices",
     ],
   },
+  {
+    JobTitle: "Angular Developer",
+    Position: "1",
+    JobId: "BI2022-0012",
+    description:
+      "Angular 8+, JavaScript, HTML5, CSS3, Git, AWS and MEAN Stack (MongoDB/MySQL, Express, Angular, Node.js).",
+    Experience: "1 to 3 Years",
+    roles: [
+      "Proficiency in Angular 8+ and modern web technologies.",
+      "1-3 years of experience in Frontend Development",
+      "Develop interactive UIs using HTML5, CSS3, and JavaScript.",
+      "Knowledge of AWS, Git, and MEAN stack (MongoDB/MySQL, Express, Angular, Node.js, React, Socket.io).",
+      "Experience with Git & version control",
+      "Familiarity with AWS & cloud technologies",
+      "Logical thinking & problem-solving skills",
+      "Excellent communication and client-handling skills",
+    ],
+  },
 ];
 function Opening() {
   const { register, handleSubmit, reset } = useForm();
@@ -292,8 +310,8 @@ function Opening() {
   };
 
   return (
-    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
-      <div className="container">
+    <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6" >
+      <div className="container" id="opening">
         <div>
           <h2 className="text-4xl Gilroy-Bold mb-8">Current Openings</h2>
         </div>
@@ -381,7 +399,7 @@ function Opening() {
                 <h2 className="text-2xl text-black Gilroy-Bold">Apply Now</h2>
                 <label
                   htmlFor="my-modal"
-                  className="bg-primaryTx rounded-full w-10 h-10 text-primaryBg"
+                  className="bg-primaryTx cursor-pointer rounded-full w-10 h-10 text-primaryBg"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

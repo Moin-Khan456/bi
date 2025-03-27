@@ -1,86 +1,37 @@
 import Link from "next/link";
 
 export const faqDetails = [
-  {
-    id: "1",
-    title: "Are fitness custom apps in demand?",
-    description:
-      <>
-      Yes, fitness mobile app is in high demand currently. Since after the pandemic, most things went online, people were working out in their homes with the help of these fitness apps only. The trend still continues and the future market for <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/custom-mobile-app-development-company"}>custom mobile app development</Link> companies who can develop fitness apps looks brighter. 
-      </>
-  },
-  {
-    id: "2",
-    title: "How long does it take to build a fitness mobile app?",
-    description:
-    <>
-    It depends on the complexity and features of the app. If the app is simple, it will take only 2-3 months, but if it is complex and requires the <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/react-native-app-development-company"}>React Native app development company</Link> to add extensive functionalities, it may take longer than 6 months also. 
-    </>
-  },
-  {
-    id: "3",
-    title: "Best for Fitness Apps: Flutter or React Native?",
-    description:
-      <>
-      Flutter offers features like customized user interface, rich widgets, ability to implement native features, etc. All these features make Flutter a preferred framework for developing fitness applications. Also, one of the key benefits is its hot reload function, which helps <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/flutter-app-development-company"}>Flutter app development companies</Link> to make rapid interactions easily. 
-
-      </>
-  },
-  {
-    id: "4",
-    title: "Can Android use Apple Fitness?",
-    description:
-      <>
-      No, Android users can’t access Apple Fitness as it is designed especially for iOS users by an <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/ios-app-development-company"}>iOS app development company</Link>. 
-      </>
-  },
-  {
-    id: "5",
-    title: "Is the iOS fitness app accurate?",
-    description:
-      "While the iOS fitness app results are considered accurate to track basic fitness activities like walking steps or climbing stairs, etc., sometimes it can give overestimated results on calories burned and may not be perfectly precise for strength training or more strenuous workouts. ",
-  },
+    {
+      id: "1",
+      title: "What exactly is a social industry services?",
+      description:
+        "A social industry solution is a technology or service designed to address challenges faced by organizations in the social sector. This can include nonprofits, NGOs, and public sector institutions, among others.",
+    },
+    {
+      id: "2",
+      title: "Why should my organization consider your services?",
+      description:
+        "Our solutions are designed with the unique needs of the social sector in mind. We offer tools to enhance productivity, streamline operations, and foster community engagement, all to help your organization achieve its mission.",
+    },
+    {
+      id: "3",
+      title: "Are your services customizable?",
+      description:
+        "Yes, we understand that every organization is unique. Our solutions are flexible and customizable to ensure they meet your specific needs.",
+    },
+    {
+      id: "4",
+      title: "Will I need technical skills to use your services?",
+      description:
+        "No, our solutions are user-friendly and require minimal technical skills. We also provide comprehensive training and ongoing support to ensure you feel confident using our tools.",
+    },
+    {
+      id: "5",
+      title: "How do I get started?",
+      description:
+        "Getting started is easy! Simply contact us and we’ll guide you through the process, from identifying your needs to implementing the right solutions.",
+    },
   ];
-  export const jsonLdScript = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Are fitness custom apps in demand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, fitness mobile app is in high demand currently. Since after the pandemic, most things went online, people were working out in their homes with the help of these fitness apps only. The trend still continues and the future market for custom mobile app development companies who can develop fitness apps looks brighter."
-      }
-    },{
-      "@type": "Question",
-      "name": "How long does it take to build a fitness mobile app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends on the complexity and features of the app. If the app is simple, it will take only 2-3 months, but if it is complex and requires the React Native app development company to add extensive functionalities, it may take longer than 6 months also."
-      }
-    },{
-      "@type": "Question",
-      "name": "Best for Fitness Apps: Flutter or React Native?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Flutter offers features like customized user interface, rich widgets, ability to implement native features, etc. All these features make Flutter a preferred framework for developing fitness applications. Also, one of the key benefits is its hot reload function, which helps Flutter app development companies to make rapid interactions easily."
-      }
-    },{
-      "@type": "Question",
-      "name": "Can Android use Apple Fitness?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, Android users can’t access Apple Fitness as it is designed especially for iOS users by an iOS app development company."
-      }
-    },{
-      "@type": "Question",
-      "name": "Is the iOS fitness app accurate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While the iOS fitness app results are considered accurate to track basic fitness activities like walking steps or climbing stairs, etc., sometimes it can give overestimated results on calories burned and may not be perfectly precise for strength training or more strenuous workouts."
-      }
-    }]
-  }
   export const solutionList = [
     {
       id: "1",

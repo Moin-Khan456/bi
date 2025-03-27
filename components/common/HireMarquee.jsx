@@ -13,7 +13,7 @@ const HireMarquee = ({ title }) => {
                 {array.map((el, index) => (
                     <section
                         key={index}
-                        className="inline-flex space-x-10 mr-10 2xl:text-2xl text-xl items-center" // Added inline-flex
+                        className="inline-flex space-x-10 mr-10 2xl:text-2xl text-xl items-center"
                     >
                         <span className="text-6xl Gilroy-Bold">Brain Inventory</span>
                         <span className="text-6xl Gilroy-Bold"> Brain Inventory</span>
@@ -22,17 +22,16 @@ const HireMarquee = ({ title }) => {
                 ))}
             </Marquee>
             <section className="border-y" />
-            {/* Second Marquee: Right to Left (reverse={false}) */}
             <Marquee 
                 duration={20000} 
                 background="#fafafa00" 
                 height="150px" 
-                reverse={false} // Changed to false for right to left
+                reverse={false} 
             >
                 {array.map((el, index) => (
                     <section
                         key={index}
-                        className="inline-flex space-x-10 mr-10 2xl:text-2xl text-xl items-center" // Added inline-flex
+                        className="inline-flex space-x-10 mr-10 2xl:text-2xl text-xl items-center"
                     >
                         <span className="text-6xl Gilroy-Bold">{title }</span>
                         <span className="text-6xl Gilroy-Bold"> {title }</span>

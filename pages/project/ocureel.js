@@ -160,7 +160,7 @@ const Ocureel = () => {
         <Milestone content={milestoneContent} />
         <VisitProject
           projectName="Ocureel"
-          projectLink="https://Ocureel.com/"
+          projectLink="https://braininventory.in/project/ocureel"
           mockup=""
         />
         <div className="mx-4 lg:mx-24">

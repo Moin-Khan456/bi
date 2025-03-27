@@ -50,7 +50,7 @@ const ContactForm = () => {
           <Form className="px-8 lg:my-4">
             <section className="flex flex-col">
               <Field
-                className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
+                className="my-[15px] text-black backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
                 type="text"
                 id="fullName"
                 name="fullName"
@@ -62,7 +62,7 @@ const ContactForm = () => {
             </section>
             <section className="flex flex-col">
               <Field
-                className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
+                className="text-black my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
                 type="email"
                 id="email"
                 name="email"
@@ -74,7 +74,7 @@ const ContactForm = () => {
             </section>
             <section className="flex flex-col">
               <Field
-                className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
+                className="text-black my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
                 type="text"
                 id="contactNumber"
                 name="contactNumber"
@@ -86,7 +86,7 @@ const ContactForm = () => {
             </section>
             <section className="flex flex-col">
               <Field
-                className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
+                className="text-black my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full"
                 type="text"
                 id="companyName"
                 name="companyName"
@@ -98,7 +98,7 @@ const ContactForm = () => {
             </section>
             <section className="flex flex-col">
               <Field
-                className="my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full resize-none"
+                className="text-black my-[15px] backdrop-blur-sm rounded-xl px-2 py-2 lg:w-full resize-none"
                 as="textarea"
                 id="message"
                 name="message"

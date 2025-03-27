@@ -5,7 +5,7 @@ const Approach = ({ title, desc, points }) => {
   return (
     <div className={`container padding-left-all-section-1 p-8 sm:px-6  !mt-[10rem]`}>
       <h3 className="font-Satoshi text-4xl font-bold">{title}</h3>
-      <h6 className="py-6 text-sm text-secondaryTx opacity-60">{desc}</h6>
+      <h6 className="py-6 text-sm text-secondaryTx opacity-80">{desc}</h6>
       
       <div className="bg-technology px-8 py-12">
         {points.map((ele, index) => (

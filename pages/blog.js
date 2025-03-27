@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Header from "../components/header/Header.js";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+
+const Header = dynamic(() => import("../components/header/Header.js"),{ssr:false});
 const PopularBlogs = dynamic(() => import("../components/blog/PopularBlogs"));
-const Blogs = dynamic(() => import("../components/blog/Blogs"));
-const Pagination = dynamic(() => import("../components/blog/Pagination"));
+const Blogs = dynamic(() => import("../components/blog/Blogs"),{ssr:false});
+const Pagination = dynamic(() => import("../components/blog/Pagination"),{ssr:false});
 const KeepInTouch = dynamic(() =>
   import("../components/common/keepInTouch.js")
 );
@@ -37,14 +38,12 @@ export default function Home({ data, blogs, totalPages }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Insights and Innovations | Blogs by Brain Inventory 
-"
+          content="Insights and Innovations | Blogs by Brain Inventory "
         />
         <meta
           property="og:description"
           content="Explore the latest insights, trends, and innovations in technology, development, and design on the Brain Inventory blog. Stay updated with us."
         />
-
         <meta
           property="og:image"
           content="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_blog.jpg"
@@ -69,7 +68,6 @@ export default function Home({ data, blogs, totalPages }) {
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section">
             <h3 className="text-6xl pt-12 Gilroy-Bold">Blogs</h3>
-
             <div>
               <h3 className="text-xl Gilroy-Bold mt-8 mb-3">Popular Blogs</h3>
               <div className="pb-2">

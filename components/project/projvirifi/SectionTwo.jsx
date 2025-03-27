@@ -6,7 +6,7 @@ const Index = () => {
         Project <span className="text-primaryTx">Overview</span>
       </h3>
       <div className="px-2 lg:px-48 py-4">
-        <p className="font-bold text-secondaryTx py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-60">
+        <p className="font-bold text-secondaryTx py-4 text-center leading-5 lg:leading-[3rem] text-sm lg:text-2xl opacity-80">
           Virifi.io serves as the foundational digital infrastructure supporting
           our strategic solutions across various business domains. With its
           robust technology, Virifi.io underpins a wide range of applications in

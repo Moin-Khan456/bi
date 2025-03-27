@@ -58,11 +58,13 @@ export default function KeepInTouch({ fromBlog }) {
           </div>
 
           <div className="mt-6">
+          <Link href={"/contact/#contact"}>
             <HomeButton fromBlog={fromBlog}>
               <span className="2xl:text-2xl text-xl transition-all">
                 Contact Us
               </span>
             </HomeButton>
+            </Link>
           </div>
 
           <div className="border border-b-1 border-primaryTx my-10"></div>
@@ -100,14 +102,13 @@ export default function KeepInTouch({ fromBlog }) {
                 {({ isSubmitting }) => (
                   <Form>
                     <div className="flex flex-col xl:space-y-8 pt-8 space-y-6">
-                      {/* Name Field */}
                       <div>
                         <Field
                           type="text"
                           name="name"
                           className="bg-transparent p-4 border border-primaryTx w-full placeholder-secondaryTx Gilroy-Bold text-lg focus:outline-none"
                           placeholder="You should have a name"
-                          autoComplete="off"
+                          autocomplete="off"
                         />
                         <ErrorMessage
                           name="name"
@@ -115,8 +116,6 @@ export default function KeepInTouch({ fromBlog }) {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-
-                      {/* Email & Number Fields */}
                       <div className="flex lg:flex-row flex-col xl:space-x-8 lg:space-x-6 lg:space-y-0 space-y-6">
                         <div className="flex-1">
                           <Field
@@ -146,8 +145,6 @@ export default function KeepInTouch({ fromBlog }) {
                           />
                         </div>
                       </div>
-
-                      {/* Company Name Field */}
                       <div>
                         <Field
                           type="text"
@@ -156,8 +153,6 @@ export default function KeepInTouch({ fromBlog }) {
                           placeholder="What's your company name?"
                         />
                       </div>
-
-                      {/* Feedback Field */}
                       <div>
                         <Field
                           as="textarea"
@@ -172,8 +167,6 @@ export default function KeepInTouch({ fromBlog }) {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-
-                      {/* Submit Button */}
                       <HomeButton type="submit" fromBlog={fromBlog} disabled={isSubmitting}>
                         {isSubmitting ? "Submitting..." : "Submit"}
                       </HomeButton>

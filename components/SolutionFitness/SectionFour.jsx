@@ -15,7 +15,7 @@ const Index = ({ titleSize, title, description, solutionList }) => {
           <p
             className={`text-center ${
               titleSize ? "lg:px-4" : "lg:px-40"
-            } pt-6 text-secondaryTx opacity-60 text-sm lg:text-base lg:pb-12 pb-6`}
+            } pt-6 text-secondaryTx opacity-80 text-sm lg:text-base lg:pb-12 pb-6`}
           >
             {description}
           </p>
@@ -33,7 +33,7 @@ const Index = ({ titleSize, title, description, solutionList }) => {
                     </h3>
                   </div>
                   <div className="col-span-2">
-                    <p className="text-base text-secondaryTx opacity-60 lg:px-9">{el.desc}</p>
+                    <p className="text-base text-secondaryTx opacity-80 lg:px-9">{el.desc}</p>
                   </div>
                 </div>
               </div>

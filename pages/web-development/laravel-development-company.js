@@ -18,7 +18,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() =>
   import("../../components/mobilePages/faqs.js"),{ssr:false}
@@ -93,7 +93,6 @@ function LaravelDevelopment(props) {
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/mobile-app-development/Mask+Group+170+(1).png"
             alt="Laravel Development Company"
             type="php"

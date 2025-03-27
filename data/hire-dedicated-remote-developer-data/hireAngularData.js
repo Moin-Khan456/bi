@@ -118,7 +118,7 @@ export const content = (
       description: (
         <div className="space-y-2">
           <p> The key benefits of using AngularJS for your next project are-</p>
-          <ul className="ml-10 disc">
+          <ul className="!ml-7 disc">
             <li>Reusable components across the project seamlessly.</li>
             <li>
               Pre-built modules can be integrated easily, without the need for

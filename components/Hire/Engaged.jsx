@@ -10,7 +10,7 @@ export default function Engaged() {
             <h2 className="Gilroy-Bold text-6xl leading-[4.5rem] text-secondaryTx">
               How We Engage
             </h2>
-            <p className="Gilroy-Light text-xl leading-9 opacity-60 pt-4">
+            <p className="Gilroy-Light text-xl leading-9 opacity-80 pt-4">
               Scrap the constrained project collaboration models limiting your
               software capabilities and choose the flexible IT engagement models
               to work with us until your requirements are satisfied under your

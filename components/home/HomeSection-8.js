@@ -3,9 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 
 const HomeSectionEight = ({ info }) => {
   const [activeSection, setActiveSection] = useState("Discovery Workshop");
-  const containerRef = useRef(null); // Ref for the scroll container
-
-  // Debounce function to limit scroll event frequency
+  const containerRef = useRef(null);
   const debounce = (func, delay) => {
     let timeoutId;
     return (...args) => {
@@ -24,28 +22,25 @@ const HomeSectionEight = ({ info }) => {
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        // Check if the section is in the visible area of the viewport
         if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
           currentActive = section.getAttribute("data-title");
         }
       });
 
-      // Only update state if the active section has changed
       if (currentActive && currentActive !== activeSection) {
         setActiveSection(currentActive);
       }
     };
 
-    // Debounce the scroll handler to reduce frequency of updates
     const debouncedScrollHandler = debounce(handleScroll, 10);
 
     container.addEventListener("scroll", debouncedScrollHandler);
-    handleScroll(); // Initial check after mounting
+    handleScroll();
 
     return () => {
       container.removeEventListener("scroll", debouncedScrollHandler);
     };
-  }, [activeSection]); // Re-run effect if activeSection changes
+  }, [activeSection]);
 
   const scrollToSection = (title) => {
     const section = document.querySelector(`[data-title="${title}"]`);
@@ -60,7 +55,6 @@ const HomeSectionEight = ({ info }) => {
         </h2>
         <p className="text-lg text-secondaryTx">{info?.description}</p>
         <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 pt-10">
-          {/* Navigation */}
           <nav className="md:w-full md:sticky md:top-0 md:h-screen md:p-8 md:flex md:flex-col md:justify-center hidden">
             {info?.content.map((section, index) => (
               <div key={index} className="flex items-center space-x-4">
@@ -91,8 +85,6 @@ const HomeSectionEight = ({ info }) => {
               </div>
             ))}
           </nav>
-
-          {/* Content */}
           <div
             ref={containerRef}
             className="flex-1 p-8 overflow-y-scroll sm:snap-y sm:snap-mandatory h-[100vh] scroll-smooth"

@@ -1,90 +1,42 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import HomeButton from "../buttons/HomeButton";
+import Head from "next/head";
 
 const info = [
   {
     id: 1,
-    title: {
-      orange: "Web",
-      white: "Development",
-    },
+    title: { orange: "Web", white: "Development" },
     url: "/web-development/custom-web-development",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp",
+    video: "https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4",
+    thumbnail: "https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp",
     techList: [
-      {
-        name: "React JS Development Services",
-        path: "/web-development/react-js-development-company",
-      },
-      {
-        name: "AngularJS Development Services",
-        path: "/web-development/angularjs-development-company",
-      },
-      {
-        name: "Node JS Development Services",
-        path: "/web-development/node-js-development-company",
-      },
+      { name: "React JS Development Services", path: "/web-development/react-js-development-company" },
+      { name: "AngularJS Development Services", path: "/web-development/angularjs-development-company" },
+      { name: "Node JS Development Services", path: "/web-development/node-js-development-company" },
     ],
   },
   {
     id: 2,
-    title: {
-      orange: "Mobile",
-      white: "Development",
-    },
+    title: { orange: "Mobile", white: "Development" },
     url: "/mobile-development/custom-mobile-app-development-company",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/Mobile+Development.webp",
+    video: "https://braininventory.s3.us-east-2.amazonaws.com/videos/mobdev.mp4",
+    thumbnail: "https://braininventory.s3.us-east-2.amazonaws.com/images/Mobile+Development.webp",
     techList: [
-      {
-        name: "Android App Development Services",
-        path: "/mobile-development/android-app-development-company",
-      },
-      {
-        name: "iOS App Development Services",
-        path: "/mobile-development/ios-app-development-company",
-      },
-      {
-        name: "React Native Development Services",
-        path: "/mobile-development/react-native-app-development-company",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: {
-      orange: "UI/UX",
-      white: "Design",
-    },
-    url: "/ui-ux-development-services",
-    video:
-      "https://braininventory.s3.us-east-2.amazonaws.com/videos/uxdesign.mp4",
-    thumbnail:
-      "https://braininventory.s3.us-east-2.amazonaws.com/images/UX+UI+Design.webp",
-    techList: [
-      {
-        name: "Product Design",
-        path: "",
-      },
-      {
-        name: "Research",
-        path: "",
-      },
-      {
-        name: "Consulting",
-        path: "/contact#contact",
-      },
+      { name: "Android App Development Services", path: "/mobile-development/android-app-development-company" },
+      { name: "iOS App Development Services", path: "/mobile-development/ios-app-development-company" },
+      { name: "React Native Development Services", path: "/mobile-development/react-native-app-development-company" },
     ],
   },
 ];
 
 const HomeSectionFour = () => {
   return (
+    <>
+    <Head>
+        <link rel="preload" as="video" href="https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4" />
+        <link rel="preload" as="image" href="https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp" />
+    </Head>
     <div className="container padding-left-all-section bg-primaryBg text-secondaryTx">
       <div className="relative">
         <div className="w-full snap-y snap-mandatory">
@@ -121,18 +73,29 @@ const HomeSectionFour = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
 const Section = ({ info, url, video, thumbnail }) => {
-  const [position, setPostion] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setPostion(true);
-    });
-  });
+    const handleScroll = () => {
+      const section = document.getElementById(`section-${info.id}`);
+      if (section && section.getBoundingClientRect().top < window.innerHeight) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); 
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [info.id]);
+
   return (
-    <div className="h-full relative">
+    <div id={`section-${info.id}`} className="h-full relative">
       <div className="relative w-full 2xl:bottom-20 xl:bottom-16 lg:bottom-14 bottom-12 2xl:p-10 p-8 lg:flex items-center justify-between">
         <div className="flex-col flex ">
           <p className="2xl:text-5xl xl:text-4xl text-3xl Gilroy-Bold 2xl:mb-8 xl:mb-6 mb-4">
@@ -140,37 +103,32 @@ const Section = ({ info, url, video, thumbnail }) => {
             {info.title.white}
           </p>
           <ul className="2xl:text-2xl xl:text-xl text-lg 2xl:space-y-4 space-y-2">
-            {info.techList.map((el) => {
-              return (
-                <li key={el.name} className="bg-image-name cursor-pointer">
-                  {el.path ? (
-                    <Link href={el.path}>
-                      <span>{el.name}</span>
-                    </Link>
-                  ) : (
-                    <span>{el.name}</span>
-                  )}
-                </li>
-              );
-            })}
+            {info.techList.map((el) => (
+              <li key={el.name} className="bg-image-name cursor-pointer">
+                {el.path ? <Link href={el.path}>{el.name}</Link> : <span>{el.name}</span>}
+              </li>
+            ))}
           </ul>
           <div className="mt-6 md:mt-12">
             <Link href={url}>
-              <HomeButton>learn more</HomeButton>
+              <HomeButton>Learn more</HomeButton>
             </Link>
           </div>
         </div>
-        {position && (
-          <div className="w-full lg:w-1/2  lg:flex lg:justify-end mt-3 md:mt-0">
+
+        {isVisible && (
+          <div className="w-full lg:w-1/2 lg:flex lg:justify-end mt-3 md:mt-0">
             <div className="h-[65%] w-[100%] md:w-[65%]">
               <video
                 muted
                 loop
-                autoPlay={true}
+                autoPlay
                 controls={false}
                 loading="lazy"
                 poster={thumbnail}
-                playsInline={true}
+                playsInline
+                fetchPriority="high"
+                className="rounded-lg"
               >
                 <source src={video} type="video/mp4" />
               </video>

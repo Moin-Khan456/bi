@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const WorkBanner = () => {
@@ -21,7 +20,7 @@ const WorkBanner = () => {
             </div>
           </div>
         </div>
-        {/* <div className="md:w-[60%] w-full  md:h-full mt-14 md:mt-0">
+        <div className="md:w-[60%] w-full  md:h-full mt-14 md:mt-0">
           <div className="3xl:py-10 2xl:py-6 xl:py-6 2xl:px-14 xl:px-12 px-10 ">
             <div className="">
               <video
@@ -38,7 +37,7 @@ const WorkBanner = () => {
               </video>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

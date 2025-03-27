@@ -4,10 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 
-// Skeleton with Glass Shining Effect
 const SkeletonCard = () => (
   <div className="relative flex-shrink-0 w-[85vw] sm:w-[60%] md:w-[40%] lg:w-[30%] rounded-lg overflow-hidden shadow-lg snap-section snap-center bg-gray-200 ">
-    {/* Shimmer Effect */}
     <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-shimmer" />
     <div className="w-full h-[230px] bg-gray-300" />
   </div>
@@ -31,7 +29,6 @@ export default function BlogArticle() {
       });
   }, []);
 
-  // Scroll Functions
   const updateScrollState = () => {
     const carousel = carouselRef.current;
     setIsStart(carousel.scrollLeft <= 0);
@@ -61,7 +58,6 @@ export default function BlogArticle() {
   return (
     <main className="px-4 py-6 w-full">
       <section className="container mx-auto">
-        {/* Title and Buttons */}
         <section className="flex justify-between items-center mb-6">
           <h3 className="Gilroy-Bold text-4xl leading-[3rem] lg:w-2/5 my-4">
             The ultimate blogs & articles
@@ -92,7 +88,6 @@ export default function BlogArticle() {
           </section>
         </section>
 
-        {/* Image Carousel with Skeleton */}
         <section
           className="flex overflow-x-scroll scroll-smooth no-scrollbar snap-x snap-mandatory gap-4 px-4"
           ref={carouselRef}

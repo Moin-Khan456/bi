@@ -23,7 +23,7 @@ const Advantage = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
@@ -90,7 +90,6 @@ function ShopifyWebDevelopment(props) {
             content={content}
             subhead="A Smarter Way to Build Customized Applications."
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/shopify-development/Mask+Group+168+(1).png"
             alt="Shopify Development Company"
             type="php"

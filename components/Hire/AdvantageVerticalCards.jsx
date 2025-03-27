@@ -12,7 +12,7 @@ export default function Advantage({
         Advantages of Hiring a {subhead1 ? subhead1 : null}{" "}
         <span className="text-primaryTx">{title}</span>
       </h3>
-      <p className="Gilroy-Semibold font-semibold leading-7 tracking-wider text-lg p-4 lg:p-10 opacity-60 lg:pt-8">
+      <p className="Gilroy-Semibold font-semibold leading-7 tracking-wider text-lg p-4 lg:p-10 opacity-80 lg:pt-8">
         {subhead}
       </p>
       <div className="flex flex-col my-8 h-auto ">

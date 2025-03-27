@@ -1,8 +1,7 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
-import DOMPurify from "isomorphic-dompurify";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons,jsonLdScript } from "../../data/mobile-development-data/reactNativeData.js";
+import dynamic from "next/dynamic";
+import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons } from "../../data/mobile-development-data/reactNativeData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
@@ -17,7 +16,7 @@ const Benefits = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
   import("../../components/Web-Development/industries.jsx"),{ssr:false}
@@ -32,7 +31,7 @@ const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function ReactNativeDeveloper() {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
+ 
   return (
     <>
       <Head>
@@ -64,6 +63,7 @@ function ReactNativeDeveloper() {
           rel="canonical"
           href="https://braininventory.in/mobile-development/react-native-app-development-company"
         />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}

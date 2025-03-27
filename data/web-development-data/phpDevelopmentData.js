@@ -45,7 +45,7 @@ export const faqDetails = [
   id: "1",
   title: "How to select the right PHP development company?",
   description: (
-    <>
+    <div className="space-y-2">
       <p>
         Choose the right PHP development company by assessing them on the
         following measures-
@@ -61,7 +61,7 @@ export const faqDetails = [
         <li>Ensure that they give future support </li>
         <li>Cost and budget without compromising on quality</li>
       </ul>
-    </>
+    </div>
   ),
 },
 {

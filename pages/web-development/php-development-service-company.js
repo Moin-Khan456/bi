@@ -19,7 +19,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(()=>import("../../components/mobilePages/faqs.js"),{ssr:false}) 
 const BlogArticle = dynamic(() =>
@@ -99,7 +99,6 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
             title="PHP Web Development Service Company from"
             content={content}
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_PHP+development+1.png"
             alt="Custom PHP development"
             type="php"

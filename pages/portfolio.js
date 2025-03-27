@@ -218,8 +218,8 @@ function Portfolio(props) {
       <div className="container  pt-12">
         <ProjectSectionOne />
         <ProjectCards />
-        <hr className="border-2 border-primaryTx my-10"/>
-        <BlogArticle />        
+        <hr className="border-1 border-primaryTx my-10"/>
+        <BlogArticle />
         <KeepInTouch/>
           <LocateUs/>
           <LetsKick/>

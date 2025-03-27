@@ -7,8 +7,6 @@ export default function KeySkill({
   gridCol = 4,
   heading = false,
 }) {
-  // const point1 = points.slice(0, points.length / 2);
-  // const point2 = points.slice(points.length / 2, points.length);
   return (
     <main>
       <section className="container padding-left-all-section-1 lg:pb-28">
@@ -29,35 +27,13 @@ export default function KeySkill({
               : "Our Key Skill Set"}
           </h2>
           <p className="Gilroy-Light !text-xl !leading-8 pb-6">{brief}</p>
-          <section className="hidden lg:flex justify-between lg:pr-72">
-            {/* <section>
-              <ul className="team-list">
-                {point1.map((ele, index) => (
-                  <li key={index + 1}>
-                    <br />
-                    <IoMdArrowForward /> {ele}
-                  </li>
-                ))}
-              </ul>
-            </section> */}
-            {/* <section>
-              <ul className="team-list">
-                {point2.map((ele, index) => (
-                  <li key={index + 1}>
-                    <br /> <IoMdArrowForward /> {ele}
-                  </li>
-                ))}
-              </ul>
-            </section> */}
-          </section>
-
           {points && (
             <section className=" ">
               <ul className={`grid lg:grid-cols-${gridCol} md:grid-cols-2 grid-cols-1  gap-6`}>
                 {points.map((ele, index) => (
                   <li
                     key={index + 1}
-                    className="flex gap-4 h-auto font-light opacity-60  items-start"
+                    className="flex gap-4 h-auto font-light opacity-80  items-start"
                   >
                     <span>
                       <IoMdArrowForward className="text-xl mt-1 text-primaryBg" />

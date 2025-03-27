@@ -18,7 +18,7 @@ const Index = ({ para1, para2, para3, title, image }) => {
           />
         </aside>
         <aside className="">
-          <p className="Gilroy-Light leading-8 font-[10] text-lg p-4 opacity-60 lg:pt-8">
+          <p className="Gilroy-Light leading-8 font-[10] text-lg p-4 opacity-80 lg:pt-8">
             {para1}
             <br />
             {para2}

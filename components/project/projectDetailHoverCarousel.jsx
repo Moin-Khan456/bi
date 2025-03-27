@@ -8,7 +8,6 @@ const ImageSlider = ({ images }) => {
 
   useEffect(() => {
     if (activeIndex === images?.length * 2) {
-      // wrap around to the beginning when we reach the end of the duplicated images array
       setActiveIndex(0);
       containerRef.current.scrollTo({
         left: 0,
@@ -24,7 +23,7 @@ const ImageSlider = ({ images }) => {
     containerRef.current.scrollTo({
       left:
         (activeIndex - 1) * containerRef.current.offsetWidth -
-        (activeIndex - 1) * 50, // subtract 10vw for each previous image
+        (activeIndex - 1) * 50,
       behavior: "smooth",
     });
   };
@@ -35,7 +34,7 @@ const ImageSlider = ({ images }) => {
     containerRef.current.scrollTo({
       left:
         (activeIndex + 1) * containerRef.current.offsetWidth -
-        (activeIndex + 1) * 50, // subtract 10vw for each previous image
+        (activeIndex + 1) * 50,
       behavior: "smooth",
     });
   };

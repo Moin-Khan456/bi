@@ -11,7 +11,7 @@ export default function ChooseBrainInventory({ reasons, subhead, alt }) {
               Why Choose Brain Inventory for Your Next{" "}
               <span className="text-primaryTx">Assignment</span>
             </h3>
-            <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6">
+            <p className="Gilroy-Light text-lg opacity-80 pt-4 pb-6">
               {subhead}
             </p>
             {reasons &&
@@ -50,7 +50,7 @@ export default function ChooseBrainInventory({ reasons, subhead, alt }) {
                       />
                     </g>
                   </svg>
-                  <p className="Gilroy-Light text-lg opacity-60 pt-4 pb-6 ">
+                  <p className="Gilroy-Light text-lg opacity-80 pt-4 pb-6 ">
                     {ele}
                   </p>
                 </div>

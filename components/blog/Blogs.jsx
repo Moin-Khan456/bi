@@ -19,7 +19,6 @@ const Blogs = ({ blogs }) => {
           {blogData?.map((post, index) => (
             <Link href={`/posts/${post.slug}`} key={index}>
               <div className="flex flex-col sm:flex-row border-2 border-primaryTx  overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-primaryBg mt-4">
-                {/* Image Section */}
                 <div className="h-48 sm:h-auto sm:w-2/4 sm:p-4 ">
                   <Image
                     src={post["_embedded"]["wp:featuredmedia"][0].source_url}
@@ -35,24 +34,22 @@ const Blogs = ({ blogs }) => {
                   />
                 </div>
 
-                {/* Content Section */}
                 <div className=" p-6 sm:w-2/3">
-                  {/* Date */}
-                  <p className=" flex flex-col justify-between text-sm text-secondaryTx">{post.date.split("T")[0]}</p>
-
-                  {/* Title */}
-                  <h3 className="flex flex-col justify-between text-xl font-bold text-secondaryTx mt-2">
-                  {post.title.rendered}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="flex flex-col justify-between text-sm mt-4 line-clamp-3">
-                  <div
-                    dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
-                  />
+                  <p className=" flex flex-col justify-between text-sm text-secondaryTx">
+                    {post.date.split("T")[0]}
                   </p>
 
-                  {/* Read More Button */}
+                  <h3 className="flex flex-col justify-between text-xl font-bold text-secondaryTx mt-2">
+                    {post.title.rendered}
+                  </h3>
+
+                  <p className="flex flex-col justify-between text-sm mt-4 line-clamp-3">
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: post.excerpt.rendered,
+                      }}
+                    />
+                  </p>
                   <Link
                     href={`/posts/${post.slug}`}
                     className="inline-block mt-6 text-sm font-bold text-primaryBg bg-primaryTx px-4 py-2 transition-colors duration-200"

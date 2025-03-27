@@ -8,7 +8,6 @@ function HireRemote(props) {
     <div className="bg-primaryBg mt-20 mb-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
-          {/* Image Section */}
           <div className="w-[80%] flex items-center mx-auto justify-center">
             <Image
               src="https://braininventory.s3.us-east-2.amazonaws.com/images/hire.png"
@@ -20,8 +19,6 @@ function HireRemote(props) {
               className="lg:h-[400px] w-full max-w-xs lg:max-w-full"
             />
           </div>
-
-          {/* Content Section */}
           <div className="text-center lg:text-left">
             <h3 className="text-3xl text-secondaryTx Gilroy-Bold mb-4">
               Hire Remote Developers to Enhance your <br className="hidden lg:block" /> 

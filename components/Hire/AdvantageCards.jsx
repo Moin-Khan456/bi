@@ -9,7 +9,7 @@ export default function KeySkill({ title, subhead, benefitsList }) {
             Advantages of Hiring a{" "}
             <span className="text-primaryTx">{title}</span>
           </h3>
-          <h3 className="xl:text-xl text-lg opacity-60 text-secondaryTx Gilroy-Light mb-8 leading-10">
+          <h3 className="xl:text-xl text-lg opacity-80 text-secondaryTx Gilroy-Light mb-8 leading-10">
             {subhead}
           </h3>
           <div className="">
@@ -19,7 +19,7 @@ export default function KeySkill({ title, subhead, benefitsList }) {
                 {benefitsList?.map((ele, index) => (
                   <div
                     className={`bg-customer p-8 ${
-                      benefitsList.length > 3 ? "lg:w-[30%]" : "lg:w-[45%]"
+                      benefitsList.length > 3 ? "lg:w-[10%]" : "lg:w-[45%]"
                     } my-8 mx-4 hover:scale-[1.05] duration-150 ease-in-out`}
                     key={index}
                   >

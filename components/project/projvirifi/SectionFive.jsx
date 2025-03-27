@@ -40,13 +40,6 @@ const Index = () => {
       </div>
 
       <div>
-        {/* <Image
-          src="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Mask Group 289.png"
-          alt="Custom Software Development Company | Application Development Company"
-          width={2000}
-          height={100}
-          className="w-full"
-        /> */}
          <TiltMarquee
              title="Certification Subscription" />
       </div>

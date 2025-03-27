@@ -21,8 +21,8 @@ function FaqHire({ faq }) {
                 <label htmlFor={"opening-checkbox" + el.id} />
                 <input type="checkbox" id={"opening-checkbox" + el.id} />
                 <section className="collapse-title text-xl font-medium">
-                  <section className="md:flex block justify-between items-center">
-                    <section>
+                  <section className="md:flex block justify-between items-center flex-1">
+                    <section class="flex flex-1">
                       <h2 className="text-2xl text-white Gilroy-Bold">
                         {el.title}
                       </h2>
@@ -30,8 +30,8 @@ function FaqHire({ faq }) {
                     <section className="flex md:block my-4 md:my-0">
                       <button onClick={() => collapsed(el.id)} className="">
                         <Image
-                          width={el.title.length > 120 ? 52 : 40}
-                          height={el.title.length > 90 ? 52 : 40}
+                          width={40}
+                          height={40}
                           src="https://braininventory.s3.us-east-2.amazonaws.com/images/faq-arrow.svg"
                           className="cursor-pointer"
                           alt="Custom Software Development Company | Hire Software Developers"

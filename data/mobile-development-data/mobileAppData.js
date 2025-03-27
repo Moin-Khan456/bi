@@ -117,96 +117,31 @@ export const content = (
   export const faqDetails = [
     {
       id: "1",
-      title: "What are the most common types of API integrations?",
+      title: "How long does it take to create an App?",
       description:
-        <>The most common types of API integrations include open APIs like the weather map, Partner APIs like Uber, and Private APIs like Netflix.<Link className="text-blue-500" href={"https://braininventory.in/contact"}>Contact us</Link> for custom API integration services. </>
+        "When designing and developing a fully functional mobile app, various factors influence the time of completion. For example, the UI/UX elements of a customized app can take one to two weeks, depending on the number of revisions necessary to achieve the best experience. Afterward, another two weeks of testing are required for the mobile app. Finally, a week's User Acceptance Testing (UAT) is required before the mobile app goes live.",
     },
     {
       id: "2",
-      title: "What is the difference between API and API integration?",
+      title: "Will I have a dedicated Project Manager?",
       description:
-        <>
-        API- it is a standard approach for applications to connect with each other, providing access to the data and functionalities. <br></br>
-        API integration- the process of using APIs to connect different applications and enable the exchange of data between them. Contact <Link className="text-blue-500" href={"https://braininventory.in/company"}>our company</Link> for the best API integration services. 
-        </>
+        "Yes, we assign a project manager to each and every one of our clients. A senior executive of the company handles all the project-related queries/ issues/feedback on a regular basis and keeps other employees updated about it. You can directly approach our project manager with your queries/ tickets related to your order.",
     },
     {
       id: "3",
       title:
-        "What are the benefits of API integration?",
+        "Once my App is developed, what after-sales services do you provide?",
       description:
-      <div className="space-y-2">
-      <p>The benefits of API integration include:  </p>
-      <ul className="!ml-7 disc">
-       <li>Reduced chances of human error </li>
-       <li>Improved customer experience </li>
-       <li>High performance   </li>
-       <li>Automation fosters employee productivity Automation fosters employee productivity  </li>
-       <li>A wider reach among your target audience </li>
-      </ul>
-      </div>
+        "Fully supporting mobile app clients is something that I have done from my past experience working with other companies. I understand how important this element is in the long term. Wherever we find there’s a need for new development or improvements, we provide our clients with these services. The more you use the mobile app(s), the better it will be for your business. Support for existing ones will be there if you need it to be. And of course, extended software protection plans mean care and value for every client.",
     },
     {
       id: "4",
-      title: "What does an API integration specialist do?",
+      title: "Do I get to choose the Developer(s) who’d work on my project?",
       description:
-        "An API integration specialist or a 3rd party software integration services provider can connect different applications together by using APIs, ensuring a smoother data flow and a shared access to functionalities. ",
-    },
-    {
-      id: "5",
-      title: "What is API integration in healthcare?",
-      description:
-       <>
-       Mobile Application integration in <Link className="text-blue-500" href={"https://braininventory.in/industry/healthcare"}>healthcare</Link> involves connecting different healthcare systems and devices through APIs to allow the patient information and clinical data to flow seamlessly between the connected devices. 
-
-       </>
+        "Rather than providing you with a list of obvious choices, we thought it’d be best to provide you with a separate space wherein you can shortlist the freelance developers of your choice. Additionally, these developers will work dedicatedly on your project without any distractions so that the end product is of the finest quality.",
     },
   ];
-export const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What are the most common types of API integrations?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The most common types of API integrations include open APIs like the weather map, Partner APIs like Uber, and Private APIs like Netflix.  Contact us for custom API integration services."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is the difference between API and API integration?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `API- it is a standard approach for applications to connect with each other, providing access to the data and functionalities. 
-API integration- the process of using APIs to connect different applications and enable the exchange of data between them. Contact our company for the best API integration services.`    }
-  },{
-    "@type": "Question",
-    "name": "What are the benefits of API integration?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `The benefits of API integration include: 
-Reduced chances of human error
-Improved customer experience 
-High performance 
-Automation fosters employee productivity 
-A wider reach among your target audience`
-    }
-  },{
-    "@type": "Question",
-    "name": "What does an API integration specialist do?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "An API integration specialist or a 3rd party software integration services provider can connect different applications together by using APIs, ensuring a smoother data flow and a shared access to functionalities."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is API integration in healthcare?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `Mobile Application integration in healthcare involves connecting different healthcare systems and devices through APIs to allow the patient information and clinical data to flow seamlessly between the connected devices.`
-    }
-  }]
-}
+
   export const chooseBI = [
     "Mobile application integration services are important to enable your enterprise application to be integrated with cloud platforms for faster creation of digital services. Brain Inventories is an elite Mobile Application Integration company that offers complete solutions for mobile app design, development, deployment, and maintenance of applications for iPhone, iPad, Android, and Windows Mobile devices. The skilled and experienced team of developers uses innovative solutions to improve your business and connect with your customers in a better way. With our strategic planning process, we can design and develop result-oriented mobile applications that become successful for your business. ",
     "We understand the need of businesses to connect with users via multiple platforms and hence we make sure that your brand gets all the attention it deserves. Whether you want to launch a new customer app or build a robust mobile game, Brain Inventory is here for your app development requirements that will increase enterprise mobility and bring business growth. ",

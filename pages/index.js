@@ -1,6 +1,6 @@
+import React, {  Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import React, {  Suspense } from "react";
 import {
   FaqsSchema,
   LocalBusinessSchema,
@@ -59,7 +59,7 @@ function Home() {
         />
         <meta
           property="og:description"
-          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today."
+          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted software development company. Contact us today."
         />
         <meta property="og:url" content="https://braininventory.in" />
         <meta
@@ -70,7 +70,7 @@ function Home() {
         <meta name="p:domain_verify" content="/googlec59025ad92b5fc4c.html" />
         <meta
           name="description"
-          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today."
+          content="At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted software development company. Contact us today."
         />
         <meta property="twitter:creator" content=" Brain Inventory " />
         <meta property="twitter:site" content=" BrainInventory" />

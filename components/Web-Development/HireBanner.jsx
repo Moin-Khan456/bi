@@ -72,7 +72,7 @@ export default function HireBanner({
                   </label>
                   <input
                     type="text"
-                    className="h-14 w-full px-4 bg-black opacity-60 mt-2"
+                    className="h-14 w-full px-4 bg-black opacity-80 mt-2"
                     placeholder="Enter your Email Address"
                   />
                 </form>

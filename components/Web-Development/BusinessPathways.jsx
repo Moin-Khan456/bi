@@ -1,6 +1,4 @@
-import React from 'react';
-import { IoMdArrowForward } from 'react-icons/io';
-
+import React from "react";
 export default function BusinessPathways({
   heading,
   subhead,
@@ -30,9 +28,16 @@ export default function BusinessPathways({
           </h2>
 
           <p className="Gilroy-Light !text-l !leading-8 pb-6">{subhead}</p>
-
           <section className="hidden lg:flex justify-between lg:pr-72"></section>
+          {EngageOptions && (
+            <div className="grid lg:grid-row-3 md:grid-row-2 grid-row-1 gap-6">
+              {EngageOptions.map((option, index) => (
+                <div key={index} className="p-0 advantage-para m-0">
+                  <h2 className="text-2xl Gilroy-Bold mb-1 leading-8 text-gray-400">
+                    {option.head}
+                  </h2>
 
+<<<<<<< HEAD
           {EngageOptions && <div className="grid lg:grid-row-3 md:grid-row-2 grid-row-1 gap-6">
             {EngageOptions.map((option, index) => (
               <div key={index} className="p-0 advantage-para m-0">
@@ -46,6 +51,15 @@ export default function BusinessPathways({
               </div>
             ))}
           </div>}
+=======
+                  <p className="Gilroy-Light text-base leading-8 pb-4">
+                    {option.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+>>>>>>> b02c6a286af5b167b861beddb1fa84fc1066b9b7
         </section>
       </section>
     </main>

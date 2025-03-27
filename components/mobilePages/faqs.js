@@ -33,14 +33,16 @@ function Faqs({ faq }) {
                   <IoIosArrowDown className="text-primaryBg text-lg" />
                 </div>
               </div>
-
-              {/* Collapsible Content with Smooth Animation */}
               <div
                 className={`transition-all duration-500 overflow-hidden ${
                   openFaq === el.id ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="mt-3 text-lg text-gray-700">{el.description}</p>
+                 {typeof el.description === "string" ? (
+                  <p className="mt-3 text-lg text-gray-700">{el.description}</p>
+                ) : (
+                  <div className="mt-3 text-lg text-gray-700">{el.description}</div>
+                )}
               </div>
             </div>
           ))}

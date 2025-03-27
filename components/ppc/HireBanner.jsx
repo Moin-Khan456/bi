@@ -201,7 +201,7 @@ const PopForm = ({ setLocal, country }) => {
       });
     }
 
-    return undefined; // No validation error
+    return undefined;
   };
 
   return (
@@ -327,15 +327,11 @@ const PopForm = ({ setLocal, country }) => {
 };
 
 const Popup = ({ setPop, country }) => {
-  // window.scrollTo(0, 0);
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  // Add styles to disable scrolling
   document.body.style.overflowY = "hidden";
   document.body.style.position = "fixed";
   document.body.style.top = `-${scrollPosition}px`;
   const enableScroll = () => {
-    // Add styles to disable scrolling
     document.body.style.overflowY = "scroll";
     document.body.style.position = "relative";
   };
@@ -360,7 +356,6 @@ const Popup = ({ setPop, country }) => {
   };
 
   const handleSubmit = (data) => {
-    // const router = useRouter();
     data = {
       ...data,
       country: country.city + " " + country.region + " " + country.country_name,
@@ -417,7 +412,7 @@ const Popup = ({ setPop, country }) => {
       });
     }
 
-    return undefined; // No validation error
+    return undefined;
   };
 
   const [off, setOff] = useState(true);

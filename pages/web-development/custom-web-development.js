@@ -16,7 +16,7 @@ const CustomBenefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
@@ -89,7 +89,6 @@ const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript))
             title="Custom Web Development & Design Services by"
             content={content}
             btn="Contact Us!"
-            // developmentImage="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Braininventory_hybrid+app+3.png"
             image="https://braininventory.s3.us-east-2.amazonaws.com/images/campaign-creators-iEiUITs149M-unsplash.png"
             type="web"
             unique={"brain inventory"}

@@ -13,7 +13,7 @@ const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkills.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../components/common/CommonChooseBraininventory.jsx")
+  import("../components/common/CommonChooseBrainInventory.jsx")
 );
 const Engaged = dynamic(() => import("../components/Hire/Engaged.jsx"));
 const HireSteps = dynamic(() => import("../components/Hire/HireSteps.jsx"));

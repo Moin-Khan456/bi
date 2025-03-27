@@ -1,11 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-
 export default function Slider({ data, subhead, head, description }) {
   
   return (

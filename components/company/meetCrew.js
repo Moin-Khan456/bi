@@ -30,8 +30,6 @@ function MeetCrew({ meeting }) {
             </p>
           </div>
         </div>
-
-        {/* Team Cards */}
         <div className="col-span-2 py-8 flex justify-center items-center">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {meeting.map((el, index) => (
@@ -60,8 +58,6 @@ function MeetCrew({ meeting }) {
             ))}
           </div>
         </div>
-
-        {/* Show More / Show Less Button */}
         <div className="flex justify-center items-center">
           <button onClick={() => setShowAll(!showAll)}>
             <HomeButton>

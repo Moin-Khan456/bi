@@ -5,7 +5,6 @@ import { devTechServicesFaqs, itStaffAugmentation, onStaffFaqs } from "../data/f
 
 const Header = dynamic(() => import("../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() => import("../components/faqs/sectionOne.jsx"));
-
 const Faq = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle.jsx"),{ssr:false});
 const KeepInTouch = dynamic(() =>

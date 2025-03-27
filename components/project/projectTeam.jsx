@@ -24,7 +24,7 @@ const TeamSlider = ({ teamMembers }) => {
               <h3 className="text-secondaryTx font-bold text-lg mt-2">
                 {member.name}
               </h3>
-              <p className="text-secondaryTx opacity-60 text-sm">{member.role}</p>
+              <p className="text-secondaryTx opacity-80 text-sm">{member.role}</p>
             </div>
           </div>
         ))}

@@ -38,7 +38,7 @@ export default function HireSteps({ type }) {
           <div>
             <div className="bg-technology p-10 lg:ml-8 mb-4">
               <h3 className="Gilroy-Bold text-2xl">Share Your Requirements</h3>
-              <p className="Gilroy-Light text-lg opacity-60 pt-2">
+              <p className="Gilroy-Light text-lg opacity-80 pt-2">
                 We’ll schedule a{" "}
                 <Link href="tel:+918109561401" className="Gilroy-Bold text-primaryBg">
                   quick call
@@ -52,14 +52,14 @@ export default function HireSteps({ type }) {
               <h3 className="Gilroy-Bold text-2xl">
                 Shortlist the Right-Fit Talent
               </h3>
-              <p className="Gilroy-Light text-lg opacity-60 pt-2">
+              <p className="Gilroy-Light text-lg opacity-80 pt-2">
                 We’ll conduct a talent screening, pick, and curate a list of
                 right-fit dedicated talents for hire.
               </p>
             </div>
             <div className="bg-technology p-10 lg:ml-8 mb-4">
               <h3 className="Gilroy-Bold text-2xl">Interview the Talent</h3>
-              <p className="Gilroy-Light text-lg opacity-60 pt-2">
+              <p className="Gilroy-Light text-lg opacity-80 pt-2">
                 Schedule the interview with the talent, matching skill sets to
                 your requirements.
               </p>
@@ -68,7 +68,7 @@ export default function HireSteps({ type }) {
               <h3 className="Gilroy-Bold text-2xl">
                 Onboard & Begin the Project
               </h3>
-              <p className="Gilroy-Light text-lg opacity-60 pt-2">
+              <p className="Gilroy-Light text-lg opacity-80 pt-2">
                 Once you find your right-fit talent, we’ll help you remotely
                 onboard, begin the project, and provide support.
               </p>

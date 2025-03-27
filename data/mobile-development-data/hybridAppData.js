@@ -92,98 +92,33 @@ export const hireCards = [
 ];
 
 export const faqDetails = [
-  {
-    id: "1",
-    title: "What is the difference between native and hybrid apps?",
-    description:
-      <>
-      <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/react-native-app-development-company"}>Native apps</Link> are developed for specific operating systems, like Safari and Siri, and are used only for Apple devices. While hybrid apps run on multiple platforms and are more widely available. A few examples of hybrid apps that can be commonly seen today are Gmail, Instagram, etc.
-      </>
-  },
-  {
-    id: "2",
-    title:
-      "How long does Hybrid App Development Take?",
-    description:
-      <>
-      A typical hybrid app takes anywhere from 3-6 months of development time depending upon the complexity, type of features needed, and the design elements. Basic apps with simple features take around 2-3 months while advanced apps with complex functions may require 6 months or longer to develop completely. <Link className="text-blue-500" href={"https://braininventory.in/contact"}>Contact</Link> our hybrid mobile app development company. 
-      </>
-  },
-  {
-    id: "3",
-    title: "What are Hybrid App Development Advantages?",
-    description:
-    <div className="space-y-2">
-    <p>The main advantages of hybrid app development are:  </p>
-    <ul className="!ml-7 disc">
-     <li>Developers don’t need to write separate codes for multiple platforms, so the development time is reduced  </li>
-     <li>The cost of overall development is also reduced </li>
-     <li>A hybrid app functions seamlessly across various platforms  </li>
-     <li>Maintenance is easy </li>
-     <li>Easier scaling and addition of new features is possible</li>
-    </ul>
-    <p> <Link href={"https://braininventory.in/contact"}>Contact</Link> our Hybrid app development company for the best services.  </p>
-    </div>
-  },
-  {
-    id: "4",
-    title: "What are the post-launch services you offer for hybrid apps?",
-    description:
-      "Our post launch support for hybrid app development services includes regular bug fixes, security patching, technical support, performance monitoring, and ongoing updates to ensure your app remains relevant in the market. ",
-  },
-  {
-    id: "5",
-    title: "Which frameworks are used for hybrid app development?",
-    description:
-      "Many frameworks, including Ionic, React Native, Xamarin, jQuery, Apache Cordova etc are used for hybrid mobile app development.  ",
-  },
+{
+  id: "1",
+  title: "How do you manage data security within the hybrid app?",
+  description:
+    "The Cyber Security of the information is our foremost priority. To ensure data security and safety, we use some latest and highly efficient tools such as mobile device management (MDM), encryption, remote wipe programs, etc. Some of these tools are deployed by leading technology giants such as Apple and Google to protect iOS apps and Android apps respectively.",
+},
+{
+  id: "2",
+  title:
+    "Can we get all iOS and Android device features to the cross-platform app?",
+  description:
+    "Yes, we develop Android, iPhone, iPad, and Windows OS apps and to fulfill the growing requirement of different organization needs we always strive for hybrid mobile development options that allow companies to work on a single codebase. Hybrid mobile app development allows you to build mobile applications using a mixture of different web technologies..",
+},
+{
+  id: "3",
+  title: "What is Hybrid Mobile App Development Services?",
+  description:
+    "Hybrid app development is all about making a single codebase for an application and then running it on multiple operating systems like Android, iOS, Windows, Linux etc. With the hybrid application development methodology, you can create the same mobile app for multiple platforms without having to write lot of extra code or doing complex testing. The hybrid application development process involves using a single unified framework like PhoneGap or Ionic. This method works well because the frameworks use native platform capabilities and programming languages (JavaScript in most cases) to develop the hybrid apps which means it can be used to target multiple platforms like Android, iOS, Windows, Unity. They put emphasis on coding once and targeting multiple platforms instead of writing code for each one individually.",
+},
+{
+  id: "4",
+  title: "How much does it cost to build a hybrid app?",
+  description:
+    "The benefit of Hybrid Mobile App Development Services is that it is cost-effective compared to developing your application with native technologies. The Hybrid apps are less expensive as well as reduce time-to-market.",
+},
 ];
-export const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What is the difference between native and hybrid apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Native apps are developed for specific operating systems, like Safari and Siri, and are used only for Apple devices. While hybrid apps run on multiple platforms and are more widely available. A few examples of hybrid apps that can be commonly seen today are Gmail, Instagram, etc."
-    }
-  },{
-    "@type": "Question",
-    "name": "How long does Hybrid App Development Take?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A typical hybrid app takes anywhere from 3-6 months of development time depending upon the complexity, type of features needed, and the design elements. Basic apps with simple features take around 2-3 months while advanced apps with complex functions may require 6 months or longer to develop completely. Contact our hybrid mobile app development company."
-    }
-  },{
-    "@type": "Question",
-    "name": "What are Hybrid App Development Advantages?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `The main advantages of hybrid app development are: 
-Developers don’t need to write separate codes for multiple platforms, so the development time is reduced 
-The cost of overall development is also reduced
-A hybrid app functions seamlessly across various platforms 
-Maintenance is easy
-Easier scaling and addition of new features is possible
-Contact our Hybrid app development company for the best services.`
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the post-launch services you offer for hybrid apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Our post launch support for hybrid app development services includes regular bug fixes, security patching, technical support, performance monitoring, and ongoing updates to ensure your app remains relevant in the market."
-    }
-  },{
-    "@type": "Question",
-    "name": "Which frameworks are used for hybrid app development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Many frameworks, including Ionic, React Native, Xamarin, jQuery, Apache Cordova etc are used for hybrid mobile app development."
-    }
-  }]
-}
+
 export const chooseBI = [
 "Our company is at the forefront of Hybrid Mobile App Development Services, providing intelligent solutions for clients worldwide. With a flawless track record of complete customer satisfaction, we aim to create mobile apps that integrate the optimal native and web technologies. Through our expertise and commitment to excellence, we build cutting-edge hybrid apps that meet our clients' needs. We have established ourselves as a trusted partner in the world of Hybrid Mobile App Development",
 "With the help of our hybrid mobile app development services, you can quickly create a high-quality hybrid app for your business that meets your specific business requirements. We will be able to quickly deliver your app to the stores with our point-and-click tool that enables the creation of hybrid apps easily without requiring you to write code or learn advanced programming languages. Having a smooth, effective user experience is crucial for the success of any application, and our hybrid mobile applications can provide a seamless user experience by integrating into other native apps in the smartphone. Your customers will love it!  Learn more about hybrid mobile app development services by contacting us today!",

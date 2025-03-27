@@ -21,7 +21,7 @@ export default function Customer() {
           priority="low"
           src="https://braininventory.s3.us-east-2.amazonaws.com/images/developers.png"
           alt="Hire dedicated remote developers | Custom software development company"
-          className="w-full"
+          
         />
       </section>
       <section className="px-4 container">

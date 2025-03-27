@@ -21,7 +21,7 @@ const BusinessPathways = dynamic(() =>
 const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+  import("../../components/common/CommonChooseBrainInventory")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs"), {
   ssr: false,
@@ -95,14 +95,12 @@ function SalesforceDevelopment(props) {
           alt="Salesforce Development Company"
         />
         <Customer />
-        {/* This component is added */}
         <AdvantageCustom
           title="Salesforce Development Services That We Offer"
           subhead={subhead1}
           reasons={experienceCards}
         />
         <HireMarquee title="Salesforce Development" />
-        {/* This component is added */}
         <BusinessPathways
           heading="Elevating User Journeys with Our Enhanced %Salesforce Development Process%"
           subhead={subHeadPathways}

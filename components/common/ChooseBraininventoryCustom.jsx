@@ -18,7 +18,7 @@ export default function ChooseBrainInventory({ head, blue, alt }) {
                   width={40}
                   height={40}
                 />
-                <p className="Gilroy-Light text-lg opacity-60 pt-4">
+                <p className="Gilroy-Light text-lg opacity-80 pt-4">
                   We can offer integration with third-party tools, enabling
                   extended website functionality from payment gateways to
                   marketing automation. Our team has the expertise to ensure a
@@ -32,7 +32,7 @@ export default function ChooseBrainInventory({ head, blue, alt }) {
                   width={40}
                   height={40}
                 />
-                <p className="Gilroy-Light text-lg opacity-60 pt-4">
+                <p className="Gilroy-Light text-lg opacity-80 pt-4">
                   At Brain Inventory, our mission is to develop custom web
                   solutions by providing cutting-edge solutions and a highly
                   stable user-friendly website that is tailored to your needs.
@@ -45,7 +45,7 @@ export default function ChooseBrainInventory({ head, blue, alt }) {
                   width={40}
                   height={40}
                 />
-                <p className="Gilroy-Light text-lg opacity-60 pt-4">
+                <p className="Gilroy-Light text-lg opacity-80 pt-4">
                   Our delivery processes are transparent, our communication is
                   excellent, and we offer a flexible approach; this allows us to
                   deliver custom software projects to all types of businesses,

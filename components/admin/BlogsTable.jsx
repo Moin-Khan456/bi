@@ -26,8 +26,6 @@ const BlogsTable = () => {
       const res = await fetch("/api/admin", {
         method: "GET",
       });
-
-      console.log(res);
     } catch (error) {
       console.error(error);
     }

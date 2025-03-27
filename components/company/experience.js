@@ -17,12 +17,6 @@ function experience({experienceValue}) {
           {experienceValue.map((el) => (
             <div key={el} className="mb-8">
               <div className="relative center block m-auto">
-                {/* //       srcSet="/image-320w.jpg 320w,
-            //   /image-480w.jpg 480w,
-            //   /image-800w.jpg 800w"
-            //       sizes="(max-width: 320px) 280px,
-            //  (max-width: 480px) 440px,
-            //  800px" */}
                 <Image
                   width={386}
                   height={290}

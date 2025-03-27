@@ -1,23 +1,92 @@
 import axios from "axios";
 import Head from "next/head";
-import React, { useState } from "react";
-import Header from "../../components/header/Header.js";
-import PopularBlogs from "../../components/blog/PopularBlogs.jsx";
-import Blogs from "../../components/blog/Blogs.jsx";
-import Pagination from "../../components/blog/Pagination.jsx";
-import KeepInTouch from "../../components/common/keepInTouch.js";
-import LocateUs from "../../components/common/locateUs.js";
-import LetsKick from "../../components/common/LetsKick.js";
-import Footer from "../../components/common/Footer.js";
+import dynamic from "next/dynamic.js";
 import { rediss } from "../../utils/redis.js";
+import React, { useState } from "react";
+import { throttle } from "lodash";
+import { useQuery } from "@tanstack/react-query";
 
-export default function Home({
-  data = false,
-  blogs = false,
-  totalPages,
-  page,
-}) {
+const Header = dynamic(() => import("../../components/header/Header.js"), { ssr: false });
+const PopularBlogs = dynamic(() => import("../../components/blog/PopularBlogs.jsx"));
+const Blogs = dynamic(() => import("../../components/blog/Blogs.jsx"), { ssr: false });
+const Pagination = dynamic(() => import("../../components/blog/Pagination.jsx"), { ssr: false });
+const KeepInTouch = dynamic(() => import("../../components/common/keepInTouch.js"));
+const LocateUs = dynamic(() => import("../../components/common/locateUs.js"));
+const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
+const Footer = dynamic(() => import("../../components/common/Footer.js"), {
+  ssr: false,
+});
+
+const SkeletonLoader = () => {
+  return (
+    <div className="container">
+      <h2 className="bg-primaryBg text-xl Gilroy-Bold mt-8">All Blogs</h2>
+      {[...Array(5)].map((_, index) => (
+        <div key={index} className="flex flex-col sm:flex-row border-2 border-primaryTx overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-primaryBg mt-4">
+          <div className="h-48 sm:h-auto sm:w-2/4 sm:p-4">
+            <div className="w-full h-full bg-gray-200 animate-pulse"></div>
+          </div>
+          <div className="p-6 sm:w-2/3">
+            <div className="h-4 w-20 bg-gray-200 animate-pulse mb-2"></div>
+            <div className="h-6 w-48 bg-gray-200 animate-pulse mb-4"></div>
+            <div className="space-y-2">
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+            </div>
+            <div className="h-10 w-24 bg-gray-200 animate-pulse mt-6"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const SkeletonPopularBlog = () => {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      {[...Array(3)].map((_, index) => (
+        <div key={index} className="max-w-sm rounded overflow-hidden border-2 border-primaryTx h-[33rem] relative">
+          <div className="w-full h-[184px] bg-gray-200 animate-pulse"></div>
+          <div className="px-2 py-4">
+            <div className="h-4 w-20 bg-gray-200 animate-pulse mb-2"></div>
+            <div className="h-6 w-48 bg-gray-200 animate-pulse mb-4"></div>
+            <div className="space-y-2">
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+              <div className="h-4 bg-gray-200 animate-pulse"></div>
+            </div>
+          </div>
+          <div className="px-2 absolute bottom-3">
+            <div className="h-8 w-24 bg-gray-200 animate-pulse"></div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const fetchBlogs = throttle(async (currentPage) => {
+  const response = await axios.get(
+    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${currentPage}`
+  );
+  return response.data;
+}, 5000);
+export default function Home({ initialData, initialBlogs, totalPages, page }) {
+
   const [currentPage, setCurrentPage] = useState(page);
+
+  const {
+    data: blogs,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: ["blogs", currentPage],
+    queryFn: () => fetchBlogs(currentPage),
+    staleTime: 600000,
+  });
+
+  const popularBlogs = blogs?.slice(0, 3) || [];
 
   return (
     <>
@@ -30,8 +99,7 @@ export default function Home({
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content=" Insights and Innovations | Blogs by Brain Inventory 
-"
+          content=" Insights and Innovations | Blogs by Brain Inventory "
         />
         <meta
           property="og:description"
@@ -61,17 +129,21 @@ export default function Home({
         <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
           <div className="container padding-left-all-section-1">
             <h1 className="lg:text-4xl text-2xl pt-12 font-bold sm:leading-12">
-              Mindful Blogs | Resource Augmentation | <br/> Web and Mobile Software
-              Development
+              Mindful Blogs | Resource Augmentation | <br /> Web and Mobile
+              Software Development
             </h1>
             <div>
               <h3 className="text-xl font-bold mt-8 mb-3 hidden lg:block">
                 Popular Blogs
               </h3>
               <div className="pb-2 hidden lg:block">
-                <PopularBlogs data={data} />
+                {isLoading ? (
+                  <SkeletonPopularBlog />
+                ) : (
+                  <PopularBlogs data={popularBlogs} />
+                )}
               </div>
-              <Blogs blogs={blogs} pageNumber={currentPage} />
+              {isLoading ? <SkeletonLoader /> : <Blogs blogs={blogs} />}
               <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}
@@ -89,65 +161,6 @@ export default function Home({
     </>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   context.res.setHeader(
-//     "Cache-Control",
-//     "public, s-maxage=600, stale-while-revalidate=3600"
-//   );
-
-//   let totalPages = await rediss.get(`totalPages`);
-
-//   // if (!totalPages) {
-//   //   const postsRes = await fetch(
-//   //     "https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_embed&per_page=1"
-//   //   );
-//   //   totalPages = postsRes.headers.get("X-WP-Total");
-//   //   await rediss.set(`totalPages`, totalPages, "EX", 600);
-//   // }
-
-//   const cachedBlog = JSON.parse(await rediss.get(`blog-${context.query.slug}`));
-//   if (cachedBlog) {
-//     return {
-//       props: {
-//         data: cachedBlog.slice(0, 3),
-//         blogs: cachedBlog,
-//         totalPages: totalPages,
-//         page: context.query.slug,
-//       },
-//     };
-//   }
-
-//   const response = await axios.get(
-//     `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${context.query.slug}`,
-//     { next: { revalidate: 600 } },
-//     {
-//       cache: "force-cache",
-//       headers: {
-//         "Cache-Control": "public, max-age=600",
-//       },
-//     }
-//   );
-
-//   totalPages = response.headers["x-wp-total"];
-
-//   await rediss.set(`totalPages`, totalPages, "EX", 600);
-//   await rediss.set(
-//     `blog-${context.query.slug}`,
-//     JSON.stringify(response.data),
-//     "EX",
-//     300
-//   );
-
-//   return {
-//     props: {
-//       data: response?.data?.slice(0, 3) ?? [],
-//       blogs: response?.data ?? [],
-//       totalPages: totalPages,
-//       page: context.query.slug,
-//     },
-//   };
-// }
 
 export async function getStaticPaths() {
   let totalBlogs = await rediss.get(`totalBlogs`);
@@ -187,13 +200,15 @@ export async function getStaticProps(context) {
     await rediss.set(`totalPages`, totalPages, "EX", 600);
   }
 
-  const cachedBlog = await rediss.get(`blog-${context.params.slug}`);
+  const cacheKey = `blog:${context.params.slug}`;
+  const cachedBlog = await rediss.get(cacheKey);
+
   if (cachedBlog) {
     const blogs = JSON.parse(cachedBlog);
     return {
       props: {
-        data: blogs.slice(0, 3),
-        blogs: blogs,
+        initialData: blogs.slice(0, 3),
+        initialBlogs: blogs,
         totalPages: totalPages,
         page: context.params.slug,
       },
@@ -207,20 +222,15 @@ export async function getStaticProps(context) {
   );
 
   const blogs = response.data;
-  await rediss.set(
-    `blog-${context.params.slug}`,
-    JSON.stringify(blogs),
-    "EX",
-    300
-  );
+  await rediss.set(cacheKey, JSON.stringify(blogs), "EX", 300);
 
   return {
     props: {
-      data: blogs.slice(0, 3),
-      blogs: blogs,
+      initialData: blogs.slice(0, 3),
+      initialBlogs: blogs,
       totalPages: totalPages,
       page: context.params.slug,
     },
-    revalidate: 86400,
+    revalidate: 600,
   };
 }

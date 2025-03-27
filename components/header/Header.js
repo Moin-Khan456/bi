@@ -33,18 +33,16 @@ const Header = () => {
       if (navbar && window.pageYOffset > 50) {
         if (prevScrollpos > currentScrollPos) {
           navbar.classList.add("scrollDown");
-          navbar.classList.remove("scrollUp"); // Show the navbar
+          navbar.classList.remove("scrollUp"); 
         } else {
           navbar.classList.add("scrollUp");
-          navbar.classList.remove("scrollDown"); // Hide the navbar
+          navbar.classList.remove("scrollDown"); 
         }
         prevScrollpos = currentScrollPos;
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -94,13 +92,15 @@ const Header = () => {
           {navOpen ? (
             <div className="dropdown lg:block dropdown-hover">
               <label className="btn bg-transparent outline-none border-0 hover:bg-transparent m-1">
-                <div className=" flex justify-between align-middle items-center h-11 z-[100] gap-1">
+                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1 ">
                     <Link href="/contact#contact">
-                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none bg-primaryTx">
+                  <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none  bg-primaryTx">
                     request A Quote
                   </p>
-                  </Link>
-                  <span
+                    </Link>
+                </div>
+                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1 ">
+                <span
                     onClick={() => {
                       handlesidebar();
                     }}
@@ -128,10 +128,14 @@ const Header = () => {
             <div className="dropdown lg:block dropdown-hover">
               <label className="btn  bg-transparent outline-none border-0 hover:bg-transparent m-1">
                 <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1 ">
+                    <Link href="/contact#contact">
                   <p className="px-4 text-xs Gilroy-Light h-11 flex justify-center items-center lowercase mobile-none  bg-primaryTx">
-                    <Link href="/contact#contact">request A Quote</Link>
+                    request A Quote
                   </p>
-                  <span
+                    </Link>
+                </div>
+                <div className="flex justify-between align-middle items-center h-11 z-[100] gap-1 ">
+                <span
                     onClick={() => {
                       handlesidebar();
                     }}

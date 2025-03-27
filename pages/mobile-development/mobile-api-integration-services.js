@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
 import {
   benefitsList,
   chooseBI,
@@ -12,7 +11,6 @@ import {
   subhead1,
   subhead2,
   subhead3,
-  jsonLdScript
 } from "../../data/mobile-development-data/mobileAppData.js";
 
 const Header = dynamic(() => import("../../components/header/Header"), {
@@ -33,7 +31,7 @@ const Benefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
@@ -52,7 +50,6 @@ const Footer = dynamic(() => import("../../components/common/Footer"), {
   ssr: false,
 });
 function MobileApiIntegration(props) {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

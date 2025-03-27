@@ -14,7 +14,7 @@ const WhyBI = () => {
                 <h2 className="text-right text-xl font-semibold pb-4">
                   Certified community specialists
                 </h2>
-                <p className="text-right opacity-60">
+                <p className="text-right opacity-80">
                   We have certified community specialists in the team who know
                   how to grow a community from inception to turning the network
                   into millions of users. They are adept at engaging the
@@ -31,7 +31,7 @@ const WhyBI = () => {
                 <h2 className="text-right text-xl font-semibold pb-4">
                   Mobile optimized for the Gen Z and millennial users
                 </h2>
-                <p className="text-right opacity-60">
+                <p className="text-right opacity-80">
                   We create custom social networking platforms keeping mobile in
                   mind. Therefore, you get a social network application that
                   works smoothly and beautifully on other devices including
@@ -54,7 +54,7 @@ const WhyBI = () => {
                 <h2 className="text-xl font-semibold pb-4">
                   Designs that will make your users melt
                 </h2>
-                <p className="  opacity-60">
+                <p className="  opacity-80">
                   We truly aim for designs that work with customers. They are
                   not just stunning looking but have the power to captivate your
                   users
@@ -71,7 +71,7 @@ const WhyBI = () => {
                 <h2 className="text-left text-xl font-semibold pb-4">
                   The social network experts
                 </h2>
-                <p className="text-left opacity-60">
+                <p className="text-left opacity-80">
                   Our team knows what’s trending because that’s what we do for a
                   living. Our team is a technology-rich bunch of usability geeks
                   who are not only social media app developers but also
@@ -87,7 +87,7 @@ const WhyBI = () => {
                 <h2 className="text-left text-xl font-semibold pb-4">
                   Your network growth partners
                 </h2>
-                <p className="  opacity-60">
+                <p className="  opacity-80">
                   Our community managers work with your marketing team helping
                   you from your launch to growth to maturity stages of your
                   niche social network

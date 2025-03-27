@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import HomeButton from "../buttons/HomeButton";
 import { useEffect, useState } from "react";
-// import { ArrowRight } from "lucide-react";
 
 export default function HomeSectionTen() {
   const [isActive, setIsActive] = useState(false);

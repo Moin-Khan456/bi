@@ -10,12 +10,9 @@ const HireDedicatedCard = ({ setLocal }) => {
 
   useEffect(() => {
     if (!isOpen) {
-      // Add a delay before removing the component to allow time for the closing animation
       const timeoutId = setTimeout(() => {
         setLocal(false);
-      }, 500); // Adjust the delay as needed
-
-      // Clear the timeout on component unmount to avoid memory leaks
+      }, 500);
       return () => clearTimeout(timeoutId);
     }
   }, [isOpen, setLocal]);

@@ -20,12 +20,6 @@ export default function HireBanner() {
               software to transform their operations.
             </h6>
           </section>
-          {/* <Link href="#talk">
-            <button className="flex items-center justify-center lg:justify-start font-Satoshi font-bold text-xs rounded-full bg-primaryTx text-primaryBg px-6 py-4 my-12">
-              LEVERAGE THE POWER OF US &nbsp;{" "}
-              <GoArrowUpRight className="font-extrabold text-3xl p-2 rounded-full " />
-            </button>
-          </Link> */}
         </section>
       </section>
     </main>

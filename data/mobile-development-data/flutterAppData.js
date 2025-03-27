@@ -55,33 +55,94 @@ export const hireCards = [
 },
 ];
 
-export const faqDetails = [
-{
-  id: "1",
-  title: "Is Flutter still relevant in 2022?",
-  description:
-    "Flutter is a cross-platform app development framework from Google that allows developers to write their native iOS and Android applications in Dart. Flutter is already popular amongst developers due to its rapid expansion. Brands who have used Flutter for their apps usually have a high demand for Flutter developers because app compatibility with Fuchsia OS can be achieved by sticking to the Dart programming language and using the Dart VM on Android or Fuchsia OS.",
-},
-{
-  id: "2",
-  title: "How is a Flutter app better than two native apps?",
-  description:
-    "Single-source code management is a software engineering technique and an open-source concept that you can use to improve your product or service in several ways.",
-},
-{
-  id: "3",
-  title: "How much does it cost to hire a Flutter Developer?",
-  description:
-    "To determine the cost of developing a Flutter app, there are several factors to consider. It is best to ask your potential developer what they will charge before reaching out to them. If you have a clear vision for your app, it should be easy to share this with developers who can help you realize your ideas. A developer that specializes in Flutter applications can help you focus on more important things than just how much time you’ll need for development.",
-},
-{
-  id: "4",
-  title: "What is the best backend for Flutter?",
-  description:
-    "Choosing a backend technology is crucial for any project. This choice will depend on many factors such as existing technologies used by the front end. If you have an existing application with some backend code, it would be easier to hook a Flutter app to it so that it can reuse its code base. However, if you need additional features and calculations much more strongly than basic REST APIs usually handled by separate batches of operations, then you’ll have to integrate into a new backend service(s).",
-},
-];
+export const faqDetails =[
+  {
+    id: "1",
+    title: "How do I choose a Flutter app development company?",
+    description:
+      "While selecting a Flutter app development company, check their team’s expertise in Flutter, portfolio of successful projects, client reviews, communication skills, and pricing models. ",
+  },
+  {
+    id: "2",
+    title: "Why should I choose Flutter over native app development?",
+    description:
+      <>
+      Flutter app development service is preferred over <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/react-native-app-development-company"}>native app development</Link> because it uses a single codebase to develop both iOS and <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/android-app-development-company"}>Android applications </Link>, resulting in a quicker development and a faster time to market. It also has features like hot reload which makes it easier to experiment, add unique features, and fix bugs faster. 
 
+      </>
+  },
+  {
+    id: "3",
+    title: "What are the main benefits of using Flutter in mobile app development?",
+    description:
+      (
+        <div className="space-y-2">
+      <p>Key advantages of using Flutter in mobile app development are:</p>
+      <ul className="!ml-7 disc">
+        <li>Single codebase saves a lot of time and effort. </li>
+        <li>Flutter’s rendering engine called Skia delivers native-like performance. </li>
+        <li>A strong and active community allows for quick query resolution and easy availability of resources.</li>
+        <li>Built-in features to create accessible apps for everyone. </li>
+      </ul>
+      </div>
+      )
+  },
+  {
+    id: "4",
+    title: "Is it too expensive to develop an application in Flutter?",
+    description:
+      "No, developing an application is affordable as compared to other native app development methods. ",
+  },
+  {
+    id: "5",
+    title: "Can I migrate my existing app into Flutter?",
+    description:
+      "Yes, you can migrate your existing app into Flutter by rewriting the codes, depending upon the goals of your current application. A company that provides Flutter app development services can help you in making the migration smoother. ",
+  },
+];
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How do I choose a Flutter app development company?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "While selecting a Flutter app development company, check their team’s expertise in Flutter, portfolio of successful projects, client reviews, communication skills, and pricing models."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why should I choose Flutter over native app development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Flutter app development service is preferred over native app development because it uses a single codebase to develop both iOS and Android applications, resulting in a quicker development and a faster time to market. It also has features like hot reload which makes it easier to experiment, add unique features, and fix bugs faster."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the main benefits of using Flutter in mobile app development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Single codebase saves a lot of time and effort. 
+Flutter’s rendering engine called Skia delivers native-like performance. 
+A strong and active community allows for quick query resolution and easy availability of resources.
+Built-in features to create accessible apps for everyone.`
+    }
+  },{
+    "@type": "Question",
+    "name": "Is it too expensive to develop an application in Flutter?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, developing an application is affordable as compared to other native app development methods."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I migrate my existing app into Flutter?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, you can migrate your existing app into Flutter by rewriting the codes, depending upon the goals of your current application. A company that provides Flutter app development services can help you in making the migration smoother."
+    }
+  }]
+}
 export const chooseBiSubhead =
 "As you can see, designing and building an Android application is not an easy task. It is much more than just coding. In order to deliver the best products in the market, we have highly professional developers who aim to offer a better end-user experience. We are fully equipped with the proven expertise of over 5 years and are equipped with a team of highly qualified developers who prioritize quality and efficiency while developing apps.";
 export const chooseBI = [

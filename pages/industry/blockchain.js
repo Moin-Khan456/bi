@@ -1,11 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import Link from "next/link.js";
+import DOMPurify from "isomorphic-dompurify";
 import {
   approachDesc,
   approachPoints,
   faqDetails,
+  jsonLdScript,
   keyDesc,
   keyFeatures,
   platformDesc,
@@ -71,6 +72,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function Blockchain(props) {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

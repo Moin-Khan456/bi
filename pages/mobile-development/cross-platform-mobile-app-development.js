@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
 import {
   benefitsList,
   chooseBI,
@@ -8,6 +9,7 @@ import {
   experienceCards,
   faqDetails,
   hireCards,
+  jsonLdScript,
   subhead1,
   subhead2,
   subhead3,
@@ -47,6 +49,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function CrossPlatformMobileApp(props) {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

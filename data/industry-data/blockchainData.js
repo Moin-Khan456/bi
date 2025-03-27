@@ -3,35 +3,75 @@ import Link from "next/link";
 export const faqDetails = [
   {
     id: "1",
-    title: "What type of software does Brain Inventory specialize in?",
+    title: "Can you build apps on the Bitcoin blockchain?",
     description:
-      "We specialize in creating highly functional, user-friendly apps for both Android and iOS platforms, and websites.",
+      "While the Bitcoin blockchain is used primarily for making digital payments, you can develop apps that can leverage its security and other functions. ",
   },
   {
     id: "2",
-    title: "What is the estimated time frame for platform development?",
+    title: "What programming languages are used in blockchain development?",
     description:
-      "The timeline depends on the complexity of the platform. However, we generally deliver within a range of 8 to 12 weeks.",
+      "Many programming languages are used for blockchain app development, including Python, JavaScript, C++, Rust, and Solidity. ",
   },
   {
     id: "3",
-    title: "How do you ensure the quality of the software developed?",
+    title: "What industries can benefit from blockchain development??",
     description:
-      "We follow a structured development process and carry out extensive testing to ensure the highest quality of our solutions.",
+      "Many prominent industries like Finance, Healthcare, Supply Chain Management, Real Estate, and Cybersecurity can benefit from a blockchain app development company. ",
   },
   {
     id: "4",
-    title: "Do you provide post-launch support and maintenance?",
+    title: "How can blockchain technology benefit my organization?",
     description:
-      "Yes, we do. We offer comprehensive post-launch support and maintenance to keep your solution updated and bug-free.",
+      "Blockchain can bring trust, security, and transparency between team members and various departments in an organization. By improving the traceability of data which is common across a business network, blockchain gives high-level encryption to each transaction, which is almost impossible for outsiders to interfere. ",
   },
   {
     id: "5",
-    title: "Can we be involved in the platform development process?",
+    title: "What Are the Core Features of Blockchain Technology?",
     description:
-      "Definitely. We encourage client involvement throughout the process to ensure the platform meets your business needs.",
+      "Some of the prominent features of blockchain technology include security, transparency, immutability, and smart contracts. Contact Brain Inventory for reliable app development services. ",
   },
 ];
+export const jsonLdScript = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Can you build apps on the Bitcoin blockchain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "While the Bitcoin blockchain is used primarily for making digital payments, you can develop apps that can leverage its security and other functions."
+    }
+  },{
+    "@type": "Question",
+    "name": "What programming languages are used in blockchain development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many programming languages are used for blockchain app development, including Python, JavaScript, C++, Rust, and Solidity."
+    }
+  },{
+    "@type": "Question",
+    "name": "What industries can benefit from blockchain development?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many prominent industries like Finance, Healthcare, Supply Chain Management, Real Estate, and Cybersecurity can benefit from a blockchain app development company."
+    }
+  },{
+    "@type": "Question",
+    "name": "How can blockchain technology benefit my organization?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Blockchain can bring trust, security, and transparency between team members and various departments in an organization. By improving the traceability of data which is common across a business network, blockchain gives high-level encryption to each transaction, which is almost impossible for outsiders to interfere."
+    }
+  },{
+    "@type": "Question",
+    "name": "What Are the Core Features of Blockchain Technology?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Some of the prominent features of blockchain technology include security, transparency, immutability, and smart contracts. Contact Brain Inventory for reliable app development services."
+    }
+  }]
+}
 
 export const solutionList = [
   {

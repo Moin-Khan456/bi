@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import DOMPurify from "isomorphic-dompurify";
 import Link from "next/link.js";
 import {
   benefitsList,
@@ -9,6 +10,7 @@ import {
   faqDetails,
   hireCards,
   meanReasons,
+  jsonLdScript
 } from "../../data/mobile-development-data/flutterAppData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"), {
@@ -50,6 +52,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function Flutter() {
+  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

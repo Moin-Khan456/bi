@@ -21,7 +21,7 @@ const BusinessPathways = dynamic(() =>
 const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBrainInventory")
+  import("../../components/common/CommonChooseBraininventory")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs"), {
   ssr: false,

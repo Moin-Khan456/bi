@@ -18,7 +18,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBrainInventory.jsx")
+  import("../../components/common/ChooseBraininventory.jsx")
 );
 const Faqs = dynamic(() =>
   import("../../components/mobilePages/faqs.js"),{ssr:false}

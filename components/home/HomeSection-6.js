@@ -10,10 +10,12 @@ const HomeSectionSix = () => {
           rel="preload"
           as="video"
           href="https://braininventory.s3.us-east-2.amazonaws.com/videos/Final.mp4"
+          type="video/mp4"
         />
         <link
           rel="preload"
           as="image"
+          type="image/webp"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/branding+rotating.webp"
         />
       </Head>
@@ -84,11 +86,14 @@ const LazyVideo = () => {
       controls={false}
       playsInline
       loading="lazy"
-      fetchPriority="high"
+      preload="metadata"
       className="rounded-lg w-full md:w-auto"
       poster="https://braininventory.s3.us-east-2.amazonaws.com/images/branding+rotating.webp"
     >
-      <source src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Final.mp4" type="video/mp4" />
+      <source
+        src="https://braininventory.s3.us-east-2.amazonaws.com/videos/Final.mp4"
+        type="video/mp4"
+      />
     </video>
   );
 };

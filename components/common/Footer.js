@@ -297,7 +297,7 @@ const FooterSections = [
       {
         _id: 9,
         name: "CRM",
-        path: "/industry//crm",
+        path: "/industry/crm",
       },
       {
         _id: 10,
@@ -420,6 +420,7 @@ const organizations = [
     href: "https://clutch.co/profile/brain-inventory",
     width: 70,
     height: 28,
+    fallback: "/clutch-unavailable",
   },
   {
     _id: 3,
@@ -516,11 +517,14 @@ export default function Footer({ fromBlog }) {
                   className="inline-flex items-center align-middle cursor-pointer w-1/3 justify-center lg:w-auto"
                 >
                   <a href={ele.href} target="_blank" rel="noopener noreferrer">
+                    
                     <Image
                       width={ele.width}
                       height={ele.height}
                       src={ele.src}
                       alt={ele.alt}
+                     
+                      className="max-w-full"
                     />
                   </a>
                 </li>
@@ -537,7 +541,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.facebook.com/BrainInventoryIndia/"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={Facebook}
@@ -553,7 +556,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://in.linkedin.com/company/braininventory"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={Linkedin}
@@ -569,7 +571,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://dribbble.com/brain_inventory"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={dribble}
@@ -585,7 +586,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.instagram.com/braininventory_com/"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={Instagram}
@@ -601,7 +601,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={Behance}
@@ -617,7 +616,6 @@ export default function Footer({ fromBlog }) {
                 <Link
                   href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Image
                     src={Youtube}

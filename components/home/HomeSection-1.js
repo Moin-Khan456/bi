@@ -5,8 +5,10 @@ export default function HomeSectionOne() {
   return (
     <>
       <Head>
-        <link rel="preload" as="image" href="https://braininventory.s3.us-east-2.amazonaws.com/images/homeBanner.webp" />
-        <link rel="preconnect" href="https://braininventory.s3.us-east-2.amazonaws.com" />
+        <link
+          rel="preconnect"
+          href="https://braininventory.s3.us-east-2.amazonaws.com"
+        />
       </Head>
 
       <div className="h-full flex items-center justify-center relative lg:pt-0">
@@ -36,10 +38,10 @@ export default function HomeSectionOne() {
                 alt="custom software development solutions"
                 width={1200}
                 height={800}
-                priority
+                priority={true}
                 fetchPriority="high"
-                layout="intrinsic"
                 className="rounded-lg mx-auto"
+                style={{ width: "90%", height: "auto" }} 
               />
             </div>
           </div>

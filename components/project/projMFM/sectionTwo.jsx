@@ -25,9 +25,9 @@ const Index = ({}) => {
         <div className="absolute top-96 inset-0  opacity-70 h-96 w-full" />
       </div>
       <div className="px-4 lg:px-48">
-        <h3 className="text-4xl lg:text-5xl font-bold text-center">
+        <h1 className="text-4xl lg:text-5xl font-bold text-center">
           What is MyFit Mantra?
-        </h3>
+        </h1>
         <p className="text-center my-10 font-thin tracking-wide text-[1rem]  sm:text-2xl leading-7 sm:leading-10 opacity-50 lg:my-24">
           My Fit Mantra (MFM) is a comprehensive training software designed to
           cater to the diverse needs of trainers and individuals seeking to

@@ -52,7 +52,6 @@ const ImageSlider = ({ images }) => {
             key={image.id}
           >
             <Image  
-         
               src={image.url}
               alt={`Image ${index + 1}`}
               className="rounded-3xl object-cover"

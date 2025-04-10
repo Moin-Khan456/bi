@@ -66,27 +66,27 @@ const SkeletonPopularBlog = () => {
   );
 };
 
-const fetchBlogs = throttle(async (currentPage) => {
-  const response = await axios.get(
-    `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${currentPage}`
-  );
-  return response.data;
-}, 5000);
 export default function Home({ initialData, initialBlogs, totalPages, page }) {
 
   const [currentPage, setCurrentPage] = useState(page);
 
-  const {
-    data: blogs,
-    isLoading,
-    isError,
-  } = useQuery({
-    queryKey: ["blogs", currentPage],
-    queryFn: () => fetchBlogs(currentPage),
-    staleTime: 600000,
-  });
+  const fetchBlogs = throttle(async (currentPage) => {
+    const response = await axios.get(
+      `https://braininventoryblogs.com/wordpress/index.php/wp-json/wp/v2/posts?_fields=id,_embedded,slug,date,title,excerpt,_links&_embed&per_page=10&page=${currentPage}`
+    );
+    return response.data;
+  }, 5000);
 
-  const popularBlogs = blogs?.slice(0, 3) || [];
+  // const {
+  //   data: blogs,
+  //   isLoading,
+  //   isError,
+  // } = useQuery({
+  //   queryKey: ["blogs", currentPage],
+  //   queryFn: () => fetchBlogs(currentPage),
+  //   staleTime: 600000,
+  // });
+  // const popularBlogs = blogs?.slice(0, 3) || [];
 
   return (
     <>
@@ -137,13 +137,14 @@ export default function Home({ initialData, initialBlogs, totalPages, page }) {
                 Popular Blogs
               </h3>
               <div className="pb-2 hidden lg:block">
-                {isLoading ? (
+                {/* {isLoading ? (
                   <SkeletonPopularBlog />
-                ) : (
-                  <PopularBlogs data={popularBlogs} />
-                )}
+                ) : ( */}
+                <PopularBlogs data={initialData} />
+                {/* )} */}
               </div>
-              {isLoading ? <SkeletonLoader /> : <Blogs blogs={blogs} />}
+              {/* {isLoading ? <SkeletonLoader /> : <Blogs blogs={initialBlogs} />} */}
+              <Blogs blogs={initialBlogs} />
               <Pagination
                 itemsPerPage={10}
                 totalPages={totalPages}

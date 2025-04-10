@@ -87,6 +87,7 @@ function MarketPlace() {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/marketplace/Group+7187.png"
           as="image"
+           type="image/png"
         />
       </Head>
 

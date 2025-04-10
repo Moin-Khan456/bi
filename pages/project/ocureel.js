@@ -84,7 +84,7 @@ const Ocureel = () => {
           rel="preload"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Ocureel_Banner.webp"
           as="image"
-          type="image/*"
+          type="image/webp"
           crossorigin="anonymous"
         />
       </Head>
@@ -98,9 +98,9 @@ const Ocureel = () => {
       <div>
         <div className="bg-PrimaryBg relative z-10 lg:-top-52 lg:pt-48">
           <div className="container">
-            <div className="flex container m-auto text-center justify-center text-secondaryTx text-4xl lg:text-6xl py-4 lg:pt-32">
+            <h1 className="flex container m-auto text-center justify-center text-secondaryTx text-4xl lg:text-6xl py-4 lg:pt-32">
               <span className="font-bold">About</span>&nbsp; Ocureel
-            </div>
+            </h1>
             <div className="w-full py-4">
               <p className="text-secondaryTx opacity-50 font-Satoshi px-2 lg:px-72 text-center sm:text-2xl text-sm font-semibold sm:leading-10 leading-5 lg:leading-[4rem] flex justify-center">
                 A game-changing social video content application which went

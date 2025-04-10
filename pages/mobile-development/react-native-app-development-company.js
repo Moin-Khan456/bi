@@ -1,8 +1,7 @@
 import Head from "next/head";
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
-import { benefitsList, chooseBI, content, faqDetails, hireCards, jsonLdScript, meanReasons } from "../../data/mobile-development-data/reactNativeData.js";
+import { benefitsList, chooseBI, content, faqDetails, hireCards, meanReasons } from "../../data/mobile-development-data/reactNativeData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
@@ -17,7 +16,7 @@ const Benefits = dynamic(() =>
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
   import("../../components/Web-Development/industries.jsx"),{ssr:false}
@@ -32,7 +31,7 @@ const LetsKick = dynamic(() => import("../../components/common/LetsKick"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function ReactNativeDeveloper() {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
+ 
   return (
     <>
       <Head>

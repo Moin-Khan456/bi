@@ -8,7 +8,7 @@ export default function HireSteps({ type }) {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div>
             <h3 className="Gilroy-Bold text-4xl lg:text-6xl lg:leading-[4.5rem]">
-              Hire {type} App Developers From Brain Inventory in 4 Easy Steps
+              Hire Dedicated {type} App Developers From Brain Inventory in 4 Easy Steps
             </h3>
             <a href="#talk">
               <button className="bg-engagedment h-12 flex justify-center items-center rounded-lg px-8 Gilroy-Bold mt-7 text-primaryBg">
@@ -44,13 +44,12 @@ export default function HireSteps({ type }) {
                   quick call
                 </Link>
                 {" "}
-                and understand your project requirements thoroughly. Don’t
-                worry! It’s secure and confidential.
+                and understand your project requirements thoroughly. Don’t worry! It’s secure and confidential.
               </p>
             </div>
             <div className="bg-technology p-10 lg:ml-8 mb-4">
               <h3 className="Gilroy-Bold text-2xl">
-                Shortlist the Right-Fit Talent
+              Shortlist the Right-Fit Talent
               </h3>
               <p className="Gilroy-Light text-lg opacity-80 pt-2">
                 We’ll conduct a talent screening, pick, and curate a list of

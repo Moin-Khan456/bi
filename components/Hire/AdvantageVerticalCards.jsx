@@ -7,7 +7,7 @@ export default function Advantage({
   subhead1 = false,
 }) {
   return (
-    <div className="container px-4 lg:px-12">
+    <div className="container px-4 lg:px-12 py-10">
       <h3 className="text-4xl lg:text-5xl Gilroy-Bold w-fit lg:pl-10">
         Advantages of Hiring a {subhead1 ? subhead1 : null}{" "}
         <span className="text-primaryTx">{title}</span>

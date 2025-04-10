@@ -32,7 +32,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"), {
   ssr: false,
@@ -85,6 +85,7 @@ function TypeScriptDeveloper(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/typeScript-development/Mask+Group+168.png"
           as="image"
+          type="image/png"
         />
          <script
           type="application/ld+json"

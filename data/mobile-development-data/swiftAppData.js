@@ -21,102 +21,44 @@ export const hireCards = [
 },
 ];
 
-export const faqDetails =  [
-  {
-    id: "1",
-    title: "What kind of applications can you build using the Swift programming language?",
-    description:
-      "Swift is a programming language that is specifically developed by Apple, to develop applications for devices like MacBooks, Apple TVs, iPhones, iPads, Apple Watches, etc. ",
-  },
-  {
-    id: "2",
-    title: "Is Swift best for app development?",
-    description:
-     <>
-     Swift is not necessarily the “best” programming language for app development, however, it is especially launched to <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/ios-app-development-company"}>develop iOS applications</Link>, and is an ideal choice for iOS development due to its high performance capabilities and cross-platform development feature. 
-     </>
-  },
-  {
-    id: "3",
-    title: "Why is Swift a good choice for game app development?",
-    description:
-      "Swift is considered a good choice for game app development because of its high performance, clean syntax, cross-platform compatibility, and native integration with Apple. It allows developers to create unique and brilliantly performing games involving less code complexity and a quick development process.  ",
-  },
-  {
-    id: "4",
-    title: "Can Swift be used for cross-platform development?",
-    description:
-     <>
-     Yes, while Swift is primarily used for developing iOS applications, it can be used for cross-platform development also. With the help of frameworks like <Link className="text-blue-500" href={"https://braininventory.in/ui-ux-development-services"}>Swift UI</Link> and Swift Package Manager, it gives developers the freedom to use a specific portion of code across other platforms like Windows, Linux, and even Android to a certain extent. <br></br>
-<Link href={"tel:+918109561401"}>Call now</Link> for reliable Swift development services. 
-
-     </>
-  },
-  {
-    id: "5",
-    title: "What are the main advantages of developing in Swift?",
-    description:
-     <div className="space-y-2">
-     <p>The main advantages of developing an application in Swift include: </p>
-     <ul className="!ml-7 disc">
-      <li>Extremely fast speed and performance </li>
-      <li>Clean code syntax making it easier for developers to read and write </li>
-      <li>Easier learning curve than most of the languages </li>
-      <li>Open source language, which allows for its wider adoption </li>
-      <li>Strong community support </li>
-      <li>Coding environment called “Playgrounds” allows for rapid prototyping and testing  </li>
-     </ul>
-     <p> <Link href={"https://braininventory.in/contact"}>Contact us</Link> for the best swift app development services </p>
-     </div>
-  },
+export const faqDetails = [
+{
+  id: "1",
+  title: "What does Swift developer do?",
+  description:
+    "Swift developers are responsible for the development of iOS, OS X, and tvOS applications. They use Apple frameworks and SDKs to create software that runs across a variety of devices, including smartphones, tablets, and desktops.",
+},
+{
+  id: "2",
+  title: "What is Swift’s main advantage?",
+  description:
+    "Swift has many advantages over Objective-C and other languages, but the major advantage comes in the form of interactivity. The most apparent benefit is in the availability of a REPL (read-eval-print-loop), which makes debugging easier and gives you instant feedback on errors.",
+},
+{
+  id: "3",
+  title: "Why Use Swift Programming Language?",
+  description:
+    "Swift is a safer, faster, and easier-to-learn language for iOS development. It offers better software design patterns, elegant syntax, and powerful features.",
+},
+{
+  id: "4",
+  title: "What are the important features of Swift?",
+  description:
+    "Swift is a beautiful, modern programming language. It supports high-level object-oriented programs along with functional programming and structured mathematics. The main feature of Swift is that it uses functional programming patterns like Map/Filter, in addition, to supporting high-level data structures (via protocol and extension), the addition of type inference, and runtime error handling.",
+},
+{
+  id: "5",
+  title: "How long does it take to build a Swift App?",
+  description:
+    "It is quite challenging to determine the time required to develop an app, especially if we are looking at a complex project that demands significant effort from the developer. It all depends on various factors like the development platform, the complexity of the design, the experience level of the developer, features, and functionality, testing, and many more. If you have your project specifications or requirement in mind, then we can take it forward for you.",
+},
+{
+  id: "6",
+  title: "Which is better: Swift or Objective-C?",
+  description:
+    "Objective-C. While it’s easier and faster to develop, it also offers many benefits over Objective-C including cleaner syntax, easier to maintain, and maintainability.",
+},
 ];
-export const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "What kind of applications can you build using the Swift programming language?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Swift is a programming language that is specifically developed by Apple, to develop applications for devices like MacBooks, Apple TVs, iPhones, iPads, Apple Watches, etc."
-    }
-  },{
-    "@type": "Question",
-    "name": "Is Swift best for app development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Swift is not necessarily the “best” programming language for app development, however, it is especially launched to develop iOS applications, and is an ideal choice for iOS development due to its high performance capabilities and cross-platform development feature."
-    }
-  },{
-    "@type": "Question",
-    "name": "Why is Swift a good choice for game app development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Swift is considered a good choice for game app development because of its high performance, clean syntax, cross-platform compatibility, and native integration with Apple. It allows developers to create unique and brilliantly performing games involving less code complexity and a quick development process."
-    }
-  },{
-    "@type": "Question",
-    "name": "Can Swift be used for cross-platform development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `Yes, while Swift is primarily used for developing iOS applications, it can be used for cross-platform development also. With the help of frameworks like Swift UI and Swift Package Manager, it gives developers the freedom to use a specific portion of code across other platforms like Windows, Linux, and even Android to a certain extent. 
-Call now for reliable Swift development services.`
-    }
-  },{
-    "@type": "Question",
-    "name": "What are the main advantages of developing in Swift?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `The main advantages of developing an application in Swift include:Extremely fast speed and performance 
-Clean code syntax making it easier for developers to read and write 
-Easier learning curve than most of the languages 
-Open source language, which allows for its wider adoption 
-Strong community support 
-Coding environment called “Playgrounds” allows for rapid prototyping and testing  
-Contact us for the best swift app development services`
-    }
-  }]
-}
 
 export const chooseBI = [
 <>

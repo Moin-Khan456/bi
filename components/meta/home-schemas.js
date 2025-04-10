@@ -111,24 +111,24 @@ export const FaqsSchema = {
   ],
 };
 
-export const ProductSchema = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  name: "Custom Software Development Service USA - Software Development Company",
-  image:
-    "https://braininventory.in/_next/image?url=https%3A%2F%2Fbraininventory.s3.us-east-2.amazonaws.com%2Fimages%2Fmain%2FLogobg.png&w=256&q=75",
-  description:
-    "At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today.",
-  brand: {
-    "@type": "Brand",
-    name: "Brain Inventory",
-  },
-  offers: {
-    "@type": "AggregateOffer",
-    url: "https://braininventory.in/web-development/custom-web-development",
-    priceCurrency: "USD",
-    lowPrice: "500",
-    highPrice: "2000",
-    offerCount: "1",
-  },
-};
+// export const ProductSchema = {
+//   "@context": "https://schema.org/",
+//   "@type": "Product",
+//   name: "Custom Software Development Service USA - Software Development Company",
+//   image:
+//     "https://braininventory.in/_next/image?url=https%3A%2F%2Fbraininventory.s3.us-east-2.amazonaws.com%2Fimages%2Fmain%2FLogobg.png&w=256&q=75",
+//   description:
+//     "At brain inventory we provide custom software development services solutions for your new ideas. We are a trusted development company. Contact us today.",
+//   brand: {
+//     "@type": "Brand",
+//     name: "Brain Inventory",
+//   },
+//   offers: {
+//     "@type": "AggregateOffer",
+//     url: "https://braininventory.in/web-development/custom-web-development",
+//     priceCurrency: "USD",
+//     lowPrice: "500",
+//     highPrice: "2000",
+//     offerCount: "1",
+//   },
+// };

@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
-import { BiCheckCircle } from 'react-icons/bi';
+import Image from "next/image";
+import React from "react";
+import { BiCheckCircle } from "react-icons/bi";
 
 export default function ChooseBrainInventory({
   reasons,
@@ -8,19 +8,24 @@ export default function ChooseBrainInventory({
   alt,
   blueSolution,
 }) {
+  let words = alt.split(" ");
+  let lastTwoWords = words.slice(-2).join(" ");
+  let isTrue = alt.split(" ").slice(-2).join(" ");
+  const isCheck = ["Laravel Developers"].includes(isTrue)
   return (
     <div className="2xl:p-10 p-8 2xl:space-y-8 space-y-6">
       <div className="container padding-left-all-section-1">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div>
             <h2 className="Gilroy-Bold text-4xl leading-[3rem]">
-              Why Choose Brain inventory for{' '}
-              {!blueSolution ? (
-                <>Your Next</>
-              ) : (
-                <span className="text-primaryTx"> Your Next</span>
-              )}{' '}
-              <span className="text-primaryTx">Assignment</span>
+              Why Choose Brain inventory to {" "}
+              {isCheck ? (
+                <span className="text-primaryTx">{lastTwoWords}</span>
+              ) :  (
+                <><span className="text-primaryTx">Why Your Next</span>
+                  <span className="text-primaryTx"> Assignment</span>
+                </>
+              ) }
             </h2>
             <p className="Gilroy-Light text-lg opacity-80 pt-4 pb-6">
               {subhead}

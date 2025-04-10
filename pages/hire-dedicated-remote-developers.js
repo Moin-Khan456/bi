@@ -84,8 +84,8 @@ export default function Hirededicatedremotedevelopers(props) {
           rel="preload"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/staffbanner.png"
           as="image"
-          type="image/*"
-          crossOrigin="anonymous"
+          type="image/png"
+          crossorigin="anonymous"
         />
       </Head>
 

@@ -18,7 +18,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
@@ -70,6 +70,7 @@ const sanitizedJsonLd = DOMPurity.sanitize(JSON.stringify(jsonLdScript))
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_python+development+1.png"
           as="image"
+          type="image/png"
         />
         <script
         type="application/ld+json"

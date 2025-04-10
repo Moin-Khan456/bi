@@ -1,77 +1,37 @@
 import Link from "next/link";
 
-export const faqDetails =  [
-  {
-    id: "1",
-    title: "How much does it cost to build educational software?",
-    description:
-      "The cost of building educational software varies based on features, complexity, and platform. Basic software may cost $5,000–$20,000, while advanced solutions with AI, gamification, or VR can exceed $50,000–$200,000. For an exact quote, consulting a development team is recommended.",
-  },
-  {
-    id: "2",
-    title: "What type of education apps do you develop?",
-    description:
-      "Our expert education software developers can develop various types of education apps, including classroom apps, language learning apps, assessment apps, etc. ",
-  },
-  {
-    id: "3",
-    title: "What is the role of education apps in business?",
-    description:
-      "Education apps help businesses in conducting employee training, educating employees on the latest and advanced technologies, knowledge sharing, and promoting skill enhancement workshops. Take help from education software development services to develop a customized education app as per the needs of your business. ",
-  },
-  {
-    id: "4",
-    title: "What does an educational software developer do?",
-    description:
-      "An educational software developer develops educational apps to facilitate learning and make the overall experience fun and enjoyable for the user. ",
-  },
-  {
-    id: "5",
-    title: "Are educational apps profitable?",
-    description:
-      "Yes. The future market of educational apps looks promising with the revenue projected to grow at a CAGR of 8.9% until 2030. This presents a golden opportunity for businesses to invest in education software development and make good profits in the long run. ",
-  },
-];
-export const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "How much does it cost to build educational software?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The cost of building educational software varies based on features, complexity, and platform. Basic software may cost $5,000–$20,000, while advanced solutions with AI, gamification, or VR can exceed $50,000–$200,000. For an exact quote, consulting a development team is recommended."
-    }
-  },{
-    "@type": "Question",
-    "name": "What type of education apps do you develop?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Our expert education software developers can develop various types of education apps, including classroom apps, language learning apps, assessment apps, etc."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is the role of education apps in business?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Education apps help businesses in conducting employee training, educating employees on the latest and advanced technologies, knowledge sharing, and promoting skill enhancement workshops. Take help from education software development services to develop a customized education app as per the needs of your business."
-    }
-  },{
-    "@type": "Question",
-    "name": "What does an educational software developer do?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "An educational software developer develops educational apps to facilitate learning and make the overall experience fun and enjoyable for the user."
-    }
-  },{
-    "@type": "Question",
-    "name": "Are educational apps profitable?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. The future market of educational apps looks promising with the revenue projected to grow at a CAGR of 8.9% until 2030. This presents a golden opportunity for businesses to invest in education software development and make good profits in the long run."
-    }
-  }]
-}
+export const faqDetails = [
+    {
+      id: "1",
+      title: "What type of solutions does Brain Inventory specialize in?",
+      description:
+        "We specialize in creating highly functional, user-friendly apps for both Android and iOS platforms, and websites.",
+    },
+    {
+      id: "2",
+      title: "What is the estimated time frame for platform development?",
+      description:
+        "The timeline depends on the complexity of the platform. However, we generally deliver within a range of 8 to 12 weeks.",
+    },
+    {
+      id: "3",
+      title: "How do you ensure the quality of the solutions developed?",
+      description:
+        "We follow a structured development process and carry out extensive testing to ensure the highest quality of our solutions.",
+    },
+    {
+      id: "4",
+      title: "Do you provide post-launch support and maintenance?",
+      description:
+        "Yes, we do. We offer comprehensive post-launch support and maintenance to keep your solution updated and bug-free.",
+    },
+    {
+      id: "5",
+      title: "Can we be involved in the platform development process?",
+      description:
+        "Definitely. We encourage client involvement throughout the process to ensure the platform meets your business needs.",
+    },
+  ];
   export const solutionList = [
     {
       id: "1",

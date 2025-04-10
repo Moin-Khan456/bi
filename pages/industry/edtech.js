@@ -1,8 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
-import { approachDesc, approachPoints, faqDetails, jsonLdScript, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList } from "../../data/industry-data/edtechData.js";
+import { approachDesc, approachPoints, faqDetails, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList } from "../../data/industry-data/edtechData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"),{ssr:false});
 const SectionOne = dynamic(() =>
@@ -51,7 +50,7 @@ const LetsKick = dynamic(() => import("../../components/common/LetsKick.js"));
 const Footer = dynamic(() => import("../../components/common/Footer.js"),{ssr:false});
 
 function EdTech() {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
+  
   return (
     <>
       <Head>

@@ -17,7 +17,7 @@ const Advantage = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() =>
@@ -72,6 +72,7 @@ function WordPressWebDesign(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Braininventory_wordpress+1.png"
           as="image"
+          type="image/png"
         />
       </Head>
       <main className="">

@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 import "../styles/globals.css";
 import HireDedicatedCard from "../components/blog/HireDedicatedCard";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
 import { FiMail } from "react-icons/fi";
 import { useRouter } from "next/router";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-const queryClient = new QueryClient();
-
-
+// import Provider from "../utils/Provider";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
   const { asPath } = router;
+  const queryClient = new QueryClient()
   const [localForm, setLocal] = useState(null);
+   
 
   function throttle(callback, delay) {
     let lastCall = 0;
@@ -26,58 +28,62 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.smartlook ||
-        (function (d) {
-          var o = (window.smartlook = function () {
-              o.api.push(arguments);
-            }),
-            h = d.getElementsByTagName("head")[0];
-          var c = d.createElement("script");
-          o.api = new Array();
-          c.async = true;
-          c.type = "text/javascript";
-          c.charset = "utf-8";
-          c.src = "https://web-sdk.smartlook.com/recorder.js";
-          h.appendChild(c);
-        })(document);
-      window.smartlook("init", "a3459c65e0d69bf6b6ff9d9b4120d4f1dc6aa787", {
-        region: "eu",
-      });
+    try {
+      if (typeof window !== "undefined") {
+        window.smartlook ||
+          (function (d) {
+            var o = (window.smartlook = function () {
+                o.api.push(arguments);
+              }),
+              h = d.getElementsByTagName("head")[0];
+            var c = d.createElement("script");
+            o.api = new Array();
+            c.async = true;
+            c.type = "text/javascript";
+            c.charset = "utf-8";
+            c.src = "https://web-sdk.smartlook.com/recorder.js";
+            h.appendChild(c);
+          })(document);
+        window.smartlook("init", "a3459c65e0d69bf6b6ff9d9b4120d4f1dc6aa787", {
+          region: "eu",
+        });
 
-      const handleScroll = throttle(() => {
-        if (window.scrollY > 400) {
-          if (
-            localForm === null &&
-            (JSON.parse(localStorage.getItem("openPopup")) ?? true)
-          ) {
-            setLocal(
-              window.innerWidth < 1000
-                ? false
-                : asPath === "/thank-you"
-                ? false
-                : true
-            );
+        const handleScroll = throttle(() => {
+          if (window.scrollY > 400) {
+            if (
+              localForm === null &&
+              (JSON.parse(localStorage.getItem("openPopup")) ?? true)
+            ) {
+              setLocal(
+                window.innerWidth < 1000
+                  ? false
+                  : asPath === "/thank-you"
+                  ? false
+                  : true
+              );
+            }
           }
-        }
-      }, 200);
+        }, 200);
 
-      window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }
+    } catch (error) {
+      console.error("Error initializing Smartlook:", error);
     }
   }, [asPath]);
 
   return (
     <>
-      {/* <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" />
+      {/* <Provider> */}
+        {/* <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" />
       <Script
         src="https://mediafiles.botpress.cloud/658b4e1a-0e00-4bc2-a5d4-e2941f86b8c9/webchat/config.js"
         defer
       /> */}
-
 <QueryClientProvider client={queryClient}>
       <Component {...pageProps} />
     </QueryClientProvider>

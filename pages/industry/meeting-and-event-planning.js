@@ -72,6 +72,7 @@ function Meeting(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/solution/meeting-and-planning/Asset+2.png"
           as="image"
+           type="image/png"
         />
       </Head>
       {/*<Loader />*/}

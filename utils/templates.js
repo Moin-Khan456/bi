@@ -281,10 +281,10 @@ export function thankYouForContactingWithSales(data) {
 															<td style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:20px;text-align:center;">
 																<table class="social-table" width="144px" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																	<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/BrainInventoryIndia" target="_blank" rel="noopener noreferrer"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://in.linkedin.com/company/braininventory/" target="_blank" rel="noopener noreferrer"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/braininventory_com/" target="_blank" rel="noopener noreferrer"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
-																	<td style="padding:0 2px 0 2px;"><a href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw" target="_blank" rel="noopener noreferrer"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.png" width="32" height="32" alt="Youtube" title="Youtube" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/BrainInventoryIndia" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://in.linkedin.com/company/braininventory/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/braininventory_com/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
+																	<td style="padding:0 2px 0 2px;"><a href="https://www.youtube.com/channel/UCmBF3Fito6xxYWyomJ-ittw" target="_blank"><img src="https://braininventory.s3.us-east-2.amazonaws.com/images/youtube.png" width="32" height="32" alt="Youtube" title="Youtube" style="display: block; height: auto; border: 0;"></a></td>
 																	</tr>
 																</table>
 															</td>
@@ -605,10 +605,10 @@ export function thankYouForApplyingForJob(data) {
 															<td style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:20px;text-align:center;">
 																<table class="social-table" width="144px" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
-																		<td style="padding:0 2px 0 2px;"><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/twitter@2x.png" width="32" height="32" alt="Twitter" title="twitter" style="display: block; height: auto; border: 0;"></a></td>
-																		<td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
-																		<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/facebook@2x.png" width="32" height="32" alt="Facebook" title="facebook" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.twitter.com/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/twitter@2x.png" width="32" height="32" alt="Twitter" title="twitter" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/linkedin@2x.png" width="32" height="32" alt="Linkedin" title="linkedin" style="display: block; height: auto; border: 0;"></a></td>
+																		<td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/" target="_blank"><a href="#"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-circle-white/instagram@2x.png" width="32" height="32" alt="Instagram" title="instagram" style="display: block; height: auto; border: 0;"></a></td>
 																	</tr>
 																</table>
 															</td>
@@ -718,7 +718,7 @@ export function PpcThankTemplate(data) {
                 <tbody style="display: flex; justify-content: space-between; padding-top:2rem;">
                   <tr style="width: 70%">
                     <td align="center" style="color:white;padding-left: 12%;">
-                      <a href="https://braininventory.com/" target="_blank"  rel="noopener noreferrer"data-saferedirecturl="https://www.google.com/url?q=https://braininventory.com/andsource=gmailandust=1674032573977000andusg=AOvVaw3NF-G-DrvQt5tEwH_t7hqc">
+                      <a href="https://braininventory.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://braininventory.com/andsource=gmailandust=1674032573977000andusg=AOvVaw3NF-G-DrvQt5tEwH_t7hqc">
                         <img src="https://braininventory.ca/EmailTemplate20.7/Group%203669.png" width="150px" alt="BI logo" class="CToWUd" >
                       </a>
                     </td>

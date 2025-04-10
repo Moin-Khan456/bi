@@ -17,7 +17,7 @@ const Benefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
@@ -92,6 +92,7 @@ function AangularJsDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6523.png"
           as="image"
+          type="image/png"
         />
         <script
           type="application/ld+json"

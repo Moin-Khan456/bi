@@ -88,7 +88,7 @@ const RevolutionTravel = () => {
           rel="preload"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Portfolio_Revolution_Banner.webp"
           as="image"
-          type="image/*"
+          type="image/webp"
           crossorigin="anonymous"
         />
       </Head>

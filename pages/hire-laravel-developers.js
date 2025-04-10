@@ -6,6 +6,7 @@ import { chooseBI, content, experienceCards, faqDetails, hireCards, jsonLdScript
 
 const Header = dynamic(() => import("../components/header/Header"),{ssr:false});
 import HireBanner from "../components/common/HireBanner";
+import Link from "next/link.js";
 const Customer = dynamic(() => import("../components/common/customer"));
 const Experienced = dynamic(() =>
   import("../components/Web-Development/Experienced")
@@ -17,7 +18,7 @@ const AdvantageVerticalCards = dynamic(() =>
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../components/common/CommonChooseBraininventory")
+  import("../components/common/CommonChooseBrainInventory")
 );
 const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"),{ssr:false});
@@ -99,12 +100,12 @@ function HireLaravelDeveloper(props) {
             para2={subhead2}
             para3={subhead3}
             card={experienceCards}
-            changeText={"Hire a"}
+            changeText={"Hire"}
           />
           <HireMarquee title="Laravel Developer" />
           <AdvantageVerticalCards
-            title="Laravel Developer"
-            subhead="Hiring a web developer skilled with the Laravel platform can be extremely advantageous for your web development projects. Laravel, a robust and flexible PHP framework, has become popular because of its straightforward and minimal syntax, wide range of features, and tools focused on boosting developer efficiency. Here are some of the primary benefits of bringing on a Laravel developer:"
+            title="Laravel Developers"
+            subhead={<> Hiring a <Link href={"https://braininventory.in/web-development/custom-web-development"} className="text-blue-600">custom web developer</Link> skilled with the Laravel platform can be extremely advantageous for your web development projects. Laravel, a robust and flexible <Link href={"https://braininventory.in/web-development/php-development-service-company"} className="text-blue-600">PHP framework</Link>, has become popular because of its straightforward and minimal syntax, wide range of features, and tools focused on boosting developer efficiency. Here are some of the primary benefits of bringing on a Laravel developer.</>}
             reasons={reasons}
           />
           <KeySkill
@@ -112,7 +113,7 @@ function HireLaravelDeveloper(props) {
             points={keySkillsPoints}
           />
           <Hire
-            title="Why Hire Laravel Developers from %Brain inventory"
+            title="Why Hire Laravel Developers from Brain Inventory"
             card={hireCards}
           />
 

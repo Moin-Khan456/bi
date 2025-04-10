@@ -16,7 +16,7 @@ const CustomAppBenefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventoryApp = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory.jsx")
+  import("../../components/common/CommonChooseBrainInventory.jsx")
 );
 const BlogArticle = dynamic(() =>
   import("../../components/common/BlogArticle.jsx"),{ssr:false}

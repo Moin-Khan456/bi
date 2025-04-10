@@ -12,6 +12,10 @@ function ThankYou(props) {
     <>
       <Head>
         <title>Thank You For Visiting Us | Brain Inventory</title>
+        <link
+          rel="canonical"
+          href="https://braininventory.in/thank-you"
+        />
       </Head>
       {/*<Loader />*/}
       <div className="relative  ">

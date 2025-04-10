@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
- 
-import { approachDesc, approachPoints, faqDetails, jsonLdScript, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList, title } from "../../data/industry-data/fitnessData.js";
+import { approachDesc, approachPoints, faqDetails, keyDesc, keyFeatures, platformDesc, platformDevelopment, sectionFiveDesc, sectionFiveTable, sectionFiveTableHead, sectionFourDesc, sectionThreeCards, sectionTwoDesc, solutionList, title } from "../../data/industry-data/fitnessData.js";
 
 const Header = dynamic(() => import("../../components/header/Header.js"), {
   ssr: false,
@@ -63,7 +61,7 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function Fitness() {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript  ));
+  
   return (
     <>
       <Head>

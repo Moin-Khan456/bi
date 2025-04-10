@@ -1,15 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
-
 import {
   benefitsList,
   chooseBI,
   content,
   faqDetails,
   hireCards,
-  jsonLdScript,
   meanReasons,
 } from "../../data/mobile-development-data/swiftAppData.js";
 
@@ -27,7 +24,7 @@ const Benefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire.jsx"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(
   () => import("../../components/Web-Development/industries.jsx"),
@@ -51,7 +48,6 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function SwiftDevelopment() {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>

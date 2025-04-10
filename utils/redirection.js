@@ -1503,6 +1503,11 @@ const redirection = () => {
       permanent: true,
     },
     {
+      source: "/industry//crm",
+      destination: "/industry/crm",
+      permanent: true,
+    },
+    {
       source: "/mobile-app-development",
       destination: "/mobile-development/custom-mobile-app-development-company",
       permanent: true,
@@ -1697,11 +1702,6 @@ const redirection = () => {
       destination: "/software-maintenance-and-support-services",
       permanent: true,
     },
-    // {
-    //   source: "/suport",
-    //   destination: "/software-maintenance-and-support-services",
-    //   permanent: true,
-    // },
     {
       source: "/angularjs-development",
       destination: "/web-development/angularjs-development-company",

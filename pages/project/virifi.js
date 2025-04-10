@@ -90,7 +90,7 @@ const Virifi = () => {
           rel="preload"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/project/virifi/Image+8.png"
           as="image"
-          type="image/*"
+          type="image/png"
           crossorigin="anonymous"
         />
       </Head>

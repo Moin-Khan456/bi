@@ -35,7 +35,7 @@ const HomeSectionFour = () => {
     <>
     <Head>
         <link rel="preload" as="video" href="https://braininventory.s3.us-east-2.amazonaws.com/videos/webdev.mp4" />
-        <link rel="preload" as="image" href="https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp" />
+        <link rel="preload" as="image" type="image/webp" href="https://braininventory.s3.us-east-2.amazonaws.com/images/Website+Development.webp" />
     </Head>
     <div className="container padding-left-all-section bg-primaryBg text-secondaryTx">
       <div className="relative">
@@ -48,7 +48,7 @@ const HomeSectionFour = () => {
               <p className="2xl:text-2xl xl:text-xl text-lg Gilroy-Light leading-loose">
                 Mobile app development indeed nowadays necessary for all the
                 business. We, as a{" "}
-                <Link href="#looking" className="text-[#2186ff]">
+                <Link href="/mobile-development/custom-mobile-app-development-company" className="text-[#2186ff]">
                   Mobile App Development Company
                 </Link>{" "}
                 can provide high quality standard mobile app of any category. We
@@ -127,7 +127,7 @@ const Section = ({ info, url, video, thumbnail }) => {
                 loading="lazy"
                 poster={thumbnail}
                 playsInline
-                fetchPriority="high"
+                fetchpriority="high"
                 className="rounded-lg"
               >
                 <source src={video} type="video/mp4" />

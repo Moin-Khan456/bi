@@ -33,10 +33,9 @@ export default function BusinessPathways({
             <div className="grid lg:grid-row-3 md:grid-row-2 grid-row-1 gap-6">
               {EngageOptions.map((option, index) => (
                 <div key={index} className="p-0 advantage-para m-0">
-                  <h2 className="text-2xl Gilroy-Bold mb-1 leading-8 text-primaryBg">
+                  <h2 className="text-2xl Gilroy-Bold mb-1 leading-8 text-gray-400">
                     {option.head}
                   </h2>
-
                   <p className="Gilroy-Light text-base leading-8 pb-4">
                     {option.content}
                   </p>

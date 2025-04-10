@@ -233,7 +233,7 @@ export const whyWorkDataItStuff = {
         "What is the minimum number of people that I need to hire for a team?",
       description:
       <>
-        `The process of bringing on new talent has no restrictions. You can decide to add one programmer to your team or several, based on your requirements. There is flexibility in assembling the ideal group of developers that matches your needs. If you are uncertain about what your precise requirements are, please send an email to {<Link className="text-blue-600" href={"https://mail.google.com/mail/?view=cm&fs=1&to=askus@braininventory.com"} target="_blank" rel="noopener noreferrer">askus@braininventory.com</Link>} to inquire further.`,
+        `The process of bringing on new talent has no restrictions. You can decide to add one programmer to your team or several, based on your requirements. There is flexibility in assembling the ideal group of developers that matches your needs. If you are uncertain about what your precise requirements are, please send an email to {<Link className="text-blue-600" href={"https://mail.google.com/mail/?view=cm&fs=1&to=askus@braininventory.com"} target="_blank">askus@braininventory.com</Link>} to inquire further.`,
         </>
     },
     {

@@ -26,7 +26,7 @@ const Benefits = dynamic(() =>
 );
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/ChooseBraininventory.jsx")
+  import("../../components/common/ChooseBrainInventory.jsx")
 );
 const Industries = dynamic(() =>
   import("../../components/Web-Development/industries.jsx"),{ssr:false}
@@ -79,6 +79,7 @@ function VueJsDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/Technology/Group+6461.png"
           as="image"
+          type="image/png"
         />
         <script
           type="application/ld+json"

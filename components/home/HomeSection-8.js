@@ -97,9 +97,9 @@ const HomeSectionEight = ({ info }) => {
                   className="snap-section snap-start sm:min-h-screen flex items-center"
                 >
                   <div className="flex flex-col gap-4">
-                    <h1 className="lg:hidden block Gilroy-SemiBold text-3xl text-primaryTx">
+                    <h2 className="lg:hidden block Gilroy-SemiBold text-3xl text-primaryTx">
                       {section.title}
-                    </h1>
+                    </h2>
                     {section.details.map((detail, idx) => (
                       <p
                         key={idx}

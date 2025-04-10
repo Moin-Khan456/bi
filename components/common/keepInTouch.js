@@ -2,6 +2,7 @@ import HomeButton from "../buttons/HomeButton";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function KeepInTouch({ fromBlog }) {
   const validationSchema = Yup.object().shape({
@@ -37,9 +38,24 @@ export default function KeepInTouch({ fromBlog }) {
         fromBlog && "text-slate-900"
       }`}
     >
-      <div className="container padding-left-all-section max-w-screen-xl">
-        <div className="grid lg:grid-cols-1 content-center grid-cols-1">
-          <div className="flex sm:flex-row flex-col justify-between text-left sm:items-center space-y-6">
+      <div className="container padding-left-all-section">
+        <div className="mobile-padding grid lg:grid-cols-1 grid-cols-1">
+          <div className="flex flex-col space-y-6">
+            <div className="relative h-[100px] w-full lg:w-1/2">
+              <Image
+                src={
+                  "https://braininventory.s3.us-east-2.amazonaws.com/images/keepInTouch.svg"
+                }
+                loading="lazy"
+                fetchPriority="low"
+                width={500}
+                height={500}
+                style={{
+                  objectFit: "contain" 
+                }}
+                alt="Keep In Touch With Brain Inventory Sales Executive"
+              />
+            </div>
             <h2 className="text-heading-1 Gilroy-Bold leading-normal w-[90%]">
               <br /> Get in touch, we’d be <br /> happy to hear from you
             </h2>

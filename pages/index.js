@@ -107,12 +107,12 @@ function Home() {
         />
 
         {/* Product Schema */}
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(ProductSchema),
           }}
-        />
+        /> */}
 
         <link
           rel="icon"

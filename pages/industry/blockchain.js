@@ -1,12 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import DOMPurify from "isomorphic-dompurify";
 import {
   approachDesc,
   approachPoints,
   faqDetails,
-  jsonLdScript,
   keyDesc,
   keyFeatures,
   platformDesc,
@@ -72,7 +70,6 @@ const Footer = dynamic(() => import("../../components/common/Footer.js"), {
 });
 
 function Blockchain(props) {
-  const sanitizedJsonLd = DOMPurify.sanitize(JSON.stringify(jsonLdScript));
   return (
     <>
       <Head>
@@ -101,7 +98,7 @@ function Blockchain(props) {
           rel="canonical"
           href="https://braininventory.in/industry/blockchain"
         />
-                <script
+            <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: sanitizedJsonLd }}
         />

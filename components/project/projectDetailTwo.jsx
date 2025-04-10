@@ -16,9 +16,9 @@ const Index = () => {
           <div className="absolute top-96 inset-0  opacity-70 h-96 w-full" />
         </div>
         <div className="px-4 lg:px-48">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold text-center">
             What is Numetric.work?
-          </h2>
+          </h1>
           <p className="text-start font-thin tracking-wide sm:text-2xl sm:leading-10 text-[1rem] leading-7 opacity-50 lg:my-24 my-6">
             NuMetric.work is an online accounting tool designed for
             self-employed individuals and small businesses, allowing them to

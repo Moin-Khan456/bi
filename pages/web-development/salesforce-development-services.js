@@ -21,7 +21,7 @@ const BusinessPathways = dynamic(() =>
 const KeySkill = dynamic(() => import("../../components/Hire/KeySkills"));
 const Hire = dynamic(() => import("../../components/common/Hire"));
 const ChooseBrainInventory = dynamic(() =>
-  import("../../components/common/CommonChooseBraininventory")
+  import("../../components/common/CommonChooseBrainInventory")
 );
 const Faqs = dynamic(() => import("../../components/mobilePages/faqs"), {
   ssr: false,
@@ -76,6 +76,7 @@ function SalesforceDevelopment(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/web-development/Mask+Group+162.png"
           as="image"
+          type="image/png"
         />
         
         <script

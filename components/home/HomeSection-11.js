@@ -28,21 +28,13 @@ const HomeSectionEleven = () => {
             >
               <div className="relative h-full flex items-center filter invert">
                 <Image
-                  srcSet="/image-320w.jpg 320w,
-              /image-480w.jpg 480w,
-              /image-800w.jpg 800w"
-                  sizes="(max-width: 320px) 280px,
-             (max-width: 480px) 440px,
-             800px"
-                  src={
-                    "https://braininventory.s3.us-east-2.amazonaws.com/images/" +
-                    el +
-                    ".svg"
-                  }
+                  src={"https://braininventory.s3.us-east-2.amazonaws.com/images/" + el + ".svg"}
                   width={200}
                   height={200}
                   loading="lazy"
                   alt="Brain Inventory"
+                  style={{ width: 'auto', height: 'auto' }}
+                  className="object-contain mx-auto"
                 />
               </div>
             </div>
@@ -51,9 +43,7 @@ const HomeSectionEleven = () => {
         <div className="mt-8">
           <Link href="/portfolio">
             <HomeButton>
-              <span className="2xl:text-2xl text-xl transition-all">
-                we have more!
-              </span>
+              <span className="2xl:text-2xl text-xl transition-all">we have more!</span>
             </HomeButton>
           </Link>
         </div>

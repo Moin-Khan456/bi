@@ -77,6 +77,7 @@ function Logistic() {
           property="og:url"
           content="https://braininventory.in/industry/transport-and-logistic"
         />
+        <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
           href="https://braininventory.in/industry/transport-and-logistic"

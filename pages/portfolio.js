@@ -187,7 +187,7 @@ function Portfolio(props) {
         />
 
         {/* Product Schema */}
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -212,7 +212,7 @@ function Portfolio(props) {
               },
             }),
           }}
-        />
+        /> */}
       </Head>
       <Header />
       <div className="container  pt-12">

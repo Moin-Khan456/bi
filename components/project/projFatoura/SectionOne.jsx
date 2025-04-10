@@ -13,10 +13,10 @@ const Index = ({ section }) => {
         style={{filter:"invert(1)"}}
         alt="Fatoura"
       />
-      <h3 className="text-4xl lg:text-6xl">
+      <h1 className="text-4xl lg:text-6xl">
         {section.brief}{" "}
         <span className="text-[#F39573]">{section.styleBrief}</span>
-      </h3>
+      </h1>
       <p className="opacity-50 lg:w-[45%] lg:leading-10 py-4">
         Creates and manages customized invoices with data security which helps
         in promoting your brand and expanding your business.

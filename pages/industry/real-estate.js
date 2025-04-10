@@ -84,6 +84,7 @@ function Travel(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/travel_banner.webp"
           as="image"
+           type="image/webp"
         />
       </Head>
       <main className="">

@@ -98,6 +98,7 @@ function Energy(props) {
           fetchpriority="high"
           href="https://braininventory.s3.us-east-2.amazonaws.com/images/energy_utility_banner.webp"
           as="image"
+          type="image/webp"
         />
       </Head>
       <Header />

@@ -1,99 +1,46 @@
 import Link from "next/link";
 
-export const faqDetails =[
-  {
-    id: "1",
-    title: "Can you customize the healthcare technology to our specific needs?",
-    description: (
-      <>
-        Yes, healthcare technology can be customized as per your specific needs. With the help of <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/custom-mobile-app-development-company"}>healthcare app development</Link>, you can include tailored treatment plans, or share medical data across different departments in your hospital.  
-      </>
-    ),
-  },
-  {
-    id: "2",
-    title: "What is a healthcare app?",
-    description:
-      "A healthcare app is used to help people access medical services, or manage their health anytime, anywhere. Healthcare apps can track symptoms, schedule appointments, get medical advice, connect with medical service providers, or get insurance claims. ",
-  },
-  {
-    id: "3",
-    title:
-      "Why is Flutter Ideal for Healthcare App Development?",
-    description:
-     <>
-     Flutter is a good choice for healthcare app development because you can easily integrate healthcare APIs and its cross-platform compatibility ensures that the app operates seamlessly on both Android and iOS platforms. Contact a <Link className="text-blue-500" href={"https://braininventory.in/mobile-development/flutter-app-development-company"}>flutter app development company</Link> to learn more. 
-     </>
-  },
-  {
-    id: "4",
-    title: "Why Choose React Native for Healthcare Apps?",
-    description:
-      "React Native uses modular components, which makes it easier to build, and update healthcare apps. ",
-  },
-  {
-    id: "5",
-    title: "How is mobile app development helping the healthcare industry?",
-    description:
-    <div className="space-y-2">
-    <p>Mobile app development has a significant impact on the healthcare industry as it enables:  </p>
-    <ul className="!ml-7 disc">
-     <li>Remote monitoring of the patient</li>
-     <li>Track symptoms </li>
-     <li>Telehealth consultations </li>
-     <li>Easier access to medical records or previous health conditions </li>
-     <li>Medication management  </li>
-    </ul>
-    <p><Link className="text-blue-500" href={"https://braininventory.in/contact"}>Contact</Link> a mobile app development company to get your healthcare app developed under expert guidance. </p>
-    </div>
-  },
-];
-export  const jsonLdScript = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Can you customize the healthcare technology to our specific needs?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, healthcare technology can be customized as per your specific needs. With the help of healthcare app development, you can include tailored treatment plans, or share medical data across different departments in your hospital."
-    }
-  },{
-    "@type": "Question",
-    "name": "What is a healthcare app?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A healthcare app is used to help people access medical services, or manage their health anytime, anywhere. Healthcare apps can track symptoms, schedule appointments, get medical advice, connect with medical service providers, or get insurance claims."
-    }
-  },{
-    "@type": "Question",
-    "name": "Why is Flutter Ideal for Healthcare App Development?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Flutter is a good choice for healthcare app development because you can easily integrate healthcare APIs and its cross-platform compatibility ensures that the app operates seamlessly on both Android and iOS platforms. Contact a flutter app development company to learn more."
-    }
-  },{
-    "@type": "Question",
-    "name": "Why Choose React Native for Healthcare Apps?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "React Native uses modular components, which makes it easier to build, and update healthcare apps."
-    }
-  },{
-    "@type": "Question",
-    "name": "How is mobile app development helping the healthcare industry?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `Mobile app development has a significant impact on the healthcare industry as it enables: 
-Remote monitoring of the patient
-Track symptoms
-Telehealth consultations
-Easier access to medical records or previous health conditions
-Medication management 
-Contact a mobile app development company to get your healthcare app developed under expert guidance.`
-    }
-  }]
-}
+export const faqDetails = [
+    {
+      id: "1",
+      title: "What services do you provide in healthcare software development?",
+      description: (
+        <>
+          We at Brain Inventory, a learning healthcare{" "}
+          <Link href="javascript:void(0)" className="text-[#2186ff]">
+            app development company
+          </Link>{" "}
+          offer end-to-end healthcare development services, including strategic
+          consulting, UI/UX design, development, testing, and maintenance.
+        </>
+      ),
+    },
+    {
+      id: "2",
+      title: "How secure is the data in the healthcare software you develop?",
+      description:
+        "We prioritise data security and adhere to HIPAA compliance, ensuring all sensitive health information remains secure and confidential.",
+    },
+    {
+      id: "3",
+      title:
+        "Can you customize the healthcare technology to our specific needs?",
+      description:
+        "Absolutely! We specialise in creating bespoke healthcare app development technologies tailored to your organisation's unique requirements.",
+    },
+    {
+      id: "4",
+      title: "What technologies do you use in healthcare software development?",
+      description:
+        "We utilise the latest technologies such as AI, Machine Learning, and IoT for innovative and efficient healthcare software development.",
+    },
+    {
+      id: "5",
+      title: "How long will it take to develop a healthcare software?",
+      description:
+        "The timeline for solution development varies based on complexity and custom requirements, but we typically deliver in 12-16 weeks.",
+    },
+  ];
   export const solutionList = [
     {
       id: "1",

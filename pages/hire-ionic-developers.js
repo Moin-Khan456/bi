@@ -11,7 +11,7 @@ const HireMarquee = dynamic(() => import("../components/common/HireMarquee"));
 const Advantage = dynamic(() => import("../components/Hire/Advantage.jsx"));
 const KeySkill = dynamic(() => import("../components/Hire/KeySkillsCards.jsx"));
 const Hire = dynamic(() => import("../components/common/Hire"));
-const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBrainInventory"));
+const ChooseBrainInventory = dynamic(() => import("../components/common/CommonChooseBraininventory"));
 const Faqs = dynamic(() => import("../components/mobilePages/faqs.js"),{ssr:false});
 const BlogArticle = dynamic(() => import("../components/common/BlogArticle"),{ssr:false});
 const KeepInTouch = dynamic(() => import("../components/common/keepInTouch"));
